@@ -1,0 +1,3642 @@
+/*------------------------------------------------------------------------------
+
+                                 한국 열차 세트
+
+- 프로그래밍:           텔크 (telk5093@gmail.com)
+- 그래픽 제작/수정:     skyu (skyu2947@gmail.com)
+                        텔크 (telk5093@gmail.com)
+                        라스 (wlq10000@naver.com)
+
+------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+ NewGRF 기본 정보
+------------------------------------------------------------------------------*/
+grf {
+	grfid :				"TK\55\55";
+	name :				string(STR_GRF_NAME_WITH_VER);
+	desc :				string(STR_GRF_DESC);
+	url :				string(STR_GRF_URL);
+	version :			5;
+	min_compatible_version :	1;
+
+	// 추가 열차 종류
+	param 0 {
+		add_type {
+			type: int;
+			name: string(STR_PARAM_ADD_TYPE_NAME);
+			desc: string(STR_PARAM_ADD_TYPE_DESC);
+			min_value: 0;
+			max_value: 2;
+			def_value: 0;
+			names: {
+				0:	string(STR_PARAM_ADD_TYPE_ALL);
+				1:	string(STR_PARAM_ADD_TYPE_ONLY_TRAIN);
+				2:	string(STR_PARAM_ADD_TYPE_ONLY_SUBWAY);
+			};
+		}
+	}
+
+	// 속도 계수 (일반)
+	param 1 {
+		coeff_speed_general {
+			type: int;
+			name: string(STR_PARAM_SPEED_GENERAL_NAME);
+			desc: string(STR_PARAM_SPEED_GENERAL_DESC);
+			min_value: 1;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+
+	// 속도 계수 (준고속)
+	param 2 {
+		coeff_speed_subexpress {
+			type: int;
+			name: string(STR_PARAM_SPEED_SUBEXPRESS_NAME);
+			desc: string(STR_PARAM_SPEED_SUBEXPRESS_DESC);
+			min_value: 1;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+
+	// 속도 계수 (지하철)
+	param 3 {
+		coeff_speed_subway {
+			type: int;
+			name: string(STR_PARAM_SPEED_SUBWAY_NAME);
+			desc: string(STR_PARAM_SPEED_SUBWAY_DESC);
+			min_value: 1;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+
+	// 가격 계수
+	param 4 {
+		coeff_cost_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_COST_NAME);
+			desc: string(STR_PARAM_FACTOR_COST_DESC);
+			min_value: 0;
+			max_value: 100;
+			def_value: 3;
+		}
+	}
+
+	// 유지비 계수
+	param 5 {
+		coeff_running_cost_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_RUNNING_COST_NAME);
+			desc: string(STR_PARAM_FACTOR_RUNNING_COST_DESC);
+			min_value: 0;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+
+	// 경유지 간소화 기능
+	param 6 {
+		bool_simplize_waypoint {
+			type: bool;
+			name: string(STR_PARAM_SIMPLIZE_WAYPOINT_NAME);
+			desc: string(STR_PARAM_SIMPLIZE_WAYPOINT_DESC);
+			bit: 1;
+			def_value: 1;
+		}
+	}
+}
+
+// OpenTTD 버전을 확인
+if(ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 0, 0, 21278)) {
+	error(FATAL, string(STR_ERROR_REQUIRES_OPENTTD), "1.0.0/r21278");
+}
+
+cargotable {
+	PASS, MAIL
+}
+
+
+/*------------------------------------------------------------------------------
+ 템플렛
+------------------------------------------------------------------------------*/
+// 구입 이미지
+template tmpl_purchase(x, y) {
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[x,	y,	50,	15,	-25,	-9]
+	[0,	0,	1,	1,	0,	0]
+}
+
+// 기관차 전두부
+template tmpl_engine_head(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x+64,	y,	8,	22,	-3,	-11]
+	[x+80,	y,	21,	17,	-14,	-9]
+	[x+112,	y,	30,	12,	-16,	-6]
+	[x+161,	y,	21,	17,	-8,	-9]
+	[x+191,	y,	8,	22,	-3,	-11]
+	[x+207,	y,	21,	17,	-14,	-9]
+	[x+239,	y,	30,	12,	-16,	-6]
+	[x+288,	y,	21,	17,	-8,	-9]
+}
+
+// 팬터그래프 객차
+template tmpl_wagon_panto(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x+64,	y+27,	8,	22,	-3,	-11]
+	[x+80,	y+27,	21,	17,	-14,	-9]
+	[x+112,	y+27,	31,	15,	-16,	-9]
+	[x+161,	y+27,	21,	19,	-8,	-11]
+	[x+191,	y+27,	8,	22,	-3,	-11]
+	[x+207,	y+27,	21,	19,	-14,	-11]
+	[x+239,	y+27,	31,	15,	-16,	-9]
+	[x+288,	y+27,	21,	17,	-8,	-9]
+}
+
+// 쌍팬터그래프 객차
+template tmpl_wagon_dblpanto(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x+64,	y+27,	8,	22,	-3,	-11]
+	[x+80,	y+27,	21,	19,	-14,	-11]
+	[x+112,	y+27,	31,	15,	-16,	-9]
+	[x+161,	y+27,	21,	19,	-8,	-11]
+}
+template tmpl_wagon_dblpanto_8dir(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x+64,	y+27,	8,	22,	-3,	-11]
+	[x+80,	y+27,	21,	19,	-14,	-11]
+	[x+112,	y+27,	31,	15,	-16,	-9]
+	[x+161,	y+27,	21,	19,	-8,	-11]
+	[x+191,	y+27,	8,	22,	-3,	-11]
+	[x+207,	y+27,	21,	19,	-14,	-11]
+	[x+239,	y+27,	31,	15,	-16,	-9]
+	[x+288,	y+27,	21,	19,	-8,	-11]
+}
+
+// 객차
+template tmpl_wagon(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x+64,	y+55,	8,	22,	-3,	-11]
+	[x+80,	y+55,	21,	17,	-14,	-9]
+	[x+112,	y+55,	31,	12,	-16,	-6]
+	[x+161,	y+55,	21,	17,	-8,	-9]
+}
+template tmpl_wagon_8dir(x, y) {
+	[x+64,	y+55,	8,	22,	-3,	-11]
+	[x+80,	y+55,	21,	17,	-14,	-9]
+	[x+112,	y+55,	31,	12,	-16,	-6]
+	[x+161,	y+55,	21,	17,	-8,	-9]
+	[x+191,	y+55,	8,	22,	-3,	-11]
+	[x+207,	y+55,	21,	17,	-14,	-9]
+	[x+239,	y+55,	31,	12,	-16,	-6]
+	[x+288,	y+55,	21,	17,	-8,	-9]
+}
+
+// 기관차 후두부
+template tmpl_engine_tail(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x+64,	y+82,	8,	22,	-3,	-11]
+	[x+80,	y+82,	21,	17,	-14,	-9]
+	[x+112,	y+82,	31,	12,	-16,	-6]
+	[x+161,	y+82,	21,	17,	-8,	-9]
+	[x+191,	y+82,	8,	22,	-3,	-11]
+	[x+207,	y+82,	21,	17,	-14,	-9]
+	[x+239,	y+82,	30,	12,	-16,	-6]
+	[x+288,	y+82,	21,	17,	-8,	-9]
+}
+
+// 일반 기관차용 템플릿 (3차 스프라이트)
+template tmpl_loco(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x,	y,	8,	22,	-3,	-12]
+	[x+15,	y,	21,	17,	-14,	-8]
+	[x+45,	y,	30,	15,	-17,	-11]
+	[x+95,	y,	21,	19,	-6,	-10]
+	[x+125,	y,	8,	22,	-3,	-12]
+	[x+140,	y,	21,	19,	-14,	-10]
+	[x+175,	y,	30,	15,	-17,	-11]
+	[x+225,	y,	21,	17,	-6,	-8]
+}
+template tmpl_loco_r(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x+125,	y,	8,	22,	-3,	-12]
+	[x+140,	y,	21,	19,	-14,	-10]
+	[x+175,	y,	30,	15,	-17,	-11]
+	[x+225,	y,	21,	17,	-6,	-8]
+	[x,	y,	8,	22,	-3,	-12]
+	[x+15,	y,	21,	17,	-14,	-8]
+	[x+45,	y,	30,	15,	-17,	-11]
+	[x+95,	y,	21,	19,	-6,	-10]
+}
+template tmpl_wagon_by_coor(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x,	y,	8,	22,	-3,	-11]
+	[x+15,	y,	21,	17,	-14,	-8]
+	[x+45,	y,	31,	12,	-17,	-8]
+	[x+95,	y,	21,	17,	-6,	-8]
+}
+template tmpl_loco_saemaeul(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x,	y,	8,	23,	-3,	-12]
+	[x+15,	y,	21,	14,	-14,	-6]
+	[x+45,	y,	33,	12,	-18,	-8]
+	[x+95,	y,	19,	16,	-6,	-8]
+	[x+125,	y,	8,	23,	-3,	-11]
+	[x+140,	y,	19,	16,	-12,	-8]
+	[x+175,	y,	33,	12,	-18,	-8]
+	[x+225,	y,	21,	14,	-6,	-6]
+}
+template tmpl_loco_saemaeul_r(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x,	y,	8,	23,	-3,	-11]
+	[x+15,	y,	19,	16,	-12,	-8]
+	[x+45,	y,	33,	12,	-18,	-8]
+	[x+95,	y,	21,	14,	-6,	-6]
+	[x+125,	y,	8,	23,	-3,	-12]
+	[x+140,	y,	21,	14,	-14,	-6]
+	[x+175,	y,	33,	12,	-18,	-8]
+	[x+225,	y,	19,	16,	-6,	-8]
+}
+
+// KTX용 템플릿
+template tmpl_KTXloco1(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x,	y,	8,	22,	-3,	-11]
+	[x+15,	y,	20,	16,	-14,	-7]
+	[x+45,	y,	31,	12,	-16,	-8]
+	[x+95,	y,	20,	16,	-5,	-7]
+	[x+125,	y,	8,	22,	-3,	-11]
+	[x+140,	y,	20,	16,	-14,	-7]
+	[x+175,	y,	31,	12,	-16,	-8]
+	[x+225,	y,	20,	16,	-5,	-7]
+}
+template tmpl_KTXloco2(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x,	y,	8,	22,	-3,	-11]
+	[x+15,	y,	20,	16,	-14,	-7]
+	[x+45,	y,	31,	11,	-16,	-7]
+	[x+95,	y,	20,	16,	-5,	-7]
+	[x+125,	y,	8,	22,	-3,	-11]
+	[x+140,	y,	20,	16,	-14,	-7]
+	[x+175,	y,	31,	11,	-16,	-7]
+	[x+225,	y,	20,	16,	-5,	-7]
+}
+
+// 빈 스프라이트
+spriteset(set_NOSPRITE,			"./gfx/nosprite.png") { tmpl_loco(0, 0) }
+
+// 오류용
+spriteset(set_ERRSPRITE,		"./gfx/nosprite.png") {
+	[45,	30,	31,	12,	-17,	-8]
+	[45,	30,	31,	12,	-17,	-8]
+	[45,	30,	31,	12,	-17,	-8]
+	[45,	30,	31,	12,	-17,	-8]
+}
+
+/*------------------------------------------------------------------------------
+ 공통 스위치
+------------------------------------------------------------------------------*/
+// 4량 이상이어야 열차를 출발시킬 수 있음
+switch(FEAT_TRAINS, SELF, sw_ko_train_start_stop, num_vehs_in_consist >= 4) {
+	1: return CB_RESULT_NO_TEXT;
+	return string(STR_ERROR_NOT_ENOUGH_LENGTH4);
+}
+
+// 2량 이상이어야 열차를 출발시킬 수 있음
+switch(FEAT_TRAINS, SELF, sw_ko_train_subway_start_stop, num_vehs_in_consist >= 2) {
+	1: return CB_RESULT_NO_TEXT;
+	return string(STR_ERROR_NOT_ENOUGH_LENGTH2);
+}
+
+/*
+// 도색 개조 (3종)
+switch(FEAT_TRAINS, SELF, sw_3type_cargo_subtype_text, cargo_subtype) {
+	0: return string(STR_REFIT_COLOUR_C);
+	1: return string(STR_REFIT_COLOUR_B);
+	2: return string(STR_REFIT_COLOUR_A);
+	return CB_RESULT_NO_TEXT;
+}
+*/
+
+/*------------------------------------------------------------------------------
+
+                            여기부터 일반열차 부분임
+                          General Train Part from here
+
+------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+ 일반열차 스위치
+------------------------------------------------------------------------------*/
+// 무궁화호 객차 연결 스위치
+switch(FEAT_TRAINS, SELF, sw_GENE_attach, vehicle_type_id) {
+	ko_train_K7000..ko_train_K8500:	return CB_RESULT_ATTACH_ALLOW;
+	ko_train_KCDCN:			return CB_RESULT_ATTACH_ALLOW;
+	return CB_RESULT_ATTACH_ALLOW;
+}
+
+// 속도 계수 적용
+switch(FEAT_TRAINS, SELF, sw_KCDCN_speed, coeff_speed_general)	{ return (12 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_K7000_speed, coeff_speed_general)	{ return (15 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_K8000_speed, coeff_speed_general)	{ return (10 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_K8100_speed, coeff_speed_general)	{ return (15 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_K8200_speed, coeff_speed_general)	{ return (15 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_K8500_speed, coeff_speed_general)	{ return (15 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_SMEPP_speed, coeff_speed_general)	{ return (15 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_KRNRR_speed, coeff_speed_general)	{ return (15 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_KTX1N_speed, coeff_speed_general)	{ return (33 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_KTX2N_speed, coeff_speed_general)	{ return (33 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_TILCW_speed, coeff_speed_general)	{ return (12 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_GENCW_speed, coeff_speed_general)	{ return (12 * coeff_speed_general); }
+switch(FEAT_TRAINS, SELF, sw_FLATC_speed, coeff_speed_general)	{ return (11 * coeff_speed_general); }
+
+// 가격 계수 적용
+switch(FEAT_TRAINS, SELF, sw_K7000_cost, coeff_cost_factor) { return (20 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_K8000_cost, coeff_cost_factor) { return (18 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_K8100_cost, coeff_cost_factor) { return (20 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_K8200_cost, coeff_cost_factor) { return (22 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_K8500_cost, coeff_cost_factor) { return (26 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_SMEPP_cost, coeff_cost_factor) { return (20 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KRNRR_cost, coeff_cost_factor) { return (26 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_NRRCW_cost, coeff_cost_factor) { return (13 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KTX1N_cost, coeff_cost_factor) { return (30 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KTX2N_cost, coeff_cost_factor) { return (31 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KTXCW_cost, coeff_cost_factor) { return (15 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_SMECW_cost, coeff_cost_factor) { return (12 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_MGHCW_cost, coeff_cost_factor) { return (12 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_CAFECW_cost, coeff_cost_factor) { return (12 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_TILCW_cost, coeff_cost_factor) { return (12 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_GENCW_cost, coeff_cost_factor) { return (15 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_FLATC_cost, coeff_cost_factor) { return (13 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KCDCN_cost, coeff_cost_factor) { return (16 * coeff_cost_factor); }
+
+// 유지비 계수 적용
+switch(FEAT_TRAINS, SELF, sw_K7000_running_cost, coeff_running_cost_factor) {	return (25 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_K8000_running_cost, coeff_running_cost_factor) {	return (23 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_K8100_running_cost, coeff_running_cost_factor) {	return (22 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_K8200_running_cost, coeff_running_cost_factor) {	return (21 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_K8500_running_cost, coeff_running_cost_factor) {	return (20 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_SMEPP_running_cost, coeff_running_cost_factor) {	return (20 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KRNRR_running_cost, coeff_running_cost_factor) {	return (23 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_NRRCW_running_cost, coeff_running_cost_factor) {	return (12 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KTX1N_running_cost, coeff_running_cost_factor) {	return (30 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KTX2N_running_cost, coeff_running_cost_factor) {	return (30 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KTXCW_running_cost, coeff_running_cost_factor) {	return (15 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_SMECW_running_cost, coeff_running_cost_factor) {	return (15 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_MGHCW_running_cost, coeff_running_cost_factor) {	return (15 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_CAFECW_running_cost, coeff_running_cost_factor) {	return (20 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_TILCW_running_cost, coeff_running_cost_factor) {	return (12 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_GENCW_running_cost, coeff_running_cost_factor) {	return (15 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_FLATC_running_cost, coeff_running_cost_factor) {	return (13 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KCDCN_running_cost, coeff_running_cost_factor) {	return (21 * coeff_running_cost_factor); }
+
+
+/*------------------------------------------------------------------------------
+ 일반열차 스프라이트
+------------------------------------------------------------------------------*/
+// 7000호대
+spriteset(set_K7000A_loco,		"./gfx/ko_train1.png") {
+	[70,	560,	8,	22,	-3,	-11]
+	[85,	560,	22,	17,	-14,	-8]
+	[115,	560,	32,	11,	-17,	-7]
+	[165,	560,	22,	17,	-6,	-9]
+	[195,	560,	8,	22,	-3,	-11]
+	[210,	560,	22,	17,	-15,	-9]
+	[245,	560,	32,	11,	-18,	-7]
+	[295,	560,	22,	17,	-6,	-8]
+}
+spriteset(set_K7000A_loco_reverse,	"./gfx/ko_train1.png") {
+	[70,	590,	8,	22,	-3,	-11]
+	[85,	590,	22,	17,	-14,	-8]
+	[115,	590,	32,	11,	-17,	-7]
+	[165,	590,	22,	17,	-6,	-9]
+	[195,	590,	8,	22,	-3,	-11]
+	[210,	590,	22,	17,	-15,	-9]
+	[245,	590,	32,	11,	-18,	-7]
+	[295,	590,	22,	17,	-6,	-8]
+}
+spriteset(set_K7000A_purchase,		"./gfx/ko_train1.png") { [ 10, 560,  50,  11, -25,  -6] }
+
+// 8000호대
+spriteset(set_K8000A_loco,		"./gfx/ko_train1.png") { tmpl_loco(70, 20) }
+spriteset(set_K8000A_loco_reverse,	"./gfx/ko_train1.png") { tmpl_loco_r(70, 20) }
+spriteset(set_K8000A_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 20) }
+spriteset(set_K8000B_loco_reverse,	"./gfx/ko_train1.png") { tmpl_loco_r(70, 50) }
+spriteset(set_K8000B_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 50) }
+spriteset(set_K8000B_loco,		"./gfx/ko_train1.png") { tmpl_loco(70, 50) }
+spriteset(set_K8000C_loco,		"./gfx/ko_train1.png") { tmpl_loco(70, 80) }
+spriteset(set_K8000C_loco_reverse,	"./gfx/ko_train1.png") { tmpl_loco_r(70, 80) }
+spriteset(set_K8000C_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 80) }
+
+// 8100호대
+spriteset(set_K8100_loco,		"./gfx/ko_train1.png") { tmpl_loco(70, 110) }
+spriteset(set_K8100_loco_reverse,	"./gfx/ko_train1.png") { tmpl_loco_r(70, 110) }
+spriteset(set_K8100_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 110) }
+
+// 8200호대
+spriteset(set_K8200_loco,		"./gfx/ko_train1.png") { tmpl_loco(70, 140) }
+spriteset(set_K8200_loco_reverse,	"./gfx/ko_train1.png") { tmpl_loco_r(70, 140) }
+spriteset(set_K8200_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 140) }
+
+// 8500호대
+spriteset(set_K8500_loco,		"./gfx/ko_train1.png") { tmpl_loco(70, 170) }
+spriteset(set_K8500_loco_reverse,	"./gfx/ko_train1.png") { tmpl_loco_r(70, 170) }
+spriteset(set_K8500_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 170) }
+
+// KTX-1
+spriteset(set_KTX1N_loco1,		"./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	200,	8,	23,	-3,	-11]
+	[85,	200,	22,	16,	-15,	-7]
+	[115,	200,	32,	12,	-16,	-8]
+	[165,	200,	22,	16,	-5,	-8]
+	[195,	200,	8,	23,	-3,	-11]
+	[210,	200,	22,	16,	-16,	-8]
+	[245,	200,	33,	12,	-18,	-8]
+	[295,	200,	22,	16,	-6,	-7]
+}
+spriteset(set_KTX1N_loco2,		"./gfx/ko_train1.png") { tmpl_KTXloco1(70, 230) }
+spriteset(set_KTX1N_loco3_6,		"./gfx/ko_train1.png") { tmpl_KTXloco2(70, 260) }
+spriteset(set_KTX1N_loco7_10,		"./gfx/ko_train1.png") { tmpl_KTXloco2(70, 290) }
+spriteset(set_KTX1N_loco11_18,		"./gfx/ko_train1.png") { tmpl_KTXloco2(70, 320) }
+spriteset(set_KTX1N_loco19,		"./gfx/ko_train1.png") { tmpl_KTXloco1(70, 350) }
+spriteset(set_KTX1N_loco20,		"./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	380,	8,	23,	-3,	-11]
+	[85,	380,	22,	18,	-16,	-10]
+	[115,	380,	33,	14,	-18,	-10]
+	[165,	380,	22,	16,	-6,	-7]
+	[195,	380,	8,	23,	-3,	-11]
+	[210,	380,	22,	16,	-15,	-7]
+	[245,	380,	32,	14,	-16,	-10]
+	[295,	380,	22,	18,	-5,	-10]
+}
+spriteset(set_KTX1N_purchase,		"./gfx/ko_train1.png") {
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[10,	200,	50,	12,	-25,	-6]
+	[0,	0,	1,	1,	0,	0]
+}
+
+// KTX-2
+spriteset(set_KTX2N_loco1, "./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	620,	8,	23,	-3,	-11]
+	[85,	620,	22,	16,	-15,	-7]
+	[115,	620,	32,	14,	-16,	-10]
+	[165,	620,	22,	18,	-5,	-10]
+	[195,	620,	8,	23,	-3,	-11]
+	[210,	620,	22,	18,	-16,	-10]
+	[245,	620,	32,	14,	-18,	-10]
+	[295,	620,	22,	16,	-6,	-7]
+}
+spriteset(set_KTX2N_loco2,		"./gfx/ko_train1.png") { tmpl_KTXloco1(70, 650) }
+spriteset(set_KTX2N_loco3,		"./gfx/ko_train1.png") { tmpl_KTXloco2(70, 680) }
+spriteset(set_KTX2N_loco4_8,		"./gfx/ko_train1.png") { tmpl_KTXloco2(70, 710) }
+spriteset(set_KTX2N_loco9,		"./gfx/ko_train1.png") { tmpl_KTXloco1(70, 740) }
+spriteset(set_KTX2N_loco10, "./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	770,	8,	23,	-3,	-11]
+	[85,	770,	22,	18,	-16,	-10]
+	[115,	770,	32,	14,	-18,	-10]
+	[165,	770,	22,	16,	-6,	-7]
+	[195,	770,	8,	23,	-3,	-11]
+	[210,	770,	22,	16,	-15,	-7]
+	[245,	770,	32,	14,	-16,	-10]
+	[295,	770,	22,	18,	-5,	-10]
+}
+spriteset(set_KTX2N_purchase,		"./gfx/ko_train1.png") {
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[0,	0,	1,	1,	0,	0]
+	[10,	620,	50,	12,	-25,	-6]
+	[0,	0,	1,	1,	0,	0]
+}
+
+// KTX, 새마을호, 무궁화호 객차
+spriteset(set_KTXCW_purchase,		"./gfx/ko_train1.png") { [10, 230, 31, 11, -17, -6] }
+spriteset(set_TRNCW_purchase,		"./gfx/ko_train1.png") { [10, 230, 32, 12, -16, -7] }
+
+// 무궁화호
+spriteset(set_MGHWA_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 20) }
+spriteset(set_MGHWB_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 50) }
+spriteset(set_MGHWC_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 80) }
+spriteset(set_MGHWD_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 110) }
+spriteset(set_MGHWE_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 140) }
+spriteset(set_MGHWF_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 170) }
+spriteset(set_MGHWG_coach,		"./gfx/ko_train1.png") {
+	tmpl_wagon_by_coor(350, 200)
+	tmpl_wagon_by_coor(350, 230)
+} // 카페 객차
+
+// 통일호
+spriteset(set_TILCW_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 350) }
+
+// 발전차
+spriteset(set_GENCWA_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 380) }
+spriteset(set_GENCWB_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 410) }
+spriteset(set_GENCWC_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 440) }
+spriteset(set_GENCWD_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 470) }
+
+// CDC
+spriteset(set_CDC_engineH,		"./gfx/ko_train1.png") { tmpl_engine_head(500, 20) }
+spriteset(set_CDC_engineT,		"./gfx/ko_train1.png") { tmpl_engine_tail(500, 20) }
+spriteset(set_CDC_wagon,		"./gfx/ko_train1.png") { tmpl_wagon(500, 20) }
+spriteset(set_CDC_wagon_panto,		"./gfx/ko_train1.png") { tmpl_wagon_dblpanto(500, 20) }
+spriteset(set_CDC_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(500, 20) }
+
+// 새마을호
+spriteset(set_SMEPP1_engineH,		"./gfx/ko_train1.png") { tmpl_loco_saemaeul(70, 800) }
+spriteset(set_SMEPP1_engineT,		"./gfx/ko_train1.png") { tmpl_loco_saemaeul_r(70, 830) }
+spriteset(set_SMEPP1_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 800) }
+spriteset(set_SMEWA1_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 290) }
+spriteset(set_SMEPP2_engineH,		"./gfx/ko_train1.png") { tmpl_loco_saemaeul(70, 860) }
+spriteset(set_SMEPP2_engineT,		"./gfx/ko_train1.png") { tmpl_loco_saemaeul_r(70, 890) }
+spriteset(set_SMEPP2_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 860) }
+spriteset(set_SMEWA2_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 320) }
+spriteset(set_SMEPP3_engineH,		"./gfx/ko_train1.png") { tmpl_loco_saemaeul(70, 410) }
+spriteset(set_SMEPP3_engineT,		"./gfx/ko_train1.png") { tmpl_loco_saemaeul_r(70, 440) }
+spriteset(set_SMEPP3_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 410) }
+spriteset(set_SMEWA3_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 260) }
+
+// 누리로
+spriteset(set_KRNRR_engineH,		"./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	470,	8,	24,	-3,	-14]
+	[85,	470,	21,	15,	-14,	-6]
+	[115,	470,	32,	12,	-18,	-8]
+	[165,	470,	21,	16,	-7,	-8]
+	[195,	470,	8,	23,	-3,	-13]
+	[210,	470,	21,	16,	-14,	-7]
+	[245,	470,	32,	12,	-17,	-8]
+	[295,	470,	21,	15,	-6,	-7]
+}
+spriteset(set_KRNRR_engineT,		"./gfx/ko_train1.png") {
+	// REVERSED //
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[195,	470,	8,	23,	-3,	-13]
+	[210,	470,	21,	16,	-14,	-7]
+	[245,	470,	32,	12,	-17,	-8]
+	[295,	470,	21,	15,	-6,	-7]
+	[70,	470,	8,	24,	-3,	-14]
+	[85,	470,	21,	15,	-14,	-6]
+	[115,	470,	32,	12,	-18,	-8]
+	[165,	470,	21,	16,	-7,	-8]
+}
+spriteset(set_KRNRR_purchase,		"./gfx/ko_train1.png") { [ 10, 470,  50,  12,  -25,   -6] }
+spriteset(set_NRRCW_purchase,		"./gfx/ko_train1.png") { [115, 530,  33,  12,  -18,   -6] }
+spriteset(set_KRNRR_coach_penta,		"./gfx/ko_train1.png") {
+	// REVERSED FOR PENTGRAPH //
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[195,	500,	8,	23,	-3,	-13]
+	[210,	500,	21,	16,	-14,	-7]
+	[245,	500,	33,	14,	-18,	-10]
+	[295,	500,	21,	18,	-6,	-10]
+	[70,	500,	8,	24,	-3,	-14]
+	[85,	500,	21,	18,	-14,	-9]
+	[115,	500,	33,	14,	-18,	-10]
+	[165,	500,	21,	16,	-6,	-8]
+}
+spriteset(set_KRNRR_coach,		"./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	530,	8,	23,	-3,	-13]
+	[85,	530,	21,	16,	-14,	-7]
+	[115,	530,	33,	12,	-18,	-8]
+	[165,	530,	21,	16,	-6,	-8]
+}
+
+// 해랑
+spriteset(set_HRANG_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 920) }
+spriteset(set_HRANG_loco,		"./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	920,	8,	22,	-3,	-11]
+	[85,	920,	22,	17,	-14,	-8]
+	[115,	920,	32,	11,	-17,	-7]
+	[165,	920,	22,	17,	-6,	-9]
+	[195,	920,	8,	22,	-3,	-11]
+	[210,	920,	22,	17,	-15,	-9]
+	[245,	920,	32,	11,	-18,	-7]
+	[295,	920,	22,	17,	-6,	-8]
+}
+spriteset(set_HRANG_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 680) }
+
+// ITX-새마을
+spriteset(set_ITXSME_purchase,		"./gfx/ko_train1.png") { tmpl_purchase(10, 950) }
+spriteset(set_ITXSME_engineH,		"./gfx/ko_train1.png") { tmpl_loco(70, 950)
+
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	950,	8,	24,	-3,	-14]
+	[85,	950,	21,	15,	-14,	-6]
+	[115,	950,	32,	12,	-18,	-8]
+	[165,	950,	21,	16,	-7,	-8]
+	[195,	950,	8,	23,	-3,	-13]
+	[210,	950,	21,	16,	-14,	-7]
+	[245,	950,	32,	12,	-17,	-8]
+	[295,	950,	21,	15,	-6,	-7]
+}
+spriteset(set_ITXSME_coachH,		"./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	980,	8,	24,	-3,	-14]
+	[85,	980,	21,	15,	-14,	-6]
+	[115,	980,	32,	12,	-18,	-8]
+	[165,	980,	21,	16,	-7,	-8]
+	[195,	980,	8,	23,	-3,	-13]
+	[210,	980,	21,	16,	-14,	-7]
+	[245,	980,	32,	12,	-17,	-8]
+	[295,	980,	21,	15,	-6,	-7]
+}
+spriteset(set_ITXSME_coach,		"./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	1010,	8,	23,	-3,	-13]
+	[85,	1010,	21,	16,	-14,	-7]
+	[115,	1010,	33,	12,	-18,	-8]
+	[165,	1010,	21,	16,	-6,	-8]
+}
+spriteset(set_ITXSME_coachT,		"./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	1040,	8,	24,	-3,	-14]
+	[85,	1040,	21,	15,	-14,	-6]
+	[115,	1040,	32,	12,	-18,	-8]
+	[165,	1040,	21,	16,	-7,	-8]
+	[195,	1040,	8,	23,	-3,	-13]
+	[210,	1040,	21,	16,	-14,	-7]
+	[245,	1040,	32,	12,	-17,	-8]
+	[295,	1040,	21,	15,	-6,	-7]
+}
+spriteset(set_ITXSME_engineT,		"./gfx/ko_train1.png") {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[70,	1070,	8,	24,	-3,	-14]
+	[85,	1070,	21,	15,	-14,	-6]
+	[115,	1070,	32,	12,	-18,	-8]
+	[165,	1070,	21,	16,	-7,	-8]
+	[195,	1070,	8,	23,	-3,	-13]
+	[210,	1070,	21,	16,	-14,	-7]
+	[245,	1070,	32,	12,	-17,	-8]
+	[295,	1070,	21,	15,	-6,	-7]
+}
+
+
+// 평판화차
+template tmpl_flatc_by_coor(x, y) {
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x,	y,	8,	23,	-3,	-11]
+	[x+15,	y,	20,	18,	-13,	-10]
+	[x+45,	y,	31,	15,	-17,	-10]
+	[x+95,	y,	20,	18,	-6,	-10]
+}
+spriteset(set_FLATCB_empty_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 500) }
+spriteset(set_FLATCB_loading_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 530) }
+spriteset(set_FLATCB_loaded_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 560) }
+spriteset(set_FLATCA_empty_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 590) }
+spriteset(set_FLATCA_loading_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 620) }
+spriteset(set_FLATCA_loaded_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 650) }
+spritegroup sg_FLATCB_coach {
+	loading: [set_FLATCB_empty_coach,	set_FLATCB_loading_coach,	set_FLATCB_loaded_coach];
+	loaded:  [set_FLATCB_empty_coach,	set_FLATCB_loading_coach,	set_FLATCB_loaded_coach];
+}
+spritegroup sg_FLATCA_coach {
+	loading: [set_FLATCA_empty_coach,	set_FLATCA_loading_coach,	set_FLATCA_loaded_coach];
+	loaded:  [set_FLATCA_empty_coach,	set_FLATCA_loading_coach,	set_FLATCA_loaded_coach];
+}
+
+/*------------------------------------------------------------------------------
+K7000
+------------------------------------------------------------------------------*/
+// 도색 개조
+switch(FEAT_TRAINS, SELF, sw_K7000_loco, cargo_subtype) {
+	0:	set_K7000A_loco;
+	1:	set_HRANG_loco;
+	set_K7000A_loco;
+}
+switch(FEAT_TRAINS, SELF, sw_K7000_cargo_subtype_text, cargo_subtype) {
+	0:	return string(STR_REFIT_PAINTING_THESEDAYS);
+	1:	return string(STR_REFIT_PAINTING_HAERANG);
+	return string(STR_REFIT_PAINTING_THESEDAYS);
+}
+/*
+// 순서에 따라 앞 뒤를 변경
+switch(FEAT_TRAINS, SELF, sw_K7000_engineH, position_in_consist % 2) {
+	0: set_K7000A_loco;
+	set_K7000A_loco; //set_K7000A_loco_r;
+}
+*/
+
+item(FEAT_TRAINS, ko_train_K7000, 5509) {
+	property {
+		name:				string(STR_K7000_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				150 km/h;
+		power:				2800 kW;
+		weight:				124 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			1;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			10;
+		vehicle_life:			30;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_DIESEL;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_DIESEL;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_K7000_loco;
+		purchase:			set_K7000A_purchase;
+		speed:				sw_K7000_speed;
+		cost_factor:			sw_K7000_cost;
+		running_cost_factor:		sw_K7000_running_cost;
+		can_attach_wagon:		sw_GENE_attach;
+		cargo_subtype_text:		sw_K7000_cargo_subtype_text;
+	}
+}
+// End of "K7000"
+
+
+
+
+
+/*------------------------------------------------------------------------------
+K8000
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_K8000_loco, cargo_subtype) {
+	0:	set_K8000C_loco;
+	1:	set_K8000B_loco;
+	2:	set_K8000A_loco;
+	set_K8000C_loco;
+}
+switch(FEAT_TRAINS, SELF, sw_K8000_cargo_subtype_text, cargo_subtype) {
+	0:	return string(STR_REFIT_PAINTING_THESEDAYS);
+	1:	return string(STR_REFIT_PAINTING_OLDKORAIL);
+	2:	return string(STR_REFIT_PAINTING_1970s);
+	return string(STR_REFIT_PAINTING_THESEDAYS);
+}
+
+item(FEAT_TRAINS, ko_train_K8000, 5510) {
+	property {
+		name:				string(STR_K8000_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				85 km/h;
+		power:				3900 kW;
+		weight:				132 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			1;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			10;
+		vehicle_life:			30;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_K8000_loco;
+		purchase:			set_K8000C_purchase;
+		speed:				sw_K8000_speed;
+		cost_factor:			sw_K8000_cost;
+		running_cost_factor:		sw_K8000_running_cost;
+		can_attach_wagon:		sw_GENE_attach;
+		cargo_subtype_text:		sw_K8000_cargo_subtype_text;
+	}
+}
+// End of "K8000"
+
+
+
+
+/*------------------------------------------------------------------------------
+K8100
+------------------------------------------------------------------------------*/
+// 순서에 따라 앞 뒤를 변경
+switch(FEAT_TRAINS, SELF, sw_K8100_engineH, position_in_consist % 2) {
+	0: set_K8100_loco;
+	set_K8100_loco_reverse;
+}
+
+item(FEAT_TRAINS, ko_train_K8100, 5511) {
+	property {
+		name:				string(STR_K8100_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				150 km/h;
+		power:				5200 kW;
+		weight:				132 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			0;
+		vehicle_life:			30;
+
+		introduction_date:		date(1990, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_K8100_engineH;
+		purchase:			set_K8100_purchase;
+		speed:				sw_K8100_speed;
+		cost_factor:			sw_K8100_cost;
+		running_cost_factor:		sw_K8100_running_cost;
+		can_attach_wagon:		sw_GENE_attach;
+	}
+}
+// End of "K8100"
+
+
+
+
+/*------------------------------------------------------------------------------
+K8200
+------------------------------------------------------------------------------*/
+// 순서에 따라 앞 뒤를 변경
+switch(FEAT_TRAINS, SELF, sw_K8200_engineH, position_in_consist % 2) {
+	0: set_K8200_loco;
+	set_K8200_loco_reverse;
+}
+
+item(FEAT_TRAINS, ko_train_K8200, 5512) {
+	property {
+		name:				string(STR_K8200_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				150 km/h;
+		power:				5200 kW;
+		weight:				132 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			0;
+		vehicle_life:			30;
+
+		introduction_date:		date(1990, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_K8200_engineH;
+		purchase:			set_K8200_purchase;
+		speed:				sw_K8200_speed;
+		cost_factor:			sw_K8200_cost;
+		running_cost_factor:		sw_K8200_running_cost;
+		can_attach_wagon:		sw_GENE_attach;
+	}
+}
+// End of "K8200"
+
+
+
+
+/*------------------------------------------------------------------------------
+K8500
+------------------------------------------------------------------------------*/
+// 순서에 따라 앞 뒤를 변경
+switch(FEAT_TRAINS, SELF, sw_K8500_engineH, position_in_consist % 2) {
+	0: set_K8500_loco;
+	set_K8500_loco_reverse;
+}
+
+item(FEAT_TRAINS, ko_train_K8500, 5513) {
+	property {
+		name:				string(STR_K8500_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				165 km/h;
+		power:				6600 kW;
+		weight:				132 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			0;
+		vehicle_life:			30;
+
+		introduction_date:		date(2012, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_K8500_engineH;
+		purchase:			set_K8500_purchase;
+		speed:				sw_K8500_speed;
+		cost_factor:			sw_K8500_cost;
+		running_cost_factor:		sw_K8500_running_cost;
+		can_attach_wagon:		sw_GENE_attach;
+	}
+}
+// End of "K8500"
+
+
+
+
+/*------------------------------------------------------------------------------
+새마을호 PP 동차
+------------------------------------------------------------------------------*/
+// 도색 개조
+switch(FEAT_TRAINS, SELF, sw_SMEPP_engineH, cargo_subtype) {
+	0:	set_SMEPP3_engineH;
+	1:	set_SMEPP2_engineH;
+	2:	set_SMEPP1_engineH;
+	set_SMEPP3_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SMEPP_engine, vehicle_is_reversed) {
+//	1:	sw_SMEPP_engineT;
+	sw_SMEPP_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_cargo_subtype_text, cargo_subtype) {	// 동차 및 객차에 같이 이용함
+	0:	return string(STR_REFIT_PAINTING_THESEDAYS);
+	1:	return string(STR_REFIT_PAINTING_OLDKORAIL);
+	2:	return string(STR_REFIT_PAINTING_1970s);
+	return string(STR_REFIT_PAINTING_THESEDAYS);
+}
+
+item(FEAT_TRAINS, ko_train_SMEPP, 5514) {
+	property {
+		name:				string(STR_SMEPP_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				150 km/h;
+		power:				3500 hp;
+		weight:				69.71 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			20;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			10;
+		vehicle_life:			30;
+
+		introduction_date:		date(1987, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_DIESEL;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_DIESEL;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_SMEPP_engine;		//sw_SMEPP_coach;
+		purchase:			set_SMEPP3_purchase;
+		speed:				sw_SMEPP_speed;
+		cost_factor:			sw_SMEPP_cost;
+		running_cost_factor:		sw_SMEPP_running_cost;
+		can_attach_wagon:		sw_GENE_attach;
+		start_stop:			sw_ko_train_start_stop;
+		cargo_subtype_text:		sw_SAEMAEUL_cargo_subtype_text;
+	}
+}
+// End of "새마을호 PP 동차"
+
+
+/*------------------------------------------------------------------------------
+ITXSME (ITX-새마을)
+------------------------------------------------------------------------------*/
+/*
+// 자유 편성
+item(FEAT_TRAINS, ko_train_ITXSME) {
+	property {
+		name:				string(STR_KCITX_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		introduction_date:		date(2012, 1, 1);
+		speed:				180 km/h;
+		power:				3000 hp;
+		weight:				20 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			45;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			20;
+
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		vehicle_life:			30;
+		reliability_decay:		0;
+
+		cost_factor:			5;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		dual_headed:			0;
+		extra_weight_per_wagon:		0 ton;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_KCITX_engine;
+		purchase:			set_KCITX_purchase;
+		speed:				sw_KCITX_speed;
+		cost_factor:			sw_METRO_cost6;
+		running_cost_factor:		sw_KCITX_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+	}
+}
+// End of "ITXSME"
+*/
+
+
+
+/*------------------------------------------------------------------------------
+누리로
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, PARENT, sw_KRNRR_attach, vehicle_type_id) {
+	ko_train_KRNRR:	return CB_RESULT_ATTACH_ALLOW;
+	ko_train_NRRCW:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+item(FEAT_TRAINS, ko_train_KRNRR, 5517) {
+	property {
+		name:				string(STR_KRNRR_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				150 km/h;
+		power:				3500 hp;
+		weight:				55 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			64;
+		loading_speed:			10;
+		vehicle_life:			30;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+
+		introduction_date:		date(2010, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			set_KRNRR_engineH;		//sw_KRNRR_coach;
+		purchase:			set_KRNRR_purchase;
+		speed:				sw_KRNRR_speed;
+		cost_factor:			sw_KRNRR_cost;
+		running_cost_factor:		sw_KRNRR_running_cost;
+		can_attach_wagon:		sw_KRNRR_attach;
+//		start_stop:			sw_ko_train_start_stop;
+	}
+}
+// End of "누리로 동차"
+
+
+
+
+/*------------------------------------------------------------------------------
+누리로 객차
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_KRNRR_coach, (position_in_consist + 1) == (num_vehs_in_consist - 1)) {
+	1: set_KRNRR_coach_penta;
+	set_KRNRR_coach;
+}
+
+// 객차 연결 스위치
+switch(FEAT_TRAINS, PARENT, sw_NRRCW_attach, vehicle_type_id) {
+	ko_train_KRNRR:	return CB_RESULT_ATTACH_ALLOW;
+	ko_train_NRRCW:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+item(FEAT_TRAINS, ko_train_NRRCW, 5996) {
+	property {
+		name:				string(STR_NRRCW_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(2010, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+		non_refittable_cargo_classes:	bitmask();
+		loading_speed:			20;
+		cost_factor:			1;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			0;
+
+		power:				0;
+		weight:				17 ton;
+		cargo_capacity:			70;
+	}
+	graphics {
+		default:			sw_KRNRR_coach;
+		purchase:			set_NRRCW_purchase;
+		can_attach_wagon:		sw_NRRCW_attach;
+		cost_factor:			sw_NRRCW_cost;
+		running_cost_factor:		sw_NRRCW_running_cost;
+//		cargo_capacity:			sw_NRRCW_cargo;
+	}
+}
+// End of "누리로 객차"
+
+
+/*------------------------------------------------------------------------------
+KTX-1
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_KTX1N_engine, vehicle_is_reversed) {
+//	1: set_KTX1N_loco20;
+	set_KTX1N_loco1;
+}
+switch(FEAT_TRAINS, PARENT, sw_KTX1N_attach, vehicle_type_id) {
+	ko_train_KTX1N:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+item(FEAT_TRAINS, ko_train_KTX1N, 5515) {
+	property {
+		name:				string(STR_KTX1N_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				330 km/h;
+		power:				13560 kW;
+		weight:				35 ton;
+		extra_weight_per_wagon:		35 ton;
+		tractive_effort_coefficient:	0.4;
+
+		cargo_capacity:			0;
+		loading_speed:			0;
+		vehicle_life:			30;
+
+		introduction_date:		date(2004, 4, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_KTX1N_engine;		//sw_KTX1N_coach;
+		purchase:			set_KTX1N_purchase;
+		speed:				sw_KTX1N_speed;
+		cost_factor:			sw_KTX1N_cost;
+		running_cost_factor:		sw_KTX1N_running_cost;
+		can_attach_wagon:		sw_KTX1N_attach;
+		start_stop:			sw_ko_train_start_stop;
+	}
+}
+// End of "KTX-1"
+
+
+
+
+
+/*------------------------------------------------------------------------------
+KTX-2 (산천)
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_KTX2N_engine, vehicle_is_reversed) {
+//	1: set_KTX2N_loco10;
+	set_KTX2N_loco1;
+}
+switch(FEAT_TRAINS, PARENT, sw_KTX2N_attach, vehicle_type_id) {
+	ko_train_KTX2N:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+item(FEAT_TRAINS, ko_train_KTX2N, 5518) {
+	property {
+		name:				string(STR_KTX2N_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				330 km/h;
+		power:				13560 kW;
+		weight:				35 ton;
+		extra_weight_per_wagon:		35 ton;
+		tractive_effort_coefficient:	0.4;
+
+		cargo_capacity:			0;
+		loading_speed:			0;
+		vehicle_life:			30;
+
+		introduction_date:		date(2004, 4, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_KTX2N_engine;		//sw_KTX2N_coach;
+		purchase:			set_KTX2N_purchase;
+		speed:				sw_KTX2N_speed;
+		cost_factor:			sw_KTX2N_cost;
+		running_cost_factor:		sw_KTX2N_running_cost;
+		can_attach_wagon:		sw_KTX2N_attach;
+		start_stop:			sw_ko_train_start_stop;
+	}
+}
+// End of "KTX-산천"
+
+
+/*------------------------------------------------------------------------------
+KTX 객차
+------------------------------------------------------------------------------*/
+// KTX-1 객차
+switch(FEAT_TRAINS, SELF, sw_KTX1N_coach_by_free_center_f, position_in_vehid_chain) {
+	1..3:	set_KTX1N_loco3_6;
+	set_KTX1N_loco7_10;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_coach_by_free_center, (position_in_vehid_chain + 1) <= (num_vehs_in_consist / 2)) {
+	1: sw_KTX1N_coach_by_free_center_f;
+	set_KTX1N_loco11_18;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_coach_by_free_tail, position_in_vehid_chain_from_end) {
+	0: set_KTX1N_loco19;
+	sw_KTX1N_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_coach, position_in_vehid_chain) {
+	0: set_KTX1N_loco2;
+	sw_KTX1N_coach_by_free_tail;
+}
+
+// KTX-산천 객차
+switch(FEAT_TRAINS, SELF, sw_KTX2N_coach_by_free_center, position_in_vehid_chain) {
+	2:	set_KTX2N_loco3;
+	set_KTX2N_loco4_8;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX2N_coach_by_free_tail, position_in_vehid_chain_from_end) {
+	0: set_KTX2N_loco9;
+	sw_KTX2N_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX2N_coach, position_in_vehid_chain) {
+	0: set_KTX2N_loco2;
+	sw_KTX2N_coach_by_free_tail;
+}
+
+// KTX-1, KTX-산천에 따라 다르게 출력
+switch(FEAT_TRAINS, PARENT, sw_KTXCW_coach, vehicle_type_id) {
+	ko_train_KTX1N: sw_KTX1N_coach;
+	ko_train_KTX2N: sw_KTX2N_coach;
+	set_KTXCW_purchase;
+}
+
+// 객차 연결 스위치
+switch(FEAT_TRAINS, PARENT, sw_KTXCW_attach, vehicle_type_id) {
+	ko_train_KTX1N:	return CB_RESULT_ATTACH_ALLOW;
+	ko_train_KTX2N: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_KTXCW:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+item(FEAT_TRAINS, ko_train_KTXCW, 5992) {
+	property {
+		name:				string(STR_KTXCW_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(1970, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL);
+		non_refittable_cargo_classes:	bitmask();
+		loading_speed:			20;
+		cost_factor:			1;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			0;
+
+		power:				0;
+		weight:				17 ton;
+		cargo_capacity:			58;
+	}
+	graphics {
+		default:			sw_KTXCW_coach;
+		purchase:			set_KTXCW_purchase;
+		can_attach_wagon:		sw_KTXCW_attach;
+		cost_factor:			sw_KTXCW_cost;
+		running_cost_factor:		sw_KTXCW_running_cost;
+//		cargo_capacity:			sw_KTXCW_cargo;
+	}
+}
+// End of "KTX 객차"
+
+
+
+
+/*------------------------------------------------------------------------------
+새마을호 객차
+------------------------------------------------------------------------------*/
+// 새마을호 객차 스프라이트
+switch(FEAT_TRAINS, SELF, sw_SMECW_coach, cargo_subtype) {
+	1:	set_SMEWA2_coach;
+	2:	set_SMEWA1_coach;
+	set_SMEWA3_coach;
+}
+
+// 객차 연결 스위치
+switch(FEAT_TRAINS, PARENT, sw_SMECW_attach, vehicle_type_id) {
+	ko_train_K8000..ko_train_K8500:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+item(FEAT_TRAINS, ko_train_SMECW, 5993) {
+	property {
+		name:				string(STR_SMECW_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+
+		cargo_capacity:			64;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL);
+		non_refittable_cargo_classes:	bitmask();
+
+		loading_speed:			20;
+		cost_factor:			1;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			0;
+
+		power:				0;
+		weight:				17 ton;
+	}
+	graphics {
+		default:			sw_SMECW_coach;
+		purchase:			sw_SMECW_coach;
+		can_attach_wagon:		sw_SMECW_attach;
+		cost_factor:			sw_SMECW_cost;
+		running_cost_factor:		sw_SMECW_running_cost;
+		cargo_subtype_text:		sw_SAEMAEUL_cargo_subtype_text;
+	}
+}
+// End of "새마을호 객차"
+
+
+
+
+/*------------------------------------------------------------------------------
+무궁화호 객차
+------------------------------------------------------------------------------*/
+// 무궁화호 객차 스프라이트
+switch(FEAT_TRAINS, SELF, sw_MGHCW_coach, cargo_subtype) {
+	1:	set_MGHWE_coach;
+	2:	set_MGHWD_coach;
+	3:	set_MGHWC_coach;
+	4:	set_MGHWB_coach;
+	5:	set_MGHWA_coach;
+	6:	set_HRANG_coach;
+	return set_MGHWF_coach;
+}
+// 도색 개조 설명
+switch(FEAT_TRAINS, SELF, sw_MGHCW_cargo_subtype_text, cargo_subtype) {
+	0: return string(STR_REFIT_PAINTING_THESEDAYS);
+	1: return string(STR_REFIT_PAINTING_2000_2002);
+	2: return string(STR_REFIT_PAINTING_1990_1999);
+	3: return string(STR_REFIT_PAINTING_1985_1989);
+	4: return string(STR_REFIT_PAINTING_1984_1984);
+	5: return string(STR_REFIT_PAINTING_1970_1983);
+	6: return string(STR_REFIT_PAINTING_HAERANG);
+	return CB_RESULT_NO_TEXT;
+}
+/*
+switch(FEAT_TRAINS, SELF, sw_MGHCW_coach, build_year) {
+	0..1983:	set_MGHWA_coach;
+	1984:		set_MGHWB_coach;
+	1985..1989:	set_MGHWC_coach;
+	1990..1999:	set_MGHWD_coach;
+	2000..2002:	set_MGHWE_coach;
+	set_MGHWF_coach;
+}
+*/
+
+// 객차 연결 스위치
+switch(FEAT_TRAINS, PARENT, sw_MGHCW_attach, vehicle_type_id) {
+	ko_train_K8000..ko_train_K8500:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+item(FEAT_TRAINS, ko_train_MGHCW, 5994) {
+	property {
+		name:				string(STR_MGHCW_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL);
+		non_refittable_cargo_classes:	bitmask();
+		loading_speed:			20;
+		cost_factor:			1;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			0;
+
+		power:				0;
+		weight:				17 ton;
+		cargo_capacity:			74;
+	}
+	graphics {
+		default:			sw_MGHCW_coach;
+		purchase:			sw_MGHCW_coach;
+		can_attach_wagon:		sw_MGHCW_attach;
+		cost_factor:			sw_MGHCW_cost;
+		running_cost_factor:		sw_MGHCW_running_cost;
+		cargo_subtype_text:		sw_MGHCW_cargo_subtype_text;
+	}
+}
+// End of "무궁화호 객차"
+
+
+
+
+/*------------------------------------------------------------------------------
+무궁화호 카페 객차
+------------------------------------------------------------------------------*/
+// 카페 객차 스프라이트
+switch(FEAT_TRAINS, SELF, sw_CAFECW_coach, build_year) {
+	set_MGHWG_coach;
+}
+
+// 객차 연결 스위치
+switch(FEAT_TRAINS, PARENT, sw_CAFECW_attach, vehicle_type_id) {
+	ko_train_K8000..ko_train_K8500:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+item(FEAT_TRAINS, ko_train_CAFECW, 5995) {
+	property {
+		name:				string(STR_CAFECW_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(1974, 8, 15);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+		non_refittable_cargo_classes:	bitmask();
+		loading_speed:			20;
+		cost_factor:			1;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			0;
+
+		power:				0;
+		weight:				17 ton;
+		cargo_capacity:			20;
+
+		misc_flags:			bitmask(TRAIN_FLAG_FLIP);
+	}
+	graphics {
+		default:			sw_CAFECW_coach;
+		purchase:			sw_CAFECW_coach;
+		can_attach_wagon:		sw_CAFECW_attach;
+		cost_factor:			sw_CAFECW_cost;
+		running_cost_factor:		sw_CAFECW_running_cost;
+//		cargo_capacity:			sw_CAFECW_cargo;
+	}
+}
+// End of "무궁화호 카페 객차"
+
+
+
+
+/*------------------------------------------------------------------------------
+통일호 객차
+------------------------------------------------------------------------------*/
+// 통일호 객차 스프라이트
+switch(FEAT_TRAINS, SELF, sw_TILCW_coach, build_year) {
+	set_TILCW_coach;
+}
+
+// 객차 연결 스위치
+switch(FEAT_TRAINS, PARENT, sw_TILCW_attach, vehicle_type_id) {
+	ko_train_K8000..ko_train_K8500:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+item(FEAT_TRAINS, ko_train_TILCW, 5997) {
+	property {
+		name:				string(STR_TILCW_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_REFRIGERATED);
+		non_refittable_cargo_classes:	bitmask();
+		loading_speed:			10;
+		cost_factor:			1;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			0;
+
+		power:				0;
+		weight:				17 ton;
+		speed:				120 km/h;
+		cargo_capacity:			72;
+	}
+	graphics {
+		default:			sw_TILCW_coach;
+		purchase:			sw_TILCW_coach;
+		can_attach_wagon:		sw_TILCW_attach;
+		speed:				sw_TILCW_speed;
+		cost_factor:			sw_TILCW_cost;
+		running_cost_factor:		sw_TILCW_running_cost;
+	}
+}
+// End of "통일호 객차"
+
+
+
+
+/*------------------------------------------------------------------------------
+발전차
+------------------------------------------------------------------------------*/
+// 발전차 스프라이트
+switch(FEAT_TRAINS, SELF, sw_GENCW_coach, cargo_subtype) {
+	1:	set_GENCWD_coach;
+	2:	set_GENCWC_coach;
+	3:	set_GENCWB_coach;
+	4:	set_GENCWA_coach;
+	set_GENCWD_coach;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_GENCW_attach, vehicle_type_id) {
+	ko_train_K8000..ko_train_K8500:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+switch(FEAT_TRAINS, SELF, sw_GENCW_cargo_subtype_text, cargo_subtype) {
+	1:	return string(STR_REFIT_PAINTING_GENCW_SME_B);
+	2:	return string(STR_REFIT_PAINTING_GENCW_SME_A);
+	3:	return string(STR_REFIT_PAINTING_GENCW_LONG);
+	4:	return string(STR_REFIT_PAINTING_GENCW_DEFAULT);
+	return  string(STR_REFIT_PAINTING_GENCW_SME_B);
+}
+
+item(FEAT_TRAINS, ko_train_GENCW, 5998) {
+	property {
+		name:				string(STR_GENCW_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		loading_speed:			10;
+		cost_factor:			1;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			1;
+
+		power:				0;
+		weight:				17 ton;
+		speed:				120 km/h;
+		cargo_capacity:			10;
+		extra_power_per_wagon:		1000kW;
+	}
+	graphics {
+		default:			sw_GENCW_coach;
+		purchase:			sw_GENCW_coach;
+		can_attach_wagon:		sw_GENCW_attach;
+		speed:				sw_GENCW_speed;
+		cost_factor:			sw_GENCW_cost;
+		running_cost_factor:		sw_GENCW_running_cost;
+		cargo_subtype_text:		sw_GENCW_cargo_subtype_text;
+	}
+}
+// End of "발전차"
+
+
+
+
+/*------------------------------------------------------------------------------
+평판화차
+------------------------------------------------------------------------------*/
+// 평판화차 스프라이트
+switch(FEAT_TRAINS, SELF, sw_FLATC_coach, cargo_subtype) {
+	1:	sg_FLATCB_coach;
+	2:	sg_FLATCA_coach;
+	sg_FLATCB_coach;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_FLATC_attach, vehicle_type_id) {
+	ko_train_K8000..ko_train_K8500:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+switch(FEAT_TRAINS, SELF, sw_FLATC_cargo_subtype_text, cargo_subtype) {
+	1:	return string(STR_REFIT_COLOUR_B);
+	2:	return string(STR_REFIT_COLOUR_A);
+	return  string(STR_REFIT_COLOUR_B);
+}
+
+item(FEAT_TRAINS, ko_train_FLATC, 6001) {
+	property {
+		name:				string(STR_FLATC_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	ALL_CARGO_CLASSES; //bitmask(CC_BULK, CC_PIECE_GOODS, CC_COVERED0);
+		non_refittable_cargo_classes:	bitmask();
+		loading_speed:			10;
+		cost_factor:			1;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			1;
+
+		power:				0;
+		weight:				17 ton;
+		speed:				110 km/h;
+		cargo_capacity:			100;
+	}
+	graphics {
+		default:			sw_FLATC_coach;
+		purchase:			sw_FLATC_coach;
+		can_attach_wagon:		sw_FLATC_attach;
+		speed:				sw_FLATC_speed;
+		cost_factor:			sw_FLATC_cost;
+		running_cost_factor:		sw_FLATC_running_cost;
+		cargo_subtype_text:		sw_FLATC_cargo_subtype_text;
+	}
+}
+// End of "평판화차"
+
+
+/*------------------------------------------------------------------------------
+
+                             여기부터 지하철 부분임
+                             Subway Part from here
+
+------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+ 지하철 스위치
+------------------------------------------------------------------------------*/
+// 객차를 연결할 수 있는 열차를 제한함
+switch(FEAT_TRAINS, SELF, sw_subway_coach_attach, vehicle_type_id) {
+	ko_train_MET1N:	return CB_RESULT_ATTACH_ALLOW;
+	ko_train_MET2N: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_MET3N: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_MET4N: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_MET59: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_METKC: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_KCITX: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_METAR: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_METBN: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_D000N: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_ICNM1: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_KCDCN: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_SUBCW: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+// 속도 계수 적용
+switch(FEAT_TRAINS, SELF, sw_MET1N_speed, coeff_speed_subway)		{ return (10 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_MET2N_speed, coeff_speed_subway)		{ return (10 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_MET3N_speed, coeff_speed_subway)		{ return (10 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_MET4N_speed, coeff_speed_subway)		{ return (10 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_MET59_speed, coeff_speed_subway)		{ return (10 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_METKC_speed, coeff_speed_subway)		{ return (10 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_METBN_speed, coeff_speed_subway)		{ return (10 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_KCITX_speed, coeff_speed_subexpress)	{ return (18 * coeff_speed_subexpress); }
+switch(FEAT_TRAINS, SELF, sw_AREXB_speed, coeff_speed_subway)		{ return (12 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_AREXA_speed, coeff_speed_subexpress)	{ return (12 * coeff_speed_subexpress); }
+switch(FEAT_TRAINS, SELF, sw_D000N_speed, coeff_speed_subway)		{ return (10 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_ICNM1_speed, coeff_speed_subway)		{ return (10 * coeff_speed_subway); }
+
+// 가격 계수 적용
+switch(FEAT_TRAINS, SELF, sw_METRO_cost0, coeff_cost_factor) { return (10 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_METRO_cost1, coeff_cost_factor) { return (12 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_METRO_cost2, coeff_cost_factor) { return (14 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_METRO_cost3, coeff_cost_factor) { return (16 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_METRO_cost4, coeff_cost_factor) { return (18 * coeff_cost_factor); }
+//switch(FEAT_TRAINS, SELF, sw_METRO_cost5, coeff_cost_factor) { return (20 * coeff_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_METRO_cost6, coeff_cost_factor) { return (22 * coeff_cost_factor); }
+
+
+// 유지비 계수 적용
+switch(FEAT_TRAINS, SELF, sw_METRO_running_cost, coeff_running_cost_factor) {	return (20 * coeff_running_cost_factor); }
+switch(FEAT_TRAINS, SELF, sw_KCITX_running_cost, coeff_running_cost_factor) {	return (25 * coeff_running_cost_factor); }
+
+/*------------------------------------------------------------------------------
+ 지하철 스프라이트
+------------------------------------------------------------------------------*/
+// K1A
+spriteset(set_K1A_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(0, 0) }
+spriteset(set_K1A_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(0, 0) }
+spriteset(set_K1A_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(0, 0) }
+spriteset(set_K1A_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(0, 0) }
+spriteset(set_K1A_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(0, 0) }
+
+// K1B (1호선 B)
+spriteset(set_K1B_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(320, 0) }
+spriteset(set_K1B_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(320, 0) }
+spriteset(set_K1B_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(320, 0) }
+spriteset(set_K1B_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(320, 0) }
+spriteset(set_K1B_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(320, 0) }
+
+// K1C (1호선 C)
+spriteset(set_K1C_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(640, 0) }
+spriteset(set_K1C_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(640, 0) }
+spriteset(set_K1C_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(640, 0) }
+spriteset(set_K1C_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(640, 0) }
+spriteset(set_K1C_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(640, 0) }
+
+// K1D (1호선 D)
+spriteset(set_K1D_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(960, 0) }
+spriteset(set_K1D_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(960, 0) }
+spriteset(set_K1D_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(960, 0) }
+spriteset(set_K1D_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(960, 0) }
+spriteset(set_K1D_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 0) }
+
+// K1E (1호선 E)
+spriteset(set_K1E_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1280, 0) }
+spriteset(set_K1E_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1280, 0) }
+spriteset(set_K1E_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1280, 0) }
+spriteset(set_K1E_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(1280, 0) }
+spriteset(set_K1E_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1280, 0) }
+
+// K1F (1호선 F)
+spriteset(set_K1F_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1600, 0) }
+spriteset(set_K1F_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1600, 0) }
+spriteset(set_K1F_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1600, 0) }
+spriteset(set_K1F_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1600, 0) }
+spriteset(set_K1F_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1600, 0) }
+
+// K1G (1호선 G)
+spriteset(set_K1G_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1920, 0) }
+spriteset(set_K1G_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1920, 0) }
+spriteset(set_K1G_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1920, 0) }
+spriteset(set_K1G_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1920, 0) }
+spriteset(set_K1G_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1920, 0) }
+
+// K1H (1호선 H)
+spriteset(set_K1H_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(0, 110) }
+spriteset(set_K1H_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(0, 110) }
+spriteset(set_K1H_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(0, 110) }
+spriteset(set_K1H_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(0, 110) }
+spriteset(set_K1H_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(0, 110) }
+
+// K1I (1호선 I)
+spriteset(set_K1I_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(320, 110) }
+spriteset(set_K1I_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(320, 110) }
+spriteset(set_K1I_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(320, 110) }
+spriteset(set_K1I_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(320, 110) }
+spriteset(set_K1I_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(320, 110) }
+
+// K1J (1호선 J)
+spriteset(set_K1J_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(640, 110) }
+spriteset(set_K1J_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(640, 110) }
+spriteset(set_K1J_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(640, 110) }
+spriteset(set_K1J_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(640, 110) }
+spriteset(set_K1J_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(640, 110) }
+
+// K1K (1호선 K)
+spriteset(set_K1K_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(960, 110) }
+spriteset(set_K1K_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(960, 110) }
+spriteset(set_K1K_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(960, 110) }
+spriteset(set_K1K_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(960, 110) }
+spriteset(set_K1K_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 110) }
+
+// S1A (1호선 서울메트로 A)
+spriteset(set_S1A_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1280, 110) }
+spriteset(set_S1A_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1280, 110) }
+spriteset(set_S1A_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1280, 110) }
+spriteset(set_S1A_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(1280, 110) }
+spriteset(set_S1A_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1280, 110) }
+
+// S1B (1호선 서울메트로 B)
+spriteset(set_S1B_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1600, 110) }
+spriteset(set_S1B_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1600, 110) }
+spriteset(set_S1B_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1600, 110) }
+spriteset(set_S1B_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(1600, 110) }
+spriteset(set_S1B_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1600, 110) }
+
+// S1C (1호선 서울메트로 C)
+spriteset(set_S1C_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1920, 110) }
+spriteset(set_S1C_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1920, 110) }
+spriteset(set_S1C_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1920, 110) }
+spriteset(set_S1C_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1920, 110) }
+spriteset(set_S1C_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1920, 110) }
+
+// S2A (2호선 서울메트로 A)
+spriteset(set_S2A_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(0, 220) }
+spriteset(set_S2A_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(0, 220) }
+spriteset(set_S2A_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(0, 220) }
+spriteset(set_S2A_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(0, 220) }
+spriteset(set_S2A_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(0, 220) }
+
+// S2B (2호선 서울메트로 B)
+spriteset(set_S2B_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(320, 220) }
+spriteset(set_S2B_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(320, 220) }
+spriteset(set_S2B_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(320, 220) }
+spriteset(set_S2B_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(320, 220) }
+spriteset(set_S2B_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(320, 220) }
+
+// S2C (2호선 서울메트로 C)
+spriteset(set_S2C_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(640, 220) }
+spriteset(set_S2C_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(640, 220) }
+spriteset(set_S2C_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(640, 220) }
+spriteset(set_S2C_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(640, 220) }
+spriteset(set_S2C_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(640, 220) }
+
+// S2D (2호선 서울메트로 D)
+spriteset(set_S2D_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(960, 220) }
+spriteset(set_S2D_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(960, 220) }
+spriteset(set_S2D_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(960, 220) }
+spriteset(set_S2D_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(960, 220) }
+spriteset(set_S2D_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 220) }
+
+// K3A (3호선 A)
+spriteset(set_K3A_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1280, 220) }
+spriteset(set_K3A_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1280, 220) }
+spriteset(set_K3A_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1280, 220) }
+spriteset(set_K3A_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1280, 220) }
+spriteset(set_K3A_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1280, 220) }
+
+// K3B (3호선 B)
+spriteset(set_K3B_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1600, 220) }
+spriteset(set_K3B_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1600, 220) }
+spriteset(set_K3B_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1600, 220) }
+spriteset(set_K3B_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1600, 220) }
+spriteset(set_K3B_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1600, 220) }
+
+// S3A (3호선 서울메트로 A)
+spriteset(set_S3A_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1920, 220) }
+spriteset(set_S3A_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1920, 220) }
+spriteset(set_S3A_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1920, 220) }
+spriteset(set_S3A_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1920, 220) }
+spriteset(set_S3A_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1920, 220) }
+
+// S3C (3호선 서울메트로 C)
+spriteset(set_S3C_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(320, 330) }
+spriteset(set_S3C_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(320, 330) }
+spriteset(set_S3C_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(320, 330) }
+spriteset(set_S3C_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(320, 330) }
+spriteset(set_S3C_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(320, 330) }
+
+// K4A (4호선 A)
+spriteset(set_K4A_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(640, 330) }
+spriteset(set_K4A_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(640, 330) }
+spriteset(set_K4A_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(640, 330) }
+spriteset(set_K4A_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(640, 330) }
+spriteset(set_K4A_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(640, 330) }
+
+// K4B (4호선 B)
+spriteset(set_K4B_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(960, 330) }
+spriteset(set_K4B_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(960, 330) }
+spriteset(set_K4B_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(960, 330) }
+spriteset(set_K4B_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(960, 330) }
+spriteset(set_K4B_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 330) }
+
+// K4C (4호선 C)
+spriteset(set_K4C_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1280, 330) }
+spriteset(set_K4C_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1280, 330) }
+spriteset(set_K4C_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1280, 330) }
+spriteset(set_K4C_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1280, 330) }
+spriteset(set_K4C_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1280, 330) }
+
+// K4D (4호선 D)
+spriteset(set_K4D_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1600, 330) }
+spriteset(set_K4D_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1600, 330) }
+spriteset(set_K4D_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1600, 330) }
+spriteset(set_K4D_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1600, 330) }
+spriteset(set_K4D_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1600, 330) }
+
+// S5N (5호선)
+spriteset(set_S5N_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(0, 440) }
+spriteset(set_S5N_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(0, 440) }
+spriteset(set_S5N_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(0, 440) }
+spriteset(set_S5N_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(0, 440) }
+spriteset(set_S5N_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(0, 440) }
+
+// S6N (6호선)
+spriteset(set_S6N_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(320, 440) }
+spriteset(set_S6N_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(320, 440) }
+spriteset(set_S6N_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(320, 440) }
+spriteset(set_S6N_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(320, 440) }
+spriteset(set_S6N_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(320, 440) }
+
+// S7N (7호선)
+spriteset(set_S7N_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(640, 440) }
+spriteset(set_S7N_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(640, 440) }
+spriteset(set_S7N_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(640, 440) }
+spriteset(set_S7N_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(640, 440) }
+spriteset(set_S7N_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(640, 440) }
+
+// S8N (8호선)
+spriteset(set_S8N_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(960, 440) }
+spriteset(set_S8N_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(960, 440) }
+spriteset(set_S8N_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(960, 440) }
+spriteset(set_S8N_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(960, 440) }
+spriteset(set_S8N_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 440) }
+
+// S9N (9호선)
+spriteset(set_S9N_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1280, 440) }
+spriteset(set_S9N_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1280, 440) }
+spriteset(set_S9N_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1280, 440) }
+spriteset(set_S9N_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1280, 440) }
+spriteset(set_S9N_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1280, 440) }
+
+// SSR (7호선 SR0 차량)
+spriteset(set_SSR_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1600, 440) }
+spriteset(set_SSR_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1600, 440) }
+spriteset(set_SSR_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1600, 440) }
+spriteset(set_SSR_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1600, 440) }
+spriteset(set_SSR_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1600, 440) }
+
+// KBA (분당선 A)
+spriteset(set_KBA_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(0, 550) }
+spriteset(set_KBA_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(0, 550) }
+spriteset(set_KBA_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(0, 550) }
+spriteset(set_KBA_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(0, 550) }
+spriteset(set_KBA_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(0, 550) }
+
+// KBB (분당선 B)
+spriteset(set_KBB_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(320, 550) }
+spriteset(set_KBB_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(320, 550) }
+spriteset(set_KBB_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(320, 550) }
+spriteset(set_KBB_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(320, 550) }
+spriteset(set_KBB_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(320, 550) }
+
+// KBC (분당선 C)
+spriteset(set_KBC_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(640, 550) }
+spriteset(set_KBC_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(640, 550) }
+spriteset(set_KBC_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(640, 550) }
+spriteset(set_KBC_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(640, 550) }
+spriteset(set_KBC_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(640, 550) }
+
+// KKC (경춘선)
+spriteset(set_KKC_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(960, 550) }
+spriteset(set_KKC_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(960, 550) }
+spriteset(set_KKC_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(960, 550) }
+spriteset(set_KKC_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(960, 550) }
+spriteset(set_KKC_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 550) }
+
+// ITX (경춘선 ITX-청춘)
+spriteset(set_KCITX_train1,		"./gfx/ko_subway.png") {
+	//xpos		ypos	xsize	ysize	xoff	yoff
+	[1344,		550,	8,	22,	-3,	-11]
+	[1344+16,	550,	21,	17,	-14,	-9]
+	[1344+48,	550,	30,	12,	-17,	-6]
+	[1344+97,	550,	21,	17,	-8,	-9]
+	[1344+127,	550,	8,	22,	-3,	-11]
+	[1344+143,	550,	21,	17,	-14,	-9]
+	[1344+175,	550,	31,	12,	-17,	-6]
+	[1344+224,	550,	21,	17,	-8,	-9]
+}
+spriteset(set_KCITX_train2,		"./gfx/ko_subway.png") {
+	//xpos		ypos	xsize	ysize	xoff	yoff
+	[1344+127,	577,	8,	22,	-3,	-11]
+	[1344+143,	577,	21,	17,	-14,	-9]
+	[1344+175,	577,	30,	12,	-17,	-6]
+	[1344+224,	577,	21,	17,	-8,	-9]
+	// oppsite
+	[1344,		577,	8,	22,	-3,	-11]
+	[1344+16,	577,	21,	17,	-14,	-9]
+	[1344+48,	577,	31,	12,	-17,	-6]
+	[1344+97,	577,	21,	17,	-8,	-9]
+}
+spriteset(set_KCITX_train3,		"./gfx/ko_subway.png") {
+	//xpos		ypos	xsize	ysize	xoff	yoff
+	[1344,		605,	8,	22,	-3,	-11]
+	[1344+16,	605,	21,	17,	-14,	-9]
+	[1344+48,	605,	31,	12,	-17,	-6]
+	[1344+97,	605,	21,	17,	-8,	-9]
+}
+spriteset(set_KCITX_train5,		"./gfx/ko_subway.png") { // sprite 순서 오류로 인해 4,5번이 뒤바뀜
+	//xpos		ypos	xsize	ysize	xoff	yoff
+	[1344,		632,	8,	23,	-3,	-11]
+	[1344+16,	632,	21,	18,	-14,	-10]
+	[1344+48,	632,	31,	13,	-17,	-7]
+	[1344+97,	632,	21,	18,	-8,	-10]
+	[1344+127,	632,	8,	23,	-3,	-11]
+	[1344+143,	632,	21,	18,	-14,	-10]
+	[1344+175,	632,	30,	13,	-17,	-7]
+	[1344+224,	632,	21,	18,	-8,	-10]
+}
+spriteset(set_KCITX_train4,		"./gfx/ko_subway.png") { // sprite 순서 오류로 인해 4,5번이 뒤바뀜
+	//xpos		ypos	xsize	ysize	xoff	yoff
+	[1664,		550,	8,	23,	-3,	-11]
+	[1664+16,	550,	21,	18,	-14,	-10]
+	[1664+48,	550,	31,	13,	-17,	-7]
+	[1664+97,	550,	21,	18,	-8,	-10]
+	[1664+127,	550,	8,	23,	-3,	-11]
+	[1664+143,	550,	21,	18,	-14,	-10]
+	[1664+175,	550,	30,	13,	-17,	-7]
+	[1664+224,	550,	21,	18,	-8,	-10]
+}
+spriteset(set_KCITX_train6,		"./gfx/ko_subway.png") {
+	//xpos		ypos	xsize	ysize	xoff	yoff
+	[1664,		577,	8,	22,	-3,	-11]
+	[1664+16,	577,	21,	17,	-14,	-9]
+	[1664+48,	577,	31,	12,	-17,	-6]
+	[1664+97,	577,	21,	17,	-8,	-9]
+}
+spriteset(set_KCITX_train7,		"./gfx/ko_subway.png") {
+	//xpos		ypos	xsize	ysize	xoff	yoff
+	[1664+127,	605,	8,	22,	-3,	-11]
+	[1664+143,	605,	21,	17,	-14,	-9]
+	[1664+175,	605,	30,	15,	-17,	-9]
+	[1664+224,	605,	21,	19,	-8,	-11]
+	// oppsite
+	[1664,		605,	8,	22,	-3,	-11]
+	[1664+16,	605,	21,	19,	-14,	-11]
+	[1664+48,	605,	31,	15,	-17,	-9]
+	[1664+97,	605,	21,	17,	-8,	-9]
+}
+spriteset(set_KCITX_train8,		"./gfx/ko_subway.png") {
+	//xpos		ypos	xsize	ysize	xoff	yoff
+	[1664,		632,	8,	22,	-3,	-11]
+	[1664+16,	632,	21,	17,	-14,	-9]
+	[1664+48,	632,	31,	12,	-17,	-6]
+	[1664+97,	632,	21,	17,	-8,	-9]
+	[1664+127,	632,	8,	22,	-3,	-11]
+	[1664+143,	632,	21,	17,	-14,	-9]
+	[1664+175,	632,	30,	12,	-17,	-6]
+	[1664+224,	632,	21,	17,	-8,	-9]
+}
+spriteset(set_KCITX_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1280, 550) }
+
+// ARXA (공항철도 일반)
+spriteset(set_ARXA_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(0, 660) }
+spriteset(set_ARXA_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(0, 660) }
+spriteset(set_ARXA_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(0, 660) }
+spriteset(set_ARXA_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(0, 660) }
+spriteset(set_ARXA_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(0, 660) }
+
+// ARXB (공항철도 직통)
+spriteset(set_ARXB_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(320, 660) }
+spriteset(set_ARXB_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(320, 660) }
+spriteset(set_ARXB_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(320, 660) }
+spriteset(set_ARXB_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(320, 660) }
+spriteset(set_ARXB_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(320, 660) }
+
+// D00 (신분당선)
+spriteset(set_D00_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(640, 660) }
+spriteset(set_D00_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(640, 660) }
+spriteset(set_D00_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(640, 660) }
+spriteset(set_D00_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(640, 660) }
+spriteset(set_D00_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(640, 660) }
+
+// ICN1 (인천 1호선)
+spriteset(set_ICN1_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(960, 660) }
+spriteset(set_ICN1_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(960, 660) }
+spriteset(set_ICN1_wagon,		"./gfx/ko_subway.png") { tmpl_wagon_8dir(960, 660) }
+spriteset(set_ICN1_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto_8dir(960, 660) }
+spriteset(set_ICN1_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 660) }
+
+
+/*------------------------------------------------------------------------------
+MET1N : 1호선, 중앙선, 경의선
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MET1N_cost, cargo_subtype) {
+	0..2:	sw_METRO_cost2;
+	3..5:	sw_METRO_cost1;
+	6..10:	sw_METRO_cost0;
+	11..13:	sw_METRO_cost1;
+	sw_METRO_cost2;
+}
+switch(FEAT_TRAINS, SELF, sw_MET1N_cargo_subtype_text, cargo_subtype) {
+	0:	return string(STR_REFIT_TYPE_K1K_NAME);
+	1:	return string(STR_REFIT_TYPE_K1J_NAME);
+	2:	return string(STR_REFIT_TYPE_K1I_NAME);
+	3:	return string(STR_REFIT_TYPE_K1H_NAME);
+	4:	return string(STR_REFIT_TYPE_K1G_NAME);
+	5:	return string(STR_REFIT_TYPE_K1F_NAME);
+	6:	return string(STR_REFIT_TYPE_K1E_NAME);
+	7:	return string(STR_REFIT_TYPE_K1D_NAME);
+	8:	return string(STR_REFIT_TYPE_K1C_NAME);
+	9:	return string(STR_REFIT_TYPE_K1B_NAME);
+	10:	return string(STR_REFIT_TYPE_K1A_NAME);
+	11:	return string(STR_REFIT_TYPE_S1C_NAME);
+	12:	return string(STR_REFIT_TYPE_S1B_NAME);
+	13:	return string(STR_REFIT_TYPE_S1A_NAME);
+	return string(STR_REFIT_TYPE_K1K_NAME);
+}
+switch(FEAT_TRAINS, SELF, sw_MET1N_wagon_panto, cargo_subtype) {
+	0:	set_K1K_wagon_panto;
+	1:	set_K1J_wagon_panto;
+	2:	set_K1I_wagon_panto;
+	3:	set_K1H_wagon_panto;
+	4:	set_K1G_wagon_panto;
+	5:	set_K1F_wagon_panto;
+	6:	set_K1E_wagon_panto;
+	7:	set_K1D_wagon_panto;
+	8:	set_K1C_wagon_panto;
+	9:	set_K1B_wagon_panto;
+	10:	set_K1A_wagon_panto;
+	11:	set_S1C_wagon_panto;
+	12:	set_S1B_wagon_panto;
+	13:	set_S1A_wagon_panto;
+	set_K1K_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_MET1N_wagon, cargo_subtype) {
+	0:	set_K1K_wagon;
+	1:	set_K1J_wagon;
+	2:	set_K1I_wagon;
+	3:	set_K1H_wagon;
+	4:	set_K1G_wagon;
+	5:	set_K1F_wagon;
+	6:	set_K1E_wagon;
+	7:	set_K1D_wagon;
+	8:	set_K1C_wagon;
+	9:	set_K1B_wagon;
+	10:	set_K1A_wagon;
+	11:	set_S1C_wagon;
+	12:	set_S1B_wagon;
+	13:	set_S1A_wagon;
+	set_K1K_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET1N_engineH, cargo_subtype) {
+	0:	set_K1K_engineH;
+	1:	set_K1J_engineH;
+	2:	set_K1I_engineH;
+	3:	set_K1H_engineH;
+	4:	set_K1G_engineH;
+	5:	set_K1F_engineH;
+	6:	set_K1E_engineH;
+	7:	set_K1D_engineH;
+	8:	set_K1C_engineH;
+	9:	set_K1B_engineH;
+	10:	set_K1A_engineH;
+	11:	set_S1C_engineH;
+	12:	set_S1B_engineH;
+	13:	set_S1A_engineH;
+	set_K1K_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_MET1N_engineT, cargo_subtype) {
+	0:	set_K1K_engineT;
+	1:	set_K1J_engineT;
+	2:	set_K1I_engineT;
+	3:	set_K1H_engineT;
+	4:	set_K1G_engineT;
+	5:	set_K1F_engineT;
+	6:	set_K1E_engineT;
+	7:	set_K1D_engineT;
+	8:	set_K1C_engineT;
+	9:	set_K1B_engineT;
+	10:	set_K1A_engineT;
+	11:	set_S1C_engineT;
+	12:	set_S1B_engineT;
+	13:	set_S1A_engineT;
+	set_K1K_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_MET1N_purchase, cargo_subtype) {
+	set_K1K_purchase;
+}
+
+
+// 자유 편성
+switch(FEAT_TRAINS, SELF, sw_MET1N_coach_by_free_center, (position_in_consist + 1) % 3) {
+	0: sw_MET1N_wagon_panto;
+	sw_MET1N_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET1N_coach_by_free_tail, position_in_consist_from_end) {
+	0: sw_MET1N_engineT;
+	sw_MET1N_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_MET1N_coach, position_in_consist) {
+	0: sw_MET1N_engineH;
+	sw_MET1N_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_MET1N, 5011) {
+	property {
+		name:				string(STR_MET1N_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				100 km/h;
+		power:				2000 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			21;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_MET1N_coach;
+		purchase:			sw_MET1N_purchase;
+		speed:				sw_MET1N_speed;
+		cost_factor:			sw_MET1N_cost;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+		cargo_subtype_text:		sw_MET1N_cargo_subtype_text;
+	}
+}
+// End of "MET1N"
+
+
+/*------------------------------------------------------------------------------
+MET2N : 2호선
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MET2N_cost, cargo_subtype) {
+	0:	sw_METRO_cost3;
+	1:	sw_METRO_cost2;
+	2:	sw_METRO_cost1;
+	3:	sw_METRO_cost0;
+	sw_METRO_cost3;
+}
+switch(FEAT_TRAINS, SELF, sw_MET2N_cargo_subtype_text, cargo_subtype) {
+	0:	return string(STR_REFIT_TYPE_S2D_NAME);
+	1:	return string(STR_REFIT_TYPE_S2C_NAME);
+	2:	return string(STR_REFIT_TYPE_S2B_NAME);
+	3:	return string(STR_REFIT_TYPE_S2A_NAME);
+	return string(STR_REFIT_TYPE_S2D_NAME);
+}
+switch(FEAT_TRAINS, SELF, sw_MET2N_wagon_panto, cargo_subtype) {
+	0:	set_S2D_wagon_panto;
+	1:	set_S2C_wagon_panto;
+	2:	set_S2B_wagon_panto;
+	3:	set_S2A_wagon_panto;
+	set_S2D_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_MET2N_wagon, cargo_subtype) {
+	0:	set_S2D_wagon;
+	1:	set_S2C_wagon;
+	2:	set_S2B_wagon;
+	3:	set_S2A_wagon;
+	set_S2D_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET2N_engineH, cargo_subtype) {
+	0:	set_S2D_engineH;
+	1:	set_S2C_engineH;
+	2:	set_S2B_engineH;
+	3:	set_S2A_engineH;
+	set_S2D_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_MET2N_engineT, cargo_subtype) {
+	0:	set_S2D_engineT;
+	1:	set_S2C_engineT;
+	2:	set_S2B_engineT;
+	3:	set_S2A_engineT;
+	set_S2D_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_MET2N_purchase, cargo_subtype) {
+	set_S2D_purchase;
+}
+
+
+// 자유 편성
+switch(FEAT_TRAINS, SELF, sw_MET2N_coach_by_free_center, (position_in_consist + 1) % 3) {
+	0: sw_MET2N_wagon_panto;
+	sw_MET2N_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET2N_coach_by_free_tail, position_in_consist_from_end) {
+	0: sw_MET2N_engineT;
+	sw_MET2N_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_MET2N_coach, position_in_consist) {
+	0: sw_MET2N_engineH;
+	sw_MET2N_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_MET2N, 5012) {
+	property {
+		name:				string(STR_MET2N_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				100 km/h;
+		power:				2000 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(1983, 1, 1);
+		model_life:			21;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_MET2N_coach;
+		purchase:			sw_MET2N_purchase;
+		speed:				sw_MET2N_speed;
+		cost_factor:			sw_MET2N_cost;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+		cargo_subtype_text:		sw_MET2N_cargo_subtype_text;
+	}
+}
+// End of "MET2N"
+
+
+/*------------------------------------------------------------------------------
+MET3N : 3호선
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MET3N_cost, cargo_subtype) {
+	0:	sw_METRO_cost3;
+//	1:	sw_METRO_cost2;
+	2:	sw_METRO_cost1;
+	3:	sw_METRO_cost2;
+	4:	sw_METRO_cost0;
+	sw_METRO_cost3;
+}
+switch(FEAT_TRAINS, SELF, sw_MET3N_cargo_subtype_text, cargo_subtype) {
+	0:	return string(STR_REFIT_TYPE_S3C_NAME);
+	1:	return string(STR_REFIT_TYPE_S3B_NAME);
+	2:	return string(STR_REFIT_TYPE_S3A_NAME);
+	3:	return string(STR_REFIT_TYPE_K3B_NAME);
+	4:	return string(STR_REFIT_TYPE_K3A_NAME);
+	return string(STR_REFIT_TYPE_S3C_NAME);
+}
+switch(FEAT_TRAINS, SELF, sw_MET3N_wagon_panto, cargo_subtype) {
+	0:	set_S3C_wagon_panto;
+//	1:	set_S3B_wagon_panto;
+	2:	set_S3A_wagon_panto;
+	3:	set_K3B_wagon_panto;
+	4:	set_K3A_wagon_panto;
+	set_S3C_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_MET3N_wagon, cargo_subtype) {
+	0:	set_S3C_wagon;
+//	1:	set_S3B_wagon;
+	2:	set_S3A_wagon;
+	3:	set_K3B_wagon;
+	4:	set_K3A_wagon;
+	set_S3C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET3N_engineH, cargo_subtype) {
+	0:	set_S3C_engineH;
+//	1:	set_S3B_engineH;
+	2:	set_S3A_engineH;
+	3:	set_K3B_engineH;
+	4:	set_K3A_engineH;
+	set_S3C_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_MET3N_engineT, cargo_subtype) {
+	0:	set_S3C_engineT;
+//	1:	set_S3B_engineT;
+	2:	set_S3A_engineT;
+	3:	set_K3B_engineT;
+	4:	set_K3A_engineT;
+	set_S3C_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_MET3N_purchase, cargo_subtype) {
+	set_S3C_purchase;
+}
+
+
+// 자유 편성
+switch(FEAT_TRAINS, SELF, sw_MET3N_coach_by_free_center, (position_in_consist + 1) % 3) {
+	0: sw_MET3N_wagon_panto;
+	sw_MET3N_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET3N_coach_by_free_tail, position_in_consist_from_end) {
+	0: sw_MET3N_engineT;
+	sw_MET3N_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_MET3N_coach, position_in_consist) {
+	0: sw_MET3N_engineH;
+	sw_MET3N_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_MET3N, 5013) {
+	property {
+		name:				string(STR_MET3N_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				100 km/h;
+		power:				2000 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(1983, 1, 1);
+		model_life:			21;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_MET3N_coach;
+		purchase:			sw_MET3N_purchase;
+		speed:				sw_MET3N_speed;
+		cost_factor:			sw_MET3N_cost;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+		cargo_subtype_text:		sw_MET3N_cargo_subtype_text;
+	}
+}
+// End of "MET3N"
+
+
+/*------------------------------------------------------------------------------
+MET4N : 4호선
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MET4N_cost, cargo_subtype) {
+	0:	sw_METRO_cost4;
+	1:	sw_METRO_cost3;
+	2:	sw_METRO_cost2;
+	3:	sw_METRO_cost1;
+	4:	sw_METRO_cost0;
+	sw_METRO_cost4;
+}
+switch(FEAT_TRAINS, SELF, sw_MET4N_cargo_subtype_text, cargo_subtype) {
+	0:	return string(STR_REFIT_TYPE_K4D_NAME);
+	1:	return string(STR_REFIT_TYPE_K4C_NAME);
+	2:	return string(STR_REFIT_TYPE_K4B_NAME);
+	3:	return string(STR_REFIT_TYPE_K4A_NAME);
+	4:	return string(STR_REFIT_TYPE_S4A_NAME);
+	return string(STR_REFIT_TYPE_K4D_NAME);
+}
+switch(FEAT_TRAINS, SELF, sw_MET4N_wagon_panto, cargo_subtype) {
+	0:	set_K4D_wagon_panto;
+	1:	set_K4C_wagon_panto;
+	2:	set_K4B_wagon_panto;
+	3:	set_K4A_wagon_panto;
+	4:	set_K3A_wagon_panto;
+	set_K4D_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_MET4N_wagon, cargo_subtype) {
+	0:	set_K4D_wagon;
+	1:	set_K4C_wagon;
+	2:	set_K4B_wagon;
+	3:	set_K4A_wagon;
+	4:	set_K3A_wagon;
+	set_K4D_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET4N_engineH, cargo_subtype) {
+	0:	set_K4D_engineH;
+	1:	set_K4C_engineH;
+	2:	set_K4B_engineH;
+	3:	set_K4A_engineH;
+	4:	set_K3A_engineH;
+	set_K4D_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_MET4N_engineT, cargo_subtype) {
+	0:	set_K4D_engineT;
+	1:	set_K4C_engineT;
+	2:	set_K4B_engineT;
+	3:	set_K4A_engineT;
+	4:	set_K3A_engineT;
+	set_K4D_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_MET4N_purchase, cargo_subtype) {
+	set_K4D_purchase;
+}
+
+
+// 자유 편성
+switch(FEAT_TRAINS, SELF, sw_MET4N_coach_by_free_center, (position_in_consist + 1) % 3) {
+	0: sw_MET4N_wagon_panto;
+	sw_MET4N_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET4N_coach_by_free_tail, position_in_consist_from_end) {
+	0: sw_MET4N_engineT;
+	sw_MET4N_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_MET4N_coach, position_in_consist) {
+	0: sw_MET4N_engineH;
+	sw_MET4N_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_MET4N, 5014) {
+	property {
+		name:				string(STR_MET4N_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				100 km/h;
+		power:				2000 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(1983, 1, 1);
+		model_life:			21;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_MET4N_coach;
+		purchase:			sw_MET4N_purchase;
+		speed:				sw_MET4N_speed;
+		cost_factor:			sw_MET4N_cost;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+		cargo_subtype_text:		sw_MET4N_cargo_subtype_text;
+	}
+}
+// End of "MET4N"
+
+
+/*------------------------------------------------------------------------------
+MET59 : 5~9호선
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_MET59_cost, cargo_subtype) {
+	1..4:	sw_METRO_cost2;
+	5:	sw_METRO_cost4;
+	sw_METRO_cost6;
+}
+switch(FEAT_TRAINS, SELF, sw_MET59_cargo_subtype_text, cargo_subtype) {
+	1:	return string(STR_REFIT_TYPE_S5N_NAME);
+	2:	return string(STR_REFIT_TYPE_S6N_NAME);
+	3:	return string(STR_REFIT_TYPE_S7N_NAME);
+	4:	return string(STR_REFIT_TYPE_S8N_NAME);
+	5:	return string(STR_REFIT_TYPE_S9N_NAME);
+	return string(STR_REFIT_TYPE_SSR_NAME);
+}
+switch(FEAT_TRAINS, SELF, sw_MET59_wagon_panto, cargo_subtype) {
+	1:	set_S5N_wagon_panto;
+	2:	set_S6N_wagon_panto;
+	3:	set_S7N_wagon_panto;
+	4:	set_S8N_wagon_panto;
+	5:	set_S9N_wagon_panto;
+	set_SSR_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_MET59_wagon, cargo_subtype) {
+	1:	set_S5N_wagon;
+	2:	set_S6N_wagon;
+	3:	set_S7N_wagon;
+	4:	set_S8N_wagon;
+	5:	set_S9N_wagon;
+	set_SSR_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET59_engineH, cargo_subtype) {
+	1:	set_S5N_engineH;
+	2:	set_S6N_engineH;
+	3:	set_S7N_engineH;
+	4:	set_S8N_engineH;
+	5:	set_S9N_engineH;
+	set_SSR_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_MET59_engineT, cargo_subtype) {
+	1:	set_S5N_engineT;
+	2:	set_S6N_engineT;
+	3:	set_S7N_engineT;
+	4:	set_S8N_engineT;
+	5:	set_S9N_engineT;
+	set_SSR_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_MET59_purchase, cargo_subtype) {
+	set_SSR_purchase;
+}
+
+
+// 자유 편성
+switch(FEAT_TRAINS, SELF, sw_MET59_coach_by_free_center, (position_in_consist + 1) % 3) {
+	0: sw_MET59_wagon_panto;
+	sw_MET59_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MET59_coach_by_free_tail, position_in_consist_from_end) {
+	0: sw_MET59_engineT;
+	sw_MET59_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_MET59_coach, position_in_consist) {
+	0: sw_MET59_engineH;
+	sw_MET59_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_MET59, 5015) {
+	property {
+		name:				string(STR_MET59_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				100 km/h;
+		power:				2000 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(1995, 1, 1);
+		model_life:			21;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_MET59_coach;
+		purchase:			sw_MET59_purchase;
+		speed:				sw_MET59_speed;
+		cost_factor:			sw_MET59_cost;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+		cargo_subtype_text:		sw_MET59_cargo_subtype_text;
+	}
+}
+// End of "MET59"
+
+
+/*------------------------------------------------------------------------------
+METBN : 분당선
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_METBN_cost, cargo_subtype) {
+	0:	sw_METRO_cost3;
+	1:	sw_METRO_cost2;
+	2:	sw_METRO_cost1;
+	sw_METRO_cost3;
+}
+switch(FEAT_TRAINS, SELF, sw_METBN_cargo_subtype_text, cargo_subtype) {
+	0:	return string(STR_REFIT_TYPE_KBC_NAME);
+	1:	return string(STR_REFIT_TYPE_KBB_NAME);
+	2:	return string(STR_REFIT_TYPE_KBA_NAME);
+	return string(STR_REFIT_TYPE_KBC_NAME);
+}
+switch(FEAT_TRAINS, SELF, sw_METBN_wagon_panto, cargo_subtype) {
+	0:	set_KBC_wagon_panto;
+	1:	set_KBB_wagon_panto;
+	2:	set_KBA_wagon_panto;
+	set_KBC_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_METBN_wagon, cargo_subtype) {
+	0:	set_KBC_wagon;
+	1:	set_KBB_wagon;
+	2:	set_KBA_wagon;
+	set_KBC_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_METBN_engineH, cargo_subtype) {
+	0:	set_KBC_engineH;
+	1:	set_KBB_engineH;
+	2:	set_KBA_engineH;
+	set_KBC_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_METBN_engineT, cargo_subtype) {
+	0:	set_KBC_engineT;
+	1:	set_KBB_engineT;
+	2:	set_KBA_engineT;
+	set_KBC_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_METBN_purchase, cargo_subtype) {
+	set_KBC_purchase;
+}
+
+
+// 자유 편성
+switch(FEAT_TRAINS, SELF, sw_METBN_coach_by_free_center, (position_in_consist + 1) % 3) {
+	0: sw_METBN_wagon_panto;
+	sw_METBN_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_METBN_coach_by_free_tail, position_in_consist_from_end) {
+	0: sw_METBN_engineT;
+	sw_METBN_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_METBN_coach, position_in_consist) {
+	0: sw_METBN_engineH;
+	sw_METBN_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_METBN, 5016) {
+	property {
+		name:				string(STR_METBN_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				100 km/h;
+		power:				2000 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		refittable_cargo_types:		bitmask();
+
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(1993, 1, 1);
+		model_life:			21;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_METBN_coach;
+		purchase:			sw_METBN_purchase;
+		speed:				sw_METBN_speed;
+		cost_factor:			sw_METBN_cost;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+		cargo_subtype_text:		sw_METBN_cargo_subtype_text;
+	}
+}
+// End of "METBN"
+
+
+/*------------------------------------------------------------------------------
+METKC : 경춘선
+------------------------------------------------------------------------------*/
+// 자유 편성 (이 차량은 고정 편성이 없음)
+switch(FEAT_TRAINS, SELF, sw_METKC_coach_by_free_center, (position_in_consist + 1) % 4) {
+	2: set_KKC_wagon_panto;
+	set_KKC_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_METKC_coach_by_free_tail, position_in_consist_from_end) {
+	0: set_KKC_engineT;
+	sw_METKC_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_METKC_coach, position_in_consist) {
+	0: set_KKC_engineH;
+	sw_METKC_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_METKC, 5033) {
+	property {
+		name:				string(STR_METKC_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				100 km/h;
+		power:				2000 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(2010, 12, 21);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		dual_headed:			0;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_METKC_coach;
+		purchase:			set_KKC_purchase;
+		speed:				sw_METKC_speed;
+		cost_factor:			sw_METRO_cost3;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+	}
+}
+// End of "METKC"
+
+
+/*------------------------------------------------------------------------------
+KCITX (경춘선 ITX-청춘)
+------------------------------------------------------------------------------*/
+// 자유 편성
+switch(FEAT_TRAINS, SELF, sw_KCITX_coach_by_free_center, position_in_consist < (num_vehs_in_consist/2) ) {
+	1: set_KCITX_train3;
+	set_KCITX_train6;
+}
+switch(FEAT_TRAINS, SELF, sw_KCITX_coach_by_free_2floors_t, num_vehs_in_consist/2 <= position_in_consist+1 && position_in_consist < num_vehs_in_consist/2+1 ) {
+	1: set_KCITX_train5;
+	sw_KCITX_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_KCITX_coach_by_free_2floors_f, num_vehs_in_consist/2-1 <= position_in_consist && position_in_consist < num_vehs_in_consist/2 ) {
+	1: set_KCITX_train4;
+	sw_KCITX_coach_by_free_2floors_t;
+}
+switch(FEAT_TRAINS, SELF, sw_KCITX_coach_by_free_tail, position_in_vehid_chain_from_end) {
+	0: set_KCITX_train7;
+	sw_KCITX_coach_by_free_2floors_f;
+}
+switch(FEAT_TRAINS, SELF, sw_KCITX_coach, position_in_vehid_chain) {
+	0: set_KCITX_train2;
+	sw_KCITX_coach_by_free_tail;
+}
+switch(FEAT_TRAINS, SELF, sw_KCITX_engine, vehicle_is_reversed) {
+//	1: set_KCITX_train8;
+	set_KCITX_train1;
+}
+
+item(FEAT_TRAINS, ko_train_KCITX, 5034) {
+	property {
+		name:				string(STR_KCITX_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		introduction_date:		date(2012, 1, 1);
+		speed:				180 km/h;
+		power:				3000 hp;
+		weight:				20 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			45;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			20;
+
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		vehicle_life:			30;
+		reliability_decay:		0;
+
+		cost_factor:			5;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		dual_headed:			0;
+		extra_weight_per_wagon:		0 ton;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_KCITX_engine;
+		purchase:			set_KCITX_purchase;
+		speed:				sw_KCITX_speed;
+		cost_factor:			sw_METRO_cost6;
+		running_cost_factor:		sw_KCITX_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+	}
+}
+// End of "KCITX"
+
+/*------------------------------------------------------------------------------
+METAR (공항철도)
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_METAR_speed, cargo_subtype) {
+	0:	return sw_AREXB_speed;
+	1:	return sw_AREXA_speed;
+	return sw_AREXB_speed;
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_cost, cargo_subtype) {
+	0:	return sw_METRO_cost3;
+	1:	return sw_METRO_cost3;
+	return sw_METRO_cost3;
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_cargo_capacity, cargo_subtype) {
+	1:	return 48;
+	return 100;
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_cargo_subtype_text, cargo_subtype) {
+	0:	return string(STR_REFIT_TYPE_ARB_NAME);
+	1:	return string(STR_REFIT_TYPE_ARA_NAME);
+	return string(STR_REFIT_TYPE_ARB_NAME);
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_wagon_panto, cargo_subtype) {
+	0:	set_ARXB_wagon_panto;
+	1:	set_ARXA_wagon_panto;
+	set_ARXB_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_wagon, cargo_subtype) {
+	0:	set_ARXB_wagon;
+	1:	set_ARXA_wagon;
+	set_KBC_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_engineH, cargo_subtype) {
+	0:	set_ARXB_engineH;
+	1:	set_ARXA_engineH;
+	set_ARXB_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_engineT, cargo_subtype) {
+	0:	set_ARXB_engineT;
+	1:	set_ARXA_engineT;
+	set_ARXB_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_purchase, cargo_subtype) {
+	set_ARXB_purchase;
+}
+
+// 자유 편성
+switch(FEAT_TRAINS, SELF, sw_METAR_coach_by_free_center, (position_in_consist + 1) % 6) {
+	2: sw_METAR_wagon_panto;
+	4: sw_METAR_wagon_panto;
+	sw_METAR_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_coach_by_free_tail, position_in_consist_from_end) {
+	0: sw_METAR_engineT;
+	sw_METAR_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_METAR_coach, position_in_consist) {
+	0: sw_METAR_engineH;
+	sw_METAR_coach_by_free_tail;
+}
+
+
+item(FEAT_TRAINS, ko_train_METAR, 5035) {
+	property {
+		name:				string(STR_METAR_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				120 km/h;
+		power:				4400 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			24;
+		vehicle_life:			30;
+
+		introduction_date:		date(2007, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		1;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		dual_headed:			0;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_METAR_coach;
+		purchase:			sw_METAR_purchase;
+		speed:				sw_METAR_speed;
+		cost_factor:			sw_METAR_cost;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+		cargo_subtype_text:		sw_METAR_cargo_subtype_text;
+		cargo_capacity:			sw_METAR_cargo_capacity;
+	}
+}
+// End of "METAR"
+
+/*------------------------------------------------------------------------------
+D000N (신분당선)
+------------------------------------------------------------------------------*/
+// 자유 편성 (이 차량은 고정 편성이 없음)
+switch(FEAT_TRAINS, SELF, sw_D000N_coach_by_free_center, (position_in_consist + 1) % 4) {
+	2: set_D00_wagon_panto;
+	set_D00_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_D000N_coach_by_free_tail, position_in_consist_from_end) {
+	0: set_D00_engineT;
+	sw_D000N_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_D000N_coach, position_in_consist) {
+	0: set_D00_engineH;
+	sw_D000N_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_D000N, 5040) {
+	property {
+		name:				string(STR_D000N_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				100 km/h;
+		power:				2000 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(2011, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		dual_headed:			0;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_D000N_coach;
+		purchase:			set_D00_purchase;
+		speed:				sw_D000N_speed;
+		cost_factor:			sw_METRO_cost4;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+	}
+}
+// End of "D000N"
+
+
+/*------------------------------------------------------------------------------
+ICNM1 (인천 1호선 1x VVVF)
+------------------------------------------------------------------------------*/
+// 자유 편성 (이 차량은 고정 편성이 없음)
+switch(FEAT_TRAINS, SELF, sw_ICNM1_coach_by_free_center, (position_in_consist + 1) % 4) {
+	2: set_ICN1_wagon_panto;
+	3: set_ICN1_wagon_panto;
+	set_ICN1_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_ICNM1_coach_by_free_tail, position_in_consist_from_end) {
+	0: set_ICN1_engineT;
+	sw_ICNM1_coach_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_ICNM1_coach, position_in_consist) {
+	0: set_ICN1_engineH;
+	sw_ICNM1_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_ICNM1, 5042) {
+	property {
+		name:				string(STR_ICNM1_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				100 km/h;
+		power:				2000 kW;
+		weight:				31 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(1999, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		dual_headed:			0;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_ICNM1_coach;
+		purchase:			set_ICN1_purchase;
+		speed:				sw_ICNM1_speed;
+		cost_factor:			sw_METRO_cost2;
+		running_cost_factor:		sw_METRO_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+	}
+}
+// End of "ICNM1"
+
+
+
+
+/*------------------------------------------------------------------------------
+KCDCN
+------------------------------------------------------------------------------*/
+// 자유 편성 (이 차량은 고정 편성이 없음)
+switch(FEAT_TRAINS, SELF, sw_KCDCN_coach_by_free_tail, position_in_consist_from_end) {
+	0: set_CDC_engineT;
+	set_CDC_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_KCDCN_coach, position_in_consist) {
+	0: set_CDC_engineH;
+	sw_KCDCN_coach_by_free_tail;
+}
+
+item(FEAT_TRAINS, ko_train_KCDCN, 5516) {
+	property {
+		name:				string(STR_KCDCN_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			RAIL;
+		speed:				120 km/h;
+		power:				2000 kW;
+		weight:				17 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			100;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			50;
+		vehicle_life:			30;
+
+		introduction_date:		date(2000, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_DIESEL;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_DIESEL;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		dual_headed:			0;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_KCDCN_coach;
+		purchase:			set_CDC_purchase;
+		speed:				sw_KCDCN_speed;
+		cost_factor:			sw_KCDCN_cost;
+		running_cost_factor:		sw_KCDCN_running_cost;
+		can_attach_wagon:		sw_subway_coach_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+	}
+}
+// End of "KCDCN"
+
+
+/*------------------------------------------------------------------------------
+지하철 객차
+------------------------------------------------------------------------------*/
+// SR0 객차 스위치
+switch(FEAT_TRAINS, SELF, sw_METSR_coach, (position_in_consist + 1) % 3) {
+	0: set_SSR_wagon_panto;
+	set_SSR_wagon;
+}
+
+// 연결되어 있는 기관차에 따라 자동 변경되는 스프라이트
+switch(FEAT_TRAINS, PARENT, sw_SUBCW_select, vehicle_type_id) {
+	ko_train_MET1N:	sw_MET1N_coach;
+	ko_train_MET2N:	sw_MET2N_coach;
+	ko_train_MET3N:	sw_MET3N_coach;
+	ko_train_MET4N:	sw_MET4N_coach;
+	ko_train_MET59:	sw_MET59_coach;
+	ko_train_METKC:	sw_METKC_coach;
+	ko_train_KCITX:	sw_KCITX_coach;
+	ko_train_METAR:	sw_METAR_coach;
+	ko_train_METBN:	sw_METBN_coach;
+	ko_train_D000N:	sw_D000N_coach;
+	ko_train_ICNM1:	sw_ICNM1_coach;
+	ko_train_KCDCN:	sw_KCDCN_coach;
+	sw_METSR_coach;
+}
+
+switch(FEAT_TRAINS, PARENT, sw_SUBCW_cargo_subtype_text, vehicle_type_id) {
+	ko_train_MET1N:	sw_MET1N_cargo_subtype_text;
+	ko_train_MET2N:	sw_MET2N_cargo_subtype_text;
+	ko_train_MET3N:	sw_MET3N_cargo_subtype_text;
+	ko_train_MET4N:	sw_MET4N_cargo_subtype_text;
+	ko_train_MET59:	sw_MET59_cargo_subtype_text;
+	ko_train_METKC:	CB_RESULT_NO_TEXT;
+	ko_train_KCITX:	CB_RESULT_NO_TEXT;
+	ko_train_METAR:	sw_METAR_cargo_subtype_text;
+	ko_train_METBN:	sw_METBN_cargo_subtype_text;
+	ko_train_D000N:	CB_RESULT_NO_TEXT;
+	ko_train_ICNM1:	CB_RESULT_NO_TEXT;
+	ko_train_KCDCN:	CB_RESULT_NO_TEXT;
+	return CB_RESULT_NO_TEXT;
+	/*
+	0:	return string(STR_REFIT_TYPE_K1K_NAME);
+	1:	return string(STR_REFIT_TYPE_K1J_NAME);
+	2:	return string(STR_REFIT_TYPE_K1I_NAME);
+	3:	return string(STR_REFIT_TYPE_K1H_NAME);
+	4:	return string(STR_REFIT_TYPE_K1G_NAME);
+	5:	return string(STR_REFIT_TYPE_K1F_NAME);
+	6:	return string(STR_REFIT_TYPE_K1E_NAME);
+	7:	return string(STR_REFIT_TYPE_K1D_NAME);
+	8:	return string(STR_REFIT_TYPE_K1C_NAME);
+	9:	return string(STR_REFIT_TYPE_K1B_NAME);
+	10:	return string(STR_REFIT_TYPE_K1A_NAME);
+	11:	return string(STR_REFIT_TYPE_S1C_NAME);
+	12:	return string(STR_REFIT_TYPE_S1B_NAME);
+	13:	return string(STR_REFIT_TYPE_S1A_NAME);
+	14:	return string(STR_REFIT_TYPE_S2A_NAME);
+	15:	return string(STR_REFIT_TYPE_S2B_NAME);
+	16:	return string(STR_REFIT_TYPE_S2C_NAME);
+	17:	return string(STR_REFIT_TYPE_S2D_NAME);
+	18:	return string(STR_REFIT_TYPE_K3A_NAME);
+	19:	return string(STR_REFIT_TYPE_K3B_NAME);
+	20:	return string(STR_REFIT_TYPE_S3A_NAME);
+	21:	return string(STR_REFIT_TYPE_S3B_NAME);
+	22:	return string(STR_REFIT_TYPE_S3C_NAME);
+	23:	return string(STR_REFIT_TYPE_S4A_NAME);
+	24:	return string(STR_REFIT_TYPE_K4A_NAME);
+	25:	return string(STR_REFIT_TYPE_K4B_NAME);
+	26:	return string(STR_REFIT_TYPE_K4C_NAME);
+	27:	return string(STR_REFIT_TYPE_K4D_NAME);
+	28:	return string(STR_REFIT_TYPE_SSR_NAME);
+	29:	return string(STR_REFIT_TYPE_S5N_NAME);
+	30:	return string(STR_REFIT_TYPE_S6N_NAME);
+	31:	return string(STR_REFIT_TYPE_S7N_NAME);
+	32:	return string(STR_REFIT_TYPE_S8N_NAME);
+	33:	return string(STR_REFIT_TYPE_S9N_NAME);
+	34:	return string(STR_REFIT_TYPE_KBA_NAME);
+	35:	return string(STR_REFIT_TYPE_KBB_NAME);
+	36:	return string(STR_REFIT_TYPE_KBC_NAME);
+	37:	return string(STR_REFIT_TYPE_KCC_NAME);
+	38:	return string(STR_REFIT_TYPE_ITX_NAME);
+	39:	return string(STR_REFIT_TYPE_ARA_NAME);
+	40:	return string(STR_REFIT_TYPE_ARB_NAME);
+	41:	return string(STR_REFIT_TYPE_D00_NAME);
+	42:	return string(STR_REFIT_TYPE_IC1_NAME);
+	return string(STR_REFIT_TYPE_K1K_NAME);
+	*/
+}
+
+// 객차 연결 스위치
+switch(FEAT_TRAINS, PARENT, sw_SUBCW, vehicle_type_id) {
+	ko_train_MET1N..ko_train_SUBCW:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+// 객차 수송량
+switch(FEAT_TRAINS, PARENT, sw_SUBCW_cargo, vehicle_type_id) {
+	ko_train_METAR:	return sw_METAR_cargo_capacity;
+	ko_train_KCITX:	return 45;
+	return 100;
+}
+
+item(FEAT_TRAINS, ko_train_SUBCW, 5991) {
+	property {
+		name:				string(STR_SUBCW_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		loading_speed:			50;
+		cost_factor:			5;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			0;
+
+		power:				0;
+		weight:				15 ton;
+		cargo_capacity:			100;
+	}
+	graphics {
+		default:			sw_SUBCW_select;
+		purchase:			set_SSR_wagon;
+		can_attach_wagon:		sw_SUBCW;
+		cargo_capacity:			sw_SUBCW_cargo;
+		cost_factor:			sw_METRO_cost1;
+		running_cost_factor:		sw_METRO_running_cost;
+		cargo_subtype_text:		sw_SUBCW_cargo_subtype_text;
+	}
+}
+// End of "지하철 객차"
+
+
+
+/*------------------------------------------------------------------------------
+Sort & Disable
+------------------------------------------------------------------------------*/
+// 지하철만 사용할 경우 disable 처리
+if(param[0] == 2) {
+	disable_item(FEAT_TRAINS, 5509, 5518);
+	disable_item(FEAT_TRAINS, 5992, 5997);
+}
+
+// 일반열차만 사용할 경우 disable 처리
+if(param[0] == 1) {
+	disable_item(FEAT_TRAINS, 5011, 5042);
+	disable_item(FEAT_TRAINS, 5991, 5991);
+}
+
+
+// 정렬
+sort(FEAT_TRAINS,	[
+	ko_train_K7000,
+	ko_train_K8000,
+	ko_train_K8100,
+	ko_train_K8200,
+	ko_train_K8500,
+	ko_train_SMEPP,
+	ko_train_KRNRR,
+	ko_train_NRRCW,
+	ko_train_KTX1N,
+	ko_train_KTX2N,
+	ko_train_KTXCW,
+	ko_train_SMECW,
+	ko_train_MGHCW,
+	ko_train_CAFECW,
+	ko_train_TILCW,
+	ko_train_KCDCN,
+
+	ko_train_MET1N,
+	ko_train_MET2N,
+	ko_train_MET3N,
+	ko_train_MET4N,
+	ko_train_MET59,
+	ko_train_METBN,
+	ko_train_METKC,
+	ko_train_KCITX,
+	ko_train_METAR,
+	ko_train_D000N,
+	ko_train_ICNM1,
+	ko_train_SUBCW
+]);
+
+
+
+
+/*------------------------------------------------------------------------------
+
+                         여기부터 경유지 간소화 부분임
+                      Waypoint Simplization Part from here
+
+------------------------------------------------------------------------------*/
+// 매개변수 설정에서 간소화 옵션을 설정한 경우
+if(param[6] > 0) {
+	// 4974(제거함) / 4975(우상) / 4976(제거함) / 4977(좌하)
+	replace simplewaypoint(4974, "../tk_simplewaypoint/gfx/tk_simplewaypoint.png") { [40,  0,    1,    1,    0,    0] }
+	replace simplewaypoint(4975, "../tk_simplewaypoint/gfx/tk_simplewaypoint.png") { [0,   0,   19,   23,  -21,   -4] }
+	replace simplewaypoint(4976, "../tk_simplewaypoint/gfx/tk_simplewaypoint.png") { [40,  0,    1,    1,    0,    0] }
+	replace simplewaypoint(4977, "../tk_simplewaypoint/gfx/tk_simplewaypoint.png") { [20,  0,   19,   23,    4,   -4] }
+}
+
+
+// 임시로 추가한 열차를 사용 불가능하게 만듦
+//disable_item(FEAT_TRAINS, 5998);	// ko_train_GENCW
+disable_item(FEAT_TRAINS, 6001);	// ko_train_FLATC

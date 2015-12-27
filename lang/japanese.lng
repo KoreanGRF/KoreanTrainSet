@@ -1,0 +1,248 @@
+##grflangid 0x39
+
+# GRF name and description
+STR_GRF_NAME					:한국 열차 세트
+STR_GRF_NAME_WITH_VER				:한국 열차 세트 v{VERSION}
+STR_GRF_DESC					:{}{BLACK}한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.{}(최근 업데이트: {RECENT_UPDATED}){}{}{SILVER}+ 제작: 텔크{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
+STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr
+
+# Vehicle's names
+STR_MET1N_NAME					:[KTS] 首都圏1号線, 京義中央線, 水仁線
+STR_MET2N_NAME					:[KTS] 首都圏2号線
+STR_MET3N_NAME					:[KTS] 首都圏3号線
+STR_MET4N_NAME					:[KTS] 首都圏4号線
+STR_MET59_NAME					:[KTS] 首都圏5-9号線
+STR_METBN_NAME					:[KTS] ブンダン線
+STR_METKC_NAME					:[KTS] 京春線 361k
+STR_KCITX_NAME					:[KTS] ITX-靑春 (京春線 368k)
+STR_METAR_NAME					:[KTS] 仁川空港鉄道 (A'REX)
+STR_D000N_NAME					:[KTS] 新ブンダン線
+STR_ICNM1_NAME					:[KTS] 仁川(インチョン)1号線
+STR_BUSAN1_NAME					:[KTS] 釜山(プサン)1号線
+STR_BUSAN2_NAME					:[KTS] 釜山(プサン)2号線
+STR_BUSAN3_NAME					:[KTS] 釜山(プサン)3号線
+STR_BUSAN4_NAME					:[KTS] 釜山(プサン)4号線
+STR_DAEGU1_NAME					:[KTS] 大邱(テグ)1号線
+STR_DAEGU2_NAME					:[KTS] 大邱(テグ)2号線
+STR_DAEGU3_NAME					:[KTS] 大邱(テグ)3号線
+STR_DAEJEON1_NAME				:[KTS] 大田(テジョン)1号線
+STR_DAEJEON2_NAME				:[KTS] 大田(テジョン)2号線
+STR_GWANGJU1_NAME				:[KTS] 光州(クァンジュ)1号線
+STR_SUBCW_NAME					:[KTS] 地下鉄共通客車
+STR_BUSAN4_CW_NAME				:[KTS] 釜山(プサン)4号線客車
+STR_K4400_NAME					:[KTS] 4400号帯ディーゼル機関車
+STR_K7000_NAME					:[KTS] 7000号帯ディーゼル機関車
+STR_K7x00_NAME					:[KTS] 7x00号帯ディーゼル機関車
+STR_K8000_NAME					:[KTS] 8000号帯電気機関車
+STR_K8100_NAME					:[KTS] 8100号帯電気機関車
+STR_K8200_NAME					:[KTS] 8200号帯電気機関車
+STR_K8500_NAME					:[KTS] 8500号帯電気機関車
+STR_CDC_NAME					:[KTS] 通勤形ディーゼル動車(CDC)
+STR_NDC_NAME					:[KTS] 新ディーゼル動車(NDC)
+STR_SMEPP_NAME					:[KTS] セマウル号ディーゼル動車(DHC, PP動車)
+STR_ITXSME_NAME					:[KTS] ITX-セマウル
+STR_NURIRO_NAME					:[KTS] ヌリロ
+STR_KTX1N_NAME					:[KTS] KTX
+STR_KTX2N_NAME					:[KTS] KTX-サンチョン
+STR_KTXCW_NAME					:[KTS] KTX共通客車
+STR_NRRCW_NAME					:[KTS] ヌリロ客車
+STR_SMECW_NAME					:[KTS] セマウル号客車
+STR_MGHCW_NAME					:[KTS] ムグンファ号客車
+STR_CAFECW_NAME					:[KTS] カフェ客車
+STR_TILCW_NAME					:[KTS] トンイル号客車
+STR_CDCCW_NAME					:[KTS] CDC客車
+STR_GENCW_NAME					:[KTS] 發電車
+STR_FLATC_NAME					:[KTS] 評判貨車
+STR_HOPPERC_NAME				:[KTS] ホッパー車
+STR_SMALLCARGO_NAME				:[KTS] 荷物車
+
+# For refit (KTX-Sancheon)
+STR_REFIT_PAINTING_SANCHEON			: (110000호대)
+STR_REFIT_PAINTING_SANCHEON_FIRST		: (110000호대, 특실)
+STR_REFIT_PAINTING_SANCHEON_WINE		: (120000호대)
+STR_REFIT_PAINTING_SANCHEON_WINE_FIRST		: (120000호대, 특실)
+
+# For refit (Mugunghwa)
+STR_REFIT_PAINTING_THESEDAYS			: (현재 도색)
+STR_REFIT_PAINTING_7x00_CARGO			: (화물 도색)
+STR_REFIT_PAINTING_7x00_TIGER			: (초기 철도청 도색: 검정+주황)
+STR_REFIT_PAINTING_7x00_FIRST_KORAIL		: (초기 철도청 도색: 청백)
+STR_REFIT_PAINTING_7x00_OLD_KORAIL		: (구 철도청 도색)
+STR_REFIT_PAINTING_1970_1983			: (도색 A: 1970~1983년)
+STR_REFIT_PAINTING_1984_1984			: (도색 B: 1984~1984년)
+STR_REFIT_PAINTING_1985_1989			: (도색 C: 1985~1989년)
+STR_REFIT_PAINTING_1990_1999			: (도색 D: 1990~1999년)
+STR_REFIT_PAINTING_2000_2002			: (도색 E: 2000~2002년)
+STR_REFIT_PAINTING_HAERANG			: (해랑)
+STR_REFIT_PAINTING_STRAIN_A			: (S-train, 1호기 도색)
+STR_REFIT_PAINTING_STRAIN_B			: (S-train, 2호기 도색)
+STR_REFIT_PAINTING_GTRAIN			: (G-train)
+STR_REFIT_PAINTING_MUGUNGHWA_CAFE		: (일반 무궁화 카페 객차)
+
+# For refit (Saemaeul)
+STR_REFIT_PAINTING_1970s			: (도색 A: 1970년대)
+STR_REFIT_PAINTING_OLD_KORAIL			: (도색 B: 구 철도청)
+STR_REFIT_PAINTING_ITX_SAEMAEUL			: (ITX-새마을)
+STR_REFIT_PAINTING_FORMER_TJ			: (무궁화 격하 구특전)
+STR_REFIT_PAINTING_SAEMAEUL_CAFE		: (일반 새마을 카페 객차)
+
+# For refit (Nuriro)
+STR_REFIT_PAINTING_OTRAIN			: (O-train)
+STR_REFIT_PAINTING_NURIRO_A			: (누리로)
+STR_REFIT_PAINTING_NURIRO_B			: (한류관광열차)
+
+# For refit (CDC)
+STR_REFIT_PAINTING_CDC_GARDEN			: (꽃동산 테마 도색)
+STR_REFIT_PAINTING_CDC_DOLPHINE			: (돌고래 테마 도색)
+STR_REFIT_PAINTING_CDC_SEASIDE			: (바다 관광 열차 도색)
+STR_REFIT_PAINTING_CDC_BAEKJE			: (한국철도 100주년, 백제 왕관 기념 도색)
+STR_REFIT_PAINTING_CDC_OLD_KORAIL		: (구 철도청 도색)
+STR_REFIT_PAINTING_CDC_DMZTRAIN			: (DMZ-train)
+STR_REFIT_PAINTING_CDC_MUGUNGHWA		: (RDC 무궁화호 도색)
+STR_REFIT_PAINTING_CDC_MUGUNGHWA_CAFE		: (RDC 카페 객차)
+STR_REFIT_PAINTING_CDC_GYEONGBUK1		: (경북관광순환테마열차, 구도색)
+STR_REFIT_PAINTING_CDC_GYEONGBUK2		: (경북관광순환테마열차, 신도색)
+
+# For refit (Tours)
+STR_REFIT_PAINTING_VTRAIN			: (V-train)
+
+# For refit (Generate car)
+STR_REFIT_PAINTING_GENCW_DEFAULT		: (일반형)
+STR_REFIT_PAINTING_GENCW_LONG			: (장대형)
+STR_REFIT_PAINTING_GENCW_SME_A			: (장대형 : 새마을 구 도색)
+STR_REFIT_PAINTING_GENCW_SME_B			: (장대형 : 새마을 현재 도색)
+
+# For refit (Etc)
+STR_REFIT_COLOUR_A				: (도색 A)
+STR_REFIT_COLOUR_B				: (도색 B)
+STR_REFIT_COLOUR_C				: (도색 C)
+STR_REFIT_COLOUR_D				: (도색 D)
+STR_REFIT_COLOUR_E				: (도색 E)
+STR_REFIT_COLOUR_F				: (도색 F)
+STR_REFIT_MAIL_CAR				: (우편차)
+STR_REFIT_PASSWAGON_NORMALCAR			: (일반실)
+STR_REFIT_PASSWAGON_FIRSTCAR			: (특실)
+STR_REFIT_IMPOSSIBLE				: (예비 슬롯)
+STR_REFIT_ADDITIONAL_ABLE			:{BLACK}도색/모델 변경: {GREEN}가능
+STR_REFIT_ADDITIONAL_UNABLE			:{BLACK}도색/모델 변경: {ORANGE}불가능
+
+# For refit (Subways)
+STR_REFIT_TYPE_K1A_NAME				: (Korail 1k 초기 저항 / 초기 도색)
+STR_REFIT_TYPE_K1B_NAME				: (Korail 1k 초기 저항 / 구 도색)
+STR_REFIT_TYPE_K1C_NAME				: (Korail 1k 개조 저항 / 초기 도색)
+STR_REFIT_TYPE_K1D_NAME				: (Korail 1k 개조 저항 / 구 도색)
+STR_REFIT_TYPE_K1E_NAME				: (Korail 1k 개조 저항 / 현 도색)
+STR_REFIT_TYPE_K1F_NAME				: (Korail 1k 신조 저항 / 구 도색)
+STR_REFIT_TYPE_K1G_NAME				: (Korail 1k 신조 저항 / 현 도색)
+STR_REFIT_TYPE_K1H_NAME				: (Korail 311k / 초기 도색)
+STR_REFIT_TYPE_K1I_NAME				: (Korail 311k / 현 도색)
+STR_REFIT_TYPE_K1J_NAME				: (Korail 3xxk ST)
+STR_REFIT_TYPE_K1K_NAME				: (Korail 3xxk AL)
+STR_REFIT_TYPE_S1A_NAME				: (SMetro 1k 초기 저항)
+STR_REFIT_TYPE_S1B_NAME				: (SMetro 1k 개조 저항)
+STR_REFIT_TYPE_S1C_NAME				: (SMetro 1k VVVF)
+STR_REFIT_TYPE_S2A_NAME				: (SMetro 2k MELCO)
+STR_REFIT_TYPE_S2B_NAME				: (SMetro 2k Chopper)
+STR_REFIT_TYPE_S2C_NAME				: (SMetro 2k VVVF 1차)
+STR_REFIT_TYPE_S2D_NAME				: (SMetro 2k VVVF 2차)
+STR_REFIT_TYPE_K3A_NAME				: (Korail 3k VVVF / 구 도색)
+STR_REFIT_TYPE_K3B_NAME				: (Korail 3k VVVF / 현 도색)
+STR_REFIT_TYPE_S3A_NAME				: (SMetro 3k Chopper)
+STR_REFIT_TYPE_S3B_NAME				: (SMetro 3k VVVF 1세대 : 미완성)
+STR_REFIT_TYPE_S3C_NAME				: (SMetro 3k VVVF 2세대)
+STR_REFIT_TYPE_S4A_NAME				: (SMetro 4k VVVF)
+STR_REFIT_TYPE_K4A_NAME				: (Korail 341k VVVF 1세대 / 구 도색)
+STR_REFIT_TYPE_K4B_NAME				: (Korail 341k VVVF 2세대 / 구 도색)
+STR_REFIT_TYPE_K4C_NAME				: (Korail 341k VVVF 1세대 / 현 도색)
+STR_REFIT_TYPE_K4D_NAME				: (Korail 341k VVVF 2세대 / 현 도색)
+STR_REFIT_TYPE_SSR_NAME				: (SMRT SR0x VVVF)
+STR_REFIT_TYPE_S5N_NAME				: (SMRT 5k VVVF)
+STR_REFIT_TYPE_S6N_NAME				: (SMRT 6k VVVF)
+STR_REFIT_TYPE_S7N_NAME				: (SMRT 7k VVVF)
+STR_REFIT_TYPE_S8N_NAME				: (SMRT 8k VVVF)
+STR_REFIT_TYPE_S9N_NAME				: (SML9 9k VVVF)
+STR_REFIT_TYPE_KBA_NAME				: (Korail 351k VVVF 1세대)
+STR_REFIT_TYPE_KBB_NAME				: (Korail 351k VVVF 2세대)
+STR_REFIT_TYPE_KBC_NAME				: (Korail 351k VVVF 3세대)
+STR_REFIT_TYPE_KCC_NAME				: (Korail 361k VVVF)
+STR_REFIT_TYPE_ITX_NAME				: (Korail 368k ITX-청춘)
+STR_REFIT_TYPE_ARA_NAME				: (Korail A'REX 1k 직통)
+STR_REFIT_TYPE_ARB_NAME				: (Korail A'REX 2k 일반)
+STR_REFIT_TYPE_D00_NAME				: (신분당선 D000 VVVF)
+STR_REFIT_TYPE_ICM1A_NAME			: (ICTR 인천 1x VVVF 1차)
+STR_REFIT_TYPE_ICM1B_NAME			: (ICTR 인천 1x VVVF 2차)
+
+# Parameters
+STR_PARAM_ADD_TYPE_NAME				:추가할 열차 종류
+STR_PARAM_ADD_TYPE_DESC				:추가할 열차 종류를 선택하십시오. (기본값: 모두)
+STR_PARAM_ADD_TYPE_ALL				:모두
+STR_PARAM_ADD_TYPE_ONLY_TRAIN			:지하철을 제외한 열차만
+STR_PARAM_ADD_TYPE_ONLY_SUBWAY			:지하철만
+STR_PARAM_SPEED_GENERAL_NAME			:일반열차 속력 계수
+STR_PARAM_SPEED_GENERAL_DESC			:일반 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 7x00호대 기관차, 8x00호대 전기 기관차, CDC, 새마을호 DHC(PP), KTX, KTX-산천
+STR_PARAM_SPEED_SUBEXPRESS_NAME			:준고속형 열차 속력 계수
+STR_PARAM_SPEED_SUBEXPRESS_DESC			:준고속형 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 공항철도 1k (직통), 경춘선 ITX-청춘
+STR_PARAM_SPEED_SUBWAY_NAME			:지하철 속력 계수
+STR_PARAM_SPEED_SUBWAY_DESC			:지하철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 일반/준고속형 열차를 제외한 나머지 일반 지하철 차량
+STR_PARAM_SPEED_LIGHTRAIL_NAME			:경전철 속력 계수
+STR_PARAM_SPEED_LIGHTRAIL_DESC			:경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 부산 4호선
+
+STR_PARAM_FACTOR_COST_NAME			:열차 구입비용
+STR_PARAM_FACTOR_COST_DESC			:열차의 구입 가격을 조절할 수 있습니다. 값이 크면 구입 가격이 더 비싸집니다.
+STR_PARAM_FACTOR_RUNNING_COST_NAME		:열차 유지비
+STR_PARAM_FACTOR_RUNNING_COST_DESC		:열차의 유지비를 조절할 수 있습니다. 값이 크면 유지비가 더 많이 나갑니다.
+STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:화물 수송량
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:열차의 화물 수송량을 조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.{}단, 지하철 차량은 이 설정의 영향을 받지 않습니다.{}x2로 설정하면 현실의 수송량과 거의 같아집니다.{}{RED}주의!{WHITE} 이 설정은 새로 만드는 차량부터 적용됩니다.
+STR_PARAM_FACTOR_LOADING_SPEED_NAME		:화물 적재 속도
+STR_PARAM_FACTOR_LOADING_SPEED_DESC		:열차의 화물 적재 속력을 조절할 수 있습니다. 값이 크면 승객이나 화물을 싣는 속력이 빨라집니다.
+
+# Parameters' value
+STR_PARAM_OPT_FACTOR_BY_0			:x0
+STR_PARAM_OPT_FACTOR_BY_1_32			:x1/32
+STR_PARAM_OPT_FACTOR_BY_1_16			:x1/16
+STR_PARAM_OPT_FACTOR_BY_1_8			:x1/8
+STR_PARAM_OPT_FACTOR_BY_1_4			:x1/4
+STR_PARAM_OPT_FACTOR_BY_1_2			:x1/2
+STR_PARAM_OPT_FACTOR_BY_1			:x1 (기본값)
+STR_PARAM_OPT_FACTOR_BY_2			:x2
+STR_PARAM_OPT_FACTOR_BY_4			:x4
+STR_PARAM_OPT_FACTOR_BY_8			:x8
+STR_PARAM_OPT_FACTOR_BY_16			:x16
+STR_PARAM_OPT_FACTOR_BY_32			:x32
+STR_PARAM_OPT_FACTOR_BY_64			:x64
+STR_PARAM_OPT_FACTOR_BY_128			:x128
+STR_PARAM_OPT_FACTOR_BY_256			:x256
+STR_PARAM_OPT_FACTOR_BY_512			:x512
+STR_PARAM_OPT_FACTOR_BY_1024			:x1024
+STR_PARAM_OPT_FACTOR_BY_2048			:x2048
+STR_PARAM_OPT_FACTOR_BY_4096			:x4096
+
+STR_PARAM_SIMPLIZE_WAYPOINT_NAME		:경유지를 간단하게 표시
+STR_PARAM_SIMPLIZE_WAYPOINT_DESC		:경유지 그래픽에서 건물을 제거하여 간단하게 표시합니다.
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME	:기본 기관차 사용 안 함
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC	:한국 열차 세트의 객차를 빠르게 찾을 수 있도록 하기 위해 기본 기관차를 사용하지 않습니다. 모노레일/자기부상열차 차량은 사라지지 않고 (전기)철도 차량만 사용하지 않습니다.
+STR_PARAM_MAX_SPEED_TYPE_NAME			:최고 속력 기준
+STR_PARAM_MAX_SPEED_TYPE_DESC			:열차 최고 속력의 기준을 선택합니다. 설계 속력이 영업 속력보다 다소 빠릅니다. (eg. KTX-1 : 영업 속도=300km/h, 설계 최고 속도=330km/h)
+STR_PARAM_MAX_SPEED_TYPE_OPT_1			:영업 속력
+STR_PARAM_MAX_SPEED_TYPE_OPT_2			:설계 속력
+
+# Error messages
+STR_ERROR_REQUIRES_OPENTTD			:이 NewGRF은 OpenTTD {STRING} 전용입니다!
+STR_ERROR_VERSION				:최소 요구 버전을 충족하지 않습니다!
+STR_ERROR_CANNOT_ATTACH_OTHER			:연결할 수 없는 편성입니다!
+STR_ERROR_NOT_ENOUGH_LENGTH2			:열차 길이가 너무 짧습니다. 최소한 2량 이상을 연결해야 합니다.
+STR_ERROR_NOT_ENOUGH_LENGTH4			:열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다.
+
+STR_TEMP_FLATC_ADDITEXT				:{BLACK}도색/모델 변경: {ORANGE}불가능{}{RED}주의!{BLACK} 이 화차는 임시 버전입니다. 이 화차를 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다.
+
+# Not use
+#STR_PARAM_REAL_FORM_NAME			:열차의 편성 길이를 고정
+#STR_PARAM_REAL_FORM_DESC			:이 옵션을 켜면 열차 1대의 편성 길이를 실제 환경과 똑같이 고정합니다.{}열차가 조금이라도 짧거나 길면 열차가 바르게 표시되지 않습니다.{}서울 9호선, 공항철도, ITX-청춘, KTX 차량 등 편성이 고정되어 있는 차량에만 적용됩니다.
+#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:차량이 오래되면 유지비가 늘어남
+#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_DESC	:차량의 연령이 오래되면 오래될 수록 유지비가 늘어나도록 합니다.
+
+# Buffer Object
+STR_OBJ_BUFFER_KTSR				:[KTS] 선로 종단점
+
+# Light Railway
+STR_KO_LIGHT_RAILWAY_LABEL			:[KTS] 경전철 선로

@@ -1,0 +1,252 @@
+﻿##grflangid 0x04
+
+# GRF name and description
+STR_GRF_NAME					:Set de trenes de Corea
+STR_GRF_NAME_WITH_VER				:Set de trenes de Corea v{VERSION}
+STR_GRF_DESC					:{}{BLACK}El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.{}(Última actualización: {RECENT_UPDATED}){}{}{SILVER}Hecho por: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
+STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=es
+
+# Vehicle's name
+STR_MET1N_NAME					:[KTS] Línea 1, Línea Gyeongui-Jungang, Línea Suin
+STR_MET2N_NAME					:[KTS] Línea 2
+STR_MET3N_NAME					:[KTS] Línea 3
+STR_MET4N_NAME					:[KTS] Línea 4
+STR_MET59_NAME					:[KTS] Línea 5-9
+STR_METBN_NAME					:[KTS] Bundang
+STR_METKC_NAME					:[KTS] Gyeongchun 361k
+STR_KCITX_NAME					:[KTS] ITX-Cheongchun (Gyeongchun 368k)
+STR_METAR_NAME					:[KTS] Ferrocarril del/al aeropuerto Incheon (A'REX)
+STR_D000N_NAME					:[KTS] Línea Sinbundang
+STR_ICNM1_NAME					:[KTS] Incheon Línea 1
+STR_BUSAN1_NAME					:[KTS] Busan Línea 1
+STR_BUSAN2_NAME					:[KTS] Busan Línea 2
+STR_BUSAN3_NAME					:[KTS] Busan Línea 3
+STR_BUSAN4_NAME					:[KTS] Busan Línea 4
+STR_DAEGU1_NAME					:[KTS] Daegu Línea 1
+STR_DAEGU2_NAME					:[KTS] Daegu Línea 2
+STR_DAEGU3_NAME					:[KTS] Daegu Línea 3
+STR_DAEJEON1_NAME				:[KTS] Daejeon Línea 1
+STR_DAEJEON2_NAME				:[KTS] Daejeon Línea 2
+STR_GWANGJU1_NAME				:[KTS] Gwangju Línea 1
+STR_SUBCW_NAME					:[KTS] Metro común - Vagón de pasajeros
+STR_BUSAN4_CW_NAME				:[KTS] Busan Línea 4 Vagón de pasajeros
+STR_K4400_NAME					:[KTS] 4400 Locomotora diésel
+STR_K7000_NAME					:[KTS] 7000 Locomotora diésel
+STR_K7x00_NAME					:[KTS] 7x00 Locomotora diésel
+STR_K8000_NAME					:[KTS] 8000 Locomotora eléctrica
+STR_K8100_NAME					:[KTS] 8100 Locomotora eléctrica
+STR_K8200_NAME					:[KTS] 8200 Locomotora eléctrica
+STR_K8500_NAME					:[KTS] 8500 Locomotora eléctrica
+STR_CDC_NAME					:[KTS] Locomotora de cercanías diésel (CDC)
+STR_NDC_NAME					:[KTS] Nuevo coche diesel (NDC)
+STR_SMEPP_NAME					:[KTS] Saemaeul - Locomotora hidráulica diésel (DHC, PP-car)
+STR_ITXSME_NAME					:[KTS] ITX-Saemaeul
+STR_NURIRO_NAME					:[KTS] Nuriro
+STR_KTX1N_NAME					:[KTS] KTX
+STR_KTX2N_NAME					:[KTS] KTX-Sancheon
+STR_KTXCW_NAME					:[KTS] KTX - Vagón de pasajeros
+STR_NRRCW_NAME					:[KTS] Nuriro - Vagón de pasajeros
+STR_SMECW_NAME					:[KTS] Saemaeul - Vagón de pasajeros
+STR_MGHCW_NAME					:[KTS] Mugunghwa - Vagón de pasajeros
+STR_CAFECW_NAME					:[KTS] Vagón Cafetería
+STR_TILCW_NAME					:[KTS] Tongil - Vagón de pasajeros
+STR_CDCCW_NAME					:[KTS] CDC - Vagón de pasajeros
+STR_GENCW_NAME					:[KTS] Vagón generador
+STR_FLATC_NAME					:[KTS] Vagón plano de carga
+STR_HOPPERC_NAME				:[KTS] Hopper car
+STR_SMALLCARGO_NAME				:[KTS] Furgón de equipaje		#Need translation
+
+# For refit (KTX-Sancheon)
+STR_REFIT_PAINTING_SANCHEON			: (110000)
+STR_REFIT_PAINTING_SANCHEON_FIRST		: (110000, Vagón ejecutivo)
+STR_REFIT_PAINTING_SANCHEON_WINE		: (120000)
+STR_REFIT_PAINTING_SANCHEON_WINE_FIRST		: (120000, Vagón ejecutivo)
+
+# For refit (Mugunghwa)
+STR_REFIT_PAINTING_THESEDAYS			: (Pintura actual)
+STR_REFIT_PAINTING_7x00_CARGO			: (Pintura de carga)
+STR_REFIT_PAINTING_7x00_TIGER			: (1era pintura del Korail: Negro y Naranja)
+STR_REFIT_PAINTING_7x00_FIRST_KORAIL		: (1era pintura del Korail: Azul y Blanco)
+STR_REFIT_PAINTING_7x00_OLD_KORAIL		: (Pintura antigua de Korail)
+STR_REFIT_PAINTING_1970_1983			: (Pintura A: 1970~1983)
+STR_REFIT_PAINTING_1984_1984			: (Pintura B: 1984~1984)
+STR_REFIT_PAINTING_1985_1989			: (Pintura C: 1985~1989)
+STR_REFIT_PAINTING_1990_1999			: (Pintura D: 1990~1999)
+STR_REFIT_PAINTING_2000_2002			: (Pintura E: 2000~2002)
+STR_REFIT_PAINTING_HAERANG			: (Tren crucero 'Haerang')
+STR_REFIT_PAINTING_STRAIN_A			: (S-train, No.1)
+STR_REFIT_PAINTING_STRAIN_B			: (S-train, No.2)
+STR_REFIT_PAINTING_GTRAIN			: (G-train)
+STR_REFIT_PAINTING_MUGUNGHWA_CAFE		: (Vagón cafetería Mugunghwa)
+
+# For refit (Nuriro)
+STR_REFIT_PAINTING_OTRAIN			: (O-tren)
+STR_REFIT_PAINTING_NURIRO_A			: (Nuriro)
+# STR_REFIT_PAINTING_NURIRO_B			: (Korean wave tour wrapping)
+
+# For refit (Saemaeul)
+STR_REFIT_PAINTING_1970s			: (Pintura A: 1970s)
+STR_REFIT_PAINTING_OLD_KORAIL			: (Pintura B: Antiguo Korail)
+STR_REFIT_PAINTING_ITX_SAEMAEUL			: (ITX-Saemaeul)
+# STR_REFIT_PAINTING_FORMER_TJ			: (Demoted to Mugunghwa,  Vagón ejecutivo)
+STR_REFIT_PAINTING_SAEMAEUL_CAFE		: (Vagón cafetería Saemaeul)
+
+# For refit (CDC)
+STR_REFIT_PAINTING_CDC_GARDEN			: (Pintura de Jardín floral)
+STR_REFIT_PAINTING_CDC_DOLPHINE			: (Pintura Dolphine)
+STR_REFIT_PAINTING_CDC_SEASIDE			: (Pintura de tren costero)
+STR_REFIT_PAINTING_CDC_BAEKJE			: (Pintura Baekje, 100 aniversario de Korail)
+STR_REFIT_PAINTING_CDC_OLD_KORAIL		: (Pintura antigua de Korail)
+STR_REFIT_PAINTING_CDC_DMZTRAIN			: (DMZ-train)
+STR_REFIT_PAINTING_CDC_MUGUNGHWA		: (Pintura Mugunghwa RDC)
+STR_REFIT_PAINTING_CDC_MUGUNGHWA_CAFE		: (Vagón cafetería RDC)
+# STR_REFIT_PAINTING_CDC_GYEONGBUK1		: (Gyeongbuk Circular theme tour train, old paintings)
+# STR_REFIT_PAINTING_CDC_GYEONGBUK2		: (Gyeongbuk Circular theme tour train, new paintings)
+
+# For refit (Misc.)
+STR_REFIT_PAINTING_VTRAIN			: (V-train)
+
+# For refit (Generate car)
+STR_REFIT_PAINTING_GENCW_DEFAULT		: (Tipo por defecto)
+STR_REFIT_PAINTING_GENCW_LONG			: (Tipo largo)
+STR_REFIT_PAINTING_GENCW_SME_A			: (Tipo largo : Pintura antigua de Saemaeul)
+STR_REFIT_PAINTING_GENCW_SME_B			: (Tipo largo : Pintura actual de Saemaeul)
+
+# For refit (Etc)
+STR_REFIT_COLOUR_A				: (Pintura A)
+STR_REFIT_COLOUR_B				: (Pintura B)
+STR_REFIT_COLOUR_C				: (Pintura C)
+STR_REFIT_COLOUR_D				: (Pintura D)
+STR_REFIT_COLOUR_E				: (Pintura E)
+STR_REFIT_COLOUR_F				: (Pintura F)
+STR_REFIT_MAIL_CAR				: (Coche correo)
+STR_REFIT_PASSWAGON_NORMALCAR			: (Vagón estándar)
+STR_REFIT_PASSWAGON_FIRSTCAR			: (Vagón ejecutivo)
+# STR_REFIT_IMPOSSIBLE				:
+STR_REFIT_ADDITIONAL_ABLE			:{BLACK}Cambiar Modelo/Pintura: {GREEN}Disponible
+STR_REFIT_ADDITIONAL_UNABLE			:{BLACK}Cambiar Modelo/Pintura: {ORANGE}No disponible
+
+# For refit (Subways)
+STR_REFIT_TYPE_K1A_NAME				: (Korail 1k 1er reóstato / 1a pintura)
+STR_REFIT_TYPE_K1B_NAME				: (Korail 1k 1er reóstato / 2a pintura)
+STR_REFIT_TYPE_K1C_NAME				: (Korail 1k Reóstato modificado / 1a pintura)
+STR_REFIT_TYPE_K1D_NAME				: (Korail 1k Reóstato modificado / 2a pintura)
+STR_REFIT_TYPE_K1E_NAME				: (Korail 1k Reóstato modificado / Pintura actual)
+STR_REFIT_TYPE_K1F_NAME				: (Korail 1k Nuevo reóstato / Pintura antigua)
+STR_REFIT_TYPE_K1G_NAME				: (Korail 1k Nuevo reóstato / Pintura actual)
+STR_REFIT_TYPE_K1H_NAME				: (Korail 311k / Pintura antigua)
+STR_REFIT_TYPE_K1I_NAME				: (Korail 311k / Pintura actual)
+STR_REFIT_TYPE_K1J_NAME				: (Korail 3xxk ST)
+STR_REFIT_TYPE_K1K_NAME				: (Korail 3xxk AL)
+# STR_REFIT_TYPE_GUJA1_NAME			: (Korail Línea Gyeongui-Jungang Bicyle painting)
+# STR_REFIT_TYPE_GUJA1r_NAME			: (Korail Línea Gyeongui-Jungang Bicyle painting / Reverse)
+STR_REFIT_TYPE_S1A_NAME				: (SMetro 1k 1er reóstato)
+STR_REFIT_TYPE_S1B_NAME				: (SMetro 1k Reóstato modificado)
+STR_REFIT_TYPE_S1C_NAME				: (SMetro 1k VVVF)
+STR_REFIT_TYPE_S2A_NAME				: (SMetro 2k MELCO)
+STR_REFIT_TYPE_S2B_NAME				: (SMetro 2k Chopper)
+STR_REFIT_TYPE_S2C_NAME				: (SMetro 2k 1st VVVF)
+STR_REFIT_TYPE_S2D_NAME				: (SMetro 2k 2nd VVVF)
+STR_REFIT_TYPE_K3A_NAME				: (Korail 3k VVVF / Pintura antigua)
+STR_REFIT_TYPE_K3B_NAME				: (Korail 3k VVVF / Pintura actual)
+STR_REFIT_TYPE_S3A_NAME				: (SMetro 3k Chopper)
+STR_REFIT_TYPE_S3B_NAME				: (Inconcluso: SMetro 3k 1st VVVF)
+STR_REFIT_TYPE_S3C_NAME				: (SMetro 3k 2nd VVVF)
+STR_REFIT_TYPE_S4A_NAME				: (SMetro 4k VVVF)
+STR_REFIT_TYPE_K4A_NAME				: (Korail 341k 1st VVVF / Pintura antigua)
+STR_REFIT_TYPE_K4B_NAME				: (Korail 341k 2nd VVVF / Pintura antigua)
+STR_REFIT_TYPE_K4C_NAME				: (Korail 341k 1st VVVF / Pintura actual)
+STR_REFIT_TYPE_K4D_NAME				: (Korail 341k 2nd VVVF / Pintura actual)
+STR_REFIT_TYPE_SSR_NAME				: (SMRT SR0x VVVF)
+STR_REFIT_TYPE_S5N_NAME				: (SMRT 5k VVVF)
+STR_REFIT_TYPE_S6N_NAME				: (SMRT 6k VVVF)
+STR_REFIT_TYPE_S7N_NAME				: (SMRT 7k VVVF)
+STR_REFIT_TYPE_S8N_NAME				: (SMRT 8k VVVF)
+STR_REFIT_TYPE_S9N_NAME				: (SML9 9k VVVF)
+STR_REFIT_TYPE_KBA_NAME				: (Korail 351k 1st VVVF)
+STR_REFIT_TYPE_KBB_NAME				: (Korail 351k 2nd VVVF)
+STR_REFIT_TYPE_KBC_NAME				: (Korail 351k 3rd VVVF)
+STR_REFIT_TYPE_KCC_NAME				: (Korail 361k VVVF)
+STR_REFIT_TYPE_ITX_NAME				: (Korail 368k ITX-Cheongchun)
+STR_REFIT_TYPE_ARA_NAME				: (Korail A'REX 1k Expreso)
+STR_REFIT_TYPE_ARB_NAME				: (Korail A'REX 2k Todo-Paradas)
+STR_REFIT_TYPE_D00_NAME				: (Sinbundang D000 VVVF)
+STR_REFIT_TYPE_ICM1A_NAME			: (ICTR Incheon 1x VVVF primero)
+STR_REFIT_TYPE_ICM1B_NAME			: (ICTR Incheon 1x VVVF segundo)
+
+# Parameters
+STR_PARAM_ADD_TYPE_NAME				:Trenes a añadir:
+STR_PARAM_ADD_TYPE_DESC				:Selecciona los trenes que serán añadidos. (Por defecto: Todos)
+STR_PARAM_ADD_TYPE_ALL				:Todos
+STR_PARAM_ADD_TYPE_ONLY_TRAIN			:Todos los trenes excepto metros
+STR_PARAM_ADD_TYPE_ONLY_SUBWAY			:Solo metros
+STR_PARAM_SPEED_GENERAL_NAME			:Coeficiente de velocidad de los trenes generales
+STR_PARAM_SPEED_GENERAL_DESC			:Coeficiente de velocidad de los trenes generales. La velocidad del tren irá en correlación a la establecida en esta opción.{}10 es igual a la velocidad real del tren.{}Esto se le aplica a: Las locomotoras 7x00, las locomotoras eléctricas 8x00, CDC, Saemaeul DHC(PP), KTX y KTX-Sancheon.
+STR_PARAM_SPEED_SUBEXPRESS_NAME			:Coeficiente de velocidad de los trenes semi-expresos
+STR_PARAM_SPEED_SUBEXPRESS_DESC			:Coeficiente de velocidad de los trenes semi-expresos. La velocidad del tren irá en correlación a la establecida en esta opción.{}10 es igual a la velocidad real del tren.{}Esto se le aplica a: A'REX 1k (Expreso), Gyeongchun ITX-Cheongchun.
+STR_PARAM_SPEED_SUBWAY_NAME			:Coeficiente de velocidad de los metros
+STR_PARAM_SPEED_SUBWAY_DESC			:Coeficiente de velocidad de los metros. La velocidad del tren irá en correlación a la establecida en esta opción.{}10 es igual a la velocidad real del tren.{}Esto se le aplica a: Todos a excepción de los trenes generales y semi-expresos.
+STR_PARAM_SPEED_LIGHTRAIL_NAME			:Coeficiente de velocidad de los Ligero Tren
+STR_PARAM_SPEED_LIGHTRAIL_DESC			:Coeficiente de velocidad de los Ligero Tren. La velocidad del tren irá en correlación a la establecida en esta opción.{}10 es igual a la velocidad real del tren.{}Esto se le aplica a: Busan Line 4
+
+STR_PARAM_FACTOR_COST_NAME			:Precio
+STR_PARAM_FACTOR_COST_DESC			:Precio de los trenes. A mayor valor, más costará comprar los trenes.
+STR_PARAM_FACTOR_RUNNING_COST_NAME		:Coste de funcionamiento
+STR_PARAM_FACTOR_RUNNING_COST_DESC		:Coste de funcionamiento de los trenes. A mayor valor, más caro sera el coste de funcionamiento de los trenes.
+STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:Capacidad de carga
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:Capacidad de carga de los trenes. A mayor valor, mayor capacidad de carga.{}Sin embargo, los metros no se verán afectados por esta opción.{}Es igual a la real si usas la establecida por 'x2'.{}{RED}¡Aviso!{WHITE} No cambies este valor durante el juego.
+STR_PARAM_FACTOR_LOADING_SPEED_NAME		:Velocidad de varga
+STR_PARAM_FACTOR_LOADING_SPEED_DESC		:Velocidad de varga de los trenes. A mayor valor, mayor será la velocidad de carga.
+
+# Parameters' value
+STR_PARAM_OPT_FACTOR_BY_0			:x0
+STR_PARAM_OPT_FACTOR_BY_1_32			:x1/32
+STR_PARAM_OPT_FACTOR_BY_1_16			:x1/16
+STR_PARAM_OPT_FACTOR_BY_1_8			:x1/8
+STR_PARAM_OPT_FACTOR_BY_1_4			:x1/4
+STR_PARAM_OPT_FACTOR_BY_1_2			:x1/2
+STR_PARAM_OPT_FACTOR_BY_1			:x1 (Por defecto)
+STR_PARAM_OPT_FACTOR_BY_2			:x2
+STR_PARAM_OPT_FACTOR_BY_4			:x4
+STR_PARAM_OPT_FACTOR_BY_8			:x8
+STR_PARAM_OPT_FACTOR_BY_16			:x16
+STR_PARAM_OPT_FACTOR_BY_32			:x32
+STR_PARAM_OPT_FACTOR_BY_64			:x64
+STR_PARAM_OPT_FACTOR_BY_128			:x128
+STR_PARAM_OPT_FACTOR_BY_256			:x256
+STR_PARAM_OPT_FACTOR_BY_512			:x512
+STR_PARAM_OPT_FACTOR_BY_1024			:x1024
+STR_PARAM_OPT_FACTOR_BY_2048			:x2048
+STR_PARAM_OPT_FACTOR_BY_4096			:x4096
+
+STR_PARAM_SIMPLIZE_WAYPOINT_NAME		:Simplificar los gráficos de los puntos de ruta
+STR_PARAM_SIMPLIZE_WAYPOINT_DESC		:Simplifica los gráficos de los puntos de ruta eliminando para ello su edificio.
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME	:Desactivar las locomotoras originales
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC	:Desactiva las locomotoras originales para, entre otras cosas, encontrar más rápidamente las proporcionadas por este Set. Tanto Monorraíl como Maglev no se ven afectados por esta opción, solo las locomotoras eléctricas serán desactivadas.
+# STR_PARAM_MAX_SPEED_TYPE_NAME			:최고 속력 기준
+# STR_PARAM_MAX_SPEED_TYPE_DESC			:열차 최고 속력의 기준을 선택합니다. 설계 속도가 영업 속도보다 다소 빠릅니다. (eg. KTX-1 : 영업 속도 = 300km/h, 설계 최고 속도 = 350km/h)
+# STR_PARAM_MAX_SPEED_TYPE_OPT_1		:영업 속도
+# STR_PARAM_MAX_SPEED_TYPE_OPT_2		:설계 속도
+
+# Error messages
+STR_ERROR_REQUIRES_OPENTTD			:Este NewGRF requiere OpenTTD {STRING}!
+STR_ERROR_VERSION				:¡Ninguna versión apropiada está disponible!
+STR_ERROR_CANNOT_ATTACH_OTHER			:¡No se puede conectar con otros vagones!
+STR_ERROR_NOT_ENOUGH_LENGTH2			:Muy corto. Es necesario que, al menos, haya 2 vagones.
+STR_ERROR_NOT_ENOUGH_LENGTH4			:Muy corto. Es necesario que, al menos, haya 4 vagones.
+# STR_PARAM_LIGHTRAIL_SPEED_UP_NAME		:Speed up LRT
+# STR_PARAM_LIGHTRAIL_SPEED_UP_DESC		:Make the speed of Light Rail Trainsits(LRT) faster.
+
+STR_TEMP_FLATC_ADDITEXT				:{BLACK}Cambiar Modelo/Pintura: {ORANGE}No disponible{}{RED}¡Aviso!{BLACK} Este vagón es temporal. Podría haber problemas de desincronización en futuras versiones del Set de trenes de Corea si, finalmente, optas por usar este vagón ahora.
+
+# Not use
+#STR_PARAM_REAL_FORM_NAME			:Formación real de los trenes
+#STR_PARAM_REAL_FORM_DESC			:Ajusta la longitud del tren a su formación real. Si el tres es muy corto o largo, los trenes no serán mostrados correctamente. Esto afecta al Metro de Seúl 9, A'REX, ITX-Cheongchun, KTXs.
+#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:La edad del vehículo afecta a los costes de funcionamiento
+#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_DESC	:A mayor edad del vehículo, mayor es el coste del mismo en funcionamiento.
+
+# Buffer Object
+STR_OBJ_BUFFER_KTSR				:[KTS] Buffers
+
+# Light Railway
+STR_KO_LIGHT_RAILWAY_LABEL			:línea de Tren Ligero
