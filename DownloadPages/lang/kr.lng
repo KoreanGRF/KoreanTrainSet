@@ -1,0 +1,75 @@
+﻿# Language name and code
+lang_name					:한국어
+lang_code					:kr
+
+# NewGRF Informations
+grfname						:한국 열차 세트
+title_introduction				:한국 열차 세트 소개
+detail_comment					:<b>한국 열차 세트</b>는 OpenTTD에 KTX, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 디젤/전기기관차, 일부 관광열차(O-train, V-train, DMZ-train, S-train) 등의 각종 한국 열차를 추가해주는 NewGRF입니다. OpenTTD의 NewGRF 설정창의 매개 변수 설정을 통해 각 등급별 열차의 속력, 구입 가격, 유지비, 수송량, 수송 속도 등을 조절할 수 있으며 'TK 경유지 간소화' 기능을 포함하고 있어서 지저분한 경유지의 그래픽을 간소화시킬 수도 있습니다. 한국 관련 컨텐츠를 제작하실 때 반드시 필요한 NewGRF입니다.
+
+# Vehicle's names
+STR_MET1N_NAME					:[KTS] 1호선, 경의·중앙선
+STR_MET2N_NAME					:[KTS] 2호선
+STR_MET3N_NAME					:[KTS] 3호선
+STR_MET4N_NAME					:[KTS] 4호선
+STR_MET59_NAME					:[KTS] 5-9호선
+STR_METBN_NAME					:[KTS] 분당선
+STR_METKC_NAME					:[KTS] 경춘선 361k
+STR_KCITX_NAME					:[KTS] ITX-청춘 (경춘선 368k)
+STR_METAR_NAME					:[KTS] 인천공항철도 (A'REX)
+STR_D000N_NAME					:[KTS] 신분당선
+STR_ICNM1_NAME					:[KTS] 인천 1호선
+STR_BUSAN1_NAME					:[KTS] 부산 1호선
+STR_BUSAN2_NAME					:[KTS] 부산 2호선
+STR_BUSAN3_NAME					:[KTS] 부산 3호선
+STR_BUSAN4_NAME					:[KTS] 부산 4호선
+STR_DAEGU1_NAME					:[KTS] 대구 1호선
+STR_DAEGU2_NAME					:[KTS] 대구 2호선
+STR_DAEGU3_NAME					:[KTS] 대구 3호선
+STR_DAEJEON1_NAME				:[KTS] 대전 1호선
+STR_DAEJEON2_NAME				:[KTS] 대전 2호선
+STR_GWANGJU1_NAME				:[KTS] 광주 1호선
+STR_SUBCW_NAME					:[KTS] 지하철 공통 객차
+STR_BUSAN4_CW_NAME				:[KTS] 부산 4호선 객차
+STR_K4400_NAME					:[KTS] 4400호대 디젤 기관차
+STR_K7000_NAME					:[KTS] 7000호대 디젤 기관차
+STR_K7x00_NAME					:[KTS] 7x00호대 디젤 기관차
+STR_K8000_NAME					:[KTS] 8000호대 전기 기관차
+STR_K8100_NAME					:[KTS] 8100호대 전기 기관차
+STR_K8200_NAME					:[KTS] 8200호대 전기 기관차
+STR_K8500_NAME					:[KTS] 8500호대 전기 기관차
+STR_CDC_NAME					:[KTS] 통근형 디젤 동차(CDC)
+STR_NDC_NAME					:[KTS] 우등형 디젤 동차(NDC)
+STR_SMEPP_NAME					:[KTS] 새마을호 디젤 동차(DHC, PP동차)
+STR_ITXSME_NAME					:[KTS] ITX-새마을
+STR_KTX1N_NAME					:[KTS] KTX
+STR_KTX2N_NAME					:[KTS] KTX-산천
+STR_KTXCW_NAME					:[KTS] KTX 공통 객차
+STR_NURIRO_NAME					:[KTS] 누리로
+STR_NRRCW_NAME					:[KTS] 누리로 객차
+STR_SMECW_NAME					:[KTS] 새마을호 객차
+STR_MGHCW_NAME					:[KTS] 무궁화호 객차
+STR_CAFECW_NAME					:[KTS] 카페 객차
+STR_TILCW_NAME					:[KTS] 통일호 객차
+STR_CDCCW_NAME					:[KTS] CDC 객차
+STR_GENCW_NAME					:[KTS] 발전차
+STR_FLATC_NAME					:[KTS] 평판화차
+STR_HOPPERC_NAME				:[KTS] 호퍼차
+STR_SMALLCARGO_NAME				:[KTS] 수화물차
+
+# FAQ
+title_how_to_refit				:차량 도색/모델을 변경하는 방법
+refit_comment_00				:한국 열차 세트에는 각 열차를 대표하는 차량만 구매 목록에 나타납니다. 기타 다른 도색이나 모델은 '개조' 기능을 통해 열차를 바꾸어야 합니다.<br />예를 들어, 서울 지하철 5 ~ 9호선 차량은 '[KTS] 5-9호선'으로 통합되어 있어서 '[KTS] 5-9호선'을 구입해서 개조를 통해 각 노선의 차량으로 변경할 수 있습니다.
+refit_comment_01				:도색/모델 변경이 가능한 차량은 위 그림에서 보시듯이 구매 목록의 '도색/모델 변경:' 항목이 <span style=\"color: darkgreen;\"><b>가능</b></span>으로 표시되어 있습니다.<br />그렇지 않은 차량은 도색/모델 변경이 불가능합니다.<br /><br />먼저, 도색 개조가 가능한 차량을 포함하여 열차를 만드십시오.
+refit_comment_02				:그러면 위 그림과 같이 열차 창이 뜹니다. 도색/모델 변경을 하기 위해서 '개조' 버튼(<img src=\"http://telk.kr/ottd/newgrf/ko_train_set/img/faq_refit_--.03.png\" border=\"0\" width=\"19\" height=\"19\" align=\"middle\" alt=\"개조 버튼\" />)을 클릭하십시오.
+refit_comment_03				:개조 창이 뜨면, 도색/모델 변경이 가능한 차량 중에서 원하는 차량을 마우스 드래그로 선택한 다음,<br />하단 목록에서 원하는 도색/모델을 선택하여 [열차 개조] 버튼을 누르면 됩니다.
+title_how_to_make_trains			:각 열차의 조성 방법
+construct_list_01				:KTX, KTX-산천, 새마을호(DHC PP), 누리로, ITX-청춘, 지하철 등
+construct_list_02				:무궁화호, 통일호 등
+construct_list_03				:ITX-새마을
+construct_list_04				:무궁화호 구 특별 전용 객차
+construct_locomotive				:기관차
+construct_locomotive_reverse			:기관차(역방향)
+construct_car					:객차
+construct_saemaeul				:(일반) 새마을호
+construct_need_to_refit				:열차를 모두 조성한 뒤에 도색 변경을 해야합니다.

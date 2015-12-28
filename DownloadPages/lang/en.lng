@@ -1,0 +1,75 @@
+﻿# Language name and code
+lang_name					:English
+lang_code					:en
+
+# NewGRF Informations
+grfname						:Korean Train Set
+title_introduction				:Introduction of Korean Train Set
+detail_comment					:<b>Korean Train Set</b> is an OpenTTD NewGRF that adds South Korea's trains, such as KTX(Korea Train eXpress)'s, ITX(Intercity Train eXpress)'s, Saemaeul, Mugunghwa, Tongil, Nuriro, CDC, subways of Seoul Metropolitan area, some diesel/electric locomotives of Korail, some tourist train such as O-train, V-train, DMZ-train, S-train and so on. It has parameters so that you can change the train's speeds for each class, purchase costs, running costs, capacities or loading speeds. And it also contains 'TK simple waypoint' function so that you can easily make a graphic of waypoint simple by parameter settings. It is the essential NewGRF to make South korean contents.
+
+# Vehicle's names
+STR_MET1N_NAME					:[KTS] Line 1, Gyeongui-Jungang Line
+STR_MET2N_NAME					:[KTS] Line 2
+STR_MET3N_NAME					:[KTS] Line 3
+STR_MET4N_NAME					:[KTS] Line 4
+STR_MET59_NAME					:[KTS] Line 5-9
+STR_METBN_NAME					:[KTS] Bundang
+STR_METKC_NAME					:[KTS] Gyeongchun 361k
+STR_KCITX_NAME					:[KTS] ITX-Cheongchun (Gyeongchun 368k)
+STR_METAR_NAME					:[KTS] Incheon Airport Railroad (A'REX)
+STR_D000N_NAME					:[KTS] Sinbundang Line
+STR_ICNM1_NAME					:[KTS] Incheon Line 1
+STR_BUSAN1_NAME					:[KTS] Busan Line 1
+STR_BUSAN2_NAME					:[KTS] Busan Line 2
+STR_BUSAN3_NAME					:[KTS] Busan Line 3
+STR_BUSAN4_NAME					:[KTS] Busan Line 4
+STR_DAEGU1_NAME					:[KTS] Daegu Line 1
+STR_DAEGU2_NAME					:[KTS] Daegu Line 2
+STR_DAEGU3_NAME					:[KTS] Daegu Line 3
+STR_DAEJEON1_NAME				:[KTS] Daejeon Line 1
+STR_DAEJEON2_NAME				:[KTS] Daejeon Line 2
+STR_GWANGJU1_NAME				:[KTS] Gwangju Line 1
+STR_SUBCW_NAME					:[KTS] Common subway passenger coach
+STR_BUSAN4_CW_NAME				:[KTS] Busan Line 4 passenger car
+STR_K4400_NAME					:[KTS] 4400 Diesel Locomotive
+STR_K7000_NAME					:[KTS] 7000 Diesel Locomotive
+STR_K7x00_NAME					:[KTS] 7x00 Diesel Locomotive
+STR_K8000_NAME					:[KTS] 8000 Electric Locomotive
+STR_K8100_NAME					:[KTS] 8100 Electric Locomotive
+STR_K8200_NAME					:[KTS] 8200 Electric Locomotive
+STR_K8500_NAME					:[KTS] 8500 Electric Locomotive
+STR_CDC_NAME					:[KTS] Commuter Diesel Car(CDC)
+STR_NDC_NAME					:[KTS] New Diesel Car(NDC)
+STR_SMEPP_NAME					:[KTS] Saemaeul Diesel Hydraulic Car (DHC, PP-car)
+STR_ITXSME_NAME					:[KTS] ITX-Saemaeul
+STR_NURIRO_NAME					:[KTS] Nuriro
+STR_KTX1N_NAME					:[KTS] KTX
+STR_KTX2N_NAME					:[KTS] KTX-Sancheon
+STR_KTXCW_NAME					:[KTS] KTX passenger car
+STR_NRRCW_NAME					:[KTS] Nuriro passenger car
+STR_SMECW_NAME					:[KTS] Saemaeul passenger car
+STR_MGHCW_NAME					:[KTS] Mugunghwa passenger car
+STR_CAFECW_NAME					:[KTS] Cafe car
+STR_TILCW_NAME					:[KTS] Tongil passenger car
+STR_CDCCW_NAME					:[KTS] CDC passenger car
+STR_GENCW_NAME					:[KTS] Generator car
+STR_FLATC_NAME					:[KTS] Flat cargo car
+STR_HOPPERC_NAME				:[KTS] Hopper car
+STR_SMALLCARGO_NAME				:[KTS] Luggage van
+
+# FAQ
+title_how_to_refit				:How to change other model/paintings
+refit_comment_00				:Korean Train Set lists only representive models in the purchase list, so you have to use 'refit' feature to change your train into other model or paintings. For instance, the engine of Seoul subway Line No.5 ~ No.9 is combined as '[KTS] Line 5-9', so you need to purchase '[KTS] Line 5-9' to make train of Line 6, 7, 8 or 9.
+refit_comment_01				:You can see 'Changing Models/Paintings:' is <span style=\"color: darkgreen;\"><b>Available</b></span>, if it is able to change models or paintings.<br />Or you cannot change its model/paintings.<br /><br />First, make your train including cars that is able to change model/paintings.
+refit_comment_02				:Then you can see the Vehicle window. You need to click 'Refit' button(<img src=\"http://telk.kr/ottd/newgrf/ko_train_set/img/faq_refit_--.03.png\" border=\"0\" width=\"19\" height=\"19\" align=\"middle\" alt=\"Refit button\" />) to change model/paintings.
+refit_comment_03				:Once you opened the refit window, drag and select changable cars what you want to change,<br />select model/paintings in the below list, and click [Refit train] button.
+title_how_to_make_trains			:How to construct each trains
+construct_list_01				:KTX, KTX-Sancheon, Saemaeul(DHC PP), Nuriro, Subways, etc.
+construct_list_02				:Mugunghwa, Tongil, etc.
+construct_list_03				:ITX-Saemaeul
+construct_list_04				:Demoted to Mugunghwa, former executive car
+construct_locomotive				:Engine
+construct_locomotive_reverse			:Engine(reversed)
+construct_car					:Coach
+construct_saemaeul				:(General) Saemaeul
+construct_need_to_refit				:Need to change model/paintings after building up the train

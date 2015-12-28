@@ -1,0 +1,69 @@
+﻿# Language name and code
+lang_name					:Español
+lang_code					:es
+
+# NewGRF Informations
+grfname						:Set de trenes de Corea
+title_introduction				:Introducción al Set de trenes de Corea
+detail_comment					:<b>El Set de trenes de Corea</b> o <b>Korean Train Set</b> es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos, como KTX (Korea Train eXpress o Tren expreso de Corea), ITX (Intercity Train eXpress o Tren expreso InterCity), Saemaeul, Mugunghwa, Tongil, Nuriro, CDC, el metro metropolitano de Seúl, algunas locomotoras eléctricas de Korail... Por otro lado, tecnicamente, incluye parámetros para cambiar de velocidad, capacidad, precio y costes de funcionamiento del/los tren/es. Y, por supuesto, también se incluye la opción de hacer los puntos de ruta más simples vía parametros (eliminando, para ello, el edificio del punto de ruta).
+
+# Vehicle's names
+STR_MET1N_NAME					:[KTS] Línea 1, Línea Gyeongui-Jungang
+STR_MET2N_NAME					:[KTS] Línea 2
+STR_MET3N_NAME					:[KTS] Línea 3
+STR_MET4N_NAME					:[KTS] Línea 4
+STR_MET59_NAME					:[KTS] Línea 5-9
+STR_METBN_NAME					:[KTS] Bundang
+STR_METKC_NAME					:[KTS] Gyeongchun 361k
+STR_KCITX_NAME					:[KTS] ITX-Cheongchun (Gyeongchun 368k)
+STR_METAR_NAME					:[KTS] Ferrocarril del/al aeropuerto Incheon (A'REX)
+STR_D000N_NAME					:[KTS] Línea Sinbundang
+STR_ICNM1_NAME					:[KTS] Incheon Línea 1
+STR_BUSAN1_NAME					:[KTS] Busan Línea 1
+STR_BUSAN2_NAME					:[KTS] Busan Línea 2
+STR_BUSAN3_NAME					:[KTS] Busan Línea 3
+STR_BUSAN4_NAME					:[KTS] Busan Línea 4
+STR_SUBCW_NAME					:[KTS] Metro común - Vagón de pasajeros
+STR_BUSAN4_CW_NAME				:[KTS] Busan Línea 4 Vagón de pasajeros
+STR_K4400_NAME					:[KTS] 4400 Locomotora diésel
+STR_K7000_NAME					:[KTS] 7000 Locomotora diésel
+STR_K7x00_NAME					:[KTS] 7x00 Locomotora diésel
+STR_K8000_NAME					:[KTS] 8000 Locomotora eléctrica
+STR_K8100_NAME					:[KTS] 8100 Locomotora eléctrica
+STR_K8200_NAME					:[KTS] 8200 Locomotora eléctrica
+STR_K8500_NAME					:[KTS] 8500 Locomotora eléctrica
+STR_CDC_NAME					:[KTS] Locomotora de cercanías diésel (CDC)
+STR_NDC_NAME					:[KTS] Nuevo coche diesel (NDC)
+STR_SMEPP_NAME					:[KTS] Saemaeul - Locomotora hidráulica diésel (DHC, PP-car)
+STR_ITXSME_NAME					:[KTS] ITX-Saemaeul
+STR_NURIRO_NAME					:[KTS] Nuriro
+STR_KTX1N_NAME					:[KTS] KTX
+STR_KTX2N_NAME					:[KTS] KTX-Sancheon
+STR_KTXCW_NAME					:[KTS] KTX - Vagón de pasajeros
+STR_NRRCW_NAME					:[KTS] Nuriro - Vagón de pasajeros
+STR_SMECW_NAME					:[KTS] Saemaeul - Vagón de pasajeros
+STR_MGHCW_NAME					:[KTS] Mugunghwa - Vagón de pasajeros
+STR_CAFECW_NAME					:[KTS] Vagón Cafetería
+STR_TILCW_NAME					:[KTS] Tongil - Vagón de pasajeros
+STR_CDCCW_NAME					:[KTS] CDC - Vagón de pasajeros
+STR_GENCW_NAME					:[KTS] Vagón generador
+STR_FLATC_NAME					:[KTS] Vagón plano de carga
+STR_HOPPERC_NAME				:[KTS] Hopper car
+STR_SMALLCARGO_NAME				:[KTS] Furgón de equipaje
+
+# FAQ
+title_how_to_refit				:Cómo cambiar el modelo/pintura de los vehículos
+refit_comment_00				:El listado del Set de trenes de Corea solo muestra los vehículos que se encuentran en la lista de vehículos disponibles para su compra, de tal modo si lo que quieres es cambiar tu/s tren/es de modelo/pintura deberás de usar la opción de "Reformar". Por ejemplo, la locomotora del Metro de Seúl correspondiente a las líneas No.5 ~ No.9 se combina como '[KTS] Línea 5-9' por lo que necesitarás comprar una de estas para hacer cualesquiera de los trenes correspondientes a las líneas 5 a 9.
+refit_comment_01				:Podrás ver 'Cambiar Modelos/Pinturas:' si está <span style=\"color: darkgreen;\"><b>disponible</b></span>, y si es posible para el tren en cuestión el cambiar de modelo/pintura.<br />O no podrás cambiar nada de lo comentado.<br /><br />Para ello y en 1er lugar, haga que su tren incluya 1 ó más vagones con la posibilidad de cambiar de modelo/pintura.
+refit_comment_02				:Accede, situate en la ventana del vehículo. Tienes que hacer clic en el botón 'Reformar' (<img src=\"http://telk.kr/ottd/newgrf/ko_train_set/img/faq_refit_--.03.png\" border=\"0\" width=\"19\" height=\"19\" align=\"middle\" alt=\"Refit button\" />) para cambiar de modelo/pintura.
+refit_comment_03				:Una vez abierta la ventana de reforma, arrastra y selecciona los vehículos que deseas cambiar, <br />y elige el modelo/pintura en la lista con ello activada para, a continuación, hacer clic en el botón [Reformar tren].
+title_how_to_make_trains			:Cómo construir cada uno de los trenes
+construct_list_01				:KTX, KTX-Sancheon, Saemaeul(DHC PP), Nuriro, Metro/s, etc.
+construct_list_02				:Mugunghwa, Tongil, etc.
+construct_list_03				:ITX-Saemaeul
+# construct_list_04				:
+construct_locomotive				:Locomotora
+construct_locomotive_reverse			:Locomotora (en sentido opuesto)
+construct_car					:Vagón
+construct_saemaeul				:(General) Saemaeul
+construct_need_to_refit				:Es necesario cambiar de modelo/pintura después de la construcción del tren

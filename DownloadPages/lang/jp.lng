@@ -1,0 +1,75 @@
+﻿# Language name and code
+lang_name					:日本語
+lang_code					:jp
+
+# NewGRF Informations
+grfname						:韓国列車セット
+title_introduction				:韓国列車セットの紹介
+detail_comment					:<b>韓国列車セット</b>はOpenTTDにKTX、KTX-山川(サンチョン), ITX-青春(チョンチュン), セマウル号, ムグンファ号、統一(トンイル)号、ヌリロ、CDC（通勤列車）、首都圏の電車、Korailのいろいろな機関車のような韓国の列車を追加してくれるNewGRFです。 OpenTTDのNewGRF設定ウィンドーのパラメータ設定で列車の速度を変更することができ、「TK経由地簡素化」機能が含まれており、パラメータ設定で経由地のグラフィックを簡素化させることもできます。
+
+# Vehicle's names
+STR_MET1N_NAME					:[KTS] 首都圏1号線, 京義中央線, 水仁線
+STR_MET2N_NAME					:[KTS] 首都圏2号線
+STR_MET3N_NAME					:[KTS] 首都圏3号線
+STR_MET4N_NAME					:[KTS] 首都圏4号線
+STR_MET59_NAME					:[KTS] 首都圏5-9号線
+STR_METBN_NAME					:[KTS] ブンダン線
+STR_METKC_NAME					:[KTS] 京春線 361k
+STR_KCITX_NAME					:[KTS] ITX-靑春 (京春線 368k)
+STR_METAR_NAME					:[KTS] 仁川空港鉄道 (A'REX)
+STR_D000N_NAME					:[KTS] 新ブンダン線
+STR_ICNM1_NAME					:[KTS] 仁川(インチョン)1号線
+STR_BUSAN1_NAME					:[KTS] 釜山(プサン)1号線
+STR_BUSAN2_NAME					:[KTS] 釜山(プサン)2号線
+STR_BUSAN3_NAME					:[KTS] 釜山(プサン)3号線
+STR_BUSAN4_NAME					:[KTS] 釜山(プサン)4号線
+STR_DAEGU1_NAME					:[KTS] 大邱(テグ)1号線
+STR_DAEGU2_NAME					:[KTS] 大邱(テグ)2号線
+STR_DAEGU3_NAME					:[KTS] 大邱(テグ)3号線
+STR_DAEJEON1_NAME				:[KTS] 大田(テジョン)1号線
+STR_DAEJEON2_NAME				:[KTS] 大田(テジョン)2号線
+STR_GWANGJU1_NAME				:[KTS] 光州(クァンジュ)1号線
+STR_SUBCW_NAME					:[KTS] 地下鉄共通客車
+STR_BUSAN4_CW_NAME				:[KTS] 釜山(プサン)4号線客車
+STR_K4400_NAME					:[KTS] 4400号帯ディーゼル機関車
+STR_K7000_NAME					:[KTS] 7000号帯ディーゼル機関車
+STR_K7x00_NAME					:[KTS] 7x00号帯ディーゼル機関車
+STR_K8000_NAME					:[KTS] 8000号帯電気機関車
+STR_K8100_NAME					:[KTS] 8100号帯電気機関車
+STR_K8200_NAME					:[KTS] 8200号帯電気機関車
+STR_K8500_NAME					:[KTS] 8500号帯電気機関車
+STR_CDC_NAME					:[KTS] 通勤形ディーゼル動車(CDC)
+STR_NDC_NAME					:[KTS] 新ディーゼル動車(NDC)
+STR_SMEPP_NAME					:[KTS] セマウル号ディーゼル動車(DHC, PP動車)
+STR_ITXSME_NAME					:[KTS] ITX-セマウル
+STR_NURIRO_NAME					:[KTS] ヌリロ
+STR_KTX1N_NAME					:[KTS] KTX
+STR_KTX2N_NAME					:[KTS] KTX-サンチョン
+STR_KTXCW_NAME					:[KTS] KTX共通客車
+STR_NRRCW_NAME					:[KTS] ヌリロ客車
+STR_SMECW_NAME					:[KTS] セマウル号客車
+STR_MGHCW_NAME					:[KTS] ムグンファ号客車
+STR_CAFECW_NAME					:[KTS] カフェ客車
+STR_TILCW_NAME					:[KTS] トンイル号客車
+STR_CDCCW_NAME					:[KTS] CDC客車
+STR_GENCW_NAME					:[KTS] 發電車
+STR_FLATC_NAME					:[KTS] 評判貨車
+STR_HOPPERC_NAME				:[KTS] ホッパー車
+STR_SMALLCARGO_NAME				:[KTS] 荷物車
+
+# FAQ
+title_how_to_refit				:車両塗装/モデルを変更する方法
+refit_comment_00				:韓国列車セットには各の列車を代表する車両だけが購入リストに表示されます。他の車両の塗装やモデルは'改造'機能を通じて列車を変えなければなりません。<br/>例えば、ソウル地下鉄5~9号線車両は'[KTS]5-9号線'に統合されていて'[KTS]5-9号線'を購入して改造を通じて各路線の車両に変更することができます。
+refit_comment_01				:先に、車両の塗装/モデルの変更が可能な車両は上記のイメージのように購入リストの'車両の塗装/モデル変更:'項目が<span style=\"color:darkgreen;\"><b>可能</b></span>と表示されています。<br />そうでない車両は車両の塗装/モデル変更が不可能です。<br /><br />まずは、車両の塗装改造が可能な車両を含めて列車を作ってください。
+refit_comment_02				:それでは上記のイメージのように列車ウィンドウが表示されます。車両の塗装/モデル変更をするために'改造'ボタン(<img src=\"http://telk.kr/ottd/newgrf/ko_train_set/img/faq_refit_--.03.png\" border=\"0\" width=\"19\" height=\"19\" align=\"middle\" alt=\"改造ボタン\" />)をクリックしてください。
+refit_comment_03				:改造ウィンドウが表示されたら、車両の塗装/モデルの変更が可能な車両の中から必要な車両をマウスドラッグで選択した後、<br />下のリストから希望する車両の塗装/モデルを選択して[列車改造]ボタンを押せばいいです。
+title_how_to_make_trains			:各列車の造成方法
+construct_list_01				:KTX、KTX-山川(サンチョン)、セマウル号(DHC PP)、ヌリロ、ITX-青春(チョンチュン)、地下鉄など
+construct_list_02				:ムグンファ号、統一(トンイル)号など
+construct_list_03				:ITX-セマウル
+construct_list_04				:ムグンファ号格下げ旧特室専用
+construct_locomotive				:機関車
+construct_locomotive_reverse			:機関車(逆方向)
+construct_car					:客車
+construct_saemaeul				:(一般)セマウル号
+construct_need_to_refit				:列車の造成を終えた後に車両の塗装変更が必要です。
