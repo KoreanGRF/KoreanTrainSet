@@ -2501,7 +2501,7 @@ item(FEAT_TRAINS, ko_train_KTXCW, 5992) {
 		name:				string(STR_KTXCW_NAME);
 		climates_available:		ALL_CLIMATES;
 
-		introduction_date:		date(1970, 1, 1);
+		introduction_date:		date(2004, 1, 1);
 		model_life:			VEHICLE_NEVER_EXPIRES;
 		reliability_decay:		0;
 		refittable_cargo_classes:	bitmask(CC_PASSENGERS, CC_MAIL);
