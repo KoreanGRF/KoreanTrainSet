@@ -7,18 +7,18 @@
 
 0 * 4 \d4431 
 
-1 * 12333 14 "C" "INFO" 
-"T" "NAME" 04 "Set de trenes de Corea v1.2.51-alpha1" 00 
-"T" "NAME" 39 "Þ한국 열차 세트 v1.2.51-alpha1" 00 
-"T" "NAME" 3A "Þ한국 열차 세트 v1.2.51-alpha1" 00 
-"T" "DESC" 04 "Þ\0D\UE098El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.\0D(Última actualización: 2015/12/26)\0D\0D\UE089Hecho por: TELK\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
-"T" "DESC" 39 "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2015/12/26)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
-"T" "DESC" 3A "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2015/12/26)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
+1 * 12306 14 "C" "INFO" 
+"T" "NAME" 04 "Set de trenes de Corea vr127" 00 
+"T" "NAME" 39 "Þ한국 열차 세트 vr127" 00 
+"T" "NAME" 3A "Þ한국 열차 세트 vr127" 00 
+"T" "DESC" 04 "Þ\0D\UE098El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.\0D(Última actualización: 2016.01.22)\0D\0D\UE089Hecho por: TELK\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
+"T" "DESC" 39 "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2016.01.22)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
+"T" "DESC" 3A "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2016.01.22)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
 "T" "URL_" 7F "http://telk.kr/ottd/newgrf/ko_train_set/?lang=en" 00 
 "T" "URL_" 04 "http://telk.kr/ottd/newgrf/ko_train_set/?lang=es" 00 
 "T" "URL_" 39 "http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr" 00 
 "T" "URL_" 3A "http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr" 00 
-"B" "VRSN" \w4 \dx0000007B 
+"B" "VRSN" \w4 \dx0000007E 
 "B" "MINV" \w4 \dx00000001 
 "B" "NPAR" \w1 0B 
 "C" "PARA" 
@@ -243,7 +243,7 @@
 "B" "BLTR" \w1 "8" 
 00 
 00 
-2 * 343 08 07 "TK\55\55" "Korean Train Set v1.2.51-alpha1" 00 "\0D\98Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.\0D(Updated: 2015/12/26)\0D\0D\89+ Author: TELK\0D\98  - telk5093@gmail.com\0D  - http://telk.kr" 00 
+2 * 334 08 07 "TK\55\55" "Korean Train Set vr127" 00 "\0D\98Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.\0D(Updated: 2016.01.22)\0D\0D\89+ Author: TELK\0D\98  - telk5093@gmail.com\0D  - http://telk.kr" 00 
 3 * 2790 04 00 FF 63 \wxD000 "It's too short. Be more than 4 cars at least." 00 "It's too short. Be more than 2 cars at least." 00 "can't attach with other coaches!" 00 " (Painting thesedays)" 00 " (Past Korail's painting)" 00 " (V-train)" 00 "\98Changing Models/Paintings: \8FAvailable" 00 "\98Changing Models/Paintings: \8EUnable" 00 " (Cargo painting)" 00 " (First Korail's painting: Blue & White)" 00 " (First Korail's painting: Black & Orange)" 00 " (For future use)" 00 " (Rail cruise 'Haerang')" 00 " (S-train, No.1)" 00 " (S-train, No.2)" 00 " (G-train)" 00 " (Painting B: Past Korail)" 00 " (Painting A: 1970s)" 00 " (Demoted to Mugunghwa, former executive car)" 00 " (ITX-Saemaeul)" 00 " (O-train)" 00 " (Nuriro)" 00 " (Korean wave tour wrapping)" 00 " (Flower garden painting)" 00 " (Dolphine painting)" 00 " (Seaside train painting)" 00 " (Korail 100th Anni., Baekje painting)" 00 " (Past Korail's painting)" 00 " (DMZ-train)" 00 " (RDC Mugunghwa painting)" 00 " (Gyeongbuk Circular theme tour train, old paintings)" 00 " (Gyeongbuk Circular theme tour train, new paintings)" 00 " (No.120000)" 00 " (No.110000)" 00 " (Standard car)" 00 " (Executive car)" 00 " (No.110000, First class)" 00 " (No.120000, First class)" 00 "Þ (Painting E: 2000~2002)" 00 "Þ (Painting D: 1990~1999)" 00 "Þ (Painting C: 1985~1989)" 00 "Þ (Painting B: 1984~1984)" 00 "Þ (Painting A: 1970~1983)" 00 " (General Saemaeul cafe car)" 00 " (RDC Cafe car)" 00 " (General Mugunghwa cafe car)" 00 " (Long type : Saemaeul painting thesedays)" 00 " (Long type : Saemaeul old painting)" 00 " (Long type)" 00 " (Default type)" 00 "\98Changing Models/Paintings: \8EUnable\0D\8BWarning!\98 This coach is temporary. It could occur desync problem in the next KTS version if you use this coach right now." 00 " (Painting B)" 00 " (Painting C)" 00 " (Painting A)" 00 " (Painting D)" 00 " (Painting E)" 00 " (Painting F)" 00 " (Mail coach)" 00 " (Korail 3xxk AL)" 00 " (Korail 3xxk ST)" 00 " (Korail 311k / Current painting)" 00 " (Korail 311k / Old painting)" 00 " (Korail 1k New rheostatic / Current painting)" 00 " (Korail 1k New rheostatic / Old painting)" 00 " (Korail 1k Modified rheostatic / Current painting)" 00 " (Korail 1k Modified rheostatic / 2nd painting)" 00 " (Korail 1k Modified rheostatic / 1st painting)" 00 " (Korail 1k First rheostatic / 2nd painting)" 00 " (Korail 1k First rheostatic / 1st painting)" 00 " (SMetro 1k VVVF)" 00 " (SMetro 1k Modified rheostatic)" 00 " (SMetro 1k First rheostatic)" 00 " (SMetro 2k 2nd VVVF)" 00 " (SMetro 2k 1st VVVF)" 00 " (SMetro 2k Chopper)" 00 " (SMetro 2k MELCO)" 00 " (SMetro 3k 2nd VVVF)" 00 " (Unfinished: SMetro 3k 1st VVVF)" 00 " (SMetro 3k Chopper)" 00 " (Korail 3k VVVF / Current painting)" 00 " (Korail 3k VVVF / Old painting)" 00 " (Korail 341k 2nd VVVF / Current painting)" 00 " (Korail 341k 1st VVVF / Current painting)" 00 " (Korail 341k 2nd VVVF / Old painting)" 00 " (Korail 341k 1st VVVF / Old painting)" 00 " (SMetro 4k VVVF)" 00 " (SMRT 5k VVVF)" 00 " (SMRT 6k VVVF)" 00 " (SMRT 7k VVVF)" 00 " (SMRT 8k VVVF)" 00 " (SML9 9k VVVF)" 00 " (SMRT SR0x VVVF)" 00 " (Korail 351k 3rd VVVF)" 00 " (Korail 351k 2nd VVVF)" 00 " (Korail 351k 1st VVVF)" 00 " (Korail A'REX 2k All-stop)" 00 " (Korail A'REX 1k Express)" 00 " (ICTR Incheon 1x VVVF 1st)" 00 " (ICTR Incheon 1x VVVF 2nd)" 00 
 
 4 * 20 04 0F FF 01 \wxD063 "[KTS] Buffers" 00 
@@ -5197,7 +5197,7 @@ FF \wx00BA 	// @action3_55;
 1595 ./gfx/ko_train1.png 70 770 01 23 8 -3 -11 
 1596 ./gfx/ko_train1.png 85 770 01 18 22 -16 -9 
 1597 ./gfx/ko_train1.png 115 770 01 14 32 -18 -10 
-1598 ./gfx/ko_train1.png 165 770 01 16 22 -6 -7 
+1598 ./gfx/ko_train1.png 165 770 01 16 22 -6 -6 
 1599 ./gfx/ko_train1.png 195 770 01 23 8 -3 -11 
 1600 ./gfx/ko_train1.png 210 770 01 16 22 -15 -7 
 1601 ./gfx/ko_train1.png 245 770 01 14 32 -16 -10 
@@ -5809,7 +5809,7 @@ F2 00 \dx000000FF
 
 1788 * 49 00 00 \b18 01 FF \wx1768 
 06 0F 
-2A \dx000AFAA8 
+2A \dx000B2B2A 
 04 FF 
 02 00 
 28 \wx0003 

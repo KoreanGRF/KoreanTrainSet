@@ -2,7 +2,7 @@
 
 # GRF name and description
 STR_GRF_NAME					:Set de trenes de Corea
-STR_GRF_NAME_WITH_VER				:Set de trenes de Corea v{VERSION}
+STR_GRF_NAME_WITH_VER				:Set de trenes de Corea {VERSION}
 STR_GRF_DESC					:{}{BLACK}El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.{}(Última actualización: {RECENT_UPDATED}){}{}{SILVER}Hecho por: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
 STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=es
 
