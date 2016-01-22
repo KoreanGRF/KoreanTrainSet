@@ -2,7 +2,7 @@
 
 # GRF name and description
 STR_GRF_NAME					:Korean Train Set
-STR_GRF_NAME_WITH_VER				:Korean Train Set v{VERSION}
+STR_GRF_NAME_WITH_VER				:Korean Train Set {VERSION}
 STR_GRF_DESC					:{}{BLACK}Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.{}(Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
 STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=en
 
