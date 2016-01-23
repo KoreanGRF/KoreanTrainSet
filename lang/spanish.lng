@@ -2,7 +2,7 @@
 
 # GRF name and description
 STR_GRF_NAME					:Set de trenes de Corea
-STR_GRF_NAME_WITH_VER				:Set de trenes de Corea v{VERSION}
+STR_GRF_NAME_WITH_VER				:Set de trenes de Corea {VERSION}
 STR_GRF_DESC					:{}{BLACK}El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.{}(Última actualización: {RECENT_UPDATED}){}{}{SILVER}Hecho por: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
 STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=es
 
@@ -194,7 +194,7 @@ STR_PARAM_FACTOR_COST_DESC			:Precio de los trenes. A mayor valor, más costará
 STR_PARAM_FACTOR_RUNNING_COST_NAME		:Coste de funcionamiento
 STR_PARAM_FACTOR_RUNNING_COST_DESC		:Coste de funcionamiento de los trenes. A mayor valor, más caro sera el coste de funcionamiento de los trenes.
 STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:Capacidad de carga
-STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:Capacidad de carga de los trenes. A mayor valor, mayor capacidad de carga.{}Sin embargo, los metros no se verán afectados por esta opción.{}Es igual a la real si usas la establecida por 'x2'.{}{RED}¡Aviso!{WHITE} No cambies este valor durante el juego.
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:Capacidad de carga de los trenes. A mayor valor, mayor capacidad de carga.{}Es igual a la real si usas la establecida por 'x2'.{}{RED}¡Aviso!{WHITE} No cambies este valor durante el juego.
 STR_PARAM_FACTOR_LOADING_SPEED_NAME		:Velocidad de varga
 STR_PARAM_FACTOR_LOADING_SPEED_DESC		:Velocidad de varga de los trenes. A mayor valor, mayor será la velocidad de carga.
 

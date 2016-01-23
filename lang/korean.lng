@@ -2,7 +2,7 @@
 
 # GRF name and description
 STR_GRF_NAME					:한국 열차 세트
-STR_GRF_NAME_WITH_VER				:한국 열차 세트 v{VERSION}
+STR_GRF_NAME_WITH_VER				:한국 열차 세트 {VERSION}
 STR_GRF_DESC					:{}{BLACK}한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.{}(최근 업데이트: {RECENT_UPDATED}){}{}{SILVER}+ 제작: 텔크{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
 STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr
 
@@ -192,7 +192,7 @@ STR_PARAM_FACTOR_COST_DESC			:열차의 구입 가격을 조절할 수 있습니
 STR_PARAM_FACTOR_RUNNING_COST_NAME		:열차 유지비
 STR_PARAM_FACTOR_RUNNING_COST_DESC		:열차의 유지비를 조절할 수 있습니다. 값이 크면 유지비가 더 많이 나갑니다.
 STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:화물 수송량
-STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:열차의 화물 수송량을 조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.{}단, 지하철 차량은 이 설정의 영향을 받지 않습니다.{}x2로 설정하면 현실의 수송량과 거의 같아집니다.{}{RED}주의!{WHITE} 이 설정은 새로 만드는 차량부터 적용됩니다.
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:열차의 화물 수송량을 조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.{}x2로 설정하면 현실의 수송량과 거의 같아집니다.{}{RED}주의!{WHITE} 이 설정은 새로 만드는 차량부터 적용됩니다.
 STR_PARAM_FACTOR_LOADING_SPEED_NAME		:화물 적재 속도
 STR_PARAM_FACTOR_LOADING_SPEED_DESC		:열차의 화물 적재 속력을 조절할 수 있습니다. 값이 크면 승객이나 화물을 싣는 속력이 빨라집니다.
 
