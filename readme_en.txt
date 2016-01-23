@@ -27,7 +27,7 @@ ITX-Cheongchun, ITX-Saemaeul and so on.
 
 
 Korean Train Set adds vehicles such as below:
-  - Seoul metropolitan subway Line 1 (Korail 1k Rheostatic, 3xxk VVVF, SeoulMetro 1k Rheostatic, Gyeongui-Jungang Bycicle Paintings)
+  - Seoul metropolitan subway Line 1 (Korail 1k Rheostatic, 3xxk VVVF, SeoulMetro 1k Rheostatic)
   - Seoul metropolitan subway Line 2 (SeoulMetro 2k MELCO, Chopper, VVVF 1st/2nd)
   - Seoul metropolitan subway Line 3 (Korail 3k VVVF, SeoulMetro 3k Chopper, VVVF)
   - Seoul metropolitan subway Line 4 (Korail 4k VVVF, 341k VVVF 1st/2nd)

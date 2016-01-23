@@ -7,44 +7,44 @@
 
 0 * 4 \d4431 
 
-1 * 12306 14 "C" "INFO" 
-"T" "NAME" 04 "Set de trenes de Corea vr127" 00 
-"T" "NAME" 39 "Þ한국 열차 세트 vr127" 00 
-"T" "NAME" 3A "Þ한국 열차 세트 vr127" 00 
-"T" "DESC" 04 "Þ\0D\UE098El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.\0D(Última actualización: 2016.01.22)\0D\0D\UE089Hecho por: TELK\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
-"T" "DESC" 39 "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2016.01.22)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
-"T" "DESC" 3A "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2016.01.22)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
+1 * 12542 14 "C" "INFO" 
+"T" "NAME" 04 "Set de trenes de Corea 1.2.51" 00 
+"T" "NAME" 39 "Þ韓国列車セット 1.2.51" 00 
+"T" "NAME" 3A "Þ한국 열차 세트 1.2.51" 00 
+"T" "DESC" 04 "Þ\0D\UE098El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.\0D(Última actualización: 2016.01.23)\0D\0D\UE089Hecho por: TELK\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
+"T" "DESC" 39 "Þ\0D\UE098韓国列車セットはOpenTTDにKTX、KTX-山川（サンチョン）、ITX-青春（チョンチュン）、セマウル号、ムグンファ号、ヌリロ、 CDC(通勤列車)、首都圏のちかてつ、Korailの機関車とかいろいろな韓国の列車を追加してくれます。\0D(最近アップデート: 2016.01.23)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
+"T" "DESC" 3A "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2016.01.23)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
 "T" "URL_" 7F "http://telk.kr/ottd/newgrf/ko_train_set/?lang=en" 00 
 "T" "URL_" 04 "http://telk.kr/ottd/newgrf/ko_train_set/?lang=es" 00 
-"T" "URL_" 39 "http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr" 00 
+"T" "URL_" 39 "http://telk.kr/ottd/newgrf/ko_train_set/?lang=jp" 00 
 "T" "URL_" 3A "http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr" 00 
-"B" "VRSN" \w4 \dx0000007E 
+"B" "VRSN" \w4 \dx0000007F 
 "B" "MINV" \w4 \dx00000001 
 "B" "NPAR" \w1 0B 
 "C" "PARA" 
 "C" \d0 
 "T" "NAME" 7F "Train to add:" 00 
 "T" "NAME" 04 "ÞTrenes a añadir:" 00 
-"T" "NAME" 39 "Þ추가할 열차 종류" 00 
+"T" "NAME" 39 "Þ追加したい列車の種類" 00 
 "T" "NAME" 3A "Þ추가할 열차 종류" 00 
 "T" "DESC" 7F "Select the train to add. (Default: All)" 00 
 "T" "DESC" 04 "ÞSelecciona los trenes que serán añadidos. (Por defecto: Todos)" 00 
-"T" "DESC" 39 "Þ추가할 열차 종류를 선택하십시오. (기본값: 모두)" 00 
+"T" "DESC" 39 "Þ追加したい列車の種類を選んでください. (デフォルト値: 全て)" 00 
 "T" "DESC" 3A "Þ추가할 열차 종류를 선택하십시오. (기본값: 모두)" 00 
 "B" "MASK" \w1 00 
 "B" "LIMI" \w8 \d0 \d2 
 "C" "VALU" 
 "T" \d0 7F "All" 00 
 "T" \d0 04 "Todos" 00 
-"T" \d0 39 "Þ모두" 00 
+"T" \d0 39 "Þ全て" 00 
 "T" \d0 3A "Þ모두" 00 
 "T" \d1 7F "Trains except subways" 00 
 "T" \d1 04 "Todos los trenes excepto metros" 00 
-"T" \d1 39 "Þ지하철을 제외한 열차만" 00 
+"T" \d1 39 "Þ地下鉄を覗いた列車だけ" 00 
 "T" \d1 3A "Þ지하철을 제외한 열차만" 00 
 "T" \d2 7F "Only subways" 00 
 "T" \d2 04 "Solo metros" 00 
-"T" \d2 39 "Þ지하철만" 00 
+"T" \d2 39 "Þ地下鉄だけ" 00 
 "T" \d2 3A "Þ지하철만" 00 
 00 
 "B" "DFLT" \w4 \dx00000000 
@@ -52,11 +52,11 @@
 "C" \d1 
 "T" "NAME" 7F "Speed coefficient of General trains" 00 
 "T" "NAME" 04 "Coeficiente de velocidad de los trenes generales" 00 
-"T" "NAME" 39 "Þ일반열차 속력 계수" 00 
+"T" "NAME" 39 "Þ一般列車の速力係数" 00 
 "T" "NAME" 3A "Þ일반열차 속력 계수" 00 
 "T" "DESC" 7F "Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.\0DSet this value as 10 if you want to apply the real speed.\0DApply: 7x00 Locomotives, 8x00 Electric Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon" 00 
 "T" "DESC" 04 "ÞCoeficiente de velocidad de los trenes generales. La velocidad del tren irá en correlación a la establecida en esta opción.\0D10 es igual a la velocidad real del tren.\0DEsto se le aplica a: Las locomotoras 7x00, las locomotoras eléctricas 8x00, CDC, Saemaeul DHC(PP), KTX y KTX-Sancheon." 00 
-"T" "DESC" 39 "Þ일반 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.\0D실제 속력을 사용하시려면 값을 10으로 설정하십시오.\0D적용 대상: 7x00호대 기관차, 8x00호대 전기 기관차, CDC, 새마을호 DHC(PP), KTX, KTX-산천" 00 
+"T" "DESC" 39 "Þ一般列車の速力を調節できます。 値が大きいと、速力がもっと速くなります。\0D実際の速力をお使いいただくには値を10に設定してください。\0Dの適用対象: 7x00号帯 기관차, 8x00号帯 전기 기관차, CDC, 새마을호 DHC(PP), KTX, KTX-산천" 00 
 "T" "DESC" 3A "Þ일반 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.\0D실제 속력을 사용하시려면 값을 10으로 설정하십시오.\0D적용 대상: 7x00호대 기관차, 8x00호대 전기 기관차, CDC, 새마을호 DHC(PP), KTX, KTX-산천" 00 
 "B" "MASK" \w1 01 
 "B" "LIMI" \w8 \d1 \d100 
@@ -65,11 +65,11 @@
 "C" \d2 
 "T" "NAME" 7F "Speed coefficient of Semi-express trains" 00 
 "T" "NAME" 04 "Coeficiente de velocidad de los trenes semi-expresos" 00 
-"T" "NAME" 39 "Þ준고속형 열차 속력 계수" 00 
+"T" "NAME" 39 "Þ準高速型列車の速力係数" 00 
 "T" "NAME" 3A "Þ준고속형 열차 속력 계수" 00 
 "T" "DESC" 7F "Speed coefficient of semi-express trains. Train's speed will be faster when you set this option as larger value.\0DSet this value as 10 if you want to apply the real speed.\0DApply: A'REX 1k (Express), Gyeongchun ITX-Cheongchun" 00 
 "T" "DESC" 04 "ÞCoeficiente de velocidad de los trenes semi-expresos. La velocidad del tren irá en correlación a la establecida en esta opción.\0D10 es igual a la velocidad real del tren.\0DEsto se le aplica a: A'REX 1k (Expreso), Gyeongchun ITX-Cheongchun." 00 
-"T" "DESC" 39 "Þ준고속형 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.\0D실제 속력을 사용하시려면 값을 10으로 설정하십시오.\0D적용 대상: 공항철도 1k (직통), 경춘선 ITX-청춘" 00 
+"T" "DESC" 39 "Þ準高速型列車の速力を調節できます。 値が大きいと、速力がもっと速くなります。\0D実際の速力をお使いいただくには値を10に設定してください。\0Dの適用対象: 공항철도 1k (직통), 경춘선 ITX-청춘" 00 
 "T" "DESC" 3A "Þ준고속형 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.\0D실제 속력을 사용하시려면 값을 10으로 설정하십시오.\0D적용 대상: 공항철도 1k (직통), 경춘선 ITX-청춘" 00 
 "B" "MASK" \w1 02 
 "B" "LIMI" \w8 \d1 \d100 
@@ -78,11 +78,11 @@
 "C" \d3 
 "T" "NAME" 7F "Speed coefficient of Subways" 00 
 "T" "NAME" 04 "Coeficiente de velocidad de los metros" 00 
-"T" "NAME" 39 "Þ지하철 속력 계수" 00 
+"T" "NAME" 39 "Þ地下鉄の速力係数" 00 
 "T" "NAME" 3A "Þ지하철 속력 계수" 00 
 "T" "DESC" 7F "Speed coefficient of subway trains. Train's speed will be faster when you set this option as larger value.\0DSet this value as 10 if you want to apply the real speed.\0DApply: Except for general and semi-express trains" 00 
 "T" "DESC" 04 "ÞCoeficiente de velocidad de los metros. La velocidad del tren irá en correlación a la establecida en esta opción.\0D10 es igual a la velocidad real del tren.\0DEsto se le aplica a: Todos a excepción de los trenes generales y semi-expresos." 00 
-"T" "DESC" 39 "Þ지하철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.\0D실제 속력을 사용하시려면 값을 10으로 설정하십시오.\0D적용 대상: 일반/준고속형 열차를 제외한 나머지 일반 지하철 차량" 00 
+"T" "DESC" 39 "Þ地下鉄の速力を調節できます。 値が大きいと、速力がもっと速くなります。\0D実際の速力をお使いいただくには値を10に設定してください。\0Dの適用対象: 一般/準高速型 列車를 제외한 나머지 一般 地下鉄 차량" 00 
 "T" "DESC" 3A "Þ지하철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.\0D실제 속력을 사용하시려면 값을 10으로 설정하십시오.\0D적용 대상: 일반/준고속형 열차를 제외한 나머지 일반 지하철 차량" 00 
 "B" "MASK" \w1 03 
 "B" "LIMI" \w8 \d1 \d100 
@@ -91,11 +91,11 @@
 "C" \d4 
 "T" "NAME" 7F "Speed coefficient of Light Railways" 00 
 "T" "NAME" 04 "Coeficiente de velocidad de los Ligero Tren" 00 
-"T" "NAME" 39 "Þ경전철 속력 계수" 00 
+"T" "NAME" 39 "Þ軽電鉄の速力係数" 00 
 "T" "NAME" 3A "Þ경전철 속력 계수" 00 
 "T" "DESC" 7F "Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.\0DSet this value as 10 if you want to apply the real speed.\0DApply: Busan Line 4" 00 
 "T" "DESC" 04 "ÞCoeficiente de velocidad de los Ligero Tren. La velocidad del tren irá en correlación a la establecida en esta opción.\0D10 es igual a la velocidad real del tren.\0DEsto se le aplica a: Busan Line 4" 00 
-"T" "DESC" 39 "Þ경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.\0D실제 속력을 사용하시려면 값을 10으로 설정하십시오.\0D적용 대상: 부산 4호선" 00 
+"T" "DESC" 39 "Þ軽電鉄の速力を調節できます。 値が大きいと、速力がもっと速くなります。\0D実際の速力をお使いいただくには値を10に設定してください。\0Dの適用対象: 釜山(プサン)4号線" 00 
 "T" "DESC" 3A "Þ경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.\0D실제 속력을 사용하시려면 값을 10으로 설정하십시오.\0D적용 대상: 부산 4호선" 00 
 "B" "MASK" \w1 04 
 "B" "LIMI" \w8 \d1 \d30 
@@ -104,11 +104,11 @@
 "C" \d5 
 "T" "NAME" 7F "Cost" 00 
 "T" "NAME" 04 "Precio" 00 
-"T" "NAME" 39 "Þ열차 구입비용" 00 
+"T" "NAME" 39 "Þ列車 구입비용" 00 
 "T" "NAME" 3A "Þ열차 구입비용" 00 
 "T" "DESC" 7F "Cost of trains. The higher this value, the more expensive cost to buy trains." 00 
 "T" "DESC" 04 "ÞPrecio de los trenes. A mayor valor, más costará comprar los trenes." 00 
-"T" "DESC" 39 "Þ열차의 구입 가격을 조절할 수 있습니다. 값이 크면 구입 가격이 더 비싸집니다." 00 
+"T" "DESC" 39 "Þ列車의 구입 가격을 조절할 수 있습니다. 값이 크면 구입 가격이 더 비싸집니다." 00 
 "T" "DESC" 3A "Þ열차의 구입 가격을 조절할 수 있습니다. 값이 크면 구입 가격이 더 비싸집니다." 00 
 "B" "MASK" \w1 06 
 "B" "LIMI" \w8 \d0 \d10 
@@ -118,7 +118,7 @@
 "T" \d2 7F "x1/2" 00 
 "T" \d3 7F "x1 (Default)" 00 
 "T" \d3 04 "x1 (Por defecto)" 00 
-"T" \d3 39 "Þx1 (기본값)" 00 
+"T" \d3 39 "Þx1 (デフォルト値)" 00 
 "T" \d3 3A "Þx1 (기본값)" 00 
 "T" \d4 7F "x2" 00 
 "T" \d5 7F "x4" 00 
@@ -133,11 +133,11 @@
 "C" \d6 
 "T" "NAME" 7F "Running cost" 00 
 "T" "NAME" 04 "Coste de funcionamiento" 00 
-"T" "NAME" 39 "Þ열차 유지비" 00 
+"T" "NAME" 39 "Þ列車 유지비" 00 
 "T" "NAME" 3A "Þ열차 유지비" 00 
 "T" "DESC" 7F "Running cost of trains. The higher this value, the more expensive cost to running trains." 00 
 "T" "DESC" 04 "ÞCoste de funcionamiento de los trenes. A mayor valor, más caro sera el coste de funcionamiento de los trenes." 00 
-"T" "DESC" 39 "Þ열차의 유지비를 조절할 수 있습니다. 값이 크면 유지비가 더 많이 나갑니다." 00 
+"T" "DESC" 39 "Þ列車의 유지비를 조절할 수 있습니다. 값이 크면 유지비가 더 많이 나갑니다." 00 
 "T" "DESC" 3A "Þ열차의 유지비를 조절할 수 있습니다. 값이 크면 유지비가 더 많이 나갑니다." 00 
 "B" "MASK" \w1 07 
 "B" "LIMI" \w8 \d0 \d12 
@@ -149,7 +149,7 @@
 "T" \d4 7F "x1/2" 00 
 "T" \d5 7F "x1 (Default)" 00 
 "T" \d5 04 "x1 (Por defecto)" 00 
-"T" \d5 39 "Þx1 (기본값)" 00 
+"T" \d5 39 "Þx1 (デフォルト値)" 00 
 "T" \d5 3A "Þx1 (기본값)" 00 
 "T" \d6 7F "x2" 00 
 "T" \d7 7F "x4" 00 
@@ -168,14 +168,14 @@
 "T" "NAME" 3A "Þ화물 수송량" 00 
 "T" "DESC" 7F "Cargo capacity of trains. The higher this value, the more cargo can be delivered.\0DHowever, subways are not affected by this option.\0DIt is the same as real if you set this by 'x2'.\0D\8BWarning!\94 This setting will be applied from newly created trains." 00 
 "T" "DESC" 04 "ÞCapacidad de carga de los trenes. A mayor valor, mayor capacidad de carga.\0DSin embargo, los metros no se verán afectados por esta opción.\0DEs igual a la real si usas la establecida por 'x2'.\0D\UE08B¡Aviso!\UE094 No cambies este valor durante el juego." 00 
-"T" "DESC" 39 "Þ열차의 화물 수송량을 조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.\0D단, 지하철 차량은 이 설정의 영향을 받지 않습니다.\0Dx2로 설정하면 현실의 수송량과 거의 같아집니다.\0D\UE08B주의!\UE094 이 설정은 새로 만드는 차량부터 적용됩니다." 00 
+"T" "DESC" 39 "Þ列車의 화물 수송량을 조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.\0D단, 地下鉄 차량은 이 설정의 영향을 받지 않습니다.\0Dx2로 설정하면 현실의 수송량과 거의 같아집니다.\0D\UE08B주의!\UE094 이 설정은 새로 만드는 차량부터 적용됩니다." 00 
 "T" "DESC" 3A "Þ열차의 화물 수송량을 조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.\0D단, 지하철 차량은 이 설정의 영향을 받지 않습니다.\0Dx2로 설정하면 현실의 수송량과 거의 같아집니다.\0D\UE08B주의!\UE094 이 설정은 새로 만드는 차량부터 적용됩니다." 00 
 "B" "MASK" \w1 08 
 "B" "LIMI" \w8 \d0 \d8 
 "C" "VALU" 
 "T" \d0 7F "x1 (Default)" 00 
 "T" \d0 04 "x1 (Por defecto)" 00 
-"T" \d0 39 "Þx1 (기본값)" 00 
+"T" \d0 39 "Þx1 (デフォルト値)" 00 
 "T" \d0 3A "Þx1 (기본값)" 00 
 "T" \d1 7F "x2" 00 
 "T" \d2 7F "x4" 00 
@@ -191,18 +191,18 @@
 "C" \d8 
 "T" "NAME" 7F "Loading speed" 00 
 "T" "NAME" 04 "Velocidad de varga" 00 
-"T" "NAME" 39 "Þ화물 적재 속도" 00 
+"T" "NAME" 39 "Þ貨物積載速度" 00 
 "T" "NAME" 3A "Þ화물 적재 속도" 00 
 "T" "DESC" 7F "Loading speed of trains. The higher this value, the more cargo can load cargos faster." 00 
 "T" "DESC" 04 "ÞVelocidad de varga de los trenes. A mayor valor, mayor será la velocidad de carga." 00 
-"T" "DESC" 39 "Þ열차의 화물 적재 속력을 조절할 수 있습니다. 값이 크면 승객이나 화물을 싣는 속력이 빨라집니다." 00 
+"T" "DESC" 39 "Þ列車의 화물 적재 속력을 조절할 수 있습니다. 값이 크면 승객이나 화물을 싣는 속력이 빨라집니다." 00 
 "T" "DESC" 3A "Þ열차의 화물 적재 속력을 조절할 수 있습니다. 값이 크면 승객이나 화물을 싣는 속력이 빨라집니다." 00 
 "B" "MASK" \w1 09 
 "B" "LIMI" \w8 \d0 \d5 
 "C" "VALU" 
 "T" \d0 7F "x1 (Default)" 00 
 "T" \d0 04 "x1 (Por defecto)" 00 
-"T" \d0 39 "Þx1 (기본값)" 00 
+"T" \d0 39 "Þx1 (デフォルト値)" 00 
 "T" \d0 3A "Þx1 (기본값)" 00 
 "T" \d1 7F "x2" 00 
 "T" \d2 7F "x4" 00 
@@ -215,7 +215,7 @@
 "C" \d9 
 "T" "NAME" 7F "Make waypoint's graphics simple" 00 
 "T" "NAME" 04 "ÞSimplificar los gráficos de los puntos de ruta" 00 
-"T" "NAME" 39 "Þ경유지를 간단하게 표시" 00 
+"T" "NAME" 39 "Þ経由地を簡単に表示" 00 
 "T" "NAME" 3A "Þ경유지를 간단하게 표시" 00 
 "T" "DESC" 7F "Make waypoint's graphics simple by eliminating building of waypoint." 00 
 "T" "DESC" 04 "ÞSimplifica los gráficos de los puntos de ruta eliminando para ello su edificio." 00 
@@ -228,11 +228,11 @@
 "C" \d10 
 "T" "NAME" 7F "Disable original engines" 00 
 "T" "NAME" 04 "Desactivar las locomotoras originales" 00 
-"T" "NAME" 39 "Þ기본 기관차 사용 안 함" 00 
+"T" "NAME" 39 "Þ基本機関車使用しない" 00 
 "T" "NAME" 3A "Þ기본 기관차 사용 안 함" 00 
 "T" "DESC" 7F "Disable original engines to find KTS passenger coaches quickly. Monorail and Maglev engines will not be disabled, only (electric) rail engines will be disabled." 00 
 "T" "DESC" 04 "ÞDesactiva las locomotoras originales para, entre otras cosas, encontrar más rápidamente las proporcionadas por este Set. Tanto Monorraíl como Maglev no se ven afectados por esta opción, solo las locomotoras eléctricas serán desactivadas." 00 
-"T" "DESC" 39 "Þ한국 열차 세트의 객차를 빠르게 찾을 수 있도록 하기 위해 기본 기관차를 사용하지 않습니다. 모노레일/자기부상열차 차량은 사라지지 않고 (전기)철도 차량만 사용하지 않습니다." 00 
+"T" "DESC" 39 "Þ한국 列車 세트의 객차를 빠르게 찾을 수 있도록 하기 위해 기본 기관차를 사용하지 않습니다. 모노레일/자기부상列車 차량은 사라지지 않고 (전기)철도 차량만 사용하지 않습니다." 00 
 "T" "DESC" 3A "Þ한국 열차 세트의 객차를 빠르게 찾을 수 있도록 하기 위해 기본 기관차를 사용하지 않습니다. 모노레일/자기부상열차 차량은 사라지지 않고 (전기)철도 차량만 사용하지 않습니다." 00 
 "B" "TYPE" \w1 01 
 "B" "MASK" \w3 \b16 \b1 \b1 
@@ -243,7 +243,7 @@
 "B" "BLTR" \w1 "8" 
 00 
 00 
-2 * 334 08 07 "TK\55\55" "Korean Train Set vr127" 00 "\0D\98Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.\0D(Updated: 2016.01.22)\0D\0D\89+ Author: TELK\0D\98  - telk5093@gmail.com\0D  - http://telk.kr" 00 
+2 * 335 08 07 "TK\55\55" "Korean Train Set 1.2.51" 00 "\0D\98Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.\0D(Updated: 2016.01.23)\0D\0D\89+ Author: TELK\0D\98  - telk5093@gmail.com\0D  - http://telk.kr" 00 
 3 * 2790 04 00 FF 63 \wxD000 "It's too short. Be more than 4 cars at least." 00 "It's too short. Be more than 2 cars at least." 00 "can't attach with other coaches!" 00 " (Painting thesedays)" 00 " (Past Korail's painting)" 00 " (V-train)" 00 "\98Changing Models/Paintings: \8FAvailable" 00 "\98Changing Models/Paintings: \8EUnable" 00 " (Cargo painting)" 00 " (First Korail's painting: Blue & White)" 00 " (First Korail's painting: Black & Orange)" 00 " (For future use)" 00 " (Rail cruise 'Haerang')" 00 " (S-train, No.1)" 00 " (S-train, No.2)" 00 " (G-train)" 00 " (Painting B: Past Korail)" 00 " (Painting A: 1970s)" 00 " (Demoted to Mugunghwa, former executive car)" 00 " (ITX-Saemaeul)" 00 " (O-train)" 00 " (Nuriro)" 00 " (Korean wave tour wrapping)" 00 " (Flower garden painting)" 00 " (Dolphine painting)" 00 " (Seaside train painting)" 00 " (Korail 100th Anni., Baekje painting)" 00 " (Past Korail's painting)" 00 " (DMZ-train)" 00 " (RDC Mugunghwa painting)" 00 " (Gyeongbuk Circular theme tour train, old paintings)" 00 " (Gyeongbuk Circular theme tour train, new paintings)" 00 " (No.120000)" 00 " (No.110000)" 00 " (Standard car)" 00 " (Executive car)" 00 " (No.110000, First class)" 00 " (No.120000, First class)" 00 "Þ (Painting E: 2000~2002)" 00 "Þ (Painting D: 1990~1999)" 00 "Þ (Painting C: 1985~1989)" 00 "Þ (Painting B: 1984~1984)" 00 "Þ (Painting A: 1970~1983)" 00 " (General Saemaeul cafe car)" 00 " (RDC Cafe car)" 00 " (General Mugunghwa cafe car)" 00 " (Long type : Saemaeul painting thesedays)" 00 " (Long type : Saemaeul old painting)" 00 " (Long type)" 00 " (Default type)" 00 "\98Changing Models/Paintings: \8EUnable\0D\8BWarning!\98 This coach is temporary. It could occur desync problem in the next KTS version if you use this coach right now." 00 " (Painting B)" 00 " (Painting C)" 00 " (Painting A)" 00 " (Painting D)" 00 " (Painting E)" 00 " (Painting F)" 00 " (Mail coach)" 00 " (Korail 3xxk AL)" 00 " (Korail 3xxk ST)" 00 " (Korail 311k / Current painting)" 00 " (Korail 311k / Old painting)" 00 " (Korail 1k New rheostatic / Current painting)" 00 " (Korail 1k New rheostatic / Old painting)" 00 " (Korail 1k Modified rheostatic / Current painting)" 00 " (Korail 1k Modified rheostatic / 2nd painting)" 00 " (Korail 1k Modified rheostatic / 1st painting)" 00 " (Korail 1k First rheostatic / 2nd painting)" 00 " (Korail 1k First rheostatic / 1st painting)" 00 " (SMetro 1k VVVF)" 00 " (SMetro 1k Modified rheostatic)" 00 " (SMetro 1k First rheostatic)" 00 " (SMetro 2k 2nd VVVF)" 00 " (SMetro 2k 1st VVVF)" 00 " (SMetro 2k Chopper)" 00 " (SMetro 2k MELCO)" 00 " (SMetro 3k 2nd VVVF)" 00 " (Unfinished: SMetro 3k 1st VVVF)" 00 " (SMetro 3k Chopper)" 00 " (Korail 3k VVVF / Current painting)" 00 " (Korail 3k VVVF / Old painting)" 00 " (Korail 341k 2nd VVVF / Current painting)" 00 " (Korail 341k 1st VVVF / Current painting)" 00 " (Korail 341k 2nd VVVF / Old painting)" 00 " (Korail 341k 1st VVVF / Old painting)" 00 " (SMetro 4k VVVF)" 00 " (SMRT 5k VVVF)" 00 " (SMRT 6k VVVF)" 00 " (SMRT 7k VVVF)" 00 " (SMRT 8k VVVF)" 00 " (SML9 9k VVVF)" 00 " (SMRT SR0x VVVF)" 00 " (Korail 351k 3rd VVVF)" 00 " (Korail 351k 2nd VVVF)" 00 " (Korail 351k 1st VVVF)" 00 " (Korail A'REX 2k All-stop)" 00 " (Korail A'REX 1k Express)" 00 " (ICTR Incheon 1x VVVF 1st)" 00 " (ICTR Incheon 1x VVVF 2nd)" 00 
 
 4 * 20 04 0F FF 01 \wxD063 "[KTS] Buffers" 00 
@@ -278,29 +278,29 @@
 
 19 * 30 04 10 84 01 \wxDC00 "Þlínea de Tren Ligero" 00 
 
-20 * 269 04 00 B9 05 \wxD000 "Þ열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다." 00 "Þ열차 길이가 너무 짧습니다. 최소한 2량 이상을 연결해야 합니다." 00 "Þ연결할 수 없는 편성입니다!" 00 "Þ (현재 도색)" 00 "Þ (구 철도청 도색)" 00 
+20 * 269 04 00 B9 05 \wxD000 "Þ列車 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다." 00 "Þ列車 길이가 너무 짧습니다. 최소한 2량 이상을 연결해야 합니다." 00 "Þ연결할 수 없는 편성입니다!" 00 "Þ (現在塗色)" 00 "Þ (旧鉄道庁の塗色)" 00 
 
-21 * 272 04 00 B9 09 \wxD006 "Þ\UE098도색/모델 변경: \UE08F가능" 00 "Þ\UE098도색/모델 변경: \UE08E불가능" 00 "Þ (화물 도색)" 00 "Þ (초기 철도청 도색: 청백)" 00 "Þ (초기 철도청 도색: 검정+주황)" 00 "Þ (예비 슬롯)" 00 "Þ (해랑)" 00 "Þ (S-train, 1호기 도색)" 00 "Þ (S-train, 2호기 도색)" 00 
+21 * 288 04 00 B9 09 \wxD006 "Þ\UE098塗色/モデル変更: \UE08F可能" 00 "Þ\UE098塗色/モデル変更: \UE08E不可能" 00 "Þ (貨物塗色)" 00 "Þ (初期鉄道庁の塗色: 青白)" 00 "Þ (初期鉄道庁の塗色: 黒+朱黃)" 00 "Þ (予備スロット)" 00 "Þ (ヘラン)" 00 "Þ (S-train、1号機の塗色)" 00 "Þ (S-train、2号機の塗色)" 00 
 
-22 * 112 04 00 B9 04 \wxD010 "Þ (도색 B: 구 철도청)" 00 "Þ (도색 A: 1970년대)" 00 "Þ (무궁화 격하 구특전)" 00 "Þ (ITX-새마을)" 00 
+22 * 136 04 00 B9 04 \wxD010 "Þ (塗色 B: 旧鉄道庁)" 00 "Þ (塗色 A: 1970年代)" 00 "Þ (ムグンファ格下げ旧特等室専用客車)" 00 "Þ (ITX-セマウル)" 00 
 
-23 * 219 04 00 B9 07 \wxD015 "Þ (누리로)" 00 "Þ (한류관광열차)" 00 "Þ (꽃동산 테마 도색)" 00 "Þ (돌고래 테마 도색)" 00 "Þ (바다 관광 열차 도색)" 00 "Þ (한국철도 100주년, 백제 왕관 기념 도색)" 00 "Þ (구 철도청 도색)" 00 
+23 * 233 04 00 B9 07 \wxD015 "Þ (ヌリロ)" 00 "Þ (韓流観光列車)" 00 "Þ (花園テーマの塗色)" 00 "Þ (いるかテーマの塗色)" 00 "Þ (海観光列車の塗色)" 00 "Þ (韓国鉄道100周年、百済(くだら)王冠記念の塗色)" 00 "Þ (旧鉄道庁の塗色)" 00 
 
-24 * 885 04 00 B9 1D \wxD01D "Þ (RDC 무궁화호 도색)" 00 "Þ (경북관광순환테마열차, 구도색)" 00 "Þ (경북관광순환테마열차, 신도색)" 00 "Þ (120000호대)" 00 "Þ (110000호대)" 00 "Þ (일반실)" 00 "Þ (특실)" 00 "Þ (110000호대, 특실)" 00 "Þ (120000호대, 특실)" 00 "Þ (도색 E: 2000~2002년)" 00 "Þ (도색 D: 1990~1999년)" 00 "Þ (도색 C: 1985~1989년)" 00 "Þ (도색 B: 1984~1984년)" 00 "Þ (도색 A: 1970~1983년)" 00 "Þ (일반 새마을 카페 객차)" 00 "Þ (RDC 카페 객차)" 00 "Þ (일반 무궁화 카페 객차)" 00 "Þ (장대형 : 새마을 현재 도색)" 00 "Þ (장대형 : 새마을 구 도색)" 00 "Þ (장대형)" 00 "Þ (일반형)" 00 "Þ\UE098도색/모델 변경: \UE08E불가능\0D\UE08B주의!\UE098 이 화차는 임시 버전입니다. 이 화차를 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다." 00 "Þ (도색 B)" 00 "Þ (도색 C)" 00 "Þ (도색 A)" 00 "Þ (도색 D)" 00 "Þ (도색 E)" 00 "Þ (도색 F)" 00 "Þ (우편차)" 00 
+24 * 943 04 00 B9 1D \wxD01D "Þ (RDC ムグンファ号 塗色)" 00 "Þ (慶北観光循環テーマ列車、旧塗色)" 00 "Þ (慶北観光循環テーマ列車、新塗色)" 00 "Þ (120000号帯)" 00 "Þ (110000号帯)" 00 "Þ (一番室)" 00 "Þ (特等室)" 00 "Þ (110000号帯、特等室)" 00 "Þ (120000号帯、特等室)" 00 "Þ (塗色 E: 2000~2002年)" 00 "Þ (塗色 D: 1990~1999年)" 00 "Þ (塗色 C: 1985~1989年)" 00 "Þ (塗色 B: 1984~1984年)" 00 "Þ (塗色 A: 1970~1983年)" 00 "Þ (一般のセマウル号カフェ客車)" 00 "Þ (RDCカフェ客車)" 00 "Þ (一般のムグンファ号のカフェ客車)" 00 "Þ (長大型 : セマウル号現在塗色)" 00 "Þ (長大型 : セマウル号旧塗色)" 00 "Þ (長大型)" 00 "Þ (一般型)" 00 "Þ\UE098塗色/모델 변경: \UE08E불가능\0D\UE08B주의!\UE098 이 화차는 임시 버전입니다. 이 화차를 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다." 00 "Þ (塗色 B)" 00 "Þ (塗色 C)" 00 "Þ (塗色 A)" 00 "Þ (塗色 D)" 00 "Þ (塗色 E)" 00 "Þ (塗色 F)" 00 "Þ (郵便車)" 00 
 
-25 * 369 04 00 B9 09 \wxD03C "Þ (Korail 311k / 현 도색)" 00 "Þ (Korail 311k / 초기 도색)" 00 "Þ (Korail 1k 신조 저항 / 현 도색)" 00 "Þ (Korail 1k 신조 저항 / 구 도색)" 00 "Þ (Korail 1k 개조 저항 / 현 도색)" 00 "Þ (Korail 1k 개조 저항 / 구 도색)" 00 "Þ (Korail 1k 개조 저항 / 초기 도색)" 00 "Þ (Korail 1k 초기 저항 / 구 도색)" 00 "Þ (Korail 1k 초기 저항 / 초기 도색)" 00 
+25 * 353 04 00 B9 09 \wxD03C "Þ (Korail 311k / 現塗色)" 00 "Þ (Korail 311k / 初期塗色)" 00 "Þ (Korail 1k 新造抵抗 / 現塗色)" 00 "Þ (Korail 1k 新造抵抗 / 旧塗色)" 00 "Þ (Korail 1k 開祖抵抗 / 現塗色)" 00 "Þ (Korail 1k 開祖抵抗 / 旧塗色)" 00 "Þ (Korail 1k 開祖抵抗 / 初期塗色)" 00 "Þ (Korail 1k 初期抵抗 / 旧塗色)" 00 "Þ (Korail 1k 初期抵抗 / 初期塗色)" 00 
 
-26 * 114 04 00 B9 04 \wxD046 "Þ (SMetro 1k 개조 저항)" 00 "Þ (SMetro 1k 초기 저항)" 00 "Þ (SMetro 2k VVVF 2차)" 00 "Þ (SMetro 2k VVVF 1차)" 00 
+26 * 112 04 00 B9 04 \wxD046 "Þ (SMetro 1k 開祖抵抗)" 00 "Þ (SMetro 1k 初期抵抗)" 00 "Þ (SMetro 2k VVVF 2次)" 00 "Þ (SMetro 2k VVVF 1次)" 00 
 
-27 * 74 04 00 B9 02 \wxD04C "Þ (SMetro 3k VVVF 2세대)" 00 "Þ (SMetro 3k VVVF 1세대 : 미완성)" 00 
+27 * 74 04 00 B9 02 \wxD04C "Þ (SMetro 3k VVVF 2世代)" 00 "Þ (SMetro 3k VVVF 1世代 : 未完成)" 00 
 
-28 * 244 04 00 B9 06 \wxD04F "Þ (Korail 3k VVVF / 현 도색)" 00 "Þ (Korail 3k VVVF / 구 도색)" 00 "Þ (Korail 341k VVVF 2세대 / 현 도색)" 00 "Þ (Korail 341k VVVF 1세대 / 현 도색)" 00 "Þ (Korail 341k VVVF 2세대 / 구 도색)" 00 "Þ (Korail 341k VVVF 1세대 / 구 도색)" 00 
+28 * 238 04 00 B9 06 \wxD04F "Þ (Korail 3k VVVF / 現塗色)" 00 "Þ (Korail 3k VVVF / 旧塗色)" 00 "Þ (Korail 341k VVVF 2世代 / 現塗色)" 00 "Þ (Korail 341k VVVF 1世代 / 現塗色)" 00 "Þ (Korail 341k VVVF 2世代 / 旧塗色)" 00 "Þ (Korail 341k VVVF 1世代 / 旧塗色)" 00 
 
-29 * 212 04 00 B9 07 \wxD05C "Þ (Korail 351k VVVF 3세대)" 00 "Þ (Korail 351k VVVF 2세대)" 00 "Þ (Korail 351k VVVF 1세대)" 00 "Þ (Korail A'REX 2k 일반)" 00 "Þ (Korail A'REX 1k 직통)" 00 "Þ (ICTR 인천 1x VVVF 1차)" 00 "Þ (ICTR 인천 1x VVVF 2차)" 00 
+29 * 246 04 00 B9 07 \wxD05C "Þ (Korail 351k VVVF 3世代)" 00 "Þ (Korail 351k VVVF 2世代)" 00 "Þ (Korail 351k VVVF 1世代)" 00 "Þ (Korail A'REX 2k 一般)" 00 "Þ (Korail A'REX 1k 直通)" 00 "Þ (ICTR 仁川(インチョン) 1x VVVF 1次)" 00 "Þ (ICTR 仁川(インチョン) 1x VVVF 2次)" 00 
 
-30 * 31 04 0F B9 01 \wxD063 "Þ[KTS] 선로 종단점" 00 
+30 * 30 04 0F B9 01 \wxD063 "Þ[KTS] 線路終端点" 00 
 
-31 * 31 04 10 B9 01 \wxDC00 "Þ[KTS] 경전철 선로" 00 
+31 * 30 04 10 B9 01 \wxDC00 "Þ[KTS] 軽電鉄線路" 00 
 
 32 * 269 04 00 BA 05 \wxD000 "Þ열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다." 00 "Þ열차 길이가 너무 짧습니다. 최소한 2량 이상을 연결해야 합니다." 00 "Þ연결할 수 없는 편성입니다!" 00 "Þ (현재 도색)" 00 "Þ (구 철도청 도색)" 00 
 
@@ -10527,7 +10527,7 @@ F2 00 \dx000000FF
 
 3494 * 21 04 00 04 01 FF \wx1398 "[KTS] Bundang" 00 
 
-3495 * 31 04 00 39 01 FF \wx1398 "Þ[KTS] ブンダン線" 00 
+3495 * 39 04 00 39 01 FF \wx1398 "Þ[KTS] 盆唐(ブンダン)線" 00 
 
 3496 * 25 04 00 3A 01 FF \wx1398 "Þ[KTS] 분당선" 00 
 

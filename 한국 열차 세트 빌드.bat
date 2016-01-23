@@ -55,7 +55,7 @@ echo.
 echo.
 
 
-echo 한국 열차 세트 v%KTS_VERSION% 빌드가 완료되었습니다.
+echo 한국 열차 세트 %KTS_VERSION% 빌드가 완료되었습니다.
 
 :stop_process
 set /P WILL_YOU_RETRY="다시 처음부터 시작하시겠습니까? [Y/N] ..... "
