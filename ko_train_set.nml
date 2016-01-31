@@ -21,7 +21,7 @@ grf {
 	name :				string(STR_GRF_NAME_WITH_VER);
 	desc :				string(STR_GRF_DESC);
 	url :				string(STR_GRF_URL);
-	version :			126;
+	version :			128;
 	min_compatible_version :	1;
 
 	// 추가 열차 종류
