@@ -19,16 +19,19 @@ STR_KCITX_NAME					:[KTS] ITX-청춘 (경춘선 368k)
 STR_METAR_NAME					:[KTS] 인천공항철도 (A'REX)
 STR_D000N_NAME					:[KTS] 신분당선
 STR_ICNM1_NAME					:[KTS] 인천 1호선
+STR_ICNM2_NAME					:[KTS] 인천 2호선
 STR_BUSAN1_NAME					:[KTS] 부산 1호선
 STR_BUSAN2_NAME					:[KTS] 부산 2호선
 STR_BUSAN3_NAME					:[KTS] 부산 3호선
 STR_BUSAN4_NAME					:[KTS] 부산 4호선
+STR_BUSANGIMHAE_NAME				:[KTS] 부산김해경전철
 STR_DAEGU1_NAME					:[KTS] 대구 1호선
 STR_DAEGU2_NAME					:[KTS] 대구 2호선
 STR_DAEGU3_NAME					:[KTS] 대구 3호선
 STR_DAEJEON1_NAME				:[KTS] 대전 1호선
 STR_DAEJEON2_NAME				:[KTS] 대전 2호선
 STR_GWANGJU1_NAME				:[KTS] 광주 1호선
+STR_UISINSEOL_NAME				:[KTS] 서울 우이신설경전철
 STR_SUBCW_NAME					:[KTS] 지하철 공통 객차
 STR_BUSAN4_CW_NAME				:[KTS] 부산 4호선 객차
 STR_K4400_NAME					:[KTS] 4400호대 디젤 기관차

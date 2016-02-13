@@ -12,7 +12,6 @@ STR_MET2N_NAME					:[KTS] 수도권 2호선
 STR_MET3N_NAME					:[KTS] 수도권 3호선
 STR_MET4N_NAME					:[KTS] 수도권 4호선
 STR_MET59_NAME					:[KTS] 수도권 5-9호선
-STR_UISINSEOL_NAME				:[KTS] 서울 우이신설경전철
 STR_METBN_NAME					:[KTS] 분당선
 STR_METKC_NAME					:[KTS] 경춘선 361k
 STR_KCITX_NAME					:[KTS] ITX-청춘 (경춘선 368k)
@@ -31,6 +30,7 @@ STR_DAEGU3_NAME					:[KTS] 대구 3호선
 STR_DAEJEON1_NAME				:[KTS] 대전 1호선
 STR_DAEJEON2_NAME				:[KTS] 대전 2호선
 STR_GWANGJU1_NAME				:[KTS] 광주 1호선
+STR_UISINSEOL_NAME				:[KTS] 서울 우이신설경전철
 STR_SUBCW_NAME					:[KTS] 지하철 공통 객차
 STR_BUSAN4_CW_NAME				:[KTS] 부산 4호선 객차
 STR_K4400_NAME					:[KTS] 4400호대 디젤 기관차

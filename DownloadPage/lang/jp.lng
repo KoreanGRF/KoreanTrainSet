@@ -13,22 +13,25 @@ STR_MET2N_NAME					:[KTS] 首都圏2号線
 STR_MET3N_NAME					:[KTS] 首都圏3号線
 STR_MET4N_NAME					:[KTS] 首都圏4号線
 STR_MET59_NAME					:[KTS] 首都圏5-9号線
-STR_METBN_NAME					:[KTS] ブンダン線
-STR_METKC_NAME					:[KTS] 京春線 361k
-STR_KCITX_NAME					:[KTS] ITX-靑春 (京春線 368k)
+STR_METBN_NAME					:[KTS] 盆唐(ブンダン)線
+STR_METKC_NAME					:[KTS] 京春線361k
+STR_KCITX_NAME					:[KTS] ITX-靑春 (京春線368k)
 STR_METAR_NAME					:[KTS] 仁川空港鉄道 (A'REX)
 STR_D000N_NAME					:[KTS] 新ブンダン線
 STR_ICNM1_NAME					:[KTS] 仁川(インチョン)1号線
+STR_ICNM2_NAME					:[KTS] 仁川(インチョン)2号線
 STR_BUSAN1_NAME					:[KTS] 釜山(プサン)1号線
 STR_BUSAN2_NAME					:[KTS] 釜山(プサン)2号線
 STR_BUSAN3_NAME					:[KTS] 釜山(プサン)3号線
 STR_BUSAN4_NAME					:[KTS] 釜山(プサン)4号線
+STR_BUSANGIMHAE_NAME				:[KTS] 釜山(プサン)金海(ギムへ)軽電鉄
 STR_DAEGU1_NAME					:[KTS] 大邱(テグ)1号線
 STR_DAEGU2_NAME					:[KTS] 大邱(テグ)2号線
 STR_DAEGU3_NAME					:[KTS] 大邱(テグ)3号線
 STR_DAEJEON1_NAME				:[KTS] 大田(テジョン)1号線
 STR_DAEJEON2_NAME				:[KTS] 大田(テジョン)2号線
 STR_GWANGJU1_NAME				:[KTS] 光州(クァンジュ)1号線
+STR_UISINSEOL_NAME				:[KTS] ソウル牛耳(ウイ)新設(シンソル)軽電鉄
 STR_SUBCW_NAME					:[KTS] 地下鉄共通客車
 STR_BUSAN4_CW_NAME				:[KTS] 釜山(プサン)4号線客車
 STR_K4400_NAME					:[KTS] 4400号帯ディーゼル機関車

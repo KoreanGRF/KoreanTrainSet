@@ -12,7 +12,6 @@ STR_MET2N_NAME					:[KTS] Línea 2
 STR_MET3N_NAME					:[KTS] Línea 3
 STR_MET4N_NAME					:[KTS] Línea 4
 STR_MET59_NAME					:[KTS] Línea 5-9
-# STR_UISINSEOL_NAME				:[KTS] Seoul Ui-Sinseol LRT Línea
 STR_METBN_NAME					:[KTS] Bundang
 STR_METKC_NAME					:[KTS] Gyeongchun 361k
 STR_KCITX_NAME					:[KTS] ITX-Cheongchun (Gyeongchun 368k)
@@ -31,6 +30,7 @@ STR_DAEGU3_NAME					:[KTS] Daegu Línea 3
 STR_DAEJEON1_NAME				:[KTS] Daejeon Línea 1
 STR_DAEJEON2_NAME				:[KTS] Daejeon Línea 2
 STR_GWANGJU1_NAME				:[KTS] Gwangju Línea 1
+# STR_UISINSEOL_NAME				:[KTS] Seoul Ui-Sinseol LRT Línea
 STR_SUBCW_NAME					:[KTS] Metro común - Vagón de pasajeros
 STR_BUSAN4_CW_NAME				:[KTS] Busan Línea 4 Vagón de pasajeros
 STR_K4400_NAME					:[KTS] 4400 Locomotora diésel

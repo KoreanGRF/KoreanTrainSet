@@ -8,7 +8,7 @@ title_introduction				:Introducción al Set de trenes de Corea
 detail_comment					:<b>El Set de trenes de Corea</b> o <b>Korean Train Set</b> es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos, como KTX (Korea Train eXpress o Tren expreso de Corea), ITX (Intercity Train eXpress o Tren expreso InterCity), Saemaeul, Mugunghwa, Tongil, Nuriro, CDC, el metro metropolitano de Seúl, algunas locomotoras eléctricas de Korail... Por otro lado, tecnicamente, incluye parámetros para cambiar de velocidad, capacidad, precio y costes de funcionamiento del/los tren/es. Y, por supuesto, también se incluye la opción de hacer los puntos de ruta más simples vía parametros (eliminando, para ello, el edificio del punto de ruta).
 
 # Vehicle's names
-STR_MET1N_NAME					:[KTS] Línea 1, Línea Gyeongui-Jungang
+STR_MET1N_NAME					:[KTS] Línea 1, Línea Gyeongui-Jungang, Línea Suin
 STR_MET2N_NAME					:[KTS] Línea 2
 STR_MET3N_NAME					:[KTS] Línea 3
 STR_MET4N_NAME					:[KTS] Línea 4
@@ -19,12 +19,19 @@ STR_KCITX_NAME					:[KTS] ITX-Cheongchun (Gyeongchun 368k)
 STR_METAR_NAME					:[KTS] Ferrocarril del/al aeropuerto Incheon (A'REX)
 STR_D000N_NAME					:[KTS] Línea Sinbundang
 STR_ICNM1_NAME					:[KTS] Incheon Línea 1
+STR_ICNM2_NAME					:[KTS] Incheon Línea 2
 STR_BUSAN1_NAME					:[KTS] Busan Línea 1
 STR_BUSAN2_NAME					:[KTS] Busan Línea 2
 STR_BUSAN3_NAME					:[KTS] Busan Línea 3
 STR_BUSAN4_NAME					:[KTS] Busan Línea 4
-STR_SUBCW_NAME					:[KTS] Metro común - Vagón de pasajeros
-STR_BUSAN4_CW_NAME				:[KTS] Busan Línea 4 Vagón de pasajeros
+# STR_BUSANGIMHAE_NAME				:[KTS] Busan-Gimhae LRT
+STR_DAEGU1_NAME					:[KTS] Daegu Línea 1
+STR_DAEGU2_NAME					:[KTS] Daegu Línea 2
+STR_DAEGU3_NAME					:[KTS] Daegu Línea 3
+STR_DAEJEON1_NAME				:[KTS] Daejeon Línea 1
+STR_DAEJEON2_NAME				:[KTS] Daejeon Línea 2
+STR_GWANGJU1_NAME				:[KTS] Gwangju Línea 1
+# STR_UISINSEOL_NAME				:[KTS] Seoul Ui-Sinseol LRT Línea
 STR_K4400_NAME					:[KTS] 4400 Locomotora diésel
 STR_K7000_NAME					:[KTS] 7000 Locomotora diésel
 STR_K7x00_NAME					:[KTS] 7x00 Locomotora diésel
