@@ -12,16 +12,19 @@ STR_MET2N_NAME					:[KTS] 首都圏2号線
 STR_MET3N_NAME					:[KTS] 首都圏3号線
 STR_MET4N_NAME					:[KTS] 首都圏4号線
 STR_MET59_NAME					:[KTS] 首都圏5-9号線
+STR_UISINSEOL_NAME				:[KTS] ソウル牛耳(ウイ)新設(シンソル)軽電鉄
 STR_METBN_NAME					:[KTS] 盆唐(ブンダン)線
-STR_METKC_NAME					:[KTS] 京春線 361k
-STR_KCITX_NAME					:[KTS] ITX-靑春 (京春線 368k)
+STR_METKC_NAME					:[KTS] 京春線361k
+STR_KCITX_NAME					:[KTS] ITX-靑春 (京春線368k)
 STR_METAR_NAME					:[KTS] 仁川空港鉄道 (A'REX)
 STR_D000N_NAME					:[KTS] 新ブンダン線
 STR_ICNM1_NAME					:[KTS] 仁川(インチョン)1号線
+STR_ICNM2_NAME					:[KTS] 仁川(インチョン)2号線
 STR_BUSAN1_NAME					:[KTS] 釜山(プサン)1号線
 STR_BUSAN2_NAME					:[KTS] 釜山(プサン)2号線
 STR_BUSAN3_NAME					:[KTS] 釜山(プサン)3号線
 STR_BUSAN4_NAME					:[KTS] 釜山(プサン)4号線
+STR_BUSANGIMHAE_NAME				:[KTS] 釜山(プサン)金海(ギムへ)軽電鉄
 STR_DAEGU1_NAME					:[KTS] 大邱(テグ)1号線
 STR_DAEGU2_NAME					:[KTS] 大邱(テグ)2号線
 STR_DAEGU3_NAME					:[KTS] 大邱(テグ)3号線
@@ -169,8 +172,8 @@ STR_REFIT_TYPE_ITX_NAME				: (Korail 368k ITX-青春(チョンチュン))
 STR_REFIT_TYPE_ARA_NAME				: (Korail A'REX 1k 直通)
 STR_REFIT_TYPE_ARB_NAME				: (Korail A'REX 2k 一般)
 STR_REFIT_TYPE_D00_NAME				: (新盆唐(ブンダン)線 D000 VVVF)
-STR_REFIT_TYPE_ICM1A_NAME			: (ICTR 仁川(インチョン) 1x VVVF 1次)
-STR_REFIT_TYPE_ICM1B_NAME			: (ICTR 仁川(インチョン) 1x VVVF 2次)
+STR_REFIT_TYPE_ICNM1A_NAME			: (ICTR 仁川(インチョン) 1x VVVF 1次)
+STR_REFIT_TYPE_ICNM1B_NAME			: (ICTR 仁川(インチョン) 1x VVVF 2次)
 
 # Parameters
 STR_PARAM_ADD_TYPE_NAME				:追加したい列車の種類
@@ -187,12 +190,12 @@ STR_PARAM_SPEED_SUBWAY_DESC			:地下鉄の速力を調節できます。 値が
 STR_PARAM_SPEED_LIGHTRAIL_NAME			:軽電鉄の速力係数
 STR_PARAM_SPEED_LIGHTRAIL_DESC			:軽電鉄の速力を調節できます。 値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象: 釜山(プサン)4号線
 
-STR_PARAM_FACTOR_COST_NAME			:列車 구입비용
+STR_PARAM_FACTOR_COST_NAME			:列車の購入費用
 STR_PARAM_FACTOR_COST_DESC			:列車의 구입 가격을 조절할 수 있습니다. 값이 크면 구입 가격이 더 비싸집니다.
-STR_PARAM_FACTOR_RUNNING_COST_NAME		:列車 유지비
+STR_PARAM_FACTOR_RUNNING_COST_NAME		:列車の維持費
 STR_PARAM_FACTOR_RUNNING_COST_DESC		:列車의 유지비를 조절할 수 있습니다. 값이 크면 유지비가 더 많이 나갑니다.
-STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:화물 수송량
-STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:列車의 화물 수송량을 조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.{}단, 地下鉄 차량은 이 설정의 영향을 받지 않습니다.{}x2로 설정하면 현실의 수송량과 거의 같아집니다.{}{RED}주의!{WHITE} 이 설정은 새로 만드는 차량부터 적용됩니다.
+STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:貨物輸送量
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:列車の貨物輸送量を조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.{}단, 地下鉄 차량은 이 설정의 영향을 받지 않습니다.{}x2로 설정하면 현실의 수송량과 거의 같아집니다.{}{RED}주의!{WHITE} 이 설정은 새로 만드는 차량부터 적용됩니다.
 STR_PARAM_FACTOR_LOADING_SPEED_NAME		:貨物積載速度
 STR_PARAM_FACTOR_LOADING_SPEED_DESC		:列車의 화물 적재 속력을 조절할 수 있습니다. 값이 크면 승객이나 화물을 싣는 속력이 빨라집니다.
 
@@ -227,13 +230,13 @@ STR_PARAM_MAX_SPEED_TYPE_OPT_1			:영업 속력
 STR_PARAM_MAX_SPEED_TYPE_OPT_2			:설계 속력
 
 # Error messages
-STR_ERROR_REQUIRES_OPENTTD			:이 NewGRF은 OpenTTD {STRING} 전용입니다!
-STR_ERROR_VERSION				:최소 요구버전을 충족하지 않습니다!
-STR_ERROR_CANNOT_ATTACH_OTHER			:연결할 수 없는 편성입니다!
-STR_ERROR_NOT_ENOUGH_LENGTH2			:列車 길이가 너무 짧습니다. 최소한 2량 이상을 연결해야 합니다.
-STR_ERROR_NOT_ENOUGH_LENGTH4			:列車 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다.
+STR_ERROR_REQUIRES_OPENTTD			:このNewGRFはOpenTTDの{STRING}専用です!
+STR_ERROR_VERSION				:最小要求バージョンを満たしていません!
+STR_ERROR_CANNOT_ATTACH_OTHER			:連結できない編成です!
+STR_ERROR_NOT_ENOUGH_LENGTH2			:列車の長さがとても短いです。 少なくとも2両以上を連結しなければなりません。
+STR_ERROR_NOT_ENOUGH_LENGTH4			:列車の長さがとても短いです。 少なくとも4両以上を連結しなければなりません。
 
-STR_TEMP_FLATC_ADDITEXT				:{BLACK}塗色/모델 변경: {ORANGE}불가능{}{RED}주의!{BLACK} 이 화차는 임시 버전입니다. 이 화차를 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다.
+STR_ADDITEXT_TEMP				:{BLACK}塗色/モデル変更: {ORANGE}不可能{}{RED}주의!{BLACK} 이 화차는 임시 버전입니다. 이 화차를 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다.
 
 # Not use
 #STR_PARAM_REAL_FORM_NAME			:列車의 편성 길이를 고정
