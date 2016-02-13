@@ -40,13 +40,16 @@ Korean Train Set adds vehicles such as below:
   - Seoul metropolitan subway Airport Railroad (1k, 2k)
   - Seoul metropolitan subway Bundang-line (351k VVVF 1st/2nd/3rd)
   - Seoul metropolitan subway Sinbundang-line (D000 VVVF)
-  - Incheon subway Line 1 (1k)
+  - Seoul Ui-Sinseol LRT Line
+  - Incheon subway Line 1 (1k 1st/2nd)
+  - Incheon subway Line 2
   - Daegu subway Line 1
   - Daegu subway Line 2
   - Busan subway Line 1
   - Busan subway Line 2
   - Busan subway Line 3
   - Busan subway Line 4
+  - Busan-Gimhae LRT
   - Korail 4400 Diesel Locomotive (2 models/paintings + V-train)
   - Korail 7x00 Diesel Locomotive (5 models/paintings + Haerang the rail cruise + G-train + S-train)
   - Korail 8000 Electric Locomotive (3 models/paintings)
