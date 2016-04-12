@@ -5,8 +5,9 @@ Official language is Korean.
 # Translations
 To translate the Korean Train Set, please pull the request via this github project.
 You shall translate these files:
-- [/lang/english.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/lang/english.lng)
-- [/DownloadPage/lang/en.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/DownloadPage/lang/en.lng)
+- [/KoreanTrainSet/lang/english.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/lang/english.lng) (For NewGRF)
+- [/KoreanGRF/DownloadPage/lang/en.lng](https://github.com/KoreanGRF/DownloadPages/blob/master/common/en.lng) (For download page #1)
+- [/KoreanTrainSet/DownloadPage/lang/en.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/DownloadPage/lang/en.lng) (for download page #2)
 
 # Links
 - [TELKLAND](http://telk.kr)
