@@ -11,7 +11,8 @@
 3. 자주 묻는 질문
 4. 알려진 버그
 5. 기타 사항
-6. 저작권
+6. 제작자
+7. 저작권
 
 
 
@@ -169,6 +170,9 @@ A. ITX-새마을을 편성하시려면 [ITX-새마을 기관차]에 [일반 새�
     하는 과정이 기관차 부분과 충돌하여 ITX-청춘 편성 부분이 이상하게 보이는 버그가
     있습니다. 이는 수정하기가 다소 어려울 것으로 보입니다.
 
++ KTX-1과 KTX-산천의 중련 연결이 불가능한 점
+  : 위와 비슷한 이유로 구현이 어렵습니다.
+
 
 
 5. 버그 신고 및 건의
@@ -176,24 +180,30 @@ A. ITX-새마을을 편성하시려면 [ITX-새마을 기관차]에 [일반 새�
 + 버그를 발견하셨거나 건의사항이 있으신 경우에는 TELKLAND 홈페이지(http://telk.kr)
   나 전자우편(telk5093@gmail.com)을 통해 문의하시기 바랍니다.
 + 한국 열차 세트와 다운로드 페이지를 한국어가 아닌 다른 언어로 번역하고자 하시는
-  분도 전자우편(telk5093@gmail)을 통해 연락해주시면 언어 파일을 보내드리겠습니다.
+  분은 깃헙 프로젝트(http://github.com/KoreanGRF/KoreanTrainSet) 사이트의
+  Translations 문단을 참고해주시길 바랍니다.
 
 
 
-6. 저작권
+6. 제작자
 ==========
-- 프로그래밍:	텔크 (telk5093@gmail.com, http://telk.kr)
-- 그래픽:	텔크 (telk5093@gmail.com, http://telk.kr)
-		skyu (skyu2947@gmail.com)
-		라스 (wlq10000@naver.com)
-		초저항 (yunggu7410@naver.com)
-		오픈기차 (gks3900@naver.com)
+텔크 (telk5093@gmail.com, http://telk.kr)
+  - NML 코딩, 그래픽 수정
+sky (skyu2947@gmail.com)
+  - 차량 그래픽 제공
+라스 (wlq10000@naver.com)
+  - 그래픽 수정 제공
+초저항 (yunggu7410@naver.com)
+  - 부산 4호선 차량 및 선로 그래픽 제공
+작가 (angryphw@naver.com)
+  - 그래픽 수정 제공
+오픈기차 (gks3900@naver.com)
+  - 그래픽 수정 제공
 
-  본 NewGRF은 OpenTTD에 한국 열차 차량을 추가해주는 NewGRF으로, 본 NewGRF에 사용
-된 스프라이트 그래픽의 저작권자는 대부분 skyu에게, 일부 차량은 라스, 텔크, 초저항
-에게 있습니다. 또한 NewGRF을 grf 파일로 제작하기 위해 사용된 코드 소스의 저작권은
-텔크에게 있습니다.
-  본 NewGRF은 OpenTTD 온라인 콘텐츠 서버인 BaNaNaS(http://bananas.openttd.org/)
-와 TELKLAND(http://telk.kr)에만 업로드되며, 그 이외의 장소에서의 배포는 텔크에게
-허가를 받은 곳에서만 가능합니다. 위 두 장소 이외의 장소에서 배포하고자하는 경우,
-텔크에게 문의하시기 바랍니다.
+
+
+7. 저작권
+==========
+이 저작물은 크리에이티브 커먼즈 저작자표시-비영리-동일조건변경허락 3.0 Unported 라이선스에 따라 이용
+할 수 있습니다. 라이선스 전문을 보려면 http://creativecommons.org/licenses/by-nc-sa/3.0/을 방문하거
+나 다음의 주소로 서면 요청해 주십시오. Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.

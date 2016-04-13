@@ -11,7 +11,8 @@ List
 3. FAQ
 4. Known-bugs
 5. Contact & Translation
-6. Copyrights
+6. Credits
+7. Copyrights
 
 
 
@@ -147,10 +148,13 @@ A. You need to construct ITX-Saemaeul like below
   : It comes from the problem of units between miles and kilometers.
     By the way, can you realize the difference of 1km/h? :D
 
-+ The fact that is impossible to make [8x00 locomotive] + [subways]
++ Impossible to make [8x00 locomotive] + [subways]
   : I used a complex method to make subway's appearance naturally according to its
     length. It crashes with locomotives so that subway cars appears abnormally.
     I wish I could fix it, but it seems to be difficult.
+
++ Impossible to make [KTX-1]'s + [KTX-Sancheon]'s.
+  : It is impossible by the similar reason in the above.
 
 
 
@@ -159,27 +163,32 @@ A. You need to construct ITX-Saemaeul like below
 + If you have found a bug or you have a sugguestion, please visit
   TELKLAND(http://telk.kr) or email to TELK(telk5093@gmail).
 + If you want to translate Korean Train Set and the download page of Korean Train Set
-  into your language, please ask TELK(telk5093@gmail) as well.
-+ Please ask TELK(telk5093@gmail.com) to get more information in English or Korean.
+  into your language, please visit the Github project(http://github.com/KoreanGRF/KoreanTrainSet)
+  and see "Translations".
++ Let you know that all authors of Korean Train Set is Korean user so that their english is not
+  so good. Please ask to TELK(OpenTTD Korean translator) to get more information in English.
 
 
 
-6. Copyrights
+6. Credits
 ==========
-- Code:		TELK (telk5093@gmail.com, http://telk.kr)
-- Graphic:	TELK (telk5093@gmail.com, http://telk.kr)
-		skyu (skyu2947@gmail.com)
-		Las (wlq10000@naver.com)
-		Chojeohang (yunggu7410@naver.com)
-		OPENTRAIN (gks3900@naver.com)
+TELK (telk5093@gmail.com, http://telk.kr)
+  - NML Codes, Vehicle graphic modifying
+skyu (skyu2947@gmail.com)
+  - Vehicle graphic offerring
+Las (wlq10000@naver.com)
+  - Vehicle graphic modifying
+Chojeohang (yunggu7410@naver.com)
+  - Vehicle and railway graphic of Busan Line No.4
+Jakga (angryphw@naver.com)
+  - Vehicle graphic modifying
+OPENTRAIN (gks3900@naver.com)
+  - Vehicle graphic modifying
 
-  This NewGRF adds a lot of Korean trains on OpenTTD. The original author of sprites
-used in this NewGRF is skyu and one of some sprites' is Las and TELK. The right of
-raw source code to make this NewGRF into .grf file is belongs to TELK.
-  This NewGRF is uploaded only on BaNaNaS(http://bananas.openttd.org/) and TELKLAND
-(http://telk.kr) and shouldn't be uploaded on the place that TELK didn't allowed.
-If you want to give a download link of this NewGRF on the place other than the both
-place, please ask to TELK(telk5093@gmail.com).
-  In addition, let you know that all authors of Korean Train Set is Korean user
-so that their english is not so good. If you want to ask something in english,
-please ask to TELK(OpenTTD Korean translator).
+
+
+7. Copyrights
+==========
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported
+License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or
+send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
