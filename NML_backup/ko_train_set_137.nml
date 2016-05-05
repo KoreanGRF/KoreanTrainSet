@@ -3708,10 +3708,6 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_cargo_subtype_text, cargo_subtype) {
 	11:	return string(STR_REFIT_TYPE_S1C_NAME);
 	12:	return string(STR_REFIT_TYPE_S1B_NAME);
 	13:	return string(STR_REFIT_TYPE_S1A_NAME);
-//	14:	return string(STR_REFIT_TYPE_K1J_BIKE_NAME);
-	15:	return string(STR_REFIT_TYPE_K1L_NAME);
-//	16:	return string(STR_REFIT_TYPE_K1M_NAME);
-	17:	return string(STR_REFIT_TYPE_K1N_NAME);
 	return string(STR_REFIT_TYPE_K1K_NAME);
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_wagon_panto, cargo_subtype) {
@@ -3729,10 +3725,6 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_wagon_panto, cargo_subtype) {
 	11:	set_S1C_wagon_panto;
 	12:	set_S1B_wagon_panto;
 	13:	set_S1A_wagon_panto;
-//	14:	set_K1J_BIKE_wagon_panto;
-	15:	set_K1L_wagon_panto;
-//	16:	set_K1M_wagon_panto;
-	17:	set_K1N_wagon_panto;
 	set_K1K_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_wagon, cargo_subtype) {
@@ -3750,10 +3742,6 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_wagon, cargo_subtype) {
 	11:	set_S1C_wagon;
 	12:	set_S1B_wagon;
 	13:	set_S1A_wagon;
-//	14:	set_K1J_BIKE_wagon;
-	15:	set_K1L_wagon;
-//	16:	set_K1M_wagon;
-	17:	set_K1N_wagon;
 	set_K1K_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_engineH, cargo_subtype) {
@@ -3771,10 +3759,6 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_engineH, cargo_subtype) {
 	11:	set_S1C_engineH;
 	12:	set_S1B_engineH;
 	13:	set_S1A_engineH;
-//	14:	set_K1J_BIKE_engineH;
-	15:	set_K1L_engineH;
-//	16:	set_K1M_engineH;
-	17:	set_K1N_engineH;
 	set_K1K_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_engineT, cargo_subtype) {
@@ -3792,15 +3776,12 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_engineT, cargo_subtype) {
 	11:	set_S1C_engineT;
 	12:	set_S1B_engineT;
 	13:	set_S1A_engineT;
-//	14:	set_K1J_BIKE_engineT;
-	15:	set_K1L_engineT;
-//	16:	set_K1M_engineT;
-	17:	set_K1N_engineT;
 	set_K1K_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_purchase, cargo_subtype) {
 	set_K1K_purchase;
 }
+
 
 // 자유 편성
 switch(FEAT_TRAINS, SELF, sw_MET1N_coach_by_free_center, (position_in_consist + 1) % 3) {
