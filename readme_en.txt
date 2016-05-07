@@ -46,6 +46,8 @@ Korean Train Set adds vehicles such as below:
   - Incheon subway Line 2
   - Daegu subway Line 1
   - Daegu subway Line 2
+  - Daejeon subway Line 1
+  - Gwangju subway Line 1
   - Busan subway Line 1
   - Busan subway Line 2
   - Busan subway Line 3

@@ -27,9 +27,7 @@ STR_BUSANGIMHAE_NAME				:[KTS] 釜山(プサン)金海(ギムへ)軽電鉄
 STR_DAEGU1_NAME					:[KTS] 大邱(テグ)1号線
 STR_DAEGU2_NAME					:[KTS] 大邱(テグ)2号線
 STR_DAEGU3_NAME					:[KTS] 大邱(テグ)3号線
-STR_DAEJEON1_NAME				:[KTS] 大田(テジョン)1号線
-STR_DAEJEON2_NAME				:[KTS] 大田(テジョン)2号線
-STR_GWANGJU1_NAME				:[KTS] 光州(クァンジュ)1号線
+STR_DAEJEONGWANGJU1_NAME			:[KTS] 大田(テジョン)·光州(クァンジュ)1号線
 STR_UISINSEOL_NAME				:[KTS] ソウル牛耳(ウイ)新設(シンソル)軽電鉄
 STR_SUBCW_NAME					:[KTS] 地下鉄共通客車
 STR_BUSAN4_CW_NAME				:[KTS] 釜山(プサン)4号線客車
@@ -176,8 +174,10 @@ STR_REFIT_TYPE_ITX_NAME				: (Korail 368k ITX-青春(チョンチュン))
 STR_REFIT_TYPE_ARA_NAME				: (Korail A'REX 1k 直通)
 STR_REFIT_TYPE_ARB_NAME				: (Korail A'REX 2k 一般)
 STR_REFIT_TYPE_D00_NAME				: (新盆唐(ブンダン)線 D000 VVVF)
-STR_REFIT_TYPE_ICNM1A_NAME			: (ICTR 仁川(インチョン) 1x VVVF 1次)
-STR_REFIT_TYPE_ICNM1B_NAME			: (ICTR 仁川(インチョン) 1x VVVF 2次)
+STR_REFIT_TYPE_ICNM1A_NAME			: (ICTR 仁川(インチョン) 1k VVVF 1次)
+STR_REFIT_TYPE_ICNM1B_NAME			: (ICTR 仁川(インチョン) 1k VVVF 2次)
+STR_REFIT_TYPE_DAEJEON1_NAME			: (DJET 大田(テジョン) 1k)
+STR_REFIT_TYPE_GWANGJU1_NAME			: (GMRT 光州(クァンジュ) 1k)
 
 # Parameters
 STR_PARAM_ADD_TYPE_NAME				:追加したい列車の種類

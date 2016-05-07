@@ -27,9 +27,7 @@ STR_BUSANGIMHAE_NAME				:[KTS] Busan-Gimhae LRT
 STR_DAEGU1_NAME					:[KTS] Daegu Line 1
 STR_DAEGU2_NAME					:[KTS] Daegu Line 2
 STR_DAEGU3_NAME					:[KTS] Daegu Line 3
-STR_DAEJEON1_NAME				:[KTS] Daejeon Line 1
-STR_DAEJEON2_NAME				:[KTS] Daejeon Line 2
-STR_GWANGJU1_NAME				:[KTS] Gwangju Line 1
+STR_DAEJEONGWANGJU1_NAME			:[KTS] Daejeon·Gwangju Line 1
 STR_UISINSEOL_NAME				:[KTS] Seoul Ui-Sinseol LRT Line
 STR_SUBCW_NAME					:[KTS] Common subway passenger coach
 STR_BUSAN4_CW_NAME				:[KTS] Busan Line 4 passenger car
@@ -176,8 +174,10 @@ STR_REFIT_TYPE_ITX_NAME				: (Korail 368k ITX-Cheongchun)
 STR_REFIT_TYPE_ARA_NAME				: (Korail A'REX 1k Express)
 STR_REFIT_TYPE_ARB_NAME				: (Korail A'REX 2k All-stop)
 STR_REFIT_TYPE_D00_NAME				: (Sinbundang D000 VVVF)
-STR_REFIT_TYPE_ICNM1A_NAME			: (ICTR Incheon 1x VVVF 1st)
-STR_REFIT_TYPE_ICNM1B_NAME			: (ICTR Incheon 1x VVVF 2nd)
+STR_REFIT_TYPE_ICNM1A_NAME			: (ICTR Incheon 1k VVVF 1st)
+STR_REFIT_TYPE_ICNM1B_NAME			: (ICTR Incheon 1k VVVF 2nd)
+STR_REFIT_TYPE_DAEJEON1_NAME			: (DJET Daejeon 1k)
+STR_REFIT_TYPE_GWANGJU1_NAME			: (GMRT Gwangju 1k)
 
 # Parameters
 STR_PARAM_ADD_TYPE_NAME				:Train to add:
