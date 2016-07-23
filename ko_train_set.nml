@@ -1605,7 +1605,7 @@ item(FEAT_TRAINS, ko_train_K8200, 5512) {
 		loading_speed:			0;
 		vehicle_life:			30;
 
-		introduction_date:		date(1990, 1, 1);
+		introduction_date:		date(2002, 1, 1);
 		model_life:			VEHICLE_NEVER_EXPIRES;
 		retire_early:			0;
 		reliability_decay:		0;
@@ -3162,8 +3162,8 @@ switch(FEAT_TRAINS, PARENT, sw_subway_coach_attach, vehicle_type_id) {
 // 속도 계수 적용
 switch(FEAT_TRAINS, SELF, sw_METRO_speed, 1)		{ return (10 * coeff_speed_subway); }
 switch(FEAT_TRAINS, SELF, sw_KCITX_speed, 1)		{ return (18 * coeff_speed_subexpress); }
-switch(FEAT_TRAINS, SELF, sw_AREXA_speed, 1)		{ return (12 * coeff_speed_subexpress); }
-switch(FEAT_TRAINS, SELF, sw_AREXB_speed, 1)		{ return (12 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_AREXA_speed, 1)		{ return (12 * coeff_speed_subway); }
+switch(FEAT_TRAINS, SELF, sw_AREXB_speed, 1)		{ return (12 * coeff_speed_subexpress); }
 switch(FEAT_TRAINS, SELF, sw_ICNM2_speed, 1)		{ return (9 * coeff_speed_light_rail); }
 switch(FEAT_TRAINS, SELF, sw_BUSAN4_speed, 1)		{ return (7 * coeff_speed_light_rail); }
 switch(FEAT_TRAINS, SELF, sw_BUSANGIMHAE_speed, 1)	{ return (8 * coeff_speed_light_rail); }

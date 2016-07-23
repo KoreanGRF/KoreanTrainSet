@@ -167,8 +167,7 @@ A. You need to construct ITX-Saemaeul like below
 + If you want to translate Korean Train Set and the download page of Korean Train Set
   into your language, please visit the Github project(http://github.com/KoreanGRF/KoreanTrainSet)
   and see "Translations".
-+ Let you know that all authors of Korean Train Set is Korean user so that their english is not
-  so good. Please ask to TELK(OpenTTD Korean translator) to get more information in English.
++ Please ask to TELK(OpenTTD Korean translator) to get more information in English.
 
 
 
