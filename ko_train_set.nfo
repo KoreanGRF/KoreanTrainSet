@@ -5,20 +5,20 @@
 // Escapes: D= = DR D+ = DF D- = DC Du* = DM D* = DnF Du<< = DnC D<< = DO D& D| Du/ D/ Du% D%
 // Format: spritenum pcxfile xpos ypos compression ysize xsize xrel yrel
 
-0 * 4 \d4664 
+0 * 4 \d4753 
 
-1 * 12542 14 "C" "INFO" 
-"T" "NAME" 04 "Set de trenes de Corea 1.3.20" 00 
-"T" "NAME" 39 "Þ韓国列車セット 1.3.20" 00 
-"T" "NAME" 3A "Þ한국 열차 세트 1.3.20" 00 
-"T" "DESC" 04 "Þ\0D\UE098El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.\0D(Última actualización: 2016.05.05)\0D\0D\UE089Hecho por: TELK\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
-"T" "DESC" 39 "Þ\0D\UE098韓国列車セットはOpenTTDにKTX、KTX-山川（サンチョン）、ITX-青春（チョンチュン）、セマウル号、ムグンファ号、ヌリロ、 CDC(通勤列車)、首都圏のちかてつ、Korailの機関車とかいろいろな韓国の列車を追加してくれます。\0D(最近アップデート: 2016.05.05)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
-"T" "DESC" 3A "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2016.05.05)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - http://telk.kr" 00 
+1 * 12545 14 "C" "INFO" 
+"T" "NAME" 04 "Set de trenes de Corea 1.3.50" 00 
+"T" "NAME" 39 "Þ韓国列車セット 1.3.50" 00 
+"T" "NAME" 3A "Þ한국 열차 세트 1.3.50" 00 
+"T" "DESC" 04 "Þ\0D\UE098El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.\0D(Última actualización: 2016.07.23)\0D\0D\UE089Hecho por: TELK\0D\UE098  - telk5093@gmail.com\0D  - https://telk.kr" 00 
+"T" "DESC" 39 "Þ\0D\UE098韓国列車セットはOpenTTDにKTX、KTX-山川（サンチョン）、ITX-青春（チョンチュン）、セマウル号、ムグンファ号、ヌリロ、 CDC(通勤列車)、首都圏のちかてつ、Korailの機関車とかいろいろな韓国の列車を追加してくれます。\0D(最近アップデート: 2016.07.23)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - https://telk.kr" 00 
+"T" "DESC" 3A "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2016.07.23)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - https://telk.kr" 00 
 "T" "URL_" 7F "http://telk.kr/ottd/newgrf/ko_train_set/?lang=en" 00 
 "T" "URL_" 04 "http://telk.kr/ottd/newgrf/ko_train_set/?lang=es" 00 
 "T" "URL_" 39 "http://telk.kr/ottd/newgrf/ko_train_set/?lang=jp" 00 
 "T" "URL_" 3A "http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr" 00 
-"B" "VRSN" \w4 \dx0000008B 
+"B" "VRSN" \w4 \dx0000008C 
 "B" "MINV" \w4 \dx00000001 
 "B" "NPAR" \w1 0B 
 "C" "PARA" 
@@ -243,10 +243,10 @@
 "B" "BLTR" \w1 "8" 
 00 
 00 
-2 * 335 08 07 "TK\55\55" "Korean Train Set 1.3.20" 00 "\0D\98Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.\0D(Updated: 2016.05.05)\0D\0D\89+ Author: TELK\0D\98  - telk5093@gmail.com\0D  - http://telk.kr" 00 
-3 * 2831 04 00 FF 65 \wxD000 "It's too short. Be more than 4 cars at least." 00 "It's too short. Be more than 2 cars at least." 00 "can't attach with other coaches!" 00 " (Painting thesedays)" 00 " (Past Korail's painting)" 00 " (V-train)" 00 "\98Changing Models/Paintings: \8FAvailable" 00 "\98Changing Models/Paintings: \8EUnable" 00 " (Cargo painting)" 00 " (First Korail's painting: Blue & White)" 00 " (First Korail's painting: Black & Orange)" 00 " (For future use)" 00 " (Rail cruise 'Haerang')" 00 " (S-train, No.1)" 00 " (S-train, No.2)" 00 " (G-train)" 00 " (Painting B: Past Korail)" 00 " (Painting A: 1970s)" 00 " (Demoted to Mugunghwa, former executive car)" 00 " (ITX-Saemaeul)" 00 " (O-train)" 00 " (Nuriro)" 00 " (Korean wave tour wrapping)" 00 " (Flower garden painting)" 00 " (Dolphine painting)" 00 " (Seaside train painting)" 00 " (Korail 100th Anni., Baekje painting)" 00 " (Past Korail's painting)" 00 " (DMZ-train)" 00 " (RDC Mugunghwa painting)" 00 " (Gyeongbuk Circular theme tour train, old paintings)" 00 " (Gyeongbuk Circular theme tour train, new paintings)" 00 " (No.120000)" 00 " (No.110000)" 00 " (Standard car)" 00 " (Executive car)" 00 " (No.110000, First class)" 00 " (No.120000, First class)" 00 "Þ (Painting E: 2000~2002)" 00 "Þ (Painting D: 1990~1999)" 00 "Þ (Painting C: 1985~1989)" 00 "Þ (Painting B: 1984~1984)" 00 "Þ (Painting A: 1970~1983)" 00 " (General Saemaeul cafe car)" 00 " (RDC Cafe car)" 00 " (General Mugunghwa cafe car)" 00 " (Long type : Saemaeul painting thesedays)" 00 " (Long type : Saemaeul old painting)" 00 " (Long type)" 00 " (Default type)" 00 "\98Changing Models/Paintings: \8EUnable\0D\8BWarning!\98 This is a temporary one. It could occur desync problem in the next KTS version if you use this right now." 00 " (Painting B)" 00 " (Painting C)" 00 " (Painting A)" 00 " (Painting D)" 00 " (Painting E)" 00 " (Painting F)" 00 " (Mail coach)" 00 " (Korail 3xxk AL)" 00 " (Korail 3xxk ST)" 00 " (Korail 311k / Current painting)" 00 " (Korail 311k / Old painting)" 00 " (Korail 1k New rheostatic / Current painting)" 00 " (Korail 1k New rheostatic / Old painting)" 00 " (Korail 1k Modified rheostatic / Current painting)" 00 " (Korail 1k Modified rheostatic / 2nd painting)" 00 " (Korail 1k Modified rheostatic / 1st painting)" 00 " (Korail 1k First rheostatic / 2nd painting)" 00 " (Korail 1k First rheostatic / 1st painting)" 00 " (SMetro 1k VVVF)" 00 " (SMetro 1k Modified rheostatic)" 00 " (SMetro 1k First rheostatic)" 00 " (Korail 371k / Blank painting)" 00 " (Korail 381k)" 00 " (SMetro 2k 2nd VVVF)" 00 " (SMetro 2k 1st VVVF)" 00 " (SMetro 2k Chopper)" 00 " (SMetro 2k MELCO)" 00 " (SMetro 3k 2nd VVVF)" 00 " (Unfinished: SMetro 3k 1st VVVF)" 00 " (SMetro 3k Chopper)" 00 " (Korail 3k VVVF / Current painting)" 00 " (Korail 3k VVVF / Old painting)" 00 " (Korail 341k 2nd VVVF / Current painting)" 00 " (Korail 341k 1st VVVF / Current painting)" 00 " (Korail 341k 2nd VVVF / Old painting)" 00 " (Korail 341k 1st VVVF / Old painting)" 00 " (SMetro 4k VVVF)" 00 " (SMRT 5k VVVF)" 00 " (SMRT 6k VVVF)" 00 " (SMRT 7k VVVF)" 00 " (SMRT 8k VVVF)" 00 " (SML9 9k VVVF)" 00 " (SMRT SR0x VVVF)" 00 " (Korail 351k 3rd VVVF)" 00 " (Korail 351k 2nd VVVF)" 00 " (Korail 351k 1st VVVF)" 00 " (Korail A'REX 2k All-stop)" 00 " (Korail A'REX 1k Express)" 00 " (ICTR Incheon 1x VVVF 1st)" 00 " (ICTR Incheon 1x VVVF 2nd)" 00 
+2 * 336 08 07 "TK\55\55" "Korean Train Set 1.3.50" 00 "\0D\98Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.\0D(Updated: 2016.07.23)\0D\0D\89+ Author: TELK\0D\98  - telk5093@gmail.com\0D  - https://telk.kr" 00 
+3 * 2869 04 00 FF 67 \wxD000 "It's too short. Be more than 4 cars at least." 00 "It's too short. Be more than 2 cars at least." 00 "can't attach with other coaches!" 00 " (Painting thesedays)" 00 " (Past Korail's painting)" 00 " (V-train)" 00 "\98Changing Models/Paintings: \8FAvailable" 00 "\98Changing Models/Paintings: \8EUnable" 00 " (Cargo painting)" 00 " (First Korail's painting: Blue & White)" 00 " (First Korail's painting: Black & Orange)" 00 " (For future use)" 00 " (Rail cruise 'Haerang')" 00 " (S-train, No.1)" 00 " (S-train, No.2)" 00 " (G-train)" 00 " (Painting B: Past Korail)" 00 " (Painting A: 1970s)" 00 " (Demoted to Mugunghwa, former executive car)" 00 " (ITX-Saemaeul)" 00 " (O-train)" 00 " (Nuriro)" 00 " (Korean wave tour wrapping)" 00 " (Flower garden painting)" 00 " (Dolphine painting)" 00 " (Seaside train painting)" 00 " (Korail 100th Anni., Baekje painting)" 00 " (Past Korail's painting)" 00 " (DMZ-train)" 00 " (RDC Mugunghwa painting)" 00 " (Gyeongbuk Circular theme tour train, old paintings)" 00 " (Gyeongbuk Circular theme tour train, new paintings)" 00 " (No.120000)" 00 " (No.110000)" 00 " (Standard car)" 00 " (Executive car)" 00 " (No.110000, First class)" 00 " (No.120000, First class)" 00 "Þ (Painting E: 2000~2002)" 00 "Þ (Painting D: 1990~1999)" 00 "Þ (Painting C: 1985~1989)" 00 "Þ (Painting B: 1984~1984)" 00 "Þ (Painting A: 1970~1983)" 00 " (General Saemaeul cafe car)" 00 " (RDC Cafe car)" 00 " (General Mugunghwa cafe car)" 00 " (Long type : Saemaeul painting thesedays)" 00 " (Long type : Saemaeul old painting)" 00 " (Long type)" 00 " (Default type)" 00 "\98Changing Models/Paintings: \8EUnable\0D\8BWarning!\98 This is a temporary one. It could occur desync problem in the next KTS version if you use this right now." 00 " (Painting B)" 00 " (Painting C)" 00 " (Painting A)" 00 " (Painting D)" 00 " (Painting E)" 00 " (Painting F)" 00 " (Mail coach)" 00 " (Korail 3xxk AL)" 00 " (Korail 3xxk ST)" 00 " (Korail 311k / Current painting)" 00 " (Korail 311k / Old painting)" 00 " (Korail 1k New rheostatic / Current painting)" 00 " (Korail 1k New rheostatic / Old painting)" 00 " (Korail 1k Modified rheostatic / Current painting)" 00 " (Korail 1k Modified rheostatic / 2nd painting)" 00 " (Korail 1k Modified rheostatic / 1st painting)" 00 " (Korail 1k First rheostatic / 2nd painting)" 00 " (Korail 1k First rheostatic / 1st painting)" 00 " (SMetro 1k VVVF)" 00 " (SMetro 1k Modified rheostatic)" 00 " (SMetro 1k First rheostatic)" 00 " (Korail 371k / Blank painting)" 00 " (Korail 381k)" 00 " (SMetro 2k 2nd VVVF)" 00 " (SMetro 2k 1st VVVF)" 00 " (SMetro 2k Chopper)" 00 " (SMetro 2k MELCO)" 00 " (SMetro 3k 2nd VVVF)" 00 " (Unfinished: SMetro 3k 1st VVVF)" 00 " (SMetro 3k Chopper)" 00 " (Korail 3k VVVF / Current painting)" 00 " (Korail 3k VVVF / Old painting)" 00 " (Korail 341k 2nd VVVF / Current painting)" 00 " (Korail 341k 1st VVVF / Current painting)" 00 " (Korail 341k 2nd VVVF / Old painting)" 00 " (Korail 341k 1st VVVF / Old painting)" 00 " (SMetro 4k VVVF)" 00 " (SMRT 5k VVVF)" 00 " (SMRT 6k VVVF)" 00 " (SMRT 7k VVVF)" 00 " (SMRT 8k VVVF)" 00 " (SML9 9k VVVF)" 00 " (SMRT SR0x VVVF)" 00 " (Korail 351k 3rd VVVF)" 00 " (Korail 351k 2nd VVVF)" 00 " (Korail 351k 1st VVVF)" 00 " (Korail A'REX 2k All-stop)" 00 " (Korail A'REX 1k Express)" 00 " (ICTR Incheon 1k VVVF 1st)" 00 " (ICTR Incheon 1k VVVF 2nd)" 00 " (DJET Daejeon 1k)" 00 " (GMRT Gwangju 1k)" 00 
 
-4 * 20 04 0F FF 01 \wxD065 "[KTS] Buffers" 00 
+4 * 20 04 0F FF 01 \wxD067 "[KTS] Buffers" 00 
 
 5 * 27 04 10 FF 01 \wxDC00 "[KTS] Light Railways" 00 
 
@@ -274,7 +274,7 @@
 
 17 * 243 04 00 84 06 \wxD051 " (Korail 3k VVVF / Pintura actual)" 00 " (Korail 3k VVVF / Pintura antigua)" 00 " (Korail 341k 2nd VVVF / Pintura actual)" 00 " (Korail 341k 1st VVVF / Pintura actual)" 00 " (Korail 341k 2nd VVVF / Pintura antigua)" 00 " (Korail 341k 1st VVVF / Pintura antigua)" 00 
 
-18 * 129 04 00 84 04 \wxD061 " (Korail A'REX 2k Todo-Paradas)" 00 " (Korail A'REX 1k Expreso)" 00 " (ICTR Incheon 1x VVVF primero)" 00 " (ICTR Incheon 1x VVVF segundo)" 00 
+18 * 129 04 00 84 04 \wxD061 " (Korail A'REX 2k Todo-Paradas)" 00 " (Korail A'REX 1k Expreso)" 00 " (ICTR Incheon 1k VVVF primero)" 00 " (ICTR Incheon 1k VVVF segundo)" 00 
 
 19 * 30 04 10 84 01 \wxDC00 "Þlínea de Tren Ligero" 00 
 
@@ -298,9 +298,9 @@
 
 29 * 238 04 00 B9 06 \wxD051 "Þ (Korail 3k VVVF / 現塗色)" 00 "Þ (Korail 3k VVVF / 旧塗色)" 00 "Þ (Korail 341k VVVF 2世代 / 現塗色)" 00 "Þ (Korail 341k VVVF 1世代 / 現塗色)" 00 "Þ (Korail 341k VVVF 2世代 / 旧塗色)" 00 "Þ (Korail 341k VVVF 1世代 / 旧塗色)" 00 
 
-30 * 246 04 00 B9 07 \wxD05E "Þ (Korail 351k VVVF 3世代)" 00 "Þ (Korail 351k VVVF 2世代)" 00 "Þ (Korail 351k VVVF 1世代)" 00 "Þ (Korail A'REX 2k 一般)" 00 "Þ (Korail A'REX 1k 直通)" 00 "Þ (ICTR 仁川(インチョン) 1x VVVF 1次)" 00 "Þ (ICTR 仁川(インチョン) 1x VVVF 2次)" 00 
+30 * 317 04 00 B9 09 \wxD05E "Þ (Korail 351k VVVF 3世代)" 00 "Þ (Korail 351k VVVF 2世代)" 00 "Þ (Korail 351k VVVF 1世代)" 00 "Þ (Korail A'REX 2k 一般)" 00 "Þ (Korail A'REX 1k 直通)" 00 "Þ (ICTR 仁川(インチョン) 1k VVVF 1次)" 00 "Þ (ICTR 仁川(インチョン) 1k VVVF 2次)" 00 "Þ (DJET 大田(テジョン) 1k)" 00 "Þ (GMRT 光州(クァンジュ) 1k)" 00 
 
-31 * 30 04 0F B9 01 \wxD065 "Þ[KTS] 線路終端点" 00 
+31 * 30 04 0F B9 01 \wxD067 "Þ[KTS] 線路終端点" 00 
 
 32 * 30 04 10 B9 01 \wxDC00 "Þ[KTS] 軽電鉄線路" 00 
 
@@ -324,9 +324,9 @@
 
 42 * 244 04 00 BA 06 \wxD051 "Þ (Korail 3k VVVF / 현 도색)" 00 "Þ (Korail 3k VVVF / 구 도색)" 00 "Þ (Korail 341k VVVF 2세대 / 현 도색)" 00 "Þ (Korail 341k VVVF 1세대 / 현 도색)" 00 "Þ (Korail 341k VVVF 2세대 / 구 도색)" 00 "Þ (Korail 341k VVVF 1세대 / 구 도색)" 00 
 
-43 * 212 04 00 BA 07 \wxD05E "Þ (Korail 351k VVVF 3세대)" 00 "Þ (Korail 351k VVVF 2세대)" 00 "Þ (Korail 351k VVVF 1세대)" 00 "Þ (Korail A'REX 2k 일반)" 00 "Þ (Korail A'REX 1k 직통)" 00 "Þ (ICTR 인천 1x VVVF 1차)" 00 "Þ (ICTR 인천 1x VVVF 2차)" 00 
+43 * 280 04 00 BA 09 \wxD05E "Þ (Korail 351k VVVF 3세대)" 00 "Þ (Korail 351k VVVF 2세대)" 00 "Þ (Korail 351k VVVF 1세대)" 00 "Þ (Korail A'REX 2k 일반)" 00 "Þ (Korail A'REX 1k 직통)" 00 "Þ (ICTR 인천 1x VVVF 1차)" 00 "Þ (ICTR 인천 1x VVVF 2차)" 00 "Þ (대전 도시철도 1k호대)" 00 "Þ (광주 도시철도 1k호대)" 00 
 
-44 * 31 04 0F BA 01 \wxD065 "Þ[KTS] 선로 종단점" 00 
+44 * 31 04 0F BA 01 \wxD067 "Þ[KTS] 선로 종단점" 00 
 
 45 * 31 04 10 BA 01 \wxDC00 "Þ[KTS] 경전철 선로" 00 
 
@@ -3520,7 +3520,7 @@ FF \wx00F4 	// @action3_19;
 15 FF 
 07 00 
 03 1E 
-2A \dx000B1731 
+2A \dx000B2850 
 04 FF 
 26 00 
 02 00 
@@ -7474,9 +7474,9 @@ FF \wx00C8 	// @action3_101;
 \wx00A9 	// @action3_100;
 
 // Name: sw_subway_coach_attach
-2252 * 193 02 00 A9 8A 
+2252 * 203 02 00 A9 8A 
 C6 00 \dx0000FFFF 
-\b18 
+\b19 
 \wx80FE \dx00001393 \dx00001393 	// 5011 .. 5011: return 254;
 \wx80FE \dx00001394 \dx00001394 	// 5012 .. 5012: return 254;
 \wx80FE \dx00001395 \dx00001395 	// 5013 .. 5013: return 254;
@@ -7493,6 +7493,7 @@ C6 00 \dx0000FFFF
 \wx80FE \dx0000159D \dx0000159D 	// 5533 .. 5533: return 254;
 \wx80FE \dx000015A5 \dx000015A5 	// 5541 .. 5541: return 254;
 \wx80FE \dx000015A6 \dx000015A6 	// 5542 .. 5542: return 254;
+\wx80FE \dx000015B9 \dx000015B9 	// 5561 .. 5561: return 254;
 \wx80FE \dx0000158C \dx0000158C 	// 5516 .. 5516: return 254;
 \wx80FE \dx00001767 \dx00001767 	// 5991 .. 5991: return 254;
 \wx8002 // default: return string(STR_ERROR_CANNOT_ATTACH_OTHER);
@@ -7557,8 +7558,8 @@ FF
 \wx8000 \dx00000000 \dx00000000 	// 0 .. 0: return param[68];
 \wx8000 // default: return param[69];
 
-// param[70] = param[2]
-2269 * 5 0D 46 \D= 02 00 
+// param[70] = param[3]
+2269 * 5 0D 46 \D= 03 00 
 
 // param[69] = (param[70] * 12)
 2270 * 9 0D 45 \D* 46 FF \dx0000000C 
@@ -7566,8 +7567,8 @@ FF
 // param[68] = (param[69] | 32768)
 2271 * 9 0D 44 \D| 45 FF \dx00008000 
 
-// param[71] = param[2]
-2272 * 5 0D 47 \D= 02 00 
+// param[71] = param[3]
+2272 * 5 0D 47 \D= 03 00 
 
 // param[70] = (param[71] * 12)
 2273 * 9 0D 46 \D* 47 FF \dx0000000C 
@@ -7587,8 +7588,8 @@ FF
 \wx8000 \dx00000000 \dx00000000 	// 0 .. 0: return param[68];
 \wx8000 // default: return param[69];
 
-// param[70] = param[3]
-2277 * 5 0D 46 \D= 03 00 
+// param[70] = param[2]
+2277 * 5 0D 46 \D= 02 00 
 
 // param[69] = (param[70] * 12)
 2278 * 9 0D 45 \D* 46 FF \dx0000000C 
@@ -7596,8 +7597,8 @@ FF
 // param[68] = (param[69] | 32768)
 2279 * 9 0D 44 \D| 45 FF \dx00008000 
 
-// param[71] = param[3]
-2280 * 5 0D 47 \D= 03 00 
+// param[71] = param[2]
+2280 * 5 0D 47 \D= 02 00 
 
 // param[70] = (param[71] * 12)
 2281 * 9 0D 46 \D* 47 FF \dx0000000C 
@@ -12876,7 +12877,7 @@ FF \wx00B6 	// @action3_165;
 \wx00E4 \dx00000004 \dx00000004 	// 4 .. 4: set_DAEGU2_wagon_panto;
 \wx00B6 // default: set_DAEGU2_wagon;
 
-4259 * 6 01 00 \b9 FF \wx0008 
+4259 * 6 01 00 \b3 FF \wx0008 
 
 4260 ./gfx/ko_subway.png 1984 742 01 22 8 -3 -11 
 4261 ./gfx/ko_subway.png 2000 742 01 17 21 -13 -8 
@@ -12905,85 +12906,31 @@ FF \wx00B6 	// @action3_165;
 4282 ./gfx/ko_subway.png 1920 660 01 15 50 -25 -9 
 4283 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
 
-4284 ./gfx/ko_subway.png 1024 770 01 22 8 -3 -11 
-4285 ./gfx/ko_subway.png 1040 770 01 17 21 -13 -8 
-4286 ./gfx/ko_subway.png 1072 770 01 12 30 -16 -6 
-4287 ./gfx/ko_subway.png 1121 770 01 17 21 -6 -8 
-4288 ./gfx/ko_subway.png 1151 770 01 22 8 -3 -11 
-4289 ./gfx/ko_subway.png 1167 770 01 17 21 -13 -8 
-4290 ./gfx/ko_subway.png 1199 770 01 12 30 -16 -6 
-4291 ./gfx/ko_subway.png 1248 770 01 17 21 -6 -8 
-
-4292 ./gfx/ko_subway.png 1151 770 01 22 8 -3 -11 
-4293 ./gfx/ko_subway.png 1167 770 01 17 21 -13 -8 
-4294 ./gfx/ko_subway.png 1199 770 01 12 30 -16 -6 
-4295 ./gfx/ko_subway.png 1248 770 01 17 21 -6 -8 
-4296 ./gfx/ko_subway.png 1024 770 01 22 8 -3 -11 
-4297 ./gfx/ko_subway.png 1040 770 01 17 21 -13 -8 
-4298 ./gfx/ko_subway.png 1072 770 01 12 30 -16 -6 
-4299 ./gfx/ko_subway.png 1121 770 01 17 21 -6 -8 
-
-4300 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4301 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4302 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4303 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4304 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4305 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4306 ./gfx/ko_subway.png 960 770 01 15 50 -25 -9 
-4307 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-
-4308 ./gfx/ko_subway.png 1024 800 01 22 8 -3 -11 
-4309 ./gfx/ko_subway.png 1040 800 01 17 21 -13 -8 
-4310 ./gfx/ko_subway.png 1072 800 01 15 30 -16 -9 
-4311 ./gfx/ko_subway.png 1121 800 01 19 21 -6 -10 
-4312 ./gfx/ko_subway.png 1151 800 01 22 8 -3 -11 
-4313 ./gfx/ko_subway.png 1167 800 01 19 21 -13 -10 
-4314 ./gfx/ko_subway.png 1199 800 01 15 30 -16 -9 
-4315 ./gfx/ko_subway.png 1248 800 01 17 21 -6 -8 
-
-4316 ./gfx/ko_subway.png 1151 800 01 22 8 -3 -11 
-4317 ./gfx/ko_subway.png 1167 800 01 19 21 -13 -10 
-4318 ./gfx/ko_subway.png 1199 800 01 15 30 -16 -9 
-4319 ./gfx/ko_subway.png 1248 800 01 17 21 -6 -8 
-4320 ./gfx/ko_subway.png 1024 800 01 22 8 -3 -11 
-4321 ./gfx/ko_subway.png 1040 800 01 17 21 -13 -8 
-4322 ./gfx/ko_subway.png 1072 800 01 15 30 -16 -9 
-4323 ./gfx/ko_subway.png 1121 800 01 19 21 -6 -10 
-
-4324 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4325 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4326 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4327 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4328 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4329 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-4330 ./gfx/ko_subway.png 960 800 01 15 50 -25 -9 
-4331 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
-
 // Name: set_DAEGU2_engineT - feature 00
-4332 * 9 02 00 E4 \b1 \b1 
+4284 * 9 02 00 E4 \b1 \b1 
 \w0 
 \w0 
 
 // Name: sw_DAEGU2_coach_by_free_tail
-4333 * 23 02 00 B6 89 
+4285 * 23 02 00 B6 89 
 40 08 \dx000000FF 
 \b1 
 \wx00E4 \dx00000000 \dx00000000 	// 0 .. 0: set_DAEGU2_engineT;
 \wx00B6 // default: sw_DAEGU2_coach_by_free_center;
 
 // Name: set_DAEGU2_engineH - feature 00
-4334 * 9 02 00 E4 \b1 \b1 
+4286 * 9 02 00 E4 \b1 \b1 
 \w1 
 \w1 
 
 // Name: sw_DAEGU2_coach
-4335 * 23 02 00 B6 89 
+4287 * 23 02 00 B6 89 
 40 00 \dx000000FF 
 \b1 
 \wx00E4 \dx00000000 \dx00000000 	// 0 .. 0: set_DAEGU2_engineH;
 \wx00B6 // default: sw_DAEGU2_coach_by_free_tail;
 
-4336 * 70 00 00 \b27 01 FF \wx15A6 
+4288 * 70 00 00 \b27 01 FF \wx15A6 
 06 0F 
 05 00 
 09 \wx0065 
@@ -13012,24 +12959,24 @@ FF \wx00B6 	// @action3_165;
 13 00 
 25 00 
 
-4337 * 26 04 00 7F 01 FF \wx15A6 "[KTS] Daegu Line 2" 00 
+4289 * 26 04 00 7F 01 FF \wx15A6 "[KTS] Daegu Line 2" 00 
 
-4338 * 30 04 00 04 01 FF \wx15A6 "Þ[KTS] Daegu Línea 2" 00 
+4290 * 30 04 00 04 01 FF \wx15A6 "Þ[KTS] Daegu Línea 2" 00 
 
-4339 * 37 04 00 39 01 FF \wx15A6 "Þ[KTS] 大邱(テグ)2号線" 00 
+4291 * 37 04 00 39 01 FF \wx15A6 "Þ[KTS] 大邱(テグ)2号線" 00 
 
-4340 * 30 04 00 3A 01 FF \wx15A6 "Þ[KTS] 대구 2호선" 00 
+4292 * 30 04 00 3A 01 FF \wx15A6 "Þ[KTS] 대구 2호선" 00 
 
 // Name: set_DAEGU2_purchase - feature 00
-4341 * 9 02 00 E4 \b1 \b1 
+4293 * 9 02 00 E4 \b1 \b1 
 \w2 
 \w2 
 
-4342 * 9 00 00 \b1 01 FF \wx15A6 
+4294 * 9 00 00 \b1 01 FF \wx15A6 
 1E 0C 
 
 // Name: @action3_166
-4343 * 43 02 00 AA 89 
+4295 * 43 02 00 AA 89 
 10 00 \dx000000FF 
 \b3 
 \wx00C8 \dx00000009 \dx00000009 	// sw_METRO_speed;
@@ -13038,7 +12985,7 @@ FF \wx00B6 	// @action3_165;
 \wx00B6 // sw_DAEGU2_coach;
 
 // Name: @action3_167
-4344 * 53 02 00 C8 89 
+4296 * 53 02 00 B8 89 
 10 00 \dx000000FF 
 \b4 
 \wx00C8 \dx00000009 \dx00000009 	// sw_METRO_speed;
@@ -13048,7 +12995,7 @@ FF \wx00B6 	// @action3_165;
 \wx00B6 // sw_DAEGU2_coach;
 
 // Name: @action3_168
-4345 * 63 02 00 AA 89 
+4297 * 63 02 00 AA 89 
 0C 00 \dx0000FFFF 
 \b5 
 \wx00F8 \dx00000012 \dx00000012 	// var_loading_speed_FAST;
@@ -13059,43 +13006,359 @@ FF \wx00B6 	// @action3_165;
 \wx00B6 // sw_DAEGU2_coach;
 
 // Name: @action3_169
-4346 * 43 02 00 C8 89 
+4298 * 43 02 00 B8 89 
 0C 00 \dx0000FFFF 
 \b3 
 \wx00E4 \dx00000000 \dx00000000 	// set_DAEGU2_purchase;
 \wx8007 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_UNABLE);
-\wx00C8 \dx00000036 \dx00000036 	// @action3_167;
+\wx00B8 \dx00000036 \dx00000036 	// @action3_167;
 \wx00B6 // sw_DAEGU2_coach;
 
-4347 * 12 03 00 01 FF \wx15A6 \b1 
-FF \wx00C8 	// @action3_169;
+4299 * 12 03 00 01 FF \wx15A6 \b1 
+FF \wx00B8 	// @action3_169;
 \wx00AA 	// @action3_168;
 
+4300 * 6 01 00 \b2 FF \wx0004 
+
+4301 ./gfx/ko_subway.png 384 907 01 22 8 -3 -11 
+4302 ./gfx/ko_subway.png 400 907 01 19 21 -13 -10 
+4303 ./gfx/ko_subway.png 432 907 01 15 31 -16 -9 
+4304 ./gfx/ko_subway.png 481 907 01 19 21 -6 -10 
+
+4305 ./gfx/ko_subway.png 384 935 01 22 8 -3 -11 
+4306 ./gfx/ko_subway.png 400 935 01 17 21 -13 -8 
+4307 ./gfx/ko_subway.png 432 935 01 12 31 -16 -6 
+4308 ./gfx/ko_subway.png 481 935 01 17 21 -6 -8 
+
+// Name: set_DAEJEON1_wagon_panto - feature 00
+4309 * 9 02 00 AA \b1 \b1 
+\w0 
+\w0 
+
+// Name: set_DAEJEON1_wagon - feature 00
+4310 * 9 02 00 B8 \b1 \b1 
+\w1 
+\w1 
+
+// Name: sw_DAEJEON1_coach_by_free_center
+4311 * 41 02 00 B8 89 
+40 80 \dx000000FF \dx00000000 \dx00000004 
+\b2 
+\wx00AA \dx00000001 \dx00000001 	// 1 .. 1: set_DAEJEON1_wagon_panto;
+\wx00AA \dx00000002 \dx00000002 	// 2 .. 2: set_DAEJEON1_wagon_panto;
+\wx00B8 // default: set_DAEJEON1_wagon;
+
+4312 * 6 01 00 \b2 FF \wx0008 
+
+4313 ./gfx/ko_subway.png 384 962 01 22 8 -3 -11 
+4314 ./gfx/ko_subway.png 400 962 01 17 21 -13 -8 
+4315 ./gfx/ko_subway.png 432 962 01 12 31 -16 -6 
+4316 ./gfx/ko_subway.png 481 962 01 17 21 -6 -8 
+4317 ./gfx/ko_subway.png 511 962 01 22 8 -3 -11 
+4318 ./gfx/ko_subway.png 527 962 01 17 21 -13 -8 
+4319 ./gfx/ko_subway.png 559 962 01 12 30 -16 -6 
+4320 ./gfx/ko_subway.png 608 962 01 17 21 -6 -8 
+
+4321 ./gfx/ko_subway.png 384 880 01 22 8 -3 -11 
+4322 ./gfx/ko_subway.png 400 880 01 17 21 -13 -8 
+4323 ./gfx/ko_subway.png 432 880 01 12 30 -16 -6 
+4324 ./gfx/ko_subway.png 481 880 01 17 21 -6 -8 
+4325 ./gfx/ko_subway.png 511 880 01 22 8 -3 -11 
+4326 ./gfx/ko_subway.png 527 880 01 17 21 -13 -8 
+4327 ./gfx/ko_subway.png 559 880 01 12 31 -16 -6 
+4328 ./gfx/ko_subway.png 608 880 01 17 21 -6 -8 
+
+// Name: set_DAEJEON1_engineT - feature 00
+4329 * 9 02 00 AA \b1 \b1 
+\w0 
+\w0 
+
+// Name: sw_DAEJEON1_coach_by_free_tail
+4330 * 23 02 00 B8 89 
+40 08 \dx000000FF 
+\b1 
+\wx00AA \dx00000000 \dx00000000 	// 0 .. 0: set_DAEJEON1_engineT;
+\wx00B8 // default: sw_DAEJEON1_coach_by_free_center;
+
+// Name: set_DAEJEON1_engineH - feature 00
+4331 * 9 02 00 AA \b1 \b1 
+\w1 
+\w1 
+
+// Name: sw_DAEJEON1_coach
+4332 * 23 02 00 B8 89 
+40 00 \dx000000FF 
+\b1 
+\wx00AA \dx00000000 \dx00000000 	// 0 .. 0: set_DAEJEON1_engineH;
+\wx00B8 // default: sw_DAEJEON1_coach_by_free_tail;
+
+4333 * 6 01 00 \b2 FF \wx0004 
+
+4334 ./gfx/ko_subway.png 64 907 01 22 8 -3 -11 
+4335 ./gfx/ko_subway.png 80 907 01 19 21 -13 -10 
+4336 ./gfx/ko_subway.png 112 907 01 15 31 -16 -9 
+4337 ./gfx/ko_subway.png 161 907 01 19 21 -6 -10 
+
+4338 ./gfx/ko_subway.png 64 935 01 22 8 -3 -11 
+4339 ./gfx/ko_subway.png 80 935 01 17 21 -13 -8 
+4340 ./gfx/ko_subway.png 112 935 01 12 31 -16 -6 
+4341 ./gfx/ko_subway.png 161 935 01 17 21 -6 -8 
+
+// Name: set_GWANGJU1_wagon_panto - feature 00
+4342 * 9 02 00 AA \b1 \b1 
+\w0 
+\w0 
+
+// Name: set_GWANGJU1_wagon - feature 00
+4343 * 9 02 00 E4 \b1 \b1 
+\w1 
+\w1 
+
+// Name: sw_GWANGJU1_coach_by_free_center
+4344 * 41 02 00 E4 89 
+40 80 \dx000000FF \dx00000000 \dx00000004 
+\b2 
+\wx00AA \dx00000001 \dx00000001 	// 1 .. 1: set_GWANGJU1_wagon_panto;
+\wx00AA \dx00000002 \dx00000002 	// 2 .. 2: set_GWANGJU1_wagon_panto;
+\wx00E4 // default: set_GWANGJU1_wagon;
+
+4345 * 6 01 00 \b9 FF \wx0008 
+
+4346 ./gfx/ko_subway.png 64 962 01 22 8 -3 -11 
+4347 ./gfx/ko_subway.png 80 962 01 17 21 -13 -8 
+4348 ./gfx/ko_subway.png 112 962 01 12 31 -16 -6 
+4349 ./gfx/ko_subway.png 161 962 01 17 21 -6 -8 
+4350 ./gfx/ko_subway.png 191 962 01 22 8 -3 -11 
+4351 ./gfx/ko_subway.png 207 962 01 17 21 -13 -8 
+4352 ./gfx/ko_subway.png 239 962 01 12 30 -16 -6 
+4353 ./gfx/ko_subway.png 288 962 01 17 21 -6 -8 
+
+4354 ./gfx/ko_subway.png 64 880 01 22 8 -3 -11 
+4355 ./gfx/ko_subway.png 80 880 01 17 21 -13 -8 
+4356 ./gfx/ko_subway.png 112 880 01 12 30 -16 -6 
+4357 ./gfx/ko_subway.png 161 880 01 17 21 -6 -8 
+4358 ./gfx/ko_subway.png 191 880 01 22 8 -3 -11 
+4359 ./gfx/ko_subway.png 207 880 01 17 21 -13 -8 
+4360 ./gfx/ko_subway.png 239 880 01 12 31 -16 -6 
+4361 ./gfx/ko_subway.png 288 880 01 17 21 -6 -8 
+
+4362 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4363 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4364 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4365 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4366 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4367 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4368 ./gfx/ko_subway.png 320 880 01 15 50 -25 -9 
+4369 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+
+4370 ./gfx/ko_subway.png 1024 770 01 22 8 -3 -11 
+4371 ./gfx/ko_subway.png 1040 770 01 17 21 -13 -8 
+4372 ./gfx/ko_subway.png 1072 770 01 12 30 -16 -6 
+4373 ./gfx/ko_subway.png 1121 770 01 17 21 -6 -8 
+4374 ./gfx/ko_subway.png 1151 770 01 22 8 -3 -11 
+4375 ./gfx/ko_subway.png 1167 770 01 17 21 -13 -8 
+4376 ./gfx/ko_subway.png 1199 770 01 12 30 -16 -6 
+4377 ./gfx/ko_subway.png 1248 770 01 17 21 -6 -8 
+
+4378 ./gfx/ko_subway.png 1151 770 01 22 8 -3 -11 
+4379 ./gfx/ko_subway.png 1167 770 01 17 21 -13 -8 
+4380 ./gfx/ko_subway.png 1199 770 01 12 30 -16 -6 
+4381 ./gfx/ko_subway.png 1248 770 01 17 21 -6 -8 
+4382 ./gfx/ko_subway.png 1024 770 01 22 8 -3 -11 
+4383 ./gfx/ko_subway.png 1040 770 01 17 21 -13 -8 
+4384 ./gfx/ko_subway.png 1072 770 01 12 30 -16 -6 
+4385 ./gfx/ko_subway.png 1121 770 01 17 21 -6 -8 
+
+4386 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4387 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4388 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4389 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4390 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4391 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4392 ./gfx/ko_subway.png 960 770 01 15 50 -25 -9 
+4393 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+
+4394 ./gfx/ko_subway.png 1024 800 01 22 8 -3 -11 
+4395 ./gfx/ko_subway.png 1040 800 01 17 21 -13 -8 
+4396 ./gfx/ko_subway.png 1072 800 01 15 30 -16 -9 
+4397 ./gfx/ko_subway.png 1121 800 01 19 21 -6 -10 
+4398 ./gfx/ko_subway.png 1151 800 01 22 8 -3 -11 
+4399 ./gfx/ko_subway.png 1167 800 01 19 21 -13 -10 
+4400 ./gfx/ko_subway.png 1199 800 01 15 30 -16 -9 
+4401 ./gfx/ko_subway.png 1248 800 01 17 21 -6 -8 
+
+4402 ./gfx/ko_subway.png 1151 800 01 22 8 -3 -11 
+4403 ./gfx/ko_subway.png 1167 800 01 19 21 -13 -10 
+4404 ./gfx/ko_subway.png 1199 800 01 15 30 -16 -9 
+4405 ./gfx/ko_subway.png 1248 800 01 17 21 -6 -8 
+4406 ./gfx/ko_subway.png 1024 800 01 22 8 -3 -11 
+4407 ./gfx/ko_subway.png 1040 800 01 17 21 -13 -8 
+4408 ./gfx/ko_subway.png 1072 800 01 15 30 -16 -9 
+4409 ./gfx/ko_subway.png 1121 800 01 19 21 -6 -10 
+
+4410 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4411 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4412 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4413 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4414 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4415 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+4416 ./gfx/ko_subway.png 960 800 01 15 50 -25 -9 
+4417 ./gfx/ko_subway.png 0 0 01 1 1 0 0 
+
+// Name: set_GWANGJU1_engineT - feature 00
+4418 * 9 02 00 AA \b1 \b1 
+\w0 
+\w0 
+
+// Name: sw_GWANGJU1_coach_by_free_tail
+4419 * 23 02 00 E4 89 
+40 08 \dx000000FF 
+\b1 
+\wx00AA \dx00000000 \dx00000000 	// 0 .. 0: set_GWANGJU1_engineT;
+\wx00E4 // default: sw_GWANGJU1_coach_by_free_center;
+
+// Name: set_GWANGJU1_engineH - feature 00
+4420 * 9 02 00 AA \b1 \b1 
+\w1 
+\w1 
+
+// Name: sw_GWANGJU1_coach
+4421 * 23 02 00 E4 89 
+40 00 \dx000000FF 
+\b1 
+\wx00AA \dx00000000 \dx00000000 	// 0 .. 0: set_GWANGJU1_engineH;
+\wx00E4 // default: sw_GWANGJU1_coach_by_free_tail;
+
+// Name: sw_DAEJEONGWANGJU1_cargo_subtype_text
+4422 * 33 02 00 AA 89 
+F2 00 \dx000000FF 
+\b2 
+\wx8065 \dx00000000 \dx00000000 	// 0 .. 0: return string(STR_REFIT_TYPE_DAEJEON1_NAME);
+\wx8066 \dx00000001 \dx00000001 	// 1 .. 1: return string(STR_REFIT_TYPE_GWANGJU1_NAME);
+\wx8065 // default: return string(STR_REFIT_TYPE_DAEJEON1_NAME);
+
+// Name: sw_DAEJEONGWANGJU1_coach
+4423 * 33 02 00 B8 89 
+F2 00 \dx000000FF 
+\b2 
+\wx00B8 \dx00000000 \dx00000000 	// 0 .. 0: sw_DAEJEON1_coach;
+\wx00E4 \dx00000001 \dx00000001 	// 1 .. 1: sw_GWANGJU1_coach;
+\wx00B8 // default: sw_DAEJEON1_coach;
+
+4424 * 70 00 00 \b27 01 FF \wx15B9 
+06 0F 
+05 00 
+09 \wx0065 
+0B \wx0FB7 
+16 1F 
+24 00 
+1F 40 
+20 1A 
+14 32 
+28 \wx0001 
+15 FF 
+07 14 
+03 1E 
+2A \dx000B2BA0 
+04 FF 
+26 00 
+02 00 
+17 0A 
+0E \dx00004C3C 
+0D 96 
+1C 00 
+08 01 
+19 28 
+12 FD 
+27 1E 
+13 00 
+25 00 
+
+4425 * 39 04 00 7F 01 FF \wx15B9 "Þ[KTS] Daejeon·Gwangju Line 1" 00 
+
+4426 * 41 04 00 04 01 FF \wx15B9 "Þ[KTS] Daejeon·Gwangju Línea 1" 00 
+
+4427 * 68 04 00 39 01 FF \wx15B9 "Þ[KTS] 大田(テジョン)·光州(クァンジュ)1号線" 00 
+
+4428 * 38 04 00 3A 01 FF \wx15B9 "Þ[KTS] 대전·광주 1호선" 00 
+
+// Name: set_DAEJEON1_purchase - feature 00
+4429 * 9 02 00 E4 \b1 \b1 
+\w2 
+\w2 
+
+4430 * 9 00 00 \b1 01 FF \wx15B9 
+1E 2C 
+
+// Name: @action3_170
+4431 * 43 02 00 E2 89 
+10 00 \dx000000FF 
+\b3 
+\wx00C8 \dx00000009 \dx00000009 	// sw_METRO_speed;
+\wx00C7 \dx0000000D \dx0000000D 	// sw_METRO_running_cost;
+\wx00AF \dx00000014 \dx00000014 	// sw_METRO_cargo_capacity;
+\wx00B8 // sw_DAEJEONGWANGJU1_coach;
+
+// Name: @action3_171
+4432 * 53 02 00 C8 89 
+10 00 \dx000000FF 
+\b4 
+\wx00C8 \dx00000009 \dx00000009 	// sw_METRO_speed;
+\wx00C7 \dx0000000D \dx0000000D 	// sw_METRO_running_cost;
+\wx00AF \dx00000014 \dx00000014 	// sw_METRO_cargo_capacity;
+\wx00C6 \dx00000017 \dx00000017 	// sw_METRO_cost;
+\wx00B8 // sw_DAEJEONGWANGJU1_coach;
+
+// Name: @action3_172
+4433 * 73 02 00 E2 89 
+0C 00 \dx0000FFFF 
+\b6 
+\wx00F8 \dx00000012 \dx00000012 	// var_loading_speed_FAST;
+\wx00AF \dx00000015 \dx00000015 	// sw_METRO_cargo_capacity;
+\wx00AA \dx00000019 \dx00000019 	// sw_DAEJEONGWANGJU1_cargo_subtype_text;
+\wx00A9 \dx0000001D \dx0000001D 	// sw_subway_coach_attach;
+\wx00FD \dx00000031 \dx00000031 	// sw_ko_train_subway_start_stop;
+\wx00E2 \dx00000036 \dx00000036 	// @action3_170;
+\wx00B8 // sw_DAEJEONGWANGJU1_coach;
+
+// Name: @action3_173
+4434 * 43 02 00 C8 89 
+0C 00 \dx0000FFFF 
+\b3 
+\wx00E4 \dx00000000 \dx00000000 	// set_DAEJEON1_purchase;
+\wx8006 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_ABLE);
+\wx00C8 \dx00000036 \dx00000036 	// @action3_171;
+\wx00B8 // sw_DAEJEONGWANGJU1_coach;
+
+4435 * 12 03 00 01 FF \wx15B9 \b1 
+FF \wx00C8 	// @action3_173;
+\wx00E2 	// @action3_172;
+
 // Name: sw_BUSANGIMHAE_coach_attach
-4348 * 23 02 00 AA 89 
+4436 * 23 02 00 E2 89 
 C6 00 \dx0000FFFF 
 \b1 
 \wx80FE \dx0000159F \dx0000159F 	// 5535 .. 5535: return 254;
 \wx8002 // default: return string(STR_ERROR_CANNOT_ATTACH_OTHER);
 
 // Name: set_BUSANGIMHAE_engineH - feature 00
-4349 * 9 02 00 C8 \b1 \b1 
+4437 * 9 02 00 C8 \b1 \b1 
 \w3 
 \w3 
 
 // Name: set_BUSANGIMHAE_engineT - feature 00
-4350 * 9 02 00 E4 \b1 \b1 
+4438 * 9 02 00 E4 \b1 \b1 
 \w4 
 \w4 
 
 // Name: sw_BUSANGIMHAE_coach
-4351 * 31 02 00 E4 89 
+4439 * 31 02 00 E4 89 
 40 80 \dx000000FF \dx00000000 \dx00000002 
 \b1 
 \wx00C8 \dx00000000 \dx00000000 	// 0 .. 0: set_BUSANGIMHAE_engineH;
 \wx00E4 // default: set_BUSANGIMHAE_engineT;
 
-4352 * 70 00 00 \b27 01 FF \wx159F 
+4440 * 70 00 00 \b27 01 FF \wx159F 
 06 0F 
 05 05 
 09 \wx0065 
@@ -13124,32 +13387,32 @@ C6 00 \dx0000FFFF
 13 00 
 25 00 
 
-4353 * 30 04 00 7F 01 FF \wx159F "[KTS] Busan-Gimhae LRT" 00 
+4441 * 30 04 00 7F 01 FF \wx159F "[KTS] Busan-Gimhae LRT" 00 
 
-4354 * 59 04 00 39 01 FF \wx159F "Þ[KTS] 釜山(プサン)金海(ギムへ)軽電鉄" 00 
+4442 * 59 04 00 39 01 FF \wx159F "Þ[KTS] 釜山(プサン)金海(ギムへ)軽電鉄" 00 
 
-4355 * 37 04 00 3A 01 FF \wx159F "Þ[KTS] 부산김해경전철" 00 
+4443 * 37 04 00 3A 01 FF \wx159F "Þ[KTS] 부산김해경전철" 00 
 
 // Name: set_BUSANGIMHAE_purchase - feature 00
-4356 * 9 02 00 C8 \b1 \b1 
+4444 * 9 02 00 C8 \b1 \b1 
 \w5 
 \w5 
 
-4357 * 9 00 00 \b1 01 FF \wx159F 
+4445 * 9 00 00 \b1 01 FF \wx159F 
 1E 0C 
 
 // param[69] = (param[66] * 46)
-4358 * 9 0D 45 \D* 42 FF \dx0000002E 
+4446 * 9 0D 45 \D* 42 FF \dx0000002E 
 
 // param[68] = (param[69] | 32768)
-4359 * 9 0D 44 \D| 45 FF \dx00008000 
+4447 * 9 0D 44 \D| 45 FF \dx00008000 
 
-4360 * 7 06 
+4448 * 7 06 
 44 02 FF \wx001F 
 FF 
 
-// Name: @action3_170
-4361 * 43 02 00 A9 89 
+// Name: @action3_174
+4449 * 43 02 00 A9 89 
 10 00 \dx000000FF 
 \b3 
 \wx00FA \dx00000009 \dx00000009 	// sw_BUSANGIMHAE_speed;
@@ -13158,17 +13421,17 @@ FF
 \wx00E4 // sw_BUSANGIMHAE_coach;
 
 // param[70] = (param[66] * 46)
-4362 * 9 0D 46 \D* 42 FF \dx0000002E 
+4450 * 9 0D 46 \D* 42 FF \dx0000002E 
 
 // param[69] = (param[70] | 32768)
-4363 * 9 0D 45 \D| 46 FF \dx00008000 
+4451 * 9 0D 45 \D| 46 FF \dx00008000 
 
-4364 * 7 06 
+4452 * 7 06 
 45 02 FF \wx001F 
 FF 
 
-// Name: @action3_171
-4365 * 53 02 00 FA 89 
+// Name: @action3_175
+4453 * 53 02 00 FA 89 
 10 00 \dx000000FF 
 \b4 
 \wx00FA \dx00000009 \dx00000009 	// sw_BUSANGIMHAE_speed;
@@ -13178,64 +13441,64 @@ FF
 \wx00E4 // sw_BUSANGIMHAE_coach;
 
 // param[71] = (param[66] * 46)
-4366 * 9 0D 47 \D* 42 FF \dx0000002E 
+4454 * 9 0D 47 \D* 42 FF \dx0000002E 
 
 // param[70] = (param[71] | 32768)
-4367 * 9 0D 46 \D| 47 FF \dx00008000 
+4455 * 9 0D 46 \D| 47 FF \dx00008000 
 
-4368 * 7 06 
+4456 * 7 06 
 46 02 FF \wx0015 
 FF 
 
-// Name: @action3_172
-4369 * 63 02 00 A9 89 
+// Name: @action3_176
+4457 * 63 02 00 A9 89 
 0C 00 \dx0000FFFF 
 \b5 
 \wx00F8 \dx00000012 \dx00000012 	// var_loading_speed_FAST;
 \wx8000 \dx00000015 \dx00000015 	// return param[70];
-\wx00AA \dx0000001D \dx0000001D 	// sw_BUSANGIMHAE_coach_attach;
+\wx00E2 \dx0000001D \dx0000001D 	// sw_BUSANGIMHAE_coach_attach;
 \wx00FD \dx00000031 \dx00000031 	// sw_ko_train_subway_start_stop;
-\wx00A9 \dx00000036 \dx00000036 	// @action3_170;
+\wx00A9 \dx00000036 \dx00000036 	// @action3_174;
 \wx00E4 // sw_BUSANGIMHAE_coach;
 
-// Name: @action3_173
-4370 * 43 02 00 FA 89 
+// Name: @action3_177
+4458 * 43 02 00 FA 89 
 0C 00 \dx0000FFFF 
 \b3 
 \wx00C8 \dx00000000 \dx00000000 	// set_BUSANGIMHAE_purchase;
 \wx8007 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_UNABLE);
-\wx00FA \dx00000036 \dx00000036 	// @action3_171;
+\wx00FA \dx00000036 \dx00000036 	// @action3_175;
 \wx00E4 // sw_BUSANGIMHAE_coach;
 
-4371 * 12 03 00 01 FF \wx159F \b1 
-FF \wx00FA 	// @action3_173;
-\wx00A9 	// @action3_172;
+4459 * 12 03 00 01 FF \wx159F \b1 
+FF \wx00FA 	// @action3_177;
+\wx00A9 	// @action3_176;
 
 // Name: sw_UISINSEOL_coach_attach
-4372 * 23 02 00 A9 89 
+4460 * 23 02 00 A9 89 
 C6 00 \dx0000FFFF 
 \b1 
 \wx80FE \dx000015CD \dx000015CD 	// 5581 .. 5581: return 254;
 \wx8002 // default: return string(STR_ERROR_CANNOT_ATTACH_OTHER);
 
 // Name: set_UISINSEOL_engineH - feature 00
-4373 * 9 02 00 FA \b1 \b1 
+4461 * 9 02 00 FA \b1 \b1 
 \w6 
 \w6 
 
 // Name: set_UISINSEOL_engineT - feature 00
-4374 * 9 02 00 C8 \b1 \b1 
+4462 * 9 02 00 C8 \b1 \b1 
 \w7 
 \w7 
 
 // Name: sw_UISINSEOL_coach
-4375 * 31 02 00 C8 89 
+4463 * 31 02 00 C8 89 
 40 80 \dx000000FF \dx00000000 \dx00000002 
 \b1 
 \wx00FA \dx00000000 \dx00000000 	// 0 .. 0: set_UISINSEOL_engineH;
 \wx00C8 // default: set_UISINSEOL_engineT;
 
-4376 * 70 00 00 \b27 01 FF \wx15CD 
+4464 * 70 00 00 \b27 01 FF \wx15CD 
 06 0F 
 05 03 
 09 \wx0047 
@@ -13264,32 +13527,32 @@ C6 00 \dx0000FFFF
 13 00 
 25 00 
 
-4377 * 39 04 00 7F 01 FF \wx15CD "[KTS] Seoul Ui-Sinseol LRT Line" 00 
+4465 * 39 04 00 7F 01 FF \wx15CD "[KTS] Seoul Ui-Sinseol LRT Line" 00 
 
-4378 * 68 04 00 39 01 FF \wx15CD "Þ[KTS] ソウル牛耳(ウイ)新設(シンソル)軽電鉄" 00 
+4466 * 68 04 00 39 01 FF \wx15CD "Þ[KTS] ソウル牛耳(ウイ)新設(シンソル)軽電鉄" 00 
 
-4379 * 44 04 00 3A 01 FF \wx15CD "Þ[KTS] 서울 우이신설경전철" 00 
+4467 * 44 04 00 3A 01 FF \wx15CD "Þ[KTS] 서울 우이신설경전철" 00 
 
 // Name: set_UISINSEOL_purchase - feature 00
-4380 * 9 02 00 FA \b1 \b1 
+4468 * 9 02 00 FA \b1 \b1 
 \w8 
 \w8 
 
-4381 * 9 00 00 \b1 01 FF \wx15CD 
+4469 * 9 00 00 \b1 01 FF \wx15CD 
 1E 0C 
 
 // param[69] = (param[66] * 40)
-4382 * 9 0D 45 \D* 42 FF \dx00000028 
+4470 * 9 0D 45 \D* 42 FF \dx00000028 
 
 // param[68] = (param[69] | 32768)
-4383 * 9 0D 44 \D| 45 FF \dx00008000 
+4471 * 9 0D 44 \D| 45 FF \dx00008000 
 
-4384 * 7 06 
+4472 * 7 06 
 44 02 FF \wx001F 
 FF 
 
-// Name: @action3_174
-4385 * 43 02 00 AA 89 
+// Name: @action3_178
+4473 * 43 02 00 E2 89 
 10 00 \dx000000FF 
 \b3 
 \wx00C5 \dx00000009 \dx00000009 	// sw_UISINSEOL_speed;
@@ -13298,17 +13561,17 @@ FF
 \wx00C8 // sw_UISINSEOL_coach;
 
 // param[70] = (param[66] * 40)
-4386 * 9 0D 46 \D* 42 FF \dx00000028 
+4474 * 9 0D 46 \D* 42 FF \dx00000028 
 
 // param[69] = (param[70] | 32768)
-4387 * 9 0D 45 \D| 46 FF \dx00008000 
+4475 * 9 0D 45 \D| 46 FF \dx00008000 
 
-4388 * 7 06 
+4476 * 7 06 
 45 02 FF \wx001F 
 FF 
 
-// Name: @action3_175
-4389 * 53 02 00 C5 89 
+// Name: @action3_179
+4477 * 53 02 00 C5 89 
 10 00 \dx000000FF 
 \b4 
 \wx00C5 \dx00000009 \dx00000009 	// sw_UISINSEOL_speed;
@@ -13318,50 +13581,50 @@ FF
 \wx00C8 // sw_UISINSEOL_coach;
 
 // param[71] = (param[66] * 40)
-4390 * 9 0D 47 \D* 42 FF \dx00000028 
+4478 * 9 0D 47 \D* 42 FF \dx00000028 
 
 // param[70] = (param[71] | 32768)
-4391 * 9 0D 46 \D| 47 FF \dx00008000 
+4479 * 9 0D 46 \D| 47 FF \dx00008000 
 
-4392 * 7 06 
+4480 * 7 06 
 46 02 FF \wx0015 
 FF 
 
-// Name: @action3_176
-4393 * 63 02 00 AA 89 
+// Name: @action3_180
+4481 * 63 02 00 E2 89 
 0C 00 \dx0000FFFF 
 \b5 
 \wx00F8 \dx00000012 \dx00000012 	// var_loading_speed_FAST;
 \wx8000 \dx00000015 \dx00000015 	// return param[70];
 \wx00A9 \dx0000001D \dx0000001D 	// sw_UISINSEOL_coach_attach;
 \wx00FD \dx00000031 \dx00000031 	// sw_ko_train_subway_start_stop;
-\wx00AA \dx00000036 \dx00000036 	// @action3_174;
+\wx00E2 \dx00000036 \dx00000036 	// @action3_178;
 \wx00C8 // sw_UISINSEOL_coach;
 
-// Name: @action3_177
-4394 * 43 02 00 C8 89 
+// Name: @action3_181
+4482 * 43 02 00 C8 89 
 0C 00 \dx0000FFFF 
 \b3 
 \wx00FA \dx00000000 \dx00000000 	// set_UISINSEOL_purchase;
 \wx8032 \dx00000023 \dx00000023 	// return string(STR_ADDITEXT_TEMP);
-\wx00C5 \dx00000036 \dx00000036 	// @action3_175;
+\wx00C5 \dx00000036 \dx00000036 	// @action3_179;
 \wx00C8 // sw_UISINSEOL_coach;
 
-4395 * 12 03 00 01 FF \wx15CD \b1 
-FF \wx00C8 	// @action3_177;
-\wx00AA 	// @action3_176;
+4483 * 12 03 00 01 FF \wx15CD \b1 
+FF \wx00C8 	// @action3_181;
+\wx00E2 	// @action3_180;
 
 // Name: sw_METSR_coach
-4396 * 31 02 00 B4 89 
+4484 * 31 02 00 B4 89 
 40 80 \dx000000FF \dx00000001 \dx00000003 
 \b1 
 \wx00B4 \dx00000000 \dx00000000 	// 0 .. 0: set_SSR_wagon_panto;
 \wx00CD // default: set_SSR_wagon;
 
 // Name: sw_SUBCW_select
-4397 * 183 02 00 B4 8A 
+4485 * 193 02 00 B4 8A 
 C6 00 \dx0000FFFF 
-\b17 
+\b18 
 \wx00B7 \dx00001393 \dx00001393 	// 5011 .. 5011: sw_MET1N_coach;
 \wx00AE \dx00001394 \dx00001394 	// 5012 .. 5012: sw_MET2N_coach;
 \wx00B3 \dx00001395 \dx00001395 	// 5013 .. 5013: sw_MET3N_coach;
@@ -13378,13 +13641,14 @@ C6 00 \dx0000FFFF
 \wx00D0 \dx0000159D \dx0000159D 	// 5533 .. 5533: sw_BUSAN3_coach;
 \wx00B5 \dx000015A5 \dx000015A5 	// 5541 .. 5541: sw_DAEGU1_coach;
 \wx00B6 \dx000015A6 \dx000015A6 	// 5542 .. 5542: sw_DAEGU2_coach;
+\wx00B8 \dx000015B9 \dx000015B9 	// 5561 .. 5561: sw_DAEJEONGWANGJU1_coach;
 \wx00E4 \dx0000159F \dx0000159F 	// 5535 .. 5535: sw_BUSANGIMHAE_coach;
 \wx00B4 // default: sw_METSR_coach;
 
 // Name: sw_SUBCW_cargo_subtype_text
-4398 * 193 02 00 A7 8A 
+4486 * 203 02 00 AA 8A 
 C6 00 \dx0000FFFF 
-\b18 
+\b19 
 \wx00AD \dx00001393 \dx00001393 	// 5011 .. 5011: sw_MET1N_cargo_subtype_text;
 \wx00B2 \dx00001394 \dx00001394 	// 5012 .. 5012: sw_MET2N_cargo_subtype_text;
 \wx00B1 \dx00001395 \dx00001395 	// 5013 .. 5013: sw_MET3N_cargo_subtype_text;
@@ -13401,35 +13665,36 @@ C6 00 \dx0000FFFF
 \wx80FF \dx0000159D \dx0000159D 	// 5533 .. 5533: return 255;
 \wx80FF \dx000015A5 \dx000015A5 	// 5541 .. 5541: return 255;
 \wx80FF \dx000015A6 \dx000015A6 	// 5542 .. 5542: return 255;
+\wx00AA \dx000015B9 \dx000015B9 	// 5561 .. 5561: sw_DAEJEONGWANGJU1_cargo_subtype_text;
 \wx80FF \dx0000158C \dx0000158C 	// 5516 .. 5516: return 255;
 \wx80FF \dx0000159F \dx0000159F 	// 5535 .. 5535: return 255;
 \wx80FF // default: return 255;
 
 // param[69] = (param[66] * 22)
-4399 * 9 0D 45 \D* 42 FF \dx00000016 
+4487 * 9 0D 45 \D* 42 FF \dx00000016 
 
 // param[68] = (param[69] | 32768)
-4400 * 9 0D 44 \D| 45 FF \dx00008000 
+4488 * 9 0D 44 \D| 45 FF \dx00008000 
 
 // param[70] = (param[66] * 26)
-4401 * 9 0D 46 \D* 42 FF \dx0000001A 
+4489 * 9 0D 46 \D* 42 FF \dx0000001A 
 
 // param[69] = (param[70] | 32768)
-4402 * 9 0D 45 \D| 46 FF \dx00008000 
+4490 * 9 0D 45 \D| 46 FF \dx00008000 
 
 // param[71] = (param[66] * 46)
-4403 * 9 0D 47 \D* 42 FF \dx0000002E 
+4491 * 9 0D 47 \D* 42 FF \dx0000002E 
 
 // param[70] = (param[71] | 32768)
-4404 * 9 0D 46 \D| 47 FF \dx00008000 
+4492 * 9 0D 46 \D| 47 FF \dx00008000 
 
 // param[72] = (param[66] * 50)
-4405 * 9 0D 48 \D* 42 FF \dx00000032 
+4493 * 9 0D 48 \D* 42 FF \dx00000032 
 
 // param[71] = (param[72] | 32768)
-4406 * 9 0D 47 \D| 48 FF \dx00008000 
+4494 * 9 0D 47 \D| 48 FF \dx00008000 
 
-4407 * 22 06 
+4495 * 22 06 
 44 02 FF \wx0015 
 45 02 FF \wx001F 
 46 02 FF \wx0029 
@@ -13437,7 +13702,7 @@ C6 00 \dx0000FFFF
 FF 
 
 // Name: sw_SUBCW_cargo_capacity
-4408 * 53 02 00 FC 8A 
+4496 * 53 02 00 FC 8A 
 C6 00 \dx0000FFFF 
 \b4 
 \wx00FC \dx000013AB \dx000013AB 	// 5035 .. 5035: sw_METAR_cargo_capacity;
@@ -13446,7 +13711,7 @@ C6 00 \dx0000FFFF
 \wx8000 \dx0000159F \dx0000159F 	// 5535 .. 5535: return param[70];
 \wx8000 // default: return param[71];
 
-4409 * 47 00 00 \b17 01 FF \wx1767 
+4497 * 47 00 00 \b17 01 FF \wx1767 
 06 0F 
 2A \dx000AFD82 
 04 FF 
@@ -13465,27 +13730,27 @@ C6 00 \dx0000FFFF
 24 00 
 14 32 
 
-4410 * 43 04 00 7F 01 FF \wx1767 "[KTS] Common subway passenger coach" 00 
+4498 * 43 04 00 7F 01 FF \wx1767 "[KTS] Common subway passenger coach" 00 
 
-4411 * 50 04 00 04 01 FF \wx1767 "Þ[KTS] Metro común - Vagón de pasajeros" 00 
+4499 * 50 04 00 04 01 FF \wx1767 "Þ[KTS] Metro común - Vagón de pasajeros" 00 
 
-4412 * 37 04 00 39 01 FF \wx1767 "Þ[KTS] 地下鉄共通客車" 00 
+4500 * 37 04 00 39 01 FF \wx1767 "Þ[KTS] 地下鉄共通客車" 00 
 
-4413 * 39 04 00 3A 01 FF \wx1767 "Þ[KTS] 지하철 공통 객차" 00 
+4501 * 39 04 00 3A 01 FF \wx1767 "Þ[KTS] 지하철 공통 객차" 00 
 
-4414 * 9 00 00 \b1 01 FF \wx1767 
+4502 * 9 00 00 \b1 01 FF \wx1767 
 1E 2C 
 
-// Name: @action3_178
-4415 * 33 02 00 CF 89 
+// Name: @action3_182
+4503 * 33 02 00 A7 89 
 10 00 \dx000000FF 
 \b2 
 \wx00C7 \dx0000000D \dx0000000D 	// sw_METRO_running_cost;
 \wx00FC \dx00000014 \dx00000014 	// sw_SUBCW_cargo_capacity;
 \wx00B4 // sw_SUBCW_select;
 
-// Name: @action3_179
-4416 * 43 02 00 D4 89 
+// Name: @action3_183
+4504 * 43 02 00 CF 89 
 10 00 \dx000000FF 
 \b3 
 \wx00C7 \dx0000000D \dx0000000D 	// sw_METRO_running_cost;
@@ -13493,96 +13758,96 @@ C6 00 \dx0000FFFF
 \wx00C6 \dx00000017 \dx00000017 	// sw_METRO_cost;
 \wx00B4 // sw_SUBCW_select;
 
-// Name: @action3_180
-4417 * 53 02 00 CF 89 
+// Name: @action3_184
+4505 * 53 02 00 A7 89 
 0C 00 \dx0000FFFF 
 \b4 
 \wx00F8 \dx00000012 \dx00000012 	// var_loading_speed_FAST;
 \wx00FC \dx00000015 \dx00000015 	// sw_SUBCW_cargo_capacity;
-\wx00A7 \dx00000019 \dx00000019 	// sw_SUBCW_cargo_subtype_text;
-\wx00CF \dx00000036 \dx00000036 	// @action3_178;
+\wx00AA \dx00000019 \dx00000019 	// sw_SUBCW_cargo_subtype_text;
+\wx00A7 \dx00000036 \dx00000036 	// @action3_182;
 \wx00B4 // sw_SUBCW_select;
 
-// Name: @action3_181
-4418 * 43 02 00 B4 89 
+// Name: @action3_185
+4506 * 43 02 00 B4 89 
 0C 00 \dx0000FFFF 
 \b3 
 \wx00CD \dx00000000 \dx00000000 	// set_SSR_wagon;
 \wx8006 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_ABLE);
-\wx00D4 \dx00000036 \dx00000036 	// @action3_179;
+\wx00CF \dx00000036 \dx00000036 	// @action3_183;
 \wx00B4 // sw_SUBCW_select;
 
-4419 * 12 03 00 01 FF \wx1767 \b1 
-FF \wx00B4 	// @action3_181;
-\wx00CF 	// @action3_180;
+4507 * 12 03 00 01 FF \wx1767 \b1 
+FF \wx00B4 	// @action3_185;
+\wx00A7 	// @action3_184;
 
 // param[69] = 0
-4420 * 9 0D 45 \D= FF 00 \dx00000000 
+4508 * 9 0D 45 \D= FF 00 \dx00000000 
 
-4421 * 6 09 0F 01 \70 01 01 
+4509 * 6 09 0F 01 \70 01 01 
 
 // param[69] = 1
-4422 * 9 0D 45 \D= FF 00 \dx00000001 
+4510 * 9 0D 45 \D= FF 00 \dx00000001 
 
 // param[68] = (0 - param[69])
-4423 * 9 0D 44 \D- FF 45 \dx00000000 
+4511 * 9 0D 44 \D- FF 45 \dx00000000 
 
 // param[68] = (param[68] << -31)
-4424 * 9 0D 44 \Du<< 44 FF \dxFFFFFFE1 
+4512 * 9 0D 44 \Du<< 44 FF \dxFFFFFFE1 
 
-4425 * 9 07 44 04 \7= \dx00000000 05 
+4513 * 9 07 44 04 \7= \dx00000000 05 
 
-4426 * 5 0A \b1 \b4 \w4974 
+4514 * 5 0A \b1 \b4 \w4974 
 
-4427 ./gfx/tk_simplewaypoint.png 40 0 01 1 1 0 0 
-4428 ./gfx/tk_simplewaypoint.png 0 0 01 23 19 -21 -4 
-4429 ./gfx/tk_simplewaypoint.png 40 0 01 1 1 0 0 
-4430 ./gfx/tk_simplewaypoint.png 20 0 01 23 19 4 -4 
+4515 ./gfx/tk_simplewaypoint.png 40 0 01 1 1 0 0 
+4516 ./gfx/tk_simplewaypoint.png 0 0 01 23 19 -21 -4 
+4517 ./gfx/tk_simplewaypoint.png 40 0 01 1 1 0 0 
+4518 ./gfx/tk_simplewaypoint.png 20 0 01 23 19 4 -4 
 
 // param[69] = 0
-4431 * 9 0D 45 \D= FF 00 \dx00000000 
+4519 * 9 0D 45 \D= FF 00 \dx00000000 
 
-4432 * 6 09 10 01 \70 01 01 
+4520 * 6 09 10 01 \70 01 01 
 
 // param[69] = 1
-4433 * 9 0D 45 \D= FF 00 \dx00000001 
+4521 * 9 0D 45 \D= FF 00 \dx00000001 
 
 // param[68] = (0 - param[69])
-4434 * 9 0D 44 \D- FF 45 \dx00000000 
+4522 * 9 0D 44 \D- FF 45 \dx00000000 
 
 // param[68] = (param[68] << -31)
-4435 * 9 0D 44 \Du<< 44 FF \dxFFFFFFE1 
+4523 * 9 0D 44 \Du<< 44 FF \dxFFFFFFE1 
 
-4436 * 9 07 44 04 \7= \dx00000000 01 
+4524 * 9 07 44 04 \7= \dx00000000 01 
 
-4437 * 35 00 00 \b1 1B FF \wx0000 
+4525 * 35 00 00 \b1 1B FF \wx0000 
 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 
-4438 * 6 01 0F \b1 FF \wx0004 
+4526 * 6 01 0F \b1 FF \wx0004 
 
-4439 ./gfx/objects.png 0 0 01 12 5 -2 -11 
-4440 ./gfx/objects.png 0 0 01 12 5 14 -25 
-4441 ./gfx/objects.png 5 0 01 12 5 -17 -25 
-4442 ./gfx/objects.png 5 0 01 12 5 14 -9 
+4527 ./gfx/objects.png 0 0 01 12 5 -2 -11 
+4528 ./gfx/objects.png 0 0 01 12 5 14 -25 
+4529 ./gfx/objects.png 5 0 01 12 5 -17 -25 
+4530 ./gfx/objects.png 5 0 01 12 5 14 -9 
 
 // Name: sply_end_of_rail_SW - feature 0F
-4443 * 23 02 0F CF \b65 \dx00000F8D \wx0000 
+4531 * 23 02 0F A7 \b65 \dx00000F8D \wx0000 
 \dx80000000 \wx0002 \b15 \b7 \b0 \b1 \b3 \b12 80 
 
 // Name: sply_end_of_rail_SW@registers - feature 0F
-4444 * 30 02 0F CF 89 
+4532 * 30 02 0F A7 89 
 1A 20 \dx00000000 
 \2sto 1A 00 \dx00000080 
 \b1 
-\wx00CF \dx00000000 \dx00000000 
-\wx00CF // 
+\wx00A7 \dx00000000 \dx00000000 
+\wx00A7 // 
 
 // Name: sply_end_of_rail_NW - feature 0F
-4445 * 23 02 0F B4 \b65 \dx00000F8D \wx0000 
+4533 * 23 02 0F B4 \b65 \dx00000F8D \wx0000 
 \dx80000000 \wx0002 \b10 \b10 \b0 \b5 \b5 \b12 80 
 
 // Name: sply_end_of_rail_NW@registers - feature 0F
-4446 * 30 02 0F B4 89 
+4534 * 30 02 0F B4 89 
 1A 20 \dx00000001 
 \2sto 1A 00 \dx00000080 
 \b1 
@@ -13590,23 +13855,23 @@ FF \wx00B4 	// @action3_181;
 \wx00B4 // 
 
 // Name: sply_end_of_rail_NE - feature 0F
-4447 * 23 02 0F D4 \b65 \dx00000F8D \wx0000 
+4535 * 23 02 0F CF \b65 \dx00000F8D \wx0000 
 \dx80000000 \wx0002 \b10 \b10 \b0 \b5 \b5 \b12 80 
 
 // Name: sply_end_of_rail_NE@registers - feature 0F
-4448 * 30 02 0F D4 89 
+4536 * 30 02 0F CF 89 
 1A 20 \dx00000002 
 \2sto 1A 00 \dx00000080 
 \b1 
-\wx00D4 \dx00000000 \dx00000000 
-\wx00D4 // 
+\wx00CF \dx00000000 \dx00000000 
+\wx00CF // 
 
 // Name: sply_end_of_rail_SE - feature 0F
-4449 * 23 02 0F CD \b65 \dx00000F8D \wx0000 
+4537 * 23 02 0F CD \b65 \dx00000F8D \wx0000 
 \dx80000000 \wx0002 \b10 \b10 \b0 \b5 \b5 \b12 80 
 
 // Name: sply_end_of_rail_SE@registers - feature 0F
-4450 * 30 02 0F CD 89 
+4538 * 30 02 0F CD 89 
 1A 20 \dx00000003 
 \2sto 1A 00 \dx00000080 
 \b1 
@@ -13614,18 +13879,18 @@ FF \wx00B4 	// @action3_181;
 \wx00CD // 
 
 // Name: sw_buffer
-4451 * 43 02 0F CD 89 
+4539 * 43 02 0F CD 89 
 48 00 \dx000000FF 
 \b3 
-\wx00CF \dx00000001 \dx00000001 	// 1 .. 1: sply_end_of_rail_SW;
+\wx00A7 \dx00000001 \dx00000001 	// 1 .. 1: sply_end_of_rail_SW;
 \wx00B4 \dx00000002 \dx00000002 	// 2 .. 2: sply_end_of_rail_NW;
-\wx00D4 \dx00000003 \dx00000003 	// 3 .. 3: sply_end_of_rail_NE;
+\wx00CF \dx00000003 \dx00000003 	// 3 .. 3: sply_end_of_rail_NE;
 \wx00CD // default: sply_end_of_rail_SE;
 
-4452 * 41 00 0F \b12 01 00 
+4540 * 41 00 0F \b12 01 00 
 08 "KTSR" 
-09 \wxD065 
-0A \wxD065 
+09 \wxD067 
+0A \wxD067 
 0B 0F 
 0C 11 
 0D 01 
@@ -13636,21 +13901,21 @@ FF \wx00B4 	// @action3_181;
 16 01 
 17 04 
 
-4453 * 8 00 0F \b1 01 00 
+4541 * 8 00 0F \b1 01 00 
 15 \wx0001 
 
-// Name: @action3_182
-4454 * 23 02 0F D4 89 
+// Name: @action3_186
+4542 * 23 02 0F CF 89 
 0C 00 \dx0000FFFF 
 \b1 
 \wx8000 \dx00000157 \dx00000157 	// return 0;
 \wx00CD // sw_buffer;
 
-4455 * 10 03 0F 01 00 \b1 
-FF \wx00D4 	// @action3_182;
+4543 * 10 03 0F 01 00 \b1 
+FF \wx00CF 	// @action3_186;
 \wx00CD 	// sw_buffer;
 
-4456 * 42 00 10 \b10 01 03 
+4544 * 42 00 10 \b10 01 03 
 08 "KRLR" 
 17 \dx000ADE1F 
 0A \wxDC00 
@@ -13662,127 +13927,127 @@ FF \wx00D4 	// @action3_182;
 1A 33 
 10 02 
 
-4457 * 6 01 10 \b1 FF \wx0010 
+4545 * 6 01 10 \b1 FF \wx0010 
 
-4458 ./gfx/ko_train2.png 0 0 01 15 8 7 3 
-4459 ./gfx/ko_train2.png 15 0 01 13 20 1 4 
-4460 ./gfx/ko_train2.png 48 0 01 9 20 1 8 
-4461 ./gfx/ko_train2.png 80 0 01 13 20 1 4 
-4462 ./gfx/ko_train2.png 112 0 01 13 20 1 5 
-4463 ./gfx/ko_train2.png 144 0 01 20 20 0 0 
-4464 ./gfx/ko_train2.png 176 0 01 20 20 0 0 
-4465 ./gfx/ko_train2.png 208 0 01 18 20 0 0 
-4466 ./gfx/ko_train2.png 240 0 01 29 20 0 0 
-4467 ./gfx/ko_train2.png 272 0 01 28 26 0 0 
-4468 ./gfx/ko_train2.png 304 0 01 28 27 0 0 
-4469 ./gfx/ko_train2.png 336 0 01 31 26 0 0 
-4470 ./gfx/ko_train2.png 368 0 01 31 26 0 0 
-4471 ./gfx/ko_train2.png 400 0 01 32 32 0 0 
-4472 ./gfx/ko_train2.png 445 0 01 35 27 0 0 
-4473 ./gfx/ko_train2.png 480 0 01 30 28 0 0 
+4546 ./gfx/ko_train2.png 0 0 01 15 8 7 3 
+4547 ./gfx/ko_train2.png 15 0 01 13 20 1 4 
+4548 ./gfx/ko_train2.png 48 0 01 9 20 1 8 
+4549 ./gfx/ko_train2.png 80 0 01 13 20 1 4 
+4550 ./gfx/ko_train2.png 112 0 01 13 20 1 5 
+4551 ./gfx/ko_train2.png 144 0 01 20 20 0 0 
+4552 ./gfx/ko_train2.png 176 0 01 20 20 0 0 
+4553 ./gfx/ko_train2.png 208 0 01 18 20 0 0 
+4554 ./gfx/ko_train2.png 240 0 01 29 20 0 0 
+4555 ./gfx/ko_train2.png 272 0 01 28 26 0 0 
+4556 ./gfx/ko_train2.png 304 0 01 28 27 0 0 
+4557 ./gfx/ko_train2.png 336 0 01 31 26 0 0 
+4558 ./gfx/ko_train2.png 368 0 01 31 26 0 0 
+4559 ./gfx/ko_train2.png 400 0 01 32 32 0 0 
+4560 ./gfx/ko_train2.png 445 0 01 35 27 0 0 
+4561 ./gfx/ko_train2.png 480 0 01 30 28 0 0 
 
 // Name: sp_light_railway_gui - feature 10
-4474 * 7 02 10 CD \b1 \b0 
+4562 * 7 02 10 CD \b1 \b0 
 \w0 
 
 
-4475 * 6 01 10 \b1 FF \wx000A 
+4563 * 6 01 10 \b1 FF \wx000A 
 
-4476 ./gfx/ko_train2.png 0 40 01 31 64 -32 4 
-4477 ./gfx/ko_train2.png 70 40 01 31 64 -32 4 
-4478 ./gfx/ko_train2.png 140 40 01 31 64 -32 4 
-4479 ./gfx/ko_train2.png 210 40 01 31 64 -32 14 
-4480 ./gfx/ko_train2.png 280 40 01 31 64 -31 5 
-4481 ./gfx/ko_train2.png 350 40 01 31 64 -31 5 
-4482 ./gfx/ko_train2.png 420 40 01 39 64 -33 -8 
-4483 ./gfx/ko_train2.png 490 40 01 23 64 -33 0 
-4484 ./gfx/ko_train2.png 560 40 01 23 64 -33 0 
-4485 ./gfx/ko_train2.png 630 40 01 39 64 -32 -9 
+4564 ./gfx/ko_train2.png 0 40 01 31 64 -32 4 
+4565 ./gfx/ko_train2.png 70 40 01 31 64 -32 4 
+4566 ./gfx/ko_train2.png 140 40 01 31 64 -32 4 
+4567 ./gfx/ko_train2.png 210 40 01 31 64 -32 14 
+4568 ./gfx/ko_train2.png 280 40 01 31 64 -31 5 
+4569 ./gfx/ko_train2.png 350 40 01 31 64 -31 5 
+4570 ./gfx/ko_train2.png 420 40 01 39 64 -33 -8 
+4571 ./gfx/ko_train2.png 490 40 01 23 64 -33 0 
+4572 ./gfx/ko_train2.png 560 40 01 23 64 -33 0 
+4573 ./gfx/ko_train2.png 630 40 01 39 64 -32 -9 
 
 // Name: sp_light_railway_track_overlay - feature 10
-4486 * 7 02 10 D4 \b1 \b0 
+4574 * 7 02 10 CF \b1 \b0 
 \w0 
 
 
-4487 * 6 01 10 \b1 FF \wx0010 
+4575 * 6 01 10 \b1 FF \wx0010 
 
-4488 ./gfx/ko_train2.png 0 80 01 31 64 -32 4 
-4489 ./gfx/ko_train2.png 70 80 01 31 64 -32 4 
-4490 ./gfx/ko_train2.png 140 80 01 31 64 -32 4 
-4491 ./gfx/ko_train2.png 210 80 01 31 64 -32 14 
-4492 ./gfx/ko_train2.png 280 80 01 31 64 -31 5 
-4493 ./gfx/ko_train2.png 350 80 01 31 64 -31 5 
-4494 ./gfx/ko_train2.png 420 80 01 39 64 -34 -9 
-4495 ./gfx/ko_train2.png 490 80 01 23 64 -35 -1 
-4496 ./gfx/ko_train2.png 560 80 01 23 64 -35 -1 
-4497 ./gfx/ko_train2.png 630 80 01 39 64 -33 -10 
-4498 ./gfx/ko_train2.png 700 80 01 31 64 -32 4 
-4499 ./gfx/ko_train2.png 770 80 01 31 64 -31 5 
-4500 ./gfx/ko_train2.png 840 80 01 31 64 -31 5 
-4501 ./gfx/ko_train2.png 910 80 01 31 64 -31 5 
-4502 ./gfx/ko_train2.png 980 80 01 31 64 -31 5 
-4503 ./gfx/ko_train2.png 1050 80 01 31 64 -31 5 
+4576 ./gfx/ko_train2.png 0 80 01 31 64 -32 4 
+4577 ./gfx/ko_train2.png 70 80 01 31 64 -32 4 
+4578 ./gfx/ko_train2.png 140 80 01 31 64 -32 4 
+4579 ./gfx/ko_train2.png 210 80 01 31 64 -32 14 
+4580 ./gfx/ko_train2.png 280 80 01 31 64 -31 5 
+4581 ./gfx/ko_train2.png 350 80 01 31 64 -31 5 
+4582 ./gfx/ko_train2.png 420 80 01 39 64 -34 -9 
+4583 ./gfx/ko_train2.png 490 80 01 23 64 -35 -1 
+4584 ./gfx/ko_train2.png 560 80 01 23 64 -35 -1 
+4585 ./gfx/ko_train2.png 630 80 01 39 64 -33 -10 
+4586 ./gfx/ko_train2.png 700 80 01 31 64 -32 4 
+4587 ./gfx/ko_train2.png 770 80 01 31 64 -31 5 
+4588 ./gfx/ko_train2.png 840 80 01 31 64 -31 5 
+4589 ./gfx/ko_train2.png 910 80 01 31 64 -31 5 
+4590 ./gfx/ko_train2.png 980 80 01 31 64 -31 5 
+4591 ./gfx/ko_train2.png 1050 80 01 31 64 -31 5 
 
 // Name: sp_light_railway_track_underlay - feature 10
-4504 * 7 02 10 B4 \b1 \b0 
+4592 * 7 02 10 B4 \b1 \b0 
 \w0 
 
 
-4505 * 6 01 10 \b1 FF \wx0004 
+4593 * 6 01 10 \b1 FF \wx0004 
 
-4506 ./gfx/ko_train2.png 0 120 01 31 64 -34 -1 
-4507 ./gfx/ko_train2.png 70 120 01 31 64 -34 -2 
-4508 ./gfx/ko_train2.png 140 120 01 31 64 -32 -2 
-4509 ./gfx/ko_train2.png 210 120 01 31 64 -34 -1 
+4594 ./gfx/ko_train2.png 0 120 01 31 64 -34 -1 
+4595 ./gfx/ko_train2.png 70 120 01 31 64 -34 -2 
+4596 ./gfx/ko_train2.png 140 120 01 31 64 -32 -2 
+4597 ./gfx/ko_train2.png 210 120 01 31 64 -34 -1 
 
 // Name: sp_light_railway_track_tunnel - feature 10
-4510 * 7 02 10 CF \b1 \b0 
+4598 * 7 02 10 A7 \b1 \b0 
 \w0 
 
 
-4511 * 6 01 10 \b1 FF \wx0006 
+4599 * 6 01 10 \b1 FF \wx0006 
 
-4512 ./gfx/ko_train2.png 0 160 01 34 32 -11 -8 
-4513 ./gfx/ko_train2.png 70 160 01 52 64 -12 -36 
-4514 ./gfx/ko_train2.png 140 160 01 34 32 -24 -9 
-4515 ./gfx/ko_train2.png 210 160 01 52 64 -47 -40 
-4516 ./gfx/ko_train2.png 280 160 01 52 64 -54 -36 
-4517 ./gfx/ko_train2.png 350 160 01 52 64 -8 -36 
+4600 ./gfx/ko_train2.png 0 160 01 34 32 -11 -8 
+4601 ./gfx/ko_train2.png 70 160 01 52 64 -12 -36 
+4602 ./gfx/ko_train2.png 140 160 01 34 32 -24 -9 
+4603 ./gfx/ko_train2.png 210 160 01 52 64 -47 -40 
+4604 ./gfx/ko_train2.png 280 160 01 52 64 -54 -36 
+4605 ./gfx/ko_train2.png 350 160 01 52 64 -8 -36 
 
 // Name: sp_light_railway_track_depot - feature 10
-4518 * 7 02 10 A7 \b1 \b0 
+4606 * 7 02 10 AA \b1 \b0 
 \w0 
 
 
-4519 * 6 01 10 \b1 FF \wx000A 
+4607 * 6 01 10 \b1 FF \wx000A 
 
-4520 ./gfx/ko_train2.png 0 40 01 31 64 -32 4 
-4521 ./gfx/ko_train2.png 70 40 01 31 64 -32 4 
-4522 ./gfx/ko_train2.png 420 40 01 39 64 -33 -8 
-4523 ./gfx/ko_train2.png 490 40 01 23 64 -33 0 
-4524 ./gfx/ko_train2.png 560 40 01 23 64 -33 0 
-4525 ./gfx/ko_train2.png 630 40 01 39 64 -32 -9 
-4526 ./gfx/ko_train2.png 140 40 01 31 64 -32 4 
-4527 ./gfx/ko_train2.png 210 40 01 31 64 -32 14 
-4528 ./gfx/ko_train2.png 280 40 01 31 64 -31 5 
-4529 ./gfx/ko_train2.png 350 40 01 31 64 -31 5 
+4608 ./gfx/ko_train2.png 0 40 01 31 64 -32 4 
+4609 ./gfx/ko_train2.png 70 40 01 31 64 -32 4 
+4610 ./gfx/ko_train2.png 420 40 01 39 64 -33 -8 
+4611 ./gfx/ko_train2.png 490 40 01 23 64 -33 0 
+4612 ./gfx/ko_train2.png 560 40 01 23 64 -33 0 
+4613 ./gfx/ko_train2.png 630 40 01 39 64 -32 -9 
+4614 ./gfx/ko_train2.png 140 40 01 31 64 -32 4 
+4615 ./gfx/ko_train2.png 210 40 01 31 64 -32 14 
+4616 ./gfx/ko_train2.png 280 40 01 31 64 -31 5 
+4617 ./gfx/ko_train2.png 350 40 01 31 64 -31 5 
 
 // Name: sp_light_railway_track_bridge - feature 10
-4530 * 7 02 10 FC \b1 \b0 
+4618 * 7 02 10 FC \b1 \b0 
 \w0 
 
 
-4531 * 25 03 10 01 03 \b6 
+4619 * 25 03 10 01 03 \b6 
 00 \wx00CD 	// sp_light_railway_gui;
-01 \wx00D4 	// sp_light_railway_track_overlay;
+01 \wx00CF 	// sp_light_railway_track_overlay;
 02 \wx00B4 	// sp_light_railway_track_underlay;
-03 \wx00CF 	// sp_light_railway_track_tunnel;
+03 \wx00A7 	// sp_light_railway_track_tunnel;
 06 \wx00FC 	// sp_light_railway_track_bridge;
-08 \wx00A7 	// sp_light_railway_track_depot;
+08 \wx00AA 	// sp_light_railway_track_depot;
 \wx0000 
 
 // Name: sw_BUSAN4_attach
-4532 * 43 02 00 A7 8A 
+4620 * 43 02 00 AA 8A 
 C6 00 \dx0000FFFF 
 \b3 
 \wx8002 \dx00000000 \dx00000073 	// 0 .. 115: return string(STR_ERROR_CANNOT_ATTACH_OTHER);
@@ -13790,56 +14055,56 @@ C6 00 \dx0000FFFF
 \wx80FE \dx00001968 \dx00001968 	// 6504 .. 6504: return 254;
 \wx8002 // default: return string(STR_ERROR_CANNOT_ATTACH_OTHER);
 
-4533 * 6 01 00 \b4 FF \wx0008 
+4621 * 6 01 00 \b4 FF \wx0008 
 
-4534 ./gfx/ko_train1.png 560 770 01 16 8 -3 -11 
-4535 ./gfx/ko_train1.png 575 770 01 14 16 -8 -12 
-4536 ./gfx/ko_train1.png 605 770 01 14 24 -12 -11 
-4537 ./gfx/ko_train1.png 655 770 01 14 16 -8 -12 
-4538 ./gfx/ko_train1.png 685 770 01 16 8 -3 -11 
-4539 ./gfx/ko_train1.png 700 770 01 14 16 -8 -12 
-4540 ./gfx/ko_train1.png 735 770 01 14 24 -12 -11 
-4541 ./gfx/ko_train1.png 785 770 01 14 16 -8 -12 
+4622 ./gfx/ko_train1.png 560 770 01 16 8 -3 -11 
+4623 ./gfx/ko_train1.png 575 770 01 14 16 -8 -12 
+4624 ./gfx/ko_train1.png 605 770 01 14 24 -12 -11 
+4625 ./gfx/ko_train1.png 655 770 01 14 16 -8 -12 
+4626 ./gfx/ko_train1.png 685 770 01 16 8 -3 -11 
+4627 ./gfx/ko_train1.png 700 770 01 14 16 -8 -12 
+4628 ./gfx/ko_train1.png 735 770 01 14 24 -12 -11 
+4629 ./gfx/ko_train1.png 785 770 01 14 16 -8 -12 
 
-4542 ./gfx/ko_train1.png 560 680 01 16 8 -3 -11 
-4543 ./gfx/ko_train1.png 575 680 01 14 16 -8 -12 
-4544 ./gfx/ko_train1.png 605 680 01 14 24 -12 -11 
-4545 ./gfx/ko_train1.png 655 680 01 14 16 -8 -12 
-4546 ./gfx/ko_train1.png 685 680 01 16 8 -3 -11 
-4547 ./gfx/ko_train1.png 700 680 01 14 16 -8 -12 
-4548 ./gfx/ko_train1.png 735 680 01 14 24 -12 -11 
-4549 ./gfx/ko_train1.png 785 680 01 14 16 -8 -12 
+4630 ./gfx/ko_train1.png 560 680 01 16 8 -3 -11 
+4631 ./gfx/ko_train1.png 575 680 01 14 16 -8 -12 
+4632 ./gfx/ko_train1.png 605 680 01 14 24 -12 -11 
+4633 ./gfx/ko_train1.png 655 680 01 14 16 -8 -12 
+4634 ./gfx/ko_train1.png 685 680 01 16 8 -3 -11 
+4635 ./gfx/ko_train1.png 700 680 01 14 16 -8 -12 
+4636 ./gfx/ko_train1.png 735 680 01 14 24 -12 -11 
+4637 ./gfx/ko_train1.png 785 680 01 14 16 -8 -12 
 
-4550 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
-4551 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
-4552 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
-4553 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
-4554 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
-4555 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
-4556 ./gfx/ko_train1.png 500 680 01 14 50 -25 -8 
-4557 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
+4638 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
+4639 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
+4640 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
+4641 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
+4642 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
+4643 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
+4644 ./gfx/ko_train1.png 500 680 01 14 50 -25 -8 
+4645 ./gfx/ko_train1.png 0 0 01 1 1 0 0 
 
-4558 ./gfx/ko_train1.png 560 740 01 16 8 -3 -11 
-4559 ./gfx/ko_train1.png 575 740 01 14 16 -8 -12 
-4560 ./gfx/ko_train1.png 605 740 01 14 24 -12 -11 
-4561 ./gfx/ko_train1.png 655 740 01 14 16 -8 -12 
-4562 ./gfx/ko_train1.png 685 740 01 16 8 -3 -11 
-4563 ./gfx/ko_train1.png 700 740 01 14 16 -8 -12 
-4564 ./gfx/ko_train1.png 735 740 01 14 24 -12 -11 
-4565 ./gfx/ko_train1.png 785 740 01 14 16 -8 -12 
+4646 ./gfx/ko_train1.png 560 740 01 16 8 -3 -11 
+4647 ./gfx/ko_train1.png 575 740 01 14 16 -8 -12 
+4648 ./gfx/ko_train1.png 605 740 01 14 24 -12 -11 
+4649 ./gfx/ko_train1.png 655 740 01 14 16 -8 -12 
+4650 ./gfx/ko_train1.png 685 740 01 16 8 -3 -11 
+4651 ./gfx/ko_train1.png 700 740 01 14 16 -8 -12 
+4652 ./gfx/ko_train1.png 735 740 01 14 24 -12 -11 
+4653 ./gfx/ko_train1.png 785 740 01 14 16 -8 -12 
 
 // Name: set_BUSAN4_engineT - feature 00
-4566 * 9 02 00 FC \b1 \b1 
+4654 * 9 02 00 FC \b1 \b1 
 \w0 
 \w0 
 
 // Name: set_BUSAN4_engineH - feature 00
-4567 * 9 02 00 CF \b1 \b1 
+4655 * 9 02 00 A7 \b1 \b1 
 \w1 
 \w1 
 
 // Name: sw_BUSAN4_engine
-4568 * 102 02 00 CF 89 
+4656 * 102 02 00 A7 89 
 40 70 \dx000000FF \dx00000001 \dx00000001 
 \2cmp 1A 20 \dx00000001 
 \2- 1A 20 \dx00000001 
@@ -13853,9 +14118,9 @@ C6 00 \dx0000FFFF
 \2& 7D 80 00 \dxFFFFFFFF 
 \b1 
 \wx00FC \dx00000001 \dx00000001 	// 1 .. 1: set_BUSAN4_engineT;
-\wx00CF // default: set_BUSAN4_engineH;
+\wx00A7 // default: set_BUSAN4_engineH;
 
-4569 * 72 00 00 \b28 01 FF \wx159E 
+4657 * 72 00 00 \b28 01 FF \wx159E 
 06 0F 
 05 04 
 09 \wx0047 
@@ -13885,96 +14150,96 @@ C6 00 \dx0000FFFF
 13 00 
 25 00 
 
-4570 * 26 04 00 7F 01 FF \wx159E "[KTS] Busan Line 4" 00 
+4658 * 26 04 00 7F 01 FF \wx159E "[KTS] Busan Line 4" 00 
 
-4571 * 30 04 00 04 01 FF \wx159E "Þ[KTS] Busan Línea 4" 00 
+4659 * 30 04 00 04 01 FF \wx159E "Þ[KTS] Busan Línea 4" 00 
 
-4572 * 40 04 00 39 01 FF \wx159E "Þ[KTS] 釜山(プサン)4号線" 00 
+4660 * 40 04 00 39 01 FF \wx159E "Þ[KTS] 釜山(プサン)4号線" 00 
 
-4573 * 30 04 00 3A 01 FF \wx159E "Þ[KTS] 부산 4호선" 00 
+4661 * 30 04 00 3A 01 FF \wx159E "Þ[KTS] 부산 4호선" 00 
 
 // Name: set_BUSAN4_purchase - feature 00
-4574 * 9 02 00 FC \b1 \b1 
+4662 * 9 02 00 FC \b1 \b1 
 \w2 
 \w2 
 
-4575 * 9 00 00 \b1 01 FF \wx159E 
+4663 * 9 00 00 \b1 01 FF \wx159E 
 1E 0C 
 
 // param[69] = (param[66] * 26)
-4576 * 9 0D 45 \D* 42 FF \dx0000001A 
+4664 * 9 0D 45 \D* 42 FF \dx0000001A 
 
 // param[68] = (param[69] | 32768)
-4577 * 9 0D 44 \D| 45 FF \dx00008000 
+4665 * 9 0D 44 \D| 45 FF \dx00008000 
 
-4578 * 7 06 
+4666 * 7 06 
 44 02 FF \wx001F 
 FF 
 
-// Name: @action3_183
-4579 * 43 02 00 B4 89 
+// Name: @action3_187
+4667 * 43 02 00 B4 89 
 10 00 \dx000000FF 
 \b3 
 \wx00AB \dx00000009 \dx00000009 	// sw_BUSAN4_speed;
 \wx00C7 \dx0000000D \dx0000000D 	// sw_METRO_running_cost;
 \wx8000 \dx00000014 \dx00000014 	// return param[68];
-\wx00CF // sw_BUSAN4_engine;
+\wx00A7 // sw_BUSAN4_engine;
 
 // param[70] = (param[66] * 26)
-4580 * 9 0D 46 \D* 42 FF \dx0000001A 
+4668 * 9 0D 46 \D* 42 FF \dx0000001A 
 
 // param[69] = (param[70] | 32768)
-4581 * 9 0D 45 \D| 46 FF \dx00008000 
+4669 * 9 0D 45 \D| 46 FF \dx00008000 
 
-4582 * 7 06 
+4670 * 7 06 
 45 02 FF \wx001F 
 FF 
 
-// Name: @action3_184
-4583 * 53 02 00 AB 89 
+// Name: @action3_188
+4671 * 53 02 00 AB 89 
 10 00 \dx000000FF 
 \b4 
 \wx00AB \dx00000009 \dx00000009 	// sw_BUSAN4_speed;
 \wx00C7 \dx0000000D \dx0000000D 	// sw_METRO_running_cost;
 \wx8000 \dx00000014 \dx00000014 	// return param[69];
 \wx00C6 \dx00000017 \dx00000017 	// sw_METRO_cost;
-\wx00CF // sw_BUSAN4_engine;
+\wx00A7 // sw_BUSAN4_engine;
 
 // param[71] = (param[66] * 26)
-4584 * 9 0D 47 \D* 42 FF \dx0000001A 
+4672 * 9 0D 47 \D* 42 FF \dx0000001A 
 
 // param[70] = (param[71] | 32768)
-4585 * 9 0D 46 \D| 47 FF \dx00008000 
+4673 * 9 0D 46 \D| 47 FF \dx00008000 
 
-4586 * 7 06 
+4674 * 7 06 
 46 02 FF \wx0015 
 FF 
 
-// Name: @action3_185
-4587 * 63 02 00 B4 89 
+// Name: @action3_189
+4675 * 63 02 00 B4 89 
 0C 00 \dx0000FFFF 
 \b5 
 \wx00F8 \dx00000012 \dx00000012 	// var_loading_speed_FAST;
 \wx8000 \dx00000015 \dx00000015 	// return param[70];
-\wx00A7 \dx0000001D \dx0000001D 	// sw_BUSAN4_attach;
+\wx00AA \dx0000001D \dx0000001D 	// sw_BUSAN4_attach;
 \wx00FD \dx00000031 \dx00000031 	// sw_ko_train_subway_start_stop;
-\wx00B4 \dx00000036 \dx00000036 	// @action3_183;
-\wx00CF // sw_BUSAN4_engine;
+\wx00B4 \dx00000036 \dx00000036 	// @action3_187;
+\wx00A7 // sw_BUSAN4_engine;
 
-// Name: @action3_186
-4588 * 43 02 00 CF 89 
+// Name: @action3_190
+4676 * 43 02 00 A7 89 
 0C 00 \dx0000FFFF 
 \b3 
 \wx00FC \dx00000000 \dx00000000 	// set_BUSAN4_purchase;
 \wx8007 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_UNABLE);
-\wx00AB \dx00000036 \dx00000036 	// @action3_184;
-\wx00CF // sw_BUSAN4_engine;
+\wx00AB \dx00000036 \dx00000036 	// @action3_188;
+\wx00A7 // sw_BUSAN4_engine;
 
-4589 * 12 03 00 01 FF \wx159E \b1 
-FF \wx00CF 	// @action3_186;
-\wx00B4 	// @action3_185;
+4677 * 12 03 00 01 FF \wx159E \b1 
+FF \wx00A7 	// @action3_190;
+\wx00B4 	// @action3_189;
 
-4590 * 53 00 00 \b20 01 FF \wx1968 
+4678 * 53 00 00 \b20 01 FF \wx1968 
 06 0F 
 05 04 
 2A \dx000B357F 
@@ -13996,34 +14261,34 @@ FF \wx00CF 	// @action3_186;
 24 00 
 14 1A 
 
-4591 * 40 04 00 7F 01 FF \wx1968 "[KTS] Busan Line 4 passenger car" 00 
+4679 * 40 04 00 7F 01 FF \wx1968 "[KTS] Busan Line 4 passenger car" 00 
 
-4592 * 50 04 00 04 01 FF \wx1968 "Þ[KTS] Busan Línea 4 Vagón de pasajeros" 00 
+4680 * 50 04 00 04 01 FF \wx1968 "Þ[KTS] Busan Línea 4 Vagón de pasajeros" 00 
 
-4593 * 46 04 00 39 01 FF \wx1968 "Þ[KTS] 釜山(プサン)4号線客車" 00 
+4681 * 46 04 00 39 01 FF \wx1968 "Þ[KTS] 釜山(プサン)4号線客車" 00 
 
-4594 * 37 04 00 3A 01 FF \wx1968 "Þ[KTS] 부산 4호선 객차" 00 
+4682 * 37 04 00 3A 01 FF \wx1968 "Þ[KTS] 부산 4호선 객차" 00 
 
 // Name: set_BUSAN4_wagon - feature 00
-4595 * 9 02 00 B4 \b1 \b1 
+4683 * 9 02 00 B4 \b1 \b1 
 \w3 
 \w3 
 
-4596 * 9 00 00 \b1 01 FF \wx1968 
+4684 * 9 00 00 \b1 01 FF \wx1968 
 1E 0C 
 
 // param[69] = (param[66] * 26)
-4597 * 9 0D 45 \D* 42 FF \dx0000001A 
+4685 * 9 0D 45 \D* 42 FF \dx0000001A 
 
 // param[68] = (param[69] | 32768)
-4598 * 9 0D 44 \D| 45 FF \dx00008000 
+4686 * 9 0D 44 \D| 45 FF \dx00008000 
 
-4599 * 7 06 
+4687 * 7 06 
 44 02 FF \wx0015 
 FF 
 
-// Name: @action3_187
-4600 * 33 02 00 CF 89 
+// Name: @action3_191
+4688 * 33 02 00 A7 89 
 10 00 \dx000000FF 
 \b2 
 \wx00C7 \dx0000000D \dx0000000D 	// sw_METRO_running_cost;
@@ -14031,17 +14296,17 @@ FF
 \wx00B4 // set_BUSAN4_wagon;
 
 // param[70] = (param[66] * 26)
-4601 * 9 0D 46 \D* 42 FF \dx0000001A 
+4689 * 9 0D 46 \D* 42 FF \dx0000001A 
 
 // param[69] = (param[70] | 32768)
-4602 * 9 0D 45 \D| 46 FF \dx00008000 
+4690 * 9 0D 45 \D| 46 FF \dx00008000 
 
-4603 * 7 06 
+4691 * 7 06 
 45 02 FF \wx0015 
 FF 
 
-// Name: @action3_188
-4604 * 43 02 00 C6 89 
+// Name: @action3_192
+4692 * 43 02 00 C6 89 
 10 00 \dx000000FF 
 \b3 
 \wx00C7 \dx0000000D \dx0000000D 	// sw_METRO_running_cost;
@@ -14050,195 +14315,198 @@ FF
 \wx00B4 // set_BUSAN4_wagon;
 
 // param[71] = (param[66] * 26)
-4605 * 9 0D 47 \D* 42 FF \dx0000001A 
+4693 * 9 0D 47 \D* 42 FF \dx0000001A 
 
 // param[70] = (param[71] | 32768)
-4606 * 9 0D 46 \D| 47 FF \dx00008000 
+4694 * 9 0D 46 \D| 47 FF \dx00008000 
 
-4607 * 7 06 
+4695 * 7 06 
 46 02 FF \wx0015 
 FF 
 
-// Name: @action3_189
-4608 * 53 02 00 CF 89 
+// Name: @action3_193
+4696 * 53 02 00 A7 89 
 0C 00 \dx0000FFFF 
 \b4 
 \wx00F8 \dx00000012 \dx00000012 	// var_loading_speed_FAST;
 \wx8000 \dx00000015 \dx00000015 	// return param[70];
-\wx00A7 \dx0000001D \dx0000001D 	// sw_BUSAN4_attach;
-\wx00CF \dx00000036 \dx00000036 	// @action3_187;
+\wx00AA \dx0000001D \dx0000001D 	// sw_BUSAN4_attach;
+\wx00A7 \dx00000036 \dx00000036 	// @action3_191;
 \wx00B4 // set_BUSAN4_wagon;
 
-// Name: @action3_190
-4609 * 43 02 00 B4 89 
+// Name: @action3_194
+4697 * 43 02 00 B4 89 
 0C 00 \dx0000FFFF 
 \b3 
 \wx00B4 \dx00000000 \dx00000000 	// set_BUSAN4_wagon;
 \wx8007 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_UNABLE);
-\wx00C6 \dx00000036 \dx00000036 	// @action3_188;
+\wx00C6 \dx00000036 \dx00000036 	// @action3_192;
 \wx00B4 // set_BUSAN4_wagon;
 
-4610 * 12 03 00 01 FF \wx1968 \b1 
-FF \wx00B4 	// @action3_190;
-\wx00CF 	// @action3_189;
+4698 * 12 03 00 01 FF \wx1968 \b1 
+FF \wx00B4 	// @action3_194;
+\wx00A7 	// @action3_193;
 
-4611 * 9 07 00 04 \7! \dx00000002 02 
+4699 * 9 07 00 04 \7! \dx00000002 02 
 
-4612 * 18 00 00 \b1 0A FF \wx1585 
+4700 * 18 00 00 \b1 0A FF \wx1585 
 06 00 00 00 00 00 00 00 00 00 00 
 
-4613 * 14 00 00 \b1 06 FF \wx1768 
+4701 * 14 00 00 \b1 06 FF \wx1768 
 06 00 00 00 00 00 00 
 
-4614 * 9 07 00 04 \7! \dx00000001 02 
+4702 * 9 07 00 04 \7! \dx00000001 02 
 
-4615 * 40 00 00 \b1 20 FF \wx1393 
+4703 * 40 00 00 \b1 20 FF \wx1393 
 06 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
 
-4616 * 9 00 00 \b1 01 FF \wx1767 
+4704 * 9 00 00 \b1 01 FF \wx1767 
 06 00 
 
-4617 * 11 00 00 \b1 01 FF \wx1968 
+4705 * 11 00 00 \b1 01 FF \wx1968 
 1A FF \wx1580 
 
-4618 * 11 00 00 \b1 01 FF \wx1767 
+4706 * 11 00 00 \b1 01 FF \wx1767 
 1A FF \wx1968 
 
-4619 * 11 00 00 \b1 01 FF \wx15CD 
+4707 * 11 00 00 \b1 01 FF \wx15CD 
 1A FF \wx1767 
 
-4620 * 11 00 00 \b1 01 FF \wx15A6 
+4708 * 11 00 00 \b1 01 FF \wx15B9 
 1A FF \wx15CD 
 
-4621 * 11 00 00 \b1 01 FF \wx15A5 
+4709 * 11 00 00 \b1 01 FF \wx15A6 
+1A FF \wx15B9 
+
+4710 * 11 00 00 \b1 01 FF \wx15A5 
 1A FF \wx15A6 
 
-4622 * 11 00 00 \b1 01 FF \wx159F 
+4711 * 11 00 00 \b1 01 FF \wx159F 
 1A FF \wx15A5 
 
-4623 * 11 00 00 \b1 01 FF \wx159E 
+4712 * 11 00 00 \b1 01 FF \wx159E 
 1A FF \wx159F 
 
-4624 * 11 00 00 \b1 01 FF \wx159D 
+4713 * 11 00 00 \b1 01 FF \wx159D 
 1A FF \wx159E 
 
-4625 * 11 00 00 \b1 01 FF \wx159C 
+4714 * 11 00 00 \b1 01 FF \wx159C 
 1A FF \wx159D 
 
-4626 * 11 00 00 \b1 01 FF \wx159B 
+4715 * 11 00 00 \b1 01 FF \wx159B 
 1A FF \wx159C 
 
-4627 * 11 00 00 \b1 01 FF \wx13B3 
+4716 * 11 00 00 \b1 01 FF \wx13B3 
 1A FF \wx159B 
 
-4628 * 11 00 00 \b1 01 FF \wx13B2 
+4717 * 11 00 00 \b1 01 FF \wx13B2 
 1A FF \wx13B3 
 
-4629 * 11 00 00 \b1 01 FF \wx13B0 
+4718 * 11 00 00 \b1 01 FF \wx13B0 
 1A FF \wx13B2 
 
-4630 * 11 00 00 \b1 01 FF \wx13AB 
+4719 * 11 00 00 \b1 01 FF \wx13AB 
 1A FF \wx13B0 
 
-4631 * 11 00 00 \b1 01 FF \wx13AA 
+4720 * 11 00 00 \b1 01 FF \wx13AA 
 1A FF \wx13AB 
 
-4632 * 11 00 00 \b1 01 FF \wx13A9 
+4721 * 11 00 00 \b1 01 FF \wx13A9 
 1A FF \wx13AA 
 
-4633 * 11 00 00 \b1 01 FF \wx1398 
+4722 * 11 00 00 \b1 01 FF \wx1398 
 1A FF \wx13A9 
 
-4634 * 11 00 00 \b1 01 FF \wx1397 
+4723 * 11 00 00 \b1 01 FF \wx1397 
 1A FF \wx1398 
 
-4635 * 11 00 00 \b1 01 FF \wx1396 
+4724 * 11 00 00 \b1 01 FF \wx1396 
 1A FF \wx1397 
 
-4636 * 11 00 00 \b1 01 FF \wx1395 
+4725 * 11 00 00 \b1 01 FF \wx1395 
 1A FF \wx1396 
 
-4637 * 11 00 00 \b1 01 FF \wx1394 
+4726 * 11 00 00 \b1 01 FF \wx1394 
 1A FF \wx1395 
 
-4638 * 11 00 00 \b1 01 FF \wx1393 
+4727 * 11 00 00 \b1 01 FF \wx1393 
 1A FF \wx1394 
 
-4639 * 11 00 00 \b1 01 FF \wx16AB 
+4728 * 11 00 00 \b1 01 FF \wx16AB 
 1A FF \wx1393 
 
-4640 * 11 00 00 \b1 01 FF \wx16AA 
+4729 * 11 00 00 \b1 01 FF \wx16AA 
 1A FF \wx16AB 
 
-4641 * 11 00 00 \b1 01 FF \wx16A9 
+4730 * 11 00 00 \b1 01 FF \wx16A9 
 1A FF \wx16AA 
 
-4642 * 11 00 00 \b1 01 FF \wx176E 
+4731 * 11 00 00 \b1 01 FF \wx176E 
 1A FF \wx16A9 
 
-4643 * 11 00 00 \b1 01 FF \wx176D 
+4732 * 11 00 00 \b1 01 FF \wx176D 
 1A FF \wx176E 
 
-4644 * 11 00 00 \b1 01 FF \wx176B 
+4733 * 11 00 00 \b1 01 FF \wx176B 
 1A FF \wx176D 
 
-4645 * 11 00 00 \b1 01 FF \wx176A 
+4734 * 11 00 00 \b1 01 FF \wx176A 
 1A FF \wx176B 
 
-4646 * 11 00 00 \b1 01 FF \wx1769 
+4735 * 11 00 00 \b1 01 FF \wx1769 
 1A FF \wx176A 
 
-4647 * 11 00 00 \b1 01 FF \wx176F 
+4736 * 11 00 00 \b1 01 FF \wx176F 
 1A FF \wx1769 
 
-4648 * 11 00 00 \b1 01 FF \wx176C 
+4737 * 11 00 00 \b1 01 FF \wx176C 
 1A FF \wx176F 
 
-4649 * 11 00 00 \b1 01 FF \wx1768 
+4738 * 11 00 00 \b1 01 FF \wx1768 
 1A FF \wx176C 
 
-4650 * 11 00 00 \b1 01 FF \wx158E 
+4739 * 11 00 00 \b1 01 FF \wx158E 
 1A FF \wx1768 
 
-4651 * 11 00 00 \b1 01 FF \wx158B 
+4740 * 11 00 00 \b1 01 FF \wx158B 
 1A FF \wx158E 
 
-4652 * 11 00 00 \b1 01 FF \wx1590 
+4741 * 11 00 00 \b1 01 FF \wx1590 
 1A FF \wx158B 
 
-4653 * 11 00 00 \b1 01 FF \wx158C 
+4742 * 11 00 00 \b1 01 FF \wx158C 
 1A FF \wx1590 
 
-4654 * 11 00 00 \b1 01 FF \wx176C 
+4743 * 11 00 00 \b1 01 FF \wx176C 
 1A FF \wx158C 
 
-4655 * 11 00 00 \b1 01 FF \wx158D 
+4744 * 11 00 00 \b1 01 FF \wx158D 
 1A FF \wx176C 
 
-4656 * 11 00 00 \b1 01 FF \wx158F 
+4745 * 11 00 00 \b1 01 FF \wx158F 
 1A FF \wx158D 
 
-4657 * 11 00 00 \b1 01 FF \wx158A 
+4746 * 11 00 00 \b1 01 FF \wx158A 
 1A FF \wx158F 
 
-4658 * 11 00 00 \b1 01 FF \wx1589 
+4747 * 11 00 00 \b1 01 FF \wx1589 
 1A FF \wx158A 
 
-4659 * 11 00 00 \b1 01 FF \wx1588 
+4748 * 11 00 00 \b1 01 FF \wx1588 
 1A FF \wx1589 
 
-4660 * 11 00 00 \b1 01 FF \wx1587 
+4749 * 11 00 00 \b1 01 FF \wx1587 
 1A FF \wx1588 
 
-4661 * 11 00 00 \b1 01 FF \wx1586 
+4750 * 11 00 00 \b1 01 FF \wx1586 
 1A FF \wx1587 
 
-4662 * 11 00 00 \b1 01 FF \wx1585 
+4751 * 11 00 00 \b1 01 FF \wx1585 
 1A FF \wx1586 
 
-4663 * 11 00 00 \b1 01 FF \wx1584 
+4752 * 11 00 00 \b1 01 FF \wx1584 
 1A FF \wx1585 
 
-4664 * 11 00 00 \b1 01 FF \wx1580 
+4753 * 11 00 00 \b1 01 FF \wx1580 
 1A FF \wx1584 
 
