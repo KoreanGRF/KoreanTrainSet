@@ -2947,7 +2947,7 @@ item(FEAT_TRAINS, ko_train_FLATC, 5801) {
 		loading_speed:			var_loading_speed_SLOW;
 
 		can_attach_wagon:		sw_CARGOWAGON_attach;
-		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
+		additional_text:		string(STR_ADDITEXT_TEMP); //string(STR_REFIT_ADDITIONAL_UNABLE);
 	}
 }
 // End of "평판화차"
@@ -4949,7 +4949,7 @@ item(FEAT_TRAINS, ko_train_ICNM2, 5043) {
 		can_attach_wagon:		sw_ICNM2_coach_attach;
 		start_stop:			sw_ko_train_subway_start_stop;
 //		cargo_subtype_text:		sw_ICNM2_cargo_subtype_text;
-		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
+		additional_text:		string(STR_ADDITEXT_TEMP); //string(STR_REFIT_ADDITIONAL_UNABLE);
 	}
 }
 // End of "ICNM1"

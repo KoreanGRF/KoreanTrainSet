@@ -20,11 +20,10 @@ List
 
 1. About
 ==========
-  This Korean Train Set has train vehicles of the Republic of Korea(South Korea)
-incluing Seoul/Incheon/Busan metropolitan subways, KTX, KTX-Sancheons, Saemaeul,
-Mugunghwa, Tongil, CDC(Cummutor Diesel Car), NDC(New Diesel Car), Nuriro,
-ITX-Cheongchun, ITX-Saemaeul and so on.
-('KTX' and 'ITX' stand for 'Korea Train eXpress' and 'Intercity Train eXpress', respectively.)
+  This Korean Train Set has train vehicles of South Korea including Seoul/Incheon/Busan metropolitan
+subways, KTX, KTX-Sancheons, Saemaeul, Mugunghwa, Tongil, CDC(Cummutor Diesel Car), NDC(New Diesel Car),
+Nuriro, ITX-Cheongchun, ITX-Saemaeul and so on.
+('KTX' and 'ITX' stand for 'Korea Train eXpress' and 'Intercity Train eXpress' respectively.)
 
 
 Korean Train Set adds vehicles such as below:
