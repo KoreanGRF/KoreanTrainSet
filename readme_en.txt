@@ -28,7 +28,7 @@ Nuriro, ITX-Cheongchun, ITX-Saemaeul and so on.
 
 Korean Train Set adds vehicles such as below:
   - Seoul metropolitan subway Line 1 (Korail 1k Rheostatic, 3xxk VVVF, 371k, 381k, SeoulMetro 1k Rheostatic)
-  - Seoul metropolitan subway Line 2 (SeoulMetro 2k MELCO, Chopper, VVVF 1st/2nd)
+  - Seoul metropolitan subway Line 2 (SeoulMetro 2k MELCO, Chopper, VVVF 1st/2nd, Modified rheostatic)
   - Seoul metropolitan subway Line 3 (Korail 3k VVVF, SeoulMetro 3k Chopper, VVVF)
   - Seoul metropolitan subway Line 4 (Korail 4k VVVF, 341k VVVF 1st/2nd)
   - Seoul metropolitan subway Line 5 (SeoulMetro 5k VVVF)
@@ -45,9 +45,10 @@ Korean Train Set adds vehicles such as below:
   - Incheon subway Line 2
   - Daegu subway Line 1
   - Daegu subway Line 2
+  - Daegu subway Line 3
   - Daejeon subway Line 1
   - Gwangju subway Line 1
-  - Busan subway Line 1
+  - Busan subway Line 1 (2 models/paintings)
   - Busan subway Line 2
   - Busan subway Line 3
   - Busan subway Line 4
@@ -58,7 +59,7 @@ Korean Train Set adds vehicles such as below:
   - Korail 8100 Electric Locomotive
   - Korail 8200 Electric Locomotive
   - Korail 8500 Electric Locomotive
-  - Korail Commuter Diesel Car(CDC), RDC (6 models/paintings + DMZ-train + Gyeongbuk Circular theme tour train)
+  - Korail Commuter Diesel Car(CDC), RDC (8 models/paintings + DMZ-train + Gyeongbuk Circular theme tour train)
   - Korail New Diesel Car(NDC)
   - Saemaeul Diesel Hydraulic Car(PP-car) and coach (3 model/paintings)
   - ITX-Saemaeul and coach

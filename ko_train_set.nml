@@ -13,7 +13,7 @@ grf {
 	name :				string(STR_GRF_NAME_WITH_VER);
 	desc :				string(STR_GRF_DESC);
 	url :				string(STR_GRF_URL);
-	version :			148;
+	version :			157;
 	min_compatible_version :	1;
 
 	// 추가 열차 종류
@@ -232,9 +232,10 @@ cargotable {
 }
 railtypetable {
 	RAIL, ELRL, MGLV,
-	KR_ELRL_BASED_RAIL: [ELRL, KRLR],
-	KR_KRLR_BASED_RAIL: [KRLR, MONO],
-	KR_BUSANGIMHAE_RAIL: ["3RDR", ELRL, KRLR, RAIL]
+	KR_ELRL_BASED_RAIL: ["KRLR", ELRL],
+	KR_MONO_BASED_RAIL: ["KRLR", MONO],
+	KR_MGLV_BASED_RAIL: ["KRLR", MGLV],
+	KR_BUSANGIMHAE_RAIL: ["3RDR", "KRLR", ELRL, RAIL]
 }
 
 /*------------------------------------------------------------------------------
@@ -957,6 +958,9 @@ spriteset(set_CDC_2_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(840, 50)
 spriteset(set_CDC_3_engineH,		"./gfx/ko_train1.png") { tmpl_CDC(560, 80) }		// 바다열차
 spriteset(set_CDC_3_engineT,		"./gfx/ko_train1.png") { tmpl_CDC_r(560, 80) }
 spriteset(set_CDC_3_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(840, 80) }
+spriteset(set_CDC_8_engineH,		"./gfx/ko_train1.png") { tmpl_CDC(560, 1100) }		// 바다열차(신)
+spriteset(set_CDC_8_engineT,		"./gfx/ko_train1.png") { tmpl_CDC_r(560, 1100) }
+spriteset(set_CDC_8_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(840, 1100) }
 spriteset(set_CDC_4_engineH,		"./gfx/ko_train1.png") { tmpl_CDC(560, 110) }		// 백제왕관
 spriteset(set_CDC_4_engineT,		"./gfx/ko_train1.png") { tmpl_CDC_r(560, 110) }
 spriteset(set_CDC_4_coach,		"./gfx/ko_train1.png") { tmpl_wagon_by_coor(840, 110) }
@@ -1957,6 +1961,7 @@ switch(FEAT_TRAINS, SELF, sw_CDC_engineH, cargo_subtype) {
 	1: set_CDC_1_engineH;	// 꽃동산
 	2: set_CDC_2_engineH;	// 돌고래
 	3: set_CDC_3_engineH;	// 바다열차
+	10: set_CDC_8_engineH;	// 바다열차(신)
 	4: set_CDC_4_engineH;	// 백제왕관
 	5: set_CDC_5_engineH;	// 구 철도청
 	6: set_CDC_DMZ_engineH;	// DMZ-train
@@ -1969,6 +1974,7 @@ switch(FEAT_TRAINS, SELF, sw_CDC_engineT, cargo_subtype) {
 	1: set_CDC_1_engineT;
 	2: set_CDC_2_engineT;
 	3: set_CDC_3_engineT;
+	10: set_CDC_8_engineT;
 	4: set_CDC_4_engineT;
 	5: set_CDC_5_engineT;
 	6: set_CDC_DMZ_engineT;
@@ -1993,6 +1999,7 @@ switch(FEAT_TRAINS, SELF, sw_CDCCW_coach, cargo_subtype) {
 	1: set_CDC_1_coach;
 	2: set_CDC_2_coach;
 	3: set_CDC_3_coach;
+	10: set_CDC_8_coach;
 	4: set_CDC_4_coach;
 	5: set_CDC_5_coach;
 	6: set_CDC_DMZ_coach;
@@ -2004,8 +2011,9 @@ switch(FEAT_TRAINS, SELF, sw_CDCCW_coach, cargo_subtype) {
 
 switch(FEAT_TRAINS, SELF, sw_CDC_cargo_subtype_text, cargo_subtype) {
 	1:	return string(STR_REFIT_PAINTING_CDC_GARDEN);
-	2:	return string(STR_REFIT_PAINTING_CDC_DOLPHINE);
+	2:	return string(STR_REFIT_PAINTING_CDC_DOLPHIN);
 	3:	return string(STR_REFIT_PAINTING_CDC_SEASIDE);
+	10:	return string(STR_REFIT_PAINTING_CDC_SEASIDE2);
 	4:	return string(STR_REFIT_PAINTING_CDC_BAEKJE);
 	5:	return string(STR_REFIT_PAINTING_CDC_OLD_KORAIL);
 	6:	return string(STR_REFIT_PAINTING_CDC_DMZTRAIN);
@@ -3155,7 +3163,7 @@ switch(FEAT_TRAINS, PARENT, sw_subway_coach_attach, vehicle_type_id) {
 //	ko_train_BUSAN4:		지하철 공통 객차를 이용하지 않음
 	ko_train_DAEGU1:		return CB_RESULT_ATTACH_ALLOW;
 	ko_train_DAEGU2:		return CB_RESULT_ATTACH_ALLOW;
-//	ko_train_DAEGU3:		return CB_RESULT_ATTACH_ALLOW;
+	ko_train_DAEGU3:		return CB_RESULT_ATTACH_ALLOW;
 	ko_train_DAEJEONGWANGJU1:	return CB_RESULT_ATTACH_ALLOW;
 //	ko_train_UISINSEOL:		지하철 공통 객차를 이용하지 않음
 	ko_train_CDC:			return CB_RESULT_ATTACH_ALLOW;
@@ -3177,6 +3185,7 @@ switch(FEAT_TRAINS, SELF, sw_UISINSEOL_speed, 1)	{ return (8 * coeff_speed_light
 switch(FEAT_TRAINS, SELF, sw_METRO_cost, 1)		{ return 7 * sw_cost_factor; }
 
 // 유지비 계수 적용
+switch(FEAT_TRAINS, SELF, sw_LRAIL_running_cost, 1)	{ return 20 * sw_running_cost_factor; }
 switch(FEAT_TRAINS, SELF, sw_METRO_running_cost, 1)	{ return 25 * sw_running_cost_factor; }
 switch(FEAT_TRAINS, SELF, sw_KCITX_running_cost, 1)	{ return 30 * sw_running_cost_factor; }
 
@@ -3340,6 +3349,13 @@ spriteset(set_S2E_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(960, 880) 
 spriteset(set_S2E_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(960, 880) }
 spriteset(set_S2E_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(960, 880) }
 spriteset(set_S2E_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 880) }
+
+// S2F (2호선 서울메트로 F)
+spriteset(set_S2F_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1280, 880) }
+spriteset(set_S2F_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1280, 880) }
+spriteset(set_S2F_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1280, 880) }
+spriteset(set_S2F_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1280, 880) }
+spriteset(set_S2F_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1280, 880) }
 
 // K3A (3호선 A)
 spriteset(set_K3A_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1280, 220) }
@@ -3667,6 +3683,35 @@ spriteset(set_BUSANGIMHAE_engineT,		"./gfx/ko_subway.png") {
 }
 spriteset(set_BUSANGIMHAE_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 770) }
 
+// DAEGU3 (대구 3호선)
+spriteset(set_DAEGU3A_engineH,		"./gfx/ko_train1.png") {
+	[560,		1130,	8,	23,	-4,	-11]
+	[560+15,	1130,	21,	15,	-13,	-7]
+	[560+45,	1130,	31,	13,	-16,	-6]
+	[560+95,	1130,	21,	16,	-6,	-8]
+	[560+125,	1130,	8,	23,	-4,	-11]
+	[560+140,	1130,	21,	16,	-13,	-8]
+	[560+175,	1130,	32,	13,	-16,	-6]
+	[560+225,	1130,	21,	15,	-6,	-7]
+}
+spriteset(set_DAEGU3A_engineT,		"./gfx/ko_train1.png") {
+	[560+125,	1130,	8,	23,	-4,	-11]
+	[560+140,	1130,	21,	16,	-13,	-8]
+	[560+175,	1130,	32,	13,	-16,	-6]
+	[560+225,	1130,	21,	15,	-6,	-7]
+	[560,		1130,	8,	23,	-4,	-11]
+	[560+15,	1130,	21,	15,	-13,	-7]
+	[560+45,	1130,	31,	13,	-16,	-6]
+	[560+95,	1130,	21,	16,	-6,	-8]
+}
+spriteset(set_DAEGU3A_wagon,		"./gfx/ko_train1.png") {
+	[560,		1160,	8,	23,	-4,	-11]//
+	[560+15,	1160,	21,	16,	-13,	-8]
+	[560+45,	1160,	31,	13,	-16,	-6]
+	[560+95,	1160,	21,	16,	-6,	-8]
+}
+spriteset(set_DAEGU3_purchase,		"./gfx/ko_train1.png") {       tmpl_purchase(500, 1130) }
+
 // DAEGU1 (대구 1호선)
 spriteset(set_DAEGU1_engineH,		"./gfx/ko_subway.png") {    tmpl_engine_head(1600, 660) }
 spriteset(set_DAEGU1_engineT,		"./gfx/ko_subway.png") {    tmpl_engine_tail(1600, 660) }
@@ -3910,6 +3955,7 @@ switch(FEAT_TRAINS, SELF, sw_MET2N_cargo_subtype_text, cargo_subtype) {
 	2:	return string(STR_REFIT_TYPE_S2B_NAME);
 	3:	return string(STR_REFIT_TYPE_S2A_NAME);
 	4:	return string(STR_REFIT_TYPE_S2E_NAME);
+	5:	return string(STR_REFIT_TYPE_S2F_NAME);
 	return string(STR_REFIT_TYPE_S2D_NAME);
 }
 switch(FEAT_TRAINS, SELF, sw_MET2N_wagon_panto, cargo_subtype) {
@@ -3918,6 +3964,7 @@ switch(FEAT_TRAINS, SELF, sw_MET2N_wagon_panto, cargo_subtype) {
 	2:	set_S2B_wagon_panto;
 	3:	set_S2A_wagon_panto;
 	4:	set_S2E_wagon_panto;
+	5:	set_S2F_wagon_panto;
 	set_S2D_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_MET2N_wagon, cargo_subtype) {
@@ -3926,6 +3973,7 @@ switch(FEAT_TRAINS, SELF, sw_MET2N_wagon, cargo_subtype) {
 	2:	set_S2B_wagon;
 	3:	set_S2A_wagon;
 	4:	set_S2E_wagon;
+	5:	set_S2F_wagon;
 	set_S2D_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_MET2N_engineH, cargo_subtype) {
@@ -3934,6 +3982,7 @@ switch(FEAT_TRAINS, SELF, sw_MET2N_engineH, cargo_subtype) {
 	2:	set_S2B_engineH;
 	3:	set_S2A_engineH;
 	4:	set_S2E_engineH;
+	5:	set_S2F_engineH;
 	set_S2D_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_MET2N_engineT, cargo_subtype) {
@@ -3942,6 +3991,7 @@ switch(FEAT_TRAINS, SELF, sw_MET2N_engineT, cargo_subtype) {
 	2:	set_S2B_engineT;
 	3:	set_S2A_engineT;
 	4:	set_S2E_engineT;
+	5:	set_S2F_engineT;
 	set_S2D_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_MET2N_purchase, cargo_subtype) {
@@ -5358,6 +5408,117 @@ item(FEAT_TRAINS, ko_train_DAEGU2, 5542) {
 
 
 /*------------------------------------------------------------------------------
+DAEGU3 (대구 3호선)
+------------------------------------------------------------------------------*/
+// 객차 연결 스위치
+switch(FEAT_TRAINS, PARENT, sw_DAEGU3_attach, vehicle_type_id) {
+	0..115:			return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+	ko_train_DAEGU3:	return CB_RESULT_ATTACH_ALLOW;
+	ko_train_DAEGU3_CW:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+// 엔진 전후두부 결정
+switch(FEAT_TRAINS, SELF, sw_DAEGU3_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+	1: set_DAEGU3A_engineT;
+	set_DAEGU3A_engineH;
+}
+
+item(FEAT_TRAINS, ko_train_DAEGU3, 5543) {
+	property {
+		name:				string(STR_DAEGU3_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			KR_MONO_BASED_RAIL;
+		speed:				70 km/h;
+		power:				3000 kW;   //UNKNOWN//
+		weight:				97 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			84;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			20;
+		vehicle_life:			30;
+
+		introduction_date:		date(2015, 4, 23);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_MONORAIL;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+
+		dual_headed:			0;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_DAEGU3_engine;
+		purchase:			set_DAEGU3_purchase;
+
+		speed:				sw_METRO_speed;
+		cost_factor:			sw_METRO_cost;
+		running_cost_factor:		sw_METRO_running_cost;
+		cargo_capacity:			84 * sw_cargo_capacity_factor;
+		loading_speed:			var_loading_speed_FAST;
+
+		can_attach_wagon:		sw_DAEGU3_attach;
+		start_stop:			sw_ko_train_subway_start_stop;
+		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
+	}
+}
+// End of "DAEGU3"
+
+
+/*------------------------------------------------------------------------------
+DAEGU3_CW (대구 3호선 객차)
+------------------------------------------------------------------------------*/
+item(FEAT_TRAINS, ko_train_DAEGU3_CW, 6503) {
+	property {
+		name:				string(STR_DAEGU3_CW_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			KR_MONO_BASED_RAIL;
+
+		introduction_date:		date(2015, 4, 23);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		non_refittable_cargo_classes:	bitmask();
+		loading_speed:			10;
+		cost_factor:			1;
+		running_cost_factor:		100;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			0;
+		misc_flags:			bitmask(TRAIN_FLAG_FLIP);
+
+		power:				0;
+		weight:				12 ton;
+		cargo_capacity:			97;
+	}
+	graphics {
+		default:			set_DAEGU3A_wagon;
+		purchase:			set_DAEGU3A_wagon;
+
+		cost_factor:			sw_METRO_cost;
+		running_cost_factor:		sw_LRAIL_running_cost;
+		cargo_capacity:			97 * sw_cargo_capacity_factor;
+		loading_speed:			var_loading_speed_FAST;
+
+		can_attach_wagon:		sw_DAEGU3_attach;
+		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
+	}
+}
+// End of "DAEGU3_CW"
+
+
+/*------------------------------------------------------------------------------
 DAEJEONDAEJEONGWANGJU1 (대전·광주 1호선)
 ------------------------------------------------------------------------------*/
 // 자유 편성 (이 차량은 고정 편성이 없음)
@@ -5508,7 +5669,7 @@ item(FEAT_TRAINS, ko_train_BUSANGIMHAE, 5535) {
 
 		speed:				sw_BUSANGIMHAE_speed;
 		cost_factor:			sw_METRO_cost;
-		running_cost_factor:		sw_METRO_running_cost;
+		running_cost_factor:		sw_LRAIL_running_cost;
 		cargo_capacity:			46 * sw_cargo_capacity_factor;
 		loading_speed:			var_loading_speed_FAST;
 
@@ -5573,7 +5734,7 @@ item(FEAT_TRAINS, ko_train_UISINSEOL, 5581) {
 
 		speed:				sw_UISINSEOL_speed;
 		cost_factor:			sw_METRO_cost;
-		running_cost_factor:		sw_METRO_running_cost;
+		running_cost_factor:		sw_LRAIL_running_cost;
 		cargo_capacity:			40 * sw_cargo_capacity_factor;
 		loading_speed:			var_loading_speed_FAST;
 
@@ -5969,7 +6130,7 @@ item(FEAT_TRAINS, ko_train_BUSAN4, 5534) {
 	property {
 		name:				string(STR_BUSAN4_NAME);
 		climates_available:		ALL_CLIMATES;
-		track_type:			KR_KRLR_BASED_RAIL;
+		track_type:			KR_MONO_BASED_RAIL;
 		speed:				70 km/h;
 		power:				1000 kW; //UNKNOWN//
 		weight:				12 ton;
@@ -6007,7 +6168,7 @@ item(FEAT_TRAINS, ko_train_BUSAN4, 5534) {
 
 		speed:				sw_BUSAN4_speed;
 		cost_factor:			sw_METRO_cost;
-		running_cost_factor:		sw_METRO_running_cost;
+		running_cost_factor:		sw_LRAIL_running_cost;
 		cargo_capacity:			26 * sw_cargo_capacity_factor;
 		loading_speed:			var_loading_speed_FAST;
 
@@ -6026,7 +6187,7 @@ item(FEAT_TRAINS, ko_train_BUSAN4_CW, 6504) {
 	property {
 		name:				string(STR_BUSAN4_CW_NAME);
 		climates_available:		ALL_CLIMATES;
-		track_type:			KR_KRLR_BASED_RAIL;
+		track_type:			KR_MONO_BASED_RAIL;
 
 		introduction_date:		date(2011, 3, 30);
 		model_life:			VEHICLE_NEVER_EXPIRES;
@@ -6051,7 +6212,7 @@ item(FEAT_TRAINS, ko_train_BUSAN4_CW, 6504) {
 		purchase:			set_BUSAN4_wagon;
 
 		cost_factor:			sw_METRO_cost;
-		running_cost_factor:		sw_METRO_running_cost;
+		running_cost_factor:		sw_LRAIL_running_cost;
 		cargo_capacity:			26 * sw_cargo_capacity_factor;
 		loading_speed:			var_loading_speed_FAST;
 
@@ -6202,5 +6363,6 @@ ko_train_NRRCW		5996
 ko_train_TILCW		5997
 ko_train_GENCW		5998
 ko_train_CDCCW		5999
+ko_train_DAEGU3_CW	6503
 ko_train_BUSAN4_CW	6504
 */

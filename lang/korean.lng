@@ -4,7 +4,7 @@
 STR_GRF_NAME					:한국 열차 세트
 STR_GRF_NAME_WITH_VER				:한국 열차 세트 {VERSION}
 STR_GRF_DESC					:{}{BLACK}한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.{}(최근 업데이트: {RECENT_UPDATED}){}{}{SILVER}+ 제작: 텔크{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr
+STR_GRF_URL					:https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr
 
 # Vehicle's name
 STR_MET1N_NAME					:[KTS] 수도권 1호선, 경의·중앙선, 수인선
@@ -23,14 +23,15 @@ STR_BUSAN1_NAME					:[KTS] 부산 1호선
 STR_BUSAN2_NAME					:[KTS] 부산 2호선
 STR_BUSAN3_NAME					:[KTS] 부산 3호선
 STR_BUSAN4_NAME					:[KTS] 부산 4호선
+STR_BUSAN4_CW_NAME				:[KTS] 부산 4호선 객차
 STR_BUSANGIMHAE_NAME				:[KTS] 부산김해경전철
 STR_DAEGU1_NAME					:[KTS] 대구 1호선
 STR_DAEGU2_NAME					:[KTS] 대구 2호선
 STR_DAEGU3_NAME					:[KTS] 대구 3호선
+STR_DAEGU3_CW_NAME				:[KTS] 대구 3호선 객차
 STR_DAEJEONGWANGJU1_NAME			:[KTS] 대전·광주 1호선
 STR_UISINSEOL_NAME				:[KTS] 서울 우이신설경전철
 STR_SUBCW_NAME					:[KTS] 지하철 공통 객차
-STR_BUSAN4_CW_NAME				:[KTS] 부산 4호선 객차
 STR_K4400_NAME					:[KTS] 4400호대 디젤 기관차
 STR_K7000_NAME					:[KTS] 7000호대 디젤 기관차
 STR_K7x00_NAME					:[KTS] 7x00호대 디젤 기관차
@@ -43,7 +44,7 @@ STR_NDC_NAME					:[KTS] 우등형 디젤 동차(NDC)
 STR_SMEPP_NAME					:[KTS] 새마을호 디젤 동차(DHC, PP동차)
 STR_ITXSME_NAME					:[KTS] ITX-새마을
 STR_KTX1N_NAME					:[KTS] KTX
-STR_KTX2N_NAME					:[KTS] KTX-산천
+STR_KTX2N_NAME					:[KTS] KTX-산천, SRT
 STR_KTXCW_NAME					:[KTS] KTX 공통 객차
 STR_NURIRO_NAME					:[KTS] 누리로
 STR_NRRCW_NAME					:[KTS] 누리로 객차
@@ -94,8 +95,9 @@ STR_REFIT_PAINTING_NURIRO_B			: (한류관광열차)
 
 # For refit (CDC)
 STR_REFIT_PAINTING_CDC_GARDEN			: (꽃동산 테마 도색)
-STR_REFIT_PAINTING_CDC_DOLPHINE			: (돌고래 테마 도색)
+STR_REFIT_PAINTING_CDC_DOLPHIN			: (돌고래 테마 도색)
 STR_REFIT_PAINTING_CDC_SEASIDE			: (바다 관광 열차 도색)
+STR_REFIT_PAINTING_CDC_SEASIDE2			: (바다 관광 열차 도색 / 2014년 이후)
 STR_REFIT_PAINTING_CDC_BAEKJE			: (한국철도 100주년, 백제 왕관 기념 도색)
 STR_REFIT_PAINTING_CDC_OLD_KORAIL		: (구 철도청 도색)
 STR_REFIT_PAINTING_CDC_DMZTRAIN			: (DMZ-train)
@@ -151,6 +153,7 @@ STR_REFIT_TYPE_S2B_NAME				: (SMetro 2k Chopper)
 STR_REFIT_TYPE_S2C_NAME				: (SMetro 2k VVVF 1차)
 STR_REFIT_TYPE_S2D_NAME				: (SMetro 2k VVVF 2차)
 STR_REFIT_TYPE_S2E_NAME				: (SMetro 2k 개조 저항)
+STR_REFIT_TYPE_S2F_NAME				: (SMetro 2k VVVF 3차)
 STR_REFIT_TYPE_K3A_NAME				: (Korail 3k VVVF / 구 도색)
 STR_REFIT_TYPE_K3B_NAME				: (Korail 3k VVVF / 현 도색)
 STR_REFIT_TYPE_S3A_NAME				: (SMetro 3k Chopper)

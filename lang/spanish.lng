@@ -4,7 +4,7 @@
 STR_GRF_NAME					:Set de trenes de Corea
 STR_GRF_NAME_WITH_VER				:Set de trenes de Corea {VERSION}
 STR_GRF_DESC					:{}{BLACK}El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.{}(Última actualización: {RECENT_UPDATED}){}{}{SILVER}Hecho por: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=es
+STR_GRF_URL					:https://telk.kr/ottd/newgrf/ko_train_set/?lang=es
 
 # Vehicle's name
 STR_MET1N_NAME					:[KTS] Línea 1, Línea Gyeongui-Jungang, Línea Suin
@@ -23,14 +23,15 @@ STR_BUSAN1_NAME					:[KTS] Busan Línea 1
 STR_BUSAN2_NAME					:[KTS] Busan Línea 2
 STR_BUSAN3_NAME					:[KTS] Busan Línea 3
 STR_BUSAN4_NAME					:[KTS] Busan Línea 4
+STR_BUSAN4_CW_NAME				:[KTS] Busan Línea 4 Vagón de pasajeros
 # STR_BUSANGIMHAE_NAME				:[KTS] Busan-Gimhae LRT
 STR_DAEGU1_NAME					:[KTS] Daegu Línea 1
 STR_DAEGU2_NAME					:[KTS] Daegu Línea 2
 STR_DAEGU3_NAME					:[KTS] Daegu Línea 3
+STR_DAEGU3_CW_NAME				:[KTS] Daegu Línea 3 Vagón de pasajeros
 STR_DAEJEONGWANGJU1_NAME			:[KTS] Daejeon·Gwangju Línea 1
 # STR_UISINSEOL_NAME				:[KTS] Seoul Ui-Sinseol LRT Línea
 STR_SUBCW_NAME					:[KTS] Metro común - Vagón de pasajeros
-STR_BUSAN4_CW_NAME				:[KTS] Busan Línea 4 Vagón de pasajeros
 STR_K4400_NAME					:[KTS] 4400 Locomotora diésel
 STR_K7000_NAME					:[KTS] 7000 Locomotora diésel
 STR_K7x00_NAME					:[KTS] 7x00 Locomotora diésel
@@ -44,7 +45,7 @@ STR_SMEPP_NAME					:[KTS] Saemaeul - Locomotora hidráulica diésel (DHC, PP-car
 STR_ITXSME_NAME					:[KTS] ITX-Saemaeul
 STR_NURIRO_NAME					:[KTS] Nuriro
 STR_KTX1N_NAME					:[KTS] KTX
-STR_KTX2N_NAME					:[KTS] KTX-Sancheon
+STR_KTX2N_NAME					:[KTS] KTX-Sancheon, SRT
 STR_KTXCW_NAME					:[KTS] KTX - Vagón de pasajeros
 STR_NRRCW_NAME					:[KTS] Nuriro - Vagón de pasajeros
 STR_SMECW_NAME					:[KTS] Saemaeul - Vagón de pasajeros
@@ -55,7 +56,8 @@ STR_CDCCW_NAME					:[KTS] CDC - Vagón de pasajeros
 STR_GENCW_NAME					:[KTS] Vagón generador
 STR_FLATC_NAME					:[KTS] Vagón plano de carga
 STR_HOPPERC_NAME				:[KTS] Hopper car
-STR_SMALLCARGO_NAME				:[KTS] Furgón de equipaje		#Need translation
+STR_SMALLCARGO_NAME				:[KTS] Furgón de equipaje
+# ↑ Need translation
 
 # For refit (KTX-Sancheon)
 STR_REFIT_PAINTING_SANCHEON			: (110000)
@@ -94,8 +96,9 @@ STR_REFIT_PAINTING_SAEMAEUL_CAFE		: (Vagón cafetería Saemaeul)
 
 # For refit (CDC)
 STR_REFIT_PAINTING_CDC_GARDEN			: (Pintura de Jardín floral)
-STR_REFIT_PAINTING_CDC_DOLPHINE			: (Pintura Dolphine)
+STR_REFIT_PAINTING_CDC_DOLPHIN			: (Pintura delfín)
 STR_REFIT_PAINTING_CDC_SEASIDE			: (Pintura de tren costero)
+# STR_REFIT_PAINTING_CDC_SEASIDE2			: (Pintura de tren costero / after 2014)
 STR_REFIT_PAINTING_CDC_BAEKJE			: (Pintura Baekje, 100 aniversario de Korail)
 STR_REFIT_PAINTING_CDC_OLD_KORAIL		: (Pintura antigua de Korail)
 STR_REFIT_PAINTING_CDC_DMZTRAIN			: (DMZ-train)
@@ -153,6 +156,7 @@ STR_REFIT_TYPE_S2B_NAME				: (SMetro 2k Chopper)
 STR_REFIT_TYPE_S2C_NAME				: (SMetro 2k 1st VVVF)
 STR_REFIT_TYPE_S2D_NAME				: (SMetro 2k 2nd VVVF)
 STR_REFIT_TYPE_S2E_NAME				: (SMetro 2k Reóstato modificado)
+STR_REFIT_TYPE_S2F_NAME				: (SMetro 2k 3rd VVVF)
 STR_REFIT_TYPE_K3A_NAME				: (Korail 3k VVVF / Pintura antigua)
 STR_REFIT_TYPE_K3B_NAME				: (Korail 3k VVVF / Pintura actual)
 STR_REFIT_TYPE_S3A_NAME				: (SMetro 3k Chopper)

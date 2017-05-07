@@ -4,7 +4,7 @@
 STR_GRF_NAME					:韓国列車セット
 STR_GRF_NAME_WITH_VER				:韓国列車セット {VERSION}
 STR_GRF_DESC					:{}{BLACK}韓国列車セットはOpenTTDにKTX、KTX-山川（サンチョン）、ITX-青春（チョンチュン）、セマウル号、ムグンファ号、ヌリロ、 CDC(通勤列車)、首都圏のちかてつ、Korailの機関車とかいろいろな韓国の列車を追加してくれます。{}(最近アップデート: {RECENT_UPDATED}){}{}{SILVER}+ 제작: 텔크{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=jp
+STR_GRF_URL					:https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp
 
 # Vehicle's names
 STR_MET1N_NAME					:[KTS] 首都圏1号線, 京義中央線, 水仁線
@@ -23,14 +23,15 @@ STR_BUSAN1_NAME					:[KTS] 釜山(プサン)1号線
 STR_BUSAN2_NAME					:[KTS] 釜山(プサン)2号線
 STR_BUSAN3_NAME					:[KTS] 釜山(プサン)3号線
 STR_BUSAN4_NAME					:[KTS] 釜山(プサン)4号線
+STR_BUSAN4_CW_NAME				:[KTS] 釜山(プサン)4号線客車
 STR_BUSANGIMHAE_NAME				:[KTS] 釜山(プサン)金海(ギムへ)軽電鉄
 STR_DAEGU1_NAME					:[KTS] 大邱(テグ)1号線
 STR_DAEGU2_NAME					:[KTS] 大邱(テグ)2号線
 STR_DAEGU3_NAME					:[KTS] 大邱(テグ)3号線
+STR_DAEGU3_CW_NAME				:[KTS] 大邱(テグ)3号線客車
 STR_DAEJEONGWANGJU1_NAME			:[KTS] 大田(テジョン)·光州(クァンジュ)1号線
 STR_UISINSEOL_NAME				:[KTS] ソウル牛耳(ウイ)新設(シンソル)軽電鉄
 STR_SUBCW_NAME					:[KTS] 地下鉄共通客車
-STR_BUSAN4_CW_NAME				:[KTS] 釜山(プサン)4号線客車
 STR_K4400_NAME					:[KTS] 4400号帯ディーゼル機関車
 STR_K7000_NAME					:[KTS] 7000号帯ディーゼル機関車
 STR_K7x00_NAME					:[KTS] 7x00号帯ディーゼル機関車
@@ -44,7 +45,7 @@ STR_SMEPP_NAME					:[KTS] セマウル号ディーゼル動車(DHC, PP動車)
 STR_ITXSME_NAME					:[KTS] ITX-セマウル
 STR_NURIRO_NAME					:[KTS] ヌリロ
 STR_KTX1N_NAME					:[KTS] KTX
-STR_KTX2N_NAME					:[KTS] KTX-サンチョン
+STR_KTX2N_NAME					:[KTS] KTX-サンチョン, SRT
 STR_KTXCW_NAME					:[KTS] KTX共通客車
 STR_NRRCW_NAME					:[KTS] ヌリロ客車
 STR_SMECW_NAME					:[KTS] セマウル号客車
@@ -94,8 +95,9 @@ STR_REFIT_PAINTING_NURIRO_B			: (韓流観光列車)
 
 # For refit (CDC)
 STR_REFIT_PAINTING_CDC_GARDEN			: (花園テーマの塗色)
-STR_REFIT_PAINTING_CDC_DOLPHINE			: (いるかテーマの塗色)
+STR_REFIT_PAINTING_CDC_DOLPHIN			: (いるかテーマの塗色)
 STR_REFIT_PAINTING_CDC_SEASIDE			: (海観光列車の塗色)
+STR_REFIT_PAINTING_CDC_SEASIDE2			: (海観光列車の塗色/2014年以後)
 STR_REFIT_PAINTING_CDC_BAEKJE			: (韓国鉄道100周年、百済(くだら)王冠記念の塗色)
 STR_REFIT_PAINTING_CDC_OLD_KORAIL		: (旧鉄道庁の塗色)
 STR_REFIT_PAINTING_CDC_DMZTRAIN			: (DMZ-train)
@@ -151,6 +153,7 @@ STR_REFIT_TYPE_S2B_NAME				: (SMetro 2k Chopper)
 STR_REFIT_TYPE_S2C_NAME				: (SMetro 2k VVVF 1次)
 STR_REFIT_TYPE_S2D_NAME				: (SMetro 2k VVVF 2次)
 STR_REFIT_TYPE_S2E_NAME				: (SMetro 2k 開祖抵抗)
+STR_REFIT_TYPE_S2F_NAME				: (SMetro 2k VVVF 3次)
 STR_REFIT_TYPE_K3A_NAME				: (Korail 3k VVVF / 旧塗色)
 STR_REFIT_TYPE_K3B_NAME				: (Korail 3k VVVF / 現塗色)
 STR_REFIT_TYPE_S3A_NAME				: (SMetro 3k Chopper)

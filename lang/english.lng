@@ -4,7 +4,7 @@
 STR_GRF_NAME					:Korean Train Set
 STR_GRF_NAME_WITH_VER				:Korean Train Set {VERSION}
 STR_GRF_DESC					:{}{BLACK}Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.{}(Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL					:http://telk.kr/ottd/newgrf/ko_train_set/?lang=en
+STR_GRF_URL					:https://telk.kr/ottd/newgrf/ko_train_set/?lang=en
 
 # Vehicle's name
 STR_MET1N_NAME					:[KTS] Seoul Line 1, Gyeongui-Jungang Line, Suin Line
@@ -23,14 +23,15 @@ STR_BUSAN1_NAME					:[KTS] Busan Line 1
 STR_BUSAN2_NAME					:[KTS] Busan Line 2
 STR_BUSAN3_NAME					:[KTS] Busan Line 3
 STR_BUSAN4_NAME					:[KTS] Busan Line 4
+STR_BUSAN4_CW_NAME				:[KTS] Busan Line 4 passenger car
 STR_BUSANGIMHAE_NAME				:[KTS] Busan-Gimhae LRT
 STR_DAEGU1_NAME					:[KTS] Daegu Line 1
 STR_DAEGU2_NAME					:[KTS] Daegu Line 2
 STR_DAEGU3_NAME					:[KTS] Daegu Line 3
+STR_DAEGU3_CW_NAME				:[KTS] Daegu Line 3 passenger car
 STR_DAEJEONGWANGJU1_NAME			:[KTS] Daejeon·Gwangju Line 1
 STR_UISINSEOL_NAME				:[KTS] Seoul Ui-Sinseol LRT Line
 STR_SUBCW_NAME					:[KTS] Common subway passenger coach
-STR_BUSAN4_CW_NAME				:[KTS] Busan Line 4 passenger car
 STR_K4400_NAME					:[KTS] 4400 Diesel Locomotive
 STR_K7000_NAME					:[KTS] 7000 Diesel Locomotive
 STR_K7x00_NAME					:[KTS] 7x00 Diesel Locomotive
@@ -44,7 +45,7 @@ STR_SMEPP_NAME					:[KTS] Saemaeul Diesel Hydraulic Car (DHC, PP-car)
 STR_ITXSME_NAME					:[KTS] ITX-Saemaeul
 STR_NURIRO_NAME					:[KTS] Nuriro
 STR_KTX1N_NAME					:[KTS] KTX
-STR_KTX2N_NAME					:[KTS] KTX-Sancheon
+STR_KTX2N_NAME					:[KTS] KTX-Sancheon, SRT
 STR_KTXCW_NAME					:[KTS] KTX passenger car
 STR_NRRCW_NAME					:[KTS] Nuriro passenger car
 STR_SMECW_NAME					:[KTS] Saemaeul passenger car
@@ -68,7 +69,7 @@ STR_REFIT_PAINTING_THESEDAYS			: (Painting thesedays)
 STR_REFIT_PAINTING_7x00_CARGO			: (Cargo painting)
 STR_REFIT_PAINTING_7x00_TIGER			: (First Korail's painting: Black & Orange)
 STR_REFIT_PAINTING_7x00_FIRST_KORAIL		: (First Korail's painting: Blue & White)
-STR_REFIT_PAINTING_7x00_OLD_KORAIL		: (Past Korail's painting)
+STR_REFIT_PAINTING_7x00_OLD_KORAIL		: (old Korail's painting)
 STR_REFIT_PAINTING_1970_1983			: (Painting A: 1970~1983)
 STR_REFIT_PAINTING_1984_1984			: (Painting B: 1984~1984)
 STR_REFIT_PAINTING_1985_1989			: (Painting C: 1985~1989)
@@ -82,7 +83,7 @@ STR_REFIT_PAINTING_MUGUNGHWA_CAFE		: (General Mugunghwa cafe car)
 
 # For refit (Saemaeul)
 STR_REFIT_PAINTING_1970s			: (Painting A: 1970s)
-STR_REFIT_PAINTING_OLD_KORAIL			: (Painting B: Past Korail)
+STR_REFIT_PAINTING_OLD_KORAIL			: (Painting B: old Korail)
 STR_REFIT_PAINTING_ITX_SAEMAEUL			: (ITX-Saemaeul)
 STR_REFIT_PAINTING_FORMER_TJ			: (Demoted to Mugunghwa, former executive car)
 STR_REFIT_PAINTING_SAEMAEUL_CAFE		: (General Saemaeul cafe car)
@@ -94,10 +95,11 @@ STR_REFIT_PAINTING_NURIRO_B			: (Korean wave tour wrapping)
 
 # For refit (CDC)
 STR_REFIT_PAINTING_CDC_GARDEN			: (Flower garden painting)
-STR_REFIT_PAINTING_CDC_DOLPHINE			: (Dolphine painting)
+STR_REFIT_PAINTING_CDC_DOLPHIN			: (Dolphin painting)
 STR_REFIT_PAINTING_CDC_SEASIDE			: (Seaside train painting)
+STR_REFIT_PAINTING_CDC_SEASIDE2			: (Seaside train painting / after 2014)
 STR_REFIT_PAINTING_CDC_BAEKJE			: (Korail 100th Anni., Baekje painting)
-STR_REFIT_PAINTING_CDC_OLD_KORAIL		: (Past Korail's painting)
+STR_REFIT_PAINTING_CDC_OLD_KORAIL		: (old Korail's painting)
 STR_REFIT_PAINTING_CDC_DMZTRAIN			: (DMZ-train)
 STR_REFIT_PAINTING_CDC_MUGUNGHWA		: (RDC Mugunghwa painting)
 STR_REFIT_PAINTING_CDC_MUGUNGHWA_CAFE		: (RDC Cafe car)
@@ -111,7 +113,7 @@ STR_REFIT_PAINTING_VTRAIN			: (V-train)
 STR_REFIT_PAINTING_GENCW_DEFAULT		: (Default type)
 STR_REFIT_PAINTING_GENCW_LONG			: (Long type)
 STR_REFIT_PAINTING_GENCW_SME_A			: (Long type : Saemaeul old painting)
-STR_REFIT_PAINTING_GENCW_SME_B			: (Long type : Saemaeul painting thesedays)
+STR_REFIT_PAINTING_GENCW_SME_B			: (Long type : Saemaeul current painting)
 
 # For refit (Etc)
 STR_REFIT_COLOUR_A				: (Painting A)
@@ -137,7 +139,7 @@ STR_REFIT_TYPE_K1F_NAME				: (Korail 1k New rheostatic / Old painting)
 STR_REFIT_TYPE_K1G_NAME				: (Korail 1k New rheostatic / Current painting)
 STR_REFIT_TYPE_K1H_NAME				: (Korail 311k / Old painting)
 STR_REFIT_TYPE_K1I_NAME				: (Korail 311k / Current painting)
-# STR_REFIT_TYPE_K1J_BIKE_NAME			: (Korail 321k Bicycles painting)
+# STR_REFIT_TYPE_K1J_BIKE_NAME			: (Korail 321k Bike painting)
 STR_REFIT_TYPE_K1J_NAME				: (Korail 3xxk ST)
 STR_REFIT_TYPE_K1K_NAME				: (Korail 3xxk AL)
 STR_REFIT_TYPE_K1L_NAME				: (Korail 371k / Blank painting)
@@ -151,6 +153,7 @@ STR_REFIT_TYPE_S2B_NAME				: (SMetro 2k Chopper)
 STR_REFIT_TYPE_S2C_NAME				: (SMetro 2k 1st VVVF)
 STR_REFIT_TYPE_S2D_NAME				: (SMetro 2k 2nd VVVF)
 STR_REFIT_TYPE_S2E_NAME				: (SMetro 2k Modified rheostatic)
+STR_REFIT_TYPE_S2F_NAME				: (SMetro 2k 3rd VVVF)
 STR_REFIT_TYPE_K3A_NAME				: (Korail 3k VVVF / Old painting)
 STR_REFIT_TYPE_K3B_NAME				: (Korail 3k VVVF / Current painting)
 STR_REFIT_TYPE_S3A_NAME				: (SMetro 3k Chopper)
@@ -228,7 +231,7 @@ STR_PARAM_OPT_FACTOR_BY_2048			:x2048
 STR_PARAM_OPT_FACTOR_BY_4096			:x4096
 
 STR_PARAM_SIMPLIZE_WAYPOINT_NAME		:Make waypoint's graphics simple
-STR_PARAM_SIMPLIZE_WAYPOINT_DESC		:Make waypoint's graphics simple by eliminating building of waypoint.
+STR_PARAM_SIMPLIZE_WAYPOINT_DESC		:Make the graphic of waypoints simple by eliminating waypoint buildings.
 STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME	:Disable original engines
 STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC	:Disable original engines to find KTS passenger coaches quickly. Monorail and Maglev engines will not be disabled, only (electric) rail engines will be disabled.
 STR_PARAM_MAX_SPEED_TYPE_NAME			:Type of Max. speed
