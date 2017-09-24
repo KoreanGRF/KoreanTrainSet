@@ -4,7 +4,7 @@
 STR_GRF_NAME					:韓国列車セット
 STR_GRF_NAME_WITH_VER				:韓国列車セット {VERSION}
 STR_GRF_DESC					:{}{BLACK}韓国列車セットはOpenTTDにKTX、KTX-山川（サンチョン）、ITX-青春（チョンチュン）、セマウル号、ムグンファ号、ヌリロ、 CDC(通勤列車)、首都圏のちかてつ、Korailの機関車とかいろいろな韓国の列車を追加してくれます。{}(最近アップデート: {RECENT_UPDATED}){}{}{SILVER}+ 제작: 텔크{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL					:https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp
+STR_GRF_URL					:{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=jp
 
 # Vehicle's names
 STR_MET1N_NAME					:[KTS] 首都圏1号線, 京義中央線, 水仁線
@@ -143,8 +143,8 @@ STR_REFIT_TYPE_K1I_NAME				: (Korail 311k / 現塗色)
 STR_REFIT_TYPE_K1J_NAME				: (Korail 3xxk ST)
 STR_REFIT_TYPE_K1K_NAME				: (Korail 3xxk AL)
 STR_REFIT_TYPE_K1L_NAME				: (Korail 371k / 無塗色)
-# STR_REFIT_TYPE_K1M_NAME				: (Korail 371k / 京江(ギョンガン))
-STR_REFIT_TYPE_K1N_NAME				: (Korail 381k)
+STR_REFIT_TYPE_K1N_NAME				: (Korail 371k, 381k)
+STR_REFIT_TYPE_K1M_NAME				: (Korail 391k / 素砂元時線)
 STR_REFIT_TYPE_S1A_NAME				: (SMetro 1k 初期抵抗)
 STR_REFIT_TYPE_S1B_NAME				: (SMetro 1k 開祖抵抗)
 STR_REFIT_TYPE_S1C_NAME				: (SMetro 1k VVVF)

@@ -4,7 +4,7 @@
 STR_GRF_NAME					:한국 열차 세트
 STR_GRF_NAME_WITH_VER				:한국 열차 세트 {VERSION}
 STR_GRF_DESC					:{}{BLACK}한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.{}(최근 업데이트: {RECENT_UPDATED}){}{}{SILVER}+ 제작: 텔크{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL					:https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr
+STR_GRF_URL					:{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=kr
 
 # Vehicle's name
 STR_MET1N_NAME					:[KTS] 수도권 1호선, 경의·중앙선, 수인선
@@ -143,8 +143,8 @@ STR_REFIT_TYPE_K1I_NAME				: (Korail 311k / 현 도색)
 STR_REFIT_TYPE_K1J_NAME				: (Korail 3xxk ST)
 STR_REFIT_TYPE_K1K_NAME				: (Korail 3xxk AL)
 STR_REFIT_TYPE_K1L_NAME				: (Korail 371k / 무도색)
-# STR_REFIT_TYPE_K1M_NAME				: (Korail 371k / 경강선)
-STR_REFIT_TYPE_K1N_NAME				: (Korail 381k)
+STR_REFIT_TYPE_K1N_NAME				: (Korail 371k, 381k)
+STR_REFIT_TYPE_K1M_NAME				: (Korail 391k / 소사원시선)
 STR_REFIT_TYPE_S1A_NAME				: (SMetro 1k 초기 저항)
 STR_REFIT_TYPE_S1B_NAME				: (SMetro 1k 개조 저항)
 STR_REFIT_TYPE_S1C_NAME				: (SMetro 1k VVVF)
