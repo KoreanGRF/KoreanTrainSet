@@ -8,7 +8,7 @@ echo.
 echo #1. NML 컴파일
 echo 컴파일을 실행합니다.....
 echo ─────────────────────────────
-"..\NML\0.2.2\nmlc.exe" --custom-tags="./custom_tags.txt" --lang-dir="./lang/" --grf="./ko_train_set.grf" --nfo="./ko_train_set.nfo" "./ko_train_set.nml"
+"..\NML\0.4.4\nmlc.exe" --custom-tags="./custom_tags.txt" --lang-dir="./lang/" --grf="./ko_train_set.grf" --nfo="./ko_train_set.nfo" "./ko_train_set.nml"
 echo.
 if ERRORLEVEL 1 (
 	echo [결과] 오류!! 컴파일에 실패하였습니다!
@@ -38,7 +38,7 @@ echo.
 echo.
 echo (2) 압축
 echo ─────────────────────────────
-"C:\Program Files\Bandizip\bz.exe" /archive "Korean_Train_Set-%KTS_VERSION%.tar" "ko_train_set.grf" "changelog.txt" "readme.txt" "readme_en.txt"
+"C:\Program Files\Bandizip\bc.exe" c "Korean_Train_Set-%KTS_VERSION%.tar" "ko_train_set.grf" "changelog.txt" "readme.txt" "readme_en.txt"
 :: "C:\Program Files (x86)\ESTsoft\ALZip\alzipcon.exe" -a -nq -m0 "ko_train_set.grf";"changelog.txt";"readme.txt";"readme_en.txt" "Korean_Train_Set-%KTS_VERSION%.tar"
 echo ─────────────────────────────
 echo.
