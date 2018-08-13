@@ -7,7 +7,7 @@ STR_GRF_DESC					:{}{BLACK}韓国列車セットはOpenTTDにKTX、KTX-山川（
 STR_GRF_URL					:{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=jp
 
 # Vehicle's names
-STR_MET1N_NAME					:[KTS] 首都圏1号線, 京義中央線, 水仁線
+STR_MET1N_NAME					:[KTS] 首都圏1号線, 通勤型
 STR_MET2N_NAME					:[KTS] 首都圏2号線
 STR_MET3N_NAME					:[KTS] 首都圏3号線
 STR_MET4N_NAME					:[KTS] 首都圏4号線
@@ -143,8 +143,9 @@ STR_REFIT_TYPE_K1I_NAME				: (Korail 311k / 現塗色)
 STR_REFIT_TYPE_K1J_NAME				: (Korail 3xxk ST)
 STR_REFIT_TYPE_K1K_NAME				: (Korail 3xxk AL)
 STR_REFIT_TYPE_K1L_NAME				: (Korail 371k / 無塗色)
-STR_REFIT_TYPE_K1N_NAME				: (Korail 371k, 381k)
-STR_REFIT_TYPE_K1M_NAME				: (Korail 391k / 素砂元時線)
+STR_REFIT_TYPE_K1M_NAME				: (Korail 371k, 381k 1st)
+STR_REFIT_TYPE_K1N_NAME				: (Korail 381k 2次)
+STR_REFIT_TYPE_K1O_NAME				: (Korail 391k / 素砂元時線)
 STR_REFIT_TYPE_S1A_NAME				: (SMetro 1k 初期抵抗)
 STR_REFIT_TYPE_S1B_NAME				: (SMetro 1k 開祖抵抗)
 STR_REFIT_TYPE_S1C_NAME				: (SMetro 1k VVVF)

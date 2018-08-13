@@ -13,7 +13,7 @@ grf {
 	name :				string(STR_GRF_NAME_WITH_VER);
 	desc :				string(STR_GRF_DESC);
 	url :				string(STR_GRF_URL);
-	version :			162;
+	version :			164;
 	min_compatible_version :	162;
 
 	// 추가 열차 종류
@@ -832,7 +832,7 @@ spriteset(set_KTX2N_loco10, "./gfx/ko_train1.png") {
 	[70,	770,	8,	23,	-3,	-11]
 	[85,	770,	22,	18,	-16,	-9]
 	[115,	770,	32,	14,	-18,	-10]
-	[165,	770,	22,	16,	-6,	-6]
+	[165,	770,	22,	16,	-6,	-8]
 	[195,	770,	8,	23,	-3,	-11]
 	[210,	770,	22,	16,	-15,	-7]
 	[245,	770,	32,	14,	-16,	-10]
@@ -3292,28 +3292,36 @@ spriteset(set_K1L_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1280, 770)
 spriteset(set_K1L_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1280, 770) }
 spriteset(set_K1L_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1280, 770) }
 spriteset(set_K1L_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1280, 770) }
-/*
-// K1< (1호선 <)
-spriteset(set_K1M_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1600, 770) }
-spriteset(set_K1M_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1600, 770) }
-spriteset(set_K1M_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1600, 770) }
-spriteset(set_K1M_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1600, 770) }
-spriteset(set_K1M_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1600, 770) }
-*/
-// K1N (1호선 N)
+
+// K1M (1호선 N - 동해선 1차분)
 spriteset(set_K1N_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1920, 770) }
 spriteset(set_K1N_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1920, 770) }
 spriteset(set_K1N_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1920, 770) }
 spriteset(set_K1N_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1920, 770) }
 spriteset(set_K1N_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1920, 770) }
 
-// K1M (1호선 M - 소사원시선)
-spriteset(set_K1M_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1600, 880) }
-spriteset(set_K1M_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1600, 880) }
-spriteset(set_K1M_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1600, 880) }
-spriteset(set_K1M_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1600, 880) }
-spriteset(set_K1M_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1600, 880) }
+// K1M (1호선 M - 동해선 2차분(주둥이))
+spriteset(set_K1M_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1920, 880) }
+spriteset(set_K1M_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1920, 880) }
+spriteset(set_K1M_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1920, 880) }
+spriteset(set_K1M_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(1920, 880) }
+spriteset(set_K1M_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1920, 880) }
 
+// K1N (1호선 O - 서해선)
+spriteset(set_K1O_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1600, 770) }
+spriteset(set_K1O_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1600, 770) }
+spriteset(set_K1O_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1600, 770) }
+spriteset(set_K1O_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_panto(1600, 770) }
+spriteset(set_K1O_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1600, 770) }
+
+/*
+// K1M (1호선 P)
+spriteset(set_K1P_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1600, 880) }
+spriteset(set_K1P_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1600, 880) }
+spriteset(set_K1P_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(1600, 880) }
+spriteset(set_K1P_wagon_panto,		"./gfx/ko_subway.png") { tmpl_wagon_dblpanto(1600, 880) }
+spriteset(set_K1P_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(1600, 880) }
+*/
 // S1A (1호선 서울메트로 A)
 spriteset(set_S1A_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1280, 110) }
 spriteset(set_S1A_engineT,		"./gfx/ko_subway.png") { tmpl_engine_tail(1280, 110) }
@@ -3806,8 +3814,9 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_cargo_subtype_text, cargo_subtype) {
 //	14:	return string(STR_REFIT_TYPE_K1J_BIKE_NAME);
 	15:	return string(STR_REFIT_TYPE_K1L_NAME);
 //	16:	return string();
-	17:	return string(STR_REFIT_TYPE_K1N_NAME);
-	18:	return string(STR_REFIT_TYPE_K1M_NAME);
+	17:	return string(STR_REFIT_TYPE_K1M_NAME);  // 파란 도색
+//	18:	return string(STR_REFIT_TYPE_K1N_NAME);  // 주둥이
+	19:	return string(STR_REFIT_TYPE_K1O_NAME);  // 소사원시선
 	return string(STR_REFIT_TYPE_K1K_NAME);
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_wagon_panto, cargo_subtype) {
@@ -3828,8 +3837,9 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_wagon_panto, cargo_subtype) {
 //	14:	set_K1J_BIKE_wagon_panto;
 	15:	set_K1L_wagon_panto;
 //	16:	;
-	17:	set_K1N_wagon_panto;
-	18:	set_K1M_wagon_panto;
+	17:	set_K1M_wagon_panto;
+//	18:	set_K1N_wagon_panto;
+	19:	set_K1O_wagon_panto;
 	set_K1K_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_wagon, cargo_subtype) {
@@ -3850,8 +3860,9 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_wagon, cargo_subtype) {
 //	14:	set_K1J_BIKE_wagon;
 	15:	set_K1L_wagon;
 //	16:	;
-	17:	set_K1N_wagon;
-	18:	set_K1M_wagon;
+	17:	set_K1M_wagon;
+//	18:	set_K1N_wagon;
+	19:	set_K1O_wagon;
 	set_K1K_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_engineH, cargo_subtype) {
@@ -3872,8 +3883,9 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_engineH, cargo_subtype) {
 //	14:	set_K1J_BIKE_engineH;
 	15:	set_K1L_engineH;
 //	16:	;
-	17:	set_K1N_engineH;
-	18:	set_K1M_engineH;
+	17:	set_K1M_engineH;
+//	18:	set_K1N_engineH;
+	19:	set_K1O_engineH;
 	set_K1K_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_engineT, cargo_subtype) {
@@ -3894,8 +3906,9 @@ switch(FEAT_TRAINS, SELF, sw_MET1N_engineT, cargo_subtype) {
 //	14:	set_K1J_BIKE_engineT;
 	15:	set_K1L_engineT;
 //	16:	;
-	17:	set_K1N_engineT;
-	18:	set_K1M_engineT;
+	17:	set_K1M_engineT;
+//	18:	set_K1N_engineT;
+	19:	set_K1O_engineT;
 	set_K1K_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_MET1N_purchase, cargo_subtype) {

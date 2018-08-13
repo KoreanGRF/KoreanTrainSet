@@ -7,7 +7,7 @@ STR_GRF_DESC					:{}{BLACK}El Set de trenes de Corea es un NewGRF de OpenTTD al 
 STR_GRF_URL					:{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=es
 
 # Vehicle's name
-STR_MET1N_NAME					:[KTS] Línea 1, Línea Gyeongui-Jungang, Línea Suin
+STR_MET1N_NAME					:[KTS] Línea 1, Commuter trains
 STR_MET2N_NAME					:[KTS] Línea 2
 STR_MET3N_NAME					:[KTS] Línea 3
 STR_MET4N_NAME					:[KTS] Línea 4
@@ -144,8 +144,9 @@ STR_REFIT_TYPE_K1I_NAME				: (Korail 311k / Pintura actual)
 STR_REFIT_TYPE_K1J_NAME				: (Korail 3xxk ST)
 STR_REFIT_TYPE_K1K_NAME				: (Korail 3xxk AL)
 STR_REFIT_TYPE_K1L_NAME				: (Korail 371k / Blank painting)
-STR_REFIT_TYPE_K1N_NAME				: (Korail 371k, 381k)
-STR_REFIT_TYPE_K1M_NAME				: (Korail 391k / Línea Sosa-Wonsi)
+STR_REFIT_TYPE_K1M_NAME				: (Korail 371k, 381k 1st)
+STR_REFIT_TYPE_K1N_NAME				: (Korail 381k 2nd)
+STR_REFIT_TYPE_K1O_NAME				: (Korail 391k / Línea Sosa-Wonsi)
 # STR_REFIT_TYPE_GUJA1_NAME			: (Korail Línea Gyeongui-Jungang Bicyle painting)
 # STR_REFIT_TYPE_GUJA1r_NAME			: (Korail Línea Gyeongui-Jungang Bicyle painting / Reverse)
 STR_REFIT_TYPE_S1A_NAME				: (SMetro 1k 1er reóstato)

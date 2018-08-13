@@ -7,7 +7,7 @@ STR_GRF_DESC					:{}{BLACK}한국 열차 세트는 OpenTTD에 KTX, KTX-산천, I
 STR_GRF_URL					:{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=kr
 
 # Vehicle's name
-STR_MET1N_NAME					:[KTS] 수도권 1호선, 경의·중앙선, 수인선
+STR_MET1N_NAME					:[KTS] 수도권 1호선, 통근형
 STR_MET2N_NAME					:[KTS] 서울 2호선
 STR_MET3N_NAME					:[KTS] 수도권 3호선
 STR_MET4N_NAME					:[KTS] 수도권 4호선
@@ -143,8 +143,9 @@ STR_REFIT_TYPE_K1I_NAME				: (Korail 311k / 현 도색)
 STR_REFIT_TYPE_K1J_NAME				: (Korail 3xxk ST)
 STR_REFIT_TYPE_K1K_NAME				: (Korail 3xxk AL)
 STR_REFIT_TYPE_K1L_NAME				: (Korail 371k / 무도색)
-STR_REFIT_TYPE_K1N_NAME				: (Korail 371k, 381k)
-STR_REFIT_TYPE_K1M_NAME				: (Korail 391k / 소사원시선)
+STR_REFIT_TYPE_K1M_NAME				: (Korail 371k, 381k 1차)
+STR_REFIT_TYPE_K1N_NAME				: (Korail 381k 2차)
+STR_REFIT_TYPE_K1O_NAME				: (Korail 391k / 소사원시선)
 STR_REFIT_TYPE_S1A_NAME				: (SMetro 1k 초기 저항)
 STR_REFIT_TYPE_S1B_NAME				: (SMetro 1k 개조 저항)
 STR_REFIT_TYPE_S1C_NAME				: (SMetro 1k VVVF)
