@@ -57,6 +57,7 @@ STR_GENCW_NAME					:[KTS] 발전차
 STR_FLATC_NAME					:[KTS] 평판화차
 STR_HOPPERC_NAME				:[KTS] 호퍼차
 STR_SMALLCARGO_NAME				:[KTS] 수화물차
+STR_TANKER_NAME					:[KTS] 유조화차
 
 # For refit (KTX-Sancheon)
 STR_REFIT_PAINTING_SANCHEON			: (110000호대)
@@ -209,6 +210,8 @@ STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:화물 수송량
 STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:열차의 화물 수송량을 조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.{}단, 지하철 차량은 이 설정의 영향을 받지 않습니다.{}x2로 설정하면 현실의 수송량과 거의 같아집니다.{}{RED}주의!{WHITE} 이 설정은 새로 만드는 차량부터 적용됩니다.
 STR_PARAM_FACTOR_LOADING_SPEED_NAME		:화물 적재 속도
 STR_PARAM_FACTOR_LOADING_SPEED_DESC		:열차의 화물 적재 속력을 조절할 수 있습니다. 값이 크면 승객이나 화물을 싣는 속력이 빨라집니다.
+STR_PARAM_WAGON_SPEED_LIMIT_NAME		:화차 속도 제한 해제
+STR_PARAM_WAGON_SPEED_LIMIT_DESC		:화차의 속도 제한을 해제합니다. 이 매개변수는 설정에서 '화물차 속력 제한 적용'을 켜야 적용됩니다.
 
 # Parameters' value
 STR_PARAM_OPT_FACTOR_BY_0			:x0

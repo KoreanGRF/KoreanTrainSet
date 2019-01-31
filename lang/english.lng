@@ -57,6 +57,7 @@ STR_GENCW_NAME					:[KTS] Generator car
 STR_FLATC_NAME					:[KTS] Flat cargo car
 STR_HOPPERC_NAME				:[KTS] Hopper car
 STR_SMALLCARGO_NAME				:[KTS] Luggage van
+STR_TANKER_NAME					:[KTS] Tanker
 
 # For refit (KTX-Sancheon)
 STR_REFIT_PAINTING_SANCHEON			: (No.110000)
@@ -209,6 +210,8 @@ STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:Cargo capacity
 STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:Cargo capacity of trains. The higher this value, the more cargo can be delivered.{}However, subways are not affected by this option.{}It is the same as real if you set this by 'x2'.{}{RED}Warning!{WHITE} This setting will be applied from newly created trains.
 STR_PARAM_FACTOR_LOADING_SPEED_NAME		:Loading speed
 STR_PARAM_FACTOR_LOADING_SPEED_DESC		:Loading speed of trains. The higher this value, the more cargo can load cargos faster.
+STR_PARAM_WAGON_SPEED_LIMIT_NAME		:Unlock Wagon speed limit
+STR_PARAM_WAGON_SPEED_LIMIT_DESC		:You may unlock wagon speed limits only for Korean train set. This may be applied when you set 'Enable wagon speed limits' as "On" in the settings.
 
 # Parameters' value
 STR_PARAM_OPT_FACTOR_BY_0			:x0

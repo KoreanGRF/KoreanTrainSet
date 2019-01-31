@@ -1,0 +1,13 @@
+ nmlc info: 3230 sprites, 2819 cached, 48 orphaned, 411 duplicates, 0 newly encoded (native)
+ nmlc info: Train items: 50/65420
+ nmlc info: Object items: 1/256
+ nmlc info: Railtype items: 1/16
+ nmlc info: Concurrent spritesets: 6/255 ("./ko_train_set.nml", line 1171)
+ nmlc info: Concurrent spritegroups: 114/256 ("./ko_train_set.nml", line 1301)
+ nmlc info: Concurrent Action2 registers: 1/127 ("./ko_train_set.nml", line 6252)
+ nmlc info: Concurrent ActionD registers: 9/64 ("./ko_train_set.nml", line 5947)
+ nmlc info: GRF parameter registers: 17/64
+ nmlc info: Cargo translation table: 16/254
+ nmlc info: Railtype translation table: 7/256
+ nmlc info: D0xx strings: 110/1024
+ nmlc info: DCxx strings: 1/256

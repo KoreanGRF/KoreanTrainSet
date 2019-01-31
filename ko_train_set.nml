@@ -13,7 +13,7 @@ grf {
 	name :				string(STR_GRF_NAME_WITH_VER);
 	desc :				string(STR_GRF_DESC);
 	url :				string(STR_GRF_URL);
-	version :			164;
+	version :			170;
 	min_compatible_version :	162;
 
 	// 추가 열차 종류
@@ -181,6 +181,17 @@ grf {
 		}
 	}
 
+	// 화차 속도
+	param 10 {
+		wagon_speed_limit {
+			type: bool;
+			name: string(STR_PARAM_WAGON_SPEED_LIMIT_NAME);
+			desc: string(STR_PARAM_WAGON_SPEED_LIMIT_DESC);
+			bit: 1;
+			def_value: 1;
+		}
+	}
+
 	// 경유지 간소화 기능
 	param 15 {
 		bool_simplize_waypoint {
@@ -222,13 +233,14 @@ grf {
 }
 
 // OpenTTD 버전을 확인
-if(ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 0, 0, 21278)) {
-	error(FATAL, string(STR_ERROR_REQUIRES_OPENTTD), "1.0.0/r21278");
+if(ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 7, 0, 21278)) {
+	error(FATAL, string(STR_ERROR_REQUIRES_OPENTTD), "1.7.0/r21278");
 }
 
 // Tables
 cargotable {
-	PASS, MAIL, COAL, IORE, CORP, GRAI, LVST, WOOD, STEL, WHEA, TOFF, FRUT, MAIZ, CORE, CTCD, SUGR
+	PASS, MAIL, COAL, IORE, CORP, GRAI, LVST, WOOD, STEL, WHEA, TOFF, FRUT, MAIZ, CORE, CTCD, SUGR,
+	OIL_, WATR, COLA, FZDR, ACID, CHLO, MILK, RUBR, PLST, BEER, DYES, EOIL, KAOL, PETR, RFPR, FUEL
 }
 railtypetable {
 	RAIL, ELRL, MGLV,
@@ -502,6 +514,7 @@ template tmpl_SMALLCARGO_coach(x, y) {
 	[x+45,	y,	32,	13,	-16,	-10]
 	[x+95,	y,	21,	17,	-6,	-9]
 }
+
 // V-train 객차 1/3호차용
 template tmpl_VTRAIN_coach(x, y) {
 	[x,	y,	8,	22,	-3,	-11]
@@ -533,6 +546,17 @@ template tmpl_flatc_by_coor(x, y) {
 	[x+15,	y,	20,	18,	-13,	-11]
 	[x+45,	y,	31,	15,	-17,	-11]
 	[x+95,	y,	20,	18,	-6,	-11]
+}
+template tmpl_flatc(x, y) {  //NEED_OFFSET//
+	//xpos	ypos	xsize	ysize	xoff	yoff
+	[x,	y,	8,	19,	-3,	-11]
+	[x+15,	y,	22,	16,	-15,	-8]
+	[x+45,	y,	31,	11,	-17,	-7]
+	[x+80,	y,	22,	16,	-6,	-9]
+	[x+110,	y,	8,	19,	-3,	-10]
+	[x+125,	y,	22,	16,	-15,	-9]
+	[x+155,	y,	31,	11,	-17,	-6]
+	[x+190,	y,	22,	16,	-6,	-9]
 }
 
 // 호퍼 화차 용
@@ -670,7 +694,8 @@ switch(FEAT_TRAINS, SELF, var_capacity_TILCW, 1)	{ return 38	* sw_cargo_capacity
 
 /*
 	var_speed_TOURC, var_cost_TOURC, var_runcost_TOURC, var_capacity_TOURC
-	관광열차 공통 객차(TOURC)는 그 특성상
+	var_speed_SMALLCARGO, var_cost_SMALLCARGO, var_runcost_SMALLCARGO, var_capacity_SMALLCARGO
+	관광열차 공통 객차(TOURC), 수화물차(SMALLCARGO)는 그 특성상
 	item() 블록 위에 있음
 */
 
@@ -679,7 +704,7 @@ switch(FEAT_TRAINS, SELF, var_cost_GENCW, 1)		{ return 10	* sw_cost_factor; }
 switch(FEAT_TRAINS, SELF, var_runcost_GENCW, 1)		{ return 10	* sw_running_cost_factor; }
 switch(FEAT_TRAINS, SELF, var_capacity_GENCW, 1)	{ return 5	* sw_cargo_capacity_factor; }
 
-switch(FEAT_TRAINS, SELF, var_speed_CARGOWAGON, 1)	{ return 10	* coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_speed_CARGOWAGON, 1)	{ return 10	* coeff_speed_general * (1-wagon_speed_limit); }
 switch(FEAT_TRAINS, SELF, var_cost_CARGOWAGON, 1)	{ return 10	* sw_cost_factor; }
 switch(FEAT_TRAINS, SELF, var_runcost_CARGOWAGON, 1)	{ return 20	* sw_running_cost_factor; }
 switch(FEAT_TRAINS, SELF, var_capacity_CARGOWAGON, 1)	{ return 25	* sw_cargo_capacity_factor; }
@@ -1116,32 +1141,64 @@ spriteset(set_NDC_engineT,		"./gfx/ko_train1.png") {
 
 
 // 평판화차
-spriteset(set_FLATCa_empty_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 800) }
-spriteset(set_FLATCa_loaded1_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 830) }
-spriteset(set_FLATCa_loaded2_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 860) }
-spriteset(set_FLATCa_loaded3_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 890) }
-spriteset(set_FLATCa_loaded4_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 920) }
-spriteset(set_FLATCa_loaded5_coach,		"./gfx/ko_train1.png") { tmpl_flatc_by_coor(350, 950) }
-spritegroup sg_FLATCa1_coach {
-	loading: [set_FLATCa_empty_coach, set_FLATCa_loaded1_coach];
-	loaded: [set_FLATCa_empty_coach, set_FLATCa_loaded1_coach];
-}
-spritegroup sg_FLATCa2_coach {
-	loading: [set_FLATCa_empty_coach, set_FLATCa_loaded2_coach];
-	loaded: [set_FLATCa_empty_coach, set_FLATCa_loaded2_coach];
-}
-spritegroup sg_FLATCa3_coach {
-	loading: [set_FLATCa_empty_coach, set_FLATCa_loaded3_coach];
-	loaded: [set_FLATCa_empty_coach, set_FLATCa_loaded3_coach];
-}
-spritegroup sg_FLATCa4_coach {
-	loading: [set_FLATCa_empty_coach, set_FLATCa_loaded4_coach];
-	loaded: [set_FLATCa_empty_coach, set_FLATCa_loaded4_coach];
-}
-spritegroup sg_FLATCa5_coach {
-	loading: [set_FLATCa_empty_coach, set_FLATCa_loaded5_coach];
-	loaded: [set_FLATCa_empty_coach, set_FLATCa_loaded5_coach];
-}
+spriteset(set_FLATCa_empty_coach,		"./gfx/wagons.png") { tmpl_flatc(20, 20) }
+spriteset(set_FLATCa_40ft_loaded_01_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 50) }
+spriteset(set_FLATCa_40ft_loaded_02_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 80) }
+spriteset(set_FLATCa_40ft_loaded_03_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 110) }
+spriteset(set_FLATCa_40ft_loaded_04_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 140) }
+spriteset(set_FLATCa_40ft_loaded_05_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 170) }
+spriteset(set_FLATCa_40ft_loaded_06_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 200) }
+spriteset(set_FLATCa_40ft_loaded_07_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 230) }
+spriteset(set_FLATCa_40ft_loaded_08_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 260) }
+spriteset(set_FLATCa_40ft_loaded_09_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 290) }
+spritegroup sg_FLATCa_40ft_01_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_01_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_01_coach]; }
+spritegroup sg_FLATCa_40ft_02_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_02_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_02_coach]; }
+spritegroup sg_FLATCa_40ft_03_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_03_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_03_coach]; }
+spritegroup sg_FLATCa_40ft_04_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_04_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_04_coach]; }
+spritegroup sg_FLATCa_40ft_05_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_05_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_05_coach]; }
+spritegroup sg_FLATCa_40ft_06_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_06_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_06_coach]; }
+spritegroup sg_FLATCa_40ft_07_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_07_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_07_coach]; }
+spritegroup sg_FLATCa_40ft_08_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_08_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_08_coach]; }
+spritegroup sg_FLATCa_40ft_09_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_09_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_40ft_loaded_09_coach]; }
+
+// loading											// loaded
+spriteset(set_FLATCa_20ft_loading_01_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 320) }	spriteset(set_FLATCa_20ft_loaded_01_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 320) }
+spriteset(set_FLATCa_20ft_loading_02_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 350) }	spriteset(set_FLATCa_20ft_loaded_02_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 350) }
+spriteset(set_FLATCa_20ft_loading_03_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 380) }	spriteset(set_FLATCa_20ft_loaded_03_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 380) }
+spriteset(set_FLATCa_20ft_loading_04_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 410) }	spriteset(set_FLATCa_20ft_loaded_04_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 410) }
+spriteset(set_FLATCa_20ft_loading_05_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 440) }	spriteset(set_FLATCa_20ft_loaded_05_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 440) }
+spriteset(set_FLATCa_20ft_loading_06_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 470) }	spriteset(set_FLATCa_20ft_loaded_06_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 470) }
+spriteset(set_FLATCa_20ft_loading_07_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 500) }	spriteset(set_FLATCa_20ft_loaded_07_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 500) }
+spriteset(set_FLATCa_20ft_loading_08_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 530) }	spriteset(set_FLATCa_20ft_loaded_08_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 530) }
+spriteset(set_FLATCa_20ft_loading_09_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 560) }	spriteset(set_FLATCa_20ft_loaded_09_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 560) }
+spriteset(set_FLATCa_20ft_loading_10_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 590) }	spriteset(set_FLATCa_20ft_loaded_10_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 590) }
+spriteset(set_FLATCa_20ft_loading_11_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 620) }	spriteset(set_FLATCa_20ft_loaded_11_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 620) }
+spriteset(set_FLATCa_20ft_loading_12_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 650) }	spriteset(set_FLATCa_20ft_loaded_12_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 650) }
+spriteset(set_FLATCa_20ft_loading_13_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 680) }	spriteset(set_FLATCa_20ft_loaded_13_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 680) }
+spriteset(set_FLATCa_20ft_loading_14_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 710) }	spriteset(set_FLATCa_20ft_loaded_14_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 710) }
+spriteset(set_FLATCa_20ft_loading_15_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 740) }	spriteset(set_FLATCa_20ft_loaded_15_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 740) }
+spriteset(set_FLATCa_20ft_loading_16_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 770) }	spriteset(set_FLATCa_20ft_loaded_16_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 770) }
+spriteset(set_FLATCa_20ft_loading_17_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 800) }	spriteset(set_FLATCa_20ft_loaded_17_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 800) }
+spriteset(set_FLATCa_20ft_loading_18_coach,	"./gfx/wagons.png") { tmpl_flatc(20, 830) }	spriteset(set_FLATCa_20ft_loaded_18_coach,	"./gfx/wagons.png") { tmpl_flatc(260, 830) }
+
+spritegroup sg_FLATCa_20ft_01_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_01_coach, set_FLATCa_20ft_loaded_01_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_01_coach, set_FLATCa_20ft_loaded_01_coach]; }
+spritegroup sg_FLATCa_20ft_02_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_02_coach, set_FLATCa_20ft_loaded_02_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_02_coach, set_FLATCa_20ft_loaded_02_coach]; }
+spritegroup sg_FLATCa_20ft_03_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_03_coach, set_FLATCa_20ft_loaded_03_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_03_coach, set_FLATCa_20ft_loaded_03_coach]; }
+spritegroup sg_FLATCa_20ft_04_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_04_coach, set_FLATCa_20ft_loaded_04_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_04_coach, set_FLATCa_20ft_loaded_04_coach]; }
+spritegroup sg_FLATCa_20ft_05_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_05_coach, set_FLATCa_20ft_loaded_05_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_05_coach, set_FLATCa_20ft_loaded_05_coach]; }
+spritegroup sg_FLATCa_20ft_06_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_06_coach, set_FLATCa_20ft_loaded_06_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_06_coach, set_FLATCa_20ft_loaded_06_coach]; }
+spritegroup sg_FLATCa_20ft_07_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_07_coach, set_FLATCa_20ft_loaded_07_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_07_coach, set_FLATCa_20ft_loaded_07_coach]; }
+spritegroup sg_FLATCa_20ft_08_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_08_coach, set_FLATCa_20ft_loaded_08_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_08_coach, set_FLATCa_20ft_loaded_08_coach]; }
+spritegroup sg_FLATCa_20ft_09_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_09_coach, set_FLATCa_20ft_loaded_09_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_09_coach, set_FLATCa_20ft_loaded_09_coach]; }
+spritegroup sg_FLATCa_20ft_10_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_10_coach, set_FLATCa_20ft_loaded_10_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_10_coach, set_FLATCa_20ft_loaded_10_coach]; }
+spritegroup sg_FLATCa_20ft_11_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_11_coach, set_FLATCa_20ft_loaded_11_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_11_coach, set_FLATCa_20ft_loaded_11_coach]; }
+spritegroup sg_FLATCa_20ft_12_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_12_coach, set_FLATCa_20ft_loaded_12_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_12_coach, set_FLATCa_20ft_loaded_12_coach]; }
+spritegroup sg_FLATCa_20ft_13_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_13_coach, set_FLATCa_20ft_loaded_13_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_13_coach, set_FLATCa_20ft_loaded_13_coach]; }
+spritegroup sg_FLATCa_20ft_14_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_14_coach, set_FLATCa_20ft_loaded_14_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_14_coach, set_FLATCa_20ft_loaded_14_coach]; }
+spritegroup sg_FLATCa_20ft_15_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_15_coach, set_FLATCa_20ft_loaded_15_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_15_coach, set_FLATCa_20ft_loaded_15_coach]; }
+spritegroup sg_FLATCa_20ft_16_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_16_coach, set_FLATCa_20ft_loaded_16_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_16_coach, set_FLATCa_20ft_loaded_16_coach]; }
+spritegroup sg_FLATCa_20ft_17_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_17_coach, set_FLATCa_20ft_loaded_17_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_17_coach, set_FLATCa_20ft_loaded_17_coach]; }
+spritegroup sg_FLATCa_20ft_18_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_18_coach, set_FLATCa_20ft_loaded_18_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_18_coach, set_FLATCa_20ft_loaded_18_coach]; }
 
 // 호퍼차
 spriteset(set_HOPPERCa_empty_coach,		"./gfx/ko_train1.png") { tmpl_hopper_by_coor(350, 980) }
@@ -1193,6 +1250,14 @@ spriteset(set_SMALLCARGO_E_coach,		"./gfx/ko_train1.png") { tmpl_SMALLCARGO_coac
 spriteset(set_SMALLCARGO_F_coach,		"./gfx/ko_train1.png") { tmpl_SMALLCARGO_coach(840, 470) }
 spriteset(set_SMALLCARGO_G_coach,		"./gfx/ko_train1.png") { tmpl_SMALLCARGO_coach(840, 500) }
 
+
+// 유조차
+spriteset(set_TANKER_A_coach,			"./gfx/wagons.png") {
+	[260,	20,	8,	20,	-3,	-10]
+	[275,	20,	19,	16,	-13,	-8]
+	[305,	20,	28,	11,	-17,	-8]
+	[340,	20,	19,	16,	-13,	-8]
+}
 
 
 
@@ -2927,13 +2992,36 @@ item(FEAT_TRAINS, ko_train_GENCW, 5998) {
 평판화차
 ------------------------------------------------------------------------------*/
 // 평판화차 스프라이트
-switch(FEAT_TRAINS, SELF, sw_FLATCa_coach, random_bits % 5) {
-	0: sg_FLATCa1_coach;
-	1: sg_FLATCa2_coach;
-	2: sg_FLATCa3_coach;
-	3: sg_FLATCa4_coach;
-	4: sg_FLATCa5_coach;
-	sg_FLATCa5_coach;
+switch(FEAT_TRAINS, SELF, sw_FLATCa_coach, random_bits % 27) {
+	 0: sg_FLATCa_40ft_01_coach;
+	 1: sg_FLATCa_40ft_02_coach;
+	 2: sg_FLATCa_40ft_03_coach;
+	 3: sg_FLATCa_40ft_04_coach;
+	 4: sg_FLATCa_40ft_05_coach;
+	 5: sg_FLATCa_40ft_06_coach;
+	 6: sg_FLATCa_40ft_07_coach;
+	 7: sg_FLATCa_40ft_08_coach;
+	 8: sg_FLATCa_40ft_09_coach;
+
+	 9: sg_FLATCa_20ft_01_coach;
+	10: sg_FLATCa_20ft_02_coach;
+	11: sg_FLATCa_20ft_03_coach;
+	12: sg_FLATCa_20ft_04_coach;
+	13: sg_FLATCa_20ft_05_coach;
+	14: sg_FLATCa_20ft_06_coach;
+	15: sg_FLATCa_20ft_07_coach;
+	16: sg_FLATCa_20ft_08_coach;
+	17: sg_FLATCa_20ft_09_coach;
+	18: sg_FLATCa_20ft_10_coach;
+	19: sg_FLATCa_20ft_11_coach;
+	20: sg_FLATCa_20ft_12_coach;
+	21: sg_FLATCa_20ft_13_coach;
+	22: sg_FLATCa_20ft_14_coach;
+	23: sg_FLATCa_20ft_15_coach;
+	24: sg_FLATCa_20ft_16_coach;
+	25: sg_FLATCa_20ft_17_coach;
+	26: sg_FLATCa_20ft_18_coach;
+	set_FLATCa_empty_coach;
 }
 
 item(FEAT_TRAINS, ko_train_FLATC, 5801) {
@@ -2945,7 +3033,8 @@ item(FEAT_TRAINS, ko_train_FLATC, 5801) {
 		model_life:			VEHICLE_NEVER_EXPIRES;
 		reliability_decay:		0;
 		refittable_cargo_classes:	bitmask(CC_PIECE_GOODS, CC_ARMOURED, CC_REFRIGERATED, CC_COVERED, CC_EXPRESS, CC_LIQUID);
-		non_refittable_cargo_classes:	bitmask();
+//		non_refittable_cargo_classes:	bitmask();
+		cargo_disallow_refit:		[PASS];
 		loading_speed:			5;
 		cost_factor:			1;
 		running_cost_factor:		100;
@@ -3087,8 +3176,8 @@ switch(FEAT_TRAINS, SELF, sw_SMALLCARGO_coach, cargo_subtype) {
 
 // 특성상 여기서 정의
 switch(FEAT_TRAINS, SELF, var_speed_SMALLCARGO, cargo_subtype) {
-	10:	return 6	* coeff_speed_general; // V-train 객차
-	return 0;
+	10:	return 6 * coeff_speed_general * (1-wagon_speed_limit); // V-train 객차
+	return var_speed_CARGOWAGON;
 }
 switch(FEAT_TRAINS, SELF, var_cost_SMALLCARGO, 1)		{ return 10	* sw_cost_factor; }
 switch(FEAT_TRAINS, SELF, var_runcost_SMALLCARGO, 1)		{ return 10	* sw_running_cost_factor; }
@@ -3145,6 +3234,64 @@ item(FEAT_TRAINS, ko_train_SMALLCARGO, 5803) {
 }
 // End of "소화물차"
 
+
+
+
+/*------------------------------------------------------------------------------
+유조화차
+------------------------------------------------------------------------------*/
+/*
+// 객차 연결 스위치
+switch(FEAT_TRAINS, SELF, sw_TANKER_coach, cargo_subtype) {
+	return set_TANKER_A_coach;
+}
+//switch(FEAT_TRAINS, SELF, sw_TANKER_cargo_subtype_text, cargo_subtype) {
+//	1: return string(STR_REFIT_COLOUR_B);
+//	2: return string(STR_REFIT_COLOUR_C);
+//	return string(STR_REFIT_COLOUR_A);
+//}
+
+item(FEAT_TRAINS, ko_train_TANKER, 5804) {
+	property {
+		name:				string(STR_TANKER_NAME);
+		climates_available:		ALL_CLIMATES;
+
+		introduction_date:		date(1972, 1, 1);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		reliability_decay:		0;
+		refittable_cargo_classes:	bitmask(CC_LIQUID);
+//		non_refittable_cargo_classes:	bitmask();
+//		refittable_cargo_types:		bitmask(COAL, LVST, WOOD, STEL, IORE); //개조를 불가능하도록 설정
+		cargo_allow_refit:		[OIL_, WATR, COLA, FZDR, ACID, CHLO, MILK, RUBR, PLST, BEER, DYES, EOIL, KAOL, PETR, RFPR, FUEL];
+		loading_speed:			5;
+		cost_factor:			1;
+		running_cost_factor:		100;
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		refit_cost:			0;
+		misc_flags:			bitmask(TRAIN_FLAG_FLIP);
+
+		power:				0;
+		weight:				17 ton;
+		speed:				120 km/h;
+		cargo_capacity:			36;
+	}
+	graphics {
+		default:			sw_TANKER_coach;
+		purchase:			sw_TANKER_coach;
+
+		speed:				var_speed_CARGOWAGON;
+		cost_factor:			var_cost_CARGOWAGON;
+		running_cost_factor:		var_runcost_CARGOWAGON;
+		cargo_capacity:			var_capacity_CARGOWAGON;
+		loading_speed:			var_loading_speed_SLOW;
+
+//		can_attach_wagon:		sw_TANKER_attach;
+//		cargo_subtype_text:		sw_TANKER_cargo_subtype_text;
+		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
+	}
+}
+// End of "유조화차"
+*/
 
 /*------------------------------------------------------------------------------
 
@@ -6417,6 +6564,7 @@ ko_train_UISINSEOL	5581
 ko_train_FLATC		5801
 ko_train_HOPPER		5802
 ko_train_SMALLCARGO	5803
+ko_train_TANKER		5804
 
 ko_train_SUBCW		5991
 ko_train_KTXCW		5992

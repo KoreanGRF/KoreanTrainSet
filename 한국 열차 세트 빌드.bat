@@ -39,7 +39,6 @@ echo.
 echo (2) 憶蹴
 echo 式式式式式式式式式式式式式式式式式式式式式式式式式式式式式
 "C:\Program Files\Bandizip\bc.exe" c -fmt:tar "Korean_Train_Set-%KTS_VERSION%.tar" "ko_train_set.grf" "changelog.txt" "readme.txt" "readme_en.txt"
-:: "C:\Program Files (x86)\ESTsoft\ALZip\alzipcon.exe" -a -nq -m0 "ko_train_set.grf";"changelog.txt";"readme.txt";"readme_en.txt" "Korean_Train_Set-%KTS_VERSION%.tar"
 echo 式式式式式式式式式式式式式式式式式式式式式式式式式式式式式
 echo.
 echo.

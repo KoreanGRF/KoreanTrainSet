@@ -3,7 +3,7 @@
 # GRF name and description
 STR_GRF_NAME					:韓国列車セット
 STR_GRF_NAME_WITH_VER				:韓国列車セット {VERSION}
-STR_GRF_DESC					:{}{BLACK}韓国列車セットはOpenTTDにKTX、KTX-山川（サンチョン）、ITX-青春（チョンチュン）、セマウル号、ムグンファ号、ヌリロ、 CDC(通勤列車)、首都圏のちかてつ、Korailの機関車とかいろいろな韓国の列車を追加してくれます。{}(最近アップデート: {RECENT_UPDATED}){}{}{SILVER}+ 제작: 텔크{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
+STR_GRF_DESC					:{}{BLACK}韓国列車セットはOpenTTDにKTX、KTX-山川（サンチョン）、ITX-青春（チョンチュン）、セマウル号、ムグンファ号、ヌリロ、 CDC(通勤列車)、首都圏のちかてつ、Korailの機関車とかいろいろな韓国の列車を追加してくれます。{}(最近アップデート: {RECENT_UPDATED}){}日本語の翻訳の質を向上させるくださる翻訳を探しています。{}{}{SILVER}+ 製作: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
 STR_GRF_URL					:{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=jp
 
 # Vehicle's names
@@ -57,6 +57,7 @@ STR_GENCW_NAME					:[KTS] 發電車
 STR_FLATC_NAME					:[KTS] 評判貨車
 STR_HOPPERC_NAME				:[KTS] ホッパー車
 STR_SMALLCARGO_NAME				:[KTS] 荷物車
+STR_TANKER_NAME					:[KTS] 油槽車
 
 # For refit (KTX-Sancheon)
 STR_REFIT_PAINTING_SANCHEON			: (110000号帯)
@@ -202,13 +203,13 @@ STR_PARAM_SPEED_LIGHTRAIL_NAME			:軽電鉄の速力係数
 STR_PARAM_SPEED_LIGHTRAIL_DESC			:軽電鉄の速力を調節できます。 値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象: 釜山(プサン)4号線
 
 STR_PARAM_FACTOR_COST_NAME			:列車の購入費用
-STR_PARAM_FACTOR_COST_DESC			:列車의 구입 가격을 조절할 수 있습니다. 값이 크면 구입 가격이 더 비싸집니다.
+STR_PARAM_FACTOR_COST_DESC			:列車の購入価格を調整することができます。値が大きければ購入価格が高くなります。
 STR_PARAM_FACTOR_RUNNING_COST_NAME		:列車の維持費
-STR_PARAM_FACTOR_RUNNING_COST_DESC		:列車의 유지비를 조절할 수 있습니다. 값이 크면 유지비가 더 많이 나갑니다.
+STR_PARAM_FACTOR_RUNNING_COST_DESC		:列車の維持費を調節することができます。値が大きければ維持費が多く掛かります。
 STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:貨物輸送量
-STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:列車の貨物輸送量を조절할 수 있습니다. 값이 크면 더 많은 양의 승객이나 화물을 실을 수 있습니다.{}단, 地下鉄 차량은 이 설정의 영향을 받지 않습니다.{}x2로 설정하면 현실의 수송량과 거의 같아집니다.{}{RED}주의!{WHITE} 이 설정은 새로 만드는 차량부터 적용됩니다.
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:列車の貨物輸送量を調節することができます。値が大きければ、より多くの量の乗客や荷物を収納することができます。{}ただし、地下鉄車は、この設定の影響を受けません。{} x2に設定すると、現実の輸送量とほぼ等しくなります。{}{RED}注意！{WHITE}この設定は、新規に作成車両から適用されます。
 STR_PARAM_FACTOR_LOADING_SPEED_NAME		:貨物積載速度
-STR_PARAM_FACTOR_LOADING_SPEED_DESC		:列車의 화물 적재 속력을 조절할 수 있습니다. 값이 크면 승객이나 화물을 싣는 속력이 빨라집니다.
+STR_PARAM_FACTOR_LOADING_SPEED_DESC		:列車の貨物積載速度を調節することができます。値が大きければ、乗客や貨物を載せる速度が速くなります。
 
 # Parameters' value
 STR_PARAM_OPT_FACTOR_BY_0			:x0
@@ -232,13 +233,13 @@ STR_PARAM_OPT_FACTOR_BY_2048			:x2048
 STR_PARAM_OPT_FACTOR_BY_4096			:x4096
 
 STR_PARAM_SIMPLIZE_WAYPOINT_NAME		:経由地を簡単に表示
-STR_PARAM_SIMPLIZE_WAYPOINT_DESC		:경유지 그래픽에서 건물을 제거하여 간단하게 표시합니다.
+STR_PARAM_SIMPLIZE_WAYPOINT_DESC		:ウェイポイントのグラピックで建物を削除して簡単に表紙します。
 STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME	:基本機関車使用しない
-STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC	:한국 列車 세트의 객차를 빠르게 찾을 수 있도록 하기 위해 기본 기관차를 사용하지 않습니다. 모노레일/자기부상列車 차량은 사라지지 않고 (전기)철도 차량만 사용하지 않습니다.
-STR_PARAM_MAX_SPEED_TYPE_NAME			:최고 속력 기준
-STR_PARAM_MAX_SPEED_TYPE_DESC			:列車 최고 속력의 기준을 선택합니다. 설계 속력이 영업 속력보다 다소 빠릅니다. (eg. KTX-1 : 영업 속도=300km/h, 설계 최고 속도=330km/h)
-STR_PARAM_MAX_SPEED_TYPE_OPT_1			:영업 속력
-STR_PARAM_MAX_SPEED_TYPE_OPT_2			:설계 속력
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC	:韓国列車セットの客車をすばやく探すために基本機関車を削除します。モノレールや磁気浮上列車の車両は消えず（電気）鉄道車両のみを削除します。
+STR_PARAM_MAX_SPEED_TYPE_NAME			:最高速度基準
+STR_PARAM_MAX_SPEED_TYPE_DESC			:列車の最高速度の基準を選択します。設計速度が営業速度よりもやや高速です。（eg。KTX-1：営業速度=300km/ h、設計最高速度=330km/ h）
+STR_PARAM_MAX_SPEED_TYPE_OPT_1			:営業促進
+STR_PARAM_MAX_SPEED_TYPE_OPT_2			:設計速度
 
 # Error messages
 STR_ERROR_REQUIRES_OPENTTD			:このNewGRFはOpenTTDの{STRING}専用です!

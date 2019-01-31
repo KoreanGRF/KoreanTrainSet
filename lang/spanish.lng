@@ -57,6 +57,7 @@ STR_GENCW_NAME					:[KTS] Vagón generador
 STR_FLATC_NAME					:[KTS] Vagón plano de carga
 STR_HOPPERC_NAME				:[KTS] Hopper car
 STR_SMALLCARGO_NAME				:[KTS] Furgón de equipaje
+STR_TANKER_NAME					:[KTS] Petrolero
 # ↑ Need translation
 
 # For refit (KTX-Sancheon)
@@ -212,6 +213,8 @@ STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:Capacidad de carga
 STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:Capacidad de carga de los trenes. A mayor valor, mayor capacidad de carga.{}Sin embargo, los metros no se verán afectados por esta opción.{}Es igual a la real si usas la establecida por 'x2'.{}{RED}¡Aviso!{WHITE} No cambies este valor durante el juego.
 STR_PARAM_FACTOR_LOADING_SPEED_NAME		:Velocidad de varga
 STR_PARAM_FACTOR_LOADING_SPEED_DESC		:Velocidad de varga de los trenes. A mayor valor, mayor será la velocidad de carga.
+STR_PARAM_WAGON_SPEED_LIMIT_NAME		:Wagon speed limit
+STR_PARAM_WAGON_SPEED_LIMIT_DESC		:Toggle wagon speed limit only for Korean train set
 
 # Parameters' value
 STR_PARAM_OPT_FACTOR_BY_0			:x0

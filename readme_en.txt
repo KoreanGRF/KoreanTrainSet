@@ -69,7 +69,7 @@ Korean Train Set adds vehicles such as below:
   - Mugunghwa's passenger coach and cafe coach
   - Tongil's passenger coach
   - Generator (4 model/paintings)
-  - Flat cargo car
+  - Flat cargo car (27 containers)
   - Luggage van
   - Hopper car
 
