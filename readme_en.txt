@@ -72,6 +72,7 @@ Korean Train Set adds vehicles such as below:
   - Flat cargo car (27 containers)
   - Luggage van
   - Hopper car
+  - Tanker
 
 Korean Train Set adds a new railtype such as below:
   - [KTS] Light railway

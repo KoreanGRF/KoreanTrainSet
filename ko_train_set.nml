@@ -13,7 +13,7 @@ grf {
 	name :				string(STR_GRF_NAME_WITH_VER);
 	desc :				string(STR_GRF_DESC);
 	url :				string(STR_GRF_URL);
-	version :			170;
+	version :			174;
 	min_compatible_version :	162;
 
 	// 추가 열차 종류
@@ -452,7 +452,7 @@ template tmpl_K7x00(x, y) {
 	[x+125,	y,	8,	22,	-3,	-11]
 	[x+140,	y,	22,	17,	-15,	-9]
 	[x+175,	y,	32,	11,	-18,	-7]
-	[x+225,	y,	22,	17,	-6,	-8]
+	[x+225,	y,	22,	17,	-7,	-8]
 }
 template tmpl_K7x00_purchase(x, y) { tmpl_purchase_detail(x, y, 50, 11, -25, -6) }
 
@@ -1200,6 +1200,43 @@ spritegroup sg_FLATCa_20ft_16_coach { loading: [set_FLATCa_empty_coach, set_FLAT
 spritegroup sg_FLATCa_20ft_17_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_17_coach, set_FLATCa_20ft_loaded_17_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_17_coach, set_FLATCa_20ft_loaded_17_coach]; }
 spritegroup sg_FLATCa_20ft_18_coach { loading: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_18_coach, set_FLATCa_20ft_loaded_18_coach]; loaded: [set_FLATCa_empty_coach, set_FLATCa_20ft_loading_18_coach, set_FLATCa_20ft_loaded_18_coach]; }
 
+// 평판화차 (철)
+spriteset(set_FLATCsteel_empty_coach,	"./gfx/wagons.png") {
+	[260,	50,	8,	20,	-3,	-10]
+	[275,	50,	22,	15,	-15,	-8]
+	[305,	50,	31,	10,	-17,	-6]
+	[340,	50,	22,	15,	-7,	-9]
+}
+spriteset(set_FLATCsteel_halfA_coach,	"./gfx/wagons.png") {
+	[260,	80,	8,	20,	-3,	-10]
+	[275,	80,	22,	15,	-15,	-8]
+	[305,	80,	31,	10,	-17,	-6]
+	[340,	80,	22,	15,	-7,	-9]
+}
+spriteset(set_FLATCsteel_halfB_coach,	"./gfx/wagons.png") {
+	[260,	110,	8,	20,	-3,	-10]
+	[275,	110,	22,	15,	-15,	-8]
+	[305,	110,	31,	10,	-17,	-6]
+	[340,	110,	22,	15,	-7,	-9]
+}
+spriteset(set_FLATCsteel_fullA_coach,	"./gfx/wagons.png") {
+	[260,	140,	8,	20,	-3,	-10]
+	[275,	140,	22,	15,	-15,	-8]
+	[305,	140,	31,	10,	-17,	-6]
+	[340,	140,	22,	15,	-7,	-9]
+}
+spriteset(set_FLATCsteel_fullB_coach,	"./gfx/wagons.png") {
+	[260,	170,	8,	20,	-3,	-10]
+	[275,	170,	22,	15,	-13,	-8]
+	[305,	170,	31,	10,	-17,	-6]
+	[340,	170,	22,	15,	-9,	-9]
+}
+spritegroup sg_FLATCsteelAA_coach { loading: [set_FLATCsteel_empty_coach, set_FLATCsteel_halfA_coach, set_FLATCsteel_fullA_coach]; loaded: [set_FLATCsteel_empty_coach, set_FLATCsteel_halfA_coach, set_FLATCsteel_fullA_coach]; }
+spritegroup sg_FLATCsteelAB_coach { loading: [set_FLATCsteel_empty_coach, set_FLATCsteel_halfA_coach, set_FLATCsteel_fullB_coach]; loaded: [set_FLATCsteel_empty_coach, set_FLATCsteel_halfA_coach, set_FLATCsteel_fullB_coach]; }
+spritegroup sg_FLATCsteelBA_coach { loading: [set_FLATCsteel_empty_coach, set_FLATCsteel_halfB_coach, set_FLATCsteel_fullA_coach]; loaded: [set_FLATCsteel_empty_coach, set_FLATCsteel_fullB_coach, set_FLATCsteel_fullA_coach]; }
+spritegroup sg_FLATCsteelBB_coach { loading: [set_FLATCsteel_empty_coach, set_FLATCsteel_halfB_coach, set_FLATCsteel_fullB_coach]; loaded: [set_FLATCsteel_empty_coach, set_FLATCsteel_halfB_coach, set_FLATCsteel_fullB_coach]; }
+
+
 // 호퍼차
 spriteset(set_HOPPERCa_empty_coach,		"./gfx/ko_train1.png") { tmpl_hopper_by_coor(350, 980) }
 spriteset(set_HOPPERCa_coal_half_coach,		"./gfx/ko_train1.png") { tmpl_hopper_by_coor(350, 1010) }
@@ -1254,9 +1291,9 @@ spriteset(set_SMALLCARGO_G_coach,		"./gfx/ko_train1.png") { tmpl_SMALLCARGO_coac
 // 유조차
 spriteset(set_TANKER_A_coach,			"./gfx/wagons.png") {
 	[260,	20,	8,	20,	-3,	-10]
-	[275,	20,	19,	16,	-13,	-8]
-	[305,	20,	28,	11,	-17,	-8]
-	[340,	20,	19,	16,	-13,	-8]
+	[275,	20,	19,	16,	-13,	-9]
+	[305,	20,	28,	11,	-16,	-7]
+	[340,	20,	19,	16,	-4,	-8]
 }
 
 
@@ -2992,7 +3029,13 @@ item(FEAT_TRAINS, ko_train_GENCW, 5998) {
 평판화차
 ------------------------------------------------------------------------------*/
 // 평판화차 스프라이트
-switch(FEAT_TRAINS, SELF, sw_FLATCa_coach, random_bits % 27) {
+switch(FEAT_TRAINS, SELF, sw_FLATCsteel_coach, random_bits % 4) {
+	1: sg_FLATCsteelAB_coach;
+	2: sg_FLATCsteelBA_coach;
+	3: sg_FLATCsteelBB_coach;
+	sg_FLATCsteelAA_coach;
+}
+switch(FEAT_TRAINS, SELF, sw_FLATCa_coach_default, random_bits % 27) {
 	 0: sg_FLATCa_40ft_01_coach;
 	 1: sg_FLATCa_40ft_02_coach;
 	 2: sg_FLATCa_40ft_03_coach;
@@ -3022,6 +3065,10 @@ switch(FEAT_TRAINS, SELF, sw_FLATCa_coach, random_bits % 27) {
 	25: sg_FLATCa_20ft_17_coach;
 	26: sg_FLATCa_20ft_18_coach;
 	set_FLATCa_empty_coach;
+}
+switch(FEAT_TRAINS, SELF, sw_FLATCa_coach, most_common_cargo_type) {
+	STEL: sw_FLATCsteel_coach;
+	sw_FLATCa_coach_default;
 }
 
 item(FEAT_TRAINS, ko_train_FLATC, 5801) {
@@ -3081,9 +3128,9 @@ switch(FEAT_TRAINS, SELF, sw_HOPPERC_copper_coach, cargo_subtype) {
 	sg_HOPPERCc_copper_coach;
 }
 switch(FEAT_TRAINS, SELF, sw_HOPPER_cargo_subtype_text, cargo_subtype) {
-	1: return string(STR_REFIT_COLOUR_B);
-	2: return string(STR_REFIT_COLOUR_C);
-	return string(STR_REFIT_COLOUR_A);
+	1: return string(STR_REFIT_COLOUR_BLACK);
+	2: return string(STR_REFIT_COLOUR_BROWN);
+	return string(STR_REFIT_COLOUR_BLUE);
 }
 
 item(FEAT_TRAINS, ko_train_HOPPER, 5802) {
@@ -3152,12 +3199,12 @@ switch(FEAT_TRAINS, SELF, sw_SMALLCARGO_VTRAIN_capacity, position_in_consist % 3
 
 // 도색 개조
 switch(FEAT_TRAINS, SELF, sw_SMALLCARGO_cargo_subtype_text, cargo_subtype) {
-	1:	return string(STR_REFIT_COLOUR_A);
-	2:	return string(STR_REFIT_COLOUR_B);
-	3:	return string(STR_REFIT_COLOUR_C);
-	4:	return string(STR_REFIT_COLOUR_D);
-	5:	return string(STR_REFIT_COLOUR_E);
-	6:	return string(STR_REFIT_COLOUR_F);
+	1:	return string(STR_REFIT_COLOUR_RED);
+	2:	return string(STR_REFIT_COLOUR_ORANGE);
+	3:	return string(STR_REFIT_COLOUR_DARKGREEN);
+	4:	return string(STR_REFIT_COLOUR_OLIVE);
+	5:	return string(STR_REFIT_COLOUR_SKYBLUE);
+	6:	return string(STR_REFIT_COLOUR_DARKBLUE);
 	7:	return string(STR_REFIT_MAIL_CAR);
 	10:	return string(STR_REFIT_PAINTING_VTRAIN);	// V-train 객차
 	return  string(STR_REFIT_PAINTING_VTRAIN);
@@ -3240,15 +3287,13 @@ item(FEAT_TRAINS, ko_train_SMALLCARGO, 5803) {
 /*------------------------------------------------------------------------------
 유조화차
 ------------------------------------------------------------------------------*/
-/*
 // 객차 연결 스위치
 switch(FEAT_TRAINS, SELF, sw_TANKER_coach, cargo_subtype) {
 	return set_TANKER_A_coach;
 }
 //switch(FEAT_TRAINS, SELF, sw_TANKER_cargo_subtype_text, cargo_subtype) {
-//	1: return string(STR_REFIT_COLOUR_B);
-//	2: return string(STR_REFIT_COLOUR_C);
-//	return string(STR_REFIT_COLOUR_A);
+//	1: return string(STR_REFIT_COLOUR_SILVER);
+//	return string(STR_REFIT_COLOUR_BLUE);
 //}
 
 item(FEAT_TRAINS, ko_train_TANKER, 5804) {
@@ -3269,6 +3314,7 @@ item(FEAT_TRAINS, ko_train_TANKER, 5804) {
 		sprite_id:			SPRITE_ID_NEW_TRAIN;
 		refit_cost:			0;
 		misc_flags:			bitmask(TRAIN_FLAG_FLIP);
+		length:				7;
 
 		power:				0;
 		weight:				17 ton;
@@ -3291,7 +3337,6 @@ item(FEAT_TRAINS, ko_train_TANKER, 5804) {
 	}
 }
 // End of "유조화차"
-*/
 
 /*------------------------------------------------------------------------------
 
@@ -3340,6 +3385,7 @@ switch(FEAT_TRAINS, SELF, sw_ICNM2_speed, 1)		{ return (9 * coeff_speed_light_ra
 switch(FEAT_TRAINS, SELF, sw_BUSAN4_speed, 1)		{ return (7 * coeff_speed_light_rail); }
 switch(FEAT_TRAINS, SELF, sw_BUSANGIMHAE_speed, 1)	{ return (8 * coeff_speed_light_rail); }
 switch(FEAT_TRAINS, SELF, sw_UISINSEOL_speed, 1)	{ return (8 * coeff_speed_light_rail); }
+switch(FEAT_TRAINS, SELF, sw_DAEGU3_speed, 1)		{ return (10 * coeff_speed_light_rail); }
 
 // 가격 계수 적용
 switch(FEAT_TRAINS, SELF, sw_METRO_cost, 1)		{ return 7 * sw_cost_factor; }
@@ -5669,7 +5715,7 @@ item(FEAT_TRAINS, ko_train_DAEGU3, 5543) {
 		default:			sw_DAEGU3_engine;
 		purchase:			set_DAEGU3_purchase;
 
-		speed:				sw_METRO_speed;
+		speed:				sw_DAEGU3_speed;
 		cost_factor:			sw_METRO_cost;
 		running_cost_factor:		sw_METRO_running_cost;
 		cargo_capacity:			84 * sw_cargo_capacity_factor;
