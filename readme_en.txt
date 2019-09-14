@@ -175,17 +175,19 @@ A. You need to construct ITX-Saemaeul like below
 6. Credits
 ==========
 TELK (telk5093@gmail.com, http://telk.kr)
-  - NML Codes, Vehicle graphic modifying
+  - NML Codes, offer modified vehicle graphics
 skyu (skyu2947@gmail.com)
-  - Vehicle graphic offerring
+  - Offer vehicle graphics
 Las (wlq10000@naver.com)
-  - Vehicle graphic modifying
+  - Offer modified vehicle graphics
 Chojeohang (yunggu7410@naver.com)
-  - Vehicle and railway graphic of Busan Line No.4
+  - Offer vehicle and railway graphic of Busan Line No.4
 Jakga (angryphw@naver.com)
-  - Vehicle graphic modifying
+  - Offer modified vehicle graphics
 OPENTRAIN (gks3900@naver.com)
-  - Vehicle graphic modifying
+  - Offer modified vehicle graphics
+kiwitree (kiwitreekor@gmail.com)
+  - Offer modified vehicle graphics
 
 
 

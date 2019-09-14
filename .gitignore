@@ -2,4 +2,4 @@
 *.grf
 parsetab.py
 todolist.txt
-.nmlcache/*
+./.nmlcache
