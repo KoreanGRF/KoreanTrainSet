@@ -1,1 +1,0 @@
-[{"info": 4, "mask_file": "./gfx/objects.png", "mask_pal": "LEGACY", "mask_rect": [5, 0, 5, 12], "offset": 0, "pixel_stats": {"alpha": 0, "anim": 0, "total": 60, "white": 0}, "size": 43}, {"info": 4, "mask_file": "./gfx/objects.png", "mask_pal": "LEGACY", "mask_rect": [0, 0, 5, 12], "offset": 43, "pixel_stats": {"alpha": 0, "anim": 0, "total": 60, "white": 0}, "size": 44}]
