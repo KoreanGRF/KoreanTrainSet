@@ -1,5 +1,8 @@
+./.nmlcache/
+./NML_backup/
+./gfx-psd/*
+./gfx-psd/
 *.bat
 *.grf
 parsetab.py
 todolist.txt
-./.nmlcache
