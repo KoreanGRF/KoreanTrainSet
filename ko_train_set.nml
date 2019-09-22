@@ -13,7 +13,7 @@ grf {
 	name :				string(STR_GRF_NAME_WITH_VER);
 	desc :				string(STR_GRF_DESC);
 	url :				string(STR_GRF_URL);
-	version :			175;
+	version :			176;
 	min_compatible_version :	162;
 
 	// 추가 열차 종류
@@ -2432,7 +2432,7 @@ item(FEAT_TRAINS, ko_train_KTX1N, 5515) {
 		climates_available:		ALL_CLIMATES;
 		track_type:			RAIL;
 		speed:				330 km/h;
-		power:				5650 kW;
+		power:				6600 kW;
 		weight:				35 ton;
 		extra_weight_per_wagon:		35 ton;
 		tractive_effort_coefficient:	0.4;
@@ -2516,7 +2516,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5518) {
 
 		track_type:			RAIL;
 		speed:				330 km/h;
-		power:				5650 kW;
+		power:				4400 kW;
 		weight:				35 ton;
 		extra_weight_per_wagon:		35 ton;
 		tractive_effort_coefficient:	0.4;
@@ -2525,7 +2525,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5518) {
 		loading_speed:			0;
 		vehicle_life:			30;
 
-		introduction_date:		date(2004, 4, 1);
+		introduction_date:		date(2010, 3, 2);
 		model_life:			VEHICLE_NEVER_EXPIRES;
 		reliability_decay:		0;
 		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
