@@ -245,10 +245,10 @@ cargotable {
 }
 railtypetable {
 	RAIL, ELRL, MGLV,
-	KR_ELRL_BASED_RAIL: ["KRLR", ELRL],
-	KR_MONO_BASED_RAIL: ["KRLR", MONO],
-	KR_MGLV_BASED_RAIL: ["KRLR", MGLV],
-	KR_BUSANGIMHAE_RAIL: ["3RDR", "KRLR", ELRL, RAIL]
+	KR_ELRL_BASED_RAIL: [KRLR, ELRL],
+	KR_MONO_BASED_RAIL: [KRLR, MONO],
+	KR_MGLV_BASED_RAIL: [KRLR, MGLV],
+	KR_BUSANGIMHAE_RAIL: ["3RDR", KRLR, ELRL, RAIL]
 }
 
 /*------------------------------------------------------------------------------
@@ -6401,8 +6401,8 @@ item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
 		introduction_date:		date(1950, 1, 1);
 		menu_text:			string(STR_KO_LIGHT_RAILWAY_LABEL);
 		build_window_caption:		string(STR_KO_LIGHT_RAILWAY_LABEL);
-		compatible_railtype_list:	["MONO"];
-		powered_railtype_list:		["MONO"];
+		compatible_railtype_list:	["ELRL", "MONO"];   // 전기 선로 및 모노레일 선로에서도 이용 가능
+		powered_railtype_list:		["ELRL", "MONO"];
 
 		station_graphics:		RAILTYPE_STATION_MONORAIL;
 //		speed_limit:			200 km/h;
