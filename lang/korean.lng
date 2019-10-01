@@ -25,12 +25,14 @@ STR_BUSAN3_NAME					:[KTS] 부산 3호선
 STR_BUSAN4_NAME					:[KTS] 부산 4호선
 STR_BUSAN4_CW_NAME				:[KTS] 부산 4호선 객차
 STR_BUSANGIMHAE_NAME				:[KTS] 부산김해경전철
+STR_EVERLINE_NAME				:[KTS] 용인 경전철
 STR_DAEGU1_NAME					:[KTS] 대구 1호선
 STR_DAEGU2_NAME					:[KTS] 대구 2호선
 STR_DAEGU3_NAME					:[KTS] 대구 3호선
 STR_DAEGU3_CW_NAME				:[KTS] 대구 3호선 객차
 STR_DAEJEONGWANGJU1_NAME			:[KTS] 대전·광주 1호선
 STR_UISINSEOL_NAME				:[KTS] 서울 우이신설경전철
+STR_GIMPOGOLD_NAME				:[KTS] 김포골드라인
 STR_SUBCW_NAME					:[KTS] 지하철 공통 객차
 STR_K4400_NAME					:[KTS] 4400호대 디젤 기관차
 STR_K7000_NAME					:[KTS] 7000호대 디젤 기관차
@@ -255,6 +257,8 @@ STR_ERROR_VERSION				:최소 요구 버전을 충족하지 않습니다!
 STR_ERROR_CANNOT_ATTACH_OTHER			:연결할 수 없는 편성입니다!
 STR_ERROR_NOT_ENOUGH_LENGTH2			:열차 길이가 너무 짧습니다. 최소한 2량 이상을 연결해야 합니다.
 STR_ERROR_NOT_ENOUGH_LENGTH4			:열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다.
+# STR_ERROR_TOO_LONG_LENGTH2			:열차 길이가 너무 깁니다. 최대 2량까지만 연결할 수 있습니다.
+STR_ERROR_TOO_LONG_LENGTH4			:열차 길이가 너무 깁니다. 최대 4량까지만 연결할 수 있습니다.
 
 STR_ADDITEXT_TEMP				:{BLACK}도색/모델 변경: {ORANGE}불가능{}{RED}주의!{BLACK} 이 차량은 임시 버전입니다. 이 차량을 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다.
 

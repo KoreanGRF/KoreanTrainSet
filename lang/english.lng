@@ -25,12 +25,14 @@ STR_BUSAN3_NAME					:[KTS] Busan Line 3
 STR_BUSAN4_NAME					:[KTS] Busan Line 4
 STR_BUSAN4_CW_NAME				:[KTS] Busan Line 4 passenger car
 STR_BUSANGIMHAE_NAME				:[KTS] Busan-Gimhae LRT
+STR_EVERLINE_NAME				:[KTS] Yongin Everline
 STR_DAEGU1_NAME					:[KTS] Daegu Line 1
 STR_DAEGU2_NAME					:[KTS] Daegu Line 2
 STR_DAEGU3_NAME					:[KTS] Daegu Line 3
 STR_DAEGU3_CW_NAME				:[KTS] Daegu Line 3 passenger car
 STR_DAEJEONGWANGJU1_NAME			:[KTS] Daejeon·Gwangju Line 1
 STR_UISINSEOL_NAME				:[KTS] Seoul Ui-Sinseol LRT Line
+STR_GIMPOGOLD_NAME				:[KTS] Gimpo Goldline
 STR_SUBCW_NAME					:[KTS] Common subway passenger coach
 STR_K4400_NAME					:[KTS] 4400 Diesel Locomotive
 STR_K7000_NAME					:[KTS] 7000 Diesel Locomotive
@@ -255,6 +257,8 @@ STR_ERROR_VERSION				:no suitable version!
 STR_ERROR_CANNOT_ATTACH_OTHER			:can't attach with other coaches!
 STR_ERROR_NOT_ENOUGH_LENGTH2			:It's too short. Be more than 2 cars at least.
 STR_ERROR_NOT_ENOUGH_LENGTH4			:It's too short. Be more than 4 cars at least.
+# STR_ERROR_TOO_LONG_LENGTH2			:It's too long. Be less or equal than 2 cars.
+STR_ERROR_TOO_LONG_LENGTH4			:It's too long. Be less or equal than 4 cars.
 
 STR_ADDITEXT_TEMP				:{BLACK}Changing Models/Paintings: {ORANGE}Unable{}{RED}Warning!{BLACK} This is a temporary one. It could occur desync problem in the next KTS version if you use this right now.
 

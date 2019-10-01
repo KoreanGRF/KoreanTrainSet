@@ -248,7 +248,7 @@ railtypetable {
 	KR_ELRL_BASED_RAIL: [KRLR, ELRL],
 	KR_MONO_BASED_RAIL: [KRLR, MONO],
 	KR_MGLV_BASED_RAIL: [KRLR, MGLV],
-	KR_BUSANGIMHAE_RAIL: ["3RDR", KRLR, ELRL, RAIL]
+	KR_3RD_RAIL: ["3RDR", KRLR, ELRL, RAIL]
 }
 
 /*------------------------------------------------------------------------------
@@ -3426,6 +3426,8 @@ switch(FEAT_TRAINS, SELF, sw_ICNM2_speed, 1)		{ return (9 * coeff_speed_light_ra
 switch(FEAT_TRAINS, SELF, sw_BUSAN4_speed, 1)		{ return (7 * coeff_speed_light_rail); }
 switch(FEAT_TRAINS, SELF, sw_BUSANGIMHAE_speed, 1)	{ return (8 * coeff_speed_light_rail); }
 switch(FEAT_TRAINS, SELF, sw_UISINSEOL_speed, 1)	{ return (8 * coeff_speed_light_rail); }
+switch(FEAT_TRAINS, SELF, sw_GIMPOGOLD_speed, 1)	{ return (8 * coeff_speed_light_rail); }
+switch(FEAT_TRAINS, SELF, sw_EVERLINE_speed, 1)		{ return (8 * coeff_speed_light_rail); }
 switch(FEAT_TRAINS, SELF, sw_DAEGU3_speed, 1)		{ return (10 * coeff_speed_light_rail); }
 
 // 가격 계수 적용
@@ -3561,8 +3563,6 @@ spriteset(set_K1Q_engineT,		"./gfx/ko_subway.png") { tmpl_snout_engine_tail(0, 9
 spriteset(set_K1Q_wagon,		"./gfx/ko_subway.png") { tmpl_wagon(0, 990) }
 spriteset(set_K1Q_wagon_panto,		"./gfx/ko_subway.png") { tmpl_snout_wagon_panto(0, 990) }
 spriteset(set_K1Q_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(0, 990) }
-
-
 
 // S1A (1호선 서울메트로 A)
 spriteset(set_S1A_engineH,		"./gfx/ko_subway.png") { tmpl_engine_head(1280, 110) }
@@ -3885,14 +3885,14 @@ spriteset(set_ICNM2_engineH,		"./gfx/ko_subway.png") {
 	[960+288,	830,	21,	17,	-6,	-8]
 }
 spriteset(set_ICNM2_engineT,		"./gfx/ko_subway.png") {
-	[960+191,	830,	8,	22,	-3,	-11]
-	[960+207,	830,	21,	19,	-13,	-10]
-	[960+239,	830,	30,	15,	-16,	-9]
-	[960+288,	830,	21,	17,	-6,	-8]
-	[960+64,	830,	8,	22,	-3,	-11]
-	[960+80,	830,	21,	17,	-13,	-8]
-	[960+112,	830,	30,	15,	-16,	-9]
-	[960+161,	830,	21,	19,	-6,	-10]
+	[960+64,	856,	8,	22,	-3,	-11]
+	[960+80,	856,	21,	17,	-13,	-8]
+	[960+112,	856,	30,	15,	-16,	-9]
+	[960+161,	856,	21,	19,	-6,	-10]
+	[960+191,	856,	8,	22,	-3,	-11]
+	[960+207,	856,	21,	19,	-13,	-10]
+	[960+239,	856,	30,	15,	-16,	-9]
+	[960+288,	856,	21,	17,	-6,	-8]
 }
 spriteset(set_ICNM2_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 830) }
 
@@ -3933,26 +3933,41 @@ spriteset(set_BUSAN4_purchase,		"./gfx/ko_train1.png") { tmpl_purchase_detail(50
 
 // BUSANGIMHAE (부산김해경전철)
 spriteset(set_BUSANGIMHAE_engineH,		"./gfx/ko_subway.png") {
-	[960+64,	770,	8,	22,	-3,	-11]
+	[960+64,	770,	8,	22,	-3,	-10]
 	[960+80,	770,	21,	17,	-13,	-8]
-	[960+112,	770,	30,	12,	-16,	-6]
+	[960+112,	770,	31,	12,	-17,	-7]
 	[960+161,	770,	21,	17,	-6,	-8]
-	[960+191,	770,	8,	22,	-3,	-11]
+	[960+191,	770,	8,	22,	-3,	-12]
 	[960+207,	770,	21,	17,	-13,	-8]
-	[960+239,	770,	30,	12,	-16,	-6]
+	[960+239,	770,	31,	12,	-16,	-7]
 	[960+288,	770,	21,	17,	-6,	-8]
 }
 spriteset(set_BUSANGIMHAE_engineT,		"./gfx/ko_subway.png") {
-	[960+191,	770,	8,	22,	-3,	-11]
-	[960+207,	770,	21,	17,	-13,	-8]
-	[960+239,	770,	30,	12,	-16,	-6]
-	[960+288,	770,	21,	17,	-6,	-8]
-	[960+64,	770,	8,	22,	-3,	-11]
-	[960+80,	770,	21,	17,	-13,	-8]
-	[960+112,	770,	30,	12,	-16,	-6]
-	[960+161,	770,	21,	17,	-6,	-8]
+	[960+64,	800,	8,	22,	-3,	-11]
+	[960+80,	800,	21,	17,	-13,	-8]
+	[960+112,	800,	30,	12,	-16,	-7]
+	[960+161,	800,	21,	17,	-6,	-8]
+	[960+191,	800,	8,	22,	-3,	-11]
+	[960+207,	800,	21,	17,	-13,	-8]
+	[960+239,	800,	30,	12,	-16,	-7]
+	[960+288,	800,	21,	17,	-6,	-8]
 }
 spriteset(set_BUSANGIMHAE_purchase,		"./gfx/ko_subway.png") { tmpl_purchase(960, 770) }
+
+// EVERLINE (용인 에버라인)
+spriteset(set_EVERLINE_engine,		"./gfx/ko_subway.png") {
+	[320+64,	990,	8,	22,	-3,	-11]
+	[320+80,	990,	21,	17,	-13,	-8]
+	[320+112,	990,	30,	12,	-16,	-6]
+	[320+161,	990,	21,	17,	-6,	-8]
+	[320+191,	990,	8,	22,	-3,	-11]
+	[320+207,	990,	21,	17,	-13,	-8]
+	[320+239,	990,	30,	12,	-16,	-6]
+	[320+288,	990,	21,	17,	-6,	-8]
+}
+spriteset(set_EVERLINE_purchase,		"./gfx/ko_subway.png") {
+	tmpl_purchase_detail(320, 990, 30, 12, -15, -6)
+}
 
 // DAEGU3 (대구 3호선)
 spriteset(set_DAEGU3A_engineH,		"./gfx/ko_train1.png") {
@@ -4015,7 +4030,7 @@ spriteset(set_GWANGJU1_purchase,	"./gfx/ko_subway.png") {       tmpl_purchase(0,
 spriteset(set_UISINSEOL_engineH,	"./gfx/ko_subway.png") {
 	[640+64,	990,	8,	22,	-3,	-10]
 	[640+80,	990,	21,	17,	-13,	-8]
-	[640+112,	990,	30,	15,	-17,	-9]
+	[640+112,	990,	30,	15,	-17,	-10]
 	[640+161,	990,	21,	19,	-6,	-10]
 	[640+191,	990,	8,	22,	-3,	-12]
 	[640+207,	990,	21,	19,	-13,	-10]
@@ -4025,14 +4040,37 @@ spriteset(set_UISINSEOL_engineH,	"./gfx/ko_subway.png") {
 spriteset(set_UISINSEOL_engineT,	"./gfx/ko_subway.png") {
 	[640+64,	1017,	8,	22,	-3,	-12]
 	[640+80,	1017,	21,	17,	-13,	-10]
-	[640+112,	1017,	29,	15,	-15,	-9]
+	[640+112,	1017,	29,	15,	-15,	-10]
 	[640+161,	1017,	21,	19,	-6,	-10]
 	[640+191,	1017,	8,	22,	-3,	-10]
 	[640+207,	1017,	21,	19,	-13,	-10]
 	[640+239,	1017,	29,	15,	-17,	-9]
 	[640+288,	1017,	21,	17,	-6,	-10]
 }
-spriteset(set_UISINSEOL_purchase,	"./gfx/ko_subway.png") { tmpl_purchase(960, 800) }
+spriteset(set_UISINSEOL_purchase,	"./gfx/ko_subway.png") { tmpl_purchase(640, 990) }
+
+// GIMPOGOLD (김포골드라인)
+spriteset(set_GIMPOGOLD_engineH,	"./gfx/ko_subway.png") {
+	[640+64,	1046,	8,	22,	-3,	-10]
+	[640+80,	1046,	21,	17,	-13,	-8]
+	[640+112,	1046,	30,	15,	-17,	-10]
+	[640+161,	1046,	21,	19,	-6,	-10]
+	[640+191,	1046,	8,	22,	-3,	-12]
+	[640+207,	1046,	21,	19,	-13,	-10]
+	[640+239,	1046,	30,	15,	-16,	-9]
+	[640+288,	1046,	21,	17,	-6,	-8]
+}
+spriteset(set_GIMPOGOLD_engineT,	"./gfx/ko_subway.png") {
+	[640+64,	1073,	8,	22,	-3,	-12]
+	[640+80,	1073,	21,	17,	-13,	-10]
+	[640+112,	1073,	29,	15,	-15,	-10]
+	[640+161,	1073,	21,	19,	-6,	-10]
+	[640+191,	1073,	8,	22,	-3,	-10]
+	[640+207,	1073,	21,	19,	-13,	-10]
+	[640+239,	1073,	29,	15,	-17,	-9]
+	[640+288,	1073,	21,	17,	-6,	-10]
+}
+spriteset(set_GIMPOGOLD_purchase,	"./gfx/ko_subway.png") { tmpl_purchase(640, 1046) }
 
 
 /*------------------------------------------------------------------------------
@@ -5289,7 +5327,7 @@ item(FEAT_TRAINS, ko_train_ICNM2, 5043) {
 	property {
 		name:				string(STR_ICNM2_NAME);
 		climates_available:		ALL_CLIMATES;
-		track_type:			KR_ELRL_BASED_RAIL;
+		track_type:			KR_3RD_RAIL;
 		speed:				70 km/h;
 		power:				2000 kW;
 		weight:				60 ton;
@@ -5944,7 +5982,7 @@ item(FEAT_TRAINS, ko_train_BUSANGIMHAE, 5535) {
 	property {
 		name:				string(STR_BUSANGIMHAE_NAME);
 		climates_available:		ALL_CLIMATES;
-		track_type:			KR_BUSANGIMHAE_RAIL;
+		track_type:			KR_3RD_RAIL;
 		speed:				100 km/h;
 		power:				3000 kW;
 		weight:				31 ton;
@@ -6009,7 +6047,7 @@ item(FEAT_TRAINS, ko_train_UISINSEOL, 5581) {
 	property {
 		name:				string(STR_UISINSEOL_NAME);
 		climates_available:		ALL_CLIMATES;
-		track_type:			KR_ELRL_BASED_RAIL;
+		track_type:			KR_3RD_RAIL;
 		speed:				70 km/h;
 		power:				2000 kW;
 		weight:				60 ton;
@@ -6052,11 +6090,147 @@ item(FEAT_TRAINS, ko_train_UISINSEOL, 5581) {
 
 		can_attach_wagon:		sw_UISINSEOL_coach_attach;
 		start_stop:			sw_ko_train_subway_start_stop;
-//		cargo_subtype_text:		sw_ICNM2_cargo_subtype_text;
-		additional_text:		string(STR_ADDITEXT_TEMP); //string(STR_REFIT_ADDITIONAL_UNABLE);
 	}
 }
 // End of "UISINSEOL"
+
+
+/*------------------------------------------------------------------------------
+EVERLINE (용인 에버라인)
+------------------------------------------------------------------------------*/
+// 에버라인끼리만 연결할 수 있도록 함
+switch(FEAT_TRAINS, SELF, sw_EVERLINE_coach_attach, vehicle_type_id) {
+	ko_train_EVERLINE:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+// 4량 초과면 열차를 출발시킬 수 없음
+switch(FEAT_TRAINS, SELF, sw_EVERLINE_start_stop, num_vehs_in_consist > 4) {
+	0: return CB_RESULT_NO_TEXT;
+	return string(STR_ERROR_TOO_LONG_LENGTH4);
+}
+
+item(FEAT_TRAINS, ko_train_EVERLINE, 5583) {
+	property {
+		name:				string(STR_EVERLINE_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			KR_3RD_RAIL;
+		speed:				80 km/h;
+		power:				3000 kW;
+		weight:				24 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			75;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			20;
+		vehicle_life:			30;
+
+		introduction_date:		date(2013, 4, 26);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);
+
+		dual_headed:			0;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			set_EVERLINE_engine;
+		purchase:			set_EVERLINE_purchase;
+
+		speed:				sw_EVERLINE_speed;
+		cost_factor:			sw_METRO_cost;
+		running_cost_factor:		sw_LRAIL_running_cost;
+		cargo_capacity:			75 * sw_cargo_capacity_factor;
+		loading_speed:			var_loading_speed_FAST;
+
+		can_attach_wagon:		sw_EVERLINE_coach_attach; //특별
+		start_stop:			sw_EVERLINE_start_stop;
+		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
+	}
+}
+// End of "EVERLINE"
+
+
+/*------------------------------------------------------------------------------
+GIMPOGOLD (김포골드라인)
+------------------------------------------------------------------------------*/
+// 같은 종류끼리만 연결할 수 있도록 함
+switch(FEAT_TRAINS, SELF, sw_GIMPOGOLD_coach_attach, vehicle_type_id) {
+	ko_train_GIMPOGOLD:	return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+switch(FEAT_TRAINS, SELF, sw_GIMPOGOLD_coach, position_in_consist % 2) {
+	0: set_GIMPOGOLD_engineH;
+	set_GIMPOGOLD_engineT;
+}
+// 4량 초과면 열차를 출발시킬 수 없음
+switch(FEAT_TRAINS, SELF, sw_GIMPOGOLD_start_stop, num_vehs_in_consist > 4) {
+	0: return CB_RESULT_NO_TEXT;
+	return string(STR_ERROR_TOO_LONG_LENGTH4);
+}
+
+item(FEAT_TRAINS, ko_train_GIMPOGOLD, 5584) {
+	property {
+		name:				string(STR_GIMPOGOLD_NAME);
+		climates_available:		ALL_CLIMATES;
+		track_type:			KR_3RD_RAIL;
+		speed:				80 km/h;
+		power:				3000 kW;
+		weight:				46 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:		0.1;
+
+		cargo_capacity:			86;
+		refittable_cargo_classes:	bitmask(CC_PASSENGERS);
+		loading_speed:			20;
+		vehicle_life:			30;
+
+		introduction_date:		date(2019, 9, 28);
+		model_life:			VEHICLE_NEVER_EXPIRES;
+		retire_early:			0;
+		reliability_decay:		0;
+
+		cost_factor:			10;
+		running_cost_base:		RUNNING_COST_ELECTRIC;
+		running_cost_factor:		150;
+		refit_cost:			0;
+
+		ai_special_flag:		AI_FLAG_PASSENGER;
+		engine_class:			ENGINE_CLASS_ELECTRIC;
+
+		sprite_id:			SPRITE_ID_NEW_TRAIN;
+		misc_flags:			bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+
+		dual_headed:			0;
+		bitmask_vehicle_info:		0;
+	}
+	graphics {
+		default:			sw_GIMPOGOLD_coach;
+		purchase:			set_GIMPOGOLD_purchase;
+
+		speed:				sw_GIMPOGOLD_speed;
+		cost_factor:			sw_METRO_cost;
+		running_cost_factor:		sw_LRAIL_running_cost;
+		cargo_capacity:			86 * sw_cargo_capacity_factor;
+		loading_speed:			var_loading_speed_FAST;
+
+		can_attach_wagon:		sw_GIMPOGOLD_coach_attach; //특별
+		start_stop:			sw_GIMPOGOLD_start_stop;
+		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
+	}
+}
+// End of "GIMPOGOLD"
 
 
 /*------------------------------------------------------------------------------
@@ -6665,6 +6839,9 @@ ko_train_DAEGU3		5543
 ko_train_DAEJEON1	5561
 ko_train_GWANGJU1	(5561)
 ko_train_UISINSEOL	5581
+ko_train_UIJEONGBU	(5582)
+ko_train_EVERLINE	5583
+ko_train_GIMPOGOLD	5584
 
 ko_train_FLATC		5801
 ko_train_HOPPER		5802

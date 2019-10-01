@@ -25,12 +25,14 @@ STR_BUSAN3_NAME					:[KTS] Busan Línea 3
 STR_BUSAN4_NAME					:[KTS] Busan Línea 4
 STR_BUSAN4_CW_NAME				:[KTS] Busan Línea 4 Vagón de pasajeros
 # STR_BUSANGIMHAE_NAME				:[KTS] Busan-Gimhae LRT
+# STR_EVERLINE_NAME				:[KTS] Yongin Everline
 STR_DAEGU1_NAME					:[KTS] Daegu Línea 1
 STR_DAEGU2_NAME					:[KTS] Daegu Línea 2
 STR_DAEGU3_NAME					:[KTS] Daegu Línea 3
 STR_DAEGU3_CW_NAME				:[KTS] Daegu Línea 3 Vagón de pasajeros
 STR_DAEJEONGWANGJU1_NAME			:[KTS] Daejeon·Gwangju Línea 1
 # STR_UISINSEOL_NAME				:[KTS] Seoul Ui-Sinseol LRT Línea
+# STR_GIMPOGOLD_NAME				:[KTS] Gimpo Goldline
 STR_SUBCW_NAME					:[KTS] Metro común - Vagón de pasajeros
 STR_K4400_NAME					:[KTS] 4400 Locomotora diésel
 STR_K7000_NAME					:[KTS] 7000 Locomotora diésel
@@ -258,8 +260,8 @@ STR_ERROR_VERSION				:¡Ninguna versión apropiada está disponible!
 STR_ERROR_CANNOT_ATTACH_OTHER			:¡No se puede conectar con otros vagones!
 STR_ERROR_NOT_ENOUGH_LENGTH2			:Muy corto. Es necesario que, al menos, haya 2 vagones.
 STR_ERROR_NOT_ENOUGH_LENGTH4			:Muy corto. Es necesario que, al menos, haya 4 vagones.
-# STR_PARAM_LIGHTRAIL_SPEED_UP_NAME		:Speed up LRT
-# STR_PARAM_LIGHTRAIL_SPEED_UP_DESC		:Make the speed of Light Rail Trainsits(LRT) faster.
+# STR_ERROR_TOO_LONG_LENGTH2			:It's too long. Be less or equal than 2 cars.
+# STR_ERROR_TOO_LONG_LENGTH4			:It's too long. Be less or equal than 4 cars.
 
 STR_ADDITEXT_TEMP				:{BLACK}Cambiar Modelo/Pintura: {ORANGE}No disponible{}{RED}¡Aviso!{BLACK} Este es temporal. Podría haber problemas de desincronización en futuras versiones del Set de trenes de Corea si, finalmente, optas por usar este ahora.
 

@@ -3,7 +3,7 @@
 # GRF name and description
 STR_GRF_NAME					:韓国列車セット
 STR_GRF_NAME_WITH_VER				:韓国列車セット {VERSION}
-STR_GRF_DESC					:{}{BLACK}韓国列車セットはOpenTTDにKTX、KTX-山川（サンチョン）、ITX-青春（チョンチュン）、セマウル号、ムグンファ号、ヌリロ、 CDC(通勤列車)、首都圏のちかてつ、Korailの機関車とかいろいろな韓国の列車を追加してくれます。{}(最近アップデート: {RECENT_UPDATED}){}日本語の翻訳の質を向上させるくださる翻訳を探しています。{}{}{SILVER}+ 製作: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
+STR_GRF_DESC					:{}{BLACK}韓国列車セットはOpenTTDにKTX、KTX-山川（サンチョン）、ITX-青春（チョンチュン）、セマウル号、ムグンファ号、ヌリロ、 CDC(通勤列車)、首都圏のちかてつ、Korailの機関車とかいろいろな韓国の列車を追加してくれます. {}(最近アップデート: {RECENT_UPDATED}){}日本語の翻訳の質を向上させるくださる翻訳を探しています. {}{}{SILVER}+ 製作: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
 STR_GRF_URL					:{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=jp
 
 # Vehicle's names
@@ -25,12 +25,14 @@ STR_BUSAN3_NAME					:[KTS] 釜山(プサン)3号線
 STR_BUSAN4_NAME					:[KTS] 釜山(プサン)4号線
 STR_BUSAN4_CW_NAME				:[KTS] 釜山(プサン)4号線客車
 STR_BUSANGIMHAE_NAME				:[KTS] 釜山(プサン)金海(ギムへ)軽電鉄
+STR_EVERLINE_NAME				:[KTS] 龍仁(ヨンイン)軽電鉄
 STR_DAEGU1_NAME					:[KTS] 大邱(テグ)1号線
 STR_DAEGU2_NAME					:[KTS] 大邱(テグ)2号線
 STR_DAEGU3_NAME					:[KTS] 大邱(テグ)3号線
 STR_DAEGU3_CW_NAME				:[KTS] 大邱(テグ)3号線客車
 STR_DAEJEONGWANGJU1_NAME			:[KTS] 大田(テジョン)·光州(クァンジュ)1号線
 STR_UISINSEOL_NAME				:[KTS] ソウル牛耳(ウイ)新設(シンソル)軽電鉄
+STR_GIMPOGOLD_NAME				:[KTS] 金浦(ギッムポ)ゴールドライン
 STR_SUBCW_NAME					:[KTS] 地下鉄共通客車
 STR_K4400_NAME					:[KTS] 4400号帯ディーゼル機関車
 STR_K7000_NAME					:[KTS] 7000号帯ディーゼル機関車
@@ -200,22 +202,22 @@ STR_PARAM_ADD_TYPE_ALL				:全て
 STR_PARAM_ADD_TYPE_ONLY_TRAIN			:地下鉄を覗いた列車だけ
 STR_PARAM_ADD_TYPE_ONLY_SUBWAY			:地下鉄だけ
 STR_PARAM_SPEED_GENERAL_NAME			:一般列車の速力係数
-STR_PARAM_SPEED_GENERAL_DESC			:一般列車の速力を調節できます。 値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象: 7x00号帯 기관차, 8x00号帯 전기 기관차, CDC, 새마을호 DHC(PP), KTX, KTX-산천
+STR_PARAM_SPEED_GENERAL_DESC			:一般列車の速力を調節できます.  値が大きいと、速力がもっと速くなります. {}実際の速力をお使いいただくには値を10に設定してください. {}の適用対象: 7x00号帯 기관차, 8x00号帯 전기 기관차, CDC, 새마을호 DHC(PP), KTX, KTX-산천
 STR_PARAM_SPEED_SUBEXPRESS_NAME			:準高速型列車の速力係数
-STR_PARAM_SPEED_SUBEXPRESS_DESC			:準高速型列車の速力を調節できます。 値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象: 공항철도 1k (직통), 경춘선 ITX-청춘
+STR_PARAM_SPEED_SUBEXPRESS_DESC			:準高速型列車の速力を調節できます.  値が大きいと、速力がもっと速くなります. {}実際の速力をお使いいただくには値を10に設定してください. {}の適用対象: 공항철도 1k (직통), 경춘선 ITX-청춘
 STR_PARAM_SPEED_SUBWAY_NAME			:地下鉄の速力係数
-STR_PARAM_SPEED_SUBWAY_DESC			:地下鉄の速力を調節できます。 値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象: 一般/準高速型 列車를 제외한 나머지 一般 地下鉄 차량
+STR_PARAM_SPEED_SUBWAY_DESC			:地下鉄の速力を調節できます.  値が大きいと、速力がもっと速くなります. {}実際の速力をお使いいただくには値を10に設定してください. {}の適用対象: 一般/準高速型 列車를 제외한 나머지 一般 地下鉄 차량
 STR_PARAM_SPEED_LIGHTRAIL_NAME			:軽電鉄の速力係数
-STR_PARAM_SPEED_LIGHTRAIL_DESC			:軽電鉄の速力を調節できます。 値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象: 釜山(プサン)4号線
+STR_PARAM_SPEED_LIGHTRAIL_DESC			:軽電鉄の速力を調節できます.  値が大きいと、速力がもっと速くなります. {}実際の速力をお使いいただくには値を10に設定してください. {}の適用対象: 釜山(プサン)4号線
 
 STR_PARAM_FACTOR_COST_NAME			:列車の購入費用
-STR_PARAM_FACTOR_COST_DESC			:列車の購入価格を調整することができます。値が大きければ購入価格が高くなります。
+STR_PARAM_FACTOR_COST_DESC			:列車の購入価格を調整することができます. 値が大きければ購入価格が高くなります. 
 STR_PARAM_FACTOR_RUNNING_COST_NAME		:列車の維持費
-STR_PARAM_FACTOR_RUNNING_COST_DESC		:列車の維持費を調節することができます。値が大きければ維持費が多く掛かります。
+STR_PARAM_FACTOR_RUNNING_COST_DESC		:列車の維持費を調節することができます. 値が大きければ維持費が多く掛かります. 
 STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:貨物輸送量
-STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:列車の貨物輸送量を調節することができます。値が大きければ、より多くの量の乗客や荷物を収納することができます。{}ただし、地下鉄車は、この設定の影響を受けません。{} x2に設定すると、現実の輸送量とほぼ等しくなります。{}{RED}注意！{WHITE}この設定は、新規に作成車両から適用されます。
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:列車の貨物輸送量を調節することができます. 値が大きければ、より多くの量の乗客や荷物を収納することができます. {}ただし、地下鉄車は、この設定の影響を受けません. {} x2に設定すると、現実の輸送量とほぼ等しくなります. {}{RED}注意！{WHITE}この設定は、新規に作成車両から適用されます. 
 STR_PARAM_FACTOR_LOADING_SPEED_NAME		:貨物積載速度
-STR_PARAM_FACTOR_LOADING_SPEED_DESC		:列車の貨物積載速度を調節することができます。値が大きければ、乗客や貨物を載せる速度が速くなります。
+STR_PARAM_FACTOR_LOADING_SPEED_DESC		:列車の貨物積載速度を調節することができます. 値が大きければ、乗客や貨物を載せる速度が速くなります. 
 
 # Parameters' value
 STR_PARAM_OPT_FACTOR_BY_0			:x0
@@ -239,11 +241,11 @@ STR_PARAM_OPT_FACTOR_BY_2048			:x2048
 STR_PARAM_OPT_FACTOR_BY_4096			:x4096
 
 STR_PARAM_SIMPLIZE_WAYPOINT_NAME		:経由地を簡単に表示
-STR_PARAM_SIMPLIZE_WAYPOINT_DESC		:ウェイポイントのグラピックで建物を削除して簡単に表紙します。
+STR_PARAM_SIMPLIZE_WAYPOINT_DESC		:ウェイポイントのグラピックで建物を削除して簡単に表紙します. 
 STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME	:基本機関車使用しない
-STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC	:韓国列車セットの客車をすばやく探すために基本機関車を削除します。モノレールや磁気浮上列車の車両は消えず（電気）鉄道車両のみを削除します。
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC	:韓国列車セットの客車をすばやく探すために基本機関車を削除します. モノレールや磁気浮上列車の車両は消えず（電気）鉄道車両のみを削除します. 
 STR_PARAM_MAX_SPEED_TYPE_NAME			:最高速度基準
-STR_PARAM_MAX_SPEED_TYPE_DESC			:列車の最高速度の基準を選択します。設計速度が営業速度よりもやや高速です。（eg。KTX-1：営業速度=300km/ h、設計最高速度=330km/ h）
+STR_PARAM_MAX_SPEED_TYPE_DESC			:列車の最高速度の基準を選択します. 設計速度が営業速度よりもやや高速です.（eg. KTX-1：営業速度=300km/ h、設計最高速度=330km/h）
 STR_PARAM_MAX_SPEED_TYPE_OPT_1			:営業促進
 STR_PARAM_MAX_SPEED_TYPE_OPT_2			:設計速度
 
@@ -251,8 +253,10 @@ STR_PARAM_MAX_SPEED_TYPE_OPT_2			:設計速度
 STR_ERROR_REQUIRES_OPENTTD			:このNewGRFはOpenTTDの{STRING}専用です!
 STR_ERROR_VERSION				:最小要求バージョンを満たしていません!
 STR_ERROR_CANNOT_ATTACH_OTHER			:連結できない編成です!
-STR_ERROR_NOT_ENOUGH_LENGTH2			:列車の長さがとても短いです。 少なくとも2両以上を連結しなければなりません。
-STR_ERROR_NOT_ENOUGH_LENGTH4			:列車の長さがとても短いです。 少なくとも4両以上を連結しなければなりません。
+STR_ERROR_NOT_ENOUGH_LENGTH2			:列車の長さが短すぎます. 少なくとも2両以上を連結しなければなりません.
+STR_ERROR_NOT_ENOUGH_LENGTH4			:列車の長さが短すぎます. 少なくとも4両以上を連結しなければなりません.
+# STR_ERROR_TOO_LONG_LENGTH2			:列車の長さが長すぎます. 最大2両まで接続する必要があります.
+STR_ERROR_TOO_LONG_LENGTH4			:列車の長さが長すぎます. 最大4両まで接続する必要があります.
 
 STR_ADDITEXT_TEMP				:{BLACK}塗色/モデル変更: {ORANGE}不可能{}{RED}주의!{BLACK} 이 화차는 임시 버전입니다. 이 화차를 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다.
 
