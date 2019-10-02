@@ -1,13 +1,18 @@
 # Korean Train Set
 A NewGRF set of OpenTTD that contains South Korean trains.
-Official language is Korean.
+The official language is Korean.
+
+# How to compile
+Download [NML](http://bundles.openttdcoop.org/nml/releases/LATEST/) and run this command via prompt:  
+```bash
+nmlc.exe ko_train_set.nml
+```
 
 # Translations
-To translate the Korean Train Set, please pull the request via this github project.
+To translate the Korean Train Set, please pull the request via this github project.  
 You shall translate these files:
-- [/KoreanTrainSet/lang/english.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/lang/english.lng) (For NewGRF)
-- [/KoreanGRF/DownloadPage/lang/en.lng](https://github.com/KoreanGRF/DownloadPages/blob/master/common/en.lng) (For download page #1)
-- [/KoreanTrainSet/DownloadPage/lang/en.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/DownloadPage/lang/en.lng) (for download page #2)
+- [/KoreanTrainSet/lang/english.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/lang/english.lng) (For NewGRF)  
+And if you want to translate [the download page of my own site](https://telk.kr/ottd/newgrf/ko_train_set), please contact me: telk5093@gmail.com
 
 # Links
 - [TELKLAND](http://telk.kr)
