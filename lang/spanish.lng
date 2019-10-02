@@ -263,16 +263,15 @@ STR_ERROR_NOT_ENOUGH_LENGTH4			:Muy corto. Es necesario que, al menos, haya 4 va
 # STR_ERROR_TOO_LONG_LENGTH2			:It's too long. Be less or equal than 2 cars.
 # STR_ERROR_TOO_LONG_LENGTH4			:It's too long. Be less or equal than 4 cars.
 
-STR_ADDITEXT_TEMP				:{BLACK}Cambiar Modelo/Pintura: {ORANGE}No disponible{}{RED}¡Aviso!{BLACK} Este es temporal. Podría haber problemas de desincronización en futuras versiones del Set de trenes de Corea si, finalmente, optas por usar este ahora.
-
-# Not use
-#STR_PARAM_REAL_FORM_NAME			:Formación real de los trenes
-#STR_PARAM_REAL_FORM_DESC			:Ajusta la longitud del tren a su formación real. Si el tres es muy corto o largo, los trenes no serán mostrados correctamente. Esto afecta al Metro de Seúl 9, A'REX, ITX-Cheongchun, KTXs.
-#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:La edad del vehículo afecta a los costes de funcionamiento
-#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_DESC	:A mayor edad del vehículo, mayor es el coste del mismo en funcionamiento.
-
 # Buffer Object
 STR_OBJ_BUFFER_KTSR				:[KTS] Buffers
 
 # Light Railway
 STR_KO_LIGHT_RAILWAY_LABEL			:línea de Tren Ligero
+
+# Not use
+# STR_ADDITEXT_TEMP				:{BLACK}Cambiar Modelo/Pintura: {ORANGE}No disponible{}{RED}¡Aviso!{BLACK} Este es temporal. Podría haber problemas de desincronización en futuras versiones del Set de trenes de Corea si, finalmente, optas por usar este ahora.
+#STR_PARAM_REAL_FORM_NAME			:Formación real de los trenes
+#STR_PARAM_REAL_FORM_DESC			:Ajusta la longitud del tren a su formación real. Si el tres es muy corto o largo, los trenes no serán mostrados correctamente. Esto afecta al Metro de Seúl 9, A'REX, ITX-Cheongchun, KTXs.
+#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:La edad del vehículo afecta a los costes de funcionamiento
+#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_DESC	:A mayor edad del vehículo, mayor es el coste del mismo en funcionamiento.

@@ -258,14 +258,6 @@ STR_ERROR_NOT_ENOUGH_LENGTH4			:列車の長さが短すぎます. 少なくと�
 # STR_ERROR_TOO_LONG_LENGTH2			:列車の長さが長すぎます. 最大2両まで接続する必要があります.
 STR_ERROR_TOO_LONG_LENGTH4			:列車の長さが長すぎます. 最大4両まで接続する必要があります.
 
-STR_ADDITEXT_TEMP				:{BLACK}塗色/モデル変更: {ORANGE}不可能{}{RED}주의!{BLACK} 이 화차는 임시 버전입니다. 이 화차를 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다.
-
-# Not use
-#STR_PARAM_REAL_FORM_NAME			:列車의 편성 길이를 고정
-#STR_PARAM_REAL_FORM_DESC			:이 옵션을 켜면 列車 1대의 편성 길이를 실제 환경과 똑같이 고정합니다.{}列車가 조금이라도 짧거나 길면 列車가 바르게 표시되지 않습니다.{}서울 9호선, 공항철도, ITX-청춘, KTX 차량 등 편성이 고정되어 있는 차량에만 적용됩니다.
-#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:차량이 오래되면 유지비가 늘어남
-#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_DESC	:차량의 연령이 오래되면 오래될 수록 유지비가 늘어나도록 합니다.
-
 # Buffer Object
 STR_OBJ_BUFFER_KTSR				:[KTS] 線路終端点
 

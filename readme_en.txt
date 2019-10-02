@@ -53,6 +53,8 @@ Korean Train Set adds vehicles such as below:
   - Busan subway Line 3
   - Busan subway Line 4
   - Busan-Gimhae LRT
+  - Yongin Everline (LRT)
+  - Gimpo Goldline (LRT)
   - Korail 4400 Diesel Locomotive (2 models/paintings + V-train)
   - Korail 7x00 Diesel Locomotive (5 models/paintings + Haerang the rail cruise + G-train + S-train)
   - Korail 8000 Electric Locomotive (3 models/paintings)

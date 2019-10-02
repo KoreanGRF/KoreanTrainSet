@@ -260,16 +260,15 @@ STR_ERROR_NOT_ENOUGH_LENGTH4			:열차 길이가 너무 짧습니다. 최소한 
 # STR_ERROR_TOO_LONG_LENGTH2			:열차 길이가 너무 깁니다. 최대 2량까지만 연결할 수 있습니다.
 STR_ERROR_TOO_LONG_LENGTH4			:열차 길이가 너무 깁니다. 최대 4량까지만 연결할 수 있습니다.
 
-STR_ADDITEXT_TEMP				:{BLACK}도색/모델 변경: {ORANGE}불가능{}{RED}주의!{BLACK} 이 차량은 임시 버전입니다. 이 차량을 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다.
-
-# Not use
-#STR_PARAM_REAL_FORM_NAME			:열차의 편성 길이를 고정
-#STR_PARAM_REAL_FORM_DESC			:이 옵션을 켜면 열차 1대의 편성 길이를 실제 환경과 똑같이 고정합니다.{}열차가 조금이라도 짧거나 길면 열차가 바르게 표시되지 않습니다.{}서울 9호선, 공항철도, ITX-청춘, KTX 차량 등 편성이 고정되어 있는 차량에만 적용됩니다.
-#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:차량이 오래되면 유지비가 늘어남
-#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_DESC	:차량의 연령이 오래되면 오래될 수록 유지비가 늘어나도록 합니다.
-
 # Buffer Object
 STR_OBJ_BUFFER_KTSR				:[KTS] 선로 종단점
 
 # Light Railway
 STR_KO_LIGHT_RAILWAY_LABEL			:[KTS] 경전철 선로
+
+# Not use
+# STR_ADDITEXT_TEMP				:{BLACK}도색/모델 변경: {ORANGE}불가능{}{RED}주의!{BLACK} 이 차량은 임시 버전입니다. 이 차량을 사용하실 경우 다음 KTS 버전에서 호환 문제가 발생할 수도 있습니다.
+# STR_PARAM_REAL_FORM_NAME			:열차의 편성 길이를 고정
+# STR_PARAM_REAL_FORM_DESC			:이 옵션을 켜면 열차 1대의 편성 길이를 실제 환경과 똑같이 고정합니다.{}열차가 조금이라도 짧거나 길면 열차가 바르게 표시되지 않습니다.{}서울 9호선, 공항철도, ITX-청춘, KTX 차량 등 편성이 고정되어 있는 차량에만 적용됩니다.
+# STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:차량이 오래되면 유지비가 늘어남
+# STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_DESC	:차량의 연령이 오래되면 오래될 수록 유지비가 늘어나도록 합니다.

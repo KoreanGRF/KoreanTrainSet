@@ -260,16 +260,15 @@ STR_ERROR_NOT_ENOUGH_LENGTH4			:It's too short. Be more than 4 cars at least.
 # STR_ERROR_TOO_LONG_LENGTH2			:It's too long. Be less or equal than 2 cars.
 STR_ERROR_TOO_LONG_LENGTH4			:It's too long. Be less or equal than 4 cars.
 
-STR_ADDITEXT_TEMP				:{BLACK}Changing Models/Paintings: {ORANGE}Unable{}{RED}Warning!{BLACK} This is a temporary one. It could occur desync problem in the next KTS version if you use this right now.
-
-# Not use
-#STR_PARAM_REAL_FORM_NAME			:Real formation of trains
-#STR_PARAM_REAL_FORM_DESC			:Fix the length of trains to the real trains' formation. If the train's length is short or long, trains will not display properly.{}It affects Seoul Metro 9, A'REX, ITX-Cheongchun, KTXs.
-#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:Age of vehicle affects to the running cost
-#STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_DESC	:The older a vehicle is, the much expensive running cost becomes.
-
 # Buffer Object
 STR_OBJ_BUFFER_KTSR				:[KTS] Buffers
 
 # Light Railway
 STR_KO_LIGHT_RAILWAY_LABEL			:[KTS] Light Railways
+
+# Not use
+# STR_ADDITEXT_TEMP				:{BLACK}Changing Models/Paintings: {ORANGE}Unable{}{RED}Warning!{BLACK} This is a temporary one. It could occur desync problem in the next KTS version if you use this right now.
+# STR_PARAM_REAL_FORM_NAME			:Real formation of trains
+# STR_PARAM_REAL_FORM_DESC			:Fix the length of trains to the real trains' formation. If the train's length is short or long, trains will not display properly.{}It affects Seoul Metro 9, A'REX, ITX-Cheongchun, KTXs.
+# STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:Age of vehicle affects to the running cost
+# STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_DESC	:The older a vehicle is, the much expensive running cost becomes.
