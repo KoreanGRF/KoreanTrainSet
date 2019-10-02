@@ -2,8 +2,12 @@
 .nmlcache/*
 NML_backup
 NML_backup/*
+gfx/*.psd
 gfx-psd
 gfx-psd/*
+archives
+archives/*
+DownloadPage
 *.bat
 *.grf
 parsetab.py
