@@ -49,6 +49,8 @@ STR_NURIRO_NAME					:[KTS] Nuriro
 STR_KTX1N_NAME					:[KTS] KTX
 STR_KTX2N_NAME					:[KTS] KTX-Sancheon, SRT
 STR_KTXCW_NAME					:[KTS] KTX passenger car
+STR_EMU250_NAME					:[KTS] EMU-250
+STR_EMUCW_NAME					:[KTS] EMU passenger car
 STR_NRRCW_NAME					:[KTS] Nuriro passenger car
 STR_SMECW_NAME					:[KTS] Saemaeul passenger car
 STR_MGHCW_NAME					:[KTS] Mugunghwa passenger car
@@ -202,7 +204,7 @@ STR_PARAM_ADD_TYPE_ALL				:All
 STR_PARAM_ADD_TYPE_ONLY_TRAIN			:Trains except subways
 STR_PARAM_ADD_TYPE_ONLY_SUBWAY			:Only subways
 STR_PARAM_SPEED_GENERAL_NAME			:Speed coefficient of General trains
-STR_PARAM_SPEED_GENERAL_DESC			:Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: 7x00 Locomotives, 8x00 Electric Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon
+STR_PARAM_SPEED_GENERAL_DESC			:Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: 7x00 Locomotives, 8x00 Electric Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon, EMU-250
 STR_PARAM_SPEED_SUBEXPRESS_NAME			:Speed coefficient of Semi-express trains
 STR_PARAM_SPEED_SUBEXPRESS_DESC			:Speed coefficient of semi-express trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: A'REX 1k (Express), Gyeongchun ITX-Cheongchun
 STR_PARAM_SPEED_SUBWAY_NAME			:Speed coefficient of Subways
@@ -266,8 +268,10 @@ STR_OBJ_BUFFER_KTSR				:[KTS] Buffers
 # Light Railway
 STR_KO_LIGHT_RAILWAY_LABEL			:[KTS] Light Railways
 
+
+STR_ADDITEXT_TEMP				:{BLACK}Changing Models/Paintings: {ORANGE}Unable{}{RED}Warning!{BLACK} This is a temporary one. It could occur desync problem in the next KTS version if you use this right now.
+
 # Not use
-# STR_ADDITEXT_TEMP				:{BLACK}Changing Models/Paintings: {ORANGE}Unable{}{RED}Warning!{BLACK} This is a temporary one. It could occur desync problem in the next KTS version if you use this right now.
 # STR_PARAM_REAL_FORM_NAME			:Real formation of trains
 # STR_PARAM_REAL_FORM_DESC			:Fix the length of trains to the real trains' formation. If the train's length is short or long, trains will not display properly.{}It affects Seoul Metro 9, A'REX, ITX-Cheongchun, KTXs.
 # STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:Age of vehicle affects to the running cost

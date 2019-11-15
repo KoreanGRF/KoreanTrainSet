@@ -49,6 +49,8 @@ STR_NURIRO_NAME					:[KTS] Nuriro
 STR_KTX1N_NAME					:[KTS] KTX
 STR_KTX2N_NAME					:[KTS] KTX-Sancheon, SRT
 STR_KTXCW_NAME					:[KTS] KTX - Vagón de pasajeros
+STR_EMU250_NAME					:[KTS] EMU-250
+STR_EMUCW_NAME					:[KTS] EMU - Vagón de pasajeros
 STR_NRRCW_NAME					:[KTS] Nuriro - Vagón de pasajeros
 STR_SMECW_NAME					:[KTS] Saemaeul - Vagón de pasajeros
 STR_MGHCW_NAME					:[KTS] Mugunghwa - Vagón de pasajeros
@@ -205,7 +207,7 @@ STR_PARAM_ADD_TYPE_ALL				:Todos
 STR_PARAM_ADD_TYPE_ONLY_TRAIN			:Todos los trenes excepto metros
 STR_PARAM_ADD_TYPE_ONLY_SUBWAY			:Solo metros
 STR_PARAM_SPEED_GENERAL_NAME			:Coeficiente de velocidad de los trenes generales
-STR_PARAM_SPEED_GENERAL_DESC			:Coeficiente de velocidad de los trenes generales. La velocidad del tren irá en correlación a la establecida en esta opción.{}10 es igual a la velocidad real del tren.{}Esto se le aplica a: Las locomotoras 7x00, las locomotoras eléctricas 8x00, CDC, Saemaeul DHC(PP), KTX y KTX-Sancheon.
+STR_PARAM_SPEED_GENERAL_DESC			:Coeficiente de velocidad de los trenes generales. La velocidad del tren irá en correlación a la establecida en esta opción.{}10 es igual a la velocidad real del tren.{}Esto se le aplica a: Las locomotoras 7x00, las locomotoras eléctricas 8x00, CDC, Saemaeul DHC(PP), KTX y KTX-Sancheon, EMU-250
 STR_PARAM_SPEED_SUBEXPRESS_NAME			:Coeficiente de velocidad de los trenes semi-expresos
 STR_PARAM_SPEED_SUBEXPRESS_DESC			:Coeficiente de velocidad de los trenes semi-expresos. La velocidad del tren irá en correlación a la establecida en esta opción.{}10 es igual a la velocidad real del tren.{}Esto se le aplica a: A'REX 1k (Expreso), Gyeongchun ITX-Cheongchun.
 STR_PARAM_SPEED_SUBWAY_NAME			:Coeficiente de velocidad de los metros
@@ -269,8 +271,10 @@ STR_OBJ_BUFFER_KTSR				:[KTS] Buffers
 # Light Railway
 STR_KO_LIGHT_RAILWAY_LABEL			:línea de Tren Ligero
 
+
+STR_ADDITEXT_TEMP				:{BLACK}Cambiar Modelo/Pintura: {ORANGE}No disponible{}{RED}¡Aviso!{BLACK} Este es temporal. Podría haber problemas de desincronización en futuras versiones del Set de trenes de Corea si, finalmente, optas por usar este ahora.
+
 # Not use
-# STR_ADDITEXT_TEMP				:{BLACK}Cambiar Modelo/Pintura: {ORANGE}No disponible{}{RED}¡Aviso!{BLACK} Este es temporal. Podría haber problemas de desincronización en futuras versiones del Set de trenes de Corea si, finalmente, optas por usar este ahora.
 #STR_PARAM_REAL_FORM_NAME			:Formación real de los trenes
 #STR_PARAM_REAL_FORM_DESC			:Ajusta la longitud del tren a su formación real. Si el tres es muy corto o largo, los trenes no serán mostrados correctamente. Esto afecta al Metro de Seúl 9, A'REX, ITX-Cheongchun, KTXs.
 #STR_PARAM_BOOL_AGE_AFFECT_RUNNING_COST_NAME	:La edad del vehículo afecta a los costes de funcionamiento

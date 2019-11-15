@@ -65,8 +65,9 @@ Korean Train Set adds vehicles such as below:
   - Korail New Diesel Car(NDC)
   - Saemaeul Diesel Hydraulic Car(PP-car) and coach (3 model/paintings)
   - ITX-Saemaeul and coach
-  - KTX-1 and its passenger coach
-  - KTX-Sancheon and its passenger coach
+  - KTX-1 locomotive and its passenger coach
+  - KTX-Sancheon locomotive and its passenger coach
+  - EMU-250 locomotive and its passenger coach
   - Nuriro Locomotive and coach (1 model/painting + O-train + Korean wave tour wrapping)
   - Mugunghwa's passenger coach and cafe coach
   - Tongil's passenger coach
