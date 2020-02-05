@@ -13,7 +13,7 @@ grf {
 	name :				string(STR_GRF_NAME_WITH_VER);
 	desc :				string(STR_GRF_DESC);
 	url :				string(STR_GRF_URL);
-	version :			182;
+	version :			183;
 	min_compatible_version :	162;
 
 	// 추가 열차 종류
@@ -2755,6 +2755,7 @@ item(FEAT_TRAINS, ko_train_KTXCW, 5992) {
 		cost_factor:			var_cost_KTXCW;
 		running_cost_factor:		var_runcost_KTXCW;
 		cargo_capacity:			sw_KTXCW_cargo_capacity;
+		speed:				var_speed_EMUCW;
 		loading_speed:			var_loading_speed_SLOW;
 
 		cargo_subtype_text:		sw_KTXCW_cargo_subtype_text;
@@ -2814,7 +2815,7 @@ item(FEAT_TRAINS, ko_train_EMU250, 5521) {
 		tractive_effort_coefficient:	0.4;
 
 		cargo_capacity:			18;
-		loading_speed:			0;
+		loading_speed:			5;
 		vehicle_life:			30;
 
 		introduction_date:		date(2019, 11, 1);
@@ -2845,6 +2846,7 @@ item(FEAT_TRAINS, ko_train_EMU250, 5521) {
 		cost_factor:			var_cost_EMU250;
 		running_cost_factor:		var_runcost_EMU;
 		cargo_capacity:			sw_EMU250_capacity;
+		loading_speed:			var_loading_speed_SLOW;
 
 		can_attach_wagon:		sw_EMU_attach;
 		start_stop:			sw_ko_train_start_stop;
@@ -2853,7 +2855,7 @@ item(FEAT_TRAINS, ko_train_EMU250, 5521) {
 		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
 	}
 }
-// End of "KTX-산천"
+// End of "EMU250"
 
 
 /*------------------------------------------------------------------------------
