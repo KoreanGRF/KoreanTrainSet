@@ -8,12 +8,12 @@
 0 * 4 \d5542 
 
 1 * 13198 14 "C" "INFO" 
-"T" "NAME" 04 "Set de trenes de Corea 1.6.11" 00 
-"T" "NAME" 39 "Þ韓国列車セット 1.6.11" 00 
-"T" "NAME" 3A "Þ한국 열차 세트 1.6.11" 00 
-"T" "DESC" 04 "Þ\0D\UE098El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.\0D(Última actualización: 2020.02.05)\0D\0D\UE089Hecho por: TELK\0D\UE098  - telk5093@gmail.com\0D  - https://telk.kr" 00 
-"T" "DESC" 39 "Þ\0D\UE098韓国列車セットはOpenTTDにKTX、KTX-山川(サンチョン), ITX-淸春(チョンチュン), セマウル号, ムグンファ号, ヌリロ,  CDC(通勤列車), 首都圏のちかてつ, Korailの機関車とかいろいろな韓国の列車を追加してくれます. \0D(最近アップデート: 2020.02.05)\0D日本語の翻訳の質を向上させるくださる翻訳を探しています. \0D\0D\UE089+ 製作: TELK\0D\UE098  - telk5093@gmail.com\0D  - https://telk.kr" 00 
-"T" "DESC" 3A "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2020.02.05)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - https://telk.kr" 00 
+"T" "NAME" 04 "Set de trenes de Corea 1.6.12" 00 
+"T" "NAME" 39 "Þ韓国列車セット 1.6.12" 00 
+"T" "NAME" 3A "Þ한국 열차 세트 1.6.12" 00 
+"T" "DESC" 04 "Þ\0D\UE098El Set de trenes de Corea es un NewGRF de OpenTTD al cual le añade diversos trenes coreanos como KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nooriro, CDC, el metro metropolitano de Seúl y algunas locomotoras eléctricas de Korail.\0D(Última actualización: 2020.02.09)\0D\0D\UE089Hecho por: TELK\0D\UE098  - telk5093@gmail.com\0D  - https://telk.kr" 00 
+"T" "DESC" 39 "Þ\0D\UE098韓国列車セットはOpenTTDにKTX、KTX-山川(サンチョン), ITX-淸春(チョンチュン), セマウル号, ムグンファ号, ヌリロ,  CDC(通勤列車), 首都圏のちかてつ, Korailの機関車とかいろいろな韓国の列車を追加してくれます. \0D(最近アップデート: 2020.02.09)\0D日本語の翻訳の質を向上させるくださる翻訳を探しています. \0D\0D\UE089+ 製作: TELK\0D\UE098  - telk5093@gmail.com\0D  - https://telk.kr" 00 
+"T" "DESC" 3A "Þ\0D\UE098한국 열차 세트는 OpenTTD에 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차를 추가해줍니다.\0D(최근 업데이트: 2020.02.09)\0D\0D\UE089+ 제작: 텔크\0D\UE098  - telk5093@gmail.com\0D  - https://telk.kr" 00 
 "T" "URL_" 7F "https://telk.kr/ottd/newgrf/ko_train_set/?lang=en" 00 
 "T" "URL_" 04 "https://telk.kr/ottd/newgrf/ko_train_set/?lang=es" 00 
 "T" "URL_" 39 "https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp" 00 
@@ -254,7 +254,7 @@
 "B" "BLTR" \w1 "8" 
 00 
 00 
-2 * 336 08 08 "TK\55\55" "Korean Train Set 1.6.11" 00 "\0D\98Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.\0D(Updated: 2020.02.05)\0D\0D\89+ Author: TELK\0D\98  - telk5093@gmail.com\0D  - https://telk.kr" 00 
+2 * 336 08 08 "TK\55\55" "Korean Train Set 1.6.12" 00 "\0D\98Korean Train Set is adds trains of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Busan subways/metros and some electric locomotives of Korail.\0D(Updated: 2020.02.09)\0D\0D\89+ Author: TELK\0D\98  - telk5093@gmail.com\0D  - https://telk.kr" 00 
 3 * 3025 04 00 FF 73 \wxD000 "It's too short. Be more than 4 cars at least." 00 "It's too short. Be more than 2 cars at least." 00 "can't attach with other coaches!" 00 " (Painting thesedays)" 00 " (old Korail's painting)" 00 " (V-train)" 00 "\98Changing Models/Paintings: \8FAvailable" 00 "\98Changing Models/Paintings: \8EUnable" 00 " (Cargo painting)" 00 " (First Korail's painting: Blue & White)" 00 " (First Korail's painting: Black & Orange)" 00 " (For future use)" 00 " (Rail cruise 'Haerang')" 00 " (S-train, No.1)" 00 " (S-train, No.2)" 00 " (G-train)" 00 " (Painting B: old Korail)" 00 " (Painting A: 1970s)" 00 " (ITX-Saemaeul)" 00 " (Demoted to Mugunghwa, former executive car)" 00 " (O-train)" 00 " (Nuriro)" 00 " (Korean wave tour wrapping)" 00 " (Flower garden painting)" 00 " (Dolphin painting)" 00 " (Seaside train painting)" 00 " (Seaside train painting / after 2014)" 00 " (Korail 100th Anni., Baekje painting)" 00 " (old Korail's painting)" 00 " (DMZ-train)" 00 " (RDC Mugunghwa painting)" 00 " (Gyeongbuk Circular theme tour train, old paintings)" 00 " (Gyeongbuk Circular theme tour train, new paintings)" 00 " (No.120000)" 00 " (No.110000)" 00 " (Standard car)" 00 " (Executive car)" 00 " (No.110000, First class)" 00 " (No.120000, First class)" 00 "Þ (Painting E: 2000~2002)" 00 "Þ (Painting D: 1990~1999)" 00 "Þ (Painting C: 1985~1989)" 00 "Þ (Painting B: 1984~1984)" 00 "Þ (Painting A: 1970~1983)" 00 " (General Saemaeul cafe car)" 00 " (RDC Cafe car)" 00 " (General Mugunghwa cafe car)" 00 " (Long type : Saemaeul current painting)" 00 " (Long type : Saemaeul old painting)" 00 " (Long type)" 00 " (Default type)" 00 " (Black)" 00 " (Brown)" 00 " (Blue)" 00 " (Red)" 00 " (Orange)" 00 " (Darkgreen)" 00 " (Olive)" 00 " (Skyblue)" 00 " (Darkblue)" 00 " (Mail coach)" 00 " (Korail 3xxk AL)" 00 " (Korail 3xxk ST)" 00 " (Korail 311k / Current painting)" 00 " (Korail 311k / Old painting)" 00 " (Korail 1k New rheostatic / Current painting)" 00 " (Korail 1k New rheostatic / Old painting)" 00 " (Korail 1k Modified rheostatic / Current painting)" 00 " (Korail 1k Modified rheostatic / 2nd painting)" 00 " (Korail 1k Modified rheostatic / 1st painting)" 00 " (Korail 1k First rheostatic / 2nd painting)" 00 " (Korail 1k First rheostatic / 1st painting)" 00 " (SMetro 1k VVVF)" 00 " (SMetro 1k Modified rheostatic)" 00 " (SMetro 1k First rheostatic)" 00 " (Korail 371k / Blank painting)" 00 " (Korail 371k, 381k 1st)" 00 " (Korail 381k 2nd)" 00 " (Korail 391k / Seohae Line)" 00 " (Korail Line 1, introduced in 2019)" 00 " (Korail Line 4, introduced in 2019)" 00 " (SMetro 2k 2nd VVVF)" 00 " (SMetro 2k 1st VVVF)" 00 " (SMetro 2k Chopper)" 00 " (SMetro 2k MELCO)" 00 " (SMetro 2k Modified rheostatic)" 00 " (SMetro 2k 3rd VVVF)" 00 " (SMetro 3k 2nd VVVF)" 00 " (Unfinished: SMetro 3k 1st VVVF)" 00 " (SMetro 3k Chopper)" 00 " (Korail 3k VVVF / Current painting)" 00 " (Korail 3k VVVF / Old painting)" 00 " (Korail 341k 2nd VVVF / Current painting)" 00 " (Korail 341k 1st VVVF / Current painting)" 00 " (Korail 341k 2nd VVVF / Old painting)" 00 " (Korail 341k 1st VVVF / Old painting)" 00 " (SMetro 4k VVVF)" 00 " (SMRT 5k VVVF)" 00 " (SMRT 6k VVVF)" 00 " (SMRT 7k VVVF)" 00 " (SMRT 8k VVVF)" 00 " (SML9 9k VVVF)" 00 " (SMRT SR0x VVVF)" 00 " (Korail 351k 3rd VVVF)" 00 " (Korail 351k 2nd VVVF)" 00 " (Korail 351k 1st VVVF)" 00 " (Korail A'REX 2k All-stop)" 00 " (Korail A'REX 1k Express)" 00 " (ICTR Incheon 1k VVVF 1st)" 00 " (ICTR Incheon 1k VVVF 2nd)" 00 " (BTC Busan 1k 1st)" 00 " (BTC Busan 1k 2nd)" 00 " (DJET Daejeon 1k)" 00 " (GMRT Gwangju 1k)" 00 "It's too long. Be less or equal than 4 cars." 00 
 
 4 * 20 04 0F FF 01 \wxD073 "[KTS] Buffers" 00 
@@ -1168,79 +1168,79 @@ FF
 \wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
 \wx8000 // default: return param[123];
 
-// param[122] = (param[127] * 20)
-252 * 9 0D 7A \D* 7F FF \dx00000014 
+// param[121] = param[1]
+252 * 5 0D 79 \D= 01 00 
+
+// param[122] = (param[121] * 33)
+253 * 9 0D 7A \D* 79 FF \dx00000021 
 
 // param[123] = (param[122] | 32768)
-253 * 9 0D 7B \D| 7A FF \dx00008000 
+254 * 9 0D 7B \D| 7A FF \dx00008000 
 
-254 * 7 06 
+255 * 7 06 
+7B 02 FF \wx0015 
+FF 
+
+// Name: var_speed_KTXCW
+256 * 23 02 00 D5 89 
+1A 00 \dx00000001 
+\b1 
+\wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
+\wx8000 // default: return param[123];
+
+// param[122] = (param[127] * 20)
+257 * 9 0D 7A \D* 7F FF \dx00000014 
+
+// param[123] = (param[122] | 32768)
+258 * 9 0D 7B \D| 7A FF \dx00008000 
+
+259 * 7 06 
 7B 02 FF \wx0015 
 FF 
 
 // Name: var_cost_KTXCW
-255 * 23 02 00 D5 89 
+260 * 23 02 00 D4 89 
 1A 00 \dx00000001 
 \b1 
 \wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
 \wx8000 // default: return param[123];
 
 // param[122] = (param[126] * 20)
-256 * 9 0D 7A \D* 7E FF \dx00000014 
+261 * 9 0D 7A \D* 7E FF \dx00000014 
 
 // param[123] = (param[122] | 32768)
-257 * 9 0D 7B \D| 7A FF \dx00008000 
+262 * 9 0D 7B \D| 7A FF \dx00008000 
 
-258 * 7 06 
+263 * 7 06 
 7B 02 FF \wx0015 
 FF 
 
 // Name: var_runcost_KTXCW
-259 * 23 02 00 D4 89 
+264 * 23 02 00 D3 89 
 1A 00 \dx00000001 
 \b1 
 \wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
 \wx8000 // default: return param[123];
 
 // param[122] = (param[125] * 29)
-260 * 9 0D 7A \D* 7D FF \dx0000001D 
+265 * 9 0D 7A \D* 7D FF \dx0000001D 
 
 // param[123] = (param[122] | 32768)
-261 * 9 0D 7B \D| 7A FF \dx00008000 
+266 * 9 0D 7B \D| 7A FF \dx00008000 
 
-262 * 7 06 
+267 * 7 06 
 7B 02 FF \wx0015 
 FF 
 
 // Name: var_capacity_KTXCW
-263 * 23 02 00 D3 89 
+268 * 23 02 00 D2 89 
 1A 00 \dx00000001 
 \b1 
 \wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
 \wx8000 // default: return param[123];
 
 // param[122] = (param[125] * 16)
-264 * 9 0D 7A \D* 7D FF \dx00000010 
-
-// param[123] = (param[122] | 32768)
-265 * 9 0D 7B \D| 7A FF \dx00008000 
-
-266 * 7 06 
-7B 02 FF \wx0015 
-FF 
-
-// Name: var_capacity_KTXCWS
-267 * 23 02 00 D2 89 
-1A 00 \dx00000001 
-\b1 
-\wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
-\wx8000 // default: return param[123];
-
-// param[121] = param[1]
-268 * 5 0D 79 \D= 01 00 
-
-// param[122] = (param[121] * 25)
-269 * 9 0D 7A \D* 79 FF \dx00000019 
+269 * 9 0D 7A \D* 7D FF \dx00000010 
 
 // param[123] = (param[122] | 32768)
 270 * 9 0D 7B \D| 7A FF \dx00008000 
@@ -1249,86 +1249,86 @@ FF
 7B 02 FF \wx0015 
 FF 
 
-// Name: var_speed_EMU250
+// Name: var_capacity_KTXCWS
 272 * 23 02 00 D1 89 
 1A 00 \dx00000001 
 \b1 
 \wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
 \wx8000 // default: return param[123];
 
-// param[122] = (param[127] * 8)
-273 * 9 0D 7A \D* 7F FF \dx00000008 
+// param[121] = param[1]
+273 * 5 0D 79 \D= 01 00 
+
+// param[122] = (param[121] * 25)
+274 * 9 0D 7A \D* 79 FF \dx00000019 
 
 // param[123] = (param[122] | 32768)
-274 * 9 0D 7B \D| 7A FF \dx00008000 
+275 * 9 0D 7B \D| 7A FF \dx00008000 
 
-275 * 7 06 
+276 * 7 06 
+7B 02 FF \wx0015 
+FF 
+
+// Name: var_speed_EMU250
+277 * 23 02 00 D0 89 
+1A 00 \dx00000001 
+\b1 
+\wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
+\wx8000 // default: return param[123];
+
+// param[122] = (param[127] * 8)
+278 * 9 0D 7A \D* 7F FF \dx00000008 
+
+// param[123] = (param[122] | 32768)
+279 * 9 0D 7B \D| 7A FF \dx00008000 
+
+280 * 7 06 
 7B 02 FF \wx0015 
 FF 
 
 // Name: var_cost_EMU250
-276 * 23 02 00 D0 89 
+281 * 23 02 00 CF 89 
 1A 00 \dx00000001 
 \b1 
 \wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
 \wx8000 // default: return param[123];
 
 // param[122] = (param[126] * 20)
-277 * 9 0D 7A \D* 7E FF \dx00000014 
+282 * 9 0D 7A \D* 7E FF \dx00000014 
 
 // param[123] = (param[122] | 32768)
-278 * 9 0D 7B \D| 7A FF \dx00008000 
+283 * 9 0D 7B \D| 7A FF \dx00008000 
 
-279 * 7 06 
+284 * 7 06 
 7B 02 FF \wx0015 
 FF 
 
 // Name: var_runcost_EMU
-280 * 23 02 00 CF 89 
+285 * 23 02 00 CE 89 
 1A 00 \dx00000001 
 \b1 
 \wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
 \wx8000 // default: return param[123];
 
 // param[122] = (param[125] * 18)
-281 * 9 0D 7A \D* 7D FF \dx00000012 
+286 * 9 0D 7A \D* 7D FF \dx00000012 
 
 // param[123] = (param[122] | 32768)
-282 * 9 0D 7B \D| 7A FF \dx00008000 
+287 * 9 0D 7B \D| 7A FF \dx00008000 
 
-283 * 7 06 
+288 * 7 06 
 7B 02 FF \wx0015 
 FF 
 
 // Name: var_capacity_EMU250_1
-284 * 23 02 00 CE 89 
+289 * 23 02 00 CD 89 
 1A 00 \dx00000001 
 \b1 
 \wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
 \wx8000 // default: return param[123];
 
 // param[122] = (param[125] * 28)
-285 * 9 0D 7A \D* 7D FF \dx0000001C 
-
-// param[123] = (param[122] | 32768)
-286 * 9 0D 7B \D| 7A FF \dx00008000 
-
-287 * 7 06 
-7B 02 FF \wx0015 
-FF 
-
-// Name: var_capacity_EMU250_2
-288 * 23 02 00 CD 89 
-1A 00 \dx00000001 
-\b1 
-\wx8000 \dx00000001 \dx00000000 	// Bogus range to avoid nvar == 0
-\wx8000 // default: return param[123];
-
-// param[121] = param[1]
-289 * 5 0D 79 \D= 01 00 
-
-// param[122] = (param[121] * 25)
-290 * 9 0D 7A \D* 79 FF \dx00000019 
+290 * 9 0D 7A \D* 7D FF \dx0000001C 
 
 // param[123] = (param[122] | 32768)
 291 * 9 0D 7B \D| 7A FF \dx00008000 
@@ -1337,7 +1337,7 @@ FF
 7B 02 FF \wx0015 
 FF 
 
-// Name: var_speed_EMUCW
+// Name: var_capacity_EMU250_2
 293 * 23 02 00 CC 89 
 1A 00 \dx00000001 
 \b1 
@@ -6052,11 +6052,11 @@ C6 00 \dx0000FFFF
 \wx00DD // default: sw_KTXCW_cargo_subtype_text_for_KTX1N;
 
 // Name: sw_KTXCW_cargo_capacity
-2099 * 23 02 00 D3 89 
+2099 * 23 02 00 D2 89 
 F2 00 \dx000000FF 
 \b1 
-\wx00D2 \dx00000001 \dx00000001 	// 1 .. 1: var_capacity_KTXCWS;
-\wx00D3 // default: var_capacity_KTXCW;
+\wx00D1 \dx00000001 \dx00000001 	// 1 .. 1: var_capacity_KTXCWS;
+\wx00D2 // default: var_capacity_KTXCW;
 
 2100 * 55 00 00 \b18 01 FF \wx1768 
 06 0F 
@@ -6091,7 +6091,7 @@ F2 00 \dx000000FF
 2106 ./gfx/ko_train1.png 8bpp 10 230 31 11 -17 -6 normal 
 
 // Name: set_KTXCW_purchase - feature 00
-2107 * 9 02 00 D2 \b1 \b1 
+2107 * 9 02 00 D1 \b1 \b1 
 \w0 
 \w0 
 
@@ -6103,26 +6103,26 @@ F2 00 \dx000000FF
 10 00 \dx000000FF 
 \b4 
 \wx00FB \dx00000007 \dx00000007 	// var_loading_speed_SLOW;
-\wx00CC \dx00000009 \dx00000009 	// var_speed_EMUCW;
-\wx00D4 \dx0000000D \dx0000000D 	// var_runcost_KTXCW;
-\wx00D3 \dx00000014 \dx00000014 	// sw_KTXCW_cargo_capacity;
+\wx00D5 \dx00000009 \dx00000009 	// var_speed_KTXCW;
+\wx00D3 \dx0000000D \dx0000000D 	// var_runcost_KTXCW;
+\wx00D2 \dx00000014 \dx00000014 	// sw_KTXCW_cargo_capacity;
 \wx00D6 // sw_KTXCW_coach;
 
 // Name: @action3_65
-2110 * 53 02 00 D5 89 
+2110 * 53 02 00 D4 89 
 10 00 \dx000000FF 
 \b4 
-\wx00CC \dx00000009 \dx00000009 	// var_speed_EMUCW;
-\wx00D4 \dx0000000D \dx0000000D 	// var_runcost_KTXCW;
-\wx00D3 \dx00000014 \dx00000014 	// sw_KTXCW_cargo_capacity;
-\wx00D5 \dx00000017 \dx00000017 	// var_cost_KTXCW;
+\wx00D5 \dx00000009 \dx00000009 	// var_speed_KTXCW;
+\wx00D3 \dx0000000D \dx0000000D 	// var_runcost_KTXCW;
+\wx00D2 \dx00000014 \dx00000014 	// sw_KTXCW_cargo_capacity;
+\wx00D4 \dx00000017 \dx00000017 	// var_cost_KTXCW;
 \wx00D6 // sw_KTXCW_coach;
 
 // Name: @action3_66
 2111 * 43 02 00 B6 89 
 0C 00 \dx0000FFFF 
 \b3 
-\wx00D3 \dx00000015 \dx00000015 	// sw_KTXCW_cargo_capacity;
+\wx00D2 \dx00000015 \dx00000015 	// sw_KTXCW_cargo_capacity;
 \wx00DD \dx00000019 \dx00000019 	// sw_KTXCW_cargo_subtype_text;
 \wx00B6 \dx00000036 \dx00000036 	// @action3_64;
 \wx00D6 // sw_KTXCW_coach;
@@ -6131,9 +6131,9 @@ F2 00 \dx000000FF
 2112 * 43 02 00 D6 89 
 0C 00 \dx0000FFFF 
 \b3 
-\wx00D2 \dx00000000 \dx00000000 	// set_KTXCW_purchase;
+\wx00D1 \dx00000000 \dx00000000 	// set_KTXCW_purchase;
 \wx8006 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_ABLE);
-\wx00D5 \dx00000036 \dx00000036 	// @action3_65;
+\wx00D4 \dx00000036 \dx00000036 	// @action3_65;
 \wx00D6 // sw_KTXCW_coach;
 
 2113 * 12 03 00 01 FF \wx1768 \b1 
@@ -6243,14 +6243,14 @@ F2 00 \dx000000FF
 \wx00B6 // default: sw_EMU250_loco1;
 
 // Name: sw_EMU250_capacity
-2169 * 23 02 00 CD 89 
+2169 * 23 02 00 CC 89 
 40 00 \dx000000FF 
 \b1 
-\wx00CE \dx00000000 \dx00000000 	// 0 .. 0: var_capacity_EMU250_1;
-\wx00CD // default: var_capacity_EMU250_2;
+\wx00CD \dx00000000 \dx00000000 	// 0 .. 0: var_capacity_EMU250_1;
+\wx00CC // default: var_capacity_EMU250_2;
 
 // Name: sw_EMU_attach
-2170 * 33 02 00 CE 89 
+2170 * 33 02 00 CD 89 
 C6 00 \dx0000FFFF 
 \b2 
 \wx8401 \dx00001591 \dx00001591 	// 5521 .. 5521: return 1025;
@@ -6297,33 +6297,33 @@ C6 00 \dx0000FFFF
 1E 08 
 
 // Name: @action3_68
-2175 * 53 02 00 D5 89 
+2175 * 53 02 00 D4 89 
 10 00 \dx000000FF 
 \b4 
 \wx00FB \dx00000007 \dx00000007 	// var_loading_speed_SLOW;
-\wx00D1 \dx00000009 \dx00000009 	// var_speed_EMU250;
-\wx00CF \dx0000000D \dx0000000D 	// var_runcost_EMU;
-\wx00CD \dx00000014 \dx00000014 	// sw_EMU250_capacity;
+\wx00D0 \dx00000009 \dx00000009 	// var_speed_EMU250;
+\wx00CE \dx0000000D \dx0000000D 	// var_runcost_EMU;
+\wx00CC \dx00000014 \dx00000014 	// sw_EMU250_capacity;
 \wx00B6 // sw_EMU250_engine;
 
 // Name: @action3_69
-2176 * 53 02 00 D0 89 
+2176 * 53 02 00 CF 89 
 10 00 \dx000000FF 
 \b4 
-\wx00D1 \dx00000009 \dx00000009 	// var_speed_EMU250;
-\wx00CF \dx0000000D \dx0000000D 	// var_runcost_EMU;
-\wx00CD \dx00000014 \dx00000014 	// sw_EMU250_capacity;
-\wx00D0 \dx00000017 \dx00000017 	// var_cost_EMU250;
+\wx00D0 \dx00000009 \dx00000009 	// var_speed_EMU250;
+\wx00CE \dx0000000D \dx0000000D 	// var_runcost_EMU;
+\wx00CC \dx00000014 \dx00000014 	// sw_EMU250_capacity;
+\wx00CF \dx00000017 \dx00000017 	// var_cost_EMU250;
 \wx00B6 // sw_EMU250_engine;
 
 // Name: @action3_70
-2177 * 53 02 00 D5 89 
+2177 * 53 02 00 D4 89 
 0C 00 \dx0000FFFF 
 \b4 
-\wx00CD \dx00000015 \dx00000015 	// sw_EMU250_capacity;
-\wx00CE \dx0000001D \dx0000001D 	// sw_EMU_attach;
+\wx00CC \dx00000015 \dx00000015 	// sw_EMU250_capacity;
+\wx00CD \dx0000001D \dx0000001D 	// sw_EMU_attach;
 \wx00FF \dx00000031 \dx00000031 	// sw_ko_train_start_stop;
-\wx00D5 \dx00000036 \dx00000036 	// @action3_68;
+\wx00D4 \dx00000036 \dx00000036 	// @action3_68;
 \wx00B6 // sw_EMU250_engine;
 
 // Name: @action3_71
@@ -6332,15 +6332,15 @@ C6 00 \dx0000FFFF
 \b3 
 \wx00D6 \dx00000000 \dx00000000 	// set_EMU250_purchase;
 \wx8007 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_UNABLE);
-\wx00D0 \dx00000036 \dx00000036 	// @action3_69;
+\wx00CF \dx00000036 \dx00000036 	// @action3_69;
 \wx00B6 // sw_EMU250_engine;
 
 2179 * 12 03 00 01 FF \wx1591 \b1 
 FF \wx00B6 	// @action3_71;
-\wx00D5 	// @action3_70;
+\wx00D4 	// @action3_70;
 
 // Name: set_EMU250_loco4 - feature 00
-2180 * 9 02 00 D5 \b1 \b1 
+2180 * 9 02 00 D4 \b1 \b1 
 \w3 
 \w3 
 
@@ -6353,11 +6353,11 @@ FF \wx00B6 	// @action3_71;
 2182 * 23 02 00 B6 89 
 41 08 \dx000000FF 
 \b1 
-\wx00D5 \dx00000000 \dx00000000 	// 0 .. 0: set_EMU250_loco4;
+\wx00D4 \dx00000000 \dx00000000 	// 0 .. 0: set_EMU250_loco4;
 \wx00B6 // default: set_EMU250_loco3;
 
 // Name: set_EMU250_loco2 - feature 00
-2183 * 9 02 00 D5 \b1 \b1 
+2183 * 9 02 00 D4 \b1 \b1 
 \w5 
 \w5 
 
@@ -6365,7 +6365,7 @@ FF \wx00B6 	// @action3_71;
 2184 * 23 02 00 B6 89 
 41 00 \dx000000FF 
 \b1 
-\wx00D5 \dx00000000 \dx00000000 	// 0 .. 0: set_EMU250_loco2;
+\wx00D4 \dx00000000 \dx00000000 	// 0 .. 0: set_EMU250_loco2;
 \wx00B6 // default: sw_EMU250_coach_by_free_tail;
 
 // Name: sw_EMUCW_coach
@@ -6415,7 +6415,7 @@ F2 00 \dx000000FF
 2193 ./gfx/ko_train1.png 8bpp 500 1280 31 12 -17 -7 normal 
 
 // Name: set_EMUCW_purchase - feature 00
-2194 * 9 02 00 D5 \b1 \b1 
+2194 * 9 02 00 D4 \b1 \b1 
 \w0 
 \w0 
 
@@ -6423,7 +6423,7 @@ F2 00 \dx000000FF
 1E 08 
 
 // Name: @action3_72
-2196 * 43 02 00 D0 89 
+2196 * 43 02 00 CF 89 
 10 00 \dx000000FF 
 \b3 
 \wx00FB \dx00000007 \dx00000007 	// var_loading_speed_SLOW;
@@ -6441,25 +6441,25 @@ F2 00 \dx000000FF
 \wx00B6 // sw_EMUCW_coach;
 
 // Name: @action3_74
-2198 * 33 02 00 D0 89 
+2198 * 33 02 00 CF 89 
 0C 00 \dx0000FFFF 
 \b2 
 \wx00C9 \dx00000015 \dx00000015 	// sw_EMUCW_cargo_capacity;
-\wx00D0 \dx00000036 \dx00000036 	// @action3_72;
+\wx00CF \dx00000036 \dx00000036 	// @action3_72;
 \wx00B6 // sw_EMUCW_coach;
 
 // Name: @action3_75
 2199 * 43 02 00 B6 89 
 0C 00 \dx0000FFFF 
 \b3 
-\wx00D5 \dx00000000 \dx00000000 	// set_EMUCW_purchase;
+\wx00D4 \dx00000000 \dx00000000 	// set_EMUCW_purchase;
 \wx8007 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_UNABLE);
 \wx00CB \dx00000036 \dx00000036 	// @action3_73;
 \wx00B6 // sw_EMUCW_coach;
 
 2200 * 12 03 00 01 FF \wx1770 \b1 
 FF \wx00B6 	// @action3_75;
-\wx00D0 	// @action3_74;
+\wx00CF 	// @action3_74;
 
 2201 * 6 01 00 \b1 FF \wx0008 
 
@@ -6473,7 +6473,7 @@ FF \wx00B6 	// @action3_75;
 2209 ./gfx/ko_train1.png 8bpp 295 1040 20 16 -6 -8 normal 
 
 // Name: set_ITXSME_coachT - feature 00
-2210 * 9 02 00 D0 \b1 \b1 
+2210 * 9 02 00 CF \b1 \b1 
 \w0 
 \w0 
 
@@ -6493,7 +6493,7 @@ FF \wx00B6 	// @action3_75;
 2217 * 23 02 00 B6 89 
 41 08 \dx000000FF 
 \b1 
-\wx00D0 \dx00000000 \dx00000000 	// 0 .. 0: set_ITXSME_coachT;
+\wx00CF \dx00000000 \dx00000000 	// 0 .. 0: set_ITXSME_coachT;
 \wx00B6 // default: set_ITXSME_coach;
 
 2218 * 6 01 00 \b1 FF \wx0008 
@@ -6508,7 +6508,7 @@ FF \wx00B6 	// @action3_75;
 2226 ./gfx/ko_train1.png 8bpp 295 980 20 16 -6 -8 normal 
 
 // Name: set_ITXSME_coachH - feature 00
-2227 * 9 02 00 D0 \b1 \b1 
+2227 * 9 02 00 CF \b1 \b1 
 \w0 
 \w0 
 
@@ -6516,7 +6516,7 @@ FF \wx00B6 	// @action3_75;
 2228 * 23 02 00 B6 89 
 41 00 \dx000000FF 
 \b1 
-\wx00D0 \dx00000000 \dx00000000 	// 0 .. 0: set_ITXSME_coachH;
+\wx00CF \dx00000000 \dx00000000 	// 0 .. 0: set_ITXSME_coachH;
 \wx00B6 // default: sw_ITXSME_coach_by_free_tail;
 
 2229 * 6 01 00 \b18 FF \wx0004 
@@ -6612,7 +6612,7 @@ FF \wx00B6 	// @action3_75;
 2301 ./gfx/ko_train1.png 8bpp 445 170 21 17 -6 -8 normal 
 
 // Name: set_SMEWA2_coach - feature 00
-2302 * 9 02 00 D0 \b1 \b1 
+2302 * 9 02 00 CF \b1 \b1 
 \w0 
 \w0 
 
@@ -6622,7 +6622,7 @@ FF \wx00B6 	// @action3_75;
 \w1 
 
 // Name: set_SMEWA_FORMERTJ_coach - feature 00
-2304 * 9 02 00 D5 \b1 \b1 
+2304 * 9 02 00 D4 \b1 \b1 
 \w2 
 \w2 
 
@@ -6632,21 +6632,21 @@ FF \wx00B6 	// @action3_75;
 \w3 
 
 // Name: sw_SMECW_coach_old
-2306 * 53 02 00 D5 89 
+2306 * 53 02 00 D4 89 
 F2 00 \dx000000FF 
 \b4 
-\wx00D0 \dx00000001 \dx00000001 	// 1 .. 1: set_SMEWA2_coach;
+\wx00CF \dx00000001 \dx00000001 	// 1 .. 1: set_SMEWA2_coach;
 \wx00CB \dx00000002 \dx00000002 	// 2 .. 2: set_SMEWA1_coach;
 \wx00B6 \dx00000003 \dx00000003 	// 3 .. 3: sw_ITXSME_coach;
-\wx00D5 \dx00000004 \dx00000004 	// 4 .. 4: set_SMEWA_FORMERTJ_coach;
+\wx00D4 \dx00000004 \dx00000004 	// 4 .. 4: set_SMEWA_FORMERTJ_coach;
 \wx00C9 // default: set_SMEWA3_coach;
 
 // Name: sw_SMECW_coach
-2307 * 23 02 00 D5 8A 
+2307 * 23 02 00 D4 8A 
 C6 00 \dx0000FFFF 
 \b1 
 \wx00B6 \dx0000158F \dx0000158F 	// 5519 .. 5519: sw_ITXSME_coach;
-\wx00D5 // default: sw_SMECW_coach_old;
+\wx00D4 // default: sw_SMECW_coach_old;
 
 // Name: sw_SMECW_cargo_capcity
 2308 * 23 02 00 E3 89 
@@ -6702,7 +6702,7 @@ C6 00 \dx0000FFFF
 \wx00E6 \dx00000009 \dx00000009 	// var_speed_SMECW;
 \wx00E4 \dx0000000D \dx0000000D 	// var_runcost_SMECW;
 \wx00E3 \dx00000014 \dx00000014 	// sw_SMECW_cargo_capcity;
-\wx00D5 // sw_SMECW_coach;
+\wx00D4 // sw_SMECW_coach;
 
 // Name: @action3_77
 2317 * 53 02 00 E5 89 
@@ -6712,7 +6712,7 @@ C6 00 \dx0000FFFF
 \wx00E4 \dx0000000D \dx0000000D 	// var_runcost_SMECW;
 \wx00E3 \dx00000014 \dx00000014 	// sw_SMECW_cargo_capcity;
 \wx00E5 \dx00000017 \dx00000017 	// var_cost_SMECW;
-\wx00D5 // sw_SMECW_coach;
+\wx00D4 // sw_SMECW_coach;
 
 // Name: @action3_78
 2318 * 53 02 00 B6 89 
@@ -6722,19 +6722,19 @@ C6 00 \dx0000FFFF
 \wx00EC \dx00000019 \dx00000019 	// sw_SAEMAEUL_cargo_subtype_text;
 \wx00E2 \dx0000001D \dx0000001D 	// sw_SMECW_attach;
 \wx00B6 \dx00000036 \dx00000036 	// @action3_76;
-\wx00D5 // sw_SMECW_coach;
+\wx00D4 // sw_SMECW_coach;
 
 // Name: @action3_79
-2319 * 43 02 00 D5 89 
+2319 * 43 02 00 D4 89 
 0C 00 \dx0000FFFF 
 \b3 
 \wx00C9 \dx00000000 \dx00000000 	// set_SMEWA3_coach;
 \wx8006 \dx00000023 \dx00000023 	// return string(STR_REFIT_ADDITIONAL_ABLE);
 \wx00E5 \dx00000036 \dx00000036 	// @action3_77;
-\wx00D5 // sw_SMECW_coach;
+\wx00D4 // sw_SMECW_coach;
 
 2320 * 12 03 00 01 FF \wx1769 \b1 
-FF \wx00D5 	// @action3_79;
+FF \wx00D4 	// @action3_79;
 \wx00B6 	// @action3_78;
 
 // Name: set_GTRAIN_coach1 - feature 00
@@ -6743,7 +6743,7 @@ FF \wx00D5 	// @action3_79;
 \w4 
 
 // Name: set_GTRAIN_coach2 - feature 00
-2322 * 9 02 00 D5 \b1 \b1 
+2322 * 9 02 00 D4 \b1 \b1 
 \w5 
 \w5 
 
@@ -6767,7 +6767,7 @@ FF \wx00D5 	// @action3_79;
 40 80 \dx000000FF \dx00000000 \dx00000005 
 \b5 
 \wx00B6 \dx00000001 \dx00000001 	// 1 .. 1: set_GTRAIN_coach1;
-\wx00D5 \dx00000002 \dx00000002 	// 2 .. 2: set_GTRAIN_coach2;
+\wx00D4 \dx00000002 \dx00000002 	// 2 .. 2: set_GTRAIN_coach2;
 \wx00E5 \dx00000003 \dx00000003 	// 3 .. 3: set_GTRAIN_coach3;
 \wx00C9 \dx00000004 \dx00000004 	// 4 .. 4: set_GTRAIN_coach4;
 \wx00E2 \dx00000000 \dx00000000 	// 0 .. 0: set_GTRAIN_coach5;
@@ -6789,7 +6789,7 @@ FF \wx00D5 	// @action3_79;
 \w11 
 
 // Name: set_MGHWB_coach - feature 00
-2330 * 9 02 00 D5 \b1 \b1 
+2330 * 9 02 00 D4 \b1 \b1 
 \w12 
 \w12 
 
@@ -6825,7 +6825,7 @@ F2 00 \dx000000FF
 \wx00E2 \dx00000001 \dx00000001 	// 1 .. 1: set_MGHWE_coach;
 \wx00C9 \dx00000002 \dx00000002 	// 2 .. 2: set_MGHWD_coach;
 \wx00E5 \dx00000003 \dx00000003 	// 3 .. 3: set_MGHWC_coach;
-\wx00D5 \dx00000004 \dx00000004 	// 4 .. 4: set_MGHWB_coach;
+\wx00D4 \dx00000004 \dx00000004 	// 4 .. 4: set_MGHWB_coach;
 \wx00EC \dx00000005 \dx00000005 	// 5 .. 5: set_MGHWA_coach;
 \wx00E3 \dx00000006 \dx00000006 	// 6 .. 6: set_HRANG_coach;
 \wx00E4 \dx0000000A \dx0000000A 	// 10 .. 10: set_STRAIN_coach1;

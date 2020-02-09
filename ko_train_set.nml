@@ -722,6 +722,7 @@ switch(FEAT_TRAINS, SELF, var_runcost_KTXxN, 1)		{ return 20	* sw_running_cost_f
 switch(FEAT_TRAINS, SELF, var_speed_KTX2N, 1)		{ return 33	* coeff_speed_general; }
 switch(FEAT_TRAINS, SELF, var_cost_KTX2N, 1)		{ return 8	* sw_cost_factor; }
 
+switch(FEAT_TRAINS, SELF, var_speed_KTXCW, 1)		{ return 33	* coeff_speed_general; }
 switch(FEAT_TRAINS, SELF, var_cost_KTXCW, 1)		{ return 20	* sw_cost_factor; }
 switch(FEAT_TRAINS, SELF, var_runcost_KTXCW, 1)		{ return 20	* sw_running_cost_factor; }
 switch(FEAT_TRAINS, SELF, var_capacity_KTXCW, 1)	{ return 29	* sw_cargo_capacity_factor; }
@@ -2755,7 +2756,7 @@ item(FEAT_TRAINS, ko_train_KTXCW, 5992) {
 		cost_factor:			var_cost_KTXCW;
 		running_cost_factor:		var_runcost_KTXCW;
 		cargo_capacity:			sw_KTXCW_cargo_capacity;
-		speed:				var_speed_EMUCW;
+		speed:				var_speed_KTXCW;
 		loading_speed:			var_loading_speed_SLOW;
 
 		cargo_subtype_text:		sw_KTXCW_cargo_subtype_text;
