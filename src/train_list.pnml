@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+// K4400
+#include "locomotive/K4400.pnml"
+
+// K7000
+// #include "src/locomotive/K7000.pnml"
+
+// K7x00
+// #include "locomotive/K7x00.pnml"

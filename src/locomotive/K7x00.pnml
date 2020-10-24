@@ -1,0 +1,187 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * K7x00
+ */
+// Defines
+#define SPEED_K7x00           150
+#define COST_K7x00            2
+#define RUNNINGCOST_K7x00     10
+
+switch(FEAT_TRAINS, SELF, var_speed_K7x00, 1)		{ return SPEED_K7x00 / 10 * coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_K7x00, 1)		{ return COST_K7x00 / 10 * sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_Kx000, 1)		{ return RUNNINGCOST_K7x00 / 10 * sw_running_cost_factor; }
+
+// Template for 7x00
+template tmpl_K7x00(x, y) {
+	[x,      y,   8,  22,  -3, -11]
+	[x+15,   y,  22,  17, -14,  -9]
+	[x+45,   y,  32,  11, -17,  -7]
+	[x+95,   y,  22,  17,  -6,  -9]
+	[x+125,  y,   8,  22,  -3, -11]
+	[x+140,  y,  22,  17, -15,  -9]
+	[x+175,  y,  32,  11, -18,  -7]
+	[x+225,  y,  22,  17,  -7,  -9]
+}
+template tmpl_K7x00_purchase(x, y) {
+	tmpl_purchase_detail(x, y, 50, 11, -25, -6)
+}
+
+// 7x00
+spriteset(set_K7x00_purchase,       "./gfx/ko_train1.png") { tmpl_K7x00_purchase(10, 560) }
+spriteset(set_K7x00A_loco,          "./gfx/ko_train1.png") { tmpl_K7x00(70,  560) }           // Red & White & Blue print
+spriteset(set_K7x00B_loco,          "./gfx/ko_train1.png") { tmpl_K7x00(70, 1190) }           // Cargo print
+spriteset(set_K7x00C_loco,          "./gfx/ko_train1.png") { tmpl_K7x00(70, 1160) }           // Green & Yellow print
+spriteset(set_K7x00D_loco,          "./gfx/ko_train1.png") { tmpl_K7x00(70, 1130) }           // Blue & White print
+spriteset(set_K7x00E_loco,          "./gfx/ko_train1.png") { tmpl_K7x00(70, 1100) }           // Black & Oragne print
+
+// Haerang
+spriteset(set_HRANG_purchase,       "./gfx/ko_train1.png") { tmpl_purchase(10, 920) }
+spriteset(set_K7x00_HRANG_loco,     "./gfx/ko_train1.png") { tmpl_K7x00(70, 920) }
+spriteset(set_HRANG_coach,          "./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 680) }
+spriteset(set_HRANG_CAFE_coach,     "./gfx/ko_train1.png") { tmpl_wagon_by_coor(350, 710) }
+spriteset(set_HRANG_GEN_coach,      "./gfx/ko_train1.png") {
+	tmpl_wagon_by_coor(350, 740)
+	tmpl_wagon_by_coor(350, 770)
+}
+
+// G-train
+spriteset(set_K7x00_GTRAIN_loco,	"./gfx/ko_train_tours.png") { tmpl_K7x00(70, 10) }
+spriteset(set_GTRAIN_coach1,		"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(70, 40) }
+spriteset(set_GTRAIN_coach2,		"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(70, 70) }
+spriteset(set_GTRAIN_coach3,		"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(70, 100) }
+spriteset(set_GTRAIN_coach4,		"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(70, 130) }
+spriteset(set_GTRAIN_coach5,		"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(70, 160) }
+spriteset(set_GTRAIN_GEN_coach,		"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(195, 40) }
+
+// S-train
+spriteset(set_K7x00_STRAIN_loco,	"./gfx/ko_train_tours.png") { tmpl_K7x00(410, 10) }
+spriteset(set_STRAIN_coach1,		"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(410, 40) }
+spriteset(set_STRAIN_coach2,		"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(410, 70) }
+spriteset(set_STRAIN_GEN_coach1,	"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(410, 100) }
+spriteset(set_STRAIN_GEN_coach2,	"./gfx/ko_train_tours.png") { tmpl_wagon_by_coor(410, 130) }
+
+// Refit Paintings
+switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
+	0:	set_K7x00A_loco;
+	1:	set_K7x00B_loco;
+	2:	set_K7x00C_loco;
+	3:	set_K7x00D_loco;
+	4:	set_K7x00E_loco;
+//	5:	set_ERRSPRITE;	// RESERVED
+	6:	set_K7x00_HRANG_loco;
+//	7:	set_ERRSPRITE;	// RESERVED
+//	8:	set_ERRSPRITE;	// RESERVED
+//	9:	set_ERRSPRITE;	// RESERVED
+	10:	set_K7x00_STRAIN_loco;
+	11:	set_K7x00_STRAIN_loco;
+	12:	set_K7x00_GTRAIN_loco;
+	set_K7x00A_loco;
+}
+switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
+	0:	return string(STR_REFIT_PAINTING_THESEDAYS);
+	1:	return string(STR_REFIT_PAINTING_7x00_CARGO);
+	2:	return string(STR_REFIT_PAINTING_7x00_OLD_KORAIL);
+	3:	return string(STR_REFIT_PAINTING_7x00_FIRST_KORAIL);
+	4:	return string(STR_REFIT_PAINTING_7x00_TIGER);
+	5:	return string(STR_REFIT_IMPOSSIBLE);	// RESERVED
+	6:	return string(STR_REFIT_PAINTING_HAERANG);
+	7:	return string(STR_REFIT_IMPOSSIBLE);	// RESERVED
+	8:	return string(STR_REFIT_IMPOSSIBLE);	// RESERVED
+	9:	return string(STR_REFIT_IMPOSSIBLE);	// RESERVED
+	10:	return string(STR_REFIT_PAINTING_STRAIN_A);
+	11:	return string(STR_REFIT_PAINTING_STRAIN_B);
+	12:	return string(STR_REFIT_PAINTING_GTRAIN);
+	return string(STR_REFIT_PAINTING_THESEDAYS);
+}
+
+// item
+item(FEAT_TRAINS, ko_train_K7x00, 55070) {
+	property {
+		// Common properties
+		name:							string(STR_K7x00_NAME);
+		climates_available:				ALL_CLIMATES;
+		introduction_date:				date(1963, 1, 1);
+		track_type:						RAIL;
+		engine_class:					ENGINE_CLASS_DIESEL;
+		sprite_id:						SPRITE_ID_NEW_TRAIN;
+		length:							7;
+
+		// Spec
+		speed:							150 km/h;
+		power:							2719 kW;
+		weight:							88 ton;
+		tractive_effort_coefficient:	0.25;
+		air_drag_coefficient:			0.1;
+
+		// Model
+		model_life:						30;
+		vehicle_life:					30;
+		retire_early:					0;
+		reliability_decay:				0;
+
+		// Cargo
+		cargo_capacity:					1;
+		refittable_cargo_classes:		NO_CARGO_CLASS;
+		non_refittable_cargo_classes:	NO_CARGO_CLASS;
+		cargo_allow_refit:				[PASS];
+		cargo_disallow_refit:			[];
+		loading_speed:					0;
+
+		// Costs
+		cost_factor:					10;
+		refit_cost:						0;
+		running_cost_base:				RUNNING_COST_DIESEL;
+		running_cost_factor:			150;
+
+		// Flags
+		ai_special_flag:				AI_FLAG_PASSENGER;
+		misc_flags:						bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+		bitmask_vehicle_info:			0;
+	}
+	property {
+		name:							string(STR_K7x00_NAME);
+		climates_available:				ALL_CLIMATES;
+		track_type:						RAIL;
+		speed:							150 km/h;
+		power:							3000 kW;
+		weight:                        124 ton;
+		tractive_effort_coefficient:   0.25;
+		air_drag_coefficient:          0.1;
+		cargo_capacity:                1;
+		introduction_date:             date(1972, 1, 1);
+		cargo_allow_refit:             [PASS];
+		cargo_disallow_refit:          [];
+		loading_speed:                 0;
+		vehicle_life:                  30;
+		model_life:                    VEHICLE_NEVER_EXPIRES;
+		retire_early:                  0;
+		reliability_decay:             0;
+		cost_factor:                   10;
+		running_cost_base:             RUNNING_COST_DIESEL;
+		running_cost_factor:           150;
+		refit_cost:                    0;
+		ai_special_flag:               AI_FLAG_PASSENGER;
+		engine_class:                  ENGINE_CLASS_DIESEL;
+		sprite_id:                     SPRITE_ID_NEW_TRAIN;
+		misc_flags:                    bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+		bitmask_vehicle_info:          0;
+	}
+	graphics {
+		default:             sw_K7x00_loco;
+		purchase:            set_K7x00_purchase;
+
+		speed:               var_speed_K7x00;
+		cost_factor:         var_cost_K7x00;
+		running_cost_factor: var_runcost_Kx000;
+		cargo_capacity:      0;
+
+		can_attach_wagon:    sw_GENE_attach;
+		cargo_subtype_text:	 sw_K7x00_cargo_subtype_text;
+		additional_text:     string(STR_REFIT_ADDITIONAL_ABLE);
+	}
+}
+// End of "K7x00"

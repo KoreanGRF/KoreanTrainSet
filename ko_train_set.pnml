@@ -1,0 +1,54 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+ * NewGRF basic information
+ *----------------------------------------------------------------------------*/
+grf {
+	grfid: "TK\55\05";
+	name:  string(STR_GRF_NAME_WITH_VER);
+	desc:  string(STR_GRF_DESC);
+	url:   string(STR_GRF_URL);
+	version: 1;
+	min_compatible_version: 0;
+
+	
+	// Parameters
+	#include "src/parameter.pnml"
+}
+
+// Check OpenTTD Version
+if(ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 7, 0, 21278)) {
+	error(FATAL, string(STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION), "1.7.0/r21278");
+}
+
+// Tables
+cargotable {
+	PASS, MAIL, COAL, IORE, CORP, GRAI, LVST, WOOD, STEL, WHEA, TOFF, FRUT, MAIZ, CORE, CTCD, SUGR,
+	OIL_, WATR, COLA, FZDR, ACID, CHLO, MILK, RUBR, PLST, BEER, DYES, EOIL, KAOL, PETR, RFPR, FUEL,
+	METL
+}
+
+// 속도, 가격, 유지비 변수 및 계수 설정
+sw_cost_factor =			1 << coeff_cost_factor;
+sw_running_cost_factor =	1 << coeff_running_cost_factor;
+sw_cargo_capacity_factor =	1 << coeff_cargo_capacity_factor;
+sw_loading_speed_factor =	1 << coeff_loading_speed_factor;
+
+// Load templates
+#include "src/template_list.pnml"
+
+// Load Switches
+#include "src/switch_list.pnml"
+
+// Load trains
+#include "src/train_list.pnml"
+
+// 경유지 간소화
+//#include "src/simplify_waypoint.pnml"
+
+// Disable default engines
+disable_item(FEAT_TRAINS, 0, 26);

@@ -1,0 +1,181 @@
+	// 속도 계수 (일반)
+	param 1 {
+		coeff_speed_general {
+			type: int;
+			name: string(STR_PARAM_SPEED_GENERAL_NAME);
+			desc: string(STR_PARAM_SPEED_GENERAL_DESC);
+			min_value: 1;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+
+	// 속도 계수 (준고속)
+	param 2 {
+		coeff_speed_subexpress {
+			type: int;
+			name: string(STR_PARAM_SPEED_SUBEXPRESS_NAME);
+			desc: string(STR_PARAM_SPEED_SUBEXPRESS_DESC);
+			min_value: 1;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+
+	// 속도 계수 (지하철)
+	param 3 {
+		coeff_speed_subway {
+			type: int;
+			name: string(STR_PARAM_SPEED_SUBWAY_NAME);
+			desc: string(STR_PARAM_SPEED_SUBWAY_DESC);
+			min_value: 1;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+
+	// 속도 계수 (경전철 - 고무)
+	param 4 {
+		coeff_speed_light_rail {
+			type: int;
+			name: string(STR_PARAM_SPEED_LIGHTRAIL1_NAME);
+			desc: string(STR_PARAM_SPEED_LIGHTRAIL1_DESC);
+			min_value: 1;
+			max_value: 30;
+			def_value: 10;
+		}
+	}
+
+/*
+	// RESERVED
+	// 속도 계수 (경전철 - 철)
+	param 5 {
+		coeff_speed_light_rail {
+			type: int;
+			name: string(STR_PARAM_SPEED_LIGHTRAIL2_NAME);
+			desc: string(STR_PARAM_SPEED_LIGHTRAIL2_DESC);
+			min_value: 1;
+			max_value: 30;
+			def_value: 10;
+		}
+	}
+//*/
+
+	// 가격 계수
+	param 6 {
+		coeff_cost_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_COST_NAME);
+			desc: string(STR_PARAM_FACTOR_COST_DESC);
+			min_value: 0;
+			max_value: 10;
+			def_value: 3;
+			names: {
+				0:	string(STR_PARAM_OPT_FACTOR_BY_1_8);
+				1:	string(STR_PARAM_OPT_FACTOR_BY_1_4);
+				2:	string(STR_PARAM_OPT_FACTOR_BY_1_2);
+				3:	string(STR_PARAM_OPT_FACTOR_BY_1);
+				4:	string(STR_PARAM_OPT_FACTOR_BY_2);
+				5:	string(STR_PARAM_OPT_FACTOR_BY_4);
+				6:	string(STR_PARAM_OPT_FACTOR_BY_8);
+				7:	string(STR_PARAM_OPT_FACTOR_BY_16);
+				8:	string(STR_PARAM_OPT_FACTOR_BY_32);
+				9:	string(STR_PARAM_OPT_FACTOR_BY_64);
+				10:	string(STR_PARAM_OPT_FACTOR_BY_128);
+			};
+		}
+	}
+
+	// 유지비 계수
+	param 7 {
+		coeff_running_cost_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_RUNNING_COST_NAME);
+			desc: string(STR_PARAM_FACTOR_RUNNING_COST_DESC);
+			min_value: 0;
+			max_value: 12;
+			def_value: 5;
+			names: {
+				0:	string(STR_PARAM_OPT_FACTOR_BY_1_32);
+				1:	string(STR_PARAM_OPT_FACTOR_BY_1_16);
+				2:	string(STR_PARAM_OPT_FACTOR_BY_1_8);
+				3:	string(STR_PARAM_OPT_FACTOR_BY_1_4);
+				4:	string(STR_PARAM_OPT_FACTOR_BY_1_2);
+				5:	string(STR_PARAM_OPT_FACTOR_BY_1);
+				6:	string(STR_PARAM_OPT_FACTOR_BY_2);
+				7:	string(STR_PARAM_OPT_FACTOR_BY_4);
+				8:	string(STR_PARAM_OPT_FACTOR_BY_8);
+				9:	string(STR_PARAM_OPT_FACTOR_BY_16);
+				10:	string(STR_PARAM_OPT_FACTOR_BY_32);
+				11:	string(STR_PARAM_OPT_FACTOR_BY_64);
+				12:	string(STR_PARAM_OPT_FACTOR_BY_128);
+			};
+		}
+	}
+
+	// 화물 수송량 계수
+	param 8 {
+		coeff_cargo_capacity_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_CARGO_CAPACITY_NAME);
+			desc: string(STR_PARAM_FACTOR_CARGO_CAPACITY_DESC);
+			min_value: 0;
+			max_value: 8;
+			def_value: 0;
+			names: {
+				0:	string(STR_PARAM_OPT_FACTOR_BY_1);
+				1:	string(STR_PARAM_OPT_FACTOR_BY_2);
+				2:	string(STR_PARAM_OPT_FACTOR_BY_4);
+				3:	string(STR_PARAM_OPT_FACTOR_BY_8);
+				4:	string(STR_PARAM_OPT_FACTOR_BY_16);
+				5:	string(STR_PARAM_OPT_FACTOR_BY_32);
+				6:	string(STR_PARAM_OPT_FACTOR_BY_64);
+				7:	string(STR_PARAM_OPT_FACTOR_BY_128);
+				8:	string(STR_PARAM_OPT_FACTOR_BY_256);
+			};
+		}
+	}
+
+	// 화물 적재 속도 계수
+	param 9 {
+		coeff_loading_speed_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_LOADING_SPEED_NAME);
+			desc: string(STR_PARAM_FACTOR_LOADING_SPEED_DESC);
+			min_value: 0;
+			max_value: 5;
+			def_value: 0;
+			names: {
+				0:	string(STR_PARAM_OPT_FACTOR_BY_1);
+				1:	string(STR_PARAM_OPT_FACTOR_BY_2);
+				2:	string(STR_PARAM_OPT_FACTOR_BY_4);
+				3:	string(STR_PARAM_OPT_FACTOR_BY_8);
+				4:	string(STR_PARAM_OPT_FACTOR_BY_16);
+				5:	string(STR_PARAM_OPT_FACTOR_BY_32);
+			};
+		}
+	}
+
+	// 화차 속도 계수
+	param 10 {
+		wagon_speed_limit {
+			type: bool;
+			name: string(STR_PARAM_WAGON_SPEED_LIMIT_NAME);
+			desc: string(STR_PARAM_WAGON_SPEED_LIMIT_DESC);
+			bit: 1;
+			def_value: 1;
+		}
+	}
+
+	// param11~14 is reserved for future uses
+
+	// 경유지 간소화 기능
+	param 15 {
+		bool_simplize_waypoint {
+			type: bool;
+			name: string(STR_PARAM_SIMPLIZE_WAYPOINT_NAME);
+			desc: string(STR_PARAM_SIMPLIZE_WAYPOINT_DESC);
+			bit: 1;
+			def_value: 1;
+		}
+	}

@@ -1,0 +1,357 @@
+grf {
+	grfid: "TK\55\05";
+	name: string(STR_GRF_NAME_WITH_VER);
+	desc: string(STR_GRF_DESC);
+	url: string(STR_GRF_URL);
+	version: 1;
+	min_compatible_version: 0;
+	param 1 {
+		coeff_speed_general {
+			type: int;
+			name: string(STR_PARAM_SPEED_GENERAL_NAME);
+			desc: string(STR_PARAM_SPEED_GENERAL_DESC);
+			min_value: 1;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+	param 2 {
+		coeff_speed_subexpress {
+			type: int;
+			name: string(STR_PARAM_SPEED_SUBEXPRESS_NAME);
+			desc: string(STR_PARAM_SPEED_SUBEXPRESS_DESC);
+			min_value: 1;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+	param 3 {
+		coeff_speed_subway {
+			type: int;
+			name: string(STR_PARAM_SPEED_SUBWAY_NAME);
+			desc: string(STR_PARAM_SPEED_SUBWAY_DESC);
+			min_value: 1;
+			max_value: 100;
+			def_value: 10;
+		}
+	}
+	param 4 {
+		coeff_speed_light_rail {
+			type: int;
+			name: string(STR_PARAM_SPEED_LIGHTRAIL1_NAME);
+			desc: string(STR_PARAM_SPEED_LIGHTRAIL1_DESC);
+			min_value: 1;
+			max_value: 30;
+			def_value: 10;
+		}
+	}
+	param 6 {
+		coeff_cost_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_COST_NAME);
+			desc: string(STR_PARAM_FACTOR_COST_DESC);
+			min_value: 0;
+			max_value: 10;
+			def_value: 3;
+			names: {
+				0: string(STR_PARAM_OPT_FACTOR_BY_1_8);
+				1: string(STR_PARAM_OPT_FACTOR_BY_1_4);
+				2: string(STR_PARAM_OPT_FACTOR_BY_1_2);
+				3: string(STR_PARAM_OPT_FACTOR_BY_1);
+				4: string(STR_PARAM_OPT_FACTOR_BY_2);
+				5: string(STR_PARAM_OPT_FACTOR_BY_4);
+				6: string(STR_PARAM_OPT_FACTOR_BY_8);
+				7: string(STR_PARAM_OPT_FACTOR_BY_16);
+				8: string(STR_PARAM_OPT_FACTOR_BY_32);
+				9: string(STR_PARAM_OPT_FACTOR_BY_64);
+				10: string(STR_PARAM_OPT_FACTOR_BY_128);
+			};
+		}
+	}
+	param 7 {
+		coeff_running_cost_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_RUNNING_COST_NAME);
+			desc: string(STR_PARAM_FACTOR_RUNNING_COST_DESC);
+			min_value: 0;
+			max_value: 12;
+			def_value: 5;
+			names: {
+				0: string(STR_PARAM_OPT_FACTOR_BY_1_32);
+				1: string(STR_PARAM_OPT_FACTOR_BY_1_16);
+				2: string(STR_PARAM_OPT_FACTOR_BY_1_8);
+				3: string(STR_PARAM_OPT_FACTOR_BY_1_4);
+				4: string(STR_PARAM_OPT_FACTOR_BY_1_2);
+				5: string(STR_PARAM_OPT_FACTOR_BY_1);
+				6: string(STR_PARAM_OPT_FACTOR_BY_2);
+				7: string(STR_PARAM_OPT_FACTOR_BY_4);
+				8: string(STR_PARAM_OPT_FACTOR_BY_8);
+				9: string(STR_PARAM_OPT_FACTOR_BY_16);
+				10: string(STR_PARAM_OPT_FACTOR_BY_32);
+				11: string(STR_PARAM_OPT_FACTOR_BY_64);
+				12: string(STR_PARAM_OPT_FACTOR_BY_128);
+			};
+		}
+	}
+	param 8 {
+		coeff_cargo_capacity_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_CARGO_CAPACITY_NAME);
+			desc: string(STR_PARAM_FACTOR_CARGO_CAPACITY_DESC);
+			min_value: 0;
+			max_value: 8;
+			def_value: 0;
+			names: {
+				0: string(STR_PARAM_OPT_FACTOR_BY_1);
+				1: string(STR_PARAM_OPT_FACTOR_BY_2);
+				2: string(STR_PARAM_OPT_FACTOR_BY_4);
+				3: string(STR_PARAM_OPT_FACTOR_BY_8);
+				4: string(STR_PARAM_OPT_FACTOR_BY_16);
+				5: string(STR_PARAM_OPT_FACTOR_BY_32);
+				6: string(STR_PARAM_OPT_FACTOR_BY_64);
+				7: string(STR_PARAM_OPT_FACTOR_BY_128);
+				8: string(STR_PARAM_OPT_FACTOR_BY_256);
+			};
+		}
+	}
+	param 9 {
+		coeff_loading_speed_factor {
+			type: int;
+			name: string(STR_PARAM_FACTOR_LOADING_SPEED_NAME);
+			desc: string(STR_PARAM_FACTOR_LOADING_SPEED_DESC);
+			min_value: 0;
+			max_value: 5;
+			def_value: 0;
+			names: {
+				0: string(STR_PARAM_OPT_FACTOR_BY_1);
+				1: string(STR_PARAM_OPT_FACTOR_BY_2);
+				2: string(STR_PARAM_OPT_FACTOR_BY_4);
+				3: string(STR_PARAM_OPT_FACTOR_BY_8);
+				4: string(STR_PARAM_OPT_FACTOR_BY_16);
+				5: string(STR_PARAM_OPT_FACTOR_BY_32);
+			};
+		}
+	}
+	param 10 {
+		wagon_speed_limit {
+			type: bool;
+			name: string(STR_PARAM_WAGON_SPEED_LIMIT_NAME);
+			desc: string(STR_PARAM_WAGON_SPEED_LIMIT_DESC);
+			bit: 1;
+			def_value: 1;
+		}
+	}
+	param 15 {
+		bool_simplize_waypoint {
+			type: bool;
+			name: string(STR_PARAM_SIMPLIZE_WAYPOINT_NAME);
+			desc: string(STR_PARAM_SIMPLIZE_WAYPOINT_DESC);
+			bit: 1;
+			def_value: 1;
+		}
+	}
+}
+
+if ((!!!(!!!((ttd_platform != PLATFORM_OPENTTD))) | !!!(!!!((openttd_version < version_openttd(1, 7, 0, 21278)))))) {
+	error(FATAL, string(STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION), "1.7.0/r21278");
+}
+
+
+cargotable {
+PASS, MAIL, COAL, IORE, CORP, GRAI, LVST, WOOD, STEL, WHEA, TOFF, FRUT, MAIZ, CORE, CTCD, SUGR, OIL_, WATR, COLA, FZDR, ACID, CHLO, MILK, RUBR, PLST, BEER, DYES, EOIL, KAOL, PETR, RFPR, FUEL, METL
+}
+
+sw_cost_factor = (1 << coeff_cost_factor);
+
+sw_running_cost_factor = (1 << coeff_running_cost_factor);
+
+sw_cargo_capacity_factor = (1 << coeff_cargo_capacity_factor);
+
+sw_loading_speed_factor = (1 << coeff_loading_speed_factor);
+
+template tmpl_purchase(x, y) {
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[x, y, 50, 15, -25, -9]
+	[0, 0, 1, 1, 0, 0]
+}
+
+template tmpl_purchase_detail(x, y, w, h, offX, offY) {
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[0, 0, 1, 1, 0, 0]
+	[x, y, w, h, offX, offY]
+	[0, 0, 1, 1, 0, 0]
+}
+
+template tmpl_loco(x, y) {
+	[x, y, 8, 22, -3, -12]
+	[(x + 15), y, 21, 17, -14, -8]
+	[(x + 45), y, 30, 15, -17, -11]
+	[(x + 95), y, 21, 19, -6, -10]
+	[(x + 125), y, 8, 22, -3, -12]
+	[(x + 140), y, 21, 19, -14, -10]
+	[(x + 175), y, 30, 15, -17, -11]
+	[(x + 225), y, 21, 17, -6, -8]
+}
+
+template tmpl_loco_r(x, y) {
+	[(x + 125), y, 8, 22, -3, -12]
+	[(x + 140), y, 21, 19, -14, -10]
+	[(x + 175), y, 30, 15, -17, -11]
+	[(x + 225), y, 21, 17, -6, -8]
+	[x, y, 8, 22, -3, -12]
+	[(x + 15), y, 21, 17, -14, -8]
+	[(x + 45), y, 30, 15, -17, -11]
+	[(x + 95), y, 21, 19, -6, -10]
+}
+
+template tmpl_wagon_by_coor(x, y) {
+	[x, y, 8, 22, -3, -11]
+	[(x + 15), y, 21, 17, -14, -8]
+	[(x + 45), y, 31, 12, -17, -8]
+	[(x + 95), y, 21, 17, -6, -8]
+}
+
+template tmpl_loco_saemaeul(x, y) {
+	[x, y, 8, 23, -3, -12]
+	[(x + 15), y, 21, 14, -14, -6]
+	[(x + 45), y, 33, 12, -18, -8]
+	[(x + 95), y, 19, 16, -6, -8]
+	[(x + 125), y, 8, 23, -3, -11]
+	[(x + 140), y, 19, 16, -12, -8]
+	[(x + 175), y, 33, 12, -18, -8]
+	[(x + 225), y, 21, 14, -6, -6]
+}
+
+template tmpl_loco_saemaeul_r(x, y) {
+	[x, y, 8, 23, -3, -11]
+	[(x + 15), y, 19, 16, -12, -8]
+	[(x + 45), y, 33, 12, -18, -8]
+	[(x + 95), y, 21, 14, -6, -6]
+	[(x + 125), y, 8, 23, -3, -12]
+	[(x + 140), y, 21, 14, -14, -6]
+	[(x + 175), y, 33, 12, -18, -8]
+	[(x + 225), y, 19, 16, -6, -8]
+}
+
+switch(0, SELF, sw_GENE_attach, vehicle_type_id) {
+	ko_train_K4400..ko_train_K4400: return CB_RESULT_ATTACH_ALLOW;
+	return CB_RESULT_ATTACH_ALLOW;
+}
+
+switch(0, PARENT, sw_CARGOWAGON_attach, vehicle_type_id) {
+	ko_train_K4400..ko_train_K4400: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
+}
+
+switch(0, SELF, var_speed_K4400, 1) {
+	return ((150 / 10) * coeff_speed_general);
+}
+
+switch(0, SELF, var_cost_K4400, 1) {
+	return ((2 / 10) * sw_cost_factor);
+}
+
+switch(0, SELF, var_runcost_K4400, 1) {
+	return ((10 / 10) * sw_running_cost_factor);
+}
+
+template tmpl_K4400(x, y) {
+	[x, y, 8, 19, -3, -9]
+	[(x + 15), y, 18, 14, -11, -7]
+	[(x + 45), y, 23, 12, -11, -9]
+	[(x + 95), y, 18, 15, -4, -7]
+	[(x + 125), y, 8, 20, -3, -10]
+	[(x + 140), y, 18, 15, -12, -8]
+	[(x + 175), y, 23, 12, -12, -9]
+	[(x + 225), y, 18, 14, -5, -7]
+}
+
+template tmpl_K4400_purchase(x, y) {
+	tmpl_purchase_detail(x, y, 50, 12, -25, -6)
+}
+
+spriteset(set_K4400_purchase, "./gfx/ko_train1.png") {
+	tmpl_K4400_purchase(10, 530)
+}
+
+spriteset(set_K4400A_loco, "./gfx/ko_train1.png") {
+	tmpl_K4400(70, 530)
+}
+
+spriteset(set_K4400B_loco, "./gfx/ko_train1.png") {
+	tmpl_K4400(70, 500)
+}
+
+spriteset(set_K4400_VTRAIN_loco, "./gfx/ko_train_tours.png") {
+	tmpl_K4400(70, 190)
+}
+
+switch(0, SELF, sw_K4400_loco, cargo_subtype) {
+	0: set_K4400A_loco;
+	1: set_K4400B_loco;
+	10: set_K4400_VTRAIN_loco;
+	set_K4400A_loco;
+}
+
+switch(0, SELF, sw_K4400_cargo_subtype_text, cargo_subtype) {
+	0: return string(STR_REFIT_PAINTING_THESEDAYS);
+	1: return string(STR_REFIT_PAINTING_7x00_OLD_KORAIL);
+	10: return string(STR_REFIT_PAINTING_VTRAIN);
+	return string(STR_REFIT_PAINTING_THESEDAYS);
+}
+
+item(0, ko_train_K4400, 55044) {
+	property {
+		name: string(STR_K4400_NAME);
+		climates_available: ALL_CLIMATES;
+		track_type: RAIL;
+		speed: 105 km/h;
+		power: 2719 kW;
+		weight: 88 ton;
+		tractive_effort_coefficient: 0.25;
+		air_drag_coefficient: 0.1;
+		cargo_capacity: 1;
+		refittable_cargo_classes: NO_CARGO_CLASS;
+		non_refittable_cargo_classes: NO_CARGO_CLASS;
+		cargo_allow_refit: [PASS];
+		loading_speed: 0;
+		vehicle_life: 30;
+		introduction_date: date(1972, 1, 1);
+		model_life: VEHICLE_NEVER_EXPIRES;
+		retire_early: 0;
+		reliability_decay: 0;
+		cost_factor: 10;
+		running_cost_base: RUNNING_COST_DIESEL;
+		running_cost_factor: 150;
+		refit_cost: 0;
+		length: 7;
+		ai_special_flag: AI_FLAG_PASSENGER;
+		engine_class: ENGINE_CLASS_DIESEL;
+		sprite_id: SPRITE_ID_NEW_TRAIN;
+		misc_flags: bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+		bitmask_vehicle_info: 0;
+	}
+	graphics {
+		default: sw_K4400_loco;
+		purchase: set_K4400_purchase;
+		speed: var_speed_K4400;
+		cost_factor: var_cost_K4400;
+		running_cost_factor: var_runcost_K4400;
+		cargo_capacity: 0;
+		can_attach_wagon: sw_GENE_attach;
+		cargo_subtype_text: sw_K4400_cargo_subtype_text;
+		additional_text: string(STR_REFIT_ADDITIONAL_ABLE);
+	}
+}
+
+disable_item(0, 0, 26);
+
