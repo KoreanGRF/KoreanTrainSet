@@ -3,11 +3,11 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
-// K4400
-#include "locomotive/K4400.pnml"
+// K4x00
+#include "locomotive/K4x00/K4x00.pnml"
 
 // K7000
-// #include "src/locomotive/K7000.pnml"
+// #include "locomotive/K7000/code.pnml"
 
 // K7x00
-// #include "locomotive/K7x00.pnml"
+// #include "locomotive/K7x00/code.pnml"

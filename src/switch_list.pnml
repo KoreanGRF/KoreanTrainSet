@@ -3,18 +3,18 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
-// #define FIRST_TRAIN_NAME ko_train_K4400
-// #define LAST_TRAIN_NAME  ko_train_K7700
+#define FIRST_TRAIN_NAME ko_train_K4x00
+#define LAST_TRAIN_NAME  ko_train_K4x00
 
 // 객차 연결 스위치
 switch(FEAT_TRAINS, SELF, sw_GENE_attach, vehicle_type_id) {
-	ko_train_K4400..ko_train_K4400: return CB_RESULT_ATTACH_ALLOW;
+	FIRST_TRAIN_NAME..LAST_TRAIN_NAME: return CB_RESULT_ATTACH_ALLOW;
 //	ko_train_CDC:                      return CB_RESULT_ATTACH_ALLOW;
 	return CB_RESULT_ATTACH_ALLOW;
 }
 
 // 화물차는 기관차 뒤에만 연결할 수 있음
 switch(FEAT_TRAINS, PARENT, sw_CARGOWAGON_attach, vehicle_type_id) {
-	ko_train_K4400..ko_train_K4400: return CB_RESULT_ATTACH_ALLOW;
+	FIRST_TRAIN_NAME..LAST_TRAIN_NAME: return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
 }

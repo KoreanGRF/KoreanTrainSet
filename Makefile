@@ -16,7 +16,7 @@ CC_USER_FLAGS       ?=
 # MUSA_FLAGS  =
 
 ### Version
-# $VERSION	$ISODATE	$MODIFIED	$HASH	$ISTAG	$ISSTABLETAG
+# $REPO_VERSION	$REPO_ISODATE	$REPO_MODIFIED	$REPO_HASH	$REPO_ISTAG	$REPO_ISSTABLETAG
 VERSION_INFO        ?= "$(shell ./findversion.sh)"
 REPO_VERSION        ?= $(shell echo ${VERSION_INFO} | cut -f1)   # Version
 REPO_ISODATE        ?= $(shell echo ${VERSION_INFO} | cut -f2)   # Date
@@ -27,14 +27,12 @@ REPO_ISSTABLETAG    ?= $(shell echo ${VERSION_INFO} | cut -f5)   # Is stable
 # Disable default syuffixes rule
 .SUFFIXES:
 
-
 # File names
-DIR_NAME            ?= $(shell echo "$(REPO_NAME) $(REPO_VERSION)" | sed s/\ /_/g)
+DIR_NAME            ?= $(shell echo "$(REPO_NAME) $(REPO_VERSION)" | xargs | sed s/\ /_/g)
 GRF_FILE            ?= $(BASE_FILENAME).grf
 NML_FILE            ?= $(BASE_FILENAME).nml
 NFO_FILE            ?= $(BASE_FILENAME).nfo
 PNML_FILE           ?= $(BASE_FILENAME).pnml
-TAR_FILE            ?= $(OUTPUT_FILENAME).tar
 TAG_FILE            ?= custom_tags.txt
 DOC_FILE            ?= docs/readme.txt docs/license.txt docs/changelog.txt
 
@@ -49,6 +47,7 @@ BUNDLE_FILES        ?= $(GRF_FILE) $(DOC_FILE)
 
 # target 'all' must be first target
 all: $(GRF_GENERATE) $(DOC_GENERATE) bundle_tar
+	@echo $(REPO_VERSION)
 
 # Generate *.grf
 $(GRF_GENERATE): $(NML_GENERATE) $(TAG_GENERATE)
@@ -62,7 +61,6 @@ clean::
 $(NML_GENERATE): $(PNML_GENERATE)
 	@echo "[CPP] $@"
 	@ cc -D VERSION=$(VERSION) $(CC_USER_FLAGS) $(CC_FLAGS) -o $(NML_FILE) $(PNML_FILE)
-
 clean::
 	@echo "[CLEAN NML]"
 	@-rm -rf $(NML_FILE)

@@ -1,2 +1,6 @@
 .nmlcache
-gfx-psd
+ignores
+*.tar
+Korean_Train_Set_*
+*.grf
+*.nml

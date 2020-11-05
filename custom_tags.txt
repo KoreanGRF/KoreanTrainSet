@@ -1,4 +1,0 @@
-VERSION        :2.0.0-alpha1
-RECENT_UPDATED :2020.02.05
-AUTHOR_WEBSITE :https://telk.kr
-AUTHOR_EMAIL   :telk5093@gmail.com
