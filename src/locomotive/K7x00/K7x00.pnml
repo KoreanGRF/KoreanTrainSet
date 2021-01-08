@@ -31,16 +31,27 @@ template tmpl_K7x00_purchase(x, y) {
 }
 
 // 7x00
-spriteset(set_K7x00_purchase,       "./src/locomotive/K7x00/K7x00.png") { tmpl_K7x00_purchase(0, 0) }
-spriteset(set_K7x00D_loco,          "./src/locomotive/K7x00/K7x00.png") { tmpl_K7x00(60,   0) }   // Red & White & Blue
-spriteset(set_K7x00A_loco,          "./src/locomotive/K7x00/K7x00.png") { tmpl_K7x00(60,  60) }   // Black & Orange
-spriteset(set_K7x00B_loco,          "./src/locomotive/K7x00/K7x00.png") { tmpl_K7x00(60,  90) }   // Blue & White
-spriteset(set_K7x00C_loco,          "./src/locomotive/K7x00/K7x00.png") { tmpl_K7x00(60, 120) }   // Green & Yellow
-spriteset(set_K7x00E_loco,          "./src/locomotive/K7x00/K7x00.png") { tmpl_K7x00(60, 150) }   // Cargo
-
-// Haerang
-spriteset(set_HRANG_purchase,       "./src/locomotive/K7x00/K7x00.png") { tmpl_purchase(0, 180) }
-spriteset(set_K7x00_HRANG_loco,     "./src/locomotive/K7x00/K7x00.png") { tmpl_K7x00(60, 180) }
+spriteset(set_K7x00_purchase, "./src/locomotive/K7x00/K7x00.png") {
+	tmpl_K7x00_purchase(0, 0)
+}
+spriteset(set_K7x00_loco_RED_WHITE_BLUE, "./src/locomotive/K7x00/K7x00.png") {   // Red & White & Blue (current)
+	tmpl_K7x00(60, 0)
+}
+spriteset(set_K7x00_loco_BLUE_WHITE, "./src/locomotive/K7x00/K7x00.png") {   // Blue & White
+	tmpl_K7x00(60, 90)
+}
+spriteset(set_K7x00_loco_GREEN_YELLOW, "./src/locomotive/K7x00/K7x00.png") {   // Green & Yellow
+	tmpl_K7x00(60, 120)
+}
+spriteset(set_K7x00_loco_TIGER, "./src/locomotive/K7x00/K7x00.png") {   // Black & Orange
+	tmpl_K7x00(60, 60)
+}
+spriteset(set_K7x00_loco_CARGO, "./src/locomotive/K7x00/K7x00.png") {   // Cargo
+	tmpl_K7x00(60, 150)
+}
+spriteset(set_K7x00_loco_HAERANG, "./src/locomotive/K7x00/K7x00.png") {   // Haerang
+	tmpl_K7x00(60, 180)
+}
 // spriteset(set_HRANG_coach,          "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(350, 680) }
 // spriteset(set_HRANG_CAFE_coach,     "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(350, 710) }
 // spriteset(set_HRANG_GEN_coach,      "./src/locomotive/K7x00/K7x00.png") { 
@@ -48,8 +59,9 @@ spriteset(set_K7x00_HRANG_loco,     "./src/locomotive/K7x00/K7x00.png") { tmpl_K
 //     tmpl_wagon_by_coor(350, 770)
 // }
 
-// G-train
-spriteset(set_K7x00_GTRAIN_loco,    "./src/locomotive/K7x00/K7x00.png") { tmpl_K7x00(60, 210) }
+spriteset(set_K7x00_loco_GTRAIN, "./src/locomotive/K7x00/K7x00.png") {   // G-train
+	tmpl_K7x00(60, 210)
+}
 // spriteset(set_GTRAIN_coach1,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(70, 40) }
 // spriteset(set_GTRAIN_coach2,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(70, 70) }
 // spriteset(set_GTRAIN_coach3,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(70, 100) }
@@ -57,8 +69,9 @@ spriteset(set_K7x00_GTRAIN_loco,    "./src/locomotive/K7x00/K7x00.png") { tmpl_K
 // spriteset(set_GTRAIN_coach5,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(70, 160) }
 // spriteset(set_GTRAIN_GEN_coach,     "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(195, 40) }
 
-// S-train
-spriteset(set_K7x00_STRAIN_loco,    "./src/locomotive/K7x00/K7x00.png") { tmpl_K7x00(60, 240) }
+spriteset(set_K7x00_loco_STRAIN, "./src/locomotive/K7x00/K7x00.png") {   // S-train
+	tmpl_K7x00(60, 240)
+}
 // spriteset(set_STRAIN_coach1,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(410, 40) }
 // spriteset(set_STRAIN_coach2,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(410, 70) }
 // spriteset(set_STRAIN_GEN_coach1,    "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(410, 100) }
@@ -66,20 +79,20 @@ spriteset(set_K7x00_STRAIN_loco,    "./src/locomotive/K7x00/K7x00.png") { tmpl_K
 
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
-    0:    set_K7x00A_loco;
-    1:    set_K7x00B_loco;
-    2:    set_K7x00C_loco;
-    3:    set_K7x00D_loco;
-    4:    set_K7x00E_loco;
+    0:    set_K7x00_loco_RED_WHITE_BLUE;
+    1:    set_K7x00_loco_CARGO;
+    2:    set_K7x00_loco_GREEN_YELLOW;
+    3:    set_K7x00_loco_BLUE_WHITE;
+    4:    set_K7x00_loco_TIGER;
     // 5:    set_ERRSPRITE;    // RESERVED
-    6:    set_K7x00_HRANG_loco;
+    6:    set_K7x00_loco_HAERANG;
     // 7:    set_ERRSPRITE;    // RESERVED
     // 8:    set_ERRSPRITE;    // RESERVED
     // 9:    set_ERRSPRITE;    // RESERVED
-    10:   set_K7x00_STRAIN_loco;
+    10:   set_K7x00_loco_STRAIN;
     // 11:   set_K7x00_STRAIN_loco;
-    12:   set_K7x00_GTRAIN_loco;
-    set_K7x00A_loco;
+    12:   set_K7x00_loco_GTRAIN;
+    set_K7x00_loco_RED_WHITE_BLUE;
 }
 switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
     0:    return string(STR_REFIT_PAINTING_THESEDAYS);
@@ -108,7 +121,7 @@ item(FEAT_TRAINS, ko_train_K7x00, 55070) {
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_DIESEL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        length:                         7;
+        length:                         8;
 
         // Spec
         speed:                          150 km/h;
