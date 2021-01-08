@@ -7,7 +7,7 @@
 #include "locomotive/K4x00/K4x00.pnml"
 
 // K7000
-// #include "locomotive/K7000/code.pnml"
+#include "locomotive/K7000/K7000.pnml"
 
 // K7x00
-// #include "locomotive/K7x00/code.pnml"
+#include "locomotive/K7x00/K7x00.pnml"
