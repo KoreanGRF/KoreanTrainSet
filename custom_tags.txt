@@ -1,5 +1,5 @@
-VERSION             :1.6.12
-RECENT_UPDATED      :2020.02.09
+VERSION             :1.6.13
+RECENT_UPDATED      :2021.01.05
 
 AUTHOR_WEBSITE      :https://telk.kr
 AUTHOR_EMAIL        :telk5093@gmail.com

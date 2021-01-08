@@ -49,8 +49,8 @@ STR_NURIRO_NAME					:[KTS] Nuriro
 STR_KTX1N_NAME					:[KTS] KTX
 STR_KTX2N_NAME					:[KTS] KTX-Sancheon, SRT
 STR_KTXCW_NAME					:[KTS] KTX passenger car
-STR_EMU250_NAME					:[KTS] EMU-250
-STR_EMUCW_NAME					:[KTS] EMU passenger car
+STR_EUM_NAME					:[KTS] KTX-EUM
+STR_EUMCW_NAME					:[KTS] KTX-EUM passenger car
 STR_NRRCW_NAME					:[KTS] Nuriro passenger car
 STR_SMECW_NAME					:[KTS] Saemaeul passenger car
 STR_MGHCW_NAME					:[KTS] Mugunghwa passenger car

@@ -728,16 +728,16 @@ switch(FEAT_TRAINS, SELF, var_runcost_KTXCW, 1)		{ return 20	* sw_running_cost_f
 switch(FEAT_TRAINS, SELF, var_capacity_KTXCW, 1)	{ return 29	* sw_cargo_capacity_factor; }
 switch(FEAT_TRAINS, SELF, var_capacity_KTXCWS, 1)	{ return 16	* sw_cargo_capacity_factor; }
 
-switch(FEAT_TRAINS, SELF, var_speed_EMU250, 1)		{ return 25	* coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_EMU250, 1)		{ return 8	* sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_EMU, 1)		{ return 20	* sw_running_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_capacity_EMU250_1, 1)	{ return 18	* sw_cargo_capacity_factor; }
-switch(FEAT_TRAINS, SELF, var_capacity_EMU250_2, 1)	{ return 28	* sw_cargo_capacity_factor; }
+switch(FEAT_TRAINS, SELF, var_speed_EUM, 1)			{ return 25	* coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_EUM, 1)			{ return 8	* sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_EUM, 1)		{ return 20	* sw_running_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_capacity_EUM_1, 1)	{ return 18	* sw_cargo_capacity_factor; }
+switch(FEAT_TRAINS, SELF, var_capacity_EUM_2, 1)	{ return 28	* sw_cargo_capacity_factor; }
 
-switch(FEAT_TRAINS, SELF, var_speed_EMUCW, 1)		{ return 25	* coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_EMUCW, 1)		{ return 8	* sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_EMUCW, 1)		{ return 20	* sw_running_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_capacity_EMUCW, 1)	{ return 35	* sw_cargo_capacity_factor; }
+switch(FEAT_TRAINS, SELF, var_speed_EUMCW, 1)		{ return 25	* coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_EUMCW, 1)		{ return 8	* sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_EUMCW, 1)		{ return 20	* sw_running_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_capacity_EUMCW, 1)	{ return 35	* sw_cargo_capacity_factor; }
 
 switch(FEAT_TRAINS, SELF, var_speed_TILCW, 1)		{ return 12	* coeff_speed_general; }
 switch(FEAT_TRAINS, SELF, var_cost_TILCW, 1)		{ return 10	* sw_cost_factor; }
@@ -956,8 +956,8 @@ spriteset(set_KTX2W_loco10, "./gfx/ko_train1.png") {
 }
 spriteset(set_KTX2W_purchase,		"./gfx/ko_train1.png") { tmpl_purchase_detail(10, 1250, 50, 12, -25, -6) }
 
-// EMU250
-spriteset(set_EMU250_loco1, "./gfx/ko_train1.png") {
+// EUM
+spriteset(set_EUM_loco1, "./gfx/ko_train1.png") {
 	//xpos		ypos	xsize	ysize	xoff	yoff
 	[560,		1250,	8,	22,	-3,	-11]
 	[560+15,	1250,	21,	15,	-16,	-6]
@@ -968,7 +968,7 @@ spriteset(set_EMU250_loco1, "./gfx/ko_train1.png") {
 	[560+175,	1250,	33,	12,	-18,	-8]
 	[560+225,	1250,	21,	15,	-5,	-7]
 }
-spriteset(set_EMU250_loco2, "./gfx/ko_train1.png") {
+spriteset(set_EUM_loco2, "./gfx/ko_train1.png") {
 	//xpos		ypos	xsize	ysize	xoff	yoff
 	[560,		1280,	8,	22,	-3,	-11]
 	[560+15,	1280,	21,	17,	-16,	-8]
@@ -979,7 +979,7 @@ spriteset(set_EMU250_loco2, "./gfx/ko_train1.png") {
 	[560+175,	1280,	31,	12,	-16,	-8]
 	[560+225,	1280,	21,	17,	-5,	-9]
 }
-spriteset(set_EMU250_loco3, "./gfx/ko_train1.png") {
+spriteset(set_EUM_loco3, "./gfx/ko_train1.png") {
 	//xpos		ypos	xsize	ysize	xoff	yoff
 	[560,		1310,	8,	22,	-3,	-11]
 	[560+15,	1310,	21,	17,	-16,	-8]
@@ -990,7 +990,7 @@ spriteset(set_EMU250_loco3, "./gfx/ko_train1.png") {
 	[560+175,	1310,	31,	12,	-16,	-8]
 	[560+225,	1310,	21,	17,	-5,	-9]
 }
-spriteset(set_EMU250_loco4, "./gfx/ko_train1.png") {
+spriteset(set_EUM_loco4, "./gfx/ko_train1.png") {
 	//xpos		ypos	xsize	ysize	xoff	yoff
 	[560,		1340,	8,	22,	-3,	-11]
 	[560+15,	1340,	21,	17,	-16,	-8]
@@ -1001,7 +1001,7 @@ spriteset(set_EMU250_loco4, "./gfx/ko_train1.png") {
 	[560+175,	1340,	31,	13,	-16,	-9]
 	[560+225,	1340,	21,	17,	-5,	-9]
 }
-spriteset(set_EMU250_loco5, "./gfx/ko_train1.png") {
+spriteset(set_EUM_loco5, "./gfx/ko_train1.png") {
 	//xpos		ypos	xsize	ysize	xoff	yoff
 	[560,		1370,	8,	22,	-3,	-11]
 	[560+15,	1370,	21,	16,	-16,	-8]
@@ -1012,12 +1012,12 @@ spriteset(set_EMU250_loco5, "./gfx/ko_train1.png") {
 	[560+175,	1370,	32,	12,	-16,	-8]
 	[560+225,	1370,	21,	16,	-5,	-9]
 }
-spriteset(set_EMU250_purchase,		"./gfx/ko_train1.png") { tmpl_purchase_detail(500, 1250, 50, 12, -25, -6) }
+spriteset(set_EUM_purchase,		"./gfx/ko_train1.png") { tmpl_purchase_detail(500, 1250, 50, 12, -25, -6) }
 
 // KTX, 새마을호, 무궁화호 객차
 spriteset(set_KTXCW_purchase,		"./gfx/ko_train1.png") { [10, 230, 31, 11, -17, -6] }
 spriteset(set_TRNCW_purchase,		"./gfx/ko_train1.png") { [10, 230, 32, 12, -16, -7] }
-spriteset(set_EMUCW_purchase,		"./gfx/ko_train1.png") { [500, 1280, 31, 12, -17, -7] }
+spriteset(set_EUMCW_purchase,		"./gfx/ko_train1.png") { [500, 1280, 31, 12, -17, -7] }
 
 // 무궁화호
 spriteset(set_MGHCW_purchase,		"./gfx/ko_train1.png") { tmpl_purchase_detail(395, 170, 32, 12, -17, -8) }
@@ -2770,42 +2770,42 @@ item(FEAT_TRAINS, ko_train_KTXCW, 5992) {
 
 
 /*------------------------------------------------------------------------------
-EMU250
+KTX-EUM
 ------------------------------------------------------------------------------*/
 // Not support cargo_subtype yet!!
-//switch(FEAT_TRAINS, SELF, sw_EMU250_cargo_subtype_text, cargo_subtype) {
+//switch(FEAT_TRAINS, SELF, sw_EUM_cargo_subtype_text, cargo_subtype) {
 //	1:	return string();
 //	return string();
 //}
-switch(FEAT_TRAINS, SELF, sw_EMU250_loco1, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_EUM_loco1, cargo_subtype) {
 //	3:	set_EMU300_loco1;
-	set_EMU250_loco1;
+	set_EUM_loco1;
 }
-switch(FEAT_TRAINS, SELF, sw_EMU250_loco5_default, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_EUM_loco5_default, cargo_subtype) {
 //	3:	set_EMU300_loco5;
-	set_EMU250_loco5;
+	set_EUM_loco5;
 }
-switch(FEAT_TRAINS, PARENT, sw_EMU250_loco5, cargo_subtype) {
+switch(FEAT_TRAINS, PARENT, sw_EUM_loco5, cargo_subtype) {
 //	3:	set_KTX2W_loco10;
-	sw_EMU250_loco5_default;
+	sw_EUM_loco5_default;
 }
-switch(FEAT_TRAINS, SELF, sw_EMU250_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-	1: sw_EMU250_loco5;
-	sw_EMU250_loco1;
+switch(FEAT_TRAINS, SELF, sw_EUM_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+	1: sw_EUM_loco5;
+	sw_EUM_loco1;
 }
-switch(FEAT_TRAINS, SELF, sw_EMU250_capacity, position_in_consist) {
-	0:	return var_capacity_EMU250_1;
-	return var_capacity_EMU250_2;
+switch(FEAT_TRAINS, SELF, sw_EUM_capacity, position_in_consist) {
+	0:	return var_capacity_EUM_1;
+	return var_capacity_EUM_2;
 }
-switch(FEAT_TRAINS, SELF, sw_EMU_attach, vehicle_type_id) {
-	ko_train_EMU250:		return CB_RESULT_ATTACH_ALLOW;
-	ko_train_EMUCW:			return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, sw_EUM_attach, vehicle_type_id) {
+	ko_train_EUM:			return CB_RESULT_ATTACH_ALLOW;
+	ko_train_EUMCW:			return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
 }
 
-item(FEAT_TRAINS, ko_train_EMU250, 5521) {
+item(FEAT_TRAINS, ko_train_EUM, 5521) {
 	property {
-		name:				string(STR_EMU250_NAME);
+		name:				string(STR_EUM_NAME);
 		climates_available:		ALL_CLIMATES;
 
 		track_type:			RAIL;
@@ -2840,53 +2840,53 @@ item(FEAT_TRAINS, ko_train_EMU250, 5521) {
 		bitmask_vehicle_info:		0;
 	}
 	graphics {
-		default:			sw_EMU250_engine;
-		purchase:			set_EMU250_purchase;
+		default:			sw_EUM_engine;
+		purchase:			set_EUM_purchase;
 
-		speed:				var_speed_EMU250;
-		cost_factor:			var_cost_EMU250;
-		running_cost_factor:		var_runcost_EMU;
-		cargo_capacity:			sw_EMU250_capacity;
+		speed:				var_speed_EUM;
+		cost_factor:			var_cost_EUM;
+		running_cost_factor:		var_runcost_EUM;
+		cargo_capacity:			sw_EUM_capacity;
 		loading_speed:			var_loading_speed_SLOW;
 
-		can_attach_wagon:		sw_EMU_attach;
+		can_attach_wagon:		sw_EUM_attach;
 		start_stop:			sw_ko_train_start_stop;
 
-//		cargo_subtype_text:		sw_EMU_cargo_subtype_text;
+//		cargo_subtype_text:		sw_EUM_cargo_subtype_text;
 		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
 	}
 }
-// End of "EMU250"
+// End of "KTX-EUM"
 
 
 /*------------------------------------------------------------------------------
-EMU 객차
+EUM 객차
 ------------------------------------------------------------------------------*/
-// EMU 객차
-switch(FEAT_TRAINS, SELF, sw_EMU250_coach_by_free_tail, position_in_vehid_chain_from_end) {
-	0: set_EMU250_loco4;
-	set_EMU250_loco3;
+// EUM 객차
+switch(FEAT_TRAINS, SELF, sw_EUM_coach_by_free_tail, position_in_vehid_chain_from_end) {
+	0: set_EUM_loco4;
+	set_EUM_loco3;
 }
-switch(FEAT_TRAINS, SELF, sw_EMU250_coach, position_in_vehid_chain) {
-	0: set_EMU250_loco2;
-	sw_EMU250_coach_by_free_tail;
+switch(FEAT_TRAINS, SELF, sw_EUM_coach, position_in_vehid_chain) {
+	0: set_EUM_loco2;
+	sw_EUM_coach_by_free_tail;
 }
 
 // KTX-1, KTX-산천에 따라 다르게 출력
-switch(FEAT_TRAINS, PARENT, sw_EMUCW_coach, vehicle_type_id) {
-	ko_train_EMU250: sw_EMU250_coach;
+switch(FEAT_TRAINS, PARENT, sw_EUMCW_coach, vehicle_type_id) {
+	ko_train_EUM: sw_EUM_coach;
 //	ko_train_EMU300: sw_EMU300_coach;
-	sw_EMU250_coach;
+	sw_EUM_coach;
 }
 
-switch(FEAT_TRAINS, SELF, sw_EMUCW_cargo_capacity, cargo_subtype) {
-//	1:	var_capacity_EMUCWS;
-	var_capacity_EMUCW;
+switch(FEAT_TRAINS, SELF, sw_EUMCW_cargo_capacity, cargo_subtype) {
+//	1:	var_capacity_EUMCWS;
+	var_capacity_EUMCW;
 }
 
-item(FEAT_TRAINS, ko_train_EMUCW, 6000) {
+item(FEAT_TRAINS, ko_train_EUMCW, 6000) {
 	property {
-		name:				string(STR_EMUCW_NAME);
+		name:				string(STR_EUMCW_NAME);
 		climates_available:		ALL_CLIMATES;
 
 		introduction_date:		date(2019, 11, 1);
@@ -2906,19 +2906,19 @@ item(FEAT_TRAINS, ko_train_EMUCW, 6000) {
 		cargo_capacity:			29;
 	}
 	graphics {
-		default:			sw_EMUCW_coach;
-		purchase:			set_EMUCW_purchase;
+		default:			sw_EUMCW_coach;
+		purchase:			set_EUMCW_purchase;
 
-		cost_factor:			var_cost_EMUCW;
-		running_cost_factor:		var_runcost_EMUCW;
-		cargo_capacity:			sw_EMUCW_cargo_capacity;
+		cost_factor:			var_cost_EUMCW;
+		running_cost_factor:		var_runcost_EUMCW;
+		cargo_capacity:			sw_EUMCW_cargo_capacity;
 		loading_speed:			var_loading_speed_SLOW;
 
-//		cargo_subtype_text:		sw_EMUCW_cargo_subtype_text;
+//		cargo_subtype_text:		sw_EUMCW_cargo_subtype_text;
 		additional_text:		string(STR_REFIT_ADDITIONAL_UNABLE);
 	}
 }
-// End of "EMU 객차"
+// End of "EUM 객차"
 
 
 
@@ -6980,8 +6980,8 @@ sort(FEAT_TRAINS, [
 	ko_train_KTX1N,
 	ko_train_KTX2N,
 	ko_train_KTXCW,
-	ko_train_EMU250,
-	ko_train_EMUCW,
+	ko_train_EUM,
+	ko_train_EUMCW,
 	ko_train_NRRCW,
 	ko_train_CDCCW,
 	ko_train_SMECW,
@@ -7057,7 +7057,7 @@ ko_train_NURIRO		5517
 ko_train_KTX2N		5518
 ko_train_ITXSME		5519
 ko_train_NDC		5520
-ko_train_EMU250		5521
+ko_train_EUM		5521
 ko_train_BUSAN1		5531
 ko_train_BUSAN2		5532
 ko_train_BUSAN3		5533
@@ -7087,7 +7087,7 @@ ko_train_NRRCW		5996
 ko_train_TILCW		5997
 ko_train_GENCW		5998
 ko_train_CDCCW		5999
-ko_train_EMUCW		6000
+ko_train_EUMCW		6000
 ko_train_DAEGU3_CW	6503
 ko_train_BUSAN4_CW	6504
 */
