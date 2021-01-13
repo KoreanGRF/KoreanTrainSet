@@ -57,6 +57,9 @@ doc:
 # Specifications
 spec.pnml:
 	$(PYTHON) ./src/spec.py
+clean::
+	@echo "[CLEAN spec.pnml]"
+	@-rm -rf ./src/spec.pnml
 
 # Generate *.grf
 $(GRF_GENERATE): $(NML_GENERATE) $(TAG_GENERATE) spec.pnml
