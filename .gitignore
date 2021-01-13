@@ -1,6 +1,8 @@
 .nmlcache
 ignores
-*.tar
 Korean_Train_Set_*
+docs/*.txt
+*.tar
 *.grf
 *.nml
+custom_tags.txt
