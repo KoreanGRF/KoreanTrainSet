@@ -2,7 +2,7 @@
 **Korean Train Set** offers various trains and railway of the Republic of Korea.   
 
 # How to compile
-You need [NML](http://bundles.openttdcoop.org/nml/releases/LATEST/) to compile this NewGRF.
+You need [NML](http://bundles.openttdcoop.org/nml/releases/LATEST/) and Python3 to compile this NewGRF.
 Run this command via bash shell. If you are on Windows, open a command prompt and type ``bash`` before this:  
 ```bash
 make
