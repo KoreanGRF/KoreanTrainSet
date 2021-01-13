@@ -195,8 +195,8 @@ STR_REFIT_MAIL_CAR							: (Mail coach)
 STR_REFIT_PASSWAGON_NORMALCAR				: (Standard car)
 STR_REFIT_PASSWAGON_FIRSTCAR				: (Executive car)
 STR_REFIT_IMPOSSIBLE						: (For future use)
-STR_REFIT_ADDITIONAL_ABLE					:{BLACK}Changing Models/Paintings: {GREEN}Available
-STR_REFIT_ADDITIONAL_UNABLE					:{BLACK}Changing Models/Paintings: {ORANGE}Unable
+STR_REFIT_ADDITIONAL_ABLE					:{BLACK}Changing model/livery: {GREEN}Available
+STR_REFIT_ADDITIONAL_UNABLE					:{BLACK}Changing model/livery: {ORANGE}Unavailable
 
 # For refit (Subways)
 STR_REFIT_TYPE_K1A_NAME						: (Korail 1k First rheostatic / 1st painting)
