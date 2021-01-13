@@ -1,5 +1,6 @@
 .nmlcache
 ignores
+generated
 Korean_Train_Set_*
 docs/*.txt
 *.tar

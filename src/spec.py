@@ -28,6 +28,6 @@ for _name in trainList:
   content += "#define " + _name + "_LOADINGSPEED " + str(trainList[_name][4]) + "\n"
   content += "#define " + _name + "_INTRODUCTION date" + str(trainList[_name][5]) + "\n"
 
-f = open("./spec.pnml", "w")
+f = open("./generated/spec.pnml", "w")
 f.write(content)
 f.close()
