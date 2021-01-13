@@ -1,5 +1,7 @@
+# Required program
 SHELL               := /bin/bash
 NMLC                ?= nmlc
+PYTHON              ?= python3
 
 # C compiler
 CC                  ?= cc
@@ -49,8 +51,15 @@ BUNDLE_FILES        ?= $(GRF_FILE) $(DOC_FILE)
 all: $(GRF_GENERATE) $(DOC_GENERATE) bundle_tar
 	@echo $(REPO_VERSION)
 
+# Documents
+doc:
+
+# Specifications
+spec.pnml:
+	$(PYTHON) ./src/spec.py
+
 # Generate *.grf
-$(GRF_GENERATE): $(NML_GENERATE) $(TAG_GENERATE)
+$(GRF_GENERATE): $(NML_GENERATE) $(TAG_GENERATE) spec.pnml
 	@echo "[NMLC] $@"
 	@ $(NMLC) -c --custom-tags="./$(TAG_FILE)" --lang-dir="./lang/" "./$(NML_FILE)" --grf="./$(GRF_FILE)" --nml="./$(NML_FILE)"
 clean::
@@ -60,7 +69,8 @@ clean::
 # Generate *.nml from *.pnml
 $(NML_GENERATE): $(PNML_GENERATE)
 	@echo "[CPP] $@"
-	@ cc -D VERSION=$(VERSION) $(CC_USER_FLAGS) $(CC_FLAGS) -o $(NML_FILE) $(PNML_FILE)
+	@echo "$(CC) -D VERSION=$(VERSION) $(CC_USER_FLAGS) $(CC_FLAGS) -o $(NML_FILE) $(PNML_FILE)"
+	@ $(CC) -D VERSION=$(VERSION) $(CC_USER_FLAGS) $(CC_FLAGS) -o $(NML_FILE) $(PNML_FILE)
 clean::
 	@echo "[CLEAN NML]"
 	@-rm -rf $(NML_FILE)

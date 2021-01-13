@@ -7,13 +7,9 @@
  * K7000
  */
 // Defines
-#define SPEED_K7000           150
-#define COST_K7000            2
-#define RUNNINGCOST_K7000     10
-
-switch(FEAT_TRAINS, SELF, var_speed_K7000, 1)   { return SPEED_K7000 / 10 * coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_K7000, 1)    { return COST_K7000 / 10 * sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_K7000, 1) { return RUNNINGCOST_K7000 / 10 * sw_running_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_speed_K7000, 1)   { return K7000_SPEED / 10 * coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_K7000, 1)    { return K7000_COST / 10 * sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_K7000, 1) { return K7000_RUNNINGCOST / 10 * sw_running_cost_factor; }
 
 
 // 7000 (봉고)
@@ -43,7 +39,7 @@ item(FEAT_TRAINS, ko_train_K7000, 55080) {
         // Common properties
         name:                           string(STR_K7000_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1986, 1, 1);
+        introduction_date:              K7000_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_DIESEL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

@@ -7,13 +7,9 @@
  * K8200
  */
 // Defines
-#define SPEED_K8200           150
-#define COST_K8200            3
-#define RUNNINGCOST_K8200     10
-
-switch(FEAT_TRAINS, SELF, var_speed_K8200, 1)   { return SPEED_K8200 / 10 * coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_K8200, 1)    { return COST_K8200 / 10 * sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_K8200, 1) { return RUNNINGCOST_K8200 / 10 * sw_running_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_speed_K8200, 1)   { return K8200_SPEED / 10 * coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_K8200, 1)    { return K8200_COST / 10 * sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_K8200, 1) { return K8200_RUNNINGCOST / 10 * sw_running_cost_factor; }
 
 // 8100호대
 spriteset(set_K8200_loco, "./src/locomotive/K8200/K8200.png") {
@@ -31,7 +27,7 @@ item(FEAT_TRAINS, ko_train_K8200, 55120) {
         // Common properties
         name:                           string(STR_K8200_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(2002, 1, 1);
+        introduction_date:              K8200_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

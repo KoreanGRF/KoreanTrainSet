@@ -5,4 +5,5 @@ docs/*.txt
 *.tar
 *.grf
 *.nml
+src/spec.pnml
 custom_tags.txt

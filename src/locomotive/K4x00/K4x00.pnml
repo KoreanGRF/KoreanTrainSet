@@ -7,14 +7,9 @@
  * K4x00
  * Note that it is based on K4400, need to split in future
  */
-// Defines
-#define SPEED_K4x00           150
-#define COST_K4x00            1
-#define RUNNINGCOST_K4x00     10
-
-switch(FEAT_TRAINS, SELF, var_speed_K4x00, 1)   { return SPEED_K4x00 / 10 * coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_K4x00, 1)    { return COST_K4x00 / 10 * sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_K4x00, 1) { return RUNNINGCOST_K4x00 / 10 * sw_running_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_speed_K4x00, 1)   { return K4x00_SPEED / 10 * coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_K4x00, 1)    { return K4x00_COST / 10 * sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_K4x00, 1) { return K4x00_RUNNINGCOST / 10 * sw_running_cost_factor; }
 
 // 4x00용 템플릿
 template tmpl_K4x00(x, y) {
@@ -65,7 +60,7 @@ item(FEAT_TRAINS, ko_train_K4x00, 55040) {
         // Common properties
         name:                         string(STR_K4x00_NAME);
         climates_available:           ALL_CLIMATES;
-        introduction_date:            date(1963, 1, 1);
+        introduction_date:            K4x00_INTRODUCTION;
         track_type:                   RAIL;
         engine_class:                 ENGINE_CLASS_DIESEL;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;

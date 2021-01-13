@@ -7,13 +7,9 @@
  * K7x00
  */
 // Defines
-#define SPEED_K7x00           150
-#define COST_K7x00            2
-#define RUNNINGCOST_K7x00     10
-
-switch(FEAT_TRAINS, SELF, var_speed_K7x00, 1)   { return SPEED_K7x00 / 10 * coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_K7x00, 1)    { return COST_K7x00 / 10 * sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_Kx000, 1) { return RUNNINGCOST_K7x00 / 10 * sw_running_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_speed_K7x00, 1)   { return K7x00_SPEED / 10 * coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_K7x00, 1)    { return K7x00_COST / 10 * sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_Kx000, 1) { return K7x00_RUNNINGCOST / 10 * sw_running_cost_factor; }
 
 // Template for 7x00
 template tmpl_K7x00(x, y) {
@@ -117,7 +113,7 @@ item(FEAT_TRAINS, ko_train_K7x00, 55070) {
         // Common properties
         name:                           string(STR_K7x00_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1963, 1, 1);
+        introduction_date:              K7x00_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_DIESEL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

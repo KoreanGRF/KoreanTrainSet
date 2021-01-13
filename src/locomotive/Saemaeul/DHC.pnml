@@ -7,16 +7,10 @@
  * DHC
  */
 // Defines
-#define SPEED_DHC           150
-#define COST_DHC            3
-#define RUNNINGCOST_DHC     10
-#define CAPACITY_DHC        10
-#define CAPACITY_ITXSME     22
-
-switch(FEAT_TRAINS, SELF, var_speed_DHC, 1)       { return SPEED_DHC / 10 * coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_DHC, 1)        { return COST_DHC / 10 * sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_DHC, 1)     { return RUNNINGCOST_DHC / 10 * sw_running_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_capacity_DHC, 1)    { return CAPACITY_DHC * sw_cargo_capacity_factor; }
+switch(FEAT_TRAINS, SELF, var_speed_DHC, 1)       { return DHC_SPEED / 10 * coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_DHC, 1)        { return DHC_COST / 10 * sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_DHC, 1)     { return DHC_RUNNINGCOST / 10 * sw_running_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_capacity_DHC, 1)    { return DHC_CAPACITY * sw_cargo_capacity_factor; }
 // switch(FEAT_TRAINS, SELF, var_capacity_ITXSME, 1) { return CAPACITY_ITXSME * sw_cargo_capacity_factor; }
 
 // DHC
@@ -97,7 +91,7 @@ item(FEAT_TRAINS, ko_train_DHC, 55140) {
         // Common properties
         name:                           string(STR_DHC_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1987, 1, 1);
+        introduction_date:              DHC_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

@@ -1,3 +1,0 @@
-<< 한국 열차 세트 / Korean Train Set >>
-
-This NewGRF contains many trains in South Korea, such as KTX, KTX-Sancheon, ITX-Cheongchun, ITX-Saemaeul, Saemaeul, Mugunghwa, Nuriro, CDC, NDC, Seoul/Incheon/Daejeon/Daegu/Gwangju/Busan subways, Diesel & Electric locomotives of Korail and other tourist trains, etc.
