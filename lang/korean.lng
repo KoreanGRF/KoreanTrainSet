@@ -2,30 +2,33 @@
 
 # GRF name and description
 STR_GRF_NAME                                :한국 열차 세트
-STR_GRF_NAME_WITH_VER                        :한국 열차 세트 {VERSION}
+STR_GRF_NAME_WITH_VER                       :한국 열차 세트 {VERSION}
 STR_GRF_DESC                                :{}{BLACK}한국 열차 세트는 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차와 선로를 추가해줍니다.{}(최근 업데이트: {RECENT_UPDATED}){}{}{SILVER}+ 제작: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL                                    :{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=kr
+STR_GRF_URL                                 :{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=kr
 
 # Vehicle's name
-STR_K4x00_NAME                                :[KTS] 4x00호대 디젤 기관차
-STR_K7000_NAME                                :[KTS] 7000호대 디젤 기관차
-STR_K7x00_NAME                                :[KTS] 7x00호대 디젤 기관차
-STR_K8000_NAME                                :[KTS] 8000호대 전기 기관차
+STR_K4x00_NAME                              :[KTS] 4x00호대 디젤 기관차
+STR_K7000_NAME                              :[KTS] 7000호대 디젤 기관차
+STR_K7x00_NAME                              :[KTS] 7x00호대 디젤 기관차
+STR_K8000_NAME                              :[KTS] 8000호대 전기 기관차
+STR_K8100_NAME                              :[KTS] 8100호대 전기 기관차
+STR_K8200_NAME                              :[KTS] 8200호대 전기 기관차
+STR_K8500_NAME                              :[KTS] 8500호대 전기 기관차
 
 # Paintings
 STR_REFIT_PAINTING_THESEDAYS                : (현재 도색)
-STR_REFIT_PAINTING_7x00_CARGO                : (화물 도색)
-STR_REFIT_PAINTING_7x00_TIGER                : (초기 철도청 도색: 검정 & 주황)
+STR_REFIT_PAINTING_7x00_CARGO               : (화물 도색)
+STR_REFIT_PAINTING_7x00_TIGER               : (초기 철도청 도색: 검정 & 주황)
 STR_REFIT_PAINTING_7x00_FIRST_KORAIL        : (초기 철도청 도색: 청색 & 백색)
-STR_REFIT_PAINTING_7x00_OLD_KORAIL            : (구 철도청 도색: 녹색 & 황색)
+STR_REFIT_PAINTING_7x00_OLD_KORAIL          : (구 철도청 도색: 녹색 & 황색)
 STR_REFIT_PAINTING_1970_1983                : (1970~1983년 도색)
 STR_REFIT_PAINTING_1984_1984                : (1984~1984년 도색)
 STR_REFIT_PAINTING_1985_1989                : (1985~1989년 도색)
 STR_REFIT_PAINTING_1990_1999                : (1990~1999년 도색)
 STR_REFIT_PAINTING_2000_2002                : (2000~2002년 도색)
-STR_REFIT_PAINTING_HAERANG                    : (해랑)
-STR_REFIT_PAINTING_STRAIN                    : (S-train)
-STR_REFIT_PAINTING_GTRAIN                    : (G-train)
+STR_REFIT_PAINTING_HAERANG                  : (해랑)
+STR_REFIT_PAINTING_STRAIN                   : (S-train)
+STR_REFIT_PAINTING_GTRAIN                   : (G-train)
 
 # Refit
 STR_REFIT_ADDITIONAL_ABLE                   :{BLACK}도색/모델 변경: {GREEN}가능
@@ -43,8 +46,10 @@ STR_PARAM_SPEED_SUBEXPRESS_NAME             :준고속형 열차 속력 계수
 STR_PARAM_SPEED_SUBEXPRESS_DESC             :준고속형 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 공항철도 1k (직통), 경춘선 ITX-청춘
 STR_PARAM_SPEED_SUBWAY_NAME                 :지하철 속력 계수
 STR_PARAM_SPEED_SUBWAY_DESC                 :지하철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 일반/준고속형 열차를 제외한 나머지 일반 지하철 차량
-# STR_PARAM_SPEED_LIGHTRAIL_NAME            :경전철 속력 계수
-# STR_PARAM_SPEED_LIGHTRAIL_DESC            :경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 부산 4호선
+STR_PARAM_SPEED_LIGHTRAIL1_NAME				:경전철 속력 계수 (고무)
+STR_PARAM_SPEED_LIGHTRAIL1_DESC				:고무 차륜 경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 부산 4호선
+STR_PARAM_SPEED_LIGHTRAIL2_NAME				:경전철 속력 계수 (철)
+STR_PARAM_SPEED_LIGHTRAIL2_DESC				:철제 차륜 경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 용인 에버라인, 의정부경전철
 
 STR_PARAM_FACTOR_COST_NAME                  :열차 구입비용
 STR_PARAM_FACTOR_COST_DESC                  :열차의 구입 가격을 조절할 수 있습니다. 값이 크면 구입 가격이 더 비싸집니다.
@@ -88,4 +93,4 @@ STR_PARAM_MAX_SPEED_TYPE_OPT_1              :영업 속력
 STR_PARAM_MAX_SPEED_TYPE_OPT_2              :설계 속력
 
 # Errors
-STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION    :이 NewGRF를 사용하기 위해서는 더 높은 OpenTTD 버전(1.7.0/r21278)을 사용해야 합니다!
+STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION   :이 NewGRF를 사용하기 위해서는 더 높은 OpenTTD 버전(1.7.0/r21278)을 사용해야 합니다!
