@@ -7,7 +7,7 @@
  * K8000
  */
 // Defines
-#define SPEED_K8000           85
+#define SPEED_K8000           90
 #define COST_K8000            3
 #define RUNNINGCOST_K8000     10
 

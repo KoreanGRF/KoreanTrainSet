@@ -1,0 +1,84 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * K8500
+ */
+// Defines
+#define SPEED_K8500           150
+#define COST_K8500            3
+#define RUNNINGCOST_K8500     10
+
+switch(FEAT_TRAINS, SELF, var_speed_K8500, 1)   { return SPEED_K8500 / 10 * coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_K8500, 1)    { return COST_K8500 / 10 * sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_K8500, 1) { return RUNNINGCOST_K8500 / 10 * sw_running_cost_factor; }
+
+// 8100호대
+spriteset(set_K8500_loco, "./src/locomotive/K8500/K8500.png") {
+    tmpl_loco(60, 0)
+}
+spriteset(set_K8500_purchase, "./src/locomotive/K8500/K8500.png") {
+    tmpl_purchase(0, 0)
+}
+
+/*------------------------------------------------------------------------------
+K8500
+------------------------------------------------------------------------------*/
+item(FEAT_TRAINS, ko_train_K8500, 55130) {
+	property {
+        // Common properties
+        name:                           string(STR_K8500_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2012, 1, 1);
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        speed:                          150 km/h;
+        power:                          6600 kW;
+        weight:                         132 ton;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [];
+        cargo_disallow_refit:           [];
+        loading_speed:                  0;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        set_K8500_loco;
+        purchase:                       set_K8500_purchase;
+
+        speed:                          var_speed_K8500;
+        cost_factor:                    var_cost_K8500;
+        running_cost_factor:            var_runcost_K8500;
+        cargo_capacity:                 0;
+
+        can_attach_wagon:               sw_GENE_attach;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+}
+// End of "K8500"
