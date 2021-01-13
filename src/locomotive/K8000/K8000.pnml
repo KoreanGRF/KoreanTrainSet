@@ -54,7 +54,6 @@ item(FEAT_TRAINS, ko_train_K8000, 55100) {
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        length:                         7;
 
         // Spec
         speed:                          85 km/h;

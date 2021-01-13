@@ -47,7 +47,6 @@ item(FEAT_TRAINS, ko_train_K7000, 55080) {
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_DIESEL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        length:                         7;
 
         // Spec
         speed:                          150 km/h;
