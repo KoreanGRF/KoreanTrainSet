@@ -1,4 +1,0 @@
-VERSION        :20210108
-RECENT_UPDATED :2021.01.08
-AUTHOR_WEBSITE :https://telk.kr
-AUTHOR_EMAIL   :telk5093@gmail.com
