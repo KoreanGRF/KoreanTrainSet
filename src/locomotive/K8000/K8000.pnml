@@ -1,0 +1,105 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * K8000
+ */
+// Defines
+#define SPEED_K8000           85
+#define COST_K8000            3
+#define RUNNINGCOST_K8000     10
+
+switch(FEAT_TRAINS, SELF, var_speed_K8000, 1)   { return SPEED_K8000 / 10 * coeff_speed_general; }
+switch(FEAT_TRAINS, SELF, var_cost_K8000, 1)    { return COST_K8000 / 10 * sw_cost_factor; }
+switch(FEAT_TRAINS, SELF, var_runcost_K8000, 1) { return RUNNINGCOST_K8000 / 10 * sw_running_cost_factor; }
+
+// 8000호대
+spriteset(set_K8000_purchase, "./src/locomotive/K8000/K8000.png") {
+	tmpl_purchase(0, 60)
+}
+spriteset(set_K8000_loco_BLUE_WHITE, "./src/locomotive/K8000/K8000.png") {   // Blue & White
+	tmpl_loco(60, 0)
+}
+spriteset(set_K8000_loco_GREEN_YELLOW, "./src/locomotive/K8000/K8000.png") {   // Green & Yellow
+	tmpl_loco(60, 30)
+}
+spriteset(set_K8000_loco_RED_WHITE_BLUE, "./src/locomotive/K8000/K8000.png") {   // Red & White & Blue
+	tmpl_loco(60, 60)
+}
+
+/*------------------------------------------------------------------------------
+K8000
+------------------------------------------------------------------------------*/
+switch(FEAT_TRAINS, SELF, sw_K8000_loco, cargo_subtype) {
+    0:    set_K8000_loco_RED_WHITE_BLUE;
+    1:    set_K8000_loco_GREEN_YELLOW;
+    2:    set_K8000_loco_BLUE_WHITE;
+    set_K8000_loco_RED_WHITE_BLUE;
+}
+switch(FEAT_TRAINS, SELF, sw_K8000_cargo_subtype_text, cargo_subtype) {
+    0:    return string(STR_REFIT_PAINTING_THESEDAYS);
+    1:    return string(STR_REFIT_PAINTING_OLD_KORAIL);
+    2:    return string(STR_REFIT_PAINTING_1970s);
+    return string(STR_REFIT_PAINTING_THESEDAYS);
+}
+
+item(FEAT_TRAINS, ko_train_K8000, 55100) {
+	property {
+        // Common properties
+        name:                           string(STR_K8000_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(1972, 1, 1);
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        length:                         7;
+
+        // Spec
+        speed:                          85 km/h;
+        power:                          3900 kW;
+        weight:                         132 ton;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  0;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_K8000_loco;
+        purchase:                       set_K8000_purchase;
+
+        speed:                          var_speed_K8000;
+        cost_factor:                    var_cost_K8000;
+        running_cost_factor:            var_runcost_K8000;
+        cargo_capacity:                 0;
+
+        can_attach_wagon:               sw_GENE_attach;
+        cargo_subtype_text:             sw_K8000_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}
+// End of "K8000"
