@@ -109,6 +109,4 @@ $(DIR_NAME).tar: $(DIR_NAME)
 	@ tar -cf $@ $^ --exclude=bananas.ini
 clean::
 	@echo "[CLEAN BUNDLE]"
-	@-rm -rf $(DIR_NAME)
-	@-rm -rf $(DIR_NAME).tar
-#	@-rm -rf $(ZIP_FILE)
+	@-rm -rf $(shell echo "$(REPO_NAME)*" | xargs | sed s/\ /_/g)
