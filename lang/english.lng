@@ -30,7 +30,7 @@ STR_DAEGU1_NAME								:[KTS] Daegu Line 1
 STR_DAEGU2_NAME								:[KTS] Daegu Line 2
 STR_DAEGU3_NAME								:[KTS] Daegu Line 3
 STR_DAEGU3_CW_NAME							:[KTS] Daegu Line 3 passenger car
-STR_DAEJEONGWANGJU1_NAME					:[KTS] DaejeonÂ·Gwangju Line 1
+STR_DAEJEONGWANGJU1_NAME					:[KTS] Daejeon·Gwangju Line 1
 STR_UISINSEOL_NAME							:[KTS] Seoul Ui-Sinseol LRT Line
 STR_GIMPOGOLD_NAME							:[KTS] Gimpo Goldline
 STR_SUBCW_NAME								:[KTS] Common subway passenger coach
@@ -43,7 +43,7 @@ STR_K8200_NAME								:[KTS] 8200 Electric Locomotive
 STR_K8500_NAME								:[KTS] 8500 Electric Locomotive
 STR_CDC_NAME								:[KTS] Commuter Diesel Car(CDC)
 STR_NDC_NAME								:[KTS] New Diesel Car(NDC)
-STR_SMEPP_NAME								:[KTS] Saemaeul Diesel Hydraulic Car (DHC, PP-car)
+STR_DHC_NAME								:[KTS] Saemaeul Diesel Hydraulic Car (DHC, PP-car)
 STR_ITXSME_NAME								:[KTS] ITX-Saemaeul
 STR_NURIRO_NAME								:[KTS] Nuriro
 STR_KTX1N_NAME								:[KTS] KTX
@@ -259,3 +259,5 @@ STR_REFIT_TYPE_GWANGJU1_NAME				: (GMRT Gwangju 1k)
 
 # Errors
 STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION	:It requires higher OpenTTD version(1.7.0/r21278) to run this NewGRF!
+STR_ERROR_NOT_ENOUGH_LENGTH2			    :It's too short. It should be more than 2 cars at least.
+STR_ERROR_NOT_ENOUGH_LENGTH4			    :It's too short. It should be more than 4 cars at least.

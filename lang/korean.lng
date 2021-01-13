@@ -14,6 +14,8 @@ STR_K8000_NAME                              :[KTS] 8000호대 전기 기관차
 STR_K8100_NAME                              :[KTS] 8100호대 전기 기관차
 STR_K8200_NAME                              :[KTS] 8200호대 전기 기관차
 STR_K8500_NAME                              :[KTS] 8500호대 전기 기관차
+STR_DHC_NAME                                :[KTS] 디젤 유압동차 (DHC, PP)
+STR_ITXSME_NAME								:[KTS] ITX-새마을
 
 # Paintings
 STR_REFIT_PAINTING_THESEDAYS                : (현재 도색)
@@ -94,3 +96,5 @@ STR_PARAM_MAX_SPEED_TYPE_OPT_2              :설계 속력
 
 # Errors
 STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION   :이 NewGRF를 사용하기 위해서는 더 높은 OpenTTD 버전(1.7.0/r21278)을 사용해야 합니다!
+STR_ERROR_NOT_ENOUGH_LENGTH2                :열차 길이가 너무 짧습니다. 최소한 2량 이상을 연결해야 합니다.
+STR_ERROR_NOT_ENOUGH_LENGTH4                :열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다.
