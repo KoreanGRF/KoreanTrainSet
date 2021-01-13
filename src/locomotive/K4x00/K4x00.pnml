@@ -9,7 +9,7 @@
  */
 // Defines
 #define SPEED_K4x00           150
-#define COST_K4x00            2
+#define COST_K4x00            1
 #define RUNNINGCOST_K4x00     10
 
 switch(FEAT_TRAINS, SELF, var_speed_K4x00, 1)   { return SPEED_K4x00 / 10 * coeff_speed_general; }
