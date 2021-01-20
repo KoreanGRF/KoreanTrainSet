@@ -1,266 +1,316 @@
 ##grflangid 0x00
 
 # GRF name and description
-STR_GRF_NAME								:Korean Train Set
-STR_GRF_NAME_WITH_VER						:Korean Train Set {VERSION}
-STR_GRF_DESC								:{}{BLACK}Korean Train Set adds trains and railways of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Daejeon, Busan subways/metros and some electric locomotives of Korail.{}(Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL									:{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=en
+STR_GRF_NAME                                :Korean Train Set
+STR_GRF_NAME_WITH_VER                       :Korean Train Set {VERSION}
+STR_GRF_DESC                                :{}{BLACK}Korean Train Set adds trains and railways of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Daejeon, Busan subways/metros and some electric locomotives of Korail.{}(Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
+STR_GRF_URL                                 :{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=en
 
 # Vehicle's name
-STR_MET1N_NAME								:[KTS] Seoul Line 1, Commuter trains
-STR_MET2N_NAME								:[KTS] Seoul Line 2
-STR_MET3N_NAME								:[KTS] Seoul Line 3
-STR_MET4N_NAME								:[KTS] Seoul Line 4
-STR_MET59_NAME								:[KTS] Seoul Line 5-9
-STR_METBN_NAME								:[KTS] Bundang Line
-STR_METKC_NAME								:[KTS] Gyeongchun Line 361k
-STR_KCITX_NAME								:[KTS] ITX-Cheongchun (Gyeongchun 368k)
-STR_METAR_NAME								:[KTS] Incheon Airport Railroad (A'REX)
-STR_D000N_NAME								:[KTS] Sinbundang Line
-STR_ICNM1_NAME								:[KTS] Incheon Line 1
-STR_ICNM2_NAME								:[KTS] Incheon Line 2
-STR_BUSAN1_NAME								:[KTS] Busan Line 1
-STR_BUSAN2_NAME								:[KTS] Busan Line 2
-STR_BUSAN3_NAME								:[KTS] Busan Line 3
-STR_BUSAN4_NAME								:[KTS] Busan Line 4
-STR_BUSAN4_CW_NAME							:[KTS] Busan Line 4 passenger car
-STR_BUSANGIMHAE_NAME						:[KTS] Busan-Gimhae LRT
-STR_EVERLINE_NAME							:[KTS] Yongin Everline
-STR_DAEGU1_NAME								:[KTS] Daegu Line 1
-STR_DAEGU2_NAME								:[KTS] Daegu Line 2
-STR_DAEGU3_NAME								:[KTS] Daegu Line 3
-STR_DAEGU3_CW_NAME							:[KTS] Daegu Line 3 passenger car
-STR_DAEJEONGWANGJU1_NAME					:[KTS] Daejeon·Gwangju Line 1
-STR_UISINSEOL_NAME							:[KTS] Seoul Ui-Sinseol LRT Line
-STR_GIMPOGOLD_NAME							:[KTS] Gimpo Goldline
-STR_SUBCW_NAME								:[KTS] Common subway passenger coach
-STR_K4x00_NAME								:[KTS] 4x00 Diesel Locomotive
-STR_K7000_NAME								:[KTS] 7000 Diesel Locomotive
-STR_K7x00_NAME								:[KTS] 7x00 Diesel Locomotive
-STR_K8000_NAME								:[KTS] 8000 Electric Locomotive
-STR_K8100_NAME								:[KTS] 8100 Electric Locomotive
-STR_K8200_NAME								:[KTS] 8200 Electric Locomotive
-STR_K8500_NAME								:[KTS] 8500 Electric Locomotive
-STR_CDC_NAME								:[KTS] Commuter Diesel Car(CDC)
-STR_NDC_NAME								:[KTS] New Diesel Car(NDC)
-STR_DHC_NAME								:[KTS] Saemaeul Diesel Hydraulic Car (DHC, PP-car)
-STR_ITXSME_NAME								:[KTS] ITX-Saemaeul
-STR_NURIRO_NAME								:[KTS] Nuriro
-STR_KTX1N_NAME								:[KTS] KTX
-STR_KTX2N_NAME								:[KTS] KTX-Sancheon, SRT
-STR_KTXCW_NAME								:[KTS] KTX passenger car
-STR_EMU250_NAME								:[KTS] EMU-250
-STR_EMUCW_NAME								:[KTS] EMU passenger car
-STR_NRRCW_NAME								:[KTS] Nuriro passenger car
-STR_SMECW_NAME								:[KTS] Saemaeul passenger car
-STR_MGHCW_NAME								:[KTS] Mugunghwa passenger car
-STR_CAFECW_NAME								:[KTS] Cafe car
-STR_TILCW_NAME								:[KTS] Tongil passenger car
-STR_CDCCW_NAME								:[KTS] CDC passenger car
-STR_GENCW_NAME								:[KTS] Generator car
-STR_FLATC_NAME								:[KTS] Flat cargo car
-STR_HOPPERC_NAME							:[KTS] Hopper car
-STR_SMALLCARGO_NAME							:[KTS] Luggage van
-STR_TANKER_NAME								:[KTS] Tanker
-STR_PASSWG_NAME                             :[KTS] Passenger car
-STR_PASSWG_POWER_NAME                       :[KTX] Passenger car (powered)
+STR_K4x00_NAME                              :[KTS] 4x00 Diesel Locomotive
+STR_K7000_NAME                              :[KTS] 7000 Diesel Locomotive
+STR_K7x00_NAME                              :[KTS] 7x00 Diesel Locomotive
+STR_K8000_NAME                              :[KTS] 8000 Electronic Locomotive
+STR_K8100_NAME                              :[KTS] 8100 Electronic Locomotive
+STR_K8200_NAME                              :[KTS] 8200 Electronic Locomotive
+STR_K8500_NAME                              :[KTS] 8500 Electronic Locomotive
+STR_DHC_NAME                                :[KTS] Diesel Hydraulic Car (DHC, PP)
+STR_ITXSME_NAME                             :[KTS] ITX-Saemaeul
+STR_NURIRO_NAME                             :[KTS] Nuriro
+
+STR_PASSWG_NAME                             :[KTS] Passenger car (unpowered)
+STR_PASSWG_POWER_NAME                       :[KTS] Passenger car (powered)
+
+
+# Paintings
+STR_REFIT_PAINTING_THESEDAYS                : (Current painting)
+STR_REFIT_PAINTING_7x00_CARGO               : (Cargo painting)
+STR_REFIT_PAINTING_7x00_TIGER               : (First Korail's painting: Black & Orange)
+STR_REFIT_PAINTING_7x00_FIRST_KORAIL        : (First Korail's painting: Blue & White)
+STR_REFIT_PAINTING_7x00_OLD_KORAIL          : (old Korail's painting: Green & Yellow)
+STR_REFIT_PAINTING_1970_1983                : (Painting A: 1970~1983)
+STR_REFIT_PAINTING_1984_1984                : (Painting B: 1984~1984)
+STR_REFIT_PAINTING_1985_1989                : (Painting C: 1985~1989)
+STR_REFIT_PAINTING_1990_1999                : (Painting D: 1990~1999)
+STR_REFIT_PAINTING_2000_2002                : (Painting E: 2000~2002)
+STR_REFIT_PAINTING_HAERANG                  : (Rail cruise 'Haerang')
+STR_REFIT_PAINTING_STRAIN                   : (S-train)
+STR_REFIT_PAINTING_GTRAIN                   : (G-train)
+STR_REFIT_PAINTING_VTRAIN                   : (V-train)
+STR_REFIT_PAINTING_NURIRO                   : (default)
+STR_REFIT_PAINTING_OTRAIN                   : (O-train)
+STR_REFIT_PAINTING_NURIRO_KOREAN_WAVE       : (Korean wave tour wrapping)
+# STR_REFIT_PAINTING_NURIRO_SANTA           : (Donghae santa wrapping)
+
+
+# Refit
+STR_REFIT_ADDITIONAL_ABLE                   :{BLACK}Changing model/livery: {GREEN}Available
+STR_REFIT_ADDITIONAL_UNABLE                 :{BLACK}Changing model/livery: {ORANGE}Unavailable
 
 
 # Parameters
-STR_PARAM_ADD_TYPE_NAME						:Train to add:
-STR_PARAM_ADD_TYPE_DESC						:Select the train to add. (default: all)
-STR_PARAM_ADD_TYPE_ALL						:All
-STR_PARAM_ADD_TYPE_ONLY_TRAIN				:Trains except subways
-STR_PARAM_ADD_TYPE_ONLY_SUBWAY				:Only subways
-STR_PARAM_SPEED_GENERAL_NAME				:Speed coefficient of General trains
-STR_PARAM_SPEED_GENERAL_DESC				:Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: 7x00 Locomotives, 8x00 Electric Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon, EMU-250
-STR_PARAM_SPEED_SUBEXPRESS_NAME				:Speed coefficient of Semi-express trains
-STR_PARAM_SPEED_SUBEXPRESS_DESC				:Speed coefficient of semi-express trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: A'REX 1k (Express), Gyeongchun ITX-Cheongchun
-STR_PARAM_SPEED_SUBWAY_NAME					:Speed coefficient of Subways
-STR_PARAM_SPEED_SUBWAY_DESC					:Speed coefficient of subway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Except for general and semi-express trains
-STR_PARAM_SPEED_LIGHTRAIL1_NAME				:Speed coefficient of Light Railways (rubber)
-STR_PARAM_SPEED_LIGHTRAIL1_DESC				:Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4
-STR_PARAM_SPEED_LIGHTRAIL2_NAME				:Speed coefficient of Light Railways (steel)
-STR_PARAM_SPEED_LIGHTRAIL2_DESC				:Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4
+STR_PARAM_ADD_TYPE_NAME                     :Train to add:
+STR_PARAM_ADD_TYPE_DESC                     :Select the train to add. (default: all)
+STR_PARAM_ADD_TYPE_ALL                      :All
+STR_PARAM_ADD_TYPE_ONLY_TRAIN               :Trains except subways
+STR_PARAM_ADD_TYPE_ONLY_SUBWAY              :Only subways
+STR_PARAM_SPEED_GENERAL_NAME                :Speed coefficient of General trains
+STR_PARAM_SPEED_GENERAL_DESC                :Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: 7x00 Locomotives, 8x00 Electric Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon, EMU-250
+STR_PARAM_SPEED_SUBEXPRESS_NAME             :Speed coefficient of Semi-express trains
+STR_PARAM_SPEED_SUBEXPRESS_DESC             :Speed coefficient of semi-express trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: A'REX 1k (Express), Gyeongchun ITX-Cheongchun
+STR_PARAM_SPEED_SUBWAY_NAME                 :Speed coefficient of Subways
+STR_PARAM_SPEED_SUBWAY_DESC                 :Speed coefficient of subway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Except for general and semi-express trains
+STR_PARAM_SPEED_LIGHTRAIL1_NAME             :Speed coefficient of Light Railways (rubber)
+STR_PARAM_SPEED_LIGHTRAIL1_DESC             :Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4
+STR_PARAM_SPEED_LIGHTRAIL2_NAME             :Speed coefficient of Light Railways (steel)
+STR_PARAM_SPEED_LIGHTRAIL2_DESC             :Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4
 
-STR_PARAM_FACTOR_COST_NAME					:Cost
-STR_PARAM_FACTOR_COST_DESC					:Cost of trains. The higher this value, the more expensive cost to buy trains.
-STR_PARAM_FACTOR_RUNNING_COST_NAME			:Running cost
-STR_PARAM_FACTOR_RUNNING_COST_DESC			:Running cost of trains. The higher this value, the more expensive cost to running trains.
-STR_PARAM_FACTOR_CARGO_CAPACITY_NAME		:Cargo capacity
-STR_PARAM_FACTOR_CARGO_CAPACITY_DESC		:Cargo capacity of trains. The higher this value, the more cargo can be delivered.{}However, subways are not affected by this option.{}It is the same as real if you set this by 'x2'.{}{RED}Warning!{WHITE} This setting will be applied from newly created trains.
-STR_PARAM_FACTOR_LOADING_SPEED_NAME			:Loading speed
-STR_PARAM_FACTOR_LOADING_SPEED_DESC			:Loading speed of trains. The higher this value, the more cargo can load cargos faster.
-STR_PARAM_WAGON_SPEED_LIMIT_NAME			:Unlock Wagon speed limit
-STR_PARAM_WAGON_SPEED_LIMIT_DESC			:You may unlock wagon speed limits only for Korean train set. This may be applied when you set 'Enable wagon speed limits' as "On" in the settings.
+STR_PARAM_FACTOR_COST_NAME                  :Cost
+STR_PARAM_FACTOR_COST_DESC                  :Cost of trains. The higher this value, the more expensive cost to buy trains.
+STR_PARAM_FACTOR_RUNNING_COST_NAME          :Running cost
+STR_PARAM_FACTOR_RUNNING_COST_DESC          :Running cost of trains. The higher this value, the more expensive cost to running trains.
+STR_PARAM_FACTOR_CARGO_CAPACITY_NAME        :Cargo capacity
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC        :Cargo capacity of trains. The higher this value, the more cargo can be delivered.{}However, subways are not affected by this option.{}It is the same as real if you set this by 'x2'.{}{RED}Warning!{WHITE} This setting will be applied from newly created trains.
+STR_PARAM_FACTOR_LOADING_SPEED_NAME         :Loading speed
+STR_PARAM_FACTOR_LOADING_SPEED_DESC         :Loading speed of trains. The higher this value, the more cargo can load cargos faster.
+STR_PARAM_WAGON_SPEED_LIMIT_NAME            :Unlock Wagon speed limit
+STR_PARAM_WAGON_SPEED_LIMIT_DESC            :You may unlock wagon
+
 
 # Parameters' value
-STR_PARAM_OPT_FACTOR_BY_0					:x0
-STR_PARAM_OPT_FACTOR_BY_1_32				:x1/32
-STR_PARAM_OPT_FACTOR_BY_1_16				:x1/16
-STR_PARAM_OPT_FACTOR_BY_1_8					:x1/8
-STR_PARAM_OPT_FACTOR_BY_1_4					:x1/4
-STR_PARAM_OPT_FACTOR_BY_1_2					:x1/2
-STR_PARAM_OPT_FACTOR_BY_1					:x1 (Default)
-STR_PARAM_OPT_FACTOR_BY_2					:x2
-STR_PARAM_OPT_FACTOR_BY_4					:x4
-STR_PARAM_OPT_FACTOR_BY_8					:x8
-STR_PARAM_OPT_FACTOR_BY_16					:x16
-STR_PARAM_OPT_FACTOR_BY_32					:x32
-STR_PARAM_OPT_FACTOR_BY_64					:x64
-STR_PARAM_OPT_FACTOR_BY_128					:x128
-STR_PARAM_OPT_FACTOR_BY_256					:x256
-STR_PARAM_OPT_FACTOR_BY_512					:x512
-STR_PARAM_OPT_FACTOR_BY_1024				:x1024
-STR_PARAM_OPT_FACTOR_BY_2048				:x2048
-STR_PARAM_OPT_FACTOR_BY_4096				:x4096
+STR_PARAM_OPT_FACTOR_BY_0                   :x0
+STR_PARAM_OPT_FACTOR_BY_1_32                :x1/32
+STR_PARAM_OPT_FACTOR_BY_1_16                :x1/16
+STR_PARAM_OPT_FACTOR_BY_1_8                 :x1/8
+STR_PARAM_OPT_FACTOR_BY_1_4                 :x1/4
+STR_PARAM_OPT_FACTOR_BY_1_2                 :x1/2
+STR_PARAM_OPT_FACTOR_BY_1                   :x1 (default)
+STR_PARAM_OPT_FACTOR_BY_2                   :x2
+STR_PARAM_OPT_FACTOR_BY_4                   :x4
+STR_PARAM_OPT_FACTOR_BY_8                   :x8
+STR_PARAM_OPT_FACTOR_BY_16                  :x16
+STR_PARAM_OPT_FACTOR_BY_32                  :x32
+STR_PARAM_OPT_FACTOR_BY_64                  :x64
+STR_PARAM_OPT_FACTOR_BY_128                 :x128
+STR_PARAM_OPT_FACTOR_BY_256                 :x256
+# STR_PARAM_OPT_FACTOR_BY_512               :x512
+# STR_PARAM_OPT_FACTOR_BY_1024              :x1024
+# STR_PARAM_OPT_FACTOR_BY_2048              :x2048
+# STR_PARAM_OPT_FACTOR_BY_4096              :x4096
 
-STR_PARAM_SIMPLIZE_WAYPOINT_NAME			:Make waypoint's graphics simple
-STR_PARAM_SIMPLIZE_WAYPOINT_DESC			:Make the graphic of waypoints simple by eliminating waypoint buildings.
-STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME	:Disable original engines
-STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC	:Disable original engines to find KTS passenger coaches quickly. Monorail and Maglev engines will not be disabled, only (electric) rail engines will be disabled.
-STR_PARAM_MAX_SPEED_TYPE_NAME				:Type of Max. speed
-STR_PARAM_MAX_SPEED_TYPE_DESC				:Select the type of the maximum speed of trains. Designed speed is slightly faster than service speed (eg. KTX-1 : service speed=300km/h, designed=330km/h)
-STR_PARAM_MAX_SPEED_TYPE_OPT_1				:Service
-STR_PARAM_MAX_SPEED_TYPE_OPT_2				:Design
+STR_PARAM_SIMPLIZE_WAYPOINT_NAME            :Make waypoint's graphics simple
+STR_PARAM_SIMPLIZE_WAYPOINT_DESC            :Make the graphic of waypoints simple by eliminating waypoint buildings.
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME    :Disable original engines
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC    :Disable original engines to find KTS passenger coaches quickly. Monorail and Maglev engines will not be disabled, only (electric) rail engines will be disabled.
+STR_PARAM_MAX_SPEED_TYPE_NAME               :Type of Max. speed
+STR_PARAM_MAX_SPEED_TYPE_DESC               :Select the type of the maximum speed of trains. Designed speed is slightly faster than service speed (eg. KTX-1 : service speed=300km/h, designed=330km/h)
+STR_PARAM_MAX_SPEED_TYPE_OPT_1              :Service
+STR_PARAM_MAX_SPEED_TYPE_OPT_2              :Design
 
-# For refit (KTX-Sancheon)
-STR_REFIT_PAINTING_SANCHEON					: (No.110000)
-STR_REFIT_PAINTING_SANCHEON_FIRST			: (No.110000, First class)
-STR_REFIT_PAINTING_SANCHEON_WINE			: (No.120000)
-STR_REFIT_PAINTING_SANCHEON_WINE_FIRST		: (No.120000, First class)
-
-# For refit (Mugunghwa)
-STR_REFIT_PAINTING_THESEDAYS				: (Current painting)
-STR_REFIT_PAINTING_7x00_CARGO				: (Cargo painting)
-STR_REFIT_PAINTING_7x00_TIGER				: (First Korail's painting: Black & Orange)
-STR_REFIT_PAINTING_7x00_FIRST_KORAIL		: (First Korail's painting: Blue & White)
-STR_REFIT_PAINTING_7x00_OLD_KORAIL			: (old Korail's painting: Green & Yellow)
-STR_REFIT_PAINTING_1970_1983				: (Painting A: 1970~1983)
-STR_REFIT_PAINTING_1984_1984				: (Painting B: 1984~1984)
-STR_REFIT_PAINTING_1985_1989				: (Painting C: 1985~1989)
-STR_REFIT_PAINTING_1990_1999				: (Painting D: 1990~1999)
-STR_REFIT_PAINTING_2000_2002				: (Painting E: 2000~2002)
-STR_REFIT_PAINTING_HAERANG					: (Rail cruise 'Haerang')
-STR_REFIT_PAINTING_STRAIN					: (S-train)
-STR_REFIT_PAINTING_STRAIN_A					: (S-train, No.1)
-STR_REFIT_PAINTING_STRAIN_B					: (S-train, No.2)
-STR_REFIT_PAINTING_GTRAIN					: (G-train)
-STR_REFIT_PAINTING_MUGUNGHWA_CAFE			: (General Mugunghwa cafe car)
-
-# For refit (Saemaeul)
-STR_REFIT_PAINTING_1970s					: (Painting A: 1970s)
-STR_REFIT_PAINTING_OLD_KORAIL				: (Painting B: old Korail)
-STR_REFIT_PAINTING_ITX_SAEMAEUL				: (ITX-Saemaeul)
-STR_REFIT_PAINTING_FORMER_TJ				: (Demoted to Mugunghwa, former executive car)
-STR_REFIT_PAINTING_SAEMAEUL_CAFE			: (General Saemaeul cafe car)
-
-# For refit (Nuriro)
-STR_REFIT_PAINTING_NURIRO					: (default)
-STR_REFIT_PAINTING_O_TRAIN					: (O-train)
-STR_REFIT_PAINTING_NURIRO_KOREAN_WAVE		: (Korean wave tour wrapping)
-# STR_REFIT_PAINTING_NURIRO_SANTA			: (Donghae santa wrapping)
-
-# For refit (CDC)
-STR_REFIT_PAINTING_CDC_GARDEN				: (Flower garden painting)
-STR_REFIT_PAINTING_CDC_DOLPHIN				: (Dolphin painting)
-STR_REFIT_PAINTING_CDC_SEASIDE				: (Seaside train painting)
-STR_REFIT_PAINTING_CDC_SEASIDE2				: (Seaside train painting / after 2014)
-STR_REFIT_PAINTING_CDC_BAEKJE				: (Korail 100th Anni., Baekje painting)
-STR_REFIT_PAINTING_CDC_OLD_KORAIL			: (old Korail's painting)
-STR_REFIT_PAINTING_CDC_DMZTRAIN				: (DMZ-train)
-STR_REFIT_PAINTING_CDC_MUGUNGHWA			: (RDC Mugunghwa painting)
-STR_REFIT_PAINTING_CDC_MUGUNGHWA_CAF		: (RDC Cafe car)
-STR_REFIT_PAINTING_CDC_GYEONGBUK1			: (Gyeongbuk Circular theme tour train, old paintings)
-STR_REFIT_PAINTING_CDC_GYEONGBUK2			: (Gyeongbuk Circular theme tour train, new paintings)
-
-# For refit (Misc.)
-STR_REFIT_PAINTING_VTRAIN					: (V-train)
-
-# For refit (Generate car)
-STR_REFIT_PAINTING_GENCW_DEFAULT			: (Default type)
-STR_REFIT_PAINTING_GENCW_LONG				: (Long type)
-STR_REFIT_PAINTING_GENCW_SME_A				: (Long type : Saemaeul old painting)
-STR_REFIT_PAINTING_GENCW_SME_B				: (Long type : Saemaeul current painting)
-
-# For refit (Etc)
-STR_REFIT_COLOUR_BLACK						: (Black)
-STR_REFIT_COLOUR_BLUE						: (Blue)
-STR_REFIT_COLOUR_SKYBLUE					: (Skyblue)
-STR_REFIT_COLOUR_DARKBLUE					: (Darkblue)
-STR_REFIT_COLOUR_BROWN						: (Brown)
-STR_REFIT_COLOUR_RED						: (Red)
-STR_REFIT_COLOUR_ORANGE						: (Orange)
-STR_REFIT_COLOUR_DARKGREEN					: (Darkgreen)
-STR_REFIT_COLOUR_OLIVE						: (Olive)
-# STR_REFIT_COLOUR_SILVER					: (Silver)
-STR_REFIT_MAIL_CAR							: (Mail coach)
-STR_REFIT_PASSWAGON_NORMALCAR				: (Standard car)
-STR_REFIT_PASSWAGON_FIRSTCAR				: (Executive car)
-STR_REFIT_IMPOSSIBLE						: (For future use)
-STR_REFIT_ADDITIONAL_ABLE					:{BLACK}Changing model/livery: {GREEN}Available
-STR_REFIT_ADDITIONAL_UNABLE					:{BLACK}Changing model/livery: {ORANGE}Unavailable
-
-# For refit (Subways)
-STR_REFIT_TYPE_K1A_NAME						: (Korail 1k First rheostatic / 1st painting)
-STR_REFIT_TYPE_K1B_NAME						: (Korail 1k First rheostatic / 2nd painting)
-STR_REFIT_TYPE_K1C_NAME						: (Korail 1k Modified rheostatic / 1st painting)
-STR_REFIT_TYPE_K1D_NAME						: (Korail 1k Modified rheostatic / 2nd painting)
-STR_REFIT_TYPE_K1E_NAME						: (Korail 1k Modified rheostatic / Current painting)
-STR_REFIT_TYPE_K1F_NAME						: (Korail 1k New rheostatic / Old painting)
-STR_REFIT_TYPE_K1G_NAME						: (Korail 1k New rheostatic / Current painting)
-STR_REFIT_TYPE_K1H_NAME						: (Korail 311k / Old painting)
-STR_REFIT_TYPE_K1I_NAME						: (Korail 311k / Current painting)
-# STR_REFIT_TYPE_K1J_BIKE_NAME				: (Korail 321k Bike painting)
-STR_REFIT_TYPE_K1J_NAME						: (Korail 3xxk ST)
-STR_REFIT_TYPE_K1K_NAME						: (Korail 3xxk AL)
-STR_REFIT_TYPE_K1L_NAME						: (Korail 371k / Blank painting)
-STR_REFIT_TYPE_K1M_NAME						: (Korail 371k, 381k 1st)
-STR_REFIT_TYPE_K1N_NAME						: (Korail 381k 2nd)
-STR_REFIT_TYPE_K1O_NAME						: (Korail 391k / Seohae Line)
-STR_REFIT_TYPE_K1P_NAME						: (Korail Line 1, introduced in 2019)
-STR_REFIT_TYPE_K1Q_NAME						: (Korail Line 4, introduced in 2019)
-STR_REFIT_TYPE_S1A_NAME						: (SMetro 1k First rheostatic)
-STR_REFIT_TYPE_S1B_NAME						: (SMetro 1k Modified rheostatic)
-STR_REFIT_TYPE_S1C_NAME						: (SMetro 1k VVVF)
-STR_REFIT_TYPE_S2A_NAME						: (SMetro 2k MELCO)
-STR_REFIT_TYPE_S2B_NAME						: (SMetro 2k Chopper)
-STR_REFIT_TYPE_S2C_NAME						: (SMetro 2k 1st VVVF)
-STR_REFIT_TYPE_S2D_NAME						: (SMetro 2k 2nd VVVF)
-STR_REFIT_TYPE_S2E_NAME						: (SMetro 2k Modified rheostatic)
-STR_REFIT_TYPE_S2F_NAME						: (SMetro 2k 3rd VVVF)
-STR_REFIT_TYPE_K3A_NAME						: (Korail 3k VVVF / Old painting)
-STR_REFIT_TYPE_K3B_NAME						: (Korail 3k VVVF / Current painting)
-STR_REFIT_TYPE_S3A_NAME						: (SMetro 3k Chopper)
-STR_REFIT_TYPE_S3B_NAME						: (Unfinished: SMetro 3k 1st VVVF)
-STR_REFIT_TYPE_S3C_NAME						: (SMetro 3k 2nd VVVF)
-STR_REFIT_TYPE_S4A_NAME						: (SMetro 4k VVVF)
-STR_REFIT_TYPE_K4A_NAME						: (Korail 341k 1st VVVF / Old painting)
-STR_REFIT_TYPE_K4B_NAME						: (Korail 341k 2nd VVVF / Old painting)
-STR_REFIT_TYPE_K4C_NAME						: (Korail 341k 1st VVVF / Current painting)
-STR_REFIT_TYPE_K4D_NAME						: (Korail 341k 2nd VVVF / Current painting)
-STR_REFIT_TYPE_SSR_NAME						: (SMRT SR0x VVVF)
-STR_REFIT_TYPE_S5N_NAME						: (SMRT 5k VVVF)
-STR_REFIT_TYPE_S6N_NAME						: (SMRT 6k VVVF)
-STR_REFIT_TYPE_S7N_NAME						: (SMRT 7k VVVF)
-STR_REFIT_TYPE_S8N_NAME						: (SMRT 8k VVVF)
-STR_REFIT_TYPE_S9N_NAME						: (SML9 9k VVVF)
-STR_REFIT_TYPE_KBA_NAME						: (Korail 351k 1st VVVF)
-STR_REFIT_TYPE_KBB_NAME						: (Korail 351k 2nd VVVF)
-STR_REFIT_TYPE_KBC_NAME						: (Korail 351k 3rd VVVF)
-STR_REFIT_TYPE_KCC_NAME						: (Korail 361k VVVF)
-STR_REFIT_TYPE_ITX_NAME						: (Korail 368k ITX-Cheongchun)
-STR_REFIT_TYPE_ARA_NAME						: (Korail A'REX 1k Express)
-STR_REFIT_TYPE_ARB_NAME						: (Korail A'REX 2k All-stop)
-STR_REFIT_TYPE_D00_NAME						: (Sinbundang D000 VVVF)
-STR_REFIT_TYPE_ICNM1A_NAME					: (ICTR Incheon 1k VVVF 1st)
-STR_REFIT_TYPE_ICNM1B_NAME					: (ICTR Incheon 1k VVVF 2nd)
-STR_REFIT_TYPE_BUSAN1A_NAME					: (BTC Busan 1k 1st)
-STR_REFIT_TYPE_BUSAN1B_NAME					: (BTC Busan 1k 2nd)
-STR_REFIT_TYPE_DAEJEON1_NAME				: (DJET Daejeon 1k)
-STR_REFIT_TYPE_GWANGJU1_NAME				: (GMRT Gwangju 1k)
 
 # Errors
-STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION	:It requires higher OpenTTD version(1.7.0/r21278) to run this NewGRF!
-STR_ERROR_NOT_ENOUGH_LENGTH2			    :It's too short. It should be more than 2 cars at least.
-STR_ERROR_NOT_ENOUGH_LENGTH4			    :It's too short. It should be more than 4 cars at least.
+STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION   :It requires higher OpenTTD version(1.7.0/r21278) to run this NewGRF!
+STR_ERROR_NOT_ENOUGH_LENGTH2                :It's too short. It should be more than 2 cars at least.
+STR_ERROR_NOT_ENOUGH_LENGTH4                :It's too short. It should be more than 4 cars at least.
+
+####################################################################
+# BELOWS ARE JUST FOR REFERENCE
+####################################################################
+
+# Vehicle's name
+# STR_MET1N_NAME                                :[KTS] Seoul Line 1, Commuter trains
+# STR_MET2N_NAME                                :[KTS] Seoul Line 2
+# STR_MET3N_NAME                                :[KTS] Seoul Line 3
+# STR_MET4N_NAME                                :[KTS] Seoul Line 4
+# STR_MET59_NAME                                :[KTS] Seoul Line 5-9
+# STR_METBN_NAME                                :[KTS] Bundang Line
+# STR_METKC_NAME                                :[KTS] Gyeongchun Line 361k
+# STR_KCITX_NAME                                :[KTS] ITX-Cheongchun (Gyeongchun 368k)
+# STR_METAR_NAME                                :[KTS] Incheon Airport Railroad (A'REX)
+# STR_D000N_NAME                                :[KTS] Sinbundang Line
+# STR_ICNM1_NAME                                :[KTS] Incheon Line 1
+# STR_ICNM2_NAME                                :[KTS] Incheon Line 2
+# STR_BUSAN1_NAME                                :[KTS] Busan Line 1
+# STR_BUSAN2_NAME                                :[KTS] Busan Line 2
+# STR_BUSAN3_NAME                                :[KTS] Busan Line 3
+# STR_BUSAN4_NAME                                :[KTS] Busan Line 4
+# STR_BUSAN4_CW_NAME                            :[KTS] Busan Line 4 passenger car
+# STR_BUSANGIMHAE_NAME                        :[KTS] Busan-Gimhae LRT
+# STR_EVERLINE_NAME                            :[KTS] Yongin Everline
+# STR_DAEGU1_NAME                                :[KTS] Daegu Line 1
+# STR_DAEGU2_NAME                                :[KTS] Daegu Line 2
+# STR_DAEGU3_NAME                                :[KTS] Daegu Line 3
+# STR_DAEGU3_CW_NAME                            :[KTS] Daegu Line 3 passenger car
+# STR_DAEJEONGWANGJU1_NAME                    :[KTS] Daejeon·Gwangju Line 1
+# STR_UISINSEOL_NAME                            :[KTS] Seoul Ui-Sinseol LRT Line
+# STR_GIMPOGOLD_NAME                            :[KTS] Gimpo Goldline
+# STR_SUBCW_NAME                                :[KTS] Common subway passenger coach
+# STR_K4x00_NAME                                :[KTS] 4x00 Diesel Locomotive
+# STR_K7000_NAME                                :[KTS] 7000 Diesel Locomotive
+# STR_K7x00_NAME                                :[KTS] 7x00 Diesel Locomotive
+# STR_K8000_NAME                                :[KTS] 8000 Electric Locomotive
+# STR_K8100_NAME                                :[KTS] 8100 Electric Locomotive
+# STR_K8200_NAME                                :[KTS] 8200 Electric Locomotive
+# STR_K8500_NAME                                :[KTS] 8500 Electric Locomotive
+# STR_CDC_NAME                                :[KTS] Commuter Diesel Car(CDC)
+# STR_NDC_NAME                                :[KTS] New Diesel Car(NDC)
+# STR_DHC_NAME                                :[KTS] Saemaeul Diesel Hydraulic Car (DHC, PP-car)
+# STR_ITXSME_NAME                                :[KTS] ITX-Saemaeul
+# STR_NURIRO_NAME                                :[KTS] Nuriro
+# STR_KTX1N_NAME                                :[KTS] KTX
+# STR_KTX2N_NAME                                :[KTS] KTX-Sancheon, SRT
+# STR_KTXCW_NAME                                :[KTS] KTX passenger car
+# STR_EMU250_NAME                                :[KTS] EMU-250
+# STR_EMUCW_NAME                                :[KTS] EMU passenger car
+# STR_NRRCW_NAME                                :[KTS] Nuriro passenger car
+# STR_SMECW_NAME                                :[KTS] Saemaeul passenger car
+# STR_MGHCW_NAME                                :[KTS] Mugunghwa passenger car
+# STR_CAFECW_NAME                                :[KTS] Cafe car
+# STR_TILCW_NAME                                :[KTS] Tongil passenger car
+# STR_CDCCW_NAME                                :[KTS] CDC passenger car
+# STR_GENCW_NAME                                :[KTS] Generator car
+# STR_FLATC_NAME                                :[KTS] Flat cargo car
+# STR_HOPPERC_NAME                            :[KTS] Hopper car
+# STR_SMALLCARGO_NAME                            :[KTS] Luggage van
+# STR_TANKER_NAME                                :[KTS] Tanker
+# STR_PASSWG_NAME                             :[KTS] Passenger car
+# STR_PASSWG_POWER_NAME                       :[KTX] Passenger car (powered)
+
+# STR_PARAM_OPT_FACTOR_BY_0                    :x0
+# STR_PARAM_OPT_FACTOR_BY_1_32                :x1/32
+# STR_PARAM_OPT_FACTOR_BY_1_16                :x1/16
+# STR_PARAM_OPT_FACTOR_BY_1_8                    :x1/8
+# STR_PARAM_OPT_FACTOR_BY_1_4                    :x1/4
+# STR_PARAM_OPT_FACTOR_BY_1_2                    :x1/2
+# STR_PARAM_OPT_FACTOR_BY_1                    :x1 (Default)
+# STR_PARAM_OPT_FACTOR_BY_2                    :x2
+# STR_PARAM_OPT_FACTOR_BY_4                    :x4
+# STR_PARAM_OPT_FACTOR_BY_8                    :x8
+# STR_PARAM_OPT_FACTOR_BY_16                    :x16
+# STR_PARAM_OPT_FACTOR_BY_32                    :x32
+# STR_PARAM_OPT_FACTOR_BY_64                    :x64
+# STR_PARAM_OPT_FACTOR_BY_128                    :x128
+# STR_PARAM_OPT_FACTOR_BY_256                    :x256
+# STR_PARAM_OPT_FACTOR_BY_512                    :x512
+# STR_PARAM_OPT_FACTOR_BY_1024                :x1024
+# STR_PARAM_OPT_FACTOR_BY_2048                :x2048
+# STR_PARAM_OPT_FACTOR_BY_4096                :x4096
+# 
+# STR_PARAM_SIMPLIZE_WAYPOINT_NAME            :Make waypoint's graphics simple
+# STR_PARAM_SIMPLIZE_WAYPOINT_DESC            :Make the graphic of waypoints simple by eliminating waypoint buildings.
+# STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME    :Disable original engines
+# STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC    :Disable original engines to find KTS passenger coaches quickly. Monorail and Maglev engines will not be disabled, only (electric) rail engines will be disabled.
+# STR_PARAM_MAX_SPEED_TYPE_NAME                :Type of Max. speed
+# STR_PARAM_MAX_SPEED_TYPE_DESC                :Select the type of the maximum speed of trains. Designed speed is slightly faster than service speed (eg. KTX-1 : service speed=300km/h, designed=330km/h)
+# STR_PARAM_MAX_SPEED_TYPE_OPT_1                :Service
+# STR_PARAM_MAX_SPEED_TYPE_OPT_2                :Design
+# 
+# # For refit (KTX-Sancheon)
+# STR_REFIT_PAINTING_SANCHEON                    : (No.110000)
+# STR_REFIT_PAINTING_SANCHEON_FIRST            : (No.110000, First class)
+# STR_REFIT_PAINTING_SANCHEON_WINE            : (No.120000)
+# STR_REFIT_PAINTING_SANCHEON_WINE_FIRST        : (No.120000, First class)
+# 
+# # For refit (CDC)
+# STR_REFIT_PAINTING_CDC_GARDEN                : (Flower garden painting)
+# STR_REFIT_PAINTING_CDC_DOLPHIN                : (Dolphin painting)
+# STR_REFIT_PAINTING_CDC_SEASIDE                : (Seaside train painting)
+# STR_REFIT_PAINTING_CDC_SEASIDE2                : (Seaside train painting / after 2014)
+# STR_REFIT_PAINTING_CDC_BAEKJE                : (Korail 100th Anni., Baekje painting)
+# STR_REFIT_PAINTING_CDC_OLD_KORAIL            : (old Korail's painting)
+# STR_REFIT_PAINTING_CDC_DMZTRAIN                : (DMZ-train)
+# STR_REFIT_PAINTING_CDC_MUGUNGHWA            : (RDC Mugunghwa painting)
+# STR_REFIT_PAINTING_CDC_MUGUNGHWA_CAF        : (RDC Cafe car)
+# STR_REFIT_PAINTING_CDC_GYEONGBUK1            : (Gyeongbuk Circular theme tour train, old paintings)
+# STR_REFIT_PAINTING_CDC_GYEONGBUK2            : (Gyeongbuk Circular theme tour train, new paintings)
+# 
+# # For refit (Misc.)
+# STR_REFIT_PAINTING_VTRAIN                    : (V-train)
+# 
+# # For refit (Generate car)
+# STR_REFIT_PAINTING_GENCW_DEFAULT            : (Default type)
+# STR_REFIT_PAINTING_GENCW_LONG                : (Long type)
+# STR_REFIT_PAINTING_GENCW_SME_A                : (Long type : Saemaeul old painting)
+# STR_REFIT_PAINTING_GENCW_SME_B                : (Long type : Saemaeul current painting)
+# 
+# # For refit (Etc)
+# STR_REFIT_COLOUR_BLACK                        : (Black)
+# STR_REFIT_COLOUR_BLUE                        : (Blue)
+# STR_REFIT_COLOUR_SKYBLUE                    : (Skyblue)
+# STR_REFIT_COLOUR_DARKBLUE                    : (Darkblue)
+# STR_REFIT_COLOUR_BROWN                        : (Brown)
+# STR_REFIT_COLOUR_RED                        : (Red)
+# STR_REFIT_COLOUR_ORANGE                        : (Orange)
+# STR_REFIT_COLOUR_DARKGREEN                    : (Darkgreen)
+# STR_REFIT_COLOUR_OLIVE                        : (Olive)
+# # STR_REFIT_COLOUR_SILVER                    : (Silver)
+# STR_REFIT_MAIL_CAR                            : (Mail coach)
+# STR_REFIT_PASSWAGON_NORMALCAR                : (Standard car)
+# STR_REFIT_PASSWAGON_FIRSTCAR                : (Executive car)
+# STR_REFIT_IMPOSSIBLE                        : (For future use)
+# STR_REFIT_ADDITIONAL_ABLE                    :{BLACK}Changing model/livery: {GREEN}Available
+# STR_REFIT_ADDITIONAL_UNABLE                    :{BLACK}Changing model/livery: {ORANGE}Unavailable
+# 
+# # For refit (Subways)
+# STR_REFIT_TYPE_K1A_NAME                        : (Korail 1k First rheostatic / 1st painting)
+# STR_REFIT_TYPE_K1B_NAME                        : (Korail 1k First rheostatic / 2nd painting)
+# STR_REFIT_TYPE_K1C_NAME                        : (Korail 1k Modified rheostatic / 1st painting)
+# STR_REFIT_TYPE_K1D_NAME                        : (Korail 1k Modified rheostatic / 2nd painting)
+# STR_REFIT_TYPE_K1E_NAME                        : (Korail 1k Modified rheostatic / Current painting)
+# STR_REFIT_TYPE_K1F_NAME                        : (Korail 1k New rheostatic / Old painting)
+# STR_REFIT_TYPE_K1G_NAME                        : (Korail 1k New rheostatic / Current painting)
+# STR_REFIT_TYPE_K1H_NAME                        : (Korail 311k / Old painting)
+# STR_REFIT_TYPE_K1I_NAME                        : (Korail 311k / Current painting)
+# # STR_REFIT_TYPE_K1J_BIKE_NAME                : (Korail 321k Bike painting)
+# STR_REFIT_TYPE_K1J_NAME                        : (Korail 3xxk ST)
+# STR_REFIT_TYPE_K1K_NAME                        : (Korail 3xxk AL)
+# STR_REFIT_TYPE_K1L_NAME                        : (Korail 371k / Blank painting)
+# STR_REFIT_TYPE_K1M_NAME                        : (Korail 371k, 381k 1st)
+# STR_REFIT_TYPE_K1N_NAME                        : (Korail 381k 2nd)
+# STR_REFIT_TYPE_K1O_NAME                        : (Korail 391k / Seohae Line)
+# STR_REFIT_TYPE_K1P_NAME                        : (Korail Line 1, introduced in 2019)
+# STR_REFIT_TYPE_K1Q_NAME                        : (Korail Line 4, introduced in 2019)
+# STR_REFIT_TYPE_S1A_NAME                        : (SMetro 1k First rheostatic)
+# STR_REFIT_TYPE_S1B_NAME                        : (SMetro 1k Modified rheostatic)
+# STR_REFIT_TYPE_S1C_NAME                        : (SMetro 1k VVVF)
+# STR_REFIT_TYPE_S2A_NAME                        : (SMetro 2k MELCO)
+# STR_REFIT_TYPE_S2B_NAME                        : (SMetro 2k Chopper)
+# STR_REFIT_TYPE_S2C_NAME                        : (SMetro 2k 1st VVVF)
+# STR_REFIT_TYPE_S2D_NAME                        : (SMetro 2k 2nd VVVF)
+# STR_REFIT_TYPE_S2E_NAME                        : (SMetro 2k Modified rheostatic)
+# STR_REFIT_TYPE_S2F_NAME                        : (SMetro 2k 3rd VVVF)
+# STR_REFIT_TYPE_K3A_NAME                        : (Korail 3k VVVF / Old painting)
+# STR_REFIT_TYPE_K3B_NAME                        : (Korail 3k VVVF / Current painting)
+# STR_REFIT_TYPE_S3A_NAME                        : (SMetro 3k Chopper)
+# STR_REFIT_TYPE_S3B_NAME                        : (Unfinished: SMetro 3k 1st VVVF)
+# STR_REFIT_TYPE_S3C_NAME                        : (SMetro 3k 2nd VVVF)
+# STR_REFIT_TYPE_S4A_NAME                        : (SMetro 4k VVVF)
+# STR_REFIT_TYPE_K4A_NAME                        : (Korail 341k 1st VVVF / Old painting)
+# STR_REFIT_TYPE_K4B_NAME                        : (Korail 341k 2nd VVVF / Old painting)
+# STR_REFIT_TYPE_K4C_NAME                        : (Korail 341k 1st VVVF / Current painting)
+# STR_REFIT_TYPE_K4D_NAME                        : (Korail 341k 2nd VVVF / Current painting)
+# STR_REFIT_TYPE_SSR_NAME                        : (SMRT SR0x VVVF)
+# STR_REFIT_TYPE_S5N_NAME                        : (SMRT 5k VVVF)
+# STR_REFIT_TYPE_S6N_NAME                        : (SMRT 6k VVVF)
+# STR_REFIT_TYPE_S7N_NAME                        : (SMRT 7k VVVF)
+# STR_REFIT_TYPE_S8N_NAME                        : (SMRT 8k VVVF)
+# STR_REFIT_TYPE_S9N_NAME                        : (SML9 9k VVVF)
+# STR_REFIT_TYPE_KBA_NAME                        : (Korail 351k 1st VVVF)
+# STR_REFIT_TYPE_KBB_NAME                        : (Korail 351k 2nd VVVF)
+# STR_REFIT_TYPE_KBC_NAME                        : (Korail 351k 3rd VVVF)
+# STR_REFIT_TYPE_KCC_NAME                        : (Korail 361k VVVF)
+# STR_REFIT_TYPE_ITX_NAME                        : (Korail 368k ITX-Cheongchun)
+# STR_REFIT_TYPE_ARA_NAME                        : (Korail A'REX 1k Express)
+# STR_REFIT_TYPE_ARB_NAME                        : (Korail A'REX 2k All-stop)
+# STR_REFIT_TYPE_D00_NAME                        : (Sinbundang D000 VVVF)
+# STR_REFIT_TYPE_ICNM1A_NAME                    : (ICTR Incheon 1k VVVF 1st)
+# STR_REFIT_TYPE_ICNM1B_NAME                    : (ICTR Incheon 1k VVVF 2nd)
+# STR_REFIT_TYPE_BUSAN1A_NAME                    : (BTC Busan 1k 1st)
+# STR_REFIT_TYPE_BUSAN1B_NAME                    : (BTC Busan 1k 2nd)
+# STR_REFIT_TYPE_DAEJEON1_NAME                : (DJET Daejeon 1k)
+# STR_REFIT_TYPE_GWANGJU1_NAME                : (GMRT Gwangju 1k)
+# 
+# # Errors
+# STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION    :It requires higher OpenTTD version(1.7.0/r21278) to run this NewGRF!
+# STR_ERROR_NOT_ENOUGH_LENGTH2                :It's too short. It should be more than 2 cars at least.
+# STR_ERROR_NOT_ENOUGH_LENGTH4                :It's too short. It should be more than 4 cars at least.
