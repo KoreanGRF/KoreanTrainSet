@@ -22,6 +22,8 @@ trainList['ITXSME']        = 150,     5,     10,          44,       5,          
 trainList['ITXSME_wagon']  = 150,     5,     10,          44,       5,           (2014, 1, 1)
 trainList['NURIRO']        = 150,     10,   150,          64,      10,           (2010, 1, 1)
 trainList['NURIRO_wagon']  = 150,     10,   150,          64,      10,           (2010, 1, 1)
+trainList['CDC']           = 120,     10,   150,          64,      10,           (2010, 1, 1)
+trainList['CDC_wagon']     = 120,     10,   150,          64,      10,           (1996, 1, 1)
 
 
 # Generates spec.pnml

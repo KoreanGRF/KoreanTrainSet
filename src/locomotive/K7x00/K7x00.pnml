@@ -91,7 +91,7 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
     0:    return string(STR_REFIT_PAINTING_THESEDAYS);
     1:    return string(STR_REFIT_PAINTING_7x00_CARGO);
-    2:    return string(STR_REFIT_PAINTING_7x00_OLD_KORAIL);
+    2:    return string(STR_REFIT_PAINTING_GREEN_YELLOW);
     3:    return string(STR_REFIT_PAINTING_7x00_FIRST_KORAIL);
     4:    return string(STR_REFIT_PAINTING_7x00_TIGER);
     // 5:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED

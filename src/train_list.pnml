@@ -20,9 +20,11 @@
 #include "locomotive/Saemaeul/DHC.pnml"
 #include "locomotive/Saemaeul/ITX-saemaeul.pnml"
 
-// NURIRO
+// Nuriro
 #include "locomotive/Nuriro/Nuriro.pnml"
 
+// CDC
+#include "locomotive/CDC/CDC.pnml"
 
 // Wagon
 #include "wagon/passenger_wagon.pnml"

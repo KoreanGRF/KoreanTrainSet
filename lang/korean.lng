@@ -18,6 +18,7 @@ STR_K8500_NAME                              :[KTS] 8500호대 전기 기관차
 STR_DHC_NAME                                :[KTS] 디젤 유압동차 (DHC, PP)
 STR_ITXSME_NAME                             :[KTS] ITX-새마을
 STR_NURIRO_NAME                             :[KTS] 누리로
+STR_CDC_NAME                                :[KTS] 통근형 디젤 열차 (CDC)
 
 STR_PASSWG_NAME                             :[KTS] 승객 수송 차량
 STR_PASSWG_POWER_NAME                       :[KTS] 승객 수송 차량 (동력차)
@@ -26,9 +27,9 @@ STR_PASSWG_POWER_NAME                       :[KTS] 승객 수송 차량 (동력�
 # Paintings
 STR_REFIT_PAINTING_THESEDAYS                : (현재 도색)
 STR_REFIT_PAINTING_7x00_CARGO               : (화물 도색)
-STR_REFIT_PAINTING_7x00_TIGER               : (초기 철도청 도색: 검정 & 주황)
-STR_REFIT_PAINTING_7x00_FIRST_KORAIL        : (초기 철도청 도색: 청색 & 백색)
-STR_REFIT_PAINTING_7x00_OLD_KORAIL          : (구 철도청 도색: 녹색 & 황색)
+STR_REFIT_PAINTING_7x00_TIGER               : (철도청 초기 도색: 검정 & 주황)
+STR_REFIT_PAINTING_7x00_FIRST_KORAIL        : (철도청 초기 도색: 청색 & 백색)
+STR_REFIT_PAINTING_GREEN_YELLOW             : (철도청 구 도색: 녹색 & 황색)
 STR_REFIT_PAINTING_1970_1983                : (1970~1983년 도색)
 STR_REFIT_PAINTING_1984_1984                : (1984~1984년 도색)
 STR_REFIT_PAINTING_1985_1989                : (1985~1989년 도색)
@@ -42,6 +43,15 @@ STR_REFIT_PAINTING_OTRAIN                   : (O-train)
 STR_REFIT_PAINTING_VTRAIN                   : (V-train)
 STR_REFIT_PAINTING_NURIRO_KOREAN_WAVE       : (한류관광열차)
 # STR_REFIT_PAINTING_NURIRO_SANTA           : (동해산타열차)
+STR_REFIT_PAINTING_CDC_GARDEN               : (꽃동산 테마)
+STR_REFIT_PAINTING_CDC_DOLPHIN              : (돌고래 테마)
+STR_REFIT_PAINTING_CDC_SEASIDE_BLUE         : (바다관광열차: 청색)
+STR_REFIT_PAINTING_CDC_SEASIDE_RED_WHITE    : (바다관광열차: 적색 & 흰색)
+STR_REFIT_PAINTING_CDC_BAEKJE               : (백제 왕관 기념 도색)
+STR_REFIT_PAINTING_CDC_DMZTRAIN             : (DMZ-train)
+STR_REFIT_PAINTING_CDC_MUGUNGHWA            : (RDC 무궁화 도색)
+STR_REFIT_PAINTING_CDC_GYEONGBUK1           : (경북관광순환테마열차, 구 도색)
+STR_REFIT_PAINTING_CDC_GYEONGBUK2           : (경북관광순환테마열차, 신 도색)
 
 
 # Refit
@@ -61,10 +71,10 @@ STR_PARAM_SPEED_SUBEXPRESS_NAME             :준고속형 열차 속력 계수
 STR_PARAM_SPEED_SUBEXPRESS_DESC             :준고속형 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 공항철도 1k (직통), 경춘선 ITX-청춘
 STR_PARAM_SPEED_SUBWAY_NAME                 :지하철 속력 계수
 STR_PARAM_SPEED_SUBWAY_DESC                 :지하철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 일반/준고속형 열차를 제외한 나머지 일반 지하철 차량
-STR_PARAM_SPEED_LIGHTRAIL1_NAME                :경전철 속력 계수 (고무)
-STR_PARAM_SPEED_LIGHTRAIL1_DESC                :고무 차륜 경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 부산 4호선
-STR_PARAM_SPEED_LIGHTRAIL2_NAME                :경전철 속력 계수 (철)
-STR_PARAM_SPEED_LIGHTRAIL2_DESC                :철제 차륜 경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 용인 에버라인, 의정부경전철
+STR_PARAM_SPEED_LIGHTRAIL1_NAME             :경전철 속력 계수 (고무)
+STR_PARAM_SPEED_LIGHTRAIL1_DESC             :고무 차륜 경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 부산 4호선
+STR_PARAM_SPEED_LIGHTRAIL2_NAME             :경전철 속력 계수 (철)
+STR_PARAM_SPEED_LIGHTRAIL2_DESC             :철제 차륜 경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 용인 에버라인, 의정부경전철
 
 STR_PARAM_FACTOR_COST_NAME                  :열차 구입비용
 STR_PARAM_FACTOR_COST_DESC                  :열차의 구입 가격을 조절할 수 있습니다. 값이 크면 구입 가격이 더 비싸집니다.

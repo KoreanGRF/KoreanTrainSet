@@ -7,44 +7,51 @@
 
 //TEST//
 // spriteset(set_PASSWG_wagon, "./src/wagon/passenger_wagon.png") {
-// 	tmpl_wagon_by_coor(350, 140)
+//     tmpl_wagon_by_coor(350, 140)
 // }
 spriteset(set_PASSWG_purchase, "./src/wagon/passenger_wagon_purchase.png") {
-	tmpl_purchase_detail(0, 0, 32, 12, -16, -8)
+    tmpl_purchase_detail(0, 0, 32, 12, -16, -8)
 }
 spriteset(set_PASSWG_TEMP_wagon, "./src/wagon/passenger_wagon.png") {
-	[0,    0,   8,   22,    -3,   -11]
-	[15,   0,  21,   17,   -14,    -8]
-	[45,   0,  32,   12,   -17,    -8]
-	[95,   0,  21,   17,    -6,    -8]
+    [0,    0,   8,   22,    -3,   -11]
+    [15,   0,  21,   17,   -14,    -8]
+    [45,   0,  32,   12,   -17,    -8]
+    [95,   0,  21,   17,    -6,    -8]
 }
 
-// Change wagon's appearance according to first engine
-switch(FEAT_TRAINS, PARENT, sw_PASSWG_engine, vehicle_type_id) {
-	ko_train_ITXSME: sw_ITXSME_wagon;
-	set_PASSWG_TEMP_wagon;
+switch(FEAT_TRAINS, PARENT, sw_PASSWG_wagon, vehicle_type_id) {
+    ko_train_CDC: sw_CDC_wagon;
+    set_PASSWG_TEMP_wagon;
 }
+
+// for temporarily
 switch(FEAT_TRAINS, SELF, sw_speed_PASSWG, cargo_subtype) {
-	return 150;
+       return 150;
 }
 switch(FEAT_TRAINS, SELF, sw_cost_PASSWG, cargo_subtype) {
-	return 10;
+       return 10;
 }
 switch(FEAT_TRAINS, SELF, sw_runcost_PASSWG, cargo_subtype) {
-	return 3;
+       return 3;
 }
 switch(FEAT_TRAINS, SELF, sw_capacity_PASSWG, cargo_subtype) {
-	return 50;
+       return 50;
 }
 switch(FEAT_TRAINS, SELF, sw_loading_speed_PASSWG, cargo_subtype) {
-	return 10;
+       return 10;
 }
 switch(FEAT_TRAINS, SELF, sw_weight_PASSWG, cargo_subtype) {
-	return 50;
+       return 50;
+}
+// for temporarily (end)
+
+switch(FEAT_TRAINS, PARENT, sw_PASSWG_cargo_subtype_text, vehicle_type_id) {
+    ko_train_CDC: sw_CDC_cargo_subtype_text;
+    // return CB_RESULT_NO_TEXT;
 }
 
 item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
-	property {
+    property {
         // Common properties
         name:                           string(STR_PASSWG_NAME);
         climates_available:             ALL_CLIMATES;
@@ -63,6 +70,7 @@ item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
         reliability_decay:              0;
 
         // Cargo
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -77,33 +85,33 @@ item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_PASSWG_engine;
+        default:                        sw_PASSWG_wagon;
         purchase:                       set_PASSWG_purchase;
 
         speed:                          sw_speed_PASSWG;
         cost_factor:                    sw_cost_PASSWG;
         running_cost_factor:            sw_runcost_PASSWG;
         cargo_capacity:                 sw_capacity_PASSWG;
-		loading_speed:                  sw_loading_speed_PASSWG;
-		// power:                          sw_power_PASSWG;
-		weight:                         sw_weight_PASSWG;
+        loading_speed:                  sw_loading_speed_PASSWG;
+        // power:                          sw_power_PASSWG;
+        weight:                         sw_weight_PASSWG;
 
         can_attach_wagon:               sw_GENE_attach;
-		// start_stop:                     sw_ko_train_start_stop;
+        // start_stop:                     sw_ko_train_start_stop;
 
-		// cargo_subtype_text:	            sw_PASSWG_cargo_subtype_text;
-        // additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+        cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }
 
 
 // Powered car
 item(FEAT_TRAINS, ko_train_PASSWGP, 55901) {
-	property {
+    property {
         // Common properties
         name:                           string(STR_PASSWG_POWER_NAME);
         climates_available:             ALL_CLIMATES;
@@ -122,6 +130,7 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 55901) {
         reliability_decay:              0;
 
         // Cargo
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -136,25 +145,25 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 55901) {
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_PASSWG_engine;
+        default:                        sw_PASSWG_wagon;
         purchase:                       set_PASSWG_purchase;
 
         speed:                          sw_speed_PASSWG;
         cost_factor:                    sw_cost_PASSWG;
         running_cost_factor:            sw_runcost_PASSWG;
         cargo_capacity:                 sw_capacity_PASSWG;
-		loading_speed:                  sw_loading_speed_PASSWG;
-		// power:                          sw_power_PASSWG;
-		weight:                         sw_weight_PASSWG;
+        loading_speed:                  sw_loading_speed_PASSWG;
+        // power:                          sw_power_PASSWG;
+        weight:                         sw_weight_PASSWG;
 
         can_attach_wagon:               sw_GENE_attach;
-		// start_stop:                     sw_ko_train_start_stop;
+        // start_stop:                     sw_ko_train_start_stop;
 
-		// cargo_subtype_text:	            sw_PASSWG_cargo_subtype_text;
-        // additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+        cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }

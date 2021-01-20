@@ -27,15 +27,13 @@ spriteset(set_K8000_loco_RED_WHITE_BLUE, "./src/locomotive/K8000/K8000.png") {  
 K8000
 ------------------------------------------------------------------------------*/
 switch(FEAT_TRAINS, SELF, sw_K8000_loco, cargo_subtype) {
-    0:    set_K8000_loco_RED_WHITE_BLUE;
-    1:    set_K8000_loco_GREEN_YELLOW;
-    2:    set_K8000_loco_BLUE_WHITE;
+    2:    set_K8000_loco_GREEN_YELLOW;
+    1:    set_K8000_loco_BLUE_WHITE;
     set_K8000_loco_RED_WHITE_BLUE;
 }
 switch(FEAT_TRAINS, SELF, sw_K8000_cargo_subtype_text, cargo_subtype) {
-    0:    return string(STR_REFIT_PAINTING_THESEDAYS);
-    1:    return string(STR_REFIT_PAINTING_OLD_KORAIL);
-    2:    return string(STR_REFIT_PAINTING_1970s);
+    1:    return string(STR_REFIT_PAINTING_1970_1983);
+    2:    return string(STR_REFIT_PAINTING_GREEN_YELLOW);
     return string(STR_REFIT_PAINTING_THESEDAYS);
 }
 
