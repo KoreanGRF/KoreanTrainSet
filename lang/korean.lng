@@ -17,6 +17,9 @@ STR_K8500_NAME                              :[KTS] 8500호대 전기 기관차
 STR_DHC_NAME                                :[KTS] 디젤 유압동차 (DHC, PP)
 STR_ITXSME_NAME								:[KTS] ITX-새마을
 
+STR_PASSWG_NAME                             :[KTS] 승객 수송 차량
+STR_PASSWG_POWER_NAME                       :[KTS] 승객 수송 차량 (동력차)
+
 # Paintings
 STR_REFIT_PAINTING_THESEDAYS                : (현재 도색)
 STR_REFIT_PAINTING_7x00_CARGO               : (화물 도색)

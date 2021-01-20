@@ -62,6 +62,8 @@ STR_FLATC_NAME								:[KTS] Flat cargo car
 STR_HOPPERC_NAME							:[KTS] Hopper car
 STR_SMALLCARGO_NAME							:[KTS] Luggage van
 STR_TANKER_NAME								:[KTS] Tanker
+STR_PASSWG_NAME                             :[KTS] Passenger car
+STR_PASSWG_POWER_NAME                       :[KTX] Passenger car (powered)
 
 
 # Parameters

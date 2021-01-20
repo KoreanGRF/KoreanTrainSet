@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+// For unit
+#define POWER_IN_KW(POWER)     (int(POWER / 0.7457))
+#define STR(x) #x
+#define XSTR(x) STR(x)
+
+// Cost
+#define COST(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _cost, 1) { \
+    return var_ ## VEHICLEID ## _COST / 10 * sw_cost_factor; \
+}
+
+// Running cost (Do not rename this as 'RUNNINGCOST')
+#define RUNNING(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _runningcost, 1) { \
+    return var_ ## VEHICLEID ## _RUNNINGCOST / 10 * sw_running_cost_factor; \
+}
+
+// Capacity
+#define CAPACITY(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _capacity, 1) { \
+    return var_ ## VEHICLEID ## _CAPACITY * sw_cargo_capacity_factor; \
+}
+
+// Loading speed
+#define LOADING(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _loadingspeed, 1) { \
+    return var_ ## VEHICLEID ## _LOADINGSPEED * sw_loading_speed_factor; \
+}
+
+// All with Speed
+#define GENERAL(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_## VEHICLEID ## _speed, 1) { \
+    return var_ ## VEHICLEID ## _SPEED / 10 * coeff_speed_general; \
+} \
+COST(VEHICLEID) \
+RUNNING(VEHICLEID) \
+CAPACITY(VEHICLEID) \
+LOADING(VEHICLEID)
+#define SUBEXPRESS(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _speed, 1) { \
+    return var_ ## VEHICLEID ## _SPEED / 10 * coeff_speed_subexpress; \
+} \
+COST(VEHICLEID) \
+RUNNING(VEHICLEID) \
+CAPACITY(VEHICLEID) \
+LOADING(VEHICLEID)
+#define SUBWAY(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _speed, 1) { \
+    return var_ ## VEHICLEID ## _SPEED / 10 * coeff_speed_subway; \
+} \
+COST(VEHICLEID) \
+RUNNING(VEHICLEID) \
+CAPACITY(VEHICLEID) \
+LOADING(VEHICLEID)
+#define LRT(VEHICLEID) \
+switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _speed, 1) { \
+    return var_ ## VEHICLEID ## _SPEED / 10 * coeff_speed_light_rail; \
+} \
+COST(VEHICLEID) \
+RUNNING(VEHICLEID) \
+CAPACITY(VEHICLEID) \
+LOADING(VEHICLEID)
