@@ -7,95 +7,82 @@
  * DHC
  */
 // Defines
-switch(FEAT_TRAINS, SELF, var_speed_DHC, 1)       { return DHC_SPEED / 10 * coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_DHC, 1)        { return DHC_COST / 10 * sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_DHC, 1)     { return DHC_RUNNINGCOST / 10 * sw_running_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_capacity_DHC, 1)    { return DHC_CAPACITY * sw_cargo_capacity_factor; }
-// switch(FEAT_TRAINS, SELF, var_capacity_ITXSME, 1) { return CAPACITY_ITXSME * sw_cargo_capacity_factor; }
+GENERAL(DHC)
+GENERAL(DHC_wagon)
 
 // DHC
+spriteset(set_DHC_purchase, "./src/locomotive/Saemaeul/DHC.png") {
+    tmpl_purchase_detail(0, 0, 50, 15, -12, -9)
+}
 spriteset(set_DHC1_engineH, "./src/locomotive/Saemaeul/DHC.png") {
-	tmpl_loco_saemaeul(60, 0)
+    tmpl_loco_saemaeul(60, 0)
 }
 spriteset(set_DHC1_engineT, "./src/locomotive/Saemaeul/DHC.png") {
-	tmpl_loco_saemaeul(60, 30)
+    tmpl_loco_saemaeul(60, 30)
 }
 spriteset(set_DHC2_engineH, "./src/locomotive/Saemaeul/DHC.png") {
-	tmpl_loco_saemaeul(60, 60)
+    tmpl_loco_saemaeul(60, 60)
 }
 spriteset(set_DHC2_engineT, "./src/locomotive/Saemaeul/DHC.png") {
-	tmpl_loco_saemaeul(60, 90)
+    tmpl_loco_saemaeul(60, 90)
 }
 spriteset(set_DHC3_engineH, "./src/locomotive/Saemaeul/DHC.png") {
-	tmpl_loco_saemaeul(60, 120)
+    tmpl_loco_saemaeul(60, 120)
 }
 spriteset(set_DHC3_engineT, "./src/locomotive/Saemaeul/DHC.png") {
-	tmpl_loco_saemaeul(60, 150)
+    tmpl_loco_saemaeul(60, 150)
 }
-spriteset(set_DHC_purchase, "./src/locomotive/Saemaeul/DHC.png") {
-	tmpl_purchase_detail(0, 0, 50, 15, -12, -9)
+spriteset(set_DHC1_wagon, "./src/locomotive/Saemaeul/DHC.png") {
+    tmpl_wagon_by_coor(320, 0)
 }
-// spriteset(set_SMEWA1_coach, "./src/locomotive/Saemaeul/DHC.png") {
-// 	tmpl_wagon_by_coor(350, 290)
-// }
-// spriteset(set_SMEWA2_coach, "./src/locomotive/Saemaeul/DHC.png") {
-// 	tmpl_wagon_by_coor(350, 320)
-// }
-// spriteset(set_SMEWA3_coach, "./src/locomotive/Saemaeul/DHC.png") {
-// 	tmpl_wagon_by_coor(350, 260)
-// }
-// spriteset(set_SMEWA_FORMERTJ_coach, "./src/locomotive/Saemaeul/DHC.png") {    //구특전 무궁호
-// 	tmpl_wagon_by_coor(350, 230)
-// }
-// spriteset(set_SMECF_coach, "./src/locomotive/Saemaeul/DHC.png") {
-// 	[560,	290,	8,	22,	-3,	-11]
-// 	[575,	290,	21,	17,	-14,	-8]
-// 	[605,	290,	31,	12,	-17,	-8]
-// 	[655,	290,	21,	17,	-6,	-8]
-// 	[685,	290,	8,	22,	-3,	-11]
-// 	[700,	290,	21,	17,	-14,	-8]
-// 	[735,	290,	31,	12,	-17,	-8]
-// 	[785,	290,	21,	17,	-6,	-8]
-// } // 카페 객차
+spriteset(set_DHC2_wagon, "./src/locomotive/Saemaeul/DHC.png") {
+    tmpl_wagon_by_coor(320, 60)
+}
+spriteset(set_DHC3_wagon, "./src/locomotive/Saemaeul/DHC.png") {
+    tmpl_wagon_by_coor(320, 120)
+}
 
 /*------------------------------------------------------------------------------
 DHC(PP)
 ------------------------------------------------------------------------------*/
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_DHC_engineH, cargo_subtype) {
-	0:	set_DHC3_engineH;
-	1:	set_DHC2_engineH;
-	2:	set_DHC1_engineH;
-	set_DHC3_engineH;
+    1:    set_DHC1_engineH;
+    2:    set_DHC2_engineH;
+    set_DHC3_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_DHC_engineT, cargo_subtype) {
-	0:	set_DHC3_engineT;
-	1:	set_DHC2_engineT;
-	2:	set_DHC1_engineT;
-	set_DHC3_engineT;
+    1:    set_DHC1_engineT;
+    2:    set_DHC2_engineT;
+    set_DHC3_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_DHC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-	1:	sw_DHC_engineT;
-	sw_DHC_engineH;
+    1:    sw_DHC_engineT;
+    sw_DHC_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_DHC_cargo_subtype_text, cargo_subtype) {
-	0:	return string(STR_REFIT_PAINTING_THESEDAYS);
-	1:	return string(STR_REFIT_PAINTING_OLD_KORAIL);
-	2:	return string(STR_REFIT_PAINTING_1970s);
-	// 3:	return string(STR_REFIT_PAINTING_FORMER_TJ);
-	return string(STR_REFIT_PAINTING_THESEDAYS);
+    1:    return string(STR_REFIT_PAINTING_1970s);
+    2:    return string(STR_REFIT_PAINTING_OLD_KORAIL);
+    return string(STR_REFIT_PAINTING_THESEDAYS);
+}
+
+// Wagon
+switch(FEAT_TRAINS, PARENT, sw_DHC_wagon, cargo_subtype) {
+	1:	set_DHC1_wagon;
+	2:	set_DHC2_wagon;
+	set_DHC3_wagon;
 }
 
 item(FEAT_TRAINS, ko_train_DHC, 55140) {
-	property {
+    property {
         // Common properties
         name:                           string(STR_DHC_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              DHC_INTRODUCTION;
+        introduction_date:              var_DHC_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
-		dual_headed:                    1;
+        dual_headed:                    1;
 
         // Spec
         speed:                          150 km/h;
@@ -128,21 +115,30 @@ item(FEAT_TRAINS, ko_train_DHC, 55140) {
         ai_special_flag:                AI_FLAG_PASSENGER;
         misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
         bitmask_vehicle_info:           0;
+        visual_effect_and_powered:      VISUAL_EFFECT_DIESEL;
     }
     graphics {
         default:                        sw_DHC_engine;
         purchase:                       set_DHC_purchase;
 
-        speed:                          var_speed_DHC;
-        cost_factor:                    var_cost_DHC;
-        running_cost_factor:            var_runcost_DHC;
-        cargo_capacity:                 var_capacity_DHC;
-		loading_speed:                  var_loading_speed_SLOW;
+        speed:                          sw_DHC_speed;
+        cost_factor:                    sw_DHC_cost;
+        running_cost_factor:            sw_DHC_runningcost;
+        cargo_capacity:                 sw_DHC_capacity;
+        loading_speed:                  sw_DHC_loadingspeed;
 
         can_attach_wagon:               sw_GENE_attach;
-		start_stop:                     sw_ko_train_start_stop;
-		cargo_subtype_text:             sw_DHC_cargo_subtype_text;
+        start_stop:                     sw_ko_train_start_stop;
+        cargo_subtype_text:             sw_DHC_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_DHC_wagon;
+        cargo_capacity:                 sw_DHC_wagon_capacity;
+    }
+    livery_override(ko_train_PASSWGP) {
+        default:                        sw_DHC_wagon;
+        cargo_capacity:                 sw_DHC_wagon_capacity;
     }
 }
 // End of "DHC(PP)"

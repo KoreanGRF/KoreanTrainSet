@@ -123,15 +123,16 @@
 			max_value: 8;
 			def_value: 0;
 			names: {
-				0:	string(STR_PARAM_OPT_FACTOR_BY_1);
-				1:	string(STR_PARAM_OPT_FACTOR_BY_2);
-				2:	string(STR_PARAM_OPT_FACTOR_BY_4);
-				3:	string(STR_PARAM_OPT_FACTOR_BY_8);
-				4:	string(STR_PARAM_OPT_FACTOR_BY_16);
-				5:	string(STR_PARAM_OPT_FACTOR_BY_32);
-				6:	string(STR_PARAM_OPT_FACTOR_BY_64);
-				7:	string(STR_PARAM_OPT_FACTOR_BY_128);
-				8:	string(STR_PARAM_OPT_FACTOR_BY_256);
+				0:	string(STR_PARAM_OPT_FACTOR_BY_1_2);
+				1:	string(STR_PARAM_OPT_FACTOR_BY_1);
+				2:	string(STR_PARAM_OPT_FACTOR_BY_2);
+				3:	string(STR_PARAM_OPT_FACTOR_BY_4);
+				4:	string(STR_PARAM_OPT_FACTOR_BY_8);
+				5:	string(STR_PARAM_OPT_FACTOR_BY_16);
+				6:	string(STR_PARAM_OPT_FACTOR_BY_32);
+				7:	string(STR_PARAM_OPT_FACTOR_BY_64);
+				8:	string(STR_PARAM_OPT_FACTOR_BY_128);
+				9:	string(STR_PARAM_OPT_FACTOR_BY_256);
 			};
 		}
 	}

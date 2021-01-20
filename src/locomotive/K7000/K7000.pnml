@@ -7,10 +7,7 @@
  * K7000
  */
 // Defines
-switch(FEAT_TRAINS, SELF, var_speed_K7000, 1)   { return K7000_SPEED / 10 * coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_K7000, 1)    { return K7000_COST / 10 * sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_K7000, 1) { return K7000_RUNNINGCOST / 10 * sw_running_cost_factor; }
-
+GENERAL(K7000)
 
 // 7000 (봉고)
 spriteset(set_K7000_purchase, "./src/locomotive/K7000/K7000.png") {
@@ -39,7 +36,7 @@ item(FEAT_TRAINS, ko_train_K7000, 55080) {
         // Common properties
         name:                           string(STR_K7000_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              K7000_INTRODUCTION;
+        introduction_date:              var_K7000_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_DIESEL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -80,9 +77,9 @@ item(FEAT_TRAINS, ko_train_K7000, 55080) {
         default:                        set_K7000A_loco;
         purchase:                       set_K7000_purchase;
 
-        speed:                          var_speed_K7000;
-        cost_factor:                    var_cost_K7000;
-        running_cost_factor:            var_runcost_K7000;
+        speed:                          sw_K7000_speed;
+        cost_factor:                    sw_K7000_cost;
+        running_cost_factor:            sw_K7000_runningcost;
         cargo_capacity:                 0;
 
         can_attach_wagon:               sw_GENE_attach;

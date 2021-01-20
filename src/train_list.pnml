@@ -18,4 +18,8 @@
 
 // Saemaeul
 #include "locomotive/Saemaeul/DHC.pnml"
-// #include "locomotive/Saemaeul/ITX-saemaeul.pnml"
+#include "locomotive/Saemaeul/ITX-saemaeul.pnml"
+
+
+// Wagon
+#include "wagon/passenger_wagon.pnml"

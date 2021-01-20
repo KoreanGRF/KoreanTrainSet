@@ -7,9 +7,7 @@
  * K8500
  */
 // Defines
-switch(FEAT_TRAINS, SELF, var_speed_K8500, 1)   { return K8500_SPEED / 10 * coeff_speed_general; }
-switch(FEAT_TRAINS, SELF, var_cost_K8500, 1)    { return K8500_COST / 10 * sw_cost_factor; }
-switch(FEAT_TRAINS, SELF, var_runcost_K8500, 1) { return K8500_RUNNINGCOST / 10 * sw_running_cost_factor; }
+GENERAL(K8500)
 
 // 8100호대
 spriteset(set_K8500_loco, "./src/locomotive/K8500/K8500.png") {
@@ -27,7 +25,7 @@ item(FEAT_TRAINS, ko_train_K8500, 55130) {
         // Common properties
         name:                           string(STR_K8500_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              K8500_INTRODUCTION;
+        introduction_date:              var_K8500_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -68,9 +66,9 @@ item(FEAT_TRAINS, ko_train_K8500, 55130) {
         default:                        set_K8500_loco;
         purchase:                       set_K8500_purchase;
 
-        speed:                          var_speed_K8500;
-        cost_factor:                    var_cost_K8500;
-        running_cost_factor:            var_runcost_K8500;
+        speed:                          sw_K8500_speed;
+        cost_factor:                    sw_K8500_cost;
+        running_cost_factor:            sw_K8500_runningcost;
         cargo_capacity:                 0;
 
         can_attach_wagon:               sw_GENE_attach;
