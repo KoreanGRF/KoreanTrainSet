@@ -1,0 +1,169 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * NURIRO
+ */
+GENERAL(NURIRO)
+GENERAL(NURIRO_wagon)
+
+// Graphics
+// default
+spriteset(set_NURIRO_purchase, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
+}
+spriteset(set_NURIRO_engineH, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_engine(60, 0)
+}
+spriteset(set_NURIRO_wagon_penta, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_wagon_penta(60, 30)
+}
+spriteset(set_NURIRO_wagon, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_wagon(60, 60)
+}
+spriteset(set_NURIRO_engineT, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_engine_r(60, 90)
+}
+
+// Korean wave livery
+spriteset(set_NURIRO_KOREAN_WAVE_engineH, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_engine(60, 120)
+}        
+spriteset(set_NURIRO_KOREAN_WAVE_wagon_penta, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_wagon_penta(60, 150)
+}
+spriteset(set_NURIRO_KOREAN_WAVE_wagon, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_wagon(60, 180)
+}
+spriteset(set_NURIRO_KOREAN_WAVE_engineT, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_engine_r(60, 210)
+}
+
+// O-train
+spriteset(set_NURIRO_O_TRAIN_engineH, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_engine(60, 240)
+}
+spriteset(set_NURIRO_O_TRAIN_wagon_penta, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_wagon_penta(60, 270)
+}
+spriteset(set_NURIRO_O_TRAIN_wagon, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_wagon(60, 300)
+}
+spriteset(set_NURIRO_O_TRAIN_engineT, "./src/locomotive/Nuriro/Nuriro.png") {
+    tmpl_NURIRO_engine_r(60, 330)
+}
+
+// Refit Paintings
+switch(FEAT_TRAINS, SELF, sw_NURIRO_engineH, cargo_subtype) {
+    1: set_NURIRO_KOREAN_WAVE_engineH;   // Korean wave livery
+    2: set_NURIRO_O_TRAIN_engineH;       // O-train
+//  3: set_NURIRO_SANTA_engineH;         // Donghae Santa livery (for future use)
+    set_NURIRO_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_NURIRO_engineT, cargo_subtype) {
+    1: set_NURIRO_KOREAN_WAVE_engineT;   // Korean wave livery
+    2: set_NURIRO_O_TRAIN_engineT;       // O-train
+//  3: set_NURIRO_SANTA_engineT;         // Donghae Santa livery (for future use)
+    set_NURIRO_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_NURIRO_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_NURIRO_engineT;
+    sw_NURIRO_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_NURIRO_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_PAINTING_NURIRO_KOREAN_WAVE);   // Korean wave livery
+    2: return string(STR_REFIT_PAINTING_O_TRAIN);              // O-train
+//  3: return string(STR_REFIT_PAINTING_NURIRO_SANTA);         // Donghae Santa livery (for future use)
+    return string(STR_REFIT_PAINTING_NURIRO);
+}
+
+// Wagon
+switch(FEAT_TRAINS, PARENT, sw_NURIRO_wagon_penta, cargo_subtype) {
+    1: set_NURIRO_KOREAN_WAVE_wagon_penta;   // Korean wave livery
+    2: set_NURIRO_O_TRAIN_wagon_penta;       // O-train
+//  3: set_NURIRO_SANTA_wagon_penta;         // Donghae Santa livery (for future use)
+    set_NURIRO_wagon_penta;
+}
+switch(FEAT_TRAINS, PARENT, sw_NURIRO_wagon_normal, cargo_subtype) {
+    1: set_NURIRO_KOREAN_WAVE_wagon;   // Korean wave livery
+    2: set_NURIRO_O_TRAIN_wagon;       // O-train
+//  3: set_NURIRO_SANTA_wagon;         // Donghae Santa livery (for future use)
+    set_NURIRO_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_NURIRO_wagon, position_in_vehid_chain + 1 == num_vehs_in_vehid_chain - 1) {
+	1: sw_NURIRO_wagon_penta;
+	sw_NURIRO_wagon_normal;
+}
+
+// Item
+item(FEAT_TRAINS, ko_train_NURIRO, 55170) {
+    property {
+        // Common properties
+        name:                           string(STR_NURIRO_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_NURIRO_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+
+        // Spec
+        speed:                          150 km/h;
+        power:                          2000 kW;
+        weight:                         55 ton;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 32;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  10;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_NURIRO_engine;
+        purchase:                       set_NURIRO_purchase;
+
+        speed:                          sw_NURIRO_speed;
+        cost_factor:                    sw_NURIRO_cost;
+        running_cost_factor:            sw_NURIRO_runningcost;
+        cargo_capacity:                 sw_NURIRO_capacity;
+        loading_speed:                  sw_NURIRO_loadingspeed;
+
+        can_attach_wagon:               sw_GENE_attach;
+        start_stop:                     sw_ko_train_start_stop;
+        cargo_subtype_text:             sw_NURIRO_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_NURIRO_wagon;
+        cargo_capacity:                 sw_NURIRO_wagon_capacity;
+    }
+    livery_override(ko_train_PASSWGP) {
+        default:                        sw_NURIRO_wagon;
+        cargo_capacity:                 sw_NURIRO_wagon_capacity;
+        power:                          POWER_IN_KW(200);
+    }
+}
+// End of "NURIRO"

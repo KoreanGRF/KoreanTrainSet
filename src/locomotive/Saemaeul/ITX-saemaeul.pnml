@@ -12,8 +12,7 @@ GENERAL(ITXSME_wagon)
 
 // Graphic
 spriteset(set_ITXSME_purchase, "./src/locomotive/Saemaeul/ITX-saemaeul.png") {
-	// tmpl_purchase(0, 0)
-	tmpl_purchase_detail(0, 0, 50, 15, -12, -9)
+	tmpl_purchase_for_dualhead(0, 0)
 }
 spriteset(set_ITXSME_engineH, "./src/locomotive/Saemaeul/ITX-saemaeul.png") {
 	[60,	0,	8,	21,	-3,	-14]
@@ -140,7 +139,7 @@ item(FEAT_TRAINS, ko_train_ITXSME, 55190) {
     livery_override(ko_train_PASSWGP) {
         default:                        sw_ITXSME_wagon;
         cargo_capacity:                 sw_ITXSME_wagon_capacity;
-        power:                          POWER_IN_KW(500);
+        power:                          POWER_IN_KW(200);
     }
 }
 // End of "ITX-Saemaeul"

@@ -15,7 +15,8 @@ STR_K8100_NAME                              :[KTS] 8100호대 전기 기관차
 STR_K8200_NAME                              :[KTS] 8200호대 전기 기관차
 STR_K8500_NAME                              :[KTS] 8500호대 전기 기관차
 STR_DHC_NAME                                :[KTS] 디젤 유압동차 (DHC, PP)
-STR_ITXSME_NAME								:[KTS] ITX-새마을
+STR_ITXSME_NAME                             :[KTS] ITX-새마을
+STR_NURIRO_NAME                             :[KTS] 누리로
 
 STR_PASSWG_NAME                             :[KTS] 승객 수송 차량
 STR_PASSWG_POWER_NAME                       :[KTS] 승객 수송 차량 (동력차)
@@ -34,6 +35,10 @@ STR_REFIT_PAINTING_2000_2002                : (2000~2002년 도색)
 STR_REFIT_PAINTING_HAERANG                  : (해랑)
 STR_REFIT_PAINTING_STRAIN                   : (S-train)
 STR_REFIT_PAINTING_GTRAIN                   : (G-train)
+STR_REFIT_PAINTING_NURIRO                   : (기본)
+STR_REFIT_PAINTING_O_TRAIN                  : (O-train)
+STR_REFIT_PAINTING_NURIRO_KOREAN_WAVE       : (한류관광열차)
+# STR_REFIT_PAINTING_NURIRO_SANTA           : (동해산타열차)
 
 # Refit
 STR_REFIT_ADDITIONAL_ABLE                   :{BLACK}도색/모델 변경: {GREEN}가능

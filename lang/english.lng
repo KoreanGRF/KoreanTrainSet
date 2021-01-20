@@ -156,9 +156,10 @@ STR_REFIT_PAINTING_FORMER_TJ				: (Demoted to Mugunghwa, former executive car)
 STR_REFIT_PAINTING_SAEMAEUL_CAFE			: (General Saemaeul cafe car)
 
 # For refit (Nuriro)
-STR_REFIT_PAINTING_OTRAIN					: (O-train)
-STR_REFIT_PAINTING_NURIRO_A					: (Nuriro)
-STR_REFIT_PAINTING_NURIRO_B					: (Korean wave tour wrapping)
+STR_REFIT_PAINTING_NURIRO					: (default)
+STR_REFIT_PAINTING_O_TRAIN					: (O-train)
+STR_REFIT_PAINTING_NURIRO_KOREAN_WAVE		: (Korean wave tour wrapping)
+# STR_REFIT_PAINTING_NURIRO_SANTA			: (Donghae santa wrapping)
 
 # For refit (CDC)
 STR_REFIT_PAINTING_CDC_GARDEN				: (Flower garden painting)
