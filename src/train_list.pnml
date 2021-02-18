@@ -26,5 +26,8 @@
 // CDC
 #include "locomotive/CDC/CDC.pnml"
 
+// KTX-1
+#include "locomotive/KTX/KTX.pnml"
+
 // Wagon
 #include "wagon/passenger_wagon.pnml"

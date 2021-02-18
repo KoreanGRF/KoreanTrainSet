@@ -8,12 +8,12 @@
  * NewGRF basic information
  *----------------------------------------------------------------------------*/
 grf {
-	grfid: "TK\55\05";
+	grfid: "TK\55\55";
 	name:  string(STR_GRF_NAME_WITH_VER);
 	desc:  string(STR_GRF_DESC);
 	url:   string(STR_GRF_URL);
-	version: 1;
-	min_compatible_version: 0;
+	version: 200;
+	min_compatible_version: 200;
 
 	
 	// Parameters

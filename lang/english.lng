@@ -19,6 +19,9 @@ STR_DHC_NAME                                :[KTS] Diesel Hydraulic Car (DHC, PP
 STR_ITXSME_NAME                             :[KTS] ITX-Saemaeul
 STR_NURIRO_NAME                             :[KTS] Nuriro
 STR_CDC_NAME                                :[KTS] Commuter Diesel Car (CDC)
+STR_KTX1N_NAME                              :[KTS] KTX-1
+STR_KTX2N_NAME                              :[KTS] KTX-Sancheon
+STR_SRT_NAME                                :[KTS] SRT
 
 STR_PASSWG_NAME                             :[KTS] Passenger car (unpowered)
 STR_PASSWG_POWER_NAME                       :[KTS] Passenger car (powered)
@@ -52,6 +55,8 @@ STR_REFIT_PAINTING_CDC_DMZTRAIN             : (DMZ-train)
 STR_REFIT_PAINTING_CDC_MUGUNGHWA            : (RDC Mugunghwa livery)
 STR_REFIT_PAINTING_CDC_GYEONGBUK1           : (Gyeongbuk tour train, old livery)
 STR_REFIT_PAINTING_CDC_GYEONGBUK2           : (Gyeongbuk tour train, new livery)
+STR_REFIT_PASSWAGON_NORMALCAR               : (Normal class car)
+STR_REFIT_PASSWAGON_FIRSTCAR                : (First class car)
 
 
 # Refit

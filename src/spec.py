@@ -20,10 +20,14 @@ trainList['DHC']           = 150,     3,     10,          20,       5,          
 trainList['DHC_wagon']     = 150,     3,     10,          20,       5,           (1987, 1, 1)
 trainList['ITXSME']        = 150,     5,     10,          44,       5,           (2014, 1, 1)
 trainList['ITXSME_wagon']  = 150,     5,     10,          44,       5,           (2014, 1, 1)
-trainList['NURIRO']        = 150,     10,   150,          64,      10,           (2010, 1, 1)
-trainList['NURIRO_wagon']  = 150,     10,   150,          64,      10,           (2010, 1, 1)
-trainList['CDC']           = 120,     10,   150,          64,      10,           (2010, 1, 1)
-trainList['CDC_wagon']     = 120,     10,   150,          64,      10,           (1996, 1, 1)
+trainList['NURIRO']        = 150,     10,    15,          64,      10,           (2010, 1, 1)
+trainList['NURIRO_wagon']  = 150,     10,    15,          64,      10,           (2010, 1, 1)
+trainList['CDC']           = 120,     10,    15,          64,      10,           (2010, 1, 1)
+trainList['CDC_wagon']     = 120,     10,    15,          64,      10,           (1996, 1, 1)
+trainList['KTX1N']         = 330,     10,    15,          64,      10,           (2004, 4, 1)
+trainList['KTX2N']         = 330,     10,    15,          64,      10,           (2009, 1, 1)
+trainList['SRT']           = 330,     10,    15,          64,      10,           (2015, 1, 1)
+trainList['KTX_wagon']     = 330,     10,    15,          29,      10,           (2004, 1, 1)
 
 
 # Generates spec.pnml

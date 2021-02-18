@@ -19,6 +19,9 @@ STR_DHC_NAME                                :[KTS] 디젤 유압동차 (DHC, PP)
 STR_ITXSME_NAME                             :[KTS] ITX-새마을
 STR_NURIRO_NAME                             :[KTS] 누리로
 STR_CDC_NAME                                :[KTS] 통근형 디젤 열차 (CDC)
+STR_KTX1N_NAME                              :[KTS] KTX-1
+STR_KTX2N_NAME                              :[KTS] KTX-산천
+STR_SRT_NAME                                :[KTS] SRT
 
 STR_PASSWG_NAME                             :[KTS] 승객 수송 차량
 STR_PASSWG_POWER_NAME                       :[KTS] 승객 수송 차량 (동력차)
@@ -52,6 +55,8 @@ STR_REFIT_PAINTING_CDC_DMZTRAIN             : (DMZ-train)
 STR_REFIT_PAINTING_CDC_MUGUNGHWA            : (RDC 무궁화 도색)
 STR_REFIT_PAINTING_CDC_GYEONGBUK1           : (경북관광순환테마열차, 구 도색)
 STR_REFIT_PAINTING_CDC_GYEONGBUK2           : (경북관광순환테마열차, 신 도색)
+STR_REFIT_PASSWAGON_NORMALCAR               : (일반 객차)
+STR_REFIT_PASSWAGON_FIRSTCAR                : (특실 객차)
 
 
 # Refit

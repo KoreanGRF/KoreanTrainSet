@@ -1,0 +1,515 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * KTX-1N
+ */
+GENERAL(KTX1N)
+GENERAL(KTX2N)
+GENERAL(SRT)
+GENERAL(KTX_wagon)
+
+// Template for KTX
+template tmpl_KTXloco1(x, y) {
+    [x,      y,     8,    22,    -3,   -11]
+    [x+15,   y,    20,    16,   -14,    -7]
+    [x+45,   y,    31,    12,   -16,    -8]
+    [x+95,   y,    20,    16,    -5,    -7]
+    [x+125,  y,     8,    22,    -3,   -11]
+    [x+140,  y,    20,    16,   -14,    -7]
+    [x+175,  y,    31,    12,   -16,    -8]
+    [x+225,  y,    20,    16,    -5,    -7]
+}
+template tmpl_KTXloco2(x, y) {
+    [x,      y,     8,    22,    -3,   -11]
+    [x+15,   y,    20,    16,   -14,    -7]
+    [x+45,   y,    31,    11,   -16,    -7]
+    [x+95,   y,    20,    16,    -5,    -7]
+    [x+125,  y,     8,    22,    -3,   -11]
+    [x+140,  y,    20,    16,   -14,    -7]
+    [x+175,  y,    31,    11,   -16,    -7]
+    [x+225,  y,    20,    16,    -5,    -7]
+}
+
+// Graphics
+// KTX-1
+spriteset(set_KTX1N_loco1, "./src/locomotive/KTX/KTX1N.png") {
+    [ 60,    0,     8,   23,     -3,    -11]
+    [ 75,    0,    22,   16,    -15,     -7]
+    [105,    0,    32,   12,    -16,     -8]
+    [155,    0,    22,   16,     -5,     -8]
+    [185,    0,     8,   23,     -3,    -11]
+    [200,    0,    22,   16,    -16,     -8]
+    [235,    0,    33,   12,    -18,     -8]
+    [285,    0,    22,   16,     -6,     -7]
+}
+spriteset(set_KTX1N_loco2, "./src/locomotive/KTX/KTX1N.png") {
+    tmpl_KTXloco1(60, 30)
+}
+spriteset(set_KTX1N_loco3_6, "./src/locomotive/KTX/KTX1N.png") {
+    tmpl_KTXloco2(60, 60)
+}
+spriteset(set_KTX1N_loco3_6_r, "./src/locomotive/KTX/KTX1N.png") {
+    [185,    60,     8,    22,     -3,   -11]
+    [200,    60,    20,    16,    -14,    -7]
+    [235,    60,    31,    11,    -16,    -7]
+    [285,    60,    20,    16,     -5,    -7]
+    [ 60,    60,     8,    22,     -3,   -11]
+    [ 75,    60,    20,    16,    -14,    -7]
+    [105,    60,    31,    11,    -16,    -7]
+    [155,    60,    20,    16,     -5,    -7]
+}
+spriteset(set_KTX1N_loco7_10, "./src/locomotive/KTX/KTX1N.png") {
+    tmpl_KTXloco2(60, 90)
+}
+spriteset(set_KTX1N_loco11_18, "./src/locomotive/KTX/KTX1N.png") {
+    tmpl_KTXloco2(60, 120)
+}
+spriteset(set_KTX1N_loco19, "./src/locomotive/KTX/KTX1N.png") {
+    tmpl_KTXloco1(60, 150)
+}
+spriteset(set_KTX1N_loco20, "./src/locomotive/KTX/KTX1N.png") {
+    [185,    180,     8,    23,    -3,   -11]
+    [200,    180,    22,    16,   -15,    -7]
+    [235,    180,    32,    14,   -16,   -10]
+    [285,    180,    22,    18,    -5,   -10]
+    [ 60,    180,     8,    23,    -3,   -11]
+    [ 75,    180,    22,    18,   -16,   -10]
+    [105,    180,    33,    14,   -18,   -10]
+    [155,    180,    22,    16,    -6,    -7]
+}
+spriteset(set_KTX1N_purchase, "./src/locomotive/KTX/KTX1N.png") {
+    tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
+}
+
+// KTX-Sancheon
+spriteset(set_KTX2N_loco1, "./src/locomotive/KTX/KTX2N.png") {
+    [ 60,      0,     8,    23,    -3,   -11]
+    [ 75,      0,    22,    16,   -15,    -7]
+    [105,      0,    32,    14,   -16,   -10]
+    [155,      0,    22,    18,    -5,    -9]
+    [185,      0,     8,    23,    -3,   -11]
+    [200,      0,    22,    18,   -16,    -9]
+    [235,      0,    32,    14,   -18,   -10]
+    [285,      0,    22,    16,    -6,    -7]
+}
+spriteset(set_KTX2N_loco2, "./src/locomotive/KTX/KTX2N.png") {
+    tmpl_KTXloco1(60, 30)
+}
+spriteset(set_KTX2N_loco3, "./src/locomotive/KTX/KTX2N.png") {
+    tmpl_KTXloco2(60, 60)
+}
+spriteset(set_KTX2N_loco3_r, "./src/locomotive/KTX/KTX2N.png") {
+    [185,     60,     8,    22,    -3,   -11]
+    [200,     60,    20,    16,   -14,    -7]
+    [235,     60,    31,    11,   -16,    -7]
+    [285,     60,    20,    16,    -5,    -7]
+    [ 60,     60,     8,    22,    -3,   -11]
+    [ 75,     60,    20,    16,   -14,    -7]
+    [105,     60,    31,    11,   -16,    -7]
+    [155,     60,    20,    16,    -5,    -7]
+}
+spriteset(set_KTX2N_loco4_8, "./src/locomotive/KTX/KTX2N.png") {
+    tmpl_KTXloco2(60, 90)
+}
+spriteset(set_KTX2N_loco9, "./src/locomotive/KTX/KTX2N.png") {
+    tmpl_KTXloco1(60, 120)
+}
+spriteset(set_KTX2N_loco10, "./src/locomotive/KTX/KTX2N.png") {
+    [185,    150,     8,    23,    -3,   -11]
+    [200,    150,    22,    16,   -15,    -7]
+    [235,    150,    32,    14,   -16,   -10]
+    [285,    150,    22,    18,    -5,    -9]
+    [ 60,    150,     8,    23,    -3,   -11]
+    [ 75,    150,    22,    18,   -16,    -9]
+    [105,    150,    32,    14,   -18,   -10]
+    [155,    150,    22,    16,    -6,    -8]
+}
+spriteset(set_KTX2N_purchase, "./src/locomotive/KTX/KTX2N.png") {
+    tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
+}
+
+// KTX-Sancheon (SRT)
+spriteset(set_SRT_loco1, "./src/locomotive/KTX/SRT.png") {
+    [ 60,      0,     8,    23,    -3,   -11]
+    [ 75,      0,    22,    16,   -15,    -7]
+    [105,      0,    32,    14,   -16,   -10]
+    [155,      0,    22,    18,    -5,    -9]
+    [185,      0,     8,    23,    -3,   -11]
+    [200,      0,    22,    18,   -16,    -9]
+    [235,      0,    32,    14,   -17,   -10]
+    [285,      0,    22,    16,    -6,    -7]
+}
+spriteset(set_SRT_loco2, "./src/locomotive/KTX/SRT.png") {
+    tmpl_KTXloco1(60, 30)
+}
+spriteset(set_SRT_loco3, "./src/locomotive/KTX/SRT.png") {
+    tmpl_KTXloco2(60, 60)
+}
+spriteset(set_SRT_loco3_r, "./src/locomotive/KTX/SRT.png") {
+    [185,     60,     8,    22,    -3,   -11]
+    [200,     60,    20,    16,   -14,    -7]
+    [235,     60,    31,    11,   -16,    -7]
+    [285,     60,    20,    16,    -5,    -7]
+    [ 60,     60,     8,    22,    -3,   -11]
+    [ 75,     60,    20,    16,   -14,    -7]
+    [105,     60,    31,    11,   -16,    -7]
+    [155,     60,    20,    16,    -5,    -7]
+}
+spriteset(set_SRT_loco4_8, "./src/locomotive/KTX/SRT.png") {
+    tmpl_KTXloco2(60, 90)
+}
+spriteset(set_SRT_loco9, "./src/locomotive/KTX/SRT.png") {
+    tmpl_KTXloco1(60, 120)
+}
+spriteset(set_SRT_loco10, "./src/locomotive/KTX/SRT.png") {
+    [185,    150,     8,    23,    -3,   -11]
+    [200,    150,    22,    16,   -15,    -7]
+    [235,    150,    32,    14,   -16,   -10]
+    [285,    150,    22,    18,    -5,    -9]
+    [ 60,    150,     8,    23,    -3,   -11]
+    [ 75,    150,    22,    18,   -16,    -9]
+    [105,    150,    32,    14,   -18,   -10]
+    [155,    150,    22,    16,    -6,    -7]
+}
+spriteset(set_SRT_purchase, "./src/locomotive/KTX/SRT.png") {
+    tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
+}
+
+// Refit Paintings
+// KTX-1's engine
+switch(FEAT_TRAINS, SELF, sw_KTX1N_engineH, cargo_subtype) {
+    set_KTX1N_loco1;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_engineT, cargo_subtype) {
+    set_KTX1N_loco20;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_KTX1N_engineT;
+    sw_KTX1N_engineH;
+}
+
+// KTX-Sancheon's engine
+switch(FEAT_TRAINS, SELF, sw_KTX2N_engineH, cargo_subtype) {
+    set_KTX2N_loco1;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX2N_engineT, cargo_subtype) {
+    set_KTX2N_loco10;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX2N_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_KTX2N_engineT;
+    sw_KTX2N_engineH;
+}
+
+// SRT's engine
+switch(FEAT_TRAINS, SELF, sw_SRT_engineH, cargo_subtype) {
+    set_SRT_loco1;
+}
+switch(FEAT_TRAINS, SELF, sw_SRT_engineT, cargo_subtype) {
+    set_SRT_loco10;
+}
+switch(FEAT_TRAINS, SELF, sw_SRT_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_SRT_engineT;
+    sw_SRT_engineH;
+}
+
+// Wagon
+// KTX-1's wagon
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_by_free_center_f, cargo_subtype) {
+    1:    set_KTX1N_loco3_6;
+    set_KTX1N_loco7_10;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_by_free_center_t, cargo_subtype) {
+    1:    set_KTX1N_loco3_6_r;
+    set_KTX1N_loco11_18;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_by_free_center, (position_in_vehid_chain + 1) <= (num_vehs_in_vehid_chain / 2)) {
+    1: sw_KTX1N_wagon_by_free_center_f;
+    sw_KTX1N_wagon_by_free_center_t;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_by_free_tail, position_in_vehid_chain_from_end) {
+    0: set_KTX1N_loco19;
+    sw_KTX1N_wagon_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon, position_in_vehid_chain) {
+    0: set_KTX1N_loco2;
+    sw_KTX1N_wagon_by_free_tail;
+}
+
+// KTX-Sancheon's wagon
+switch(FEAT_TRAINS, SELF, sw_KTX2N_wagon_by_free_center, cargo_subtype) {
+	1:	set_KTX2N_loco3;
+	3:	set_KTX2N_loco3;
+	set_KTX2N_loco4_8;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX2N_wagon_by_free_tail, position_in_vehid_chain_from_end) {
+	0: set_KTX2N_loco9;
+	sw_KTX2N_wagon_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX2N_wagon, position_in_vehid_chain) {
+	0: set_KTX2N_loco2;
+	sw_KTX2N_wagon_by_free_tail;
+}
+
+// SRT's wagon
+switch(FEAT_TRAINS, SELF, sw_SRT_wagon_by_free_center, cargo_subtype) {
+	1:	set_SRT_loco3;
+	3:	set_SRT_loco3;
+	set_SRT_loco4_8;
+}
+switch(FEAT_TRAINS, SELF, sw_SRT_wagon_by_free_tail, position_in_vehid_chain_from_end) {
+	0: set_SRT_loco9;
+	sw_SRT_wagon_by_free_center;
+}
+switch(FEAT_TRAINS, SELF, sw_SRT_wagon, position_in_vehid_chain) {
+	0: set_SRT_loco2;
+	sw_SRT_wagon_by_free_tail;
+}
+
+// KTX-1, KTX-산천에 따라 다르게 출력
+switch(FEAT_TRAINS, PARENT, sw_KTXCW_wagon, vehicle_type_id) {
+    ko_train_KTX1N: sw_KTX1N_wagon;
+    ko_train_KTX2N: sw_KTX2N_wagon;
+    ko_train_SRT:   sw_SRT_wagon;
+    sw_KTX1N_wagon;
+}
+
+// 특실 객차 수용량
+switch(FEAT_TRAINS, SELF, var_KTX_wagon_executive_CAPACITY, 1) {
+    return 16 * sw_cargo_capacity_factor;
+}
+
+// 객차 개조
+switch(FEAT_TRAINS, SELF, sw_KTX_wagon_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_PASSWAGON_FIRSTCAR);
+    return string(STR_REFIT_PASSWAGON_NORMALCAR);
+}
+switch(FEAT_TRAINS, SELF, sw_KTXCW_cargo_capacity, cargo_subtype) {
+    1:    var_KTX_wagon_executive_CAPACITY;
+    var_KTX_wagon_CAPACITY;
+}
+
+// Item
+item(FEAT_TRAINS, ko_train_KTX1N, 55150) {
+    property {
+        // Common properties
+        name:                           string(STR_KTX1N_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_KTX1N_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+
+        // Spec
+        speed:                          330 km/h;
+        power:                          13200 kW;
+        weight:                         35 ton;
+        extra_weight_per_wagon:         35 ton;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 32;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  10;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_KTX1N_engine;
+        purchase:                       set_KTX1N_purchase;
+
+        speed:                          sw_KTX1N_speed;
+        cost_factor:                    sw_KTX1N_cost;
+        running_cost_factor:            sw_KTX1N_runningcost;
+        cargo_capacity:                 sw_KTX1N_capacity;
+        loading_speed:                  sw_KTX1N_loadingspeed;
+
+        can_attach_wagon:               sw_GENE_attach;
+        start_stop:                     sw_ko_train_start_stop;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_KTX1N_wagon;
+        cargo_capacity:                 sw_KTX_wagon_capacity;
+        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
+    }
+    livery_override(ko_train_PASSWGP) {
+        default:                        sw_KTX1N_wagon;
+        cargo_capacity:                 sw_KTX_wagon_capacity;
+        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
+        power:                          POWER_IN_KW(200);
+    }
+}
+// End of "KTX1N"
+
+
+
+// Item
+item(FEAT_TRAINS, ko_train_KTX2N, 55151) {
+    property {
+        // Common properties
+        name:                           string(STR_KTX2N_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_KTX2N_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+
+        // Spec
+        speed:                          330 km/h;
+        power:                          8800 kW;
+        weight:                         35 ton;
+        extra_weight_per_wagon:         35 ton;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 32;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  10;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_KTX2N_engine;
+        purchase:                       set_KTX2N_purchase;
+
+        speed:                          sw_KTX2N_speed;
+        cost_factor:                    sw_KTX2N_cost;
+        running_cost_factor:            sw_KTX2N_runningcost;
+        cargo_capacity:                 sw_KTX2N_capacity;
+        loading_speed:                  sw_KTX2N_loadingspeed;
+
+        can_attach_wagon:               sw_GENE_attach;
+        start_stop:                     sw_ko_train_start_stop;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_KTX2N_wagon;
+        cargo_capacity:                 sw_KTX_wagon_capacity;
+        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
+    }
+    livery_override(ko_train_PASSWGP) {
+        default:                        sw_KTX2N_wagon;
+        cargo_capacity:                 sw_KTX_wagon_capacity;
+        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
+        power:                          POWER_IN_KW(200);
+    }
+}
+// End of "KTX2N"
+
+
+
+// Item
+item(FEAT_TRAINS, ko_train_SRT, 55152) {
+    property {
+        // Common properties
+        name:                           string(STR_SRT_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_SRT_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+
+        // Spec
+        speed:                          330 km/h;
+        power:                          8800 kW;
+        weight:                         35 ton;
+        extra_weight_per_wagon:         35 ton;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 32;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  10;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_SRT_engine;
+        purchase:                       set_SRT_purchase;
+
+        speed:                          sw_SRT_speed;
+        cost_factor:                    sw_SRT_cost;
+        running_cost_factor:            sw_SRT_runningcost;
+        cargo_capacity:                 sw_SRT_capacity;
+        loading_speed:                  sw_SRT_loadingspeed;
+
+        can_attach_wagon:               sw_GENE_attach;
+        start_stop:                     sw_ko_train_start_stop;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_SRT_wagon;
+        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
+        cargo_capacity:                 sw_KTX_wagon_capacity;
+    }
+    livery_override(ko_train_PASSWGP) {
+        default:                        sw_SRT_wagon;
+        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
+        cargo_capacity:                 sw_KTX_wagon_capacity;
+        power:                          POWER_IN_KW(200);
+    }
+}
+// End of "SRT"
