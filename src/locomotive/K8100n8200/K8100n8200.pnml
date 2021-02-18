@@ -54,10 +54,10 @@ item(FEAT_TRAINS, ko_train_K8100n8200, 55110) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 0;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [];
+        cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
         loading_speed:                  0;
 
