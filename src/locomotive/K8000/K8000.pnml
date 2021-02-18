@@ -49,7 +49,7 @@ item(FEAT_TRAINS, ko_train_K8000, 55100) {
 
         // Spec
         speed:                          85 km/h;
-        power:                          3900 kW;
+        power:                          POWER_IN_KW(var_K8000_POWER);
         weight:                         132 ton;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.1;

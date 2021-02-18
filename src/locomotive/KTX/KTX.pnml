@@ -305,7 +305,7 @@ item(FEAT_TRAINS, ko_train_KTX1N, 55150) {
 
         // Spec
         speed:                          330 km/h;
-        power:                          13200 kW;
+        power:                          POWER_IN_KW(var_KTX1N_POWER);
         weight:                         35 ton;
         extra_weight_per_wagon:         35 ton;
         tractive_effort_coefficient:    0.25;

@@ -111,7 +111,7 @@ item(FEAT_TRAINS, ko_train_NURIRO, 55170) {
 
         // Spec
         speed:                          150 km/h;
-        power:                          2000 kW;
+        power:                          POWER_IN_KW(var_NURIRO_POWER);
         weight:                         55 ton;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.1;
@@ -163,7 +163,7 @@ item(FEAT_TRAINS, ko_train_NURIRO, 55170) {
     livery_override(ko_train_PASSWGP) {
         default:                        sw_NURIRO_wagon;
         cargo_capacity:                 sw_NURIRO_wagon_capacity;
-        power:                          POWER_IN_KW(200);
+        power:                          POWER_IN_KW(var_NURIRO_wagon_POWER);
     }
 }
 // End of "NURIRO"

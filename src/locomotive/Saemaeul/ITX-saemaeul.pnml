@@ -88,7 +88,7 @@ item(FEAT_TRAINS, ko_train_ITXSME, 55190) {
         dual_headed:                    1;
 
         // Spec
-        power:                          3000 kW;
+        power:                          POWER_IN_KW(var_ITXSME_POWER);
         weight:                         20 ton;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.1;
@@ -139,7 +139,7 @@ item(FEAT_TRAINS, ko_train_ITXSME, 55190) {
     livery_override(ko_train_PASSWGP) {
         default:                        sw_ITXSME_wagon;
         cargo_capacity:                 sw_ITXSME_wagon_capacity;
-        power:                          POWER_IN_KW(200);
+        power:                          POWER_IN_KW(var_ITXSME_wagon_POWER);
     }
 }
 // End of "ITX-Saemaeul"
