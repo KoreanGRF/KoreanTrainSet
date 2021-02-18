@@ -4,35 +4,45 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * K8100
+ * K8100n8200
  */
 // Defines
-GENERAL(K8100)
+GENERAL(K8100n8200)
 
-// 8100호대
-spriteset(set_K8100_loco, "./src/locomotive/K8100/K8100.png") {
+spriteset(set_K8100n8200_loco_RED_WHITE_BLUE, "./src/locomotive/K8100n8200/K8100n8200.png") {   // Red & White & Blue (current)
     tmpl_loco(60, 0)
 }
-spriteset(set_K8100_purchase, "./src/locomotive/K8100/K8100.png") {
+spriteset(set_K8100n8200_loco_GREEN_YELLOW, "./src/locomotive/K8100n8200/K8100n8200.png") {   // Green & Yellow
+    tmpl_loco(60, 30)
+}
+spriteset(set_K8100n8200_purchase, "./src/locomotive/K8100n8200/K8100n8200.png") {
     tmpl_purchase(0, 0)
 }
 
-/*------------------------------------------------------------------------------
-K8100
-------------------------------------------------------------------------------*/
-item(FEAT_TRAINS, ko_train_K8100, 55110) {
+// Refit Paintings
+switch(FEAT_TRAINS, SELF, sw_K8100n8200_loco, cargo_subtype) {
+    1:    set_K8100n8200_loco_GREEN_YELLOW;
+    set_K8100n8200_loco_RED_WHITE_BLUE;
+}
+switch(FEAT_TRAINS, SELF, sw_K8100n8200_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_PAINTING_GREEN_YELLOW);
+    return string(STR_REFIT_PAINTING_THESEDAYS);
+}
+
+// Item
+item(FEAT_TRAINS, ko_train_K8100n8200, 55110) {
 	property {
         // Common properties
-        name:                           string(STR_K8100_NAME);
+        name:                           string(STR_K8100n8200_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_K8100_INTRODUCTION;
+        introduction_date:              var_K8100n8200_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         // Spec
         speed:                          150 km/h;
-        power:                          POWER_IN_KW(var_K8100_POWER);
+        power:                          POWER_IN_KW(var_K8100n8200_POWER);
         weight:                         132 ton;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.1;
@@ -63,16 +73,17 @@ item(FEAT_TRAINS, ko_train_K8100, 55110) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        set_K8100_loco;
-        purchase:                       set_K8100_purchase;
+        default:                        sw_K8100n8200_loco;
+        purchase:                       set_K8100n8200_purchase;
 
-        speed:                          sw_K8100_speed;
-        cost_factor:                    sw_K8100_cost;
-        running_cost_factor:            sw_K8100_runningcost;
+        speed:                          sw_K8100n8200_speed;
+        cost_factor:                    sw_K8100n8200_cost;
+        running_cost_factor:            sw_K8100n8200_runningcost;
         cargo_capacity:                 0;
 
         can_attach_wagon:               sw_GENE_attach;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        cargo_subtype_text:             sw_K8100n8200_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }
-// End of "K8100"
+// End of "K8100n8200"

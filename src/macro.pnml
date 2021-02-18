@@ -4,9 +4,7 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 // For unit
-#define POWER_IN_KW(POWER)     (int(POWER / 0.7457))
-#define STR(x) #x
-#define XSTR(x) STR(x)
+#define POWER_IN_KW(POWER)     (int((POWER) / 0.7457))
 
 // Cost
 #define COST(VEHICLEID) \
