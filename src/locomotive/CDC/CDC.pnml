@@ -308,10 +308,12 @@ item(FEAT_TRAINS, ko_train_CDC, 55160) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_CDC_wagon;
         cargo_capacity:                 sw_CDC_wagon_capacity;
+        cargo_subtype_text:             sw_CDC_cargo_subtype_text;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_CDC_wagon;
         cargo_capacity:                 sw_CDC_wagon_capacity;
+        cargo_subtype_text:             sw_CDC_cargo_subtype_text;
     }
 }
 // End of "CDC"

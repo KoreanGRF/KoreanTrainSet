@@ -64,7 +64,8 @@ STR_REFIT_PASSWAGON_FIRSTCAR                : (특실 객차)
 
 # Refit
 STR_REFIT_ADDITIONAL_ABLE                   :{BLACK}도색/모델 변경: {GREEN}가능
-STR_REFIT_ADDITIONAL_UNABLE                 :{BLACK}도색/모델 변경: {ORANGE}불가능
+STR_REFIT_ADDITIONAL_UNABLE                 :{BLACK}도색/모델 변경: {RED}불가능
+STR_REFIT_ADDITIONAL_AMBIGUOUS              :{BLACK}도색/모델 변경: {ORANGE}경우에 따라 다름
 
 
 # Parameters

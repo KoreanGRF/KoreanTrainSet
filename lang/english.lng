@@ -64,7 +64,8 @@ STR_REFIT_PASSWAGON_FIRSTCAR                : (First class car)
 
 # Refit
 STR_REFIT_ADDITIONAL_ABLE                   :{BLACK}Changing model/livery: {GREEN}Available
-STR_REFIT_ADDITIONAL_UNABLE                 :{BLACK}Changing model/livery: {ORANGE}Unavailable
+STR_REFIT_ADDITIONAL_UNABLE                 :{BLACK}Changing model/livery: {RED}Unavailable
+STR_REFIT_ADDITIONAL_AMBIGUOUS              :{BLACK}Changing model/livery: {ORANGE}Ambigous - differ from engines
 
 
 # Parameters
