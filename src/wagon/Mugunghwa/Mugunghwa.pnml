@@ -7,7 +7,7 @@
 GENERAL(MUGUNGHWA_wagon)
 
 spriteset(set_MUGUNGHWA_wagon_purchase, "./src/wagon/Mugunghwa/Mugunghwa.png") {
-    tmpl_purchase_detail(0, 180, 32, 12, -17, -8)
+    tmpl_purchase_detail(45, 150, 32, 12, -16, -8)
 }
 
 // A: 1970~1983
@@ -47,11 +47,13 @@ spriteset(set_MUGUNGHWA_wagon_OLD_EXPRESS, "./src/wagon/Mugunghwa/Mugunghwa.png"
 
 // Refit
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon, cargo_subtype) {
-    1: return string(STR_REFIT_PAINTING_1970_1983);
-    2: return string(STR_REFIT_PAINTING_1984_1984);
-    3: return string(STR_REFIT_PAINTING_1985_1989);
-    4: return string(STR_REFIT_PAINTING_1990_1999);
-
+    1: set_MUGUNGHWA_wagon_A;
+    2: set_MUGUNGHWA_wagon_B;
+    3: set_MUGUNGHWA_wagon_C;
+    4: set_MUGUNGHWA_wagon_D;
+    5: set_MUGUNGHWA_wagon_E;
+    6: set_MUGUNGHWA_wagon_OLD_EXPRESS;
+	set_MUGUNGHWA_wagon_RED_BLUE_WHITE;
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_PAINTING_1970_1983);
@@ -59,7 +61,8 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon_subtype_text, cargo_subtype) {
     3: return string(STR_REFIT_PAINTING_1985_1989);
     4: return string(STR_REFIT_PAINTING_1990_1999);
     5: return string(STR_REFIT_PAINTING_2000_2002);
-    5: return string(STR_REFIT_PAINTING_OLD_EXPRESS);
+    6: return string(STR_REFIT_PAINTING_OLD_EXPRESS);
+	return string(STR_REFIT_PAINTING_THESEDAYS);
 }
 
 // Not allow to attach except for Kxxxx series
