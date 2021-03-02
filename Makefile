@@ -108,7 +108,7 @@ clean::
 bundle: bundle_tar
 bundle_tar: $(BUNDLE_FILES)
 	@echo "[BUNDLE TAR]"
-	@ tar -cf ./generated/$(DIR_NAME).tar ./generated/changelog.txt ./generated/ko_train_set.grf ./generated/license.txt ./generated/readme.txt
+	@ tar -cf ./generated/$(DIR_NAME).tar --directory=./generated/ ./changelog.txt ./ko_train_set.grf ./license.txt ./readme.txt
 clean::
 	@echo "[CLEAN BUNDLE]"
 	@-rm -rf $(shell echo "$(REPO_NAME)*" | xargs | sed s/\ /_/g)
