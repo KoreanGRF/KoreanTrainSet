@@ -21,6 +21,9 @@ STR_CDC_NAME                                :[KTS] 통근형 디젤 열차 (CDC)
 STR_KTX1N_NAME                              :[KTS] KTX-1
 STR_KTX2N_NAME                              :[KTS] KTX-산천
 STR_SRT_NAME                                :[KTS] SRT
+STR_SAEMAEUL_CAR_NAME                       :[KTS] 새마을 객차
+STR_MUGUNGHWA_CAR_NAME                      :[KTS] 무궁화 객차
+STR_POWER_CAR_NAME                          :[KTS] 발전차
 
 STR_PASSWG_NAME                             :[KTS] 승객 수송 차량
 STR_PASSWG_POWER_NAME                       :[KTS] 승객 수송 차량 (동력차)
