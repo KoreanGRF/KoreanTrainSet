@@ -98,7 +98,7 @@ switch(FEAT_TRAINS, SELF, sw_NURIRO_wagon, position_in_vehid_chain + 1 == num_ve
 }
 
 // Attachable vehicles
-switch(FEAT_TRAINS, PARENT, sw_NURIRO_attach, vehicle_type_id) {
+switch(FEAT_TRAINS, SELF, sw_NURIRO_attach, vehicle_type_id) {
     ko_train_NURIRO: return CB_RESULT_ATTACH_ALLOW;
     ko_train_PASSWG: return CB_RESULT_ATTACH_ALLOW;
 	return CB_RESULT_NO_TEXT;

@@ -238,6 +238,13 @@ switch(FEAT_TRAINS, SELF, sw_CDC_wagon, cargo_subtype) {
 	sw_CDC_wagon_by_parent;
 }
 
+// Attachable vehicles
+switch(FEAT_TRAINS, PARENT, sw_CDC_attach, vehicle_type_id) {
+	ko_train_CDC:        return CB_RESULT_ATTACH_ALLOW;
+	ko_train_PASSWG:     return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_NO_ATTACH);
+}
+
 // Item
 item(FEAT_TRAINS, ko_train_CDC, 55160) {
     property {

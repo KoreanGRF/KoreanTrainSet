@@ -52,23 +52,15 @@ switch(FEAT_TRAINS, SELF, sw_weight_PASSWG, cargo_subtype) {
 }
 // for temporarily (end)
 
-switch(FEAT_TRAINS, SELF, sw_PASSWG_cargo_subtype_text, cargo_subtype) {
-    // 무궁화 객차
-    1: return string(STR_REFIT_PAINTING_1970_1983);
-    2: return string(STR_REFIT_PAINTING_1984_1984);
-    3: return string(STR_REFIT_PAINTING_1985_1989);
-    4: return string(STR_REFIT_PAINTING_1990_1999);
-
-    // 새마을 객차
-
-    // 통일호 객차
-
-    // ITX 새마을 객차
-
-    // 비둘기호 객차
+// switch(FEAT_TRAINS, SELF, sw_PASSWG_cargo_subtype_text, cargo_subtype) {
+//     // 무궁화 객차
+//     1: return string(STR_REFIT_PAINTING_1970_1983);
+//     2: return string(STR_REFIT_PAINTING_1984_1984);
+//     3: return string(STR_REFIT_PAINTING_1985_1989);
+//     4: return string(STR_REFIT_PAINTING_1990_1999);
     
-    return string(STR_REFIT_PAINTING_2000_2002);
-}
+//     return string(STR_REFIT_PAINTING_2000_2002);
+// }
 
 item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
     property {
@@ -120,11 +112,11 @@ item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
         // power:                          sw_power_PASSWG;
         weight:                         sw_weight_PASSWG;
 
-        can_attach_wagon:               sw_GENE_attach;
+        // can_attach_wagon:               sw_GENE_attach;
         // start_stop:                     sw_ko_train_start_stop;
 
-        cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
-        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+        // cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
 }
 
@@ -180,10 +172,10 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 55901) {
         // power:                          sw_power_PASSWG;
         weight:                         sw_weight_PASSWG;
 
-        can_attach_wagon:               sw_GENE_attach;
+        // can_attach_wagon:               sw_GENE_attach;
         // start_stop:                     sw_ko_train_start_stop;
 
-        cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
-        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+        // cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
 }

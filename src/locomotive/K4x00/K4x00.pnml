@@ -105,7 +105,7 @@ item(FEAT_TRAINS, ko_train_K4x00, 55040) {
         running_cost_factor:            sw_K4x00_runningcost;
         cargo_capacity:                 0;
 
-        can_attach_wagon:               sw_GENE_attach;
+        can_attach_wagon:               sw_Kxxxx_attach;
         cargo_subtype_text:             sw_K4x00_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }

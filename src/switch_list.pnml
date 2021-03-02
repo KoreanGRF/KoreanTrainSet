@@ -6,17 +6,19 @@
 #define FIRST_TRAIN_NAME ko_train_K4x00
 #define LAST_TRAIN_NAME  ko_train_DHC
 
-// 객차 연결 스위치
-switch(FEAT_TRAINS, SELF, sw_GENE_attach, vehicle_type_id) {
-	FIRST_TRAIN_NAME..LAST_TRAIN_NAME: return CB_RESULT_ATTACH_ALLOW;
-	return CB_RESULT_ATTACH_ALLOW;
+// Attachable vehicles for Kxxxx locomotives
+switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
+	ko_train_K4x00:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K7x00:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K7000:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8000:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8100n8200:      return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8500:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_MUGUNGHWA_CAR:   return CB_RESULT_ATTACH_ALLOW;
+	ko_train_SAEMAEUL_CAR:    return CB_RESULT_ATTACH_ALLOW;
+	// ko_train_POWER_CAR:       return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_NO_ATTACH);
 }
-
-// 화물차는 기관차 뒤에만 연결할 수 있음
-// switch(FEAT_TRAINS, PARENT, sw_CARGOWAGON_attach, vehicle_type_id) {
-// 	FIRST_TRAIN_NAME..LAST_TRAIN_NAME: return CB_RESULT_ATTACH_ALLOW;
-// 	return string(STR_ERROR_CANNOT_ATTACH_OTHER);
-// }
 
 // It should be more than 4 cars including engines
 switch(FEAT_TRAINS, SELF, sw_ko_train_start_stop, num_vehs_in_consist >= 4) {

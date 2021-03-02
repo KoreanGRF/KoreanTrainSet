@@ -281,7 +281,7 @@ switch(FEAT_TRAINS, SELF, var_KTX_wagon_executive_CAPACITY, 1) {
     return 16 * sw_cargo_capacity_factor;
 }
 
-// 객차 개조
+// Refit for wagon
 switch(FEAT_TRAINS, SELF, sw_KTX_wagon_cargo_subtype_text, cargo_subtype) {
     1:    return string(STR_REFIT_PASSWAGON_FIRSTCAR);
     return string(STR_REFIT_PASSWAGON_NORMALCAR);
@@ -290,6 +290,18 @@ switch(FEAT_TRAINS, SELF, sw_KTXCW_cargo_capacity, cargo_subtype) {
     1:    var_KTX_wagon_executive_CAPACITY;
     var_KTX_wagon_CAPACITY;
 }
+
+
+// Attachable vehicles
+switch(FEAT_TRAINS, SELF, sw_KTX_attach, vehicle_type_id) {
+    ko_train_KTX1N:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_KTX2N:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_SRT:     return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:  return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWGP: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
 
 // Item
 item(FEAT_TRAINS, ko_train_KTX1N, 55150) {
@@ -346,7 +358,7 @@ item(FEAT_TRAINS, ko_train_KTX1N, 55150) {
         cargo_capacity:                 sw_KTX1N_capacity;
         loading_speed:                  sw_KTX1N_loadingspeed;
 
-        can_attach_wagon:               sw_GENE_attach;
+        can_attach_wagon:               sw_KTX_attach;
         start_stop:                     sw_ko_train_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
@@ -421,7 +433,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 55151) {
         cargo_capacity:                 sw_KTX2N_capacity;
         loading_speed:                  sw_KTX2N_loadingspeed;
 
-        can_attach_wagon:               sw_GENE_attach;
+        can_attach_wagon:               sw_KTX_attach;
         start_stop:                     sw_ko_train_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
@@ -496,7 +508,7 @@ item(FEAT_TRAINS, ko_train_SRT, 55152) {
         cargo_capacity:                 sw_SRT_capacity;
         loading_speed:                  sw_SRT_loadingspeed;
 
-        can_attach_wagon:               sw_GENE_attach;
+        can_attach_wagon:               sw_KTX_attach;
         start_stop:                     sw_ko_train_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
