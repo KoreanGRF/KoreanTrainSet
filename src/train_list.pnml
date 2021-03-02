@@ -29,6 +29,7 @@
 #include "locomotive/KTX/KTX.pnml"
 
 // Wagon
-#include "wagon/Mugunghwa/Mugunghwa.pnml"
 #include "locomotive/Saemaeul/DHC_wagon.pnml"
+#include "wagon/Mugunghwa/Mugunghwa.pnml"
+#include "wagon/Tongil/Tongil.pnml"
 #include "wagon/passenger_wagon.pnml"

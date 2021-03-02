@@ -1,0 +1,75 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+// Defines
+GENERAL(TONGIL_wagon)
+
+spriteset(set_TONGIL_wagon_purchase, "./src/wagon/Tongil/Tongil.png") {
+    tmpl_purchase_detail(45, 0, 31, 12, -16, -6)
+}
+
+// 1984~2004
+spriteset(set_TONGIL_wagon, "./src/wagon/Tongil/Tongil.png") {
+    tmpl_wagon_by_coor(0, 0)
+}
+
+// Refit (No refit currently. We will add some prints in the future)
+switch(FEAT_TRAINS, SELF, sw_TONGIL_wagon, cargo_subtype) {
+	set_TONGIL_wagon;
+}
+// switch(FEAT_TRAINS, SELF, sw_TONGIL_wagon_subtype_text, cargo_subtype) {
+// 	return string(STR_REFIT_PAINTING_THESEDAYS);
+// }
+
+item(FEAT_TRAINS, ko_train_TONGIL_CAR, 55970) {
+    property {
+        // Common properties
+        name:                           string(STR_TONGIL_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_TONGIL_wagon_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         17 ton;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_TONGIL_wagon;
+        purchase:                       set_TONGIL_wagon_purchase;
+
+        cost_factor:                    var_TONGIL_wagon_COST;
+        running_cost_factor:            var_TONGIL_wagon_RUNNINGCOST;
+        cargo_capacity:                 var_TONGIL_wagon_CAPACITY;
+        loading_speed:                  var_TONGIL_wagon_LOADINGSPEED;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+}

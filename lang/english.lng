@@ -26,6 +26,7 @@ STR_PASSWG_NAME                             :[KTS] Passenger car (unpowered)
 STR_PASSWG_POWER_NAME                       :[KTS] Passenger car (powered)
 STR_SAEMAEUL_CAR_NAME                       :[KTS] Saemaeul passenger car
 STR_MUGUNGHWA_CAR_NAME                      :[KTS] Mugunghwa passenger car
+STR_TONGIL_CAR_NAME                         :[KTS] Tongil passenger car
 STR_POWER_CAR_NAME                          :[KTS] Power car
 
 
