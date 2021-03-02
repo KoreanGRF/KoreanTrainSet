@@ -293,7 +293,7 @@ item(FEAT_TRAINS, ko_train_CDC, 55160) {
         cargo_capacity:                 sw_CDC_capacity;
         loading_speed:                  sw_CDC_loadingspeed;
 
-        can_attach_wagon:               sw_GENE_attach;
+        can_attach_wagon:               sw_CDC_attach;
         start_stop:                     sw_ko_train_start_stop;
         cargo_subtype_text:             sw_CDC_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);

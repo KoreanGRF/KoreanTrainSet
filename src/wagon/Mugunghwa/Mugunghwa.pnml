@@ -7,7 +7,7 @@
 GENERAL(MUGUNGHWA_wagon)
 
 spriteset(set_MUGUNGHWA_wagon_purchase, "./src/wagon/Mugunghwa/Mugunghwa.png") {
-    tmpl_purchase_detail(45, 150, 32, 12, -16, -8)
+    tmpl_purchase_detail(45, 150, 32, 12, -16, -6)
 }
 
 // A: 1970~1983
@@ -65,17 +65,6 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon_subtype_text, cargo_subtype) {
 	return string(STR_REFIT_PAINTING_THESEDAYS);
 }
 
-// Not allow to attach except for Kxxxx series
-switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_wagon_start_stop, vehicle_type_id) {
-	ko_train_K4x00:      return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K7x00:      return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K7000:      return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8000:      return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8100n8200: return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8500:      return CB_RESULT_ATTACH_ALLOW;
-	return CB_RESULT_NO_TEXT;
-}
-
 item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 55940) {
     property {
         // Common properties
@@ -123,8 +112,7 @@ item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 55940) {
         cargo_capacity:                 var_MUGUNGHWA_wagon_CAPACITY;
         loading_speed:                  var_MUGUNGHWA_wagon_LOADINGSPEED;
 
-        can_attach_wagon:               sw_GENE_attach;
-        start_stop:                     sw_MUGUNGHWA_wagon_start_stop;
+        can_attach_wagon:               sw_MUGUNGHWA_wagon_attach;
 
         cargo_subtype_text:             sw_MUGUNGHWA_wagon_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);

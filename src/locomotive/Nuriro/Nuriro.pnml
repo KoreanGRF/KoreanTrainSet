@@ -97,6 +97,13 @@ switch(FEAT_TRAINS, SELF, sw_NURIRO_wagon, position_in_vehid_chain + 1 == num_ve
 	sw_NURIRO_wagon_normal;
 }
 
+// Attachable vehicles
+switch(FEAT_TRAINS, PARENT, sw_NURIRO_attach, vehicle_type_id) {
+    ko_train_NURIRO: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG: return CB_RESULT_ATTACH_ALLOW;
+	return CB_RESULT_NO_TEXT;
+}
+
 // Item
 item(FEAT_TRAINS, ko_train_NURIRO, 55170) {
     property {
@@ -151,8 +158,7 @@ item(FEAT_TRAINS, ko_train_NURIRO, 55170) {
         cargo_capacity:                 sw_NURIRO_capacity;
         loading_speed:                  sw_NURIRO_loadingspeed;
 
-        can_attach_wagon:               sw_GENE_attach;
-        start_stop:                     sw_ko_train_start_stop;
+        can_attach_wagon:               sw_NURIRO_attach;
         cargo_subtype_text:             sw_NURIRO_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
