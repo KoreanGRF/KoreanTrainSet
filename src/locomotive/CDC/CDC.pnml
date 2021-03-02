@@ -206,7 +206,7 @@ switch(FEAT_TRAINS, SELF, sw_CDC_cargo_subtype_text, cargo_subtype) {
     7:    return string(STR_REFIT_PAINTING_CDC_DMZTRAIN);          // DMZ-train
     8:    return string(STR_REFIT_PAINTING_CDC_MUGUNGHWA);         // RDC
     9:    return string(STR_REFIT_PAINTING_CDC_GYEONGBUK1);        // 경북관광열차#1
-    10:    return string(STR_REFIT_PAINTING_CDC_GYEONGBUK2);       // 경북관광열차#2
+    10:   return string(STR_REFIT_PAINTING_CDC_GYEONGBUK2);        // 경북관광열차#2
     return string(STR_REFIT_PAINTING_THESEDAYS);
 }
 
