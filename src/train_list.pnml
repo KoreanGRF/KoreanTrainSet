@@ -32,4 +32,5 @@
 #include "locomotive/Saemaeul/DHC_wagon.pnml"
 #include "wagon/Mugunghwa/Mugunghwa.pnml"
 #include "wagon/Tongil/Tongil.pnml"
+#include "wagon/Power/Power.pnml"
 #include "wagon/passenger_wagon.pnml"

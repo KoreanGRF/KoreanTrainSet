@@ -46,30 +46,12 @@ spriteset(set_K7x00_loco_CARGO, "./src/locomotive/K7x00/K7x00.png") {   // Cargo
 spriteset(set_K7x00_loco_HAERANG, "./src/locomotive/K7x00/K7x00.png") {   // Haerang
 	tmpl_K7x00(60, 180)
 }
-// spriteset(set_HRANG_coach,          "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(350, 680) }
-// spriteset(set_HRANG_CAFE_coach,     "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(350, 710) }
-// spriteset(set_HRANG_GEN_coach,      "./src/locomotive/K7x00/K7x00.png") { 
-//     tmpl_wagon_by_coor(350, 740)
-//     tmpl_wagon_by_coor(350, 770)
-// }
-
 spriteset(set_K7x00_loco_GTRAIN, "./src/locomotive/K7x00/K7x00.png") {   // G-train
 	tmpl_K7x00(60, 210)
 }
-// spriteset(set_GTRAIN_coach1,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(70, 40) }
-// spriteset(set_GTRAIN_coach2,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(70, 70) }
-// spriteset(set_GTRAIN_coach3,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(70, 100) }
-// spriteset(set_GTRAIN_coach4,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(70, 130) }
-// spriteset(set_GTRAIN_coach5,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(70, 160) }
-// spriteset(set_GTRAIN_GEN_coach,     "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(195, 40) }
-
 spriteset(set_K7x00_loco_STRAIN, "./src/locomotive/K7x00/K7x00.png") {   // S-train
 	tmpl_K7x00(60, 240)
 }
-// spriteset(set_STRAIN_coach1,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(410, 40) }
-// spriteset(set_STRAIN_coach2,        "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(410, 70) }
-// spriteset(set_STRAIN_GEN_coach1,    "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(410, 100) }
-// spriteset(set_STRAIN_GEN_coach2,    "./src/locomotive/K7x00/K7x00.png") { tmpl_wagon_by_coor(410, 130) }
 
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
@@ -84,7 +66,7 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
     // 8:    set_ERRSPRITE;    // RESERVED
     // 9:    set_ERRSPRITE;    // RESERVED
     10:   set_K7x00_loco_STRAIN;
-    // 11:   set_K7x00_STRAIN_loco;
+    11:   set_K7x00_loco_STRAIN;
     12:   set_K7x00_loco_GTRAIN;
     set_K7x00_loco_RED_WHITE_BLUE;
 }
@@ -99,8 +81,8 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
     // 7:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    10:   return string(STR_REFIT_PAINTING_STRAIN);
-    // 11:   return string(STR_REFIT_PAINTING_STRAIN_B);
+    10:   return string(STR_REFIT_PAINTING_STRAIN1);
+    11:   return string(STR_REFIT_PAINTING_STRAIN2);
     12:   return string(STR_REFIT_PAINTING_GTRAIN);
     return string(STR_REFIT_PAINTING_THESEDAYS);
 }

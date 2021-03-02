@@ -29,6 +29,7 @@ trainList['SRT']              = 300,     10,    15,          64,      10,       
 trainList['KTX_wagon']        = 300,     10,    15,          29,      10,              0,   (2004, 1, 1)
 trainList['MUGUNGHWA_wagon']  = 135,      1,    15,          72,      10,              0,   (1972, 1, 1)
 trainList['TONGIL_wagon']     = 120,      1,    15,          72,      10,              0,   (1988, 1, 1)
+trainList['POWER_CAR']        = 120,      1,    15,          72,      10,              0,   (1972, 1, 1)
 
 
 # Generates spec.pnml
