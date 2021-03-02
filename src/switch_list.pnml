@@ -6,17 +6,6 @@
 #define FIRST_TRAIN_NAME ko_train_K4x00
 #define LAST_TRAIN_NAME  ko_train_DHC
 
-// 수송량은 실제 수송량의 1/2로 설정할 것
-switch(FEAT_TRAINS, SELF, var_loading_speed_SLOW, 1) {
-	return 5 * sw_loading_speed_factor;
-}
-// switch(FEAT_TRAINS, SELF, var_loading_speed_NORMAL, 1) {
-// 	return 10 * sw_loading_speed_factor;
-// }
-// switch(FEAT_TRAINS, SELF, var_loading_speed_FAST, 1) {
-// 	return 20 * sw_loading_speed_factor;
-// }
-
 // 객차 연결 스위치
 switch(FEAT_TRAINS, SELF, sw_GENE_attach, vehicle_type_id) {
 	FIRST_TRAIN_NAME..LAST_TRAIN_NAME: return CB_RESULT_ATTACH_ALLOW;

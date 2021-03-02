@@ -24,6 +24,9 @@ STR_SRT_NAME                                :[KTS] SRT
 
 STR_PASSWG_NAME                             :[KTS] Passenger car (unpowered)
 STR_PASSWG_POWER_NAME                       :[KTS] Passenger car (powered)
+STR_SAEMAEUL_CAR_NAME                       :[KTS] Saemaeul passenger car
+STR_MUGUNGHWA_CAR_NAME                      :[KTS] Mugunghwa passenger car
+STR_POWER_CAR_NAME                          :[KTS] Power car
 
 
 # Paintings
@@ -37,6 +40,7 @@ STR_REFIT_PAINTING_1984_1984                : (Painting B: 1984~1984)
 STR_REFIT_PAINTING_1985_1989                : (Painting C: 1985~1989)
 STR_REFIT_PAINTING_1990_1999                : (Painting D: 1990~1999)
 STR_REFIT_PAINTING_2000_2002                : (Painting E: 2000~2002)
+STR_REFIT_PAINTING_OLD_EXPRESS              : (Old express)
 STR_REFIT_PAINTING_HAERANG                  : (Rail cruise 'Haerang')
 STR_REFIT_PAINTING_STRAIN                   : (S-train)
 STR_REFIT_PAINTING_GTRAIN                   : (G-train)

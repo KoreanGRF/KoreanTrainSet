@@ -3,85 +3,88 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
+// Defines
+GENERAL(MGHCW)
 
-
-//TEST//
-// spriteset(set_PASSWG_wagon, "./src/wagon/passenger_wagon.png") {
-//     tmpl_wagon_by_coor(350, 140)
-// }
-spriteset(set_PASSWG_purchase, "./src/wagon/passenger_wagon_purchase.png") {
-    tmpl_purchase_detail(0, 0, 32, 12, -16, -8)
-}
-spriteset(set_PASSWG_TEMP_wagon, "./src/wagon/passenger_wagon.png") {
-    [0,    0,   8,   22,    -3,   -11]
-    [15,   0,  21,   17,   -14,    -8]
-    [45,   0,  32,   12,   -17,    -8]
-    [95,   0,  21,   17,    -6,    -8]
+spriteset(set_MUGUNGHWA_wagon_purchase, "./src/wagon/Mugunghwa/Mugunghwa.png") {
+    tmpl_purchase_detail(0, 180, 32, 12, -17, -8)
 }
 
-switch(FEAT_TRAINS, PARENT, sw_PASSWG_wagon, vehicle_type_id) {
-    ko_train_CDC: sw_CDC_wagon;
-    set_PASSWG_TEMP_wagon;
+// A: 1970~1983
+spriteset(set_MUGUNGHWA_wagon_A, "./src/wagon/Mugunghwa/Mugunghwa.png") {
+    tmpl_wagon_by_coor(0, 0)
 }
 
-
-// Mugungwha passenger wagon
-switch(FEAT_TRAINS, SELF, sw_PASSWG_mugunghwa_wagon, cargo_subtype) {
-
+// B: 1984~1984
+spriteset(set_MUGUNGHWA_wagon_B, "./src/wagon/Mugunghwa/Mugunghwa.png") {
+    tmpl_wagon_by_coor(0, 30)
 }
 
+// C: 1985~1989
+spriteset(set_MUGUNGHWA_wagon_C, "./src/wagon/Mugunghwa/Mugunghwa.png") {
+    tmpl_wagon_by_coor(0, 60)
+}
 
-// for temporarily
-switch(FEAT_TRAINS, SELF, sw_speed_PASSWG, cargo_subtype) {
-       return 150;
+// D: 1990~1999
+spriteset(set_MUGUNGHWA_wagon_D, "./src/wagon/Mugunghwa/Mugunghwa.png") {
+    tmpl_wagon_by_coor(0, 90)
 }
-switch(FEAT_TRAINS, SELF, sw_cost_PASSWG, cargo_subtype) {
-       return 10;
-}
-switch(FEAT_TRAINS, SELF, sw_runcost_PASSWG, cargo_subtype) {
-       return 3;
-}
-switch(FEAT_TRAINS, SELF, sw_capacity_PASSWG, cargo_subtype) {
-       return 50;
-}
-switch(FEAT_TRAINS, SELF, sw_loading_speed_PASSWG, cargo_subtype) {
-       return 10;
-}
-switch(FEAT_TRAINS, SELF, sw_weight_PASSWG, cargo_subtype) {
-       return 50;
-}
-// for temporarily (end)
 
-switch(FEAT_TRAINS, SELF, sw_PASSWG_cargo_subtype_text, cargo_subtype) {
-    // 무궁화 객차
+// E: 2000~2002
+spriteset(set_MUGUNGHWA_wagon_E, "./src/wagon/Mugunghwa/Mugunghwa.png") {
+    tmpl_wagon_by_coor(0, 120)
+}
+
+// Current Korail paint
+spriteset(set_MUGUNGHWA_wagon_RED_BLUE_WHITE, "./src/wagon/Mugunghwa/Mugunghwa.png") {
+    tmpl_wagon_by_coor(0, 150)
+}
+
+// Old express (구특전)
+spriteset(set_MUGUNGHWA_wagon_OLD_EXPRESS, "./src/wagon/Mugunghwa/Mugunghwa.png") {
+    tmpl_wagon_by_coor(0, 180)
+}
+
+// Refit
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon, cargo_subtype) {
     1: return string(STR_REFIT_PAINTING_1970_1983);
     2: return string(STR_REFIT_PAINTING_1984_1984);
     3: return string(STR_REFIT_PAINTING_1985_1989);
     4: return string(STR_REFIT_PAINTING_1990_1999);
 
-    // 새마을 객차
-
-    // 통일호 객차
-
-    // ITX 새마을 객차
-
-    // 비둘기호 객차
-    
-    return string(STR_REFIT_PAINTING_2000_2002);
+}
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_PAINTING_1970_1983);
+    2: return string(STR_REFIT_PAINTING_1984_1984);
+    3: return string(STR_REFIT_PAINTING_1985_1989);
+    4: return string(STR_REFIT_PAINTING_1990_1999);
+    5: return string(STR_REFIT_PAINTING_2000_2002);
+    5: return string(STR_REFIT_PAINTING_OLD_EXPRESS);
 }
 
-item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
+// Not allow to attach except for Kxxxx series
+switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_wagon_start_stop, vehicle_type_id) {
+	ko_train_K4x00:      return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K7x00:      return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K7000:      return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8000:      return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8100n8200: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8500:      return CB_RESULT_ATTACH_ALLOW;
+	return CB_RESULT_NO_TEXT;
+}
+
+item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 55940) {
     property {
         // Common properties
-        name:                           string(STR_PASSWG_NAME);
+        name:                           string(STR_MUGUNGHWA_CAR_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1950, 1, 1);
+        introduction_date:              var_MUGUNGHWA_wagon_INTRODUCTION;
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         // Spec
         power:                          0 kW;
-        weight:                         0 ton;
+        weight:                         17 ton;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -109,21 +112,18 @@ item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_PASSWG_wagon;
-        purchase:                       set_PASSWG_purchase;
+        default:                        sw_MUGUNGHWA_wagon;
+        purchase:                       set_MUGUNGHWA_wagon_purchase;
 
-        speed:                          sw_speed_PASSWG;
-        cost_factor:                    sw_cost_PASSWG;
-        running_cost_factor:            sw_runcost_PASSWG;
-        cargo_capacity:                 sw_capacity_PASSWG;
-        loading_speed:                  sw_loading_speed_PASSWG;
-        // power:                          sw_power_PASSWG;
-        weight:                         sw_weight_PASSWG;
+        cost_factor:                    sw_cost_MUGUNGHWA_wagon;
+        running_cost_factor:            sw_runcost_MUGUNGHWA_wagon;
+        cargo_capacity:                 sw_capacity_MUGUNGHWA_wagon;
+        loading_speed:                  sw_loading_speed_MUGUNGHWA_wagon;
 
         can_attach_wagon:               sw_GENE_attach;
-        // start_stop:                     sw_ko_train_start_stop;
+        start_stop:                     sw_MUGUNGHWA_wagon_start_stop;
 
-        cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
+        cargo_subtype_text:             sw_MUGUNGHWA_wagon_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }
