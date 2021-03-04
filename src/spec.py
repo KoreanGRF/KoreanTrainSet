@@ -9,8 +9,8 @@ import math
 trainList = {}
 
 #                               speed    cost   running_cost capacity loading_speed power   introduction
-trainList['K4x00']            = 150,     1,     10,           0,       0,           2719,   (1963, 1, 1)
-trainList['K7000']            = 150,     1,     10,           0,       0,           2719,   (1963, 1, 1)
+trainList['K4x00']            = 150,     1,     10,           0,       0,           2719,   (2001, 1, 1)
+trainList['K7000']            = 150,     1,     10,           0,       0,           2719,   (1986, 1, 1)
 trainList['K7x00']            = 150,     2,     10,           0,       0,           2719,   (1986, 1, 1)
 trainList['K8000']            =  90,     3,     10,           0,       0,           3900,   (1972, 1, 1)
 trainList['K8100n8200']       = 150,     3,     10,           0,       0,           5200,   (1990, 1, 1)
