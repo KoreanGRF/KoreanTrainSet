@@ -28,6 +28,7 @@ STR_SAEMAEUL_CAR_NAME                       :[KTS] Saemaeul passenger car
 STR_MUGUNGHWA_CAR_NAME                      :[KTS] Mugunghwa passenger car
 STR_TONGIL_CAR_NAME                         :[KTS] Tongil passenger car
 STR_POWER_CAR_NAME                          :[KTS] Power car
+STR_CAFE_CAR_NAME                           :[KTS] Cafe car
 
 
 # Paintings
@@ -64,6 +65,9 @@ STR_REFIT_PAINTING_POWER_CAR_DEFAULT        : (Default type)
 STR_REFIT_PAINTING_POWER_CAR_LONG           : (Long type)
 STR_REFIT_PAINTING_POWER_CAR_SME_A          : (Long type : Saemaeul old painting)
 STR_REFIT_PAINTING_POWER_CAR_SME_B          : (Long type : Saemaeul current painting)
+STR_REFIT_PAINTING_SAEMAEUL_CAFE            : (Saemaeul cafe car)
+STR_REFIT_PAINTING_RDC_MUGUNGHWA_CAFE       : (RDC Mugunghwa cafe car)
+STR_REFIT_PAINTING_MUGUNGHWA_CAFE           : (Mugunghwa cafe car)
 STR_REFIT_PASSWAGON_NORMALCAR               : (Normal class car)
 STR_REFIT_PASSWAGON_FIRSTCAR                : (First class car)
 

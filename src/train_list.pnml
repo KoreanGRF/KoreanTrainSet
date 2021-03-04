@@ -33,4 +33,5 @@
 #include "wagon/Mugunghwa/Mugunghwa.pnml"
 #include "wagon/Tongil/Tongil.pnml"
 #include "wagon/Power/Power.pnml"
+#include "wagon/Cafe/Cafe.pnml"
 #include "wagon/passenger_wagon.pnml"

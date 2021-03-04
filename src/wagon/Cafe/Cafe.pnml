@@ -1,0 +1,99 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+// Defines
+GENERAL(CAFE_CAR)
+
+spriteset(set_CAFE_CAR_purchase, "./src/wagon/Cafe/Cafe.png") {
+    tmpl_purchase_detail(45, 0, 31, 12, -16, -6)
+}
+
+// Cafe car for Mugunghwa
+spriteset(set_CAFE_CAR_MUGUNGHWA, "./src/wagon/Cafe/Cafe.png") {
+	tmpl_CAFE_CAR(0, 0)
+}
+
+// Check if parent engine
+switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_is_HAERANG, cargo_subtype) {
+	6:	set_HAERANG_CAFE_wagon;   //=> Refer: ./src/wagon/Mugunghwa
+    set_CAFE_CAR_MUGUNGHWA;
+}
+switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_wagon, vehicle_type_id) {
+	ko_train_K7x00:   sw_CAFE_CAR_is_HAERANG;
+	set_CAFE_CAR_MUGUNGHWA;
+}
+
+switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_subtype_text, cargo_subtype) {
+	1:	return string(STR_REFIT_PAINTING_SAEMAEUL_CAFE);
+	6:	return string(STR_REFIT_PAINTING_HAERANG);
+	8:	return string(STR_REFIT_PAINTING_RDC_MUGUNGHWA_CAFE);
+	return string(STR_REFIT_PAINTING_MUGUNGHWA_CAFE);
+}
+
+// Attachable vehicles
+switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_attach, vehicle_type_id) {
+	ko_train_K4x00:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K7x00:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K7000:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8000:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8100n8200:      return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8500:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_DHC:             return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_NO_ATTACH);
+}
+
+// Item
+item(FEAT_TRAINS, ko_train_CAFE_CAR, 59950) {
+    property {
+        // Common properties
+        name:                           string(STR_CAFE_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_CAFE_CAR_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         17 ton;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_CAFE_CAR_wagon;
+        purchase:                       set_CAFE_CAR_purchase;
+
+        cost_factor:                    var_CAFE_CAR_COST;
+        running_cost_factor:            var_CAFE_CAR_RUNNINGCOST;
+        cargo_capacity:                 var_CAFE_CAR_CAPACITY;
+        loading_speed:                  var_CAFE_CAR_LOADINGSPEED;
+
+        can_attach_wagon:               sw_CAFE_CAR_attach;
+        cargo_subtype_text:             sw_CAFE_CAR_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}

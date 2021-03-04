@@ -141,17 +141,18 @@ spriteset(set_CDC_GYEONGBUK2_wagon2, "./src/locomotive/CDC/CDC.png") {
     tmpl_wagon_by_coor(340, 390)
 }
 
-// RDC 카페 객차
-// spriteset(set_CDC_MUGUNGHWA_CAFE_wagon, "./src/locomotive/CDC/CDC.png") {
-//     [560,   260,   8,    22,   -3,   -11]
-//     [575,   260,   21,   16,   -14,   -8]
-//     [605,   260,   31,   12,   -17,   -8]
-//     [655,   260,   21,   16,   -6,    -8]
-//     [685,   260,   8,    22,   -3,   -11]
-//     [700,   260,   21,   16,   -14,   -8]
-//     [735,   260,   31,   12,   -17,   -8]
-//     [785,   260,   21,   16,   -6,    -8]
-// }
+// Cafe car for RDC
+// Not use tmpl_CAFE_CAR() since its width is 16, not 17.
+spriteset(set_CAFE_CAR_RDC, "./src/wagon/Cafe/Cafe.png") {
+    [0,       30,     8,    22,     -3,   -11]
+    [15,      30,    21,    16,    -14,    -8]
+    [45,      30,    31,    12,    -17,    -8]
+    [95,      30,    21,    16,     -6,    -8]
+    [125,     30,     8,    22,     -3,   -11]
+    [140,     30,    21,    16,    -14,    -8]
+    [175,     30,    31,    12,    -17,    -8]
+    [225,     30,    21,    16,     -6,    -8]
+}
 
 // for Gyeongbuk theme (경북순환테마열차용)
 switch(FEAT_TRAINS, SELF, sw_CDC_GYEONGBUK1_wagon, position_in_consist % 2) {
@@ -239,9 +240,11 @@ switch(FEAT_TRAINS, SELF, sw_CDC_wagon, cargo_subtype) {
 }
 
 // Attachable vehicles
-switch(FEAT_TRAINS, PARENT, sw_CDC_attach, vehicle_type_id) {
-	ko_train_CDC:        return CB_RESULT_ATTACH_ALLOW;
-	ko_train_PASSWG:     return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, sw_CDC_attach, vehicle_type_id) {
+	ko_train_CDC:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_PASSWG:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_MUGUNGHWA_CAR: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_CAFE_CAR:      return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_ERROR_NO_ATTACH);
 }
 
@@ -314,6 +317,9 @@ item(FEAT_TRAINS, ko_train_CDC, 55160) {
         default:                        sw_CDC_wagon;
         cargo_capacity:                 sw_CDC_wagon_capacity;
         cargo_subtype_text:             sw_CDC_cargo_subtype_text;
+    }
+    livery_override(ko_train_CAFE_CAR) {
+        default:                        set_CAFE_CAR_RDC;
     }
 }
 // End of "CDC"

@@ -128,6 +128,7 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon_K7x00, cargo_subtype) {
 }
 switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_wagon, vehicle_type_id) {
     ko_train_K7x00: sw_MUGUNGHWA_wagon_K7x00;
+    ko_train_CDC:   sw_CDC_wagon;
     sw_MUGUNGHWA_wagon_normal;
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon_subtype_text_normal, cargo_subtype) {
@@ -141,9 +142,11 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon_subtype_text_normal, cargo_subtype)
 }
 switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_wagon_subtype_text, vehicle_type_id) {
     ko_train_K7x00: sw_K7x00_cargo_subtype_text;
+    ko_train_CDC:   sw_CDC_cargo_subtype_text;
     sw_MUGUNGHWA_wagon_subtype_text_normal;
 }
 
+// Item
 item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 55940) {
     property {
         // Common properties

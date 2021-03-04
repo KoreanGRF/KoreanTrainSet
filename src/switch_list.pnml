@@ -18,6 +18,7 @@ switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
 	ko_train_SAEMAEUL_CAR:    return CB_RESULT_ATTACH_ALLOW;
 	ko_train_TONGIL_CAR:      return CB_RESULT_ATTACH_ALLOW;
 	ko_train_POWER_CAR:       return CB_RESULT_ATTACH_ALLOW;
+	ko_train_CAFE_CAR:        return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_ERROR_NO_ATTACH);
 }
 
