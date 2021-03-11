@@ -1,0 +1,165 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * NDC
+ */
+GENERAL(NDC)
+GENERAL(NDC_wagon)
+
+
+// NDC
+spriteset(set_NDC_purchase, "./src/locomotive/NDC/NDC.png") {
+    tmpl_purchase_detail(0, 0, 50, 12, -12, -7)
+}
+spriteset(set_NDC_engineH, "./src/locomotive/NDC/NDC.png") {
+    [60+0,        0,     8,    22,     -3,   -11]
+    [60+15,       0,    21,    17,    -14,    -8]
+    [60+45,       0,    32,    12,    -17,    -8]
+    [60+95,       0,    21,    17,     -6,    -8]
+    [60+125,      0,     8,    22,     -3,   -11]
+    [60+140,      0,    21,    17,    -14,    -8]
+    [60+175,      0,    33,    12,    -19,    -8]
+    [60+225,      0,    21,    17,     -6,    -8]
+}
+spriteset(set_NDC_engineT, "./src/locomotive/NDC/NDC.png") {
+    [60+125,     30,     8,    22,     -3,   -11]
+    [60+140,     30,    21,    17,    -14,    -8]
+    [60+175,     30,    32,    12,    -17,    -8]
+    [60+225,     30,    21,    17,     -6,    -8]
+    [60+0,       30,     8,    22,     -3,   -11]
+    [60+15,      30,    21,    17,    -14,    -8]
+    [60+45,      30,    33,    12,    -19,    -8]
+    [60+95,      30,    21,    17,     -6,    -8]
+}
+spriteset(set_NDC_business_engineH, "./src/locomotive/NDC/NDC.png") {
+    [60+0,       60,     8,    22,     -3,   -11]
+    [60+15,      60,    21,    17,    -14,    -8]
+    [60+45,      60,    32,    12,    -17,    -8]
+    [60+95,      60,    21,    17,     -6,    -8]
+    [60+125,     60,     8,    22,     -3,   -11]
+    [60+140,     60,    21,    17,    -14,    -8]
+    [60+175,     60,    33,    12,    -19,    -8]
+    [60+225,     60,    21,    17,     -6,    -8]
+}
+spriteset(set_NDC_business_engineT, "./src/locomotive/NDC/NDC.png") {
+    [60+125,     90,     8,    22,     -3,   -11]
+    [60+140,     90,    21,    17,    -14,    -8]
+    [60+175,     90,    32,    12,    -17,    -8]
+    [60+225,     90,    21,    17,     -6,    -8]
+    [60+0,       90,     8,    22,     -3,   -11]
+    [60+15,      90,    21,    17,    -14,    -8]
+    [60+45,      90,    33,    12,    -19,    -8]
+    [60+95,      90,    21,    17,     -6,    -8]
+}
+
+// NDC's engine
+switch(FEAT_TRAINS, SELF, sw_NDC_engine_default, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+	1: set_NDC_engineT;
+	set_NDC_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_NDC_engine_business, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+	1: set_NDC_business_engineT;
+	set_NDC_business_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_NDC_engine, cargo_subtype) {
+	1: sw_NDC_engine_business;
+	sw_NDC_engine_default;
+}
+
+//NDC\'s wagon
+switch(FEAT_TRAINS, SELF, sw_NDC_wagon, cargo_subtype) {
+	1: set_MUGUNGHWA_wagon_D;
+	set_MUGUNGHWA_wagon_C;
+}
+
+// NDC\'s attach
+switch(FEAT_TRAINS, SELF, sw_NDC_attach, vehicle_type_id) {
+	ko_train_CDC:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_NDC:           return CB_RESULT_ATTACH_ALLOW;
+	ko_train_PASSWG:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWGP:       return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_NO_ATTACH);
+}
+
+// Refit
+switch(FEAT_TRAINS, SELF, sw_NDC_cargo_subtype_text, cargo_subtype) {
+	1: return string(STR_REFIT_PAINTING_NDC_BUSINESS);
+	return string(STR_REFIT_PAINTING_NDC);
+}
+
+
+// Item
+item(FEAT_TRAINS, ko_train_NDC, 55200) {
+    property {
+        // Common properties
+        name:                           string(STR_NDC_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_NDC_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+
+        // Spec
+        speed:                          var_NDC_SPEED km/h;
+        power:                          POWER_IN_KW(var_NDC_POWER);
+        weight:                         50 ton;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 50;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  20;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+        visual_effect_and_powered:      VISUAL_EFFECT_DIESEL;
+    }
+    graphics {
+        default:                        sw_NDC_engine;
+        purchase:                       set_NDC_purchase;
+
+        speed:                          sw_NDC_speed;
+        cost_factor:                    sw_NDC_cost;
+        running_cost_factor:            sw_NDC_runningcost;
+        cargo_capacity:                 sw_NDC_capacity;
+        loading_speed:                  sw_NDC_loadingspeed;
+
+        can_attach_wagon:               sw_NDC_attach;
+        cargo_subtype_text:             sw_NDC_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_NDC_wagon;
+        cargo_capacity:                 sw_NDC_wagon_capacity;
+        cargo_subtype_text:             sw_NDC_cargo_subtype_text;
+    }
+    livery_override(ko_train_PASSWGP) {
+        default:                        sw_NDC_wagon;
+        cargo_capacity:                 sw_NDC_wagon_capacity;
+        cargo_subtype_text:             sw_NDC_cargo_subtype_text;
+        power:                          POWER_IN_KW(var_NDC_POWER);
+    }
+}
+// End of "NDC"
