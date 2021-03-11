@@ -11,7 +11,7 @@ GENERAL(K8000)
 
 // 8000호대
 spriteset(set_K8000_purchase, "./src/locomotive/K8000/K8000.png") {
-	tmpl_purchase(0, 60)
+	tmpl_purchase(0, 0)
 }
 spriteset(set_K8000_loco_BLUE_WHITE, "./src/locomotive/K8000/K8000.png") {   // Blue & White
 	tmpl_loco(60, 0)
