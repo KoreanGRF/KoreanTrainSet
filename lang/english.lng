@@ -21,6 +21,7 @@ STR_CDC_NAME                                :[KTS] Commuter Diesel Car (CDC)
 STR_KTX1N_NAME                              :[KTS] KTX-1
 STR_KTX2N_NAME                              :[KTS] KTX-Sancheon
 STR_SRT_NAME                                :[KTS] SRT
+STR_EUM_NAME                                :[KTS] KTX-EUM
 
 STR_PASSWG_NAME                             :[KTS] Passenger car (unpowered)
 STR_PASSWG_POWER_NAME                       :[KTS] Passenger car (powered)

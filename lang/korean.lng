@@ -21,14 +21,15 @@ STR_CDC_NAME                                :[KTS] 통근형 디젤 열차 (CDC)
 STR_KTX1N_NAME                              :[KTS] KTX-1
 STR_KTX2N_NAME                              :[KTS] KTX-산천
 STR_SRT_NAME                                :[KTS] SRT
+STR_EUM_NAME                                :[KTS] KTX-이음
+
+STR_PASSWG_NAME                             :[KTS] 승객 수송 차량
+STR_PASSWG_POWER_NAME                       :[KTS] 승객 수송 차량 (동력차)
 STR_SAEMAEUL_CAR_NAME                       :[KTS] 새마을호 객차
 STR_MUGUNGHWA_CAR_NAME                      :[KTS] 무궁화호 객차
 STR_TONGIL_CAR_NAME                         :[KTS] 통일호 객차
 STR_POWER_CAR_NAME                          :[KTS] 발전차
 STR_CAFE_CAR_NAME                           :[KTS] 카페 객차
-
-STR_PASSWG_NAME                             :[KTS] 승객 수송 차량
-STR_PASSWG_POWER_NAME                       :[KTS] 승객 수송 차량 (동력차)
 
 
 # Paintings
