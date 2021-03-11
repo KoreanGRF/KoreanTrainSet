@@ -1,0 +1,32 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Tender for steam locomotives
+ */
+// GENERAL(TENDER)
+
+template tmpl_TENDER(x, y) {
+    [x,     y,    8,     18,    -3,   -11]
+    [x+15,  y,    15,    14,    -8,    -8]
+    [x+45,  y,    17,    11,    -4,    -7]
+    [x+95,  y,    15,    14,     0,    -5]
+    [x+125, y,    8,     18,    -3,    -5]
+    [x+140, y,    15,    14,   -14,    -5]
+    [x+175, y,    17,    11,   -15,    -7]
+    [x+225, y,    15,    14,    -6,    -8]
+}
+spriteset(set_TENDER_1, "./src/locomotive/steam/steam.png") {
+    tmpl_TENDER(60, 360)
+}
+spriteset(set_TENDER_2, "./src/locomotive/steam/steam.png") {
+    tmpl_TENDER(60, 390)
+}
+
+// Length
+switch(FEAT_TRAINS, SELF, sw_TENDER_length, position_in_vehid_chain % 2) {
+    1: return 5;
+    return 8;
+}

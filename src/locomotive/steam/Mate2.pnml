@@ -1,0 +1,120 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Mate 2
+ */
+GENERAL(MATE2)
+
+// Template
+template tmpl_MATE2(x, y) {
+    [x,     y,    8,     23,    -3,   -10]
+    [x+15,  y,    23,    18,   -14,    -9]
+    [x+45,  y,    32,    12,   -18,    -8]
+    [x+95,  y,    23,    19,    -6,    -9]
+    [x+125, y,    8,     23,    -3,   -10]
+    [x+140, y,    23,    19,   -16,    -9]
+    [x+175, y,    32,    12,   -16,    -8]
+    [x+225, y,    23,    18,    -7,    -9]
+}
+spriteset(set_MATE2_purchase, "./src/locomotive/steam/steam.png") {
+    tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
+}
+spriteset(set_MATE2_engine_1, "./src/locomotive/steam/steam.png") {
+    tmpl_MATE2(60, 0)
+}
+spriteset(set_MATE2_engine_2, "./src/locomotive/steam/steam.png") {
+    tmpl_MATE2(60, 30)
+}
+spriteset(set_MATE2_engine_3, "./src/locomotive/steam/steam.png") {
+    tmpl_MATE2(60, 60)
+}
+spriteset(set_MATE2_engine_4, "./src/locomotive/steam/steam.png") {
+    tmpl_MATE2(60, 90)
+}
+
+
+// Mate2's engine
+switch(FEAT_TRAINS, SELF, sw_MATE2_engine_by_motion, motion_counter % 4) {
+    1: set_MATE2_engine_1;
+    2: set_MATE2_engine_2;
+    3: set_MATE2_engine_3;
+    set_MATE2_engine_4;
+}
+
+switch(FEAT_TRAINS, SELF, sw_MATE2_engine, position_in_vehid_chain % 2) {
+    1: set_TENDER_1;
+    sw_MATE2_engine_by_motion;
+}
+
+// Mate2's articulated part
+switch(FEAT_TRAINS, SELF, sw_MATE2_articulated_part, extra_callback_info1) {
+    1: ko_train_MATE2;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Item
+item(FEAT_TRAINS, ko_train_MATE2, 5401) {
+    property {
+        // Common properties
+        name:                           string(STR_MATE2_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_MATE2_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_STEAM;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    0;
+
+        // Spec
+        speed:                          var_MATE2_SPEED km/h;
+        power:                          POWER_IN_KW(var_MATE2_POWER);
+        extra_power_per_wagon:          0 kW;
+        weight:                         113 ton;
+        tractive_effort_coefficient:    0.2;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   50;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [];
+        cargo_disallow_refit:           [];
+        loading_speed:                  20;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_STEAM;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+        visual_effect_and_powered:      visual_effect_and_powered(VISUAL_EFFECT_STEAM, -4, DISABLE_WAGON_POWER);
+    }
+    graphics {
+        default:                        sw_MATE2_engine;
+        articulated_part:               sw_MATE2_articulated_part;
+        purchase:                       set_MATE2_purchase;
+
+        length:                         sw_TENDER_length;
+
+        speed:                          sw_MATE2_speed;
+        cost_factor:                    sw_MATE2_cost;
+        running_cost_factor:            sw_MATE2_runningcost;
+        cargo_capacity:                 sw_MATE2_capacity;
+        loading_speed:                  sw_MATE2_loadingspeed;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+}
+// End of "MATE2"

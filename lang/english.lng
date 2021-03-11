@@ -24,6 +24,10 @@ STR_KTX2N_NAME                              :[KTS] KTX-Sancheon
 STR_SRT_NAME                                :[KTS] SRT
 STR_EUM_NAME                                :[KTS] KTX-EUM
 
+STR_MATE2_NAME                              :[KTS] Mate 2
+STR_PASHI5_NAME                             :[KTS] Pashi 5
+STR_MIKA3_NAME                              :[KTS] Mika 3
+
 STR_PASSWG_NAME                             :[KTS] Passenger car (unpowered)
 STR_PASSWG_POWER_NAME                       :[KTS] Passenger car (powered)
 STR_SAEMAEUL_CAR_NAME                       :[KTS] Saemaeul passenger car

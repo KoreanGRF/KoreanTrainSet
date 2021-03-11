@@ -24,6 +24,10 @@ STR_KTX2N_NAME                              :[KTS] KTX-산천
 STR_SRT_NAME                                :[KTS] SRT
 STR_EUM_NAME                                :[KTS] KTX-이음
 
+STR_MATE2_NAME                              :[KTS] 마터 2형
+STR_PASHI5_NAME                             :[KTS] 파시 5형
+STR_MIKA3_NAME                              :[KTS] 미카 3형
+
 STR_PASSWG_NAME                             :[KTS] 승객 수송 차량
 STR_PASSWG_POWER_NAME                       :[KTS] 승객 수송 차량 (동력차)
 STR_SAEMAEUL_CAR_NAME                       :[KTS] 새마을호 객차

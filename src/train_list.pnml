@@ -3,6 +3,12 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
+// Steam locomotives
+#include "locomotive/steam/Tender.pnml"
+#include "locomotive/steam/Mate2.pnml"
+#include "locomotive/steam/Pashi5.pnml"
+#include "locomotive/steam/Mika3.pnml"
+
 // K4x00
 #include "locomotive/K4x00/K4x00.pnml"
 
