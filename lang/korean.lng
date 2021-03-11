@@ -11,6 +11,7 @@ STR_GRF_URL                                 :{AUTHOR_WEBSITE}/ottd/newgrf/ko_tra
 STR_K4x00_NAME                              :[KTS] 4x00호대 디젤 기관차
 STR_K7000_NAME                              :[KTS] 7000호대 디젤 기관차
 STR_K7x00_NAME                              :[KTS] 7x00호대 디젤 기관차
+STR_K7600_NAME                              :[KTS] 7600호대 디젤 기관차
 STR_K8000_NAME                              :[KTS] 8000호대 전기 기관차
 STR_K8100n8200_NAME                         :[KTS] 8100/8200호대 전기 기관차
 STR_K8500_NAME                              :[KTS] 8500호대 전기 기관차
@@ -53,6 +54,7 @@ STR_REFIT_PAINTING_HAERANG                  : (해랑)
 STR_REFIT_PAINTING_STRAIN1                  : (S-train - 파랑)
 STR_REFIT_PAINTING_STRAIN2                  : (S-train - 분홍)
 STR_REFIT_PAINTING_GTRAIN                   : (G-train)
+STR_REFIT_PAINTING_K7600_ATRAIN             : (정선 아리랑 열차)
 STR_REFIT_PAINTING_NURIRO                   : (기본)
 STR_REFIT_PAINTING_OTRAIN                   : (O-train)
 STR_REFIT_PAINTING_VTRAIN                   : (V-train)

@@ -4,47 +4,57 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * K7000
+ * K7600
  */
 // Defines
-GENERAL(K7000)
+GENERAL(K7600)
 
-// 7000 (봉고)
-spriteset(set_K7000_purchase, "./src/locomotive/K7000/K7000.png") {
+// Template
+template tmpl_K7600(x, y) {
+    [x,     y,    8,     22,    -3,   -12]
+    [x+15,  y,    21,    17,    -14,   -8]
+    [x+45,  y,    30,    12,    -17,   -8]
+    [x+95,  y,    21,    17,    -6,    -8]
+    [x+125, y,    8,     22,    -3,   -12]
+    [x+140, y,    21,    17,    -14,   -8]
+    [x+175, y,    30,    12,    -17,   -8]
+    [x+225, y,    21,    17,    -6,    -8]
+}
+spriteset(set_K7600_loco_CARGO, "./src/locomotive/K7x00/K7600.png") {   // Cargo livery
+    tmpl_K7600(60, 0)
+}
+spriteset(set_K7600_loco_ATRAIN, "./src/locomotive/K7x00/K7600.png") {   // A-train (Jeongseon Arirang)
+    tmpl_K7600(60, 30)
+}
+spriteset(set_K7600_purchase, "./src/locomotive/K7x00/K7600.png") {
 	tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
 }
-spriteset(set_K7000A_loco, "./src/locomotive/K7000/K7000.png") {   // Red & White & Blue
-	[60,   0,  8,   22,   -3,   -9]
-	[75,   0,  21,  16,  -14,   -7]
-	[105,  0,  30,  12,  -17,   -8]
-	[155,  0,  21,  16,   -5,   -8]
-	[185,  0,  8,   22,   -3,  -11]
-	[200,  0,  21,  16,  -14,   -8]
-	[235,  0,  30,  12,  -16,   -8]
-	[285,  0,  21,  16,   -6,   -7]
+
+// Refit Paintings
+switch(FEAT_TRAINS, SELF, sw_K7600_loco, cargo_subtype) {
+    13:    set_K7600_loco_ATRAIN;
+    set_K7600_loco_CARGO;
+}
+switch(FEAT_TRAINS, SELF, sw_K7600_cargo_subtype_text, cargo_subtype) {
+    13:    return string(STR_REFIT_PAINTING_K7600_ATRAIN);
+    return string(STR_REFIT_PAINTING_7x00_CARGO);
 }
 
-/*------------------------------------------------------------------------------
-K7000
-------------------------------------------------------------------------------*/
-/*
-//TODO// Refit Paintings
-*/
-
-item(FEAT_TRAINS, ko_train_K7000, 55080) {
-    property {
+// Item
+item(FEAT_TRAINS, ko_train_K7600, 55111) {
+	property {
         // Common properties
-        name:                           string(STR_K7000_NAME);
+        name:                           string(STR_K7600_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_K7000_INTRODUCTION;
+        introduction_date:              var_K7600_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_DIESEL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         // Spec
         speed:                          150 km/h;
-        power:                          POWER_IN_KW(var_K7000_POWER);
-        weight:                         119 ton;
+        power:                          POWER_IN_KW(var_K7600_POWER);
+        weight:                         132 ton;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.1;
 
@@ -74,16 +84,17 @@ item(FEAT_TRAINS, ko_train_K7000, 55080) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        set_K7000A_loco;
-        purchase:                       set_K7000_purchase;
+        default:                        sw_K7600_loco;
+        purchase:                       set_K7600_purchase;
 
-        speed:                          sw_K7000_speed;
-        cost_factor:                    sw_K7000_cost;
-        running_cost_factor:            sw_K7000_runningcost;
+        speed:                          sw_K7600_speed;
+        cost_factor:                    sw_K7600_cost;
+        running_cost_factor:            sw_K7600_runningcost;
         cargo_capacity:                 0;
 
         can_attach_wagon:               sw_Kxxxx_attach;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        cargo_subtype_text:             sw_K7600_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }
-// End of "K7000"
+// End of "K7600"

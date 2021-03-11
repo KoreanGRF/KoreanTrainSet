@@ -53,6 +53,11 @@ spriteset(set_K7x00_loco_STRAIN, "./src/locomotive/K7x00/K7x00.png") {   // S-tr
 	tmpl_K7x00(60, 240)
 }
 
+// 7600 cargo
+spriteset(set_K7600_loco_cargo, "./src/locomotive/K7x00/K7x00.png") {
+	tmpl_loco(60, 270)
+}
+
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
     0:    set_K7x00_loco_RED_WHITE_BLUE;
@@ -88,7 +93,7 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
 }
 
 // item
-item(FEAT_TRAINS, ko_train_K7x00, 55070) {
+item(FEAT_TRAINS, ko_train_K7x00, 55080) {
     property {
         // Common properties
         name:                           string(STR_K7x00_NAME);

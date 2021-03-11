@@ -11,6 +11,7 @@ STR_GRF_URL                                 :{AUTHOR_WEBSITE}/ottd/newgrf/ko_tra
 STR_K4x00_NAME                              :[KTS] 4x00 Diesel Locomotive
 STR_K7000_NAME                              :[KTS] 7000 Diesel Locomotive
 STR_K7x00_NAME                              :[KTS] 7x00 Diesel Locomotive
+STR_K7600_NAME                              :[KTS] 7600 Diesel Locomotive
 STR_K8000_NAME                              :[KTS] 8000 Electronic Locomotive
 STR_K8100n8200_NAME                         :[KTS] 8100/8200 Electronic Locomotive
 STR_K8500_NAME                              :[KTS] 8500 Electronic Locomotive
@@ -53,6 +54,7 @@ STR_REFIT_PAINTING_HAERANG                  : (Rail cruise 'Haerang')
 STR_REFIT_PAINTING_STRAIN1                  : (S-train - blue)
 STR_REFIT_PAINTING_STRAIN2                  : (S-train - pink)
 STR_REFIT_PAINTING_GTRAIN                   : (G-train)
+STR_REFIT_PAINTING_K7600_ATRAIN             : (Jeongseon Arirang train)
 STR_REFIT_PAINTING_VTRAIN                   : (V-train)
 STR_REFIT_PAINTING_NURIRO                   : (default)
 STR_REFIT_PAINTING_OTRAIN                   : (O-train)
