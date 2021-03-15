@@ -37,6 +37,32 @@ STR_TONGIL_CAR_NAME                              :[KTS] 통일호 객차
 STR_POWER_CAR_NAME                               :[KTS] 발전차
 STR_CAFE_CAR_NAME                                :[KTS] 카페 객차
 
+# Metro
+STR_SEOUL_METRO_1_NAME                           :[KTS] Seoul Line 1, Commuter trains
+STR_SEOUL_METRO_2_NAME                           :[KTS] Seoul Line 2
+STR_SEOUL_METRO_3_NAME                           :[KTS] Seoul Line 3
+STR_SEOUL_METRO_4_NAME                           :[KTS] Seoul Line 4
+STR_SEOUL_METRO_5_9_NAME                         :[KTS] Seoul Line 5-9
+STR_SEOUL_METRO_SUIN_BUNDANG_NAME                :[KTS] Bundang Line
+STR_SEOUL_METRO_GYEONGCHUN_NAME                  :[KTS] Gyeongchun Line 361k
+STR_ITX_CHEONGCHUN_NAME                          :[KTS] ITX-Cheongchun (Gyeongchun 368k)
+STR_AREX_NAME                                    :[KTS] Incheon Airport Railroad (A'REX)
+STR_SHINBUNDANGD000N_NAME                        :[KTS] Sinbundang Line
+STR_INCHEON_METRO_1_NAME                         :[KTS] Incheon Line 1
+STR_INCHEON_METRO_2_NAME                         :[KTS] Incheon Line 2
+STR_BUSAN_METRO_1_NAME                           :[KTS] Busan Line 1
+STR_BUSAN_METRO_2_NAME                           :[KTS] Busan Line 2
+STR_BUSAN_METRO_3_NAME                           :[KTS] Busan Line 3
+STR_BUSAN_METRO_4_NAME                           :[KTS] Busan Line 4
+STR_BUSANGIMHAE_NAME                             :[KTS] Busan-Gimhae LRT
+STR_EVERLINE_NAME                                :[KTS] Yongin Everline
+STR_DAEGU_METRO_1_NAME                           :[KTS] Daegu Line 1
+STR_DAEGU_METRO_2_NAME                           :[KTS] Daegu Line 2
+STR_DAEGU_METRO_3_NAME                           :[KTS] Daegu Line 3
+STR_DAEJEON_GWANGJU_METRO_1_NAME                 :[KTS] Daejeon·Gwangju Line 1
+STR_SEOUL_UISINSEOL_NAME                         :[KTS] Seoul Ui-Sinseol LRT Line
+STR_GIMPO_GOLDLINE_NAME                          :[KTS] Gimpo Goldline
+
 
 # Paintings
 STR_REFIT_PAINTING_THESEDAYS                     : (현재 도색)
@@ -55,9 +81,9 @@ STR_REFIT_PAINTING_STRAIN1                       : (S-train - 파랑)
 STR_REFIT_PAINTING_STRAIN2                       : (S-train - 분홍)
 STR_REFIT_PAINTING_GTRAIN                        : (G-train)
 STR_REFIT_PAINTING_K7600_ATRAIN                  : (정선 아리랑 열차)
+STR_REFIT_PAINTING_VTRAIN                        : (V-train)
 STR_REFIT_PAINTING_NURIRO                        : (기본)
 STR_REFIT_PAINTING_OTRAIN                        : (O-train)
-STR_REFIT_PAINTING_VTRAIN                        : (V-train)
 STR_REFIT_PAINTING_NURIRO_KOREAN_WAVE            : (한류관광열차)
 # STR_REFIT_PAINTING_NURIRO_SANTA                : (동해산타열차)
 STR_REFIT_PAINTING_CDC_GARDEN                    : (꽃동산 테마)
@@ -80,6 +106,84 @@ STR_REFIT_PAINTING_RDC_MUGUNGHWA_CAFE            : (RDC 무궁화호 카페 객�
 STR_REFIT_PAINTING_MUGUNGHWA_CAFE                : (무궁화호 카페 객차)
 STR_REFIT_PASSWAGON_NORMALCAR                    : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (특실 객차)
+
+
+# Seoul metropolitan Line 1
+STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME             : (KNR 1k First rheostatic / 1st painting)
+STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME             : (KNR 1k First rheostatic / 2nd painting)
+STR_REFIT_METRO_1K_RHEO_MODIFIED_1_NAME          : (KNR 1k Modified rheostatic / 1st painting)
+STR_REFIT_METRO_1K_RHEO_MODIFIED_2_NAME          : (KNR 1k Modified rheostatic / 2nd painting)
+STR_REFIT_METRO_1K_RHEO_MODIFIED_3_NAME          : (Korail 1k Modified rheostatic / Current painting)
+STR_REFIT_METRO_1K_RHEO_NEW_1_NAME               : (KNR 1k New rheostatic / Old painting)
+STR_REFIT_METRO_1K_RHEO_NEW_2_NAME               : (Korail 1k New rheostatic / Current painting)
+STR_REFIT_METRO_311K_1_NAME                      : (KNR 311k / Old painting)
+STR_REFIT_METRO_311K_2_NAME                      : (Korail 311k / Current painting)
+STR_REFIT_METRO_3XXK_ST_NAME                     : (Korail 3xxk ST)
+STR_REFIT_METRO_3XXK_AL_NAME                     : (Korail 3xxk AL)
+# STR_REFIT_METRO_321K_BIKE_NAME                 : (Korail 321k Bike painting)
+STR_REFIT_METRO_371K_BLANK_NAME                  : (Korail 371k / Blank painting)
+STR_REFIT_METRO_371K_381K_1ST_NAME               : (Korail 371k, 381k 1st)
+STR_REFIT_METRO_381K_2ND_NAME                    : (Korail 381k 2nd)
+STR_REFIT_METRO_391K_NAME                        : (Korail 391k / Seohae Line)
+STR_REFIT_METRO_2019_NAME                        : (Korail, introduced in 2019)
+STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        : (SMetro 1k First rheostatic)
+STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME     : (SMetro 1k Modified rheostatic)
+STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              : (SMetro 1k VVVF)
+
+# Seoul Line 2
+STR_REFIT_METRO_2K_MELCO_NAME                    : (SMetro 2k MELCO)
+STR_REFIT_METRO_2K_CHOPPER_NAME                  : (SMetro 2k Chopper)
+STR_REFIT_METRO_2K_VVVF_1ST_NAME                 : (SMetro 2k 1st VVVF)
+STR_REFIT_METRO_2K_VVVF_2ND_NAME                 : (SMetro 2k 2nd VVVF)
+STR_REFIT_METRO_2K_VVVF_3RD_NAME                 : (SMetro 2k 3rd VVVF)
+STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            : (SMetro 2k Modified rheostatic)
+
+# Seoul metropolitan 3
+STR_REFIT_METRO_3K_VVVF_1_NAME                   : (KNR 3k VVVF / Old painting)
+STR_REFIT_METRO_3K_VVVF_2_NAME                   : (Korail 3k VVVF / Current painting)
+STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           : (SMetro 3k Chopper)
+# STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          : (SMetro 3k 1st VVVF from Line 4)
+STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          : (SMetro 3k 2nd VVVF)
+
+# Seoul metropolitan 4
+STR_REFIT_METRO_341K_VVVF_1ST_1_NAME             : (Korail 341k 1st VVVF / Old painting)
+STR_REFIT_METRO_341K_VVVF_1ST_2_NAME             : (Korail 341k 1st VVVF / Current painting)
+STR_REFIT_METRO_341K_VVVF_2ND_1_NAME             : (Korail 341k 2nd VVVF / Old painting)
+STR_REFIT_METRO_341K_VVVF_2ND_2_NAME             : (Korail 341k 2nd VVVF / Current painting)
+# STR_REFIT_METRO_2019_NAME                      // This string is already defined at Line 1
+STR_REFIT_METRO_SMETRO_4K_VVVF_NAME              : (SMetro 4k VVVF)
+
+# Seoul Metro Line 5-8, Seoul Metro Line9
+STR_REFIT_METRO_SR0X_NAME                        : (SMetro SR0x VVVF)
+STR_REFIT_METRO_SMETRO_5K_1_NAME                 : (SMetro 5k VVVF)
+STR_REFIT_METRO_SMETRO_6K_NAME                   : (SMetro 6k VVVF)
+STR_REFIT_METRO_SMETRO_7K_1_NAME                 : (SMetro 7k VVVF)
+STR_REFIT_METRO_SMETRO_8K_NAME                   : (SMetro 8k VVVF)
+STR_REFIT_METRO_SMETRO_9K_NAME                   : (SMetro9 9k VVVF)
+
+# Suin-Bungdang Line
+STR_REFIT_METRO_351K_VVVF_1ST_NAME               : (Korail 351k 1st VVVF)
+STR_REFIT_METRO_351K_VVVF_2ND_NAME               : (Korail 351k 2nd VVVF)
+STR_REFIT_METRO_351K_VVVF_3RD_NAME               : (Korail 351k 3rd VVVF)
+
+# Gyeongchun Line
+STR_REFIT_METRO_361K_VVVF_NAME                   : (Korail 361k VVVF)
+STR_REFIT_METRO_386K_ITX_CHEONGCHUN_NAME         : (Korail 368k ITX-Cheongchun)
+
+# Incheon intertional Airport Line (A'REX)
+STR_REFIT_METRO_AREX_1K_EXPRESS_NAME             : (A'REX 1k Express)
+STR_REFIT_METRO_AREX_1K_EXPRESS_ORANGE_NAME      : (A'REX 1k Express - Orange)
+STR_REFIT_METRO_AREX_2K_NAME                     : (A'REX 2k All-stop)
+
+# Other Lines
+STR_REFIT_METRO_D00_NAME                         : (Sinbundang D000 VVVF)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME   : (Incheon Metro 1k VVVF 1st)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME   : (Incheon Metro 1k VVVF 2nd)
+STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME          : (Busan Metro 1k 1st)
+STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME          : (Busan Metro 1k 2nd)
+STR_REFIT_METRO_DAEJEON_METRO_1K_NAME            : (Daejeon Metro 1k)
+STR_REFIT_METRO_GWANGJU_METRO_1K_NAME            : (Gwangju Metro 1k)
+STR_REFIT_METRO_DAEGU_METRO_3K_NAME              : (Daegu Metro 3k)
 
 
 # Refit

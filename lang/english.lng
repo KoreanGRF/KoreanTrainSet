@@ -37,6 +37,32 @@ STR_TONGIL_CAR_NAME                              :[KTS] Tongil passenger car
 STR_POWER_CAR_NAME                               :[KTS] Power car
 STR_CAFE_CAR_NAME                                :[KTS] Cafe car
 
+# Metro
+STR_SEOUL_METRO_1_NAME                           :[KTS] Seoul Line 1, Commuter trains
+STR_SEOUL_METRO_2_NAME                           :[KTS] Seoul Line 2
+STR_SEOUL_METRO_3_NAME                           :[KTS] Seoul Line 3
+STR_SEOUL_METRO_4_NAME                           :[KTS] Seoul Line 4
+STR_SEOUL_METRO_5_9_NAME                         :[KTS] Seoul Line 5-9
+STR_SEOUL_METRO_SUIN_BUNDANG_NAME                :[KTS] Bundang Line
+STR_SEOUL_METRO_GYEONGCHUN_NAME                  :[KTS] Gyeongchun Line 361k
+STR_ITX_CHEONGCHUN_NAME                          :[KTS] ITX-Cheongchun (Gyeongchun 368k)
+STR_AREX_NAME                                    :[KTS] Incheon Airport Railroad (A'REX)
+STR_SHINBUNDANGD000N_NAME                        :[KTS] Sinbundang Line
+STR_INCHEON_METRO_1_NAME                         :[KTS] Incheon Line 1
+STR_INCHEON_METRO_2_NAME                         :[KTS] Incheon Line 2
+STR_BUSAN_METRO_1_NAME                           :[KTS] Busan Line 1
+STR_BUSAN_METRO_2_NAME                           :[KTS] Busan Line 2
+STR_BUSAN_METRO_3_NAME                           :[KTS] Busan Line 3
+STR_BUSAN_METRO_4_NAME                           :[KTS] Busan Line 4
+STR_BUSANGIMHAE_NAME                             :[KTS] Busan-Gimhae LRT
+STR_EVERLINE_NAME                                :[KTS] Yongin Everline
+STR_DAEGU_METRO_1_NAME                           :[KTS] Daegu Line 1
+STR_DAEGU_METRO_2_NAME                           :[KTS] Daegu Line 2
+STR_DAEGU_METRO_3_NAME                           :[KTS] Daegu Line 3
+STR_DAEJEON_GWANGJU_METRO_1_NAME                 :[KTS] Daejeon·Gwangju Line 1
+STR_SEOUL_UISINSEOL_NAME                         :[KTS] Seoul Ui-Sinseol LRT Line
+STR_GIMPO_GOLDLINE_NAME                          :[KTS] Gimpo Goldline
+
 
 # Paintings
 STR_REFIT_PAINTING_THESEDAYS                     : (Current livery)
@@ -80,6 +106,7 @@ STR_REFIT_PAINTING_RDC_MUGUNGHWA_CAFE            : (RDC Mugunghwa cafe car)
 STR_REFIT_PAINTING_MUGUNGHWA_CAFE                : (Mugunghwa cafe car)
 STR_REFIT_PASSWAGON_NORMALCAR                    : (Normal class car)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (First class car)
+
 
 # Seoul metropolitan Line 1
 STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME             : (KNR 1k First rheostatic / 1st painting)
