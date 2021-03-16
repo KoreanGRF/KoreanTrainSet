@@ -39,6 +39,13 @@ trainList['MIKA3']            =  90,      1,     5,           0,       0,       
 trainList['PASHI5']           = 110,      1,     5,           0,       0,            790,   (1939, 1, 1)
 trainList['MATE2']            =  90,      1,     5,           0,       0,           1074,   (1943, 1, 1)
 
+trainList['METRO_1']          = 100,     10,    15,           0,       0,           2000,   (1972, 1, 1)
+trainList['METRO_2']          = 100,     10,    15,           0,       0,           2000,   (1972, 1, 1)
+trainList['METRO_3']          = 100,     10,    15,           0,       0,           2000,   (1972, 1, 1)
+trainList['METRO_4']          = 100,     10,    15,           0,       0,           2000,   (1972, 1, 1)
+trainList['METRO_5_9']        = 100,     10,    15,           0,       0,           2000,   (1972, 1, 1)
+trainList['METRO_wagon']      = 100,     10,    15,           0,       0,            200,   (1972, 1, 1)
+
 
 # Generates spec.pnml
 content = ""

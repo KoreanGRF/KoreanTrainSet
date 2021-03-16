@@ -38,11 +38,11 @@ STR_POWER_CAR_NAME                               :[KTS] 발전차
 STR_CAFE_CAR_NAME                                :[KTS] 카페 객차
 
 # Metro
-STR_SEOUL_METRO_1_NAME                           :[KTS] Seoul Line 1, Commuter trains
-STR_SEOUL_METRO_2_NAME                           :[KTS] Seoul Line 2
-STR_SEOUL_METRO_3_NAME                           :[KTS] Seoul Line 3
-STR_SEOUL_METRO_4_NAME                           :[KTS] Seoul Line 4
-STR_SEOUL_METRO_5_9_NAME                         :[KTS] Seoul Line 5-9
+STR_SEOUL_METRO_1_NAME                           :[KTS] 수도권 1호선, 통근형
+STR_SEOUL_METRO_2_NAME                           :[KTS] 서울 2호선
+STR_SEOUL_METRO_3_NAME                           :[KTS] 수도권 3호선
+STR_SEOUL_METRO_4_NAME                           :[KTS] 수도권 4호선
+STR_SEOUL_METRO_5_9_NAME                         :[KTS] 수도권 5~9호선
 STR_SEOUL_METRO_SUIN_BUNDANG_NAME                :[KTS] Bundang Line
 STR_SEOUL_METRO_GYEONGCHUN_NAME                  :[KTS] Gyeongchun Line 361k
 STR_ITX_CHEONGCHUN_NAME                          :[KTS] ITX-Cheongchun (Gyeongchun 368k)
@@ -109,25 +109,25 @@ STR_REFIT_PASSWAGON_FIRSTCAR                     : (특실 객차)
 
 
 # Seoul metropolitan Line 1
-STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME             : (KNR 1k First rheostatic / 1st painting)
-STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME             : (KNR 1k First rheostatic / 2nd painting)
-STR_REFIT_METRO_1K_RHEO_MODIFIED_1_NAME          : (KNR 1k Modified rheostatic / 1st painting)
-STR_REFIT_METRO_1K_RHEO_MODIFIED_2_NAME          : (KNR 1k Modified rheostatic / 2nd painting)
-STR_REFIT_METRO_1K_RHEO_MODIFIED_3_NAME          : (Korail 1k Modified rheostatic / Current painting)
-STR_REFIT_METRO_1K_RHEO_NEW_1_NAME               : (KNR 1k New rheostatic / Old painting)
-STR_REFIT_METRO_1K_RHEO_NEW_2_NAME               : (Korail 1k New rheostatic / Current painting)
-STR_REFIT_METRO_311K_1_NAME                      : (KNR 311k / Old painting)
-STR_REFIT_METRO_311K_2_NAME                      : (Korail 311k / Current painting)
+STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME             : (철도청 1k 초기 저항 / 초기 도색)
+STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME             : (철도청 1k 초기 저항 / 구 도색)
+STR_REFIT_METRO_1K_RHEO_MODIFIED_1_NAME          : (철도청 1k 개조 저항 / 초기 도색)
+STR_REFIT_METRO_1K_RHEO_MODIFIED_2_NAME          : (철도청 1k 개조 저항 / 구 도색)
+STR_REFIT_METRO_1K_RHEO_MODIFIED_3_NAME          : (Korail 1k 개조 저항 / 현 도색)
+STR_REFIT_METRO_1K_RHEO_NEW_1_NAME               : (철도청 1k 신조 저항 / 구 도색)
+STR_REFIT_METRO_1K_RHEO_NEW_2_NAME               : (Korail 1k 신조 저항 / 현 도색)
+STR_REFIT_METRO_311K_1_NAME                      : (Korail 311k / 초기 도색)
+STR_REFIT_METRO_311K_2_NAME                      : (Korail 311k / 현 도색)
 STR_REFIT_METRO_3XXK_ST_NAME                     : (Korail 3xxk ST)
 STR_REFIT_METRO_3XXK_AL_NAME                     : (Korail 3xxk AL)
-# STR_REFIT_METRO_321K_BIKE_NAME                 : (Korail 321k Bike painting)
-STR_REFIT_METRO_371K_BLANK_NAME                  : (Korail 371k / Blank painting)
-STR_REFIT_METRO_371K_381K_1ST_NAME               : (Korail 371k, 381k 1st)
-STR_REFIT_METRO_381K_2ND_NAME                    : (Korail 381k 2nd)
-STR_REFIT_METRO_391K_NAME                        : (Korail 391k / Seohae Line)
-STR_REFIT_METRO_2019_NAME                        : (Korail, introduced in 2019)
-STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        : (SMetro 1k First rheostatic)
-STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME     : (SMetro 1k Modified rheostatic)
+# STR_REFIT_METRO_321K_BIKE_NAME                 : (Korail 321k 자전거 열차 도색)
+STR_REFIT_METRO_371K_BLANK_NAME                  : (Korail 371k / 무도색)
+STR_REFIT_METRO_371K_381K_1ST_NAME               : (Korail 371k, 381k 1차)
+STR_REFIT_METRO_381K_2ND_NAME                    : (Korail 381k 2차)
+STR_REFIT_METRO_391K_NAME                        : (Korail 391k / 서해선)
+STR_REFIT_METRO_LINE_1_2019_NAME                 : (Korail 1호선 2019년 도입분)
+STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        : (SMetro 1k 초기 저항)
+STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME     : (SMetro 1k 개조 저항)
 STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              : (SMetro 1k VVVF)
 
 # Seoul Line 2
@@ -150,7 +150,7 @@ STR_REFIT_METRO_341K_VVVF_1ST_1_NAME             : (Korail 341k 1st VVVF / Old p
 STR_REFIT_METRO_341K_VVVF_1ST_2_NAME             : (Korail 341k 1st VVVF / Current painting)
 STR_REFIT_METRO_341K_VVVF_2ND_1_NAME             : (Korail 341k 2nd VVVF / Old painting)
 STR_REFIT_METRO_341K_VVVF_2ND_2_NAME             : (Korail 341k 2nd VVVF / Current painting)
-# STR_REFIT_METRO_2019_NAME                      // This string is already defined at Line 1
+# STR_REFIT_METRO_LINE_4_2019_NAME                  // This string is already defined at Line 1
 STR_REFIT_METRO_SMETRO_4K_VVVF_NAME              : (SMetro 4k VVVF)
 
 # Seoul Metro Line 5-8, Seoul Metro Line9

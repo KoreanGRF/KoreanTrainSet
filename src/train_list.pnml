@@ -43,3 +43,8 @@
 #include "wagon/Power/Power.pnml"
 #include "wagon/Cafe/Cafe.pnml"
 #include "wagon/passenger_wagon.pnml"
+
+
+//----- Metro -----//
+// seoul1+
+#include "metro/seoul1+/seoul1+.pnml"

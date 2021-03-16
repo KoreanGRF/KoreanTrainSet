@@ -23,6 +23,14 @@ switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
 	return string(STR_ERROR_NO_ATTACH);
 }
 
+// Attachable vehicles for Metro
+switch(FEAT_TRAINS, SELF, sw_METRO_attach, vehicle_type_id) {
+	ko_train_PASSWG:                    return CB_RESULT_ATTACH_ALLOW;
+	ko_train_PASSWGP:                   return CB_RESULT_ATTACH_ALLOW;
+	ko_train_METRO_1..ko_train_METRO_1: return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_NO_ATTACH);
+}
+
 // It should be more than 4 cars including engines
 switch(FEAT_TRAINS, SELF, sw_ko_train_start_stop, num_vehs_in_consist >= 4) {
 	1: return CB_RESULT_NO_TEXT;

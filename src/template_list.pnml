@@ -8,3 +8,6 @@
 
 // Locomotive and wagon
 #include "template/locomotive_and_wagon.pnml"
+
+// Metro
+#include "template/metro.pnml"

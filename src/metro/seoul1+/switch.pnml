@@ -1,0 +1,156 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_METRO_1_cargo_subtype_text, cargo_subtype) {
+    0:    return string(STR_REFIT_METRO_3XXK_AL_NAME);
+    1:    return string(STR_REFIT_METRO_3XXK_ST_NAME);
+    2:    return string(STR_REFIT_METRO_311K_2_NAME);
+    3:    return string(STR_REFIT_METRO_311K_1_NAME);
+    4:    return string(STR_REFIT_METRO_1K_RHEO_NEW_2_NAME);
+    5:    return string(STR_REFIT_METRO_1K_RHEO_NEW_1_NAME);
+    6:    return string(STR_REFIT_METRO_1K_RHEO_MODIFIED_3_NAME);
+    7:    return string(STR_REFIT_METRO_1K_RHEO_MODIFIED_2_NAME);
+    8:    return string(STR_REFIT_METRO_1K_RHEO_MODIFIED_1_NAME);
+    9:    return string(STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME);
+    10:    return string(STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME);
+    11:    return string(STR_REFIT_METRO_SMETRO_1K_VVVF_NAME);
+    12:    return string(STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME);
+    13:    return string(STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME);
+//  14:    return string(STR_REFIT_METRO_321K_BIKE_NAME);
+    15:    return string(STR_REFIT_METRO_371K_BLANK_NAME);
+//  16:    return string();
+    17:    return string(STR_REFIT_METRO_371K_381K_1ST_NAME);  // 동해선 1차분
+    18:    return string(STR_REFIT_METRO_381K_2ND_NAME);       // 동해선 2차분(주둥이)
+    19:    return string(STR_REFIT_METRO_391K_NAME);           // 서해선
+    20:    return string(STR_REFIT_METRO_LINE_1_2019_NAME);    // 1호선 주둥이
+    return string(STR_REFIT_METRO_3XXK_AL_NAME);
+}
+switch(FEAT_TRAINS, SELF, sw_METRO_1_wagon_panto_cargo_subtype, cargo_subtype) {
+    0:    set_3XXK_AL_wagon_panto;
+    1:    set_3XXK_ST_wagon_panto;
+    2:    set_311K_2_wagon_panto;
+    3:    set_311K_1_wagon_panto;
+    4:    set_1K_RHEO_NEW_2_wagon_panto;
+    5:    set_1K_RHEO_NEW_1_wagon_panto;
+    6:    set_1K_RHEO_MODIFIED_3_wagon_panto;
+    7:    set_1K_RHEO_MODIFIED_2_wagon_panto;
+    8:    set_1K_RHEO_MODIFIED_1_wagon_panto;
+    9:    set_1K_RHEO_FIRST_2_wagon_panto;
+    10:    set_1K_RHEO_FIRST_1_wagon_panto;
+    11:    set_SMETRO_1K_VVVF_wagon_panto;
+    12:    set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    13:    set_SMETRO_1K_RHEO_FIRST_wagon_panto;
+//  14:    set_321K_BIKE_wagon_panto;
+    15:    set_371K_BLANK_wagon_panto;
+//  16:    ;
+    17:    set_371K_381K_1ST_wagon_panto;
+    18:    set_381K_2ND_wagon_panto;
+    19:    set_391K_wagon_panto;
+    20:    set_LINE_1_2019_wagon_panto;
+    set_3XXK_AL_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_METRO_1_wagon_cargo_subtype, cargo_subtype) {
+    0:    set_3XXK_AL_wagon;
+    1:    set_3XXK_ST_wagon;
+    2:    set_311K_2_wagon;
+    3:    set_311K_1_wagon;
+    4:    set_1K_RHEO_NEW_2_wagon;
+    5:    set_1K_RHEO_NEW_1_wagon;
+    6:    set_1K_RHEO_MODIFIED_3_wagon;
+    7:    set_1K_RHEO_MODIFIED_2_wagon;
+    8:    set_1K_RHEO_MODIFIED_1_wagon;
+    9:    set_1K_RHEO_FIRST_2_wagon;
+    10:    set_1K_RHEO_FIRST_1_wagon;
+    11:    set_SMETRO_1K_VVVF_wagon;
+    12:    set_SMETRO_1K_RHEO_MODIFIED_wagon;
+    13:    set_SMETRO_1K_RHEO_FIRST_wagon;
+//  14:    set_321K_BIKE_wagon;
+    15:    set_371K_BLANK_wagon;
+//  16:    ;
+    17:    set_371K_381K_1ST_wagon;
+    18:    set_381K_2ND_wagon;
+    19:    set_391K_wagon;
+    20:    set_LINE_1_2019_wagon;
+    set_3XXK_AL_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_METRO_1_engineH, cargo_subtype) {
+    0:    set_3XXK_AL_engineH;
+    1:    set_3XXK_ST_engineH;
+    2:    set_311K_2_engineH;
+    3:    set_311K_1_engineH;
+    4:    set_1K_RHEO_NEW_2_engineH;
+    5:    set_1K_RHEO_NEW_1_engineH;
+    6:    set_1K_RHEO_MODIFIED_3_engineH;
+    7:    set_1K_RHEO_MODIFIED_2_engineH;
+    8:    set_1K_RHEO_MODIFIED_1_engineH;
+    9:    set_1K_RHEO_FIRST_2_engineH;
+    10:    set_1K_RHEO_FIRST_1_engineH;
+    11:    set_SMETRO_1K_VVVF_engineH;
+    12:    set_SMETRO_1K_RHEO_MODIFIED_engineH;
+    13:    set_SMETRO_1K_RHEO_FIRST_engineH;
+//  14:    set_321K_BIKE_engineH;
+    15:    set_371K_BLANK_engineH;
+//  16:    ;
+    17:    set_371K_381K_1ST_engineH;
+    18:    set_381K_2ND_engineH;
+    19:    set_391K_engineH;
+    20:    set_LINE_1_2019_engineH;
+    set_3XXK_AL_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_METRO_1_engineT, cargo_subtype) {
+    0:    set_3XXK_AL_engineT;
+    1:    set_3XXK_ST_engineT;
+    2:    set_311K_2_engineT;
+    3:    set_311K_1_engineT;
+    4:    set_1K_RHEO_NEW_2_engineT;
+    5:    set_1K_RHEO_NEW_1_engineT;
+    6:    set_1K_RHEO_MODIFIED_3_engineT;
+    7:    set_1K_RHEO_MODIFIED_2_engineT;
+    8:    set_1K_RHEO_MODIFIED_1_engineT;
+    9:    set_1K_RHEO_FIRST_2_engineT;
+    10:    set_1K_RHEO_FIRST_1_engineT;
+    11:    set_SMETRO_1K_VVVF_engineT;
+    12:    set_SMETRO_1K_RHEO_MODIFIED_engineT;
+    13:    set_SMETRO_1K_RHEO_FIRST_engineT;
+//  14:    set_321K_BIKE_engineT;
+    15:    set_371K_BLANK_engineT;
+//  16:    ;
+    17:    set_371K_381K_1ST_engineT;
+    18:    set_381K_2ND_engineT;
+    19:    set_391K_engineT;
+    20:    set_LINE_1_2019_engineT;
+    set_3XXK_AL_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_METRO_1_purchase, cargo_subtype) {
+    set_3XXK_AL_purchase;
+}
+
+
+// Engines
+switch(FEAT_TRAINS, SELF, sw_METRO_1_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_METRO_1_engineT;
+    sw_METRO_1_engineH;
+}
+
+
+// 자유 편성
+//// 4량 편성인 경우의 팬터그래프 처리
+switch(FEAT_TRAINS, SELF, sw_METRO_1_wagon_by_free_center_for_4cars, position_in_consist % 4) {
+    1: sw_METRO_1_wagon_panto_cargo_subtype;
+    2: sw_METRO_1_wagon_panto_cargo_subtype;
+    sw_METRO_1_wagon_cargo_subtype;
+}
+//// 기타 편성인 경우 팬터그래프 처리
+switch(FEAT_TRAINS, SELF, sw_METRO_1_wagon_by_free_center2, (position_in_consist + 1) % 3) {
+    0: sw_METRO_1_wagon_panto_cargo_subtype;
+    sw_METRO_1_wagon_cargo_subtype;
+}
+switch(FEAT_TRAINS, SELF, sw_METRO_1_wagon, cargo_subtype) {
+    17: sw_METRO_1_wagon_by_free_center_for_4cars;
+    18: sw_METRO_1_wagon_by_free_center_for_4cars;
+    sw_METRO_1_wagon_by_free_center2;
+}
