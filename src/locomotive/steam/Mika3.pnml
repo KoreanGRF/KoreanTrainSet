@@ -56,7 +56,7 @@ switch(FEAT_TRAINS, SELF, sw_MIKA3_articulated_part, extra_callback_info1) {
 }
 
 // Item
-item(FEAT_TRAINS, ko_train_MIKA3, 5403) {
+item(FEAT_TRAINS, ko_train_MIKA3, 5401) {
     property {
         // Common properties
         name:                           string(STR_MIKA3_NAME);
