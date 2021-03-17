@@ -132,7 +132,7 @@ STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              : (SMetro 1k VVVF)
 
 # Seoul Line 2
 STR_REFIT_METRO_2K_MELCO_NAME                    : (SMetro 2k MELCO)
-STR_REFIT_METRO_2K_CHOPPER_NAME                  : (SMetro 2k Chopper)
+STR_REFIT_METRO_2K_CHOPPER_NAME                  : (SMetro 2k CHOPPER)
 STR_REFIT_METRO_2K_VVVF_1ST_NAME                 : (SMetro 2k 1st VVVF)
 STR_REFIT_METRO_2K_VVVF_2ND_NAME                 : (SMetro 2k 2nd VVVF)
 STR_REFIT_METRO_2K_VVVF_3RD_NAME                 : (SMetro 2k 3rd VVVF)
@@ -141,8 +141,8 @@ STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            : (SMetro 2k Modified rheostati
 # Seoul metropolitan 3
 STR_REFIT_METRO_3K_VVVF_1_NAME                   : (KNR 3k VVVF / Old painting)
 STR_REFIT_METRO_3K_VVVF_2_NAME                   : (Korail 3k VVVF / Current painting)
-STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           : (SMetro 3k Chopper)
-STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  : (SMetro 3k Modified Chopper)
+STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           : (SMetro 3k CHOPPER)
+STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  : (SMetro 3k Modified CHOPPER)
 # STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          : (SMetro 3k 1st VVVF from Line 4)
 STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          : (SMetro 3k 2nd VVVF)
 
@@ -177,14 +177,8 @@ STR_REFIT_METRO_AREX_1K_EXPRESS_ORANGE_NAME      : (A'REX 1k Express - Orange)
 STR_REFIT_METRO_AREX_2K_NAME                     : (A'REX 2k All-stop)
 
 # Other Lines
-STR_REFIT_METRO_D00_NAME                         : (Sinbundang D000 VVVF)
 STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME   : (Incheon Metro 1k VVVF 1st)
 STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME   : (Incheon Metro 1k VVVF 2nd)
-STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME          : (Busan Metro 1k 1st)
-STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME          : (Busan Metro 1k 2nd)
-STR_REFIT_METRO_DAEJEON_METRO_1K_NAME            : (Daejeon Metro 1k)
-STR_REFIT_METRO_GWANGJU_METRO_1K_NAME            : (Gwangju Metro 1k)
-STR_REFIT_METRO_DAEGU_METRO_3K_NAME              : (Daegu Metro 3k)
 
 
 # Refit
