@@ -8,14 +8,6 @@
  */
 // Defines
 GENERAL(METRO_2)
-/*
-STR_REFIT_METRO_2K_MELCO_NAME                    : (SMetro 2k MELCO)
-STR_REFIT_METRO_2K_CHOPPER_NAME                  : (SMetro 2k Chopper)
-STR_REFIT_METRO_2K_VVVF_1ST_NAME                 : (SMetro 2k 1st VVVF)
-STR_REFIT_METRO_2K_VVVF_2ND_NAME                 : (SMetro 2k 2nd VVVF)
-STR_REFIT_METRO_2K_VVVF_3RD_NAME                 : (SMetro 2k 3rd VVVF)
-STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            : (SMetro 2k Modified rheostatic)
-*/
 
 // Graphics
 #include "seoul2_graphic.pnml"
