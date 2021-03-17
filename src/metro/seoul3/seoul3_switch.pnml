@@ -9,8 +9,9 @@ switch(FEAT_TRAINS, SELF, sw_METRO_3_cargo_subtype_text, cargo_subtype) {
     0: return string(STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME);
     // 1: return string(STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME);
     2: return string(STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME);
-    3: return string(STR_REFIT_METRO_3K_VVVF_2_NAME);
-    4: return string(STR_REFIT_METRO_3K_VVVF_1_NAME);
+    3: return string(STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME);
+    4: return string(STR_REFIT_METRO_3K_VVVF_2_NAME);
+    5: return string(STR_REFIT_METRO_3K_VVVF_1_NAME);
     return string(STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME);
 }
 
@@ -19,16 +20,18 @@ switch(FEAT_TRAINS, SELF, sw_METRO_3_engineH, cargo_subtype) {
     0: set_3K_SMETRO_VVVF_2ND_engineH;
     // 1: set_3K_SMETRO_VVVF_1ST_engineH;
     2: set_3K_SMETRO_CHOPPER_engineH;
-    3: set_3K_VVVF_2_engineH;
-    4: set_3K_VVVF_1_engineH;
+    3: set_3K_SMETRO_MODIFIED_CHOPPER_engineH;
+    4: set_3K_VVVF_2_engineH;
+    5: set_3K_VVVF_1_engineH;
     set_3K_SMETRO_VVVF_2ND_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_METRO_3_engineT, cargo_subtype) {
     0: set_3K_SMETRO_VVVF_2ND_engineT;
     // 1: set_3K_SMETRO_VVVF_1ST_engineT;
     2: set_3K_SMETRO_CHOPPER_engineT;
-    3: set_3K_VVVF_2_engineT;
-    4: set_3K_VVVF_1_engineT;
+    3: set_3K_SMETRO_MODIFIED_CHOPPER_engineT;
+    4: set_3K_VVVF_2_engineT;
+    5: set_3K_VVVF_1_engineT;
     set_3K_SMETRO_VVVF_2ND_engineT;
 }
 
@@ -37,16 +40,18 @@ switch(FEAT_TRAINS, SELF, sw_METRO_3_wagon_panto_cargo_subtype, cargo_subtype) {
     0: set_3K_SMETRO_VVVF_2ND_wagon_panto;
     // 1: set_3K_SMETRO_VVVF_1ST_wagon_panto;
     2: set_3K_SMETRO_CHOPPER_wagon_panto;
-    3: set_3K_VVVF_2_wagon_panto;
-    4: set_3K_VVVF_1_wagon_panto;
+    3: set_3K_SMETRO_MODIFIED_CHOPPER_wagon_panto;
+    4: set_3K_VVVF_2_wagon_panto;
+    5: set_3K_VVVF_1_wagon_panto;
     set_3K_SMETRO_VVVF_2ND_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_METRO_3_wagon_cargo_subtype, cargo_subtype) {
     0: set_3K_SMETRO_VVVF_2ND_wagon;
     // 1: set_3K_SMETRO_VVVF_1ST_wagon;
     2: set_3K_SMETRO_CHOPPER_wagon;
-    3: set_3K_VVVF_2_wagon;
-    4: set_3K_VVVF_1_wagon;
+    3: set_3K_SMETRO_MODIFIED_CHOPPER_wagon;
+    4: set_3K_VVVF_2_wagon;
+    5: set_3K_VVVF_1_wagon;
     set_3K_SMETRO_VVVF_2ND_wagon;
 }
 
