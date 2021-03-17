@@ -49,13 +49,10 @@ item(FEAT_TRAINS, ko_train_K8500, 55130) {
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [];
         cargo_disallow_refit:           [];
-        loading_speed:                  0;
 
         // Costs
-        cost_factor:                    10;
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_ELECTRIC;
-        running_cost_factor:            150;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;

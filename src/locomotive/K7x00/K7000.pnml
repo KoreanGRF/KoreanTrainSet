@@ -60,13 +60,10 @@ item(FEAT_TRAINS, ko_train_K7000, 55070) {
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
-        loading_speed:                  0;
 
         // Costs
-        cost_factor:                    10;
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_DIESEL;
-        running_cost_factor:            150;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;

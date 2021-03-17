@@ -45,18 +45,15 @@ item(FEAT_TRAINS, ko_train_KTX1N, 55150) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 32;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
-        loading_speed:                  10;
 
         // Costs
-        cost_factor:                    10;
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_DIESEL;
-        running_cost_factor:            150;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -120,18 +117,15 @@ item(FEAT_TRAINS, ko_train_KTX2N, 55151) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 32;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
-        loading_speed:                  10;
 
         // Costs
-        cost_factor:                    10;
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_DIESEL;
-        running_cost_factor:            150;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -195,18 +189,15 @@ item(FEAT_TRAINS, ko_train_SRT, 55152) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 32;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
-        loading_speed:                  10;
 
         // Costs
-        cost_factor:                    10;
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_DIESEL;
-        running_cost_factor:            150;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -306,18 +297,15 @@ item(FEAT_TRAINS, ko_train_EUM, 55210) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 32;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
-        loading_speed:                  10;
 
         // Costs
-        cost_factor:                    10;
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_DIESEL;
-        running_cost_factor:            150;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;

@@ -274,18 +274,15 @@ item(FEAT_TRAINS, ko_train_CDC, 55160) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 50;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
-        loading_speed:                  20;
 
         // Costs
-        cost_factor:                    10;
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_DIESEL;
-        running_cost_factor:            150;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
