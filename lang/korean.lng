@@ -126,25 +126,25 @@ STR_REFIT_METRO_371K_381K_1ST_NAME               : (Korail 371k, 381k 1차)
 STR_REFIT_METRO_381K_2ND_NAME                    : (Korail 381k 2차)
 STR_REFIT_METRO_391K_NAME                        : (Korail 391k / 서해선)
 STR_REFIT_METRO_LINE_1_2019_NAME                 : (Korail 1호선 2019년 도입분)
-STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        : (서울메트로 1k 초기 저항)
+STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        : (서울지하철공사 1k 초기 저항)
 STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME     : (서울메트로 1k 개조 저항)
-STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              : (서울메트로 1k VVVF)
+STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              : (서울교통공사 1k VVVF)
 
 # Seoul Line 2
 STR_REFIT_METRO_2K_MELCO_NAME                    : (서울메트로 2k MELCO)
 STR_REFIT_METRO_2K_CHOPPER_NAME                  : (서울메트로 2k CHOPPER)
-STR_REFIT_METRO_2K_VVVF_1ST_NAME                 : (서울메트로 2k VVVF 1세대)
-STR_REFIT_METRO_2K_VVVF_2ND_NAME                 : (서울메트로 2k VVVF 2세대)
-STR_REFIT_METRO_2K_VVVF_3RD_NAME                 : (서울메트로 2k VVVF 3세대)
+STR_REFIT_METRO_2K_VVVF_1ST_NAME                 : (서울교통공사 2k VVVF 1세대)
+STR_REFIT_METRO_2K_VVVF_2ND_NAME                 : (서울교통공사 2k VVVF 2세대)
+STR_REFIT_METRO_2K_VVVF_3RD_NAME                 : (서울교통공사 2k VVVF 3세대)
 STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            : (서울메트로 2k 개조 저항)
 
 # Seoul metropolitan 3
 STR_REFIT_METRO_3K_VVVF_1_NAME                   : (철도청 3k VVVF / 구 도색)
 STR_REFIT_METRO_3K_VVVF_2_NAME                   : (Korail 3k VVVF / 현재 도색)
-STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           : (서울메트로 3k CHOPPER)
-STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  : (서울메트로 3k 개조 CHOPPER)
-# STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          : (서울메트로 3k VVVF 1세대 / 4호선 이적분)
-STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          : (서울메트로 3k VVVF 2세대)
+STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           : (서울교통공사 3k CHOPPER)
+STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  : (서울교통공사 3k 개조 CHOPPER)
+# STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          : (서울교통공사 3k VVVF 1세대 / 4호선 이적분)
+STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          : (서울교통공사 3k VVVF 2세대)
 
 # Seoul metropolitan 4
 STR_REFIT_METRO_341K_VVVF_1ST_1_NAME             : (Korail 341k VVVF 1세대 / 구 도색)
@@ -155,12 +155,12 @@ STR_REFIT_METRO_341K_VVVF_2ND_2_NAME             : (Korail 341k VVVF 2세대 / �
 STR_REFIT_METRO_SMETRO_4K_VVVF_NAME              : (SMetro 4k VVVF)
 
 # Seoul Metro Line 5-8, Seoul Metro Line9
-STR_REFIT_METRO_SR0X_NAME                        : (서울메트로 SR0x VVVF)
-STR_REFIT_METRO_SMETRO_5K_1_NAME                 : (서울메트로 5k VVVF)
-STR_REFIT_METRO_SMETRO_6K_NAME                   : (서울메트로 6k VVVF)
-STR_REFIT_METRO_SMETRO_7K_1_NAME                 : (서울메트로 7k VVVF)
-STR_REFIT_METRO_SMETRO_8K_NAME                   : (서울메트로 8k VVVF)
-STR_REFIT_METRO_SMETRO_9K_NAME                   : (서울메트로9 9k VVVF)
+STR_REFIT_METRO_SR0X_NAME                        : (서울교통공사 SR0x VVVF)
+STR_REFIT_METRO_SMETRO_5K_1_NAME                 : (서울교통공사 5k VVVF)
+STR_REFIT_METRO_SMETRO_6K_NAME                   : (서울교통공사 6k VVVF)
+STR_REFIT_METRO_SMETRO_7K_1_NAME                 : (서울교통공사 7k VVVF)
+STR_REFIT_METRO_SMETRO_8K_NAME                   : (서울교통공사 8k VVVF)
+STR_REFIT_METRO_SMETRO_9K_NAME                   : (서울교통공사9 9k VVVF)
 
 # Suin-Bungdang Line
 STR_REFIT_METRO_351K_VVVF_1ST_NAME               : (Korail 351k 1st VVVF)
