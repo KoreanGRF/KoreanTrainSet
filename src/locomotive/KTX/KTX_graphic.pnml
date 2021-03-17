@@ -3,6 +3,7 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
+
 // Template for KTX
 template tmpl_KTXloco_power(x, y) {
     [x,      y,     8,    22,    -3,   -11]

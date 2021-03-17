@@ -11,10 +11,10 @@ GENERAL(METRO_1)
 GENERAL(METRO_wagon)
 
 // Graphics
-#include "graphic.pnml"
+#include "seoul1+_graphic.pnml"
 
 // Switch
-#include "switch.pnml"
+#include "seoul1+_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_METRO_1, 50110) {
