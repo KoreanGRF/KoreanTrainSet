@@ -146,9 +146,6 @@ switch(FEAT_TRAINS, SELF, sw_METRO_1_engineT, cargo_subtype) {
     20:    set_LINE_1_2019_engineT;
     set_3XXK_AL_engineT;
 }
-switch(FEAT_TRAINS, SELF, sw_METRO_1_purchase, 1) {
-    set_3XXK_AL_purchase;
-}
 
 // Engine - for others
 switch(FEAT_TRAINS, SELF, sw_METRO_1_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {

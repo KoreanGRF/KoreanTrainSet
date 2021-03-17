@@ -58,7 +58,7 @@ item(FEAT_TRAINS, ko_train_METRO_1, 50110) {
     }
     graphics {
         default:                        sw_METRO_1_engine;
-        purchase:                       set_METRO_1_purchase;
+        purchase:                       sw_METRO_1_purchase;
 
         speed:                          sw_METRO_1_speed;
         cost_factor:                    sw_METRO_1_cost;
