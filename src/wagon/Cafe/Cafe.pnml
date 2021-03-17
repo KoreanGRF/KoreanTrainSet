@@ -38,7 +38,7 @@ switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_attach, vehicle_type_id) {
 	ko_train_K7x00:           return CB_RESULT_ATTACH_ALLOW;
 	ko_train_K7000:           return CB_RESULT_ATTACH_ALLOW;
 	ko_train_K8000:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8100n8200:      return CB_RESULT_ATTACH_ALLOW;
+	ko_train_K8x00:           return CB_RESULT_ATTACH_ALLOW;
 	ko_train_K8500:           return CB_RESULT_ATTACH_ALLOW;
 	ko_train_DHC:             return CB_RESULT_ATTACH_ALLOW;
 	return string(STR_ERROR_NO_ATTACH);

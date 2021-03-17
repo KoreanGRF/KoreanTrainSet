@@ -13,7 +13,7 @@ STR_K7000_NAME                                   :[KTS] 7000호대 디젤 기관
 STR_K7x00_NAME                                   :[KTS] 7x00호대 디젤 기관차
 STR_K7600_NAME                                   :[KTS] 7600호대 디젤 기관차
 STR_K8000_NAME                                   :[KTS] 8000호대 전기 기관차
-STR_K8100n8200_NAME                              :[KTS] 8100/8200호대 전기 기관차
+STR_K8x00_NAME                                   :[KTS] 8100/8200호대 전기 기관차
 STR_K8500_NAME                                   :[KTS] 8500호대 전기 기관차
 STR_DHC_NAME                                     :[KTS] 디젤 유압동차 (DHC, PP)
 STR_ITXSME_NAME                                  :[KTS] ITX-새마을

@@ -13,7 +13,7 @@ STR_K7000_NAME                                   :[KTS] 7000 Diesel Locomotive
 STR_K7x00_NAME                                   :[KTS] 7x00 Diesel Locomotive
 STR_K7600_NAME                                   :[KTS] 7600 Diesel Locomotive
 STR_K8000_NAME                                   :[KTS] 8000 Electronic Locomotive
-STR_K8100n8200_NAME                              :[KTS] 8100/8200 Electronic Locomotive
+STR_K8x00_NAME                                   :[KTS] 8100/8200 Electronic Locomotive
 STR_K8500_NAME                                   :[KTS] 8500 Electronic Locomotive
 STR_DHC_NAME                                     :[KTS] Diesel Hydraulic Car (DHC, PP)
 STR_ITXSME_NAME                                  :[KTS] ITX-Saemaeul

@@ -19,7 +19,7 @@
 
 // K8x00
 #include "locomotive/K8000/K8000.pnml"
-#include "locomotive/K8100n8200/K8100n8200.pnml"
+#include "locomotive/K8x00/K8x00.pnml"
 #include "locomotive/K8500/K8500.pnml"
 
 // Saemaeul
