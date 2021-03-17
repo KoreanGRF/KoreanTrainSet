@@ -47,6 +47,7 @@ COST(VEHICLEID) \
 RUNNING(VEHICLEID) \
 CAPACITY(VEHICLEID) \
 LOADING(VEHICLEID)
+
 #define SUBWAY(VEHICLEID) \
 switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _speed, 1) { \
     return var_ ## VEHICLEID ## _SPEED / 10 * coeff_speed_subway; \
@@ -55,6 +56,7 @@ COST(VEHICLEID) \
 RUNNING(VEHICLEID) \
 CAPACITY(VEHICLEID) \
 LOADING(VEHICLEID)
+
 #define LRT(VEHICLEID) \
 switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _speed, 1) { \
     return var_ ## VEHICLEID ## _SPEED / 10 * coeff_speed_light_rail; \
