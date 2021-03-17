@@ -93,7 +93,7 @@ spriteset(set_STRAIN_POWER_CAR2, "./src/wagon/Mugunghwa/S-train.png") {
 }
 
 // for A-train
-spriteset(set_MUGUNGHWA_wagon_ATRAIN, "./src/locomotive/K7x00/A-Train_wagon.png") {   // A-train's wagon
+spriteset(set_MUGUNGHWA_wagon_ATRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's wagon
     tmpl_wagon_by_coor(0, 30)
 }
 
@@ -132,8 +132,8 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon_K7x00, cargo_subtype) {
     sw_MUGUNGHWA_wagon_normal;          // etc
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_wagon_K7600, cargo_subtype) {
-    13:    set_MUGUNGHWA_wagon_ATRAIN;    // A-train
-    sw_MUGUNGHWA_wagon_normal;           // etc
+    13:    set_MUGUNGHWA_wagon_ATRAIN;  // A-train
+    sw_MUGUNGHWA_wagon_normal;          // etc
 }
 switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_wagon, vehicle_type_id) {
     ko_train_K7x00: sw_MUGUNGHWA_wagon_K7x00;
