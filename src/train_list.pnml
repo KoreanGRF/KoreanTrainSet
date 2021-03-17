@@ -49,3 +49,4 @@
 #include "metro/seoul1+/seoul1+.pnml"
 #include "metro/seoul2/seoul2.pnml"
 #include "metro/seoul3/seoul3.pnml"
+#include "metro/seoul4/seoul4.pnml"

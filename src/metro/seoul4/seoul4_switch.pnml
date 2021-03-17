@@ -1,0 +1,63 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_METRO_4_cargo_subtype_text, cargo_subtype) {
+    0: return string(STR_REFIT_METRO_341K_VVVF_2ND_2_NAME);
+    1: return string(STR_REFIT_METRO_341K_VVVF_1ST_2_NAME);
+    2: return string(STR_REFIT_METRO_341K_VVVF_2ND_1_NAME);
+    3: return string(STR_REFIT_METRO_341K_VVVF_1ST_1_NAME);
+    4: return string(STR_REFIT_METRO_3K_VVVF_2_NAME);   // Uses Line 3's subtype 4
+    return string(STR_REFIT_METRO_341K_VVVF_2ND_2_NAME);
+}
+
+// // Engine - for others
+switch(FEAT_TRAINS, SELF, sw_METRO_4_engineH, cargo_subtype) {
+    0: set_341K_VVVF_2ND_2_engineH;
+    1: set_341K_VVVF_1ST_2_engineH;
+    2: set_341K_VVVF_2ND_1_engineH;
+    3: set_341K_VVVF_1ST_1_engineH;
+    4: set_3K_VVVF_1_engineH;
+    set_341K_VVVF_2ND_2_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_METRO_4_engineT, cargo_subtype) {
+    0: set_341K_VVVF_2ND_2_engineT;
+    1: set_341K_VVVF_1ST_2_engineT;
+    2: set_341K_VVVF_2ND_1_engineT;
+    3: set_341K_VVVF_1ST_1_engineT;
+    4: set_3K_VVVF_1_engineT;
+    set_341K_VVVF_2ND_2_engineT;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_METRO_4_wagon_panto_cargo_subtype, cargo_subtype) {
+    0: set_341K_VVVF_2ND_2_wagon_panto;
+    1: set_341K_VVVF_1ST_2_wagon_panto;
+    2: set_341K_VVVF_2ND_1_wagon_panto;
+    3: set_341K_VVVF_1ST_1_wagon_panto;
+    4: set_3K_VVVF_1_wagon_panto;
+    set_341K_VVVF_2ND_2_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_METRO_4_wagon_cargo_subtype, cargo_subtype) {
+    0: set_341K_VVVF_2ND_2_wagon;
+    1: set_341K_VVVF_1ST_2_wagon;
+    2: set_341K_VVVF_2ND_1_wagon;
+    3: set_341K_VVVF_1ST_1_wagon;
+    4: set_3K_VVVF_1_wagon;
+    set_341K_VVVF_2ND_2_wagon;
+}
+
+// Engine - for others
+switch(FEAT_TRAINS, SELF, sw_METRO_4_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_METRO_4_engineT;
+    sw_METRO_4_engineH;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_METRO_4_wagon, (position_in_consist + 1) % 3) {
+    0: sw_METRO_4_wagon_panto_cargo_subtype;
+    sw_METRO_4_wagon_cargo_subtype;
+}

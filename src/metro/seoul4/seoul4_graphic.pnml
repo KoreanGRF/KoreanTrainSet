@@ -1,0 +1,95 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// SMETRO_4K_VVVF
+spriteset(set_SMETRO_4K_VVVF_engineH, "./src/metro/seoul4/SMETRO_4K_VVVF.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_SMETRO_4K_VVVF_engineT, "./src/metro/seoul4/SMETRO_4K_VVVF.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_SMETRO_4K_VVVF_wagon, "./src/metro/seoul4/SMETRO_4K_VVVF.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_SMETRO_4K_VVVF_wagon_panto, "./src/metro/seoul4/SMETRO_4K_VVVF.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_SMETRO_4K_VVVF_purchase, "./src/metro/seoul4/SMETRO_4K_VVVF.png") {
+    tmpl_metro_purchase()
+}
+
+// 341K_VVVF_2ND_1
+spriteset(set_341K_VVVF_2ND_1_engineH, "./src/metro/seoul4/341K_VVVF_2ND_1.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_341K_VVVF_2ND_1_engineT, "./src/metro/seoul4/341K_VVVF_2ND_1.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_341K_VVVF_2ND_1_wagon, "./src/metro/seoul4/341K_VVVF_2ND_1.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_341K_VVVF_2ND_1_wagon_panto, "./src/metro/seoul4/341K_VVVF_2ND_1.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_341K_VVVF_2ND_1_purchase, "./src/metro/seoul4/341K_VVVF_2ND_1.png") {
+    tmpl_metro_purchase()
+}
+
+// 341K_VVVF_1ST_1
+spriteset(set_341K_VVVF_1ST_1_engineH, "./src/metro/seoul4/341K_VVVF_1ST_1.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_341K_VVVF_1ST_1_engineT, "./src/metro/seoul4/341K_VVVF_1ST_1.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_341K_VVVF_1ST_1_wagon, "./src/metro/seoul4/341K_VVVF_1ST_1.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_341K_VVVF_1ST_1_wagon_panto, "./src/metro/seoul4/341K_VVVF_1ST_1.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_341K_VVVF_1ST_1_purchase, "./src/metro/seoul4/341K_VVVF_1ST_1.png") {
+    tmpl_metro_purchase()
+}
+
+// 341K_VVVF_1ST_2
+spriteset(set_341K_VVVF_1ST_2_engineH, "./src/metro/seoul4/341K_VVVF_1ST_2.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_341K_VVVF_1ST_2_engineT, "./src/metro/seoul4/341K_VVVF_1ST_2.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_341K_VVVF_1ST_2_wagon, "./src/metro/seoul4/341K_VVVF_1ST_2.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_341K_VVVF_1ST_2_wagon_panto, "./src/metro/seoul4/341K_VVVF_1ST_2.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_341K_VVVF_1ST_2_purchase, "./src/metro/seoul4/341K_VVVF_1ST_2.png") {
+    tmpl_metro_purchase()
+}
+
+// 341K_VVVF_2ND_2
+spriteset(set_341K_VVVF_2ND_2_engineH, "./src/metro/seoul4/341K_VVVF_2ND_2.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_341K_VVVF_2ND_2_engineT, "./src/metro/seoul4/341K_VVVF_2ND_2.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_341K_VVVF_2ND_2_wagon, "./src/metro/seoul4/341K_VVVF_2ND_2.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_341K_VVVF_2ND_2_wagon_panto, "./src/metro/seoul4/341K_VVVF_2ND_2.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_341K_VVVF_2ND_2_purchase, "./src/metro/seoul4/341K_VVVF_2ND_2.png") {
+    tmpl_metro_purchase()
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_METRO_4_purchase, cargo_subtype) {
+	set_341K_VVVF_2ND_2_purchase;
+}
