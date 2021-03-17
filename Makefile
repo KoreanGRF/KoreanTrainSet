@@ -112,3 +112,7 @@ bundle_tar: $(BUNDLE_FILES)
 clean::
 	@echo "[CLEAN BUNDLE]"
 	@-rm -rf $(shell echo "$(REPO_NAME)*" | xargs | sed s/\ /_/g)
+
+# Clean
+clean::
+	@-rm -rf ./.nmlcache
