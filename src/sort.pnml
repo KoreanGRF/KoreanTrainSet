@@ -35,8 +35,8 @@ sort(FEAT_TRAINS, [
     //ko_train_3RD_CLASS_CAR,          // 5606
     ko_train_POWER_CAR,              // 5610
 
-    ko_train_PASSWG,                 // 55900
-    ko_train_PASSWGP,                // 55901
+    ko_train_PASSWG,                 // 5900
+    ko_train_PASSWGP,                // 5901
 
     // ko_train_FLATC,
     // ko_train_HOPPER,

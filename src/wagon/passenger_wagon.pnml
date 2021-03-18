@@ -39,7 +39,7 @@ switch(FEAT_TRAINS, PARENT, sw_PASSWG_cargo_subtype_text, vehicle_type_id) {
     return CB_RESULT_NO_TEXT;
 }
 
-item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
+item(FEAT_TRAINS, ko_train_PASSWG, 5900) {
     property {
         // Common properties
         name:                           string(STR_PASSWG_NAME);
@@ -90,7 +90,7 @@ item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
 
 
 // Powered car
-item(FEAT_TRAINS, ko_train_PASSWGP, 55901) {
+item(FEAT_TRAINS, ko_train_PASSWGP, 5901) {
     property {
         // Common properties
         name:                           string(STR_PASSWG_POWER_NAME);
@@ -100,7 +100,7 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 55901) {
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         // Spec
-        power:                          POWER_IN_KW(var_PASSWG_POWER);
+        power:                          0;
         weight:                         50 ton;
 
         // Model
