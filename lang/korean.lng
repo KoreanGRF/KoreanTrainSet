@@ -155,12 +155,12 @@ STR_REFIT_METRO_LINE_4_2019_NAME                 : (Korail 4호선 2019년 도�
 STR_REFIT_METRO_SMETRO_4K_VVVF_NAME              : (SMetro 4k VVVF)
 
 # Seoul Metro Line 5-8, Seoul Metro Line9
-STR_REFIT_METRO_SR0X_NAME                        : (서울교통공사 SR0x VVVF)
+STR_REFIT_METRO_SMETRO_SR0X_NAME                 : (서울교통공사 SR0x VVVF)
 STR_REFIT_METRO_SMETRO_5K_1_NAME                 : (서울교통공사 5k VVVF)
-STR_REFIT_METRO_SMETRO_6K_NAME                   : (서울교통공사 6k VVVF)
+STR_REFIT_METRO_SMETRO_6K_1_NAME                 : (서울교통공사 6k VVVF)
 STR_REFIT_METRO_SMETRO_7K_1_NAME                 : (서울교통공사 7k VVVF)
-STR_REFIT_METRO_SMETRO_8K_NAME                   : (서울교통공사 8k VVVF)
-STR_REFIT_METRO_SMETRO_9K_NAME                   : (서울교통공사9 9k VVVF)
+STR_REFIT_METRO_SMETRO_8K_1_NAME                 : (서울교통공사 8k VVVF)
+STR_REFIT_METRO_SMETRO_9K_1_NAME                 : (서울교통공사9 9k VVVF)
 
 # Suin-Bungdang Line
 STR_REFIT_METRO_351K_VVVF_1ST_NAME               : (Korail 351k 1st VVVF)
