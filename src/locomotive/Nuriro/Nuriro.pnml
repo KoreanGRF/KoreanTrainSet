@@ -113,7 +113,7 @@ switch(FEAT_TRAINS, SELF, sw_NURIRO_attach, vehicle_type_id) {
 }
 
 // Item
-item(FEAT_TRAINS, ko_train_NURIRO, 55170) {
+item(FEAT_TRAINS, ko_train_NURIRO, 5525) {
     property {
         // Common properties
         name:                           string(STR_NURIRO_NAME);

@@ -107,6 +107,6 @@ spriteset(set_LINE_4_2019_purchase, "./src/metro/seoul4/LINE_4_2019.png") {
 }
 
 // Alias of purchase image
-switch(FEAT_TRAINS, SELF, sw_METRO_4_purchase, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_purchase, cargo_subtype) {
 	set_341K_VVVF_2ND_2_purchase;
 }

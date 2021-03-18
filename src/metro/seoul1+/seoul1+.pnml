@@ -4,13 +4,13 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * METRO_1
+ * SEOUL_METRO_1
  */
-SPEED_METRO(METRO_1)
-       COST(METRO_1)
-    RUNNING(METRO_1)
-   CAPACITY(METRO_1)
-    LOADING(METRO_1)
+SPEED_METRO(SEOUL_METRO_1)
+       COST(SEOUL_METRO_1)
+    RUNNING(SEOUL_METRO_1)
+   CAPACITY(SEOUL_METRO_1)
+    LOADING(SEOUL_METRO_1)
 //SPEED_METRO(METRO_wagon)   // Defines the specs of metro passenger car here, too
 //       COST(METRO_wagon)
 //    RUNNING(METRO_wagon)
@@ -24,19 +24,19 @@ SPEED_METRO(METRO_1)
 #include "seoul1+_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_METRO_1, 50110) {
+item(FEAT_TRAINS, ko_train_SEOUL_METRO_1, 5711) {
     property {
         // Common properties
-        name:                           string(STR_SEOUL_METRO_1_NAME);
+        name:                           string(STR_SEOUL_SEOUL_METRO_1_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_METRO_1_INTRODUCTION;
+        introduction_date:              var_SEOUL_METRO_1_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
 
         // Spec
-        power:                          POWER_IN_KW(var_METRO_1_POWER);
+        power:                          POWER_IN_KW(var_SEOUL_METRO_1_POWER);
         weight:                         20 ton;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.1;
@@ -64,30 +64,30 @@ item(FEAT_TRAINS, ko_train_METRO_1, 50110) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_METRO_1_engine;
-        purchase:                       sw_METRO_1_purchase;
+        default:                        sw_SEOUL_METRO_1_engine;
+        purchase:                       sw_SEOUL_METRO_1_purchase;
 
-        speed:                          sw_METRO_1_speed;
-        cost_factor:                    sw_METRO_1_cost;
-        running_cost_factor:            sw_METRO_1_runningcost;
-        cargo_capacity:                 sw_METRO_1_capacity;
-        loading_speed:                  sw_METRO_1_loadingspeed;
+        speed:                          sw_SEOUL_METRO_1_speed;
+        cost_factor:                    sw_SEOUL_METRO_1_cost;
+        running_cost_factor:            sw_SEOUL_METRO_1_runningcost;
+        cargo_capacity:                 sw_SEOUL_METRO_1_capacity;
+        loading_speed:                  sw_SEOUL_METRO_1_loadingspeed;
 
         can_attach_wagon:               sw_METRO_attach;
         start_stop:                     sw_ko_train_start_stop;
-        cargo_subtype_text:             sw_METRO_1_cargo_subtype_text;
+        cargo_subtype_text:             sw_SEOUL_METRO_1_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
     livery_override(ko_train_PASSWG) {
-        default:                        sw_METRO_1_wagon;
+        default:                        sw_SEOUL_METRO_1_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        cargo_subtype_text:             sw_METRO_1_cargo_subtype_text;
+        cargo_subtype_text:             sw_SEOUL_METRO_1_cargo_subtype_text;
     }
     livery_override(ko_train_PASSWGP) {
-        default:                        sw_METRO_1_wagon;
+        default:                        sw_SEOUL_METRO_1_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        cargo_subtype_text:             sw_METRO_1_cargo_subtype_text;
+        cargo_subtype_text:             sw_SEOUL_METRO_1_cargo_subtype_text;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
 }
-// End of "METRO_1"
+// End of "SEOUL_METRO_1"

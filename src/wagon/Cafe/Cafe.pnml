@@ -51,7 +51,7 @@ switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_attach, vehicle_type_id) {
 }
 
 // Item
-item(FEAT_TRAINS, ko_train_CAFE_CAR, 59950) {
+item(FEAT_TRAINS, ko_train_CAFE_CAR, 5603) {
     property {
         // Common properties
         name:                           string(STR_CAFE_CAR_NAME);

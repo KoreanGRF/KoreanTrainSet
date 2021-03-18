@@ -24,7 +24,7 @@ SPEED_METRO(ITX_CHEONGCHUN)
 #include "gyeongchun_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_GYEONGCHUN, 50330) {
+item(FEAT_TRAINS, ko_train_GYEONGCHUN, 5720) {
     property {
         // Common properties
         name:                           string(STR_SEOUL_METRO_GYEONGCHUN_NAME);
@@ -91,7 +91,7 @@ item(FEAT_TRAINS, ko_train_GYEONGCHUN, 50330) {
 
 
 // Item (ITX-Cheongchun)
-item(FEAT_TRAINS, ko_train_ITX_CHEONGCHUN, 50340) {
+item(FEAT_TRAINS, ko_train_ITX_CHEONGCHUN, 5530) {
     property {
         // Common properties
         name:                           string(STR_ITX_CHEONGCHUN_NAME);

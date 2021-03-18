@@ -53,7 +53,7 @@ switch(FEAT_TRAINS, SELF, sw_PASHI5_articulated_part, extra_callback_info1) {
 }
 
 // Item
-item(FEAT_TRAINS, ko_train_PASHI5, 5402) {
+item(FEAT_TRAINS, ko_train_PASHI5, 5302) {
     property {
         // Common properties
         name:                           string(STR_PASHI5_NAME);

@@ -68,7 +68,7 @@ switch(FEAT_TRAINS, PARENT, sw_POWER_wagon_subtype_text, vehicle_type_id) {
     sw_POWER_wagon_subtype_text_by_general;
 }
 
-item(FEAT_TRAINS, ko_train_POWER_CAR, 59980) {
+item(FEAT_TRAINS, ko_train_POWER_CAR, 5610) {
     property {
         // Common properties
         name:                           string(STR_POWER_CAR_NAME);

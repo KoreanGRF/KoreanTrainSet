@@ -164,7 +164,7 @@ switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_wagon_subtype_text, vehicle_type_id) {
 }
 
 // Item
-item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 55940) {
+item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 5602) {
     property {
         // Common properties
         name:                           string(STR_MUGUNGHWA_CAR_NAME);

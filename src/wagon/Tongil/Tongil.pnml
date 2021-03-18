@@ -29,7 +29,7 @@ switch(FEAT_TRAINS, SELF, sw_TONGIL_wagon, cargo_subtype) {
 //     return string(STR_REFIT_PAINTING_THESEDAYS);
 // }
 
-item(FEAT_TRAINS, ko_train_TONGIL_CAR, 55970) {
+item(FEAT_TRAINS, ko_train_TONGIL_CAR, 5604) {
     property {
         // Common properties
         name:                           string(STR_TONGIL_CAR_NAME);

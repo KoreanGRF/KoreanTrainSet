@@ -60,7 +60,7 @@ switch(FEAT_TRAINS, SELF, sw_MATE2_articulated_part, extra_callback_info1) {
 }
 
 // Item
-item(FEAT_TRAINS, ko_train_MATE2, 5403) {
+item(FEAT_TRAINS, ko_train_MATE2, 5303) {
     property {
         // Common properties
         name:                           string(STR_MATE2_NAME);

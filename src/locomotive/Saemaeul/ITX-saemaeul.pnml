@@ -91,7 +91,7 @@ switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_attach, vehicle_type_id) {
     return string(STR_ERROR_NO_ATTACH);
 }
 
-item(FEAT_TRAINS, ko_train_ITX_SAEMAEUL, 55190) {
+item(FEAT_TRAINS, ko_train_ITX_SAEMAEUL, 5540) {
 	property {
         // Common properties
         name:                           string(STR_ITX_SAEMAEUL_NAME);

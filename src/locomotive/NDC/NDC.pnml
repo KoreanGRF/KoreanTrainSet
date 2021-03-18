@@ -100,7 +100,7 @@ switch(FEAT_TRAINS, SELF, sw_NDC_cargo_subtype_text, cargo_subtype) {
 
 
 // Item
-item(FEAT_TRAINS, ko_train_NDC, 55200) {
+item(FEAT_TRAINS, ko_train_NDC, 5511) {
     property {
         // Common properties
         name:                           string(STR_NDC_NAME);

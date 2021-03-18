@@ -16,7 +16,7 @@ spriteset(set_DHC_wagon_purchase, "./src/locomotive/Saemaeul/DHC.png") {
 // So you need to modify ./src/locomotive/Saemaeul/DHC.pnml to modify this wagon's switch block
 
 // Item
-item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 55930) {
+item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
     property {
         // Common properties
         name:                           string(STR_SAEMAEUL_CAR_NAME);

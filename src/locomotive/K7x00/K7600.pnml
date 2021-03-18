@@ -42,7 +42,7 @@ switch(FEAT_TRAINS, SELF, sw_K7600_cargo_subtype_text, cargo_subtype) {
 }
 
 // Item
-item(FEAT_TRAINS, ko_train_K7600, 55111) {
+item(FEAT_TRAINS, ko_train_K7600, 5476) {
 	property {
         // Common properties
         name:                           string(STR_K7600_NAME);

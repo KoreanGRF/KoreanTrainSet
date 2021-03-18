@@ -257,7 +257,7 @@ switch(FEAT_TRAINS, SELF, sw_CDC_attach, vehicle_type_id) {
 }
 
 // Item
-item(FEAT_TRAINS, ko_train_CDC, 55160) {
+item(FEAT_TRAINS, ko_train_CDC, 5510) {
     property {
         // Common properties
         name:                           string(STR_CDC_NAME);

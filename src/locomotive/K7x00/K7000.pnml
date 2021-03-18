@@ -32,7 +32,7 @@ K7000
 //TODO// Refit Paintings
 */
 
-item(FEAT_TRAINS, ko_train_K7000, 55070) {
+item(FEAT_TRAINS, ko_train_K7000, 5470) {
     property {
         // Common properties
         name:                           string(STR_K7000_NAME);

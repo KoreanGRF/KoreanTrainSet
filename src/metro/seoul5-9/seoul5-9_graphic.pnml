@@ -124,6 +124,6 @@ spriteset(set_SMETRO_9K_1_purchase, "./src/metro/seoul5-9/SMETRO_9K_1.png") {
 }
 
 // Alias of purchase image
-switch(FEAT_TRAINS, SELF, sw_METRO_5_9_purchase, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_purchase, cargo_subtype) {
 	set_SMETRO_SR0X_purchase;
 }

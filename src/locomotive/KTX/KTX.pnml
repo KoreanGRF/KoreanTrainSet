@@ -39,7 +39,7 @@ SPEED_GENERAL(EUM)
 #include "KTX_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_KTX1N, 55150) {
+item(FEAT_TRAINS, ko_train_KTX1N, 5551) {
     property {
         // Common properties
         name:                           string(STR_KTX1N_NAME);
@@ -111,7 +111,7 @@ item(FEAT_TRAINS, ko_train_KTX1N, 55150) {
 
 
 // Item
-item(FEAT_TRAINS, ko_train_KTX2N, 55151) {
+item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
     property {
         // Common properties
         name:                           string(STR_KTX2N_NAME);
@@ -183,7 +183,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 55151) {
 
 
 // Item
-item(FEAT_TRAINS, ko_train_SRT, 55152) {
+item(FEAT_TRAINS, ko_train_SRT, 5553) {
     property {
         // Common properties
         name:                           string(STR_SRT_NAME);
@@ -257,9 +257,8 @@ item(FEAT_TRAINS, ko_train_SRT, 55152) {
 /**
  * KTX-EUM
  */
-
 // Item
-item(FEAT_TRAINS, ko_train_EUM, 55210) {
+item(FEAT_TRAINS, ko_train_EUM, 5554) {
     property {
         // Common properties
         name:                           string(STR_EUM_NAME);

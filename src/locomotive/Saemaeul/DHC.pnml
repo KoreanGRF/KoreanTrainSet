@@ -107,7 +107,7 @@ switch(FEAT_TRAINS, SELF, sw_DHC_attach, vehicle_type_id) {
 }
 
 // Item
-item(FEAT_TRAINS, ko_train_DHC, 55140) {
+item(FEAT_TRAINS, ko_train_DHC, 5520) {
     property {
         // Common properties
         name:                           string(STR_DHC_NAME);

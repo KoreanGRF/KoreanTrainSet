@@ -38,7 +38,7 @@ switch(FEAT_TRAINS, SELF, sw_K8000_cargo_subtype_text, cargo_subtype) {
     return string(STR_REFIT_PAINTING_THESEDAYS);
 }
 
-item(FEAT_TRAINS, ko_train_K8000, 55100) {
+item(FEAT_TRAINS, ko_train_K8000, 5480) {
 	property {
         // Common properties
         name:                           string(STR_K8000_NAME);

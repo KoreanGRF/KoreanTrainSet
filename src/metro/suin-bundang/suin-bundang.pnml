@@ -19,7 +19,7 @@ SPEED_METRO(SUIN_BUNDANG)
 #include "suin-bundang_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_SUIN_BUNDANG, 50160) {
+item(FEAT_TRAINS, ko_train_SUIN_BUNDANG, 5716) {
     property {
         // Common properties
         name:                           string(STR_SEOUL_METRO_SUIN_BUNDANG_NAME);

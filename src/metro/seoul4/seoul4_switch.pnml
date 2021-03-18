@@ -5,7 +5,7 @@
 ------------------------------------------------------------------------------*/
 
 // Cargo subtype
-switch(FEAT_TRAINS, SELF, sw_METRO_4_cargo_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_cargo_subtype_text, cargo_subtype) {
     0: return string(STR_REFIT_METRO_341K_VVVF_2ND_2_NAME);
     1: return string(STR_REFIT_METRO_341K_VVVF_1ST_2_NAME);
     2: return string(STR_REFIT_METRO_341K_VVVF_2ND_1_NAME);
@@ -16,7 +16,7 @@ switch(FEAT_TRAINS, SELF, sw_METRO_4_cargo_subtype_text, cargo_subtype) {
 }
 
 // // Engine - for others
-switch(FEAT_TRAINS, SELF, sw_METRO_4_engineH, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engineH, cargo_subtype) {
     0: set_341K_VVVF_2ND_2_engineH;
     1: set_341K_VVVF_1ST_2_engineH;
     2: set_341K_VVVF_2ND_1_engineH;
@@ -25,7 +25,7 @@ switch(FEAT_TRAINS, SELF, sw_METRO_4_engineH, cargo_subtype) {
     5: set_LINE_4_2019_engineH;
     set_341K_VVVF_2ND_2_engineH;
 }
-switch(FEAT_TRAINS, SELF, sw_METRO_4_engineT, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engineT, cargo_subtype) {
     0: set_341K_VVVF_2ND_2_engineT;
     1: set_341K_VVVF_1ST_2_engineT;
     2: set_341K_VVVF_2ND_1_engineT;
@@ -36,7 +36,7 @@ switch(FEAT_TRAINS, SELF, sw_METRO_4_engineT, cargo_subtype) {
 }
 
 // Wagon
-switch(FEAT_TRAINS, SELF, sw_METRO_4_wagon_panto_cargo_subtype, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_panto_cargo_subtype, cargo_subtype) {
     0: set_341K_VVVF_2ND_2_wagon_panto;
     1: set_341K_VVVF_1ST_2_wagon_panto;
     2: set_341K_VVVF_2ND_1_wagon_panto;
@@ -45,7 +45,7 @@ switch(FEAT_TRAINS, SELF, sw_METRO_4_wagon_panto_cargo_subtype, cargo_subtype) {
     5: set_LINE_4_2019_wagon_panto;
     set_341K_VVVF_2ND_2_wagon_panto;
 }
-switch(FEAT_TRAINS, SELF, sw_METRO_4_wagon_cargo_subtype, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_cargo_subtype, cargo_subtype) {
     0: set_341K_VVVF_2ND_2_wagon;
     1: set_341K_VVVF_1ST_2_wagon;
     2: set_341K_VVVF_2ND_1_wagon;
@@ -56,13 +56,13 @@ switch(FEAT_TRAINS, SELF, sw_METRO_4_wagon_cargo_subtype, cargo_subtype) {
 }
 
 // Engine - for others
-switch(FEAT_TRAINS, SELF, sw_METRO_4_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: sw_METRO_4_engineT;
-    sw_METRO_4_engineH;
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_SEOUL_METRO_4_engineT;
+    sw_SEOUL_METRO_4_engineH;
 }
 
 // Wagon
-switch(FEAT_TRAINS, SELF, sw_METRO_4_wagon, (position_in_consist + 1) % 3) {
-    0: sw_METRO_4_wagon_panto_cargo_subtype;
-    sw_METRO_4_wagon_cargo_subtype;
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon, (position_in_consist + 1) % 3) {
+    0: sw_SEOUL_METRO_4_wagon_panto_cargo_subtype;
+    sw_SEOUL_METRO_4_wagon_cargo_subtype;
 }
