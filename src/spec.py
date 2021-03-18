@@ -45,6 +45,8 @@ trainList['METRO_3']          = 100,     100,    15,         100,      30,      
 trainList['METRO_4']          = 100,     100,    15,         100,      30,           2000,   (1983, 1, 1)
 trainList['METRO_5_9']        = 100,     100,    15,         100,      30,           2000,   (1995, 1, 1)
 trainList['SUIN_BUNDANG']     = 100,     100,    15,         100,      30,           2000,   (1993, 1, 1)
+trainList['GYEONGCHUN']       = 100,     100,    15,         100,      30,           2000,   (2010, 1, 1)
+trainList['ITX_CHEONGCHUN']   = 100,     100,    15,         100,      30,           2000,   (2012, 1, 1)
 trainList['METRO_wagon']      = 100,     100,    15,         100,      30,            200,   (1972, 1, 1)
 
 
