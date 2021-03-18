@@ -42,7 +42,6 @@
 #include "wagon/Tongil/Tongil.pnml"
 #include "wagon/Power/Power.pnml"
 #include "wagon/Cafe/Cafe.pnml"
-#include "wagon/passenger_wagon.pnml"
 
 
 //----- Metro -----//
@@ -53,3 +52,6 @@
 #include "metro/seoul5-9/seoul5-9.pnml"
 #include "metro/suin-bundang/suin-bundang.pnml"
 #include "metro/gyeongchun/gyeongchun.pnml"
+
+// Passenger wagons
+#include "wagon/passenger_wagon.pnml"

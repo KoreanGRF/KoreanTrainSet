@@ -172,7 +172,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 55151) {
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
     }
     livery_override(ko_train_PASSWGP) {
-        default:                        sw_KTX2N_power_wagon;
+        default:                        sw_KTX2N_wagon;
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
         power:                          POWER_IN_KW(200);
@@ -244,7 +244,7 @@ item(FEAT_TRAINS, ko_train_SRT, 55152) {
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
     }
     livery_override(ko_train_PASSWGP) {
-        default:                        sw_SRT_power_wagon;
+        default:                        sw_SRT_wagon;
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
         power:                          POWER_IN_KW(200);
@@ -257,38 +257,6 @@ item(FEAT_TRAINS, ko_train_SRT, 55152) {
 /**
  * KTX-EUM
  */
-// EUM's engine
-switch(FEAT_TRAINS, SELF, sw_EUM_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: set_EUM_engineT;
-    set_EUM_engineH;
-}
-
-// EUM's wagon
-switch(FEAT_TRAINS, SELF, sw_EUM_coach_by_free_tail, position_in_vehid_chain_from_end) {
-	0: set_EUM_wagon_4;
-	set_EUM_wagon_3;
-}
-switch(FEAT_TRAINS, SELF, sw_EUM_power_wagon, position_in_consist) {
-    0: set_EUM_wagon_2;
-    sw_EUM_coach_by_free_tail;
-}
-
-// EUM's capacity
-switch(FEAT_TRAINS, SELF, var_EUM_capacity_express, 1) {
-    return 46 * sw_cargo_capacity_factor;
-}
-switch(FEAT_TRAINS, SELF, var_EUM_capacity, 1) {
-    return 76 * sw_cargo_capacity_factor;
-}
-switch(FEAT_TRAINS, SELF, sw_EUM_capacity_in_custom, position_in_consist) {
-    0: return var_EUM_capacity_express;
-    return var_EUM_capacity;
-}
-switch(FEAT_TRAINS, SELF, sw_EUM_attach, vehicle_type_id) {
-    ko_train_EUM:     return CB_RESULT_ATTACH_ALLOW;
-    ko_train_PASSWGP: return CB_RESULT_ATTACH_ALLOW;
-    return string(STR_ERROR_NO_ATTACH);
-}
 
 // Item
 item(FEAT_TRAINS, ko_train_EUM, 55210) {
