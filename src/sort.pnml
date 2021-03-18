@@ -1,0 +1,67 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Sort
+sort(FEAT_TRAINS, [
+    ko_train_MIKA3,                  // 5301
+    ko_train_PASHI5,                 // 5302
+    ko_train_MATE2,                  // 5303
+
+    ko_train_K4x00,                  // 5440
+    ko_train_K7000,                  // 5470
+    ko_train_K7x00,                  // 5471
+    ko_train_K7600,                  // 5476
+    ko_train_K8000,                  // 5480
+    ko_train_K8x00,                  // 5481
+    ko_train_K8500,                  // 5485
+    ko_train_CDC,                    // 5510
+    ko_train_NDC,                    // 5511
+    ko_train_DHC,                    // 5520
+    ko_train_NURIRO,                 // 5525
+    ko_train_ITX_CHEONGCHUN,         // 5530
+    ko_train_ITX_SAEMAEUL,           // 5540
+    ko_train_KTX1N,                  // 5551
+    ko_train_KTX2N,                  // 5552
+    ko_train_SRT,                    // 5553
+    ko_train_EUM,                    // 5554
+    ko_train_SAEMAEUL_CAR,           // 5601
+    ko_train_MUGUNGHWA_CAR,          // 5602
+    ko_train_CAFE_CAR,               // 5603
+    ko_train_TONGIL_CAR,             // 5604
+    //ko_train_BIDULGI_CAR,            // 5605
+    //ko_train_3RD_CLASS_CAR,          // 5606
+    ko_train_POWER_CAR,              // 5610
+
+    ko_train_PASSWG,                 // 55900
+    ko_train_PASSWGP,                // 55901
+
+    // ko_train_FLATC,
+    // ko_train_HOPPER,
+    // ko_train_SMALLCARGO,
+
+    ko_train_SEOUL_METRO_1,          // 5711
+    ko_train_SEOUL_METRO_2,          // 5712
+    ko_train_SEOUL_METRO_3,          // 5713
+    ko_train_SEOUL_METRO_4,          // 5714
+    ko_train_SEOUL_METRO_5_9,        // 5715
+    ko_train_SUIN_BUNDANG,           // 5716
+    ko_train_GYEONGCHUN,             // 5720
+    //ko_train_METRO_AREX,
+    //ko_train_METRO_D000N,
+    //ko_train_METRO_INCHEON_1,
+    //ko_train_METRO_INCHEON_2,
+    //ko_train_METRO_BUSAN1,
+    //ko_train_METRO_BUSAN2,
+    //ko_train_METRO_BUSAN3,
+    //ko_train_METRO_BUSAN4,
+    //ko_train_METRO_BUSANGIMHAE,
+    //ko_train_METRO_DAEGU1,
+    //ko_train_METRO_DAEGU2,
+    //ko_train_METRO_DAEGU3,
+    //ko_train_METRO_DAEJEONGWANGJU1,
+    //ko_train_METRO_UISINSEOL,
+    //ko_train_METRO_BUSAN4_CW
+]);

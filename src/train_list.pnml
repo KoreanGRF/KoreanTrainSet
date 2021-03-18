@@ -55,3 +55,6 @@
 
 // Passenger wagons
 #include "wagon/passenger_wagon.pnml"
+
+// Sorting
+#include "sort.pnml"
