@@ -47,7 +47,7 @@ STR_SEOUL_METRO_SUIN_BUNDANG_NAME                :[KTS] 수인분당선
 STR_SEOUL_METRO_GYEONGCHUN_NAME                  :[KTS] Gyeongchun Line 361k
 STR_ITX_CHEONGCHUN_NAME                          :[KTS] ITX-Cheongchun (Gyeongchun 368k)
 STR_AREX_NAME                                    :[KTS] Incheon Airport Railroad (A'REX)
-STR_SHINBUNDANGD000N_NAME                        :[KTS] Sinbundang Line
+STR_SHINBUNDANG_D000N_NAME                       :[KTS] Sinbundang Line
 STR_INCHEON_METRO_1_NAME                         :[KTS] Incheon Line 1
 STR_INCHEON_METRO_2_NAME                         :[KTS] Incheon Line 2
 STR_BUSAN_METRO_1_NAME                           :[KTS] Busan Line 1
