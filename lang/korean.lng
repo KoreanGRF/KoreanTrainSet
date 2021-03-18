@@ -44,24 +44,24 @@ STR_SEOUL_METRO_3_NAME                           :[KTS] 수도권 3호선
 STR_SEOUL_METRO_4_NAME                           :[KTS] 수도권 4호선
 STR_SEOUL_METRO_5_9_NAME                         :[KTS] 수도권 5~9호선
 STR_SEOUL_METRO_SUIN_BUNDANG_NAME                :[KTS] 수인분당선
-STR_SEOUL_METRO_GYEONGCHUN_NAME                  :[KTS] Gyeongchun Line 361k
-STR_ITX_CHEONGCHUN_NAME                          :[KTS] ITX-Cheongchun (Gyeongchun 368k)
-STR_AREX_NAME                                    :[KTS] Incheon Airport Railroad (A'REX)
-STR_SHINBUNDANG_D000N_NAME                       :[KTS] Sinbundang Line
-STR_INCHEON_METRO_1_NAME                         :[KTS] Incheon Line 1
-STR_INCHEON_METRO_2_NAME                         :[KTS] Incheon Line 2
-STR_BUSAN_METRO_1_NAME                           :[KTS] Busan Line 1
-STR_BUSAN_METRO_2_NAME                           :[KTS] Busan Line 2
-STR_BUSAN_METRO_3_NAME                           :[KTS] Busan Line 3
-STR_BUSAN_METRO_4_NAME                           :[KTS] Busan Line 4
-STR_BUSANGIMHAE_NAME                             :[KTS] Busan-Gimhae LRT
-STR_EVERLINE_NAME                                :[KTS] Yongin Everline
-STR_DAEGU_METRO_1_NAME                           :[KTS] Daegu Line 1
-STR_DAEGU_METRO_2_NAME                           :[KTS] Daegu Line 2
-STR_DAEGU_METRO_3_NAME                           :[KTS] Daegu Line 3
-STR_DAEJEON_GWANGJU_METRO_1_NAME                 :[KTS] Daejeon·Gwangju Line 1
-STR_SEOUL_UISINSEOL_NAME                         :[KTS] Seoul Ui-Sinseol LRT Line
-STR_GIMPO_GOLDLINE_NAME                          :[KTS] Gimpo Goldline
+STR_SEOUL_METRO_GYEONGCHUN_NAME                  :[KTS] 경춘선
+STR_ITX_CHEONGCHUN_NAME                          :[KTS] ITX-청춘
+STR_AREX_NAME                                    :[KTS] 인천공항철도 (A'REX)
+STR_SHINBUNDANG_D000N_NAME                       :[KTS] 신분당선
+STR_INCHEON_METRO_1_NAME                         :[KTS] 인천 1호선
+STR_INCHEON_METRO_2_NAME                         :[KTS] 인천 2호선
+STR_BUSAN_METRO_1_NAME                           :[KTS] 부산 1호선
+STR_BUSAN_METRO_2_NAME                           :[KTS] 부산 2호선
+STR_BUSAN_METRO_3_NAME                           :[KTS] 부산 3호선
+STR_BUSAN_METRO_4_NAME                           :[KTS] 부산 4호선
+STR_BUSANGIMHAE_NAME                             :[KTS] 부산김해경전철
+STR_EVERLINE_NAME                                :[KTS] 용인 에버라인
+STR_DAEGU_METRO_1_NAME                           :[KTS] 대구 1호선
+STR_DAEGU_METRO_2_NAME                           :[KTS] 대구 2호선
+STR_DAEGU_METRO_3_NAME                           :[KTS] 대구 3호선
+STR_DAEJEON_GWANGJU_METRO_1_NAME                 :[KTS] 대전·광주 1호선
+STR_SEOUL_UISINSEOL_NAME                         :[KTS] 우이신설선
+STR_GIMPO_GOLDLINE_NAME                          :[KTS] 김포 골드라인
 
 
 # Paintings
