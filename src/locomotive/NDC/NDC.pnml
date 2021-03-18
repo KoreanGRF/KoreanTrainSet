@@ -6,8 +6,16 @@
 /**
  * NDC
  */
-GENERAL(NDC)
-GENERAL(NDC_wagon)
+SPEED_GENERAL(NDC)
+         COST(NDC)
+      RUNNING(NDC)
+     CAPACITY(NDC)
+      LOADING(NDC)
+//SPEED_GENERAL(NDC_wagon)
+//         COST(NDC_wagon)
+//      RUNNING(NDC_wagon)
+     CAPACITY(NDC_wagon)
+//      LOADING(NDC_wagon)
 
 
 // NDC

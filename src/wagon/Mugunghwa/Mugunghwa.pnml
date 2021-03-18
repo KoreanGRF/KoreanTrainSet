@@ -3,8 +3,14 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
-// Defines
-GENERAL(MUGUNGHWA_wagon)
+/**
+ * Mugunghwa passenger car
+ */
+//SPEED_GENERAL(MUGUNGHWA_wagon)
+//         COST(MUGUNGHWA_wagon)
+//      RUNNING(MUGUNGHWA_wagon)
+//     CAPACITY(MUGUNGHWA_wagon)
+//      LOADING(MUGUNGHWA_wagon)
 
 spriteset(set_MUGUNGHWA_wagon_purchase, "./src/wagon/Mugunghwa/Mugunghwa.png") {
     tmpl_purchase_detail(45, 150, 32, 12, -16, -6)

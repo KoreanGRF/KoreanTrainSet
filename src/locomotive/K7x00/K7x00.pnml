@@ -7,7 +7,9 @@
  * K7x00
  */
 // Defines
-GENERAL(K7x00)
+SPEED_GENERAL(K7x00)
+         COST(K7x00)
+      RUNNING(K7x00)
 
 // Template for 7x00
 template tmpl_K7x00(x, y) {

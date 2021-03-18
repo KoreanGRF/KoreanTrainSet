@@ -32,9 +32,7 @@ switch(FEAT_TRAINS, PARENT, sw_PASSWG_wagon, vehicle_type_id) {
 
 
 // Mugungwha passenger wagon
-switch(FEAT_TRAINS, SELF, sw_PASSWG_mugunghwa_wagon, cargo_subtype) {
-
-}
+// switch(FEAT_TRAINS, SELF, sw_PASSWG_mugunghwa_wagon, cargo_subtype) {}
 
 
 // for temporarily

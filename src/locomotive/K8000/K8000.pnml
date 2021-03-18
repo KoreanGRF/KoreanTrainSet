@@ -6,8 +6,9 @@
 /**
  * K8000
  */
-// Defines
-GENERAL(K8000)
+SPEED_GENERAL(K8000)
+         COST(K8000)
+      RUNNING(K8000)
 
 // 8000호대
 spriteset(set_K8000_purchase, "./src/locomotive/K8000/K8000.png") {

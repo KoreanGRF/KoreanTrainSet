@@ -52,10 +52,10 @@ switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_wagon, position_in_vehid_chain) {
 }
 
 // Capacity - ITX-Cheongchun
-switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_engine_capacity, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: set_ITX_CHEONGCHUN_engineT;
-    set_ITX_CHEONGCHUN_engineH;
-}
+// switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_engine_capacity, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+//     1: set_ITX_CHEONGCHUN_engineT;
+//     set_ITX_CHEONGCHUN_engineH;
+// }
 switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_wagon_capacity, cargo_subtype) {
 	return 22 * sw_cargo_capacity_factor;
 }

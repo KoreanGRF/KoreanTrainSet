@@ -16,7 +16,7 @@ STR_K8000_NAME                                   :[KTS] 8000호대 전기 기관
 STR_K8x00_NAME                                   :[KTS] 8100/8200호대 전기 기관차
 STR_K8500_NAME                                   :[KTS] 8500호대 전기 기관차
 STR_DHC_NAME                                     :[KTS] 디젤 유압동차 (DHC, PP)
-STR_ITXSME_NAME                                  :[KTS] ITX-새마을
+STR_ITX_SAEMAEUL_NAME                            :[KTS] ITX-새마을
 STR_NURIRO_NAME                                  :[KTS] 누리로
 STR_CDC_NAME                                     :[KTS] 통근형 디젤 열차 (CDC)
 STR_NDC_NAME                                     :[KTS] 우등형 디젤 동차 (NDC)
@@ -193,13 +193,13 @@ STR_PARAM_ADD_TYPE_NAME                          :추가할 열차 종류
 STR_PARAM_ADD_TYPE_DESC                          :추가할 열차 종류를 선택하십시오. (기본값: 모두)
 STR_PARAM_ADD_TYPE_ALL                           :모두
 STR_PARAM_ADD_TYPE_ONLY_TRAIN                    :지하철을 제외한 열차만
-STR_PARAM_ADD_TYPE_ONLY_SUBWAY                   :지하철만
+STR_PARAM_ADD_TYPE_ONLY_METRO                    :지하철만
 STR_PARAM_SPEED_GENERAL_NAME                     :일반열차 속력 계수
 STR_PARAM_SPEED_GENERAL_DESC                     :일반 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 7x00호대 기관차, 8x00호대 전기 기관차, CDC, 새마을호 DHC(PP), KTX, KTX-산천, EMU-250
 STR_PARAM_SPEED_SUBEXPRESS_NAME                  :준고속형 열차 속력 계수
 STR_PARAM_SPEED_SUBEXPRESS_DESC                  :준고속형 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 공항철도 1k (직통), 경춘선 ITX-청춘
-STR_PARAM_SPEED_SUBWAY_NAME                      :지하철 속력 계수
-STR_PARAM_SPEED_SUBWAY_DESC                      :지하철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 일반/준고속형 열차를 제외한 나머지 일반 지하철 차량
+STR_PARAM_SPEED_METRO_NAME                       :지하철 속력 계수
+STR_PARAM_SPEED_METRO_DESC                       :지하철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 일반/준고속형 열차를 제외한 나머지 일반 지하철 차량
 STR_PARAM_SPEED_LIGHTRAIL1_NAME                  :경전철 속력 계수 (고무)
 STR_PARAM_SPEED_LIGHTRAIL1_DESC                  :고무 차륜 경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 부산 4호선
 STR_PARAM_SPEED_LIGHTRAIL2_NAME                  :경전철 속력 계수 (철)

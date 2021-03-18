@@ -6,8 +6,11 @@
 /**
  * METRO_5_9
  */
-// Defines
-GENERAL(METRO_5_9)
+SPEED_METRO(METRO_5_9)
+       COST(METRO_5_9)
+    RUNNING(METRO_5_9)
+   CAPACITY(METRO_5_9)
+    LOADING(METRO_5_9)
 
 // Graphics
 #include "seoul5-9_graphic.pnml"

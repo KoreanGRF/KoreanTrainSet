@@ -16,7 +16,7 @@ STR_K8000_NAME                                   :[KTS] 8000 Electronic Locomoti
 STR_K8x00_NAME                                   :[KTS] 8100/8200 Electronic Locomotive
 STR_K8500_NAME                                   :[KTS] 8500 Electronic Locomotive
 STR_DHC_NAME                                     :[KTS] Diesel Hydraulic Car (DHC, PP)
-STR_ITXSME_NAME                                  :[KTS] ITX-Saemaeul
+STR_ITX_SAEMAEUL_NAME                            :[KTS] ITX-Saemaeul
 STR_NURIRO_NAME                                  :[KTS] Nuriro
 STR_CDC_NAME                                     :[KTS] Commuter Diesel Car (CDC)
 STR_NDC_NAME                                     :[KTS] New Diesel Car (NDC)
@@ -193,13 +193,13 @@ STR_PARAM_ADD_TYPE_NAME                          :Train to add:
 STR_PARAM_ADD_TYPE_DESC                          :Select the train to add. (default: all)
 STR_PARAM_ADD_TYPE_ALL                           :All
 STR_PARAM_ADD_TYPE_ONLY_TRAIN                    :Trains except subways
-STR_PARAM_ADD_TYPE_ONLY_SUBWAY                   :Only subways
+STR_PARAM_ADD_TYPE_ONLY_METRO                    :Only subways
 STR_PARAM_SPEED_GENERAL_NAME                     :Speed coefficient of General trains
 STR_PARAM_SPEED_GENERAL_DESC                     :Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: 7x00 Locomotives, 8x00 Electric Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon, EMU-250
 STR_PARAM_SPEED_SUBEXPRESS_NAME                  :Speed coefficient of Semi-express trains
 STR_PARAM_SPEED_SUBEXPRESS_DESC                  :Speed coefficient of semi-express trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: A'REX 1k (Express), Gyeongchun ITX-Cheongchun
-STR_PARAM_SPEED_SUBWAY_NAME                      :Speed coefficient of Subways
-STR_PARAM_SPEED_SUBWAY_DESC                      :Speed coefficient of subway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Except for general and semi-express trains
+STR_PARAM_SPEED_METRO_NAME                       :Speed coefficient of Subways
+STR_PARAM_SPEED_METRO_DESC                       :Speed coefficient of subway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Except for general and semi-express trains
 STR_PARAM_SPEED_LIGHTRAIL1_NAME                  :Speed coefficient of Light Railways (rubber)
 STR_PARAM_SPEED_LIGHTRAIL1_DESC                  :Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4
 STR_PARAM_SPEED_LIGHTRAIL2_NAME                  :Speed coefficient of Light Railways (steel)

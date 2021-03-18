@@ -6,11 +6,31 @@
 /**
  * KTX-1N
  */
-GENERAL(KTX1N)
-GENERAL(KTX2N)
-GENERAL(SRT)
-GENERAL(EUM)
-GENERAL(KTX_wagon)
+SPEED_GENERAL(KTX1N)
+         COST(KTX1N)
+      RUNNING(KTX1N)
+     CAPACITY(KTX1N)
+      LOADING(KTX1N)
+SPEED_GENERAL(KTX2N)
+         COST(KTX2N)
+      RUNNING(KTX2N)
+     CAPACITY(KTX2N)
+      LOADING(KTX2N)
+SPEED_GENERAL(SRT)
+         COST(SRT)
+      RUNNING(SRT)
+     CAPACITY(SRT)
+      LOADING(SRT)
+SPEED_GENERAL(EUM)
+         COST(EUM)
+      RUNNING(EUM)
+//     CAPACITY(EUM)
+      LOADING(EUM)
+//SPEED_GENERAL(KTX_wagon)
+//         COST(KTX_wagon)
+//      RUNNING(KTX_wagon)
+     CAPACITY(KTX_wagon)
+//      LOADING(KTX_wagon)
 
 // Graphics
 #include "KTX_graphic.pnml"

@@ -6,9 +6,15 @@
 /**
  * DHC
  */
-// Defines
-GENERAL(DHC)
-GENERAL(DHC_wagon)
+SPEED_GENERAL(DHC)
+         COST(DHC)
+      RUNNING(DHC)
+     CAPACITY(DHC)
+      LOADING(DHC)
+// SPEED_GENERAL(DHC_wagon)
+//          COST(DHC_wagon)
+     CAPACITY(DHC_wagon)
+      LOADING(DHC_wagon)
 
 // DHC
 spriteset(set_DHC_purchase, "./src/locomotive/Saemaeul/DHC.png") {
@@ -87,7 +93,7 @@ switch(FEAT_TRAINS, SELF, sw_DHC_subtype_text, cargo_subtype) {
 // Attachable vehicles
 switch(FEAT_TRAINS, SELF, sw_DHC_attach, vehicle_type_id) {
     ko_train_DHC:          return CB_RESULT_ATTACH_ALLOW;
-    ko_train_ITXSME:       return CB_RESULT_ATTACH_ALLOW;
+    ko_train_ITX_SAEMAEUL: return CB_RESULT_ATTACH_ALLOW;
 	ko_train_K4x00:        return CB_RESULT_ATTACH_ALLOW;
 	ko_train_K7x00:        return CB_RESULT_ATTACH_ALLOW;
 	ko_train_K7000:        return CB_RESULT_ATTACH_ALLOW;
@@ -159,10 +165,12 @@ item(FEAT_TRAINS, ko_train_DHC, 55140) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_DHC_wagon;
         cargo_capacity:                 sw_DHC_wagon_capacity;
+        loading_speed:                  sw_DHC_wagon_loadingspeed;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_DHC_wagon;
         cargo_capacity:                 sw_DHC_wagon_capacity;
+        loading_speed:                  sw_DHC_wagon_loadingspeed;
     }
     livery_override(ko_train_CAFE_CAR) {
         default:                        sw_DHC_CAFE_CAR;

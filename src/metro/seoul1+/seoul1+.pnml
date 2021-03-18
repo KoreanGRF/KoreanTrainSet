@@ -6,9 +6,16 @@
 /**
  * METRO_1
  */
-// Defines
-GENERAL(METRO_1)
-GENERAL(METRO_wagon)
+SPEED_METRO(METRO_1)
+       COST(METRO_1)
+    RUNNING(METRO_1)
+   CAPACITY(METRO_1)
+    LOADING(METRO_1)
+//SPEED_METRO(METRO_wagon)   // Defines the specs of metro passenger car here, too
+//       COST(METRO_wagon)
+//    RUNNING(METRO_wagon)
+   CAPACITY(METRO_wagon)
+//    LOADING(METRO_wagon)
 
 // Graphics
 #include "seoul1+_graphic.pnml"

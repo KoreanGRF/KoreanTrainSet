@@ -3,8 +3,14 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
-// Defines
-GENERAL(POWER_CAR)
+/**
+ * Generator car
+ */
+//SPEED_GENERAL(POWER_CAR)
+//         COST(POWER_CAR)
+//      RUNNING(POWER_CAR)
+//     CAPACITY(POWER_CAR)
+//      LOADING(POWER_CAR)
 
 spriteset(set_POWER_wagon_purchase, "./src/wagon/Power/Power.png") {
     tmpl_purchase_detail(45, 30, 32, 12, -16, -6)

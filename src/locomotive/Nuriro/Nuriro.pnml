@@ -6,11 +6,19 @@
 /**
  * NURIRO
  */
-GENERAL(NURIRO)
-GENERAL(NURIRO_wagon)
+SPEED_GENERAL(NURIRO)
+         COST(NURIRO)
+      RUNNING(NURIRO)
+     CAPACITY(NURIRO)
+      LOADING(NURIRO)
+//SPEED_GENERAL(NURIRO_wagon)
+//         COST(NURIRO_wagon)
+//      RUNNING(NURIRO_wagon)
+     CAPACITY(NURIRO_wagon)
+//      LOADING(NURIRO_wagon)
+
 
 // Graphics
-// default
 spriteset(set_NURIRO_purchase, "./src/locomotive/Nuriro/Nuriro.png") {
     tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
 }

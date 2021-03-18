@@ -24,10 +24,10 @@
 
 	// 속도 계수 (지하철)
 	param 3 {
-		coeff_speed_subway {
+		coeff_speed_metro {
 			type: int;
-			name: string(STR_PARAM_SPEED_SUBWAY_NAME);
-			desc: string(STR_PARAM_SPEED_SUBWAY_DESC);
+			name: string(STR_PARAM_SPEED_METRO_NAME);
+			desc: string(STR_PARAM_SPEED_METRO_DESC);
 			min_value: 1;
 			max_value: 100;
 			def_value: 10;

@@ -6,7 +6,11 @@
 /**
  * Pashi5 2
  */
-GENERAL(PASHI5)
+SPEED_GENERAL(PASHI5)
+         COST(PASHI5)
+      RUNNING(PASHI5)
+     CAPACITY(PASHI5)
+      LOADING(PASHI5)
 
 // Template
 template tmpl_PASHI5(x, y) {

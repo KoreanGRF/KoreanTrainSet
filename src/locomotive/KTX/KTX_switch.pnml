@@ -37,13 +37,31 @@ switch(FEAT_TRAINS, SELF, sw_KTX1N_coach_middle, (position_in_vehid_chain + 1) <
 	1: sw_KTX1N_coach_middle_front;
 	sw_KTX1N_coach_middle_rear;
 }
-switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_tail, position_in_vehid_chain_from_end) {
-	0: set_KTX1N_wagon_18;
-	sw_KTX1N_coach_middle;
+// switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_tail, position_in_vehid_chain_from_end) {
+// 	0: set_KTX1N_wagon_18;
+// 	sw_KTX1N_coach_middle;
+// }
+// switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon, position_in_vehid_chain) {
+// 	0: set_KTX1N_wagon_1;
+// 	sw_KTX1N_wagon_tail;
+// }
+/*
+https://newgrf-specs.tt-wiki.net/wiki/VariationalAction2/Vehicles#Query_variable_of_n-th_vehicle_in_chain_.2861.29
++1 : 뒤
+0x10F : specific value 
+0x61 : Query variable of n-th vehicle in chain
+0 : shift
+0x0000FFFF : mask
+0xC6 : Vehicle type ID
+*/
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    ko_train_KTX1N: set_KTX1N_wagon_18;
+    return sw_KTX1N_coach_middle;
 }
-switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon, position_in_vehid_chain) {
-	0: set_KTX1N_wagon_1;
-	sw_KTX1N_wagon_tail;
+
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    ko_train_KTX1N: set_KTX1N_wagon_1;
+    return sw_KTX1N_wagon_rear;
 }
 
 // KTX-Sancheon's wagon

@@ -7,7 +7,9 @@
  * K4x00
  * Note that it is based on K4400, need to split in future
  */
-GENERAL(K4x00)
+SPEED_GENERAL(K4x00)
+         COST(K4x00)
+      RUNNING(K4x00)
 
 // 4x00용 템플릿
 template tmpl_K4x00(x, y) {

@@ -3,8 +3,14 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
-// Defines
-GENERAL(TONGIL_wagon)
+/**
+ * Tongil passenger car
+ */
+//SPEED_GENERAL(TONGIL_wagon)
+//         COST(TONGIL_wagon)
+//      RUNNING(TONGIL_wagon)
+//     CAPACITY(TONGIL_wagon)
+//      LOADING(TONGIL_wagon)
 
 spriteset(set_TONGIL_wagon_purchase, "./src/wagon/Tongil/Tongil.png") {
     tmpl_purchase_detail(45, 0, 31, 12, -16, -6)

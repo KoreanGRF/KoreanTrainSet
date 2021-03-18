@@ -3,8 +3,14 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
-// Defines
-GENERAL(CAFE_CAR)
+/**
+ * Cafe car
+ */
+//SPEED_GENERAL(CAFE_CAR)
+//         COST(CAFE_CAR)
+//      RUNNING(CAFE_CAR)
+//     CAPACITY(CAFE_CAR)
+//      LOADING(CAFE_CAR)
 
 spriteset(set_CAFE_CAR_purchase, "./src/wagon/Cafe/Cafe.png") {
     tmpl_purchase_detail(45, 0, 31, 12, -16, -6)

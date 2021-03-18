@@ -6,8 +6,11 @@
 /**
  * METRO_2
  */
-// Defines
-GENERAL(METRO_2)
+SPEED_METRO(METRO_2)
+       COST(METRO_2)
+    RUNNING(METRO_2)
+   CAPACITY(METRO_2)
+    LOADING(METRO_2)
 
 // Graphics
 #include "seoul2_graphic.pnml"

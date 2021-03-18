@@ -6,7 +6,6 @@
 /**
  * Tender for steam locomotives
  */
-// GENERAL(TENDER)
 
 template tmpl_TENDER(x, y) {
     [x,     y,    8,     18,    -3,   -11]

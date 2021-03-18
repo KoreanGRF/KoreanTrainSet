@@ -6,8 +6,11 @@
 /**
  * SUIN_BUNDANG
  */
-// Defines
-GENERAL(SUIN_BUNDANG)
+SPEED_METRO(SUIN_BUNDANG)
+       COST(SUIN_BUNDANG)
+    RUNNING(SUIN_BUNDANG)
+   CAPACITY(SUIN_BUNDANG)
+    LOADING(SUIN_BUNDANG)
 
 // Graphics
 #include "suin-bundang_graphic.pnml"

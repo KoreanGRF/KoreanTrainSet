@@ -6,7 +6,11 @@
 /**
  * Mate 2
  */
-GENERAL(MATE2)
+SPEED_GENERAL(MATE2)
+         COST(MATE2)
+      RUNNING(MATE2)
+     CAPACITY(MATE2)
+      LOADING(MATE2)
 
 // Template
 template tmpl_MATE2(x, y) {
