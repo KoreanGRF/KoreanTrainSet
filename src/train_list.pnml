@@ -18,9 +18,9 @@
 #include "locomotive/K7x00/K7600.pnml"
 
 // K8x00
-#include "locomotive/K8000/K8000.pnml"
+#include "locomotive/K8x00/K8000.pnml"
 #include "locomotive/K8x00/K8x00.pnml"
-#include "locomotive/K8500/K8500.pnml"
+#include "locomotive/K8x00/K8500.pnml"
 
 // Saemaeul
 #include "locomotive/Saemaeul/DHC.pnml"

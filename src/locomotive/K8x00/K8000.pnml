@@ -11,16 +11,16 @@ SPEED_GENERAL(K8000)
       RUNNING(K8000)
 
 // 8000호대
-spriteset(set_K8000_purchase, "./src/locomotive/K8000/K8000.png") {
+spriteset(set_K8000_purchase, "./src/locomotive/K8x00/K8000.png") {
 	tmpl_purchase(0, 0)
 }
-spriteset(set_K8000_loco_BLUE_WHITE, "./src/locomotive/K8000/K8000.png") {   // Blue & White
+spriteset(set_K8000_loco_BLUE_WHITE, "./src/locomotive/K8x00/K8000.png") {   // Blue & White
 	tmpl_loco(60, 0)
 }
-spriteset(set_K8000_loco_GREEN_YELLOW, "./src/locomotive/K8000/K8000.png") {   // Green & Yellow
+spriteset(set_K8000_loco_GREEN_YELLOW, "./src/locomotive/K8x00/K8000.png") {   // Green & Yellow
 	tmpl_loco(60, 30)
 }
-spriteset(set_K8000_loco_RED_WHITE_BLUE, "./src/locomotive/K8000/K8000.png") {   // Red & White & Blue
+spriteset(set_K8000_loco_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8000.png") {   // Red & White & Blue
 	tmpl_loco(60, 60)
 }
 

@@ -11,10 +11,10 @@ SPEED_GENERAL(K8500)
       RUNNING(K8500)
 
 // 8100호대
-spriteset(set_K8500_loco, "./src/locomotive/K8500/K8500.png") {
+spriteset(set_K8500_loco, "./src/locomotive/K8x00/K8500.png") {
     tmpl_loco(60, 0)
 }
-spriteset(set_K8500_purchase, "./src/locomotive/K8500/K8500.png") {
+spriteset(set_K8500_purchase, "./src/locomotive/K8x00/K8500.png") {
     tmpl_purchase(0, 0)
 }
 
