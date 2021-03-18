@@ -1,0 +1,53 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_cargo_subtype_text, cargo_subtype) {
+    0: return string(STR_REFIT_METRO_351K_VVVF_3RD_NAME);
+    1: return string(STR_REFIT_METRO_351K_VVVF_2ND_NAME);
+    2: return string(STR_REFIT_METRO_351K_VVVF_1ST_NAME);
+    return string(STR_REFIT_METRO_351K_VVVF_3RD_NAME);
+}
+
+// // Engine - for others
+switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineH, cargo_subtype) {
+    0: set_351K_VVVF_3RD_engineH;
+    1: set_351K_VVVF_2ND_engineH;
+    3: set_351K_VVVF_1ST_engineH;
+    set_351K_VVVF_3RD_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineT, cargo_subtype) {
+    0: set_351K_VVVF_3RD_engineT;
+    1: set_351K_VVVF_2ND_engineT;
+    2: set_351K_VVVF_1ST_engineT;
+    set_351K_VVVF_3RD_engineT;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon_panto_cargo_subtype, cargo_subtype) {
+    0: set_351K_VVVF_3RD_wagon_panto;
+    1: set_351K_VVVF_2ND_wagon_panto;
+    2: set_351K_VVVF_1ST_wagon_panto;
+    set_351K_VVVF_3RD_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon_cargo_subtype, cargo_subtype) {
+    0: set_351K_VVVF_3RD_wagon;
+    1: set_351K_VVVF_2ND_wagon;
+    2: set_351K_VVVF_1ST_wagon;
+    set_351K_VVVF_3RD_wagon;
+}
+
+// Engine - for others
+switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_SUIN_BUNDANG_engineT;
+    sw_SUIN_BUNDANG_engineH;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon, (position_in_consist + 1) % 3) {
+    0: sw_SUIN_BUNDANG_wagon_panto_cargo_subtype;
+    sw_SUIN_BUNDANG_wagon_cargo_subtype;
+}
