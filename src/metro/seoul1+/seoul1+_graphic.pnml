@@ -363,6 +363,6 @@ spriteset(set_SMETRO_1K_VVVF_purchase, "./src/metro/seoul1+/SMETRO_1K_VVVF.png")
 }
 
 // Alias of purchase image
-switch(FEAT_TRAINS, SELF, sw_METRO_1_purchase, 1) {
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_purchase, 1) {
     set_3XXK_AL_purchase;
 }

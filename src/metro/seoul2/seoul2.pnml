@@ -22,7 +22,7 @@ SPEED_METRO(SEOUL_METRO_2)
 item(FEAT_TRAINS, ko_train_SEOUL_METRO_2, 5712) {
     property {
         // Common properties
-        name:                           string(STR_SEOUL_SEOUL_METRO_2_NAME);
+        name:                           string(STR_SEOUL_METRO_2_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_SEOUL_METRO_2_INTRODUCTION;
         track_type:                     RAIL;
