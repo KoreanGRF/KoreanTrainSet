@@ -50,43 +50,43 @@ spriteset(set_DHC3_wagon, "./src/locomotive/Saemaeul/DHC.png") {
 
 // Cafe car
 // spriteset(set_DHC1_CAFE_CAR, "./src/wagon/Cafe/Cafe.png") {   // Not implemented yet. I'm not sure even it exists
-// 	tmpl_CAFE_CAR(, )
+//     tmpl_CAFE_CAR(, )
 // }
 // spriteset(set_DHC2_CAFE_CAR, "./src/wagon/Cafe/Cafe.png") {   // So does this
-// 	tmpl_CAFE_CAR(, )
+//     tmpl_CAFE_CAR(, )
 // }
 spriteset(set_DHC3_CAFE_CAR, "./src/wagon/Cafe/Cafe.png") {
-	tmpl_CAFE_CAR(0, 60)
+    tmpl_CAFE_CAR(0, 60)
 }
 
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_DHC_engineH, cargo_subtype) {
-    1:    set_DHC1_engineH;
-    2:    set_DHC2_engineH;
+    1: set_DHC1_engineH;
+    2: set_DHC2_engineH;
     set_DHC3_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_DHC_engineT, cargo_subtype) {
-    1:    set_DHC1_engineT;
-    2:    set_DHC2_engineT;
+    1: set_DHC1_engineT;
+    2: set_DHC2_engineT;
     set_DHC3_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_DHC_wagon, cargo_subtype) {
-	1:    set_DHC1_wagon;
-	2:    set_DHC2_wagon;
-	set_DHC3_wagon;
+    1: set_DHC1_wagon;
+    2: set_DHC2_wagon;
+    set_DHC3_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_DHC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1:    sw_DHC_engineT;
+    1: sw_DHC_engineT;
     sw_DHC_engineH;
 }
 switch(FEAT_TRAINS, PARENT, sw_DHC_CAFE_CAR, cargo_subtype) {   // Cafe car
-	// 1: set_CAFE_CAR_DHC1;
-	// 2: set_CAFE_CAR_DHC2;
-	set_DHC3_CAFE_CAR;
+    // 1: set_CAFE_CAR_DHC1;
+    // 2: set_CAFE_CAR_DHC2;
+    set_DHC3_CAFE_CAR;
 }
 switch(FEAT_TRAINS, SELF, sw_DHC_subtype_text, cargo_subtype) {
-    1:    return string(STR_REFIT_PAINTING_1970_1983);
-    2:    return string(STR_REFIT_PAINTING_GREEN_YELLOW);
+    1: return string(STR_REFIT_PAINTING_1970_1983);
+    2: return string(STR_REFIT_PAINTING_GREEN_YELLOW);
     return string(STR_REFIT_PAINTING_THESEDAYS);
 }
 
@@ -94,16 +94,16 @@ switch(FEAT_TRAINS, SELF, sw_DHC_subtype_text, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, sw_DHC_attach, vehicle_type_id) {
     ko_train_DHC:          return CB_RESULT_ATTACH_ALLOW;
     ko_train_ITX_SAEMAEUL: return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K4x00:        return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K7x00:        return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K7000:        return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8000:        return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8x00:        return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8500:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K4x00:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7x00:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7000:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8000:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8x00:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8500:        return CB_RESULT_ATTACH_ALLOW;
     ko_train_PASSWG:       return CB_RESULT_ATTACH_ALLOW;
     ko_train_SAEMAEUL_CAR: return CB_RESULT_ATTACH_ALLOW;
     ko_train_CAFE_CAR:     return CB_RESULT_ATTACH_ALLOW;
-	return string(STR_ERROR_NO_ATTACH);
+    return string(STR_ERROR_NO_ATTACH);
 }
 
 // Item

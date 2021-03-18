@@ -18,36 +18,36 @@ spriteset(set_CAFE_CAR_purchase, "./src/wagon/Cafe/Cafe.png") {
 
 // Cafe car for Mugunghwa
 spriteset(set_CAFE_CAR_MUGUNGHWA, "./src/wagon/Cafe/Cafe.png") {
-	tmpl_CAFE_CAR(0, 0)
+    tmpl_CAFE_CAR(0, 0)
 }
 
 // Check if parent engine
 switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_is_HAERANG, cargo_subtype) {
-	6:	set_HAERANG_CAFE_wagon;   //=> Refer: ./src/wagon/Mugunghwa
+    6: set_HAERANG_CAFE_wagon;   //=> Refer: ./src/wagon/Mugunghwa
     set_CAFE_CAR_MUGUNGHWA;
 }
 switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_wagon, vehicle_type_id) {
-	ko_train_K7x00:   sw_CAFE_CAR_is_HAERANG;
-	set_CAFE_CAR_MUGUNGHWA;
+    ko_train_K7x00:   sw_CAFE_CAR_is_HAERANG;
+    set_CAFE_CAR_MUGUNGHWA;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_subtype_text, cargo_subtype) {
-	1:	return string(STR_REFIT_PAINTING_SAEMAEUL_CAFE);
-	6:	return string(STR_REFIT_PAINTING_HAERANG);
-	8:	return string(STR_REFIT_PAINTING_RDC_MUGUNGHWA_CAFE);
-	return string(STR_REFIT_PAINTING_MUGUNGHWA_CAFE);
+    1: return string(STR_REFIT_PAINTING_SAEMAEUL_CAFE);
+    6: return string(STR_REFIT_PAINTING_HAERANG);
+    8: return string(STR_REFIT_PAINTING_RDC_MUGUNGHWA_CAFE);
+    return string(STR_REFIT_PAINTING_MUGUNGHWA_CAFE);
 }
 
 // Attachable vehicles
 switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_attach, vehicle_type_id) {
-	ko_train_K4x00:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K7x00:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K7000:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8000:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8x00:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8500:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_DHC:             return CB_RESULT_ATTACH_ALLOW;
-	return string(STR_ERROR_NO_ATTACH);
+    ko_train_K4x00: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7x00: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7000: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8000: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8x00: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8500: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_DHC:   return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
 }
 
 // Item

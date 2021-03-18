@@ -23,10 +23,10 @@ spriteset(set_TONGIL_wagon, "./src/wagon/Tongil/Tongil.png") {
 
 // Refit (No refit currently. We will add some prints in the future)
 switch(FEAT_TRAINS, SELF, sw_TONGIL_wagon, cargo_subtype) {
-	set_TONGIL_wagon;
+    set_TONGIL_wagon;
 }
 // switch(FEAT_TRAINS, SELF, sw_TONGIL_wagon_subtype_text, cargo_subtype) {
-// 	return string(STR_REFIT_PAINTING_THESEDAYS);
+//     return string(STR_REFIT_PAINTING_THESEDAYS);
 // }
 
 item(FEAT_TRAINS, ko_train_TONGIL_CAR, 55970) {
