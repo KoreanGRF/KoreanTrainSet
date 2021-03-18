@@ -3,12 +3,16 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
+/**
+ * Passenger wagons
+ */
+//SPEED_GENERAL(PASSWG)
+         COST(PASSWG)
+      RUNNING(PASSWG)
+//     CAPACITY(PASSWG)
+      LOADING(PASSWG)
 
-
-//TEST//
-// spriteset(set_PASSWG_wagon, "./src/wagon/passenger_wagon.png") {
-//     tmpl_wagon_by_coor(350, 140)
-// }
+// Temp graphic
 spriteset(set_PASSWG_purchase, "./src/wagon/passenger_wagon_purchase.png") {
     tmpl_purchase_detail(0, 0, 32, 12, -16, -8)
 }
@@ -25,37 +29,12 @@ spriteset(set_PASSWGP_TEMP_wagon, "./src/wagon/passenger_wagon.png") {
     [95,  30,  21,   17,    -6,    -8]
 }
 
+// Wagon
 switch(FEAT_TRAINS, PARENT, sw_PASSWG_wagon, vehicle_type_id) {
-    ko_train_CDC: sw_CDC_wagon;
     set_PASSWG_TEMP_wagon;
 }
 
-
-// Mugungwha passenger wagon
-// switch(FEAT_TRAINS, SELF, sw_PASSWG_mugunghwa_wagon, cargo_subtype) {}
-
-
-// for temporarily
-switch(FEAT_TRAINS, SELF, sw_speed_PASSWG, cargo_subtype) {
-       return 150;
-}
-switch(FEAT_TRAINS, SELF, sw_cost_PASSWG, cargo_subtype) {
-       return 10;
-}
-switch(FEAT_TRAINS, SELF, sw_runcost_PASSWG, cargo_subtype) {
-       return 3;
-}
-switch(FEAT_TRAINS, SELF, sw_capacity_PASSWG, cargo_subtype) {
-       return 50;
-}
-switch(FEAT_TRAINS, SELF, sw_loading_speed_PASSWG, cargo_subtype) {
-       return 10;
-}
-switch(FEAT_TRAINS, SELF, sw_weight_PASSWG, cargo_subtype) {
-       return 50;
-}
-// for temporarily (end)
-
+// Dummy cargo subtype text
 switch(FEAT_TRAINS, PARENT, sw_PASSWG_cargo_subtype_text, vehicle_type_id) {
     return CB_RESULT_NO_TEXT;
 }
@@ -65,7 +44,7 @@ item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
         // Common properties
         name:                           string(STR_PASSWG_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1950, 1, 1);
+        introduction_date:              var_PASSWG_INTRODUCTION;
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
@@ -85,13 +64,11 @@ item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
-        loading_speed:                  5;
 
         // Costs
-        cost_factor:                    10;
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_ELECTRIC;
-        running_cost_factor:            150;
+        running_cost_factor:            var_PASSWG_RUNNINGCOST;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -102,11 +79,9 @@ item(FEAT_TRAINS, ko_train_PASSWG, 55900) {
         default:                        sw_PASSWG_wagon;
         purchase:                       set_PASSWG_purchase;
 
-        cost_factor:                    sw_cost_PASSWG;
-        running_cost_factor:            sw_runcost_PASSWG;
-        cargo_capacity:                 sw_capacity_PASSWG;
-        loading_speed:                  sw_loading_speed_PASSWG;
-        weight:                         sw_weight_PASSWG;
+        cost_factor:                    sw_PASSWG_cost;
+        running_cost_factor:            sw_PASSWG_runningcost;
+        loading_speed:                  sw_PASSWG_loadingspeed;
 
         cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_AMBIGUOUS);
@@ -120,12 +95,12 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 55901) {
         // Common properties
         name:                           string(STR_PASSWG_POWER_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              date(1950, 1, 1);
+        introduction_date:              var_PASSWG_INTRODUCTION;
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         // Spec
-        power:                          0 kW;
+        power:                          POWER_IN_KW(var_PASSWG_POWER);
         weight:                         50 ton;
 
         // Model
@@ -140,13 +115,10 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 55901) {
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
-        loading_speed:                  5;
 
         // Costs
-        cost_factor:                    10;
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_ELECTRIC;
-        running_cost_factor:            150;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -157,11 +129,9 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 55901) {
         default:                        set_PASSWGP_TEMP_wagon;
         purchase:                       set_PASSWG_purchase;
 
-        cost_factor:                    sw_cost_PASSWG;
-        running_cost_factor:            sw_runcost_PASSWG;
-        cargo_capacity:                 sw_capacity_PASSWG;
-        loading_speed:                  sw_loading_speed_PASSWG;
-        weight:                         sw_weight_PASSWG;
+        cost_factor:                    sw_PASSWG_cost;
+        running_cost_factor:            sw_PASSWG_runningcost;
+        loading_speed:                  sw_PASSWG_loadingspeed;
 
         cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_AMBIGUOUS);
