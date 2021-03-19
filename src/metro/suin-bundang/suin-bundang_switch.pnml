@@ -16,7 +16,7 @@ switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_cargo_subtype_text, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineH, cargo_subtype) {
     0: set_351K_VVVF_3RD_engineH;
     1: set_351K_VVVF_2ND_engineH;
-    3: set_351K_VVVF_1ST_engineH;
+    2: set_351K_VVVF_1ST_engineH;
     set_351K_VVVF_3RD_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineT, cargo_subtype) {
