@@ -15,7 +15,7 @@ template tmpl_TENDER(x, y) {
     [x+125, y,    8,     18,    -3,    -5]
     [x+140, y,    15,    14,   -14,    -5]
     [x+175, y,    17,    11,   -15,    -7]
-    [x+225, y,    15,    14,    -6,    -8]
+    [x+225, y,    15,    14,    -6,    -9]
 }
 spriteset(set_TENDER_1, "./src/locomotive/steam/steam.png") {
     tmpl_TENDER(60, 360)

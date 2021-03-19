@@ -21,7 +21,7 @@ template tmpl_MIKA3(x, y) {
     [x+125, y,    8,     22,    -3,   -10]
     [x+140, y,    22,    18,   -16,    -9]
     [x+175, y,    31,    12,   -15,    -8]
-    [x+225, y,    22,    17,    -7,    -9]
+    [x+225, y,    22,    17,    -7,   -10]
 }
 spriteset(set_MIKA3_purchase, "./src/locomotive/steam/steam.png") {
     tmpl_purchase_detail(0, 240, 50, 12, -25, -6)
