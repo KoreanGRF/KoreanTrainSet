@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_UISINSEOL_engineH, cargo_subtype) {
+    set_UISINSEOL_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_UISINSEOL_engineT, cargo_subtype) {
+    set_UISINSEOL_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_UISINSEOL_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_UISINSEOL_engineT;
+    sw_UISINSEOL_engineH;
+}
+
+// Wagon (in future)
+// switch(FEAT_TRAINS, SELF, sw_UISINSEOL_wagon, cargo_subtype) {
+//     set_UISINSEOL_wagon;
+// }
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_UISINSEOL_attach, vehicle_type_id) {
+    ko_train_UISINSEOL: return CB_RESULT_ATTACH_ALLOW;
+    // ko_train_PASSWG:      return CB_RESULT_ATTACH_ALLOW;  // in future...
+    // ko_train_PASSWGP:     return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+// Restrict length
+switch(FEAT_TRAINS, SELF, sw_UISINSEOL_start_stop, num_vehs_in_consist > 4) {
+    0: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_TOO_LONG_LENGTH4);
+}

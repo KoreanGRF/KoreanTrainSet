@@ -61,7 +61,7 @@ STR_DAEGU_METRO_2_NAME                           :[KTS] Daegu Line 2
 STR_DAEGU_METRO_3_NAME                           :[KTS] Daegu Line 3
 STR_DAEJEON_METRO_1_NAME                         :[KTS] Daejeon Line 1
 STR_GWANGJU_METRO_1_NAME                         :[KTS] Gwangju Line 1
-STR_SEOUL_UISINSEOL_NAME                         :[KTS] Ui-Sinseol Line
+STR_UISINSEOL_NAME                               :[KTS] Ui-Sinseol Line
 STR_GIMPO_GOLDLINE_NAME                          :[KTS] Gimpo Goldline
 
 
