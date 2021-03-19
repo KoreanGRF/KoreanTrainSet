@@ -64,6 +64,7 @@
 #include "metro/gwangju1/gwangju1.pnml"
 
 //----- LRT -----//
+#include "LRT/incheon2/incheon2.pnml"
 #include "LRT/gimpo/gimpo.pnml"
 #include "LRT/busangimhae/busangimhae.pnml"
 
