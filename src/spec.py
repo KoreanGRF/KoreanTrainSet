@@ -47,6 +47,8 @@ trainList['SEOUL_METRO_5_9']    = 100,     100,    15,          100,     30,    
 trainList['SUIN_BUNDANG']       = 100,     100,    15,          100,     30,           2000,   (1993, 1, 1)
 trainList['GYEONGCHUN']         = 100,     100,    15,          100,     30,           2000,   (2010, 1, 1)
 trainList['ITX_CHEONGCHUN']     = 100,     100,    15,          100,     30,           2000,   (2012, 1, 1)
+trainList['AREX']               = 110,     100,    15,          100,     30,           2000,   (2007, 1, 1)
+trainList['AREX_NONSTOP']       = 110,     None,   None,        45,      10,           None,   (2007, 1, 1)
 trainList['METRO_wagon']        = 100,     100,    15,          100,     30,           200,    (1972, 1, 1)
 
 trainList['PASSWG']             = None,     10,    15,          None,    10,           200,    (1950, 1, 1)

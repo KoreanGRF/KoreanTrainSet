@@ -1,0 +1,61 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// AREX_1K_NONSTOP_ORANGE
+spriteset(set_AREX_1K_NONSTOP_ORANGE_engineH, "./src/metro/arex/AREX_1K_NONSTOP_ORANGE.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_AREX_1K_NONSTOP_ORANGE_engineT, "./src/metro/arex/AREX_1K_NONSTOP_ORANGE.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_AREX_1K_NONSTOP_ORANGE_wagon, "./src/metro/arex/AREX_1K_NONSTOP_ORANGE.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_AREX_1K_NONSTOP_ORANGE_wagon_panto, "./src/metro/arex/AREX_1K_NONSTOP_ORANGE.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_AREX_1K_NONSTOP_ORANGE_purchase, "./src/metro/arex/AREX_1K_NONSTOP_ORANGE.png") {
+    tmpl_metro_purchase()
+}
+
+// AREX_1K_NONSTOP
+spriteset(set_AREX_1K_NONSTOP_engineH, "./src/metro/arex/AREX_1K_NONSTOP.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_AREX_1K_NONSTOP_engineT, "./src/metro/arex/AREX_1K_NONSTOP.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_AREX_1K_NONSTOP_wagon, "./src/metro/arex/AREX_1K_NONSTOP.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_AREX_1K_NONSTOP_wagon_panto, "./src/metro/arex/AREX_1K_NONSTOP.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_AREX_1K_NONSTOP_purchase, "./src/metro/arex/AREX_1K_NONSTOP.png") {
+    tmpl_metro_purchase()
+}
+
+// AREX_2K
+spriteset(set_AREX_2K_engineH, "./src/metro/arex/AREX_2K.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_AREX_2K_engineT, "./src/metro/arex/AREX_2K.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_AREX_2K_wagon, "./src/metro/arex/AREX_2K.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_AREX_2K_wagon_panto, "./src/metro/arex/AREX_2K.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_AREX_2K_purchase, "./src/metro/arex/AREX_2K.png") {
+    tmpl_metro_purchase()
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_AREX_purchase, cargo_subtype) {
+	set_AREX_2K_purchase;
+}
