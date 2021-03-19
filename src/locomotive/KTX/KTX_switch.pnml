@@ -148,6 +148,7 @@ switch(FEAT_TRAINS, SELF, sw_EUM_capacity_in_custom, position_in_consist) {
 // Attachable vehicles for EUM
 switch(FEAT_TRAINS, SELF, sw_EUM_attach, vehicle_type_id) {
     ko_train_EUM:     return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:  return CB_RESULT_ATTACH_ALLOW;
     ko_train_PASSWGP: return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
