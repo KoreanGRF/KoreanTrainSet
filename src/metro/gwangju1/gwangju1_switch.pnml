@@ -32,7 +32,8 @@ switch(FEAT_TRAINS, SELF, sw_GWANGJU_METRO_1_engine, position_in_consist_from_en
 }
 
 // Wagon
-switch(FEAT_TRAINS, SELF, sw_GWANGJU_METRO_1_wagon, (position_in_consist + 0) % 2) {
-    0: sw_GWANGJU_METRO_1_wagon_panto_cargo_subtype;
+switch(FEAT_TRAINS, SELF, sw_GWANGJU_METRO_1_wagon, (position_in_consist + 0) % 4) {
+    1: sw_GWANGJU_METRO_1_wagon_panto_cargo_subtype;
+    2: sw_GWANGJU_METRO_1_wagon_panto_cargo_subtype;
     sw_GWANGJU_METRO_1_wagon_cargo_subtype;
 }

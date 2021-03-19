@@ -32,7 +32,8 @@ switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_engine, position_in_consist_from_end 
 }
 
 // Wagon
-switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_wagon, (position_in_consist + 0) % 2) {
-    0: sw_BUSAN_METRO_3_wagon_panto_cargo_subtype;
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_wagon, (position_in_consist + 0) % 4) {
+    1: sw_BUSAN_METRO_3_wagon_panto_cargo_subtype;
+    2: sw_BUSAN_METRO_3_wagon_panto_cargo_subtype;
     sw_BUSAN_METRO_3_wagon_cargo_subtype;
 }
