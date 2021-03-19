@@ -19,7 +19,7 @@ SPEED_METRO(SHINBUNDANG)
 #include "shinbundang_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_SHINBUNDANG, 50160) {
+item(FEAT_TRAINS, ko_train_SHINBUNDANG, 5735) {
     property {
         // Common properties
         name:                           string(STR_SHINBUNDANG_NAME);
