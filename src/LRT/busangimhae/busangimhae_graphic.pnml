@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// BUSANGIMHAE
+spriteset(set_BUSANGIMHAE_engineH, "./src/LRT/busangimhae/BUSANGIMHAE.png") {
+    [0+64,     0,     8,    22,     -3,    -10]
+    [0+80,     0,    21,    17,    -13,     -8]
+    [0+112,    0,    31,    12,    -17,     -7]
+    [0+161,    0,    21,    17,     -6,     -8]
+    [0+191,    0,     8,    22,     -3,    -12]
+    [0+207,    0,    21,    17,    -13,     -8]
+    [0+239,    0,    31,    12,    -16,     -7]
+    [0+288,    0,    21,    17,     -6,     -8]
+}
+spriteset(set_BUSANGIMHAE_engineT, "./src/LRT/busangimhae/BUSANGIMHAE.png") {
+    [0+191,    30,    8,    22,     -3,    -11]
+    [0+207,    30,   21,    17,    -13,     -8]
+    [0+239,    30,   30,    12,    -16,     -7]
+    [0+288,    30,   21,    17,     -6,     -8]
+    [0+64,     30,    8,    22,     -3,    -11]
+    [0+80,     30,   21,    17,    -13,     -8]
+    [0+112,    30,   30,    12,    -16,     -7]
+    [0+161,    30,   21,    17,     -6,     -8]
+}
+// spriteset(set_BUSANGIMHAE_wagon, "./src/LRT/busangimhae/BUSANGIMHAE.png") {  // in future...
+//     [0+64,     55,     8,    19,    -3,    -10]
+//     [0+80,     55,    21,    17,    -13,   -10]
+//     [0+112,    55,    31,    12,    -17,    -7]
+//     [0+161,    55,    21,    17,    -6,    -10]
+//     [0+191,    55,     8,    19,    -3,    -10]
+//     [0+207,    55,    21,    17,    -13,   -10]
+//     [0+239,    55,    31,    12,    -17,    -7]
+//     [0+288,    55,    21,    17,    -6,    -10]
+// }
+spriteset(set_BUSANGIMHAE_purchase, "./src/LRT/busangimhae/BUSANGIMHAE.png") {
+    tmpl_metro_purchase()
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_BUSANGIMHAE_purchase, cargo_subtype) {
+    set_BUSANGIMHAE_purchase;
+}

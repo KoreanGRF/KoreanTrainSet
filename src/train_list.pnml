@@ -65,6 +65,7 @@
 
 //----- LRT -----//
 #include "LRT/gimpo/gimpo.pnml"
+#include "LRT/busangimhae/busangimhae.pnml"
 
 // Passenger wagons
 #include "wagon/passenger_wagon.pnml"
