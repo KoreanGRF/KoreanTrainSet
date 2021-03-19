@@ -56,6 +56,8 @@ trainList['BUSAN_METRO_2']      = 100,     100,    15,          100,     30,    
 trainList['BUSAN_METRO_3']      = 100,     100,    15,          100,     30,           2000,   (1999, 1, 1)
 trainList['DAEGU_METRO_1']      = 100,     100,    15,          100,     30,           2000,   (1997, 1, 1)
 trainList['DAEGU_METRO_2']      = 100,     100,    15,          100,     30,           2000,   (2005, 1, 1)
+trainList['DAEJEON_METRO_1']    = 100,     100,    15,          100,     30,           2000,   (2006, 1, 1)
+trainList['GWANGJU_METRO_1']    = 100,     100,    15,          100,     30,           2000,   (2004, 1, 1)
 trainList['METRO_wagon']        = 100,     100,    15,          100,     30,           200,    (1972, 1, 1)
 
 trainList['PASSWG']             = None,     10,    15,          None,    10,           200,    (1950, 1, 1)

@@ -60,6 +60,8 @@
 #include "metro/busan3/busan3.pnml"
 #include "metro/daegu1/daegu1.pnml"
 #include "metro/daegu2/daegu2.pnml"
+#include "metro/daejeon1/daejeon1.pnml"
+#include "metro/gwangju1/gwangju1.pnml"
 
 // Passenger wagons
 #include "wagon/passenger_wagon.pnml"
