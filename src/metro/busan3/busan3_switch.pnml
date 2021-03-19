@@ -1,0 +1,38 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+// switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_cargo_subtype_text, 1) {
+//     return CB_RESULT_NO_TEXT;
+// }
+
+// Engine - for others
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_engineH, cargo_subtype) {
+    set_3K_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_engineT, cargo_subtype) {
+    set_3K_engineT;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_wagon_panto_cargo_subtype, cargo_subtype) {
+    set_3K_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_wagon_cargo_subtype, cargo_subtype) {
+    set_3K_wagon;
+}
+
+// Engine - for others
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_BUSAN_METRO_3_engineT;
+    sw_BUSAN_METRO_3_engineH;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_wagon, (position_in_consist + 0) % 2) {
+    0: sw_BUSAN_METRO_3_wagon_panto_cargo_subtype;
+    sw_BUSAN_METRO_3_wagon_cargo_subtype;
+}

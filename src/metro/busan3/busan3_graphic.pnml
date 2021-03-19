@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// 3K
+spriteset(set_3K_engineH, "./src/metro/busan3/3K.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_3K_engineT, "./src/metro/busan3/3K.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_3K_wagon, "./src/metro/busan3/3K.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_3K_wagon_panto, "./src/metro/busan3/3K.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_3K_purchase, "./src/metro/busan3/3K.png") {
+    tmpl_metro_purchase()
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_purchase, cargo_subtype) {
+	set_3K_purchase;
+}
