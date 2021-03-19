@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_YONGIN_EVERLINE_engine, 1) {
+    set_YONGIN_EVERLINE_engine;
+}
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_YONGIN_EVERLINE_attach, vehicle_type_id) {
+    ko_train_YONGIN_EVERLINE: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+// Restrict length
+switch(FEAT_TRAINS, SELF, sw_YONGIN_EVERLINE_start_stop, num_vehs_in_consist > 2) {
+    0: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_TOO_LONG_LENGTH2);
+}

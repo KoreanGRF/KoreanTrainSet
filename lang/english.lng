@@ -55,7 +55,7 @@ STR_BUSAN_METRO_2_NAME                           :[KTS] Busan Line 2
 STR_BUSAN_METRO_3_NAME                           :[KTS] Busan Line 3
 STR_BUSAN_METRO_4_NAME                           :[KTS] Busan Line 4
 STR_BUSANGIMHAE_NAME                             :[KTS] Busan-Gimhae LRT
-STR_EVERLINE_NAME                                :[KTS] Yongin Everline
+STR_YONGIN_EVERLINE_NAME                         :[KTS] Yongin Everline
 STR_DAEGU_METRO_1_NAME                           :[KTS] Daegu Line 1
 STR_DAEGU_METRO_2_NAME                           :[KTS] Daegu Line 2
 STR_DAEGU_METRO_3_NAME                           :[KTS] Daegu Line 3
@@ -258,4 +258,5 @@ STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION        :It requires higher OpenTTD ver
 STR_ERROR_NO_ATTACH                              :You can't attach this car here
 STR_ERROR_NOT_ENOUGH_LENGTH2                     :It's too short. It should be equal or more than 2 cars at least.
 STR_ERROR_NOT_ENOUGH_LENGTH4                     :It's too short. It should be equal or more than 4 cars at least.
+STR_ERROR_TOO_LONG_LENGTH2                       :It's too long. It should be equal or less than 2 cars at most.
 STR_ERROR_TOO_LONG_LENGTH4                       :It's too long. It should be equal or less than 4 cars at most.

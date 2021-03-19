@@ -9,15 +9,15 @@ import math
 trainList = {}
 
 #                                 speed    cost    running_cost capacity loading_speed power   introduction
-trainList['K4x00']              = 150,     10,     10,          None,    None,         1230,   (2001, 1, 1)
-trainList['K7000']              = 150,     10,     10,          None,    None,         2460,   (1986, 1, 1)
-trainList['K7x00']              = 150,     20,     10,          None,    None,         2238,   (1986, 1, 1)
-trainList['K7600']              = 150,     20,     12,          None,    None,         2602,   (2014, 1, 1)
-trainList['K8000']              = 90,      30,     10,          None,    None,         3900,   (1972, 1, 1)
-trainList['K8x00']              = 150,     30,     10,          None,    None,         5200,   (1990, 1, 1)
-trainList['K8500']              = 150,     30,     10,          None,    None,         6600,   (2012, 1, 1)
-trainList['DHC']                = 150,     30,     10,          20,      5,            2237,   (1987, 1, 1)
-trainList['DHC_wagon']          = 150,     30,     10,          20,      5,            0,      (1987, 1, 1)
+trainList['K4x00']              = 150,     50,     10,          None,    None,         1230,   (2001, 1, 1)
+trainList['K7000']              = 150,     50,     10,          None,    None,         2460,   (1986, 1, 1)
+trainList['K7x00']              = 150,     50,     10,          None,    None,         2238,   (1986, 1, 1)
+trainList['K7600']              = 150,     50,     12,          None,    None,         2602,   (2014, 1, 1)
+trainList['K8000']              = 90,      50,     10,          None,    None,         3900,   (1972, 1, 1)
+trainList['K8x00']              = 150,     50,     10,          None,    None,         5200,   (1990, 1, 1)
+trainList['K8500']              = 150,     50,     10,          None,    None,         6600,   (2012, 1, 1)
+trainList['DHC']                = 150,     50,     10,          20,      5,            2237,   (1987, 1, 1)
+trainList['DHC_wagon']          = 150,     50,     10,          20,      5,            0,      (1987, 1, 1)
 trainList['ITX_SAEMAEUL']       = 150,     50,     10,          44,      5,            3000,   (2014, 1, 1)
 trainList['ITX_SAEMAEUL_wagon'] = 150,     50,     10,          44,      5,            200,    (2014, 1, 1)
 trainList['NURIRO']             = 150,     100,    15,          64,      10,           2000,   (2010, 1, 1)
@@ -35,9 +35,9 @@ trainList['MUGUNGHWA_wagon']    = 135,     10,     15,          72,      10,    
 trainList['TONGIL_wagon']       = 120,     10,     15,          72,      10,           0,      (1988, 1, 1)
 trainList['POWER_CAR']          = 120,     10,     15,          72,      10,           0,      (1972, 1, 1)
 trainList['CAFE_CAR']           = 120,     10,     15,          72,      10,           0,      (1972, 1, 1)
-trainList['MIKA3']              = 90,      10,      5,          0,       0,            726,    (1927, 1, 1)
-trainList['PASHI5']             = 110,     10,      5,          0,       0,            790,    (1939, 1, 1)
-trainList['MATE2']              = 90,      10,      5,          0,       0,            1074,   (1943, 1, 1)
+trainList['MIKA3']              = 90,      30,      5,          0,       0,            726,    (1927, 1, 1)
+trainList['PASHI5']             = 110,     30,      5,          0,       0,            790,    (1939, 1, 1)
+trainList['MATE2']              = 90,      30,      5,          0,       0,            1074,   (1943, 1, 1)
 
 trainList['SEOUL_METRO_1']      = 100,     100,    15,          100,     30,           2000,   (1972, 1, 1)
 trainList['SEOUL_METRO_2']      = 100,     100,    15,          100,     30,           2000,   (1983, 1, 1)
@@ -64,6 +64,7 @@ trainList['GIMPO_GOLDLINE']     = 80,       80,    10,          100,     30,    
 trainList['BUSANGIMHAE']        = 70,       70,    10,          100,     30,           500,    (2011, 1, 1)
 trainList['INCHEON_METRO_2']    = 80,       80,    10,          100,     30,           500,    (2016, 1, 1)
 trainList['UISINSEOL']          = 80,       80,    10,           80,     30,           520,    (2017, 1, 1)
+trainList['YONGIN_EVERLINE']    = 80,       80,    10,           80,     30,           520,    (2017, 1, 1)
 
 trainList['PASSWG']             = None,     10,    15,          None,    10,           200,    (1950, 1, 1)
 
