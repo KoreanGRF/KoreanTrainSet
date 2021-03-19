@@ -60,6 +60,8 @@ trainList['DAEJEON_METRO_1']    = 100,     100,    15,          100,     30,    
 trainList['GWANGJU_METRO_1']    = 100,     100,    15,          100,     30,           2000,   (2004, 1, 1)
 trainList['METRO_wagon']        = 100,     100,    15,          100,     30,           200,    (1972, 1, 1)
 
+trainList['GIMPO_GOLDLINE']     = 80,       80,    10,          100,     30,           2000,   (2019, 1, 1)
+
 trainList['PASSWG']             = None,     10,    15,          None,    10,           200,    (1950, 1, 1)
 
 

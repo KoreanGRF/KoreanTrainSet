@@ -63,6 +63,8 @@ sort(FEAT_TRAINS, [
     //ko_train_DAEGU_METRO_3,          // 5763
     ko_train_DAEJEON_METRO_1,        // 5771
     ko_train_GWANGJU_METRO_1,        // 5781
+    
+    ko_train_GIMPO_GOLDLINE,         // 5801
     //ko_train_METRO_UISINSEOL,
     //ko_train_METRO_BUSAN4_CW
 ]);

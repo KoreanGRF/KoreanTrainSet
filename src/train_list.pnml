@@ -63,6 +63,9 @@
 #include "metro/daejeon1/daejeon1.pnml"
 #include "metro/gwangju1/gwangju1.pnml"
 
+//----- LRT -----//
+#include "LRT/gimpo/gimpo.pnml"
+
 // Passenger wagons
 #include "wagon/passenger_wagon.pnml"
 

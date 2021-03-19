@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// GIMPO_1K
+spriteset(set_GIMPO_1K_engineH, "./src/LRT/gimpo/GIMPO_1K.png") {
+    [0+64,     0,     8,    22,     -3,    -10]
+    [0+80,     0,    21,    17,    -13,    -10]
+    [0+112,    0,    30,    12,    -17,     -7]
+    [0+161,    0,    21,    17,     -6,    -10]
+    [0+191,    0,     8,    22,     -3,    -11]
+    [0+207,    0,    21,    17,    -13,    -10]
+    [0+239,    0,    30,    12,    -16,     -7]
+    [0+288,    0,    21,    17,     -6,    -10]
+}
+spriteset(set_GIMPO_1K_engineT, "./src/LRT/gimpo/GIMPO_1K.png") {
+    [0+191,    27,     8,    22,    -3,    -10]
+    [0+207,    27,    21,    17,    -13,   -10]
+    [0+239,    27,    29,    12,    -17,    -7]
+    [0+288,    27,    21,    17,    -6,    -10]
+    [0+64,     27,     8,    22,    -3,    -11]
+    [0+80,     27,    21,    17,    -13,   -10]
+    [0+112,    27,    29,    12,    -15,    -7]
+    [0+161,    27,    21,    17,    -6,    -10]
+}
+spriteset(set_GIMPO_1K_wagon, "./src/LRT/gimpo/GIMPO_1K.png") {
+    [0+64,     55,     8,    19,    -3,    -10]
+    [0+80,     55,    21,    17,    -13,   -10]
+    [0+112,    55,    31,    12,    -17,    -7]
+    [0+161,    55,    21,    17,    -6,    -10]
+    [0+191,    55,     8,    19,    -3,    -10]
+    [0+207,    55,    21,    17,    -13,   -10]
+    [0+239,    55,    31,    12,    -17,    -7]
+    [0+288,    55,    21,    17,    -6,    -10]
+}
+spriteset(set_GIMPO_1K_purchase, "./src/LRT/gimpo/GIMPO_1K.png") {
+    tmpl_metro_purchase()
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_GIMPO_GOLDLINE_purchase, cargo_subtype) {
+    set_GIMPO_1K_purchase;
+}
