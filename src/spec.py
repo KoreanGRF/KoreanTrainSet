@@ -50,6 +50,7 @@ trainList['ITX_CHEONGCHUN']     = 100,     100,    15,          100,     30,    
 trainList['AREX']               = 110,     100,    15,          100,     30,           2000,   (2007, 1, 1)
 trainList['AREX_NONSTOP']       = 110,     None,   None,        45,      10,           None,   (2007, 1, 1)
 trainList['SHINBUNDANG']        = 100,     100,    15,          100,     30,           2000,   (2011, 1, 1)
+trainList['INCHEON_METRO_1']    = 100,     100,    15,          100,     30,           2000,   (1999, 1, 1)
 trainList['METRO_wagon']        = 100,     100,    15,          100,     30,           200,    (1972, 1, 1)
 
 trainList['PASSWG']             = None,     10,    15,          None,    10,           200,    (1950, 1, 1)
