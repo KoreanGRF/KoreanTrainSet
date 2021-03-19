@@ -5,9 +5,9 @@
 ------------------------------------------------------------------------------*/
 
 // Cargo subtype
-switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_cargo_subtype_text, 1) {
-    return CB_RESULT_NO_TEXT;
-}
+// switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_cargo_subtype_text, 1) {
+//     return CB_RESULT_NO_TEXT;
+// }
 
 // Engine - for others
 switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_engineH, cargo_subtype) {

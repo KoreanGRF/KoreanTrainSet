@@ -53,11 +53,11 @@ sort(FEAT_TRAINS, [
     ko_train_SHINBUNDANG,            // 5735
     ko_train_INCHEON_METRO_1,        // 5741
     // ko_train_INCHEON_METRO_2,        // 5742
-    //ko_train_METRO_BUSAN1,
-    //ko_train_METRO_BUSAN2,
-    //ko_train_METRO_BUSAN3,
-    //ko_train_METRO_BUSAN4,
-    //ko_train_METRO_BUSANGIMHAE,
+    ko_train_BUSAN_METRO_1,           // 5751
+    //ko_train_BUSAN_METRO_2,
+    //ko_train_BUSAN_METRO_3,
+    //ko_train_BUSAN_METRO_4,
+    //ko_train_BUSANGIMHAE,
     //ko_train_METRO_DAEGU1,
     //ko_train_METRO_DAEGU2,
     //ko_train_METRO_DAEGU3,

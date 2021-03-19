@@ -55,6 +55,7 @@
 #include "metro/arex/arex.pnml"
 #include "metro/shinbundang/shinbundang.pnml"
 #include "metro/incheon1/incheon1.pnml"
+#include "metro/busan1/busan1.pnml"
 
 // Passenger wagons
 #include "wagon/passenger_wagon.pnml"
