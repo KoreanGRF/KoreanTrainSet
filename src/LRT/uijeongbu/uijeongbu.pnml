@@ -1,0 +1,86 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * UIJEONGBU
+ */
+SPEED_METRO(UIJEONGBU)
+       COST(UIJEONGBU)
+    RUNNING(UIJEONGBU)
+   CAPACITY(UIJEONGBU)
+    LOADING(UIJEONGBU)
+
+// Graphics
+#include "uijeongbu_graphic.pnml"
+
+// Switch
+#include "uijeongbu_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_UIJEONGBU, 5805) {
+    property {
+        // Common properties
+        name:                           string(STR_UIJEONGBU_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_UIJEONGBU_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+
+        // Spec
+        power:                          POWER_IN_KW(var_UIJEONGBU_POWER);
+        weight:                         20 ton;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_UIJEONGBU_engine;
+        purchase:                       sw_UIJEONGBU_purchase;
+
+        speed:                          sw_UIJEONGBU_speed;
+        cost_factor:                    sw_UIJEONGBU_cost;
+        running_cost_factor:            sw_UIJEONGBU_runningcost;
+        cargo_capacity:                 sw_UIJEONGBU_capacity;
+        loading_speed:                  sw_UIJEONGBU_loadingspeed;
+
+        can_attach_wagon:               sw_UIJEONGBU_attach;
+        start_stop:                     sw_UIJEONGBU_start_stop;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+    // in future ...
+    // livery_override(ko_train_PASSWG) {
+    //     default:                        sw_UIJEONGBU_wagon;
+    //     cargo_capacity:                 sw_METRO_wagon_capacity;
+    // }
+    // livery_override(ko_train_PASSWGP) {
+    //     default:                        sw_UIJEONGBU_wagon;
+    //     cargo_capacity:                 sw_METRO_wagon_capacity;
+    //     power:                          POWER_IN_KW(var_METRO_wagon_POWER);
+    // }
+}
+// End of "UIJEONGBU"

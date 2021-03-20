@@ -68,4 +68,5 @@ sort(FEAT_TRAINS, [
     ko_train_BUSANGIMHAE,            // 5802
     ko_train_UISINSEOL,              // 5803
     ko_train_YONGIN_EVERLINE,        // 5804
+    ko_train_UIJEONGBU,              // 5805
 ]);

@@ -69,6 +69,7 @@
 #include "LRT/busangimhae/busangimhae.pnml"
 #include "LRT/ui-sinseol/ui-sinseol.pnml"
 #include "LRT/yongin/everline.pnml"
+#include "LRT/uijeongbu/uijeongbu.pnml"
 
 // Passenger wagons
 #include "wagon/passenger_wagon.pnml"
