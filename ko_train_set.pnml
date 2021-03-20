@@ -52,6 +52,9 @@ sw_loading_speed_factor =	1 << coeff_loading_speed_factor;
 #include "generated/spec.pnml"
 #include "src/train_list.pnml"
 
+// Railtypes
+#include "src/railtype/KR_LIGHTRAIL.pnml"
+
 // 경유지 간소화
 //#include "src/simplify_waypoint.pnml"
 

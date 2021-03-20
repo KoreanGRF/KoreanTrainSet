@@ -253,6 +253,8 @@ STR_PARAM_MAX_SPEED_TYPE_DESC                    :열차 최고 속력의 기준
 STR_PARAM_MAX_SPEED_TYPE_OPT_1                   :영업 속력
 STR_PARAM_MAX_SPEED_TYPE_OPT_2                   :설계 속력
 
+# Light Railway
+STR_KO_LIGHT_RAILWAY_LABEL                       :[KTS] 경전철 선로
 
 # Errors
 STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION        :이 NewGRF를 사용하기 위해서는 더 높은 OpenTTD 버전(1.7.0/r21278)을 사용해야 합니다!

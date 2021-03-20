@@ -253,6 +253,8 @@ STR_PARAM_MAX_SPEED_TYPE_DESC                    :Select the type of the maximum
 STR_PARAM_MAX_SPEED_TYPE_OPT_1                   :Service
 STR_PARAM_MAX_SPEED_TYPE_OPT_2                   :Design
 
+# Light Railway
+STR_KO_LIGHT_RAILWAY_LABEL                       :[KTS] Light Railways
 
 # Errors
 STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION        :It requires higher OpenTTD version(1.7.0/r21278) to run this NewGRF!
