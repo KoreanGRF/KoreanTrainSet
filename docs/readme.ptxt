@@ -1,4 +1,166 @@
---------------------------------------------------------------------------------
-한국 열차 세트 {{VERSION}}
-Korean Train Set {{VERSION}}
---------------------------------------------------------------------------------
+===================================
+    한국 열차 세트 {{VERSION}}
+    Korean Train Set {{VERSION}}
+===================================
+
+List
+==========
+1. About
+2. FAQ
+3. Known-bugs
+4. Contact & Translation
+5. Credits
+6. Copyrights
+
+
+1. About
+==========
+  Korean Train Set has train vehicles of the Republic of Korea (South Korea),
+including various locomotives and metro vehicles in major cities of south korea.
+
+Korean Train Set adds vehicles like below:
+  - Mika 3 Steam Locomotive
+  - Pashi 5 Steam Locomotive
+  - Mate 2 Steam Locomotive
+  - Korail 4x00 Diesel Locomotive (with V-train)
+  - Korail 7x00 Diesel Locomotive (with Haerang the rail cruise + G-train + S-train)
+  - Korail 7600 Diesel Locomotive (with A-train)
+  - Korail 8000 Electric Locomotive
+  - Korail 8x00 Electric Locomotive
+  - Korail 8500 Electric Locomotive
+  - Korail Commuter Diesel Car(CDC), RDC (with DMZ-train + Gyeongbuk Circular theme tour train)
+  - Korail New Diesel Car(NDC)
+  - ITX-Saemaeul
+  - KTX-1
+  - KTX-Sancheon
+  - SRT
+  - KTX-EUM
+  - Nuriro (with O-train + Korean wave tour wrapping)
+  - Saemaeul Diesel Hydraulic Car(DHC, a.k.a. PP-car) and its passenger wagons
+  - Mugunghwa's passenger wagons and cafe car
+  - Tongil's passenger car
+  - Bidulgi's passenger car
+  - Seoul metropolitan metro Line 1 ~ 9
+  - Gyeongchun Line
+  - Incheon International Airport Railroad (A'REX)
+  - Suin-Bundang Line
+  - Shinbundang-line
+  - Incheon subway Line 1 ~ 2
+  - Daegu subway Line 1 ~ 3
+  - Daejeon subway Line 1
+  - Gwangju subway Line 1
+  - Busan subway Line 1 ~ 4
+  - Ui-Sinseol LRT
+  - Busangimhae LRT
+  - Uijeongbu LRT
+  - Yongin Everline (LRT)
+  - Gimpo Goldline (LRT)
+  - Generator car
+  - Flat cargo car
+  - Hopper car
+  - Luggage van
+  - Tanker
+
+Korean Train Set adds a new railtype such as below:
+  - [KTS] Light railway
+
+
+2. FAQ
+==========
+Q. It's too few that train added (or) There's no (painted) vehicle what I want!
+A. Every model of train showed up until v0.7.x, but now there displays only
+   certain representative vehicle on v0.8.x. If you want to make other model
+   which is on the same/similar line, first you make a vehicle that is
+   similar with what you want, then change its model into 'Refit' button when the
+   train is in depot.
+   Nevertheless, if vehicle what you want didn't display, wait until 2013. Every
+   train of Korea Train Set introduced from 1970 to 2013.
+
+Q. Some of trains (eg. Line 1) does not appear in the purchase list.
+A. First check that the depot is for "Electrified Railway". Most of trains of
+   Korean Train Set is for the electrified railway. Secondly, try to turn the
+   'Vehicles never expire' setting on in the (Advanced) Setting window. Or, it
+   might be caused by using duplicated vehicle ID between KTS and the other grf.
+
+Q. How to construct a train in detail?
+A. We recommend like below. CTRL+Click to reverse the engine in the tail(enclosed
+   by <> in the list below)
+
+   (1) Subways:         [Subway locomotive] + [subway coach] + ... + [subway coach] + [Subway locomotive]
+   (2) ITX-Cheongchun:  [ITX locomotive] + [subway coach] + ... + [subway coach] + <ITX locomotive>
+   (3) Mugunghwa/Saemaeul(K8x00, K7x00):
+                        [Locomotive] + [Mugunghwa/Saemaeul passenger coach] + ...
+   (4) Demoted to Mugunghwa, former executive car:
+			[Locomotive] + [Saemaeul passenger coaches] + ...
+			(Change by the refit)
+   (5) Saemaeul(PP):    [PP locomotive] + [coach] + ... + [coach] + <PP locomotive>
+   (6) KTX:             [KTX locomotive] + [KTX coach] + ... + [KTX coach] + <KTX locomotive>
+   (7) NDC:             [NDC locomotive] + [Mugunghwa passenger coach] + ... + [NDC locomotive]
+
+Q. What can I do in the parameter settings?
+A. You can make the train's speed faster, or change the capacity larger.
+
+Q. It errors that the train is too short/long!
+A. Some models(KTX, Saemaeul, subways etc.) must be more than two or four cars
+   to run.
+
+Q. Where is the passenger coach of ITX-Saemaeul?
+A. You need to construct ITX-Saemaeul like below
+   : [ITX-Saemaeul Locomotive] + [Saemaeul Passenger Car] + … + [Saemaeul Passenger Car] + [ITX-Saemaeul Locomotive]
+   If you attach [Saemaeul passenger car] to [ITX-Saemaeul] engine, it changes
+   into ITX-Saemaeul passenger car, automatically. If not, you can use refit
+   button to change it.
+
+
+3. Known-bugs
+==========
++ The fact that the maximum speed of KTX is 331km/h, not 330km/h, and ITX is 181
+  km/h, not 180km/h.
+  : It comes from the problem of units between miles and kilometers.
+    By the way, can you realize the difference of 1km/h? :D
+
++ Impossible to make [8x00 locomotive] + [subways]
+  : I used a complex method to make subway's appearance naturally according to its
+    length. It crashes with locomotives so that subway cars appears abnormally.
+    I wish I could fix it, but it seems to be difficult.
+
+
+4. Contact & Translation
+==========
++ If you have found a bug or you have a sugguestion, please make an issue at
+  our Github(http://github.com/KoreanGRF/KoreanTrainSet), visit coder's website
+  TELKLAND(http://telk.kr) or email to TELK(telk5093@gmail.com)
++ If you want to translate Korean Train Set and the download page of Korean Train Set
+  into your language, please visit the Github project(http://github.com/KoreanGRF/KoreanTrainSet)
+  and see "Translations".
++ Please ask to TELK(OpenTTD Korean translator) to get more information in English.
++ Links
+  * TELKLAND - http://telk.kr
+  * Official Download Page - http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr
+  * Github - https://github.com/KoreanGRF/KoreanTrainSet
+
+
+5. Credits
+==========
+TELK (telk5093@gmail.com, http://telk.kr)
+  - NML Codes, offer modified vehicle graphics
+skyu (skyu2947@gmail.com)
+  - Offer vehicle graphics
+Las (wlq10000@naver.com)
+  - Offer modified vehicle graphics
+Chojeohang (yunggu7410@naver.com)
+  - Offer vehicle and railway graphic of Busan Line No.4
+Jakga (angryphw@naver.com)
+  - Offer modified vehicle graphics
+OPENTRAIN (gks3900@naver.com)
+  - Offer modified vehicle graphics
+kiwitree (kiwitreekor@gmail.com)
+  - Offer modified vehicle graphics
+
+
+
+6. Copyrights
+==========
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported
+License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/ or
+send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.

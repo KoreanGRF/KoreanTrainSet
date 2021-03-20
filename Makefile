@@ -22,7 +22,7 @@ NML_FILE            ?= $(BASE_FILENAME).nml
 NFO_FILE            ?= $(BASE_FILENAME).nfo
 PNML_FILE           ?= $(BASE_FILENAME).pnml
 TAG_FILE            ?= custom_tags.txt
-DOC_FILE            ?= docs/readme.txt docs/license.txt docs/changelog.txt
+DOC_FILE            ?= docs/readme.txt docs/license.txt docs/changelog.md
 
 GRF_GENERATE        ?= $(BASE_FILENAME).grf
 NML_GENERATE        ?= $(BASE_FILENAME).nml
@@ -44,14 +44,14 @@ all: $(GRF_GENERATE) doc bundle_tar
 		| sed -e "s/{{\VERSION}}/$(VERSION)/" \
 		> ./$@
 clean::
-	@-rm -rf ./docs/readme.txt
+	@-rm -rf ./generated/readme.txt
 
 
 # Documents
 doc: generated $(DOC_GENERATE) $(GRF_GENERATE)
 	@cp $(CP_FLAGS) ./docs/readme.txt ./generated/readme.txt
 	@cp $(CP_FLAGS) ./docs/license.txt ./generated/license.txt
-	@cp $(CP_FLAGS) ./docs/changelog.txt ./generated/changelog.txt
+	@cp $(CP_FLAGS) ./docs/changelog.md ./generated/changelog.md
 clean::
 	@echo "[CLEAN DOC]"
 	@-rm -rf ./generated/*.txt
@@ -108,7 +108,7 @@ clean::
 bundle: bundle_tar
 bundle_tar: $(BUNDLE_FILES)
 	@echo "[BUNDLE TAR]"
-	@ tar -cf ./generated/$(DIR_NAME).tar --directory=./generated/ ./changelog.txt ./ko_train_set.grf ./license.txt ./readme.txt
+	@ tar -cf ./generated/$(DIR_NAME).tar --directory=./generated/ ./changelog.md ./ko_train_set.grf ./license.txt ./readme.txt
 clean::
 	@echo "[CLEAN BUNDLE]"
 	@-rm -rf $(shell echo "$(REPO_NAME)*" | xargs | sed s/\ /_/g)
