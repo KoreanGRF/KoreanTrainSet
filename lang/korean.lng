@@ -4,7 +4,7 @@
 STR_GRF_NAME                                     :한국 열차 세트
 STR_GRF_NAME_WITH_VER                            :한국 열차 세트 {VERSION}
 STR_GRF_DESC                                     :{}{BLACK}한국 열차 세트는 KTX, KTX-산천, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, 코레일의 기관차 등 여러 가지의 한국 열차와 선로를 추가해줍니다.{}(최근 업데이트: {RECENT_UPDATED}){}{}{SILVER}+ 제작: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL                                      :{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=kr
+STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr
 
 
 # Vehicle's name
@@ -36,6 +36,8 @@ STR_MUGUNGHWA_CAR_NAME                           :[KTS] 무궁화호 객차
 STR_TONGIL_CAR_NAME                              :[KTS] 통일호 객차
 STR_POWER_CAR_NAME                               :[KTS] 발전차
 STR_CAFE_CAR_NAME                                :[KTS] 카페 객차
+
+STR_FLAT_CAR_NAME                                :[KTS] 평판화차
 
 # Metro
 STR_SEOUL_METRO_1_NAME                           :[KTS] 수도권 1호선, 통근형

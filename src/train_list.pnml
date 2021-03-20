@@ -71,8 +71,9 @@
 #include "LRT/yongin/everline.pnml"
 #include "LRT/uijeongbu/uijeongbu.pnml"
 
-// Passenger wagons
+// Wagons
 #include "wagon/passenger_wagon.pnml"
+#include "wagon/flat_car/flat_car.pnml"
 
 // Sorting
 #include "sort.pnml"

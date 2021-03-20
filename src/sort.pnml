@@ -38,7 +38,7 @@ sort(FEAT_TRAINS, [
     ko_train_PASSWG,                 // 5900
     ko_train_PASSWGP,                // 5901
 
-    // ko_train_FLATC,
+    ko_train_FLAT_CAR,               // 5910
     // ko_train_HOPPER,
     // ko_train_SMALLCARGO,
 

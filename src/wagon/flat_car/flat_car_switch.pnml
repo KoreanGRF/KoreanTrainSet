@@ -1,0 +1,53 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Random wagons
+switch(FEAT_TRAINS, SELF, sw_FLAT_CAR_wagon_default, random_bits % 27) {
+	 0: sg_FLAT_CAR_1_40ft_01_wagon;
+	 1: sg_FLAT_CAR_1_40ft_02_wagon;
+	 2: sg_FLAT_CAR_1_40ft_03_wagon;
+	 3: sg_FLAT_CAR_1_40ft_04_wagon;
+	 4: sg_FLAT_CAR_1_40ft_05_wagon;
+	 5: sg_FLAT_CAR_1_40ft_06_wagon;
+	 6: sg_FLAT_CAR_1_40ft_07_wagon;
+	 7: sg_FLAT_CAR_1_40ft_08_wagon;
+	 8: sg_FLAT_CAR_1_40ft_09_wagon;
+
+	 9: sg_FLAT_CAR_1_20ft_01_wagon;
+	10: sg_FLAT_CAR_1_20ft_02_wagon;
+	11: sg_FLAT_CAR_1_20ft_03_wagon;
+	12: sg_FLAT_CAR_1_20ft_04_wagon;
+	13: sg_FLAT_CAR_1_20ft_05_wagon;
+	14: sg_FLAT_CAR_1_20ft_06_wagon;
+	15: sg_FLAT_CAR_1_20ft_07_wagon;
+	16: sg_FLAT_CAR_1_20ft_08_wagon;
+	17: sg_FLAT_CAR_1_20ft_09_wagon;
+	18: sg_FLAT_CAR_1_20ft_10_wagon;
+	19: sg_FLAT_CAR_1_20ft_11_wagon;
+	20: sg_FLAT_CAR_1_20ft_12_wagon;
+	21: sg_FLAT_CAR_1_20ft_13_wagon;
+	22: sg_FLAT_CAR_1_20ft_14_wagon;
+	23: sg_FLAT_CAR_1_20ft_15_wagon;
+	24: sg_FLAT_CAR_1_20ft_16_wagon;
+	25: sg_FLAT_CAR_1_20ft_17_wagon;
+	26: sg_FLAT_CAR_1_20ft_18_wagon;
+	set_FLAT_CAR_1_empty_wagon;
+}
+
+// Random wagons (Steel)
+switch(FEAT_TRAINS, SELF, sw_FLAT_CAR_steel_wagon, random_bits % 4) {
+	1: sg_FLAT_CAR_steelAB_wagon;
+	2: sg_FLAT_CAR_steelBA_wagon;
+	3: sg_FLAT_CAR_steelBB_wagon;
+	sg_FLAT_CAR_steelAA_wagon;
+}
+
+// Graphic switch depend on cargo type
+switch(FEAT_TRAINS, SELF, sw_FLAT_CAR_wagon, most_common_cargo_type) {
+	STEL: sw_FLAT_CAR_steel_wagon;
+	METL: sw_FLAT_CAR_steel_wagon;
+	sw_FLAT_CAR_wagon_default;
+}

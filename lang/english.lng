@@ -4,7 +4,7 @@
 STR_GRF_NAME                                     :Korean Train Set
 STR_GRF_NAME_WITH_VER                            :Korean Train Set {VERSION}
 STR_GRF_DESC                                     :{}{BLACK}Korean Train Set adds trains and railways of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Daejeon, Busan subways/metros and some electric locomotives of Korail.{}(Updated: {RECENT_UPDATED}){}{}{SILVER}+ Author: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL                                      :{AUTHOR_WEBSITE}/ottd/newgrf/ko_train_set/?lang=en
+STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko_train_set/?lang=en
 
 
 # Vehicle's name
@@ -36,6 +36,8 @@ STR_MUGUNGHWA_CAR_NAME                           :[KTS] Mugunghwa passenger car
 STR_TONGIL_CAR_NAME                              :[KTS] Tongil passenger car
 STR_POWER_CAR_NAME                               :[KTS] Power car
 STR_CAFE_CAR_NAME                                :[KTS] Cafe car
+
+STR_FLAT_CAR_NAME                                :[KTS] Flat car
 
 # Metro
 STR_SEOUL_METRO_1_NAME                           :[KTS] Seoul Line 1, Commuter trains
