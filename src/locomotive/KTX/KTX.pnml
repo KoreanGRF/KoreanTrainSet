@@ -313,11 +313,16 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
         start_stop:                     sw_ko_train_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
+    // KTX-EUM: TC+M'+M+M+M'+TC, so all cars are powered car. Hence, we give a power to nonpower car, too.
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_EUM_power_wagon;
+        cargo_capacity:                 sw_EUM_capacity_in_custom;
+        power:                          POWER_IN_KW(200);
+    }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_EUM_power_wagon;
         cargo_capacity:                 sw_EUM_capacity_in_custom;
         power:                          POWER_IN_KW(200);
     }
-    // KTX-EUM: TC+M'+M+M+M'+TC, so it is not necessary to attach non-power car
 }
 // End of "EUM"
