@@ -77,7 +77,7 @@ item(FEAT_TRAINS, ko_train_KTX1N, 5551) {
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
         bitmask_vehicle_info:           0;
     }
     graphics {
@@ -149,7 +149,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
         bitmask_vehicle_info:           0;
     }
     graphics {
@@ -221,7 +221,7 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
         bitmask_vehicle_info:           0;
     }
     graphics {
@@ -296,7 +296,7 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
         bitmask_vehicle_info:           0;
     }
     graphics {
