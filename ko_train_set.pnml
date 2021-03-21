@@ -8,35 +8,40 @@
  * NewGRF basic information
  *----------------------------------------------------------------------------*/
 grf {
-	grfid: "TK\55\55";
-	name:  string(STR_GRF_NAME_WITH_VER);
-	desc:  string(STR_GRF_DESC);
-	url:   string(STR_GRF_URL);
-	version: 200;
-	min_compatible_version: 200;
+    grfid: "TK\55\55";
+    name:  string(STR_GRF_NAME_WITH_VER);
+    desc:  string(STR_GRF_DESC);
+    url:   string(STR_GRF_URL);
+    version: 200;
+    min_compatible_version: 200;
 
-	
-	// Parameters
-	#include "src/parameter.pnml"
+    
+    // Parameters
+    #include "src/parameter.pnml"
 }
 
 // Check OpenTTD Version
 if(ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 7, 0, 21278)) {
-	error(FATAL, string(STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION), "1.7.0/r21278");
+    error(FATAL, string(STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION), "1.7.0/r21278");
 }
 
 // Tables
 cargotable {
-	PASS, MAIL, COAL, IORE, CORP, GRAI, LVST, GOOD, VALU, WOOD, STEL, WHEA, TOFF, FRUT, MAIZ, CORE,
-	CTCD, SUGR, OIL_, WATR, COLA, FZDR, ACID, CHLO, MILK, RUBR, PLST, BEER, DYES, EOIL, KAOL, PETR,
-	RFPR, FUEL,	METL
+    // TTD
+    PASS, COAL, MAIL, OIL_, LVST, GOOD, GRAI, WOOD, IORE, STEL, VALU, PAPR, WHEA, FOOD, GOLD, RUBR,
+    FRUT, MAIZ, CORE, WATR, DIAM, SUGR, BATT, BUBL, COLA, CTCD, FZDR, PLST, SWET, TOFF, TOYS,
+
+    // FIRS
+    ACID, BEER, AORE, BEAN, BDMT, CASS, CMNT, RFPR, CHLO, CLAY, JAVA, COKE, COPR, EOIL, POWR, ENSP, BOOM, FMSP, FERT, FISH,
+    KAOL, LIME, MNO2, METL, MILK, NITR, NUTS, MNSP, PEAT, PETR, PHOS, IRON, PIPE, FICR, PORE, QLME, RCYC, SALT, SAND, SCMT,
+	SLAG, SASH, GRVL, SGBT, SULP, WDPR, VBOD, VPTS, VEHI, WOOL, ZINC
 }
 
 // 속도, 가격, 유지비 변수 및 계수 설정
-sw_cost_factor =			1 << coeff_cost_factor;
-sw_running_cost_factor =	1 << coeff_running_cost_factor;
-sw_cargo_capacity_factor =	1 << coeff_cargo_capacity_factor;
-sw_loading_speed_factor =	1 << coeff_loading_speed_factor;
+sw_cost_factor =            1 << coeff_cost_factor;
+sw_running_cost_factor =    1 << coeff_running_cost_factor;
+sw_cargo_capacity_factor =  1 << coeff_cargo_capacity_factor;
+sw_loading_speed_factor =   1 << coeff_loading_speed_factor;
 
 
 // Macro
