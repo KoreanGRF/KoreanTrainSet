@@ -59,7 +59,7 @@ item(FEAT_TRAINS, ko_train_FLAT_CAR, 5910) {
     }
     graphics {
         default:                        sw_FLAT_CAR_wagon;
-        purchase:                       set_FLAT_CAR_wagon_purchase;
+        purchase:                       set_FLAT_CAR_purchase;
 
         cost_factor:                    sw_FLAT_CAR_cost;
         running_cost_factor:            sw_FLAT_CAR_runningcost;

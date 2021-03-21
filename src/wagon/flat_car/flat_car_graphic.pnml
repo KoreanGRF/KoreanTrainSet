@@ -474,6 +474,6 @@ spritegroup sg_FLAT_CAR_1_20ft_18_wagon {
 }
 
 // Alias of purchase image
-switch(FEAT_TRAINS, SELF, set_FLAT_CAR_wagon_purchase, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, set_FLAT_CAR_purchase, cargo_subtype) {
     set_FLAT_CAR_1_purchase;
 }
