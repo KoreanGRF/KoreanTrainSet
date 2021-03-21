@@ -40,6 +40,7 @@ STR_CAFE_CAR_NAME                                :[KTS] 카페 객차
 STR_FLAT_CAR_NAME                                :[KTS] 평판화차
 STR_HOPPER_CAR_NAME                              :[KTS] 호퍼차
 STR_BAGGAGE_CAR_NAME                             :[KTS] 수화물차
+STR_TANK_CAR_NAME                                :[KTS] 유조차
 
 # Metro
 STR_SEOUL_METRO_1_NAME                           :[KTS] 수도권 1호선, 통근형

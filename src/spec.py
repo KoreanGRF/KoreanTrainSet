@@ -71,6 +71,7 @@ trainList['PASSWG']             = None,     10,    15,          None,    10,    
 trainList['FLAT_CAR']           = None,     10,    15,          25,      5,            None,   (1950, 1, 1)
 trainList['HOPPER_CAR']         = None,     10,    15,          25,      5,            None,   (1950, 1, 1)
 trainList['BAGGAGE_CAR']        = 120,      10,    15,          25,      5,            None,   (1950, 1, 1)
+trainList['TANK_CAR']           = None,     10,    15,          25,      5,            None,   (1950, 1, 1)
 
 
 # Generates spec.pnml

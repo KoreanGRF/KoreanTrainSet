@@ -1,0 +1,24 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Tank car
+ */
+
+// Graphic
+spriteset(set_TANK_CAR_1_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
+    [60+0,     0,     8,    20,     -3,    -10]
+    [60+15,    0,    19,    16,    -13,     -9]
+    [60+45,    0,    28,    11,    -16,     -7]
+    [60+80,    0,    19,    16,     -4,     -8]
+}
+spriteset(set_TANK_CAR_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
+    tmpl_purchase_detail(0, 0, 28, 11, -16, -7)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_TANK_CAR_purchase, cargo_subtype) {
+    set_TANK_CAR_purchase;
+}
