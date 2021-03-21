@@ -1,0 +1,73 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * BAGGAGE_CAR
+ */
+SPEED_GENERAL(BAGGAGE_CAR)
+         COST(BAGGAGE_CAR)
+      RUNNING(BAGGAGE_CAR)
+     CAPACITY(BAGGAGE_CAR)
+      LOADING(BAGGAGE_CAR)
+
+// Graphics
+#include "baggage_car_graphic.pnml"
+
+// Switch
+#include "baggage_car_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_BAGGAGE_CAR, 5912) {
+    property {
+        // Common properties
+        name:                           string(STR_BAGGAGE_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_BAGGAGE_CAR_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         17 ton;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 36;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS, MAIL, LVST, VALU, PAPR, GOLD, DIAM];
+        cargo_disallow_refit:           [];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     1;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_BAGGAGE_CAR_wagon;
+        purchase:                       sw_BAGGAGE_CAR_purchase;
+
+        speed:                          sw_BAGGAGE_CAR_speed_in_custom;
+        cost_factor:                    sw_BAGGAGE_CAR_cost;
+        running_cost_factor:            sw_BAGGAGE_CAR_runningcost;
+        cargo_capacity:                 sw_BAGGAGE_CAR_capacity_in_custom;
+        loading_speed:                  sw_BAGGAGE_CAR_loadingspeed;
+
+        can_attach_wagon:               sw_Kxxxx_attach;
+        cargo_subtype_text:             sw_BAGGAGE_CAR_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}

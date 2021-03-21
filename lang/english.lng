@@ -39,6 +39,7 @@ STR_CAFE_CAR_NAME                                :[KTS] Cafe car
 
 STR_FLAT_CAR_NAME                                :[KTS] Flat car
 STR_HOPPER_CAR_NAME                              :[KTS] Hopper car
+STR_BAGGAGE_CAR_NAME                             :[KTS] Baggage car
 
 # Metro
 STR_SEOUL_METRO_1_NAME                           :[KTS] Seoul Line 1, Commuter trains
@@ -115,7 +116,14 @@ STR_REFIT_PASSWAGON_FIRSTCAR                     : (First class car)
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                           : (Black)
 STR_REFIT_COLOUR_BLUE                            : (Blue)
+STR_REFIT_COLOUR_SKYBLUE                         : (Skyblue)
+STR_REFIT_COLOUR_DARKBLUE                        : (Darkblue)
 STR_REFIT_COLOUR_BROWN                           : (Brown)
+STR_REFIT_COLOUR_RED                             : (Red)
+STR_REFIT_COLOUR_ORANGE                          : (Orange)
+STR_REFIT_COLOUR_DARKGREEN                       : (Darkgreen)
+STR_REFIT_COLOUR_OLIVE                           : (Olive)
+STR_REFIT_MAIL_CAR                               : (Mail carriage)
 
 
 # Seoul metropolitan Line 1
