@@ -66,6 +66,7 @@ item(FEAT_TRAINS, ko_train_TANK_CAR, 5913) {
         cargo_capacity:                 sw_TANK_CAR_capacity;
         loading_speed:                  sw_TANK_CAR_loadingspeed;
 
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        cargo_subtype_text:             sw_TANK_CAR_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }

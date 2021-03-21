@@ -124,6 +124,7 @@ STR_REFIT_COLOUR_RED                             : (빨간색)
 STR_REFIT_COLOUR_ORANGE                          : (주황색)
 STR_REFIT_COLOUR_DARKGREEN                       : (짙은 녹색)
 STR_REFIT_COLOUR_OLIVE                           : (올리브색)
+STR_REFIT_COLOUR_SILVER                          : (은색)
 STR_REFIT_MAIL_CAR                               : (우편차)
 
 

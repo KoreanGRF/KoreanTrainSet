@@ -124,6 +124,7 @@ STR_REFIT_COLOUR_RED                             : (Red)
 STR_REFIT_COLOUR_ORANGE                          : (Orange)
 STR_REFIT_COLOUR_DARKGREEN                       : (Darkgreen)
 STR_REFIT_COLOUR_OLIVE                           : (Olive)
+STR_REFIT_COLOUR_SILVER                          : (Silver)
 STR_REFIT_MAIL_CAR                               : (Mail carriage)
 
 

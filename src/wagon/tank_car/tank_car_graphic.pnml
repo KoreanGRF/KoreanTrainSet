@@ -6,13 +6,23 @@
 /**
  * Tank car
  */
+// Template
+template tmpl_tank_car(x, y) {
+    [x+0,     y,     8,    20,     -3,    -10]
+    [x+15,    y,    19,    16,    -13,     -9]
+    [x+45,    y,    28,    11,    -16,     -7]
+    [x+80,    y,    19,    16,     -4,     -8]
+}
 
 // Graphic
 spriteset(set_TANK_CAR_1_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
-    [60+0,     0,     8,    20,     -3,    -10]
-    [60+15,    0,    19,    16,    -13,     -9]
-    [60+45,    0,    28,    11,    -16,     -7]
-    [60+80,    0,    19,    16,     -4,     -8]
+    tmpl_tank_car(60, 0)
+}
+spriteset(set_TANK_CAR_2_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
+    tmpl_tank_car(60, 30)
+}
+spriteset(set_TANK_CAR_3_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
+    tmpl_tank_car(60, 60)
 }
 spriteset(set_TANK_CAR_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
     tmpl_purchase_detail(0, 0, 28, 11, -15, -5)
