@@ -13,16 +13,16 @@
       LOADING(PASSWG)
 
 // Temp graphic
-spriteset(set_PASSWG_purchase, "./src/wagon/passenger_wagon_purchase.png") {
+spriteset(set_PASSWG_purchase, "./src/wagon/passenger_wagon/passenger_wagon_purchase.png") {
     tmpl_purchase_detail(0, 0, 32, 12, -16, -8)
 }
-spriteset(set_PASSWG_TEMP_wagon, "./src/wagon/passenger_wagon.png") {
+spriteset(set_PASSWG_TEMP_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     [0,    0,   8,   22,    -3,   -11]
     [15,   0,  21,   17,   -14,    -8]
     [45,   0,  32,   12,   -17,    -8]
     [95,   0,  21,   17,    -6,    -8]
 }
-spriteset(set_PASSWGP_TEMP_wagon, "./src/wagon/passenger_wagon.png") {
+spriteset(set_PASSWGP_TEMP_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     [0,   30,   8,   22,    -3,   -11]
     [15,  30,  21,   17,   -14,    -8]
     [45,  30,  32,   12,   -17,    -8]

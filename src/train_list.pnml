@@ -72,7 +72,7 @@
 #include "LRT/uijeongbu/uijeongbu.pnml"
 
 // Wagons
-#include "wagon/passenger_wagon.pnml"
+#include "wagon/passenger_wagon/passenger_wagon.pnml"
 #include "wagon/flat_car/flat_car.pnml"
 
 // Sorting
