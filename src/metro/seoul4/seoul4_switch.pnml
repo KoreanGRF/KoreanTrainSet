@@ -10,8 +10,9 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_cargo_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_METRO_341K_VVVF_1ST_2_NAME);
     2: return string(STR_REFIT_METRO_341K_VVVF_2ND_1_NAME);
     3: return string(STR_REFIT_METRO_341K_VVVF_1ST_1_NAME);
-    4: return string(STR_REFIT_METRO_3K_VVVF_2_NAME);   // Uses Line 3's subtype 4
+    4: return string(STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME);
     5: return string(STR_REFIT_METRO_LINE_4_2019_NAME);
+    6: return string(STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME);
     return string(STR_REFIT_METRO_341K_VVVF_2ND_2_NAME);
 }
 
@@ -21,8 +22,10 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engineH, cargo_subtype) {
     1: set_341K_VVVF_1ST_2_engineH;
     2: set_341K_VVVF_2ND_1_engineH;
     3: set_341K_VVVF_1ST_1_engineH;
+    // SMETRO_4K_VVVF is very similar with 3K_VVVF_2, but it is slightly different. However we use 3K_VVVF_1 since the graphic is not implemented.
     4: set_3K_VVVF_1_engineH;
     5: set_LINE_4_2019_engineH;
+    6: set_SMETRO_4K_VVVF_3RD_engineH;
     set_341K_VVVF_2ND_2_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engineT, cargo_subtype) {
@@ -32,6 +35,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engineT, cargo_subtype) {
     3: set_341K_VVVF_1ST_1_engineT;
     4: set_3K_VVVF_1_engineT;
     5: set_LINE_4_2019_engineT;
+    6: set_SMETRO_4K_VVVF_3RD_engineT;
     set_341K_VVVF_2ND_2_engineT;
 }
 
@@ -43,6 +47,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_panto_cargo_subtype, cargo_subt
     3: set_341K_VVVF_1ST_1_wagon_panto;
     4: set_3K_VVVF_1_wagon_panto;
     5: set_LINE_4_2019_wagon_panto;
+    6: set_SMETRO_4K_VVVF_3RD_wagon_panto;
     set_341K_VVVF_2ND_2_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_cargo_subtype, cargo_subtype) {
@@ -52,6 +57,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_cargo_subtype, cargo_subtype) {
     3: set_341K_VVVF_1ST_1_wagon;
     4: set_3K_VVVF_1_wagon;
     5: set_LINE_4_2019_wagon;
+    6: set_SMETRO_4K_VVVF_3RD_wagon;
     set_341K_VVVF_2ND_2_wagon;
 }
 

@@ -172,7 +172,8 @@ STR_REFIT_METRO_341K_VVVF_1ST_2_NAME             : (Korail 341k VVVF 1세대 / �
 STR_REFIT_METRO_341K_VVVF_2ND_1_NAME             : (Korail 341k VVVF 2세대 / 구 도색)
 STR_REFIT_METRO_341K_VVVF_2ND_2_NAME             : (Korail 341k VVVF 2세대 / 현재 도색)
 STR_REFIT_METRO_LINE_4_2019_NAME                 : (Korail 4호선 2019년 도입분)
-STR_REFIT_METRO_SMETRO_4K_VVVF_NAME              : (SMetro 4k VVVF)
+STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME      : (SMetro 4k 1·2세대 VVVF)
+STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME          : (SMetro 4k 3세대 VVVF 2020년 도입분)
 
 # Seoul Metro Line 5-8, Seoul Metro Line9
 STR_REFIT_METRO_SMETRO_SR0X_NAME                 : (서울교통공사 SR0x VVVF)
