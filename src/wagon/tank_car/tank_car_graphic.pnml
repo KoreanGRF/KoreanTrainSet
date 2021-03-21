@@ -15,7 +15,7 @@ spriteset(set_TANK_CAR_1_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
     [60+80,    0,    19,    16,     -4,     -8]
 }
 spriteset(set_TANK_CAR_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
-    tmpl_purchase_detail(0, 0, 28, 11, -16, -7)
+    tmpl_purchase_detail(0, 0, 28, 11, -15, -5)
 }
 
 // Alias of purchase image

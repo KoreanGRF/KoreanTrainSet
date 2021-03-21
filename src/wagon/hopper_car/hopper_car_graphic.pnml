@@ -17,7 +17,7 @@ template tmpl_hopper_by_coor(x, y) {
 
 // Graphic
 spriteset(set_HOPPER_CAR_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
-    tmpl_purchase_detail(0, 0, 25, 10, -15, -6)
+    tmpl_purchase_detail(0, 0, 25, 10, -13, -4)
 }
 spriteset(set_HOPPER_CAR_1_empty_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
     tmpl_hopper_by_coor(60, 0)
