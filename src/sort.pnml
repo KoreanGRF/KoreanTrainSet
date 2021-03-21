@@ -39,7 +39,7 @@ sort(FEAT_TRAINS, [
     ko_train_PASSWGP,                // 5901
 
     ko_train_FLAT_CAR,               // 5910
-    // ko_train_HOPPER,
+    ko_train_HOPPER_CAR,             // 5911
     // ko_train_SMALLCARGO,
 
     ko_train_SEOUL_METRO_1,          // 5711

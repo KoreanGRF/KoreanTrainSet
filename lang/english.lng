@@ -38,6 +38,7 @@ STR_POWER_CAR_NAME                               :[KTS] Power car
 STR_CAFE_CAR_NAME                                :[KTS] Cafe car
 
 STR_FLAT_CAR_NAME                                :[KTS] Flat car
+STR_HOPPER_CAR_NAME                              :[KTS] Hopper car
 
 # Metro
 STR_SEOUL_METRO_1_NAME                           :[KTS] Seoul Line 1, Commuter trains
@@ -110,6 +111,11 @@ STR_REFIT_PAINTING_RDC_MUGUNGHWA_CAFE            : (RDC Mugunghwa cafe car)
 STR_REFIT_PAINTING_MUGUNGHWA_CAFE                : (Mugunghwa cafe car)
 STR_REFIT_PASSWAGON_NORMALCAR                    : (Normal class car)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (First class car)
+
+# Refit (etc)
+STR_REFIT_COLOUR_BLACK                           : (Black)
+STR_REFIT_COLOUR_BLUE                            : (Blue)
+STR_REFIT_COLOUR_BROWN                           : (Brown)
 
 
 # Seoul metropolitan Line 1

@@ -38,6 +38,7 @@ STR_POWER_CAR_NAME                               :[KTS] 발전차
 STR_CAFE_CAR_NAME                                :[KTS] 카페 객차
 
 STR_FLAT_CAR_NAME                                :[KTS] 평판화차
+STR_HOPPER_CAR_NAME                              :[KTS] 호퍼차
 
 # Metro
 STR_SEOUL_METRO_1_NAME                           :[KTS] 수도권 1호선, 통근형
@@ -110,6 +111,11 @@ STR_REFIT_PAINTING_RDC_MUGUNGHWA_CAFE            : (RDC 무궁화호 카페 객�
 STR_REFIT_PAINTING_MUGUNGHWA_CAFE                : (무궁화호 카페 객차)
 STR_REFIT_PASSWAGON_NORMALCAR                    : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (특실 객차)
+
+# Refit (etc)
+STR_REFIT_COLOUR_BLACK                           : (검은색)
+STR_REFIT_COLOUR_BLUE                            : (파란색)
+STR_REFIT_COLOUR_BROWN                           : (갈색)
 
 
 # Seoul metropolitan Line 1
