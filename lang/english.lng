@@ -146,6 +146,7 @@ STR_REFIT_METRO_2K_CHOPPER_NAME                  : (SMetro 2k CHOPPER)
 STR_REFIT_METRO_2K_VVVF_1ST_NAME                 : (SMetro 2k 1st VVVF)
 STR_REFIT_METRO_2K_VVVF_2ND_NAME                 : (SMetro 2k 2nd VVVF)
 STR_REFIT_METRO_2K_VVVF_3RD_NAME                 : (SMetro 2k 3rd VVVF)
+STR_REFIT_METRO_2K_VVVF_4TH_NAME                 : (SMetro 2k 4th VVVF)
 STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            : (SMetro 2k Modified rheostatic)
 
 # Seoul metropolitan 3
