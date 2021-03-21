@@ -8,3 +8,4 @@ docs/*.txt
 *.nml
 src/spec.pnml
 custom_tags.txt
+*.pyc

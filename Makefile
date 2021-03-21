@@ -46,9 +46,19 @@ all: $(GRF_GENERATE) doc bundle_tar
 clean::
 	@-rm -rf ./generated/readme.txt
 
+# Generate document for download page
+download_page: spec.pnml
+	@echo "[DOWNLOAD_PAGE] $@"
+	@if [ ! -e ./generated/download_page/ ]; then mkdir ./generated/download_page/; fi
+	@if [ ! -e ./generated/download_page/_static/ ]; then mkdir ./generated/download_page/_static/; fi
+	@$(PYTHON) ./src/generate_doc.py
+clean::
+	@-rm -rf $@
+
+
 
 # Documents
-doc: generated $(DOC_GENERATE) $(GRF_GENERATE)
+doc: generated $(DOC_GENERATE) $(GRF_GENERATE) download_page
 	@cp $(CP_FLAGS) ./docs/readme.txt ./generated/readme.txt
 	@cp $(CP_FLAGS) ./docs/license.txt ./generated/license.txt
 	@cp $(CP_FLAGS) ./docs/changelog.md ./generated/changelog.md
@@ -60,7 +70,7 @@ clean::
 # Make generated directory
 generated:
 	@echo "[MKDIR generated]"
-	@ if [ ! -e $@ ]; then mkdir $@; fi
+	@if [ ! -e $@ ]; then mkdir $@; fi
 clean::
 	@echo "[CLEAN generated]"
 	@-rm -rf ./generated
@@ -116,3 +126,4 @@ clean::
 # Clean
 clean::
 	@-rm -rf ./.nmlcache
+	@-rm -rf ./src/__pycache__
