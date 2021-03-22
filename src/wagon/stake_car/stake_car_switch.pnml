@@ -1,0 +1,56 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_wagon, cargo_subtype) {
+    set_STAKE_CAR_empty_wagon;
+}
+
+// Random wagons for each cargos
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_COPR_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_COPR_B_wagon;
+    sg_STAKE_CAR_COPR_A_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_ENSP_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_ENSP_B_wagon;
+    sg_STAKE_CAR_ENSP_A_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_FMSP_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_FMSP_B_wagon;
+    sg_STAKE_CAR_FMSP_A_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_PAPR_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_PAPR_B_wagon;
+    sg_STAKE_CAR_PAPR_A_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_PIPE_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_PIPE_B_wagon;
+    sg_STAKE_CAR_PIPE_A_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_STEL_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_STEL_B_wagon;
+    sg_STAKE_CAR_STEL_A_wagon;
+}
+// switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VEBO_wagon, random_bits % 2) {
+//     1: sg_STAKE_CAR_VEBO_B_wagon;
+//     sg_STAKE_CAR_VEBO_A_wagon;
+// }
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VEHI_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_VEHI_B_wagon;
+    sg_STAKE_CAR_VEHI_A_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_WDPR_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_WDPR_B_wagon;
+    sg_STAKE_CAR_WDPR_A_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_WOOD_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_WOOD_B_wagon;
+    sg_STAKE_CAR_WOOD_A_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_WOOL_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_WOOL_B_wagon;
+    sg_STAKE_CAR_WOOL_A_wagon;
+}

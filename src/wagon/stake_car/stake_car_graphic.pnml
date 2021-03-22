@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Stake car
+ */
+
+// Template
+template tmpl_stake_car(x, y) {
+    [x+0,      y,     8,    20,    -3,   -10]
+    [x+15,     y,    22,    15,   -15,    -7]
+    [x+45,     y,    31,    10,   -17,    -6]
+    [x+80,     y,    22,    15,    -7,    -8]
+}
+template tmpl_stake_car_long(x, y) {
+    [x+0,      y,     8,    23,    -3,    -8]
+    [x+15,     y,    22,    15,   -15,    -7]
+    [x+45,     y,    31,    10,   -17,    -6]
+    [x+80,     y,    22,    15,    -7,    -8]
+}
+
+// Graphic
+spriteset(set_STAKE_CAR_purchase, "./src/wagon/stake_car/STAKE_CAR.png") {
+    tmpl_purchase_detail(0, 0, 31, 10, -17, -6)
+}
+spriteset(set_STAKE_CAR_empty_wagon, "./src/wagon/stake_car/STAKE_CAR.png") {
+    tmpl_stake_car(60, 0)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_purchase, cargo_subtype) {
+    set_STAKE_CAR_purchase;
+}
+
+#include "stake_car_COPR_graphic.pnml"
+#include "stake_car_ENSP_graphic.pnml"
+#include "stake_car_FMSP_graphic.pnml"
+#include "stake_car_PAPR_graphic.pnml"
+#include "stake_car_PIPE_graphic.pnml"
+#include "stake_car_STEL_graphic.pnml"
+// #include "stake_car_VEBO_graphic.pnml"
+#include "stake_car_VEHI_graphic.pnml"
+#include "stake_car_WDPR_graphic.pnml"
+#include "stake_car_WOOD_graphic.pnml"
+#include "stake_car_WOOL_graphic.pnml"

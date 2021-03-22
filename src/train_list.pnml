@@ -77,6 +77,7 @@
 #include "wagon/hopper_car/hopper_car.pnml"
 #include "wagon/baggage_car/baggage_car.pnml"
 #include "wagon/tank_car/tank_car.pnml"
+#include "wagon/stake_car/stake_car.pnml"
 
 // Sorting
 #include "sort.pnml"

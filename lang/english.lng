@@ -41,6 +41,7 @@ STR_FLAT_CAR_NAME                                :[KTS] Flat car
 STR_HOPPER_CAR_NAME                              :[KTS] Hopper car
 STR_BAGGAGE_CAR_NAME                             :[KTS] Baggage car
 STR_TANK_CAR_NAME                                :[KTS] Tank car
+STR_STAKE_CAR_NAME                               :[KTS] Stake car
 
 # Metro
 STR_SEOUL_METRO_1_NAME                           :[KTS] Seoul Line 1, Commuter trains

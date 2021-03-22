@@ -14,7 +14,6 @@
 
 // Graphics
 #include "flat_car_graphic.pnml"
-#include "flat_car_steel_graphic.pnml"
 
 // Switch
 #include "flat_car_switch.pnml"
@@ -43,8 +42,8 @@ item(FEAT_TRAINS, ko_train_FLAT_CAR, 5910) {
         cargo_capacity:                 25;
         refittable_cargo_classes:       bitmask(CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_REFRIGERATED, CC_COVERED);
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [GOOD, STEL, VALU, FOOD, BATT, BUBL, FZDR, TOYS];
-        cargo_disallow_refit:           [LVST, WOOD, PASS];
+        cargo_allow_refit:              [GOOD, VALU, FOOD, BATT, BUBL, FZDR, TOYS];
+        cargo_disallow_refit:           [LVST, WOOD, PASS, STEL];
         loading_speed:                  5;
 
         // Costs
