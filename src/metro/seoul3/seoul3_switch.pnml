@@ -15,7 +15,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_cargo_subtype_text, cargo_subtype) {
     return string(STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME);
 }
 
-// // Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_engineH, cargo_subtype) {
     0: set_3K_SMETRO_VVVF_2ND_engineH;
     // 1: set_3K_SMETRO_VVVF_1ST_engineH;
@@ -55,7 +55,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_wagon_cargo_subtype, cargo_subtype) {
     set_3K_SMETRO_VVVF_2ND_wagon;
 }
 
-// Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
     1: sw_SEOUL_METRO_3_engineT;
     sw_SEOUL_METRO_3_engineH;

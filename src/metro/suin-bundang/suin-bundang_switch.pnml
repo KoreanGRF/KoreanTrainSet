@@ -12,7 +12,7 @@ switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_cargo_subtype_text, cargo_subtype) {
     return string(STR_REFIT_METRO_351K_VVVF_3RD_NAME);
 }
 
-// // Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineH, cargo_subtype) {
     0: set_351K_VVVF_3RD_engineH;
     1: set_351K_VVVF_2ND_engineH;
@@ -40,7 +40,7 @@ switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon_cargo_subtype, cargo_subtype) {
     set_351K_VVVF_3RD_wagon;
 }
 
-// Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
     1: sw_SUIN_BUNDANG_engineT;
     sw_SUIN_BUNDANG_engineH;

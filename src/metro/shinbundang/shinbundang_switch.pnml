@@ -9,7 +9,7 @@
 //     return CB_RESULT_NO_TEXT;
 // }
 
-// Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_engineH, cargo_subtype) {
     set_D00_engineH;
 }
@@ -25,7 +25,7 @@ switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_wagon_cargo_subtype, cargo_subtype) {
     set_D00_wagon;
 }
 
-// Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
     1: sw_SHINBUNDANG_engineT;
     sw_SHINBUNDANG_engineH;

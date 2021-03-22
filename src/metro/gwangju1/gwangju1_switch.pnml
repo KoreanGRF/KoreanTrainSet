@@ -9,7 +9,7 @@
 //     return CB_RESULT_NO_TEXT;
 // }
 
-// Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_GWANGJU_METRO_1_engineH, cargo_subtype) {
     set_GWANGJU_METRO_1K_engineH;
 }
@@ -25,7 +25,7 @@ switch(FEAT_TRAINS, SELF, sw_GWANGJU_METRO_1_wagon_cargo_subtype, cargo_subtype)
     set_GWANGJU_METRO_1K_wagon;
 }
 
-// Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_GWANGJU_METRO_1_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
     1: sw_GWANGJU_METRO_1_engineT;
     sw_GWANGJU_METRO_1_engineH;

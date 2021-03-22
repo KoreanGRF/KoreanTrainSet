@@ -9,7 +9,7 @@
 //     return CB_RESULT_NO_TEXT;
 // }
 
-// Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_engineH, cargo_subtype) {
     set_3K_engineH;
 }
@@ -25,7 +25,7 @@ switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_wagon_cargo_subtype, cargo_subtype) {
     set_3K_wagon;
 }
 
-// Engine - for others
+// Engine
 switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
     1: sw_BUSAN_METRO_3_engineT;
     sw_BUSAN_METRO_3_engineH;
