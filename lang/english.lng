@@ -37,7 +37,7 @@ STR_TONGIL_CAR_NAME                              :[KTS] Tongil passenger car
 STR_POWER_CAR_NAME                               :[KTS] Power car
 STR_CAFE_CAR_NAME                                :[KTS] Cafe car
 
-STR_FLAT_CAR_NAME                                :[KTS] Flat car
+STR_FLAT_CAR_NAME                                :[KTS] Container flat car
 STR_HOPPER_CAR_NAME                              :[KTS] Hopper car
 STR_BAGGAGE_CAR_NAME                             :[KTS] Baggage car
 STR_TANK_CAR_NAME                                :[KTS] Tank car
