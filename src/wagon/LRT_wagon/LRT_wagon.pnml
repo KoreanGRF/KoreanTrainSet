@@ -48,7 +48,7 @@ item(FEAT_TRAINS, ko_train_LRT_wagon, 5950) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_PASSWG_wagon;
+        default:                        set_PASSWG_wagon;
         purchase:                       set_PASSWG_purchase;
 
         cost_factor:                    sw_PASSWG_cost;

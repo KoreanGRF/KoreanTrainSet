@@ -12,26 +12,21 @@
 //     CAPACITY(PASSWG)
       LOADING(PASSWG)
 
-// Temp graphic
+// Graphic
 spriteset(set_PASSWG_purchase, "./src/wagon/passenger_wagon/passenger_wagon_purchase.png") {
     tmpl_purchase_detail(0, 0, 32, 12, -16, -8)
 }
-spriteset(set_PASSWG_TEMP_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
+spriteset(set_PASSWG_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     [0,    0,   8,   22,    -3,   -11]
     [15,   0,  21,   17,   -14,    -8]
     [45,   0,  32,   12,   -17,    -8]
     [95,   0,  21,   17,    -6,    -8]
 }
-spriteset(set_PASSWGP_TEMP_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
+spriteset(set_PASSWGP_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     [0,   30,   8,   22,    -3,   -11]
     [15,  30,  21,   17,   -14,    -8]
     [45,  30,  32,   12,   -17,    -8]
     [95,  30,  21,   17,    -6,    -8]
-}
-
-// Wagon
-switch(FEAT_TRAINS, PARENT, sw_PASSWG_wagon, vehicle_type_id) {
-    set_PASSWG_TEMP_wagon;
 }
 
 // Dummy cargo subtype text
@@ -39,6 +34,7 @@ switch(FEAT_TRAINS, PARENT, sw_PASSWG_cargo_subtype_text, vehicle_type_id) {
     return CB_RESULT_NO_TEXT;
 }
 
+// Item
 item(FEAT_TRAINS, ko_train_PASSWG, 5900) {
     property {
         // Common properties
@@ -49,7 +45,7 @@ item(FEAT_TRAINS, ko_train_PASSWG, 5900) {
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         // Spec
-        power:                          0 kW;
+        power:                          0;
         weight:                         50 ton;
 
         // Model
@@ -59,7 +55,7 @@ item(FEAT_TRAINS, ko_train_PASSWG, 5900) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 1;
+        cargo_capacity:                 50;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -68,15 +64,14 @@ item(FEAT_TRAINS, ko_train_PASSWG, 5900) {
         // Costs
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_ELECTRIC;
-        running_cost_factor:            var_PASSWG_RUNNINGCOST;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_PASSWG_wagon;
+        default:                        set_PASSWG_wagon;
         purchase:                       set_PASSWG_purchase;
 
         cost_factor:                    sw_PASSWG_cost;
@@ -110,7 +105,7 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 5901) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 1;
+        cargo_capacity:                 50;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -126,7 +121,7 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 5901) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        set_PASSWGP_TEMP_wagon;
+        default:                        set_PASSWGP_wagon;
         purchase:                       set_PASSWG_purchase;
 
         cost_factor:                    sw_PASSWG_cost;
