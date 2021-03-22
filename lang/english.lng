@@ -29,7 +29,7 @@ STR_MATE2_NAME                                   :[KTS] Mate 2
 STR_PASHI5_NAME                                  :[KTS] Pashi 5
 STR_MIKA3_NAME                                   :[KTS] Mika 3
 
-STR_PASSWG_NAME                                  :[KTS] Passenger car (unpowered)
+STR_PASSWG_NAME                                  :[KTS] Passenger car
 STR_PASSWG_POWER_NAME                            :[KTS] Passenger car (powered)
 STR_SAEMAEUL_CAR_NAME                            :[KTS] Saemaeul passenger car
 STR_MUGUNGHWA_CAR_NAME                           :[KTS] Mugunghwa passenger car
@@ -275,7 +275,12 @@ STR_PARAM_MAX_SPEED_TYPE_OPT_1                   :Service
 STR_PARAM_MAX_SPEED_TYPE_OPT_2                   :Design
 
 # Light Railway
-STR_KO_LIGHT_RAILWAY_LABEL                       :[KTS] Light Railways
+STR_KO_LIGHT_RAIL_TRACK_NAME                     :Light Rail Tracks
+STR_KO_LIGHT_RAIL_TRACK_DROPDOWN_MENU            :[KTS] Light Rail Tracks
+STR_KO_LIGHT_RAIL_TRACK_TOOLBAR_CAPTION          :Light Rail Track Construction
+STR_KO_LIGHT_RAIL_BUILD_VEHICLE_CAPTION          :New Light Rail Vehicle
+STR_KO_LIGHT_RAIL_NEW_ENGINE                     :Light Rail vehicle
+STR_KO_LIGHT_RAIL_AUTOREPLACE                    :Light Rail Vehicles
 
 # Errors
 STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION        :It requires higher OpenTTD version(1.7.0/r21278) to run this NewGRF!
