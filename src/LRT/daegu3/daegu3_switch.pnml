@@ -1,0 +1,44 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_cargo_subtype_text, cargo_subtype) {
+    0: return string(STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME);
+    1: return string(STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME);
+    return string(STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME);
+}
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_engineH, cargo_subtype) {
+    0: set_DAEGU_METRO_3K_2_engineH;
+    1: set_DAEGU_METRO_3K_1_engineH;
+    set_DAEGU_METRO_3K_2_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_engineT, cargo_subtype) {
+    0: set_DAEGU_METRO_3K_2_engineT;
+    1: set_DAEGU_METRO_3K_1_engineT;
+    set_DAEGU_METRO_3K_2_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_DAEGU_METRO_3_engineT;
+    sw_DAEGU_METRO_3_engineH;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_wagon, cargo_subtype) {
+    0: set_DAEGU_METRO_3K_2_wagon;
+    1: set_DAEGU_METRO_3K_1_wagon;
+    set_DAEGU_METRO_3K_2_wagon;
+}
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_attach, vehicle_type_id) {
+    ko_train_DAEGU_METRO_3: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_LRT_wagon:     return CB_RESULT_ATTACH_ALLOW;
+    // ko_train_PASSWG:        return CB_RESULT_ATTACH_ALLOW;
+    // ko_train_PASSWGP:       return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}

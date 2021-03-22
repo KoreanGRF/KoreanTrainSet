@@ -62,7 +62,7 @@ sort(FEAT_TRAINS, [
     ko_train_BUSANGIMHAE,            // 5755
     ko_train_DAEGU_METRO_1,          // 5761
     ko_train_DAEGU_METRO_2,          // 5762
-    //ko_train_DAEGU_METRO_3,          // 5763
+    ko_train_DAEGU_METRO_3,          // 5763
     ko_train_DAEJEON_METRO_1,        // 5771
     ko_train_GWANGJU_METRO_1,        // 5781
     

@@ -1,0 +1,55 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Template
+template tmpl_daegu3_engine(x, y) {
+    [x,       y,     8,    23,     -2,    -11]
+    [x+15,    y,    21,    15,    -13,     -6]
+    [x+45,    y,    31,    13,    -16,     -6]
+    [x+95,    y,    21,    16,     -6,     -8]
+    [x+125,   y,     8,    23,     -2,    -11]
+    [x+140,   y,    21,    16,    -13,     -7]
+    [x+175,   y,    32,    13,    -16,     -6]
+    [x+225,   y,    21,    15,     -6,     -6]
+}
+template tmpl_daegu3_wagon(x, y) {
+    [x,       y,     8,    23,     -2,    -11]
+    [x+15,    y,    21,    16,    -13,     -7]
+    [x+45,    y,    31,    13,    -16,     -6]
+    [x+95,    y,    21,    16,     -6,     -7]
+}
+
+// DAEGU_METRO_3K_1
+spriteset(set_DAEGU_METRO_3K_1_engineH,"./src/LRT/daegu3/DAEGU_3K_1.png") {
+    tmpl_daegu3_engine(60, 0)
+}
+spriteset(set_DAEGU_METRO_3K_1_engineT,"./src/LRT/daegu3/DAEGU_3K_1.png") {
+    tmpl_daegu3_engine(60, 0)
+}
+spriteset(set_DAEGU_METRO_3K_1_wagon,"./src/LRT/daegu3/DAEGU_3K_1.png") {
+    tmpl_daegu3_wagon(60, 30)
+}
+
+// DAEGU_METRO_3K_2
+spriteset(set_DAEGU_METRO_3K_2_engineH,"./src/LRT/daegu3/DAEGU_3K_2.png") {
+    tmpl_daegu3_engine(60, 0)
+}
+spriteset(set_DAEGU_METRO_3K_2_engineT,"./src/LRT/daegu3/DAEGU_3K_2.png") {
+    tmpl_daegu3_engine(60, 0)
+}
+spriteset(set_DAEGU_METRO_3K_2_wagon,"./src/LRT/daegu3/DAEGU_3K_2.png") {
+    tmpl_daegu3_wagon(60, 30)
+}
+
+// Purchase image
+spriteset(set_DAEGU_METRO_3_purchase,"./src/LRT/daegu3/DAEGU_3K_1.png") {
+    tmpl_metro_purchase()
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_purchase, cargo_subtype) {
+    set_DAEGU_METRO_3_purchase;
+}

@@ -66,6 +66,7 @@
 //----- LRT -----//
 #include "LRT/busan4/busan4.pnml"
 #include "LRT/incheon2/incheon2.pnml"
+#include "LRT/daegu3/daegu3.pnml"
 #include "LRT/gimpo/gimpo.pnml"
 #include "LRT/busangimhae/busangimhae.pnml"
 #include "LRT/ui-sinseol/ui-sinseol.pnml"

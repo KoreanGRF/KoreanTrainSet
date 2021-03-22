@@ -119,10 +119,11 @@ A. You need to construct ITX-Saemaeul like below
   : It comes from the problem of units between miles and kilometers.
     By the way, can you realize the difference of 1km/h? :D
 
-+ Impossible to make [8x00 locomotive] + [subways]
-  : I used a complex method to make subway's appearance naturally according to its
-    length. It crashes with locomotives so that subway cars appears abnormally.
-    I wish I could fix it, but it seems to be difficult.
++ Daegu Line 3 is a monorail, should not be run at Busan Line 4 (Light rail)'s track!
+  : I already know about it but adding exclusive rails for each Light rails, such as
+    Busan Line 4 (1700mm), Daegu Line 3 (Monorail) or Uijeongbu LRT (1620mm) is not
+    nice for me. Furthermore there is no graphic sprite for a monorail track yet.
+    So, for now, running Daegu Line 3's train on Busan Line 4's track is an intended thing.
 
 
 4. Contact & Translation
