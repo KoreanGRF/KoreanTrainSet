@@ -35,7 +35,7 @@ STR_PASSWG_POWER_NAME                            :[KTS] 승객 수송 차량 (�
 STR_SAEMAEUL_CAR_NAME                            :[KTS] 새마을호 객차
 STR_MUGUNGHWA_CAR_NAME                           :[KTS] 무궁화호 객차
 STR_TONGIL_CAR_NAME                              :[KTS] 통일호 객차
-STR_POWER_CAR_NAME                               :[KTS] 발전차
+STR_GENERATOR_CAR_NAME                           :[KTS] 발전차
 STR_CAFE_CAR_NAME                                :[KTS] 카페 객차
 
 STR_FLAT_CAR_NAME                                :[KTS] 컨테이너 평판화차
@@ -106,10 +106,10 @@ STR_REFIT_PAINTING_CDC_GYEONGBUK1                : (경북관광순환테마열�
 STR_REFIT_PAINTING_CDC_GYEONGBUK2                : (경북관광순환테마열차, 신 도색)
 STR_REFIT_PAINTING_NDC                           : (기본)
 STR_REFIT_PAINTING_NDC_BUSINESS                  : (비즈니스 동차)
-STR_REFIT_PAINTING_POWER_CAR_DEFAULT             : (기본형)
-STR_REFIT_PAINTING_POWER_CAR_LONG                : (장대형)
-STR_REFIT_PAINTING_POWER_CAR_SME_A               : (장대형 : 새마을호 구 도색)
-STR_REFIT_PAINTING_POWER_CAR_SME_B               : (장대형 : 새마을호 현 도색)
+STR_REFIT_PAINTING_GENERATOR_CAR_DEFAULT         : (기본형)
+STR_REFIT_PAINTING_GENERATOR_CAR_LONG            : (장대형)
+STR_REFIT_PAINTING_GENERATOR_CAR_SME_A           : (장대형 : 새마을호 구 도색)
+STR_REFIT_PAINTING_GENERATOR_CAR_SME_B           : (장대형 : 새마을호 현 도색)
 STR_REFIT_PAINTING_SAEMAEUL_CAFE                 : (새마을호 카페 객차)
 STR_REFIT_PAINTING_RDC_MUGUNGHWA_CAFE            : (RDC 무궁화호 카페 객차)
 STR_REFIT_PAINTING_MUGUNGHWA_CAFE                : (무궁화호 카페 객차)

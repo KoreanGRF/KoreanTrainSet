@@ -58,11 +58,6 @@ spriteset(set_HAERANG_wagon, "./src/wagon/Mugunghwa/Haerang.png") {
 spriteset(set_HAERANG_CAFE_wagon, "./src/wagon/Mugunghwa/Haerang.png") {
     tmpl_wagon_by_coor(0, 30)
 }
-spriteset(set_HAERANG_POWER_CAR, "./src/wagon/Mugunghwa/Haerang.png") {
-    // Note: 8 directions are splited into two lines (8 방향이 두 줄로 나뉘어 있음)
-	tmpl_wagon_by_coor(0, 60)
-	tmpl_wagon_by_coor(0, 90)
-}
 
 // G-train
 spriteset(set_GTRAIN_wagon1, "./src/wagon/Mugunghwa/G-train.png") {
@@ -80,22 +75,13 @@ spriteset(set_GTRAIN_wagon4, "./src/wagon/Mugunghwa/G-train.png") {
 spriteset(set_GTRAIN_wagon5, "./src/wagon/Mugunghwa/G-train.png") {
     tmpl_wagon_by_coor(0, 120)
 }
-spriteset(set_GTRAIN_POWER_CAR, "./src/wagon/Mugunghwa/G-train.png") {
-    tmpl_wagon_by_coor(0, 150)
-}
 
 // S-train
 spriteset(set_STRAIN_wagon1, "./src/wagon/Mugunghwa/S-train.png") {
     tmpl_wagon_by_coor(0, 0)
 }
-spriteset(set_STRAIN_POWER_CAR1, "./src/wagon/Mugunghwa/S-train.png") {
-    tmpl_wagon_by_coor(0, 30)
-}
 spriteset(set_STRAIN_wagon2, "./src/wagon/Mugunghwa/S-train.png") {
     tmpl_wagon_by_coor(0, 60)
-}
-spriteset(set_STRAIN_POWER_CAR2, "./src/wagon/Mugunghwa/S-train.png") {
-    tmpl_wagon_by_coor(0, 90)
 }
 
 // for A-train

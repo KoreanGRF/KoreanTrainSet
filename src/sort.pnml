@@ -33,7 +33,7 @@ sort(FEAT_TRAINS, [
     ko_train_TONGIL_CAR,             // 5604
     //ko_train_BIDULGI_CAR,            // 5605
     //ko_train_3RD_CLASS_CAR,          // 5606
-    ko_train_POWER_CAR,              // 5610
+    ko_train_GENERATOR_CAR,          // 5610
 
     ko_train_PASSWG,                 // 5900
     ko_train_PASSWGP,                // 5901

@@ -40,7 +40,7 @@
 #include "wagon/Saemaeul/DHC_wagon.pnml"
 #include "wagon/Mugunghwa/Mugunghwa.pnml"
 #include "wagon/Tongil/Tongil.pnml"
-#include "wagon/Power/Power.pnml"
+#include "wagon/generator_car/generator_car.pnml"
 #include "wagon/Cafe/Cafe.pnml"
 
 
