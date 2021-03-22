@@ -19,7 +19,7 @@ SPEED_METRO(BUSANGIMHAE)
 #include "busangimhae_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_BUSANGIMHAE, 5802) {
+item(FEAT_TRAINS, ko_train_BUSANGIMHAE, 5755) {
     property {
         // Common properties
         name:                           string(STR_BUSANGIMHAE_NAME);
