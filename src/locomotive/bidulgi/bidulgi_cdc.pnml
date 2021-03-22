@@ -1,0 +1,82 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Bidulgi Commuter Diesel car
+ */
+SPEED_GENERAL(BIDULGI_CDC)
+         COST(BIDULGI_CDC)
+      RUNNING(BIDULGI_CDC)
+     CAPACITY(BIDULGI_CDC)
+      LOADING(BIDULGI_CDC)
+
+// Graphics
+#include "bidulgi_cdc_graphic.pnml"
+#include "bidulgi_car_graphic.pnml"
+
+// Switch
+#include "bidulgi_cdc_switch.pnml"
+#include "bidulgi_car_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_BIDULGI_CDC, 5521) {
+    property {
+        // Common properties
+        name:                           string(STR_BIDULGI_CDC_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_BIDULGI_CDC_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    0;
+
+        // Spec
+        speed:                          110 km/h;
+        power:                          POWER_IN_KW(var_BIDULGI_CDC_POWER);
+        weight:                         17 ton;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.1;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+        visual_effect_and_powered:      VISUAL_EFFECT_DIESEL;
+    }
+    graphics {
+        default:                        sw_BIDULGI_CDC_engine;
+        purchase:                       sw_BIDULGI_CDC_purchase;
+
+        speed:                          sw_BIDULGI_CDC_speed;
+        cost_factor:                    sw_BIDULGI_CDC_cost;
+        running_cost_factor:            sw_BIDULGI_CDC_runningcost;
+        cargo_capacity:                 sw_BIDULGI_CDC_capacity;
+        loading_speed:                  sw_BIDULGI_CDC_loadingspeed;
+
+        can_attach_wagon:               sw_BIDULGI_CDC_attach;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_BIDULGI_CAR_wagon;
+        cargo_capacity:                 sw_BIDULGI_CAR_capacity;
+    }
+}

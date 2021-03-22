@@ -32,6 +32,7 @@
 // CDC(+RDC), NDC
 #include "locomotive/CDC/CDC.pnml"
 #include "locomotive/NDC/NDC.pnml"
+#include "locomotive/bidulgi/bidulgi_cdc.pnml"
 
 // KTX-1
 #include "locomotive/KTX/KTX.pnml"
@@ -40,6 +41,7 @@
 #include "wagon/saemaeul/DHC_wagon.pnml"
 #include "wagon/mugunghwa/mugunghwa.pnml"
 #include "wagon/tongil/tongil.pnml"
+#include "wagon/bidulgi/bidulgi.pnml"
 #include "wagon/generator_car/generator_car.pnml"
 #include "wagon/cafe_car/cafe_car.pnml"
 

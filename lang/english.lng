@@ -20,6 +20,7 @@ STR_ITX_SAEMAEUL_NAME                            :[KTS] ITX-Saemaeul
 STR_NURIRO_NAME                                  :[KTS] Nuriro
 STR_CDC_NAME                                     :[KTS] Commuter Diesel Car (CDC)
 STR_NDC_NAME                                     :[KTS] New Diesel Car (NDC)
+STR_BIDULGI_CDC_NAME                             :[KTS] Bidulgi Commuter
 STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-Sancheon
 STR_SRT_NAME                                     :[KTS] SRT
@@ -34,6 +35,7 @@ STR_PASSWG_POWER_NAME                            :[KTS] Passenger car (powered)
 STR_SAEMAEUL_CAR_NAME                            :[KTS] Saemaeul passenger car
 STR_MUGUNGHWA_CAR_NAME                           :[KTS] Mugunghwa passenger car
 STR_TONGIL_CAR_NAME                              :[KTS] Tongil passenger car
+STR_BIDULGI_CAR_NAME                             :[KTS] Bidulgi passenger car
 STR_GENERATOR_CAR_NAME                           :[KTS] Generator car
 STR_CAFE_CAR_NAME                                :[KTS] Cafe car
 
@@ -72,17 +74,17 @@ STR_GIMPO_GOLDLINE_NAME                          :[KTS] Gimpo Goldline
 STR_UIJEONGBU_NAME                               :[KTS] Uijeongbu LRT
 
 
-# Paintings
+# Liverys
 STR_REFIT_PAINTING_THESEDAYS                     : (Current livery)
 STR_REFIT_PAINTING_7x00_CARGO                    : (Cargo livery)
 STR_REFIT_PAINTING_7x00_TIGER                    : (KNR first livery: Black & Orange)
 STR_REFIT_PAINTING_7x00_FIRST_KORAIL             : (KNR first livery: Blue & White)
 STR_REFIT_PAINTING_GREEN_YELLOW                  : (KNR old livery: Green & Yellow)
-STR_REFIT_PAINTING_1970_1983                     : (Painting A: 1970~1983)
-STR_REFIT_PAINTING_1984_1984                     : (Painting B: 1984~1984)
-STR_REFIT_PAINTING_1985_1989                     : (Painting C: 1985~1989)
-STR_REFIT_PAINTING_1990_1999                     : (Painting D: 1990~1999)
-STR_REFIT_PAINTING_2000_2002                     : (Painting E: 2000~2002)
+STR_REFIT_PAINTING_1970_1983                     : (Livery A: 1970~1983)
+STR_REFIT_PAINTING_1984_1984                     : (Livery B: 1984~1984)
+STR_REFIT_PAINTING_1985_1989                     : (Livery C: 1985~1989)
+STR_REFIT_PAINTING_1990_1999                     : (Livery D: 1990~1999)
+STR_REFIT_PAINTING_2000_2002                     : (Livery E: 2000~2002)
 STR_REFIT_PAINTING_OLD_EXPRESS                   : (Old express)
 STR_REFIT_PAINTING_HAERANG                       : (Rail cruise 'Haerang')
 STR_REFIT_PAINTING_STRAIN1                       : (S-train - blue)
@@ -115,6 +117,14 @@ STR_REFIT_PAINTING_MUGUNGHWA_CAFE                : (Mugunghwa cafe car)
 STR_REFIT_PASSWAGON_NORMALCAR                    : (Normal class car)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (First class car)
 
+# Refit (Bidulgi)
+STR_REFIT_PAINTING_BIDULGI_3RD_CLASS             : (3rd class car - Da 9 class)
+STR_REFIT_PAINTING_BIDULGI_ORIGINAL_1            : (Original: ~1970s)
+# STR_REFIT_PAINTING_BIDULGI_ORIGINAL_2            : (Original: 1974~1981)
+STR_REFIT_PAINTING_BIDULGI_BLUE                  : (Livery: 1970s~1994)
+STR_REFIT_PAINTING_BIDULGI_GREEN_YELLOW          : (Livery: 1994~2000)
+STR_REFIT_PAINTING_BIDULGI_BAGGAGE_CAR           : (Bidulgi livery)
+
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                           : (Black)
 STR_REFIT_COLOUR_BLUE                            : (Blue)
@@ -129,7 +139,7 @@ STR_REFIT_COLOUR_SILVER                          : (Silver)
 STR_REFIT_MAIL_CAR                               : (Mail carriage)
 
 
-# Seoul metropolitan Line 1
+# Refit (Seoul metropolitan Line 1)
 STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME             : (KNR 1k First rheostatic / 1st painting)
 STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME             : (KNR 1k First rheostatic / 2nd painting)
 STR_REFIT_METRO_1K_RHEO_MODIFIED_1_NAME          : (KNR 1k Modified rheostatic / 1st painting)
@@ -151,7 +161,7 @@ STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        : (SMetro 1k First rheostatic)
 STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME     : (SMetro 1k Modified rheostatic)
 STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              : (SMetro 1k VVVF)
 
-# Seoul Line 2
+# Refit (Seoul Line 2)
 STR_REFIT_METRO_2K_MELCO_NAME                    : (SMetro 2k MELCO)
 STR_REFIT_METRO_2K_CHOPPER_NAME                  : (SMetro 2k CHOPPER)
 STR_REFIT_METRO_2K_VVVF_1ST_NAME                 : (SMetro 2k 1st VVVF)
@@ -160,7 +170,7 @@ STR_REFIT_METRO_2K_VVVF_3RD_NAME                 : (SMetro 2k 3rd VVVF)
 STR_REFIT_METRO_2K_VVVF_4TH_NAME                 : (SMetro 2k 4th VVVF)
 STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            : (SMetro 2k Modified rheostatic)
 
-# Seoul metropolitan 3
+# Refit (Seoul metropolitan 3)
 STR_REFIT_METRO_3K_VVVF_1_NAME                   : (KNR 3k VVVF / Old painting)
 STR_REFIT_METRO_3K_VVVF_2_NAME                   : (Korail 3k VVVF / Current painting)
 STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           : (SMetro 3k CHOPPER)
@@ -168,7 +178,7 @@ STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  : (SMetro 3k Modified CHOPPER)
 # STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          : (SMetro 3k 1st VVVF from Line 4)
 STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          : (SMetro 3k 2nd VVVF)
 
-# Seoul metropolitan 4
+# Refit (Seoul metropolitan 4)
 STR_REFIT_METRO_341K_VVVF_1ST_1_NAME             : (Korail 341k 1st VVVF / Old painting)
 STR_REFIT_METRO_341K_VVVF_1ST_2_NAME             : (Korail 341k 1st VVVF / Current painting)
 STR_REFIT_METRO_341K_VVVF_2ND_1_NAME             : (Korail 341k 2nd VVVF / Old painting)
@@ -177,7 +187,7 @@ STR_REFIT_METRO_LINE_4_2019_NAME                 : (Korail, introduced in 2019)
 STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME      : (SMetro 4k 1st·2nd VVVF)
 STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME          : (SMetro 4k 3rd VVVF in 2020)
 
-# Seoul Metro Line 5-8, Seoul Metro Line9
+# Refit (Seoul Metro Line 5-8, Seoul Metro Line9)
 STR_REFIT_METRO_SMETRO_SR0X_NAME                 : (SMetro SR0x VVVF)
 STR_REFIT_METRO_SMETRO_5K_1_NAME                 : (SMetro 5k 1st·2nd VVVF)
 STR_REFIT_METRO_SMETRO_5K_2_NAME                 : (SMetro 5k 3rd VVVF)
@@ -187,21 +197,21 @@ STR_REFIT_METRO_SMETRO_7K_2_NAME                 : (SMetro 7k 4th VVVF)
 STR_REFIT_METRO_SMETRO_8K_1_NAME                 : (SMetro 8k VVVF)
 STR_REFIT_METRO_SMETRO_9K_1_NAME                 : (SMetro9 9k VVVF)
 
-# Suin-Bungdang Line
+# Refit (Suin-Bungdang Line)
 STR_REFIT_METRO_351K_VVVF_1ST_NAME               : (Korail 351k 1st VVVF)
 STR_REFIT_METRO_351K_VVVF_2ND_NAME               : (Korail 351k 2nd VVVF)
 STR_REFIT_METRO_351K_VVVF_3RD_NAME               : (Korail 351k 3rd VVVF)
 
-# Gyeongchun Line
+# Refit (Gyeongchun Line)
 STR_REFIT_METRO_361K_VVVF_NAME                   : (Korail 361k VVVF)
 STR_REFIT_METRO_386K_ITX_CHEONGCHUN_NAME         : (Korail 368k ITX-Cheongchun)
 
-# Incheon intertional Airport Line (A'REX)
+# Refit (Incheon intertional Airport Line (A'REX))
 STR_REFIT_METRO_AREX_1K_NONSTOP_NAME             : (A'REX 1k Express)
 STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME      : (A'REX 1k Express - Orange)
 STR_REFIT_METRO_AREX_2K_NAME                     : (A'REX 2k All-stop)
 
-# Other Lines
+# Refit (Other Lines)
 STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME   : (Incheon Metro 1k VVVF 1st)
 STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME   : (Incheon Metro 1k VVVF 2nd)
 STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME            : (Former)
@@ -212,7 +222,7 @@ STR_REFIT_METRO_DAEJEON_METRO_1K_NAME            : (Daejeon Metro 1k)
 STR_REFIT_METRO_GWANGJU_METRO_1K_NAME            : (Gwangju Metro 1k)
 
 
-# Refit
+# Refit (Additional text)
 STR_REFIT_ADDITIONAL_ABLE                        :{BLACK}Changing model/livery: {GREEN}Available
 STR_REFIT_ADDITIONAL_UNABLE                      :{BLACK}Changing model/livery: {RED}Unavailable
 STR_REFIT_ADDITIONAL_AMBIGUOUS                   :{BLACK}Changing model/livery: {ORANGE}Ambigous - differ from engines

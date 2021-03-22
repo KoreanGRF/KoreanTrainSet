@@ -63,6 +63,11 @@ spriteset(set_V_TRAIN_wagon_3, "./src/wagon/baggage_car/V-train_wagon.png") {
     tmpl_V_TRAIN_wagon(0,60)
 }
 
+// Bidulgi
+spriteset(set_BAGGAGE_CAR_BIDULGI_wagon, "./src/wagon/baggage_car/BIDULGI.png") {
+    tmpl_wagon_by_coor(0, 0)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_purchase, cargo_subtype) {
     set_BAGGAGE_CAR_purchase;

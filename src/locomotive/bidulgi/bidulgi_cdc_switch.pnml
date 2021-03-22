@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Bidulgi Commuter Diesel car
+ */
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_BIDULGI_CDC_engine, cargo_subtype) {
+    set_BIDULGI_CDC_engine;
+}
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_BIDULGI_CDC_attach, vehicle_type_id) {
+	ko_train_BIDULGI_CDC: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_BIDULGI_CAR: return CB_RESULT_ATTACH_ALLOW;
+	ko_train_PASSWG:      return CB_RESULT_ATTACH_ALLOW;
+	return string(STR_ERROR_NO_ATTACH);
+}

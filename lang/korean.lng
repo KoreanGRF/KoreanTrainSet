@@ -21,6 +21,7 @@ STR_ITX_SAEMAEUL_NAME                            :[KTS] ITX-새마을
 STR_NURIRO_NAME                                  :[KTS] 누리로
 STR_CDC_NAME                                     :[KTS] 통근형 디젤 열차 (CDC)
 STR_NDC_NAME                                     :[KTS] 우등형 디젤 동차 (NDC)
+STR_BIDULGI_CDC_NAME                             :[KTS] 비둘기 통근형 디젤 동차
 STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-산천
 STR_SRT_NAME                                     :[KTS] SRT
@@ -35,6 +36,7 @@ STR_PASSWG_POWER_NAME                            :[KTS] 승객 수송 차량 (�
 STR_SAEMAEUL_CAR_NAME                            :[KTS] 새마을호 객차
 STR_MUGUNGHWA_CAR_NAME                           :[KTS] 무궁화호 객차
 STR_TONGIL_CAR_NAME                              :[KTS] 통일호 객차
+STR_BIDULGI_CAR_NAME                             :[KTS] 비둘기호 객차
 STR_GENERATOR_CAR_NAME                           :[KTS] 발전차
 STR_CAFE_CAR_NAME                                :[KTS] 카페 객차
 
@@ -116,6 +118,14 @@ STR_REFIT_PAINTING_MUGUNGHWA_CAFE                : (무궁화호 카페 객차)
 STR_REFIT_PASSWAGON_NORMALCAR                    : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (특실 객차)
 
+# Refit - Bidulgi
+STR_REFIT_PAINTING_BIDULGI_3RD_CLASS             : (3등 객차 다9형)
+STR_REFIT_PAINTING_BIDULGI_ORIGINAL_1            : (원조: ~1970년대)
+# STR_REFIT_PAINTING_BIDULGI_ORIGINAL_2            : (원조: 1974~1981년)
+STR_REFIT_PAINTING_BIDULGI_BLUE                  : (1970년대~1994년 도색)
+STR_REFIT_PAINTING_BIDULGI_GREEN_YELLOW          : (1994~2000년 도색)
+STR_REFIT_PAINTING_BIDULGI_BAGGAGE_CAR           : (비둘기호 도색)
+
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                           : (검은색)
 STR_REFIT_COLOUR_BLUE                            : (파란색)
@@ -130,7 +140,7 @@ STR_REFIT_COLOUR_SILVER                          : (은색)
 STR_REFIT_MAIL_CAR                               : (우편차)
 
 
-# Seoul metropolitan Line 1
+# Refit (Seoul metropolitan Line 1)
 STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME             : (철도청 1k 초기 저항 / 초기 도색)
 STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME             : (철도청 1k 초기 저항 / 구 도색)
 STR_REFIT_METRO_1K_RHEO_MODIFIED_1_NAME          : (철도청 1k 개조 저항 / 초기 도색)
@@ -152,7 +162,7 @@ STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        : (서울지하철공사 1k 초
 STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME     : (서울메트로 1k 개조 저항)
 STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              : (서울교통공사 1k VVVF)
 
-# Seoul Line 2
+# Refit (Seoul Line 2)
 STR_REFIT_METRO_2K_MELCO_NAME                    : (서울메트로 2k MELCO)
 STR_REFIT_METRO_2K_CHOPPER_NAME                  : (서울메트로 2k CHOPPER)
 STR_REFIT_METRO_2K_VVVF_1ST_NAME                 : (서울교통공사 2k VVVF 1세대)
@@ -161,7 +171,7 @@ STR_REFIT_METRO_2K_VVVF_3RD_NAME                 : (서울교통공사 2k VVVF 3
 STR_REFIT_METRO_2K_VVVF_4TH_NAME                 : (서울교통공사 2k VVVF 4세대)
 STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            : (서울메트로 2k 개조 저항)
 
-# Seoul metropolitan 3
+# Refit (Seoul metropolitan 3)
 STR_REFIT_METRO_3K_VVVF_1_NAME                   : (철도청 3k VVVF / 구 도색)
 STR_REFIT_METRO_3K_VVVF_2_NAME                   : (Korail 3k VVVF / 현재 도색)
 STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           : (서울교통공사 3k CHOPPER)
@@ -169,7 +179,7 @@ STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  : (서울교통공사 3k 개조
 # STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          : (서울교통공사 3k VVVF 1세대 / 4호선 이적분)
 STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          : (서울교통공사 3k VVVF 2세대)
 
-# Seoul metropolitan 4
+# Refit (Seoul metropolitan 4)
 STR_REFIT_METRO_341K_VVVF_1ST_1_NAME             : (Korail 341k VVVF 1세대 / 구 도색)
 STR_REFIT_METRO_341K_VVVF_1ST_2_NAME             : (Korail 341k VVVF 1세대 / 현재 도색)
 STR_REFIT_METRO_341K_VVVF_2ND_1_NAME             : (Korail 341k VVVF 2세대 / 구 도색)
@@ -178,7 +188,7 @@ STR_REFIT_METRO_LINE_4_2019_NAME                 : (Korail 4호선 2019년 도�
 STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME      : (SMetro 4k 1·2세대 VVVF)
 STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME          : (SMetro 4k 3세대 VVVF 2020년 도입분)
 
-# Seoul Metro Line 5-8, Seoul Metro Line9
+# Refit (Seoul Metro Line 5-8, Seoul Metro Line9)
 STR_REFIT_METRO_SMETRO_SR0X_NAME                 : (서울교통공사 SR0x VVVF)
 STR_REFIT_METRO_SMETRO_5K_1_NAME                 : (서울교통공사 5k VVVF 1·2차)
 STR_REFIT_METRO_SMETRO_5K_2_NAME                 : (서울교통공사 5k VVVF 3차)
@@ -188,21 +198,21 @@ STR_REFIT_METRO_SMETRO_7K_2_NAME                 : (서울교통공사 7k VVVF 4
 STR_REFIT_METRO_SMETRO_8K_1_NAME                 : (서울교통공사 8k VVVF)
 STR_REFIT_METRO_SMETRO_9K_1_NAME                 : (서울교통공사9 9k VVVF)
 
-# Suin-Bungdang Line
+# Refit (Suin-Bungdang Line)
 STR_REFIT_METRO_351K_VVVF_1ST_NAME               : (Korail 351k 1st VVVF)
 STR_REFIT_METRO_351K_VVVF_2ND_NAME               : (Korail 351k 2nd VVVF)
 STR_REFIT_METRO_351K_VVVF_3RD_NAME               : (Korail 351k 3rd VVVF)
 
-# Gyeongchun Line
+# Refit (Gyeongchun Line)
 STR_REFIT_METRO_361K_VVVF_NAME                   : (Korail 361k VVVF)
 STR_REFIT_METRO_386K_ITX_CHEONGCHUN_NAME         : (Korail 368k ITX-Cheongchun)
 
-# Incheon intertional Airport Line (A'REX)
+# Refit (Incheon intertional Airport Line (A'REX))
 STR_REFIT_METRO_AREX_1K_NONSTOP_NAME             : (A'REX 1k 직통)
 STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME      : (A'REX 1k 직통 - 오렌지)
 STR_REFIT_METRO_AREX_2K_NAME                     : (A'REX 2k 완행)
 
-# Other Lines
+# Refit (Other Lines)
 STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME   : (인천교통공사 1k VVVF 1세대)
 STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME   : (인천교통공사 1k VVVF 2세대)
 STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME            : (전기형)
@@ -213,7 +223,7 @@ STR_REFIT_METRO_DAEJEON_METRO_1K_NAME            : (대전도시철도공사 1k)
 STR_REFIT_METRO_GWANGJU_METRO_1K_NAME            : (광주도시철도공사 1k)
 
 
-# Refit
+# Refit (Additional text)
 STR_REFIT_ADDITIONAL_ABLE                        :{BLACK}도색/모델 변경: {GREEN}가능
 STR_REFIT_ADDITIONAL_UNABLE                      :{BLACK}도색/모델 변경: {RED}불가능
 STR_REFIT_ADDITIONAL_AMBIGUOUS                   :{BLACK}도색/모델 변경: {ORANGE}경우에 따라 다름

@@ -20,6 +20,7 @@ sort(FEAT_TRAINS, [
     ko_train_CDC,                    // 5510
     ko_train_NDC,                    // 5511
     ko_train_DHC,                    // 5520
+    ko_train_BIDULGI_CDC,            // 5521
     ko_train_NURIRO,                 // 5525
     ko_train_ITX_CHEONGCHUN,         // 5530
     ko_train_ITX_SAEMAEUL,           // 5540
@@ -31,7 +32,7 @@ sort(FEAT_TRAINS, [
     ko_train_MUGUNGHWA_CAR,          // 5602
     ko_train_CAFE_CAR,               // 5603
     ko_train_TONGIL_CAR,             // 5604
-    //ko_train_BIDULGI_CAR,            // 5605
+    ko_train_BIDULGI_CAR,            // 5605
     //ko_train_3RD_CLASS_CAR,          // 5606
     ko_train_GENERATOR_CAR,          // 5610
 

@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Bidulgi Commuter Diesel car
+ */
+
+// Graphics
+spriteset(set_BIDULGI_CDC_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+    tmpl_purchase_detail(0, 0, 31, 11, -7, -6)
+}
+spriteset(set_BIDULGI_CDC_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+    tmpl_wagon_by_coor(60, 0)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_BIDULGI_CDC_purchase, cargo_subtype) {
+    set_BIDULGI_CDC_purchase;
+}
