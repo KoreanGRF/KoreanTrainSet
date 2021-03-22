@@ -43,7 +43,7 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         cargo_capacity:                 25;
         refittable_cargo_classes:       bitmask(CC_BULK);
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF];
+        cargo_allow_refit:              [COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE, BEAN, CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, LIME, MNO2, PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
 
@@ -58,10 +58,26 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        COAL:                           sw_HOPPER_CAR_coal_wagon;
-        CORE:                           sw_HOPPER_CAR_copper_wagon;
-        IORE:                           sw_HOPPER_CAR_copper_wagon;
-        default:                        sw_HOPPER_CAR_coal_wagon;
+        AORE:                           sw_HOPPER_CAR_AORE_wagon;
+        BEAN:                           sw_HOPPER_CAR_BEAN_wagon;
+        CLAY:                           sw_HOPPER_CAR_CLAY_wagon;
+        COAL:                           sw_HOPPER_CAR_COAL_wagon;
+        CORE:                           sw_HOPPER_CAR_CORE_wagon;
+        FRUT:                           sw_HOPPER_CAR_FRUT_wagon;
+        GOLD:                           sw_HOPPER_CAR_GOLD_wagon;
+        GRAI:                           sw_HOPPER_CAR_GRAI_wagon;
+        GRVL:                           sw_HOPPER_CAR_GRVL_wagon;
+        IORE:                           sw_HOPPER_CAR_IORE_wagon;
+        LIME:                           sw_HOPPER_CAR_LIME_wagon;
+        MNO2:                           sw_HOPPER_CAR_MNO2_wagon;
+        PHOS:                           sw_HOPPER_CAR_PHOS_wagon;
+        PORE:                           sw_HOPPER_CAR_PORE_wagon;
+        RCYC:                           sw_HOPPER_CAR_RCYC_wagon;
+        SALT:                           sw_HOPPER_CAR_SALT_wagon;
+        SAND:                           sw_HOPPER_CAR_SAND_wagon;
+        SCMT:                           sw_HOPPER_CAR_SCMT_wagon;
+        SLAG:                           sw_HOPPER_CAR_SLAG_wagon;
+        default:                        sw_HOPPER_CAR_wagon;
         purchase:                       sw_HOPPER_CAR_purchase;
 
         cost_factor:                    sw_HOPPER_CAR_cost;

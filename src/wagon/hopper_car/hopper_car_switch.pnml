@@ -5,18 +5,108 @@
 ------------------------------------------------------------------------------*/
 
 // Cargo subtype
-switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_coal_wagon, cargo_subtype) {
-	1: sg_HOPPER_CAR_1_coal_wagon;
-	2: sg_HOPPER_CAR_2_coal_wagon;
-	sg_HOPPER_CAR_3_coal_wagon;
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_AORE_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_AORE_A_wagon;
+    2: sg_HOPPER_CAR_AORE_B_wagon;
+    sg_HOPPER_CAR_AORE_C_wagon;
 }
-switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_copper_wagon, cargo_subtype) {
-	1: sg_HOPPER_CAR_1_copper_wagon;
-	2: sg_HOPPER_CAR_2_copper_wagon;
-	sg_HOPPER_CAR_3_copper_wagon;
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_BEAN_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_BEAN_A_wagon;
+    2: sg_HOPPER_CAR_BEAN_B_wagon;
+    sg_HOPPER_CAR_BEAN_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_CLAY_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_CLAY_A_wagon;
+    2: sg_HOPPER_CAR_CLAY_B_wagon;
+    sg_HOPPER_CAR_CLAY_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_COAL_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_COAL_A_wagon;
+    2: sg_HOPPER_CAR_COAL_B_wagon;
+    sg_HOPPER_CAR_COAL_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_CORE_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_CORE_A_wagon;
+    2: sg_HOPPER_CAR_CORE_B_wagon;
+    sg_HOPPER_CAR_CORE_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_FRUT_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_FRUT_A_wagon;
+    2: sg_HOPPER_CAR_FRUT_B_wagon;
+    sg_HOPPER_CAR_FRUT_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_GOLD_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_GOLD_A_wagon;
+    2: sg_HOPPER_CAR_GOLD_B_wagon;
+    sg_HOPPER_CAR_GOLD_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_GRAI_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_GRAI_A_wagon;
+    2: sg_HOPPER_CAR_GRAI_B_wagon;
+    sg_HOPPER_CAR_GRAI_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_GRVL_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_GRVL_A_wagon;
+    2: sg_HOPPER_CAR_GRVL_B_wagon;
+    sg_HOPPER_CAR_GRVL_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_IORE_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_IORE_A_wagon;
+    2: sg_HOPPER_CAR_IORE_B_wagon;
+    sg_HOPPER_CAR_IORE_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_LIME_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_LIME_A_wagon;
+    2: sg_HOPPER_CAR_LIME_B_wagon;
+    sg_HOPPER_CAR_LIME_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_MNO2_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_MNO2_A_wagon;
+    2: sg_HOPPER_CAR_MNO2_B_wagon;
+    sg_HOPPER_CAR_MNO2_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_PHOS_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_PHOS_A_wagon;
+    2: sg_HOPPER_CAR_PHOS_B_wagon;
+    sg_HOPPER_CAR_PHOS_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_PORE_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_PORE_A_wagon;
+    2: sg_HOPPER_CAR_PORE_B_wagon;
+    sg_HOPPER_CAR_PORE_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_RCYC_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_RCYC_A_wagon;
+    2: sg_HOPPER_CAR_RCYC_B_wagon;
+    sg_HOPPER_CAR_RCYC_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_SALT_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_SALT_A_wagon;
+    2: sg_HOPPER_CAR_SALT_B_wagon;
+    sg_HOPPER_CAR_SALT_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_SAND_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_SAND_A_wagon;
+    2: sg_HOPPER_CAR_SAND_B_wagon;
+    sg_HOPPER_CAR_SAND_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_SCMT_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_SCMT_A_wagon;
+    2: sg_HOPPER_CAR_SCMT_B_wagon;
+    sg_HOPPER_CAR_SCMT_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_SLAG_wagon, cargo_subtype) {
+    1: sg_HOPPER_CAR_SLAG_A_wagon;
+    2: sg_HOPPER_CAR_SLAG_B_wagon;
+    sg_HOPPER_CAR_SLAG_C_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_wagon, cargo_subtype) {
+    1: set_HOPPER_CAR_empty_A_wagon;   // Brown
+    2: set_HOPPER_CAR_empty_B_wagon;   // Black
+    set_HOPPER_CAR_empty_C_wagon;      // Blue (default)
 }
 switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_cargo_subtype_text, cargo_subtype) {
-	1: return string(STR_REFIT_COLOUR_BLACK);
-	2: return string(STR_REFIT_COLOUR_BROWN);
-	return string(STR_REFIT_COLOUR_BLUE);
+    1: return string(STR_REFIT_COLOUR_BLACK);
+    2: return string(STR_REFIT_COLOUR_BROWN);
+    return string(STR_REFIT_COLOUR_BLUE);
 }

@@ -1,0 +1,65 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Hopper car (Coals)
+ */
+
+// Graphics when loads Coals
+spriteset(set_HOPPER_CAR_COAL_loading_A_wagon, "./src/wagon/hopper_car/cargo_COAL.png") {
+	tmpl_hopper_car(0, 0)
+}
+spriteset(set_HOPPER_CAR_COAL_full_A_wagon, "./src/wagon/hopper_car/cargo_COAL.png") {
+	tmpl_hopper_car(0, 30)
+}
+spriteset(set_HOPPER_CAR_COAL_loading_B_wagon, "./src/wagon/hopper_car/cargo_COAL.png") {
+	tmpl_hopper_car(0, 60)
+}
+spriteset(set_HOPPER_CAR_COAL_full_B_wagon, "./src/wagon/hopper_car/cargo_COAL.png") {
+	tmpl_hopper_car(0, 90)
+}
+spriteset(set_HOPPER_CAR_COAL_loading_C_wagon, "./src/wagon/hopper_car/cargo_COAL.png") {
+	tmpl_hopper_car(0, 120)
+}
+spriteset(set_HOPPER_CAR_COAL_full_C_wagon, "./src/wagon/hopper_car/cargo_COAL.png") {
+	tmpl_hopper_car(0, 150)
+}
+
+spritegroup sg_HOPPER_CAR_COAL_A_wagon {
+	loading: [
+		set_HOPPER_CAR_empty_A_wagon,
+		set_HOPPER_CAR_COAL_loading_A_wagon,
+		set_HOPPER_CAR_COAL_full_A_wagon
+	];
+	loaded: [
+		set_HOPPER_CAR_empty_A_wagon,
+		set_HOPPER_CAR_COAL_loading_A_wagon,
+		set_HOPPER_CAR_COAL_full_A_wagon
+	];
+}
+spritegroup sg_HOPPER_CAR_COAL_B_wagon {
+	loading: [
+		set_HOPPER_CAR_empty_B_wagon,
+		set_HOPPER_CAR_COAL_loading_B_wagon,
+		set_HOPPER_CAR_COAL_full_B_wagon
+	];
+	loaded: [
+		set_HOPPER_CAR_empty_B_wagon,
+		set_HOPPER_CAR_COAL_loading_B_wagon,
+		set_HOPPER_CAR_COAL_full_B_wagon
+	];
+}
+spritegroup sg_HOPPER_CAR_COAL_C_wagon {
+	loading: [
+		set_HOPPER_CAR_empty_C_wagon,
+		set_HOPPER_CAR_COAL_loading_C_wagon,
+		set_HOPPER_CAR_COAL_full_C_wagon
+	];
+	loaded: [
+		set_HOPPER_CAR_empty_C_wagon,
+		set_HOPPER_CAR_COAL_loading_C_wagon,
+		set_HOPPER_CAR_COAL_full_C_wagon
+	];
+}
