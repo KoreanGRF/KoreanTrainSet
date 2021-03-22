@@ -23,11 +23,11 @@
 #include "locomotive/K8x00/K8500.pnml"
 
 // Saemaeul
-#include "locomotive/Saemaeul/DHC.pnml"
-#include "locomotive/Saemaeul/ITX-saemaeul.pnml"
+#include "locomotive/saemaeul/DHC.pnml"
+#include "locomotive/saemaeul/ITX-saemaeul.pnml"
 
 // Nuriro
-#include "locomotive/Nuriro/Nuriro.pnml"
+#include "locomotive/nuriro/nuriro.pnml"
 
 // CDC(+RDC), NDC
 #include "locomotive/CDC/CDC.pnml"
@@ -37,11 +37,11 @@
 #include "locomotive/KTX/KTX.pnml"
 
 // Wagon
-#include "wagon/Saemaeul/DHC_wagon.pnml"
-#include "wagon/Mugunghwa/Mugunghwa.pnml"
-#include "wagon/Tongil/Tongil.pnml"
+#include "wagon/saemaeul/DHC_wagon.pnml"
+#include "wagon/mugunghwa/mugunghwa.pnml"
+#include "wagon/tongil/tongil.pnml"
 #include "wagon/generator_car/generator_car.pnml"
-#include "wagon/Cafe/Cafe.pnml"
+#include "wagon/cafe_car/cafe_car.pnml"
 
 
 //----- Metro -----//

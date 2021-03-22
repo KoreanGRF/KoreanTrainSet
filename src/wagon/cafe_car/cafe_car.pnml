@@ -12,12 +12,12 @@
 //     CAPACITY(CAFE_CAR)
 //      LOADING(CAFE_CAR)
 
-spriteset(set_CAFE_CAR_purchase, "./src/wagon/Cafe/Cafe.png") {
+spriteset(set_CAFE_CAR_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(45, 0, 31, 12, -16, -6)
 }
 
 // Cafe car for Mugunghwa
-spriteset(set_CAFE_CAR_MUGUNGHWA, "./src/wagon/Cafe/Cafe.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(0, 0)
 }
 

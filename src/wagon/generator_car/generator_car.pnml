@@ -31,18 +31,18 @@ spriteset(set_GENERATOR_CAR_wagon_BLUE_YELLOW, "./src/wagon/generator_car/genera
 spriteset(set_GENERATOR_CAR_wagon_ATRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's power car
     tmpl_wagon_by_coor(0, 0)
 }
-spriteset(set_HAERANG_GENERATOR_CAR, "./src/wagon/Mugunghwa/Haerang.png") {
+spriteset(set_HAERANG_GENERATOR_CAR, "./src/wagon/mugunghwa/Haerang.png") {
     // Note: 8 directions are splited into two lines (8 방향이 두 줄로 나뉘어 있음)
 	tmpl_wagon_by_coor(0, 60)
 	tmpl_wagon_by_coor(0, 90)
 }
-spriteset(set_STRAIN_GENERATOR_CAR_1, "./src/wagon/Mugunghwa/S-train.png") {
+spriteset(set_STRAIN_GENERATOR_CAR_1, "./src/wagon/mugunghwa/S-train.png") {
     tmpl_wagon_by_coor(0, 30)
 }
-spriteset(set_STRAIN_GENERATOR_CAR_2, "./src/wagon/Mugunghwa/S-train.png") {
+spriteset(set_STRAIN_GENERATOR_CAR_2, "./src/wagon/mugunghwa/S-train.png") {
     tmpl_wagon_by_coor(0, 90)
 }
-spriteset(set_GTRAIN_GENERATOR_CAR, "./src/wagon/Mugunghwa/G-train.png") {
+spriteset(set_GTRAIN_GENERATOR_CAR, "./src/wagon/mugunghwa/G-train.png") {
     tmpl_wagon_by_coor(0, 150)
 }
 
