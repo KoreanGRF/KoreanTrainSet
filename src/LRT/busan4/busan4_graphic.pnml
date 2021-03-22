@@ -1,0 +1,39 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Template
+template tmpl_BUSAN_METRO_4(x, y) {
+    [x,        y,     8,    16,     -2,    -11]
+    [x+15,     y,    16,    14,     -8,     -9]
+    [x+45,     y,    24,    13,     -9,     -8]
+    [x+95,     y,    16,    14,     -3,     -8]
+    [x+125,    y,     8,    16,     -2,    -11]
+    [x+140,    y,    16,    14,     -8,     -9]
+    [x+170,    y,    24,    13,     -9,     -8]
+    [x+220,    y,    16,    14,     -3,     -8]
+}
+
+// BUSAN_METRO_4
+spriteset(set_BUSAN_METRO_4_engineH, "./src/LRT/busan4/BUSAN_4K.png") {
+    tmpl_BUSAN_METRO_4(60, 0)
+}
+spriteset(set_BUSAN_METRO_4_wagon_open, "./src/LRT/busan4/BUSAN_4K.png") {
+    tmpl_BUSAN_METRO_4(60, 30)
+}
+spriteset(set_BUSAN_METRO_4_wagon, "./src/LRT/busan4/BUSAN_4K.png") {
+    tmpl_BUSAN_METRO_4(60, 60)
+}
+spriteset(set_BUSAN_METRO_4_engineT, "./src/LRT/busan4/BUSAN_4K.png") {
+    tmpl_BUSAN_METRO_4(60, 90)
+}
+spriteset(set_BUSAN_METRO_4_purchase, "./src/LRT/busan4/BUSAN_4K.png") {
+    tmpl_purchase_detail(0, 0, 50, 14, -12, -6)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_4_purchase, cargo_subtype) {
+    set_BUSAN_METRO_4_purchase;
+}

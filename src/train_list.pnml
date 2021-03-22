@@ -64,6 +64,7 @@
 #include "metro/gwangju1/gwangju1.pnml"
 
 //----- LRT -----//
+#include "LRT/busan4/busan4.pnml"
 #include "LRT/incheon2/incheon2.pnml"
 #include "LRT/gimpo/gimpo.pnml"
 #include "LRT/busangimhae/busangimhae.pnml"
@@ -78,6 +79,7 @@
 #include "wagon/baggage_car/baggage_car.pnml"
 #include "wagon/tank_car/tank_car.pnml"
 #include "wagon/stake_car/stake_car.pnml"
+#include "wagon/LRT_wagon/LRT_wagon.pnml"
 
 // Sorting
 #include "sort.pnml"

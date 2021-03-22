@@ -58,7 +58,7 @@ sort(FEAT_TRAINS, [
     ko_train_BUSAN_METRO_1,          // 5751
     ko_train_BUSAN_METRO_2,          // 5752
     ko_train_BUSAN_METRO_3,          // 5753
-    //ko_train_BUSAN_METRO_4,
+    ko_train_BUSAN_METRO_4,          // 5754
     ko_train_BUSANGIMHAE,            // 5755
     ko_train_DAEGU_METRO_1,          // 5761
     ko_train_DAEGU_METRO_2,          // 5762
@@ -71,4 +71,5 @@ sort(FEAT_TRAINS, [
     ko_train_UISINSEOL,              // 5803
     ko_train_YONGIN_EVERLINE,        // 5804
     ko_train_UIJEONGBU,              // 5805
+    ko_train_LRT_wagon,              // 5950
 ]);

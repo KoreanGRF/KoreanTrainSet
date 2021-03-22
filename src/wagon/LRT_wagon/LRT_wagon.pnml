@@ -1,0 +1,61 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Passenger wagons for Light rail
+ */
+
+// Graphic & Switch
+// ... are drawn from passenger_wagon
+
+
+item(FEAT_TRAINS, ko_train_LRT_wagon, 5950) {
+    property {
+        // Common properties
+        name:                           string(STR_PASSWG_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_PASSWG_INTRODUCTION;
+        track_type:                     KRLR;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         50 ton;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            var_PASSWG_RUNNINGCOST;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_PASSWG_wagon;
+        purchase:                       set_PASSWG_purchase;
+
+        cost_factor:                    sw_PASSWG_cost;
+        running_cost_factor:            sw_PASSWG_runningcost;
+        loading_speed:                  sw_PASSWG_loadingspeed;
+
+        cargo_subtype_text:             sw_PASSWG_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_AMBIGUOUS);
+    }
+}
