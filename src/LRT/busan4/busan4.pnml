@@ -70,7 +70,6 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_4, 5754) {
         loading_speed:                  sw_BUSAN_METRO_4_loadingspeed;
 
         can_attach_wagon:               sw_BUSAN_METRO_4_attach;
-        start_stop:                     sw_BUSAN_METRO_4_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
     livery_override(ko_train_LRT_wagon) {
