@@ -40,7 +40,7 @@ switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_purchase, cargo_subtype) {
 #include "stake_car_PAPR_graphic.pnml"
 #include "stake_car_PIPE_graphic.pnml"
 #include "stake_car_STEL_graphic.pnml"
-// #include "stake_car_VEBO_graphic.pnml"
+#include "stake_car_VBOD_graphic.pnml"
 #include "stake_car_VEHI_graphic.pnml"
 #include "stake_car_WDPR_graphic.pnml"
 #include "stake_car_WOOD_graphic.pnml"

@@ -34,10 +34,10 @@ switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_STEL_wagon, random_bits % 2) {
     1: sg_STAKE_CAR_STEL_B_wagon;
     sg_STAKE_CAR_STEL_A_wagon;
 }
-// switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VEBO_wagon, random_bits % 2) {
-//     1: sg_STAKE_CAR_VEBO_B_wagon;
-//     sg_STAKE_CAR_VEBO_A_wagon;
-// }
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VBOD_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_VBOD_B_wagon;
+    sg_STAKE_CAR_VBOD_A_wagon;
+}
 switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VEHI_wagon, random_bits % 2) {
     1: sg_STAKE_CAR_VEHI_B_wagon;
     sg_STAKE_CAR_VEHI_A_wagon;
