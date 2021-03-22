@@ -75,17 +75,6 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_4, 5754) {
     livery_override(ko_train_LRT_wagon) {
         default:                        sw_BUSAN_METRO_4_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        length:                         6;
-    }
-    livery_override(ko_train_PASSWG) {
-        default:                        sw_BUSAN_METRO_4_wagon;
-        cargo_capacity:                 sw_METRO_wagon_capacity;
-        length:                         6;
-    }
-    livery_override(ko_train_PASSWGP) {
-        default:                        sw_BUSAN_METRO_4_wagon;
-        cargo_capacity:                 sw_METRO_wagon_capacity;
-        length:                         6;
     }
 }
 // End of "BUSAN_METRO_4"
