@@ -20,6 +20,8 @@ STR_ITX_SAEMAEUL_NAME                            :[KTS] ITX-Saemaeul
 STR_NURIRO_NAME                                  :[KTS] Nuriro
 STR_CDC_NAME                                     :[KTS] Commuter Diesel Car (CDC)
 STR_NDC_NAME                                     :[KTS] New Diesel Car (NDC)
+STR_DEC_NAME                                     :[KTS] Diesel Electric Car (DEC)
+# STR_EEC_NAME                                     :[KTS] Express Electric Car (EEC)
 STR_BIDULGI_CDC_NAME                             :[KTS] Bidulgi Commuter
 STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-Sancheon
@@ -74,7 +76,7 @@ STR_GIMPO_GOLDLINE_NAME                          :[KTS] Gimpo Goldline
 STR_UIJEONGBU_NAME                               :[KTS] Uijeongbu LRT
 
 
-# Liverys
+# Liveries
 STR_REFIT_PAINTING_THESEDAYS                     : (Current livery)
 STR_REFIT_PAINTING_7x00_CARGO                    : (Cargo livery)
 STR_REFIT_PAINTING_7x00_TIGER                    : (KNR first livery: Black & Orange)
@@ -124,6 +126,11 @@ STR_REFIT_PAINTING_BIDULGI_ORIGINAL_1            : (Original: ~1970s)
 STR_REFIT_PAINTING_BIDULGI_BLUE                  : (Livery: 1970s~1994)
 STR_REFIT_PAINTING_BIDULGI_GREEN_YELLOW          : (Livery: 1994~2000)
 STR_REFIT_PAINTING_BIDULGI_BAGGAGE_CAR           : (Bidulgi livery)
+
+# Refit (DEC, EEC)
+STR_REFIT_PAINTING_DEC_1                         : (Livery: Red)
+STR_REFIT_PAINTING_DEC_2                         : (Livery: Blue)
+STR_REFIT_PAINTING_DEC_3                         : (Livery: Red + Yellow)
 
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                           : (Black)

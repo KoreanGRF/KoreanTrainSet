@@ -19,6 +19,8 @@ sort(FEAT_TRAINS, [
     ko_train_K8500,                  // 5485
     ko_train_CDC,                    // 5510
     ko_train_NDC,                    // 5511
+    ko_train_DEC,                    // 5512
+    //ko_train_EEC,                    // 5513
     ko_train_DHC,                    // 5520
     ko_train_BIDULGI_CDC,            // 5521
     ko_train_NURIRO,                 // 5525

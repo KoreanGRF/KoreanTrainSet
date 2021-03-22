@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * DEC
+ */
+
+// Graphics
+spriteset(set_DEC_purchase, "./src/locomotive/DEC/DEC.png") {
+    tmpl_purchase_detail(0, 0, 50, 12, -12, -7)
+}
+spriteset(set_DEC_1_engineH, "./src/locomotive/DEC/DEC.png") {
+    tmpl_NDC(60, 0)
+}
+spriteset(set_DEC_1_engineT, "./src/locomotive/DEC/DEC.png") {
+    tmpl_NDC_r(60, 30)
+}
+spriteset(set_DEC_1_wagon, "./src/locomotive/DEC/DEC.png") {
+    tmpl_wagon_by_coor(60, 60)
+}
+spriteset(set_DEC_2_engineH, "./src/locomotive/DEC/DEC.png") {
+    tmpl_NDC(60, 90)
+}
+spriteset(set_DEC_2_engineT, "./src/locomotive/DEC/DEC.png") {
+    tmpl_NDC_r(60, 120)
+}
+spriteset(set_DEC_2_wagon, "./src/locomotive/DEC/DEC.png") {
+    tmpl_wagon_by_coor(60, 150)
+}
+spriteset(set_DEC_3_engineH, "./src/locomotive/DEC/DEC.png") {
+    tmpl_NDC(60, 180)
+}
+spriteset(set_DEC_3_engineT, "./src/locomotive/DEC/DEC.png") {
+    tmpl_NDC_r(60, 210)
+}
+spriteset(set_DEC_3_wagon, "./src/locomotive/DEC/DEC.png") {
+    tmpl_wagon_by_coor(60, 240)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_DEC_purchase, cargo_subtype) {
+    set_DEC_purchase;
+}
