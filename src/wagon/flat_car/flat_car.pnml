@@ -40,9 +40,9 @@ item(FEAT_TRAINS, ko_train_FLAT_CAR, 5910) {
 
         // Cargo
         cargo_capacity:                 25;
-        refittable_cargo_classes:       bitmask(CC_EXPRESS, CC_ARMOURED, CC_PIECE_GOODS, CC_REFRIGERATED, CC_COVERED);
+        refittable_cargo_classes:       bitmask(CC_EXPRESS, CC_PIECE_GOODS, CC_REFRIGERATED, CC_COVERED);
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [GOOD, VALU, FOOD, BATT, BUBL, FZDR, TOYS];
+        cargo_allow_refit:              [GOOD, VALU, FOOD, BATT, TOYS];
         cargo_disallow_refit:           [LVST, WOOD, PASS, STEL];
         loading_speed:                  5;
 
