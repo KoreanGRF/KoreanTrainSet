@@ -4,32 +4,8 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * KTX-1N
+ * KTX
  */
-SPEED_GENERAL(KTX1N)
-COST(KTX1N)
-RUNNING(KTX1N)
-CAPACITY(KTX1N)
-CAPACITY_PURCHASE(KTX1N)
-LOADING(KTX1N)
-SPEED_GENERAL(KTX2N)
-COST(KTX2N)
-RUNNING(KTX2N)
-CAPACITY(KTX2N)
-CAPACITY_PURCHASE(KTX2N)
-LOADING(KTX2N)
-SPEED_GENERAL(SRT)
-COST(SRT)
-RUNNING(SRT)
-CAPACITY(SRT)
-CAPACITY_PURCHASE(SRT)
-LOADING(SRT)
-SPEED_GENERAL(EUM)
-COST(EUM)
-RUNNING(EUM)
-// CAPACITY(EUM)
-CAPACITY_PURCHASE(EUM)
-LOADING(EUM)
 // SPEED_GENERAL(KTX_wagon)
 // COST(KTX_wagon)
 // RUNNING(KTX_wagon)
@@ -37,307 +13,59 @@ CAPACITY(KTX_wagon)
 CAPACITY_PURCHASE(KTX_wagon)
 // LOADING(KTX_wagon)
 
-// Graphics
-#include "KTX_graphic.pnml"
-
-// Switches
-#include "KTX_switch.pnml"
-
-// Item
-item(FEAT_TRAINS, ko_train_KTX1N, 5551) {
-    property {
-        // Common properties
-        name:                           string(STR_KTX1N_NAME);
-        climates_available:             ALL_CLIMATES;
-        introduction_date:              var_KTX1N_INTRODUCTION;
-        track_type:                     ELRL;
-        engine_class:                   ENGINE_CLASS_ELECTRIC;
-        sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        dual_headed:                    1;
-
-        // Spec
-        speed:                          330 km/h;
-        power:                          POWER_IN_KW(var_KTX1N_POWER);
-        weight:                         35 ton;
-        extra_weight_per_wagon:         35 ton;
-        tractive_effort_coefficient:    0.25;
-        air_drag_coefficient:           0.1;
-
-        // Model
-        model_life:                     VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                   30;
-        retire_early:                   0;
-        reliability_decay:              0;
-
-        // Cargo
-        cargo_capacity:                 1;
-        refittable_cargo_classes:       NO_CARGO_CLASS;
-        non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
-        cargo_disallow_refit:           [];
-
-        // Costs
-        refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
-
-        // Flags
-        ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
-        bitmask_vehicle_info:           0;
-    }
-    graphics {
-        default:                        sw_KTX1N_engine;
-        purchase:                       set_KTX1N_purchase;
-
-        speed:                          sw_KTX1N_speed;
-        cost_factor:                    sw_KTX1N_cost;
-        running_cost_factor:            sw_KTX1N_runningcost;
-        cargo_capacity:                 sw_KTX1N_capacity;
-        purchase_cargo_capacity:        sw_KTX1N_purchase_capacity;
-        loading_speed:                  sw_KTX1N_loadingspeed;
-
-        can_attach_wagon:               sw_KTX_attach;
-        start_stop:                     sw_ko_train_start_stop;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
-    }
-    livery_override(ko_train_PASSWG) {
-        default:                        sw_KTX1N_wagon;
-        cargo_capacity:                 sw_KTX_wagon_capacity_general;
-        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
-    }
-    livery_override(ko_train_PASSWGP) {
-        default:                        sw_KTX1N_wagon;
-        cargo_capacity:                 sw_KTX_wagon_capacity_general;
-        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
-        power:                          POWER_IN_KW(200);
-    }
+// Template
+template tmpl_KTXloco_power(x, y) {
+    [x,      y,     8,    22,    -3,   -11]
+    [x+15,   y,    20,    16,   -14,    -7]
+    [x+45,   y,    31,    12,   -16,    -8]
+    [x+95,   y,    20,    16,    -5,    -7]
+    [x+125,  y,     8,    22,    -3,   -11]
+    [x+140,  y,    20,    16,   -14,    -7]
+    [x+175,  y,    31,    12,   -16,    -8]
+    [x+225,  y,    20,    16,    -5,    -7]
 }
-// End of "KTX1N"
-
-
-
-// Item
-item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
-    property {
-        // Common properties
-        name:                           string(STR_KTX2N_NAME);
-        climates_available:             ALL_CLIMATES;
-        introduction_date:              var_KTX2N_INTRODUCTION;
-        track_type:                     ELRL;
-        engine_class:                   ENGINE_CLASS_ELECTRIC;
-        sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        dual_headed:                    1;
-
-        // Spec
-        speed:                          330 km/h;
-        power:                          8800 kW;
-        weight:                         35 ton;
-        extra_weight_per_wagon:         35 ton;
-        tractive_effort_coefficient:    0.25;
-        air_drag_coefficient:           0.1;
-
-        // Model
-        model_life:                     VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                   30;
-        retire_early:                   0;
-        reliability_decay:              0;
-
-        // Cargo
-        cargo_capacity:                 1;
-        refittable_cargo_classes:       NO_CARGO_CLASS;
-        non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
-        cargo_disallow_refit:           [];
-
-        // Costs
-        refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
-
-        // Flags
-        ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
-        bitmask_vehicle_info:           0;
-    }
-    graphics {
-        default:                        sw_KTX2N_engine;
-        purchase:                       set_KTX2N_purchase;
-
-        speed:                          sw_KTX2N_speed;
-        cost_factor:                    sw_KTX2N_cost;
-        running_cost_factor:            sw_KTX2N_runningcost;
-        cargo_capacity:                 sw_KTX2N_capacity;
-        purchase_cargo_capacity:        sw_KTX2N_purchase_capacity;
-        loading_speed:                  sw_KTX2N_loadingspeed;
-
-        can_attach_wagon:               sw_KTX_attach;
-        start_stop:                     sw_ko_train_start_stop;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
-    }
-    livery_override(ko_train_PASSWG) {
-        default:                        sw_KTX2N_wagon;
-        cargo_capacity:                 sw_KTX_wagon_capacity_general;
-        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
-        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
-    }
-    livery_override(ko_train_PASSWGP) {
-        default:                        sw_KTX2N_wagon;
-        cargo_capacity:                 sw_KTX_wagon_capacity_general;
-        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
-        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
-        power:                          POWER_IN_KW(200);
-    }
+template tmpl_KTXloco_wagon(x, y) {
+    [x,      y,     8,    22,    -3,   -11]
+    [x+15,   y,    20,    16,   -14,    -7]
+    [x+45,   y,    31,    11,   -16,    -7]
+    [x+95,   y,    20,    16,    -5,    -7]
+    [x+125,  y,     8,    22,    -3,   -11]
+    [x+140,  y,    20,    16,   -14,    -7]
+    [x+175,  y,    31,    11,   -16,    -7]
+    [x+225,  y,    20,    16,    -5,    -7]
 }
-// End of "KTX2N"
-
-
-
-// Item
-item(FEAT_TRAINS, ko_train_SRT, 5553) {
-    property {
-        // Common properties
-        name:                           string(STR_SRT_NAME);
-        climates_available:             ALL_CLIMATES;
-        introduction_date:              var_SRT_INTRODUCTION;
-        track_type:                     ELRL;
-        engine_class:                   ENGINE_CLASS_ELECTRIC;
-        sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        dual_headed:                    1;
-
-        // Spec
-        speed:                          330 km/h;
-        power:                          8800 kW;
-        weight:                         35 ton;
-        extra_weight_per_wagon:         35 ton;
-        tractive_effort_coefficient:    0.25;
-        air_drag_coefficient:           0.1;
-
-        // Model
-        model_life:                     VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                   30;
-        retire_early:                   0;
-        reliability_decay:              0;
-
-        // Cargo
-        cargo_capacity:                 1;
-        refittable_cargo_classes:       NO_CARGO_CLASS;
-        non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
-        cargo_disallow_refit:           [];
-
-        // Costs
-        refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
-
-        // Flags
-        ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
-        bitmask_vehicle_info:           0;
-    }
-    graphics {
-        default:                        sw_SRT_engine;
-        purchase:                       set_SRT_purchase;
-
-        speed:                          sw_SRT_speed;
-        cost_factor:                    sw_SRT_cost;
-        running_cost_factor:            sw_SRT_runningcost;
-        cargo_capacity:                 sw_SRT_capacity;
-        purchase_cargo_capacity:        sw_SRT_purchase_capacity;
-        loading_speed:                  sw_SRT_loadingspeed;
-
-        can_attach_wagon:               sw_KTX_attach;
-        start_stop:                     sw_ko_train_start_stop;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
-    }
-    livery_override(ko_train_PASSWG) {
-        default:                        sw_SRT_wagon;
-        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
-        cargo_capacity:                 sw_KTX_wagon_capacity_general;
-        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
-    }
-    livery_override(ko_train_PASSWGP) {
-        default:                        sw_SRT_wagon;
-        cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
-        cargo_capacity:                 sw_KTX_wagon_capacity_general;
-        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
-        power:                          POWER_IN_KW(200);
-    }
+template tmpl_KTXloco_wagon_r(x, y) {
+    [x+125,  y,     8,    22,    -3,   -11]
+    [x+140,  y,    20,    16,   -14,    -7]
+    [x+175,  y,    31,    11,   -16,    -7]
+    [x+225,  y,    20,    16,    -5,    -7]
+    [x,      y,     8,    22,    -3,   -11]
+    [x+15,   y,    20,    16,   -14,    -7]
+    [x+45,   y,    31,    11,   -16,    -7]
+    [x+95,   y,    20,    16,    -5,    -7]
 }
-// End of "SRT"
 
-
-
-/**
- * KTX-EUM
- */
-// Item
-item(FEAT_TRAINS, ko_train_EUM, 5554) {
-    property {
-        // Common properties
-        name:                           string(STR_EUM_NAME);
-        climates_available:             ALL_CLIMATES;
-        introduction_date:              var_EUM_INTRODUCTION;
-        track_type:                     ELRL;
-        engine_class:                   ENGINE_CLASS_ELECTRIC;
-        sprite_id:                      SPRITE_ID_NEW_TRAIN;
-        dual_headed:                    1;
-
-        // Spec
-        speed:                          var_EUM_SPEED km/h;
-        power:                          var_EUM_POWER kW;
-        weight:                         35 ton;
-        extra_weight_per_wagon:         35 ton;
-        tractive_effort_coefficient:    0.25;
-        air_drag_coefficient:           0.1;
-
-        // Model
-        model_life:                     VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                   30;
-        retire_early:                   0;
-        reliability_decay:              0;
-
-        // Cargo
-        cargo_capacity:                 1;
-        refittable_cargo_classes:       NO_CARGO_CLASS;
-        non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS];
-        cargo_disallow_refit:           [];
-
-        // Costs
-        refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
-
-        // Flags
-        ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
-        bitmask_vehicle_info:           0;
-    }
-    graphics {
-        default:                        sw_EUM_engine;
-        purchase:                       set_EUM_purchase;
-
-        speed:                          sw_EUM_speed;
-        cost_factor:                    sw_EUM_cost;
-        running_cost_factor:            sw_EUM_runningcost;
-        cargo_capacity:                 sw_EUM_capacity_in_custom;
-        purchase_cargo_capacity:        sw_EUM_purchase_capacity;
-        loading_speed:                  sw_EUM_loadingspeed;
-
-        can_attach_wagon:               sw_EUM_attach;
-        start_stop:                     sw_ko_train_start_stop;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
-    }
-    // KTX-EUM: TC+M'+M+M+M'+TC, so all cars are powered car. Hence, we give a power to nonpower car, too.
-    livery_override(ko_train_PASSWG) {
-        default:                        sw_EUM_power_wagon;
-        cargo_capacity:                 sw_EUM_capacity_in_custom;
-        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
-        power:                          POWER_IN_KW(200);
-    }
-    livery_override(ko_train_PASSWGP) {
-        default:                        sw_EUM_power_wagon;
-        cargo_capacity:                 sw_EUM_capacity_in_custom;
-        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
-        power:                          POWER_IN_KW(200);
-    }
+// Refit for wagon
+switch(FEAT_TRAINS, SELF, sw_KTX_wagon_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_PASSWAGON_FIRSTCAR);
+    return string(STR_REFIT_PASSWAGON_NORMALCAR);
 }
-// End of "EUM"
+switch(FEAT_TRAINS, SELF, sw_KTX_wagon_capacity_general, cargo_subtype) {
+    1: return 30 * sw_cargo_capacity_factor;
+    sw_KTX_wagon_capacity;
+}
+
+// Attachable vehicles
+switch(FEAT_TRAINS, SELF, sw_KTX_attach, vehicle_type_id) {
+    ko_train_KTX1N:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_KTX2N:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_SRT:     return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:  return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWGP: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
+#include "KTX1N.pnml"
+#include "KTX2N.pnml"
+#include "SRT.pnml"
+#include "EUM.pnml"

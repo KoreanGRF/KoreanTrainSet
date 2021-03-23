@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// KTX2N (KTX-Sancheon)
+spriteset(set_KTX2N_engineH, "./src/locomotive/KTX/KTX2N.png") {   // PC1
+    [ 60,      0,     8,    23,    -3,   -11]
+    [ 75,      0,    22,    16,   -15,    -7]
+    [105,      0,    32,    14,   -16,   -10]
+    [155,      0,    22,    18,    -5,    -9]
+    [185,      0,     8,    23,    -3,   -11]
+    [200,      0,    22,    18,   -16,    -9]
+    [235,      0,    32,    14,   -18,   -10]
+    [285,      0,    22,    16,    -6,    -7]
+}
+spriteset(set_KTX2N_wagon_1, "./src/locomotive/KTX/KTX2N.png") {   // T1
+    tmpl_KTXloco_power(60, 30)
+}
+spriteset(set_KTX2N_wagon_express, "./src/locomotive/KTX/KTX2N.png") {   // T3, express car
+    tmpl_KTXloco_wagon(60, 60)
+}
+spriteset(set_KTX2N_wagon_express_r, "./src/locomotive/KTX/KTX2N.png") {   // T3, express car (reverse)
+    tmpl_KTXloco_wagon_r(60, 60)
+}
+spriteset(set_KTX2N_wagon_middle, "./src/locomotive/KTX/KTX2N.png") {  // T2, T4 ~ T7
+    tmpl_KTXloco_wagon(60, 90)
+}
+spriteset(set_KTX2N_wagon_8, "./src/locomotive/KTX/KTX2N.png") {   // T8
+    tmpl_KTXloco_power(60, 120)
+}
+spriteset(set_KTX2N_engineT, "./src/locomotive/KTX/KTX2N.png") {   // PC2
+    [185,    150,     8,    23,    -3,   -11]
+    [200,    150,    22,    16,   -15,    -7]
+    [235,    150,    32,    14,   -16,   -10]
+    [285,    150,    22,    18,    -5,    -9]
+    [ 60,    150,     8,    23,    -3,   -11]
+    [ 75,    150,    22,    18,   -16,    -9]
+    [105,    150,    32,    14,   -18,   -10]
+    [155,    150,    22,    16,    -6,    -8]
+}
+spriteset(set_KTX2N_purchase, "./src/locomotive/KTX/KTX2N.png") {
+    tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
+}

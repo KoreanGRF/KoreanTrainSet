@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_KTX1N_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: set_KTX1N_engineT;
+    set_KTX1N_engineH;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_middle_front, cargo_subtype) {
+    1: set_KTX1N_wagon_express;
+    set_KTX1N_wagon_middle1;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_middle_rear, cargo_subtype) {
+    1: set_KTX1N_wagon_express_r;
+    set_KTX1N_wagon_middle2;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_middle, (position_in_vehid_chain + 1) <= (num_vehs_in_vehid_chain / 2)) {
+    1: sw_KTX1N_wagon_middle_front;
+    sw_KTX1N_wagon_middle_rear;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    ko_train_KTX1N: set_KTX1N_wagon_18;
+    return sw_KTX1N_wagon_middle;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX1N_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+    ko_train_KTX1N: set_KTX1N_wagon_1;
+    return sw_KTX1N_wagon_rear;
+}
+
+/*
+[Note for myself]
+
+https://newgrf-specs.tt-wiki.net/wiki/VariationalAction2/Vehicles#Query_variable_of_n-th_vehicle_in_chain_.2861.29
++1 : 뒤
+0x10F : interpreted as a signed integer and specifies the offset in the chain from the current vehicle
+0x61 : Query variable of n-th vehicle in chain
+0 : shift
+0x0000FFFF : mask
+0xC6 : Vehicle type ID
+*/

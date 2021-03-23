@@ -36,7 +36,7 @@
 // #include "locomotive/EEC/EEC.pnml"
 #include "locomotive/bidulgi/bidulgi_cdc.pnml"
 
-// KTX-1
+// KTX
 #include "locomotive/KTX/KTX.pnml"
 
 // Wagon
