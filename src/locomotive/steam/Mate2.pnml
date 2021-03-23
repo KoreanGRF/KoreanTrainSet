@@ -16,11 +16,11 @@ SPEED_GENERAL(MATE2)
 template tmpl_MATE2(x, y) {
     [x,     y,    8,     23,    -3,   -10]
     [x+15,  y,    23,    18,   -14,    -9]
-    [x+45,  y,    32,    12,   -18,    -8]
+    [x+45,  y,    32,    12,   -15,    -8]
     [x+95,  y,    23,    19,    -6,    -9]
     [x+125, y,    8,     23,    -3,   -10]
     [x+140, y,    23,    19,   -16,    -9]
-    [x+175, y,    32,    12,   -16,    -8]
+    [x+175, y,    32,    12,   -13,    -8]
     [x+225, y,    23,    18,    -7,    -9]
 }
 spriteset(set_MATE2_purchase, "./src/locomotive/steam/steam.png") {

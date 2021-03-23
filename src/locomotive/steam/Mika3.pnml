@@ -16,11 +16,11 @@ SPEED_GENERAL(MIKA3)
 template tmpl_MIKA3(x, y) {
     [x,     y,    8,     22,    -3,   -10]
     [x+15,  y,    22,    17,   -14,    -9]
-    [x+45,  y,    31,    12,   -18,    -8]
+    [x+45,  y,    31,    12,   -15,    -8]
     [x+95,  y,    22,    18,    -6,    -9]
     [x+125, y,    8,     22,    -3,   -10]
     [x+140, y,    22,    18,   -16,    -9]
-    [x+175, y,    31,    12,   -15,    -8]
+    [x+175, y,    31,    12,   -12,    -8]
     [x+225, y,    22,    17,    -7,   -10]
 }
 spriteset(set_MIKA3_purchase, "./src/locomotive/steam/steam.png") {
