@@ -13,7 +13,7 @@ STR_K7000_NAME                                   :[KTS] 7000 Diesel Locomotive
 STR_K7x00_NAME                                   :[KTS] 7x00 Diesel Locomotive
 STR_K7600_NAME                                   :[KTS] 7600 Diesel Locomotive
 STR_K8000_NAME                                   :[KTS] 8000 Electronic Locomotive
-STR_K8x00_NAME                                   :[KTS] 8100/8200 Electronic Locomotive
+STR_K8x00_NAME                                   :[KTS] 8x00 Electronic Locomotive
 STR_K8500_NAME                                   :[KTS] 8500 Electronic Locomotive
 STR_DHC_NAME                                     :[KTS] Diesel Hydraulic Car (DHC, PP)
 STR_ITX_SAEMAEUL_NAME                            :[KTS] ITX-Saemaeul
@@ -271,7 +271,9 @@ STR_PARAM_OPT_FACTOR_BY_1_16                     :x1/16
 STR_PARAM_OPT_FACTOR_BY_1_8                      :x1/8
 STR_PARAM_OPT_FACTOR_BY_1_4                      :x1/4
 STR_PARAM_OPT_FACTOR_BY_1_2                      :x1/2
-STR_PARAM_OPT_FACTOR_BY_1                        :x1 (default)
+STR_PARAM_OPT_FACTOR_BY_1_2_DEFAULT              :x1/2 (default)
+STR_PARAM_OPT_FACTOR_BY_1                        :x1
+STR_PARAM_OPT_FACTOR_BY_1_DEFAULT                :x1 (default)
 STR_PARAM_OPT_FACTOR_BY_2                        :x2
 STR_PARAM_OPT_FACTOR_BY_4                        :x4
 STR_PARAM_OPT_FACTOR_BY_8                        :x8
@@ -280,7 +282,7 @@ STR_PARAM_OPT_FACTOR_BY_32                       :x32
 STR_PARAM_OPT_FACTOR_BY_64                       :x64
 STR_PARAM_OPT_FACTOR_BY_128                      :x128
 STR_PARAM_OPT_FACTOR_BY_256                      :x256
-# STR_PARAM_OPT_FACTOR_BY_512                    :x512
+STR_PARAM_OPT_FACTOR_BY_512                      :x512
 # STR_PARAM_OPT_FACTOR_BY_1024                   :x1024
 # STR_PARAM_OPT_FACTOR_BY_2048                   :x2048
 # STR_PARAM_OPT_FACTOR_BY_4096                   :x4096
