@@ -10,6 +10,10 @@ switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_wagon, cargo_subtype) {
 }
 
 // Random wagons for each cargos
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_BUBL_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_BUBL_B_wagon;
+    sg_STAKE_CAR_BUBL_A_wagon;
+}
 switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_COPR_wagon, random_bits % 2) {
     1: sg_STAKE_CAR_COPR_B_wagon;
     sg_STAKE_CAR_COPR_A_wagon;

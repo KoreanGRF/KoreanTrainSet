@@ -34,6 +34,7 @@ switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_purchase, cargo_subtype) {
     set_STAKE_CAR_purchase;
 }
 
+#include "stake_car_BUBL_graphic.pnml"
 #include "stake_car_COPR_graphic.pnml"
 #include "stake_car_ENSP_graphic.pnml"
 #include "stake_car_FMSP_graphic.pnml"
