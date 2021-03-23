@@ -1,0 +1,97 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+spriteset(set_BUFFERS, "./src/object/object.png") {
+    [0, 0, 5, 12, -2,  -11]
+    [0, 0, 5, 12,  14, -25]
+    [5, 0, 5, 12, -17, -25]
+    [5, 0, 5, 12,  14,  -9]
+}
+
+spritelayout sply_end_of_rail_SW {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: set_BUFFERS(0);
+        xextent: 1;
+        yextent: 3;
+        zextent: 12;
+        xoffset: 15; // from NE edge
+        yoffset: 7;  // from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout sply_end_of_rail_NW {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: set_BUFFERS(1);
+        xextent: 5;
+        yextent: 5;
+        zextent: 12;
+        xoffset: 10; // from NE edge
+        yoffset: 10; // from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout sply_end_of_rail_NE {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: set_BUFFERS(2);
+        xextent: 5;
+        yextent: 5;
+        zextent: 12;
+        xoffset: 10; // from NE edge
+        yoffset: 10; // from NW edge
+        zoffset: 0;
+    }
+}
+spritelayout sply_end_of_rail_SE {
+    ground {
+        sprite: GROUNDSPRITE_NORMAL;
+    }
+    building {
+        sprite: set_BUFFERS(3);
+        xextent: 5;
+        yextent: 5;
+        zextent: 12;
+        xoffset: 10; // from NE edge
+        yoffset: 10; // from NW edge
+        zoffset: 0;
+    }
+}
+
+switch(FEAT_OBJECTS, SELF, sw_buffer, view) {
+    1: sply_end_of_rail_SW;
+    2: sply_end_of_rail_NW;
+    3: sply_end_of_rail_NE;
+    sply_end_of_rail_SE;
+}
+
+item(FEAT_OBJECTS, ko_train_objects_end_of_rail) {
+    property {
+        class:                  "KTSR";
+        classname:              string(STR_OBJ_BUFFER_KTSR);
+        name:                   string(STR_OBJ_BUFFER_KTSR);
+        climates_available:     ALL_CLIMATES;
+        size:                   [1,1];
+        build_cost_multiplier:  1;
+        remove_cost_multiplier: 1;
+        introduction_date:      date(1971,1,1);
+        end_of_life_date:       0xFFFFFFFF;
+        object_flags:           bitmask(OBJ_FLAG_REMOVE_IS_INCOME, OBJ_FLAG_ALLOW_BRIDGE, OBJ_FLAG_ONLY_INGAME);
+        height:                 1;
+        num_views:              4;
+    }
+    graphics {
+        default: sw_buffer;
+        tile_check: CB_RESULT_LOCATION_ALLOW;
+    }
+}

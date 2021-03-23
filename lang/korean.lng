@@ -303,6 +303,9 @@ STR_KO_LIGHT_RAIL_BUILD_VEHICLE_CAPTION          :새 경전철 차량
 STR_KO_LIGHT_RAIL_NEW_ENGINE                     :{G=m}경전철 차량
 STR_KO_LIGHT_RAIL_AUTOREPLACE                    :경전철 차량
 
+# Buffer Object
+STR_OBJ_BUFFER_KTSR                              :[KTS] 차막이
+
 # Errors
 STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION        :이 NewGRF를 사용하기 위해서는 더 높은 OpenTTD 버전(1.7.0/r21278)을 사용해야 합니다!
 STR_ERROR_NO_ATTACH                              :여기에 이 차량을 붙일 수 없습니다

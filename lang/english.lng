@@ -302,6 +302,9 @@ STR_KO_LIGHT_RAIL_BUILD_VEHICLE_CAPTION          :New Light Rail Vehicle
 STR_KO_LIGHT_RAIL_NEW_ENGINE                     :Light Rail vehicle
 STR_KO_LIGHT_RAIL_AUTOREPLACE                    :Light Rail Vehicles
 
+# Buffer Object
+STR_OBJ_BUFFER_KTSR                              :[KTS] Buffers
+
 # Errors
 STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION        :It requires higher OpenTTD version(1.7.0/r21278) to run this NewGRF!
 STR_ERROR_NO_ATTACH                              :You can't attach this car here
