@@ -113,6 +113,7 @@ item(FEAT_TRAINS, ko_train_MATE2, 5303) {
         cost_factor:                    sw_MATE2_cost;
         running_cost_factor:            sw_MATE2_runningcost;
         cargo_capacity:                 sw_MATE2_capacity;
+        purchase_cargo_capacity:        sw_MATE2_purchase_capacity;
         loading_speed:                  sw_MATE2_loadingspeed;
 
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);

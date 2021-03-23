@@ -66,6 +66,7 @@ item(FEAT_TRAINS, ko_train_SUIN_BUNDANG, 5716) {
         cost_factor:                    sw_SUIN_BUNDANG_cost;
         running_cost_factor:            sw_SUIN_BUNDANG_runningcost;
         cargo_capacity:                 sw_SUIN_BUNDANG_capacity;
+        purchase_cargo_capacity:        sw_SUIN_BUNDANG_purchase_capacity;
         loading_speed:                  sw_SUIN_BUNDANG_loadingspeed;
 
         can_attach_wagon:               sw_METRO_attach;

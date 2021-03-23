@@ -66,6 +66,7 @@ item(FEAT_TRAINS, ko_train_DAEGU_METRO_3, 5763) {
         cost_factor:                    sw_DAEGU_METRO_3_cost;
         running_cost_factor:            sw_DAEGU_METRO_3_runningcost;
         cargo_capacity:                 sw_DAEGU_METRO_3_capacity;
+        purchase_cargo_capacity:        sw_DAEGU_METRO_3_purchase_capacity;
         loading_speed:                  sw_DAEGU_METRO_3_loadingspeed;
 
         can_attach_wagon:               sw_DAEGU_METRO_3_attach;

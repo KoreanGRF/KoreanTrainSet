@@ -67,6 +67,7 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_4, 5754) {
         cost_factor:                    sw_BUSAN_METRO_4_cost;
         running_cost_factor:            sw_BUSAN_METRO_4_runningcost;
         cargo_capacity:                 sw_BUSAN_METRO_4_capacity;
+        purchase_cargo_capacity:        sw_BUSAN_METRO_4_purchase_capacity;
         loading_speed:                  sw_BUSAN_METRO_4_loadingspeed;
 
         can_attach_wagon:               sw_BUSAN_METRO_4_attach;

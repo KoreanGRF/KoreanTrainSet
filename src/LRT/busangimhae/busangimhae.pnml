@@ -66,6 +66,7 @@ item(FEAT_TRAINS, ko_train_BUSANGIMHAE, 5755) {
         cost_factor:                    sw_BUSANGIMHAE_cost;
         running_cost_factor:            sw_BUSANGIMHAE_runningcost;
         cargo_capacity:                 sw_BUSANGIMHAE_capacity;
+        purchase_cargo_capacity:        sw_BUSANGIMHAE_purchase_capacity;
         loading_speed:                  sw_BUSANGIMHAE_loadingspeed;
 
         can_attach_wagon:               sw_BUSANGIMHAE_attach;

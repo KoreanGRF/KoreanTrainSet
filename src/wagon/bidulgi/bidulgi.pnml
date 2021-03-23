@@ -65,6 +65,7 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CAR, 5605) {
         cost_factor:                    sw_BIDULGI_wagon_cost;
         running_cost_factor:            sw_BIDULGI_wagon_runningcost;
         cargo_capacity:                 sw_BIDULGI_CAR_capacity;
+        // purchase_cargo_capacity:        sw_BIDULGI_wagon_purchase_capacity;
         loading_speed:                  sw_BIDULGI_wagon_loadingspeed;
 
         cargo_subtype_text:             sw_BIDULGI_CAR_subtype_text;

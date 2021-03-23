@@ -64,6 +64,7 @@ item(FEAT_TRAINS, ko_train_BAGGAGE_CAR, 5912) {
         cost_factor:                    sw_BAGGAGE_CAR_cost;
         running_cost_factor:            sw_BAGGAGE_CAR_runningcost;
         cargo_capacity:                 sw_BAGGAGE_CAR_capacity_in_custom;
+        purchase_cargo_capacity:        sw_BAGGAGE_CAR_purchase_capacity;
         loading_speed:                  sw_BAGGAGE_CAR_loadingspeed;
 
         can_attach_wagon:               sw_Kxxxx_attach;

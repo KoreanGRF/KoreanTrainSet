@@ -68,6 +68,7 @@ item(FEAT_TRAINS, ko_train_DEC, 5512) {
         cost_factor:                    sw_DEC_cost;
         running_cost_factor:            sw_DEC_runningcost;
         cargo_capacity:                 sw_DEC_capacity;
+        purchase_cargo_capacity:        sw_DEC_purchase_capacity;
         loading_speed:                  sw_DEC_loadingspeed;
 
         can_attach_wagon:               sw_DEC_attach;

@@ -66,6 +66,7 @@ item(FEAT_TRAINS, ko_train_UISINSEOL, 5803) {
         cost_factor:                    sw_UISINSEOL_cost;
         running_cost_factor:            sw_UISINSEOL_runningcost;
         cargo_capacity:                 sw_UISINSEOL_capacity;
+        purchase_cargo_capacity:        sw_UISINSEOL_purchase_capacity;
         loading_speed:                  sw_UISINSEOL_loadingspeed;
 
         can_attach_wagon:               sw_UISINSEOL_attach;

@@ -70,6 +70,7 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CDC, 5521) {
         cost_factor:                    sw_BIDULGI_CDC_cost;
         running_cost_factor:            sw_BIDULGI_CDC_runningcost;
         cargo_capacity:                 sw_BIDULGI_CDC_capacity;
+        purchase_cargo_capacity:        sw_BIDULGI_CDC_purchase_capacity;
         loading_speed:                  sw_BIDULGI_CDC_loadingspeed;
 
         can_attach_wagon:               sw_BIDULGI_CDC_attach;

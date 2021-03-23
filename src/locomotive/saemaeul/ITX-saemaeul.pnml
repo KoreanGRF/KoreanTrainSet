@@ -138,6 +138,7 @@ item(FEAT_TRAINS, ko_train_ITX_SAEMAEUL, 5540) {
         cost_factor:                    sw_ITX_SAEMAEUL_cost;
         running_cost_factor:            sw_ITX_SAEMAEUL_runningcost;
         cargo_capacity:                 sw_ITX_SAEMAEUL_capacity;
+        purchase_cargo_capacity:        sw_ITX_SAEMAEUL_purchase_capacity;
         loading_speed:                  sw_ITX_SAEMAEUL_loadingspeed;
 
         can_attach_wagon:               sw_ITX_SAEMAEUL_attach;
@@ -147,10 +148,12 @@ item(FEAT_TRAINS, ko_train_ITX_SAEMAEUL, 5540) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_ITX_SAEMAEUL_wagon;
         cargo_capacity:                 sw_ITX_SAEMAEUL_wagon_capacity;
+        purchase_cargo_capacity:        sw_ITX_SAEMAEUL_wagon_purchase_capacity;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_ITX_SAEMAEUL_wagon;
         cargo_capacity:                 sw_ITX_SAEMAEUL_wagon_capacity;
+        purchase_cargo_capacity:        sw_ITX_SAEMAEUL_wagon_purchase_capacity;
         power:                          POWER_IN_KW(var_ITX_SAEMAEUL_wagon_POWER);
     }
 }

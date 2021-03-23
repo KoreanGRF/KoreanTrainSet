@@ -66,6 +66,7 @@ item(FEAT_TRAINS, ko_train_SEOUL_METRO_2, 5712) {
         cost_factor:                    sw_SEOUL_METRO_2_cost;
         running_cost_factor:            sw_SEOUL_METRO_2_runningcost;
         cargo_capacity:                 sw_SEOUL_METRO_2_capacity;
+        purchase_cargo_capacity:        sw_SEOUL_METRO_2_purchase_capacity;
         loading_speed:                  sw_SEOUL_METRO_2_loadingspeed;
 
         can_attach_wagon:               sw_METRO_attach;

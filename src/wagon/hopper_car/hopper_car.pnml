@@ -104,6 +104,7 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         cost_factor:                    sw_HOPPER_CAR_cost;
         running_cost_factor:            sw_HOPPER_CAR_runningcost;
         cargo_capacity:                 sw_HOPPER_CAR_capacity;
+        purchase_cargo_capacity:        sw_HOPPER_CAR_purchase_capacity;
         loading_speed:                  sw_HOPPER_CAR_loadingspeed;
 
         cargo_subtype_text:             sw_HOPPER_CAR_cargo_subtype_text;

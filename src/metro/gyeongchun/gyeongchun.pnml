@@ -71,6 +71,7 @@ item(FEAT_TRAINS, ko_train_GYEONGCHUN, 5720) {
         cost_factor:                    sw_GYEONGCHUN_cost;
         running_cost_factor:            sw_GYEONGCHUN_runningcost;
         cargo_capacity:                 sw_GYEONGCHUN_capacity;
+        purchase_cargo_capacity:        sw_GYEONGCHUN_purchase_capacity;
         loading_speed:                  sw_GYEONGCHUN_loadingspeed;
 
         can_attach_wagon:               sw_METRO_attach;
@@ -138,6 +139,7 @@ item(FEAT_TRAINS, ko_train_ITX_CHEONGCHUN, 5530) {
         cost_factor:                    sw_ITX_CHEONGCHUN_cost;
         running_cost_factor:            sw_ITX_CHEONGCHUN_runningcost;
         cargo_capacity:                 sw_ITX_CHEONGCHUN_capacity;
+        purchase_cargo_capacity:        sw_ITX_CHEONGCHUN_purchase_capacity;
         loading_speed:                  sw_ITX_CHEONGCHUN_loadingspeed;
 
         can_attach_wagon:               sw_METRO_attach;

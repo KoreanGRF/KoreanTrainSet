@@ -88,6 +88,7 @@ item(FEAT_TRAINS, ko_train_KTX1N, 5551) {
         cost_factor:                    sw_KTX1N_cost;
         running_cost_factor:            sw_KTX1N_runningcost;
         cargo_capacity:                 sw_KTX1N_capacity;
+        purchase_cargo_capacity:        sw_KTX1N_purchase_capacity;
         loading_speed:                  sw_KTX1N_loadingspeed;
 
         can_attach_wagon:               sw_KTX_attach;
@@ -160,6 +161,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         cost_factor:                    sw_KTX2N_cost;
         running_cost_factor:            sw_KTX2N_runningcost;
         cargo_capacity:                 sw_KTX2N_capacity;
+        purchase_cargo_capacity:        sw_KTX2N_purchase_capacity;
         loading_speed:                  sw_KTX2N_loadingspeed;
 
         can_attach_wagon:               sw_KTX_attach;
@@ -170,11 +172,13 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         default:                        sw_KTX2N_wagon;
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
+        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_KTX2N_wagon;
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
+        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         power:                          POWER_IN_KW(200);
     }
 }
@@ -232,6 +236,7 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
         cost_factor:                    sw_SRT_cost;
         running_cost_factor:            sw_SRT_runningcost;
         cargo_capacity:                 sw_SRT_capacity;
+        purchase_cargo_capacity:        sw_SRT_purchase_capacity;
         loading_speed:                  sw_SRT_loadingspeed;
 
         can_attach_wagon:               sw_KTX_attach;
@@ -242,11 +247,13 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
         default:                        sw_SRT_wagon;
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
+        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_SRT_wagon;
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
+        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         power:                          POWER_IN_KW(200);
     }
 }
@@ -307,6 +314,7 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
         cost_factor:                    sw_EUM_cost;
         running_cost_factor:            sw_EUM_runningcost;
         cargo_capacity:                 sw_EUM_capacity_in_custom;
+        // purchase_cargo_capacity:        sw_EUM_purchase_capacity;
         loading_speed:                  sw_EUM_loadingspeed;
 
         can_attach_wagon:               sw_EUM_attach;
@@ -317,11 +325,13 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_EUM_power_wagon;
         cargo_capacity:                 sw_EUM_capacity_in_custom;
+        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         power:                          POWER_IN_KW(200);
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_EUM_power_wagon;
         cargo_capacity:                 sw_EUM_capacity_in_custom;
+        purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         power:                          POWER_IN_KW(200);
     }
 }

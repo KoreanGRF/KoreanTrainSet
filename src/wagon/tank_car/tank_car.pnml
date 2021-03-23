@@ -64,6 +64,7 @@ item(FEAT_TRAINS, ko_train_TANK_CAR, 5913) {
         cost_factor:                    sw_TANK_CAR_cost;
         running_cost_factor:            sw_TANK_CAR_runningcost;
         cargo_capacity:                 sw_TANK_CAR_capacity;
+        purchase_cargo_capacity:        sw_TANK_CAR_purchase_capacity;
         loading_speed:                  sw_TANK_CAR_loadingspeed;
 
         cargo_subtype_text:             sw_TANK_CAR_cargo_subtype_text;

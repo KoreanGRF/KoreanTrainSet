@@ -66,6 +66,7 @@ item(FEAT_TRAINS, ko_train_SHINBUNDANG, 5735) {
         cost_factor:                    sw_SHINBUNDANG_cost;
         running_cost_factor:            sw_SHINBUNDANG_runningcost;
         cargo_capacity:                 sw_SHINBUNDANG_capacity;
+        purchase_cargo_capacity:        sw_SHINBUNDANG_purchase_capacity;
         loading_speed:                  sw_SHINBUNDANG_loadingspeed;
 
         can_attach_wagon:               sw_METRO_attach;

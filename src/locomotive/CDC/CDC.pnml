@@ -306,6 +306,7 @@ item(FEAT_TRAINS, ko_train_CDC, 5510) {
         cost_factor:                    sw_CDC_cost;
         running_cost_factor:            sw_CDC_runningcost;
         cargo_capacity:                 sw_CDC_capacity;
+        purchase_cargo_capacity:        sw_CDC_purchase_capacity;
         loading_speed:                  sw_CDC_loadingspeed;
 
         can_attach_wagon:               sw_CDC_attach;
@@ -317,11 +318,13 @@ item(FEAT_TRAINS, ko_train_CDC, 5510) {
         default:                        sw_CDC_wagon;
         cargo_capacity:                 sw_CDC_wagon_capacity;
         cargo_subtype_text:             sw_CDC_cargo_subtype_text;
+        purchase_cargo_capacity:        sw_CDC_wagon_purchase_capacity;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_CDC_wagon;
         cargo_capacity:                 sw_CDC_wagon_capacity;
         cargo_subtype_text:             sw_CDC_cargo_subtype_text;
+        purchase_cargo_capacity:        sw_CDC_wagon_purchase_capacity;
     }
     livery_override(ko_train_CAFE_CAR) {
         default:                        set_CAFE_CAR_RDC;

@@ -92,6 +92,7 @@ item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
         cost_factor:                    sw_STAKE_CAR_cost;
         running_cost_factor:            sw_STAKE_CAR_runningcost;
         cargo_capacity:                 sw_STAKE_CAR_capacity;
+        purchase_cargo_capacity:        sw_STAKE_CAR_purchase_capacity;
         loading_speed:                  sw_STAKE_CAR_loadingspeed;
 
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
