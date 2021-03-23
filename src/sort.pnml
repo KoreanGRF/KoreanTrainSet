@@ -23,6 +23,10 @@ sort(FEAT_TRAINS, [
     //ko_train_EEC,                    // 5513
     ko_train_DHC,                    // 5520
     ko_train_BIDULGI_CDC,            // 5521
+
+    ko_train_PASSWG,                 // 5900
+    ko_train_PASSWGP,                // 5901
+
     ko_train_NURIRO,                 // 5525
     ko_train_ITX_CHEONGCHUN,         // 5530
     ko_train_ITX_SAEMAEUL,           // 5540
@@ -37,9 +41,6 @@ sort(FEAT_TRAINS, [
     ko_train_BIDULGI_CAR,            // 5605
     //ko_train_3RD_CLASS_CAR,          // 5606
     ko_train_GENERATOR_CAR,          // 5610
-
-    ko_train_PASSWG,                 // 5900
-    ko_train_PASSWGP,                // 5901
 
     ko_train_FLAT_CAR,               // 5910
     ko_train_HOPPER_CAR,             // 5911
