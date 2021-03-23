@@ -19,13 +19,13 @@ spriteset(set_PASSWG_purchase, "./src/wagon/passenger_wagon/passenger_wagon_purc
 spriteset(set_PASSWG_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     [0,    0,   8,   22,    -3,   -11]
     [15,   0,  21,   17,   -14,    -8]
-    [45,   0,  32,   12,   -17,    -8]
+    [45,   0,  32,   12,   -14,    -8]
     [95,   0,  21,   17,    -6,    -8]
 }
 spriteset(set_PASSWGP_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     [0,   30,   8,   22,    -3,   -11]
     [15,  30,  21,   17,   -14,    -8]
-    [45,  30,  32,   12,   -17,    -8]
+    [45,  30,  32,   12,   -14,    -8]
     [95,  30,  21,   17,    -6,    -8]
 }
 
