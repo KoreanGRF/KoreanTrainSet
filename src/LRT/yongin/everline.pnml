@@ -10,6 +10,7 @@ SPEED_LRT(YONGIN_EVERLINE)
 COST(YONGIN_EVERLINE)
 RUNNING(YONGIN_EVERLINE)
 CAPACITY(YONGIN_EVERLINE)
+// CAPACITY_PURCHASE(YONGIN_EVERLINE)
 LOADING(YONGIN_EVERLINE)
 
 // Graphics
@@ -72,15 +73,5 @@ item(FEAT_TRAINS, ko_train_YONGIN_EVERLINE, 5804) {
         start_stop:                     sw_YONGIN_EVERLINE_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
-    // in future ...
-    // livery_override(ko_train_PASSWG) {
-    //     default:                        sw_YONGIN_EVERLINE_wagon;
-    //     cargo_capacity:                 sw_METRO_wagon_capacity;
-    // }
-    // livery_override(ko_train_PASSWGP) {
-    //     default:                        sw_YONGIN_EVERLINE_wagon;
-    //     cargo_capacity:                 sw_METRO_wagon_capacity;
-    //     power:                          POWER_IN_KW(var_METRO_wagon_POWER);
-    // }
 }
 // End of "YONGIN_EVERLINE"

@@ -6,11 +6,12 @@
 /**
  * FLAT_CAR
  */
-//SPEED_GENERAL(FLAT_CAR)
-         COST(FLAT_CAR)
-      RUNNING(FLAT_CAR)
-     CAPACITY(FLAT_CAR)
-      LOADING(FLAT_CAR)
+// SPEED_GENERAL(FLAT_CAR)
+COST(FLAT_CAR)
+RUNNING(FLAT_CAR)
+CAPACITY(FLAT_CAR)
+// CAPACITY_PURCHASE(FLAT_CAR)
+LOADING(FLAT_CAR)
 
 // Graphics
 #include "flat_car_graphic.pnml"
@@ -63,7 +64,6 @@ item(FEAT_TRAINS, ko_train_FLAT_CAR, 5910) {
         cost_factor:                    sw_FLAT_CAR_cost;
         running_cost_factor:            sw_FLAT_CAR_runningcost;
         cargo_capacity:                 sw_FLAT_CAR_capacity;
-        purchase_cargo_capacity:        sw_FLAT_CAR_purchase_capacity;
         loading_speed:                  sw_FLAT_CAR_loadingspeed;
 
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);

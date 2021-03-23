@@ -6,11 +6,12 @@
 /**
  * TANK_CAR
  */
-//SPEED_GENERAL(TANK_CAR)
-         COST(TANK_CAR)
-      RUNNING(TANK_CAR)
-     CAPACITY(TANK_CAR)
-      LOADING(TANK_CAR)
+// SPEED_GENERAL(TANK_CAR)
+COST(TANK_CAR)
+RUNNING(TANK_CAR)
+CAPACITY(TANK_CAR)
+// CAPACITY_PURCHASE(TANK_CAR)
+LOADING(TANK_CAR)
 
 // Graphics
 #include "tank_car_graphic.pnml"
@@ -64,7 +65,6 @@ item(FEAT_TRAINS, ko_train_TANK_CAR, 5913) {
         cost_factor:                    sw_TANK_CAR_cost;
         running_cost_factor:            sw_TANK_CAR_runningcost;
         cargo_capacity:                 sw_TANK_CAR_capacity;
-        purchase_cargo_capacity:        sw_TANK_CAR_purchase_capacity;
         loading_speed:                  sw_TANK_CAR_loadingspeed;
 
         cargo_subtype_text:             sw_TANK_CAR_cargo_subtype_text;

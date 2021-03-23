@@ -7,15 +7,17 @@
  * CDC
  */
 SPEED_GENERAL(CDC)
-         COST(CDC)
-      RUNNING(CDC)
-     CAPACITY(CDC)
-      LOADING(CDC)
-//SPEED_GENERAL(CDC_wagon)
-//         COST(CDC_wagon)
-//      RUNNING(CDC_wagon)
-     CAPACITY(CDC_wagon)
-//      LOADING(CDC_wagon)
+COST(CDC)
+RUNNING(CDC)
+CAPACITY(CDC)
+CAPACITY_PURCHASE(CDC)
+LOADING(CDC)
+// SPEED_GENERAL(CDC_wagon)
+// COST(CDC_wagon)
+// RUNNING(CDC_wagon)
+CAPACITY(CDC_wagon)
+CAPACITY_PURCHASE(CDC_wagon)
+// LOADING(CDC_wagon)
 
 // Graphics
 spriteset(set_CDC_purchase, "./src/locomotive/CDC/CDC.png") {

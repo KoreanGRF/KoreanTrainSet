@@ -7,10 +7,11 @@
  * DEC
  */
 SPEED_GENERAL(DEC)
-         COST(DEC)
-      RUNNING(DEC)
-     CAPACITY(DEC)
-      LOADING(DEC)
+COST(DEC)
+RUNNING(DEC)
+CAPACITY(DEC)
+CAPACITY_PURCHASE(DEC)
+LOADING(DEC)
 
 // Graphics
 #include "DEC_graphic.pnml"

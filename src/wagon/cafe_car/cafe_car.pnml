@@ -6,11 +6,12 @@
 /**
  * Cafe car
  */
-//SPEED_GENERAL(CAFE_CAR)
-//         COST(CAFE_CAR)
-//      RUNNING(CAFE_CAR)
-//     CAPACITY(CAFE_CAR)
-//      LOADING(CAFE_CAR)
+// SPEED_GENERAL(CAFE_CAR)
+// COST(CAFE_CAR)
+// RUNNING(CAFE_CAR)
+// CAPACITY(CAFE_CAR)
+// CAPACITY_PURCHASE(CAFE_CAR)
+// LOADING(CAFE_CAR)
 
 spriteset(set_CAFE_CAR_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(45, 0, 31, 12, -16, -6)

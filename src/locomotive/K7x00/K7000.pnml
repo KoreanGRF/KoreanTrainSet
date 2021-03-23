@@ -7,8 +7,8 @@
  * K7000
  */
 SPEED_GENERAL(K7000)
-         COST(K7000)
-      RUNNING(K7000)
+COST(K7000)
+RUNNING(K7000)
 
 // 7000 (봉고)
 spriteset(set_K7000_purchase, "./src/locomotive/K7x00/K7000.png") {

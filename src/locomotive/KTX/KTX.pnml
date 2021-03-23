@@ -7,30 +7,35 @@
  * KTX-1N
  */
 SPEED_GENERAL(KTX1N)
-         COST(KTX1N)
-      RUNNING(KTX1N)
-     CAPACITY(KTX1N)
-      LOADING(KTX1N)
+COST(KTX1N)
+RUNNING(KTX1N)
+CAPACITY(KTX1N)
+CAPACITY_PURCHASE(KTX1N)
+LOADING(KTX1N)
 SPEED_GENERAL(KTX2N)
-         COST(KTX2N)
-      RUNNING(KTX2N)
-     CAPACITY(KTX2N)
-      LOADING(KTX2N)
+COST(KTX2N)
+RUNNING(KTX2N)
+CAPACITY(KTX2N)
+CAPACITY_PURCHASE(KTX2N)
+LOADING(KTX2N)
 SPEED_GENERAL(SRT)
-         COST(SRT)
-      RUNNING(SRT)
-     CAPACITY(SRT)
-      LOADING(SRT)
+COST(SRT)
+RUNNING(SRT)
+CAPACITY(SRT)
+CAPACITY_PURCHASE(SRT)
+LOADING(SRT)
 SPEED_GENERAL(EUM)
-         COST(EUM)
-      RUNNING(EUM)
-//     CAPACITY(EUM)
-      LOADING(EUM)
-//SPEED_GENERAL(KTX_wagon)
-//         COST(KTX_wagon)
-//      RUNNING(KTX_wagon)
-     CAPACITY(KTX_wagon)
-//      LOADING(KTX_wagon)
+COST(EUM)
+RUNNING(EUM)
+// CAPACITY(EUM)
+CAPACITY_PURCHASE(EUM)
+LOADING(EUM)
+// SPEED_GENERAL(KTX_wagon)
+// COST(KTX_wagon)
+// RUNNING(KTX_wagon)
+CAPACITY(KTX_wagon)
+CAPACITY_PURCHASE(KTX_wagon)
+// LOADING(KTX_wagon)
 
 // Graphics
 #include "KTX_graphic.pnml"
@@ -314,7 +319,7 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
         cost_factor:                    sw_EUM_cost;
         running_cost_factor:            sw_EUM_runningcost;
         cargo_capacity:                 sw_EUM_capacity_in_custom;
-        // purchase_cargo_capacity:        sw_EUM_purchase_capacity;
+        purchase_cargo_capacity:        sw_EUM_purchase_capacity;
         loading_speed:                  sw_EUM_loadingspeed;
 
         can_attach_wagon:               sw_EUM_attach;

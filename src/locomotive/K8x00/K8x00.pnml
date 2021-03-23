@@ -7,8 +7,8 @@
  * K8x00
  */
 SPEED_GENERAL(K8x00)
-         COST(K8x00)
-      RUNNING(K8x00)
+COST(K8x00)
+RUNNING(K8x00)
 
 spriteset(set_K8x00_loco_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8x00.png") {   // Red & White & Blue (current)
     tmpl_loco(60, 0)

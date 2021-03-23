@@ -22,7 +22,10 @@ switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _runningcost, 1) { \
 #define CAPACITY(VEHICLEID) \
 switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _capacity, 1) { \
     return var_ ## VEHICLEID ## _CAPACITY / 2 * sw_cargo_capacity_factor; \
-} \
+}
+
+// Purchase capacity
+#define CAPACITY_PURCHASE(VEHICLEID) \
 switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _purchase_capacity, 1) { \
     return var_ ## VEHICLEID ## _CAPACITY / 2 * sw_cargo_capacity_factor - 1; \
 }

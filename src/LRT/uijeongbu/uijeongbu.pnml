@@ -10,6 +10,7 @@ SPEED_LRT(UIJEONGBU)
 COST(UIJEONGBU)
 RUNNING(UIJEONGBU)
 CAPACITY(UIJEONGBU)
+// CAPACITY_PURCHASE(UIJEONGBU)
 LOADING(UIJEONGBU)
 
 // Graphics
@@ -66,7 +67,6 @@ item(FEAT_TRAINS, ko_train_UIJEONGBU, 5805) {
         cost_factor:                    sw_UIJEONGBU_cost;
         running_cost_factor:            sw_UIJEONGBU_runningcost;
         cargo_capacity:                 sw_UIJEONGBU_capacity;
-        purchase_cargo_capacity:        sw_UIJEONGBU_purchase_capacity;
         loading_speed:                  sw_UIJEONGBU_loadingspeed;
 
         can_attach_wagon:               sw_UIJEONGBU_attach;

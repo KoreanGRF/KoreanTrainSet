@@ -6,11 +6,12 @@
 /**
  * HOPPER_CAR
  */
-//SPEED_GENERAL(HOPPER_CAR)
-         COST(HOPPER_CAR)
-      RUNNING(HOPPER_CAR)
-     CAPACITY(HOPPER_CAR)
-      LOADING(HOPPER_CAR)
+// SPEED_GENERAL(HOPPER_CAR)
+COST(HOPPER_CAR)
+RUNNING(HOPPER_CAR)
+CAPACITY(HOPPER_CAR)
+// CAPACITY_PURCHASE(HOPPER_CAR)
+LOADING(HOPPER_CAR)
 
 // Graphics
 #include "hopper_car_graphic.pnml"
@@ -104,7 +105,6 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         cost_factor:                    sw_HOPPER_CAR_cost;
         running_cost_factor:            sw_HOPPER_CAR_runningcost;
         cargo_capacity:                 sw_HOPPER_CAR_capacity;
-        purchase_cargo_capacity:        sw_HOPPER_CAR_purchase_capacity;
         loading_speed:                  sw_HOPPER_CAR_loadingspeed;
 
         cargo_subtype_text:             sw_HOPPER_CAR_cargo_subtype_text;

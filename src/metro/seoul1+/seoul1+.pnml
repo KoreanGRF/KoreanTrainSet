@@ -7,15 +7,17 @@
  * SEOUL_METRO_1
  */
 SPEED_METRO(SEOUL_METRO_1)
-       COST(SEOUL_METRO_1)
-    RUNNING(SEOUL_METRO_1)
-   CAPACITY(SEOUL_METRO_1)
-    LOADING(SEOUL_METRO_1)
-//SPEED_METRO(METRO_wagon)   // Defines the specs of metro passenger car here, too
-//       COST(METRO_wagon)
-//    RUNNING(METRO_wagon)
-   CAPACITY(METRO_wagon)
-//    LOADING(METRO_wagon)
+COST(SEOUL_METRO_1)
+RUNNING(SEOUL_METRO_1)
+CAPACITY(SEOUL_METRO_1)
+CAPACITY_PURCHASE(SEOUL_METRO_1)
+LOADING(SEOUL_METRO_1)
+// SPEED_METRO(METRO_wagon)   // Defines the specs of metro passenger car here, too
+// COST(METRO_wagon)
+// RUNNING(METRO_wagon)
+CAPACITY(METRO_wagon)
+CAPACITY_PURCHASE(METRO_wagon)
+// LOADING(METRO_wagon)
 
 // Graphics
 #include "seoul1+_graphic.pnml"

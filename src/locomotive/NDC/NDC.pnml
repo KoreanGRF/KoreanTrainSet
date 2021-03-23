@@ -7,15 +7,17 @@
  * NDC
  */
 SPEED_GENERAL(NDC)
-         COST(NDC)
-      RUNNING(NDC)
-     CAPACITY(NDC)
-      LOADING(NDC)
-//SPEED_GENERAL(NDC_wagon)
-//         COST(NDC_wagon)
-//      RUNNING(NDC_wagon)
-     CAPACITY(NDC_wagon)
-//      LOADING(NDC_wagon)
+COST(NDC)
+RUNNING(NDC)
+CAPACITY(NDC)
+CAPACITY_PURCHASE(NDC)
+LOADING(NDC)
+// SPEED_GENERAL(NDC_wagon)
+// COST(NDC_wagon)
+// RUNNING(NDC_wagon)
+CAPACITY(NDC_wagon)
+CAPACITY_PURCHASE(NDC_wagon)
+// LOADING(NDC_wagon)
 
 
 // Template

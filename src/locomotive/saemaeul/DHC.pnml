@@ -7,14 +7,16 @@
  * DHC
  */
 SPEED_GENERAL(DHC)
-         COST(DHC)
-      RUNNING(DHC)
-     CAPACITY(DHC)
-      LOADING(DHC)
+COST(DHC)
+RUNNING(DHC)
+CAPACITY(DHC)
+CAPACITY_PURCHASE(DHC)
+LOADING(DHC)
 // SPEED_GENERAL(DHC_wagon)
-//          COST(DHC_wagon)
-     CAPACITY(DHC_wagon)
-      LOADING(DHC_wagon)
+// COST(DHC_wagon)
+CAPACITY(DHC_wagon)
+CAPACITY_PURCHASE(DHC_wagon)
+LOADING(DHC_wagon)
 
 // DHC
 spriteset(set_DHC_purchase, "./src/locomotive/saemaeul/DHC.png") {

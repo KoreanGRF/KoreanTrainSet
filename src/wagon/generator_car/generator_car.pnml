@@ -6,11 +6,12 @@
 /**
  * Generator car
  */
-//SPEED_GENERAL(GENERATOR_CAR)
-//         COST(GENERATOR_CAR)
-//      RUNNING(GENERATOR_CAR)
-//     CAPACITY(GENERATOR_CAR)
-//      LOADING(GENERATOR_CAR)
+// SPEED_GENERAL(GENERATOR_CAR)
+// COST(GENERATOR_CAR)
+// RUNNING(GENERATOR_CAR)
+// CAPACITY(GENERATOR_CAR)
+// CAPACITY_PURCHASE(GENERATOR_CAR)
+// LOADING(GENERATOR_CAR)
 
 spriteset(set_GENERATOR_CAR_wagon_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_detail(45, 30, 32, 12, -16, -6)

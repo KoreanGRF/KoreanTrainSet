@@ -6,11 +6,12 @@
 /**
  * Passenger wagons
  */
-//SPEED_GENERAL(PASSWG)
-         COST(PASSWG)
-      RUNNING(PASSWG)
-//     CAPACITY(PASSWG)
-      LOADING(PASSWG)
+// SPEED_GENERAL(PASSWG)
+COST(PASSWG)
+RUNNING(PASSWG)
+// CAPACITY(PASSWG)
+// CAPACITY_PURCHASE(PASSWG)
+LOADING(PASSWG)
 
 // Graphic
 spriteset(set_PASSWG_purchase, "./src/wagon/passenger_wagon/passenger_wagon_purchase.png") {

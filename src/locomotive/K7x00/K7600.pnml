@@ -7,8 +7,8 @@
  * K7600
  */
 SPEED_GENERAL(K7600)
-         COST(K7600)
-      RUNNING(K7600)
+COST(K7600)
+RUNNING(K7600)
 
 // Template
 template tmpl_K7600(x, y) {

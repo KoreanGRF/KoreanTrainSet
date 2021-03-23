@@ -6,11 +6,12 @@
 /**
  * Tongil passenger car
  */
-//SPEED_GENERAL(TONGIL_wagon)
-//         COST(TONGIL_wagon)
-//      RUNNING(TONGIL_wagon)
-//     CAPACITY(TONGIL_wagon)
-//      LOADING(TONGIL_wagon)
+// SPEED_GENERAL(TONGIL_wagon)
+// COST(TONGIL_wagon)
+// RUNNING(TONGIL_wagon)
+// CAPACITY(TONGIL_wagon)
+// CAPACITY_PURCHASE(TONGIL_wagon)
+// LOADING(TONGIL_wagon)
 
 spriteset(set_TONGIL_wagon_purchase, "./src/wagon/tongil/TONGIL.png") {
     tmpl_purchase_detail(45, 0, 31, 12, -16, -6)
