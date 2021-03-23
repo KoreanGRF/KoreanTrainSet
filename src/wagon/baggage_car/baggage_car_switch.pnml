@@ -49,7 +49,7 @@ switch(FEAT_TRAINS, PARENT, sw_BAGGAGE_CAR_wagon, cargo_subtype) {
 
 // Speed
 switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_speed_in_custom, cargo_subtype) {
-    10:  return 6 * coeff_speed_general * (1 - wagon_speed_limit); // V-train
+    10:  return 6 * coeff_speed_general; // V-train
     sw_BAGGAGE_CAR_speed;
 }
 

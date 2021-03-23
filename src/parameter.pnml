@@ -48,12 +48,12 @@
 
 /*
     // RESERVED
-    // 속도 계수 (경전철 - 철)
+    // 가속도 계수
     param 5 {
-        coeff_speed_light_rail {
+        coeff_accelation {
             type: int;
-            name: string(STR_PARAM_SPEED_LIGHTRAIL2_NAME);
-            desc: string(STR_PARAM_SPEED_LIGHTRAIL2_DESC);
+            name: string(STR_PARAM_ACCELATION_NAME);
+            desc: string(STR_PARAM_ACCELATION_DESC);
             min_value: 1;
             max_value: 30;
             def_value: 10;
@@ -160,21 +160,12 @@
 
     // Boolean
     param 10 {
-        // Wagon speed limit
-        wagon_speed_limit {
-            type: bool;
-            name: string(STR_PARAM_WAGON_SPEED_LIMIT_NAME);
-            desc: string(STR_PARAM_WAGON_SPEED_LIMIT_DESC);
-            bit: 1;
-            def_value: 1;
-        }
-        
         // Simple waypoint feature
         bool_simplize_waypoint {
             type: bool;
             name: string(STR_PARAM_SIMPLIZE_WAYPOINT_NAME);
             desc: string(STR_PARAM_SIMPLIZE_WAYPOINT_DESC);
-            bit: 2;
+            bit: 1;
             def_value: 1;
         }
     }
