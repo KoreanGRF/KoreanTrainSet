@@ -1,9 +1,9 @@
 /*------------------------------------------------------------------------------
-
-                         여기부터 경유지 간소화 부분임
-                      Waypoint Simplization Part from here
-
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
+
 // 매개변수 설정에서 간소화 옵션을 설정한 경우
 if(bool_simplize_waypoint > 0) {
     // 4974(제거함) / 4975(우상) / 4976(제거함) / 4977(좌하)
