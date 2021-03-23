@@ -1,0 +1,44 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// INCHEON_METRO_1K_VVVF_1ST
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_engineH, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_engineT, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_wagon, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_wagon_panto, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_purchase, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST.png") {
+    tmpl_metro_purchase()
+}
+
+// INCHEON_METRO_1K_VVVF_2ND
+spriteset(set_INCHEON_METRO_1K_VVVF_2ND_engineH, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_2ND.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_2ND_engineT, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_2ND.png") {
+    tmpl_engine_tail(0, 82)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_2ND_wagon, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_2ND.png") {
+    tmpl_wagon(0, 55)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_2ND_wagon_panto, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_2ND.png") {
+    tmpl_wagon_dblpanto(0, 27)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_2ND_purchase, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_2ND.png") {
+    tmpl_metro_purchase()
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_INCHEON_METRO_1_purchase, cargo_subtype) {
+    set_INCHEON_METRO_1K_VVVF_2ND_purchase;
+}
