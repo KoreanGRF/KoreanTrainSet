@@ -114,7 +114,7 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_DHC_INTRODUCTION;
         track_type:                     RAIL;
-        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        engine_class:                   ENGINE_CLASS_DIESEL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
 
@@ -140,7 +140,7 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
 
         // Costs
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_base:              RUNNING_COST_DIESEL;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
