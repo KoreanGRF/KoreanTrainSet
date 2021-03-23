@@ -7,15 +7,15 @@
  * GYEONGCHUN
  */
 SPEED_METRO(GYEONGCHUN)
-       COST(GYEONGCHUN)
-    RUNNING(GYEONGCHUN)
-   CAPACITY(GYEONGCHUN)
-    LOADING(GYEONGCHUN)
-SPEED_METRO(ITX_CHEONGCHUN)
-       COST(ITX_CHEONGCHUN)
-    RUNNING(ITX_CHEONGCHUN)
-   CAPACITY(ITX_CHEONGCHUN)
-    LOADING(ITX_CHEONGCHUN)
+COST(GYEONGCHUN)
+RUNNING(GYEONGCHUN)
+CAPACITY(GYEONGCHUN)
+LOADING(GYEONGCHUN)
+SPEED_SUBEXPRESS(ITX_CHEONGCHUN)
+COST(ITX_CHEONGCHUN)
+RUNNING(ITX_CHEONGCHUN)
+CAPACITY(ITX_CHEONGCHUN)
+LOADING(ITX_CHEONGCHUN)
 
 // Graphics
 #include "gyeongchun_graphic.pnml"
@@ -48,7 +48,7 @@ item(FEAT_TRAINS, ko_train_GYEONGCHUN, 5720) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 0;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -116,7 +116,7 @@ item(FEAT_TRAINS, ko_train_ITX_CHEONGCHUN, 5530) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 0;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -148,11 +148,11 @@ item(FEAT_TRAINS, ko_train_ITX_CHEONGCHUN, 5530) {
     }
     livery_override(ko_train_PASSWG) {
         default:                        sw_ITX_CHEONGCHUN_wagon;
-        cargo_capacity:                 sw_ITX_CHEONGCHUN_wagon_capacity;
+        cargo_capacity:                 sw_ITX_CHEONGCHUN_wagon_capacity_in_custom;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_ITX_CHEONGCHUN_wagon;
-        cargo_capacity:                 sw_ITX_CHEONGCHUN_wagon_capacity;
+        cargo_capacity:                 sw_ITX_CHEONGCHUN_wagon_capacity_in_custom;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
 }
