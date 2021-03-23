@@ -14,10 +14,10 @@ CAPACITY(YONGIN_EVERLINE)
 LOADING(YONGIN_EVERLINE)
 
 // Graphics
-#include "everline_graphic.pnml"
+#include "yongin_everline_graphic.pnml"
 
 // Switch
-#include "everline_switch.pnml"
+#include "yongin_everline_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_YONGIN_EVERLINE, 5804) {

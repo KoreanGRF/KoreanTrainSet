@@ -4,39 +4,38 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * BUSAN_METRO_4
+ * GIMPO_GOLDLINE
  */
-SPEED_LRT(BUSAN_METRO_4)
-COST(BUSAN_METRO_4)
-RUNNING(BUSAN_METRO_4)
-CAPACITY(BUSAN_METRO_4)
-CAPACITY_PURCHASE(BUSAN_METRO_4)
-LOADING(BUSAN_METRO_4)
+SPEED_LRT(GIMPO_GOLDLINE)
+COST(GIMPO_GOLDLINE)
+RUNNING(GIMPO_GOLDLINE)
+CAPACITY(GIMPO_GOLDLINE)
+CAPACITY_PURCHASE(GIMPO_GOLDLINE)
+LOADING(GIMPO_GOLDLINE)
 
 // Graphics
-#include "busan4_graphic.pnml"
+#include "gimpo_goldline_graphic.pnml"
 
 // Switch
-#include "busan4_switch.pnml"
+#include "gimpo_goldline_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_BUSAN_METRO_4, 5754) {
+item(FEAT_TRAINS, ko_train_GIMPO_GOLDLINE, 5801) {
     property {
         // Common properties
-        name:                           string(STR_BUSAN_METRO_4_NAME);
+        name:                           string(STR_GIMPO_GOLDLINE_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_BUSAN_METRO_4_INTRODUCTION;
-        track_type:                     KRLR;
-        engine_class:                   ENGINE_CLASS_MONORAIL;
+        introduction_date:              var_GIMPO_GOLDLINE_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
 
         // Spec
-        power:                          POWER_IN_KW(var_BUSAN_METRO_4_POWER);
+        power:                          POWER_IN_KW(var_GIMPO_GOLDLINE_POWER);
         weight:                         20 ton;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.1;
-        length:                         6;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -61,22 +60,28 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_4, 5754) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_BUSAN_METRO_4_engine;
-        purchase:                       sw_BUSAN_METRO_4_purchase;
+        default:                        sw_GIMPO_GOLDLINE_engine;
+        purchase:                       sw_GIMPO_GOLDLINE_purchase;
 
-        speed:                          sw_BUSAN_METRO_4_speed;
-        cost_factor:                    sw_BUSAN_METRO_4_cost;
-        running_cost_factor:            sw_BUSAN_METRO_4_runningcost;
-        cargo_capacity:                 sw_BUSAN_METRO_4_capacity;
-        purchase_cargo_capacity:        sw_BUSAN_METRO_4_purchase_capacity;
-        loading_speed:                  sw_BUSAN_METRO_4_loadingspeed;
+        speed:                          sw_GIMPO_GOLDLINE_speed;
+        cost_factor:                    sw_GIMPO_GOLDLINE_cost;
+        running_cost_factor:            sw_GIMPO_GOLDLINE_runningcost;
+        cargo_capacity:                 sw_GIMPO_GOLDLINE_capacity;
+        purchase_cargo_capacity:        sw_GIMPO_GOLDLINE_purchase_capacity;
+        loading_speed:                  sw_GIMPO_GOLDLINE_loadingspeed;
 
-        can_attach_wagon:               sw_BUSAN_METRO_4_attach;
+        can_attach_wagon:               sw_GIMPO_GOLDLINE_attach;
+        start_stop:                     sw_GIMPO_GOLDLINE_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
-    livery_override(ko_train_LRT_wagon) {
-        default:                        sw_BUSAN_METRO_4_wagon;
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_GIMPO_GOLDLINE_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
     }
+    livery_override(ko_train_PASSWGP) {
+        default:                        sw_GIMPO_GOLDLINE_wagon;
+        cargo_capacity:                 sw_METRO_wagon_capacity;
+        power:                          POWER_IN_KW(var_METRO_wagon_POWER);
+    }
 }
-// End of "BUSAN_METRO_4"
+// End of "GIMPO_GOLDLINE"

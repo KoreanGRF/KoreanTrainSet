@@ -5,7 +5,7 @@
 ------------------------------------------------------------------------------*/
 
 // INCHEON_METRO_2
-spriteset(set_INCHEON_METRO_2_engineH, "./src/LRT/incheon2/INCHEON_METRO_2K.png") {
+spriteset(set_INCHEON_METRO_2_engineH, "./src/LRT/incheon_metro_2/INCHEON_METRO_2K.png") {
     [0+64,     0,     8,    22,     -3,    -10]
     [0+80,     0,    21,    17,    -13,     -8]
     [0+112,    0,    31,    12,    -17,     -7]
@@ -15,7 +15,7 @@ spriteset(set_INCHEON_METRO_2_engineH, "./src/LRT/incheon2/INCHEON_METRO_2K.png"
     [0+239,    0,    31,    12,    -16,     -7]
     [0+288,    0,    21,    17,     -6,     -8]
 }
-spriteset(set_INCHEON_METRO_2_engineT, "./src/LRT/incheon2/INCHEON_METRO_2K.png") {
+spriteset(set_INCHEON_METRO_2_engineT, "./src/LRT/incheon_metro_2/INCHEON_METRO_2K.png") {
     [0+191,   24,     8,    22,     -3,    -11]
     [0+207,   24,    21,    17,    -13,     -8]
     [0+239,   24,    30,    12,    -16,     -7]
@@ -35,7 +35,7 @@ spriteset(set_INCHEON_METRO_2_engineT, "./src/LRT/incheon2/INCHEON_METRO_2K.png"
 //     [0+239,    55,    31,    12,    -17,    -7]
 //     [0+288,    55,    21,    17,    -6,    -10]
 // }
-spriteset(set_INCHEON_METRO_2_purchase, "./src/LRT/incheon2/INCHEON_METRO_2K.png") {
+spriteset(set_INCHEON_METRO_2_purchase, "./src/LRT/incheon_metro_2/INCHEON_METRO_2K.png") {
     tmpl_metro_purchase()
 }
 

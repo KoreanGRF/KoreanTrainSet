@@ -4,38 +4,39 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * DAEGU_METRO_3
+ * BUSAN_METRO_4
  */
-SPEED_LRT(DAEGU_METRO_3)
-    COST(DAEGU_METRO_3)
-RUNNING(DAEGU_METRO_3)
-CAPACITY(DAEGU_METRO_3)
-CAPACITY_PURCHASE(DAEGU_METRO_3)
-LOADING(DAEGU_METRO_3)
+SPEED_LRT(BUSAN_METRO_4)
+COST(BUSAN_METRO_4)
+RUNNING(BUSAN_METRO_4)
+CAPACITY(BUSAN_METRO_4)
+CAPACITY_PURCHASE(BUSAN_METRO_4)
+LOADING(BUSAN_METRO_4)
 
 // Graphics
-#include "daegu3_graphic.pnml"
+#include "busan_metro_4_graphic.pnml"
 
 // Switch
-#include "daegu3_switch.pnml"
+#include "busan_metro_4_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_DAEGU_METRO_3, 5763) {
+item(FEAT_TRAINS, ko_train_BUSAN_METRO_4, 5754) {
     property {
         // Common properties
-        name:                           string(STR_DAEGU_METRO_3_NAME);
+        name:                           string(STR_BUSAN_METRO_4_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_DAEGU_METRO_3_INTRODUCTION;
+        introduction_date:              var_BUSAN_METRO_4_INTRODUCTION;
         track_type:                     KRLR;
-        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        engine_class:                   ENGINE_CLASS_MONORAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
 
         // Spec
-        power:                          POWER_IN_KW(var_DAEGU_METRO_3_POWER);
+        power:                          POWER_IN_KW(var_BUSAN_METRO_4_POWER);
         weight:                         20 ton;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.1;
+        length:                         6;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -60,24 +61,22 @@ item(FEAT_TRAINS, ko_train_DAEGU_METRO_3, 5763) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_DAEGU_METRO_3_engine;
-        purchase:                       sw_DAEGU_METRO_3_purchase;
+        default:                        sw_BUSAN_METRO_4_engine;
+        purchase:                       sw_BUSAN_METRO_4_purchase;
 
-        speed:                          sw_DAEGU_METRO_3_speed;
-        cost_factor:                    sw_DAEGU_METRO_3_cost;
-        running_cost_factor:            sw_DAEGU_METRO_3_runningcost;
-        cargo_capacity:                 sw_DAEGU_METRO_3_capacity;
-        purchase_cargo_capacity:        sw_DAEGU_METRO_3_purchase_capacity;
-        loading_speed:                  sw_DAEGU_METRO_3_loadingspeed;
+        speed:                          sw_BUSAN_METRO_4_speed;
+        cost_factor:                    sw_BUSAN_METRO_4_cost;
+        running_cost_factor:            sw_BUSAN_METRO_4_runningcost;
+        cargo_capacity:                 sw_BUSAN_METRO_4_capacity;
+        purchase_cargo_capacity:        sw_BUSAN_METRO_4_purchase_capacity;
+        loading_speed:                  sw_BUSAN_METRO_4_loadingspeed;
 
-        can_attach_wagon:               sw_DAEGU_METRO_3_attach;
-        cargo_subtype_text:             sw_DAEGU_METRO_3_cargo_subtype_text;
+        can_attach_wagon:               sw_BUSAN_METRO_4_attach;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
     livery_override(ko_train_LRT_wagon) {
-        default:                        sw_DAEGU_METRO_3_wagon;
+        default:                        sw_BUSAN_METRO_4_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        cargo_subtype_text:             sw_DAEGU_METRO_3_cargo_subtype_text;
     }
 }
-// End of "DAEGU_METRO_3"
+// End of "BUSAN_METRO_4"

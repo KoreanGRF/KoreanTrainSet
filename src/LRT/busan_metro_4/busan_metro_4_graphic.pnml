@@ -17,19 +17,19 @@ template tmpl_BUSAN_METRO_4(x, y) {
 }
 
 // BUSAN_METRO_4
-spriteset(set_BUSAN_METRO_4_engineH, "./src/LRT/busan4/BUSAN_4K.png") {
+spriteset(set_BUSAN_METRO_4_engineH, "./src/LRT/busan_metro_4/BUSAN_4K.png") {
     tmpl_BUSAN_METRO_4(60, 0)
 }
-spriteset(set_BUSAN_METRO_4_wagon_open, "./src/LRT/busan4/BUSAN_4K.png") {
+spriteset(set_BUSAN_METRO_4_wagon_open, "./src/LRT/busan_metro_4/BUSAN_4K.png") {
     tmpl_BUSAN_METRO_4(60, 30)
 }
-spriteset(set_BUSAN_METRO_4_wagon, "./src/LRT/busan4/BUSAN_4K.png") {
+spriteset(set_BUSAN_METRO_4_wagon, "./src/LRT/busan_metro_4/BUSAN_4K.png") {
     tmpl_BUSAN_METRO_4(60, 60)
 }
-spriteset(set_BUSAN_METRO_4_engineT, "./src/LRT/busan4/BUSAN_4K.png") {
+spriteset(set_BUSAN_METRO_4_engineT, "./src/LRT/busan_metro_4/BUSAN_4K.png") {
     tmpl_BUSAN_METRO_4(60, 90)
 }
-spriteset(set_BUSAN_METRO_4_purchase, "./src/LRT/busan4/BUSAN_4K.png") {
+spriteset(set_BUSAN_METRO_4_purchase, "./src/LRT/busan_metro_4/BUSAN_4K.png") {
     tmpl_purchase_detail(0, 0, 50, 14, -12, -6)
 }
 

@@ -14,10 +14,10 @@ CAPACITY_PURCHASE(INCHEON_METRO_2)
 LOADING(INCHEON_METRO_2)
 
 // Graphics
-#include "incheon2_graphic.pnml"
+#include "incheon_metro_2_graphic.pnml"
 
 // Switch
-#include "incheon2_switch.pnml"
+#include "incheon_metro_2_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_INCHEON_METRO_2, 5742) {

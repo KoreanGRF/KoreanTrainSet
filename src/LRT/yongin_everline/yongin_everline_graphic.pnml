@@ -5,7 +5,7 @@
 ------------------------------------------------------------------------------*/
 
 // YONGIN_EVERLINE
-spriteset(set_YONGIN_EVERLINE_engine, "./src/LRT/yongin/Y100.png") {
+spriteset(set_YONGIN_EVERLINE_engine, "./src/LRT/yongin_everline/Y100.png") {
     [0+64,     0,     8,    22,     -3,    -11]
     [0+80,     0,    21,    17,    -13,     -8]
     [0+112,    0,    30,    12,    -16,     -6]
@@ -15,7 +15,7 @@ spriteset(set_YONGIN_EVERLINE_engine, "./src/LRT/yongin/Y100.png") {
     [0+239,    0,    30,    12,    -16,     -6]
     [0+288,    0,    21,    17,     -6,     -8]
 }
-spriteset(set_YONGIN_EVERLINE_purchase, "./src/LRT/yongin/Y100.png") {
+spriteset(set_YONGIN_EVERLINE_purchase, "./src/LRT/yongin_everline/Y100.png") {
     tmpl_purchase_detail(0, 0, 30, 12, -5, -6)
 }
 

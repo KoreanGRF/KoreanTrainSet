@@ -68,13 +68,13 @@
 #include "metro/gwangju_metro_1/gwangju_metro_1.pnml"
 
 //----- LRT -----//
-#include "LRT/busan4/busan4.pnml"
-#include "LRT/incheon2/incheon2.pnml"
-#include "LRT/daegu3/daegu3.pnml"
-#include "LRT/gimpo/gimpo.pnml"
+#include "LRT/busan_metro_4/busan_metro_4.pnml"
+#include "LRT/incheon_metro_2/incheon_metro_2.pnml"
+#include "LRT/daegu_metro_3/daegu_metro_3.pnml"
+#include "LRT/gimpo_goldline/gimpo_goldline.pnml"
 #include "LRT/busangimhae/busangimhae.pnml"
-#include "LRT/ui-sinseol/ui-sinseol.pnml"
-#include "LRT/yongin/everline.pnml"
+#include "LRT/uisinseol/uisinseol.pnml"
+#include "LRT/yongin_everline/yongin_everline.pnml"
 #include "LRT/uijeongbu/uijeongbu.pnml"
 
 // Wagons

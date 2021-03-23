@@ -33,8 +33,8 @@ STR_MATE2_NAME                                   :[KTS] 마터 2형
 STR_PASHI5_NAME                                  :[KTS] 파시 5형
 STR_MIKA3_NAME                                   :[KTS] 미카 3형
 
-STR_PASSWG_NAME                                  :[KTS] 승객 수송 차량
-STR_PASSWG_POWER_NAME                            :[KTS] 승객 수송 차량 (동력차)
+STR_PASSENGER_WAGON_NAME                         :[KTS] 승객 수송 차량
+STR_PASSENGER_WAGON_POWER_NAME                   :[KTS] 승객 수송 차량 (동력차)
 STR_SAEMAEUL_CAR_NAME                            :[KTS] 새마을호 객차
 STR_MUGUNGHWA_CAR_NAME                           :[KTS] 무궁화호 객차
 STR_TONGIL_CAR_NAME                              :[KTS] 통일호 객차

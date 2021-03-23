@@ -14,10 +14,10 @@ CAPACITY_PURCHASE(UISINSEOL)
 LOADING(UISINSEOL)
 
 // Graphics
-#include "ui-sinseol_graphic.pnml"
+#include "uisinseol_graphic.pnml"
 
 // Switch
-#include "ui-sinseol_switch.pnml"
+#include "uisinseol_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_UISINSEOL, 5803) {
