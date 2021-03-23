@@ -1,5 +1,6 @@
 # Korean Train Set
 **Korean Train Set** offers various trains and railway of the Republic of Korea.   
+Here is the [vehicle list](https://telk.kr/ottd/newgrf/ko_train_set/?lang=en) which Korean Train Set adds.
 
 # How to compile
 You need [NML](http://bundles.openttdcoop.org/nml/releases/LATEST/) and Python3 to compile this NewGRF.
@@ -17,7 +18,7 @@ And if you want to translate [the download page of my own site](https://telk.kr/
 
 # Links
 - [TELKLAND](http://telk.kr)
-- Official Download Page ([Korean](http://telk.kr/ottd/newgrf/ko_train_set/?lang=kr) / [English](http://telk.kr/ottd/newgrf/ko_train_set/?lang=en) / [Japanese](http://telk.kr/ottd/newgrf/ko_train_set/?lang=jp) / [Spanish](http://telk.kr/ottd/newgrf/ko_train_set/?lang=es))
+- Official Download Page ([Korean](https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr) / [English](https://telk.kr/ottd/newgrf/ko_train_set/?lang=en) / [Japanese](https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp) / [Spanish](https://telk.kr/ottd/newgrf/ko_train_set/?lang=es))
 
 # License
 This NewGRF follows **[the Creative Commons License v3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)** (CC-BY-NC-SA v3.0)
