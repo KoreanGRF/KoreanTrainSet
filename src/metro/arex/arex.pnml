@@ -69,7 +69,7 @@ item(FEAT_TRAINS, ko_train_AREX, 5730) {
         cost_factor:                    sw_AREX_cost;
         running_cost_factor:            sw_AREX_runningcost;
         cargo_capacity:                 sw_AREX_capacity_in_custom;
-        purchase_cargo_capacity:        sw_AREX_purchase_capacity;
+        purchase_cargo_capacity:        sw_AREX_purchase_capacity_in_custom;
         loading_speed:                  sw_AREX_loadingspeed_in_custom;
 
         can_attach_wagon:               sw_METRO_attach;

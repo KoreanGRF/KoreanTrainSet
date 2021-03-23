@@ -77,3 +77,10 @@ switch(FEAT_TRAINS, SELF, sw_AREX_loadingspeed_in_custom, cargo_subtype) {
     2: return sw_AREX_NONSTOP_loadingspeed;
     return sw_AREX_loadingspeed;
 }
+
+switch(FEAT_TRAINS, SELF, sw_AREX_purchase_capacity_in_custom, cargo_subtype) {
+    0: return sw_AREX_purchase_capacity;
+    1: return sw_AREX_NONSTOP_purchase_capacity;
+    2: return sw_AREX_NONSTOP_purchase_capacity;
+    return sw_AREX_purchase_capacity;
+}
