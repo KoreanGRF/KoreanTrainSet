@@ -40,7 +40,7 @@ trainList['EUM']                = 260,     20,     50,           76,      10,   
 trainList['KTX_wagon']          = 300,     None,   40,           58,      10,           0,      (2004, 1, 1)
 trainList['MUGUNGHWA_wagon']    = 135,     100,    10,           72,      10,           0,      (1972, 1, 1)
 trainList['TONGIL_wagon']       = 120,     100,    10,           72,      10,           0,      (1988, 1, 1)
-trainList['BIDULGI_wagon']      = 110,     100,    10,           100,     10,           0,      (1957, 2, 27)
+trainList['BIDULGI_wagon']      = 110,     100,    10,           100,     10,           0,      (1927, 1, 1)
 trainList['GENERATOR_CAR']      = 120,     10,     10,           0,       10,           0,      (1972, 1, 1)
 trainList['CAFE_CAR']           = 120,     100,    10,           50,      10,           0,      (1972, 1, 1)
 
