@@ -74,7 +74,7 @@
                 0:    string(STR_PARAM_OPT_FACTOR_BY_1_8);
                 1:    string(STR_PARAM_OPT_FACTOR_BY_1_4);
                 2:    string(STR_PARAM_OPT_FACTOR_BY_1_2);
-                3:    string(STR_PARAM_OPT_FACTOR_BY_1);
+                3:    string(STR_PARAM_OPT_FACTOR_BY_1_DEFAULT);
                 4:    string(STR_PARAM_OPT_FACTOR_BY_2);
                 5:    string(STR_PARAM_OPT_FACTOR_BY_4);
                 6:    string(STR_PARAM_OPT_FACTOR_BY_8);
@@ -101,14 +101,14 @@
                 2:    string(STR_PARAM_OPT_FACTOR_BY_1_8);
                 3:    string(STR_PARAM_OPT_FACTOR_BY_1_4);
                 4:    string(STR_PARAM_OPT_FACTOR_BY_1_2);
-                5:    string(STR_PARAM_OPT_FACTOR_BY_1);
+                5:    string(STR_PARAM_OPT_FACTOR_BY_1_DEFAULT);
                 6:    string(STR_PARAM_OPT_FACTOR_BY_2);
                 7:    string(STR_PARAM_OPT_FACTOR_BY_4);
                 8:    string(STR_PARAM_OPT_FACTOR_BY_8);
                 9:    string(STR_PARAM_OPT_FACTOR_BY_16);
-                10:    string(STR_PARAM_OPT_FACTOR_BY_32);
-                11:    string(STR_PARAM_OPT_FACTOR_BY_64);
-                12:    string(STR_PARAM_OPT_FACTOR_BY_128);
+                10:   string(STR_PARAM_OPT_FACTOR_BY_32);
+                11:   string(STR_PARAM_OPT_FACTOR_BY_64);
+                12:   string(STR_PARAM_OPT_FACTOR_BY_128);
             };
         }
     }
@@ -119,20 +119,21 @@
             type: int;
             name: string(STR_PARAM_FACTOR_CARGO_CAPACITY_NAME);
             desc: string(STR_PARAM_FACTOR_CARGO_CAPACITY_DESC);
-            min_value: 0;
+            min_value: 1;
             max_value: 8;
-            def_value: 0;
+            def_value: 1;
             names: {
-                0:    string(STR_PARAM_OPT_FACTOR_BY_1_2);
-                1:    string(STR_PARAM_OPT_FACTOR_BY_1);
-                2:    string(STR_PARAM_OPT_FACTOR_BY_2);
-                3:    string(STR_PARAM_OPT_FACTOR_BY_4);
-                4:    string(STR_PARAM_OPT_FACTOR_BY_8);
-                5:    string(STR_PARAM_OPT_FACTOR_BY_16);
-                6:    string(STR_PARAM_OPT_FACTOR_BY_32);
-                7:    string(STR_PARAM_OPT_FACTOR_BY_64);
-                8:    string(STR_PARAM_OPT_FACTOR_BY_128);
-                9:    string(STR_PARAM_OPT_FACTOR_BY_256);
+                1:    string(STR_PARAM_OPT_FACTOR_BY_1_2_DEFAULT);
+                2:    string(STR_PARAM_OPT_FACTOR_BY_1);
+                3:    string(STR_PARAM_OPT_FACTOR_BY_2);
+                4:    string(STR_PARAM_OPT_FACTOR_BY_4);
+                5:    string(STR_PARAM_OPT_FACTOR_BY_8);
+                6:    string(STR_PARAM_OPT_FACTOR_BY_16);
+                7:    string(STR_PARAM_OPT_FACTOR_BY_32);
+                8:    string(STR_PARAM_OPT_FACTOR_BY_64);
+                9:    string(STR_PARAM_OPT_FACTOR_BY_128);
+                10:   string(STR_PARAM_OPT_FACTOR_BY_256);
+                11:   string(STR_PARAM_OPT_FACTOR_BY_512);
             };
         }
     }
@@ -147,7 +148,7 @@
             max_value: 5;
             def_value: 0;
             names: {
-                0:    string(STR_PARAM_OPT_FACTOR_BY_1);
+                0:    string(STR_PARAM_OPT_FACTOR_BY_1_DEFAULT);
                 1:    string(STR_PARAM_OPT_FACTOR_BY_2);
                 2:    string(STR_PARAM_OPT_FACTOR_BY_4);
                 3:    string(STR_PARAM_OPT_FACTOR_BY_8);
@@ -157,8 +158,9 @@
         }
     }
 
-    // 화차 속도 계수
+    // Boolean
     param 10 {
+        // Wagon speed limit
         wagon_speed_limit {
             type: bool;
             name: string(STR_PARAM_WAGON_SPEED_LIMIT_NAME);
@@ -166,17 +168,13 @@
             bit: 1;
             def_value: 1;
         }
-    }
-
-    // param11~14 is reserved for future uses
-
-    // 경유지 간소화 기능
-    param 15 {
+        
+        // Simple waypoint feature
         bool_simplize_waypoint {
             type: bool;
             name: string(STR_PARAM_SIMPLIZE_WAYPOINT_NAME);
             desc: string(STR_PARAM_SIMPLIZE_WAYPOINT_DESC);
-            bit: 1;
+            bit: 2;
             def_value: 1;
         }
     }

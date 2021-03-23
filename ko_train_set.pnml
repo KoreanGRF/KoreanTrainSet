@@ -55,7 +55,7 @@ railtypetable {
 // 속도, 가격, 유지비 변수 및 계수 설정
 sw_cost_factor =            1 << coeff_cost_factor;
 sw_running_cost_factor =    1 << coeff_running_cost_factor;
-sw_cargo_capacity_factor =  1 << coeff_cargo_capacity_factor;
+sw_cargo_capacity_factor =  1 << (coeff_cargo_capacity_factor - 1);
 sw_loading_speed_factor =   1 << coeff_loading_speed_factor;
 
 
