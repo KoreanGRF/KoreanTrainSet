@@ -23,5 +23,5 @@ spriteset(set_D00_purchase, "./src/metro/shinbundang/D00.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_purchase, cargo_subtype) {
-	set_D00_purchase;
+    set_D00_purchase;
 }

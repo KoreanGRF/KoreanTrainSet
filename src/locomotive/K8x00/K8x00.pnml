@@ -32,7 +32,7 @@ switch(FEAT_TRAINS, SELF, sw_K8x00_cargo_subtype_text, cargo_subtype) {
 
 // Item
 item(FEAT_TRAINS, ko_train_K8x00, 5481) {
-	property {
+    property {
         // Common properties
         name:                           string(STR_K8x00_NAME);
         climates_available:             ALL_CLIMATES;

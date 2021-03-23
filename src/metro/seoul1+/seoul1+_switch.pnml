@@ -7,11 +7,11 @@
 // Engine - Bike printing for Gyeongui·Jungang Line 
 switch(FEAT_TRAINS, SELF, sw_321K_BIKE_engineT, random_bits % 2) {
     1: set_321K_BIKE_engineT_orange;
-	set_321K_BIKE_engineT_blue;
+    set_321K_BIKE_engineT_blue;
 }
 switch(FEAT_TRAINS, SELF, sw_321K_BIKE_engineH, random_bits % 2) {
     1: set_321K_BIKE_engineH_orange;
-	set_321K_BIKE_engineH_blue;
+    set_321K_BIKE_engineH_blue;
 }
 
 // Wagon - Bike printing for Gyeongui·Jungang Line

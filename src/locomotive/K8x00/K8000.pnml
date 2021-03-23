@@ -12,16 +12,16 @@ SPEED_GENERAL(K8000)
 
 // 8000호대
 spriteset(set_K8000_purchase, "./src/locomotive/K8x00/K8000.png") {
-	tmpl_purchase(0, 0)
+    tmpl_purchase(0, 0)
 }
 spriteset(set_K8000_loco_BLUE_WHITE, "./src/locomotive/K8x00/K8000.png") {   // Blue & White
-	tmpl_loco(60, 0)
+    tmpl_loco(60, 0)
 }
 spriteset(set_K8000_loco_GREEN_YELLOW, "./src/locomotive/K8x00/K8000.png") {   // Green & Yellow
-	tmpl_loco(60, 30)
+    tmpl_loco(60, 30)
 }
 spriteset(set_K8000_loco_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8000.png") {   // Red & White & Blue
-	tmpl_loco(60, 60)
+    tmpl_loco(60, 60)
 }
 
 /*------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ switch(FEAT_TRAINS, SELF, sw_K8000_cargo_subtype_text, cargo_subtype) {
 }
 
 item(FEAT_TRAINS, ko_train_K8000, 5480) {
-	property {
+    property {
         // Common properties
         name:                           string(STR_K8000_NAME);
         climates_available:             ALL_CLIMATES;

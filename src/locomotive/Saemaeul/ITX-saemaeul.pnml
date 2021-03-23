@@ -19,68 +19,68 @@ SPEED_GENERAL(ITX_SAEMAEUL)
 
 // Graphic
 spriteset(set_ITX_SAEMAEUL_purchase, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
-	tmpl_purchase_for_dualhead(0, 0)
+    tmpl_purchase_for_dualhead(0, 0)
 }
 spriteset(set_ITX_SAEMAEUL_engineH, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
-	[60,	0,	8,	21,	-3,	-14]
-	[75,	0,	21,	15,	-14,	-6]
-	[105,	0,	32,	12,	-19,	-8]
-	[155,	0,	20,	16,	-6,	-8]
-	[185,	0,	8,	20,	-3,	-13]
-	[200,	0,	20,	16,	-14,	-7]
-	[235,	0,	32,	12,	-18,	-8]
-	[285,	0,	21,	15,	-7,	-7]
+    [60,    0,     8,    21,     -3,     -14]
+    [75,    0,    21,    15,    -14,      -6]
+    [105,   0,    32,    12,    -19,      -8]
+    [155,   0,    20,    16,     -6,      -8]
+    [185,   0,     8,    20,     -3,     -13]
+    [200,   0,    20,    16,    -14,      -7]
+    [235,   0,    32,    12,    -18,      -8]
+    [285,   0,    21,    15,     -7,      -7]
 }
 spriteset(set_ITX_SAEMAEUL_wagonH, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
-	[60,	30,	8,	22,	-3,	-14]
-	[75,	30,	20,	16,	-14,	-7]
-	[105,	30,	31,	12,	-18,	-8]
-	[155,	30,	20,	16,	-6,	-8]
-	[185,	30,	8,	21,	-3,	-13]
-	[200,	30,	20,	16,	-14,	-7]
-	[235,	30,	31,	12,	-18,	-8]
-	[285,	30,	20,	16,	-6,	-8]
+    [60,    30,     8,    22,     -3,    -14]
+    [75,    30,    20,    16,    -14,     -7]
+    [105,   30,    31,    12,    -18,     -8]
+    [155,   30,    20,    16,     -6,     -8]
+    [185,   30,     8,    21,     -3,    -13]
+    [200,   30,    20,    16,    -14,     -7]
+    [235,   30,    31,    12,    -18,     -8]
+    [285,   30,    20,    16,     -6,     -8]
 }
 spriteset(set_ITX_SAEMAEUL_wagon, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
-	[60,	60,	8,	21,	-3,	-13]
-	[75,	60,	20,	16,	-14,	-7]
-	[105,	60,	31,	12,	-18,	-8]
-	[155,	60,	20,	16,	-6,	-8]
+    [60,    60,     8,    21,     -3,    -13]
+    [75,    60,    20,    16,    -14,     -7]
+    [105,   60,    31,    12,    -18,     -8]
+    [155,   60,    20,    16,     -6,     -8]
 }
 spriteset(set_ITX_SAEMAEUL_wagonT, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
-	[60,	90,	8,	21,	-3,	-13]
-	[75,	90,	20,	16,	-14,	-7]
-	[105,	90,	31,	12,	-18,	-8]
-	[155,	90,	20,	16,	-6,	-8]
-	[185,	90,	8,	22,	-3,	-13]
-	[200,	90,	20,	16,	-14,	-7]
-	[235,	90,	31,	12,	-18,	-8]
-	[285,	90,	20,	16,	-6,	-8]
+    [60,    90,     8,    21,     -3,    -13]
+    [75,    90,    20,    16,    -14,     -7]
+    [105,   90,    31,    12,    -18,     -8]
+    [155,   90,    20,    16,     -6,     -8]
+    [185,   90,     8,    22,     -3,    -13]
+    [200,   90,    20,    16,    -14,     -7]
+    [235,   90,    31,    12,    -18,     -8]
+    [285,   90,    20,    16,     -6,     -8]
 }
 spriteset(set_ITX_SAEMAEUL_engineT, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
-	[185,	120,	8,	21,	-3,	-13]
-	[200,	120,	21,	15,	-14,	-6]
-	[235,	120,	32,	12,	-19,	-8]
-	[285,	120,	20,	16,	-6,	-8]
-	[60,	120,	8,	20,	-3,	-12]
-	[75,	120,	20,	16,	-14,	-7]
-	[105,	120,	32,	12,	-18,	-8]
-	[155,	120,	21,	15,	-7,	-7]
+    [185,   120,     8,    21,     -3,   -13]
+    [200,   120,    21,    15,    -14,    -6]
+    [235,   120,    32,    12,    -19,    -8]
+    [285,   120,    20,    16,     -6,    -8]
+    [60,    120,     8,    20,     -3,   -12]
+    [75,    120,    20,    16,    -14,    -7]
+    [105,   120,    32,    12,    -18,    -8]
+    [155,   120,    21,    15,     -7,    -7]
 }
 
 switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-	1:	set_ITX_SAEMAEUL_engineT;
-	set_ITX_SAEMAEUL_engineH;
+    1:    set_ITX_SAEMAEUL_engineT;
+    set_ITX_SAEMAEUL_engineH;
 }
 
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_wagon_by_free_tail, position_in_consist_from_end) {
-	1: set_ITX_SAEMAEUL_wagonT;
-	set_ITX_SAEMAEUL_wagon;
+    1: set_ITX_SAEMAEUL_wagonT;
+    set_ITX_SAEMAEUL_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_wagon, position_in_consist) {
-	1: set_ITX_SAEMAEUL_wagonH;
-	sw_ITX_SAEMAEUL_wagon_by_free_tail;
+    1: set_ITX_SAEMAEUL_wagonH;
+    sw_ITX_SAEMAEUL_wagon_by_free_tail;
 }
 
 // Attachable vehicles
@@ -92,7 +92,7 @@ switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_attach, vehicle_type_id) {
 }
 
 item(FEAT_TRAINS, ko_train_ITX_SAEMAEUL, 5540) {
-	property {
+    property {
         // Common properties
         name:                           string(STR_ITX_SAEMAEUL_NAME);
         climates_available:             ALL_CLIMATES;
@@ -138,10 +138,10 @@ item(FEAT_TRAINS, ko_train_ITX_SAEMAEUL, 5540) {
         cost_factor:                    sw_ITX_SAEMAEUL_cost;
         running_cost_factor:            sw_ITX_SAEMAEUL_runningcost;
         cargo_capacity:                 sw_ITX_SAEMAEUL_capacity;
-		loading_speed:                  sw_ITX_SAEMAEUL_loadingspeed;
+        loading_speed:                  sw_ITX_SAEMAEUL_loadingspeed;
 
         can_attach_wagon:               sw_ITX_SAEMAEUL_attach;
-		start_stop:                     sw_ko_train_start_stop;
+        start_stop:                     sw_ko_train_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
     livery_override(ko_train_PASSWG) {

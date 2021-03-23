@@ -55,25 +55,25 @@ switch(FEAT_TRAINS, SELF, sw_AREX_wagon, (position_in_consist + 1) % 6) {
 
 // Speed
 switch(FEAT_TRAINS, SELF, sw_AREX_speed_in_custom, cargo_subtype) {
-	0:	return sw_AREX_speed;
-	1:	return sw_AREX_NONSTOP_speed;
-	2:	return sw_AREX_NONSTOP_speed;
-	return sw_AREX_speed;
+    0: return sw_AREX_speed;
+    1: return sw_AREX_NONSTOP_speed;
+    2: return sw_AREX_NONSTOP_speed;
+    return sw_AREX_speed;
 }
 
 
 // Capacity
 switch(FEAT_TRAINS, SELF, sw_AREX_capacity_in_custom, cargo_subtype) {
-	0:	return sw_AREX_capacity;
-	1:	return sw_AREX_NONSTOP_capacity;
-	2:	return sw_AREX_NONSTOP_capacity;
-	return sw_AREX_capacity;
+    0: return sw_AREX_capacity;
+    1: return sw_AREX_NONSTOP_capacity;
+    2: return sw_AREX_NONSTOP_capacity;
+    return sw_AREX_capacity;
 }
 
 // Loading speed
 switch(FEAT_TRAINS, SELF, sw_AREX_loadingspeed_in_custom, cargo_subtype) {
-	0:	return sw_AREX_loadingspeed;
-	1:	return sw_AREX_NONSTOP_loadingspeed;
-	2:	return sw_AREX_NONSTOP_loadingspeed;
-	return sw_AREX_loadingspeed;
+    0: return sw_AREX_loadingspeed;
+    1: return sw_AREX_NONSTOP_loadingspeed;
+    2: return sw_AREX_NONSTOP_loadingspeed;
+    return sw_AREX_loadingspeed;
 }

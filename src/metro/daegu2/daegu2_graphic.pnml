@@ -23,5 +23,5 @@ spriteset(set_DAEGU_METRO_2K_purchase, "./src/metro/daegu2/DAEGU_METRO_2K.png") 
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_2_purchase, cargo_subtype) {
-	set_DAEGU_METRO_2K_purchase;
+    set_DAEGU_METRO_2K_purchase;
 }

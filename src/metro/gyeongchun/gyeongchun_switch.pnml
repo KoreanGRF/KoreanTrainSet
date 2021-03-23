@@ -31,24 +31,24 @@ switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_engine, position_in_consist_from_end
 
 // Wagon - ITX-Cheongchun
 switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_wagon_middle, position_in_vehid_chain < (num_vehs_in_vehid_chain/2) ) {
-	1: set_ITX_CHEONGCHUN_wagon_2;
-	set_ITX_CHEONGCHUN_wagon_5;
+    1: set_ITX_CHEONGCHUN_wagon_2;
+    set_ITX_CHEONGCHUN_wagon_5;
 }
 switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_wagon_2floor_rear, num_vehs_in_vehid_chain/2 <= position_in_vehid_chain+1 && position_in_vehid_chain < num_vehs_in_vehid_chain/2+1 ) {
-	1: set_ITX_CHEONGCHUN_wagon_4;
-	sw_ITX_CHEONGCHUN_wagon_middle;
+    1: set_ITX_CHEONGCHUN_wagon_4;
+    sw_ITX_CHEONGCHUN_wagon_middle;
 }
 switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_wagon_2floor_front, num_vehs_in_vehid_chain/2-1 <= position_in_vehid_chain && position_in_vehid_chain < num_vehs_in_vehid_chain/2 ) {
-	1: set_ITX_CHEONGCHUN_wagon_3;
-	sw_ITX_CHEONGCHUN_wagon_2floor_rear;
+    1: set_ITX_CHEONGCHUN_wagon_3;
+    sw_ITX_CHEONGCHUN_wagon_2floor_rear;
 }
 switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_wagon_tail, position_in_vehid_chain_from_end) {
-	0: set_ITX_CHEONGCHUN_wagon_6;
-	sw_ITX_CHEONGCHUN_wagon_2floor_front;
+    0: set_ITX_CHEONGCHUN_wagon_6;
+    sw_ITX_CHEONGCHUN_wagon_2floor_front;
 }
 switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_wagon, position_in_vehid_chain) {
-	0: set_ITX_CHEONGCHUN_wagon_1;
-	sw_ITX_CHEONGCHUN_wagon_tail;
+    0: set_ITX_CHEONGCHUN_wagon_1;
+    sw_ITX_CHEONGCHUN_wagon_tail;
 }
 
 // Capacity - ITX-Cheongchun
@@ -57,5 +57,5 @@ switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_wagon, position_in_vehid_chain) {
 //     set_ITX_CHEONGCHUN_engineH;
 // }
 switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_wagon_capacity, cargo_subtype) {
-	return 22 * sw_cargo_capacity_factor;
+    return 22 * sw_cargo_capacity_factor;
 }

@@ -9,42 +9,42 @@
 
 // Graphics when loads Pipes
 spriteset(set_STAKE_CAR_PIPE_loading_1A_wagon, "./src/wagon/stake_car/cargo_PIPE.png") {
-	tmpl_stake_car(0, 0)
+    tmpl_stake_car(0, 0)
 }
 spriteset(set_STAKE_CAR_PIPE_loading_1B_wagon, "./src/wagon/stake_car/cargo_PIPE.png") {
-	tmpl_stake_car(0, 30)
+    tmpl_stake_car(0, 30)
 }
 spriteset(set_STAKE_CAR_PIPE_loading_2_wagon, "./src/wagon/stake_car/cargo_PIPE.png") {
-	tmpl_stake_car(0, 60)
+    tmpl_stake_car(0, 60)
 }
 spriteset(set_STAKE_CAR_PIPE_full_wagon, "./src/wagon/stake_car/cargo_PIPE.png") {
-	tmpl_stake_car(0, 90)
+    tmpl_stake_car(0, 90)
 }
 spritegroup sg_STAKE_CAR_PIPE_A_wagon {
-	loading: [
-		set_STAKE_CAR_empty_wagon,
-		set_STAKE_CAR_PIPE_loading_1A_wagon,
-		set_STAKE_CAR_PIPE_loading_2_wagon,
-		set_STAKE_CAR_PIPE_full_wagon
-	];
-	loaded: [
-		set_STAKE_CAR_empty_wagon,
-		set_STAKE_CAR_PIPE_loading_1A_wagon,
-		set_STAKE_CAR_PIPE_loading_2_wagon,
-		set_STAKE_CAR_PIPE_full_wagon
-	];
+    loading: [
+        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_PIPE_loading_1A_wagon,
+        set_STAKE_CAR_PIPE_loading_2_wagon,
+        set_STAKE_CAR_PIPE_full_wagon
+    ];
+    loaded: [
+        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_PIPE_loading_1A_wagon,
+        set_STAKE_CAR_PIPE_loading_2_wagon,
+        set_STAKE_CAR_PIPE_full_wagon
+    ];
 }
 spritegroup sg_STAKE_CAR_PIPE_B_wagon {
-	loading: [
-		set_STAKE_CAR_empty_wagon,
-		set_STAKE_CAR_PIPE_loading_1B_wagon,
-		set_STAKE_CAR_PIPE_loading_2_wagon,
-		set_STAKE_CAR_PIPE_full_wagon
-	];
-	loaded: [
-		set_STAKE_CAR_empty_wagon,
-		set_STAKE_CAR_PIPE_loading_1B_wagon,
-		set_STAKE_CAR_PIPE_loading_2_wagon,
-		set_STAKE_CAR_PIPE_full_wagon
-	];
+    loading: [
+        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_PIPE_loading_1B_wagon,
+        set_STAKE_CAR_PIPE_loading_2_wagon,
+        set_STAKE_CAR_PIPE_full_wagon
+    ];
+    loaded: [
+        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_PIPE_loading_1B_wagon,
+        set_STAKE_CAR_PIPE_loading_2_wagon,
+        set_STAKE_CAR_PIPE_full_wagon
+    ];
 }

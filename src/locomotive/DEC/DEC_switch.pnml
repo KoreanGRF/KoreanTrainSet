@@ -9,20 +9,20 @@
  
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_DEC_engineH, cargo_subtype) {
-	0:  set_DEC_3_engineH;
-	1:  set_DEC_2_engineH;
-	2:  set_DEC_1_engineH;
-	set_DEC_3_engineH;
+    0:  set_DEC_3_engineH;
+    1:  set_DEC_2_engineH;
+    2:  set_DEC_1_engineH;
+    set_DEC_3_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_DEC_engineT, cargo_subtype) {
-	0:  set_DEC_3_engineT;
-	1:  set_DEC_2_engineT;
-	2:  set_DEC_1_engineT;
-	set_DEC_3_engineT;
+    0:  set_DEC_3_engineT;
+    1:  set_DEC_2_engineT;
+    2:  set_DEC_1_engineT;
+    set_DEC_3_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_DEC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-	1: sw_DEC_engineT;
-	sw_DEC_engineH;
+    1: sw_DEC_engineT;
+    sw_DEC_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_DEC_cargo_subtype_text, cargo_subtype) {
@@ -34,20 +34,20 @@ switch(FEAT_TRAINS, SELF, sw_DEC_cargo_subtype_text, cargo_subtype) {
 
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_DEC_wagon, cargo_subtype) {
-	0:  set_DEC_3_wagon;
-	1:  set_DEC_2_wagon;
-	2:  set_DEC_1_wagon;
-	set_DEC_3_wagon;
+    0:  set_DEC_3_wagon;
+    1:  set_DEC_2_wagon;
+    2:  set_DEC_1_wagon;
+    set_DEC_3_wagon;
 }
 
 // Attachable vehicles
 switch(FEAT_TRAINS, SELF, sw_DEC_attach, vehicle_type_id) {
     ko_train_CDC:      return CB_RESULT_ATTACH_ALLOW;
     ko_train_NDC:      return CB_RESULT_ATTACH_ALLOW;
-	ko_train_DEC:      return CB_RESULT_ATTACH_ALLOW;
-	//ko_train_EEC:      return CB_RESULT_ATTACH_ALLOW;
-	ko_train_PASSWG:   return CB_RESULT_ATTACH_ALLOW;
-	ko_train_PASSWGP:  return CB_RESULT_ATTACH_ALLOW;
-	ko_train_CAFE_CAR: return CB_RESULT_ATTACH_ALLOW;
-	return string(STR_ERROR_NO_ATTACH);
+    ko_train_DEC:      return CB_RESULT_ATTACH_ALLOW;
+    //ko_train_EEC:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWGP:  return CB_RESULT_ATTACH_ALLOW;
+    ko_train_CAFE_CAR: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
 }

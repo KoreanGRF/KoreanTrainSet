@@ -23,5 +23,5 @@ spriteset(set_3K_purchase, "./src/metro/busan3/3K.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_3_purchase, cargo_subtype) {
-	set_3K_purchase;
+    set_3K_purchase;
 }

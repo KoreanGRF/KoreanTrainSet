@@ -8,37 +8,37 @@
 
 // Attachable vehicles for Kxxxx locomotives
 switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
-	ko_train_K4x00:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K7x00:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K7000:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K7600:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8000:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8x00:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_K8500:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_MUGUNGHWA_CAR:   return CB_RESULT_ATTACH_ALLOW;
-	ko_train_SAEMAEUL_CAR:    return CB_RESULT_ATTACH_ALLOW;
-	ko_train_TONGIL_CAR:      return CB_RESULT_ATTACH_ALLOW;
-	ko_train_BIDULGI_CAR:     return CB_RESULT_ATTACH_ALLOW;
-	ko_train_GENERATOR_CAR:   return CB_RESULT_ATTACH_ALLOW;
-	ko_train_CAFE_CAR:        return CB_RESULT_ATTACH_ALLOW;
-	ko_train_FLAT_CAR:        return CB_RESULT_ATTACH_ALLOW;
-	ko_train_HOPPER_CAR:      return CB_RESULT_ATTACH_ALLOW;
-	ko_train_BAGGAGE_CAR:     return CB_RESULT_ATTACH_ALLOW;
-	ko_train_TANK_CAR:        return CB_RESULT_ATTACH_ALLOW;
-	ko_train_STAKE_CAR:       return CB_RESULT_ATTACH_ALLOW;
-	return string(STR_ERROR_NO_ATTACH);
+    ko_train_K4x00:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7x00:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7000:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7600:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8000:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8x00:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8500:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_MUGUNGHWA_CAR:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_SAEMAEUL_CAR:    return CB_RESULT_ATTACH_ALLOW;
+    ko_train_TONGIL_CAR:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BIDULGI_CAR:     return CB_RESULT_ATTACH_ALLOW;
+    ko_train_GENERATOR_CAR:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_CAFE_CAR:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_FLAT_CAR:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_HOPPER_CAR:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BAGGAGE_CAR:     return CB_RESULT_ATTACH_ALLOW;
+    ko_train_TANK_CAR:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_STAKE_CAR:       return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
 }
 
 // Attachable vehicles for Metro
 switch(FEAT_TRAINS, SELF, sw_METRO_attach, vehicle_type_id) {
-	ko_train_PASSWG:                    return CB_RESULT_ATTACH_ALLOW;
-	ko_train_PASSWGP:                   return CB_RESULT_ATTACH_ALLOW;
-	ko_train_SEOUL_METRO_1..ko_train_SEOUL_METRO_5_9: return CB_RESULT_ATTACH_ALLOW;
-	return string(STR_ERROR_NO_ATTACH);
+    ko_train_PASSWG:                    return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWGP:                   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_SEOUL_METRO_1..ko_train_SEOUL_METRO_5_9: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
 }
 
 // It should be more than 4 cars including engines
 switch(FEAT_TRAINS, SELF, sw_ko_train_start_stop, num_vehs_in_consist >= 4) {
-	1: return CB_RESULT_NO_TEXT;
-	return string(STR_ERROR_NOT_ENOUGH_LENGTH4);
+    1: return CB_RESULT_NO_TEXT;
+    return string(STR_ERROR_NOT_ENOUGH_LENGTH4);
 }

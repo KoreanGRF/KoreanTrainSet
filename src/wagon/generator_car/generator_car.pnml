@@ -17,24 +17,24 @@ spriteset(set_GENERATOR_CAR_wagon_purchase, "./src/wagon/generator_car/generator
 }
 
 spriteset(set_GENERATOR_CAR_wagon_A, "./src/wagon/generator_car/generator_car.png") {
-	tmpl_wagon_by_coor(0, 0)
+    tmpl_wagon_by_coor(0, 0)
 }
 spriteset(set_GENERATOR_CAR_wagon_B, "./src/wagon/generator_car/generator_car.png") {
-	tmpl_wagon_by_coor(0, 30)
+    tmpl_wagon_by_coor(0, 30)
 }
 spriteset(set_GENERATOR_CAR_wagon_GREEN_YELLOW, "./src/wagon/generator_car/generator_car.png") {
-	tmpl_wagon_by_coor(0, 60)
+    tmpl_wagon_by_coor(0, 60)
 }
 spriteset(set_GENERATOR_CAR_wagon_BLUE_YELLOW, "./src/wagon/generator_car/generator_car.png") {
-	tmpl_wagon_by_coor(0, 90)
+    tmpl_wagon_by_coor(0, 90)
 }
 spriteset(set_GENERATOR_CAR_wagon_ATRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's power car
     tmpl_wagon_by_coor(0, 0)
 }
 spriteset(set_HAERANG_GENERATOR_CAR, "./src/wagon/mugunghwa/Haerang.png") {
     // Note: 8 directions are splited into two lines (8 방향이 두 줄로 나뉘어 있음)
-	tmpl_wagon_by_coor(0, 60)
-	tmpl_wagon_by_coor(0, 90)
+    tmpl_wagon_by_coor(0, 60)
+    tmpl_wagon_by_coor(0, 90)
 }
 spriteset(set_STRAIN_GENERATOR_CAR_1, "./src/wagon/mugunghwa/S-train.png") {
     tmpl_wagon_by_coor(0, 30)
@@ -48,15 +48,15 @@ spriteset(set_GTRAIN_GENERATOR_CAR, "./src/wagon/mugunghwa/G-train.png") {
 
 // Refit
 switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon_by_general, cargo_subtype) {
-	1:	set_GENERATOR_CAR_wagon_BLUE_YELLOW;
-	2:	set_GENERATOR_CAR_wagon_GREEN_YELLOW;
-	3:	set_GENERATOR_CAR_wagon_B;
-	4:	set_GENERATOR_CAR_wagon_A;
-	6:	set_HAERANG_GENERATOR_CAR;
-	10:	set_STRAIN_GENERATOR_CAR_1;
-	11:	set_STRAIN_GENERATOR_CAR_2;
-	12:	set_GTRAIN_GENERATOR_CAR;
-	set_GENERATOR_CAR_wagon_B;
+    1:    set_GENERATOR_CAR_wagon_BLUE_YELLOW;
+    2:    set_GENERATOR_CAR_wagon_GREEN_YELLOW;
+    3:    set_GENERATOR_CAR_wagon_B;
+    4:    set_GENERATOR_CAR_wagon_A;
+    6:    set_HAERANG_GENERATOR_CAR;
+    10:    set_STRAIN_GENERATOR_CAR_1;
+    11:    set_STRAIN_GENERATOR_CAR_2;
+    12:    set_GTRAIN_GENERATOR_CAR;
+    set_GENERATOR_CAR_wagon_B;
 }
 switch(FEAT_TRAINS, SELF, sw_K7600_GENERATOR_CAR_wagon, cargo_subtype) {
     13:    set_GENERATOR_CAR_wagon_ATRAIN;
@@ -67,15 +67,15 @@ switch(FEAT_TRAINS, PARENT, sw_GENERATOR_CAR_wagon, vehicle_type_id) {
     sw_GENERATOR_CAR_wagon_by_general;
 }
 switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon_subtype_text_by_general, cargo_subtype) {
-	1:	return string(STR_REFIT_PAINTING_GENERATOR_CAR_SME_B);
-	2:	return string(STR_REFIT_PAINTING_GENERATOR_CAR_SME_A);
-	3:	return string(STR_REFIT_PAINTING_GENERATOR_CAR_LONG);
-	4:	return string(STR_REFIT_PAINTING_GENERATOR_CAR_DEFAULT);
-	6:	return string(STR_REFIT_PAINTING_HAERANG);
-	10:	return string(STR_REFIT_PAINTING_STRAIN1);
-	11:	return string(STR_REFIT_PAINTING_STRAIN2);
-	12:	return string(STR_REFIT_PAINTING_GTRAIN);
-	return  string(STR_REFIT_PAINTING_GENERATOR_CAR_LONG);
+    1:    return string(STR_REFIT_PAINTING_GENERATOR_CAR_SME_B);
+    2:    return string(STR_REFIT_PAINTING_GENERATOR_CAR_SME_A);
+    3:    return string(STR_REFIT_PAINTING_GENERATOR_CAR_LONG);
+    4:    return string(STR_REFIT_PAINTING_GENERATOR_CAR_DEFAULT);
+    6:    return string(STR_REFIT_PAINTING_HAERANG);
+    10:    return string(STR_REFIT_PAINTING_STRAIN1);
+    11:    return string(STR_REFIT_PAINTING_STRAIN2);
+    12:    return string(STR_REFIT_PAINTING_GTRAIN);
+    return  string(STR_REFIT_PAINTING_GENERATOR_CAR_LONG);
 }
 switch(FEAT_TRAINS, PARENT, sw_GENERATOR_CAR_wagon_subtype_text, vehicle_type_id) {
     ko_train_K7600: sw_K7600_cargo_subtype_text;

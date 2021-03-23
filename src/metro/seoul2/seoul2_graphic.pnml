@@ -125,5 +125,5 @@ spriteset(set_2K_RHEO_MODIFIED_purchase, "./src/metro/seoul2/2K_RHEO_MODIFIED.pn
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_purchase, cargo_subtype) {
-	set_2K_VVVF_2ND_purchase;
+    set_2K_VVVF_2ND_purchase;
 }

@@ -14,8 +14,8 @@ switch(FEAT_TRAINS, SELF, sw_BIDULGI_CDC_engine, cargo_subtype) {
 
 // Attach
 switch(FEAT_TRAINS, SELF, sw_BIDULGI_CDC_attach, vehicle_type_id) {
-	ko_train_BIDULGI_CDC: return CB_RESULT_ATTACH_ALLOW;
-	ko_train_BIDULGI_CAR: return CB_RESULT_ATTACH_ALLOW;
-	ko_train_PASSWG:      return CB_RESULT_ATTACH_ALLOW;
-	return string(STR_ERROR_NO_ATTACH);
+    ko_train_BIDULGI_CDC: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BIDULGI_CAR: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:      return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
 }

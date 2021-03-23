@@ -28,7 +28,7 @@ switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_wagon, cargo_subtype) {
     // 3: set_BIDULGI_CAR_3_wagon;
     4: sw_BIDULGI_CAR_4_wagon;
     5: set_BIDULGI_CAR_5_wagon;
-	sw_BIDULGI_CAR_4_wagon;
+    sw_BIDULGI_CAR_4_wagon;
 }
 
 // Capacity
@@ -38,5 +38,5 @@ switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_capacity, cargo_subtype) {
     // 3: 100 * sw_cargo_capacity_factor;
     4: 100 * sw_cargo_capacity_factor;
     5: 100 * sw_cargo_capacity_factor;
-	sw_BIDULGI_CAR_4_wagon;
+    sw_BIDULGI_CAR_4_wagon;
 }

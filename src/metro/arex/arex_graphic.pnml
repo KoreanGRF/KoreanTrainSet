@@ -57,5 +57,5 @@ spriteset(set_AREX_2K_purchase, "./src/metro/arex/AREX_2K.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_AREX_purchase, cargo_subtype) {
-	set_AREX_2K_purchase;
+    set_AREX_2K_purchase;
 }

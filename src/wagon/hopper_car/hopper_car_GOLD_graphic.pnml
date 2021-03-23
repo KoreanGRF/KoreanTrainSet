@@ -9,57 +9,57 @@
 
 // Graphics when loads Golds/Sulps
 spriteset(set_HOPPER_CAR_GOLD_loading_A_wagon, "./src/wagon/hopper_car/cargo_GOLD.png") {
-	tmpl_hopper_car(0, 0)
+    tmpl_hopper_car(0, 0)
 }
 spriteset(set_HOPPER_CAR_GOLD_full_A_wagon, "./src/wagon/hopper_car/cargo_GOLD.png") {
-	tmpl_hopper_car(0, 30)
+    tmpl_hopper_car(0, 30)
 }
 spriteset(set_HOPPER_CAR_GOLD_loading_B_wagon, "./src/wagon/hopper_car/cargo_GOLD.png") {
-	tmpl_hopper_car(0, 60)
+    tmpl_hopper_car(0, 60)
 }
 spriteset(set_HOPPER_CAR_GOLD_full_B_wagon, "./src/wagon/hopper_car/cargo_GOLD.png") {
-	tmpl_hopper_car(0, 90)
+    tmpl_hopper_car(0, 90)
 }
 spriteset(set_HOPPER_CAR_GOLD_loading_C_wagon, "./src/wagon/hopper_car/cargo_GOLD.png") {
-	tmpl_hopper_car(0, 120)
+    tmpl_hopper_car(0, 120)
 }
 spriteset(set_HOPPER_CAR_GOLD_full_C_wagon, "./src/wagon/hopper_car/cargo_GOLD.png") {
-	tmpl_hopper_car(0, 150)
+    tmpl_hopper_car(0, 150)
 }
 
 spritegroup sg_HOPPER_CAR_GOLD_A_wagon {
-	loading: [
-		set_HOPPER_CAR_empty_A_wagon,
-		set_HOPPER_CAR_GOLD_loading_A_wagon,
-		set_HOPPER_CAR_GOLD_full_A_wagon
-	];
-	loaded: [
-		set_HOPPER_CAR_empty_A_wagon,
-		set_HOPPER_CAR_GOLD_loading_A_wagon,
-		set_HOPPER_CAR_GOLD_full_A_wagon
-	];
+    loading: [
+        set_HOPPER_CAR_empty_A_wagon,
+        set_HOPPER_CAR_GOLD_loading_A_wagon,
+        set_HOPPER_CAR_GOLD_full_A_wagon
+    ];
+    loaded: [
+        set_HOPPER_CAR_empty_A_wagon,
+        set_HOPPER_CAR_GOLD_loading_A_wagon,
+        set_HOPPER_CAR_GOLD_full_A_wagon
+    ];
 }
 spritegroup sg_HOPPER_CAR_GOLD_B_wagon {
-	loading: [
-		set_HOPPER_CAR_empty_B_wagon,
-		set_HOPPER_CAR_GOLD_loading_B_wagon,
-		set_HOPPER_CAR_GOLD_full_B_wagon
-	];
-	loaded: [
-		set_HOPPER_CAR_empty_B_wagon,
-		set_HOPPER_CAR_GOLD_loading_B_wagon,
-		set_HOPPER_CAR_GOLD_full_B_wagon
-	];
+    loading: [
+        set_HOPPER_CAR_empty_B_wagon,
+        set_HOPPER_CAR_GOLD_loading_B_wagon,
+        set_HOPPER_CAR_GOLD_full_B_wagon
+    ];
+    loaded: [
+        set_HOPPER_CAR_empty_B_wagon,
+        set_HOPPER_CAR_GOLD_loading_B_wagon,
+        set_HOPPER_CAR_GOLD_full_B_wagon
+    ];
 }
 spritegroup sg_HOPPER_CAR_GOLD_C_wagon {
-	loading: [
-		set_HOPPER_CAR_empty_C_wagon,
-		set_HOPPER_CAR_GOLD_loading_C_wagon,
-		set_HOPPER_CAR_GOLD_full_C_wagon
-	];
-	loaded: [
-		set_HOPPER_CAR_empty_C_wagon,
-		set_HOPPER_CAR_GOLD_loading_C_wagon,
-		set_HOPPER_CAR_GOLD_full_C_wagon
-	];
+    loading: [
+        set_HOPPER_CAR_empty_C_wagon,
+        set_HOPPER_CAR_GOLD_loading_C_wagon,
+        set_HOPPER_CAR_GOLD_full_C_wagon
+    ];
+    loaded: [
+        set_HOPPER_CAR_empty_C_wagon,
+        set_HOPPER_CAR_GOLD_loading_C_wagon,
+        set_HOPPER_CAR_GOLD_full_C_wagon
+    ];
 }

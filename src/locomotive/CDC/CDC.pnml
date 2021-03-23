@@ -164,45 +164,45 @@ spriteset(set_CAFE_CAR_RDC, "./src/wagon/cafe_car/CAFE_CAR.png") {
 
 // for Gyeongbuk theme (경북순환테마열차용)
 switch(FEAT_TRAINS, SELF, sw_CDC_GYEONGBUK1_wagon, position_in_consist % 2) {
-	1: set_CDC_GYEONGBUK1_wagon2;
-	set_CDC_GYEONGBUK1_wagon1;
+    1: set_CDC_GYEONGBUK1_wagon2;
+    set_CDC_GYEONGBUK1_wagon1;
 }
 switch(FEAT_TRAINS, SELF, sw_CDC_GYEONGBUK2_wagon, position_in_consist % 2) {
-	1: set_CDC_GYEONGBUK2_wagon2;
-	set_CDC_GYEONGBUK2_wagon1;
+    1: set_CDC_GYEONGBUK2_wagon2;
+    set_CDC_GYEONGBUK2_wagon1;
 }
 
 
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_CDC_engineH, cargo_subtype) {
-	1:  set_CDC_GARDEN_engineH;
-	2:  set_CDC_DOLPHIN_engineH;
-	3:  set_CDC_SEASIDE_BLUE_engineH;
-	4:  set_CDC_SEASIDE_RED_WHITE_engineH;
-	5:  set_CDC_BAEKJE_engineH;
-	6:  set_CDC_GREEN_YELLOW_engineH;
-	7:  set_CDC_DMZTRAIN_engineH;
-	8:  set_CDC_MUGUNGHWA_engineH;
-	9:  set_CDC_GYEONGBUK1_engineH;
-	10: set_CDC_GYEONGBUK2_engineH;
-	set_CDC_engineH;
+    1:  set_CDC_GARDEN_engineH;
+    2:  set_CDC_DOLPHIN_engineH;
+    3:  set_CDC_SEASIDE_BLUE_engineH;
+    4:  set_CDC_SEASIDE_RED_WHITE_engineH;
+    5:  set_CDC_BAEKJE_engineH;
+    6:  set_CDC_GREEN_YELLOW_engineH;
+    7:  set_CDC_DMZTRAIN_engineH;
+    8:  set_CDC_MUGUNGHWA_engineH;
+    9:  set_CDC_GYEONGBUK1_engineH;
+    10: set_CDC_GYEONGBUK2_engineH;
+    set_CDC_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_CDC_engineT, cargo_subtype) {
-	1:  set_CDC_GARDEN_engineT;
-	2:  set_CDC_DOLPHIN_engineT;
-	3:  set_CDC_SEASIDE_BLUE_engineT;
-	4:  set_CDC_SEASIDE_RED_WHITE_engineT;
-	5:  set_CDC_BAEKJE_engineT;
-	6:  set_CDC_GREEN_YELLOW_engineT;
-	7:  set_CDC_DMZTRAIN_engineT;
-	8:  set_CDC_MUGUNGHWA_engineT;
-	9:  set_CDC_GYEONGBUK1_engineT;
-	10: set_CDC_GYEONGBUK2_engineT;
-	set_CDC_engineT;
+    1:  set_CDC_GARDEN_engineT;
+    2:  set_CDC_DOLPHIN_engineT;
+    3:  set_CDC_SEASIDE_BLUE_engineT;
+    4:  set_CDC_SEASIDE_RED_WHITE_engineT;
+    5:  set_CDC_BAEKJE_engineT;
+    6:  set_CDC_GREEN_YELLOW_engineT;
+    7:  set_CDC_DMZTRAIN_engineT;
+    8:  set_CDC_MUGUNGHWA_engineT;
+    9:  set_CDC_GYEONGBUK1_engineT;
+    10: set_CDC_GYEONGBUK2_engineT;
+    set_CDC_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_CDC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-	1: sw_CDC_engineT;
-	sw_CDC_engineH;
+    1: sw_CDC_engineT;
+    sw_CDC_engineH;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CDC_cargo_subtype_text, cargo_subtype) {
@@ -221,39 +221,39 @@ switch(FEAT_TRAINS, SELF, sw_CDC_cargo_subtype_text, cargo_subtype) {
 
 // Wagon
 switch(FEAT_TRAINS, PARENT, sw_CDC_wagon_by_parent, cargo_subtype) {
-	1:  set_CDC_GARDEN_wagon;
-	2:  set_CDC_DOLPHIN_wagon;
-	3:  set_CDC_SEASIDE_BLUE_wagon;
-	4:  set_CDC_SEASIDE_RED_WHITE_wagon;
-	5:  set_CDC_BAEKJE_wagon;
-	6:  set_CDC_GREEN_YELLOW_wagon;
-	7:  set_CDC_DMZTRAIN_wagon;
-	8:  set_CDC_MUGUNGHWA_wagon;
-	9:  sw_CDC_GYEONGBUK1_wagon;
-	10: sw_CDC_GYEONGBUK2_wagon;
-	set_CDC_wagon;
+    1:  set_CDC_GARDEN_wagon;
+    2:  set_CDC_DOLPHIN_wagon;
+    3:  set_CDC_SEASIDE_BLUE_wagon;
+    4:  set_CDC_SEASIDE_RED_WHITE_wagon;
+    5:  set_CDC_BAEKJE_wagon;
+    6:  set_CDC_GREEN_YELLOW_wagon;
+    7:  set_CDC_DMZTRAIN_wagon;
+    8:  set_CDC_MUGUNGHWA_wagon;
+    9:  sw_CDC_GYEONGBUK1_wagon;
+    10: sw_CDC_GYEONGBUK2_wagon;
+    set_CDC_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_CDC_wagon, cargo_subtype) {
-	1:  set_CDC_GARDEN_wagon;
-	2:  set_CDC_DOLPHIN_wagon;
-	3:  set_CDC_SEASIDE_BLUE_wagon;
-	4:  set_CDC_SEASIDE_RED_WHITE_wagon;
-	5:  set_CDC_BAEKJE_wagon;
-	6:  set_CDC_GREEN_YELLOW_wagon;
-	7:  set_CDC_DMZTRAIN_wagon;
-	8:  set_CDC_MUGUNGHWA_wagon;
-	9:  sw_CDC_GYEONGBUK1_wagon;
-	10: sw_CDC_GYEONGBUK2_wagon;
-	sw_CDC_wagon_by_parent;
+    1:  set_CDC_GARDEN_wagon;
+    2:  set_CDC_DOLPHIN_wagon;
+    3:  set_CDC_SEASIDE_BLUE_wagon;
+    4:  set_CDC_SEASIDE_RED_WHITE_wagon;
+    5:  set_CDC_BAEKJE_wagon;
+    6:  set_CDC_GREEN_YELLOW_wagon;
+    7:  set_CDC_DMZTRAIN_wagon;
+    8:  set_CDC_MUGUNGHWA_wagon;
+    9:  sw_CDC_GYEONGBUK1_wagon;
+    10: sw_CDC_GYEONGBUK2_wagon;
+    sw_CDC_wagon_by_parent;
 }
 
 // Attachable vehicles
 switch(FEAT_TRAINS, SELF, sw_CDC_attach, vehicle_type_id) {
-	ko_train_CDC:           return CB_RESULT_ATTACH_ALLOW;
-	ko_train_PASSWG:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_CDC:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:        return CB_RESULT_ATTACH_ALLOW;
     ko_train_MUGUNGHWA_CAR: return CB_RESULT_ATTACH_ALLOW;
-	ko_train_CAFE_CAR:      return CB_RESULT_ATTACH_ALLOW;
-	return string(STR_ERROR_NO_ATTACH);
+    ko_train_CAFE_CAR:      return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
 }
 
 // Item

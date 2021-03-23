@@ -57,5 +57,5 @@ spriteset(set_351K_VVVF_3RD_purchase, "./src/metro/suin-bundang/351K_VVVF_3RD.pn
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_purchase, cargo_subtype) {
-	set_351K_VVVF_1ST_purchase;
+    set_351K_VVVF_1ST_purchase;
 }

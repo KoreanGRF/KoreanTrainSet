@@ -108,5 +108,5 @@ spriteset(set_SMETRO_4K_VVVF_3RD_purchase, "./src/metro/seoul4/SMETRO_4K_VVVF_3R
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_purchase, cargo_subtype) {
-	set_341K_VVVF_2ND_2_purchase;
+    set_341K_VVVF_2ND_2_purchase;
 }

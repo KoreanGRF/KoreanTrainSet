@@ -14,42 +14,42 @@ SPEED_GENERAL(PASHI5)
 
 // Template
 template tmpl_PASHI5(x, y) {
-	tmpl_MATE2(x, y)
+    tmpl_MATE2(x, y)
 }
 spriteset(set_PASHI5_purchase, "./src/locomotive/steam/steam.png") {
     tmpl_purchase_detail(0, 120, 50, 12, -25, -6)
 }
 spriteset(set_PASHI5_engine_1, "./src/locomotive/steam/steam.png") {
-	tmpl_PASHI5(60, 120)
+    tmpl_PASHI5(60, 120)
 }
 spriteset(set_PASHI5_engine_2, "./src/locomotive/steam/steam.png") {
-	tmpl_PASHI5(60, 150)
+    tmpl_PASHI5(60, 150)
 }
 spriteset(set_PASHI5_engine_3, "./src/locomotive/steam/steam.png") {
-	tmpl_PASHI5(60, 180)
+    tmpl_PASHI5(60, 180)
 }
 spriteset(set_PASHI5_engine_4, "./src/locomotive/steam/steam.png") {
-	tmpl_PASHI5(60, 210)
+    tmpl_PASHI5(60, 210)
 }
 
 
 // PASHI5's engine
 switch(FEAT_TRAINS, SELF, sw_PASHI5_engine_by_motion, motion_counter % 4) {
-	1: set_PASHI5_engine_1;
-	2: set_PASHI5_engine_2;
-	3: set_PASHI5_engine_3;
-	set_PASHI5_engine_4;
+    1: set_PASHI5_engine_1;
+    2: set_PASHI5_engine_2;
+    3: set_PASHI5_engine_3;
+    set_PASHI5_engine_4;
 }
 
 switch(FEAT_TRAINS, SELF, sw_PASHI5_engine, position_in_vehid_chain % 2) {
-	1: set_TENDER_1;
-	sw_PASHI5_engine_by_motion;
+    1: set_TENDER_1;
+    sw_PASHI5_engine_by_motion;
 }
 
 // PASHI5's articulated part
 switch(FEAT_TRAINS, SELF, sw_PASHI5_articulated_part, extra_callback_info1) {
-	1: ko_train_PASHI5;
-	return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+    1: ko_train_PASHI5;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 // Item
@@ -67,7 +67,7 @@ item(FEAT_TRAINS, ko_train_PASHI5, 5302) {
         // Spec
         speed:                          var_PASHI5_SPEED km/h;
         power:                          POWER_IN_KW(var_PASHI5_POWER);
-		extra_power_per_wagon:          0 kW;
+        extra_power_per_wagon:          0 kW;
         weight:                         113 ton;
         tractive_effort_coefficient:    0.2;
         air_drag_coefficient:           0.1;
@@ -97,10 +97,10 @@ item(FEAT_TRAINS, ko_train_PASHI5, 5302) {
     }
     graphics {
         default:                        sw_PASHI5_engine;
-		articulated_part:               sw_PASHI5_articulated_part;
+        articulated_part:               sw_PASHI5_articulated_part;
         purchase:                       set_PASHI5_purchase;
 
-		length:                         sw_TENDER_length;
+        length:                         sw_TENDER_length;
 
         speed:                          sw_PASHI5_speed;
         cost_factor:                    sw_PASHI5_cost;

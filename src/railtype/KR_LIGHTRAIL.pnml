@@ -79,10 +79,10 @@ spriteset(set_light_railway_track_tunnel_overlay, "./src/railtype/KR_LIGHTRAIL.p
 
 // Disable grass overlay
 replace (6142, "./src/railtype/KR_LIGHTRAIL.png") {
-	[0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
 }
 replace (6148, "./src/railtype/KR_LIGHTRAIL.png") {
-	[0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
 }
 
 // Depot
@@ -125,13 +125,13 @@ item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
         // powered_railtype_list:          ["ELRL", "MONO"];
 
         station_graphics:               RAILTYPE_STATION_MONORAIL;
-		acceleration_model:             ACC_MODEL_MONORAIL;
+        acceleration_model:             ACC_MODEL_MONORAIL;
     //  speed_limit:                    200 km/h;
         construction_cost:              14;
         sort_order:                     47;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-		alternative_railtype_list:      ["MONO"];
+        alternative_railtype_list:      ["MONO"];
     }
     graphics {
         gui:                            set_light_railway_gui;
@@ -147,8 +147,8 @@ item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
 
 // Replace Monorail station graphic (in future ...)
 // replace (1152, "./src/railtype/KR_LIGHTRAIL.png") {
-// 	[0, 0, 1, 1, 0, 0]
+//     [0, 0, 1, 1, 0, 0]
 // }
 // replace (1154, "./src/railtype/KR_LIGHTRAIL.png") {
-// 	[0, 0, 1, 1, 0, 0]
+//     [0, 0, 1, 1, 0, 0]
 // }

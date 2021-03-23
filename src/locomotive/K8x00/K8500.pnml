@@ -22,7 +22,7 @@ spriteset(set_K8500_purchase, "./src/locomotive/K8x00/K8500.png") {
 K8500
 ------------------------------------------------------------------------------*/
 item(FEAT_TRAINS, ko_train_K8500, 5485) {
-	property {
+    property {
         // Common properties
         name:                           string(STR_K8500_NAME);
         climates_available:             ALL_CLIMATES;

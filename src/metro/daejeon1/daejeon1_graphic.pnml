@@ -23,5 +23,5 @@ spriteset(set_DAEJEON_METRO_1K_purchase, "./src/metro/daejeon1/DAEJEON_METRO_1K.
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_DAEJEON_METRO_1_purchase, cargo_subtype) {
-	set_DAEJEON_METRO_1K_purchase;
+    set_DAEJEON_METRO_1K_purchase;
 }

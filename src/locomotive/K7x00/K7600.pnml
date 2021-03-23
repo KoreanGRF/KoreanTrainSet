@@ -28,7 +28,7 @@ spriteset(set_K7600_loco_ATRAIN, "./src/locomotive/K7x00/K7600.png") {   // A-tr
     tmpl_K7600(60, 30)
 }
 spriteset(set_K7600_purchase, "./src/locomotive/K7x00/K7600.png") {
-	tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
+    tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
 }
 
 // Refit Paintings
@@ -43,7 +43,7 @@ switch(FEAT_TRAINS, SELF, sw_K7600_cargo_subtype_text, cargo_subtype) {
 
 // Item
 item(FEAT_TRAINS, ko_train_K7600, 5476) {
-	property {
+    property {
         // Common properties
         name:                           string(STR_K7600_NAME);
         climates_available:             ALL_CLIMATES;
