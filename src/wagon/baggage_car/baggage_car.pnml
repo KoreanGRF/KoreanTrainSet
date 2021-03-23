@@ -42,7 +42,7 @@ item(FEAT_TRAINS, ko_train_BAGGAGE_CAR, 5912) {
         cargo_capacity:                 36;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [PASS, MAIL, LVST, VALU, PAPR, GOLD, DIAM];
+        cargo_allow_refit:              [PASS, MAIL, LVST, VALU, GOLD, DIAM, JAVA];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
 

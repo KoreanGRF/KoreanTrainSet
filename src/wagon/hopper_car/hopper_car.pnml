@@ -41,9 +41,12 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
 
         // Cargo
         cargo_capacity:                 25;
-        refittable_cargo_classes:       bitmask(CC_BULK);
+        refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE, BEAN, CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, LIME, MNO2, PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG];
+        cargo_allow_refit:              [COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE, BEAN,
+                                         CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, POTA, LIME, MNO2,
+                                         PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG, FERT, NITR, CMNT, SASH,
+                                         QLME, PLAS, FECR, CBLK, CASS, BDMT];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
 
@@ -65,6 +68,8 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         PEAT:                           sw_HOPPER_CAR_BEAN_wagon;
         CLAY:                           sw_HOPPER_CAR_CLAY_wagon;
         COAL:                           sw_HOPPER_CAR_COAL_wagon;
+        COKE:                           sw_HOPPER_CAR_COAL_wagon;
+        CBLK:                           sw_HOPPER_CAR_COAL_wagon;
         CORE:                           sw_HOPPER_CAR_CORE_wagon;
         FRUT:                           sw_HOPPER_CAR_FRUT_wagon;
         GOLD:                           sw_HOPPER_CAR_GOLD_wagon;
@@ -72,12 +77,15 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         GRAI:                           sw_HOPPER_CAR_GRAI_wagon;
         MAIZ:                           sw_HOPPER_CAR_GRAI_wagon;
         WHEA:                           sw_HOPPER_CAR_GRAI_wagon;
+        FERT:                           sw_HOPPER_CAR_GRAI_wagon;
         GRVL:                           sw_HOPPER_CAR_GRVL_wagon;
         CMNT:                           sw_HOPPER_CAR_GRVL_wagon;
         IORE:                           sw_HOPPER_CAR_IORE_wagon;
         LIME:                           sw_HOPPER_CAR_LIME_wagon;
         QLME:                           sw_HOPPER_CAR_LIME_wagon;
+        PLAS:                           sw_HOPPER_CAR_LIME_wagon;
         MNO2:                           sw_HOPPER_CAR_MNO2_wagon;
+        FECR:                           sw_HOPPER_CAR_MNO2_wagon;
         PHOS:                           sw_HOPPER_CAR_PHOS_wagon;
         PORE:                           sw_HOPPER_CAR_PORE_wagon;
         RCYC:                           sw_HOPPER_CAR_RCYC_wagon;
@@ -87,6 +95,7 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         KAOL:                           sw_HOPPER_CAR_SALT_wagon;
         SAND:                           sw_HOPPER_CAR_SAND_wagon;
         NITR:                           sw_HOPPER_CAR_SAND_wagon;
+        BDMT:                           sw_HOPPER_CAR_SAND_wagon;
         SCMT:                           sw_HOPPER_CAR_SCMT_wagon;
         SLAG:                           sw_HOPPER_CAR_SLAG_wagon;
         default:                        sw_HOPPER_CAR_wagon;

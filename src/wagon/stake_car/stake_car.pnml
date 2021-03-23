@@ -42,7 +42,9 @@ item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
         cargo_capacity:                 25;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [COPR, ENSP, FMSP, PAPR, PIPE, STSE, STEL, VBOD, VEHI, WDPR, WOOD, WOOL, FERT, FICR, STAL, ALUM, STCB, CSTI, IRON, STST, STSH, STWR, ZINC];
+        cargo_allow_refit:              [COPR, ENSP, FMSP, PAPR, PIPE, STSE, STEL, VPTS, VENG, VBOD, VEHI,
+                                         WDPR, WOOD, WOOL, FICR, STAL, ALUM, STCB, CSTI, IRON, STST, STSH,
+                                         STWR, ZINC, TYRE];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
 
@@ -72,7 +74,10 @@ item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
         STST:                           sw_STAKE_CAR_STEL_wagon;
         STSH:                           sw_STAKE_CAR_STEL_wagon;
         STWR:                           sw_STAKE_CAR_STEL_wagon;
+        TYRE:                           sw_STAKE_CAR_TYRE_wagon;
         ZINC:                           sw_STAKE_CAR_STEL_wagon;
+        VENG:                           sw_STAKE_CAR_STEL_wagon;
+        VPTS:                           sw_STAKE_CAR_VBOD_wagon;
         VBOD:                           sw_STAKE_CAR_VBOD_wagon;
         VEHI:                           sw_STAKE_CAR_VEHI_wagon;
         WDPR:                           sw_STAKE_CAR_WDPR_wagon;

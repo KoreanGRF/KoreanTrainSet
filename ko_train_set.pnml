@@ -79,4 +79,4 @@ sw_loading_speed_factor =   1 << coeff_loading_speed_factor;
 //#include "src/simplify_waypoint.pnml"
 
 // Disable default engines
-disable_item(FEAT_TRAINS, 0, 26);
+disable_item(FEAT_TRAINS, 0, 115);

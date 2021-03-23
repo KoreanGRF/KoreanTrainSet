@@ -42,6 +42,10 @@ switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VEHI_wagon, random_bits % 2) {
     1: sg_STAKE_CAR_VEHI_B_wagon;
     sg_STAKE_CAR_VEHI_A_wagon;
 }
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_TYRE_wagon, random_bits % 2) {
+    1: sg_STAKE_CAR_TYRE_B_wagon;
+    sg_STAKE_CAR_TYRE_A_wagon;
+}
 switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_WDPR_wagon, random_bits % 2) {
     1: sg_STAKE_CAR_WDPR_B_wagon;
     sg_STAKE_CAR_WDPR_A_wagon;
