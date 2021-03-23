@@ -6,12 +6,12 @@
 /**
  * Bidulgi passenger car
  */
-SPEED_GENERAL(BIDULGI_wagon)
-COST(BIDULGI_wagon)
-RUNNING(BIDULGI_wagon)
-CAPACITY(BIDULGI_wagon)
-// CAPACITY_PURCHASE(BIDULGI_wagon)
-LOADING(BIDULGI_wagon)
+SPEED_GENERAL(BIDULGI_CAR)
+COST(BIDULGI_CAR)
+RUNNING(BIDULGI_CAR)
+CAPACITY(BIDULGI_CAR)
+// CAPACITY_PURCHASE(BIDULGI_CAR)
+LOADING(BIDULGI_CAR)
 
 // Graphics
 // ... Already included at ./src/locomotive/bidulgi/bidulgi_cdc.pnml
@@ -25,7 +25,7 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CAR, 5605) {
         // Common properties
         name:                           string(STR_BIDULGI_CAR_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_BIDULGI_wagon_INTRODUCTION;
+        introduction_date:              var_BIDULGI_CAR_INTRODUCTION;
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
@@ -62,12 +62,12 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CAR, 5605) {
         default:                        sw_BIDULGI_CAR_wagon;
         purchase:                       sw_BIDULGI_CAR_purchase;
 
-        speed:                          sw_BIDULGI_wagon_speed;
-        cost_factor:                    sw_BIDULGI_wagon_cost;
-        running_cost_factor:            sw_BIDULGI_wagon_runningcost;
-        cargo_capacity:                 sw_BIDULGI_wagon_capacity;
-        purchase_cargo_capacity:        sw_BIDULGI_wagon_capacity;
-        loading_speed:                  sw_BIDULGI_wagon_loadingspeed;
+        speed:                          sw_BIDULGI_CAR_speed;
+        cost_factor:                    sw_BIDULGI_CAR_cost;
+        running_cost_factor:            sw_BIDULGI_CAR_runningcost;
+        cargo_capacity:                 sw_BIDULGI_CAR_capacity;
+        purchase_cargo_capacity:        sw_BIDULGI_CAR_capacity;
+        loading_speed:                  sw_BIDULGI_CAR_loadingspeed;
 
         cargo_subtype_text:             sw_BIDULGI_CAR_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);

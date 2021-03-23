@@ -13,20 +13,20 @@
 // CAPACITY_PURCHASE(TONGIL_wagon)
 // LOADING(TONGIL_wagon)
 
-spriteset(set_TONGIL_wagon_purchase, "./src/wagon/tongil/TONGIL.png") {
+spriteset(set_TONGIL_CAR_purchase, "./src/wagon/tongil_car/TONGIL_CAR.png") {
     tmpl_purchase_detail(45, 0, 31, 12, -16, -6)
 }
 
 // 1984~2004
-spriteset(set_TONGIL_wagon, "./src/wagon/tongil/TONGIL.png") {
+spriteset(set_TONGIL_CAR_wagon, "./src/wagon/tongil_car/TONGIL_CAR.png") {
     tmpl_wagon_by_coor(0, 0)
 }
 
 // Refit (No refit currently. We will add some prints in the future)
-switch(FEAT_TRAINS, SELF, sw_TONGIL_wagon, cargo_subtype) {
-    set_TONGIL_wagon;
+switch(FEAT_TRAINS, SELF, sw_TONGIL_CAR_wagon, cargo_subtype) {
+    set_TONGIL_CAR_wagon;
 }
-// switch(FEAT_TRAINS, SELF, sw_TONGIL_wagon_subtype_text, cargo_subtype) {
+// switch(FEAT_TRAINS, SELF, sw_TONGIL_CAR_subtype_text, cargo_subtype) {
 //     return string(STR_REFIT_PAINTING_THESEDAYS);
 // }
 
@@ -35,7 +35,7 @@ item(FEAT_TRAINS, ko_train_TONGIL_CAR, 5604) {
         // Common properties
         name:                           string(STR_TONGIL_CAR_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_TONGIL_wagon_INTRODUCTION;
+        introduction_date:              var_TONGIL_CAR_INTRODUCTION;
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
@@ -69,13 +69,13 @@ item(FEAT_TRAINS, ko_train_TONGIL_CAR, 5604) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_TONGIL_wagon;
-        purchase:                       set_TONGIL_wagon_purchase;
+        default:                        sw_TONGIL_CAR_wagon;
+        purchase:                       set_TONGIL_CAR_purchase;
 
-        cost_factor:                    var_TONGIL_wagon_COST;
-        running_cost_factor:            var_TONGIL_wagon_RUNNINGCOST;
-        cargo_capacity:                 var_TONGIL_wagon_CAPACITY;
-        loading_speed:                  var_TONGIL_wagon_LOADINGSPEED;
+        cost_factor:                    var_TONGIL_CAR_COST;
+        running_cost_factor:            var_TONGIL_CAR_RUNNINGCOST;
+        cargo_capacity:                 var_TONGIL_CAR_CAPACITY;
+        loading_speed:                  var_TONGIL_CAR_LOADINGSPEED;
 
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }

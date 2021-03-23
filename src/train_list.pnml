@@ -40,10 +40,10 @@
 #include "locomotive/KTX/KTX.pnml"
 
 // Wagon
-#include "wagon/saemaeul/DHC_wagon.pnml"
-#include "wagon/mugunghwa/mugunghwa.pnml"
-#include "wagon/tongil/tongil.pnml"
-#include "wagon/bidulgi/bidulgi.pnml"
+#include "wagon/saemaeul_car/saemaeul_car.pnml"
+#include "wagon/mugunghwa_car/mugunghwa_car.pnml"
+#include "wagon/tongil_car/tongil_car.pnml"
+#include "wagon/bidulgi_car/bidulgi_car.pnml"
 #include "wagon/generator_car/generator_car.pnml"
 #include "wagon/cafe_car/cafe_car.pnml"
 

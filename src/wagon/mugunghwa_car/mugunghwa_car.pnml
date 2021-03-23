@@ -1,0 +1,204 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Mugunghwa passenger car
+ */
+// SPEED_GENERAL(MUGUNGHWA_wagon)
+// COST(MUGUNGHWA_wagon)
+// RUNNING(MUGUNGHWA_wagon)
+// CAPACITY(MUGUNGHWA_wagon)
+// CAPACITY_PURCHASE(MUGUNGHWA_wagon)
+// LOADING(MUGUNGHWA_wagon)
+
+spriteset(set_MUGUNGHWA_CAR_wagon_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(45, 150, 32, 12, -16, -6)
+}
+
+// A: 1970~1983
+spriteset(set_MUGUNGHWA_CAR_wagon_A, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(0, 0)
+}
+
+// B: 1984~1984
+spriteset(set_MUGUNGHWA_CAR_wagon_B, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(0, 30)
+}
+
+// C: 1985~1989
+spriteset(set_MUGUNGHWA_CAR_wagon_C, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(0, 60)
+}
+
+// D: 1990~1999
+spriteset(set_MUGUNGHWA_CAR_wagon_D, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(0, 90)
+}
+
+// E: 2000~2002
+spriteset(set_MUGUNGHWA_CAR_wagon_E, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(0, 120)
+}
+
+// Current Korail paint
+spriteset(set_MUGUNGHWA_CAR_wagon_RED_BLUE_WHITE, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(0, 150)
+}
+
+// Old express (구특전)
+spriteset(set_MUGUNGHWA_CAR_wagon_OLD_EXPRESS, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(0, 180)
+}
+
+// Haerang
+spriteset(set_HAERANG_wagon, "./src/wagon/mugunghwa_car/Haerang.png") {
+    tmpl_wagon_by_coor(0, 0)
+}
+spriteset(set_HAERANG_CAFE_wagon, "./src/wagon/mugunghwa_car/Haerang.png") {
+    tmpl_wagon_by_coor(0, 30)
+}
+
+// G-train
+spriteset(set_GTRAIN_wagon1, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(0, 0)
+}
+spriteset(set_GTRAIN_wagon2, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(0, 30)
+}
+spriteset(set_GTRAIN_wagon3, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(0, 60)
+}
+spriteset(set_GTRAIN_wagon4, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(0, 90)
+}
+spriteset(set_GTRAIN_wagon5, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(0, 120)
+}
+
+// S-train
+spriteset(set_STRAIN_wagon1, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_wagon_by_coor(0, 0)
+}
+spriteset(set_STRAIN_wagon2, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_wagon_by_coor(0, 60)
+}
+
+// for A-train
+spriteset(set_MUGUNGHWA_CAR_wagon_ATRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's wagon
+    tmpl_wagon_by_coor(0, 30)
+}
+
+// Refit
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_HAERANG, 1) {   // for Haerang
+    set_HAERANG_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_STRAIN1, 1) {   // for S-train#1
+    set_STRAIN_wagon1;
+}
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_STRAIN2, 1) {   // for S-train#2
+    set_STRAIN_wagon2;
+}
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_GTRAIN, position_in_consist % 5) {   // for G-train
+    1:    set_GTRAIN_wagon1;
+    2:    set_GTRAIN_wagon2;
+    3:    set_GTRAIN_wagon3;
+    4:    set_GTRAIN_wagon4;
+    0:    set_GTRAIN_wagon5;
+    set_GTRAIN_wagon1;
+}
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_normal, cargo_subtype) {
+    1: set_MUGUNGHWA_CAR_wagon_A;
+    2: set_MUGUNGHWA_CAR_wagon_B;
+    3: set_MUGUNGHWA_CAR_wagon_C;
+    4: set_MUGUNGHWA_CAR_wagon_D;
+    5: set_MUGUNGHWA_CAR_wagon_E;
+    6: set_MUGUNGHWA_CAR_wagon_OLD_EXPRESS;
+    set_MUGUNGHWA_CAR_wagon_RED_BLUE_WHITE;
+}
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_K7x00, cargo_subtype) {
+    6:    sw_MUGUNGHWA_CAR_wagon_HAERANG;   // Haerang
+    10:   sw_MUGUNGHWA_CAR_wagon_STRAIN1;   // S-train#1
+    11:   sw_MUGUNGHWA_CAR_wagon_STRAIN2;   // S-train#2
+    12:   sw_MUGUNGHWA_CAR_wagon_GTRAIN;    // G-train
+    sw_MUGUNGHWA_CAR_wagon_normal;          // etc
+}
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_K7600, cargo_subtype) {
+    13:    set_MUGUNGHWA_CAR_wagon_ATRAIN;  // A-train
+    sw_MUGUNGHWA_CAR_wagon_normal;          // etc
+}
+switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_CAR_wagon, vehicle_type_id) {
+    ko_train_K7x00: sw_MUGUNGHWA_CAR_wagon_K7x00;
+    ko_train_K7600: sw_MUGUNGHWA_CAR_wagon_K7600;
+    ko_train_CDC:   sw_CDC_wagon;
+    sw_MUGUNGHWA_CAR_wagon_normal;
+}
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text_normal, cargo_subtype) {
+    1: return string(STR_REFIT_PAINTING_1970_1983);
+    2: return string(STR_REFIT_PAINTING_1984_1984);
+    3: return string(STR_REFIT_PAINTING_1985_1989);
+    4: return string(STR_REFIT_PAINTING_1990_1999);
+    5: return string(STR_REFIT_PAINTING_2000_2002);
+    6: return string(STR_REFIT_PAINTING_OLD_EXPRESS);
+    return string(STR_REFIT_PAINTING_THESEDAYS);
+}
+switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_CAR_subtype_text, vehicle_type_id) {
+    ko_train_K7x00: sw_K7x00_cargo_subtype_text;
+    ko_train_K7600: sw_K7600_cargo_subtype_text;
+    ko_train_CDC:   sw_CDC_cargo_subtype_text;
+    sw_MUGUNGHWA_CAR_subtype_text_normal;
+}
+
+// Item
+item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 5602) {
+    property {
+        // Common properties
+        name:                           string(STR_MUGUNGHWA_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_MUGUNGHWA_CAR_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         17 ton;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_MUGUNGHWA_CAR_wagon;
+        purchase:                       set_MUGUNGHWA_CAR_wagon_purchase;
+
+        cost_factor:                    var_MUGUNGHWA_CAR_COST;
+        running_cost_factor:            var_MUGUNGHWA_CAR_RUNNINGCOST;
+        cargo_capacity:                 var_MUGUNGHWA_CAR_CAPACITY;
+        loading_speed:                  var_MUGUNGHWA_CAR_LOADINGSPEED;
+
+        cargo_subtype_text:             sw_MUGUNGHWA_CAR_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}

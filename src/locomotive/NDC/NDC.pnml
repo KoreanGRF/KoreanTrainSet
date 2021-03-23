@@ -59,7 +59,7 @@ spriteset(set_NDC_business_engineT, "./src/locomotive/NDC/NDC.png") {
     tmpl_NDC_r(60, 30)
 }
 
-// NDC's engine
+// Engine
 switch(FEAT_TRAINS, SELF, sw_NDC_engine_default, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
     1: set_NDC_engineT;
     set_NDC_engineH;
@@ -73,13 +73,13 @@ switch(FEAT_TRAINS, SELF, sw_NDC_engine, cargo_subtype) {
     sw_NDC_engine_default;
 }
 
-//NDC\'s wagon
+// Wagon
 switch(FEAT_TRAINS, SELF, sw_NDC_wagon, cargo_subtype) {
-    1: set_MUGUNGHWA_wagon_D;
-    set_MUGUNGHWA_wagon_C;
+    1: set_MUGUNGHWA_CAR_wagon_D;
+    set_MUGUNGHWA_CAR_wagon_C;
 }
 
-// NDC\'s attach
+// Attach
 switch(FEAT_TRAINS, SELF, sw_NDC_attach, vehicle_type_id) {
     ko_train_CDC:           return CB_RESULT_ATTACH_ALLOW;
     ko_train_NDC:           return CB_RESULT_ATTACH_ALLOW;

@@ -78,6 +78,6 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CDC, 5521) {
     }
     livery_override(ko_train_PASSWG) {
         default:                        sw_BIDULGI_CAR_wagon;
-        cargo_capacity:                 sw_BIDULGI_CAR_capacity;
+        cargo_capacity:                 sw_BIDULGI_CAR_capacity_in_custom;
     }
 }
