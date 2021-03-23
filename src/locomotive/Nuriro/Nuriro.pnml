@@ -119,7 +119,7 @@ item(FEAT_TRAINS, ko_train_NURIRO, 5525) {
         name:                           string(STR_NURIRO_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_NURIRO_INTRODUCTION;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;

@@ -27,7 +27,7 @@ item(FEAT_TRAINS, ko_train_K8500, 5485) {
         name:                           string(STR_K8500_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_K8500_INTRODUCTION;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 

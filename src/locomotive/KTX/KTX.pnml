@@ -45,7 +45,7 @@ item(FEAT_TRAINS, ko_train_KTX1N, 5551) {
         name:                           string(STR_KTX1N_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_KTX1N_INTRODUCTION;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
@@ -117,7 +117,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         name:                           string(STR_KTX2N_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_KTX2N_INTRODUCTION;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
@@ -189,7 +189,7 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
         name:                           string(STR_SRT_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_SRT_INTRODUCTION;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
@@ -264,7 +264,7 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
         name:                           string(STR_EUM_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_EUM_INTRODUCTION;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;

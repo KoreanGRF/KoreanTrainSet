@@ -25,7 +25,7 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_3, 5753) {
         name:                           string(STR_BUSAN_METRO_3_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_BUSAN_METRO_3_INTRODUCTION;
-        track_type:                     RAIL;
+        track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
