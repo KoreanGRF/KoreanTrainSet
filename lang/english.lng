@@ -211,7 +211,6 @@ STR_REFIT_METRO_351K_VVVF_3RD_NAME               : (Korail 351k 3rd VVVF)
 
 # Refit (Gyeongchun Line)
 STR_REFIT_METRO_361K_VVVF_NAME                   : (Korail 361k VVVF)
-STR_REFIT_METRO_386K_ITX_CHEONGCHUN_NAME         : (Korail 368k ITX-Cheongchun)
 
 # Refit (Incheon intertional Airport Line (A'REX))
 STR_REFIT_METRO_AREX_1K_NONSTOP_NAME             : (A'REX 1k Express)

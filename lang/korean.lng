@@ -206,13 +206,12 @@ STR_REFIT_METRO_SMETRO_8K_1_NAME                 : (서울교통공사 8k VVVF)
 STR_REFIT_METRO_SMETRO_9K_1_NAME                 : (서울교통공사9 9k VVVF)
 
 # Refit (Suin-Bungdang Line)
-STR_REFIT_METRO_351K_VVVF_1ST_NAME               : (Korail 351k 1st VVVF)
-STR_REFIT_METRO_351K_VVVF_2ND_NAME               : (Korail 351k 2nd VVVF)
-STR_REFIT_METRO_351K_VVVF_3RD_NAME               : (Korail 351k 3rd VVVF)
+STR_REFIT_METRO_351K_VVVF_1ST_NAME               : (Korail 351k VVVF 1세대)
+STR_REFIT_METRO_351K_VVVF_2ND_NAME               : (Korail 351k VVVF 2세대)
+STR_REFIT_METRO_351K_VVVF_3RD_NAME               : (Korail 351k VVVF 3세대)
 
 # Refit (Gyeongchun Line)
 STR_REFIT_METRO_361K_VVVF_NAME                   : (Korail 361k VVVF)
-STR_REFIT_METRO_386K_ITX_CHEONGCHUN_NAME         : (Korail 368k ITX-Cheongchun)
 
 # Refit (Incheon intertional Airport Line (A'REX))
 STR_REFIT_METRO_AREX_1K_NONSTOP_NAME             : (A'REX 1k 직통)
