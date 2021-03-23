@@ -7,10 +7,10 @@
  * Bidulgi passenger car
  */
 SPEED_GENERAL(BIDULGI_wagon)
-         COST(BIDULGI_wagon)
-      RUNNING(BIDULGI_wagon)
-//     CAPACITY(BIDULGI_wagon)
-      LOADING(BIDULGI_wagon)
+COST(BIDULGI_wagon)
+RUNNING(BIDULGI_wagon)
+CAPACITY(BIDULGI_wagon)
+LOADING(BIDULGI_wagon)
 
 // Graphics
 // ... Already included at ./src/locomotive/bidulgi/bidulgi_cdc.pnml
@@ -64,8 +64,8 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CAR, 5605) {
         speed:                          sw_BIDULGI_wagon_speed;
         cost_factor:                    sw_BIDULGI_wagon_cost;
         running_cost_factor:            sw_BIDULGI_wagon_runningcost;
-        cargo_capacity:                 sw_BIDULGI_CAR_capacity;
-        // purchase_cargo_capacity:        sw_BIDULGI_wagon_purchase_capacity;
+        cargo_capacity:                 sw_BIDULGI_wagon_capacity;
+        purchase_cargo_capacity:        sw_BIDULGI_wagon_capacity;
         loading_speed:                  sw_BIDULGI_wagon_loadingspeed;
 
         cargo_subtype_text:             sw_BIDULGI_CAR_subtype_text;
