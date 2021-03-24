@@ -275,7 +275,7 @@ item(FEAT_TRAINS, ko_train_CDC, 5510) {
         power:                          POWER_IN_KW(var_CDC_POWER);
         weight:                         17 ton;
         tractive_effort_coefficient:    0.25;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.01;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;

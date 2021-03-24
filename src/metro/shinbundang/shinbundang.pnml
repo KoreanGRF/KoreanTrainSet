@@ -35,7 +35,7 @@ item(FEAT_TRAINS, ko_train_SHINBUNDANG, 5735) {
         power:                          POWER_IN_KW(var_SHINBUNDANG_POWER);
         weight:                         20 ton;
         tractive_effort_coefficient:    0.25;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.01;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;

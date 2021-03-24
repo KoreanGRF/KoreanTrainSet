@@ -35,7 +35,7 @@ item(FEAT_TRAINS, ko_train_UISINSEOL, 5803) {
         power:                          POWER_IN_KW(var_UISINSEOL_POWER);
         weight:                         20 ton;
         tractive_effort_coefficient:    0.25;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.01;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
