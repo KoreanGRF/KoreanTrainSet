@@ -51,7 +51,7 @@ switch(FEAT_TRAINS, SELF, sw_KTX_wagon_cargo_subtype_text, cargo_subtype) {
     return string(STR_REFIT_PASSWAGON_NORMALCAR);
 }
 switch(FEAT_TRAINS, SELF, sw_KTX_wagon_capacity_general, cargo_subtype) {
-    1: return 30 * sw_cargo_capacity_factor;
+    1: return 30 / 2 * sw_cargo_capacity_factor;
     sw_KTX_wagon_capacity;
 }
 
