@@ -36,7 +36,7 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
         power:                          var_EUM_POWER kW;
         weight:                         35 ton;
         extra_weight_per_wagon:         35 ton;
-        tractive_effort_coefficient:    0.25;
+        tractive_effort_coefficient:    0.4;
         air_drag_coefficient:           0.1;
 
         // Model
