@@ -56,7 +56,7 @@ spriteset(set_NDC_business_engineH, "./src/locomotive/NDC/NDC.png") {
     tmpl_NDC(60, 60)
 }
 spriteset(set_NDC_business_engineT, "./src/locomotive/NDC/NDC.png") {
-    tmpl_NDC_r(60, 30)
+    tmpl_NDC_r(60, 90)
 }
 
 // Engine
