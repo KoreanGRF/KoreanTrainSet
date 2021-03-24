@@ -27,27 +27,27 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_321K_BIKE, position_in_consist 
 
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_cargo_subtype_text, cargo_subtype) {
-    0:    return string(STR_REFIT_METRO_3XXK_AL_NAME);
-    1:    return string(STR_REFIT_METRO_3XXK_ST_NAME);
-    2:    return string(STR_REFIT_METRO_311K_2_NAME);
-    3:    return string(STR_REFIT_METRO_311K_1_NAME);
-    4:    return string(STR_REFIT_METRO_1K_RHEO_NEW_2_NAME);
-    5:    return string(STR_REFIT_METRO_1K_RHEO_NEW_1_NAME);
-    6:    return string(STR_REFIT_METRO_1K_RHEO_MODIFIED_3_NAME);
-    7:    return string(STR_REFIT_METRO_1K_RHEO_MODIFIED_2_NAME);
-    8:    return string(STR_REFIT_METRO_1K_RHEO_MODIFIED_1_NAME);
-    9:    return string(STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME);
-    10:    return string(STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME);
-    11:    return string(STR_REFIT_METRO_SMETRO_1K_VVVF_NAME);
-    12:    return string(STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME);
-    13:    return string(STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME);
-    14:    return string(STR_REFIT_METRO_321K_BIKE_NAME);
-    15:    return string(STR_REFIT_METRO_371K_BLANK_NAME);
-//  16:    return string();
-    17:    return string(STR_REFIT_METRO_371K_381K_1ST_NAME);  // 동해선 1차분
-    18:    return string(STR_REFIT_METRO_381K_2ND_NAME);       // 동해선 2차분(주둥이)
-    19:    return string(STR_REFIT_METRO_391K_NAME);           // 서해선
-    20:    return string(STR_REFIT_METRO_LINE_1_2019_NAME);    // 1호선 주둥이
+    0:    return string(STR_REFIT_METRO_3XXK_AL_NAME);                  // Korail 3xxk AL
+    1:    return string(STR_REFIT_METRO_3XXK_ST_NAME);                  // Korail 3xxk ST
+    2:    return string(STR_REFIT_METRO_311K_2_NAME);                   // KNR 311k / Old painting
+    3:    return string(STR_REFIT_METRO_311K_1_NAME);                   // Korail 311k / Current painting
+    4:    return string(STR_REFIT_METRO_1K_RHEO_NEW_2_NAME);            // Korail 1k New rheostatic / Current paintin
+    5:    return string(STR_REFIT_METRO_1K_RHEO_NEW_1_NAME);            // KNR 1k New rheostatic / Old painting
+    6:    return string(STR_REFIT_METRO_1K_RHEO_MODIFIED_3_NAME);       // Korail 1k 중기 저항 / 현 도색
+    7:    return string(STR_REFIT_METRO_1K_RHEO_MODIFIED_2_NAME);       // KNR 1k Second rheostatic / 2nd painting
+    8:    return string(STR_REFIT_METRO_1K_RHEO_MODIFIED_1_NAME);       // KNR 1k Second rheostatic / 1st painting
+    9:    return string(STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME);          // KNR 1k First rheostatic / 2nd painting
+    10:   return string(STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME);          // KNR 1k First rheostatic / 1st painting
+    11:   return string(STR_REFIT_METRO_SMETRO_1K_VVVF_NAME);           // SMetro 1k VVVF
+    12:   return string(STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME);  // SMetro 1k Modified rheostatic
+    13:   return string(STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME);     // SMetro 1k First rheostatic
+    14:   return string(STR_REFIT_METRO_321K_BIKE_NAME);                // Korail 321k Bike painting
+    15:   return string(STR_REFIT_METRO_371K_BLANK_NAME);               // Korail 371k / Blank painting
+//  16:   return string();
+    17:   return string(STR_REFIT_METRO_371K_381K_1ST_NAME);            // Korail 371k, 381k 1st (Donghae Line)
+    18:   return string(STR_REFIT_METRO_381K_2ND_NAME);                 // Korail 381k 2nd (Donghae Line, a.k.a. 주둥이, Judungi)
+    19:   return string(STR_REFIT_METRO_391K_NAME);                     // Korail 391k / Seohae Line
+    20:   return string(STR_REFIT_METRO_LINE_1_2019_NAME);              // Korail, introduced in 2019 (a.k.a. 주둥이, Judungi)
     return string(STR_REFIT_METRO_3XXK_AL_NAME);
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_panto_cargo_subtype, cargo_subtype) {
