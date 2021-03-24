@@ -44,7 +44,7 @@ item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
 
         // Costs
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_base:              RUNNING_COST_DIESEL;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -55,10 +55,10 @@ item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
         default:                        sw_DHC_wagon;
         purchase:                       set_DHC_wagon_purchase;
 
-        cost_factor:                    var_DHC_wagon_COST;
-        running_cost_factor:            var_DHC_wagon_RUNNINGCOST;
-        cargo_capacity:                 var_DHC_wagon_CAPACITY;
-        loading_speed:                  var_DHC_wagon_LOADINGSPEED;
+        cost_factor:                    sw_DHC_wagon_cost;
+        running_cost_factor:            sw_DHC_wagon_runningcost;
+        cargo_capacity:                 sw_DHC_wagon_capacity;
+        loading_speed:                  sw_DHC_wagon_loadingspeed;
 
         can_attach_wagon:               sw_DHC_attach;
 

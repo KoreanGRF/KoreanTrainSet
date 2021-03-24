@@ -6,12 +6,12 @@
 /**
  * Tongil passenger car
  */
-// SPEED_GENERAL(TONGIL_wagon)
-// COST(TONGIL_wagon)
-// RUNNING(TONGIL_wagon)
-// CAPACITY(TONGIL_wagon)
-// CAPACITY_PURCHASE(TONGIL_wagon)
-// LOADING(TONGIL_wagon)
+// SPEED_GENERAL(TONGIL_CAR)
+COST(TONGIL_CAR)
+RUNNING(TONGIL_CAR)
+CAPACITY(TONGIL_CAR)
+// CAPACITY_PURCHASE(TONGIL_CAR)
+LOADING(TONGIL_CAR)
 
 spriteset(set_TONGIL_CAR_purchase, "./src/wagon/tongil_car/TONGIL_CAR.png") {
     tmpl_purchase_detail(45, 0, 31, 12, -16, -6)
@@ -60,8 +60,7 @@ item(FEAT_TRAINS, ko_train_TONGIL_CAR, 5604) {
         // Costs
         cost_factor:                    10;
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_ELECTRIC;
-        running_cost_factor:            150;
+        running_cost_base:              RUNNING_COST_DIESEL;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -72,10 +71,10 @@ item(FEAT_TRAINS, ko_train_TONGIL_CAR, 5604) {
         default:                        sw_TONGIL_CAR_wagon;
         purchase:                       set_TONGIL_CAR_purchase;
 
-        cost_factor:                    var_TONGIL_CAR_COST;
-        running_cost_factor:            var_TONGIL_CAR_RUNNINGCOST;
-        cargo_capacity:                 var_TONGIL_CAR_CAPACITY;
-        loading_speed:                  var_TONGIL_CAR_LOADINGSPEED;
+        cost_factor:                    sw_TONGIL_CAR_cost;
+        running_cost_factor:            sw_TONGIL_CAR_runningcost;
+        cargo_capacity:                 sw_TONGIL_CAR_capacity;
+        loading_speed:                  sw_TONGIL_CAR_loadingspeed;
 
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }

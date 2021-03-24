@@ -7,11 +7,11 @@
  * Cafe car
  */
 // SPEED_GENERAL(CAFE_CAR)
-// COST(CAFE_CAR)
-// RUNNING(CAFE_CAR)
-// CAPACITY(CAFE_CAR)
+COST(CAFE_CAR)
+RUNNING(CAFE_CAR)
+CAPACITY(CAFE_CAR)
 // CAPACITY_PURCHASE(CAFE_CAR)
-// LOADING(CAFE_CAR)
+LOADING(CAFE_CAR)
 
 spriteset(set_CAFE_CAR_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(45, 0, 31, 12, -16, -6)
@@ -82,8 +82,7 @@ item(FEAT_TRAINS, ko_train_CAFE_CAR, 5603) {
         // Costs
         cost_factor:                    10;
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_ELECTRIC;
-        running_cost_factor:            150;
+        running_cost_base:              RUNNING_COST_DIESEL;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -94,10 +93,10 @@ item(FEAT_TRAINS, ko_train_CAFE_CAR, 5603) {
         default:                        sw_CAFE_CAR_wagon;
         purchase:                       set_CAFE_CAR_purchase;
 
-        cost_factor:                    var_CAFE_CAR_COST;
-        running_cost_factor:            var_CAFE_CAR_RUNNINGCOST;
-        cargo_capacity:                 var_CAFE_CAR_CAPACITY;
-        loading_speed:                  var_CAFE_CAR_LOADINGSPEED;
+        cost_factor:                    sw_CAFE_CAR_cost;
+        running_cost_factor:            sw_CAFE_CAR_runningcost;
+        cargo_capacity:                 sw_CAFE_CAR_capacity;
+        loading_speed:                  sw_CAFE_CAR_loadingspeed;
 
         can_attach_wagon:               sw_CAFE_CAR_attach;
         cargo_subtype_text:             sw_CAFE_CAR_subtype_text;

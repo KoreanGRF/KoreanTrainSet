@@ -6,12 +6,12 @@
 /**
  * Mugunghwa passenger car
  */
-// SPEED_GENERAL(MUGUNGHWA_wagon)
-// COST(MUGUNGHWA_wagon)
-// RUNNING(MUGUNGHWA_wagon)
-// CAPACITY(MUGUNGHWA_wagon)
-// CAPACITY_PURCHASE(MUGUNGHWA_wagon)
-// LOADING(MUGUNGHWA_wagon)
+// SPEED_GENERAL(MUGUNGHWA_CAR)
+COST(MUGUNGHWA_CAR)
+RUNNING(MUGUNGHWA_CAR)
+CAPACITY(MUGUNGHWA_CAR)
+// CAPACITY_PURCHASE(MUGUNGHWA_CAR)
+LOADING(MUGUNGHWA_CAR)
 
 spriteset(set_MUGUNGHWA_CAR_wagon_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_purchase_detail(45, 150, 32, 12, -16, -6)
@@ -181,8 +181,7 @@ item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 5602) {
         // Costs
         cost_factor:                    10;
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_ELECTRIC;
-        running_cost_factor:            150;
+        running_cost_base:              RUNNING_COST_DIESEL;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -193,10 +192,10 @@ item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 5602) {
         default:                        sw_MUGUNGHWA_CAR_wagon;
         purchase:                       set_MUGUNGHWA_CAR_wagon_purchase;
 
-        cost_factor:                    var_MUGUNGHWA_CAR_COST;
-        running_cost_factor:            var_MUGUNGHWA_CAR_RUNNINGCOST;
-        cargo_capacity:                 var_MUGUNGHWA_CAR_CAPACITY;
-        loading_speed:                  var_MUGUNGHWA_CAR_LOADINGSPEED;
+        cost_factor:                    sw_MUGUNGHWA_CAR_cost;
+        running_cost_factor:            sw_MUGUNGHWA_CAR_runningcost;
+        cargo_capacity:                 sw_MUGUNGHWA_CAR_capacity;
+        loading_speed:                  sw_MUGUNGHWA_CAR_loadingspeed;
 
         cargo_subtype_text:             sw_MUGUNGHWA_CAR_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
