@@ -54,6 +54,45 @@ switch(FEAT_TRAINS, SELF, sw_K4x00_cargo_subtype_text, cargo_subtype) {
     return string(STR_REFIT_PAINTING_THESEDAYS);
 }
 
+// Graphic - V-train
+switch(FEAT_TRAINS, SELF, sw_V_TRAIN_wagon, position_in_consist % 3) {
+    1: set_V_TRAIN_wagon_1;
+    2: set_V_TRAIN_wagon_2;
+    0: set_V_TRAIN_wagon_3;
+    set_V_TRAIN_wagon_1;
+}
+
+// Capacity - V-train
+switch(FEAT_TRAINS, SELF, sw_V_TRAIN_capacity, position_in_consist % 3) {
+    2: return 46 * sw_cargo_capacity_factor;
+    return 56 * sw_cargo_capacity_factor;
+}
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_K4x00_attach, vehicle_type_id) {
+    ko_train_K4x00:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7x00:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7000:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K7600:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8000:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8x00:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K8500:           return CB_RESULT_ATTACH_ALLOW;
+    ko_train_MUGUNGHWA_CAR:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_SAEMAEUL_CAR:    return CB_RESULT_ATTACH_ALLOW;
+    ko_train_TONGIL_CAR:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BIDULGI_CAR:     return CB_RESULT_ATTACH_ALLOW;
+    ko_train_GENERATOR_CAR:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_CAFE_CAR:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_FLAT_CAR:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_HOPPER_CAR:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BAGGAGE_CAR:     return CB_RESULT_ATTACH_ALLOW;
+    ko_train_TANK_CAR:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_STAKE_CAR:       return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:          return CB_RESULT_ATTACH_ALLOW;
+    ko_train_SEOUL_METRO_1..ko_train_GWANGJU_METRO_1: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
 // Item
 item(FEAT_TRAINS, ko_train_K4x00, 5440) {
     property {
@@ -104,9 +143,13 @@ item(FEAT_TRAINS, ko_train_K4x00, 5440) {
         running_cost_factor:            sw_K4x00_runningcost;
         cargo_capacity:                 0;
 
-        can_attach_wagon:               sw_Kxxxx_attach;
+        can_attach_wagon:               sw_K4x00_attach;
         cargo_subtype_text:             sw_K4x00_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_V_TRAIN_wagon;
+        cargo_capacity:                 sw_V_TRAIN_capacity;
     }
 }
 // End of "K4x00"

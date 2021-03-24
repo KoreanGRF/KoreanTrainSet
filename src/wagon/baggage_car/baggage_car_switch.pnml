@@ -5,7 +5,7 @@
 ------------------------------------------------------------------------------*/
 
 // Cargo subtype
-switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_general_cargo_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_cargo_subtype_text, cargo_subtype) {
     0:  return string(STR_REFIT_COLOUR_RED);
     1:  return string(STR_REFIT_COLOUR_ORANGE);
     2:  return string(STR_REFIT_COLOUR_DARKGREEN);
@@ -15,22 +15,6 @@ switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_general_cargo_subtype_text, cargo_subty
     6:  return string(STR_REFIT_PAINTING_BIDULGI_BAGGAGE_CAR);   // Bidulgi
     7:  return string(STR_REFIT_MAIL_CAR);                       // Mail carriage
     return string(STR_REFIT_COLOUR_RED);
-}
-switch(FEAT_TRAINS, PARENT, sw_BAGGAGE_CAR_cargo_subtype_text, vehicle_type_id) {
-    ko_train_K4x00: return string(STR_REFIT_PAINTING_VTRAIN);   // V-train
-    sw_BAGGAGE_CAR_general_cargo_subtype_text;
-}
-
-// Graphic - V-train passenger wagon (Refer src/locomotive/K4x00.pnml)
-switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_V_TRAIN_wagon, position_in_consist % 3) {
-    1: set_V_TRAIN_wagon_1;
-    2: set_V_TRAIN_wagon_2;
-    0: set_V_TRAIN_wagon_3;
-    set_V_TRAIN_wagon_1;
-}
-switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_V_TRAIN_capacity, position_in_consist % 3) {
-    2: return 46 * sw_cargo_capacity_factor;
-    return 56 * sw_cargo_capacity_factor;
 }
 
 // Graphic
@@ -43,18 +27,5 @@ switch(FEAT_TRAINS, PARENT, sw_BAGGAGE_CAR_wagon, cargo_subtype) {
     5:  set_BAGGAGE_CAR_F_wagon;
     6:  set_BAGGAGE_CAR_BIDULGI_wagon;   // Bidulgi
     7:  set_BAGGAGE_CAR_MAIL_wagon;      // Mail carriage
-    10: sw_BAGGAGE_CAR_V_TRAIN_wagon;    // V-train
     set_BAGGAGE_CAR_A_wagon;
-}
-
-// Speed
-switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_speed_in_custom, cargo_subtype) {
-    10:  return 6 * coeff_speed_general; // V-train
-    sw_BAGGAGE_CAR_speed;
-}
-
-// Capacity
-switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_capacity_in_custom, cargo_subtype) {
-    10: sw_BAGGAGE_CAR_V_TRAIN_capacity;
-    sw_BAGGAGE_CAR_capacity;
 }
