@@ -78,12 +78,21 @@ spriteset(set_light_railway_track_tunnel_overlay, "./src/railtype/KR_LIGHTRAIL.p
 }
 
 // Disable grass overlay
-replace (6142, "./src/railtype/KR_LIGHTRAIL.png") {
-    [0, 0, 1, 1, 0, 0]
-}
-replace (6148, "./src/railtype/KR_LIGHTRAIL.png") {
-    [0, 0, 1, 1, 0, 0]
-}
+replace(6142, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6143, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6144, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6145, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6146, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6147, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6148, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6149, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6150, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6151, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6152, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6153, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6154, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6155, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replace(6156, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
 
 // Depot
 spriteset(set_light_railway_track_depot, "./src/railtype/KR_LIGHTRAIL.png") {
@@ -108,6 +117,15 @@ spriteset(set_light_railway_track_bridge, "./src/railtype/KR_LIGHTRAIL.png") {
     [ 210,   40,   64,   31,  -32,   14]
     [ 280,   40,   64,   31,  -31,    5]
     [ 350,   40,   64,   31,  -31,    5]
+}
+
+
+// Graphic for terrain
+switch(FEAT_RAILTYPES, SELF, sw_light_railway_track_tunnel_overlay, terrain_type) {
+    TILETYPE_NORMAL: set_light_railway_track_tunnel_overlay;
+    // TILETYPE_SNOW:   // In future ...
+    // TILETYPE_DESERT: // In future ...
+    set_light_railway_track_tunnel_overlay;
 }
 
 // 새로운 선로 타입 선언
@@ -138,7 +156,7 @@ item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
         track_overlay:                  set_light_railway_track_overlay;
         underlay:                       set_light_railway_track_underlay;
         tunnels:                        set_light_railway_track_tunnel;
-        tunnel_overlay:                 set_light_railway_track_tunnel_overlay;
+        tunnel_overlay:                 sw_light_railway_track_tunnel_overlay;
         depots:                         set_light_railway_track_depot;
         bridge_surfaces:                set_light_railway_track_bridge;
     }
