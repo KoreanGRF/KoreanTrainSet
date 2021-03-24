@@ -15,7 +15,7 @@ trainList['MATE2']              = 90,      10,     20,           0,       0,    
 
 trainList['K4x00']              = 105,     10,     20,           None,    None,         1230,   (2001, 1, 1)
 trainList['K7000']              = 150,     10,     20,           None,    None,         2460,   (1986, 1, 1)
-trainList['K7x00']              = 150,     10,     20,           None,    None,         2238,   (1986, 1, 1)
+trainList['K7x00']              = 150,     10,     20,           None,    None,         2238,   (1971, 1, 1)
 trainList['K7600']              = 165,     10,     20,           None,    None,         2602,   (2014, 1, 1)
 trainList['K8000']              = 90,      10,     30,           None,    None,         3952,   (1972, 1, 1)
 trainList['K8x00']              = 150,     10,     20,           None,    None,         5200,   (1990, 1, 1)
