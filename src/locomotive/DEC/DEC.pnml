@@ -78,12 +78,12 @@ item(FEAT_TRAINS, ko_train_DEC, 5512) {
     }
     livery_override(ko_train_PASSWG) {
         default:                        sw_DEC_wagon;
-        cargo_capacity:                 sw_DEC_capacity;
+        cargo_capacity:                 sw_DEC_capacity_in_custom;
         cargo_subtype_text:             sw_DEC_cargo_subtype_text;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_DEC_wagon;
-        cargo_capacity:                 sw_DEC_capacity;
+        cargo_capacity:                 sw_DEC_capacity_in_custom;
         cargo_subtype_text:             sw_DEC_cargo_subtype_text;
         power:                          POWER_IN_KW(var_DEC_POWER);
     }

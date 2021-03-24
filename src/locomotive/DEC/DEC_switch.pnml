@@ -40,6 +40,11 @@ switch(FEAT_TRAINS, SELF, sw_DEC_wagon, cargo_subtype) {
     set_DEC_3_wagon;
 }
 
+// Capacity
+switch(FEAT_TRAINS, SELF, sw_DEC_capacity_in_custom, cargo_subtype) {
+    return 56 / 2 * sw_cargo_capacity_factor;
+}
+
 // Attachable vehicles
 switch(FEAT_TRAINS, SELF, sw_DEC_attach, vehicle_type_id) {
     ko_train_CDC:      return CB_RESULT_ATTACH_ALLOW;
