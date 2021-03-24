@@ -85,12 +85,14 @@ item(FEAT_TRAINS, ko_train_SEOUL_METRO_1, 5711) {
         default:                        sw_SEOUL_METRO_1_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
         purchase_cargo_capacity:        sw_METRO_wagon_purchase_capacity;
+        loading_speed:                  sw_SEOUL_METRO_1_loadingspeed;
         cargo_subtype_text:             sw_SEOUL_METRO_1_cargo_subtype_text;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_SEOUL_METRO_1_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
         purchase_cargo_capacity:        sw_METRO_wagon_purchase_capacity;
+        loading_speed:                  sw_SEOUL_METRO_1_loadingspeed;
         cargo_subtype_text:             sw_SEOUL_METRO_1_cargo_subtype_text;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }

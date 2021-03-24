@@ -159,12 +159,14 @@ item(FEAT_TRAINS, ko_train_NDC, 5511) {
         cargo_capacity:                 sw_NDC_wagon_capacity;
         cargo_subtype_text:             sw_NDC_cargo_subtype_text;
         purchase_cargo_capacity:        sw_NDC_wagon_purchase_capacity;
+        loading_speed:                  sw_NDC_loadingspeed;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_NDC_wagon;
         cargo_capacity:                 sw_NDC_wagon_capacity;
         cargo_subtype_text:             sw_NDC_cargo_subtype_text;
         purchase_cargo_capacity:        sw_NDC_wagon_purchase_capacity;
+        loading_speed:                  sw_NDC_loadingspeed;
         power:                          POWER_IN_KW(var_NDC_POWER);
     }
 }

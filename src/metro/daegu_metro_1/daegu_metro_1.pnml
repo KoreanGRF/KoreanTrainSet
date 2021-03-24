@@ -77,12 +77,12 @@ item(FEAT_TRAINS, ko_train_DAEGU_METRO_1, 5761) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_DAEGU_METRO_1_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        // cargo_subtype_text:             sw_DAEGU_METRO_1_cargo_subtype_text;
+        loading_speed:                  sw_DAEGU_METRO_1_loadingspeed;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_DAEGU_METRO_1_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        // cargo_subtype_text:             sw_DAEGU_METRO_1_cargo_subtype_text;
+        loading_speed:                  sw_DAEGU_METRO_1_loadingspeed;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
 }

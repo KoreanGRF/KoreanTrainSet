@@ -77,12 +77,12 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_3, 5753) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_BUSAN_METRO_3_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        // cargo_subtype_text:             sw_BUSAN_METRO_3_cargo_subtype_text;
+        loading_speed:                  sw_BUSAN_METRO_3_loadingspeed;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_BUSAN_METRO_3_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        // cargo_subtype_text:             sw_BUSAN_METRO_3_cargo_subtype_text;
+        loading_speed:                  sw_BUSAN_METRO_3_loadingspeed;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
 }

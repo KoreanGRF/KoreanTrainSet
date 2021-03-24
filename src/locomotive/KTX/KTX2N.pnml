@@ -37,7 +37,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         weight:                         35 ton;
         extra_weight_per_wagon:         35 ton;
         tractive_effort_coefficient:    0.4;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.01;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -81,12 +81,14 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
+        loading_speed:                  sw_KTX2N_loadingspeed;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_KTX2N_wagon;
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
+        loading_speed:                  sw_KTX2N_loadingspeed;
         power:                          POWER_IN_KW(200);
     }
 }

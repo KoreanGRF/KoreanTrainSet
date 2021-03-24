@@ -83,11 +83,13 @@ item(FEAT_TRAINS, ko_train_AREX, 5730) {
         default:                        sw_AREX_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
         cargo_subtype_text:             sw_AREX_cargo_subtype_text;
+        loading_speed:                  sw_AREX_loadingspeed_in_custom;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_AREX_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
         cargo_subtype_text:             sw_AREX_cargo_subtype_text;
+        loading_speed:                  sw_AREX_loadingspeed_in_custom;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
 }

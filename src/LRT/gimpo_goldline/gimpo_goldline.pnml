@@ -77,10 +77,12 @@ item(FEAT_TRAINS, ko_train_GIMPO_GOLDLINE, 5801) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_GIMPO_GOLDLINE_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
+        loading_speed:                  sw_GIMPO_GOLDLINE_loadingspeed;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_GIMPO_GOLDLINE_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
+        loading_speed:                  sw_GIMPO_GOLDLINE_loadingspeed;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
 }

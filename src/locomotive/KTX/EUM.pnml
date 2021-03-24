@@ -37,7 +37,7 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
         weight:                         35 ton;
         extra_weight_per_wagon:         35 ton;
         tractive_effort_coefficient:    0.4;
-        air_drag_coefficient:           0.1;
+        air_drag_coefficient:           0.01;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -80,12 +80,14 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_EUM_power_wagon;
         cargo_capacity:                 sw_EUM_capacity_in_custom;
+        loading_speed:                  sw_EUM_loadingspeed;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         power:                          POWER_IN_KW(200);
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_EUM_power_wagon;
         cargo_capacity:                 sw_EUM_capacity_in_custom;
+        loading_speed:                  sw_EUM_loadingspeed;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         power:                          POWER_IN_KW(200);
     }
