@@ -14,15 +14,15 @@ RUNNING(K7000)
 spriteset(set_K7000_purchase, "./src/locomotive/K7x00/K7000.png") {
     tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
 }
-spriteset(set_K7000A_loco, "./src/locomotive/K7x00/K7000.png") {   // Red & White & Blue
-    [60,   0,  8,   22,   -3,   -9]
-    [75,   0,  21,  16,  -14,   -7]
-    [105,  0,  30,  12,  -17,   -8]
-    [155,  0,  21,  16,   -5,   -8]
-    [185,  0,  8,   22,   -3,  -11]
-    [200,  0,  21,  16,  -14,   -8]
-    [235,  0,  30,  12,  -16,   -8]
-    [285,  0,  21,  16,   -6,   -7]
+spriteset(set_K7000_1_loco, "./src/locomotive/K7x00/K7000.png") {   // Red & White & Blue
+    [60,      0,     8,    22,    -3,    -9]
+    [60+15,   0,    21,    16,   -14,    -7]
+    [60+45,   0,    30,    12,   -16,    -8]
+    [60+95,   0,    21,    16,    -5,    -8]
+    [60+125,  0,     8,    22,    -3,   -11]
+    [60+140,  0,    21,    16,   -14,    -8]
+    [60+175,  0,    30,    12,   -15,    -8]
+    [60+225,  0,    21,    16,    -6,    -7]
 }
 
 /*------------------------------------------------------------------------------
@@ -72,7 +72,7 @@ item(FEAT_TRAINS, ko_train_K7000, 5470) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        set_K7000A_loco;
+        default:                        set_K7000_1_loco;
         purchase:                       set_K7000_purchase;
 
         speed:                          sw_K7000_speed;

@@ -19,6 +19,28 @@ CAPACITY(CDC_wagon)
 CAPACITY_PURCHASE(CDC_wagon)
 // LOADING(CDC_wagon)
 
+// Template
+template tmpl_CDC(x, y) {
+    [x,     y,    8,     22,    -3,   -11]
+    [x+15,  y,    21,    16,    -14,   -8]
+    [x+45,  y,    31,    12,    -15,   -8]
+    [x+95,  y,    21,    17,    -6,    -8]
+    [x+125, y,    8,     22,    -3,   -11]
+    [x+140, y,    21,    17,    -14,   -8]
+    [x+175, y,    32,    12,    -14,   -8]
+    [x+225, y,    21,    16,    -6,    -8]
+}
+template tmpl_CDC_r(x, y) {
+    [x+125, y,    8,     22,    -3,   -11]
+    [x+140, y,    21,    17,    -14,   -8]
+    [x+175, y,    32,    12,    -14,   -8]
+    [x+225, y,    21,    16,    -6,    -8]
+    [x,     y,    8,     22,    -3,   -11]
+    [x+15,  y,    21,    16,    -14,   -8]
+    [x+45,  y,    31,    12,    -15,   -8]
+    [x+95,  y,    21,    17,    -6,    -8]
+}
+
 // Graphics
 spriteset(set_CDC_purchase, "./src/locomotive/CDC/CDC.png") {
     tmpl_purchase_for_dualhead(0, 0)

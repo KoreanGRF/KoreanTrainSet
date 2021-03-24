@@ -13,6 +13,8 @@ CAPACITY(CAFE_CAR)
 // CAPACITY_PURCHASE(CAFE_CAR)
 LOADING(CAFE_CAR)
 
+
+// Graphic
 spriteset(set_CAFE_CAR_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(45, 0, 31, 12, -16, -6)
 }
