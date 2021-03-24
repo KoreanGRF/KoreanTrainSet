@@ -143,9 +143,20 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text_normal, cargo_subtype) {
     6: return string(STR_REFIT_PAINTING_OLD_EXPRESS);
     return string(STR_REFIT_PAINTING_THESEDAYS);
 }
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text_K7x00, cargo_subtype) {
+    6:    return string(STR_REFIT_PAINTING_HAERANG);
+    10:   return string(STR_REFIT_PAINTING_STRAIN1);
+    11:   return string(STR_REFIT_PAINTING_STRAIN2);
+    12:   return string(STR_REFIT_PAINTING_GTRAIN);
+    sw_MUGUNGHWA_CAR_subtype_text_normal;
+}
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text_K7600, cargo_subtype) {
+    13:    return string(STR_REFIT_PAINTING_K7600_ATRAIN);
+    sw_MUGUNGHWA_CAR_subtype_text_normal;
+}
 switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_CAR_subtype_text, vehicle_type_id) {
-    ko_train_K7x00: sw_K7x00_cargo_subtype_text;
-    ko_train_K7600: sw_K7600_cargo_subtype_text;
+    ko_train_K7x00: sw_MUGUNGHWA_CAR_subtype_text_K7x00;
+    ko_train_K7600: sw_MUGUNGHWA_CAR_subtype_text_K7600;
     ko_train_CDC:   sw_CDC_cargo_subtype_text;
     sw_MUGUNGHWA_CAR_subtype_text_normal;
 }
