@@ -61,10 +61,12 @@ item(FEAT_TRAINS, ko_train_PASSWG, 5900) {
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
+        loading_speed:                  10;
 
         // Costs
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            1;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -115,6 +117,7 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 5901) {
         // Costs
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_ELECTRIC;
+        running_cost_factor:            1;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
