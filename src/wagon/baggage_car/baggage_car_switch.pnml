@@ -18,7 +18,7 @@ switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_cargo_subtype_text, cargo_subtype) {
 }
 
 // Graphic
-switch(FEAT_TRAINS, PARENT, sw_BAGGAGE_CAR_wagon, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_wagon, cargo_subtype) {
     0:  set_BAGGAGE_CAR_A_wagon;
     1:  set_BAGGAGE_CAR_B_wagon;
     2:  set_BAGGAGE_CAR_C_wagon;
