@@ -145,15 +145,13 @@
             name: string(STR_PARAM_FACTOR_LOADING_SPEED_NAME);
             desc: string(STR_PARAM_FACTOR_LOADING_SPEED_DESC);
             min_value: 0;
-            max_value: 5;
+            max_value: 3;
             def_value: 0;
             names: {
                 0:    string(STR_PARAM_OPT_FACTOR_BY_1_DEFAULT);
                 1:    string(STR_PARAM_OPT_FACTOR_BY_2);
                 2:    string(STR_PARAM_OPT_FACTOR_BY_4);
                 3:    string(STR_PARAM_OPT_FACTOR_BY_8);
-                4:    string(STR_PARAM_OPT_FACTOR_BY_16);
-                5:    string(STR_PARAM_OPT_FACTOR_BY_32);
             };
         }
     }
