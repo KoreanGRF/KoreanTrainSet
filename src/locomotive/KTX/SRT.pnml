@@ -9,8 +9,8 @@
 SPEED_GENERAL(SRT)
 COST(SRT)
 RUNNING(SRT)
-CAPACITY(SRT)
-CAPACITY_PURCHASE(SRT)
+// CAPACITY(SRT)
+// CAPACITY_PURCHASE(SRT)
 LOADING(SRT)
 
 // Graphics
@@ -46,7 +46,7 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 1;
+        cargo_capacity:                 0;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -68,8 +68,8 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
         speed:                          sw_SRT_speed;
         cost_factor:                    sw_SRT_cost;
         running_cost_factor:            sw_SRT_runningcost;
-        cargo_capacity:                 sw_SRT_capacity;
-        purchase_cargo_capacity:        sw_SRT_purchase_capacity;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         loading_speed:                  sw_SRT_loadingspeed;
 
         can_attach_wagon:               sw_KTX_attach;

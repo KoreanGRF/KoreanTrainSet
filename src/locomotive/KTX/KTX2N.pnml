@@ -9,8 +9,8 @@
 SPEED_GENERAL(KTX2N)
 COST(KTX2N)
 RUNNING(KTX2N)
-CAPACITY(KTX2N)
-CAPACITY_PURCHASE(KTX2N)
+// CAPACITY(KTX2N)
+// CAPACITY_PURCHASE(KTX2N)
 LOADING(KTX2N)
 
 // Graphics
@@ -46,7 +46,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 1;
+        cargo_capacity:                 0;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -68,8 +68,8 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         speed:                          sw_KTX2N_speed;
         cost_factor:                    sw_KTX2N_cost;
         running_cost_factor:            sw_KTX2N_runningcost;
-        cargo_capacity:                 sw_KTX2N_capacity;
-        purchase_cargo_capacity:        sw_KTX2N_purchase_capacity;
+        cargo_capacity:                 0;
+        purchase_cargo_capacity:        0;
         loading_speed:                  sw_KTX2N_loadingspeed;
 
         can_attach_wagon:               sw_KTX_attach;
