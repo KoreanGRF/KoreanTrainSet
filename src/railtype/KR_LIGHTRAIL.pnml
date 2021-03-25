@@ -119,7 +119,6 @@ spriteset(set_light_railway_track_bridge, "./src/railtype/KR_LIGHTRAIL.png") {
     [ 350,   40,   64,   31,  -31,    5]
 }
 
-
 // Graphic for terrain
 switch(FEAT_RAILTYPES, SELF, sw_light_railway_track_tunnel_overlay, terrain_type) {
     TILETYPE_NORMAL: set_light_railway_track_tunnel_overlay;
@@ -128,7 +127,7 @@ switch(FEAT_RAILTYPES, SELF, sw_light_railway_track_tunnel_overlay, terrain_type
     set_light_railway_track_tunnel_overlay;
 }
 
-// 새로운 선로 타입 선언
+// Define Light Rail Track
 item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
     property {
         name:                           string(STR_KO_LIGHT_RAIL_TRACK_NAME);
