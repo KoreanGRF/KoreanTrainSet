@@ -14,16 +14,16 @@ CAPACITY_PURCHASE(SUIN_BUNDANG)
 LOADING(SUIN_BUNDANG)
 
 // Graphics
-#include "suin-bundang_graphic.pnml"
+#include "suin_bundang_graphic.pnml"
 
 // Switch
-#include "suin-bundang_switch.pnml"
+#include "suin_bundang_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_SUIN_BUNDANG, 5716) {
     property {
         // Common properties
-        name:                           string(STR_SEOUL_METRO_SUIN_BUNDANG_NAME);
+        name:                           string(STR_SUIN_BUNDANG_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_SUIN_BUNDANG_INTRODUCTION;
         track_type:                     ELRL;
