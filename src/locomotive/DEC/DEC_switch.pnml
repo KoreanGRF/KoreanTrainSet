@@ -26,10 +26,10 @@ switch(FEAT_TRAINS, SELF, sw_DEC_engine, position_in_consist_from_end == 0 && nu
 }
 
 switch(FEAT_TRAINS, SELF, sw_DEC_cargo_subtype_text, cargo_subtype) {
-    0:    return string(STR_REFIT_PAINTING_DEC_3);   // Red+Yellow
-    1:    return string(STR_REFIT_PAINTING_DEC_2);   // Red
-    2:    return string(STR_REFIT_PAINTING_DEC_1);   // Blue
-    return string(STR_REFIT_PAINTING_DEC_3);
+    0:    return string(STR_REFIT_LIVERY_DEC_3);   // Red+Yellow
+    1:    return string(STR_REFIT_LIVERY_DEC_2);   // Red
+    2:    return string(STR_REFIT_LIVERY_DEC_1);   // Blue
+    return string(STR_REFIT_LIVERY_DEC_3);
 }
 
 // Wagon

@@ -92,8 +92,8 @@ switch(FEAT_TRAINS, SELF, sw_NDC_attach, vehicle_type_id) {
 
 // Refit
 switch(FEAT_TRAINS, SELF, sw_NDC_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_PAINTING_NDC_BUSINESS);
-    return string(STR_REFIT_PAINTING_NDC);
+    1: return string(STR_REFIT_LIVERY_NDC_BUSINESS);
+    return string(STR_REFIT_LIVERY_NDC);
 }
 
 

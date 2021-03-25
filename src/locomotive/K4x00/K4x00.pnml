@@ -48,10 +48,10 @@ switch(FEAT_TRAINS, SELF, sw_K4x00_loco, cargo_subtype) {
     set_K4x00B_loco;
 }
 switch(FEAT_TRAINS, SELF, sw_K4x00_cargo_subtype_text, cargo_subtype) {
-    0:    return string(STR_REFIT_PAINTING_THESEDAYS);
-    1:    return string(STR_REFIT_PAINTING_GREEN_YELLOW);
-    10:   return string(STR_REFIT_PAINTING_VTRAIN);
-    return string(STR_REFIT_PAINTING_THESEDAYS);
+    0:    return string(STR_REFIT_LIVERY_THESEDAYS);
+    1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    10:   return string(STR_REFIT_LIVERY_VTRAIN);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 
 // Graphic - V-train

@@ -12,7 +12,7 @@ switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_cargo_subtype_text, cargo_subtype) {
     3:  return string(STR_REFIT_COLOUR_OLIVE);
     4:  return string(STR_REFIT_COLOUR_SKYBLUE);
     5:  return string(STR_REFIT_COLOUR_DARKBLUE);
-    6:  return string(STR_REFIT_PAINTING_BIDULGI_BAGGAGE_CAR);   // Bidulgi
+    6:  return string(STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR);   // Bidulgi
     7:  return string(STR_REFIT_MAIL_CAR);                       // Mail carriage
     return string(STR_REFIT_COLOUR_RED);
 }

@@ -230,17 +230,17 @@ switch(FEAT_TRAINS, SELF, sw_CDC_engine, position_in_consist_from_end == 0 && nu
 }
 
 switch(FEAT_TRAINS, SELF, sw_CDC_cargo_subtype_text, cargo_subtype) {
-    1:    return string(STR_REFIT_PAINTING_CDC_GARDEN);            // Garden (꽃동네)
-    2:    return string(STR_REFIT_PAINTING_CDC_DOLPHIN);           // Dolphin (돌고래)
-    3:    return string(STR_REFIT_PAINTING_CDC_SEASIDE_BLUE);      // Seaside (바다열차(청))
-    4:    return string(STR_REFIT_PAINTING_CDC_SEASIDE_RED_WHITE); // Seaside (바다열차(적+백))
-    5:    return string(STR_REFIT_PAINTING_CDC_BAEKJE);            // Baekje (백제관광)
-    6:    return string(STR_REFIT_PAINTING_GREEN_YELLOW);          // 구 철도청(녹+황)
-    7:    return string(STR_REFIT_PAINTING_CDC_DMZTRAIN);          // DMZ-train
-    8:    return string(STR_REFIT_PAINTING_CDC_MUGUNGHWA);         // RDC
-    9:    return string(STR_REFIT_PAINTING_CDC_GYEONGBUK1);        // 경북관광열차#1
-    10:   return string(STR_REFIT_PAINTING_CDC_GYEONGBUK2);        // 경북관광열차#2
-    return string(STR_REFIT_PAINTING_THESEDAYS);
+    1:    return string(STR_REFIT_LIVERY_CDC_GARDEN);            // Garden (꽃동네)
+    2:    return string(STR_REFIT_LIVERY_CDC_DOLPHIN);           // Dolphin (돌고래)
+    3:    return string(STR_REFIT_LIVERY_CDC_SEASIDE_BLUE);      // Seaside (바다열차(청))
+    4:    return string(STR_REFIT_LIVERY_CDC_SEASIDE_RED_WHITE); // Seaside (바다열차(적+백))
+    5:    return string(STR_REFIT_LIVERY_CDC_BAEKJE);            // Baekje (백제관광)
+    6:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);          // 구 철도청(녹+황)
+    7:    return string(STR_REFIT_LIVERY_CDC_DMZTRAIN);          // DMZ-train
+    8:    return string(STR_REFIT_LIVERY_CDC_MUGUNGHWA);         // RDC
+    9:    return string(STR_REFIT_LIVERY_CDC_GYEONGBUK1);        // 경북관광열차#1
+    10:   return string(STR_REFIT_LIVERY_CDC_GYEONGBUK2);        // 경북관광열차#2
+    return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 
 // Wagon

@@ -78,20 +78,20 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
     set_K7x00_loco_RED_WHITE_BLUE;
 }
 switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
-    0:    return string(STR_REFIT_PAINTING_THESEDAYS);
-    1:    return string(STR_REFIT_PAINTING_7x00_CARGO);
-    2:    return string(STR_REFIT_PAINTING_GREEN_YELLOW);
-    3:    return string(STR_REFIT_PAINTING_7x00_FIRST_KORAIL);
-    4:    return string(STR_REFIT_PAINTING_7x00_TIGER);
+    0:    return string(STR_REFIT_LIVERY_THESEDAYS);
+    1:    return string(STR_REFIT_LIVERY_7x00_CARGO);
+    2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
+    4:    return string(STR_REFIT_LIVERY_7x00_TIGER);
     // 5:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    6:    return string(STR_REFIT_PAINTING_HAERANG);
+    6:    return string(STR_REFIT_LIVERY_HAERANG);
     // 7:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    10:   return string(STR_REFIT_PAINTING_STRAIN1);
-    11:   return string(STR_REFIT_PAINTING_STRAIN2);
-    12:   return string(STR_REFIT_PAINTING_GTRAIN);
-    return string(STR_REFIT_PAINTING_THESEDAYS);
+    10:   return string(STR_REFIT_LIVERY_STRAIN1);
+    11:   return string(STR_REFIT_LIVERY_STRAIN2);
+    12:   return string(STR_REFIT_LIVERY_GTRAIN);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 
 // item

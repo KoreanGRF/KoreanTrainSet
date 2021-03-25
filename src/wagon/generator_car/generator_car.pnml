@@ -68,15 +68,15 @@ switch(FEAT_TRAINS, PARENT, sw_GENERATOR_CAR_wagon, vehicle_type_id) {
     sw_GENERATOR_CAR_wagon_by_general;
 }
 switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon_subtype_text_by_general, cargo_subtype) {
-    1:    return string(STR_REFIT_PAINTING_GENERATOR_CAR_SME_B);
-    2:    return string(STR_REFIT_PAINTING_GENERATOR_CAR_SME_A);
-    3:    return string(STR_REFIT_PAINTING_GENERATOR_CAR_LONG);
-    4:    return string(STR_REFIT_PAINTING_GENERATOR_CAR_DEFAULT);
-    6:    return string(STR_REFIT_PAINTING_HAERANG);
-    10:    return string(STR_REFIT_PAINTING_STRAIN1);
-    11:    return string(STR_REFIT_PAINTING_STRAIN2);
-    12:    return string(STR_REFIT_PAINTING_GTRAIN);
-    return  string(STR_REFIT_PAINTING_GENERATOR_CAR_LONG);
+    1:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_SME_B);
+    2:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_SME_A);
+    3:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_LONG);
+    4:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_DEFAULT);
+    6:    return string(STR_REFIT_LIVERY_HAERANG);
+    10:    return string(STR_REFIT_LIVERY_STRAIN1);
+    11:    return string(STR_REFIT_LIVERY_STRAIN2);
+    12:    return string(STR_REFIT_LIVERY_GTRAIN);
+    return  string(STR_REFIT_LIVERY_GENERATOR_CAR_LONG);
 }
 switch(FEAT_TRAINS, PARENT, sw_GENERATOR_CAR_wagon_subtype_text, vehicle_type_id) {
     ko_train_K7600: sw_K7600_cargo_subtype_text;
