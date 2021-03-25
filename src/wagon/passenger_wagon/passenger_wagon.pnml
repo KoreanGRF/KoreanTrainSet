@@ -9,25 +9,29 @@
 // SPEED_GENERAL(PASSENGER_WAGON)
 COST(PASSENGER_WAGON)
 RUNNING(PASSENGER_WAGON)
+RUNNING(PASSENGER_WAGON_P)
 // CAPACITY(PASSENGER_WAGON)
 // CAPACITY_PURCHASE(PASSENGER_WAGON)
 LOADING(PASSENGER_WAGON)
 
 // Graphic
-spriteset(set_PASSENGER_WAGON_purchase, "./src/wagon/passenger_wagon/passenger_wagon_purchase.png") {
+spriteset(set_PASSENGER_WAGON_purchase, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     tmpl_purchase_detail(0, 0, 32, 12, -16, -8)
 }
 spriteset(set_PASSENGER_WAGON_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
-    [0,    0,   8,   22,    -3,   -11]
-    [15,   0,  21,   17,   -14,    -8]
-    [45,   0,  32,   12,   -14,    -8]
-    [95,   0,  21,   17,    -6,    -8]
+    [60+0,    0,   8,   22,    -3,   -11]
+    [60+15,   0,  21,   17,   -14,    -8]
+    [60+45,   0,  32,   12,   -14,    -8]
+    [60+95,   0,  21,   17,    -6,    -8]
+}
+spriteset(set_PASSENGER_WAGONP_purchase, "./src/wagon/passenger_wagon/passenger_wagon.png") {
+    tmpl_purchase_detail(0, 30, 32, 12, -16, -8)
 }
 spriteset(set_PASSENGER_WAGONP_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
-    [0,   30,   8,   22,    -3,   -11]
-    [15,  30,  21,   17,   -14,    -8]
-    [45,  30,  32,   12,   -14,    -8]
-    [95,  30,  21,   17,    -6,    -8]
+    [60+0,   30,   8,   22,    -3,   -11]
+    [60+15,  30,  21,   17,   -14,    -8]
+    [60+45,  30,  32,   12,   -14,    -8]
+    [60+95,  30,  21,   17,    -6,    -8]
 }
 
 // Dummy cargo subtype text
@@ -99,7 +103,7 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 5901) {
 
         // Spec
         power:                          0;
-        weight:                         var_PASSENGER_WAGON_WEIGHT;
+        weight:                         var_PASSENGER_WAGON_P_WEIGHT;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -126,10 +130,10 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 5901) {
     }
     graphics {
         default:                        set_PASSENGER_WAGONP_wagon;
-        purchase:                       set_PASSENGER_WAGON_purchase;
+        purchase:                       set_PASSENGER_WAGONP_purchase;
 
         cost_factor:                    sw_PASSENGER_WAGON_cost;
-        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
+        running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         loading_speed:                  sw_PASSENGER_WAGON_loadingspeed;
 
         cargo_subtype_text:             sw_PASSENGER_WAGON_cargo_subtype_text;
