@@ -137,29 +137,30 @@ for code_name in notInTrainList:
 
 # Make a table
 template = """
-        <tr data-veh_id="{{code_name}}" data-refittable="{{refittable}}">
-            <td class="align-center">{{refit}}</td>
-            <td>{{string}}</td>
-            <td class="align-center">{{speed}}</td>
-            <td class="align-center">{{capacity}}</td>
-            <td class="align-center">{{power}}</td>
-            <td class="align-center">{{introduction}}</td>
-        </tr>"""
+    <tr data-veh_id="{{code_name}}">
+        <td class="align-center">{{refit}}</td>
+        <td>{{string}}</td>
+        <td class="align-center">{{speed}}</td>
+        <td class="align-center">{{capacity}}</td>
+        <td class="align-center">{{power}}</td>
+        <td class="align-center">{{introduction}}</td>
+    </tr>"""
 
+# Generate doc file by language
 for _lang in list(langData.keys()):
-    output = "<table>"
-    print('  Generating ' + _lang + ' document')
+    output = "<table class=\"ko_train_set\">"
+    print('  Generate ' + _lang + ' document')
     for code_name in trainListData:
+        # Get name
         string = get_string('STR_' + code_name + '_NAME', _lang).replace('[KTS] ', '')
-        if len(trainListData[code_name]) > 1:
-            refittable = "1"
-        else:
-            refittable = "0"
-        speed        = str(trainList[code_name][0]) if trainList[code_name][0] is not None and trainList[code_name][0] > 0 else ''
+
+        # Get variables
+        speed        = str(trainList[code_name][0]) + ' km/h' if trainList[code_name][0] is not None and trainList[code_name][0] > 0 else ''
         capacity     = str(trainList[code_name][3]) if trainList[code_name][3] is not None and trainList[code_name][3] > 0 else ''
         power        = str(trainList[code_name][5]) + ' kW' if trainList[code_name][5] is not None and trainList[code_name][5] > 0 else ''
         introduction = str(trainList[code_name][6][0])
 
+        # Change variables
         append = template
         append = append.replace('{{code_name}}', code_name.upper())
         append = append.replace('{{string}}', string)
@@ -168,13 +169,16 @@ for _lang in list(langData.keys()):
         append = append.replace('{{power}}', power)
         append = append.replace('{{introduction}}', introduction)
 
+        # Append all refittable vehicles
         refit = ""
         for sprite_name in trainListData[code_name]:
             refit += '<img src="./_static/' + sprite_name + '.png" alt="' + string + '">\n'
 
+        # Append a train
         append = append.replace('{{refit}}', refit.strip().replace('\n', '<br />'))
         output += append
 
+    # Write a doc file
     f = open(_ROOT + "generated/download_page/" + _lang + ".html", "w")
-    f.write(output + "</table>")
+    f.write(output + "\n</table>")
     f.close()
