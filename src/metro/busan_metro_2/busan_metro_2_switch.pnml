@@ -11,18 +11,18 @@
 
 // Engine
 switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_2_engineH, cargo_subtype) {
-    set_3K_engineH;
+    set_2K_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_2_engineT, cargo_subtype) {
-    set_3K_engineT;
+    set_2K_engineT;
 }
 
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_2_wagon_panto_cargo_subtype, cargo_subtype) {
-    set_3K_wagon_panto;
+    set_2K_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_2_wagon_cargo_subtype, cargo_subtype) {
-    set_3K_wagon;
+    set_2K_wagon;
 }
 
 // Engine
