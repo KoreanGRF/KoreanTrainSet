@@ -4,23 +4,6 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// 3K_VVVF_2
-spriteset(set_3K_VVVF_2_engineH, "./src/metro/seoul_metro_3/3K_VVVF_2.png") {
-    tmpl_engine_head(0, 0)
-}
-spriteset(set_3K_VVVF_2_wagon_panto, "./src/metro/seoul_metro_3/3K_VVVF_2.png") {
-    tmpl_wagon_dblpanto(0, 30)
-}
-spriteset(set_3K_VVVF_2_wagon, "./src/metro/seoul_metro_3/3K_VVVF_2.png") {
-    tmpl_wagon(0, 60)
-}
-spriteset(set_3K_VVVF_2_engineT, "./src/metro/seoul_metro_3/3K_VVVF_2.png") {
-    tmpl_engine_tail(0, 90)
-}
-spriteset(set_3K_VVVF_2_purchase, "./src/metro/seoul_metro_3/3K_VVVF_2.png") {
-    tmpl_metro_purchase()
-}
-
 // 3K_SMETRO_CHOPPER
 spriteset(set_3K_SMETRO_CHOPPER_engineH, "./src/metro/seoul_metro_3/3K_SMETRO_CHOPPER.png") {
     tmpl_engine_head(0, 0)
@@ -89,20 +72,54 @@ spriteset(set_3K_SMETRO_VVVF_2ND_purchase, "./src/metro/seoul_metro_3/3K_SMETRO_
     tmpl_metro_purchase()
 }
 
-// 3K_VVVF_1
-spriteset(set_3K_VVVF_1_engineH, "./src/metro/seoul_metro_3/3K_VVVF_1.png") {
+// 3K_VVVF_1ST
+spriteset(set_3K_VVVF_1ST_engineH, "./src/metro/seoul_metro_3/3K_VVVF_1ST.png") {
     tmpl_engine_head(0, 0)
 }
-spriteset(set_3K_VVVF_1_wagon_panto, "./src/metro/seoul_metro_3/3K_VVVF_1.png") {
+spriteset(set_3K_VVVF_1ST_wagon_panto, "./src/metro/seoul_metro_3/3K_VVVF_1ST.png") {
     tmpl_wagon_dblpanto(0, 30)
 }
-spriteset(set_3K_VVVF_1_wagon, "./src/metro/seoul_metro_3/3K_VVVF_1.png") {
+spriteset(set_3K_VVVF_1ST_wagon, "./src/metro/seoul_metro_3/3K_VVVF_1ST.png") {
     tmpl_wagon(0, 60)
 }
-spriteset(set_3K_VVVF_1_engineT, "./src/metro/seoul_metro_3/3K_VVVF_1.png") {
+spriteset(set_3K_VVVF_1ST_engineT, "./src/metro/seoul_metro_3/3K_VVVF_1ST.png") {
     tmpl_engine_tail(0, 90)
 }
-spriteset(set_3K_VVVF_1_purchase, "./src/metro/seoul_metro_3/3K_VVVF_1.png") {
+spriteset(set_3K_VVVF_1ST_purchase, "./src/metro/seoul_metro_3/3K_VVVF_1ST.png") {
+    tmpl_metro_purchase()
+}
+
+// 3K_VVVF_2ND
+spriteset(set_3K_VVVF_2ND_engineH, "./src/metro/seoul_metro_3/3K_VVVF_2ND.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_3K_VVVF_2ND_wagon_panto, "./src/metro/seoul_metro_3/3K_VVVF_2ND.png") {
+    tmpl_wagon_dblpanto(0, 30)
+}
+spriteset(set_3K_VVVF_2ND_wagon, "./src/metro/seoul_metro_3/3K_VVVF_2ND.png") {
+    tmpl_wagon(0, 60)
+}
+spriteset(set_3K_VVVF_2ND_engineT, "./src/metro/seoul_metro_3/3K_VVVF_2ND.png") {
+    tmpl_engine_tail(0, 90)
+}
+spriteset(set_3K_VVVF_2ND_purchase, "./src/metro/seoul_metro_3/3K_VVVF_2ND.png") {
+    tmpl_metro_purchase()
+}
+
+// 3K_VVVF_3RD
+spriteset(set_3K_VVVF_3RD_engineH, "./src/metro/seoul_metro_3/3K_VVVF_3RD.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_3K_VVVF_3RD_wagon_panto, "./src/metro/seoul_metro_3/3K_VVVF_3RD.png") {
+    tmpl_wagon_dblpanto(0, 30)
+}
+spriteset(set_3K_VVVF_3RD_wagon, "./src/metro/seoul_metro_3/3K_VVVF_3RD.png") {
+    tmpl_wagon(0, 60)
+}
+spriteset(set_3K_VVVF_3RD_engineT, "./src/metro/seoul_metro_3/3K_VVVF_3RD.png") {
+    tmpl_engine_tail(0, 90)
+}
+spriteset(set_3K_VVVF_3RD_purchase, "./src/metro/seoul_metro_3/3K_VVVF_3RD.png") {
     tmpl_metro_purchase()
 }
 

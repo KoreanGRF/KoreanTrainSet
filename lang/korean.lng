@@ -179,8 +179,9 @@ STR_REFIT_METRO_2K_VVVF_4TH_NAME                 : (서울교통공사 2k VVVF 4
 STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            : (서울메트로 2k 개조 저항)
 
 # Refit (Seoul metropolitan 3)
-STR_REFIT_METRO_3K_VVVF_1_NAME                   : (철도청 3k VVVF / 구 도색)
-STR_REFIT_METRO_3K_VVVF_2_NAME                   : (Korail 3k VVVF / 현재 도색)
+STR_REFIT_METRO_3K_VVVF_1ST_NAME                 : (철도청 3k VVVF 1세대)
+STR_REFIT_METRO_3K_VVVF_2ND_NAME                 : (Korail 3k VVVF 2세대 / 현재 도색)
+STR_REFIT_METRO_3K_VVVF_3RD_NAME                 : (Korail 3k VVVF 3세대)
 STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           : (서울교통공사 3k CHOPPER)
 STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  : (서울교통공사 3k 개조 CHOPPER)
 # STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          : (서울교통공사 3k VVVF / 4호선 이적분)

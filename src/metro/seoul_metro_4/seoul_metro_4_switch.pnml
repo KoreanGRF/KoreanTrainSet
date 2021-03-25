@@ -23,7 +23,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engineH, cargo_subtype) {
     2: set_341K_VVVF_2ND_1_engineH;
     3: set_341K_VVVF_1ST_1_engineH;
     // SMETRO_4K_VVVF is very similar with 3K_VVVF_2, but it is slightly different. However we use 3K_VVVF_1 since the graphic is not implemented.
-    4: set_3K_VVVF_1_engineH;
+    4: set_3K_VVVF_1ST_engineH;
     5: set_LINE_4_2019_engineH;
     6: set_SMETRO_4K_VVVF_3RD_engineH;
     set_341K_VVVF_2ND_2_engineH;
@@ -33,7 +33,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engineT, cargo_subtype) {
     1: set_341K_VVVF_1ST_2_engineT;
     2: set_341K_VVVF_2ND_1_engineT;
     3: set_341K_VVVF_1ST_1_engineT;
-    4: set_3K_VVVF_1_engineT;
+    4: set_3K_VVVF_1ST_engineT;
     5: set_LINE_4_2019_engineT;
     6: set_SMETRO_4K_VVVF_3RD_engineT;
     set_341K_VVVF_2ND_2_engineT;
@@ -45,7 +45,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_panto_cargo_subtype, cargo_subt
     1: set_341K_VVVF_1ST_2_wagon_panto;
     2: set_341K_VVVF_2ND_1_wagon_panto;
     3: set_341K_VVVF_1ST_1_wagon_panto;
-    4: set_3K_VVVF_1_wagon_panto;
+    4: set_3K_VVVF_1ST_wagon_panto;
     5: set_LINE_4_2019_wagon_panto;
     6: set_SMETRO_4K_VVVF_3RD_wagon_panto;
     set_341K_VVVF_2ND_2_wagon_panto;
@@ -55,7 +55,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_cargo_subtype, cargo_subtype) {
     1: set_341K_VVVF_1ST_2_wagon;
     2: set_341K_VVVF_2ND_1_wagon;
     3: set_341K_VVVF_1ST_1_wagon;
-    4: set_3K_VVVF_1_wagon;
+    4: set_3K_VVVF_1ST_wagon;
     5: set_LINE_4_2019_wagon;
     6: set_SMETRO_4K_VVVF_3RD_wagon;
     set_341K_VVVF_2ND_2_wagon;
