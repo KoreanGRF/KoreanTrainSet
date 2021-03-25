@@ -33,9 +33,8 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
 
         // Spec
         speed:                          330 km/h;
-        power:                          8800 kW;
-        weight:                         35 ton;
-        extra_weight_per_wagon:         35 ton;
+        power:                          POWER_IN_KW(var_SRT_POWER);
+        weight:                         var_SRT_WEIGHT;
         tractive_effort_coefficient:    0.4;
         air_drag_coefficient:           0.01;
 

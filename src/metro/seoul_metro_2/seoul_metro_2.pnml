@@ -33,7 +33,7 @@ item(FEAT_TRAINS, ko_train_SEOUL_METRO_2, 5712) {
 
         // Spec
         power:                          POWER_IN_KW(var_SEOUL_METRO_2_POWER);
-        weight:                         20 ton;
+        weight:                         var_SEOUL_METRO_2_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

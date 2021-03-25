@@ -41,7 +41,7 @@ item(FEAT_TRAINS, ko_train_TONGIL_CAR, 5604) {
 
         // Spec
         power:                          0 kW;
-        weight:                         17 ton;
+        weight:                         var_TONGIL_CAR_WEIGHT;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;

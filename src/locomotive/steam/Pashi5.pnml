@@ -68,8 +68,7 @@ item(FEAT_TRAINS, ko_train_PASHI5, 5302) {
         // Spec
         speed:                          var_PASHI5_SPEED km/h;
         power:                          POWER_IN_KW(var_PASHI5_POWER);
-        extra_power_per_wagon:          0 kW;
-        weight:                         113 ton;
+        weight:                         var_PASHI5_WEIGHT;
         tractive_effort_coefficient:    0.2;
         air_drag_coefficient:           0.01;
 

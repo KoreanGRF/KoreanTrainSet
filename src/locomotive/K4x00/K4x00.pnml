@@ -108,7 +108,7 @@ item(FEAT_TRAINS, ko_train_K4x00, 5440) {
         // Spec
         speed:                          105 km/h;
         power:                          POWER_IN_KW(var_K4x00_POWER);
-        weight:                         88 ton;
+        weight:                         var_K4x00_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

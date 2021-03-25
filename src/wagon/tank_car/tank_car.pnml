@@ -31,7 +31,7 @@ item(FEAT_TRAINS, ko_train_TANK_CAR, 5913) {
 
         // Spec
         power:                          0 kW;
-        weight:                         17 ton;
+        weight:                         var_TANK_CAR_WEIGHT;
         length:                         7;
 
         // Model

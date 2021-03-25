@@ -173,7 +173,7 @@ item(FEAT_TRAINS, ko_train_MUGUNGHWA_CAR, 5602) {
 
         // Spec
         power:                          0 kW;
-        weight:                         17 ton;
+        weight:                         var_MUGUNGHWA_CAR_WEIGHT;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;

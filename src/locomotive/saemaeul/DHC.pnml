@@ -124,7 +124,7 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
         // Spec
         speed:                          150 km/h;
         power:                          POWER_IN_KW(var_DHC_POWER);
-        weight:                         69.71 ton;
+        weight:                         var_DHC_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

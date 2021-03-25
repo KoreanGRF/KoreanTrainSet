@@ -33,7 +33,7 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_4, 5754) {
 
         // Spec
         power:                          POWER_IN_KW(var_BUSAN_METRO_4_POWER);
-        weight:                         20 ton;
+        weight:                         var_BUSAN_METRO_4_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.1;
         length:                         6;

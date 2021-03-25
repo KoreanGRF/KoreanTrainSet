@@ -27,7 +27,7 @@ item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
 
         // Spec
         power:                          0 kW;
-        weight:                         17 ton;
+        weight:                         var_DHC_wagon_WEIGHT;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;

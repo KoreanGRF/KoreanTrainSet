@@ -31,7 +31,7 @@ item(FEAT_TRAINS, ko_train_FLAT_CAR, 5910) {
 
         // Spec
         power:                          0 kW;
-        weight:                         17 ton;
+        weight:                         var_FLAT_CAR_WEIGHT;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;

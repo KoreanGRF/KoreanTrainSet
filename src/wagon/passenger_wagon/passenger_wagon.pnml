@@ -47,7 +47,7 @@ item(FEAT_TRAINS, ko_train_PASSWG, 5900) {
 
         // Spec
         power:                          0;
-        weight:                         20 ton;
+        weight:                         var_PASSENGER_WAGON_WEIGHT;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -99,7 +99,7 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 5901) {
 
         // Spec
         power:                          0;
-        weight:                         20 ton;
+        weight:                         var_PASSENGER_WAGON_WEIGHT;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;

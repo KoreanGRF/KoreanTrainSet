@@ -75,8 +75,7 @@ item(FEAT_TRAINS, ko_train_MATE2, 5303) {
         // Spec
         speed:                          var_MATE2_SPEED km/h;
         power:                          POWER_IN_KW(var_MATE2_POWER);
-        extra_power_per_wagon:          0 kW;
-        weight:                         113 ton;
+        weight:                         var_MATE2_WEIGHT;
         tractive_effort_coefficient:    0.2;
         air_drag_coefficient:           0.01;
 

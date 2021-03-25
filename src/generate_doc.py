@@ -143,6 +143,7 @@ template = """
         <td class="align-center">{{speed}}</td>
         <td class="align-center">{{capacity}}</td>
         <td class="align-center">{{power}}</td>
+        <td class="align-center">{{weight}}</td>
         <td class="align-center">{{introduction}}</td>
     </tr>"""
 
@@ -158,7 +159,8 @@ for _lang in list(langData.keys()):
         speed        = str(trainList[code_name][0]) + ' km/h' if trainList[code_name][0] is not None and trainList[code_name][0] > 0 else ''
         capacity     = str(trainList[code_name][3]) if trainList[code_name][3] is not None and trainList[code_name][3] > 0 else ''
         power        = str(trainList[code_name][5]) + ' kW' if trainList[code_name][5] is not None and trainList[code_name][5] > 0 else ''
-        introduction = str(trainList[code_name][6][0])
+        weight       = str(trainList[code_name][6]) + ' t'
+        introduction = str(trainList[code_name][7][0])
 
         # Change variables
         append = template
@@ -167,6 +169,7 @@ for _lang in list(langData.keys()):
         append = append.replace('{{speed}}', speed)
         append = append.replace('{{capacity}}', capacity)
         append = append.replace('{{power}}', power)
+        append = append.replace('{{weight}}', weight)
         append = append.replace('{{introduction}}', introduction)
 
         # Append all refittable vehicles

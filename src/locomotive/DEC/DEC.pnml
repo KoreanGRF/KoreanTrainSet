@@ -34,7 +34,7 @@ item(FEAT_TRAINS, ko_train_DEC, 5512) {
         // Spec
         speed:                          var_DEC_SPEED km/h;
         power:                          POWER_IN_KW(var_DEC_POWER);
-        weight:                         50 ton;
+        weight:                         var_DEC_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

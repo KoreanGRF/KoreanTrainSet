@@ -31,7 +31,7 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CAR, 5605) {
 
         // Spec
         power:                          0 kW;
-        weight:                         34 ton;
+        weight:                         var_BIDULGI_CAR_WEIGHT;
 
         // Model
         model_life:                     50;   // 1957~2000

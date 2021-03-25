@@ -36,7 +36,7 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CDC, 5521) {
         // Spec
         speed:                          110 km/h;
         power:                          POWER_IN_KW(var_BIDULGI_CDC_POWER);
-        weight:                         17 ton;
+        weight:                         var_BIDULGI_CDC_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

@@ -30,7 +30,7 @@ item(FEAT_TRAINS, ko_train_BAGGAGE_CAR, 5912) {
 
         // Spec
         power:                          0 kW;
-        weight:                         17 ton;
+        weight:                         var_BAGGAGE_CAR_WEIGHT;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;

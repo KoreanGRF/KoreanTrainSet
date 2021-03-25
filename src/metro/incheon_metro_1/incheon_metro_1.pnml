@@ -33,7 +33,7 @@ item(FEAT_TRAINS, ko_train_INCHEON_METRO_1, 5741) {
 
         // Spec
         power:                          POWER_IN_KW(var_INCHEON_METRO_1_POWER);
-        weight:                         20 ton;
+        weight:                         var_INCHEON_METRO_1_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

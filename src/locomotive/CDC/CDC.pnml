@@ -295,7 +295,7 @@ item(FEAT_TRAINS, ko_train_CDC, 5510) {
         // Spec
         speed:                          120 km/h;
         power:                          POWER_IN_KW(var_CDC_POWER);
-        weight:                         17 ton;
+        weight:                         var_CDC_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

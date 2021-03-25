@@ -33,7 +33,7 @@ item(FEAT_TRAINS, ko_train_GWANGJU_METRO_1, 5781) {
 
         // Spec
         power:                          POWER_IN_KW(var_GWANGJU_METRO_1_POWER);
-        weight:                         20 ton;
+        weight:                         var_GWANGJU_METRO_1_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

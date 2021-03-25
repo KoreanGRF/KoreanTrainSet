@@ -106,7 +106,7 @@ item(FEAT_TRAINS, ko_train_ITX_SAEMAEUL, 5540) {
 
         // Spec
         power:                          POWER_IN_KW(var_ITX_SAEMAEUL_POWER);
-        weight:                         20 ton;
+        weight:                         var_ITX_SAEMAEUL_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 
@@ -149,12 +149,14 @@ item(FEAT_TRAINS, ko_train_ITX_SAEMAEUL, 5540) {
     }
     livery_override(ko_train_PASSWG) {
         default:                        sw_ITX_SAEMAEUL_wagon;
+        weight:                         var_ITX_SAEMAEUL_WEIGHT;
         cargo_capacity:                 sw_ITX_SAEMAEUL_wagon_capacity;
         purchase_cargo_capacity:        sw_ITX_SAEMAEUL_wagon_purchase_capacity;
         loading_speed:                  sw_ITX_SAEMAEUL_loadingspeed;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_ITX_SAEMAEUL_wagon;
+        weight:                         var_ITX_SAEMAEUL_WEIGHT;
         cargo_capacity:                 sw_ITX_SAEMAEUL_wagon_capacity;
         purchase_cargo_capacity:        sw_ITX_SAEMAEUL_wagon_purchase_capacity;
         loading_speed:                  sw_ITX_SAEMAEUL_loadingspeed;

@@ -129,7 +129,7 @@ item(FEAT_TRAINS, ko_train_NURIRO, 5525) {
         // Spec
         speed:                          150 km/h;
         power:                          POWER_IN_KW(var_NURIRO_POWER);
-        weight:                         55 ton;
+        weight:                         var_NURIRO_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

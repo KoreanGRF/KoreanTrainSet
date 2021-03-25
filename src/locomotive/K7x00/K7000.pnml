@@ -45,7 +45,7 @@ item(FEAT_TRAINS, ko_train_K7000, 5470) {
         // Spec
         speed:                          150 km/h;
         power:                          POWER_IN_KW(var_K7000_POWER);
-        weight:                         119 ton;
+        weight:                         var_K7000_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

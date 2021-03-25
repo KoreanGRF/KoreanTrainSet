@@ -112,7 +112,7 @@ item(FEAT_TRAINS, ko_train_NDC, 5511) {
         // Spec
         speed:                          var_NDC_SPEED km/h;
         power:                          POWER_IN_KW(var_NDC_POWER);
-        weight:                         50 ton;
+        weight:                         var_NDC_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 

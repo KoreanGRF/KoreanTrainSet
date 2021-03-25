@@ -33,7 +33,7 @@ item(FEAT_TRAINS, ko_train_UIJEONGBU, 5805) {
 
         // Spec
         power:                          POWER_IN_KW(var_UIJEONGBU_POWER);
-        weight:                         20 ton;
+        weight:                         var_UIJEONGBU_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 
