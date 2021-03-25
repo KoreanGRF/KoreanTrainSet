@@ -1,0 +1,99 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * EEC
+ */
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_EEC_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_LIVERY_EEC_2);   // Red+Yellow
+    2:    return string(STR_REFIT_LIVERY_EEC_1);   // Green+Yellow
+          return string(STR_REFIT_LIVERY_EEC_3);
+}
+ 
+// Engine
+switch(FEAT_TRAINS, SELF, sw_EEC_engineH, cargo_subtype) {
+    1:  set_EEC_2_engineH;
+    2:  set_EEC_1_engineH;
+        set_EEC_3_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_EEC_engineT, cargo_subtype) {
+    1:  set_EEC_2_engineT;
+    2:  set_EEC_1_engineT;
+        set_EEC_3_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_EEC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_EEC_engineT;
+       sw_EEC_engineH;
+}
+
+// Wagon (panto)
+switch(FEAT_TRAINS, SELF, sw_EEC_panto_wagon_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_2_panto_wagon;
+    2:  set_EEC_1_panto_wagon;
+        set_EEC_3_panto_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_EEC_panto_wagon_cargo_subtype_r, cargo_subtype) {
+    1:  set_EEC_2_panto_wagon_r;
+    2:  set_EEC_1_panto_wagon_r;
+        set_EEC_3_panto_wagon_r;
+}
+
+// Wagon (A)
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon_A_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_2_wagon_A;
+    2:  set_EEC_1_wagon_A;
+        set_EEC_3_wagon_A;
+}
+
+// Wagon (Cafe car)
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon_cafe_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_2_wagon_cafe;
+    2:  set_EEC_1_wagon_cafe;
+        set_EEC_3_wagon_cafe;
+}
+
+// Wagon (Executive)
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon_executive_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_2_wagon_executive;
+    2:  set_EEC_1_wagon_executive;
+        set_EEC_3_wagon_executive;
+}
+
+// Wagon (B)
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon_B_cargo_subtype, cargo_subtype) {
+    1:  set_EEC_2_wagon_B;
+    2:  set_EEC_1_wagon_B;
+        set_EEC_3_wagon_B;
+}
+switch(FEAT_TRAINS, SELF, sw_EEC_wagon, (position_in_consist-1) % 8) {
+    0: sw_EEC_wagon_A_cargo_subtype;
+    1: sw_EEC_panto_wagon_cargo_subtype;
+    2: sw_EEC_wagon_A_cargo_subtype;
+    3: sw_EEC_panto_wagon_cargo_subtype;
+    4: sw_EEC_wagon_cafe_cargo_subtype;
+    5: sw_EEC_wagon_executive_cargo_subtype;
+    6: sw_EEC_panto_wagon_cargo_subtype_r;
+    7: sw_EEC_wagon_A_cargo_subtype;
+       sw_EEC_wagon_B_cargo_subtype;
+}
+
+// Capacity
+switch(FEAT_TRAINS, SELF, sw_EEC_capacity_in_custom, cargo_subtype) {
+    return 56 / 2 * sw_cargo_capacity_factor;
+}
+
+// Attachable vehicles
+switch(FEAT_TRAINS, SELF, sw_EEC_attach, vehicle_type_id) {
+    ko_train_CDC:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_NDC:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_DEC:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_EEC:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:   return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWGP:  return CB_RESULT_ATTACH_ALLOW;
+    ko_train_CAFE_CAR: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}

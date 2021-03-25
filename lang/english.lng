@@ -21,7 +21,7 @@ STR_NURIRO_NAME                                  :[KTS] Nuriro
 STR_CDC_NAME                                     :[KTS] Commuter Diesel Car (CDC)
 STR_NDC_NAME                                     :[KTS] New Diesel Car (NDC)
 STR_DEC_NAME                                     :[KTS] Diesel Electric Car (DEC)
-# STR_EEC_NAME                                     :[KTS] Express Electric Car (EEC)
+STR_EEC_NAME                                     :[KTS] Express Electric Car (EEC)
 STR_BIDULGI_CDC_NAME                             :[KTS] Bidulgi Commuter
 STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-Sancheon
@@ -127,10 +127,15 @@ STR_REFIT_LIVERY_BIDULGI_BLUE                    : (Livery: 1970s~1994)
 STR_REFIT_LIVERY_BIDULGI_GREEN_YELLOW            : (Livery: 1994~2000)
 STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR             : (Bidulgi livery)
 
-# Refit (DEC, EEC)
-STR_REFIT_LIVERY_DEC_1                           : (Livery: 1986~1994 : Saemaeul livery)
+# Refit (DEC)
+STR_REFIT_LIVERY_DEC_1                           : (Livery: 1986~1994 : Saemaeul)
 STR_REFIT_LIVERY_DEC_2                           : (Livery: 1980~1986)
 STR_REFIT_LIVERY_DEC_3                           : (Livery: 1994~1999)
+
+# Refit (EEC)
+STR_REFIT_LIVERY_EEC_1                           : (Livery: 1980~1994)
+STR_REFIT_LIVERY_EEC_2                           : (Livery: 1994~1998)
+STR_REFIT_LIVERY_EEC_3                           : (Livery: 1998~2001 : Tongil)
 
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                           : (Black)

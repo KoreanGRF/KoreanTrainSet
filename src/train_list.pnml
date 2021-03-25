@@ -33,7 +33,7 @@
 #include "locomotive/CDC/CDC.pnml"
 #include "locomotive/NDC/NDC.pnml"
 #include "locomotive/DEC/DEC.pnml"
-// #include "locomotive/EEC/EEC.pnml"
+#include "locomotive/EEC/EEC.pnml"
 #include "locomotive/bidulgi/bidulgi_cdc.pnml"
 
 // KTX

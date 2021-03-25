@@ -22,7 +22,7 @@ STR_NURIRO_NAME                                  :[KTS] 누리로
 STR_CDC_NAME                                     :[KTS] 통근형 디젤 열차 (CDC)
 STR_NDC_NAME                                     :[KTS] 우등형 디젤 동차 (NDC)
 STR_DEC_NAME                                     :[KTS] 우등형 디젤 전기 동차 (DEC)
-# STR_EEC_NAME                                     :[KTS] 우등형 전기 동차 (EEC)
+STR_EEC_NAME                                     :[KTS] 우등형 전기 동차 (EEC)
 STR_BIDULGI_CDC_NAME                             :[KTS] 비둘기 통근형 디젤 동차
 STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-산천
@@ -128,10 +128,15 @@ STR_REFIT_LIVERY_BIDULGI_BLUE                    : (1970년대~1994년 도색)
 STR_REFIT_LIVERY_BIDULGI_GREEN_YELLOW            : (1994~2000년 도색)
 STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR             : (비둘기호 도색)
 
-# Refit (DEC, EEC)
+# Refit (DEC)
 STR_REFIT_LIVERY_DEC_1                           : (1986~1994년 도색 : 새마을호)
 STR_REFIT_LIVERY_DEC_2                           : (1980~1986년 도색)
 STR_REFIT_LIVERY_DEC_3                           : (1994~1999년 도색)
+
+# Refit (EEC)
+STR_REFIT_LIVERY_EEC_1                           : (1980~1994년 도색)
+STR_REFIT_LIVERY_EEC_2                           : (1994~1998년 도색)
+STR_REFIT_LIVERY_EEC_3                           : (1998~2001년 도색 : 통일호)
 
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                           : (검은색)
