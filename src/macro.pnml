@@ -15,7 +15,7 @@ switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _cost, 1) { \
 // Running cost (Do not rename this as 'RUNNINGCOST')
 #define RUNNING(VEHICLEID) \
 switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _runningcost, 1) { \
-    return var_ ## VEHICLEID ## _RUNNINGCOST / 10 * sw_running_cost_factor; \
+    return var_ ## VEHICLEID ## _RUNNINGCOST * sw_running_cost_factor; \
 }
 
 // Capacity
