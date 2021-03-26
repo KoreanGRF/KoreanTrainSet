@@ -4,10 +4,24 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_KTX2N_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_KTX2N_PYEONGCHANG);
+    return string(STR_REFIT_LIVERY_KTX2N);
+}
+
 // Engine
-switch(FEAT_TRAINS, SELF, sw_KTX2N_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: set_KTX2N_engineT;
+switch(FEAT_TRAINS, SELF, sw_KTX2N_engineT, cargo_subtype) {
+    1: set_KTX2N_PYEONGCHANG_engineT;
+    set_KTX2N_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX2N_engineH, cargo_subtype) {
+    1: set_KTX2N_PYEONGCHANG_engineH;
     set_KTX2N_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX2N_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_KTX2N_engineT;
+    sw_KTX2N_engineH;
 }
 
 // Wagon

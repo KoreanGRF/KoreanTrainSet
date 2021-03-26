@@ -45,7 +45,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 0;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [PASS];
@@ -73,7 +73,8 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
 
         can_attach_wagon:               sw_KTX_attach;
         start_stop:                     sw_ko_train_start_stop;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        cargo_subtype_text:             sw_KTX2N_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
     livery_override(ko_train_PASSWG) {
         default:                        sw_KTX2N_wagon;
