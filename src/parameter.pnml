@@ -1,4 +1,4 @@
-    // 속도 계수 (일반)
+    // Speed coefficient (general)
     param 1 {
         coeff_speed_general {
             type: int;
@@ -10,7 +10,7 @@
         }
     }
 
-    // 속도 계수 (준고속)
+    // Speed coefficient (sub-express
     param 2 {
         coeff_speed_subexpress {
             type: int;
@@ -22,7 +22,7 @@
         }
     }
 
-    // 속도 계수 (지하철)
+    // Speed coefficient (metro)
     param 3 {
         coeff_speed_metro {
             type: int;
@@ -34,7 +34,7 @@
         }
     }
 
-    // 속도 계수 (경전철 - 고무)
+    // Speed coefficient (Light rail - rubber wheel)
     param 4 {
         coeff_speed_light_rail {
             type: int;
@@ -48,7 +48,7 @@
 
 /*
     // RESERVED
-    // 가속도 계수
+    // Speed coefficient (accelation)
     param 5 {
         coeff_accelation {
             type: int;
@@ -61,7 +61,7 @@
     }
 //*/
 
-    // 가격 계수
+    // Cost coefficient
     param 6 {
         coeff_cost_factor {
             type: int;
@@ -86,7 +86,7 @@
         }
     }
 
-    // 유지비 계수
+    // Running cost coefficient
     param 7 {
         coeff_running_cost_factor {
             type: int;
@@ -113,7 +113,7 @@
         }
     }
 
-    // 화물 수송량 계수
+    // Cargo capacity coefficient
     param 8 {
         coeff_cargo_capacity_factor {
             type: int;
@@ -135,7 +135,7 @@
         }
     }
 
-    // 화물 적재 속도 계수
+    // Loading speed coefficient
     param 9 {
         coeff_loading_speed_factor {
             type: int;

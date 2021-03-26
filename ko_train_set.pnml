@@ -46,9 +46,6 @@ cargotable {
 railtypetable {
     RAIL, ELRL, MGLV,
     KRLR,
-    // KR_ELRL_BASED_RAIL: [KRLR, ELRL],
-    // KR_MONO_BASED_RAIL: [KRLR, MONO],
-    // KR_MGLV_BASED_RAIL: [KRLR, MGLV],
     KR_3RD_RAIL: ["3RDR", KRLR, ELRL, RAIL]
 }
 

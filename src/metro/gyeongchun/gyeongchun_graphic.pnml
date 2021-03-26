@@ -48,7 +48,7 @@ spriteset(set_ITX_CHEONGCHUN_wagon_2, "./src/metro/gyeongchun/386K_ITX_CHEONGCHU
     [64+48,    60,    31,    12,    -17,    -6]
     [64+97,    60,    21,    17,     -8,    -9]
 }
-spriteset(set_ITX_CHEONGCHUN_wagon_3, "./src/metro/gyeongchun/386K_ITX_CHEONGCHUN.png") { // sprite 순서 오류로 인해 4,5번이 뒤바뀜
+spriteset(set_ITX_CHEONGCHUN_wagon_3, "./src/metro/gyeongchun/386K_ITX_CHEONGCHUN.png") {
     [64,       90,     8,    23,     -3,   -11]
     [64+16,    90,    21,    18,    -14,   -10]
     [64+48,    90,    31,    13,    -17,    -7]
@@ -58,7 +58,7 @@ spriteset(set_ITX_CHEONGCHUN_wagon_3, "./src/metro/gyeongchun/386K_ITX_CHEONGCHU
     [64+175,   90,    30,    13,    -17,    -7]
     [64+224,   90,    21,    18,     -8,   -10]
 }
-spriteset(set_ITX_CHEONGCHUN_wagon_4, "./src/metro/gyeongchun/386K_ITX_CHEONGCHUN.png") { // sprite 순서 오류로 인해 4,5번이 뒤바뀜
+spriteset(set_ITX_CHEONGCHUN_wagon_4, "./src/metro/gyeongchun/386K_ITX_CHEONGCHUN.png") {
     [64,       120,    8,    23,     -3,   -11]
     [64+16,    120,   21,    18,    -14,   -10]
     [64+48,    120,   31,    13,    -17,    -7]

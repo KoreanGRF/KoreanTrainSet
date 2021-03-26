@@ -4,9 +4,8 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// 매개변수 설정에서 간소화 옵션을 설정한 경우
+// If simplise waypoint
 if(bool_simplize_waypoint > 0) {
-    // 4974(제거함) / 4975(우상) / 4976(제거함) / 4977(좌하)
     replace simplewaypoint(4974, "./src/misc/simple_waypoint.png") {
         [40,  0,    1,    1,    0,    0]    // 4974
         [0,   0,   19,   23,  -21,   -4]    // 4975

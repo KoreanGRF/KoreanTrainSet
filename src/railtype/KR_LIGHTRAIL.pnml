@@ -104,8 +104,7 @@ spriteset(set_light_railway_track_depot, "./src/railtype/KR_LIGHTRAIL.png") {
     [ 350,  160,   64,   52,   -8,  -36]
 }
 
-// Tracks for bridge (just have different orders with underlays)
-// @note    오프셋 조정하던지 새 스프라이트 라인 추가할 것
+// Tracks for bridge
 spriteset(set_light_railway_track_bridge, "./src/railtype/KR_LIGHTRAIL.png") {
     [   0,   40,   64,   31,  -32,    4]
     [  70,   40,   64,   31,  -32,    4]
@@ -138,12 +137,9 @@ item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
         build_window_caption:           string(STR_KO_LIGHT_RAIL_BUILD_VEHICLE_CAPTION);
         new_engine_text:                string(STR_KO_LIGHT_RAIL_NEW_ENGINE);
         autoreplace_text:               string(STR_KO_LIGHT_RAIL_AUTOREPLACE);
-        // compatible_railtype_list:       ["ELRL", "MONO"];   // 전기 선로 및 모노레일 선로에서도 이용 가능
-        // powered_railtype_list:          ["ELRL", "MONO"];
 
         station_graphics:               RAILTYPE_STATION_MONORAIL;
         acceleration_model:             ACC_MODEL_MONORAIL;
-    //  speed_limit:                    200 km/h;
         construction_cost:              14;
         sort_order:                     47;
 

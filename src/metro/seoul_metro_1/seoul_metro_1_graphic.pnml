@@ -243,7 +243,7 @@ spriteset(set_371K_BLANK_purchase, "./src/metro/seoul_metro_1/371K_BLANK.png") {
     tmpl_metro_purchase()
 }
 
-// 371K_381K_1ST (동해선 1차분)
+// 371K_381K_1ST
 spriteset(set_371K_381K_1ST_engineH, "./src/metro/seoul_metro_1/371K_381K_1ST.png") {
     tmpl_engine_head(0, 0)
 }
@@ -260,7 +260,7 @@ spriteset(set_371K_381K_1ST_purchase, "./src/metro/seoul_metro_1/371K_381K_1ST.p
     tmpl_metro_purchase()
 }
 
-// 381K_2ND (동해선 2차분(주둥이))
+// 381K_2ND
 spriteset(set_381K_2ND_engineH, "./src/metro/seoul_metro_1/381K_2ND.png") {
     tmpl_snout_engine_head(0, 0)
 }
@@ -277,7 +277,7 @@ spriteset(set_381K_2ND_purchase, "./src/metro/seoul_metro_1/381K_2ND.png") {
     tmpl_metro_purchase()
 }
 
-// 391K (서해선)
+// 391K
 spriteset(set_391K_engineH, "./src/metro/seoul_metro_1/391K.png") {
     tmpl_engine_head(0, 0)
 }
@@ -294,7 +294,7 @@ spriteset(set_391K_purchase, "./src/metro/seoul_metro_1/391K.png") {
     tmpl_metro_purchase()
 }
 
-// LINE_1_2019 (1호선 주둥이)
+// LINE_1_2019
 spriteset(set_LINE_1_2019_engineH, "./src/metro/seoul_metro_1/LINE_1_2019.png") {
     tmpl_snout_engine_head(0, 0)
 }

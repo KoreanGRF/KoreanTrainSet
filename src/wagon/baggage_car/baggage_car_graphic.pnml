@@ -29,7 +29,6 @@ template tmpl_V_TRAIN_wagon(x, y) {
 spriteset(set_BAGGAGE_CAR_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_purchase_detail(0, 0, 31, 13, -16, -6)
 }
-// 소화물차
 spriteset(set_BAGGAGE_CAR_A_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 0)
 }

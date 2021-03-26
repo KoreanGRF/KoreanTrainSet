@@ -3,9 +3,7 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
-//xpos    ypos    xsize    ysize    xoff    yoff
-
-// 전동차 전두부
+// Template - Metro engine (head)
 template tmpl_engine_head(x, y) {
     [x+64,     y,    8,    22,     -3,   -11]
     [x+80,     y,   21,    17,    -13,    -9]
@@ -17,7 +15,7 @@ template tmpl_engine_head(x, y) {
     [x+288,    y,   21,    17,     -6,    -8]
 }
 
-// 팬터그래프 객차
+// Template - Metro single pantograph wagon
 template tmpl_wagon_panto(x, y) {
     [x+64,     y,    8,    22,     -3,   -11]
     [x+80,     y,   21,    17,    -13,    -8]
@@ -29,7 +27,7 @@ template tmpl_wagon_panto(x, y) {
     [x+288,    y,   21,    17,     -6,    -8]
 }
 
-// 쌍팬터그래프 객차
+// Template - Metro double pantograph wagon
 template tmpl_wagon_dblpanto(x, y) {
     [x+64,     y,    8,    22,     -3,    -11]
     [x+80,     y,   21,    19,    -13,    -11]
@@ -47,7 +45,7 @@ template tmpl_wagon_dblpanto_8dir(x, y) {
     [x+288,    y,   21,    19,     -6,    -10]
 }
 
-// 객차
+// Template - Metro wagon
 template tmpl_wagon(x, y) {
     [x+64,     y,     8,   22,     -3,    -11]
     [x+80,     y,    21,   17,    -13,     -9]
@@ -65,7 +63,7 @@ template tmpl_wagon_8dir(x, y) {
     [x+288,    y,    21,   17,     -6,     -8]
 }
 
-// 전동차 후두부
+// Template - Metro engine (tail)
 template tmpl_engine_tail(x, y) {
     [x+191,    y,     8,    22,    -3,   -11]
     [x+207,    y,    21,    17,   -13,    -9]
@@ -77,7 +75,7 @@ template tmpl_engine_tail(x, y) {
     [x+161,    y,    21,    17,    -6,    -8]
 }
 
-// 전동차(주둥이) 전두부
+// Template - Metro engine (Snout, head)
 template tmpl_snout_engine_head(x, y) {
     [x+64,     y,     8,    22,    -3,   -11]
     [x+80,     y,    22,    17,   -13,    -9]
@@ -89,7 +87,7 @@ template tmpl_snout_engine_head(x, y) {
     [x+288,    y,    21,    17,    -7,    -8]
 }
 
-// 팬터그래프 객차(주둥이)
+// Template - Metro single pantograph wagon (Snout)
 template tmpl_snout_wagon_panto(x, y) {
     [x+64,     y,     8,    22,    -3,   -11]
     [x+80,     y,    21,    17,   -13,    -9]
@@ -101,7 +99,7 @@ template tmpl_snout_wagon_panto(x, y) {
     [x+288,    y,    21,    17,    -6,    -8]
 }
 
-// 전동차(주둥이) 후두부
+// Template - Metro engine (Snout, tail)
 template tmpl_snout_engine_tail(x, y) {
     [x+191,    y,     8,    22,    -3,   -11]
     [x+207,    y,    22,    17,   -13,    -9]

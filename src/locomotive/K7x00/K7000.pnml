@@ -10,7 +10,7 @@ SPEED_GENERAL(K7000)
 COST(K7000)
 RUNNING(K7000)
 
-// 7000 (봉고)
+// K7000
 spriteset(set_K7000_purchase, "./src/locomotive/K7x00/K7000.png") {
     tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
 }
@@ -25,13 +25,7 @@ spriteset(set_K7000_1_loco, "./src/locomotive/K7x00/K7000.png") {   // Red & Whi
     [60+225,  0,    21,    16,    -6,    -7]
 }
 
-/*------------------------------------------------------------------------------
-K7000
-------------------------------------------------------------------------------*/
-/*
-//TODO// Refit Paintings
-*/
-
+// Item
 item(FEAT_TRAINS, ko_train_K7000, 5470) {
     property {
         // Common properties

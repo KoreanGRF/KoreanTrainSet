@@ -1,4 +1,4 @@
-// 구입 이미지
+// Template - Purchase image
 template tmpl_purchase(x, y) {
     [   0,    0,    1,    1,    0,    0]
     [   0,    0,    1,    1,    0,    0]

@@ -10,7 +10,7 @@ SPEED_GENERAL(K8500)
 COST(K8500)
 RUNNING(K8500)
 
-// 8100호대
+// K8500
 spriteset(set_K8500_loco, "./src/locomotive/K8x00/K8500.png") {
     tmpl_loco(60, 0)
 }
@@ -18,9 +18,7 @@ spriteset(set_K8500_purchase, "./src/locomotive/K8x00/K8500.png") {
     tmpl_purchase(0, 0)
 }
 
-/*------------------------------------------------------------------------------
-K8500
-------------------------------------------------------------------------------*/
+// Item
 item(FEAT_TRAINS, ko_train_K8500, 5485) {
     property {
         // Common properties
