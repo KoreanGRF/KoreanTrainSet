@@ -3,7 +3,6 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 """
-import math
 
 # Define a dictionary
 trainList = {}
