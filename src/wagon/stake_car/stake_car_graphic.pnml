@@ -23,7 +23,7 @@ template tmpl_stake_car_long(x, y) {
 
 // Graphic
 spriteset(set_STAKE_CAR_purchase, "./src/wagon/stake_car/STAKE_CAR.png") {
-    tmpl_purchase_detail(0, 0, 31, 10, -17, -6)
+    tmpl_purchase_detail(0, 0, 31, 10, -16, -5)
 }
 spriteset(set_STAKE_CAR_empty_wagon, "./src/wagon/stake_car/STAKE_CAR.png") {
     tmpl_stake_car(60, 0)
