@@ -82,8 +82,10 @@ switch(FEAT_TRAINS, SELF, sw_EEC_wagon, (position_in_consist-1) % 8) {
 }
 
 // Capacity
-switch(FEAT_TRAINS, SELF, sw_EEC_capacity_in_custom, cargo_subtype) {
-    return 56 / 2 * sw_cargo_capacity_factor;
+switch(FEAT_TRAINS, SELF, sw_EEC_capacity_in_custom, (position_in_consist-1) % 8) {
+    4: return 40 / 2 * sw_cargo_capacity_factor;
+    5: return 56 / 2 * sw_cargo_capacity_factor;
+       return 72 / 2 * sw_cargo_capacity_factor;
 }
 
 // Attachable vehicles
