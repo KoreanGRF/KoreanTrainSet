@@ -131,9 +131,6 @@
                 6:    string(STR_PARAM_OPT_FACTOR_BY_16);
                 7:    string(STR_PARAM_OPT_FACTOR_BY_32);
                 8:    string(STR_PARAM_OPT_FACTOR_BY_64);
-                9:    string(STR_PARAM_OPT_FACTOR_BY_128);
-                10:   string(STR_PARAM_OPT_FACTOR_BY_256);
-                11:   string(STR_PARAM_OPT_FACTOR_BY_512);
             };
         }
     }
