@@ -12,8 +12,10 @@ CC_USER_FLAGS       ?=
 # Configurations
 -include Makefile.config
 
-# Disable default syuffixes rule
+# Disable default suffixes rule
 .SUFFIXES:
+
+.PHONY: all clean
 
 # File names
 DIR_NAME            ?= $(shell echo "$(REPO_NAME) $(VERSION)" | xargs | sed s/\ /_/g)
