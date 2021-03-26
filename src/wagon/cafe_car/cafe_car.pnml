@@ -24,13 +24,11 @@ spriteset(set_CAFE_CAR_MUGUNGHWA, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(0, 0)
 }
 
-// Check if parent engine
-switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_is_HAERANG, cargo_subtype) {
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_wagon, cargo_subtype) {
+    1: sw_DHC_CAFE_CAR;
     6: set_HAERANG_CAFE_wagon;   //=> Refer: ./src/wagon/Mugunghwa
-    set_CAFE_CAR_MUGUNGHWA;
-}
-switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_wagon, vehicle_type_id) {
-    ko_train_K7x00:   sw_CAFE_CAR_is_HAERANG;
+    8: set_CAFE_CAR_RDC;         //=> Refer: ./src/locomotive/CDC
     set_CAFE_CAR_MUGUNGHWA;
 }
 
