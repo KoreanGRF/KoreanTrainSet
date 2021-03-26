@@ -141,6 +141,7 @@ template = """
         <td class="align-center">{{refit}}</td>
         <td>{{string}}</td>
         <td class="align-center">{{speed}}</td>
+        <td class="align-center">{{speed_designed}}</td>
         <td class="align-center">{{capacity}}</td>
         <td class="align-center">{{power}}</td>
         <td class="align-center">{{weight}}</td>
@@ -156,17 +157,19 @@ for _lang in list(langData.keys()):
         string = get_string('STR_' + code_name + '_NAME', _lang).replace('[KTS] ', '')
 
         # Get variables
-        speed        = str(trainList[code_name][0]) + ' km/h' if trainList[code_name][0] is not None and trainList[code_name][0] > 0 else ''
-        capacity     = str(trainList[code_name][3]) if trainList[code_name][3] is not None and trainList[code_name][3] > 0 else ''
-        power        = str(trainList[code_name][5]) + ' kW' if trainList[code_name][5] is not None and trainList[code_name][5] > 0 else ''
-        weight       = str(trainList[code_name][6]) + ' t'
-        introduction = str(trainList[code_name][7][0])
+        speed          = str(trainList[code_name][0]) + ' km/h' if trainList[code_name][0] is not None and trainList[code_name][0] > 0 else ''
+        speed_designed = str(trainList[code_name][1]) + ' km/h' if trainList[code_name][1] is not None and trainList[code_name][1] > 0 else ''
+        capacity       = str(trainList[code_name][4]) if trainList[code_name][4] is not None and trainList[code_name][4] > 0 else ''
+        power          = str(trainList[code_name][6]) + ' kW' if trainList[code_name][6] is not None and trainList[code_name][6] > 0 else ''
+        weight         = str(trainList[code_name][7]) + ' t'
+        introduction   = str(trainList[code_name][8][0])
 
         # Change variables
         append = template
         append = append.replace('{{code_name}}', code_name.upper())
         append = append.replace('{{string}}', string)
         append = append.replace('{{speed}}', speed)
+        append = append.replace('{{speed_designed}}', speed_designed)
         append = append.replace('{{capacity}}', capacity)
         append = append.replace('{{power}}', power)
         append = append.replace('{{weight}}', weight)
