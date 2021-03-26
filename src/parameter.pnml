@@ -163,4 +163,13 @@
             bit: 1;
             def_value: 1;
         }
+
+        // Operating speed vs Max. design speed
+        bool_use_max_design_speed {
+            type: bool;
+            name: string(STR_PARAM_USE_MAX_DESIGN_SPEED_NAME);
+            desc: string(STR_PARAM_USE_MAX_DESIGN_SPEED_DESC);
+            bit: 2;
+            def_value: 0;
+        }
     }

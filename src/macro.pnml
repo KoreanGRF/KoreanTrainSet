@@ -38,19 +38,22 @@ switch(FEAT_TRAINS, SELF, sw_ ## VEHICLEID ## _loadingspeed, 1) { \
 
 // Speed (general)
 #define SPEED_GENERAL(VEHICLEID) \
-switch(FEAT_TRAINS, SELF, sw_## VEHICLEID ## _speed, 1) { \
+switch(FEAT_TRAINS, SELF, sw_## VEHICLEID ## _speed, bool_use_max_design_speed) { \
+    1: return var_ ## VEHICLEID ## _DESIGN_SPEED / 10 * coeff_speed_general; \
     return var_ ## VEHICLEID ## _SPEED / 10 * coeff_speed_general; \
 }
 
 // Speed (Sub-express)
 #define SPEED_SUBEXPRESS(VEHICLEID) \
-switch(FEAT_TRAINS, SELF, sw_## VEHICLEID ## _speed, 1) { \
+switch(FEAT_TRAINS, SELF, sw_## VEHICLEID ## _speed, bool_use_max_design_speed) { \
+    1: return var_ ## VEHICLEID ## _DESIGN_SPEED / 10 * coeff_speed_subexpress; \
     return var_ ## VEHICLEID ## _SPEED / 10 * coeff_speed_subexpress; \
 }
 
 // Speed (Metro)
 #define SPEED_METRO(VEHICLEID) \
-switch(FEAT_TRAINS, SELF, sw_## VEHICLEID ## _speed, 1) { \
+switch(FEAT_TRAINS, SELF, sw_## VEHICLEID ## _speed, bool_use_max_design_speed) { \
+    1: return var_ ## VEHICLEID ## _DESIGN_SPEED / 10 * coeff_speed_metro; \
     return var_ ## VEHICLEID ## _SPEED / 10 * coeff_speed_metro; \
 }
 

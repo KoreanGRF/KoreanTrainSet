@@ -296,6 +296,8 @@ STR_PARAM_OPT_FACTOR_BY_512                      :x512
 
 STR_PARAM_SIMPLIZE_WAYPOINT_NAME                 :Make waypoint's graphics simple
 STR_PARAM_SIMPLIZE_WAYPOINT_DESC                 :Make the graphic of waypoints simple by eliminating waypoint buildings.
+STR_PARAM_USE_MAX_DESIGN_SPEED_NAME              :Use maximum design speed
+STR_PARAM_USE_MAX_DESIGN_SPEED_DESC              :Use maximum design speed instead of operating speed. Max. design speed is usually faster than operating speed.
 STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME         :Disable original engines
 STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC         :Disable original engines to find KTS passenger coaches quickly. Monorail and Maglev engines will not be disabled, only (electric) rail engines will be disabled.
 STR_PARAM_MAX_SPEED_TYPE_NAME                    :Type of Max. speed

@@ -84,7 +84,7 @@ for _name in trainList:
   if trainList[_name][0] is not None:
     content += "#define var_" + _name + "_SPEED " + str(trainList[_name][0]) + "\n"
   if trainList[_name][1] is not None:
-    content += "#define var_" + _name + "_DESIGNED_SPEED " + str(trainList[_name][1]) + "\n"
+    content += "#define var_" + _name + "_DESIGN_SPEED " + str(trainList[_name][1]) + "\n"
   if trainList[_name][2] is not None:
     content += "#define var_" + _name + "_COST " + str(trainList[_name][2]) + "\n"
   if trainList[_name][3] is not None:

@@ -297,6 +297,8 @@ STR_PARAM_OPT_FACTOR_BY_512                      :x512
 
 STR_PARAM_SIMPLIZE_WAYPOINT_NAME                 :경유지를 간단하게 표시
 STR_PARAM_SIMPLIZE_WAYPOINT_DESC                 :경유지 그래픽에서 건물을 제거하여 간단하게 표시합니다.
+STR_PARAM_USE_MAX_DESIGN_SPEED_NAME              :설계 최고 속력 사용
+STR_PARAM_USE_MAX_DESIGN_SPEED_DESC              :영업 속력 대신 설계 최고 속력을 사용합니다. 설계 최고 속력은 보통 영업속력보다 빠릅니다.
 STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME         :기본 기관차 사용 안 함
 STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC         :한국 열차 세트의 객차를 빠르게 찾을 수 있도록 하기 위해 기본 기관차를 사용하지 않습니다. 모노레일/자기부상열차 차량은 사라지지 않고 (전기)철도 차량만 사용하지 않습니다.
 STR_PARAM_MAX_SPEED_TYPE_NAME                    :최고 속력 기준
