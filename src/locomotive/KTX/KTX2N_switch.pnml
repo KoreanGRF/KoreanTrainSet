@@ -39,9 +39,19 @@ switch(FEAT_TRAINS, SELF, sw_KTX2N_wagon_middle, (position_in_vehid_chain + 1) <
 }
 switch(FEAT_TRAINS, SELF, sw_KTX2N_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
     ko_train_KTX2N: set_KTX2N_wagon_8;
-    return sw_KTX2N_wagon_middle;
+    sw_KTX2N_wagon_middle;
 }
-switch(FEAT_TRAINS, SELF, sw_KTX2N_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
+switch(FEAT_TRAINS, SELF, sw_KTX2N_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]) {
     ko_train_KTX2N: set_KTX2N_wagon_1;
-    return sw_KTX2N_wagon_rear;
+    sw_KTX2N_wagon_rear;
+}
+
+// Weight
+switch(FEAT_TRAINS, SELF, sw_KTX2N_weight_in_custom_rear, position_in_consist_from_end) {
+    1: return 51;
+    return 34;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX2N_weight_in_custom, position_in_consist) {
+    1: return 51;
+    sw_KTX2N_weight_in_custom_rear;
 }

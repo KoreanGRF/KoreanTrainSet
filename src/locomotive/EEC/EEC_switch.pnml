@@ -88,6 +88,16 @@ switch(FEAT_TRAINS, SELF, sw_EEC_capacity_in_custom, (position_in_consist-1) % 8
        return 72 / 2 * sw_cargo_capacity_factor;
 }
 
+// Weight
+switch(FEAT_TRAINS, SELF, sw_EEC_weight_in_custom, (position_in_consist-1) % 8) {
+    1: 51;
+    3: 51;
+    4: 40;
+    5: 38;
+    6: 51;
+       50;
+}
+
 // Attachable vehicles
 switch(FEAT_TRAINS, SELF, sw_EEC_attach, vehicle_type_id) {
     ko_train_CDC:      return CB_RESULT_ATTACH_ALLOW;

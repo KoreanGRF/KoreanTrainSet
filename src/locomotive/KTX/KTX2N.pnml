@@ -82,6 +82,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         loading_speed:                  sw_KTX2N_loadingspeed;
+        weight:                         sw_KTX2N_weight_in_custom;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_KTX2N_wagon;
@@ -89,6 +90,7 @@ item(FEAT_TRAINS, ko_train_KTX2N, 5552) {
         cargo_subtype_text:             sw_KTX_wagon_cargo_subtype_text;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         loading_speed:                  sw_KTX2N_loadingspeed;
+        weight:                         sw_KTX2N_weight_in_custom;
         power:                          POWER_IN_KW(200);
     }
 }

@@ -25,9 +25,9 @@ switch(FEAT_TRAINS, SELF, sw_SRT_wagon_middle, (position_in_vehid_chain + 1) <= 
 }
 switch(FEAT_TRAINS, SELF, sw_SRT_wagon_rear, [STORE_TEMP(1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
     ko_train_SRT: set_SRT_wagon_8;
-    return sw_SRT_wagon_middle;
+    sw_SRT_wagon_middle;
 }
 switch(FEAT_TRAINS, SELF, sw_SRT_wagon, [STORE_TEMP(-1, 0x10F), var[0x61, 0, 0x0000FFFF, 0xC6]]){
     ko_train_SRT: set_SRT_wagon_1;
-    return sw_SRT_wagon_rear;
+    sw_SRT_wagon_rear;
 }
