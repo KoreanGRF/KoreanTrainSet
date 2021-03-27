@@ -22,9 +22,6 @@ template tmpl_K7x00(x, y) {
     [x+175, y,   32,     11,   -17,    -7]
     [x+225, y,   22,     17,    -7,    -9]
 }
-template tmpl_K7x00_purchase(x, y) {
-    
-}
 
 // 7x00
 spriteset(set_K7x00_purchase, "./src/locomotive/K7x00/K7x00.png") {
