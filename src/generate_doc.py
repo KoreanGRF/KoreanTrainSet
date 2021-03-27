@@ -180,6 +180,8 @@ for _lang in list(langData.keys()):
 
         # Get name
         string = get_string('STR_' + code_name + '_NAME', _lang).replace('[KTS] ', '')
+        if string == '':
+            continue
 
         # Get variables
         speed          = str(_spec[0]) + ' km/h' if _spec[0] is not None and _spec[0] > 0 else ''
