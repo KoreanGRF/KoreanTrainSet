@@ -61,7 +61,7 @@ for file_name in pnmlFiles:
     pnml_content = f.read()
 
     # Find purchase image block
-    rst = re.finditer('spriteset\(set_(.+?)_purchase,(?:\s+)"(.+?)"\) {', pnml_content)
+    rst = re.finditer('spriteset\(set_(.+?)_purchase,(?:\s*)"(.+?)"\) {', pnml_content)
     for r in rst:
         sprite_name      = r.group(1)
         sprite_file_name = r.group(2)
