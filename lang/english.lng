@@ -8,6 +8,9 @@ STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko
 
 
 # Vehicle's name
+STR_MATE2_NAME                                   :[KTS] Mate 2 Steam Locomotive
+STR_PASHI5_NAME                                  :[KTS] Pashi 5 Steam Locomotive
+STR_MIKA3_NAME                                   :[KTS] Mika 3 Steam Locomotive
 STR_K4x00_NAME                                   :[KTS] 4x00 Diesel Locomotive
 STR_K7000_NAME                                   :[KTS] 7000 Diesel Locomotive
 STR_K7x00_NAME                                   :[KTS] 7x00 Diesel Locomotive
@@ -27,10 +30,6 @@ STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-Sancheon
 STR_SRT_NAME                                     :[KTS] SRT
 STR_EUM_NAME                                     :[KTS] KTX-EUM
-
-STR_MATE2_NAME                                   :[KTS] Mate 2
-STR_PASHI5_NAME                                  :[KTS] Pashi 5
-STR_MIKA3_NAME                                   :[KTS] Mika 3
 
 STR_PASSENGER_WAGON_NAME                         :[KTS] Passenger car
 STR_PASSENGER_WAGON_POWER_NAME                   :[KTS] Passenger car (powered)

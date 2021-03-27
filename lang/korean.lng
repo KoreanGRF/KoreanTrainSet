@@ -9,6 +9,9 @@ STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko
 
 
 # Vehicle's name
+STR_MATE2_NAME                                   :[KTS] 마터 2형 증기 기관차
+STR_PASHI5_NAME                                  :[KTS] 파시 5형 증기 기관차
+STR_MIKA3_NAME                                   :[KTS] 미카 3형 증기 기관차
 STR_K4x00_NAME                                   :[KTS] 4x00호대 디젤 기관차
 STR_K7000_NAME                                   :[KTS] 7000호대 디젤 기관차
 STR_K7x00_NAME                                   :[KTS] 7x00호대 디젤 기관차
@@ -28,10 +31,6 @@ STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-산천
 STR_SRT_NAME                                     :[KTS] SRT
 STR_EUM_NAME                                     :[KTS] KTX-이음
-
-STR_MATE2_NAME                                   :[KTS] 마터 2형
-STR_PASHI5_NAME                                  :[KTS] 파시 5형
-STR_MIKA3_NAME                                   :[KTS] 미카 3형
 
 STR_PASSENGER_WAGON_NAME                         :[KTS] 승객 수송 차량
 STR_PASSENGER_WAGON_POWER_NAME                   :[KTS] 승객 수송 차량 (동력차)
