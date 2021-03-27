@@ -15,6 +15,8 @@ _ROOT = os.path.dirname(os.path.abspath(__file__))[:-3]
 # Initialise
 notInTrainList = []
 trainListData = {}
+for code_name in trainList:
+    trainListData[code_name] = []
 
 # Parse language file
 def parse_lang(lang):
@@ -61,7 +63,6 @@ for file_name in glob.iglob(_ROOT + '**/*.pnml', recursive=True):
         sprite_file_name = r.group(2)
 
         print(sprite_name, end=', ')
-        # print(' Cropping purchase image of ' + sprite_name + ' in ./' + file_name.replace(_ROOT, ''))
 
         # Slice only template definition
         _from = r.end()
@@ -171,16 +172,18 @@ for _lang in list(langData.keys()):
     output = "<table class=\"ko_train_set\">"
     print('  Generate ' + _lang + ' document')
     for code_name in trainListData:
+        _spec = trainList[code_name]
+
         # Get name
         string = get_string('STR_' + code_name + '_NAME', _lang).replace('[KTS] ', '')
 
         # Get variables
-        speed          = str(trainList[code_name][0]) + ' km/h' if trainList[code_name][0] is not None and trainList[code_name][0] > 0 else ''
-        speed_designed = str(trainList[code_name][1]) + ' km/h' if trainList[code_name][1] is not None and trainList[code_name][1] > 0 else ''
-        capacity       = str(trainList[code_name][4]) if trainList[code_name][4] is not None and trainList[code_name][4] > 0 else ''
-        power          = str(trainList[code_name][6]) + ' kW' if trainList[code_name][6] is not None and trainList[code_name][6] > 0 else ''
-        weight         = str(trainList[code_name][7]) + ' t'
-        introduction   = str(trainList[code_name][8][0])
+        speed          = str(_spec[0]) + ' km/h' if _spec[0] is not None and _spec[0] > 0 else ''
+        speed_designed = str(_spec[1]) + ' km/h' if _spec[1] is not None and _spec[1] > 0 else ''
+        capacity       = str(_spec[4])           if _spec[4] is not None and _spec[4] > 0 else ''
+        power          = str(_spec[6]) + ' kW'   if _spec[6] is not None and _spec[6] > 0 else ''
+        weight         = str(_spec[7]) + ' t'
+        introduction   = str(_spec[8][0])        if _spec[8] is not None                  else ''
 
         # Change variables
         append = template
