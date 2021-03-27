@@ -1,0 +1,35 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Template
+template tmpl_K7600(x, y) {
+    [x,     y,    8,     22,    -3,   -12]
+    [x+15,  y,    21,    17,    -14,   -8]
+    [x+45,  y,    30,    12,    -16,   -8]
+    [x+95,  y,    21,    17,    -6,    -8]
+    [x+125, y,    8,     22,    -3,   -12]
+    [x+140, y,    21,    17,    -14,   -8]
+    [x+175, y,    30,    12,    -15,   -8]
+    [x+225, y,    21,    17,    -6,    -8]
+}
+
+// Cargo livery
+spriteset(set_K7600_loco_CARGO, "./src/locomotive/K7x00/K7600.png") {
+    tmpl_K7600(60, 0)
+}
+spriteset(set_K7600_purchase, "./src/locomotive/K7x00/K7600.png") {
+    tmpl_purchase_for_singlehead(0, 0)
+}
+
+// A-train (Jeongseon Arirang)
+spriteset(set_K7600_loco_A_TRAIN, "./src/locomotive/K7x00/K7600.png") {
+    tmpl_K7600(60, 30)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K7600_purchase, cargo_subtype) {
+    set_K7600_loco_CARGO;
+}

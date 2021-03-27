@@ -5,20 +5,20 @@
 ------------------------------------------------------------------------------*/
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
-    0:    set_K7x00_loco_RED_WHITE_BLUE;
-    1:    set_K7x00_loco_CARGO;
-    2:    set_K7x00_loco_GREEN_YELLOW;
-    3:    set_K7x00_loco_BLUE_WHITE;
-    4:    set_K7x00_loco_BLACK_ORANGE;
+    0:    set_K7x00_RED_WHITE_BLUE;
+    1:    set_K7x00_CARGO;
+    2:    set_K7x00_GREEN_YELLOW;
+    3:    set_K7x00_BLUE_WHITE;
+    4:    set_K7x00_BLACK_ORANGE;
     // 5:    set_ERRSPRITE;    // RESERVED
-    6:    set_K7x00_loco_HAERANG;
+    6:    set_K7x00_HAERANG;
     // 7:    set_ERRSPRITE;    // RESERVED
     // 8:    set_ERRSPRITE;    // RESERVED
     // 9:    set_ERRSPRITE;    // RESERVED
-    10:   set_K7x00_loco_S_TRAIN;
-    11:   set_K7x00_loco_S_TRAIN;
-    12:   set_K7x00_loco_G_TRAIN;
-    set_K7x00_loco_RED_WHITE_BLUE;
+    10:   set_K7x00_S_TRAIN;
+    11:   set_K7x00_S_TRAIN;
+    12:   set_K7x00_G_TRAIN;
+    set_K7x00_RED_WHITE_BLUE;
 }
 switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
     0:    return string(STR_REFIT_LIVERY_THESEDAYS);

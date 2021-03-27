@@ -59,7 +59,7 @@ item(FEAT_TRAINS, ko_train_K7x00, 5471) {
     }
     graphics {
         default:                        sw_K7x00_loco;
-        purchase:                       set_K7x00_purchase;
+        purchase:                       sw_K7x00_purchase;
 
         speed:                          sw_K7x00_speed;
         cost_factor:                    sw_K7x00_cost;
