@@ -10,20 +10,26 @@ SPEED_GENERAL(K8x00)
 COST(K8x00)
 RUNNING(K8x00)
 
-spriteset(set_K8x00_loco_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8x00.png") {   // Red & White & Blue (current)
+// Red & White & Blue (current)
+spriteset(set_K8x00_RED_WHITE_BLUE_purchase, "./src/locomotive/K8x00/K8x00.png") {
+    tmpl_purchase_for_singlehead(0, 0)
+}
+spriteset(set_K8x00_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8x00.png") {
     tmpl_loco(60, 0)
 }
-spriteset(set_K8x00_loco_GREEN_YELLOW, "./src/locomotive/K8x00/K8x00.png") {   // Green & Yellow
-    tmpl_loco(60, 30)
+
+// Green & Yellow
+spriteset(set_K8x00_GREEN_YELLOW_purchase, "./src/locomotive/K8x00/K8x00.png") {
+    tmpl_purchase_for_singlehead(0, 30)
 }
-spriteset(set_K8x00_purchase, "./src/locomotive/K8x00/K8x00.png") {
-    tmpl_purchase(0, 0)
+spriteset(set_K8x00_GREEN_YELLOW, "./src/locomotive/K8x00/K8x00.png") {
+    tmpl_loco(60, 30)
 }
 
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_K8x00_loco, cargo_subtype) {
-    1:    set_K8x00_loco_GREEN_YELLOW;
-    set_K8x00_loco_RED_WHITE_BLUE;
+    1:    set_K8x00_GREEN_YELLOW;
+    set_K8x00_RED_WHITE_BLUE;
 }
 switch(FEAT_TRAINS, SELF, sw_K8x00_cargo_subtype_text, cargo_subtype) {
     1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);

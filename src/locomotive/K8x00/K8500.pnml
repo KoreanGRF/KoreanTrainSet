@@ -11,11 +11,21 @@ COST(K8500)
 RUNNING(K8500)
 
 // K8500
-spriteset(set_K8500_loco, "./src/locomotive/K8x00/K8500.png") {
+spriteset(set_K8500, "./src/locomotive/K8x00/K8500.png") {
     tmpl_loco(60, 0)
 }
 spriteset(set_K8500_purchase, "./src/locomotive/K8x00/K8500.png") {
-    tmpl_purchase(0, 0)
+    tmpl_purchase_for_singlehead(0, 0)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K8500_purchase, cargo_subtype) {
+    set_K8500_purchase;
+}
+
+// Switch
+switch(FEAT_TRAINs, SELF, sw_K8500_loco, cargo_subtype) {
+    set_K8500;
 }
 
 // Item
@@ -59,8 +69,8 @@ item(FEAT_TRAINS, ko_train_K8500, 5485) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        set_K8500_loco;
-        purchase:                       set_K8500_purchase;
+        default:                        sw_K8500_loco;
+        purchase:                       sw_K8500_purchase;
 
         speed:                          sw_K8500_speed;
         cost_factor:                    sw_K8500_cost;

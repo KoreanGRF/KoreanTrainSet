@@ -10,25 +10,35 @@ SPEED_GENERAL(K8000)
 COST(K8000)
 RUNNING(K8000)
 
-// K8000
-spriteset(set_K8000_purchase, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_purchase(0, 0)
+// Blue & White
+spriteset(set_K8000_BLUE_WHITE_purchase, "./src/locomotive/K8x00/K8000.png") {
+    tmpl_purchase_for_singlehead(0, 0)
 }
-spriteset(set_K8000_loco_BLUE_WHITE, "./src/locomotive/K8x00/K8000.png") {   // Blue & White
+spriteset(set_K8000_BLUE_WHITE, "./src/locomotive/K8x00/K8000.png") {
     tmpl_loco(60, 0)
 }
-spriteset(set_K8000_loco_GREEN_YELLOW, "./src/locomotive/K8x00/K8000.png") {   // Green & Yellow
+
+// Green & Yellow
+spriteset(set_K8000_GREEN_YELLOW_purchase, "./src/locomotive/K8x00/K8000.png") {
+    tmpl_purchase_for_singlehead(0, 30)
+}
+spriteset(set_K8000_GREEN_YELLOW, "./src/locomotive/K8x00/K8000.png") {
     tmpl_loco(60, 30)
 }
-spriteset(set_K8000_loco_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8000.png") {   // Red & White & Blue
+
+// Red & White & Blue
+spriteset(set_K8000_RED_WHITE_BLUE_purchase, "./src/locomotive/K8x00/K8000.png") {
+    tmpl_purchase_for_singlehead(0, 60)
+}
+spriteset(set_K8000_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8000.png") {
     tmpl_loco(60, 60)
 }
 
 // Switch
-switch(FEAT_TRAINS, SELF, sw_K8000_loco, cargo_subtype) {
-    2:    set_K8000_loco_GREEN_YELLOW;
-    1:    set_K8000_loco_BLUE_WHITE;
-    set_K8000_loco_RED_WHITE_BLUE;
+switch(FEAT_TRAINS, SELF, sw_K8000, cargo_subtype) {
+    2:    set_K8000_GREEN_YELLOW;
+    1:    set_K8000_BLUE_WHITE;
+    set_K8000_RED_WHITE_BLUE;
 }
 switch(FEAT_TRAINS, SELF, sw_K8000_cargo_subtype_text, cargo_subtype) {
     1:    return string(STR_REFIT_LIVERY_1970_1983);
@@ -77,7 +87,7 @@ item(FEAT_TRAINS, ko_train_K8000, 5480) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_K8000_loco;
+        default:                        sw_K8000;
         purchase:                       set_K8000_purchase;
 
         speed:                          sw_K8000_speed;
