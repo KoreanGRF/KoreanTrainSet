@@ -5,6 +5,9 @@
 ------------------------------------------------------------------------------*/
 
 // 361K_VVVF
+spriteset(set_361K_VVVF_purchase, "./src/metro/gyeongchun/361K_VVVF.png") {
+    tmpl_metro_purchase()
+}
 spriteset(set_361K_VVVF_engineH, "./src/metro/gyeongchun/361K_VVVF.png") {
     tmpl_engine_head(0, 0)
 }
@@ -17,92 +20,8 @@ spriteset(set_361K_VVVF_wagon, "./src/metro/gyeongchun/361K_VVVF.png") {
 spriteset(set_361K_VVVF_engineT, "./src/metro/gyeongchun/361K_VVVF.png") {
     tmpl_engine_tail(0, 90)
 }
-spriteset(set_361K_VVVF_purchase, "./src/metro/gyeongchun/361K_VVVF.png") {
-    tmpl_metro_purchase()
-}
-
-// ITX-Cheongchun
-spriteset(set_ITX_CHEONGCHUN_engineH, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    [64,       0,      8,    22,     -3,   -11]
-    [64+16,    0,     21,    17,    -14,    -9]
-    [64+48,    0,     30,    12,    -17,    -6]
-    [64+97,    0,     21,    17,     -8,    -9]
-    [64+127,   0,      8,    22,     -3,   -11]
-    [64+143,   0,     21,    17,    -14,    -9]
-    [64+175,   0,     31,    12,    -17,    -6]
-    [64+224,   0,     21,    17,     -8,    -9]
-}
-spriteset(set_ITX_CHEONGCHUN_wagon_1, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    [64,       30,     8,    22,     -3,   -11]
-    [64+16,    30,    21,    17,    -14,    -9]
-    [64+48,    30,    30,    12,    -17,    -6]
-    [64+97,    30,    21,    17,     -8,    -9]
-    [64+127,   30,     8,    22,     -3,   -11]
-    [64+143,   30,    21,    17,    -14,    -9]
-    [64+175,   30,    31,    12,    -17,    -6]
-    [64+224,   30,    21,    17,     -8,    -9]
-}
-spriteset(set_ITX_CHEONGCHUN_wagon_2, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    [64,       60,     8,    22,     -3,   -11]
-    [64+16,    60,    21,    17,    -14,    -9]
-    [64+48,    60,    31,    12,    -17,    -6]
-    [64+97,    60,    21,    17,     -8,    -9]
-}
-spriteset(set_ITX_CHEONGCHUN_wagon_3, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    [64,       90,     8,    23,     -3,   -11]
-    [64+16,    90,    21,    18,    -14,   -10]
-    [64+48,    90,    31,    13,    -17,    -7]
-    [64+97,    90,    21,    18,     -8,   -10]
-    [64+127,   90,     8,    23,     -3,   -11]
-    [64+143,   90,    21,    18,    -14,   -10]
-    [64+175,   90,    30,    13,    -17,    -7]
-    [64+224,   90,    21,    18,     -8,   -10]
-}
-spriteset(set_ITX_CHEONGCHUN_wagon_4, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    [64,       120,    8,    23,     -3,   -11]
-    [64+16,    120,   21,    18,    -14,   -10]
-    [64+48,    120,   31,    13,    -17,    -7]
-    [64+97,    120,   21,    18,     -8,   -10]
-    [64+127,   120,    8,    23,     -3,   -11]
-    [64+143,   120,   21,    18,    -14,   -10]
-    [64+175,   120,   30,    13,    -17,    -7]
-    [64+224,   120,   21,    18,     -8,   -10]
-}
-spriteset(set_ITX_CHEONGCHUN_wagon_5, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    [64,       150,    8,    22,     -3,   -11]
-    [64+16,    150,   21,    17,    -14,    -9]
-    [64+48,    150,   31,    12,    -17,    -6]
-    [64+97,    150,   21,    17,     -8,    -9]
-}
-spriteset(set_ITX_CHEONGCHUN_wagon_6, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    [64,       180,    8,    22,     -3,   -11]
-    [64+16,    180,   21,    17,    -14,    -9]
-    [64+48,    180,   30,    15,    -17,    -9]
-    [64+97,    180,   21,    19,     -8,   -11]
-    [64+127,   180,    8,    22,     -3,   -11]
-    [64+143,   180,   21,    19,    -14,   -11]
-    [64+175,   180,   31,    15,    -17,    -9]
-    [64+224,   180,   21,    17,     -8,    -9]
-}
-spriteset(set_ITX_CHEONGCHUN_engineT, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    [64+127,   210,    8,    22,     -3,   -11]
-    [64+143,   210,   21,    17,    -14,    -9]
-    [64+175,   210,   30,    12,    -17,    -6]
-    [64+224,   210,   21,    17,     -8,    -9]
-    [64,       210,    8,    22,     -3,   -11]
-    [64+16,    210,   21,    17,    -14,    -9]
-    [64+48,    210,   31,    12,    -17,    -6]
-    [64+97,    210,   21,    17,     -8,    -9]
-}
-spriteset(set_ITX_CHEONGCHUN_purchase, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    tmpl_purchase_for_dualhead(0, 0)
-}
-
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_purchase, cargo_subtype) {
     set_361K_VVVF_purchase;
-}
-switch(FEAT_TRAINS, SELF, sw_ITX_CHEONGCHUN_purchase, cargo_subtype) {
-    set_ITX_CHEONGCHUN_purchase;
 }
