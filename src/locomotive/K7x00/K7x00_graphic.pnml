@@ -1,0 +1,86 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Template for 7x00
+template tmpl_K7x00(x, y) {
+    [x,     y,    8,     22,    -3,   -11]
+    [x+15,  y,   22,     17,   -14,    -9]
+    [x+45,  y,   32,     11,   -16,    -7]
+    [x+95,  y,   22,     17,    -6,    -9]
+    [x+125, y,    8,     22,    -3,   -11]
+    [x+140, y,   22,     17,   -15,    -9]
+    [x+175, y,   32,     11,   -17,    -7]
+    [x+225, y,   22,     17,    -7,    -9]
+}
+
+// Red & White & Blue (current)
+spriteset(set_K7x00_RED_WHITE_BLUE_purchase, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_purchase_for_singlehead(0, 0)
+}
+spriteset(set_K7x00_RED_WHITE_BLUE, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_K7x00(60, 0)
+}
+
+// Blue & White
+spriteset(set_K7x00_BLUE_WHITE_purchase, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_purchase_for_singlehead(0, 0)
+}
+spriteset(set_K7x00_BLUE_WHITE, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_K7x00(60, 90)
+}
+
+// Green & Yellow
+spriteset(set_K7x00_GREEN_YELLOW_purchase, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_purchase_for_singlehead(0, 120)
+}
+spriteset(set_K7x00_GREEN_YELLOW, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_K7x00(60, 120)
+}
+
+// Black & Orange
+spriteset(set_K7x00_BLACK_ORANGE_purchase, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_purchase_for_singlehead(0, 60)
+}
+spriteset(set_K7x00_BLACK_ORANGE, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_K7x00(60, 60)
+}
+
+// Cargo
+spriteset(set_K7x00_CARGO_purchase, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_purchase_for_singlehead(0, 150)
+}
+spriteset(set_K7x00_CARGO, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_K7x00(60, 150)
+}
+
+// Haerang
+spriteset(set_K7x00_HAERANG_purchase, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_purchase_for_singlehead(0, 180)
+}
+spriteset(set_K7x00_HAERANG, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_K7x00(60, 180)
+}
+
+// G-train
+spriteset(set_K7x00_G_TRAIN_purchase, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_purchase_for_singlehead(0, 210)
+}
+spriteset(set_K7x00_G_TRAIN, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_K7x00(60, 210)
+}
+
+// S-train
+spriteset(set_K7x00_S_TRAIN_purchase, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_purchase_for_singlehead(0, 240)
+}
+spriteset(set_K7x00_S_TRAIN, "./src/locomotive/K7x00/K7x00.png") {
+    tmpl_K7x00(60, 240)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K7x00_purchase, cargo_subtype) {
+    set_K7x00_RED_WHITE_BLUE_purchase;
+}

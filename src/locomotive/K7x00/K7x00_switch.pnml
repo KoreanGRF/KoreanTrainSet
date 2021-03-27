@@ -1,0 +1,38 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
+    0:    set_K7x00_loco_RED_WHITE_BLUE;
+    1:    set_K7x00_loco_CARGO;
+    2:    set_K7x00_loco_GREEN_YELLOW;
+    3:    set_K7x00_loco_BLUE_WHITE;
+    4:    set_K7x00_loco_BLACK_ORANGE;
+    // 5:    set_ERRSPRITE;    // RESERVED
+    6:    set_K7x00_loco_HAERANG;
+    // 7:    set_ERRSPRITE;    // RESERVED
+    // 8:    set_ERRSPRITE;    // RESERVED
+    // 9:    set_ERRSPRITE;    // RESERVED
+    10:   set_K7x00_loco_S_TRAIN;
+    11:   set_K7x00_loco_S_TRAIN;
+    12:   set_K7x00_loco_G_TRAIN;
+    set_K7x00_loco_RED_WHITE_BLUE;
+}
+switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
+    0:    return string(STR_REFIT_LIVERY_THESEDAYS);
+    1:    return string(STR_REFIT_LIVERY_7x00_CARGO);
+    2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
+    4:    return string(STR_REFIT_LIVERY_7x00_BLACK_ORANGE);
+    // 5:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    6:    return string(STR_REFIT_LIVERY_HAERANG);
+    // 7:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    10:   return string(STR_REFIT_LIVERY_S_TRAIN1);
+    11:   return string(STR_REFIT_LIVERY_S_TRAIN2);
+    12:   return string(STR_REFIT_LIVERY_G_TRAIN);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
+}

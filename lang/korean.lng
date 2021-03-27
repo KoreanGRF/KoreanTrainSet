@@ -79,7 +79,7 @@ STR_UIJEONGBU_NAME                               :[KTS] 의정부경전철
 # Liveries
 STR_REFIT_LIVERY_THESEDAYS                       : (현재 도색)
 STR_REFIT_LIVERY_7x00_CARGO                      : (화물 도색)
-STR_REFIT_LIVERY_7x00_TIGER                      : (철도청 초기 도색: 검정 & 주황)
+STR_REFIT_LIVERY_7x00_BLACK_ORANGE               : (철도청 초기 도색: 검정 & 주황)
 STR_REFIT_LIVERY_7x00_FIRST_KORAIL               : (철도청 초기 도색: 청색 & 백색)
 STR_REFIT_LIVERY_GREEN_YELLOW                    : (철도청 구 도색: 녹색 & 황색)
 STR_REFIT_LIVERY_1970_1983                       : (1970~1983년 도색)

@@ -11,85 +11,11 @@ SPEED_GENERAL(K7x00)
 COST(K7x00)
 RUNNING(K7x00)
 
-// Template for 7x00
-template tmpl_K7x00(x, y) {
-    [x,     y,    8,     22,    -3,   -11]
-    [x+15,  y,   22,     17,   -14,    -9]
-    [x+45,  y,   32,     11,   -16,    -7]
-    [x+95,  y,   22,     17,    -6,    -9]
-    [x+125, y,    8,     22,    -3,   -11]
-    [x+140, y,   22,     17,   -15,    -9]
-    [x+175, y,   32,     11,   -17,    -7]
-    [x+225, y,   22,     17,    -7,    -9]
-}
+// Graphics
+#include "K7x00_graphic.pnml"
 
-// 7x00
-spriteset(set_K7x00_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_purchase_detail(0, 0, 50, 11, -25, -6)
-}
-spriteset(set_K7x00_loco_RED_WHITE_BLUE, "./src/locomotive/K7x00/K7x00.png") {   // Red & White & Blue (current)
-    tmpl_K7x00(60, 0)
-}
-spriteset(set_K7x00_loco_BLUE_WHITE, "./src/locomotive/K7x00/K7x00.png") {   // Blue & White
-    tmpl_K7x00(60, 90)
-}
-spriteset(set_K7x00_loco_GREEN_YELLOW, "./src/locomotive/K7x00/K7x00.png") {   // Green & Yellow
-    tmpl_K7x00(60, 120)
-}
-spriteset(set_K7x00_loco_TIGER, "./src/locomotive/K7x00/K7x00.png") {   // Black & Orange
-    tmpl_K7x00(60, 60)
-}
-spriteset(set_K7x00_loco_CARGO, "./src/locomotive/K7x00/K7x00.png") {   // Cargo
-    tmpl_K7x00(60, 150)
-}
-spriteset(set_K7x00_loco_HAERANG, "./src/locomotive/K7x00/K7x00.png") {   // Haerang
-    tmpl_K7x00(60, 180)
-}
-spriteset(set_K7x00_loco_G_TRAIN, "./src/locomotive/K7x00/K7x00.png") {   // G-train
-    tmpl_K7x00(60, 210)
-}
-spriteset(set_K7x00_loco_S_TRAIN, "./src/locomotive/K7x00/K7x00.png") {   // S-train
-    tmpl_K7x00(60, 240)
-}
-
-// 7600 cargo
-spriteset(set_K7600_loco_cargo, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_loco(60, 270)
-}
-
-// Refit Paintings
-switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
-    0:    set_K7x00_loco_RED_WHITE_BLUE;
-    1:    set_K7x00_loco_CARGO;
-    2:    set_K7x00_loco_GREEN_YELLOW;
-    3:    set_K7x00_loco_BLUE_WHITE;
-    4:    set_K7x00_loco_TIGER;
-    // 5:    set_ERRSPRITE;    // RESERVED
-    6:    set_K7x00_loco_HAERANG;
-    // 7:    set_ERRSPRITE;    // RESERVED
-    // 8:    set_ERRSPRITE;    // RESERVED
-    // 9:    set_ERRSPRITE;    // RESERVED
-    10:   set_K7x00_loco_S_TRAIN;
-    11:   set_K7x00_loco_S_TRAIN;
-    12:   set_K7x00_loco_G_TRAIN;
-    set_K7x00_loco_RED_WHITE_BLUE;
-}
-switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
-    0:    return string(STR_REFIT_LIVERY_THESEDAYS);
-    1:    return string(STR_REFIT_LIVERY_7x00_CARGO);
-    2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
-    3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
-    4:    return string(STR_REFIT_LIVERY_7x00_TIGER);
-    // 5:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    6:    return string(STR_REFIT_LIVERY_HAERANG);
-    // 7:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    10:   return string(STR_REFIT_LIVERY_S_TRAIN1);
-    11:   return string(STR_REFIT_LIVERY_S_TRAIN2);
-    12:   return string(STR_REFIT_LIVERY_G_TRAIN);
-    return string(STR_REFIT_LIVERY_THESEDAYS);
-}
+// Switch
+#include "K7x00_switch.pnml"
 
 // item
 item(FEAT_TRAINS, ko_train_K7x00, 5471) {
