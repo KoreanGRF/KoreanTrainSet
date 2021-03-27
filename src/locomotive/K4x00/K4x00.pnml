@@ -11,6 +11,12 @@ SPEED_GENERAL(K4x00)
 COST(K4x00)
 RUNNING(K4x00)
 
+// Graphics
+#include "K4x00_graphic.pnml"
+
+// Switch
+#include "K4x00_switch.pnml"
+
 // Item
 item(FEAT_TRAINS, ko_train_K4x00, 5440) {
     property {
@@ -54,7 +60,7 @@ item(FEAT_TRAINS, ko_train_K4x00, 5440) {
     }
     graphics {
         default:                        sw_K4x00_loco;
-        purchase:                       set_K4x00_purchase;
+        purchase:                       sw_K4x00_purchase;
 
         speed:                          sw_K4x00_speed;
         cost_factor:                    sw_K4x00_cost;
