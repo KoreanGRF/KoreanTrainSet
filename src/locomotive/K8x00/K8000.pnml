@@ -36,7 +36,7 @@ spriteset(set_K8000_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8000.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_K8000_purchase, cargo_subtype) {
-    set_K8000_BLUE_WHITE_purchase;
+    set_K8000_RED_WHITE_BLUE_purchase;
 }
 
 
