@@ -26,7 +26,7 @@ spriteset(set_K7600_CARGO, "./src/locomotive/K7x00/K7600.png") {
 
 // A-train (Jeongseon Arirang)
 spriteset(set_K7600_A_TRAIN_purchase, "./src/locomotive/K7x00/K7600.png") {
-    tmpl_purchase_for_singlehead(0, 0)
+    tmpl_purchase_for_singlehead(0, 30)
 }
 spriteset(set_K7600_A_TRAIN, "./src/locomotive/K7x00/K7600.png") {
     tmpl_K7600(60, 30)
