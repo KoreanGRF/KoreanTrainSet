@@ -18,21 +18,21 @@ template tmpl_K4x00(x, y) {
 
 // K4x00
 spriteset(set_K4x00_1_purchase, "./src/locomotive/K4x00/K4x00.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
+    tmpl_purchase_for_singlehead(0, 0)
 }
 spriteset(set_K4x00_1_loco, "./src/locomotive/K4x00/K4x00.png") {   // Green & Yellow
     tmpl_K4x00(60, 0)
 }
 
 spriteset(set_K4x00_2_purchase, "./src/locomotive/K4x00/K4x00.png") {
-    tmpl_purchase_detail(0, 30, 50, 12, -25, -6)
+    tmpl_purchase_for_singlehead(0, 30)
 }
 spriteset(set_K4x00_2_loco, "./src/locomotive/K4x00/K4x00.png") {   // Red & White & Blue print
     tmpl_K4x00(60, 30)
 }
 
 spriteset(set_K4x00_V_TRAIN_purchase, "./src/locomotive/K4x00/K4x00.png") {
-    tmpl_purchase_detail(0, 60, 50, 12, -25, -6)
+    tmpl_purchase_for_singlehead(0, 60)
 }
 spriteset(set_K4x00_V_TRAIN_loco, "./src/locomotive/K4x00/K4x00.png") {   // V-train
     tmpl_K4x00(60, 60)
