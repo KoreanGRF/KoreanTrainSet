@@ -161,14 +161,14 @@ for code_name in notInTrainList:
 # Make a table
 template = """
     <tr data-veh_id="{{code_name}}">
-        <td class="align-center">{{refit}}</td>
-        <td>{{string}}</td>
-        <td class="align-center">{{speed}}</td>
-        <td class="align-center">{{speed_designed}}</td>
-        <td class="align-center">{{capacity}}</td>
-        <td class="align-center">{{power}}</td>
-        <td class="align-center">{{weight}}</td>
-        <td class="align-center">{{introduction}}</td>
+        <td class="refit">{{refit}}</td>
+        <td class="name">{{string}}</td>
+        <td class="speed">{{speed}}</td>
+        <td class="speed_designed">{{speed_designed}}</td>
+        <td class="capacity">{{capacity}}</td>
+        <td class="power">{{power}}</td>
+        <td class="weight">{{weight}}</td>
+        <td class="introduction">{{introduction}}</td>
     </tr>"""
 
 # Generate doc file by language
