@@ -36,7 +36,9 @@ DOC_GENERATE        ?= $(DOC_FILE)
 BUNDLE_FILES        ?= $(GRF_FILE) $(DOC_FILE)
 
 # target 'all' must be first target
-all: $(GRF_GENERATE) doc bundle_tar
+all: build
+
+build: $(GRF_GENERATE) doc bundle_tar
 	@echo "... $(VERSION) has built"
 
 # Generate *.txt from *.ptxt
@@ -56,8 +58,6 @@ download_page: spec.pnml
 	@$(PYTHON) ./src/generate_doc.py
 clean::
 	@-rm -rf $@
-
-
 
 # Documents
 doc: generated $(DOC_GENERATE) $(GRF_GENERATE) download_page
@@ -129,3 +129,9 @@ clean::
 clean::
 	@-rm -rf ./.nmlcache
 	@-rm -rf ./src/__pycache__
+
+# Install (Temporarily used for developments)
+dev: build
+	@cp -r ./generated/$(DIR_NAME).tar /mnt/d/Games/OpenTTD/Nightly/newgrf/Korean_Train_Set-dev.tar
+clean::
+	@-rm -rf /mnt/d/Games/OpenTTD/Nightly/newgrf/Korean_Train_Set-dev.tar
