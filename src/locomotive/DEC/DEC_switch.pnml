@@ -9,13 +9,11 @@
  
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_DEC_engineH, cargo_subtype) {
-    0:  set_DEC_3_engineH;
     1:  set_DEC_2_engineH;
     2:  set_DEC_1_engineH;
     set_DEC_3_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_DEC_engineT, cargo_subtype) {
-    0:  set_DEC_3_engineT;
     1:  set_DEC_2_engineT;
     2:  set_DEC_1_engineT;
     set_DEC_3_engineT;

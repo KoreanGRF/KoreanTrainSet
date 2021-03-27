@@ -8,8 +8,8 @@
  */
 
 // Graphics
-spriteset(set_DEC_purchase, "./src/locomotive/DEC/DEC.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -12, -7)
+spriteset(set_DEC_1_purchase, "./src/locomotive/DEC/DEC.png") {
+    tmpl_purchase_for_dualhead(0, 0)
 }
 spriteset(set_DEC_1_engineH, "./src/locomotive/DEC/DEC.png") {
     tmpl_NDC(60, 0)
@@ -20,6 +20,10 @@ spriteset(set_DEC_1_engineT, "./src/locomotive/DEC/DEC.png") {
 spriteset(set_DEC_1_wagon, "./src/locomotive/DEC/DEC.png") {
     tmpl_wagon_by_coor(60, 60)
 }
+
+spriteset(set_DEC_2_purchase, "./src/locomotive/DEC/DEC.png") {
+    tmpl_purchase_for_dualhead(0, 90)
+}
 spriteset(set_DEC_2_engineH, "./src/locomotive/DEC/DEC.png") {
     tmpl_NDC(60, 90)
 }
@@ -28,6 +32,10 @@ spriteset(set_DEC_2_engineT, "./src/locomotive/DEC/DEC.png") {
 }
 spriteset(set_DEC_2_wagon, "./src/locomotive/DEC/DEC.png") {
     tmpl_wagon_by_coor(60, 150)
+}
+
+spriteset(set_DEC_3_purchase, "./src/locomotive/DEC/DEC.png") {
+    tmpl_purchase_for_dualhead(0, 180)
 }
 spriteset(set_DEC_3_engineH, "./src/locomotive/DEC/DEC.png") {
     tmpl_NDC(60, 180)
@@ -41,5 +49,5 @@ spriteset(set_DEC_3_wagon, "./src/locomotive/DEC/DEC.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_DEC_purchase, cargo_subtype) {
-    set_DEC_purchase;
+    set_DEC_3_purchase;
 }
