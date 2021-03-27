@@ -24,7 +24,7 @@ switch(FEAT_TRAINS, SELF, sw_K8500_purchase, cargo_subtype) {
 }
 
 // Switch
-switch(FEAT_TRAINs, SELF, sw_K8500_loco, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_K8500_loco, cargo_subtype) {
     set_K8500;
 }
 

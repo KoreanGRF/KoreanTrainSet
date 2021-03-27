@@ -26,6 +26,11 @@ spriteset(set_K8x00_GREEN_YELLOW, "./src/locomotive/K8x00/K8x00.png") {
     tmpl_loco(60, 30)
 }
 
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K8x00_purchase, cargo_subtype) {
+    set_K8x00_RED_WHITE_BLUE_purchase;
+}
+
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_K8x00_loco, cargo_subtype) {
     1:    set_K8x00_GREEN_YELLOW;
@@ -78,7 +83,7 @@ item(FEAT_TRAINS, ko_train_K8x00, 5481) {
     }
     graphics {
         default:                        sw_K8x00_loco;
-        purchase:                       set_K8x00_purchase;
+        purchase:                       sw_K8x00_purchase;
 
         speed:                          sw_K8x00_speed;
         cost_factor:                    sw_K8x00_cost;

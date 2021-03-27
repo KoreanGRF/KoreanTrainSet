@@ -17,19 +17,22 @@ template tmpl_K7600(x, y) {
 }
 
 // Cargo livery
-spriteset(set_K7600_loco_CARGO, "./src/locomotive/K7x00/K7600.png") {
-    tmpl_K7600(60, 0)
-}
-spriteset(set_K7600_purchase, "./src/locomotive/K7x00/K7600.png") {
+spriteset(set_K7600_CARGO_purchase, "./src/locomotive/K7x00/K7600.png") {
     tmpl_purchase_for_singlehead(0, 0)
+}
+spriteset(set_K7600_CARGO, "./src/locomotive/K7x00/K7600.png") {
+    tmpl_K7600(60, 0)
 }
 
 // A-train (Jeongseon Arirang)
-spriteset(set_K7600_loco_A_TRAIN, "./src/locomotive/K7x00/K7600.png") {
+spriteset(set_K7600_A_TRAIN_purchase, "./src/locomotive/K7x00/K7600.png") {
+    tmpl_purchase_for_singlehead(0, 0)
+}
+spriteset(set_K7600_A_TRAIN, "./src/locomotive/K7x00/K7600.png") {
     tmpl_K7600(60, 30)
 }
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_K7600_purchase, cargo_subtype) {
-    set_K7600_loco_CARGO;
+    set_K7600_CARGO_purchase;
 }

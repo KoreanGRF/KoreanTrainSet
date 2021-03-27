@@ -34,6 +34,12 @@ spriteset(set_K8000_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8000.png") {
     tmpl_loco(60, 60)
 }
 
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K8000_purchase, cargo_subtype) {
+    set_K8000_BLUE_WHITE_purchase;
+}
+
+
 // Switch
 switch(FEAT_TRAINS, SELF, sw_K8000, cargo_subtype) {
     2:    set_K8000_GREEN_YELLOW;
@@ -88,7 +94,7 @@ item(FEAT_TRAINS, ko_train_K8000, 5480) {
     }
     graphics {
         default:                        sw_K8000;
-        purchase:                       set_K8000_purchase;
+        purchase:                       sw_K8000_purchase;
 
         speed:                          sw_K8000_speed;
         cost_factor:                    sw_K8000_cost;
