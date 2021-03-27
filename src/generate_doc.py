@@ -94,8 +94,8 @@ for file_name in glob.iglob(_ROOT + '**/*.pnml', recursive=True):
             w = 50
             h = 15
         
-        # tmpl_purchase(x, y), tmpl_purchase_for_dualhead(x, y)
-        elif template_name == 'tmpl_purchase' or template_name == 'tmpl_purchase_for_dualhead':
+        # tmpl_purchase_for_singlehead(x, y), tmpl_purchase_for_dualhead(x, y)
+        elif template_name == 'tmpl_purchase_for_singlehead' or template_name == 'tmpl_purchase_for_dualhead':
             w = 50
             h = 15
 
