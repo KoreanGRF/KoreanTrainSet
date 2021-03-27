@@ -27,6 +27,9 @@ template tmpl_KTX2N_engine_r(x, y) {
 }
 
 // KTX2N (KTX-Sancheon)
+spriteset(set_KTX2N_purchase, "./src/locomotive/KTX/KTX2N.png") {
+    tmpl_purchase_for_dualhead(0, 0)
+}
 spriteset(set_KTX2N_engineH, "./src/locomotive/KTX/KTX2N.png") {   // PC1
     tmpl_KTX2N_engine(60, 0)
 }
@@ -50,12 +53,17 @@ spriteset(set_KTX2N_engineT, "./src/locomotive/KTX/KTX2N.png") {   // PC2
 }
 
 // KTX-Sancheon for 2018 Pyeongchang Olympic
+spriteset(set_KTX2N_PEYONGCHANG_purchase, "./src/locomotive/KTX/KTX2N_PYEONGCHANG.png") {
+    tmpl_purchase_for_dualhead(0, 0)
+}
 spriteset(set_KTX2N_PYEONGCHANG_engineH, "./src/locomotive/KTX/KTX2N_PYEONGCHANG.png") {   // PC1
     tmpl_KTX2N_engine(60, 0)
 }
 spriteset(set_KTX2N_PYEONGCHANG_engineT, "./src/locomotive/KTX/KTX2N_PYEONGCHANG.png") {   // PC2
     tmpl_KTX2N_engine_r(60, 30)
 }
-spriteset(set_KTX2N_purchase, "./src/locomotive/KTX/KTX2N.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_KTX2N_purchase, cargo_subtype) {
+    set_KTX2N_purchase;
 }

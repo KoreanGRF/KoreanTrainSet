@@ -5,6 +5,9 @@
 ------------------------------------------------------------------------------*/
 
 // SRT
+spriteset(set_SRT_purchase, "./src/locomotive/KTX/SRT.png") {
+    tmpl_purchase_for_dualhead(0, 0)
+}
 spriteset(set_SRT_engineH, "./src/locomotive/KTX/SRT.png") {   // PC1
     tmpl_KTX2N_engine(60, 0)
 }
@@ -26,6 +29,8 @@ spriteset(set_SRT_wagon_8, "./src/locomotive/KTX/SRT.png") {   // T8
 spriteset(set_SRT_engineT, "./src/locomotive/KTX/SRT.png") {   // PC2
     tmpl_KTX2N_engine_r(60, 150)
 }
-spriteset(set_SRT_purchase, "./src/locomotive/KTX/SRT.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_SRT_purchase, cargo_subtype) {
+    set_SRT_purchase;
 }

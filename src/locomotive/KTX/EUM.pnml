@@ -62,7 +62,7 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
     }
     graphics {
         default:                        sw_EUM_engine;
-        purchase:                       set_EUM_purchase;
+        purchase:                       sw_EUM_purchase;
 
         speed:                          sw_EUM_speed;
         cost_factor:                    sw_EUM_cost;

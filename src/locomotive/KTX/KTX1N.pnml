@@ -62,7 +62,7 @@ item(FEAT_TRAINS, ko_train_KTX1N, 5551) {
     }
     graphics {
         default:                        sw_KTX1N_engine;
-        purchase:                       set_KTX1N_purchase;
+        purchase:                       sw_KTX1N_purchase;
 
         speed:                          sw_KTX1N_speed;
         cost_factor:                    sw_KTX1N_cost;

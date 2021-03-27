@@ -5,6 +5,9 @@
 ------------------------------------------------------------------------------*/
 
 // KTX1N
+spriteset(set_KTX1N_purchase, "./src/locomotive/KTX/KTX1N.png") {
+    tmpl_purchase_for_dualhead(0, 0)
+}
 spriteset(set_KTX1N_engineH, "./src/locomotive/KTX/KTX1N.png") {   // PC1
     [ 60,    0,     8,   23,     -3,    -11]
     [ 75,    0,    22,   16,    -15,     -7]
@@ -43,6 +46,8 @@ spriteset(set_KTX1N_engineT, "./src/locomotive/KTX/KTX1N.png") {   // PC2
     [105,    180,    33,    14,   -18,   -10]
     [155,    180,    22,    16,    -6,    -7]
 }
-spriteset(set_KTX1N_purchase, "./src/locomotive/KTX/KTX1N.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_KTX1N_purchase, cargo_subtype) {
+    set_KTX1N_purchase;
 }

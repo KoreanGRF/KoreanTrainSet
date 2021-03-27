@@ -62,7 +62,7 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
     }
     graphics {
         default:                        sw_SRT_engine;
-        purchase:                       set_SRT_purchase;
+        purchase:                       sw_SRT_purchase;
 
         speed:                          sw_SRT_speed;
         cost_factor:                    sw_SRT_cost;
