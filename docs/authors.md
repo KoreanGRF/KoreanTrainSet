@@ -10,11 +10,11 @@
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K4x00/K4x00.png?raw=true) | ``K4x00`` | Original: unknown<br />Las | [https://cafe.naver.com/ottd/10534](https://cafe.naver.com/ottd/10534) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K7x00/A-train_wagon.png?raw=true) | A-train and its wagon | [@kiwitreekor](https://github.com/kiwitreekor), [@kimgas](https://github.com/kimgas) | [#15](https://github.com/KoreanGRF/KoreanTrainSet/issues/15) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K7x00/K7000.png?raw=true) | ``K7000`` | Modified by Las | [https://cafe.naver.com/ottd/10534](https://cafe.naver.com/ottd/10534) |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K7x00/K7600.png?raw=true) | ``K7x00`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K7x00/K7x00.png?raw=true) | ``K7600`` | [@kiwitreekor](https://github.com/kiwitreekor) | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K7x00/K7x00.png?raw=true) | ``K7x00`` | [@kiwitreekor](https://github.com/kiwitreekor) | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K7x00/K7600.png?raw=true) | ``K7600`` | skyu | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K8x00/K8000.png?raw=true) | ``K8000`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K8x00/K8500.png?raw=true) | ``K8x00`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K8x00/K8x00.png?raw=true) | ``K8500`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K8x00/K8x00.png?raw=true) | ``K8x00`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/K8x00/K8500.png?raw=true) | ``K8500`` | skyu | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/KTX/EUM.png?raw=true) | ``EUM`` | skyu | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/KTX/KTX1N.png?raw=true) | ``KTX1N`` | skyu | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/KTX/KTX2N.png?raw=true) | ``KTX2N`` | Las | |
