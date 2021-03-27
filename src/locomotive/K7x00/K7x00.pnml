@@ -45,10 +45,10 @@ spriteset(set_K7x00_loco_CARGO, "./src/locomotive/K7x00/K7x00.png") {   // Cargo
 spriteset(set_K7x00_loco_HAERANG, "./src/locomotive/K7x00/K7x00.png") {   // Haerang
     tmpl_K7x00(60, 180)
 }
-spriteset(set_K7x00_loco_GTRAIN, "./src/locomotive/K7x00/K7x00.png") {   // G-train
+spriteset(set_K7x00_loco_G_TRAIN, "./src/locomotive/K7x00/K7x00.png") {   // G-train
     tmpl_K7x00(60, 210)
 }
-spriteset(set_K7x00_loco_STRAIN, "./src/locomotive/K7x00/K7x00.png") {   // S-train
+spriteset(set_K7x00_loco_S_TRAIN, "./src/locomotive/K7x00/K7x00.png") {   // S-train
     tmpl_K7x00(60, 240)
 }
 
@@ -69,9 +69,9 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
     // 7:    set_ERRSPRITE;    // RESERVED
     // 8:    set_ERRSPRITE;    // RESERVED
     // 9:    set_ERRSPRITE;    // RESERVED
-    10:   set_K7x00_loco_STRAIN;
-    11:   set_K7x00_loco_STRAIN;
-    12:   set_K7x00_loco_GTRAIN;
+    10:   set_K7x00_loco_S_TRAIN;
+    11:   set_K7x00_loco_S_TRAIN;
+    12:   set_K7x00_loco_G_TRAIN;
     set_K7x00_loco_RED_WHITE_BLUE;
 }
 switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
@@ -85,9 +85,9 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
     // 7:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    10:   return string(STR_REFIT_LIVERY_STRAIN1);
-    11:   return string(STR_REFIT_LIVERY_STRAIN2);
-    12:   return string(STR_REFIT_LIVERY_GTRAIN);
+    10:   return string(STR_REFIT_LIVERY_S_TRAIN1);
+    11:   return string(STR_REFIT_LIVERY_S_TRAIN2);
+    12:   return string(STR_REFIT_LIVERY_G_TRAIN);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 

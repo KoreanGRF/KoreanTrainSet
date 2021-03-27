@@ -61,32 +61,32 @@ spriteset(set_HAERANG_CAFE_wagon, "./src/wagon/mugunghwa_car/Haerang.png") {
 }
 
 // G-train
-spriteset(set_GTRAIN_wagon1, "./src/wagon/mugunghwa_car/G-train.png") {
+spriteset(set_G_TRAIN_wagon1, "./src/wagon/mugunghwa_car/G-train.png") {
     tmpl_wagon_by_coor(0, 0)
 }
-spriteset(set_GTRAIN_wagon2, "./src/wagon/mugunghwa_car/G-train.png") {
+spriteset(set_G_TRAIN_wagon2, "./src/wagon/mugunghwa_car/G-train.png") {
     tmpl_wagon_by_coor(0, 30)
 }
-spriteset(set_GTRAIN_wagon3, "./src/wagon/mugunghwa_car/G-train.png") {
+spriteset(set_G_TRAIN_wagon3, "./src/wagon/mugunghwa_car/G-train.png") {
     tmpl_wagon_by_coor(0, 60)
 }
-spriteset(set_GTRAIN_wagon4, "./src/wagon/mugunghwa_car/G-train.png") {
+spriteset(set_G_TRAIN_wagon4, "./src/wagon/mugunghwa_car/G-train.png") {
     tmpl_wagon_by_coor(0, 90)
 }
-spriteset(set_GTRAIN_wagon5, "./src/wagon/mugunghwa_car/G-train.png") {
+spriteset(set_G_TRAIN_wagon5, "./src/wagon/mugunghwa_car/G-train.png") {
     tmpl_wagon_by_coor(0, 120)
 }
 
 // S-train
-spriteset(set_STRAIN_wagon1, "./src/wagon/mugunghwa_car/S-train.png") {
+spriteset(set_S_TRAIN_wagon1, "./src/wagon/mugunghwa_car/S-train.png") {
     tmpl_wagon_by_coor(0, 0)
 }
-spriteset(set_STRAIN_wagon2, "./src/wagon/mugunghwa_car/S-train.png") {
+spriteset(set_S_TRAIN_wagon2, "./src/wagon/mugunghwa_car/S-train.png") {
     tmpl_wagon_by_coor(0, 60)
 }
 
 // for A-train
-spriteset(set_MUGUNGHWA_CAR_wagon_ATRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's wagon
+spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's wagon
     tmpl_wagon_by_coor(0, 30)
 }
 
@@ -94,19 +94,19 @@ spriteset(set_MUGUNGHWA_CAR_wagon_ATRAIN, "./src/locomotive/K7x00/A-train_wagon.
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_HAERANG, 1) {   // for Haerang
     set_HAERANG_wagon;
 }
-switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_STRAIN1, 1) {   // for S-train#1
-    set_STRAIN_wagon1;
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN1, 1) {   // for S-train#1
+    set_S_TRAIN_wagon1;
 }
-switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_STRAIN2, 1) {   // for S-train#2
-    set_STRAIN_wagon2;
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN2, 1) {   // for S-train#2
+    set_S_TRAIN_wagon2;
 }
-switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_GTRAIN, position_in_consist % 5) {   // for G-train
-    1:    set_GTRAIN_wagon1;
-    2:    set_GTRAIN_wagon2;
-    3:    set_GTRAIN_wagon3;
-    4:    set_GTRAIN_wagon4;
-    0:    set_GTRAIN_wagon5;
-    set_GTRAIN_wagon1;
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_G_TRAIN, position_in_consist % 5) {   // for G-train
+    1:    set_G_TRAIN_wagon1;
+    2:    set_G_TRAIN_wagon2;
+    3:    set_G_TRAIN_wagon3;
+    4:    set_G_TRAIN_wagon4;
+    0:    set_G_TRAIN_wagon5;
+    set_G_TRAIN_wagon1;
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_normal, cargo_subtype) {
     1: set_MUGUNGHWA_CAR_wagon_A;
@@ -119,13 +119,13 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_normal, cargo_subtype) {
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_K7x00, cargo_subtype) {
     6:    sw_MUGUNGHWA_CAR_wagon_HAERANG;   // Haerang
-    10:   sw_MUGUNGHWA_CAR_wagon_STRAIN1;   // S-train#1
-    11:   sw_MUGUNGHWA_CAR_wagon_STRAIN2;   // S-train#2
-    12:   sw_MUGUNGHWA_CAR_wagon_GTRAIN;    // G-train
+    10:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN1;   // S-train#1
+    11:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN2;   // S-train#2
+    12:   sw_MUGUNGHWA_CAR_wagon_G_TRAIN;    // G-train
     sw_MUGUNGHWA_CAR_wagon_normal;          // etc
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_K7600, cargo_subtype) {
-    13:    set_MUGUNGHWA_CAR_wagon_ATRAIN;  // A-train
+    13:    set_MUGUNGHWA_CAR_wagon_A_TRAIN;  // A-train
     sw_MUGUNGHWA_CAR_wagon_normal;          // etc
 }
 switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_CAR_wagon, vehicle_type_id) {
@@ -145,13 +145,13 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text_normal, cargo_subtype) {
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text_K7x00, cargo_subtype) {
     6:    return string(STR_REFIT_LIVERY_HAERANG);
-    10:   return string(STR_REFIT_LIVERY_STRAIN1);
-    11:   return string(STR_REFIT_LIVERY_STRAIN2);
-    12:   return string(STR_REFIT_LIVERY_GTRAIN);
+    10:   return string(STR_REFIT_LIVERY_S_TRAIN1);
+    11:   return string(STR_REFIT_LIVERY_S_TRAIN2);
+    12:   return string(STR_REFIT_LIVERY_G_TRAIN);
     sw_MUGUNGHWA_CAR_subtype_text_normal;
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text_K7600, cargo_subtype) {
-    13:    return string(STR_REFIT_LIVERY_K7600_ATRAIN);
+    13:    return string(STR_REFIT_LIVERY_K7600_A_TRAIN);
     sw_MUGUNGHWA_CAR_subtype_text_normal;
 }
 switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_CAR_subtype_text, vehicle_type_id) {

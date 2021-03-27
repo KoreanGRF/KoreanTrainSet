@@ -24,7 +24,7 @@ template tmpl_K7600(x, y) {
 spriteset(set_K7600_loco_CARGO, "./src/locomotive/K7x00/K7600.png") {   // Cargo livery
     tmpl_K7600(60, 0)
 }
-spriteset(set_K7600_loco_ATRAIN, "./src/locomotive/K7x00/K7600.png") {   // A-train (Jeongseon Arirang)
+spriteset(set_K7600_loco_A_TRAIN, "./src/locomotive/K7x00/K7600.png") {   // A-train (Jeongseon Arirang)
     tmpl_K7600(60, 30)
 }
 spriteset(set_K7600_purchase, "./src/locomotive/K7x00/K7600.png") {
@@ -33,11 +33,11 @@ spriteset(set_K7600_purchase, "./src/locomotive/K7x00/K7600.png") {
 
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_K7600_loco, cargo_subtype) {
-    13:    set_K7600_loco_ATRAIN;
+    13:    set_K7600_loco_A_TRAIN;
     set_K7600_loco_CARGO;
 }
 switch(FEAT_TRAINS, SELF, sw_K7600_cargo_subtype_text, cargo_subtype) {
-    13:    return string(STR_REFIT_LIVERY_K7600_ATRAIN);
+    13:    return string(STR_REFIT_LIVERY_K7600_A_TRAIN);
     return string(STR_REFIT_LIVERY_7x00_CARGO);
 }
 
