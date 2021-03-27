@@ -22,13 +22,10 @@ template tmpl_K4x00(x, y) {
     [x+175,  y,  23,  12, -12,  -8]
     [x+225,  y,  18,  14,  -5,  -6]
 }
-template tmpl_K4x00_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 50, 12, -25, -6)
-}
 
 // K4x00
 spriteset(set_K4x00_purchase, "./src/locomotive/K4x00/K4x00.png") {
-    tmpl_K4x00_purchase(0, 0)
+    tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
 }
 spriteset(set_K4x00A_loco, "./src/locomotive/K4x00/K4x00.png") {   // Green & Yellow
     tmpl_K4x00(60, 0)

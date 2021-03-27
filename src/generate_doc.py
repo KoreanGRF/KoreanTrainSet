@@ -54,40 +54,58 @@ for file_name in glob.iglob(_ROOT + '**/*.pnml', recursive=True):
     f = open(file_name, 'r')
     pnml_content = f.read()
 
-    # Find purchase block
-    rst = re.finditer('spriteset\(set_(.+?)_purchase,(?:\s+)"(.+?)"\) \{\n\s+(tmpl_purchase(?:.*?)\(0, (\d+)(, (\d+), (\d+), (\-[0-9]+), (\-[0-9]+))?\)|tmpl_metro_purchase\(\))\n}', pnml_content)
-
+    # Find purchase image block
+    rst = re.finditer('spriteset\(set_(.+?)_purchase,(?:\s+)"(.+?)"\) {', pnml_content)
     for r in rst:
-        sprite_name = r.group(1)         # (eg) 1K_RHEO_FIRST_1
-        sprite_file_name = r.group(2)    # (eg) (ROOT)src/metro/seoul1+/1K_RHEO_FIRST_1.png
+        sprite_name      = r.group(1)
+        sprite_file_name = r.group(2)
+
         print(sprite_name, end=', ')
         # print(' Cropping purchase image of ' + sprite_name + ' in ./' + file_name.replace(_ROOT, ''))
+
+        # Slice only template definition
+        _from = r.end()
+        _to   = pnml_content.find('}', _from+1)
+        if _to == -1:
+            continue
+
+        # Get template name
+        template_block = pnml_content[_from:_to].strip()
+        _from = template_block.find('(')
+        _to   = template_block.find(')')
+        template_name = template_block[0:_from].strip()
         
-        # tmpl_metro_purchse()
-        if r.group(3) == 'tmpl_metro_purchse()':
+        # Get coordinates
+        template_coords = template_block[_from+1:_to]
+        coords = [None, None, None, None, None, None]
+        coords_input = re.split(',\s*', template_coords)
+        coords[:len(coords_input)] = coords_input
+        x = coords[0]
+        y = coords[1]
+        w = coords[2]
+        h = coords[3]
+        # t = coords[4]   # Not used in this file
+        # l = coords[5]   # Not used in this file
+
+        # tmpl_metro_purchase()
+        if template_name == 'tmpl_metro_purchase':
             x = 0
             y = 0
             w = 50
             h = 15
         
-        # Locomotive template
-        else:
-            # tmpl_purchase_detail(0, y, x, h, t, l)
-            if r.group(5) != None:
-                x = 0
-                y = int(r.group(4))
-                w = int(r.group(6))
-                h = int(r.group(7))
-            
-            # tmpl_purchase(0, 0)
-            else:
-                x = 0
-                y = 0
-                w = 50
-                h = 15
+        # tmpl_purchase(x, y), tmpl_purchase_for_dualhead(x, y)
+        elif template_name == 'tmpl_purchase' or template_name == 'tmpl_purchase_for_dualhead':
+            w = 50
+            h = 15
 
+        # tmpl_purchase_detail(x, y, w, h, t, l)
+        x = int(x)
+        y = int(y)
+        w = int(w)
+        h = int(h)
         # Check image size
-        if w > 0 and h > 0:
+        if isinstance(w, int) and isinstance(h, int) and w > 0 and h > 0:
             img = Image.open(_ROOT + sprite_file_name[2:])
             
             # Check if valid image
@@ -116,7 +134,7 @@ for file_name in glob.iglob(_ROOT + '**/*.pnml', recursive=True):
             code_name = os.path.splitext(os.path.basename(file_name))[0]
             code_name = re.sub('(_graphic|_switch)$', '', code_name)
             code_name = code_name.replace("-", "_").upper()
-            code_name = re.sub(r"K(7|8)X00", r"K\1x00", code_name)
+            code_name = re.sub(r"K([2-8])X00", r"K\1x00", code_name)
 
             # Check if there is a trainList data named `code_name`
             if not code_name in trainList:

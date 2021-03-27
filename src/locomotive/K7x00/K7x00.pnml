@@ -23,12 +23,12 @@ template tmpl_K7x00(x, y) {
     [x+225, y,   22,     17,    -7,    -9]
 }
 template tmpl_K7x00_purchase(x, y) {
-    tmpl_purchase_detail(x, y, 50, 11, -25, -6)
+    
 }
 
 // 7x00
 spriteset(set_K7x00_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_K7x00_purchase(0, 0)
+    tmpl_purchase_detail(0, 0, 50, 11, -25, -6)
 }
 spriteset(set_K7x00_loco_RED_WHITE_BLUE, "./src/locomotive/K7x00/K7x00.png") {   // Red & White & Blue (current)
     tmpl_K7x00(60, 0)
