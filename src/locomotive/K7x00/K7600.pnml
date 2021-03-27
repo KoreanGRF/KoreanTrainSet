@@ -28,7 +28,7 @@ spriteset(set_K7600_loco_A_TRAIN, "./src/locomotive/K7x00/K7600.png") {   // A-t
     tmpl_K7600(60, 30)
 }
 spriteset(set_K7600_purchase, "./src/locomotive/K7x00/K7600.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
+    tmpl_purchase_for_singlehead(0, 0)
 }
 
 // Refit Paintings
