@@ -12,7 +12,7 @@ RUNNING(K7000)
 
 // K7000
 spriteset(set_K7000_purchase, "./src/locomotive/K7x00/K7000.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -25, -6)
+    tmpl_purchase_for_singlehead(0, 0)
 }
 spriteset(set_K7000_1_loco, "./src/locomotive/K7x00/K7000.png") {   // Red & White & Blue
     [60,      0,     8,    22,    -3,    -9]
