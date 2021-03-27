@@ -161,7 +161,7 @@ for code_name in notInTrainList:
 # Make a table
 template = """
     <tr data-veh_id="{{code_name}}">
-        <td class="refit">{{refit}}</td>
+        <td class="refit"><div>{{refit}}</div></td>
         <td class="name">{{string}}</td>
         <td class="speed">{{speed}}</td>
         <td class="speed_designed">{{speed_designed}}</td>
