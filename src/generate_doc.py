@@ -33,10 +33,13 @@ def parse_lang(lang):
         langData[_key] = _val
     return langData
 
-langData = {
-    'english': parse_lang('english'),
-    'korean':  parse_lang('korean')
-}
+# Parse all language files
+langData = {}
+languageFiles = glob.iglob(_ROOT + 'lang/*.lng', recursive=True)
+for _langFile in languageFiles:
+    _lang = os.path.splitext(os.path.basename(_langFile))[0]
+    langData[_lang] = parse_lang(_lang)
+
 
 # Get string language file
 def get_string(string_id, lang):
@@ -47,12 +50,13 @@ def get_string(string_id, lang):
     else:
         if string_id in langData['english']:
             return langData['english'][string_id]
-    return '<Unknown string>'
+    return ''
 
-print('  Cropping purchase image ... ', end='')
 
 # Find all *.pnml files
-for file_name in glob.iglob(_ROOT + '**/*.pnml', recursive=True):
+print('  Cropping purchase image ... ', end='')
+pnmlFiles = glob.iglob(_ROOT + '**/*.pnml', recursive=True)
+for file_name in pnmlFiles:
     f = open(file_name, 'r')
     pnml_content = f.read()
 
