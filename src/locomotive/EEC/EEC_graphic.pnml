@@ -39,8 +39,8 @@ template tmpl_EEC_cafe(x, y) {
 }
 
 // Graphics
-spriteset(set_EEC_purchase, "./src/locomotive/EEC/EEC.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -12, -7)
+spriteset(set_EEC_1_purchase, "./src/locomotive/EEC/EEC.png") {
+    tmpl_purchase_for_dualhead(0, 0)
 }
 spriteset(set_EEC_1_engineH, "./src/locomotive/EEC/EEC.png") {   // Tc (front)
     tmpl_NDC(60, 0)
@@ -67,6 +67,9 @@ spriteset(set_EEC_1_wagon_B, "./src/locomotive/EEC/EEC.png") {   // M
     tmpl_wagon_by_coor(60, 180)
 }
 
+spriteset(set_EEC_2_purchase, "./src/locomotive/EEC/EEC.png") {
+    tmpl_purchase_for_dualhead(0, 210)
+}
 spriteset(set_EEC_2_engineH, "./src/locomotive/EEC/EEC.png") {
     tmpl_NDC(60, 210)
 }
@@ -92,6 +95,9 @@ spriteset(set_EEC_2_wagon_B, "./src/locomotive/EEC/EEC.png") {
     tmpl_wagon_by_coor(60, 390)
 }
 
+spriteset(set_EEC_3_purchase, "./src/locomotive/EEC/EEC.png") {
+    tmpl_purchase_for_dualhead(0, 420)
+}
 spriteset(set_EEC_3_engineH, "./src/locomotive/EEC/EEC.png") {
     tmpl_NDC(60, 420)
 }
@@ -119,5 +125,5 @@ spriteset(set_EEC_3_wagon_B, "./src/locomotive/EEC/EEC.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_EEC_purchase, cargo_subtype) {
-    set_EEC_purchase;
+    set_EEC_3_purchase;
 }
