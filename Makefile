@@ -15,7 +15,7 @@ CC_USER_FLAGS       ?=
 # Disable default suffixes rule
 .SUFFIXES:
 
-.PHONY: all clean
+.PHONY: all build clean download_page doc generated bundle bundle_tar
 
 # File names
 DIR_NAME            ?= $(shell echo "$(REPO_NAME) $(VERSION)" | xargs | sed s/\ /_/g)
@@ -127,6 +127,7 @@ clean::
 clean::
 	@-rm -rf ./.nmlcache
 	@-rm -rf ./src/__pycache__
+	@-rm -rf ./docs/download_page
 
 # Install (Temporarily used for developments)
 dev: build

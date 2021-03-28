@@ -1,6 +1,7 @@
 .nmlcache
 .ignore
-generated
+generated/*
+!generated/download_page
 Korean_Train_Set_*
 docs/*.txt
 *.tar
