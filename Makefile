@@ -67,6 +67,7 @@ doc: generated $(DOC_GENERATE) $(GRF_GENERATE) download_page
 clean::
 	@echo "[CLEAN DOC]"
 	@-rm -rf ./generated/*.txt
+	@-rm -rf ./docs/readme.txt
 
 
 # Make generated directory
