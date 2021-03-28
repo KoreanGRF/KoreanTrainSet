@@ -1,0 +1,62 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// DHC
+spriteset(set_DHC_1_purchase, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_purchase_for_dualhead(0, 0)
+}
+spriteset(set_DHC_1_engineH, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_loco_saemaeul(60, 0)
+}
+spriteset(set_DHC_1_engineT, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_loco_saemaeul(60, 30)
+}
+spriteset(set_DHC_1_wagon, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_wagon_by_coor(320, 0)
+}
+
+spriteset(set_DHC_2_purchase, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_purchase_for_dualhead(0, 60)
+}
+spriteset(set_DHC_2_engineH, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_loco_saemaeul(60, 60)
+}
+spriteset(set_DHC_2_engineT, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_loco_saemaeul(60, 90)
+}
+spriteset(set_DHC_2_wagon, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_wagon_by_coor(320, 60)
+}
+
+spriteset(set_DHC_3_purchase, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_purchase_for_dualhead(0, 120)
+}
+spriteset(set_DHC_3_engineH, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_loco_saemaeul(60, 120)
+}
+spriteset(set_DHC_3_engineT, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_loco_saemaeul(60, 150)
+}
+spriteset(set_DHC_3_wagon, "./src/locomotive/saemaeul/DHC.png") {
+    tmpl_wagon_by_coor(320, 120)
+}
+
+// Cafe car
+// spriteset(set_DHC_1_CAFE_CAR, "./src/wagon/cafe_car/CAFE_CAR.png") {   // Not implemented yet. I'm not sure even it exists
+//     tmpl_CAFE_CAR(, )
+// }
+// spriteset(set_DHC_2_CAFE_CAR, "./src/wagon/cafe_car/CAFE_CAR.png") {   // ditto
+//     tmpl_CAFE_CAR(, )
+// }
+spriteset(set_DHC_3_CAFE_CAR, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(0, 60)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_DHC_purchase, cargo_subtype) {
+    set_DHC_1_purchase;
+}
+

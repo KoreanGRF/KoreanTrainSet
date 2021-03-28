@@ -1,0 +1,61 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Graphics
+spriteset(set_NURIRO_purchase, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_purchase_for_dualhead(0, 0)
+}
+spriteset(set_NURIRO_engineH, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_engine(60, 0)
+}
+spriteset(set_NURIRO_wagon_penta, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_wagon_penta(60, 30)
+}
+spriteset(set_NURIRO_wagon, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_wagon(60, 60)
+}
+spriteset(set_NURIRO_engineT, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_engine_r(60, 90)
+}
+
+// Korean wave livery
+spriteset(set_NURIRO_KOREAN_WAVE_purchase, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_purchase_for_dualhead(0, 120)
+}
+spriteset(set_NURIRO_KOREAN_WAVE_engineH, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_engine(60, 120)
+}        
+spriteset(set_NURIRO_KOREAN_WAVE_wagon_penta, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_wagon_penta(60, 150)
+}
+spriteset(set_NURIRO_KOREAN_WAVE_wagon, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_wagon(60, 180)
+}
+spriteset(set_NURIRO_KOREAN_WAVE_engineT, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_engine_r(60, 210)
+}
+
+// O-train
+spriteset(set_NURIRO_O_TRAIN_purchase, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_purchase_for_dualhead(0, 240)
+}
+spriteset(set_NURIRO_O_TRAIN_engineH, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_engine(60, 240)
+}
+spriteset(set_NURIRO_O_TRAIN_wagon_penta, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_wagon_penta(60, 270)
+}
+spriteset(set_NURIRO_O_TRAIN_wagon, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_wagon(60, 300)
+}
+spriteset(set_NURIRO_O_TRAIN_engineT, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_engine_r(60, 330)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_NURIRO_purchase, cargo_subtype) {
+    set_NURIRO_purchase;
+}

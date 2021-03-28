@@ -19,95 +19,11 @@ CAPACITY(DHC_wagon)
 CAPACITY_PURCHASE(DHC_wagon)
 LOADING(DHC_wagon)
 
-// DHC
-spriteset(set_DHC_purchase, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_purchase_for_dualhead(0, 0)
-}
-spriteset(set_DHC1_engineH, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 0)
-}
-spriteset(set_DHC1_engineT, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 30)
-}
-spriteset(set_DHC2_engineH, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 60)
-}
-spriteset(set_DHC2_engineT, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 90)
-}
-spriteset(set_DHC3_engineH, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 120)
-}
-spriteset(set_DHC3_engineT, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 150)
-}
-spriteset(set_DHC1_wagon, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_wagon_by_coor(320, 0)
-}
-spriteset(set_DHC2_wagon, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_wagon_by_coor(320, 60)
-}
-spriteset(set_DHC3_wagon, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_wagon_by_coor(320, 120)
-}
+// Graphics
+#include "DHC_graphic.pnml"
 
-// Cafe car
-// spriteset(set_DHC1_CAFE_CAR, "./src/wagon/cafe_car/CAFE_CAR.png") {   // Not implemented yet. I'm not sure even it exists
-//     tmpl_CAFE_CAR(, )
-// }
-// spriteset(set_DHC2_CAFE_CAR, "./src/wagon/cafe_car/CAFE_CAR.png") {   // ditto
-//     tmpl_CAFE_CAR(, )
-// }
-spriteset(set_DHC3_CAFE_CAR, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(0, 60)
-}
-
-// Refit Paintings
-switch(FEAT_TRAINS, SELF, sw_DHC_engineH, cargo_subtype) {
-    1: set_DHC1_engineH;
-    2: set_DHC2_engineH;
-    set_DHC3_engineH;
-}
-switch(FEAT_TRAINS, SELF, sw_DHC_engineT, cargo_subtype) {
-    1: set_DHC1_engineT;
-    2: set_DHC2_engineT;
-    set_DHC3_engineT;
-}
-switch(FEAT_TRAINS, SELF, sw_DHC_wagon, cargo_subtype) {
-    1: set_DHC1_wagon;
-    2: set_DHC2_wagon;
-    set_DHC3_wagon;
-}
-switch(FEAT_TRAINS, SELF, sw_DHC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: sw_DHC_engineT;
-    sw_DHC_engineH;
-}
-switch(FEAT_TRAINS, PARENT, sw_DHC_CAFE_CAR, cargo_subtype) {   // Cafe car
-    // 1: set_CAFE_CAR_DHC1;
-    // 2: set_CAFE_CAR_DHC2;
-    set_DHC3_CAFE_CAR;
-}
-switch(FEAT_TRAINS, SELF, sw_DHC_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_1970_1983);
-    2: return string(STR_REFIT_LIVERY_GREEN_YELLOW);
-    return string(STR_REFIT_LIVERY_THESEDAYS);
-}
-
-// Attachable vehicles
-switch(FEAT_TRAINS, SELF, sw_DHC_attach, vehicle_type_id) {
-    ko_train_DHC:          return CB_RESULT_ATTACH_ALLOW;
-    ko_train_ITX_SAEMAEUL: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K4x00:        return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K7x00:        return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K7000:        return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K8000:        return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K8x00:        return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K8500:        return CB_RESULT_ATTACH_ALLOW;
-    ko_train_PASSWG:       return CB_RESULT_ATTACH_ALLOW;
-    ko_train_SAEMAEUL_CAR: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_CAFE_CAR:     return CB_RESULT_ATTACH_ALLOW;
-    return string(STR_ERROR_NO_ATTACH);
-}
+// Switch
+#include "DHC_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_DHC, 5520) {
@@ -153,7 +69,7 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
     }
     graphics {
         default:                        sw_DHC_engine;
-        purchase:                       set_DHC_purchase;
+        purchase:                       sw_DHC_purchase;
 
         speed:                          sw_DHC_speed;
         cost_factor:                    sw_DHC_cost;

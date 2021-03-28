@@ -19,100 +19,11 @@ CAPACITY(NURIRO_wagon)
 CAPACITY_PURCHASE(NURIRO_wagon)
 // LOADING(NURIRO_wagon)
 
-
 // Graphics
-spriteset(set_NURIRO_purchase, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -12, -6)
-}
-spriteset(set_NURIRO_engineH, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_engine(60, 0)
-}
-spriteset(set_NURIRO_wagon_penta, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_wagon_penta(60, 30)
-}
-spriteset(set_NURIRO_wagon, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_wagon(60, 60)
-}
-spriteset(set_NURIRO_engineT, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_engine_r(60, 90)
-}
+#include "nuriro_graphic.pnml"
 
-// Korean wave livery
-spriteset(set_NURIRO_KOREAN_WAVE_engineH, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_engine(60, 120)
-}        
-spriteset(set_NURIRO_KOREAN_WAVE_wagon_penta, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_wagon_penta(60, 150)
-}
-spriteset(set_NURIRO_KOREAN_WAVE_wagon, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_wagon(60, 180)
-}
-spriteset(set_NURIRO_KOREAN_WAVE_engineT, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_engine_r(60, 210)
-}
-
-// O-train
-spriteset(set_NURIRO_O_TRAIN_engineH, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_engine(60, 240)
-}
-spriteset(set_NURIRO_O_TRAIN_wagon_penta, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_wagon_penta(60, 270)
-}
-spriteset(set_NURIRO_O_TRAIN_wagon, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_wagon(60, 300)
-}
-spriteset(set_NURIRO_O_TRAIN_engineT, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_engine_r(60, 330)
-}
-
-// Refit Paintings
-switch(FEAT_TRAINS, SELF, sw_NURIRO_engineH, cargo_subtype) {
-    1: set_NURIRO_KOREAN_WAVE_engineH;   // Korean wave livery
-    2: set_NURIRO_O_TRAIN_engineH;       // O-train
-//  3: set_NURIRO_SANTA_engineH;         // Donghae Santa livery (for future use)
-    set_NURIRO_engineH;
-}
-switch(FEAT_TRAINS, SELF, sw_NURIRO_engineT, cargo_subtype) {
-    1: set_NURIRO_KOREAN_WAVE_engineT;   // Korean wave livery
-    2: set_NURIRO_O_TRAIN_engineT;       // O-train
-//  3: set_NURIRO_SANTA_engineT;         // Donghae Santa livery (for future use)
-    set_NURIRO_engineT;
-}
-switch(FEAT_TRAINS, SELF, sw_NURIRO_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: sw_NURIRO_engineT;
-    sw_NURIRO_engineH;
-}
-switch(FEAT_TRAINS, SELF, sw_NURIRO_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE);   // Korean wave livery
-    2: return string(STR_REFIT_LIVERY_O_TRAIN);              // O-train
-//  3: return string(STR_REFIT_LIVERY_NURIRO_SANTA);         // Donghae Santa livery (for future use)
-    return string(STR_REFIT_LIVERY_NURIRO);
-}
-
-// Wagon
-switch(FEAT_TRAINS, PARENT, sw_NURIRO_wagon_penta, cargo_subtype) {
-    1: set_NURIRO_KOREAN_WAVE_wagon_penta;   // Korean wave livery
-    2: set_NURIRO_O_TRAIN_wagon_penta;       // O-train
-//  3: set_NURIRO_SANTA_wagon_penta;         // Donghae Santa livery (for future use)
-    set_NURIRO_wagon_penta;
-}
-switch(FEAT_TRAINS, PARENT, sw_NURIRO_wagon_normal, cargo_subtype) {
-    1: set_NURIRO_KOREAN_WAVE_wagon;   // Korean wave livery
-    2: set_NURIRO_O_TRAIN_wagon;       // O-train
-//  3: set_NURIRO_SANTA_wagon;         // Donghae Santa livery (for future use)
-    set_NURIRO_wagon;
-}
-switch(FEAT_TRAINS, SELF, sw_NURIRO_wagon, position_in_vehid_chain + 1 == num_vehs_in_vehid_chain - 1) {
-    1: sw_NURIRO_wagon_penta;
-    sw_NURIRO_wagon_normal;
-}
-
-// Attachable vehicles
-switch(FEAT_TRAINS, SELF, sw_NURIRO_attach, vehicle_type_id) {
-    ko_train_NURIRO: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_PASSWG: return CB_RESULT_ATTACH_ALLOW;
-    return CB_RESULT_NO_TEXT;
-}
+// Switch
+#include "nuriro_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_NURIRO, 5525) {
@@ -157,7 +68,7 @@ item(FEAT_TRAINS, ko_train_NURIRO, 5525) {
     }
     graphics {
         default:                        sw_NURIRO_engine;
-        purchase:                       set_NURIRO_purchase;
+        purchase:                       sw_NURIRO_purchase;
 
         speed:                          sw_NURIRO_speed;
         cost_factor:                    sw_NURIRO_cost;
