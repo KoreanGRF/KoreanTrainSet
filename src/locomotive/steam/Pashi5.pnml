@@ -17,20 +17,26 @@ LOADING(PASHI5)
 template tmpl_PASHI5(x, y) {
     tmpl_MATE2(x, y)
 }
-spriteset(set_PASHI5_purchase, "./src/locomotive/steam/steam.png") {
-    tmpl_purchase_detail(0, 120, 50, 12, -25, -6)
+template tmpl_PASHI5_tender(x, y) {
+    tmpl_MATE2_tender(x, y)
 }
-spriteset(set_PASHI5_engine_1, "./src/locomotive/steam/steam.png") {
-    tmpl_PASHI5(60, 120)
+spriteset(set_PASHI5_purchase, "./src/locomotive/steam/PASHI5.png") {
+    tmpl_purchase_detail(0, 0, 54, 15, -29, -9)
 }
-spriteset(set_PASHI5_engine_2, "./src/locomotive/steam/steam.png") {
-    tmpl_PASHI5(60, 150)
+spriteset(set_PASHI5_engine_1, "./src/locomotive/steam/PASHI5.png") {
+    tmpl_PASHI5(60, 0)
 }
-spriteset(set_PASHI5_engine_3, "./src/locomotive/steam/steam.png") {
-    tmpl_PASHI5(60, 180)
+spriteset(set_PASHI5_engine_2, "./src/locomotive/steam/PASHI5.png") {
+    tmpl_PASHI5(60, 30)
 }
-spriteset(set_PASHI5_engine_4, "./src/locomotive/steam/steam.png") {
-    tmpl_PASHI5(60, 210)
+spriteset(set_PASHI5_engine_3, "./src/locomotive/steam/PASHI5.png") {
+    tmpl_PASHI5(60, 60)
+}
+spriteset(set_PASHI5_engine_4, "./src/locomotive/steam/PASHI5.png") {
+    tmpl_PASHI5(60, 90)
+}
+spriteset(set_PASHI5_tender, "./src/locomotive/steam/PASHI5.png") {
+    tmpl_PASHI5_tender(60, 120)
 }
 
 
@@ -43,7 +49,7 @@ switch(FEAT_TRAINS, SELF, sw_PASHI5_engine_by_motion, motion_counter % 4) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_PASHI5_engine, position_in_vehid_chain % 2) {
-    1: set_TENDER_1;
+    1: set_PASHI5_tender;
     sw_PASHI5_engine_by_motion;
 }
 
@@ -51,6 +57,12 @@ switch(FEAT_TRAINS, SELF, sw_PASHI5_engine, position_in_vehid_chain % 2) {
 switch(FEAT_TRAINS, SELF, sw_PASHI5_articulated_part, extra_callback_info1) {
     1: ko_train_PASHI5;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Length
+switch(FEAT_TRAINS, SELF, sw_PASHI5_length, position_in_vehid_chain % 2) {
+    1: return 5;
+    return 8;
 }
 
 // Item
@@ -100,7 +112,7 @@ item(FEAT_TRAINS, ko_train_PASHI5, 5302) {
         articulated_part:               sw_PASHI5_articulated_part;
         purchase:                       set_PASHI5_purchase;
 
-        length:                         sw_TENDER_length;
+        length:                         sw_PASHI5_length;
 
         speed:                          sw_PASHI5_speed;
         cost_factor:                    sw_PASHI5_cost;

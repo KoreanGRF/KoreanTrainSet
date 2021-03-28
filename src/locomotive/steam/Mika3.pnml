@@ -15,29 +15,42 @@ LOADING(MIKA3)
 
 // Template
 template tmpl_MIKA3(x, y) {
-    [x,     y,    8,     22,    -3,   -10]
-    [x+15,  y,    22,    17,   -14,    -9]
-    [x+45,  y,    31,    12,   -15,    -8]
-    [x+95,  y,    22,    18,    -6,    -9]
-    [x+125, y,    8,     22,    -3,   -10]
-    [x+140, y,    22,    18,   -16,    -9]
-    [x+175, y,    31,    12,   -12,    -8]
-    [x+225, y,    22,    17,    -7,   -10]
+    [x,     y,    8,     21,    -3,   -10]
+    [x+15,  y,    22,    17,   -15,    -8]
+    [x+45,  y,    31,    12,   -18,    -8]
+    [x+95,  y,    22,    18,    -7,    -9]
+    [x+125, y,    8,     21,    -3,   -10]
+    [x+140, y,    22,    18,   -14,    -9]
+    [x+175, y,    31,    12,   -13,    -8]
+    [x+225, y,    22,    17,    -6,    -8]
 }
-spriteset(set_MIKA3_purchase, "./src/locomotive/steam/steam.png") {
-    tmpl_purchase_detail(0, 240, 50, 12, -25, -6)
+template tmpl_MIKA3_tender(x, y) {
+    [x,     y,    8,     16,    -3,   -11]
+    [x+15,  y,    14,    13,    -8,    -7]
+    [x+45,  y,    17,    11,    -4,    -7]
+    [x+95,  y,    14,    12,     0,    -4]
+    [x+125, y,    8,     16,    -3,    -5]
+    [x+140, y,    14,    12,   -13,    -4]
+    [x+175, y,    17,    11,   -13,    -7]
+    [x+225, y,    14,    13,    -5,    -7]
 }
-spriteset(set_MIKA3_engine_1, "./src/locomotive/steam/steam.png") {
-    tmpl_MIKA3(60, 240)
+spriteset(set_MIKA3_purchase, "./src/locomotive/steam/MIKA3.png") {
+    tmpl_purchase_detail(0, 0, 50, 15, -25, -9)
 }
-spriteset(set_MIKA3_engine_2, "./src/locomotive/steam/steam.png") {
-    tmpl_MIKA3(60, 270)
+spriteset(set_MIKA3_engine_1, "./src/locomotive/steam/MIKA3.png") {
+    tmpl_MIKA3(60, 0)
 }
-spriteset(set_MIKA3_engine_3, "./src/locomotive/steam/steam.png") {
-    tmpl_MIKA3(60, 300)
+spriteset(set_MIKA3_engine_2, "./src/locomotive/steam/MIKA3.png") {
+    tmpl_MIKA3(60, 30)
 }
-spriteset(set_MIKA3_engine_4, "./src/locomotive/steam/steam.png") {
-    tmpl_MIKA3(60, 330)
+spriteset(set_MIKA3_engine_3, "./src/locomotive/steam/MIKA3.png") {
+    tmpl_MIKA3(60, 60)
+}
+spriteset(set_MIKA3_engine_4, "./src/locomotive/steam/MIKA3.png") {
+    tmpl_MIKA3(60, 90)
+}
+spriteset(set_MIKA3_tender, "./src/locomotive/steam/MIKA3.png") {
+    tmpl_MIKA3_tender(60, 120)
 }
 
 
@@ -50,7 +63,7 @@ switch(FEAT_TRAINS, SELF, sw_MIKA3_engine_by_motion, motion_counter % 4) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_MIKA3_engine, position_in_vehid_chain % 2) {
-    1: set_TENDER_2;
+    1: set_MIKA3_tender;
     sw_MIKA3_engine_by_motion;
 }
 
@@ -58,6 +71,12 @@ switch(FEAT_TRAINS, SELF, sw_MIKA3_engine, position_in_vehid_chain % 2) {
 switch(FEAT_TRAINS, SELF, sw_MIKA3_articulated_part, extra_callback_info1) {
     1: ko_train_MIKA3;
     return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Length
+switch(FEAT_TRAINS, SELF, sw_MIKA3_length, position_in_vehid_chain % 2) {
+    1: return 5;
+    return 8;
 }
 
 // Item
@@ -107,7 +126,7 @@ item(FEAT_TRAINS, ko_train_MIKA3, 5301) {
         articulated_part:               sw_MIKA3_articulated_part;
         purchase:                       set_MIKA3_purchase;
 
-        length:                         sw_TENDER_length;
+        length:                         sw_MIKA3_length;
 
         speed:                          sw_MIKA3_speed;
         cost_factor:                    sw_MIKA3_cost;
