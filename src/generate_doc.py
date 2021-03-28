@@ -211,7 +211,9 @@ for _lang in list(langData.keys()):
         append = append.replace('{{refit}}', refit.strip().replace('\n', '<br />'))
         output += append
 
+    output = output + "\n</table>"
+
     # Write a doc file
     f = open(_ROOT + "docs/download_page/" + _lang + ".md", "w")
-    f.write(output + "\n</table>")
+    f.write(output)
     f.close()
