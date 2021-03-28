@@ -18,50 +18,10 @@ List
   Korean Train Set has train vehicles of the Republic of Korea (South Korea),
 including various locomotives and metro vehicles in major cities of south korea.
 
-Korean Train Set adds vehicles like below:
-  - Mika 3 Steam Locomotive
-  - Pashi 5 Steam Locomotive
-  - Mate 2 Steam Locomotive
-  - Korail 4x00 Diesel Locomotive (with V-train)
-  - Korail 7x00 Diesel Locomotive (with Haerang the rail cruise + G-train + S-train)
-  - Korail 7600 Diesel Locomotive (with A-train)
-  - Korail 8000 Electric Locomotive
-  - Korail 8x00 Electric Locomotive
-  - Korail 8500 Electric Locomotive
-  - Korail Commuter Diesel Car(CDC), RDC (with DMZ-train + Gyeongbuk Circular theme tour train)
-  - Korail New Diesel Car(NDC)
-  - ITX-Saemaeul
-  - KTX-1
-  - KTX-Sancheon
-  - SRT
-  - KTX-EUM
-  - Nuriro (with O-train + Korean wave tour wrapping)
-  - Saemaeul Diesel Hydraulic Car(DHC, a.k.a. PP-car) and its passenger wagons
-  - Mugunghwa's passenger wagons and cafe car
-  - Tongil's passenger car
-  - Bidulgi's passenger car
-  - Seoul metropolitan metro Line 1 ~ 9
-  - Gyeongchun Line
-  - Incheon International Airport Railroad (A'REX)
-  - Suin-Bundang Line
-  - Shinbundang-line
-  - Incheon subway Line 1 ~ 2
-  - Daegu subway Line 1 ~ 3
-  - Daejeon subway Line 1
-  - Gwangju subway Line 1
-  - Busan subway Line 1 ~ 4
-  - Ui-Sinseol LRT
-  - Busangimhae LRT
-  - Uijeongbu LRT
-  - Yongin Everline (LRT)
-  - Gimpo Goldline (LRT)
-  - Generator car
-  - Flat cargo car
-  - Hopper car
-  - Luggage van
-  - Tanker
+Please refer to https://github.com/KoreanGRF/KoreanTrainSet/blob/master/docs/download_page/english.md
+if you want to see the whole vehicle list that Korean Train Set adds.
 
-Korean Train Set adds a new railtype such as below:
+Korean Train Set also adds a new railtype such as below:
   - [KTS] Light railway
 
 
