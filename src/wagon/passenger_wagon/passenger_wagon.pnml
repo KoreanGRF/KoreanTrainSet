@@ -16,7 +16,7 @@ LOADING(PASSENGER_WAGON)
 
 // Graphic
 spriteset(set_PASSENGER_WAGON_purchase, "./src/wagon/passenger_wagon/passenger_wagon.png") {
-    tmpl_purchase_detail(0, 0, 32, 12, -16, -8)
+    tmpl_purchase_detail(0, 0, 32, 15, -16, -9)
 }
 spriteset(set_PASSENGER_WAGON_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     [60+0,    0,   8,   22,    -3,   -11]
@@ -25,7 +25,7 @@ spriteset(set_PASSENGER_WAGON_wagon, "./src/wagon/passenger_wagon/passenger_wago
     [60+95,   0,  21,   17,    -6,    -8]
 }
 spriteset(set_PASSENGER_WAGONP_purchase, "./src/wagon/passenger_wagon/passenger_wagon.png") {
-    tmpl_purchase_detail(0, 30, 32, 12, -16, -8)
+    tmpl_purchase_detail(0, 30, 32, 15, -16, -9)
 }
 spriteset(set_PASSENGER_WAGONP_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     [60+0,   30,   8,   22,    -3,   -11]

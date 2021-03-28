@@ -15,20 +15,28 @@ template tmpl_tank_car(x, y) {
 }
 
 // Graphic
+spriteset(set_TANK_CAR_1_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
+    tmpl_purchase_detail(0, 0, 28, 15, -15, -9)
+}
 spriteset(set_TANK_CAR_1_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
     tmpl_tank_car(60, 0)
+}
+
+spriteset(set_TANK_CAR_2_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
+    tmpl_purchase_detail(0, 30, 28, 15, -15, -9)
 }
 spriteset(set_TANK_CAR_2_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
     tmpl_tank_car(60, 30)
 }
+
+spriteset(set_TANK_CAR_3_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
+    tmpl_purchase_detail(0, 60, 28, 15, -15, -9)
+}
 spriteset(set_TANK_CAR_3_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
     tmpl_tank_car(60, 60)
-}
-spriteset(set_TANK_CAR_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
-    tmpl_purchase_detail(0, 0, 28, 11, -15, -5)
 }
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_TANK_CAR_purchase, cargo_subtype) {
-    set_TANK_CAR_purchase;
+    set_TANK_CAR_1_purchase;
 }

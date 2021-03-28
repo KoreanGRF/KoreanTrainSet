@@ -26,26 +26,50 @@ template tmpl_V_TRAIN_wagon(x, y) {
 }
 
 // Graphic
-spriteset(set_BAGGAGE_CAR_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_purchase_detail(0, 0, 31, 13, -16, -6)
+spriteset(set_BAGGAGE_CAR_A_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
 }
 spriteset(set_BAGGAGE_CAR_A_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 0)
 }
+
+spriteset(set_BAGGAGE_CAR_B_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
 spriteset(set_BAGGAGE_CAR_B_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 30)
+}
+
+spriteset(set_BAGGAGE_CAR_C_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
 }
 spriteset(set_BAGGAGE_CAR_C_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 60)
 }
+
+spriteset(set_BAGGAGE_CAR_D_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
+}
 spriteset(set_BAGGAGE_CAR_D_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 90)
+}
+
+spriteset(set_BAGGAGE_CAR_E_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_detail(0, 120, 31, 15, -16, -9)
 }
 spriteset(set_BAGGAGE_CAR_E_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 120)
 }
+
+spriteset(set_BAGGAGE_CAR_F_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+}
 spriteset(set_BAGGAGE_CAR_F_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 150)
+}
+
+spriteset(set_BAGGAGE_CAR_MAIL_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
 }
 spriteset(set_BAGGAGE_CAR_MAIL_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 180)
@@ -69,5 +93,5 @@ spriteset(set_BAGGAGE_CAR_BIDULGI_wagon, "./src/wagon/baggage_car/BIDULGI.png") 
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_purchase, cargo_subtype) {
-    set_BAGGAGE_CAR_purchase;
+    set_BAGGAGE_CAR_A_purchase;
 }

@@ -6,7 +6,7 @@
 
 
 spriteset(set_GENERATOR_CAR_A_wagon_purchase, "./src/wagon/generator_car/generator_car.png") {
-    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
 }
 spriteset(set_GENERATOR_CAR_A, "./src/wagon/generator_car/generator_car.png") {
     tmpl_wagon_by_coor(60, 0)
@@ -20,21 +20,21 @@ spriteset(set_GENERATOR_CAR_B, "./src/wagon/generator_car/generator_car.png") {
 }
 
 spriteset(set_GENERATOR_CAR_GREEN_YELLOW_wagon_purchase, "./src/wagon/generator_car/generator_car.png") {
-    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+    tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
 }
 spriteset(set_GENERATOR_CAR_GREEN_YELLOW, "./src/wagon/generator_car/generator_car.png") {
     tmpl_wagon_by_coor(60, 60)
 }
 
 spriteset(set_GENERATOR_CAR_BLUE_YELLOW_wagon_purchase, "./src/wagon/generator_car/generator_car.png") {
-    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+    tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
 }
 spriteset(set_GENERATOR_CAR_BLUE_YELLOW, "./src/wagon/generator_car/generator_car.png") {
     tmpl_wagon_by_coor(60, 90)
 }
 
 spriteset(set_GENERATOR_CAR_A_TRAIN_purchase, "./src/locomotive/K7x00/A-train_wagon.png") {
-    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
 }
 spriteset(set_GENERATOR_CAR_A_TRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's power car
     tmpl_wagon_by_coor(60, 0)

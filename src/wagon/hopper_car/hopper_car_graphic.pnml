@@ -20,14 +20,22 @@ template tmpl_hopper_car(x, y) {
 }
 
 // Graphic
-spriteset(set_HOPPER_CAR_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
-    tmpl_purchase_detail(0, 0, 25, 10, -13, -4)
+spriteset(set_HOPPER_CAR_A_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
+    tmpl_purchase_detail(0, 0, 25, 15, -13, -9)
 }
 spriteset(set_HOPPER_CAR_empty_A_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
     tmpl_hopper_car(60, 0)
 }
+
+spriteset(set_HOPPER_CAR_B_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
+    tmpl_purchase_detail(0, 30, 25, 15, -13, -9)
+}
 spriteset(set_HOPPER_CAR_empty_B_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
     tmpl_hopper_car(60, 30)
+}
+
+spriteset(set_HOPPER_CAR_C_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
+    tmpl_purchase_detail(0, 60, 25, 15, -13, -9)
 }
 spriteset(set_HOPPER_CAR_empty_C_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
     tmpl_hopper_car(60, 60)
@@ -56,5 +64,5 @@ spriteset(set_HOPPER_CAR_empty_C_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png")
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_HOPPER_CAR_purchase, cargo_subtype) {
-    set_HOPPER_CAR_purchase;
+    set_HOPPER_CAR_A_purchase;
 }

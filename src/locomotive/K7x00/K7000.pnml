@@ -10,20 +10,11 @@ SPEED_GENERAL(K7000)
 COST(K7000)
 RUNNING(K7000)
 
-// K7000
-spriteset(set_K7000_purchase, "./src/locomotive/K7x00/K7000.png") {
-    tmpl_purchase_for_singlehead(0, 0)
-}
-spriteset(set_K7000_1_loco, "./src/locomotive/K7x00/K7000.png") {   // Red & White & Blue
-    [60,      0,     8,    22,    -3,    -9]
-    [60+15,   0,    21,    16,   -14,    -7]
-    [60+45,   0,    30,    12,   -16,    -8]
-    [60+95,   0,    21,    16,    -5,    -8]
-    [60+125,  0,     8,    22,    -3,   -11]
-    [60+140,  0,    21,    16,   -14,    -8]
-    [60+175,  0,    30,    12,   -15,    -8]
-    [60+225,  0,    21,    16,    -6,    -7]
-}
+// Graphics
+#include "K7000_graphic.pnml"
+
+// Switch
+#include "K7000_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_K7000, 5470) {
@@ -67,7 +58,7 @@ item(FEAT_TRAINS, ko_train_K7000, 5470) {
     }
     graphics {
         default:                        set_K7000_1_loco;
-        purchase:                       set_K7000_purchase;
+        purchase:                       sw_K7000_purchase;
 
         speed:                          sw_K7000_speed;
         cost_factor:                    sw_K7000_cost;
