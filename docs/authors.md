@@ -1,7 +1,9 @@
 | Image | Code | Author | Reference |
 |-------|--------|--------|-------|
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/LRT/uijeongbu/U100_by_TELK.png?raw=true) | ``U100_by_TELK`` (sample) | [@telk5093](https://github.com/telk5093) | This is a sample row, this graphic is not used. |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/steam/steam.png?raw=true) | ``MIKA3``<br />``PASHI5``<br />``MATE2`` | [@Gamunbi](https://github.com/Gamunbi) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/steam/MIKA3.png?raw=true) | ``MIKA3`` | [@Gamunbi](https://github.com/Gamunbi) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/steam/PASHI5.png?raw=true) | ``PASHI5`` | [@Gamunbi](https://github.com/Gamunbi) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/steam/MATE2.png?raw=true) | ``MATE2`` | [@Gamunbi](https://github.com/Gamunbi) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/CDC/CDC.png?raw=true) | ``CDC`` | skyu<br />[@telk5093](https://github.com/telk5093)<br />[@opentrain](https://github.com/opentrain)<br /> | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/bidulgi/BIDULGI_CDC.png?raw=true) | ``BIDULGI_CDC`` | [@Gamunbi](https://github.com/Gamunbi) | [#40](https://github.com/KoreanGRF/KoreanTrainSet/issues/40) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/NDC/NDC.png?raw=true) | ``NDC`` | Original: unknown<br />Modified by [@telk5093](https://github.com/telk5093) (Business car)<br />Modified by [@kiwitreekor](https://github.com/kiwitreekor) (Width of horizontal sprites) | modified: [#15](https://github.com/KoreanGRF/KoreanTrainSet/issues/15) |
@@ -44,18 +46,20 @@
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/daejeon_metro_1/DAEJEON_METRO_1K.png?raw=true) | ``DAEJEON_METRO_1K`` | [@opentrain](https://github.com/opentrain) | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/gwangju_metro_1/GWANGJU_METRO_1K.png?raw=true) | ``GWANGJU_METRO_1K`` | [@opentrain](https://github.com/opentrain) | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/gyeongchun/361K_VVVF.png?raw=true) | ``361K_VVVF`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/gyeongchun/386K_ITX_CHEONGCHUN.png?raw=true) | ``386K_ITX_CHEONGCHUN`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png?raw=true) | ``368K_ITX_CHEONGCHUN`` | skyu | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST.png?raw=true) | ``INCHEON_METRO_1K_VVVF_1ST`` | skyu | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_2ND.png?raw=true) | ``INCHEON_METRO_1K_VVVF_2ND`` | Las | [https://cafe.naver.com/ottd/10466](https://cafe.naver.com/ottd/10466) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_FIRST_1.png?raw=true) | ``1K_RHEO_FIRST_1`` | skyu | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_FIRST_2.png?raw=true) | ``1K_RHEO_FIRST_2`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_MODIFIED_1.png?raw=true) | ``1K_RHEO_MODIFIED_1`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_MODIFIED_2.png?raw=true) | ``1K_RHEO_MODIFIED_2`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_MODIFIED_3.png?raw=true) | ``1K_RHEO_MODIFIED_3`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_NEW_1.png?raw=true) | ``1K_RHEO_NEW_1`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_NEW_2.png?raw=true) | ``1K_RHEO_NEW_2`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/311K_1.png?raw=true) | ``311K_1`` | skyu | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/311K_2.png?raw=true) | ``311K_2`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_SECOND_1.png?raw=true) | ``1K_RHEO_SECOND_1`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_SECOND_2.png?raw=true) | ``1K_RHEO_SECOND_2`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_SECOND_3.png?raw=true) | ``1K_RHEO_SECOND_3`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_LAST_1.png?raw=true) | Original: skyu<br />Modified by ``1K_RHEO_LAST_1`` | [@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201) | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/1K_RHEO_LAST_2.png?raw=true) | Original: skyu<br />Modified by ``1K_RHEO_LAST_2`` | [@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201) | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/311K_1_1.png?raw=true) | ``311K_1_1`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/311K_1_2.png?raw=true) | ``311K_1_2`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/311K_2_1.png?raw=true) | ``311K_2_1`` | skyu | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/311K_2_2.png?raw=true) | ``311K_2_2`` | skyu | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/321K_BIKE.png?raw=true) | ``321K_BIKE`` | [@opentrain](https://github.com/opentrain) | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/371K_381K_1ST.png?raw=true) | ``371K_381K_1ST`` | skyu | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/metro/seoul_metro_1/371K_BLANK.png?raw=true) | ``371K_BLANK`` | skyu | |
