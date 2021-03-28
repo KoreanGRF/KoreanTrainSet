@@ -52,7 +52,7 @@ spriteset(set_DHC_3_wagon, "./src/locomotive/saemaeul/DHC.png") {
 //     tmpl_CAFE_CAR(, )
 // }
 spriteset(set_DHC_3_CAFE_CAR, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(0, 60)
+    tmpl_CAFE_CAR(60, 60)
 }
 
 // Alias of purchase image

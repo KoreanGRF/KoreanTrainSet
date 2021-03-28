@@ -1,0 +1,119 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// A: 1970~1983
+spriteset(set_MUGUNGHWA_CAR_A_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_A, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(60, 0)
+}
+
+// B: 1984~1984
+spriteset(set_MUGUNGHWA_CAR_B_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_B, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(60, 30)
+}
+
+// C: 1985~1989
+spriteset(set_MUGUNGHWA_CAR_C_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_C, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(60, 60)
+}
+
+// D: 1990~1999
+spriteset(set_MUGUNGHWA_CAR_D_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_D, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(60, 90)
+}
+
+// E: 2000~2002
+spriteset(set_MUGUNGHWA_CAR_E_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 120, 31, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_E, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(60, 120)
+}
+
+// Current Korail paint
+spriteset(set_MUGUNGHWA_CAR_RED_BLUE_WHITE_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 150, 31, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_RED_BLUE_WHITE, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(60, 150)
+}
+
+// Old express (구특전)
+spriteset(set_MUGUNGHWA_CAR_OLD_EXPRESS_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 180, 32, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_OLD_EXPRESS, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(60, 180)
+}
+
+// Haerang
+spriteset(set_HAERANG_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+}
+spriteset(set_HAERANG_wagon, "./src/wagon/mugunghwa_car/Haerang.png") {
+    tmpl_wagon_by_coor(60, 0)
+}
+spriteset(set_HAERANG_CAFE_wagon, "./src/wagon/mugunghwa_car/Haerang.png") {
+    tmpl_wagon_by_coor(60, 30)
+}
+
+// G-train
+spriteset(set_G_TRAIN_purchase, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+}
+spriteset(set_G_TRAIN_wagon1, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(60, 0)
+}
+spriteset(set_G_TRAIN_wagon2, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(60, 30)
+}
+spriteset(set_G_TRAIN_wagon3, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(60, 60)
+}
+spriteset(set_G_TRAIN_wagon4, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(60, 90)
+}
+spriteset(set_G_TRAIN_wagon5, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(60, 120)
+}
+
+// S-train
+spriteset(set_S_TRAIN_1_purchase, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+}
+spriteset(set_S_TRAIN_wagon1, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_wagon_by_coor(60, 0)
+}
+spriteset(set_S_TRAIN_2_purchase, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
+}
+spriteset(set_S_TRAIN_wagon2, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_wagon_by_coor(60, 60)
+}
+
+// for A-train
+spriteset(set_A_TRAIN_1_purchase, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's wagon
+    tmpl_wagon_by_coor(60, 30)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_purchase, cargo_subtype) {
+    set_MUGUNGHWA_CAR_RED_BLUE_WHITE_purchase;
+}

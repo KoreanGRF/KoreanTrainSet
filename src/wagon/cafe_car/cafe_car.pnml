@@ -13,43 +13,11 @@ CAPACITY(CAFE_CAR)
 // CAPACITY_PURCHASE(CAFE_CAR)
 LOADING(CAFE_CAR)
 
+// Graphics
+#include "cafe_car_graphic.pnml"
 
-// Graphic
-spriteset(set_CAFE_CAR_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_purchase_detail(45, 0, 31, 12, -16, -6)
-}
-
-// Cafe car for Mugunghwa
-spriteset(set_CAFE_CAR_MUGUNGHWA, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(0, 0)
-}
-
-// Cargo subtype
-switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_wagon, cargo_subtype) {
-    1: sw_DHC_CAFE_CAR;
-    6: set_HAERANG_CAFE_wagon;   //=> Refer: ./src/wagon/Mugunghwa
-    8: set_CAFE_CAR_RDC;         //=> Refer: ./src/locomotive/CDC
-    set_CAFE_CAR_MUGUNGHWA;
-}
-
-switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_SAEMAEUL_CAFE);
-    6: return string(STR_REFIT_LIVERY_HAERANG);
-    8: return string(STR_REFIT_LIVERY_RDC_MUGUNGHWA_CAFE);
-    return string(STR_REFIT_LIVERY_MUGUNGHWA_CAFE);
-}
-
-// Attachable vehicles
-switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_attach, vehicle_type_id) {
-    ko_train_K4x00: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K7x00: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K7000: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K8000: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K8x00: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K8500: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_DHC:   return CB_RESULT_ATTACH_ALLOW;
-    return string(STR_ERROR_NO_ATTACH);
-}
+// Switch
+#include "cafe_car_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_CAFE_CAR, 5603) {
@@ -91,7 +59,7 @@ item(FEAT_TRAINS, ko_train_CAFE_CAR, 5603) {
     }
     graphics {
         default:                        sw_CAFE_CAR_wagon;
-        purchase:                       set_CAFE_CAR_purchase;
+        purchase:                       sw_CAFE_CAR_purchase;
 
         cost_factor:                    sw_CAFE_CAR_cost;
         running_cost_factor:            sw_CAFE_CAR_runningcost;

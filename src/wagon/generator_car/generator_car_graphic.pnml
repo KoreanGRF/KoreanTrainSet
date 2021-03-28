@@ -1,0 +1,74 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+
+spriteset(set_GENERATOR_CAR_A_wagon_purchase, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_GENERATOR_CAR_A, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_wagon_by_coor(60, 0)
+}
+
+spriteset(set_GENERATOR_CAR_B_wagon_purchase, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_GENERATOR_CAR_B, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_wagon_by_coor(60, 30)
+}
+
+spriteset(set_GENERATOR_CAR_GREEN_YELLOW_wagon_purchase, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_GENERATOR_CAR_GREEN_YELLOW, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_wagon_by_coor(60, 60)
+}
+
+spriteset(set_GENERATOR_CAR_BLUE_YELLOW_wagon_purchase, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_GENERATOR_CAR_BLUE_YELLOW, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_wagon_by_coor(60, 90)
+}
+
+spriteset(set_GENERATOR_CAR_A_TRAIN_purchase, "./src/locomotive/K7x00/A-train_wagon.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_GENERATOR_CAR_A_TRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's power car
+    tmpl_wagon_by_coor(60, 0)
+}
+
+spriteset(set_HAERANG_GENERATOR_CAR_purchase, "./src/wagon/mugunghwa_car/Haerang.png") {
+    tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
+}
+spriteset(set_HAERANG_GENERATOR_CAR, "./src/wagon/mugunghwa_car/Haerang.png") {
+    // Note: 8 directions are splited into two lines (8 방향이 두 줄로 나뉘어 있음)
+    tmpl_wagon_by_coor(60, 60)
+    tmpl_wagon_by_coor(60, 90)
+}
+
+spriteset(set_S_TRAIN_GENERATOR_CAR_1_purchase, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_S_TRAIN_GENERATOR_CAR_1, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_wagon_by_coor(60, 30)
+}
+spriteset(set_S_TRAIN_GENERATOR_CAR_2_purchase, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
+}
+spriteset(set_S_TRAIN_GENERATOR_CAR_2, "./src/wagon/mugunghwa_car/S-train.png") {
+    tmpl_wagon_by_coor(60, 90)
+}
+spriteset(set_G_TRAIN_GENERATOR_CAR_purchase, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_purchase_detail(0, 150, 31, 15, -16, -9)
+}
+spriteset(set_G_TRAIN_GENERATOR_CAR, "./src/wagon/mugunghwa_car/G-train.png") {
+    tmpl_wagon_by_coor(60, 150)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_purchase, cargo_subtype) {
+    set_GENERATOR_CAR_B;
+}

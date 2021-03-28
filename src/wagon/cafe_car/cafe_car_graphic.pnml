@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Graphic
+
+// Cafe car for Mugunghwa
+spriteset(set_CAFE_CAR_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+}
+spriteset(set_CAFE_CAR_MUGUNGHWA, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(60, 0)
+}
+
+spriteset(set_CAFE_CAR_RDC_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+
+spriteset(set_CAFE_CAR_DHC_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_purchase, cargo_subtype) {
+    set_CAFE_CAR_purchase;
+}

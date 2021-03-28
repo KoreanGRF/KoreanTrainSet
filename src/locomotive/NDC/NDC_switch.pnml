@@ -23,8 +23,8 @@ switch(FEAT_TRAINS, SELF, sw_NDC_engine, position_in_consist_from_end == 0 && nu
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_NDC_wagon, cargo_subtype) {
     1: set_NDC_2_wagon;
-    2: set_MUGUNGHWA_CAR_wagon_D;
-    set_MUGUNGHWA_CAR_wagon_C;
+    2: set_MUGUNGHWA_CAR_D;
+    set_MUGUNGHWA_CAR_C;
 }
 
 // Attach

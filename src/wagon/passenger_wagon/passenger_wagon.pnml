@@ -70,7 +70,7 @@ item(FEAT_TRAINS, ko_train_PASSWG, 5900) {
         // Costs
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_ELECTRIC;
-        running_cost_factor:            1;
+        running_cost_factor:            2;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
@@ -121,7 +121,7 @@ item(FEAT_TRAINS, ko_train_PASSWGP, 5901) {
         // Costs
         refit_cost:                     0;
         running_cost_base:              RUNNING_COST_ELECTRIC;
-        running_cost_factor:            1;
+        running_cost_factor:            4;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
