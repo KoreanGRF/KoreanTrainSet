@@ -19,83 +19,11 @@ CAPACITY(NDC_wagon)
 CAPACITY_PURCHASE(NDC_wagon)
 // LOADING(NDC_wagon)
 
+// Graphics
+#include "NDC_graphic.pnml"
 
-// Template
-template tmpl_NDC(x, y) {
-    [x+0,        y,     8,    22,     -3,   -11]
-    [x+15,       y,    21,    17,    -14,    -8]
-    [x+45,       y,    30,    12,    -16,    -8]
-    [x+95,       y,    21,    17,     -6,    -8]
-    [x+125,      y,     8,    22,     -3,   -11]
-    [x+140,      y,    21,    17,    -14,    -8]
-    [x+170,      y,    31,    12,    -16,    -8]
-    [x+220,      y,    21,    17,     -6,    -8]
-}
-template tmpl_NDC_r(x, y) {
-    [x+125,     y,     8,    22,     -3,   -11]
-    [x+140,     y,    21,    17,    -14,    -8]
-    [x+170,     y,    30,    12,    -16,    -8]   // width is different
-    [x+220,     y,    21,    17,     -6,    -8]
-    [x+0,       y,     8,    22,     -3,   -11]
-    [x+15,      y,    21,    17,    -14,    -8]
-    [x+45,      y,    31,    12,    -16,    -8]   // width is different
-    [x+95,      y,    21,    17,     -6,    -8]
-}
-
-// NDC
-spriteset(set_NDC_purchase, "./src/locomotive/NDC/NDC.png") {
-    tmpl_purchase_detail(0, 0, 50, 12, -12, -7)
-}
-spriteset(set_NDC_engineH, "./src/locomotive/NDC/NDC.png") {
-    tmpl_NDC(60, 0)
-}
-spriteset(set_NDC_engineT, "./src/locomotive/NDC/NDC.png") {
-    tmpl_NDC_r(60, 30)
-}
-spriteset(set_NDC_business_engineH, "./src/locomotive/NDC/NDC.png") {
-    tmpl_NDC(60, 60)
-}
-spriteset(set_NDC_business_engineT, "./src/locomotive/NDC/NDC.png") {
-    tmpl_NDC_r(60, 90)
-}
-
-// Engine
-switch(FEAT_TRAINS, SELF, sw_NDC_engine_default, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: set_NDC_engineT;
-    set_NDC_engineH;
-}
-switch(FEAT_TRAINS, SELF, sw_NDC_engine_business, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: set_NDC_business_engineT;
-    set_NDC_business_engineH;
-}
-switch(FEAT_TRAINS, SELF, sw_NDC_engine, cargo_subtype) {
-    1: sw_NDC_engine_business;
-    sw_NDC_engine_default;
-}
-
-// Wagon
-switch(FEAT_TRAINS, SELF, sw_NDC_wagon, cargo_subtype) {
-    1: set_MUGUNGHWA_CAR_wagon_D;
-    set_MUGUNGHWA_CAR_wagon_C;
-}
-
-// Attach
-switch(FEAT_TRAINS, SELF, sw_NDC_attach, vehicle_type_id) {
-    ko_train_CDC:           return CB_RESULT_ATTACH_ALLOW;
-    ko_train_NDC:           return CB_RESULT_ATTACH_ALLOW;
-    ko_train_DEC:           return CB_RESULT_ATTACH_ALLOW;
-    // ko_train_EEC:           return CB_RESULT_ATTACH_ALLOW;
-    ko_train_PASSWG:        return CB_RESULT_ATTACH_ALLOW;
-    ko_train_PASSWGP:       return CB_RESULT_ATTACH_ALLOW;
-    return string(STR_ERROR_NO_ATTACH);
-}
-
-// Refit
-switch(FEAT_TRAINS, SELF, sw_NDC_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_NDC_BUSINESS);
-    return string(STR_REFIT_LIVERY_NDC);
-}
-
+// Switch
+#include "NDC_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_NDC, 5511) {
@@ -141,7 +69,7 @@ item(FEAT_TRAINS, ko_train_NDC, 5511) {
     }
     graphics {
         default:                        sw_NDC_engine;
-        purchase:                       set_NDC_purchase;
+        purchase:                       sw_NDC_purchase;
 
         speed:                          sw_NDC_speed;
         cost_factor:                    sw_NDC_cost;
