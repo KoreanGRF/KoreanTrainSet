@@ -27,8 +27,8 @@ Pull Request를 열 줄 모르신다면, Issues에 올리셔도 괜찮습니다.
 - [TELKLAND](http://telk.kr)
 - 공식 다운로드 페이지 ([Korean](https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr) / [English](https://telk.kr/ottd/newgrf/ko_train_set/?lang=en) / [Japanese](https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp) / [Spanish](https://telk.kr/ottd/newgrf/ko_train_set/?lang=es))
 
-## 그래픽 참여자
-모든 그래픽 참여자의 이름은 [contributors_graphic.md](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/docs/contributors_graphic.md)에서 볼 수 있습니다.
+## 기여하신 분들
+모든 기여하신 분들의 이름은 [contributors.md](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/docs/contributors.md)에서 볼 수 있습니다.
 
 ## 라이선스
 이 NewGRF는 **[크리에이티브 커먼스 라이선스 v3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)** (CC-BY-NC-SA v3.0)을 따릅니다.  

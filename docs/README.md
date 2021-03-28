@@ -27,8 +27,8 @@ And if you want to translate [the download page of my own site](https://telk.kr/
 - [TELKLAND](http://telk.kr)
 - Official Download Page ([Korean](https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr) / [English](https://telk.kr/ottd/newgrf/ko_train_set/?lang=en) / [Japanese](https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp) / [Spanish](https://telk.kr/ottd/newgrf/ko_train_set/?lang=es))
 
-## Graphic contributors
-All names of graphic contributors can be found at [contributors_graphic.md](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/docs/contributors_graphic.md)
+## Contributors
+All names of contributors can be found at [contributors.md](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/docs/contributors.md)
 
 ## License
 This NewGRF follows **[the Creative Commons License v3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)** (CC-BY-NC-SA v3.0)  
