@@ -212,6 +212,6 @@ for _lang in list(langData.keys()):
         output += append
 
     # Write a doc file
-    f = open(_ROOT + "docs/download_page/" + _lang + ".html", "w")
+    f = open(_ROOT + "docs/download_page/" + _lang + ".md", "w")
     f.write(output + "\n</table>")
     f.close()
