@@ -133,7 +133,7 @@ for file_name in pnmlFiles:
             purchase_img.putdata(newData)
 
             # Save purchase image
-            purchase_img.save(_ROOT + 'generated/download_page/_static/' + sprite_name + '.png', 'png')
+            purchase_img.save(_ROOT + 'docs/download_page/_static/' + sprite_name + '.png', 'png')
 
             # Parse `code_name`
             code_name = os.path.splitext(os.path.basename(file_name))[0]
@@ -212,6 +212,6 @@ for _lang in list(langData.keys()):
         output += append
 
     # Write a doc file
-    f = open(_ROOT + "generated/download_page/" + _lang + ".html", "w")
+    f = open(_ROOT + "docs/download_page/" + _lang + ".html", "w")
     f.write(output + "\n</table>")
     f.close()

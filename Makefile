@@ -42,26 +42,23 @@ build: $(GRF_GENERATE) doc bundle_tar
 	@echo "... $(VERSION) has built"
 
 # Generate *.txt from *.ptxt
-%.txt: %.ptxt 
+%.txt: %.ptxt generated
 	@echo "[DOC] $@"
-	@ cat $< \
-		| sed -e "s/{{\VERSION}}/$(VERSION)/" \
-		> ./$@
+	@cat $< | sed -e "s/{{\VERSION}}/$(VERSION)/" > ./generated/$(notdir $@)
 clean::
 	@-rm -rf ./generated/readme.txt
 
 # Generate document for download page
 download_page: spec.pnml
 	@echo "[DOWNLOAD_PAGE] $@"
-	@if [ ! -e ./generated/download_page/ ]; then mkdir ./generated/download_page/; fi
-	@if [ ! -e ./generated/download_page/_static/ ]; then mkdir ./generated/download_page/_static/; fi
+	@if [ ! -e ./docs/download_page/ ]; then mkdir ./docs/download_page/; fi
+	@if [ ! -e ./docs/download_page/_static/ ]; then mkdir ./docs/download_page/_static/; fi
 	@$(PYTHON) ./src/generate_doc.py
 clean::
 	@-rm -rf $@
 
 # Documents
 doc: generated $(DOC_GENERATE) $(GRF_GENERATE) download_page
-	@cp $(CP_FLAGS) ./docs/readme.txt ./generated/readme.txt
 	@cp $(CP_FLAGS) ./docs/license.txt ./generated/license.txt
 	@cp $(CP_FLAGS) ./docs/changelog.md ./generated/changelog.md
 clean::
