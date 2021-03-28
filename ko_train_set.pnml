@@ -62,11 +62,13 @@ sw_loading_speed_factor =   1 << max(0, min(coeff_loading_speed_factor, 3));
 // Load templates
 #include "src/template_list.pnml"
 
+// Load spec
+#include "generated/spec.pnml"
+
 // Load Switches
 #include "src/switch_list.pnml"
 
 // Load trains
-#include "generated/spec.pnml"
 #include "src/train_list.pnml"
 
 // Railtypes

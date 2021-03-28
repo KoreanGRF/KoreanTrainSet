@@ -81,6 +81,7 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         loading_speed:                  sw_SRT_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         weight:                         sw_KTX2N_weight_in_custom;
     }
     livery_override(ko_train_PASSWGP) {
@@ -89,6 +90,7 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
         cargo_capacity:                 sw_KTX_wagon_capacity_general;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         loading_speed:                  sw_SRT_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         weight:                         sw_KTX2N_weight_in_custom;
         power:                          POWER_IN_KW(200);
     }

@@ -77,10 +77,12 @@ item(FEAT_TRAINS, ko_train_BUSANGIMHAE, 5755) {
     // in future ...
     // livery_override(ko_train_PASSWG) {
     //     default:                        sw_BUSANGIMHAE_wagon;
+    //     running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     //     cargo_capacity:                 sw_METRO_wagon_capacity;
     // }
     // livery_override(ko_train_PASSWGP) {
     //     default:                        sw_BUSANGIMHAE_wagon;
+    //     running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     //     cargo_capacity:                 sw_METRO_wagon_capacity;
     //     power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     // }

@@ -88,6 +88,7 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
         purchase_cargo_capacity:        sw_DHC_wagon_purchase_capacity;
         cargo_subtype_text:             sw_DHC_subtype_text;
         loading_speed:                  sw_DHC_wagon_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_DHC_wagon;
@@ -95,6 +96,7 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
         purchase_cargo_capacity:        sw_DHC_wagon_purchase_capacity;
         cargo_subtype_text:             sw_DHC_subtype_text;
         loading_speed:                  sw_DHC_wagon_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
     }
     livery_override(ko_train_CAFE_CAR) {
         default:                        sw_DHC_CAFE_CAR;

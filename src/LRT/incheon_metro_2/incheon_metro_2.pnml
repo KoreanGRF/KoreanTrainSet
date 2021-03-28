@@ -78,10 +78,12 @@ item(FEAT_TRAINS, ko_train_INCHEON_METRO_2, 5742) {
     // livery_override(ko_train_PASSWG) {
     //     default:                        sw_INCHEON_METRO_2_wagon;
     //     cargo_capacity:                 sw_METRO_wagon_capacity;
+    //     running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     // }
     // livery_override(ko_train_PASSWGP) {
     //     default:                        sw_INCHEON_METRO_2_wagon;
     //     cargo_capacity:                 sw_METRO_wagon_capacity;
+    //     running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     //     power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     // }
 }

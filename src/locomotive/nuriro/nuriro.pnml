@@ -86,12 +86,14 @@ item(FEAT_TRAINS, ko_train_NURIRO, 5525) {
         cargo_capacity:                 sw_NURIRO_wagon_capacity;
         purchase_cargo_capacity:        sw_NURIRO_wagon_purchase_capacity;
         loading_speed:                  sw_NURIRO_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         cargo_subtype_text:             sw_NURIRO_cargo_subtype_text;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_NURIRO_wagon;
         cargo_capacity:                 sw_NURIRO_wagon_capacity;
         loading_speed:                  sw_NURIRO_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         purchase_cargo_capacity:        sw_NURIRO_wagon_purchase_capacity;
         cargo_subtype_text:             sw_NURIRO_cargo_subtype_text;
         power:                          POWER_IN_KW(var_NURIRO_wagon_POWER);

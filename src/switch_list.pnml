@@ -4,7 +4,11 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 #define FIRST_TRAIN_NAME ko_train_K4x00
-#define LAST_TRAIN_NAME  ko_train_DHC
+#define LAST_TRAIN_NAME  ko_train_LRT_wagon
+
+// PASSENGER_WAGON used everywhere, so define first
+RUNNING(PASSENGER_WAGON)
+RUNNING(PASSENGER_WAGON_P)
 
 // Attachable vehicles for Kxxxx locomotives
 switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {

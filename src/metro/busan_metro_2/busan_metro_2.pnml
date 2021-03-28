@@ -78,13 +78,13 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_2, 5752) {
         default:                        sw_BUSAN_METRO_2_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
         loading_speed:                  sw_BUSAN_METRO_2_loadingspeed;
-        // cargo_subtype_text:             sw_BUSAN_METRO_2_cargo_subtype_text;
+        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_BUSAN_METRO_2_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
         loading_speed:                  sw_BUSAN_METRO_2_loadingspeed;
-        // cargo_subtype_text:             sw_BUSAN_METRO_2_cargo_subtype_text;
+        running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
 }
