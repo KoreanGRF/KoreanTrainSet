@@ -28,5 +28,5 @@ spriteset(set_SAEMAEUL_CAR_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_purchase, cargo_subtype) {
-    set_SAEMAEUL_CAR_1_purchase;
+    set_SAEMAEUL_CAR_3_purchase;
 }

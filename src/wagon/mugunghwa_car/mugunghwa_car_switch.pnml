@@ -8,10 +8,10 @@
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_HAERANG, 1) {   // for Haerang
     set_HAERANG_wagon;
 }
-switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN1, 1) {   // for S-train#1
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN_1, 1) {   // for S-train#1
     set_S_TRAIN_wagon1;
 }
-switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN2, 1) {   // for S-train#2
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN_2, 1) {   // for S-train#2
     set_S_TRAIN_wagon2;
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_G_TRAIN, position_in_consist % 5) {   // for G-train
@@ -40,20 +40,3 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text, cargo_subtype) {
     6: return string(STR_REFIT_LIVERY_OLD_EXPRESS);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
-// switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text_K7x00, cargo_subtype) {
-//     6:    return string(STR_REFIT_LIVERY_HAERANG);
-//     10:   return string(STR_REFIT_LIVERY_S_TRAIN1);
-//     11:   return string(STR_REFIT_LIVERY_S_TRAIN2);
-//     12:   return string(STR_REFIT_LIVERY_G_TRAIN);
-//     sw_MUGUNGHWA_CAR_subtype_text_normal;
-// }
-// switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text_K7600, cargo_subtype) {
-//     13:    return string(STR_REFIT_LIVERY_K7600_A_TRAIN);
-//     sw_MUGUNGHWA_CAR_subtype_text_normal;
-// }
-// switch(FEAT_TRAINS, PARENT, sw_MUGUNGHWA_CAR_subtype_text, vehicle_type_id) {
-//     ko_train_K7x00: sw_MUGUNGHWA_CAR_subtype_text_K7x00;
-//     ko_train_K7600: sw_MUGUNGHWA_CAR_subtype_text_K7600;
-//     ko_train_CDC:   sw_CDC_cargo_subtype_text;
-//     sw_MUGUNGHWA_CAR_subtype_text_normal;
-// }

@@ -11,8 +11,8 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_loco, cargo_subtype) {
     3:    set_K7x00_BLUE_WHITE;
     4:    set_K7x00_BLACK_ORANGE;
     // 5:    set_ERRSPRITE;    // RESERVED
-    6:    set_K7x00_HAERANG;
-    // 7:    set_ERRSPRITE;    // RESERVED
+    // 6:    set_ERRSPRITE;    // RESERVED
+    7:    set_K7x00_HAERANG;
     // 8:    set_ERRSPRITE;    // RESERVED
     // 9:    set_ERRSPRITE;    // RESERVED
     10:   set_K7x00_S_TRAIN;
@@ -27,8 +27,8 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
     3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
     4:    return string(STR_REFIT_LIVERY_7x00_BLACK_ORANGE);
     // 5:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
-    6:    return string(STR_REFIT_LIVERY_HAERANG);
-    // 7:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    // 6:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
+    7:    return string(STR_REFIT_LIVERY_HAERANG);
     // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     10:   return string(STR_REFIT_LIVERY_S_TRAIN1);
@@ -37,10 +37,18 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 
-switch(FEAT_TRAINS, SELF, sw_K7x00_MUGUNGHWA_CAR_cargo_subtype_text, cargo_subtype) {
-    6:    sw_MUGUNGHWA_CAR_wagon_HAERANG;    // Haerang
-    10:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN1;   // S-train#1
-    11:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN2;   // S-train#2
+// MUGUNGHWA_CAR
+switch(FEAT_TRAINS, SELF, sw_K7x00_MUGUNGHWA_CAR_wagon, cargo_subtype) {
+    7:    sw_MUGUNGHWA_CAR_wagon_HAERANG;    // Haerang
+    10:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN_1;    // S-train#1
+    11:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN_2;    // S-train#2
     12:   sw_MUGUNGHWA_CAR_wagon_G_TRAIN;    // G-train
-    sw_MUGUNGHWA_CAR_wagon;                  // etc
+    sw_MUGUNGHWA_CAR_wagon;     // etc
+}
+switch(FEAT_TRAINS, SELF, sw_K7x00_MUGUNGHWA_CAR_cargo_subtype_text, cargo_subtype) {
+    7:    return string(STR_REFIT_LIVERY_HAERANG);
+    10:   return string(STR_REFIT_LIVERY_S_TRAIN1);
+    11:   return string(STR_REFIT_LIVERY_S_TRAIN2);
+    12:   return string(STR_REFIT_LIVERY_G_TRAIN);
+    sw_MUGUNGHWA_CAR_subtype_text;
 }

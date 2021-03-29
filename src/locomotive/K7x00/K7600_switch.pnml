@@ -6,10 +6,22 @@
 
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_K7600_loco, cargo_subtype) {
-    13:    set_K7600_A_TRAIN;
+    13: set_K7600_A_TRAIN;
     set_K7600_CARGO;
 }
 switch(FEAT_TRAINS, SELF, sw_K7600_cargo_subtype_text, cargo_subtype) {
-    13:    return string(STR_REFIT_LIVERY_K7600_A_TRAIN);
+    13: return string(STR_REFIT_LIVERY_K7600_A_TRAIN);
     return string(STR_REFIT_LIVERY_7x00_CARGO);
+}
+
+// MUGUNGHWA_CAR
+switch(FEAT_TRAINS, SELF, sw_K7600_MUGUNGHWA_CAR_wagon, cargo_subtype) {
+    13: set_MUGUNGHWA_CAR_wagon_A_TRAIN;
+    sw_MUGUNGHWA_CAR_wagon;
+}
+
+// GENERATOR_CAR
+switch(FEAT_TRAINS, SELF, sw_K7600_GENERATOR_CAR_wagon, cargo_subtype) {
+    13:    set_GENERATOR_CAR_A_TRAIN;
+    sw_GENERATOR_CAR_wagon;
 }

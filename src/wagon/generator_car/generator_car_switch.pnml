@@ -5,31 +5,23 @@
 ------------------------------------------------------------------------------*/
 
 // Refit
-switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon_by_general, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon, cargo_subtype) {
     1:    set_GENERATOR_CAR_BLUE_YELLOW;
     2:    set_GENERATOR_CAR_GREEN_YELLOW;
     3:    set_GENERATOR_CAR_B;
     4:    set_GENERATOR_CAR_A;
-    6:    set_HAERANG_GENERATOR_CAR;
+    7:    set_HAERANG_GENERATOR_CAR;
     10:   set_S_TRAIN_GENERATOR_CAR_1;
     11:   set_S_TRAIN_GENERATOR_CAR_2;
     12:   set_G_TRAIN_GENERATOR_CAR;
     set_GENERATOR_CAR_B;
-}
-switch(FEAT_TRAINS, SELF, sw_K7600_GENERATOR_CAR_wagon, cargo_subtype) {
-    13:    set_GENERATOR_CAR_A_TRAIN;
-    sw_GENERATOR_CAR_wagon_by_general;
-}
-switch(FEAT_TRAINS, PARENT, sw_GENERATOR_CAR_wagon, vehicle_type_id) {
-    ko_train_K7600: sw_K7600_GENERATOR_CAR_wagon;
-    sw_GENERATOR_CAR_wagon_by_general;
 }
 switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon_subtype_text, cargo_subtype) {
     1:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_SME_B);
     2:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_SME_A);
     3:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_LONG);
     4:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_DEFAULT);
-    6:    return string(STR_REFIT_LIVERY_HAERANG);
+    7:    return string(STR_REFIT_LIVERY_HAERANG);
     10:   return string(STR_REFIT_LIVERY_S_TRAIN1);
     11:   return string(STR_REFIT_LIVERY_S_TRAIN2);
     12:   return string(STR_REFIT_LIVERY_G_TRAIN);
