@@ -76,6 +76,8 @@
 #include "LRT/yongin_everline/yongin_everline.pnml"
 #include "LRT/uijeongbu/uijeongbu.pnml"
 
+#include "locomotive/ecobee/ecobee.pnml"
+
 // Wagons
 #include "wagon/passenger_wagon/passenger_wagon.pnml"
 #include "wagon/flat_car/flat_car.pnml"

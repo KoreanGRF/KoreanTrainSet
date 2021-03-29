@@ -24,6 +24,8 @@ sort(FEAT_TRAINS, [
     ko_train_DHC,                    // 5520
     ko_train_BIDULGI_CDC,            // 5521
 
+    ko_train_ECOBEE,                 // 5620
+
     ko_train_PASSWG,                 // 5900
     ko_train_PASSWGP,                // 5901
 

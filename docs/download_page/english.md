@@ -539,6 +539,16 @@
         <td class="weight">16 t</td>
         <td class="introduction">2012</td>
     </tr>
+    <tr data-veh_id="ECOBEE">
+        <td class="refit"><div><img src="./_static/ECOBEE.png" alt="Incheon Intl Airport Maglev (Ecobee)"></div></td>
+        <td class="name">Incheon Intl Airport Maglev (Ecobee)</td>
+        <td class="speed">80 km/h</td>
+        <td class="speed_designed">110 km/h</td>
+        <td class="capacity">186</td>
+        <td class="power">500 kW</td>
+        <td class="weight">19 t</td>
+        <td class="introduction">2012</td>
+    </tr>
     <tr data-veh_id="PASSENGER_WAGON">
         <td class="refit"><div><img src="./_static/PASSENGER_WAGON.png" alt="Passenger car"><br /><img src="./_static/PASSENGER_WAGONP.png" alt="Passenger car"></div></td>
         <td class="name">Passenger car</td>

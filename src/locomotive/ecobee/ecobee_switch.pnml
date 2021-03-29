@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_ECOBEE_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: set_ECOBEE_engineT;
+    set_ECOBEE_engineH;
+}
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_ECOBEE_attach, vehicle_type_id) {
+    ko_train_ECOBEE:  return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}

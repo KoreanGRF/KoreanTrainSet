@@ -69,6 +69,7 @@ trainList['DAEGU_METRO_3']      = 80,     80,     10,     4,            100,    
 trainList['UISINSEOL']          = 70,     80,     10,     4,            80,      30,           520,    23,     (2017, 1, 1)
 trainList['YONGIN_EVERLINE']    = 80,     80,     10,     4,            80,      30,           500,    24,     (2017, 1, 1)
 trainList['UIJEONGBU']          = 80,     80,     10,     4,            80,      30,           500,    16,     (2012, 1, 1)
+trainList['ECOBEE']             = 80,     110,    10,     4,            186,     20,           500,    19,     (2012, 1, 1)
 trainList['PASSENGER_WAGON']    = None,   None,   100,    2,            None,    10,           None,   20,     (1950, 1, 1)
 trainList['PASSENGER_WAGON_P']  = None,   None,   None,   4,            None,    None,         200,    25,     (1950, 1, 1)
 trainList['FLAT_CAR']           = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)

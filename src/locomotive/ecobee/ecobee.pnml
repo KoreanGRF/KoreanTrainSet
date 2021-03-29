@@ -1,0 +1,83 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Ecobee
+ */
+SPEED_GENERAL(ECOBEE)
+COST(ECOBEE)
+RUNNING(ECOBEE)
+CAPACITY(ECOBEE)
+// CAPACITY_PURCHASE(ECOBEE)
+LOADING(ECOBEE)
+
+// Graphics
+#include "ecobee_graphic.pnml"
+
+// Switch
+#include "ecobee_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_ECOBEE, 5620) {
+    property {
+        // Common properties
+        name:                           string(STR_ECOBEE_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_ECOBEE_INTRODUCTION;
+        track_type:                     MGLV;
+        engine_class:                   ENGINE_CLASS_MAGLEV;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+
+        // Spec
+        speed:                          110 km/h;
+        power:                          POWER_IN_KW(var_ECOBEE_POWER);
+        weight:                         var_ECOBEE_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+        length:                         7;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+        visual_effect_and_powered:      VISUAL_EFFECT_DISABLE;
+    }
+    graphics {
+        default:                        sw_ECOBEE_engine;
+        purchase:                       sw_ECOBEE_purchase;
+
+        speed:                          sw_ECOBEE_speed;
+        cost_factor:                    sw_ECOBEE_cost;
+        running_cost_factor:            sw_ECOBEE_runningcost;
+        cargo_capacity:                 sw_ECOBEE_capacity;
+        loading_speed:                  sw_ECOBEE_loadingspeed;
+
+        can_attach_wagon:               sw_ECOBEE_attach;
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_BIDULGI_CAR_wagon;
+        cargo_capacity:                 sw_BIDULGI_CAR_capacity_in_custom;
+        loading_speed:                  sw_ECOBEE_loadingspeed;
+    }
+}

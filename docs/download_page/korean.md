@@ -539,6 +539,16 @@
         <td class="weight">16 t</td>
         <td class="introduction">2012</td>
     </tr>
+    <tr data-veh_id="ECOBEE">
+        <td class="refit"><div><img src="./_static/ECOBEE.png" alt="인천공항 자기부상철도 (에코비)"></div></td>
+        <td class="name">인천공항 자기부상철도 (에코비)</td>
+        <td class="speed">80 km/h</td>
+        <td class="speed_designed">110 km/h</td>
+        <td class="capacity">186</td>
+        <td class="power">500 kW</td>
+        <td class="weight">19 t</td>
+        <td class="introduction">2012</td>
+    </tr>
     <tr data-veh_id="PASSENGER_WAGON">
         <td class="refit"><div><img src="./_static/PASSENGER_WAGON.png" alt="승객 수송 차량"><br /><img src="./_static/PASSENGER_WAGONP.png" alt="승객 수송 차량"></div></td>
         <td class="name">승객 수송 차량</td>

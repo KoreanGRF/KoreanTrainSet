@@ -31,6 +31,7 @@ STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-산천
 STR_SRT_NAME                                     :[KTS] SRT
 STR_EUM_NAME                                     :[KTS] KTX-이음
+STR_ECOBEE_NAME                                  :[KTS] 인천공항 자기부상철도 (에코비)
 
 STR_PASSENGER_WAGON_NAME                         :[KTS] 승객 수송 차량
 STR_PASSENGER_WAGON_POWER_NAME                   :[KTS] 승객 수송 차량 (동력차)
