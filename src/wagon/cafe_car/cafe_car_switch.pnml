@@ -4,6 +4,13 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
+// Graphic - DHC
+switch(FEAT_TRAINS, PARENT, sw_DHC_CAFE_CAR, cargo_subtype) {
+    0: set_CAFE_CAR_DHC_3;
+    // 1: set_CAFE_CAR_DHC_1;
+    2: set_CAFE_CAR_DHC_2;
+}
+
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_wagon, cargo_subtype) {
     1: sw_DHC_CAFE_CAR;

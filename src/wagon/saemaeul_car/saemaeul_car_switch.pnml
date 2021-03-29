@@ -4,32 +4,22 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Refit Paintings
-switch(FEAT_TRAINS, SELF, sw_DHC_engineH, cargo_subtype) {
-    1: set_DHC_1_engineH;
-    2: set_DHC_2_engineH;
-    set_DHC_3_engineH;
-}
-switch(FEAT_TRAINS, SELF, sw_DHC_engineT, cargo_subtype) {
-    1: set_DHC_1_engineT;
-    2: set_DHC_2_engineT;
-    set_DHC_3_engineT;
-}
-switch(FEAT_TRAINS, SELF, sw_DHC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: sw_DHC_engineT;
-    sw_DHC_engineH;
+switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_wagon, cargo_subtype) {
+    1: set_SAEMAEUL_CAR_1;
+    2: set_SAEMAEUL_CAR_2;
+    set_SAEMAEUL_CAR_3;
 }
 
 // Cargo subtype
-// Same as sw_SAEMAEUL_CAR_subtype_text
-switch(FEAT_TRAINS, SELF, sw_DHC_subtype_text, cargo_subtype) {
+// Same as sw_DHC_subtype_text
+switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_1970_1983);
     2: return string(STR_REFIT_LIVERY_GREEN_YELLOW);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 
 // Attachable vehicles
-switch(FEAT_TRAINS, SELF, sw_DHC_attach, vehicle_type_id) {
+switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_attach, vehicle_type_id) {
     ko_train_DHC:          return CB_RESULT_ATTACH_ALLOW;
     ko_train_ITX_SAEMAEUL: return CB_RESULT_ATTACH_ALLOW;
     ko_train_K4x00:        return CB_RESULT_ATTACH_ALLOW;

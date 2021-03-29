@@ -36,3 +36,11 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
     12:   return string(STR_REFIT_LIVERY_G_TRAIN);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
+
+switch(FEAT_TRAINS, SELF, sw_K7x00_MUGUNGHWA_CAR_cargo_subtype_text, cargo_subtype) {
+    6:    sw_MUGUNGHWA_CAR_wagon_HAERANG;    // Haerang
+    10:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN1;   // S-train#1
+    11:   sw_MUGUNGHWA_CAR_wagon_S_TRAIN2;   // S-train#2
+    12:   sw_MUGUNGHWA_CAR_wagon_G_TRAIN;    // G-train
+    sw_MUGUNGHWA_CAR_wagon;                  // etc
+}

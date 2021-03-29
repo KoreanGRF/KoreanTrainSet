@@ -3,6 +3,14 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
+// Common wagons
+#include "wagon/saemaeul_car/saemaeul_car.pnml"
+#include "wagon/mugunghwa_car/mugunghwa_car.pnml"
+#include "wagon/tongil_car/tongil_car.pnml"
+#include "wagon/bidulgi_car/bidulgi_car.pnml"
+#include "wagon/generator_car/generator_car.pnml"
+#include "wagon/cafe_car/cafe_car.pnml"
+
 // Steam locomotives
 #include "locomotive/steam/Mate2.pnml"
 #include "locomotive/steam/Pashi5.pnml"
@@ -38,16 +46,7 @@
 // KTX
 #include "locomotive/KTX/KTX.pnml"
 
-// Wagon
-#include "wagon/saemaeul_car/saemaeul_car.pnml"
-#include "wagon/mugunghwa_car/mugunghwa_car.pnml"
-#include "wagon/tongil_car/tongil_car.pnml"
-#include "wagon/bidulgi_car/bidulgi_car.pnml"
-#include "wagon/generator_car/generator_car.pnml"
-#include "wagon/cafe_car/cafe_car.pnml"
-
-
-//----- Metro -----//
+// Metro
 #include "metro/seoul_metro_1/seoul_metro_1.pnml"
 #include "metro/seoul_metro_2/seoul_metro_2.pnml"
 #include "metro/seoul_metro_3/seoul_metro_3.pnml"
@@ -67,7 +66,7 @@
 #include "metro/daejeon_metro_1/daejeon_metro_1.pnml"
 #include "metro/gwangju_metro_1/gwangju_metro_1.pnml"
 
-//----- LRT -----//
+// LRT
 #include "LRT/busan_metro_4/busan_metro_4.pnml"
 #include "LRT/incheon_metro_2/incheon_metro_2.pnml"
 #include "LRT/daegu_metro_3/daegu_metro_3.pnml"

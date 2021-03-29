@@ -15,11 +15,9 @@ LOADING(BIDULGI_CDC)
 
 // Graphics
 #include "bidulgi_cdc_graphic.pnml"
-#include "bidulgi_car_graphic.pnml"
 
 // Switch
 #include "bidulgi_cdc_switch.pnml"
-#include "bidulgi_car_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_BIDULGI_CDC, 5521) {

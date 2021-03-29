@@ -19,7 +19,6 @@ trainList['K8000']              = 85,     90,     10,     6,            None,   
 trainList['K8x00']              = 150,    220,    10,     4,            None,    None,         5200,   88,     (1990, 1, 1)
 trainList['K8500']              = 150,    165,    10,     4,            None,    None,         6600,   132,    (2012, 1, 1)
 trainList['DHC']                = 150,    150,    10,     4,            22,      5,            4474,   70,     (1987, 1, 1)
-trainList['DHC_wagon']          = 150,    150,    100,    2,            64,      5,            0,      20,     (1987, 1, 1)
 trainList['ITX_SAEMAEUL']       = 150,    165,    10,     4,            44,      5,            6000,   45,     (2014, 1, 1)
 trainList['ITX_SAEMAEUL_wagon'] = 150,    165,    None,   2,            44,      5,            200,    45,     (2014, 1, 1)
 trainList['NURIRO']             = 150,    165,    10,     4,            64,      10,           4000,   45,     (2010, 1, 1)
@@ -36,6 +35,7 @@ trainList['KTX2N']              = 305,    320,    20,     10,           0,      
 trainList['SRT']                = 305,    320,    20,     10,           0,       10,           8800,   68,     (2015, 1, 1)
 trainList['EUM']                = 260,    286,    20,     10,           76,      10,           8800,   60,     (2019, 1, 1)
 trainList['KTX_wagon']          = 300,    300,    None,   8,            58,      10,           0,      20,     (2004, 1, 1)
+trainList['SAEMAEUL_CAR']       = 150,    150,    100,    2,            64,      5,            0,      20,     (1987, 1, 1)
 trainList['MUGUNGHWA_CAR']      = 135,    135,    100,    2,            72,      10,           0,      17,     (1972, 1, 1)
 trainList['TONGIL_CAR']         = 120,    120,    100,    2,            72,      10,           0,      17,     (1988, 1, 1)
 trainList['BIDULGI_CAR']        = 110,    110,    100,    2,            100,     10,           0,      34,     (1927, 1, 1)
@@ -76,7 +76,6 @@ trainList['HOPPER_CAR']         = None,   None,   100,    2,            35,     
 trainList['BAGGAGE_CAR']        = 120,    120,    100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['TANK_CAR']           = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['STAKE_CAR']          = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
-trainList['SAEMAEUL_CAR']       = trainList['DHC_wagon']   # Same as DHC_wagon
 
 
 # Generates spec.pnml (Do not modified this below!)

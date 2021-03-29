@@ -219,6 +219,16 @@
         <td class="weight">60 t</td>
         <td class="introduction">2019</td>
     </tr>
+    <tr data-veh_id="SAEMAEUL_CAR">
+        <td class="refit"><div><img src="./_static/SAEMAEUL_CAR_1.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_2.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_3.png" alt="Saemaeul passenger car"></div></td>
+        <td class="name">Saemaeul passenger car</td>
+        <td class="speed">150 km/h</td>
+        <td class="speed_designed">150 km/h</td>
+        <td class="capacity">64</td>
+        <td class="power"></td>
+        <td class="weight">20 t</td>
+        <td class="introduction">1987</td>
+    </tr>
     <tr data-veh_id="MUGUNGHWA_CAR">
         <td class="refit"><div><img src="./_static/MUGUNGHWA_CAR_A.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_B.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_C.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_D.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_E.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_RED_BLUE_WHITE.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_OLD_EXPRESS.png" alt="Mugunghwa passenger car"><br /><img src="./_static/HAERANG.png" alt="Mugunghwa passenger car"><br /><img src="./_static/G_TRAIN.png" alt="Mugunghwa passenger car"><br /><img src="./_static/S_TRAIN_1.png" alt="Mugunghwa passenger car"><br /><img src="./_static/S_TRAIN_2.png" alt="Mugunghwa passenger car"><br /><img src="./_static/A_TRAIN_1.png" alt="Mugunghwa passenger car"></div></td>
         <td class="name">Mugunghwa passenger car</td>
@@ -260,7 +270,7 @@
         <td class="introduction">1972</td>
     </tr>
     <tr data-veh_id="CAFE_CAR">
-        <td class="refit"><div><img src="./_static/CAFE_CAR.png" alt="Cafe car"><br /><img src="./_static/CAFE_CAR_RDC.png" alt="Cafe car"><br /><img src="./_static/CAFE_CAR_DHC.png" alt="Cafe car"></div></td>
+        <td class="refit"><div><img src="./_static/CAFE_CAR_MUGUNGHWA.png" alt="Cafe car"><br /><img src="./_static/CAFE_CAR_RDC.png" alt="Cafe car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_STREAMLINED.png" alt="Cafe car"><br /><img src="./_static/CAFE_CAR_DHC_2.png" alt="Cafe car"><br /><img src="./_static/CAFE_CAR_DHC_3.png" alt="Cafe car"></div></td>
         <td class="name">Cafe car</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
@@ -588,15 +598,5 @@
         <td class="power"></td>
         <td class="weight">17 t</td>
         <td class="introduction">1950</td>
-    </tr>
-    <tr data-veh_id="SAEMAEUL_CAR">
-        <td class="refit"><div><img src="./_static/DHC_wagon.png" alt="Saemaeul passenger car"></div></td>
-        <td class="name">Saemaeul passenger car</td>
-        <td class="speed">150 km/h</td>
-        <td class="speed_designed">150 km/h</td>
-        <td class="capacity">64</td>
-        <td class="power"></td>
-        <td class="weight">20 t</td>
-        <td class="introduction">1987</td>
     </tr>
 </table>

@@ -219,6 +219,16 @@
         <td class="weight">60 t</td>
         <td class="introduction">2019</td>
     </tr>
+    <tr data-veh_id="SAEMAEUL_CAR">
+        <td class="refit"><div><img src="./_static/SAEMAEUL_CAR_1.png" alt="새마을호 객차"><br /><img src="./_static/SAEMAEUL_CAR_2.png" alt="새마을호 객차"><br /><img src="./_static/SAEMAEUL_CAR_3.png" alt="새마을호 객차"></div></td>
+        <td class="name">새마을호 객차</td>
+        <td class="speed">150 km/h</td>
+        <td class="speed_designed">150 km/h</td>
+        <td class="capacity">64</td>
+        <td class="power"></td>
+        <td class="weight">20 t</td>
+        <td class="introduction">1987</td>
+    </tr>
     <tr data-veh_id="MUGUNGHWA_CAR">
         <td class="refit"><div><img src="./_static/MUGUNGHWA_CAR_A.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_B.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_C.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_D.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_E.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_RED_BLUE_WHITE.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_OLD_EXPRESS.png" alt="무궁화호 객차"><br /><img src="./_static/HAERANG.png" alt="무궁화호 객차"><br /><img src="./_static/G_TRAIN.png" alt="무궁화호 객차"><br /><img src="./_static/S_TRAIN_1.png" alt="무궁화호 객차"><br /><img src="./_static/S_TRAIN_2.png" alt="무궁화호 객차"><br /><img src="./_static/A_TRAIN_1.png" alt="무궁화호 객차"></div></td>
         <td class="name">무궁화호 객차</td>
@@ -260,7 +270,7 @@
         <td class="introduction">1972</td>
     </tr>
     <tr data-veh_id="CAFE_CAR">
-        <td class="refit"><div><img src="./_static/CAFE_CAR.png" alt="카페 객차"><br /><img src="./_static/CAFE_CAR_RDC.png" alt="카페 객차"><br /><img src="./_static/CAFE_CAR_DHC.png" alt="카페 객차"></div></td>
+        <td class="refit"><div><img src="./_static/CAFE_CAR_MUGUNGHWA.png" alt="카페 객차"><br /><img src="./_static/CAFE_CAR_RDC.png" alt="카페 객차"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_STREAMLINED.png" alt="카페 객차"><br /><img src="./_static/CAFE_CAR_DHC_2.png" alt="카페 객차"><br /><img src="./_static/CAFE_CAR_DHC_3.png" alt="카페 객차"></div></td>
         <td class="name">카페 객차</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
@@ -588,15 +598,5 @@
         <td class="power"></td>
         <td class="weight">17 t</td>
         <td class="introduction">1950</td>
-    </tr>
-    <tr data-veh_id="SAEMAEUL_CAR">
-        <td class="refit"><div><img src="./_static/DHC_wagon.png" alt="새마을호 객차"></div></td>
-        <td class="name">새마을호 객차</td>
-        <td class="speed">150 km/h</td>
-        <td class="speed_designed">150 km/h</td>
-        <td class="capacity">64</td>
-        <td class="power"></td>
-        <td class="weight">20 t</td>
-        <td class="introduction">1987</td>
     </tr>
 </table>

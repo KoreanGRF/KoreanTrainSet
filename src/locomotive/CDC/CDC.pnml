@@ -98,6 +98,9 @@ item(FEAT_TRAINS, ko_train_CDC, 5510) {
         running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         cargo_subtype_text:             sw_CDC_cargo_subtype_text;
     }
+    livery_override(ko_train_MUGUNGHWA_CAR) {
+        cargo_subtype_text:             sw_CDC_cargo_subtype_text;
+    }
     livery_override(ko_train_CAFE_CAR) {
         default:                        set_CAFE_CAR_RDC;
     }

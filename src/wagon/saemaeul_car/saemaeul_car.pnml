@@ -6,14 +6,18 @@
 /**
  * Saemaeul passenger car (standalone)
  */
-// Graphic
-spriteset(set_DHC_wagon_purchase, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_purchase_detail(365, 120, 32, 12, -16, -6)
-}
+// SPEED_GENERAL(SAEMAEUL_CAR)
+COST(SAEMAEUL_CAR)
+RUNNING(SAEMAEUL_CAR)
+CAPACITY(SAEMAEUL_CAR)
+CAPACITY_PURCHASE(SAEMAEUL_CAR)
+LOADING(SAEMAEUL_CAR)
+
+// Graphics
+#include "SAEMAEUL_CAR_graphic.pnml"
 
 // Switch
-// Saemaeul passenger car (standalone) uses DHC's wagon
-// So you need to modify ./src/locomotive/saemaeul/DHC.pnml to modify this wagon's switch block
+#include "SAEMAEUL_CAR_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
@@ -21,13 +25,13 @@ item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
         // Common properties
         name:                           string(STR_SAEMAEUL_CAR_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_DHC_wagon_INTRODUCTION;
+        introduction_date:              var_SAEMAEUL_CAR_INTRODUCTION;
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         // Spec
         power:                          0 kW;
-        weight:                         var_DHC_wagon_WEIGHT;
+        weight:                         var_SAEMAEUL_CAR_WEIGHT;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
@@ -52,17 +56,17 @@ item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_DHC_wagon;
-        purchase:                       set_DHC_wagon_purchase;
+        default:                        sw_SAEMAEUL_CAR_wagon;
+        purchase:                       sw_SAEMAEUL_CAR_purchase;
 
-        cost_factor:                    sw_DHC_wagon_cost;
-        running_cost_factor:            sw_DHC_wagon_runningcost;
-        cargo_capacity:                 sw_DHC_wagon_capacity;
-        loading_speed:                  sw_DHC_wagon_loadingspeed;
+        cost_factor:                    sw_SAEMAEUL_CAR_cost;
+        running_cost_factor:            sw_SAEMAEUL_CAR_runningcost;
+        cargo_capacity:                 sw_SAEMAEUL_CAR_capacity;
+        loading_speed:                  sw_SAEMAEUL_CAR_loadingspeed;
 
-        can_attach_wagon:               sw_DHC_attach;
+        can_attach_wagon:               sw_SAEMAEUL_CAR_attach;
 
-        cargo_subtype_text:             sw_DHC_subtype_text;
+        cargo_subtype_text:             sw_SAEMAEUL_CAR_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }

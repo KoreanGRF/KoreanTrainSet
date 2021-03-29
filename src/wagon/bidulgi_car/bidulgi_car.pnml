@@ -14,10 +14,10 @@ CAPACITY(BIDULGI_CAR)
 LOADING(BIDULGI_CAR)
 
 // Graphics
-// ... Already included at ./src/locomotive/bidulgi/bidulgi_cdc.pnml
+#include "bidulgi_car_graphic.pnml"
 
 // Switch
-// ... Already included at ./src/locomotive/bidulgi/bidulgi_cdc.pnml
+#include "bidulgi_car_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_BIDULGI_CAR, 5605) {

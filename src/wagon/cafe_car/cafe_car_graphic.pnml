@@ -6,23 +6,47 @@
 
 // Graphic
 
-// Cafe car for Mugunghwa
-spriteset(set_CAFE_CAR_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+// Mugunghwa
+spriteset(set_CAFE_CAR_MUGUNGHWA_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
 }
 spriteset(set_CAFE_CAR_MUGUNGHWA, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 0)
 }
 
+// RDC
 spriteset(set_CAFE_CAR_RDC_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
 }
+spriteset(set_CAFE_CAR_RDC, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(60, 30)
+}
 
-spriteset(set_CAFE_CAR_DHC_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
+// Mugunghwa streamlined
+spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINED_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINED, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(60, 60)
+}
+
+// Saemaeul (Green+Yellow)
+spriteset(set_CAFE_CAR_DHC_2_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_CAFE_CAR_DHC_2, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(60, 90)
+}
+
+// Saemaeul (Blue + Yellow)
+spriteset(set_CAFE_CAR_DHC_3_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+}
+spriteset(set_CAFE_CAR_DHC_3, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(60, 120)
 }
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_purchase, cargo_subtype) {
-    set_CAFE_CAR_purchase;
+    set_CAFE_CAR_MUGUNGHWA_purchase;
 }

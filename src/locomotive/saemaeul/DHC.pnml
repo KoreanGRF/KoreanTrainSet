@@ -12,12 +12,6 @@ RUNNING(DHC)
 CAPACITY(DHC)
 CAPACITY_PURCHASE(DHC)
 LOADING(DHC)
-// SPEED_GENERAL(DHC_wagon)
-COST(DHC_wagon)
-RUNNING(DHC_wagon)
-CAPACITY(DHC_wagon)
-CAPACITY_PURCHASE(DHC_wagon)
-LOADING(DHC_wagon)
 
 // Graphics
 #include "DHC_graphic.pnml"
@@ -83,19 +77,19 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
     livery_override(ko_train_PASSWG) {
-        default:                        sw_DHC_wagon;
-        cargo_capacity:                 sw_DHC_wagon_capacity;
-        purchase_cargo_capacity:        sw_DHC_wagon_purchase_capacity;
+        default:                        sw_SAEMAEUL_CAR_wagon;
+        cargo_capacity:                 sw_SAEMAEUL_CAR_capacity;
+        purchase_cargo_capacity:        sw_SAEMAEUL_CAR_purchase_capacity;
         cargo_subtype_text:             sw_DHC_subtype_text;
-        loading_speed:                  sw_DHC_wagon_loadingspeed;
+        loading_speed:                  sw_SAEMAEUL_CAR_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     }
     livery_override(ko_train_PASSWGP) {
-        default:                        sw_DHC_wagon;
-        cargo_capacity:                 sw_DHC_wagon_capacity;
-        purchase_cargo_capacity:        sw_DHC_wagon_purchase_capacity;
+        default:                        sw_SAEMAEUL_CAR_wagon;
+        cargo_capacity:                 sw_SAEMAEUL_CAR_capacity;
+        purchase_cargo_capacity:        sw_SAEMAEUL_CAR_purchase_capacity;
         cargo_subtype_text:             sw_DHC_subtype_text;
-        loading_speed:                  sw_DHC_wagon_loadingspeed;
+        loading_speed:                  sw_SAEMAEUL_CAR_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
     }
     livery_override(ko_train_CAFE_CAR) {

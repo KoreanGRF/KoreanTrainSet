@@ -186,19 +186,6 @@ spriteset(set_CDC_GYEONGBUK2_wagon2, "./src/locomotive/CDC/CDC.png") {
     tmpl_wagon_by_coor(340, 390)
 }
 
-// Cafe car for RDC
-// Not use tmpl_CAFE_CAR() since its width is 16, not 17.
-spriteset(set_CAFE_CAR_RDC, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    [60+0,       30,     8,    22,     -3,   -11]
-    [60+15,      30,    21,    16,    -14,    -8]
-    [60+45,      30,    31,    12,    -17,    -8]
-    [60+95,      30,    21,    16,     -6,    -8]
-    [60+125,     30,     8,    22,     -3,   -11]
-    [60+140,     30,    21,    16,    -14,    -8]
-    [60+175,     30,    31,    12,    -17,    -8]
-    [60+225,     30,    21,    16,     -6,    -8]
-}
-
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_CDC_purchase, cargo_subtype) {
     set_CDC_purchase;
