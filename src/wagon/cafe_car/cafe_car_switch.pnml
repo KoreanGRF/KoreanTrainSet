@@ -13,7 +13,9 @@ switch(FEAT_TRAINS, SELF, sw_DHC_CAFE_CAR, cargo_subtype) {
 
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_wagon, cargo_subtype) {
-    1: sw_DHC_CAFE_CAR;
+    1: set_CAFE_CAR_DHC_1;
+    2: set_CAFE_CAR_DHC_2;
+    3: set_CAFE_CAR_DHC_3;
     6: set_HAERANG_CAFE_wagon;   //=> Refer: ./src/wagon/Mugunghwa
     8: set_CAFE_CAR_RDC;         //=> Refer: ./src/locomotive/CDC
     19: set_CAFE_CAR_MUGUNGHWA_STREAMLINED;
@@ -22,7 +24,9 @@ switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_wagon, cargo_subtype) {
 }
 
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_SAEMAEUL_CAFE);
+    1: return string(STR_REFIT_LIVERY_SAEMAEUL_BLUE_RED_CAFE);
+    2: return string(STR_REFIT_LIVERY_SAEMAEUL_GREEN_YELLOW_CAFE);
+    3: return string(STR_REFIT_LIVERY_SAEMAEUL_BLUE_YELLOW_CAFE);
     6: return string(STR_REFIT_LIVERY_HAERANG);
     8: return string(STR_REFIT_LIVERY_RDC_MUGUNGHWA_CAFE);
     19: return string(STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINED_CAFE);
