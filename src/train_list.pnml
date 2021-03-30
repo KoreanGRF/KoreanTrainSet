@@ -12,9 +12,7 @@
 #include "wagon/cafe_car/cafe_car.pnml"
 
 // Steam locomotives
-#include "locomotive/steam/Mate2.pnml"
-#include "locomotive/steam/Pashi5.pnml"
-#include "locomotive/steam/Mika3.pnml"
+#include "locomotive/steam/steam.pnml"
 
 // K4x00
 #include "locomotive/K4x00/K4x00.pnml"

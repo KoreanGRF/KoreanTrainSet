@@ -135,6 +135,8 @@ item(FEAT_TRAINS, ko_train_MIKA3, 5301) {
         purchase_cargo_capacity:        sw_MIKA3_purchase_capacity;
         loading_speed:                  sw_MIKA3_loadingspeed;
 
+        can_attach_wagon:               sw_steam_attach;
+
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
 }
