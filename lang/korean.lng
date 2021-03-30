@@ -140,8 +140,8 @@ STR_REFIT_LIVERY_NDC_2                           : (1994~2009년 도색)
 STR_REFIT_LIVERY_NDC_BUSINESS                    : (비즈니스 동차)
 
 # Refit (DEC)
-STR_REFIT_LIVERY_DEC_1                           : (1986~1994년 도색 : 새마을호)
-STR_REFIT_LIVERY_DEC_2                           : (1980~1986년 도색)
+STR_REFIT_LIVERY_DEC_1                           : (1980~1986년 도색)
+STR_REFIT_LIVERY_DEC_2                           : (1986~1994년 도색 : 새마을호)
 STR_REFIT_LIVERY_DEC_3                           : (1994~1999년 도색)
 
 # Refit (EEC)

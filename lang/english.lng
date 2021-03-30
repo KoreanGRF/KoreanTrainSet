@@ -139,8 +139,8 @@ STR_REFIT_LIVERY_NDC_2                           : (Livery: 1994~2009)
 STR_REFIT_LIVERY_NDC_BUSINESS                    : (Business car)
 
 # Refit (DEC)
-STR_REFIT_LIVERY_DEC_1                           : (Livery: 1986~1994 : Saemaeul)
-STR_REFIT_LIVERY_DEC_2                           : (Livery: 1980~1986)
+STR_REFIT_LIVERY_DEC_1                           : (Livery: 1980~1986)
+STR_REFIT_LIVERY_DEC_2                           : (Livery: 1986~1994 : Saemaeul)
 STR_REFIT_LIVERY_DEC_3                           : (Livery: 1994~1999)
 
 # Refit (EEC)
