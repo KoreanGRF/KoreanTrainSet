@@ -20,6 +20,8 @@ switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_subtype_text, cargo_subtype) {
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_4_wagon, random_bits % 2) {
     1: set_BIDULGI_CAR_4B_wagon;
+    2: set_BIDULGI_CAR_4C_wagon;
+    3: set_BIDULGI_CAR_4D_wagon;
     set_BIDULGI_CAR_4A_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_wagon, cargo_subtype) {

@@ -62,14 +62,14 @@ spriteset(set_BAGGAGE_CAR_E_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
 }
 
 spriteset(set_BAGGAGE_CAR_F_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+    tmpl_purchase_detail(0, 150, 31, 15, -16, -9)
 }
 spriteset(set_BAGGAGE_CAR_F_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 150)
 }
 
 spriteset(set_BAGGAGE_CAR_MAIL_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+    tmpl_purchase_detail(0, 180, 31, 15, -16, -9)
 }
 spriteset(set_BAGGAGE_CAR_MAIL_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 180)
@@ -87,8 +87,11 @@ spriteset(set_V_TRAIN_wagon_3, "./src/wagon/baggage_car/V-train_wagon.png") {
 }
 
 // Bidulgi
+spriteset(set_BAGGAGE_CAR_BIDULGI_purchase, "./src/wagon/baggage_car/BIDULGI.png") {
+    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+}
 spriteset(set_BAGGAGE_CAR_BIDULGI_wagon, "./src/wagon/baggage_car/BIDULGI.png") {
-    tmpl_wagon_by_coor(0, 0)
+    tmpl_wagon_by_coor(60, 0)
 }
 
 // Alias of purchase image

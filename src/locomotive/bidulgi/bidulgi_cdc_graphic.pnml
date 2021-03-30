@@ -9,7 +9,7 @@
 
 // Graphics
 spriteset(set_BIDULGI_CDC_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
-    tmpl_purchase_detail(0, 0, 31, 11, -7, -6)
+    tmpl_purchase_detail(0, 0, 31, 15, -7, -9)
 }
 spriteset(set_BIDULGI_CDC_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_wagon_by_coor(60, 0)
