@@ -70,5 +70,5 @@ spriteset(set_G_TRAIN_GENERATOR_CAR, "./src/wagon/mugunghwa_car/G-train.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_purchase, cargo_subtype) {
-    set_GENERATOR_CAR_B;
+    set_GENERATOR_CAR_B_wagon_purchase;
 }
