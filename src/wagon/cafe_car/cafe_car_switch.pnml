@@ -6,7 +6,7 @@
 
 // Graphic - DHC
 switch(FEAT_TRAINS, SELF, sw_DHC_CAFE_CAR, cargo_subtype) {
-    // 1: set_CAFE_CAR_DHC_1;
+    1: set_CAFE_CAR_DHC_1;
     2: set_CAFE_CAR_DHC_2;
     set_CAFE_CAR_DHC_3;
 }
