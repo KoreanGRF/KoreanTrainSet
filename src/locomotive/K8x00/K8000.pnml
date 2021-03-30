@@ -47,7 +47,7 @@ switch(FEAT_TRAINS, SELF, sw_K8000, cargo_subtype) {
     set_K8000_RED_WHITE_BLUE;
 }
 switch(FEAT_TRAINS, SELF, sw_K8000_cargo_subtype_text, cargo_subtype) {
-    1:    return string(STR_REFIT_LIVERY_1970_1983);
+    1:    return string(STR_REFIT_LIVERY_MUGUNGHWA_1970_1983);
     2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }

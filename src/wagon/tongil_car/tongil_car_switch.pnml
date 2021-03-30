@@ -1,0 +1,27 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_TONGIL_CAR_3_wagon, random_bits % 2) {
+    1: set_TONGIL_CAR_3B_wagon;
+    set_TONGIL_CAR_3A_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_TONGIL_CAR_wagon, cargo_subtype) {
+    1: set_TONGIL_CAR_1_wagon;
+    2: set_TONGIL_CAR_2_wagon;
+    3: sw_TONGIL_CAR_3_wagon;
+    4: set_TONGIL_CAR_4_wagon;
+    5: set_TONGIL_CAR_5_wagon;
+    set_TONGIL_CAR_6_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_TONGIL_CAR_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_TONGIL_1963_1968);
+    2: return string(STR_REFIT_LIVERY_TONGIL_1974_1981);
+    3: return string(STR_REFIT_LIVERY_TONGIL_1984_1984);
+    4: return string(STR_REFIT_LIVERY_TONGIL_1984_1988);
+    5: return string(STR_REFIT_LIVERY_TONGIL_1994_1997);
+    return string(STR_REFIT_LIVERY_TONGIL_1997_2004);
+}

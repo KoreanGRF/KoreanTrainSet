@@ -13,7 +13,7 @@ switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_wagon, cargo_subtype) {
 // Cargo subtype
 // Same as sw_DHC_subtype_text
 switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_1970_1983);
+    1: return string(STR_REFIT_LIVERY_MUGUNGHWA_1970_1983);
     2: return string(STR_REFIT_LIVERY_GREEN_YELLOW);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }

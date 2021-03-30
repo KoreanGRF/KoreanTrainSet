@@ -122,13 +122,21 @@ STR_REFIT_LIVERY_SAEMAEUL_GREEN_YELLOW_CAFE      : (새마을호 / 철도청 구
 STR_REFIT_LIVERY_SAEMAEUL_BLUE_YELLOW_CAFE       : (새마을호 / Korail 현 도색)
 
 # Refit (Mugunghwa car)
-STR_REFIT_LIVERY_1970_1983                       : (도색 A: 1970~1983년)
-STR_REFIT_LIVERY_1970_1983_B                     : (도색 B: 1970~1983년)
-STR_REFIT_LIVERY_1984_1984                       : (도색 C:1984~1984년 도색)
-STR_REFIT_LIVERY_1985_1989                       : (도색 D:1985~1989년 도색)
-STR_REFIT_LIVERY_1990_1999                       : (도색 E:1990~1999년 도색)
-STR_REFIT_LIVERY_2000_2002                       : (도색 F:2000~2002년 도색)
-STR_REFIT_LIVERY_OLD_EXPRESS                     : (구 특실 전용 객차)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983             : (도색 A: 1970~1983년)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983_B           : (도색 B: 1970~1983년)
+STR_REFIT_LIVERY_MUGUNGHWA_1984_1984             : (도색 C: 1984년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_1985_1989             : (도색 D: 1985~1989년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_1990_1999             : (도색 E: 1990~1999년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_2000_2002             : (도색 F: 2000~2002년 도색)
+STR_REFIT_LIVERY_MUGUNGHWA_OLD_EXPRESS           : (구 특실 전용 객차)
+
+# Refit (Tongil car)
+STR_REFIT_LIVERY_TONGIL_1963_1968                : (도색 A: 1963~1968년, 적색)
+STR_REFIT_LIVERY_TONGIL_1974_1981                : (도색 B: 1974~1981년, 초기 녹색)
+STR_REFIT_LIVERY_TONGIL_1984_1984                : (도색 C: 1984년, 냉방기 없는 녹색)
+STR_REFIT_LIVERY_TONGIL_1984_1988                : (도색 D: 1984~1988, 냉방기 있는 녹색)
+STR_REFIT_LIVERY_TONGIL_1994_1997                : (도색 E: 1994~1997, 남색 & 황색)
+STR_REFIT_LIVERY_TONGIL_1997_2004                : (도색 F: 1997~2004, 녹색 & 황색)
 
 # Refit - Bidulgi
 STR_REFIT_LIVERY_BIDULGI_3RD_CLASS               : (3등 객차 다9형)
