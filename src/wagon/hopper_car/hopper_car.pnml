@@ -57,7 +57,7 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         running_cost_factor:            150;
 
         // Flags
-        ai_special_flag:                AI_FLAG_PASSENGER;
+        ai_special_flag:                AI_FLAG_CARGO;
         misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
         bitmask_vehicle_info:           0;
     }
