@@ -74,6 +74,9 @@ spriteset(set_SMETRO_5K_4TH_wagon_B, "./src/metro/seoul_metro_5_9/SMETRO_5K_4TH.
 spriteset(set_SMETRO_5K_4TH_engineT, "./src/metro/seoul_metro_5_9/SMETRO_5K_4TH.png") {
     tmpl_engine_tail(0, 150)
 }
+spriteset(set_SMETRO_5K_4TH_engineT_without_S, "./src/metro/seoul_metro_5_9/SMETRO_5K_4TH.png") {
+    tmpl_engine_tail(0, 180)
+}
 spriteset(set_SMETRO_5K_4TH_purchase, "./src/metro/seoul_metro_5_9/SMETRO_5K_4TH.png") {
     tmpl_metro_purchase()
 }

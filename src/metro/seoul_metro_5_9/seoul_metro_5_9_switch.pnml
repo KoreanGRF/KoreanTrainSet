@@ -5,6 +5,11 @@
 ------------------------------------------------------------------------------*/
 
 // Wagons for Line 5: 4th gen.
+// If there are odd numbers of vehicles, display a rear engine without 'S' mark
+switch(FEAT_TRAINS, SELF, sw_SMETRO_5K_4TH_engineT, num_vehs_in_consist % 2) {
+    1: set_SMETRO_5K_4TH_engineT_without_S;
+    set_SMETRO_5K_4TH_engineT;
+}
 switch(FEAT_TRAINS, SELF, sw_SMETRO_5K_4TH_wagon, position_in_consist % 2) {
     1: set_SMETRO_5K_4TH_wagon_A;
     set_SMETRO_5K_4TH_wagon_B;
@@ -56,7 +61,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_engineH, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_engineT, cargo_subtype) {
     1: set_SMETRO_5K_1ST_2ND_engineT;
     2: set_SMETRO_5K_3RD_engineT;
-    3: set_SMETRO_5K_4TH_engineT;
+    3: sw_SMETRO_5K_4TH_engineT;
     4: set_SMETRO_6K_1ST_engineT;
     // 5:  // RESERVED
     6: set_SMETRO_7K_1ST_engineT;
