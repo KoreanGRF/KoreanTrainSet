@@ -10,5 +10,6 @@
    * **kiwitree** ([@kiwitreekor](https://github.com/kiwitreekor))
    * **가문비(Gamunbi)** ([@Gamunbi](https://github.com/Gamunbi) - Graphics for Steam locomotive
    * **[@kimgas](https://github.com/kimgas)**
+   * **[@ChuoSpecialRapid201](https://github.com/@ChuoSpecialRapid201)**
 
    Detail graphic contributes can be found at [contributors_graphic.md](./contributors_graphic.md)
