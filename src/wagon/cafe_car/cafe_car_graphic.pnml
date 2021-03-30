@@ -40,35 +40,35 @@ spriteset(set_CAFE_CAR_DHC_3, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 60)
 }
 
-// // Mugunghwa (old)
-// spriteset(set_CAFE_CAR_MUGUNGHWA_1_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
-//     tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
-// }
-// spriteset(set_CAFE_CAR_MUGUNGHWA_1, "./src/wagon/cafe_car/CAFE_CAR.png") {
-//     tmpl_CAFE_CAR(60, 90)
-// }
+// Mugunghwa restaurant (old)
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_1_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
+}
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_1, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(60, 90)
+}
 
 // Mugunghwa cafe (old)
-spriteset(set_CAFE_CAR_MUGUNGHWA_1_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_1_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 120, 31, 15, -16, -9)
 }
-spriteset(set_CAFE_CAR_MUGUNGHWA_1, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_1, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 120)
 }
 
-// Mugunghwa (restaurant)
-spriteset(set_CAFE_CAR_MUGUNGHWA_2_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+// Mugunghwa restaurant (new)
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURANT__2_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 150, 31, 15, -16, -9)
 }
-spriteset(set_CAFE_CAR_MUGUNGHWA_2, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURANT_2, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 150)
 }
 
 // Mugunghwa cafe (new)
-spriteset(set_CAFE_CAR_MUGUNGHWA_3_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_2_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 180, 31, 15, -16, -9)
 }
-spriteset(set_CAFE_CAR_MUGUNGHWA_3, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_2, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 180)
 }
 
@@ -90,5 +90,5 @@ spriteset(set_CAFE_CAR_RDC, "./src/wagon/cafe_car/CAFE_CAR.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_purchase, cargo_subtype) {
-    set_CAFE_CAR_MUGUNGHWA_1_purchase;
+    set_CAFE_CAR_MUGUNGHWA_CAFE_2;
 }

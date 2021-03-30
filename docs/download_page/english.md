@@ -270,7 +270,7 @@
         <td class="introduction">1972</td>
     </tr>
     <tr data-veh_id="CAFE_CAR">
-        <td class="refit"><div><img src="./_static/CAFE_CAR_DHC_1.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_DHC_2.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_DHC_3.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_1.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_1.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_2.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_3.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_STREAMLINED.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_RDC.png" alt="Cafe/Restaurant car"></div></td>
+        <td class="refit"><div><img src="./_static/CAFE_CAR_DHC_1.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_DHC_2.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_DHC_3.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_RESTAURENT_1.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_CAFE_1.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_RESTAURANT__2.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_CAFE_2.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_STREAMLINED.png" alt="Cafe/Restaurant car"><br /><img src="./_static/CAFE_CAR_RDC.png" alt="Cafe/Restaurant car"></div></td>
         <td class="name">Cafe/Restaurant car</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
