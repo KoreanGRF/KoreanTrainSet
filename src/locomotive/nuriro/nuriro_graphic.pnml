@@ -4,6 +4,44 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
+// Template
+template tmpl_NURIRO_engine(x, y) {
+    [x,     y,    8,     22,    -3,   -11]
+    [x+15,  y,    21,    17,    -14,   -9]
+    [x+45,  y,    31,    12,    -13,   -8]
+    [x+95,  y,    21,    17,    -8,    -9]
+    [x+125, y,    8,     22,    -3,   -11]
+    [x+140, y,    21,    17,    -14,   -9]
+    [x+170, y,    31,    12,    -13,   -8]
+    [x+220, y,    21,    17,    -8,    -9]
+}
+template tmpl_NURIRO_wagon(x, y) {
+    [x,     y,    8,     22,    -3,   -11]
+    [x+15,  y,    21,    17,    -14,   -9]
+    [x+45,  y,    31,    12,    -13,   -8]
+    [x+95,  y,    21,    17,    -8,    -9]
+}
+template tmpl_NURIRO_wagon_penta(x, y) {
+    [x,     y,    8,     22,    -3,   -11]
+    [x+15,  y,    21,    17,    -14,   -9]
+    [x+45,  y,    31,    15,    -13,  -11]
+    [x+95,  y,    21,    18,    -8,   -10]
+    [x+125, y,    8,     22,    -3,   -11]
+    [x+140, y,    21,    18,    -14,  -10]
+    [x+170, y,    31,    15,    -13,  -11]
+    [x+220, y,    21,    17,    -8,    -9]
+}
+template tmpl_NURIRO_engine_r(x, y) {
+    [x+125, y,    8,     22,    -3,   -11]
+    [x+140, y,    21,    17,    -14,   -9]
+    [x+170, y,    31,    12,    -13,   -8]
+    [x+220, y,    21,    17,    -8,    -9]
+    [x,     y,    8,     22,    -3,   -11]
+    [x+15,  y,    21,    17,    -14,   -9]
+    [x+45,  y,    31,    12,    -13,   -8]
+    [x+95,  y,    21,    17,    -8,    -9]
+}
+
 // Graphics
 spriteset(set_NURIRO_purchase, "./src/locomotive/nuriro/NURIRO.png") {
     tmpl_purchase_for_dualhead(0, 0)
