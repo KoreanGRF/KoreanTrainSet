@@ -19,19 +19,13 @@ spriteset(set_PASSENGER_WAGON_purchase, "./src/wagon/passenger_wagon/passenger_w
     tmpl_purchase_detail(0, 0, 32, 15, -16, -9)
 }
 spriteset(set_PASSENGER_WAGON_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
-    [60+0,    0,   8,   22,    -3,   -11]
-    [60+15,   0,  21,   17,   -14,    -8]
-    [60+45,   0,  32,   12,   -14,    -8]
-    [60+95,   0,  21,   17,    -6,    -8]
+    tmpl_wagon_by_coor(60, 0)
 }
 spriteset(set_PASSENGER_WAGONP_purchase, "./src/wagon/passenger_wagon/passenger_wagon.png") {
     tmpl_purchase_detail(0, 30, 32, 15, -16, -9)
 }
 spriteset(set_PASSENGER_WAGONP_wagon, "./src/wagon/passenger_wagon/passenger_wagon.png") {
-    [60+0,   30,   8,   22,    -3,   -11]
-    [60+15,  30,  21,   17,   -14,    -8]
-    [60+45,  30,  32,   12,   -14,    -8]
-    [60+95,  30,  21,   17,    -6,    -8]
+    tmpl_wagon_by_coor(60, 30)
 }
 
 // Dummy cargo subtype text
