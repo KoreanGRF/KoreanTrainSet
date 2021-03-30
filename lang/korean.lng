@@ -40,7 +40,7 @@ STR_MUGUNGHWA_CAR_NAME                           :[KTS] 무궁화호 객차
 STR_TONGIL_CAR_NAME                              :[KTS] 통일호 객차
 STR_BIDULGI_CAR_NAME                             :[KTS] 비둘기호 객차
 STR_GENERATOR_CAR_NAME                           :[KTS] 발전차
-STR_CAFE_CAR_NAME                                :[KTS] 카페 객차
+STR_CAFE_CAR_NAME                                :[KTS] 카페/식당 객차
 
 STR_FLAT_CAR_NAME                                :[KTS] 컨테이너 평판화차
 STR_HOPPER_CAR_NAME                              :[KTS] 무개화차
@@ -113,13 +113,14 @@ STR_REFIT_PASSWAGON_NORMALCAR                    : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (특실 객차)
 
 # Refit (Cafe car)
-STR_REFIT_LIVERY_RDC_MUGUNGHWA_CAFE              : (RDC 무궁화호)
-STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINED_CAFE      : (무궁화호 유선형)
-STR_REFIT_LIVERY_MUGUNGHWA_1_CAFE                : (무궁화호 구 차량)
-STR_REFIT_LIVERY_MUGUNGHWA_2_CAFE                : (무궁화호 신 차량)
-STR_REFIT_LIVERY_SAEMAEUL_BLUE_RED_CAFE          : (새마을호 / 철도청 초기 도색: 청색 & 적색)
-STR_REFIT_LIVERY_SAEMAEUL_GREEN_YELLOW_CAFE      : (새마을호 / 철도청 구 도색: 녹색 & 황색)
-STR_REFIT_LIVERY_SAEMAEUL_BLUE_YELLOW_CAFE       : (새마을호 / Korail 현 도색)
+STR_REFIT_LIVERY_CAFE_RDC_MUGUNGHWA              : (RDC 무궁화호 카페차)
+STR_REFIT_LIVERY_CAFE_MUGUNGHWA_STREAMLINED      : (무궁화호 유선형 식당차)
+STR_REFIT_LIVERY_CAFE_MUGUNGHWA_1                : (무궁화호 구 카페차)
+STR_REFIT_LIVERY_CAFE_MUGUNGHWA_2                : (무궁화호 신 카페차)
+STR_REFIT_LIVERY_CAFE_MUGUNGHWA_OLD_RESTAUNRANT  : (무궁화호 구 식당차)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED          : (새마을호 식당차 / 철도청: 청색 & 적색)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW      : (새마을호 식당차 / 철도청: 녹색 & 황색)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       : (새마을호 카페차 / Korail 현 도색)
 
 # Refit (Mugunghwa car)
 STR_REFIT_LIVERY_MUGUNGHWA_1970_1983             : (도색 A: 1970~1983년)

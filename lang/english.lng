@@ -40,7 +40,7 @@ STR_MUGUNGHWA_CAR_NAME                           :[KTS] Mugunghwa passenger car
 STR_TONGIL_CAR_NAME                              :[KTS] Tongil passenger car
 STR_BIDULGI_CAR_NAME                             :[KTS] Bidulgi passenger car
 STR_GENERATOR_CAR_NAME                           :[KTS] Generator car
-STR_CAFE_CAR_NAME                                :[KTS] Cafe car
+STR_CAFE_CAR_NAME                                :[KTS] Cafe/Restaurant car
 
 STR_FLAT_CAR_NAME                                :[KTS] Container flat car
 STR_HOPPER_CAR_NAME                              :[KTS] Hopper car
@@ -130,13 +130,14 @@ STR_REFIT_LIVERY_TONGIL_1994_1997                : (Livery E: 1994~1997, Navy & 
 STR_REFIT_LIVERY_TONGIL_1997_2004                : (Livery F: 1997~2004, Green & Yellow)
 
 # Refit (Cafe car)
-STR_REFIT_LIVERY_RDC_MUGUNGHWA_CAFE              : (RDC Mugunghwa)
-STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINED_CAFE      : (Mugunghwa streamlined)
-STR_REFIT_LIVERY_MUGUNGHWA_1_CAFE                : (Old Mugunghwa)
-STR_REFIT_LIVERY_MUGUNGHWA_2_CAFE                : (New Mugunghwa)
-STR_REFIT_LIVERY_SAEMAEUL_BLUE_RED_CAFE          : (Saemaeul / KNR first livery: Blue & Red)
-STR_REFIT_LIVERY_SAEMAEUL_GREEN_YELLOW_CAFE      : (Saemaeul / KNR old livery: Green & Yellow)
-STR_REFIT_LIVERY_SAEMAEUL_BLUE_YELLOW_CAFE       : (Saemaeul / Korail current livery)
+STR_REFIT_LIVERY_CAFE_RDC_MUGUNGHWA              : (RDC Mugunghwa cafe)
+STR_REFIT_LIVERY_CAFE_MUGUNGHWA_STREAMLINED      : (Mugunghwa streamlined restaurant)
+STR_REFIT_LIVERY_CAFE_MUGUNGHWA_1                : (Old Mugunghwa cafe)
+STR_REFIT_LIVERY_CAFE_MUGUNGHWA_2                : (New Mugunghwa cafe)
+STR_REFIT_LIVERY_CAFE_MUGUNGHWA_OLD_RESTAUNRANT  : (Old Mugunghwa restaurant)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED          : (Saemaeul cafe / KNR: Blue & Red)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW      : (Saemaeul restaurant / KNR: Green & Yellow)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       : (Saemaeul restaurant / Korail current livery)
 
 # Refit (Bidulgi)
 STR_REFIT_LIVERY_BIDULGI_3RD_CLASS               : (3rd class car - Da 9 class)
