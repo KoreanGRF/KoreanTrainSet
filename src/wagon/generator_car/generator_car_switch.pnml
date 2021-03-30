@@ -16,7 +16,7 @@ switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon, cargo_subtype) {
     12:   set_G_TRAIN_GENERATOR_CAR;
     set_GENERATOR_CAR_B;
 }
-switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_cargo_subtype_text, cargo_subtype) {
     1:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_SME_B);
     2:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_SME_A);
     3:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_LONG);
