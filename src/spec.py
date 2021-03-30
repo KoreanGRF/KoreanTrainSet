@@ -76,6 +76,7 @@ trainList['FLAT_CAR']           = None,   None,   100,    2,            35,     
 trainList['HOPPER_CAR']         = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['BAGGAGE_CAR']        = 120,    120,    100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['TANK_CAR']           = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
+trainList['MAIL_CAR']           = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['STAKE_CAR']          = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 
 

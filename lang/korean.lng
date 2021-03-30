@@ -47,6 +47,7 @@ STR_HOPPER_CAR_NAME                              :[KTS] 무개화차
 STR_BAGGAGE_CAR_NAME                             :[KTS] 수화물차
 STR_TANK_CAR_NAME                                :[KTS] 유조차
 STR_STAKE_CAR_NAME                               :[KTS] 평판화차
+STR_MAIL_CAR_NAME                                :[KTS] 우편차
 
 # Metro
 STR_SEOUL_METRO_1_NAME                           :[KTS] 수도권 1호선, 통근형
@@ -143,6 +144,13 @@ STR_REFIT_LIVERY_EEC_1                           : (1980~1994년 도색)
 STR_REFIT_LIVERY_EEC_2                           : (1994~1998년 도색)
 STR_REFIT_LIVERY_EEC_3                           : (1998~2001년 도색 : 통일호)
 
+# Refit (Mail car)
+STR_REFIT_LIVERY_MAIL_CAR_1                      : (1973~1975년 도색)
+STR_REFIT_LIVERY_MAIL_CAR_2                      : (1975년 이후 도색)
+STR_REFIT_LIVERY_MAIL_CAR_3                      : (1996년 이후 무궁화 구 도색)
+STR_REFIT_LIVERY_MAIL_CAR_4                      : (2005년 이후 무궁화 신 도색)
+STR_REFIT_LIVERY_MAIL_CAR_5                      : (2018년 이후 수화물차 개조 도색)
+
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                           : (검은색)
 STR_REFIT_COLOUR_BLUE                            : (파란색)
@@ -154,7 +162,6 @@ STR_REFIT_COLOUR_ORANGE                          : (주황색)
 STR_REFIT_COLOUR_DARKGREEN                       : (짙은 녹색)
 STR_REFIT_COLOUR_OLIVE                           : (올리브색)
 STR_REFIT_COLOUR_SILVER                          : (은색)
-STR_REFIT_MAIL_CAR                               : (우편차)
 
 
 # Refit (Seoul metropolitan Line 1)

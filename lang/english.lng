@@ -46,6 +46,7 @@ STR_HOPPER_CAR_NAME                              :[KTS] Hopper car
 STR_BAGGAGE_CAR_NAME                             :[KTS] Baggage car
 STR_TANK_CAR_NAME                                :[KTS] Tank car
 STR_STAKE_CAR_NAME                               :[KTS] Stake car
+STR_MAIL_CAR_NAME                                :[KTS] Mail car
 
 # Metro
 STR_SEOUL_METRO_1_NAME                           :[KTS] Seoul Line 1, Commuter trains
@@ -142,6 +143,13 @@ STR_REFIT_LIVERY_EEC_1                           : (Livery: 1980~1994)
 STR_REFIT_LIVERY_EEC_2                           : (Livery: 1994~1998)
 STR_REFIT_LIVERY_EEC_3                           : (Livery: 1998~2001 : Tongil)
 
+# Refit (Mail car)
+STR_REFIT_LIVERY_MAIL_CAR_1                      : (Livery: 1973~1975)
+STR_REFIT_LIVERY_MAIL_CAR_2                      : (Livery: 1975~)
+STR_REFIT_LIVERY_MAIL_CAR_3                      : (Livery: 1996~, Mugunghwa old livery)
+STR_REFIT_LIVERY_MAIL_CAR_4                      : (Livery: 2005~, Mugunghwa new livery)
+STR_REFIT_LIVERY_MAIL_CAR_5                      : (Livery: 2018~, baggage car)
+
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                           : (Black)
 STR_REFIT_COLOUR_BLUE                            : (Blue)
@@ -153,8 +161,6 @@ STR_REFIT_COLOUR_ORANGE                          : (Orange)
 STR_REFIT_COLOUR_DARKGREEN                       : (Darkgreen)
 STR_REFIT_COLOUR_OLIVE                           : (Olive)
 STR_REFIT_COLOUR_SILVER                          : (Silver)
-STR_REFIT_MAIL_CAR                               : (Mail carriage)
-
 
 # Refit (Seoul metropolitan Line 1)
 STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME             : (KNR 1k Rheostatic first / 1st livery)

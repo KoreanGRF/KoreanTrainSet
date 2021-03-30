@@ -68,13 +68,6 @@ spriteset(set_BAGGAGE_CAR_F_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_BAGGAGE_CAR_wagon(60, 150)
 }
 
-spriteset(set_BAGGAGE_CAR_MAIL_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_purchase_detail(0, 180, 31, 15, -16, -9)
-}
-spriteset(set_BAGGAGE_CAR_MAIL_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_BAGGAGE_CAR_wagon(60, 180)
-}
-
 // V-train
 spriteset(set_V_TRAIN_wagon_1, "./src/wagon/baggage_car/V-train_wagon.png") {
     tmpl_V_TRAIN_wagon(0, 0)
