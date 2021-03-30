@@ -25,6 +25,9 @@ switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_wagon, cargo_subtype) {
     set_CAFE_CAR_MUGUNGHWA_CAFE_2;
 }
 
+// Cargo subtype
+//  It is very different with Cafe/restaurant car's livery name
+//  but it is matched with MUGUNGHWA_CAR in order to let user refit easily.
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED);
     2: return string(STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW);
@@ -36,13 +39,6 @@ switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_subtype_text, cargo_subtype) {
     8: return string(STR_REFIT_LIVERY_CAFE_RDC_MUGUNGHWA);
     20: return string(STR_REFIT_LIVERY_HAERANG);
     return string(STR_REFIT_LIVERY_THESEDAYS);
-    // 4: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_?);
-    // 5: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_2);
-    // 6: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_OLD_RESTAUNRANT);
-    // 7: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_STREAMLINED);
-    // 8: return string(STR_REFIT_LIVERY_CAFE_RDC_MUGUNGHWA);
-    // 20: return string(STR_REFIT_LIVERY_HAERANG);
-    // return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_1);
 }
 
 // Attachable vehicles
