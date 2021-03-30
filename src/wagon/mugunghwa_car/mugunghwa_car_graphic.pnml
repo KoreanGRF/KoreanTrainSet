@@ -12,7 +12,7 @@ spriteset(set_MUGUNGHWA_CAR_A, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_wagon_by_coor(60, 0)
 }
 
-// B: 1984~1984
+// B: 1970~1983
 spriteset(set_MUGUNGHWA_CAR_B_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
 }
@@ -20,7 +20,7 @@ spriteset(set_MUGUNGHWA_CAR_B, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_wagon_by_coor(60, 30)
 }
 
-// C: 1985~1989
+// C: 1984~1984
 spriteset(set_MUGUNGHWA_CAR_C_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
 }
@@ -28,7 +28,7 @@ spriteset(set_MUGUNGHWA_CAR_C, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_wagon_by_coor(60, 60)
 }
 
-// D: 1990~1999
+// D: 1985~1989
 spriteset(set_MUGUNGHWA_CAR_D_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
 }
@@ -36,7 +36,7 @@ spriteset(set_MUGUNGHWA_CAR_D, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_wagon_by_coor(60, 90)
 }
 
-// E: 2000~2002
+// E: 1990~1999
 spriteset(set_MUGUNGHWA_CAR_E_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_purchase_detail(0, 120, 31, 15, -16, -9)
 }
@@ -44,20 +44,28 @@ spriteset(set_MUGUNGHWA_CAR_E, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_wagon_by_coor(60, 120)
 }
 
-// Current Korail paint
-spriteset(set_MUGUNGHWA_CAR_RED_BLUE_WHITE_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+// F: 2000~2002
+spriteset(set_MUGUNGHWA_CAR_F_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_purchase_detail(0, 150, 31, 15, -16, -9)
 }
-spriteset(set_MUGUNGHWA_CAR_RED_BLUE_WHITE, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+spriteset(set_MUGUNGHWA_CAR_F, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_wagon_by_coor(60, 150)
+}
+
+// Current Korail paint
+spriteset(set_MUGUNGHWA_CAR_RED_BLUE_WHITE_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 180, 31, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_RED_BLUE_WHITE, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor(60, 180)
 }
 
 // Old express (구특전)
 spriteset(set_MUGUNGHWA_CAR_OLD_EXPRESS_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
-    tmpl_purchase_detail(0, 180, 32, 15, -16, -9)
+    tmpl_purchase_detail(0, 210, 32, 15, -16, -9)
 }
 spriteset(set_MUGUNGHWA_CAR_OLD_EXPRESS, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
-    tmpl_wagon_by_coor(60, 180)
+    tmpl_wagon_by_coor(60, 210)
 }
 
 // Haerang
