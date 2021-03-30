@@ -26,8 +26,8 @@ item(FEAT_TRAINS, ko_train_EEC, 5513) {
         name:                           string(STR_EEC_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_EEC_INTRODUCTION;
-        track_type:                     RAIL;
-        engine_class:                   ENGINE_CLASS_DIESEL;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
 
@@ -53,13 +53,13 @@ item(FEAT_TRAINS, ko_train_EEC, 5513) {
 
         // Costs
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
         misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
         bitmask_vehicle_info:           0;
-        visual_effect_and_powered:      VISUAL_EFFECT_DIESEL;
+        visual_effect_and_powered:      VISUAL_EFFECT_ELECTRIC;
     }
     graphics {
         default:                        sw_EEC_engine;
