@@ -93,6 +93,32 @@ spriteset(set_NURIRO_O_TRAIN_engineT, "./src/locomotive/nuriro/NURIRO.png") {
     tmpl_NURIRO_engine_r(60, 330)
 }
 
+// Donghae santa
+spriteset(set_NURIRO_SANTA_purchase, "./src/locomotive/nuriro/NURIRO_SANTA.png") {
+    tmpl_purchase_for_dualhead(0, 0)
+}
+spriteset(set_NURIRO_SANTA_engineH, "./src/locomotive/nuriro/NURIRO_SANTA.png") {
+    tmpl_NURIRO_engine(60, 0)
+}
+spriteset(set_NURIRO_SANTA_wagon_penta_A, "./src/locomotive/nuriro/NURIRO_SANTA.png") {
+    tmpl_NURIRO_wagon_penta(60, 30)
+}
+spriteset(set_NURIRO_SANTA_wagon_penta_B, "./src/locomotive/nuriro/NURIRO_SANTA.png") {
+    tmpl_NURIRO_wagon_penta(60, 60)
+}
+spriteset(set_NURIRO_SANTA_wagon_A, "./src/locomotive/nuriro/NURIRO_SANTA.png") {
+    tmpl_NURIRO_wagon(60, 90)
+}
+spriteset(set_NURIRO_SANTA_wagon_B, "./src/locomotive/nuriro/NURIRO_SANTA.png") {
+    tmpl_NURIRO_wagon(60, 120)
+}
+spriteset(set_NURIRO_SANTA_engineT_A, "./src/locomotive/nuriro/NURIRO_SANTA.png") {
+    tmpl_NURIRO_engine_r(60, 150)
+}
+spriteset(set_NURIRO_SANTA_engineT_B, "./src/locomotive/nuriro/NURIRO_SANTA.png") {
+    tmpl_NURIRO_engine_r(60, 180)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_NURIRO_purchase, cargo_subtype) {
     set_NURIRO_purchase;

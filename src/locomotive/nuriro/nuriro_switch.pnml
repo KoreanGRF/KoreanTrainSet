@@ -8,21 +8,37 @@
 switch(FEAT_TRAINS, SELF, sw_NURIRO_cargo_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE);   // Korean wave livery
     2: return string(STR_REFIT_LIVERY_O_TRAIN);              // O-train
-//  3: return string(STR_REFIT_LIVERY_NURIRO_SANTA);         // Donghae Santa livery (for future use)
+    3: return string(STR_REFIT_LIVERY_NURIRO_SANTA);         // Donghae Santa livery
     return string(STR_REFIT_LIVERY_NURIRO);
 }
+
+// Donghae santa livery
+switch(FEAT_TRAINS, SELF, sw_NURIRO_SANTA_engineT, num_vehs_in_consist % 2) {
+    1: set_NURIRO_SANTA_engineT_B;
+    set_NURIRO_SANTA_engineT_A;
+}
+switch(FEAT_TRAINS, SELF, sw_NURIRO_SANTA_wagon_penta, position_in_consist % 2) {
+    1: set_NURIRO_SANTA_wagon_penta_A;
+    set_NURIRO_SANTA_wagon_penta_B;
+}
+
+switch(FEAT_TRAINS, SELF, sw_NURIRO_SANTA_wagon, position_in_consist % 2) {
+    1: set_NURIRO_SANTA_wagon_B;
+    set_NURIRO_SANTA_wagon_A;
+}
+
 
 // Engine
 switch(FEAT_TRAINS, SELF, sw_NURIRO_engineH, cargo_subtype) {
     1: set_NURIRO_KOREAN_WAVE_engineH;   // Korean wave livery
     2: set_NURIRO_O_TRAIN_engineH;       // O-train
-//  3: set_NURIRO_SANTA_engineH;         // Donghae Santa livery (for future use)
+    3: set_NURIRO_SANTA_engineH;         // Donghae Santa livery
     set_NURIRO_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_NURIRO_engineT, cargo_subtype) {
     1: set_NURIRO_KOREAN_WAVE_engineT;   // Korean wave livery
     2: set_NURIRO_O_TRAIN_engineT;       // O-train
-//  3: set_NURIRO_SANTA_engineT;         // Donghae Santa livery (for future use)
+    3: sw_NURIRO_SANTA_engineT;          // Donghae Santa livery
     set_NURIRO_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_NURIRO_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
@@ -34,16 +50,16 @@ switch(FEAT_TRAINS, SELF, sw_NURIRO_engine, position_in_consist_from_end == 0 &&
 switch(FEAT_TRAINS, PARENT, sw_NURIRO_wagon_penta, cargo_subtype) {
     1: set_NURIRO_KOREAN_WAVE_wagon_penta;   // Korean wave livery
     2: set_NURIRO_O_TRAIN_wagon_penta;       // O-train
-//  3: set_NURIRO_SANTA_wagon_penta;         // Donghae Santa livery (for future use)
+    3: sw_NURIRO_SANTA_wagon_penta;          // Donghae Santa livery
     set_NURIRO_wagon_penta;
 }
 switch(FEAT_TRAINS, PARENT, sw_NURIRO_wagon_normal, cargo_subtype) {
     1: set_NURIRO_KOREAN_WAVE_wagon;   // Korean wave livery
     2: set_NURIRO_O_TRAIN_wagon;       // O-train
-//  3: set_NURIRO_SANTA_wagon;         // Donghae Santa livery (for future use)
+    3: sw_NURIRO_SANTA_wagon;         // Donghae Santa livery
     set_NURIRO_wagon;
 }
-switch(FEAT_TRAINS, SELF, sw_NURIRO_wagon, position_in_vehid_chain + 1 == num_vehs_in_vehid_chain - 1) {
+switch(FEAT_TRAINS, SELF, sw_NURIRO_wagon, position_in_consist + 1 == num_vehs_in_consist - 1) {
     1: sw_NURIRO_wagon_penta;
     sw_NURIRO_wagon_normal;
 }
