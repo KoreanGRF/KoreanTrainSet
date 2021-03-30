@@ -16,24 +16,33 @@ switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_wagon, cargo_subtype) {
     1: set_CAFE_CAR_DHC_1;
     2: set_CAFE_CAR_DHC_2;
     3: set_CAFE_CAR_DHC_3;
-    4: set_CAFE_CAR_MUGUNGHWA_3;
-    6: set_HAERANG_CAFE_wagon;   //=> Refer: ./src/wagon/Mugunghwa
-    8: set_CAFE_CAR_RDC;         //=> Refer: ./src/locomotive/CDC
-    19: set_CAFE_CAR_MUGUNGHWA_STREAMLINED;
-    20: set_CAFE_CAR_MUGUNGHWA_1;
-    set_CAFE_CAR_MUGUNGHWA_2;
+    //4: set_CAFE_CAR_MUGUNGHWA_?;
+    5: set_CAFE_CAR_MUGUNGHWA_1;
+    6: set_CAFE_CAR_MUGUNGHWA_2;
+    7: set_CAFE_CAR_MUGUNGHWA_STREAMLINED;
+    8: set_CAFE_CAR_RDC;                    //=> Refer: ./src/locomotive/CDC
+    20: set_HAERANG_CAFE_wagon;             //=> Refer: ./src/wagon/Mugunghwa
+    set_CAFE_CAR_MUGUNGHWA_3;
 }
 
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED);
     2: return string(STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW);
     3: return string(STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW);
-    4: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_OLD_RESTAUNRANT);
-    6: return string(STR_REFIT_LIVERY_HAERANG);
+    //4: return string(STR_REFIT_LIVERY_MUGUNGHWA_1985_1989);
+    5: return string(STR_REFIT_LIVERY_MUGUNGHWA_1990_1999);
+    6: return string(STR_REFIT_LIVERY_MUGUNGHWA_2000_2002);
+    7: return string(STR_REFIT_LIVERY_MUGUNGHWA_OLD_EXPRESS);
     8: return string(STR_REFIT_LIVERY_CAFE_RDC_MUGUNGHWA);
-    19: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_STREAMLINED);
-    20: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_2);
-    return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_1);
+    20: return string(STR_REFIT_LIVERY_HAERANG);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
+    // 4: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_?);
+    // 5: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_2);
+    // 6: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_OLD_RESTAUNRANT);
+    // 7: return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_STREAMLINED);
+    // 8: return string(STR_REFIT_LIVERY_CAFE_RDC_MUGUNGHWA);
+    // 20: return string(STR_REFIT_LIVERY_HAERANG);
+    // return string(STR_REFIT_LIVERY_CAFE_MUGUNGHWA_1);
 }
 
 // Attachable vehicles

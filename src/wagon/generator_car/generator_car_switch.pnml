@@ -10,10 +10,10 @@ switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon, cargo_subtype) {
     2:    set_GENERATOR_CAR_GREEN_YELLOW;
     3:    set_GENERATOR_CAR_B;
     4:    set_GENERATOR_CAR_A;
-    7:    set_HAERANG_GENERATOR_CAR;
-    10:   set_S_TRAIN_GENERATOR_CAR_1;
-    11:   set_S_TRAIN_GENERATOR_CAR_2;
-    12:   set_G_TRAIN_GENERATOR_CAR;
+    20:   set_HAERANG_GENERATOR_CAR;
+    21:   set_S_TRAIN_GENERATOR_CAR_1;
+    22:   set_S_TRAIN_GENERATOR_CAR_2;
+    23:   set_G_TRAIN_GENERATOR_CAR;
     set_GENERATOR_CAR_B;
 }
 switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_cargo_subtype_text, cargo_subtype) {
@@ -21,9 +21,9 @@ switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_cargo_subtype_text, cargo_subtype) {
     2:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_SME_A);
     3:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_LONG);
     4:    return string(STR_REFIT_LIVERY_GENERATOR_CAR_DEFAULT);
-    7:    return string(STR_REFIT_LIVERY_HAERANG);
-    10:   return string(STR_REFIT_LIVERY_S_TRAIN1);
-    11:   return string(STR_REFIT_LIVERY_S_TRAIN2);
-    12:   return string(STR_REFIT_LIVERY_G_TRAIN);
+    20:   return string(STR_REFIT_LIVERY_HAERANG);
+    21:   return string(STR_REFIT_LIVERY_S_TRAIN1);
+    22:   return string(STR_REFIT_LIVERY_S_TRAIN2);
+    23:   return string(STR_REFIT_LIVERY_G_TRAIN);
     return  string(STR_REFIT_LIVERY_GENERATOR_CAR_LONG);
 }
