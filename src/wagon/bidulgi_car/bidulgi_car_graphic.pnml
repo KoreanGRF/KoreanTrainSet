@@ -67,5 +67,5 @@ spriteset(set_BIDULGI_CAR_5_wagon, "./src/wagon/bidulgi_car/BIDULGI_CAR.png") { 
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_purchase, cargo_subtype) {
-    set_BIDULGI_CAR_1_purchase;
+    set_BIDULGI_CAR_4A_purchase;
 }
