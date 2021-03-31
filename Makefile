@@ -128,9 +128,3 @@ clean::
 	@-rm -rf ./.nmlcache
 	@-rm -rf ./src/__pycache__
 	@-rm -rf ./docs/download_page
-
-# Install (Temporarily used for developments)
-dev: build
-	@cp -r ./generated/$(DIR_NAME).tar /mnt/d/Games/OpenTTD/Nightly/newgrf/Korean_Train_Set-dev.tar
-clean::
-	@-rm -rf /mnt/d/Games/OpenTTD/Nightly/newgrf/Korean_Train_Set-dev.tar
