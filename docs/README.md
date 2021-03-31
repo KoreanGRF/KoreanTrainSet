@@ -15,12 +15,12 @@ Run ``make`` in terminal shell. If you are on Windows, open a command prompt and
 
 ### Translations
 First, please be aware that the official language of Korean Train Set is Korean, not English.  
-I'm not a fluent English speaker, so english text might have different meanings from than Korean.
+I'm not a fluent English speaker, so english texts might have different meanings from than Korean.
 
 To translate the Korean Train Set into your native language, please pull the request via this github project.  
 If you don't know how to make a Pull Request, uploading them at Issues is fine, too.
 You shall translate:
-- [/lang/english.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/lang/english.lng)
+- [/lang/english.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/lang/english.lng)  
 And if you want to translate [the download page of my own site](https://telk.kr/ottd/newgrf/ko_train_set?lang=en), please contact me: telk5093@gmail.com
 
 ## Links
