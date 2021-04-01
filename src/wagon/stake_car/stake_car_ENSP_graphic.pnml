@@ -15,10 +15,22 @@ spriteset(set_STAKE_CAR_ENSP_full_B_wagon, "./src/wagon/stake_car/cargo_ENSP.png
     tmpl_stake_car_8dir(0, 30)
 }
 spritegroup sg_STAKE_CAR_ENSP_A_wagon {
-    loading: set_STAKE_CAR_empty_8dir_wagon;
-    loaded:  set_STAKE_CAR_ENSP_full_A_wagon;
+    loading: [
+        set_STAKE_CAR_empty_8dir_wagon,
+        set_STAKE_CAR_ENSP_full_A_wagon
+    ];
+    loaded: [
+        set_STAKE_CAR_empty_8dir_wagon,
+        set_STAKE_CAR_ENSP_full_A_wagon
+    ];
 }
 spritegroup sg_STAKE_CAR_ENSP_B_wagon {
-    loading: set_STAKE_CAR_empty_8dir_wagon;
-    loaded:  set_STAKE_CAR_ENSP_full_B_wagon;
+    loading: [
+        set_STAKE_CAR_empty_8dir_wagon,
+        set_STAKE_CAR_ENSP_full_B_wagon
+    ];
+    loaded: [
+        set_STAKE_CAR_empty_8dir_wagon,
+        set_STAKE_CAR_ENSP_full_B_wagon
+    ];
 }
