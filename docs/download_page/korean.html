@@ -66,7 +66,7 @@
         <td class="speed_designed">165 km/h</td>
         <td class="capacity"></td>
         <td class="power">2602 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">132 t</td>
         <td class="introduction">2014</td>
     </tr>
     <tr data-veh_id="K8000">
@@ -140,7 +140,7 @@
         <td class="introduction">1996</td>
     </tr>
     <tr data-veh_id="NDC">
-        <td class="refit"><div><img src="./_static/NDC_1.png" alt="우등형 디젤 동차 (NDC)"><br /><img src="./_static/NDC_business.png" alt="우등형 디젤 동차 (NDC)"><br /><img src="./_static/NDC_2.png" alt="우등형 디젤 동차 (NDC)"></div></td>
+        <td class="refit"><div><img src="./_static/NDC_1.png" alt="우등형 디젤 동차 (NDC)"><br /><img src="./_static/NDC_2.png" alt="우등형 디젤 동차 (NDC)"><br /><img src="./_static/NDC_business.png" alt="우등형 디젤 동차 (NDC)"></div></td>
         <td class="name">우등형 디젤 동차 (NDC)</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
