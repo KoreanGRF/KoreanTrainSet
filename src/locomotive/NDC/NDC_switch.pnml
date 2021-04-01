@@ -6,14 +6,14 @@
 
 // Engine
 switch(FEAT_TRAINS, SELF, sw_NDC_engineH, cargo_subtype) {
-    1: set_NDC_2_engineH;
+    1: set_NDC_1_engineH;
     2: set_NDC_business_engineH;
-    set_NDC_1_engineH;
+    set_NDC_2_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_NDC_engineT, cargo_subtype) {
-    1: set_NDC_2_engineT;
+    1: set_NDC_1_engineT;
     2: set_NDC_business_engineT;
-    set_NDC_1_engineT;
+    set_NDC_2_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_NDC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
     1: sw_NDC_engineT;
@@ -22,7 +22,7 @@ switch(FEAT_TRAINS, SELF, sw_NDC_engine, position_in_consist_from_end == 0 && nu
 
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_NDC_wagon, cargo_subtype) {
-    1: set_NDC_2_wagon;
+    1: set_NDC_1_wagon;
     2: set_MUGUNGHWA_CAR_E;
     set_MUGUNGHWA_CAR_D;
 }
@@ -40,7 +40,7 @@ switch(FEAT_TRAINS, SELF, sw_NDC_attach, vehicle_type_id) {
 
 // Refit
 switch(FEAT_TRAINS, SELF, sw_NDC_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_NDC_2);
+    1: return string(STR_REFIT_LIVERY_NDC_1);
     2: return string(STR_REFIT_LIVERY_NDC_BUSINESS);
-    return string(STR_REFIT_LIVERY_NDC_1);
+    return string(STR_REFIT_LIVERY_NDC_2);
 }

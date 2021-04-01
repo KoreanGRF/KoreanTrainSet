@@ -26,7 +26,6 @@ template tmpl_NDC_r(x, y) {
     [x+95,      y,    21,    17,     -6,    -8]
 }
 
-// NDC
 spriteset(set_NDC_1_purchase, "./src/locomotive/NDC/NDC.png") {
     tmpl_purchase_for_dualhead(0, 0)
 }
@@ -36,28 +35,28 @@ spriteset(set_NDC_1_engineH, "./src/locomotive/NDC/NDC.png") {
 spriteset(set_NDC_1_engineT, "./src/locomotive/NDC/NDC.png") {
     tmpl_NDC_r(60, 30)
 }
-
-spriteset(set_NDC_business_purchase, "./src/locomotive/NDC/NDC.png") {
-    tmpl_purchase_for_dualhead(0, 60)
-}
-spriteset(set_NDC_business_engineH, "./src/locomotive/NDC/NDC.png") {
-    tmpl_NDC(60, 60)
-}
-spriteset(set_NDC_business_engineT, "./src/locomotive/NDC/NDC.png") {
-    tmpl_NDC_r(60, 90)
+spriteset(set_NDC_1_wagon, "./src/locomotive/NDC/NDC.png") {
+    tmpl_wagon_by_coor(60, 60)
 }
 
 spriteset(set_NDC_2_purchase, "./src/locomotive/NDC/NDC.png") {
-    tmpl_purchase_for_dualhead(0, 120)
+    tmpl_purchase_for_dualhead(0, 90)
 }
 spriteset(set_NDC_2_engineH, "./src/locomotive/NDC/NDC.png") {
-    tmpl_NDC(60, 120)
+    tmpl_NDC(60, 90)
 }
 spriteset(set_NDC_2_engineT, "./src/locomotive/NDC/NDC.png") {
-    tmpl_NDC_r(60, 150)
+    tmpl_NDC_r(60, 120)
 }
-spriteset(set_NDC_2_wagon, "./src/locomotive/NDC/NDC.png") {
-    tmpl_wagon_by_coor(60, 180)
+
+spriteset(set_NDC_business_purchase, "./src/locomotive/NDC/NDC.png") {
+    tmpl_purchase_for_dualhead(0, 150)
+}
+spriteset(set_NDC_business_engineH, "./src/locomotive/NDC/NDC.png") {
+    tmpl_NDC(60, 150)
+}
+spriteset(set_NDC_business_engineT, "./src/locomotive/NDC/NDC.png") {
+    tmpl_NDC_r(60, 180)
 }
 
 // Alias of purchase image
