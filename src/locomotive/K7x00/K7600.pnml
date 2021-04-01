@@ -71,6 +71,7 @@ item(FEAT_TRAINS, ko_train_K7600, 5476) {
     }
     livery_override(ko_train_MUGUNGHWA_CAR) {
         default:                        sw_K7600_MUGUNGHWA_CAR_wagon;
+        cargo_capacity:                 sw_MUGUNGHWA_CAR_capacity;
         cargo_subtype_text:             sw_K7600_MUGUNGHWA_CAR_cargo_subtype_text;
     }
     livery_override(ko_train_GENERATOR_CAR) {
