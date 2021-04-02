@@ -6,37 +6,37 @@
 
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_cargo_subtype_text, cargo_subtype) {
-    0: return string(STR_REFIT_METRO_351K_VVVF_3RD_NAME);
-    1: return string(STR_REFIT_METRO_351K_VVVF_2ND_NAME);
-    2: return string(STR_REFIT_METRO_351K_VVVF_1ST_NAME);
+    1: return string(STR_REFIT_METRO_351K_VVVF_1ST_1_NAME);
+    2: return string(STR_REFIT_METRO_351K_VVVF_1ST_2_NAME);
+    3: return string(STR_REFIT_METRO_351K_VVVF_2ND_NAME);
     return string(STR_REFIT_METRO_351K_VVVF_3RD_NAME);
 }
 
 // Engine
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineH, cargo_subtype) {
-    0: set_351K_VVVF_3RD_engineH;
-    1: set_351K_VVVF_2ND_engineH;
+    1: set_341K_VVVF_1ST_1_engineH;
     2: set_351K_VVVF_1ST_engineH;
+    3: set_351K_VVVF_2ND_engineH;
     set_351K_VVVF_3RD_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineT, cargo_subtype) {
-    0: set_351K_VVVF_3RD_engineT;
-    1: set_351K_VVVF_2ND_engineT;
+    1: set_341K_VVVF_1ST_1_engineH;
     2: set_351K_VVVF_1ST_engineT;
+    3: set_351K_VVVF_2ND_engineT;
     set_351K_VVVF_3RD_engineT;
 }
 
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon_panto_cargo_subtype, cargo_subtype) {
-    0: set_351K_VVVF_3RD_wagon_panto;
-    1: set_351K_VVVF_2ND_wagon_panto;
+    1: set_341K_VVVF_1ST_1_wagon_panto;
     2: set_351K_VVVF_1ST_wagon_panto;
+    3: set_351K_VVVF_2ND_wagon_panto;
     set_351K_VVVF_3RD_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon_cargo_subtype, cargo_subtype) {
-    0: set_351K_VVVF_3RD_wagon;
-    1: set_351K_VVVF_2ND_wagon;
+    1: set_341K_VVVF_1ST_1_wagon;
     2: set_351K_VVVF_1ST_wagon;
+    3: set_351K_VVVF_2ND_wagon;
     set_351K_VVVF_3RD_wagon;
 }
 

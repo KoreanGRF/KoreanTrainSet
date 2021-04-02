@@ -243,7 +243,8 @@ STR_REFIT_METRO_SMETRO_8K_1ST_NAME               : (SMetro 8k VVVF)
 STR_REFIT_METRO_SMETRO_9K_1ST_NAME               : (SMetro9 9k VVVF)
 
 # Refit (Suin-Bungdang Line)
-STR_REFIT_METRO_351K_VVVF_1ST_NAME               : (Korail 351k 1st VVVF)
+STR_REFIT_METRO_351K_VVVF_1ST_1_NAME             : (Korail 315k 1st VVVF / Old livery)
+STR_REFIT_METRO_351K_VVVF_1ST_2_NAME             : (Korail 351k 1st VVVF / Current livery)
 STR_REFIT_METRO_351K_VVVF_2ND_NAME               : (Korail 351k 2nd VVVF)
 STR_REFIT_METRO_351K_VVVF_3RD_NAME               : (Korail 351k 3rd VVVF)
 

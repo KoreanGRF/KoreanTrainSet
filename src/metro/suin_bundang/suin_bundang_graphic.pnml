@@ -55,6 +55,11 @@ spriteset(set_351K_VVVF_3RD_purchase, "./src/metro/suin_bundang/351K_VVVF_3RD.pn
     tmpl_metro_purchase()
 }
 
+// 351K_VVVF_1ST_1 === 341K_VVVF_1ST_1 in Seoul Line 4
+spriteset(set_351K_VVVF_1ST_1_purchase, "./src/metro/seoul_metro_4/341K_VVVF_1ST_1.png") {
+    tmpl_metro_purchase()
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_purchase, cargo_subtype) {
     set_351K_VVVF_1ST_purchase;

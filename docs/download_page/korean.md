@@ -330,7 +330,7 @@
         <td class="introduction">1995</td>
     </tr>
     <tr data-veh_id="SUIN_BUNDANG">
-        <td class="refit"><div><img src="./_static/351K_VVVF_1ST.png" alt="수인분당선"><br /><img src="./_static/351K_VVVF_2ND.png" alt="수인분당선"><br /><img src="./_static/351K_VVVF_3RD.png" alt="수인분당선"></div></td>
+        <td class="refit"><div><img src="./_static/351K_VVVF_1ST.png" alt="수인분당선"><br /><img src="./_static/351K_VVVF_2ND.png" alt="수인분당선"><br /><img src="./_static/351K_VVVF_3RD.png" alt="수인분당선"><br /><img src="./_static/351K_VVVF_1ST_1.png" alt="수인분당선"></div></td>
         <td class="name">수인분당선</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">100 km/h</td>

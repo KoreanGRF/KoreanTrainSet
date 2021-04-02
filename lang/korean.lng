@@ -243,7 +243,8 @@ STR_REFIT_METRO_SMETRO_8K_1ST_NAME               : (서울교통공사 8k VVVF)
 STR_REFIT_METRO_SMETRO_9K_1ST_NAME               : (서울교통공사9 9k VVVF)
 
 # Refit (Suin-Bungdang Line)
-STR_REFIT_METRO_351K_VVVF_1ST_NAME               : (Korail 351k VVVF 1세대)
+STR_REFIT_METRO_351K_VVVF_1ST_1_NAME             : (Korail 351k VVVF 1세대 / 구 도색)
+STR_REFIT_METRO_351K_VVVF_1ST_2_NAME             : (Korail 351k VVVF 1세대 / 현 도색)
 STR_REFIT_METRO_351K_VVVF_2ND_NAME               : (Korail 351k VVVF 2세대)
 STR_REFIT_METRO_351K_VVVF_3RD_NAME               : (Korail 351k VVVF 3세대)
 

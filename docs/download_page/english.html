@@ -330,7 +330,7 @@
         <td class="introduction">1995</td>
     </tr>
     <tr data-veh_id="SUIN_BUNDANG">
-        <td class="refit"><div><img src="./_static/351K_VVVF_1ST.png" alt="Suin-Bundang Line"><br /><img src="./_static/351K_VVVF_2ND.png" alt="Suin-Bundang Line"><br /><img src="./_static/351K_VVVF_3RD.png" alt="Suin-Bundang Line"></div></td>
+        <td class="refit"><div><img src="./_static/351K_VVVF_1ST.png" alt="Suin-Bundang Line"><br /><img src="./_static/351K_VVVF_2ND.png" alt="Suin-Bundang Line"><br /><img src="./_static/351K_VVVF_3RD.png" alt="Suin-Bundang Line"><br /><img src="./_static/351K_VVVF_1ST_1.png" alt="Suin-Bundang Line"></div></td>
         <td class="name">Suin-Bundang Line</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">100 km/h</td>
