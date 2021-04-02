@@ -32,7 +32,7 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         // Spec
         power:                          0 kW;
         weight:                         var_HOPPER_CAR_WEIGHT;
-        length:                         7;
+        length:                         6;
 
         // Model
         model_life:                     VEHICLE_NEVER_EXPIRES;
