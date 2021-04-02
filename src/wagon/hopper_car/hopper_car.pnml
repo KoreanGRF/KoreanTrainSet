@@ -47,7 +47,7 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         cargo_allow_refit:              [COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE, BEAN,
                                          CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, POTA, LIME, MNO2,
                                          PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG, FERT, NITR, CMNT, SASH,
-                                         QLME, PLAS, FECR, CBLK, CASS, BDMT, PEAT, COKE];
+                                         SGBT, QLME, PLAS, FECR, CBLK, CASS, BDMT, PEAT, COKE];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
 
