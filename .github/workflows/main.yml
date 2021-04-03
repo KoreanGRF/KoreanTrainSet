@@ -1,0 +1,39 @@
+name: Build
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    # On Ubuntu 20.04
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+
+    - name: Install Dependencies
+      run: |
+        pip3 install nml
+
+    - name: Build NewGRF
+      run: make all
+    
+    - name: Set variables
+      id: vars
+      run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        #name: Korean_Train_Set_${{ steps.vars.outputs.sha_short }}.tar  # Name with sha short hash
+        name: Korean_Train_Set.tar
+        path: generated/Korean_Train_Set*.tar
