@@ -41,6 +41,7 @@ STR_TONGIL_CAR_NAME                              :[KTS] Tongil passenger car
 STR_BIDULGI_CAR_NAME                             :[KTS] Bidulgi passenger car
 STR_GENERATOR_CAR_NAME                           :[KTS] Generator car
 STR_CAFE_CAR_NAME                                :[KTS] Cafe/Restaurant car
+STR_SLEEPING_CAR_NAME                            :[KTS] Sleeping car
 
 STR_FLAT_CAR_NAME                                :[KTS] Container flat car
 STR_HOPPER_CAR_NAME                              :[KTS] Hopper car
@@ -138,6 +139,10 @@ STR_REFIT_LIVERY_CAFE_MUGUNGHWA_OLD_RESTAUNRANT  : (Old Mugunghwa restaurant)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED          : (Saemaeul cafe / KNR: Blue & Red)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW      : (Saemaeul restaurant / KNR: Green & Yellow)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       : (Saemaeul restaurant / Korail current livery)
+
+# Refit (Sleeping car)
+STR_REFIT_LIVERY_SLEEPING_CAR_OLD                : (Old livery)
+STR_REFIT_LIVERY_SLEEPING_CAR_RECENT             : (Recent livery)
 
 # Refit (Bidulgi)
 STR_REFIT_LIVERY_BIDULGI_3RD_CLASS               : (3rd class car - Da 9 class)
