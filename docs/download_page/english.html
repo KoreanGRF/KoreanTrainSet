@@ -560,7 +560,7 @@
         <td class="introduction">1950</td>
     </tr>
     <tr data-veh_id="FLAT_CAR">
-        <td class="refit"><div><img src="./_static/FLAT_CAR_1.png" alt="Container flat car"></div></td>
+        <td class="refit"><div><img src="./_static/FLAT_CAR_BLUE.png" alt="Container flat car"><br /><img src="./_static/FLAT_CAR_BROWN.png" alt="Container flat car"><br /><img src="./_static/FLAT_CAR_BLACK.png" alt="Container flat car"></div></td>
         <td class="name">Container flat car</td>
         <td class="speed"></td>
         <td class="speed_designed"></td>

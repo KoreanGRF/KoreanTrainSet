@@ -4,34 +4,108 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_FLAT_CAR_cargo_subtype, cargo_subtype) {
+    1: return string(STR_REFIT_COLOUR_BROWN);   // Brown
+    2: return string(STR_REFIT_COLOUR_BLACK);   // Black
+    return string(STR_REFIT_COLOUR_BLUE);       // Blue (default)
+}
+
 // Random wagons
-switch(FEAT_TRAINS, SELF, sw_FLAT_CAR_wagon, random_bits % 27) {
-     0: sg_FLAT_CAR_1_40ft_01_wagon;
-     1: sg_FLAT_CAR_1_40ft_02_wagon;
-     2: sg_FLAT_CAR_1_40ft_03_wagon;
-     3: sg_FLAT_CAR_1_40ft_04_wagon;
-     4: sg_FLAT_CAR_1_40ft_05_wagon;
-     5: sg_FLAT_CAR_1_40ft_06_wagon;
-     6: sg_FLAT_CAR_1_40ft_07_wagon;
-     7: sg_FLAT_CAR_1_40ft_08_wagon;
-     8: sg_FLAT_CAR_1_40ft_09_wagon;
-     9: sg_FLAT_CAR_1_20ft_01_wagon;
-    10: sg_FLAT_CAR_1_20ft_02_wagon;
-    11: sg_FLAT_CAR_1_20ft_03_wagon;
-    12: sg_FLAT_CAR_1_20ft_04_wagon;
-    13: sg_FLAT_CAR_1_20ft_05_wagon;
-    14: sg_FLAT_CAR_1_20ft_06_wagon;
-    15: sg_FLAT_CAR_1_20ft_07_wagon;
-    16: sg_FLAT_CAR_1_20ft_08_wagon;
-    17: sg_FLAT_CAR_1_20ft_09_wagon;
-    18: sg_FLAT_CAR_1_20ft_10_wagon;
-    19: sg_FLAT_CAR_1_20ft_11_wagon;
-    20: sg_FLAT_CAR_1_20ft_12_wagon;
-    21: sg_FLAT_CAR_1_20ft_13_wagon;
-    22: sg_FLAT_CAR_1_20ft_14_wagon;
-    23: sg_FLAT_CAR_1_20ft_15_wagon;
-    24: sg_FLAT_CAR_1_20ft_16_wagon;
-    25: sg_FLAT_CAR_1_20ft_17_wagon;
-    26: sg_FLAT_CAR_1_20ft_18_wagon;
-    set_FLAT_CAR_1_empty_wagon;
+switch(FEAT_TRAINS, SELF, sw_FLAT_CAR_BLUE_wagon, random_bits % 27) {
+     0: sg_FLAT_CAR_BLUE_40ft_01_wagon;
+     1: sg_FLAT_CAR_BLUE_40ft_02_wagon;
+     2: sg_FLAT_CAR_BLUE_40ft_03_wagon;
+     3: sg_FLAT_CAR_BLUE_40ft_04_wagon;
+     4: sg_FLAT_CAR_BLUE_40ft_05_wagon;
+     5: sg_FLAT_CAR_BLUE_40ft_06_wagon;
+     6: sg_FLAT_CAR_BLUE_40ft_07_wagon;
+     7: sg_FLAT_CAR_BLUE_40ft_08_wagon;
+     8: sg_FLAT_CAR_BLUE_40ft_09_wagon;
+     9: sg_FLAT_CAR_BLUE_20ft_01_wagon;
+    10: sg_FLAT_CAR_BLUE_20ft_02_wagon;
+    11: sg_FLAT_CAR_BLUE_20ft_03_wagon;
+    12: sg_FLAT_CAR_BLUE_20ft_04_wagon;
+    13: sg_FLAT_CAR_BLUE_20ft_05_wagon;
+    14: sg_FLAT_CAR_BLUE_20ft_06_wagon;
+    15: sg_FLAT_CAR_BLUE_20ft_07_wagon;
+    16: sg_FLAT_CAR_BLUE_20ft_08_wagon;
+    17: sg_FLAT_CAR_BLUE_20ft_09_wagon;
+    18: sg_FLAT_CAR_BLUE_20ft_10_wagon;
+    19: sg_FLAT_CAR_BLUE_20ft_11_wagon;
+    20: sg_FLAT_CAR_BLUE_20ft_12_wagon;
+    21: sg_FLAT_CAR_BLUE_20ft_13_wagon;
+    22: sg_FLAT_CAR_BLUE_20ft_14_wagon;
+    23: sg_FLAT_CAR_BLUE_20ft_15_wagon;
+    24: sg_FLAT_CAR_BLUE_20ft_16_wagon;
+    25: sg_FLAT_CAR_BLUE_20ft_17_wagon;
+    26: sg_FLAT_CAR_BLUE_20ft_18_wagon;
+    set_FLAT_CAR_BLUE_empty_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_FLAT_CAR_BROWN_wagon, random_bits % 27) {
+     0: sg_FLAT_CAR_BROWN_40ft_01_wagon;
+     1: sg_FLAT_CAR_BROWN_40ft_02_wagon;
+     2: sg_FLAT_CAR_BROWN_40ft_03_wagon;
+     3: sg_FLAT_CAR_BROWN_40ft_04_wagon;
+     4: sg_FLAT_CAR_BROWN_40ft_05_wagon;
+     5: sg_FLAT_CAR_BROWN_40ft_06_wagon;
+     6: sg_FLAT_CAR_BROWN_40ft_07_wagon;
+     7: sg_FLAT_CAR_BROWN_40ft_08_wagon;
+     8: sg_FLAT_CAR_BROWN_40ft_09_wagon;
+     9: sg_FLAT_CAR_BROWN_20ft_01_wagon;
+    10: sg_FLAT_CAR_BROWN_20ft_02_wagon;
+    11: sg_FLAT_CAR_BROWN_20ft_03_wagon;
+    12: sg_FLAT_CAR_BROWN_20ft_04_wagon;
+    13: sg_FLAT_CAR_BROWN_20ft_05_wagon;
+    14: sg_FLAT_CAR_BROWN_20ft_06_wagon;
+    15: sg_FLAT_CAR_BROWN_20ft_07_wagon;
+    16: sg_FLAT_CAR_BROWN_20ft_08_wagon;
+    17: sg_FLAT_CAR_BROWN_20ft_09_wagon;
+    18: sg_FLAT_CAR_BROWN_20ft_10_wagon;
+    19: sg_FLAT_CAR_BROWN_20ft_11_wagon;
+    20: sg_FLAT_CAR_BROWN_20ft_12_wagon;
+    21: sg_FLAT_CAR_BROWN_20ft_13_wagon;
+    22: sg_FLAT_CAR_BROWN_20ft_14_wagon;
+    23: sg_FLAT_CAR_BROWN_20ft_15_wagon;
+    24: sg_FLAT_CAR_BROWN_20ft_16_wagon;
+    25: sg_FLAT_CAR_BROWN_20ft_17_wagon;
+    26: sg_FLAT_CAR_BROWN_20ft_18_wagon;
+    set_FLAT_CAR_BROWN_empty_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_FLAT_CAR_BLACK_wagon, random_bits % 27) {
+     0: sg_FLAT_CAR_BLACK_40ft_01_wagon;
+     1: sg_FLAT_CAR_BLACK_40ft_02_wagon;
+     2: sg_FLAT_CAR_BLACK_40ft_03_wagon;
+     3: sg_FLAT_CAR_BLACK_40ft_04_wagon;
+     4: sg_FLAT_CAR_BLACK_40ft_05_wagon;
+     5: sg_FLAT_CAR_BLACK_40ft_06_wagon;
+     6: sg_FLAT_CAR_BLACK_40ft_07_wagon;
+     7: sg_FLAT_CAR_BLACK_40ft_08_wagon;
+     8: sg_FLAT_CAR_BLACK_40ft_09_wagon;
+     9: sg_FLAT_CAR_BLACK_20ft_01_wagon;
+    10: sg_FLAT_CAR_BLACK_20ft_02_wagon;
+    11: sg_FLAT_CAR_BLACK_20ft_03_wagon;
+    12: sg_FLAT_CAR_BLACK_20ft_04_wagon;
+    13: sg_FLAT_CAR_BLACK_20ft_05_wagon;
+    14: sg_FLAT_CAR_BLACK_20ft_06_wagon;
+    15: sg_FLAT_CAR_BLACK_20ft_07_wagon;
+    16: sg_FLAT_CAR_BLACK_20ft_08_wagon;
+    17: sg_FLAT_CAR_BLACK_20ft_09_wagon;
+    18: sg_FLAT_CAR_BLACK_20ft_10_wagon;
+    19: sg_FLAT_CAR_BLACK_20ft_11_wagon;
+    20: sg_FLAT_CAR_BLACK_20ft_12_wagon;
+    21: sg_FLAT_CAR_BLACK_20ft_13_wagon;
+    22: sg_FLAT_CAR_BLACK_20ft_14_wagon;
+    23: sg_FLAT_CAR_BLACK_20ft_15_wagon;
+    24: sg_FLAT_CAR_BLACK_20ft_16_wagon;
+    25: sg_FLAT_CAR_BLACK_20ft_17_wagon;
+    26: sg_FLAT_CAR_BLACK_20ft_18_wagon;
+    set_FLAT_CAR_BLACK_empty_wagon;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_FLAT_CAR_wagon, cargo_subtype) {
+    1: sw_FLAT_CAR_BROWN_wagon;
+    2: sw_FLAT_CAR_BLACK_wagon;
+    sw_FLAT_CAR_BLUE_wagon;
 }

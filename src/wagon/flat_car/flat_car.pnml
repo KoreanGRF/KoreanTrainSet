@@ -66,6 +66,7 @@ item(FEAT_TRAINS, ko_train_FLAT_CAR, 5910) {
         cargo_capacity:                 sw_FLAT_CAR_capacity;
         loading_speed:                  sw_FLAT_CAR_loadingspeed;
 
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        cargo_subtype_text:             sw_FLAT_CAR_cargo_subtype;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }
