@@ -14,10 +14,10 @@ CAPACITY_PURCHASE(SAEMAEUL_CAR)
 LOADING(SAEMAEUL_CAR)
 
 // Graphics
-#include "SAEMAEUL_CAR_graphic.pnml"
+#include "saemaeul_car_graphic.pnml"
 
 // Switch
-#include "SAEMAEUL_CAR_switch.pnml"
+#include "saemaeul_car_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
