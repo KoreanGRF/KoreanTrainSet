@@ -78,12 +78,14 @@ item(FEAT_TRAINS, ko_train_ITX_CHEONGCHUN, 5530) {
         default:                        sw_ITX_CHEONGCHUN_wagon;
         weight:                         var_ITX_CHEONGCHUN_WEIGHT;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
+        loading_speed:                  sw_ITX_CHEONGCHUN_loadingspeed;
         cargo_capacity:                 sw_ITX_CHEONGCHUN_wagon_capacity_in_custom;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_ITX_CHEONGCHUN_wagon;
         weight:                         var_ITX_CHEONGCHUN_WEIGHT;
         running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
+        loading_speed:                  sw_ITX_CHEONGCHUN_loadingspeed;
         cargo_capacity:                 sw_ITX_CHEONGCHUN_wagon_capacity_in_custom;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
