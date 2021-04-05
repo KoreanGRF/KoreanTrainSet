@@ -49,6 +49,16 @@
         <td class="weight">88 t</td>
         <td class="introduction">2001</td>
     </tr>
+    <tr data-veh_id="K5X00">
+        <td class="refit"><div><img src="./_static/K5x00_BLACK_ORANGE.png" alt="5x00/6x00 Diesel Locomotive"></div></td>
+        <td class="name">5x00/6x00 Diesel Locomotive</td>
+        <td class="speed">105 km/h</td>
+        <td class="speed_designed">105 km/h</td>
+        <td class="capacity"></td>
+        <td class="power">1305 kW</td>
+        <td class="weight">141 t</td>
+        <td class="introduction">1957</td>
+    </tr>
     <tr data-veh_id="K7000">
         <td class="refit"><div><img src="./_static/K7000_1.png" alt="7000 Diesel Locomotive"></div></td>
         <td class="name">7000 Diesel Locomotive</td>
