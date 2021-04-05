@@ -113,6 +113,13 @@ STR_REFIT_LIVERY_GENERATOR_CAR_SME_B             : (Long type : Saemaeul current
 STR_REFIT_PASSWAGON_NORMALCAR                    : (Normal class car)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (First class car)
 
+# Refit (Bidulgi CDC)
+STR_REFIT_LIVERY_BIDULGI_CDC_BLUE                : (Blue livery)
+STR_REFIT_LIVERY_BIDULGI_CDC_LIGHT_GREEN         : (KNR light green livery)
+STR_REFIT_LIVERY_BIDULGI_CDC_GREEN               : (KNR green livery)
+STR_REFIT_LIVERY_BIDULGI_CDC_TONGIL_GREEN        : (Tongil livery)
+STR_REFIT_LIVERY_BIDULGI_CDC_MUGUNGHWA           : (Mugunghwa livery)
+
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW : (KNR old executive car livery: Green & Yellow)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS    : (Korail recent executive car livery)

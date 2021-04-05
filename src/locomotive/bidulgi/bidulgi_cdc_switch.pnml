@@ -7,9 +7,22 @@
  * Bidulgi Commuter Diesel car
  */
 
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_BIDULGI_CDC_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_BIDULGI_CDC_LIGHT_GREEN);
+    2: return string(STR_REFIT_LIVERY_BIDULGI_CDC_GREEN);
+    3: return string(STR_REFIT_LIVERY_BIDULGI_CDC_TONGIL_GREEN);
+    4: return string(STR_REFIT_LIVERY_BIDULGI_CDC_MUGUNGHWA);
+    return string(STR_REFIT_LIVERY_BIDULGI_CDC_BLUE);
+}
+
 // Engine
 switch(FEAT_TRAINS, SELF, sw_BIDULGI_CDC_engine, cargo_subtype) {
-    set_BIDULGI_CDC_engine;
+    1: set_BIDULGI_CDC_LIGHT_GREEN_engine;
+    2: set_BIDULGI_CDC_GREEN_engine;
+    3: set_BIDULGI_CDC_TONGIL_GREEN_engine;
+    4: set_BIDULGI_CDC_MUGUNGHWA_engine;
+    set_BIDULGI_CDC_BLUE_engine;
 }
 
 // Attach

@@ -59,7 +59,7 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CDC, 5521) {
         ai_special_flag:                AI_FLAG_PASSENGER;
         misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
         bitmask_vehicle_info:           0;
-        visual_effect_and_powered:      VISUAL_EFFECT_DIESEL;
+        visual_effect_and_powered:      visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
     }
     graphics {
         default:                        sw_BIDULGI_CDC_engine;
@@ -72,7 +72,8 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CDC, 5521) {
         loading_speed:                  sw_BIDULGI_CDC_loadingspeed;
 
         can_attach_wagon:               sw_BIDULGI_CDC_attach;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        cargo_subtype_text:             sw_BIDULGI_CDC_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
     livery_override(ko_train_PASSWG) {
         default:                        sw_BIDULGI_CAR_wagon;

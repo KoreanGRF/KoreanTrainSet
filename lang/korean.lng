@@ -113,6 +113,13 @@ STR_REFIT_LIVERY_GENERATOR_CAR_SME_B             : (장대형 : 새마을호 현
 STR_REFIT_PASSWAGON_NORMALCAR                    : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (특실 객차)
 
+# Refit (Bidulgi CDC)
+STR_REFIT_LIVERY_BIDULGI_CDC_BLUE                : (파란 도색)
+STR_REFIT_LIVERY_BIDULGI_CDC_LIGHT_GREEN         : (철도청 연한 녹색 도색)
+STR_REFIT_LIVERY_BIDULGI_CDC_GREEN               : (철도청 도색)
+STR_REFIT_LIVERY_BIDULGI_CDC_TONGIL_GREEN        : (통일호 도색)
+STR_REFIT_LIVERY_BIDULGI_CDC_MUGUNGHWA           : (무궁화 도색)
+
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW : (철도청 구 도색 특실, 녹색 & 황색)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS    : (Korail 현 도색 특실)

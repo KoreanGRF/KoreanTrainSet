@@ -170,7 +170,7 @@
         <td class="introduction">1980</td>
     </tr>
     <tr data-veh_id="BIDULGI_CDC">
-        <td class="refit"><div><img src="./_static/BIDULGI_CDC.png" alt="Bidulgi Commuter"></div></td>
+        <td class="refit"><div><img src="./_static/BIDULGI_CDC_BLUE.png" alt="Bidulgi Commuter"><br /><img src="./_static/BIDULGI_CDC_LIGHT_GREEN.png" alt="Bidulgi Commuter"><br /><img src="./_static/BIDULGI_CDC_GREEN.png" alt="Bidulgi Commuter"><br /><img src="./_static/BIDULGI_CDC_TONGIL_GREEN.png" alt="Bidulgi Commuter"><br /><img src="./_static/BIDULGI_CDC_MUGUNGHWA.png" alt="Bidulgi Commuter"></div></td>
         <td class="name">Bidulgi Commuter</td>
         <td class="speed">110 km/h</td>
         <td class="speed_designed">110 km/h</td>

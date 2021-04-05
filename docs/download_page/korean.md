@@ -170,7 +170,7 @@
         <td class="introduction">1980</td>
     </tr>
     <tr data-veh_id="BIDULGI_CDC">
-        <td class="refit"><div><img src="./_static/BIDULGI_CDC.png" alt="비둘기 통근형 디젤 동차"></div></td>
+        <td class="refit"><div><img src="./_static/BIDULGI_CDC_BLUE.png" alt="비둘기 통근형 디젤 동차"><br /><img src="./_static/BIDULGI_CDC_LIGHT_GREEN.png" alt="비둘기 통근형 디젤 동차"><br /><img src="./_static/BIDULGI_CDC_GREEN.png" alt="비둘기 통근형 디젤 동차"><br /><img src="./_static/BIDULGI_CDC_TONGIL_GREEN.png" alt="비둘기 통근형 디젤 동차"><br /><img src="./_static/BIDULGI_CDC_MUGUNGHWA.png" alt="비둘기 통근형 디젤 동차"></div></td>
         <td class="name">비둘기 통근형 디젤 동차</td>
         <td class="speed">110 km/h</td>
         <td class="speed_designed">110 km/h</td>
