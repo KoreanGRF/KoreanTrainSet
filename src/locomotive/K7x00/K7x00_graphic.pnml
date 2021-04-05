@@ -23,6 +23,16 @@ spriteset(set_K7x00_RED_WHITE_BLUE_purchase, "./src/locomotive/K7x00/K7x00.png")
 spriteset(set_K7x00_RED_WHITE_BLUE, "./src/locomotive/K7x00/K7x00.png") {
     tmpl_K7x00(60, 0)
 }
+alternative_sprites(set_K7x00_RED_WHITE_BLUE, ZOOM_LEVEL_IN_2X, BIT_DEPTH_32BPP, "./src/locomotive/K7x00/K7x00.32bpp.png") {
+    [0,     0,   37,  92,  -18, -46]
+    [0+50,  0,  114,  83,  -60, -51]
+    [0+180, 0,  131,  54,  -66, -37]
+    [0+330, 0,  113,  87,  -33, -44]
+    [0+460, 0,   38,  95,  -18, -48]
+    [0+520, 0,  113,  88,  -65, -52]
+    [0+650, 0,  130,  53,  -65, -38]
+    [0+800, 0,  114,  81,  -57, -53]
+}
 
 // Blue & White
 spriteset(set_K7x00_BLUE_WHITE_purchase, "./src/locomotive/K7x00/K7x00.png") {
