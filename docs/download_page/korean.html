@@ -609,6 +609,16 @@
         <td class="weight">17 t</td>
         <td class="introduction">1950</td>
     </tr>
+    <tr data-veh_id="SLEEPING_CAR">
+        <td class="refit"><div><img src="./_static/SLEEPING_CAR_1.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_2.png" alt="침대차"></div></td>
+        <td class="name">침대차</td>
+        <td class="speed"></td>
+        <td class="speed_designed"></td>
+        <td class="capacity">28</td>
+        <td class="power"></td>
+        <td class="weight">17 t</td>
+        <td class="introduction">1966</td>
+    </tr>
     <tr data-veh_id="STAKE_CAR">
         <td class="refit"><div><img src="./_static/STAKE_CAR.png" alt="평판화차"></div></td>
         <td class="name">평판화차</td>

@@ -41,7 +41,7 @@ sort(FEAT_TRAINS, [
     ko_train_CAFE_CAR,               // 5603
     ko_train_TONGIL_CAR,             // 5604
     ko_train_BIDULGI_CAR,            // 5605
-    // ko_train_SLEEPING_CAR,           // 5606
+    ko_train_SLEEPING_CAR,           // 5606
     ko_train_GENERATOR_CAR,          // 5610
 
     ko_train_MAIL_CAR,               // 5915
