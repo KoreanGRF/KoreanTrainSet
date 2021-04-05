@@ -25,7 +25,7 @@ spriteset(set_MUGUNGHWA_CAR_C_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR
     tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
 }
 spriteset(set_MUGUNGHWA_CAR_C, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
-    tmpl_wagon_by_coor(60, 60)
+    tmpl_wagon_by_coor_8dir(60, 60)
 }
 
 // D: 1985~1989
@@ -33,7 +33,7 @@ spriteset(set_MUGUNGHWA_CAR_D_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR
     tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
 }
 spriteset(set_MUGUNGHWA_CAR_D, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
-    tmpl_wagon_by_coor(60, 90)
+    tmpl_wagon_by_coor_8dir(60, 90)
 }
 
 // E: 1990~1999
@@ -41,7 +41,7 @@ spriteset(set_MUGUNGHWA_CAR_E_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR
     tmpl_purchase_detail(0, 120, 31, 15, -16, -9)
 }
 spriteset(set_MUGUNGHWA_CAR_E, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
-    tmpl_wagon_by_coor(60, 120)
+    tmpl_wagon_by_coor_8dir(60, 120)
 }
 
 // F: 2000~2002
@@ -49,7 +49,7 @@ spriteset(set_MUGUNGHWA_CAR_F_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR
     tmpl_purchase_detail(0, 150, 31, 15, -16, -9)
 }
 spriteset(set_MUGUNGHWA_CAR_F, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
-    tmpl_wagon_by_coor(60, 150)
+    tmpl_wagon_by_coor_8dir(60, 150)
 }
 
 // Current Korail paint
@@ -57,15 +57,47 @@ spriteset(set_MUGUNGHWA_CAR_RED_BLUE_WHITE_purchase, "./src/wagon/mugunghwa_car/
     tmpl_purchase_detail(0, 180, 31, 15, -16, -9)
 }
 spriteset(set_MUGUNGHWA_CAR_RED_BLUE_WHITE, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
-    tmpl_wagon_by_coor(60, 180)
+    tmpl_wagon_by_coor_8dir(60, 180)
 }
 
-// Old express (구특전)
-spriteset(set_MUGUNGHWA_CAR_OLD_EXPRESS_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+// Streamline old executive
+spriteset(set_MUGUNGHWA_CAR_STREAMLINE_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_purchase_detail(0, 210, 32, 15, -16, -9)
 }
-spriteset(set_MUGUNGHWA_CAR_OLD_EXPRESS, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
-    tmpl_wagon_by_coor(60, 210)
+spriteset(set_MUGUNGHWA_CAR_STREAMLINE, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor_8dir(60, 210)
+}
+
+// Executive car (from Haetae Heavy Industry, old livery)
+spriteset(set_MUGUNGHWA_CAR_EXECUTIVE_HAETAE_1_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 240, 32, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_EXECUTIVE_HAETAE_1, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor_8dir(60, 240)
+}
+
+// Executive car (from Haetae Heavy Industry, current livery)
+spriteset(set_MUGUNGHWA_CAR_EXECUTIVE_HAETAE_2_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 270, 32, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_EXECUTIVE_HAETAE_2, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor_8dir(60, 270)
+}
+
+// Executive car (from Hanjin Heavy Industry)
+spriteset(set_MUGUNGHWA_CAR_EXECUTIVE_HANJIN_1_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 300, 32, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_EXECUTIVE_HANJIN_1, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor_8dir(60, 300)
+}
+
+// Executive car (streamlined)
+spriteset(set_MUGUNGHWA_CAR_EXECUTIVE_STREAMLINED_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_purchase_detail(0, 330, 32, 15, -16, -9)
+}
+spriteset(set_MUGUNGHWA_CAR_EXECUTIVE_STREAMLINED, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
+    tmpl_wagon_by_coor_8dir(60, 330)
 }
 
 // Haerang

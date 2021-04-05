@@ -73,10 +73,10 @@ spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_2, "./src/wagon/cafe_car/CAFE_CAR.png") {
 }
 
 // Mugunghwa streamlined
-spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINED_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINE_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 210, 31, 15, -16, -9)
 }
-spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINED, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINE, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 210)
 }
 
