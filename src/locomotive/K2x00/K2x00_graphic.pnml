@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Template
+template tmpl_K2x00(x, y) {
+    [x,        y,     8,    19,    -3,   -9]
+    [x+15,     y,    18,    14,    -9,   -8]
+    [x+45,     y,    23,    12,    -8,   -8]
+    [x+95,     y,    18,    15,    -2,   -6]
+    [x+125,    y,     8,    19,    -3,   -9]   // Very similar with tmpl_K4x00 but height is 19, not 20
+    [x+140,    y,    18,    15,   -15,   -5]
+    [x+175,    y,    23,    12,   -16,   -8]
+    [x+225,    y,    18,    14,    -7,   -7]
+}
+
+// K2x00
+spriteset(set_K2x00_BLACK_ORANGE_purchase, "./src/locomotive/K2x00/K2x00.png") {
+    tmpl_purchase_for_singlehead(0, 0)
+}
+spriteset(set_K2x00_BLACK_ORANGE, "./src/locomotive/K2x00/K2x00.png") {   // Black & Orange
+    tmpl_K2x00(60, 0)
+}
+
+spriteset(set_K2x00_GREEN_YELLOW_purchase, "./src/locomotive/K2x00/K2x00.png") {
+    tmpl_purchase_for_singlehead(0, 30)
+}
+spriteset(set_K2x00_GREEN_YELLOW, "./src/locomotive/K2x00/K2x00.png") {   // Green & Yellow
+    tmpl_K2x00(60, 30)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K2x00_purchase, cargo_subtype) {
+    set_K2x00_GREEN_YELLOW_purchase;
+}

@@ -1,0 +1,74 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * K2x00
+ */
+SPEED_GENERAL(K2x00)
+COST(K2x00)
+RUNNING(K2x00)
+
+// Graphics
+#include "K2x00_graphic.pnml"
+
+// Switch
+#include "K2x00_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_K2x00, 5420) {
+    property {
+        // Common properties
+        name:                           string(STR_K2x00_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_K2x00_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        length:                         6;
+
+        // Spec
+        speed:                          105 km/h;
+        power:                          POWER_IN_KW(var_K2x00_POWER);
+        weight:                         var_K2x00_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_K2x00_loco;
+        purchase:                       sw_K2x00_purchase;
+
+        speed:                          sw_K2x00_speed;
+        cost_factor:                    sw_K2x00_cost;
+        running_cost_factor:            sw_K2x00_runningcost;
+        cargo_capacity:                 0;
+
+        can_attach_wagon:               sw_Kxxxx_attach;
+        cargo_subtype_text:             sw_K2x00_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}
+// End of "K2x00"
