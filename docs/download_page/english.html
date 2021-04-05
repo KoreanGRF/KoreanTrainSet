@@ -29,6 +29,16 @@
         <td class="weight">113 t</td>
         <td class="introduction">1943</td>
     </tr>
+    <tr data-veh_id="K2X00">
+        <td class="refit"><div><img src="./_static/K2x00_BLACK_ORANGE.png" alt="2x00 Diesel Locomotive"><br /><img src="./_static/K2x00_GREEN_YELLOW.png" alt="2x00 Diesel Locomotive"></div></td>
+        <td class="name">2x00 Diesel Locomotive</td>
+        <td class="speed">105 km/h</td>
+        <td class="speed_designed">105 km/h</td>
+        <td class="capacity"></td>
+        <td class="power">597 kW</td>
+        <td class="weight">95 t</td>
+        <td class="introduction">1955</td>
+    </tr>
     <tr data-veh_id="K4X00">
         <td class="refit"><div><img src="./_static/K4x00_1.png" alt="4x00 Diesel Locomotive"><br /><img src="./_static/K4x00_2.png" alt="4x00 Diesel Locomotive"><br /><img src="./_static/K4x00_V_TRAIN.png" alt="4x00 Diesel Locomotive"></div></td>
         <td class="name">4x00 Diesel Locomotive</td>

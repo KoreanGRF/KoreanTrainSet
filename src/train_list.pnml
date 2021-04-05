@@ -15,6 +15,9 @@
 // Steam locomotives
 #include "locomotive/steam/steam.pnml"
 
+// K2x00
+#include "locomotive/K2x00/K2x00.pnml"
+
 // K4x00
 #include "locomotive/K4x00/K4x00.pnml"
 

@@ -33,6 +33,7 @@ switch(FEAT_TRAINS, SELF, sw_V_TRAIN_capacity, position_in_consist % 3) {
 
 // Attach
 switch(FEAT_TRAINS, SELF, sw_K4x00_attach, vehicle_type_id) {
+    ko_train_K2x00:           return CB_RESULT_ATTACH_ALLOW;
     ko_train_K4x00:           return CB_RESULT_ATTACH_ALLOW;
     ko_train_K7x00:           return CB_RESULT_ATTACH_ALLOW;
     ko_train_K7000:           return CB_RESULT_ATTACH_ALLOW;
