@@ -5,11 +5,11 @@
    * **skyu** (skyu2947@gmail.com) - Major Graphics
    * **라스(Las)** (wlq10000@naver.com)
    * **작가(Jakga)** (angryphw@naver.com)
-   * **초저항(Chojeohang)** (yunggu7410@naver.com) - Graphics for Busan Line 4 tracks and vehicles
-   * **오픈기차(Opentrain)** ([@opentrain](https://github.com/opentrain, gks3900@naver.com)
+   * **초저항(Chojeohang)** (yunggu7410@naver.com) - Busan Line 4 tracks and vehicles
+   * **오픈기차(Opentrain)** ([@opentrain](https://github.com/opentrain), gks3900@naver.com)
    * **kiwitree** ([@kiwitreekor](https://github.com/kiwitreekor))
-   * **가문비(Gamunbi)** ([@Gamunbi](https://github.com/Gamunbi) - Graphics for Steam locomotive
+   * **가문비(Gamunbi)** ([@Gamunbi](https://github.com/Gamunbi)) - Steam locomotive
+   * **즉삭** ([@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201))
    * **[@kimgas](https://github.com/kimgas)**
-   * **[@ChuoSpecialRapid201](https://github.com/@ChuoSpecialRapid201)**
 
    Detail graphic contributes can be found at [contributors_graphic.md](./contributors_graphic.md)
