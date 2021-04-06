@@ -19,6 +19,7 @@ LOADING(GENERATOR_CAR)
 // Switch
 #include "generator_car_switch.pnml"
 
+// Item
 item(FEAT_TRAINS, ko_train_GENERATOR_CAR, 5610) {
     property {
         // Common properties
@@ -27,6 +28,7 @@ item(FEAT_TRAINS, ko_train_GENERATOR_CAR, 5610) {
         introduction_date:              var_GENERATOR_CAR_INTRODUCTION;
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        length:                         7;
 
         // Spec
         power:                          0 kW;
@@ -60,6 +62,7 @@ item(FEAT_TRAINS, ko_train_GENERATOR_CAR, 5610) {
     graphics {
         default:                        sw_GENERATOR_CAR_wagon;
         purchase:                       sw_GENERATOR_CAR_purchase;
+        length:                         sw_GENERATOR_CAR_length;
 
         cost_factor:                    sw_GENERATOR_CAR_cost;
         running_cost_factor:            sw_GENERATOR_CAR_runningcost;
