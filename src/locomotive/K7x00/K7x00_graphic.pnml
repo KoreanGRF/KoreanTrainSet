@@ -6,7 +6,7 @@
 
 // Template for 7x00
 template tmpl_K7x00(x, y) {
-    tmpl_K5x00(x, y)
+    tmpl_K5000(x, y)
 }
 
 // Red & White & Blue (current)

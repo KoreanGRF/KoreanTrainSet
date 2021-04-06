@@ -6,9 +6,9 @@
 
 
 // Refit Paintings
-switch(FEAT_TRAINS, SELF, sw_K5x00_loco, cargo_subtype) {
-    set_K5x00_BLACK_ORANGE;
+switch(FEAT_TRAINS, SELF, sw_K5000_loco, cargo_subtype) {
+    set_K5000_BLACK_ORANGE;
 }
-// switch(FEAT_TRAINS, SELF, sw_K5x00_cargo_subtype_text, cargo_subtype) {
+// switch(FEAT_TRAINS, SELF, sw_K5000_cargo_subtype_text, cargo_subtype) {
 //     return string(STR_REFIT_LIVERY_THESEDAYS);
 // }

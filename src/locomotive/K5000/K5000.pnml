@@ -4,34 +4,34 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * K5x00
+ * K5000
  * Note that it is based on K4400, need to split in future
  */
-SPEED_GENERAL(K5x00)
-COST(K5x00)
-RUNNING(K5x00)
+SPEED_GENERAL(K5000)
+COST(K5000)
+RUNNING(K5000)
 
 // Graphics
-#include "K5x00_graphic.pnml"
+#include "K5000_graphic.pnml"
 
 // Switch
-#include "K5x00_switch.pnml"
+#include "K5000_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_K5x00, 5450) {
+item(FEAT_TRAINS, ko_train_K5000, 5450) {
     property {
         // Common properties
-        name:                           string(STR_K5x00_NAME);
+        name:                           string(STR_K5000_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_K5x00_INTRODUCTION;
+        introduction_date:              var_K5000_INTRODUCTION;
         track_type:                     RAIL;
         engine_class:                   ENGINE_CLASS_DIESEL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
 
         // Spec
         speed:                          105 km/h;
-        power:                          POWER_IN_KW(var_K5x00_POWER);
-        weight:                         var_K5x00_WEIGHT;
+        power:                          POWER_IN_KW(var_K5000_POWER);
+        weight:                         var_K5000_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 
@@ -58,17 +58,17 @@ item(FEAT_TRAINS, ko_train_K5x00, 5450) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_K5x00_loco;
-        purchase:                       sw_K5x00_purchase;
+        default:                        sw_K5000_loco;
+        purchase:                       sw_K5000_purchase;
 
-        speed:                          sw_K5x00_speed;
-        cost_factor:                    sw_K5x00_cost;
-        running_cost_factor:            sw_K5x00_runningcost;
+        speed:                          sw_K5000_speed;
+        cost_factor:                    sw_K5000_cost;
+        running_cost_factor:            sw_K5000_runningcost;
         cargo_capacity:                 0;
 
         can_attach_wagon:               sw_Kxxxx_attach;
-        // cargo_subtype_text:             sw_K5x00_cargo_subtype_text;
+        // cargo_subtype_text:             sw_K5000_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
 }
-// End of "K5x00"
+// End of "K5000"

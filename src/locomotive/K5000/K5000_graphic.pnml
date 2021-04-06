@@ -4,8 +4,8 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Template for 5x00
-template tmpl_K5x00(x, y) {
+// Template for 5000
+template tmpl_K5000(x, y) {
     [x,     y,    8,     22,    -3,   -11]
     [x+15,  y,   22,     17,   -14,    -9]
     [x+45,  y,   32,     12,   -16,    -8]
@@ -16,15 +16,15 @@ template tmpl_K5x00(x, y) {
     [x+225, y,   22,     17,    -7,    -9]
 }
 
-// K5x00
-spriteset(set_K5x00_BLACK_ORANGE_purchase, "./src/locomotive/K5x00/K5x00.png") {
+// K5000
+spriteset(set_K5000_BLACK_ORANGE_purchase, "./src/locomotive/K5000/K5000.png") {
     tmpl_purchase_for_singlehead(0, 0)
 }
-spriteset(set_K5x00_BLACK_ORANGE, "./src/locomotive/K5x00/K5x00.png") {   // Black & Orange
-    tmpl_K5x00(60, 0)
+spriteset(set_K5000_BLACK_ORANGE, "./src/locomotive/K5000/K5000.png") {   // Black & Orange
+    tmpl_K5000(60, 0)
 }
 
 // Alias of purchase image
-switch(FEAT_TRAINS, SELF, sw_K5x00_purchase, cargo_subtype) {
-    set_K5x00_BLACK_ORANGE_purchase;
+switch(FEAT_TRAINS, SELF, sw_K5000_purchase, cargo_subtype) {
+    set_K5000_BLACK_ORANGE_purchase;
 }

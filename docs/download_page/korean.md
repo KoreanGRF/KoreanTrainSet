@@ -49,9 +49,9 @@
         <td class="weight">88 t</td>
         <td class="introduction">2001</td>
     </tr>
-    <tr data-veh_id="K5X00">
-        <td class="refit"><div><img src="./_static/K5x00_BLACK_ORANGE.png" alt="5x00/6x00호대 디젤 기관차"></div></td>
-        <td class="name">5x00/6x00호대 디젤 기관차</td>
+    <tr data-veh_id="K5000">
+        <td class="refit"><div><img src="./_static/K5000_BLACK_ORANGE.png" alt="5·6000호대 디젤 기관차"></div></td>
+        <td class="name">5·6000호대 디젤 기관차</td>
         <td class="speed">105 km/h</td>
         <td class="speed_designed">105 km/h</td>
         <td class="capacity"></td>
