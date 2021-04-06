@@ -109,7 +109,7 @@
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/baggage_car/BAGGAGE_CAR.png?raw=true) | ``BAGGAGE_CAR`` | [@opentrain](https://github.com/opentrain) | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/baggage_car/BIDULGI.png?raw=true) | ``BIDULGI`` (Baggage_car |[@Gamunbi](https://github.com/Gamunbi) | [#40](https://github.com/KoreanGRF/KoreanTrainSet/issues/40)|
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png?raw=true) | ``MUGUNGHWA_CAR`` | skyu? | |
-| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/tongil_car/TONGIL_CAR.png?raw=true) | ``TONGIL_CAR`` | [@opentrain](https://github.com/opentrain) | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/tongil_car/TONGIL_CAR.png?raw=true) | ``TONGIL_CAR`` | [@Gamunbi](https://github.com/Gamunbi) | [#134](https://github.com/KoreanGRF/KoreanTrainSet/issues/134) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/bidulgi_car/BIDULGI_CAR.png?raw=true) | ``BIDULGI_CAR`` |[@Gamunbi](https://github.com/Gamunbi) | [#40](https://github.com/KoreanGRF/KoreanTrainSet/issues/40)|
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/cafe_car/CAFE_CAR.png?raw=true) | ``CAFE_CAR`` | | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/flat_car/FLAT_CAR.png?raw=true) | ``FLAT_CAR`` | skyu | |
