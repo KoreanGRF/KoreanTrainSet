@@ -9,7 +9,7 @@ You can see the whole vehicle list and their specifications(speed, weight, power
 
 ## Development
 ### How to build
-You need [NML](http://bundles.openttdcoop.org/nml/releases/LATEST/) and **Python 3** to build this NewGRF.  
+You need [NML](https://github.com/OpenTTD/nml) and **Python 3** to build this NewGRF.  
 Run ``make`` in terminal shell. If you are on Windows, open a command prompt and type ``bash`` before it.  
 ``make clean`` will clean all generated & compiled files.
 

@@ -9,7 +9,7 @@
 
 ## 개발
 ### 빌드하는 방법
-이 NewGRF를 빌드하려면 [NML](http://bundles.openttdcoop.org/nml/releases/LATEST/)과 **Python 3**이 필요합니다.  
+이 NewGRF를 빌드하려면 [NML](https://github.com/OpenTTD/nml)과 **Python 3**이 필요합니다.  
 터미널 쉘에서 ``make``를 실행하세요. Windows 환경이라면, 그 전에 명령 프롬포트를 열고 ``bash``를 입력하세요.  
 ``make clean``을 입력하면 모든 생성된 파일이 초기화됩니다.
 
