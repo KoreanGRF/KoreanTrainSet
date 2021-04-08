@@ -247,7 +247,7 @@
         <td class="capacity">64</td>
         <td class="power"></td>
         <td class="weight">20 t</td>
-        <td class="introduction">1987</td>
+        <td class="introduction">1984</td>
     </tr>
     <tr data-veh_id="MUGUNGHWA_CAR">
         <td class="refit"><div><img src="./_static/MUGUNGHWA_CAR_A.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_B.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_C.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_D.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_E.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_F.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_RED_BLUE_WHITE.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_STREAMLINE.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_EXECUTIVE_HAETAE_1.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_EXECUTIVE_HAETAE_2.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_EXECUTIVE_HANJIN_1.png" alt="Mugunghwa passenger car"><br /><img src="./_static/MUGUNGHWA_CAR_EXECUTIVE_STREAMLINED.png" alt="Mugunghwa passenger car"><br /><img src="./_static/HAERANG.png" alt="Mugunghwa passenger car"><br /><img src="./_static/G_TRAIN.png" alt="Mugunghwa passenger car"><br /><img src="./_static/S_TRAIN_1.png" alt="Mugunghwa passenger car"><br /><img src="./_static/S_TRAIN_2.png" alt="Mugunghwa passenger car"><br /><img src="./_static/A_TRAIN_1.png" alt="Mugunghwa passenger car"></div></td>
@@ -267,7 +267,7 @@
         <td class="capacity">72</td>
         <td class="power"></td>
         <td class="weight">17 t</td>
-        <td class="introduction">1988</td>
+        <td class="introduction">1984</td>
     </tr>
     <tr data-veh_id="BIDULGI_CAR">
         <td class="refit"><div><img src="./_static/BIDULGI_CAR_1.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_2.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_3.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_4A.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_4B.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_4C.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_4D.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_5.png" alt="Bidulgi passenger car"></div></td>
