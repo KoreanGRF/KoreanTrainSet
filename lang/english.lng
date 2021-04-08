@@ -148,11 +148,6 @@ STR_REFIT_LIVERY_TONGIL_1994_1997                : (Livery E: 1994~1997, Navy & 
 STR_REFIT_LIVERY_TONGIL_1997_2004                : (Livery F: 1997~2004, Green & Yellow)
 
 # Refit (Cafe car)
-STR_REFIT_LIVERY_CAFE_RDC_MUGUNGHWA              : (RDC Mugunghwa cafe)
-STR_REFIT_LIVERY_CAFE_MUGUNGHWA_STREAMLINE       : (Mugunghwa streamline restaurant)
-STR_REFIT_LIVERY_CAFE_MUGUNGHWA_1                : (Old Mugunghwa cafe)
-STR_REFIT_LIVERY_CAFE_MUGUNGHWA_2                : (New Mugunghwa cafe)
-STR_REFIT_LIVERY_CAFE_MUGUNGHWA_OLD_RESTAUNRANT  : (Old Mugunghwa restaurant)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED          : (Saemaeul cafe / KNR: Blue & Red)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW      : (Saemaeul restaurant / KNR: Green & Yellow)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       : (Saemaeul restaurant / Korail current livery)

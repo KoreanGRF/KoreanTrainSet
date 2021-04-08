@@ -148,11 +148,6 @@ STR_REFIT_LIVERY_TONGIL_1994_1997                : (도색 E: 1994~1997, 남색 
 STR_REFIT_LIVERY_TONGIL_1997_2004                : (도색 F: 1997~2004, 녹색 & 황색)
 
 # Refit (Cafe car)
-STR_REFIT_LIVERY_CAFE_RDC_MUGUNGHWA              : (RDC 무궁화호 카페차)
-STR_REFIT_LIVERY_CAFE_MUGUNGHWA_STREAMLINE       : (무궁화호 유선형 식당차)
-STR_REFIT_LIVERY_CAFE_MUGUNGHWA_1                : (무궁화호 구 카페차)
-STR_REFIT_LIVERY_CAFE_MUGUNGHWA_2                : (무궁화호 신 카페차)
-STR_REFIT_LIVERY_CAFE_MUGUNGHWA_OLD_RESTAUNRANT  : (무궁화호 구 식당차)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED          : (새마을호 식당차 / 철도청: 청색 & 적색)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW      : (새마을호 식당차 / 철도청: 녹색 & 황색)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       : (새마을호 카페차 / Korail 현 도색)

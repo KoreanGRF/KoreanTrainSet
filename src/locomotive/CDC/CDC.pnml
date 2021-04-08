@@ -99,7 +99,8 @@ item(FEAT_TRAINS, ko_train_CDC, 5510) {
         cargo_subtype_text:             sw_CDC_cargo_subtype_text;
     }
     livery_override(ko_train_CAFE_CAR) {
-        default:                        set_CAFE_CAR_RDC;
+        default:                        sw_CAFE_CAR_wagon;
+        cargo_subtype_text:             sw_CAFE_CAR_subtype_text;
     }
 }
 // End of "CDC"

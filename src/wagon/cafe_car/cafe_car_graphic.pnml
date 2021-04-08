@@ -41,54 +41,62 @@ spriteset(set_CAFE_CAR_DHC_3, "./src/wagon/cafe_car/CAFE_CAR.png") {
 }
 
 // Mugunghwa restaurant (old)
-spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_1_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_C_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
 }
-spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_1, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_C, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 90)
 }
 
-// Mugunghwa cafe (old)
-spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_1_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+// Mugunghwa restaurant (old)
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_D_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 120, 31, 15, -16, -9)
 }
-spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_1, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_D, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 120)
 }
 
-// Mugunghwa restaurant (new)
-spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURANT__2_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+// Mugunghwa cafe (old)
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_E_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 150, 31, 15, -16, -9)
 }
-spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURANT_2, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_E, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 150)
 }
 
-// Mugunghwa cafe (new)
-spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_2_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+// Mugunghwa restaurant (new)
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURANT_F_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_detail(0, 180, 31, 15, -16, -9)
 }
-spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_2, "./src/wagon/cafe_car/CAFE_CAR.png") {
+spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURANT_F, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(60, 180)
+}
+
+// Mugunghwa cafe (new)
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_RED_BLUE_WHITE_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_detail(0, 210, 31, 15, -16, -9)
+}
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_RED_BLUE_WHITE, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(60, 210)
 }
 
 // Mugunghwa streamlined
 spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINE_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_purchase_detail(0, 210, 31, 15, -16, -9)
+    tmpl_purchase_detail(0, 240, 31, 15, -16, -9)
 }
 spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINE, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(60, 210)
+    tmpl_CAFE_CAR(60, 240)
 }
 
 // RDC
 spriteset(set_CAFE_CAR_RDC_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_purchase_detail(0, 240, 31, 15, -16, -9)
+    tmpl_purchase_detail(0, 270, 31, 15, -16, -9)
 }
 spriteset(set_CAFE_CAR_RDC, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(60, 240)
+    tmpl_CAFE_CAR(60, 270)
 }
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_purchase, cargo_subtype) {
-    set_CAFE_CAR_MUGUNGHWA_CAFE_2;
+    set_CAFE_CAR_MUGUNGHWA_CAFE_RED_BLUE_WHITE_purchase;
 }
