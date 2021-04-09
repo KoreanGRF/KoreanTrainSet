@@ -89,7 +89,7 @@ item(FEAT_TRAINS, ko_train_EEC, 5513) {
         weight:                         sw_EEC_weight_in_custom;
         loading_speed:                  sw_EEC_loadingspeed;
         cargo_subtype_text:             sw_EEC_cargo_subtype_text;
-        power:                          POWER_IN_KW(var_EEC_POWER);
+        power:                          POWER_IN_KW(var_PASSENGER_WAGON_P_POWER);
     }
     livery_override(ko_train_CAFE_CAR) {
         default:                        sw_EEC_wagon_cafe_cargo_subtype;
@@ -97,7 +97,6 @@ item(FEAT_TRAINS, ko_train_EEC, 5513) {
         weight:                         40;
         loading_speed:                  sw_EEC_loadingspeed;
         cargo_subtype_text:             sw_EEC_cargo_subtype_text;
-        power:                          POWER_IN_KW(var_EEC_POWER);
     }
 }
 // End of "EEC"
