@@ -124,6 +124,7 @@ STR_REFIT_LIVERY_BIDULGI_CDC_TONGIL_GREEN        : (Tongil livery)
 STR_REFIT_LIVERY_BIDULGI_CDC_MUGUNGHWA           : (Mugunghwa livery)
 
 # Refit (Saemaeul car)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE  : (KNR old executive car livery: 1970~1983)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW : (KNR old executive car livery: Green & Yellow)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS    : (Korail recent executive car livery)
 

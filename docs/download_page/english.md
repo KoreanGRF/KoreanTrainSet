@@ -240,7 +240,7 @@
         <td class="introduction">2019</td>
     </tr>
     <tr data-veh_id="SAEMAEUL_CAR">
-        <td class="refit"><div><img src="./_static/SAEMAEUL_CAR_1.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_2.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_3.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_executive_2.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_executive_3.png" alt="Saemaeul passenger car"></div></td>
+        <td class="refit"><div><img src="./_static/SAEMAEUL_CAR_1.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_executive_1.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_2.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_executive_2.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_3.png" alt="Saemaeul passenger car"><br /><img src="./_static/SAEMAEUL_CAR_executive_3.png" alt="Saemaeul passenger car"></div></td>
         <td class="name">Saemaeul passenger car</td>
         <td class="speed">150 km/h</td>
         <td class="speed_designed">150 km/h</td>

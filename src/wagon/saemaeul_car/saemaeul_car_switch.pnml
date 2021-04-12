@@ -7,8 +7,9 @@
 switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_wagon, cargo_subtype) {
     1: set_SAEMAEUL_CAR_1;
     2: set_SAEMAEUL_CAR_2;
-    3: set_SAEMAEUL_CAR_executive_2;
-    4: set_SAEMAEUL_CAR_executive_3;
+    3: set_SAEMAEUL_CAR_executive_1;
+    4: set_SAEMAEUL_CAR_executive_2;
+    5: set_SAEMAEUL_CAR_executive_3;
     set_SAEMAEUL_CAR_3;
 }
 
@@ -17,8 +18,9 @@ switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_wagon, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_MUGUNGHWA_1970_1983);
     2: return string(STR_REFIT_LIVERY_GREEN_YELLOW);
-    3: return string(STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW);
-    4: return string(STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS);
+    3: return string(STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE);
+    4: return string(STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW);
+    5: return string(STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 
