@@ -3,3 +3,15 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_K7000_loco, cargo_subtype) {
+    1:    set_K7000_GREEN_YELLOW;
+    2:    set_K7000_SILVER_BLUE;
+    set_K7000_RED_WHITE_BLUE;
+}
+switch(FEAT_TRAINS, SELF, sw_K7000_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    2:    return string(STR_REFIT_LIVERY_7000_SILVER_BLUE);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
+}

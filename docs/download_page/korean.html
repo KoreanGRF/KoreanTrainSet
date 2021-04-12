@@ -60,7 +60,7 @@
         <td class="introduction">1957</td>
     </tr>
     <tr data-veh_id="K7000">
-        <td class="refit"><div><img src="./_static/K7000_1.png" alt="7000호대 디젤 기관차"></div></td>
+        <td class="refit"><div><img src="./_static/K7000_SILVER_BLUE.png" alt="7000호대 디젤 기관차"><br /><img src="./_static/K7000_GREEN_YELLOW.png" alt="7000호대 디젤 기관차"><br /><img src="./_static/K7000_RED_WHITE_BLUE.png" alt="7000호대 디젤 기관차"></div></td>
         <td class="name">7000호대 디젤 기관차</td>
         <td class="speed">150 km/h</td>
         <td class="speed_designed">150 km/h</td>

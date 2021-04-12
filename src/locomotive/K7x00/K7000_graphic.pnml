@@ -4,23 +4,43 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
+// Template
+template tmpl_K7000(x, y) {
+    [x,       y,     8,    22,    -3,    -9]
+    [x+15,    y,    21,    16,   -14,    -7]
+    [x+45,    y,    30,    12,   -16,    -8]
+    [x+95,    y,    21,    16,    -5,    -8]
+    [x+125,   y,     8,    22,    -3,   -11]
+    [x+140,   y,    21,    16,   -14,    -8]
+    [x+175,   y,    30,    12,   -15,    -8]
+    [x+225,   y,    21,    16,    -6,    -7]
+}
 
-// K7000
-spriteset(set_K7000_1_purchase, "./src/locomotive/K7x00/K7000.png") {
+// White & Blue
+spriteset(set_K7000_SILVER_BLUE_purchase, "./src/locomotive/K7x00/K7000.png") {
     tmpl_purchase_for_singlehead(0, 0)
 }
-spriteset(set_K7000_1_loco, "./src/locomotive/K7x00/K7000.png") {   // Red & White & Blue
-    [60,      0,     8,    22,    -3,    -9]
-    [60+15,   0,    21,    16,   -14,    -7]
-    [60+45,   0,    30,    12,   -16,    -8]
-    [60+95,   0,    21,    16,    -5,    -8]
-    [60+125,  0,     8,    22,    -3,   -11]
-    [60+140,  0,    21,    16,   -14,    -8]
-    [60+175,  0,    30,    12,   -15,    -8]
-    [60+225,  0,    21,    16,    -6,    -7]
+spriteset(set_K7000_SILVER_BLUE, "./src/locomotive/K7x00/K7000.png") {
+    tmpl_K7000(60, 0)
+}
+
+// Green & Yellow
+spriteset(set_K7000_GREEN_YELLOW_purchase, "./src/locomotive/K7x00/K7000.png") {
+    tmpl_purchase_for_singlehead(0, 30)
+}
+spriteset(set_K7000_GREEN_YELLOW, "./src/locomotive/K7x00/K7000.png") {
+    tmpl_K7000(60, 30)
+}
+
+// Red & White & Blue
+spriteset(set_K7000_RED_WHITE_BLUE_purchase, "./src/locomotive/K7x00/K7000.png") {
+    tmpl_purchase_for_singlehead(0, 60)
+}
+spriteset(set_K7000_RED_WHITE_BLUE, "./src/locomotive/K7x00/K7000.png") {
+    tmpl_K7000(60, 60)
 }
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_K7000_purchase, cargo_subtype) {
-    set_K7000_1_purchase;
+    set_K7000_RED_WHITE_BLUE_purchase;
 }

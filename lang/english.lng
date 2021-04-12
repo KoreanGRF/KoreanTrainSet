@@ -83,6 +83,7 @@ STR_UIJEONGBU_NAME                               :[KTS] Uijeongbu LRT
 
 # Liveries
 STR_REFIT_LIVERY_THESEDAYS                       : (Current livery)
+STR_REFIT_LIVERY_7000_SILVER_BLUE                : (KNR old livery: Silver & Blue)
 STR_REFIT_LIVERY_7x00_CARGO                      : (Cargo livery)
 STR_REFIT_LIVERY_7x00_BLACK_ORANGE               : (KNR first livery: Black & Orange)
 STR_REFIT_LIVERY_7x00_FIRST_KORAIL               : (KNR first livery: Blue & White)
