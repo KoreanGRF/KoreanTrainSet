@@ -151,6 +151,7 @@ STR_REFIT_LIVERY_TONGIL_1997_2004                : (도색 F: 1997~2004, 녹색 
 # Refit (Cafe car)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED          : (새마을호 식당차 / 철도청: 청색 & 적색)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW      : (새마을호 식당차 / 철도청: 녹색 & 황색)
+STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW : (새마을호 식당차 / Korail 현 도색)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       : (새마을호 카페차 / Korail 현 도색)
 
 # Refit (Sleeping car)
