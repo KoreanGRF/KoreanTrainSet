@@ -160,8 +160,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_engine, position_in_consist_from_end 
 
 // Wagon with pantograph - for Donghae & Seohae line, which are consist of 4 wagons.
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_by_free_center_for_4cars, position_in_consist % 4) {
-    1: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
-    2: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
+    1..2: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
     sw_SEOUL_METRO_1_wagon_cargo_subtype;
 }
 // Wagon with pantograph - others
@@ -170,7 +169,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_by_free_center2, (position_in_c
     sw_SEOUL_METRO_1_wagon_cargo_subtype;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon, cargo_subtype) {
-    14: sw_SEOUL_METRO_1_wagon_321K_BIKE;
+    16: sw_SEOUL_METRO_1_wagon_321K_BIKE;
     17: sw_SEOUL_METRO_1_wagon_by_free_center_for_4cars;
     18: sw_SEOUL_METRO_1_wagon_by_free_center_for_4cars;
     sw_SEOUL_METRO_1_wagon_by_free_center2;
