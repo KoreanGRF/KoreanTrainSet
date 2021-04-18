@@ -9,7 +9,7 @@ switch(FEAT_TRAINS, SELF, sw_steam_attach, vehicle_type_id) {
     ko_train_MIKA3:         return CB_RESULT_ATTACH_ALLOW;
     ko_train_MATE2:         return CB_RESULT_ATTACH_ALLOW;
     ko_train_PASHI5:        return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K4x00..ko_train_K8000: return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K2x00..ko_train_K8000: return CB_RESULT_ATTACH_ALLOW;
     ko_train_SAEMAEUL_CAR:  return CB_RESULT_ATTACH_ALLOW;
     ko_train_MUGUNGHWA_CAR: return CB_RESULT_ATTACH_ALLOW;
     ko_train_TONGIL_CAR:    return CB_RESULT_ATTACH_ALLOW;

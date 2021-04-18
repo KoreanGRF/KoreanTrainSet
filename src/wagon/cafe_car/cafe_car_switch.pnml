@@ -49,6 +49,7 @@ switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_subtype_text, cargo_subtype) {
 
 // Attachable vehicles
 switch(FEAT_TRAINS, PARENT, sw_CAFE_CAR_attach, vehicle_type_id) {
+    ko_train_K2x00: return CB_RESULT_ATTACH_ALLOW;
     ko_train_K4x00: return CB_RESULT_ATTACH_ALLOW;
     ko_train_K7x00: return CB_RESULT_ATTACH_ALLOW;
     ko_train_K7000: return CB_RESULT_ATTACH_ALLOW;
