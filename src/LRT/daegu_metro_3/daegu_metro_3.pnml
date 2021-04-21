@@ -78,6 +78,7 @@ item(FEAT_TRAINS, ko_train_DAEGU_METRO_3, 5763) {
         default:                        sw_DAEGU_METRO_3_wagon;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         cargo_capacity:                 sw_METRO_wagon_capacity;
+        loading_speed:                  sw_DAEGU_METRO_3_loadingspeed;
         cargo_subtype_text:             sw_DAEGU_METRO_3_cargo_subtype_text;
     }
 }

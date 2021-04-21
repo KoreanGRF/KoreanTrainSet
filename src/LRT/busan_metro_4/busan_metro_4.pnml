@@ -79,6 +79,7 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_4, 5754) {
         cargo_capacity:                 sw_METRO_wagon_capacity;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         length:                         6;
+        loading_speed:                  sw_BUSAN_METRO_4_loadingspeed;
     }
 }
 // End of "BUSAN_METRO_4"
