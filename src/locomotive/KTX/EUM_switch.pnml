@@ -22,10 +22,10 @@ switch(FEAT_TRAINS, SELF, sw_EUM_power_wagon, position_in_consist) {
 
 // Capacity
 switch(FEAT_TRAINS, SELF, var_EUM_capacity_express, 1) {
-    return 46 * sw_cargo_capacity_factor;
+    return 46 / 2 * sw_cargo_capacity_factor;
 }
 switch(FEAT_TRAINS, SELF, var_EUM_capacity, 1) {
-    return 76 * sw_cargo_capacity_factor;
+    return 76 / 2 * sw_cargo_capacity_factor;
 }
 switch(FEAT_TRAINS, SELF, sw_EUM_capacity_in_custom, position_in_consist) {
     0: return var_EUM_capacity_express;
