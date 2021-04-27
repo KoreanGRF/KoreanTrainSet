@@ -26,7 +26,7 @@
         <td class="speed_designed">90 km/h</td>
         <td class="capacity"></td>
         <td class="power">1074 kW</td>
-        <td class="weight">113 t</td>
+        <td class="weight">179 t</td>
         <td class="introduction">1943</td>
     </tr>
     <tr data-veh_id="K2X00">
