@@ -171,7 +171,7 @@ spriteset(set_CDC_GYEONGBUK1_wagon2, "./src/locomotive/CDC/CDC.png") {
 
 // Gyeongbuk theme (경북순환테마열차(신))
 spriteset(set_CDC_GYEONGBUK2_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 300)
+    tmpl_purchase_for_dualhead(0, 360)
 }
 spriteset(set_CDC_GYEONGBUK2_engineH, "./src/locomotive/CDC/CDC.png") {
     tmpl_CDC(60, 360)
