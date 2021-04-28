@@ -9,7 +9,7 @@ switch(FEAT_TRAINS, SELF, sw_UIJEONGBU_engineH, cargo_subtype) {
     set_UIJEONGBU_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_UIJEONGBU_engineT, cargo_subtype) {
-    set_UIJEONGBU_engineT;
+    set_UIJEONGBU_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_UIJEONGBU_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
     1: sw_UIJEONGBU_engineT;
