@@ -6,8 +6,8 @@
 
 // for Gyeongbuk theme (경북순환테마열차용)
 switch(FEAT_TRAINS, SELF, sw_CDC_GYEONGBUK1_wagon, position_in_consist % 2) {
-    1: set_CDC_GYEONGBUK1_wagon2;
-    set_CDC_GYEONGBUK1_wagon1;
+    1: set_CDC_GYEONGBUK1_wagon1;
+    set_CDC_GYEONGBUK1_wagon2;
 }
 switch(FEAT_TRAINS, SELF, sw_CDC_GYEONGBUK2_wagon, position_in_consist % 2) {
     1: set_CDC_GYEONGBUK2_wagon2;
@@ -26,7 +26,7 @@ switch(FEAT_TRAINS, SELF, sw_CDC_engineH, cargo_subtype) {
     7:  set_CDC_DMZTRAIN_engineH;
     9:  set_CDC_GYEONGBUK1_engineH;
     10: set_CDC_GYEONGBUK2_engineH;
-    18:  set_CDC_MUGUNGHWA_engineH;
+    18: set_CDC_MUGUNGHWA_engineH;
     set_CDC_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_CDC_engineT, cargo_subtype) {
@@ -39,7 +39,7 @@ switch(FEAT_TRAINS, SELF, sw_CDC_engineT, cargo_subtype) {
     7:  set_CDC_DMZTRAIN_engineT;
     9:  set_CDC_GYEONGBUK1_engineT;
     10: set_CDC_GYEONGBUK2_engineT;
-    18:  set_CDC_MUGUNGHWA_engineT;
+    18: set_CDC_MUGUNGHWA_engineT;
     set_CDC_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_CDC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
