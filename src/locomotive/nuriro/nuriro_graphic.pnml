@@ -63,7 +63,7 @@ spriteset(set_NURIRO_wagon_panto, "./src/locomotive/nuriro/NURIRO.png") {
     tmpl_NURIRO_wagon_panto(60, 30)
 }
 spriteset(set_NURIRO_wagon, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_wagon(60, 60)
+    tmpl_NURIRO_wagon_8dir(60, 60)
 }
 spriteset(set_NURIRO_engineT, "./src/locomotive/nuriro/NURIRO.png") {
     tmpl_NURIRO_engine_r(60, 90)
@@ -80,7 +80,7 @@ spriteset(set_NURIRO_KOREAN_WAVE_wagon_panto, "./src/locomotive/nuriro/NURIRO.pn
     tmpl_NURIRO_wagon_panto(60, 150)
 }
 spriteset(set_NURIRO_KOREAN_WAVE_wagon, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_wagon(60, 180)
+    tmpl_NURIRO_wagon_8dir(60, 180)
 }
 spriteset(set_NURIRO_KOREAN_WAVE_engineT, "./src/locomotive/nuriro/NURIRO.png") {
     tmpl_NURIRO_engine_r(60, 210)
@@ -97,7 +97,7 @@ spriteset(set_NURIRO_O_TRAIN_wagon_panto, "./src/locomotive/nuriro/NURIRO.png") 
     tmpl_NURIRO_wagon_panto(60, 270)
 }
 spriteset(set_NURIRO_O_TRAIN_wagon, "./src/locomotive/nuriro/NURIRO.png") {
-    tmpl_NURIRO_wagon(60, 300)
+    tmpl_NURIRO_wagon_8dir(60, 300)
 }
 spriteset(set_NURIRO_O_TRAIN_engineT, "./src/locomotive/nuriro/NURIRO.png") {
     tmpl_NURIRO_engine_r(60, 330)
