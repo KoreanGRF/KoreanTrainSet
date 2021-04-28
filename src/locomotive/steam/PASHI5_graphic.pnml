@@ -12,7 +12,7 @@ template tmpl_PASHI5_tender(x, y) {
     tmpl_MATE2_tender(x, y)
 }
 spriteset(set_PASHI5_purchase, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_purchase_detail(0, 0, 54, 15, -29, -9)
+    tmpl_purchase_detail(0, 0, 47, 15, -21, -9)
 }
 spriteset(set_PASHI5_engine_1, "./src/locomotive/steam/PASHI5.png") {
     tmpl_PASHI5(60, 0)

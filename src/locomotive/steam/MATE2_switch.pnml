@@ -25,6 +25,6 @@ switch(FEAT_TRAINS, SELF, sw_MATE2_articulated_part, extra_callback_info1) {
 
 // Length
 switch(FEAT_TRAINS, SELF, sw_MATE2_length, position_in_vehid_chain % 2) {
-    1: return 5;
+    1: return 4;
     return 8;
 }
