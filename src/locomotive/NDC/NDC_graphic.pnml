@@ -61,5 +61,5 @@ spriteset(set_NDC_business_engineT, "./src/locomotive/NDC/NDC.png") {
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_NDC_purchase, cargo_subtype) {
-    set_NDC_1_purchase;
+    set_NDC_2_purchase;
 }
