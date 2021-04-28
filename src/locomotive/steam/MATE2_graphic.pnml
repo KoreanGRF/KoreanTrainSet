@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Template
+template tmpl_MATE2(x, y) {
+    [x,     y,    8,     23,    -3,   -10]
+    [x+15,  y,    22,    17,   -13,    -9]
+    [x+45,  y,    32,    12,   -15,    -8]
+    [x+95,  y,    22,    18,    -5,    -8]
+    [x+125, y,    8,     23,    -3,   -10]
+    [x+140, y,    22,    18,   -15,    -9]
+    [x+175, y,    32,    12,   -18,    -8]
+    [x+225, y,    22,    17,    -8,    -9]
+}
+template tmpl_MATE2_tender(x, y) {
+    [x,     y,    8,     18,    -3,   -11]
+    [x+15,  y,    16,    14,    -8,    -8]
+    [x+45,  y,    21,    11,    -5,    -7]
+    [x+95,  y,    16,    13,     0,    -4]
+    [x+125, y,    8,     18,    -3,    -5]
+    [x+140, y,    16,    13,   -14,    -5]
+    [x+175, y,    21,    11,   -17,    -7]
+    [x+225, y,    16,    14,    -7,    -8]
+}
+spriteset(set_MATE2_purchase, "./src/locomotive/steam/MATE2.png") {
+    tmpl_purchase_detail(0, 0, 54, 15, -29, -9)
+}
+spriteset(set_MATE2_engine_1, "./src/locomotive/steam/MATE2.png") {
+    tmpl_MATE2(60, 0)
+}
+spriteset(set_MATE2_engine_2, "./src/locomotive/steam/MATE2.png") {
+    tmpl_MATE2(60, 30)
+}
+spriteset(set_MATE2_engine_3, "./src/locomotive/steam/MATE2.png") {
+    tmpl_MATE2(60, 60)
+}
+spriteset(set_MATE2_engine_4, "./src/locomotive/steam/MATE2.png") {
+    tmpl_MATE2(60, 90)
+}
+spriteset(set_MATE2_tender, "./src/locomotive/steam/MATE2.png") {
+    tmpl_MATE2_tender(60, 120)
+}

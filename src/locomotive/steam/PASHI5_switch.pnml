@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// PASHI5's engine
+switch(FEAT_TRAINS, SELF, sw_PASHI5_engine_by_motion, motion_counter % 4) {
+    1: set_PASHI5_engine_1;
+    2: set_PASHI5_engine_2;
+    3: set_PASHI5_engine_3;
+    set_PASHI5_engine_4;
+}
+
+switch(FEAT_TRAINS, SELF, sw_PASHI5_engine, position_in_vehid_chain % 2) {
+    1: set_PASHI5_tender;
+    sw_PASHI5_engine_by_motion;
+}
+
+// PASHI5's articulated part
+switch(FEAT_TRAINS, SELF, sw_PASHI5_articulated_part, extra_callback_info1) {
+    1: ko_train_PASHI5;
+    return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+// Length
+switch(FEAT_TRAINS, SELF, sw_PASHI5_length, position_in_vehid_chain % 2) {
+    1: return 5;
+    return 8;
+}
