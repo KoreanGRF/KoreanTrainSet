@@ -1,6 +1,7 @@
 | Image | Code | Author | Reference |
 |-------|--------|--------|-------|
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/LRT/uijeongbu/U100_by_TELK.png?raw=true) | ``U100_by_TELK`` (sample) | [@telk5093](https://github.com/telk5093) | This is a sample row, this graphic is not used. |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/narrow/hokey7/HOKEY7.png?raw=true) | ``HOKEY7`` | [@Gamunbi](https://github.com/Gamunbi) | [#205](https://github.com/KoreanGRF/KoreanTrainSet/issues/205) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/steam/MIKA3.png?raw=true) | ``MIKA3`` | [@Gamunbi](https://github.com/Gamunbi) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/steam/PASHI5.png?raw=true) | ``PASHI5`` | [@Gamunbi](https://github.com/Gamunbi) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/locomotive/steam/MATE2.png?raw=true) | ``MATE2`` | [@Gamunbi](https://github.com/Gamunbi) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
@@ -27,6 +28,7 @@
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/LRT/busangimhae/BUSANGIMHAE.png?raw=true) | ``BUSANGIMHAE`` | Las? | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/LRT/busan_metro_4/BUSAN_4K.png?raw=true) | ``BUSAN_4K`` | 초저항 | |
 |  | ``KR_LIGHTRAIL`` | 초저항 | |
+|  | ``NARROW_GAUGE`` | [@Gamunbi](https://github.com/Gamunbi) | [#204](https://github.com/KoreanGRF/KoreanTrainSet/issues/204) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/LRT/daegu_metro_3/DAEGU_3K_1.png?raw=true) | ``DAEGU_3K_1`` | Jakga? | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/LRT/daegu_metro_3/DAEGU_3K_2.png?raw=true) | ``DAEGU_3K_2`` | Jakga? | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/LRT/gimpo_goldline/GIMPO_1K.png?raw=true) | ``GIMPO_1K`` | skyu?<br />Middle wagon: [@telk5093](https://github.com/telk5093) | |
@@ -119,6 +121,7 @@
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/mugunghwa_car/Haerang.png?raw=true) | ``Haerang`` | Las? | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/mugunghwa_car/S-train.png?raw=true) | ``S-train`` | Las | [https://cafe.naver.com/ottd/10466](https://cafe.naver.com/ottd/10466) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/passenger_wagon/passenger_wagon.png?raw=true) | ``passenger_wagon`` | [@telk5093](https://github.telk5093) | |
+| ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/narrow/wagon/NARROW_GAUGE_WAGON.png?raw=true) | ``NARROW_GAUGE_WAGON`` | [@Gamunbi](https://github.com/Gamunbi) | [#205](https://github.com/KoreanGRF/KoreanTrainSet/issues/205) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/hopper_car/cargo_AORE.png?raw=true) | ``cargo_AORE`` | [@kiwitreekor](https://github.com/kiwitreekor) | [https://cafe.naver.com/ottd/15106](https://cafe.naver.com/ottd/15106) |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/hopper_car/cargo_BEAN.png?raw=true) | ``cargo_BEAN`` | 〃 | |
 | ![img](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/src/wagon/hopper_car/cargo_CLAY.png?raw=true) | ``cargo_CLAY`` | 〃 | |

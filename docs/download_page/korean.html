@@ -1,4 +1,14 @@
 <table class="ko_train_set">
+    <tr data-veh_id="HOKEY7">
+        <td class="refit"><div><img src="./_static/HOKEY7.png" alt="혀기 7형 증기 기관차"></div></td>
+        <td class="name">혀기 7형 증기 기관차</td>
+        <td class="speed">50 km/h</td>
+        <td class="speed_designed">50 km/h</td>
+        <td class="capacity"></td>
+        <td class="power">150 kW</td>
+        <td class="weight">43 t</td>
+        <td class="introduction">1952</td>
+    </tr>
     <tr data-veh_id="MIKA3">
         <td class="refit"><div><img src="./_static/MIKA3.png" alt="미카 3형 증기 기관차"></div></td>
         <td class="name">미카 3형 증기 기관차</td>

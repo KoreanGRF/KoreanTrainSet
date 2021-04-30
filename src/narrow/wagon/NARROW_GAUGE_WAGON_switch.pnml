@@ -1,0 +1,14 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Narrow gauge passenger coach
+ */
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_NARROW_GAUGE_WAGON_wagon, random_bits % 2) {
+    1: set_NARROW_GAUGE_WAGON_2_wagon;
+    set_NARROW_GAUGE_WAGON_1_wagon;
+}

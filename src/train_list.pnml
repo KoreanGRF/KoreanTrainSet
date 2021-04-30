@@ -12,6 +12,11 @@
 #include "wagon/cafe_car/cafe_car.pnml"
 #include "wagon/sleeping_car/sleeping_car.pnml"
 
+
+// Narrow gauges
+#include "narrow/hokey7/HOKEY7.pnml"
+#include "narrow/wagon/NARROW_GAUGE_WAGON.pnml"
+
 // Steam locomotives
 #include "locomotive/steam/steam.pnml"
 

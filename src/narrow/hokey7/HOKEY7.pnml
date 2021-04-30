@@ -1,0 +1,83 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * HOKEY7
+ */
+SPEED_GENERAL(HOKEY7)
+COST(HOKEY7)
+RUNNING(HOKEY7)
+CAPACITY(HOKEY7)
+CAPACITY_PURCHASE(HOKEY7)
+LOADING(HOKEY7)
+
+// Graphics
+#include "HOKEY7_graphic.pnml"
+
+// Switch
+#include "HOKEY7_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_HOKEY7, 5201) {
+    property {
+        // Common properties
+        name:                           string(STR_HOKEY7_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_HOKEY7_INTRODUCTION;
+        track_type:                     KRNR;
+        engine_class:                   ENGINE_CLASS_STEAM;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    0;
+
+        // Spec
+        speed:                          var_HOKEY7_SPEED km/h;
+        power:                          POWER_IN_KW(var_HOKEY7_POWER);
+        weight:                         var_HOKEY7_WEIGHT;
+        tractive_effort_coefficient:    0.2;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   50;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 0;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_STEAM;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+        visual_effect_and_powered:      visual_effect_and_powered(VISUAL_EFFECT_STEAM, -2, DISABLE_WAGON_POWER);
+    }
+    graphics {
+        default:                        sw_HOKEY7_engine;
+        articulated_part:               sw_HOKEY7_articulated_part;
+        purchase:                       set_HOKEY7_purchase;
+
+        length:                         sw_HOKEY7_length;
+
+        speed:                          sw_HOKEY7_speed;
+        cost_factor:                    sw_HOKEY7_cost;
+        running_cost_factor:            sw_HOKEY7_runningcost;
+        cargo_capacity:                 sw_HOKEY7_capacity;
+        purchase_cargo_capacity:        sw_HOKEY7_purchase_capacity;
+        loading_speed:                  sw_HOKEY7_loadingspeed;
+
+        // can_attach_wagon:               sw_steam_attach;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+}
+// End of "HOKEY7"

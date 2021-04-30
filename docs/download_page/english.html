@@ -1,4 +1,14 @@
 <table class="ko_train_set">
+    <tr data-veh_id="HOKEY7">
+        <td class="refit"><div><img src="./_static/HOKEY7.png" alt="Hokey 7 Steam Locomotive"></div></td>
+        <td class="name">Hokey 7 Steam Locomotive</td>
+        <td class="speed">50 km/h</td>
+        <td class="speed_designed">50 km/h</td>
+        <td class="capacity"></td>
+        <td class="power">150 kW</td>
+        <td class="weight">43 t</td>
+        <td class="introduction">1952</td>
+    </tr>
     <tr data-veh_id="MIKA3">
         <td class="refit"><div><img src="./_static/MIKA3.png" alt="Mika 3 Steam Locomotive"></div></td>
         <td class="name">Mika 3 Steam Locomotive</td>

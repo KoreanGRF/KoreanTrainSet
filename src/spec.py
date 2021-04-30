@@ -8,6 +8,7 @@
 trainList = {}
 
 #                                 speed1  speed2  cost    running_cost  capacity loading_speed power   weight  introduction
+trainList['HOKEY7']             = 50,     50,     10,     4,            0,       0,            150,    43,     (1952, 1, 1)
 trainList['MIKA3']              = 70,     70,     10,     4,            0,       0,            726,    156,    (1927, 1, 1)
 trainList['PASHI5']             = 110,    110,    10,     4,            0,       0,            790,    196,    (1939, 1, 1)
 trainList['MATE2']              = 90,     90,     10,     4,            0,       0,            1074,   179,    (1943, 1, 1)
@@ -74,6 +75,7 @@ trainList['UIJEONGBU']          = 80,     80,     10,     4,            80,     
 trainList['ECOBEE']             = 80,     110,    10,     4,            186,     20,           500,    19,     (2012, 1, 1)
 trainList['PASSENGER_WAGON']    = None,   None,   100,    2,            None,    10,           None,   20,     (1950, 1, 1)
 trainList['PASSENGER_WAGON_P']  = None,   None,   None,   4,            None,    None,         200,    25,     (1950, 1, 1)
+trainList['NARROW_GAUGE_WAGON'] = None,   None,   100,    2,            90,      10,           None,   14,     (1952, 1, 1)
 trainList['FLAT_CAR']           = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['HOPPER_CAR']         = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['BAGGAGE_CAR']        = 120,    120,    100,    2,            35,      5,            None,   17,     (1950, 1, 1)

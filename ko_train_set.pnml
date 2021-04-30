@@ -46,6 +46,7 @@ cargotable {
 railtypetable {
     RAIL, ELRL, MGLV,
     KRLR,
+    KRNR,
     KR_3RD_RAIL: ["3RDR", KRLR, ELRL, RAIL]
 }
 
@@ -73,6 +74,7 @@ sw_loading_speed_factor =   1 << max(0, min(coeff_loading_speed_factor, 3));
 
 // Railtypes
 #include "src/railtype/KR_LIGHTRAIL.pnml"
+#include "src/railtype/NARROW_GAUGE.pnml"
 
 // Simple waypoint
 #include "src/misc/simple_waypoint.pnml"
