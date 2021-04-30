@@ -364,6 +364,14 @@ STR_RAILTYPE_LIGHT_RAIL_BUILD_VEHICLE_CAPTION    :New Light Rail Vehicle
 STR_RAILTYPE_LIGHT_RAIL_NEW_ENGINE               :Light Rail vehicle
 STR_RAILTYPE_LIGHT_RAIL_AUTOREPLACE              :Light Rail Vehicles
 
+# Narrow gauge
+STR_RAILTYPE_NARROW_GAUGE_TRACK_NAME             :Light Rail Tracks
+STR_RAILTYPE_NARROW_GAUGE_TRACK_DROPDOWN_MENU    :[KTS] Light Rail Tracks
+STR_RAILTYPE_NARROW_GAUGE_TRACK_TOOLBAR_CAPTION  :Light Rail Track Construction
+STR_RAILTYPE_NARROW_GAUGE_BUILD_VEHICLE_CAPTION  :New Light Rail Vehicle
+STR_RAILTYPE_NARROW_GAUGE_NEW_ENGINE             :Light Rail vehicle
+STR_RAILTYPE_NARROW_GAUGE_AUTOREPLACE            :Light Rail Vehicles
+
 # Buffer Object
 STR_OBJ_BUFFER_KTSR                              :[KTS] Buffers
 
