@@ -129,14 +129,14 @@ switch(FEAT_RAILTYPES, SELF, sw_light_railway_track_tunnel_overlay, terrain_type
 // Define Light Rail Track
 item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
     property {
-        name:                           string(STR_KO_LIGHT_RAIL_TRACK_NAME);
+        name:                           string(STR_RAILTYPE_LIGHT_RAIL_TRACK_NAME);
         label:                          "KRLR";
         introduction_date:              date(1950, 1, 1);
-        menu_text:                      string(STR_KO_LIGHT_RAIL_TRACK_DROPDOWN_MENU);
-        toolbar_caption:                string(STR_KO_LIGHT_RAIL_TRACK_TOOLBAR_CAPTION);
-        build_window_caption:           string(STR_KO_LIGHT_RAIL_BUILD_VEHICLE_CAPTION);
-        new_engine_text:                string(STR_KO_LIGHT_RAIL_NEW_ENGINE);
-        autoreplace_text:               string(STR_KO_LIGHT_RAIL_AUTOREPLACE);
+        menu_text:                      string(STR_RAILTYPE_LIGHT_RAIL_TRACK_DROPDOWN_MENU);
+        toolbar_caption:                string(STR_RAILTYPE_LIGHT_RAIL_TRACK_TOOLBAR_CAPTION);
+        build_window_caption:           string(STR_RAILTYPE_LIGHT_RAIL_BUILD_VEHICLE_CAPTION);
+        new_engine_text:                string(STR_RAILTYPE_LIGHT_RAIL_NEW_ENGINE);
+        autoreplace_text:               string(STR_RAILTYPE_LIGHT_RAIL_AUTOREPLACE);
 
         station_graphics:               RAILTYPE_STATION_MONORAIL;
         acceleration_model:             ACC_MODEL_MONORAIL;
