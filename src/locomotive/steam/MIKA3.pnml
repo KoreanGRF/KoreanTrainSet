@@ -4,7 +4,7 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * MIKA3 2
+ * MIKA3
  */
 SPEED_GENERAL(MIKA3)
 COST(MIKA3)
