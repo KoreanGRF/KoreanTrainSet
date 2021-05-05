@@ -10,35 +10,40 @@
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_BIDULGI_3RD_CLASS);
-    2: return string(STR_REFIT_LIVERY_BIDULGI_ORIGINAL_1);
-    // 3: return string(STR_REFIT_LIVERY_BIDULGI_ORIGINAL_2);   // (in future ...)
-    4: return string(STR_REFIT_LIVERY_BIDULGI_BLUE);
-    5: return string(STR_REFIT_LIVERY_BIDULGI_GREEN_YELLOW);
-    return string(STR_REFIT_LIVERY_BIDULGI_BLUE);
+    2: return string(STR_REFIT_LIVERY_BIDULGI_DC_TRAILER);
+    3: return string(STR_REFIT_LIVERY_BIDULGI_1960);
+    4: return string(STR_REFIT_LIVERY_BIDULGI_1970);
+    5: return string(STR_REFIT_LIVERY_BIDULGI_1980);
+    6: return string(STR_REFIT_LIVERY_BIDULGI_1990);
+    return string(STR_REFIT_LIVERY_BIDULGI_1980);
 }
 
 // Wagon
-switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_4_wagon, random_bits % 2) {
-    1: set_BIDULGI_CAR_4B_wagon;
-    2: set_BIDULGI_CAR_4C_wagon;
-    3: set_BIDULGI_CAR_4D_wagon;
-    set_BIDULGI_CAR_4A_wagon;
+switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_1970_wagon, random_bits % 4) {
+    1: set_BIDULGI_CAR_RED_2_wagon;
+    2: set_BIDULGI_CAR_RED_3_wagon;
+    3: set_BIDULGI_CAR_RED_4_wagon;
+    set_BIDULGI_CAR_RED_1_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_1980_wagon, random_bits % 4) {
+    1: set_BIDULGI_CAR_BLUE_2_wagon;
+    2: set_BIDULGI_CAR_BLUE_3_wagon;
+    3: set_BIDULGI_CAR_BLUE_4_wagon;
+    set_BIDULGI_CAR_BLUE_1_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_wagon, cargo_subtype) {
-    1: set_BIDULGI_CAR_1_wagon;
-    2: set_BIDULGI_CAR_2_wagon;
-    // 3: set_BIDULGI_CAR_3_wagon;
-    4: sw_BIDULGI_CAR_4_wagon;
-    5: set_BIDULGI_CAR_5_wagon;
-    sw_BIDULGI_CAR_4_wagon;
+    1: set_BIDULGI_CAR_3RD_CLASS_wagon;
+    2: set_BIDULGI_CAR_DC_TRAILER_wagon;
+    3: set_BIDULGI_CAR_RED_1960_wagon;
+    4: sw_BIDULGI_CAR_1970_wagon;
+    5: sw_BIDULGI_CAR_1980_wagon;
+    6: set_BIDULGI_CAR_1990_wagon;
+    sw_BIDULGI_CAR_1980_wagon;
 }
 
 // Capacity
 switch(FEAT_TRAINS, SELF, sw_BIDULGI_CAR_capacity_in_custom, cargo_subtype) {
-    1: 72 * sw_cargo_capacity_factor;
-    2: 72 * sw_cargo_capacity_factor;
-    // 3: 100 * sw_cargo_capacity_factor;
-    4: 100 * sw_cargo_capacity_factor;
-    5: 100 * sw_cargo_capacity_factor;
-    sw_BIDULGI_CAR_4_wagon;
+    1: 72 / 2 * sw_cargo_capacity_factor;
+    2: 70 / 2 * sw_cargo_capacity_factor;
+    return 100 / 2 * sw_cargo_capacity_factor;
 }

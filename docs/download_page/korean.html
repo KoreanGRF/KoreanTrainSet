@@ -200,8 +200,8 @@
         <td class="introduction">1980</td>
     </tr>
     <tr data-veh_id="BIDULGI_CDC">
-        <td class="refit"><div><img src="./_static/BIDULGI_CDC_BLUE.png" alt="비둘기 통근형 디젤 동차"><br /><img src="./_static/BIDULGI_CDC_LIGHT_GREEN.png" alt="비둘기 통근형 디젤 동차"><br /><img src="./_static/BIDULGI_CDC_GREEN.png" alt="비둘기 통근형 디젤 동차"><br /><img src="./_static/BIDULGI_CDC_TONGIL_GREEN.png" alt="비둘기 통근형 디젤 동차"><br /><img src="./_static/BIDULGI_CDC_MUGUNGHWA.png" alt="비둘기 통근형 디젤 동차"></div></td>
-        <td class="name">비둘기 통근형 디젤 동차</td>
+        <td class="refit"><div><img src="./_static/BIDULGI_CDC_DC_TRAILER.png" alt="DC 동차"><br /><img src="./_static/BIDULGI_CDC_BLUE.png" alt="DC 동차"><br /><img src="./_static/BIDULGI_CDC_LIGHT_GREEN.png" alt="DC 동차"><br /><img src="./_static/BIDULGI_CDC_GREEN.png" alt="DC 동차"><br /><img src="./_static/BIDULGI_CDC_TONGIL_GREEN.png" alt="DC 동차"><br /><img src="./_static/BIDULGI_CDC_MUGUNGHWA.png" alt="DC 동차"></div></td>
+        <td class="name">DC 동차</td>
         <td class="speed">110 km/h</td>
         <td class="speed_designed">110 km/h</td>
         <td class="capacity">150</td>
@@ -280,13 +280,13 @@
         <td class="introduction">1984</td>
     </tr>
     <tr data-veh_id="BIDULGI_CAR">
-        <td class="refit"><div><img src="./_static/BIDULGI_CAR_1.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_2.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_3.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_4A.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_4B.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_4C.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_4D.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_5.png" alt="비둘기호 객차"></div></td>
+        <td class="refit"><div><img src="./_static/BIDULGI_CAR_3RD_CLASS.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_DC_TRAILER.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_RED_1960.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_RED.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_BLUE.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_1990.png" alt="비둘기호 객차"></div></td>
         <td class="name">비둘기호 객차</td>
         <td class="speed">110 km/h</td>
         <td class="speed_designed">110 km/h</td>
         <td class="capacity">100</td>
         <td class="power"></td>
-        <td class="weight">34 t</td>
+        <td class="weight">35 t</td>
         <td class="introduction">1927</td>
     </tr>
     <tr data-veh_id="GENERATOR_CAR">

@@ -29,7 +29,7 @@ STR_CDC_NAME                                     :[KTS] Commuter Diesel Car (CDC
 STR_NDC_NAME                                     :[KTS] New Diesel Car (NDC)
 STR_DEC_NAME                                     :[KTS] Diesel Electric Car (DEC)
 STR_EEC_NAME                                     :[KTS] Express Electric Car (EEC)
-STR_BIDULGI_CDC_NAME                             :[KTS] Bidulgi Commuter
+STR_BIDULGI_CDC_NAME                             :[KTS] Commuter Diesel Car (RC)
 STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-Sancheon
 STR_SRT_NAME                                     :[KTS] SRT
@@ -117,12 +117,17 @@ STR_REFIT_LIVERY_GENERATOR_CAR_SME_B             : (Long type : Saemaeul current
 STR_REFIT_PASSWAGON_NORMALCAR                    : (Normal class car)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (First class car)
 
-# Refit (Bidulgi CDC)
-STR_REFIT_LIVERY_BIDULGI_CDC_BLUE                : (Blue livery)
-STR_REFIT_LIVERY_BIDULGI_CDC_LIGHT_GREEN         : (KNR light green livery)
-STR_REFIT_LIVERY_BIDULGI_CDC_GREEN               : (KNR green livery)
-STR_REFIT_LIVERY_BIDULGI_CDC_TONGIL_GREEN        : (Tongil livery)
-STR_REFIT_LIVERY_BIDULGI_CDC_MUGUNGHWA           : (Mugunghwa livery)
+# Refit (Bidulgi)
+STR_REFIT_LIVERY_BIDULGI_3RD_CLASS               : (3rd class car - Da 9 class)
+STR_REFIT_LIVERY_BIDULGI_DC_TRAILER              : (Diesel Car trailer)
+STR_REFIT_LIVERY_BIDULGI_1960                    : (Red livery: 1962~1974)
+STR_REFIT_LIVERY_BIDULGI_1970                    : (Red livery: 1974~1983)
+STR_REFIT_LIVERY_BIDULGI_1980                    : (Blue livery: 1984~1994)
+STR_REFIT_LIVERY_BIDULGI_1990                    : (Green livery: 1994~2000)
+STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR             : (Bidulgi livery)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980       : (Tongil livery in 1980s)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990       : (Tongil livery in 1990s)
+STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA               : (Mugunghwa livery)
 
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE  : (KNR old executive car livery: 1970~1983)
@@ -159,14 +164,6 @@ STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       : (Saemaeul cafe / Korail curre
 # Refit (Sleeping car)
 STR_REFIT_LIVERY_SLEEPING_CAR_OLD                : (Old livery)
 STR_REFIT_LIVERY_SLEEPING_CAR_RECENT             : (Recent livery)
-
-# Refit (Bidulgi)
-STR_REFIT_LIVERY_BIDULGI_3RD_CLASS               : (3rd class car - Da 9 class)
-STR_REFIT_LIVERY_BIDULGI_ORIGINAL_1              : (Original: ~1970s)
-# STR_REFIT_LIVERY_BIDULGI_ORIGINAL_2              : (Original: 1974~1981)
-STR_REFIT_LIVERY_BIDULGI_BLUE                    : (Livery: 1970s~1994)
-STR_REFIT_LIVERY_BIDULGI_GREEN_YELLOW            : (Livery: 1994~2000)
-STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR             : (Bidulgi livery)
 
 # Refit (NDC)
 STR_REFIT_LIVERY_NDC_1                           : (Livery: 1984~1994)

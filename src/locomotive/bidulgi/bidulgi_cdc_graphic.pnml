@@ -8,35 +8,51 @@
  */
 
 // Graphics
-spriteset(set_BIDULGI_CDC_BLUE_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+spriteset(set_BIDULGI_CDC_DC_TRAILER_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_purchase_detail(0, 0, 31, 15, -7, -9)
 }
-spriteset(set_BIDULGI_CDC_BLUE_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+spriteset(set_BIDULGI_CDC_DC_TRAILER_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_wagon_by_coor(60, 0)
 }
-spriteset(set_BIDULGI_CDC_LIGHT_GREEN_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+
+// Blue, Bidulgi, 1980s
+spriteset(set_BIDULGI_CDC_BLUE_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_purchase_detail(0, 30, 31, 15, -7, -9)
 }
-spriteset(set_BIDULGI_CDC_LIGHT_GREEN_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+spriteset(set_BIDULGI_CDC_BLUE_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_wagon_by_coor(60, 30)
 }
-spriteset(set_BIDULGI_CDC_GREEN_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+
+// Light green, Bidulgi, 1990s
+spriteset(set_BIDULGI_CDC_LIGHT_GREEN_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_purchase_detail(0, 60, 31, 15, -7, -9)
 }
-spriteset(set_BIDULGI_CDC_GREEN_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+spriteset(set_BIDULGI_CDC_LIGHT_GREEN_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_wagon_by_coor(60, 60)
 }
-spriteset(set_BIDULGI_CDC_TONGIL_GREEN_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+
+// Green, Tongil, 1980s
+spriteset(set_BIDULGI_CDC_GREEN_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_purchase_detail(0, 90, 31, 15, -7, -9)
 }
-spriteset(set_BIDULGI_CDC_TONGIL_GREEN_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+spriteset(set_BIDULGI_CDC_GREEN_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_wagon_by_coor(60, 90)
 }
-spriteset(set_BIDULGI_CDC_MUGUNGHWA_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+
+// Green, Tongil, 1990s
+spriteset(set_BIDULGI_CDC_TONGIL_GREEN_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_purchase_detail(0, 120, 31, 15, -7, -9)
 }
-spriteset(set_BIDULGI_CDC_MUGUNGHWA_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+spriteset(set_BIDULGI_CDC_TONGIL_GREEN_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
     tmpl_wagon_by_coor(60, 120)
+}
+
+// Red, Mugunghwa
+spriteset(set_BIDULGI_CDC_MUGUNGHWA_purchase, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+    tmpl_purchase_detail(0, 150, 31, 15, -7, -9)
+}
+spriteset(set_BIDULGI_CDC_MUGUNGHWA_engine, "./src/locomotive/bidulgi/BIDULGI_CDC.png") {
+    tmpl_wagon_by_coor(60, 150)
 }
 
 // Alias of purchase image

@@ -29,7 +29,7 @@ STR_CDC_NAME                                     :[KTS] 통근형 디젤 열차 
 STR_NDC_NAME                                     :[KTS] 우등형 디젤 동차 (NDC)
 STR_DEC_NAME                                     :[KTS] 우등형 디젤 전기 동차 (DEC)
 STR_EEC_NAME                                     :[KTS] 우등형 전기 동차 (EEC)
-STR_BIDULGI_CDC_NAME                             :[KTS] 비둘기 통근형 디젤 동차
+STR_BIDULGI_CDC_NAME                             :[KTS] DC 동차
 STR_KTX1N_NAME                                   :[KTS] KTX-1
 STR_KTX2N_NAME                                   :[KTS] KTX-산천
 STR_SRT_NAME                                     :[KTS] SRT
@@ -117,12 +117,17 @@ STR_REFIT_LIVERY_GENERATOR_CAR_SME_B             : (장대형 : 새마을호 현
 STR_REFIT_PASSWAGON_NORMALCAR                    : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                     : (특실 객차)
 
-# Refit (Bidulgi CDC)
-STR_REFIT_LIVERY_BIDULGI_CDC_BLUE                : (파란 도색)
-STR_REFIT_LIVERY_BIDULGI_CDC_LIGHT_GREEN         : (철도청 연한 녹색 도색)
-STR_REFIT_LIVERY_BIDULGI_CDC_GREEN               : (철도청 도색)
-STR_REFIT_LIVERY_BIDULGI_CDC_TONGIL_GREEN        : (통일호 도색)
-STR_REFIT_LIVERY_BIDULGI_CDC_MUGUNGHWA           : (무궁화 도색)
+# Refit (Bidulgi)
+STR_REFIT_LIVERY_BIDULGI_3RD_CLASS               : (3등 객차 다9형)
+STR_REFIT_LIVERY_BIDULGI_DC_TRAILER              : (DC동차 부수차)
+STR_REFIT_LIVERY_BIDULGI_1960                    : (적색 도색: 1962~1974년)
+STR_REFIT_LIVERY_BIDULGI_1970                    : (적색 도색: 1974~1983년)
+STR_REFIT_LIVERY_BIDULGI_1980                    : (청색 도색: 1984~1994년)
+STR_REFIT_LIVERY_BIDULGI_1990                    : (녹색 도색: 1994~2000년)
+STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR             : (비둘기호 도색)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980       : (통일호 도색: 1980년대)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990       : (통일호 도색: 1990년대)
+STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA               : (무궁화호 도색)
 
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE  : (철도청 구 도색 특실, 1970~1983년)
@@ -159,14 +164,6 @@ STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       : (새마을호 카페차 / Kor
 # Refit (Sleeping car)
 STR_REFIT_LIVERY_SLEEPING_CAR_OLD                : (구 도색)
 STR_REFIT_LIVERY_SLEEPING_CAR_RECENT             : (신 도색)
-
-# Refit - Bidulgi
-STR_REFIT_LIVERY_BIDULGI_3RD_CLASS               : (3등 객차 다9형)
-STR_REFIT_LIVERY_BIDULGI_ORIGINAL_1              : (원조: ~1970년대)
-# STR_REFIT_LIVERY_BIDULGI_ORIGINAL_2              : (원조: 1974~1981년)
-STR_REFIT_LIVERY_BIDULGI_BLUE                    : (1970년대~1994년 도색)
-STR_REFIT_LIVERY_BIDULGI_GREEN_YELLOW            : (1994~2000년 도색)
-STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR             : (비둘기호 도색)
 
 # Refit (NDC)
 STR_REFIT_LIVERY_NDC_1                           : (1984~1994년 도색)

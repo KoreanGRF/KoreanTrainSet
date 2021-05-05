@@ -200,8 +200,8 @@
         <td class="introduction">1980</td>
     </tr>
     <tr data-veh_id="BIDULGI_CDC">
-        <td class="refit"><div><img src="./_static/BIDULGI_CDC_BLUE.png" alt="Bidulgi Commuter"><br /><img src="./_static/BIDULGI_CDC_LIGHT_GREEN.png" alt="Bidulgi Commuter"><br /><img src="./_static/BIDULGI_CDC_GREEN.png" alt="Bidulgi Commuter"><br /><img src="./_static/BIDULGI_CDC_TONGIL_GREEN.png" alt="Bidulgi Commuter"><br /><img src="./_static/BIDULGI_CDC_MUGUNGHWA.png" alt="Bidulgi Commuter"></div></td>
-        <td class="name">Bidulgi Commuter</td>
+        <td class="refit"><div><img src="./_static/BIDULGI_CDC_DC_TRAILER.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_BLUE.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_LIGHT_GREEN.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_GREEN.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_TONGIL_GREEN.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_MUGUNGHWA.png" alt="Commuter Diesel Car (RC)"></div></td>
+        <td class="name">Commuter Diesel Car (RC)</td>
         <td class="speed">110 km/h</td>
         <td class="speed_designed">110 km/h</td>
         <td class="capacity">150</td>
@@ -280,13 +280,13 @@
         <td class="introduction">1984</td>
     </tr>
     <tr data-veh_id="BIDULGI_CAR">
-        <td class="refit"><div><img src="./_static/BIDULGI_CAR_1.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_2.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_3.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_4A.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_4B.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_4C.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_4D.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_5.png" alt="Bidulgi passenger car"></div></td>
+        <td class="refit"><div><img src="./_static/BIDULGI_CAR_3RD_CLASS.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_DC_TRAILER.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_RED_1960.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_RED.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_BLUE.png" alt="Bidulgi passenger car"><br /><img src="./_static/BIDULGI_CAR_1990.png" alt="Bidulgi passenger car"></div></td>
         <td class="name">Bidulgi passenger car</td>
         <td class="speed">110 km/h</td>
         <td class="speed_designed">110 km/h</td>
         <td class="capacity">100</td>
         <td class="power"></td>
-        <td class="weight">34 t</td>
+        <td class="weight">35 t</td>
         <td class="introduction">1927</td>
     </tr>
     <tr data-veh_id="GENERATOR_CAR">
