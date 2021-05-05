@@ -15,6 +15,7 @@
 
 // Narrow gauges
 #include "narrow/hokey7/HOKEY7.pnml"
+#include "narrow/narrow_diesel_car/NARROW_DIESEL_CAR.pnml"
 #include "narrow/wagon/NARROW_GAUGE_WAGON.pnml"
 
 // Steam locomotives

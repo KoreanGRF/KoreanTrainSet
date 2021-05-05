@@ -8,7 +8,22 @@
  */
 
 // Wagon
-switch(FEAT_TRAINS, SELF, sw_NARROW_GAUGE_WAGON_wagon, random_bits % 2) {
-    1: set_NARROW_GAUGE_WAGON_2_wagon;
-    set_NARROW_GAUGE_WAGON_1_wagon;
+switch(FEAT_TRAINS, SELF, sw_NARROW_GAUGE_WAGON_DC_TRAILER_wagon, random_bits % 2) {
+    1: set_NARROW_GAUGE_WAGON_DC_TRAILER_2_wagon;
+    set_NARROW_GAUGE_WAGON_DC_TRAILER_1_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_NARROW_GAUGE_WAGON_BLUE_wagon, random_bits % 2) {
+    1: set_NARROW_GAUGE_WAGON_BLUE_2_wagon;
+    set_NARROW_GAUGE_WAGON_BLUE_1_wagon;
+}
+
+switch(FEAT_TRAINS, SELF, sw_NARROW_GAUGE_WAGON_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_BIDULGI_DC_TRAILER);
+    2: return string(STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE);
+    return string(STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE);
+}
+switch(FEAT_TRAINS, SELF, sw_NARROW_GAUGE_WAGON_wagon, cargo_subtype) {
+    1: sw_NARROW_GAUGE_WAGON_DC_TRAILER_wagon;
+    2: sw_NARROW_GAUGE_WAGON_BLUE_wagon;
+    sw_NARROW_GAUGE_WAGON_BLUE_wagon;
 }

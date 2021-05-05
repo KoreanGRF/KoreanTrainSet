@@ -1,0 +1,43 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Narrow gauge diesel car
+ */
+
+template tmpl_NARROW_DIESEL_CAR(x, y) {
+    [x,      y,    6,     18,     -2,   -9]
+    [x+15,   y,    15,    13,    -13,   -5]
+    [x+45,   y,    24,     9,    -12,   -6]
+    [x+95,   y,    15,    13,     -1,   -5]
+}
+
+// DC trailer (1965~1974)
+spriteset(set_NARROW_DIESEL_CAR_DC_TRAILER_purchase, "./src/narrow/narrow_diesel_car/NARROW_DIESEL_CAR.png") {
+    tmpl_purchase_detail(0, 0, 24, 15, 2, -9)
+}
+spriteset(set_NARROW_DIESEL_CAR_DC_TRAILER_engine, "./src/narrow/narrow_diesel_car/NARROW_DIESEL_CAR.png") {
+    tmpl_NARROW_DIESEL_CAR(60, 0)
+}
+
+// Blue (1974~?)
+spriteset(set_NARROW_DIESEL_CAR_BLUE_purchase, "./src/narrow/narrow_diesel_car/NARROW_DIESEL_CAR.png") {
+    tmpl_purchase_detail(0, 30, 24, 15, 2, -9)
+}
+spriteset(set_NARROW_DIESEL_CAR_BLUE_engine, "./src/narrow/narrow_diesel_car/NARROW_DIESEL_CAR.png") {
+    tmpl_NARROW_DIESEL_CAR(60, 30)
+}
+
+spriteset(set_NARROW_DIESEL_CAR_GREEN_purchase, "./src/narrow/narrow_diesel_car/NARROW_DIESEL_CAR.png") {
+    tmpl_purchase_detail(0, 60, 24, 15, 2, -9)
+}
+spriteset(set_NARROW_DIESEL_CAR_GREEN_engine, "./src/narrow/narrow_diesel_car/NARROW_DIESEL_CAR.png") {
+    tmpl_NARROW_DIESEL_CAR(60, 60)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_NARROW_DIESEL_CAR_purchase, cargo_subtype) {
+    set_NARROW_DIESEL_CAR_BLUE_purchase;
+}

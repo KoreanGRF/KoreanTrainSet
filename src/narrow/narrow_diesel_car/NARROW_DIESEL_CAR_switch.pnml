@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Narrow gauge diesel car
+ */
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_NARROW_DIESEL_CAR_cargo_subtype_text, cargo_subtype) {
+    1: return string(STR_REFIT_LIVERY_BIDULGI_DC_TRAILER);
+    2: return string(STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE);
+    3: return string(STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990);
+    return string(STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE);
+}
+switch(FEAT_TRAINS, SELF, sw_NARROW_DIESEL_CAR_engine, cargo_subtype) {
+    1: set_NARROW_DIESEL_CAR_DC_TRAILER_engine;
+    2: set_NARROW_DIESEL_CAR_BLUE_engine;
+    3: set_NARROW_DIESEL_CAR_GREEN_engine;
+    set_NARROW_DIESEL_CAR_BLUE_engine;
+}

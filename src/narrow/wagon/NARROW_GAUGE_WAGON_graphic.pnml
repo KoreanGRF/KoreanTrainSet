@@ -8,28 +8,38 @@
  */
 
 template tmpl_NARROW_GAUGE_WAGON(x, y) {
-    [x,      y,    6,     18,     -2,   -9]
-    [x+15,   y,    15,    13,    -13,   -5]
-    [x+45,   y,    24,     9,    -12,   -6]
-    [x+95,   y,    15,    13,     -1,   -5]
+    tmpl_NARROW_DIESEL_CAR(x, y)
 }
 
-// Graphics
-spriteset(set_NARROW_GAUGE_WAGON_1_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
+// DC trailer (1965~1974)
+spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_1_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
     tmpl_purchase_detail(0, 0, 24, 15, 2, -9)
 }
-spriteset(set_NARROW_GAUGE_WAGON_1_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
+spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_1_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
     tmpl_NARROW_GAUGE_WAGON(60, 0)
 }
-
-spriteset(set_NARROW_GAUGE_WAGON_2_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
+spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_2_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
     tmpl_purchase_detail(0, 30, 24, 15, 2, -9)
 }
-spriteset(set_NARROW_GAUGE_WAGON_2_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
+spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_2_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
     tmpl_NARROW_GAUGE_WAGON(60, 30)
+}
+
+// Blue (1974~?)
+spriteset(set_NARROW_GAUGE_WAGON_BLUE_1_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
+    tmpl_purchase_detail(0, 60, 24, 15, 2, -9)
+}
+spriteset(set_NARROW_GAUGE_WAGON_BLUE_1_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
+    tmpl_NARROW_GAUGE_WAGON(60, 60)
+}
+spriteset(set_NARROW_GAUGE_WAGON_BLUE_2_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
+    tmpl_purchase_detail(0, 90, 24, 15, 2, -9)
+}
+spriteset(set_NARROW_GAUGE_WAGON_BLUE_2_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
+    tmpl_NARROW_GAUGE_WAGON(60, 90)
 }
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_NARROW_GAUGE_WAGON_purchase, cargo_subtype) {
-    set_NARROW_GAUGE_WAGON_1_purchase;
+    set_NARROW_GAUGE_WAGON_BLUE_1_purchase;
 }

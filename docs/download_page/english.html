@@ -159,6 +159,26 @@
         <td class="weight">45 t</td>
         <td class="introduction">2010</td>
     </tr>
+    <tr data-veh_id="BIDULGI_CDC">
+        <td class="refit"><div><img src="./_static/BIDULGI_CDC_DC_TRAILER.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_BLUE.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_LIGHT_GREEN.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_GREEN.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_TONGIL_GREEN.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_MUGUNGHWA.png" alt="Commuter Diesel Car (RC)"></div></td>
+        <td class="name">Commuter Diesel Car (RC)</td>
+        <td class="speed">110 km/h</td>
+        <td class="speed_designed">110 km/h</td>
+        <td class="capacity">150</td>
+        <td class="power">261 kW</td>
+        <td class="weight">37 t</td>
+        <td class="introduction">1961</td>
+    </tr>
+    <tr data-veh_id="NARROW_DIESEL_CAR">
+        <td class="refit"><div><img src="./_static/NARROW_DIESEL_CAR_DC_TRAILER.png" alt="Narrow gauge Diesel Car"><br /><img src="./_static/NARROW_DIESEL_CAR_BLUE.png" alt="Narrow gauge Diesel Car"><br /><img src="./_static/NARROW_DIESEL_CAR_GREEN.png" alt="Narrow gauge Diesel Car"></div></td>
+        <td class="name">Narrow gauge Diesel Car</td>
+        <td class="speed">55 km/h</td>
+        <td class="speed_designed">55 km/h</td>
+        <td class="capacity">90</td>
+        <td class="power">149 kW</td>
+        <td class="weight">21 t</td>
+        <td class="introduction">1965</td>
+    </tr>
     <tr data-veh_id="CDC">
         <td class="refit"><div><img src="./_static/CDC_GARDEN.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC_DOLPHIN.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC_SEASIDE_BLUE.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC_SEASIDE_RED_WHITE.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC_BAEKJE.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC_GREEN_YELLOW.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC_MUGUNGHWA.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC_DMZTRAIN.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC_GYEONGBUK1.png" alt="Commuter Diesel Car (CDC)"><br /><img src="./_static/CDC_GYEONGBUK2.png" alt="Commuter Diesel Car (CDC)"></div></td>
         <td class="name">Commuter Diesel Car (CDC)</td>
@@ -198,16 +218,6 @@
         <td class="power">2880 kW</td>
         <td class="weight">43 t</td>
         <td class="introduction">1980</td>
-    </tr>
-    <tr data-veh_id="BIDULGI_CDC">
-        <td class="refit"><div><img src="./_static/BIDULGI_CDC_DC_TRAILER.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_BLUE.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_LIGHT_GREEN.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_GREEN.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_TONGIL_GREEN.png" alt="Commuter Diesel Car (RC)"><br /><img src="./_static/BIDULGI_CDC_MUGUNGHWA.png" alt="Commuter Diesel Car (RC)"></div></td>
-        <td class="name">Commuter Diesel Car (RC)</td>
-        <td class="speed">110 km/h</td>
-        <td class="speed_designed">110 km/h</td>
-        <td class="capacity">150</td>
-        <td class="power">261 kW</td>
-        <td class="weight">37 t</td>
-        <td class="introduction">1961</td>
     </tr>
     <tr data-veh_id="KTX1N">
         <td class="refit"><div><img src="./_static/KTX1N.png" alt="KTX-1"></div></td>

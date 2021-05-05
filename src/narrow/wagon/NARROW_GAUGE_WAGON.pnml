@@ -68,6 +68,9 @@ item(FEAT_TRAINS, ko_train_NARROW_GAUGE_WAGON, 5904) {
         purchase_cargo_capacity:        sw_NARROW_GAUGE_WAGON_purchase_capacity;
         loading_speed:                  sw_NARROW_GAUGE_WAGON_loadingspeed;
 
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        can_attach_wagon:               sw_NARROW_attach;
+
+        cargo_subtype_text:             sw_NARROW_GAUGE_WAGON_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }

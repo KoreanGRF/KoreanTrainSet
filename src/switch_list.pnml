@@ -40,6 +40,14 @@ switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
     return string(STR_ERROR_NO_ATTACH);
 }
 
+// Attachable vehicles for Narrow gauge
+switch(FEAT_TRAINS, SELF, sw_NARROW_attach, vehicle_type_id) {
+    ko_train_NARROW_DIESEL_CAR:                       return CB_RESULT_ATTACH_ALLOW;
+    ko_train_HOKEY7:                                  return CB_RESULT_ATTACH_ALLOW;
+    ko_train_NARROW_GAUGE_WAGON:                      return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+
 // Attachable vehicles for Metro
 switch(FEAT_TRAINS, SELF, sw_METRO_attach, vehicle_type_id) {
     ko_train_PASSWG:                                  return CB_RESULT_ATTACH_ALLOW;
