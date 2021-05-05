@@ -98,17 +98,29 @@ spriteset(set_narrow_gauge_track_bridge, "./src/railtype/NARROW_GAUGE.png") {
 }
 
 // Level crossing
-spriteset(set_narrow_gauge_track_crossing, "./src/railtype/NARROW_GAUGE.png") {
-	[ 840,  120,   64,   19,  -31,    6]
-	[ 910,  120,   64,   19,  -30,    6]
-	[ 906,  115,    1,    1,    0,    0]   // N, Not support 차단봉
-	[ 906,  115,    1,    1,    0,    0]
-	[ 906,  115,    1,    1,    0,    0]   // E
-	[ 906,  115,    1,    1,    0,    0]
-	[ 906,  115,    1,    1,    0,    0]   // W
-	[ 906,  115,    1,    1,    0,    0]
-	[ 906,  115,    1,    1,    0,    0]   // S
-	[ 906,  115,    1,    1,    0,    0]  
+spriteset(set_narrow_gauge_track_crossing_close, "./src/railtype/NARROW_GAUGE.png") {
+	[ 560,  120,   64,   23,  -31,    4]
+	[ 630,  120,   64,   23,  -30,    4]
+	[ 700,  120,    5,   13,   -1,   -9, ANIM]   // N
+	[ 710,  120,   19,   21,   -3,   -9, ANIM]
+	[ 730,  120,   24,   18,  -22,  -10, ANIM]   // E
+	[ 760,  120,    5,   13,   -3,  -10, ANIM]
+	[ 770,  120,   25,   15,    0,  -10, ANIM]   // W
+	[ 800,  120,    5,   13,    1,  -10, ANIM]
+	[ 810,  120,    5,   13,   -1,  -11, ANIM]   // S
+	[ 820,  120,   19,   14,  -13,  -12, ANIM]
+}
+spriteset(set_narrow_gauge_track_crossing_open, "./src/railtype/NARROW_GAUGE.png") {
+	[ 560,  120,   64,   23,  -31,    4]
+	[ 630,  120,   64,   23,  -30,    4]
+	[ 700,  150,    5,   13,   -1,   -9, ANIM]
+	[ 710,  150,    8,   21,   -4,  -15]
+	[ 730,  150,    7,   22,   -5,  -19]
+	[ 760,  150,    5,   13,   -3,  -10, ANIM]
+	[ 770,  150,    8,   22,    0,  -17]
+	[ 800,  150,    5,   13,    1,  -10, ANIM]
+	[ 810,  150,    5,   13,   -1,  -11, ANIM]
+	[ 820,  150,    8,   23,   -1,  -21]
 }
 
 // Graphic for terrain
@@ -117,6 +129,13 @@ switch(FEAT_RAILTYPES, SELF, sw_narrow_gauge_track_tunnel_overlay, terrain_type)
     // TILETYPE_SNOW:   // In future ...
     // TILETYPE_DESERT: // In future ...
     set_narrow_gauge_track_tunnel_overlay;
+}
+
+// Level crossing status
+switch(FEAT_RAILTYPES, SELF, sw_narrow_gauge_track_level_crossing, level_crossing_status) {
+    LEVEL_CROSSING_CLOSED: set_narrow_gauge_track_crossing_close;
+    //LEVEL_CROSSING_OPEN:
+    set_narrow_gauge_track_crossing_open;
 }
 
 // Define Light Rail Track
@@ -147,6 +166,6 @@ item(FEAT_RAILTYPES, ko_train_set_NARROW_GAUGE, 4) {
         tunnel_overlay:                 sw_narrow_gauge_track_tunnel_overlay;
         depots:                         set_narrow_gauge_track_depot;
         bridge_surfaces:                set_narrow_gauge_track_bridge;
-		level_crossings:                set_narrow_gauge_track_crossing;
+		level_crossings:                sw_narrow_gauge_track_level_crossing;
     }
 }
