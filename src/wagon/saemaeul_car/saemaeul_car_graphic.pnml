@@ -47,6 +47,13 @@ spriteset(set_SAEMAEUL_CAR_executive_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.p
     tmpl_wagon_by_coor_8dir(60, 150)
 }
 
+spriteset(set_SAEMAEUL_CAR_ITX_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_detail(0, 180, 31, 15, -16, -9)
+}
+spriteset(set_SAEMAEUL_CAR_ITX, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_wagon_by_coor_8dir(60, 180)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_purchase, cargo_subtype) {
     set_SAEMAEUL_CAR_3_purchase;

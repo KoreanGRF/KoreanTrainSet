@@ -10,6 +10,7 @@ switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_wagon, cargo_subtype) {
     3: set_SAEMAEUL_CAR_executive_1;
     4: set_SAEMAEUL_CAR_executive_2;
     5: set_SAEMAEUL_CAR_executive_3;
+    6: set_SAEMAEUL_CAR_ITX;
     set_SAEMAEUL_CAR_3;
 }
 
@@ -21,6 +22,7 @@ switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_subtype_text, cargo_subtype) {
     3: return string(STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE);
     4: return string(STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW);
     5: return string(STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS);
+    6: return string(STR_REFIT_LIVERY_SAEMAEUL_ITX);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 

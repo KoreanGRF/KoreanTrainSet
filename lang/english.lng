@@ -135,6 +135,7 @@ STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE             : (Blue livery: 1974~)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE  : (KNR old executive car livery: 1970~1983)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW : (KNR old executive car livery: Green & Yellow)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS    : (Korail recent executive car livery)
+STR_REFIT_LIVERY_SAEMAEUL_ITX                    : (ITX-Saemaeul livery)
 
 # Refit (Mugunghwa car)
 STR_REFIT_LIVERY_MUGUNGHWA_1970_1983             : (Livery A: 1970~1983)
