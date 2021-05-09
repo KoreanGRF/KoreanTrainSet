@@ -49,6 +49,7 @@ STR_SLEEPING_CAR_NAME                            :[KTS] 침대차
 
 STR_FLAT_CAR_NAME                                :[KTS] 컨테이너 평판화차
 STR_HOPPER_CAR_NAME                              :[KTS] 무개화차
+STR_BOXCAR_NAME                                  :[KTS] 유개화차
 STR_BAGGAGE_CAR_NAME                             :[KTS] 수화물차
 STR_TANK_CAR_NAME                                :[KTS] 유조차
 STR_STAKE_CAR_NAME                               :[KTS] 평판화차

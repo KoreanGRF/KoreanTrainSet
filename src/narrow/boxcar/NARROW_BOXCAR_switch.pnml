@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Narrow gauge Boxcar
+ */
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_NARROW_BOXCAR_wagon, cargo_subtype) {
+    set_NARROW_BOXCAR_wagon;
+}

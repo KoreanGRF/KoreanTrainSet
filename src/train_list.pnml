@@ -17,6 +17,7 @@
 #include "narrow/hokey7/HOKEY7.pnml"
 #include "narrow/narrow_diesel_car/NARROW_DIESEL_CAR.pnml"
 #include "narrow/wagon/NARROW_GAUGE_WAGON.pnml"
+#include "narrow/boxcar/NARROW_BOXCAR.pnml"
 
 // Steam locomotives
 #include "locomotive/steam/steam.pnml"
