@@ -78,6 +78,7 @@ trainList['PASSENGER_WAGON']    = None,   None,   100,    2,            None,   
 trainList['PASSENGER_WAGON_P']  = None,   None,   None,   4,            None,    None,         200,    25,     (1950, 1, 1)
 trainList['NARROW_GAUGE_WAGON'] = None,   None,   100,    2,            90,      10,           None,   14,     (1952, 1, 1)
 trainList['NARROW_BOXCAR']      = None,   None,   80,     2,            12,      5,            None,   14,     (1952, 1, 1)
+trainList['NARROW_HOPPERCAR']   = None,   None,   80,     2,            12,      5,            None,   14,     (1952, 1, 1)
 trainList['FLAT_CAR']           = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['HOPPER_CAR']         = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['BAGGAGE_CAR']        = 120,    120,    100,    2,            35,      5,            None,   17,     (1950, 1, 1)

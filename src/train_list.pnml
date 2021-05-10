@@ -18,6 +18,7 @@
 #include "narrow/narrow_diesel_car/NARROW_DIESEL_CAR.pnml"
 #include "narrow/wagon/NARROW_GAUGE_WAGON.pnml"
 #include "narrow/boxcar/NARROW_BOXCAR.pnml"
+#include "narrow/hoppercar/NARROW_HOPPERCAR.pnml"
 
 // Steam locomotives
 #include "locomotive/steam/steam.pnml"

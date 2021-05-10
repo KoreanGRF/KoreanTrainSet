@@ -1,0 +1,115 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Narrow gauge Boxcar
+ */
+//SPEED_GENERAL(NARROW_HOPPERCAR)
+COST(NARROW_HOPPERCAR)
+RUNNING(NARROW_HOPPERCAR)
+CAPACITY(NARROW_HOPPERCAR)
+CAPACITY_PURCHASE(NARROW_HOPPERCAR)
+LOADING(NARROW_HOPPERCAR)
+
+// Graphics
+#include "NARROW_HOPPERCAR_graphic.pnml"
+
+// Switch
+#include "NARROW_HOPPERCAR_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_NARROW_HOPPERCAR, 5906) {
+    property {
+        // Common properties
+        name:                           string(STR_HOPPER_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_NARROW_HOPPERCAR_INTRODUCTION;
+        track_type:                     KRNR;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         var_NARROW_HOPPERCAR_WEIGHT;
+        length:                         4;
+
+        // Model
+        model_life:                     50;   // 1952~2000
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 var_NARROW_HOPPERCAR_CAPACITY;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE, BEAN,
+                                         CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, POTA, LIME, MNO2,
+                                         PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG, FERT, NITR, CMNT, SASH,
+                                         SGBT, QLME, PLAS, FECR, CBLK, CASS, BDMT, PEAT, COKE];
+        cargo_disallow_refit:           [];
+        loading_speed:                  var_NARROW_HOPPERCAR_LOADINGSPEED;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        AORE:                           sg_NARROW_HOPPERCAR_AORE;
+        BEAN:                           sg_NARROW_HOPPERCAR_BEAN;
+        SGBT:                           sg_NARROW_HOPPERCAR_BEAN;
+        CASS:                           sg_NARROW_HOPPERCAR_BEAN;
+        PEAT:                           sg_NARROW_HOPPERCAR_BEAN;
+        CLAY:                           sg_NARROW_HOPPERCAR_CLAY;
+        COAL:                           sg_NARROW_HOPPERCAR_COAL;
+        COKE:                           sg_NARROW_HOPPERCAR_COAL;
+        CBLK:                           sg_NARROW_HOPPERCAR_COAL;
+        CORE:                           sg_NARROW_HOPPERCAR_CORE;
+        FRUT:                           sg_NARROW_HOPPERCAR_FRUT;
+        GOLD:                           sg_NARROW_HOPPERCAR_GOLD;
+        SULP:                           sg_NARROW_HOPPERCAR_GOLD;
+        GRAI:                           sg_NARROW_HOPPERCAR_GRAI;
+        MAIZ:                           sg_NARROW_HOPPERCAR_GRAI;
+        WHEA:                           sg_NARROW_HOPPERCAR_GRAI;
+        FERT:                           sg_NARROW_HOPPERCAR_GRAI;
+        GRVL:                           sg_NARROW_HOPPERCAR_GRVL;
+        CMNT:                           sg_NARROW_HOPPERCAR_GRVL;
+        IORE:                           sg_NARROW_HOPPERCAR_IORE;
+        LIME:                           sg_NARROW_HOPPERCAR_LIME;
+        QLME:                           sg_NARROW_HOPPERCAR_LIME;
+        PLAS:                           sg_NARROW_HOPPERCAR_LIME;
+        MNO2:                           sg_NARROW_HOPPERCAR_MNO2;
+        FECR:                           sg_NARROW_HOPPERCAR_MNO2;
+        PHOS:                           sg_NARROW_HOPPERCAR_PHOS;
+        PORE:                           sg_NARROW_HOPPERCAR_PORE;
+        RCYC:                           sg_NARROW_HOPPERCAR_RCYC;
+        SALT:                           sg_NARROW_HOPPERCAR_SALT;
+        SASH:                           sg_NARROW_HOPPERCAR_SALT;
+        SUGR:                           sg_NARROW_HOPPERCAR_SALT;
+        KAOL:                           sg_NARROW_HOPPERCAR_SALT;
+        SAND:                           sg_NARROW_HOPPERCAR_SAND;
+        NITR:                           sg_NARROW_HOPPERCAR_SAND;
+        BDMT:                           sg_NARROW_HOPPERCAR_SAND;
+        SCMT:                           sg_NARROW_HOPPERCAR_SCMT;
+        SLAG:                           sg_NARROW_HOPPERCAR_SLAG;
+        default:                        set_NARROW_HOPPERCAR_wagon;
+        purchase:                       sw_NARROW_HOPPERCAR_purchase;
+
+        cost_factor:                    sw_NARROW_HOPPERCAR_cost;
+        running_cost_factor:            sw_NARROW_HOPPERCAR_runningcost;
+        cargo_capacity:                 sw_NARROW_HOPPERCAR_capacity;
+        purchase_cargo_capacity:        sw_NARROW_HOPPERCAR_purchase_capacity;
+        loading_speed:                  sw_NARROW_HOPPERCAR_loadingspeed;
+
+        can_attach_wagon:               sw_NARROW_attach;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+}

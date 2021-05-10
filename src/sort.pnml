@@ -34,6 +34,7 @@ sort(FEAT_TRAINS, [
     ko_train_PASSWGP,                // 5901
     ko_train_NARROW_GAUGE_WAGON,     // 5904
     ko_train_NARROW_BOXCAR,          // 5905
+    ko_train_NARROW_HOPPERCAR,       // 5906
 
     ko_train_NURIRO,                 // 5525
     ko_train_ITX_CHEONGCHUN,         // 5530
