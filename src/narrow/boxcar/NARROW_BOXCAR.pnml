@@ -44,8 +44,7 @@ item(FEAT_TRAINS, ko_train_NARROW_BOXCAR, 5905) {
         cargo_capacity:                 var_NARROW_BOXCAR_CAPACITY;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [];
-        cargo_disallow_refit:           [
+        cargo_allow_refit:              [
             // TTD
             MAIL, LVST, GOOD, VALU, PAPR, FOOD, GOLD,
             FRUT, MAIZ, DIAM, BATT, PLST, SWET, TOFF, TOYS,
@@ -60,6 +59,7 @@ item(FEAT_TRAINS, ko_train_NARROW_BOXCAR, 5905) {
             STST, STSE, STSH, STWR, TYRE, VBOD, VENG, VPTS, VEHI,
             WOOL, ZINC
         ];
+        cargo_disallow_refit:           [];
         loading_speed:                  var_NARROW_BOXCAR_LOADINGSPEED;
 
         // Costs
