@@ -23,7 +23,7 @@ LOADING(NARROW_BOXCAR)
 item(FEAT_TRAINS, ko_train_NARROW_BOXCAR, 5905) {
     property {
         // Common properties
-        name:                           string(STR_BOXCAR_NAME);
+        name:                           string(STR_BOX_CAR_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_NARROW_BOXCAR_INTRODUCTION;
         track_type:                     KRNR;
