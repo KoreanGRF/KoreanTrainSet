@@ -145,12 +145,12 @@ spriteset(set_S_TRAIN_wagon2, "./src/wagon/mugunghwa_car/S-train.png") {
     tmpl_wagon_by_coor(60, 60)
 }
 
-// for A-train
+// A-train
 spriteset(set_A_TRAIN_1_purchase, "./src/wagon/mugunghwa_car/S-train.png") {
     tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
 }
-spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's wagon
-    tmpl_wagon_by_coor(60, 30)
+spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN, "./src/wagon/mugunghwa_car/A-train.png") {
+    tmpl_wagon_by_coor(60, 0)
 }
 
 // Alias of purchase image
