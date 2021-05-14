@@ -1,3 +1,9 @@
+/*
+    // RESERVED
+    param 0 {
+    }
+*/
+
     // Speed coefficient (general)
     param 1 {
         coeff_speed_general {
@@ -10,7 +16,7 @@
         }
     }
 
-    // Speed coefficient (sub-express
+    // Speed coefficient (sub-express)
     param 2 {
         coeff_speed_subexpress {
             type: int;
@@ -34,7 +40,7 @@
         }
     }
 
-    // Speed coefficient (Light rail - rubber wheel)
+    // Speed coefficient (Light rail)
     param 4 {
         coeff_speed_light_rail {
             type: int;
@@ -172,4 +178,26 @@
             bit: 2;
             def_value: 0;
         }
+
+/*
+        // RESERVED
+        // Add prototype trains
+        bool_add_prototype_trains {
+            type: bool;
+            name: string(STR_PARAM_ADD_PROTOTYPE_TRAINS_NAME);
+            desc: string(STR_PARAM_ADD_PROTOTYPE_TRAINS_DESC);
+            bit: 3;
+            def_value: 1;
+        }
+
+        // RESERVED
+        // Add ~~~ trains
+        bool_add_~~~_trains {
+            type: bool;
+            name: string(STR_PARAM_ADD_PROTOTYPE_TRAINS_NAME);
+            desc: string(STR_PARAM_ADD_PROTOTYPE_TRAINS_DESC);
+            bit: 4;
+            def_value: 1;
+        }
+*/
     }
