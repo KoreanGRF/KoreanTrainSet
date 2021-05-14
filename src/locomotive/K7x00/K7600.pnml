@@ -78,7 +78,6 @@ item(FEAT_TRAINS, ko_train_K7600, 5476) {
     livery_override(ko_train_GENERATOR_CAR) {
         default:                        sw_K7600_GENERATOR_CAR_wagon;
         cargo_subtype_text:             sw_K7600_GENERATOR_CAR_cargo_subtype_text;
-        length:                         8;  // Temporary length, it should be shorten [Issue #117]
     }
 }
 // End of "K7600"

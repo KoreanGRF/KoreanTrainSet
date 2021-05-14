@@ -115,12 +115,12 @@ spriteset(set_GENERATOR_CAR_G_TRAIN, "./src/wagon/generator_car/generator_car.pn
     tmpl_generator_car_length_7(60, 360)
 }
 
-spriteset(set_GENERATOR_CAR_A_TRAIN_purchase, "./src/locomotive/K7x00/A-train_wagon.png") {
-    tmpl_purchase_detail(0, 0, 27, 15, -14, -9)
+// A-train's power car
+spriteset(set_GENERATOR_CAR_A_TRAIN_purchase, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_purchase_detail(0, 390, 27, 15, -14, -9)
 }
-spriteset(set_GENERATOR_CAR_A_TRAIN, "./src/locomotive/K7x00/A-train_wagon.png") {   // A-train's power car
-    //tmpl_generator_car_length_7(60, 0)
-    tmpl_wagon_by_coor(60, 0)
+spriteset(set_GENERATOR_CAR_A_TRAIN, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_generator_car_length_7(60, 390)
 }
 
 // Alias of purchase image
