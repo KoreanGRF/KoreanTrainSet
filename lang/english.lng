@@ -312,15 +312,13 @@ STR_PARAM_ADD_TYPE_ALL                           :All
 STR_PARAM_ADD_TYPE_ONLY_TRAIN                    :Trains except subways
 STR_PARAM_ADD_TYPE_ONLY_METRO                    :Only subways
 STR_PARAM_SPEED_GENERAL_NAME                     :Speed coefficient of General trains
-STR_PARAM_SPEED_GENERAL_DESC                     :Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: 7x00 Locomotives, 8x00 Electric Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon, EMU-250
+STR_PARAM_SPEED_GENERAL_DESC                     :Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon, KTX-EUM and most of other trains
 STR_PARAM_SPEED_SUBEXPRESS_NAME                  :Speed coefficient of Semi-express trains
 STR_PARAM_SPEED_SUBEXPRESS_DESC                  :Speed coefficient of semi-express trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: A'REX 1k (Express), Gyeongchun ITX-Cheongchun
 STR_PARAM_SPEED_METRO_NAME                       :Speed coefficient of Subways
 STR_PARAM_SPEED_METRO_DESC                       :Speed coefficient of subway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Except for general and semi-express trains
 STR_PARAM_SPEED_LIGHTRAIL1_NAME                  :Speed coefficient of Light Railways (rubber)
-STR_PARAM_SPEED_LIGHTRAIL1_DESC                  :Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4
-STR_PARAM_SPEED_LIGHTRAIL2_NAME                  :Speed coefficient of Light Railways (steel)
-STR_PARAM_SPEED_LIGHTRAIL2_DESC                  :Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4
+STR_PARAM_SPEED_LIGHTRAIL1_DESC                  :Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4, Busan·Gimhae LRT, Daegu Line 3, Gimpo Goldline, Incheon Line 2, Uisinseol Line, Uijeongbu LRT, Yongin Everline
 
 STR_PARAM_FACTOR_COST_NAME                       :Cost
 STR_PARAM_FACTOR_COST_DESC                       :Cost of trains. The higher this value, the more expensive cost to buy trains.
