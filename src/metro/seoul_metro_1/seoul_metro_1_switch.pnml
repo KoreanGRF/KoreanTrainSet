@@ -28,9 +28,9 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_321K_BIKE, position_in_consist 
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_cargo_subtype_text, cargo_subtype) {
     1:    return string(STR_REFIT_METRO_3XXK_ST_NAME);                  // Korail 3xxk ST
-    2:    return string(STR_REFIT_METRO_311K_2_2_NAME);                 // KNR 311k / Old livery
-    3:    return string(STR_REFIT_METRO_311K_2_1_NAME);                 // Korail 311k / Current livery
-    4:    return string(STR_REFIT_METRO_311K_1_2_NAME);                 // Korail 3111k VVVF beginning / Current livery
+    2:    return string(STR_REFIT_METRO_311K_2_2_NAME);                 // KNR 311k / Current livery
+    3:    return string(STR_REFIT_METRO_311K_2_1_NAME);                 // Korail 311k / Old livery
+    4:    return string(STR_REFIT_METRO_311K_1_2_NAME);                 // Korail 311k VVVF beginning / Current livery
     5:    return string(STR_REFIT_METRO_311K_1_1_NAME);                 // KNR 311k VVVF beginning / Old livery
     6:    return string(STR_REFIT_METRO_1K_RHEO_LAST_2_NAME);           // KNR 1k Rheostatic latter / 1st livery
     7:    return string(STR_REFIT_METRO_1K_RHEO_LAST_1_NAME);           // KNR 1k Rheostatic latter / 1st livery
