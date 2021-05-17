@@ -26,12 +26,18 @@ switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineT, cargo_subtype) {
     set_351K_VVVF_3RD_engineT;
 }
 
+// Random pantograph between double and single
+switch(FEAT_TRAINS, SELF, sw_351K_VVVF_3RD_wagon_panto, random_bits % 2) {
+    1: set_351K_VVVF_3RD_wagon_panto;
+    set_351K_VVVF_3RD_SINGLE_ARM_wagon_panto;
+}
+
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon_panto_cargo_subtype, cargo_subtype) {
     1: set_341K_VVVF_1ST_1_wagon_panto;
     2: set_351K_VVVF_1ST_wagon_panto;
     3: set_351K_VVVF_2ND_wagon_panto;
-    set_351K_VVVF_3RD_wagon_panto;
+    sw_351K_VVVF_3RD_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon_cargo_subtype, cargo_subtype) {
     1: set_341K_VVVF_1ST_1_wagon;
