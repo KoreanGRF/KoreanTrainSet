@@ -62,11 +62,23 @@ spriteset(set_light_railway_track_underlay, "./src/railtype/KR_LIGHTRAIL.png") {
 }
 
 // Tracks for tunnel
-spriteset(set_light_railway_track_tunnel, "./src/railtype/KR_LIGHTRAIL.png") {
-    [   0,  112,   64,   39,  -31,   -8]
+spriteset(set_light_railway_track_tunnel_underlay, "./src/railtype/KR_LIGHTRAIL.png") {
+    [   0,  120,   64,   39,  -31,   -8]
     [  70,  120,   64,   31,  -43,   -6]   // No need a graphic for behind
     [ 140,  120,   64,   31,  -32,   -2]   // No need a graphic for behind
-    [ 210,  112,   64,   39,  -32,   -8]
+    [ 210,  120,   64,   39,  -32,   -8]
+}
+spriteset(set_light_railway_track_tunnel_underlay_snow, "./src/railtype/KR_LIGHTRAIL.png") {
+    [ 560,  120,   64,   39,  -31,   -8]
+    [  70,  120,   64,   31,  -43,   -6]   // No need a graphic for behind
+    [ 140,  120,   64,   31,  -32,   -2]   // No need a graphic for behind
+    [ 630,  120,   64,   39,  -32,   -8]
+}
+spriteset(set_light_railway_track_tunnel_underlay_desert, "./src/railtype/KR_LIGHTRAIL.png") {
+    [ 840,  120,   64,   39,  -31,   -8]
+    [  70,  120,   64,   31,  -43,   -6]   // No need a graphic for behind
+    [ 140,  120,   64,   31,  -32,   -2]   // No need a graphic for behind
+    [ 910,  120,   64,   39,  -32,   -8]
 }
 
 // Tunnel overlay
@@ -74,6 +86,18 @@ spriteset(set_light_railway_track_tunnel_overlay, "./src/railtype/KR_LIGHTRAIL.p
     [ 280,  120,   64,   39,  -31,  -39]
     [ 350,  120,   64,   39,  -31,  -39]
     [ 420,  120,   64,   40,  -31,  -39]
+    [ 490,  120,   64,   40,  -31,  -39]
+}
+spriteset(set_light_railway_track_tunnel_overlay_snow, "./src/railtype/KR_LIGHTRAIL.png") {
+    [ 280,  120,   64,   39,  -31,  -39]
+    [ 700,  120,   64,   39,  -31,  -39]
+    [ 770,  120,   64,   40,  -31,  -39]
+    [ 490,  120,   64,   40,  -31,  -39]
+}
+spriteset(set_light_railway_track_tunnel_overlay_desert, "./src/railtype/KR_LIGHTRAIL.png") {
+    [ 280,  120,   64,   39,  -31,  -39]
+    [ 980,  120,   64,   39,  -31,  -39]
+    [1050,  120,   64,   40,  -31,  -39]
     [ 490,  120,   64,   40,  -31,  -39]
 }
 
@@ -119,10 +143,16 @@ spriteset(set_light_railway_track_bridge, "./src/railtype/KR_LIGHTRAIL.png") {
 }
 
 // Graphic for terrain
+switch(FEAT_RAILTYPES, SELF, sw_light_railway_track_tunnel_underlay, terrain_type) {
+    TILETYPE_NORMAL: set_light_railway_track_tunnel_underlay;
+    TILETYPE_SNOW:   set_light_railway_track_tunnel_underlay_snow;
+    TILETYPE_DESERT: set_light_railway_track_tunnel_underlay_desert;
+    set_light_railway_track_tunnel_underlay;
+}
 switch(FEAT_RAILTYPES, SELF, sw_light_railway_track_tunnel_overlay, terrain_type) {
     TILETYPE_NORMAL: set_light_railway_track_tunnel_overlay;
-    // TILETYPE_SNOW:   // In future ...
-    // TILETYPE_DESERT: // In future ...
+    TILETYPE_SNOW:   set_light_railway_track_tunnel_overlay_snow;
+    TILETYPE_DESERT: set_light_railway_track_tunnel_overlay_desert;
     set_light_railway_track_tunnel_overlay;
 }
 
@@ -150,7 +180,7 @@ item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
         gui:                            set_light_railway_gui;
         track_overlay:                  set_light_railway_track_overlay;
         underlay:                       set_light_railway_track_underlay;
-        tunnels:                        set_light_railway_track_tunnel;
+        tunnels:                        sw_light_railway_track_tunnel_underlay;
         tunnel_overlay:                 sw_light_railway_track_tunnel_overlay;
         depots:                         set_light_railway_track_depot;
         bridge_surfaces:                set_light_railway_track_bridge;

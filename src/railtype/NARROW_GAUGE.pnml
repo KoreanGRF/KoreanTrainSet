@@ -62,11 +62,23 @@ spriteset(set_narrow_gauge_track_underlay, "./src/railtype/NARROW_GAUGE.png") {
 }
 
 // Tracks for tunnel
-spriteset(set_narrow_gauge_track_tunnel, "./src/railtype/NARROW_GAUGE.png") {
-    [   0,  112,   64,   39,  -31,   -8]   // ↙
-    [  70,  112,   64,   23,  -31,    0]   // ↖
-    [ 140,  112,   64,   23,  -31,    0]   // ↗
-    [ 210,  112,   64,   39,  -32,   -8]   // ↘
+spriteset(set_narrow_gauge_track_tunnel_underlay, "./src/railtype/NARROW_GAUGE.png") {
+    [   0,  120,   64,   39,  -31,   -8]   // ↙
+    [  70,  120,   64,   23,  -31,    0]   // ↖
+    [ 140,  120,   64,   23,  -31,    0]   // ↗
+    [ 210,  120,   64,   39,  -32,   -8]   // ↘
+}
+spriteset(set_narrow_gauge_track_tunnel_underlay_snow, "./src/railtype/NARROW_GAUGE.png") {
+    [   0,  170,   64,   39,  -31,   -8]   // ↙
+    [  70,  170,   64,   23,  -31,    0]   // ↖
+    [ 140,  170,   64,   23,  -31,    0]   // ↗
+    [ 210,  170,   64,   39,  -32,   -8]   // ↘
+}
+spriteset(set_narrow_gauge_track_tunnel_underlay_desert, "./src/railtype/NARROW_GAUGE.png") {
+    [ 280,  170,   64,   39,  -31,   -8]   // ↙
+    [ 350,  170,   64,   23,  -31,    0]   // ↖
+    [ 420,  170,   64,   23,  -31,    0]   // ↗
+    [ 490,  170,   64,   39,  -32,   -8]   // ↘
 }
 
 // Tunnel overlay
@@ -79,12 +91,12 @@ spriteset(set_narrow_gauge_track_tunnel_overlay, "./src/railtype/NARROW_GAUGE.pn
 
 // Depot
 spriteset(set_narrow_gauge_track_depot, "./src/railtype/NARROW_GAUGE.png") {
-    [   0,  160,   32,   34,   -1,   -9]   // SE entry
-    [  70,  160,   64,   52,   -1,  -39]   // SE
-    [ 140,  160,   32,   34,  -28,   -8]   // SW entry
-    [ 210,  160,   64,   52,  -53,  -39]   // SW
-    [ 280,  160,   64,   52,  -47,  -39]   // NE
-    [ 350,  160,   64,   52,  -15,  -39]   // NW
+    [   0,  220,   32,   34,   -1,   -9]   // SE entry
+    [  70,  220,   64,   52,   -1,  -39]   // SE
+    [ 140,  220,   32,   34,  -28,   -8]   // SW entry
+    [ 210,  220,   64,   52,  -53,  -39]   // SW
+    [ 280,  220,   64,   52,  -47,  -39]   // NE
+    [ 350,  220,   64,   52,  -15,  -39]   // NW
 }
 
 // Bridge surfaces (uses track_underlay's sprites)
@@ -148,11 +160,11 @@ spriteset(set_narrow_gauge_track_crossing_open, "./src/railtype/NARROW_GAUGE.png
 }
 
 // Graphic for terrain
-switch(FEAT_RAILTYPES, SELF, sw_narrow_gauge_track_tunnel_overlay, terrain_type) {
-    TILETYPE_NORMAL: set_narrow_gauge_track_tunnel_overlay;
-    // TILETYPE_SNOW:   // In future ...
-    // TILETYPE_DESERT: // In future ...
-    set_narrow_gauge_track_tunnel_overlay;
+switch(FEAT_RAILTYPES, SELF, sw_narrow_gauge_track_tunnel_underlay, terrain_type) {
+    TILETYPE_NORMAL: set_narrow_gauge_track_tunnel_underlay;
+    TILETYPE_SNOW:   set_narrow_gauge_track_tunnel_underlay_snow;
+    TILETYPE_DESERT: set_narrow_gauge_track_tunnel_underlay_desert;
+    set_narrow_gauge_track_tunnel_underlay;
 }
 
 // Level crossing status
@@ -186,8 +198,8 @@ item(FEAT_RAILTYPES, ko_train_set_NARROW_GAUGE, 4) {
         gui:                            set_narrow_gauge_gui;
         track_overlay:                  set_narrow_gauge_track_overlay;
         underlay:                       set_narrow_gauge_track_underlay;
-        tunnels:                        set_narrow_gauge_track_tunnel;
-        tunnel_overlay:                 sw_narrow_gauge_track_tunnel_overlay;
+        tunnels:                        sw_narrow_gauge_track_tunnel_underlay;
+        // tunnel_overlay:                 set_narrow_gauge_track_tunnel_overlay;
         depots:                         set_narrow_gauge_track_depot;
         bridge_surfaces:                set_narrow_gauge_track_bridge;
 		level_crossings:                sw_narrow_gauge_track_level_crossing;
