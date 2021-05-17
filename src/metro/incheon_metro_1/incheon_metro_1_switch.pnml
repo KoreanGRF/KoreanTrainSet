@@ -41,9 +41,19 @@ switch(FEAT_TRAINS, SELF, sw_INCHEON_METRO_1_engine, position_in_consist_from_en
     sw_INCHEON_METRO_1_engineH;
 }
 
-// Wagon
-switch(FEAT_TRAINS, SELF, sw_INCHEON_METRO_1_wagon, (position_in_consist + 1) % 8) {
+// Pantograph - 8 cars (TC - M - M' - T - T - M - M' - TC)
+switch(FEAT_TRAINS, SELF, sw_INCHEON_METRO_1_panto_wagon_for_8cars, (position_in_consist + 1) % 8) {
     3: sw_INCHEON_METRO_1_wagon_panto_cargo_subtype;
     7: sw_INCHEON_METRO_1_wagon_panto_cargo_subtype;
     sw_INCHEON_METRO_1_wagon_cargo_subtype;
+}
+// Pantograph - 8 cars (TC - M' - M' - T - T - M' - M' - TC)
+switch(FEAT_TRAINS, SELF, sw_INCHEON_METRO_1_panto_wagon_for_8cars_2, (position_in_consist + 1) % 8) {
+    2..3: sw_INCHEON_METRO_1_wagon_panto_cargo_subtype;
+    6..7: sw_INCHEON_METRO_1_wagon_panto_cargo_subtype;
+    sw_INCHEON_METRO_1_wagon_cargo_subtype;
+}
+switch(FEAT_TRAINS, SELF, sw_INCHEON_METRO_1_wagon, cargo_subtype) {
+    1: sw_INCHEON_METRO_1_panto_wagon_for_8cars_2;
+    sw_INCHEON_METRO_1_panto_wagon_for_8cars;
 }

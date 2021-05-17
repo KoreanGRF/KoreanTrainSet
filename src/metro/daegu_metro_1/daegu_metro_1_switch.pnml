@@ -34,6 +34,6 @@ switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_1_engine, position_in_consist_from_end 
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_1_wagon, (position_in_consist + 0) % 6) {
     1: sw_DAEGU_METRO_1_wagon_panto_cargo_subtype;
-    4: sw_DAEGU_METRO_1_wagon_panto_cargo_subtype;
+    3: sw_DAEGU_METRO_1_wagon_panto_cargo_subtype;
     sw_DAEGU_METRO_1_wagon_cargo_subtype;
 }

@@ -31,8 +31,9 @@ switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_engine, position_in_consist_from_end ==
     sw_SHINBUNDANG_engineH;
 }
 
-// Wagon
-switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_wagon, (position_in_consist + 1) % 4) {
-    2: sw_SHINBUNDANG_wagon_panto_cargo_subtype;
+// Pantograph - 6 cars (TC - M' - M' - T - M' - TC)
+switch(FEAT_TRAINS, SELF, sw_SHINBUNDANG_wagon, (position_in_consist + 1) % 6) {
+    2..3: sw_SHINBUNDANG_wagon_panto_cargo_subtype;
+    5:    sw_SHINBUNDANG_wagon_panto_cargo_subtype;
     sw_SHINBUNDANG_wagon_cargo_subtype;
 }

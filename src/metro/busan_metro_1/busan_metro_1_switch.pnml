@@ -41,8 +41,20 @@ switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_1_engine, position_in_consist_from_end 
     sw_BUSAN_METRO_1_engineH;
 }
 
-// Wagon
-switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_1_wagon, (position_in_consist + 1) % 2) {
-    0: sw_BUSAN_METRO_1_wagon_panto_cargo_subtype;
+// Pantograph
+// 1st gen. / TC - M' - M - M' - M - M' - M - TC
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_1K_1ST_wagon_panto, position_in_consist % 2) {
+    1: sw_BUSAN_METRO_1_wagon_panto_cargo_subtype;
     sw_BUSAN_METRO_1_wagon_cargo_subtype;
+}
+// 2nd gen. / TC - M - M' - T - T - M - M' - TC
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_1K_2ND_wagon_panto, (position_in_consist % 8)+1) {
+    3: sw_BUSAN_METRO_1_wagon_panto_cargo_subtype;
+    7: sw_BUSAN_METRO_1_wagon_panto_cargo_subtype;
+    sw_BUSAN_METRO_1_wagon_cargo_subtype;
+}
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_1_wagon, cargo_subtype) {
+    0: sw_BUSAN_METRO_1K_2ND_wagon_panto;
+    1: sw_BUSAN_METRO_1K_1ST_wagon_panto;
+    sw_BUSAN_METRO_1K_2ND_wagon_panto;
 }

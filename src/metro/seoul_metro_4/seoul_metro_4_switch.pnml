@@ -71,8 +71,21 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engine, position_in_consist_from_end 
     sw_SEOUL_METRO_4_engineH;
 }
 
-// Wagon
-switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon, (position_in_consist + 1) % 3) {
-    0: sw_SEOUL_METRO_4_wagon_panto_cargo_subtype;
+// Pantograph - 10 cars (TC - M - M' - T - M' - T - T - M - M' - TC)
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_panto_wagon_for_10cars, (position_in_consist + 1) % 10) {
+    3: sw_SEOUL_METRO_4_wagon_panto_cargo_subtype;
+    5: sw_SEOUL_METRO_4_wagon_panto_cargo_subtype;
+    9: sw_SEOUL_METRO_4_wagon_panto_cargo_subtype;
     sw_SEOUL_METRO_4_wagon_cargo_subtype;
+}
+// Pantograph - 10 cars (TC - M' - M' - T - M' - T - T - M' - M' - TC)
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_panto_wagon_for_10cars_2, (position_in_consist + 1) % 10) {
+    2..3: sw_SEOUL_METRO_3_wagon_panto_cargo_subtype;
+    5:    sw_SEOUL_METRO_3_wagon_panto_cargo_subtype;
+    8..9: sw_SEOUL_METRO_3_wagon_panto_cargo_subtype;
+    sw_SEOUL_METRO_3_wagon_cargo_subtype;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon, cargo_subtype) {
+    5: sw_SEOUL_METRO_4_panto_wagon_for_10cars_2;
+    sw_SEOUL_METRO_4_panto_wagon_for_10cars;
 }
