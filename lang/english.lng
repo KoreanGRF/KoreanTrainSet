@@ -368,7 +368,7 @@ STR_PARAM_MAX_SPEED_TYPE_OPT_2                   :Design
 
 # Light Railway
 STR_RAILTYPE_LIGHT_RAIL_TRACK_NAME               :Light Rail Tracks
-STR_RAILTYPE_LIGHT_RAIL_TRACK_DROPDOWN_MENU      :[KTS] Light Rail Tracks
+STR_RAILTYPE_LIGHT_RAIL_TRACK_DROPDOWN_MENU      :[KTS] Light Rail Tracks Construction
 STR_RAILTYPE_LIGHT_RAIL_TRACK_TOOLBAR_CAPTION    :Light Rail Track Construction
 STR_RAILTYPE_LIGHT_RAIL_BUILD_VEHICLE_CAPTION    :New Light Rail Vehicle
 STR_RAILTYPE_LIGHT_RAIL_NEW_ENGINE               :Light Rail vehicle
@@ -376,7 +376,7 @@ STR_RAILTYPE_LIGHT_RAIL_AUTOREPLACE              :Light Rail Vehicles
 
 # Narrow gauge
 STR_RAILTYPE_NARROW_GAUGE_TRACK_NAME             :762mm Narrow Gauge Tracks
-STR_RAILTYPE_NARROW_GAUGE_TRACK_DROPDOWN_MENU    :[KTS] 762mm Narrow Gauge Tracks
+STR_RAILTYPE_NARROW_GAUGE_TRACK_DROPDOWN_MENU    :[KTS] 762mm Narrow Gauge Tracks Construction
 STR_RAILTYPE_NARROW_GAUGE_TRACK_TOOLBAR_CAPTION  :Narrow Gauge Track Construction
 STR_RAILTYPE_NARROW_GAUGE_BUILD_VEHICLE_CAPTION  :New Narrow Gauge Vehicle
 STR_RAILTYPE_NARROW_GAUGE_NEW_ENGINE             :Narrow Gauge vehicle
