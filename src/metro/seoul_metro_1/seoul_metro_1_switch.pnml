@@ -165,8 +165,15 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_panto_wagon_for_10cars, (position_in_
     9: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
     sw_SEOUL_METRO_1_wagon_cargo_subtype;
 }
-// Pantograph - 10 cars (TC - M' - M' - T - M' - T - T - M' - M' - TC)
+// Pantograph - 10 cars (TC - M - M' - T - M - M' - T - M - M' - TC)
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_panto_wagon_for_10cars_2, (position_in_consist + 1) % 10) {
+    3: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
+    6: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
+    9: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
+    sw_SEOUL_METRO_1_wagon_cargo_subtype;
+}
+// Pantograph - 10 cars (TC - M' - M' - T - M' - T - T - M' - M' - TC)
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_panto_wagon_for_10cars_3, (position_in_consist + 1) % 10) {
     2..3: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
     5:    sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
     8..9: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
@@ -190,13 +197,30 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_panto_wagon_for_4cars, position_in_co
     2: sw_SEOUL_METRO_1_wagon_panto_cargo_subtype;
     sw_SEOUL_METRO_1_wagon_cargo_subtype;
 }
+// Pantograph - 3XXX_ST by length
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_panto_wagon_3XXX_ST_by_length, num_vehs_in_consist) {
+    4:  sw_SEOUL_METRO_1_panto_wagon_for_4cars;
+    8:  sw_SEOUL_METRO_1_panto_wagon_for_8cars;
+    10: sw_SEOUL_METRO_1_panto_wagon_for_10cars;
+    sw_SEOUL_METRO_1_panto_wagon_for_8cars;
+}
+// Pantograph - SMETRO_1K_RHEO_MODIFIED by length
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_panto_wagon_SMETRO_1K_RHEO_MODIFIED_by_length, num_vehs_in_consist) {
+    4:  sw_SEOUL_METRO_1_panto_wagon_for_4cars;
+    6:  sw_SEOUL_METRO_1_panto_wagon_for_6cars;
+    8:  sw_SEOUL_METRO_1_panto_wagon_for_8cars;
+    10: sw_SEOUL_METRO_1_panto_wagon_for_10cars_2;
+    sw_SEOUL_METRO_1_panto_wagon_for_8cars;
+}
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon, cargo_subtype) {
-    1:      sw_SEOUL_METRO_1_panto_wagon_for_8cars;
-    2..12:  sw_SEOUL_METRO_1_panto_wagon_for_10cars;
-    13:     sw_SEOUL_METRO_1_panto_wagon_for_10cars_2;
-    14:     sw_SEOUL_METRO_1_panto_wagon_for_10cars;
+    1:      sw_SEOUL_METRO_1_panto_wagon_3XXX_ST_by_length;
+    2..5:   sw_SEOUL_METRO_1_panto_wagon_for_10cars;
+    6..12:  sw_SEOUL_METRO_1_panto_wagon_for_10cars_2;
+    13:     sw_SEOUL_METRO_1_panto_wagon_for_10cars_3;
+    14:     sw_SEOUL_METRO_1_panto_wagon_SMETRO_1K_RHEO_MODIFIED_by_length;
     15:     sw_SEOUL_METRO_1_panto_wagon_for_6cars;
     16:     sw_SEOUL_METRO_1_wagon_321K_BIKE;
     17..21: sw_SEOUL_METRO_1_panto_wagon_for_4cars;
+    22:     sw_SEOUL_METRO_1_panto_wagon_for_10cars;
     sw_SEOUL_METRO_1_panto_wagon_for_8cars;
 }
