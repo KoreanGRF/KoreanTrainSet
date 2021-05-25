@@ -159,7 +159,8 @@ STR_REFIT_LIVERY_TONGIL_1994_1997                : (Livery E: 1994~1997, Navy & 
 STR_REFIT_LIVERY_TONGIL_1997_2004                : (Livery F: 1997~2004, Green & Yellow)
 
 # Refit (Generator car)
-STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL            : (Old type / Tongil)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL_OLD        : (Old type / Tongil old livery)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL            : (Old type / Tongil recent livery)
 STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED   : (Old type / Mugunghwa Yellow & Red)
 STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED_K : (Old type / Mugunghwa Yellow & Red + Korail logo)
 STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_BLUE_RED     : (Old type / Mugunghwa Blue & Red)

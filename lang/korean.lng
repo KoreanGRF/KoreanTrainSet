@@ -159,7 +159,8 @@ STR_REFIT_LIVERY_TONGIL_1994_1997                : (도색 E: 1994~1997, 남색 
 STR_REFIT_LIVERY_TONGIL_1997_2004                : (도색 F: 1997~2004, 녹색 & 황색)
 
 # Refit (Generator car)
-STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL            : (구형 / 통일호)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL_OLD        : (구형 / 통일호 구 도색)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL            : (구형 / 통일호 현 도색)
 STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED    : (구형 / 무궁화호 노랑 & 빨강)
 STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED_K  : (구형 / 무궁화호 노랑 & 빨강 + 코레일 로고)
 STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_BLUE_RED      : (구형 / 무궁화호 파랑 & 빨강)
