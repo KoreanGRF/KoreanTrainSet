@@ -68,62 +68,69 @@ spriteset(set_GENERATOR_CAR_LONG_ORANGE_RED, "./src/wagon/generator_car/generato
     tmpl_generator_car_length_7(60, 150)
 }
 
-spriteset(set_GENERATOR_CAR_LONG_BLUE_RED_purchase, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_LONG_MUGUNGHWA_BLUE_RED_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_detail(0, 180, 27, 15, -14, -9)
 }
-spriteset(set_GENERATOR_CAR_LONG_BLUE_RED, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_LONG_MUGUNGHWA_BLUE_RED, "./src/wagon/generator_car/generator_car.png") {
     tmpl_generator_car_length_7(60, 180)
 }
 
-spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_2_purchase, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_BLUE_RED_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_detail(0, 210, 27, 15, -14, -9)
 }
-spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_2, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_BLUE_RED, "./src/wagon/generator_car/generator_car.png") {
     tmpl_generator_car_length_7(60, 210)
 }
 
-spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_3_purchase, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_2_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_detail(0, 240, 27, 15, -14, -9)
 }
-spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_3, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_2, "./src/wagon/generator_car/generator_car.png") {
     tmpl_generator_car_length_7(60, 240)
 }
 
-spriteset(set_GENERATOR_CAR_HAERANG_purchase, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_3_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_detail(0, 270, 27, 15, -14, -9)
 }
-spriteset(set_GENERATOR_CAR_HAERANG, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_3, "./src/wagon/generator_car/generator_car.png") {
     tmpl_generator_car_length_7(60, 270)
 }
 
-spriteset(set_GENERATOR_CAR_S_TRAIN_1_purchase, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_HAERANG_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_detail(0, 300, 27, 15, -14, -9)
 }
-spriteset(set_GENERATOR_CAR_S_TRAIN_1, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_HAERANG, "./src/wagon/generator_car/generator_car.png") {
     tmpl_generator_car_length_7(60, 300)
 }
-spriteset(set_GENERATOR_CAR_S_TRAIN_2_purchase, "./src/wagon/generator_car/generator_car.png") {
+
+spriteset(set_GENERATOR_CAR_S_TRAIN_1_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_detail(0, 330, 27, 15, -14, -9)
 }
-spriteset(set_GENERATOR_CAR_S_TRAIN_2, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_S_TRAIN_1, "./src/wagon/generator_car/generator_car.png") {
     tmpl_generator_car_length_7(60, 330)
 }
-spriteset(set_GENERATOR_CAR_G_TRAIN_purchase, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_S_TRAIN_2_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_detail(0, 360, 27, 15, -14, -9)
 }
-spriteset(set_GENERATOR_CAR_G_TRAIN, "./src/wagon/generator_car/generator_car.png") {
+spriteset(set_GENERATOR_CAR_S_TRAIN_2, "./src/wagon/generator_car/generator_car.png") {
     tmpl_generator_car_length_7(60, 360)
+}
+spriteset(set_GENERATOR_CAR_G_TRAIN_purchase, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_purchase_detail(0, 390, 27, 15, -14, -9)
+}
+spriteset(set_GENERATOR_CAR_G_TRAIN, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_generator_car_length_7(60, 390)
 }
 
 // A-train's power car
 spriteset(set_GENERATOR_CAR_A_TRAIN_purchase, "./src/wagon/generator_car/generator_car.png") {
-    tmpl_purchase_detail(0, 390, 27, 15, -14, -9)
+    tmpl_purchase_detail(0, 420, 27, 15, -14, -9)
 }
 spriteset(set_GENERATOR_CAR_A_TRAIN, "./src/wagon/generator_car/generator_car.png") {
-    tmpl_generator_car_length_7(60, 390)
+    tmpl_generator_car_length_7(60, 420)
 }
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_purchase, cargo_subtype) {
-    set_GENERATOR_CAR_LONG_BLUE_RED_purchase;
+    set_GENERATOR_CAR_LONG_MUGUNGHWA_BLUE_RED_purchase;
 }
