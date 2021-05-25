@@ -7,10 +7,16 @@
 
 // Refit Paintings
 switch(FEAT_TRAINS, SELF, sw_K2x00_loco, cargo_subtype) {
-    1:    set_K2x00_BLACK_ORANGE;
+    1:    set_K2x00_BLACK;
+    2:    set_K2x00_BLACK_ORANGE_1;
+    3:    set_K2x00_BLACK_ORANGE_2;
+    0:    set_K2x00_GREEN_YELLOW;
     set_K2x00_GREEN_YELLOW;
 }
 switch(FEAT_TRAINS, SELF, sw_K2x00_cargo_subtype_text, cargo_subtype) {
-    1:    return string(STR_REFIT_LIVERY_7x00_BLACK_ORANGE);
+    1:    return string(STR_REFIT_LIVERY_2x00_BLACK);
+    2:    return string(STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1);
+    3:    return string(STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2);
+    0:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
     return string(STR_REFIT_LIVERY_GREEN_YELLOW);
 }

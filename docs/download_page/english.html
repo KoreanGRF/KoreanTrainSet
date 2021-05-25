@@ -40,7 +40,7 @@
         <td class="introduction">1943</td>
     </tr>
     <tr data-veh_id="K2X00">
-        <td class="refit"><div><img src="./_static/K2x00_BLACK_ORANGE.png" alt="2x00 Diesel Locomotive"><br /><img src="./_static/K2x00_GREEN_YELLOW.png" alt="2x00 Diesel Locomotive"></div></td>
+        <td class="refit"><div><img src="./_static/K2x00_BLACK.png" alt="2x00 Diesel Locomotive"><br /><img src="./_static/K2x00_BLACK_ORANGE_1.png" alt="2x00 Diesel Locomotive"><br /><img src="./_static/K2x00_BLACK_ORANGE_2.png" alt="2x00 Diesel Locomotive"><br /><img src="./_static/K2x00_GREEN_YELLOW.png" alt="2x00 Diesel Locomotive"></div></td>
         <td class="name">2x00 Diesel Locomotive</td>
         <td class="speed">105 km/h</td>
         <td class="speed_designed">105 km/h</td>

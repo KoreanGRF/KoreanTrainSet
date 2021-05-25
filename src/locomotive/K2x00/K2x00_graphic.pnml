@@ -16,19 +16,36 @@ template tmpl_K2x00(x, y) {
     [x+225,    y,    18,    14,    -7,   -7]
 }
 
-// K2x00
-spriteset(set_K2x00_BLACK_ORANGE_purchase, "./src/locomotive/K2x00/K2x00.png") {
+// Black
+spriteset(set_K2x00_BLACK_purchase, "./src/locomotive/K2x00/K2x00.png") {
     tmpl_purchase_for_singlehead(0, 0)
 }
-spriteset(set_K2x00_BLACK_ORANGE, "./src/locomotive/K2x00/K2x00.png") {   // Black & Orange
+spriteset(set_K2x00_BLACK, "./src/locomotive/K2x00/K2x00.png") {
     tmpl_K2x00(60, 0)
 }
 
-spriteset(set_K2x00_GREEN_YELLOW_purchase, "./src/locomotive/K2x00/K2x00.png") {
+// Black & Orange (narrow)
+spriteset(set_K2x00_BLACK_ORANGE_1_purchase, "./src/locomotive/K2x00/K2x00.png") {
     tmpl_purchase_for_singlehead(0, 30)
 }
-spriteset(set_K2x00_GREEN_YELLOW, "./src/locomotive/K2x00/K2x00.png") {   // Green & Yellow
+spriteset(set_K2x00_BLACK_ORANGE_1, "./src/locomotive/K2x00/K2x00.png") {
     tmpl_K2x00(60, 30)
+}
+
+// Black & Orange (wide)
+spriteset(set_K2x00_BLACK_ORANGE_2_purchase, "./src/locomotive/K2x00/K2x00.png") {
+    tmpl_purchase_for_singlehead(0, 60)
+}
+spriteset(set_K2x00_BLACK_ORANGE_2, "./src/locomotive/K2x00/K2x00.png") {
+    tmpl_K2x00(60, 60)
+}
+
+// Green & Yellow
+spriteset(set_K2x00_GREEN_YELLOW_purchase, "./src/locomotive/K2x00/K2x00.png") {
+    tmpl_purchase_for_singlehead(0, 90)
+}
+spriteset(set_K2x00_GREEN_YELLOW, "./src/locomotive/K2x00/K2x00.png") {
+    tmpl_K2x00(60, 90)
 }
 
 // Alias of purchase image
