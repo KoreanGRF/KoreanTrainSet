@@ -116,19 +116,19 @@ spriteset(set_G_TRAIN_purchase, "./src/wagon/mugunghwa_car/G-train.png") {
     tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
 }
 spriteset(set_G_TRAIN_wagon1, "./src/wagon/mugunghwa_car/G-train.png") {
-    tmpl_wagon_by_coor(60, 0)
+    tmpl_wagon_by_coor_8dir(60, 0)
 }
 spriteset(set_G_TRAIN_wagon2, "./src/wagon/mugunghwa_car/G-train.png") {
-    tmpl_wagon_by_coor(60, 30)
+    tmpl_wagon_by_coor_8dir(60, 30)
 }
 spriteset(set_G_TRAIN_wagon3, "./src/wagon/mugunghwa_car/G-train.png") {
-    tmpl_wagon_by_coor(60, 60)
+    tmpl_wagon_by_coor_8dir(60, 60)
 }
 spriteset(set_G_TRAIN_wagon4, "./src/wagon/mugunghwa_car/G-train.png") {
-    tmpl_wagon_by_coor(60, 90)
+    tmpl_wagon_by_coor_8dir(60, 90)
 }
 spriteset(set_G_TRAIN_wagon5, "./src/wagon/mugunghwa_car/G-train.png") {
-    tmpl_wagon_by_coor(60, 120)
+    tmpl_wagon_by_coor_8dir(60, 120)
 }
 
 // S-train
