@@ -110,7 +110,7 @@
 | ``KR_BUFFER`` | [@telk5093](https://github.com/telk5093) | |
 | ``BAGGAGE_CAR`` | [@opentrain](https://github.com/opentrain) | |
 | ``BIDULGI`` (Baggage_car) |[@Gamunbi](https://github.com/Gamunbi) | [#40](https://github.com/KoreanGRF/KoreanTrainSet/issues/40) |
-| ``MUGUNGHWA_CAR`` | skyu? | |
+| ``MUGUNGHWA_CAR`` | skyu? Modified by @ChuoSpecialRapid201 | |
 | ``TONGIL_CAR`` | [@Gamunbi](https://github.com/Gamunbi) | [#134](https://github.com/KoreanGRF/KoreanTrainSet/issues/134) |
 | ``BIDULGI_CAR`` |[@Gamunbi](https://github.com/Gamunbi) | [#40](https://github.com/KoreanGRF/KoreanTrainSet/issues/40) |
 | ``CAFE_CAR`` | Modified by [@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201) | [#86](https://github.com/KoreanGRF/KoreanTrainSet/issues/86), [#87](https://github.com/KoreanGRF/KoreanTrainSet/issues/87), [#118](https://github.com/KoreanGRF/KoreanTrainSet/issues/118), [#136](https://github.com/KoreanGRF/KoreanTrainSet/issues/136), [#139](https://github.com/KoreanGRF/KoreanTrainSet/issues/139), [#141](https://github.com/KoreanGRF/KoreanTrainSet/issues/141), [#145](https://github.com/KoreanGRF/KoreanTrainSet/issues/145), [#184](https://github.com/KoreanGRF/KoreanTrainSet/issues/184), [#185](https://github.com/KoreanGRF/KoreanTrainSet/issues/185) |
