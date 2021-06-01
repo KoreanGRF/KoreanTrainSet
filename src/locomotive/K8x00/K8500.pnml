@@ -12,10 +12,10 @@ RUNNING(K8500)
 
 // K8500
 spriteset(set_K8500, "./src/locomotive/K8x00/K8500.png") {
-    tmpl_loco(60, 0)
+    tmpl_loco(80, 0)
 }
 spriteset(set_K8500_purchase, "./src/locomotive/K8x00/K8500.png") {
-    tmpl_purchase_for_singlehead(0, 0)
+    tmpl_purchase_common(0, 0)
 }
 
 // Alias of purchase image

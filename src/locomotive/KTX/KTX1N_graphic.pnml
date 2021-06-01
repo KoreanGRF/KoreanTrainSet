@@ -6,45 +6,45 @@
 
 // KTX1N
 spriteset(set_KTX1N_purchase, "./src/locomotive/KTX/KTX1N.png") {
-    tmpl_purchase_for_dualhead(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 spriteset(set_KTX1N_engineH, "./src/locomotive/KTX/KTX1N.png") {   // PC1
-    [  0+60,   0,     8,   23,     -3,    -11]
-    [ 15+60,   0,    22,   16,    -15,     -7]
-    [ 45+60,    0,    32,   12,    -16,     -8]
-    [ 95+60,    0,    22,   16,     -5,     -8]
-    [125+60,    0,     8,   23,     -3,    -11]
-    [140+60,    0,    22,   16,    -16,     -8]
-    [175+60,    0,    33,   12,    -18,     -8]
-    [225+60,    0,    22,   16,     -6,     -7]
+    [80+0,     0,     8,   23,     -3,    -11]
+    [80+20,    0,    22,   16,    -15,     -7]
+    [80+50,    0,    32,   12,    -16,     -8]
+    [80+90,    0,    22,   16,     -5,     -8]
+    [80+120,   0,     8,   23,     -3,    -11]
+    [80+140,   0,    22,   16,    -16,     -8]
+    [80+170,   0,    33,   12,    -18,     -8]
+    [80+210,   0,    22,   16,     -6,     -7]
 }
 spriteset(set_KTX1N_wagon_1, "./src/locomotive/KTX/KTX1N.png") {   // T01
-    tmpl_KTXloco_power(60, 30)
+    tmpl_KTXloco_power(80, 30)
 }
 spriteset(set_KTX1N_wagon_express, "./src/locomotive/KTX/KTX1N.png") {   // T02, express car
-    tmpl_KTXloco_wagon(60, 60)
+    tmpl_KTXloco_wagon(80, 60)
 }
 spriteset(set_KTX1N_wagon_express_r, "./src/locomotive/KTX/KTX1N.png") {   // T02, express car (reverse)
-    tmpl_KTXloco_wagon_r(60, 60)
+    tmpl_KTXloco_wagon_r(80, 60)
 }
 spriteset(set_KTX1N_wagon_middle1, "./src/locomotive/KTX/KTX1N.png") {   // T05 ~ T09
-    tmpl_KTXloco_wagon(60, 90)
+    tmpl_KTXloco_wagon(80, 90)
 }
 spriteset(set_KTX1N_wagon_middle2, "./src/locomotive/KTX/KTX1N.png") {   // T10 ~ T17
-    tmpl_KTXloco_wagon(60, 120)
+    tmpl_KTXloco_wagon(80, 120)
 }
 spriteset(set_KTX1N_wagon_18, "./src/locomotive/KTX/KTX1N.png") {   // T18
-    tmpl_KTXloco_power(60, 150)
+    tmpl_KTXloco_power(80, 150)
 }
 spriteset(set_KTX1N_engineT, "./src/locomotive/KTX/KTX1N.png") {   // PC2
-    [125+60,    180,     8,    23,    -3,   -11]
-    [140+60,    180,    22,    16,   -15,    -7]
-    [175+60,    180,    32,    14,   -16,   -10]
-    [225+60,    180,    22,    18,    -5,   -10]
-    [  0+60,    180,     8,    23,    -3,   -11]
-    [ 15+60,    180,    22,    18,   -16,   -10]
-    [ 45+60,    180,    33,    14,   -18,   -10]
-    [ 95+60,    180,    22,    16,    -6,    -7]
+    [80+120,    180,     8,    23,    -3,   -11]
+    [80+140,    180,    22,    16,   -15,    -7]
+    [80+170,    180,    32,    14,   -16,   -10]
+    [80+210,    180,    22,    18,    -5,   -10]
+    [80+0,      180,     8,    23,    -3,   -11]
+    [80+20,     180,    22,    18,   -16,   -10]
+    [80+50,     180,    33,    14,   -18,   -10]
+    [80+90,     180,    22,    16,    -6,    -7]
 }
 
 // Alias of purchase image

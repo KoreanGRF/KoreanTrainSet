@@ -36,7 +36,7 @@ spriteset(set_GIMPO_1K_wagon, "./src/LRT/gimpo_goldline/GIMPO_1K.png") {
     [80+210,    60,    21,    17,    -6,    -10]
 }
 spriteset(set_GIMPO_1K_purchase, "./src/LRT/gimpo_goldline/GIMPO_1K.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // Alias of purchase image

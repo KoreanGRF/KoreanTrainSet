@@ -16,7 +16,7 @@ spriteset(set_YONGIN_EVERLINE_engine, "./src/LRT/yongin_everline/Y100.png") {
     [80+210,   0,    21,    17,     -6,     -8]
 }
 spriteset(set_YONGIN_EVERLINE_purchase, "./src/LRT/yongin_everline/Y100.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_detail(0, 0, 70, 15, -39, -9)
 }
 
 // Alias of purchase image

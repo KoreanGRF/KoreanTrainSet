@@ -12,20 +12,20 @@ template tmpl_PASHI5_tender(x, y) {
     tmpl_MATE2_tender(x, y)
 }
 spriteset(set_PASHI5_purchase, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_purchase_detail(0, 0, 47, 15, -21, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_PASHI5_engine_1, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5(60, 0)
+    tmpl_PASHI5(80, 0)
 }
 spriteset(set_PASHI5_engine_2, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5(60, 30)
+    tmpl_PASHI5(80, 30)
 }
 spriteset(set_PASHI5_engine_3, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5(60, 60)
+    tmpl_PASHI5(80, 60)
 }
 spriteset(set_PASHI5_engine_4, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5(60, 90)
+    tmpl_PASHI5(80, 90)
 }
 spriteset(set_PASHI5_tender, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5_tender(60, 120)
+    tmpl_PASHI5_tender(80, 120)
 }

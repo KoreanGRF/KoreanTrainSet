@@ -5,7 +5,7 @@
 ------------------------------------------------------------------------------*/
 // Graphics
 spriteset(set_ECOBEE_purchase, "./src/locomotive/ecobee/ECOBEE.png") {
-    tmpl_purchase_for_dualhead(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 spriteset(set_ECOBEE_engineH, "./src/locomotive/ecobee/ECOBEE.png") {
     [80+0,     0,    8,     21,    -3,   -12]

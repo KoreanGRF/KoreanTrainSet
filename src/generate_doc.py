@@ -92,8 +92,8 @@ for file_name in pnmlFiles:
         # t = coords[4]   # Not used in this file
         # l = coords[5]   # Not used in this file
 
-        # tmpl_purchase_common()
-        if template_name == 'tmpl_purchase_common':
+        # tmpl_purchase_common(x, y), tmpl_purchase_common_dualhead(x, y)
+        if template_name == 'tmpl_purchase_common' or template_name == 'tmpl_purchase_common_dualhead':
             w = 70
             h = 15
 

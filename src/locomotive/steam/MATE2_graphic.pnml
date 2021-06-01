@@ -6,40 +6,40 @@
 
 // Template
 template tmpl_MATE2(x, y) {
-    [x,     y,    8,     21,    -3,    -7]
-    [x+15,  y,    21,    17,   -14,    -8]
-    [x+45,  y,    31,    12,   -17,    -8]
-    [x+95,  y,    21,    17,    -6,    -8]
-    [x+125, y,    8,     21,    -3,   -10]
-    [x+140, y,    21,    17,   -14,    -8]
-    [x+175, y,    31,    12,   -15,    -8]
-    [x+225, y,    21,    17,    -5,    -8]
+    [x+0,     y,    8,     21,    -3,    -7]
+    [x+20,    y,    21,    17,   -14,    -8]
+    [x+50,    y,    31,    12,   -17,    -8]
+    [x+90,    y,    21,    17,    -6,    -8]
+    [x+120,   y,    8,     21,    -3,   -10]
+    [x+140,   y,    21,    17,   -14,    -8]
+    [x+170,   y,    31,    12,   -15,    -8]
+    [x+210,   y,    21,    17,    -5,    -8]
 }
 template tmpl_MATE2_tender(x, y) {
-    [x,     y,    8,     14,    -3,    -6]
-    [x+15,  y,    13,    13,    -6,    -8]
-    [x+45,  y,    15,    11,    -1,    -7]
-    [x+95,  y,    13,    12,     2,    -3]
-    [x+125, y,    8,     14,    -3,    -1]
-    [x+140, y,    13,    12,   -14,    -3]
-    [x+175, y,    15,    11,   -15,    -7]
-    [x+225, y,    13,    13,    -6,    -8]
+    [x+0,     y,    8,     14,    -3,    -6]
+    [x+20,    y,    13,    13,    -6,    -8]
+    [x+50,    y,    15,    11,    -1,    -7]
+    [x+90,    y,    13,    12,     2,    -3]
+    [x+120,   y,    8,     14,    -3,    -1]
+    [x+140,   y,    13,    12,   -14,    -3]
+    [x+170,   y,    15,    11,   -15,    -7]
+    [x+210,   y,    13,    13,    -6,    -8]
 }
 spriteset(set_MATE2_purchase, "./src/locomotive/steam/MATE2.png") {
-    tmpl_purchase_detail(0, 0, 47, 15, -21, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_MATE2_engine_1, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2(60, 0)
+    tmpl_MATE2(80, 0)
 }
 spriteset(set_MATE2_engine_2, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2(60, 30)
+    tmpl_MATE2(80, 30)
 }
 spriteset(set_MATE2_engine_3, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2(60, 60)
+    tmpl_MATE2(80, 60)
 }
 spriteset(set_MATE2_engine_4, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2(60, 90)
+    tmpl_MATE2(80, 90)
 }
 spriteset(set_MATE2_tender, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2_tender(60, 120)
+    tmpl_MATE2_tender(80, 120)
 }

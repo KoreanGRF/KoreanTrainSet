@@ -12,26 +12,26 @@ RUNNING(K8000)
 
 // Blue & White
 spriteset(set_K8000_BLUE_WHITE_purchase, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_purchase_for_singlehead(0, 0)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_K8000_BLUE_WHITE, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_loco(60, 0)
+    tmpl_loco(80, 0)
 }
 
 // Green & Yellow
 spriteset(set_K8000_GREEN_YELLOW_purchase, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_purchase_for_singlehead(0, 30)
+    tmpl_purchase_common(0, 30)
 }
 spriteset(set_K8000_GREEN_YELLOW, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_loco(60, 30)
+    tmpl_loco(80, 30)
 }
 
 // Red & White & Blue
 spriteset(set_K8000_RED_WHITE_BLUE_purchase, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_purchase_for_singlehead(0, 60)
+    tmpl_purchase_common(0, 60)
 }
 spriteset(set_K8000_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_loco(60, 60)
+    tmpl_loco(80, 60)
 }
 
 // Alias of purchase image

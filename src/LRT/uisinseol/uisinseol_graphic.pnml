@@ -36,7 +36,7 @@ spriteset(set_UISINSEOL_engineT, "./src/LRT/uisinseol/UL000.png") {
 //     [0+290,    60,    21,    17,    -6,    -10]
 // }
 spriteset(set_UISINSEOL_purchase, "./src/LRT/uisinseol/UL000.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // Alias of purchase image
