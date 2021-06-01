@@ -18,7 +18,7 @@ spriteset(set_3K_SMETRO_CHOPPER_engineT, "./src/metro/seoul_metro_3/3K_SMETRO_CH
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_3K_SMETRO_CHOPPER_purchase, "./src/metro/seoul_metro_3/3K_SMETRO_CHOPPER.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 3K_SMETRO_MODIFIED_CHOPPER
@@ -35,7 +35,7 @@ spriteset(set_3K_SMETRO_MODIFIED_CHOPPER_engineT, "./src/metro/seoul_metro_3/3K_
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_3K_SMETRO_MODIFIED_CHOPPER_purchase, "./src/metro/seoul_metro_3/3K_SMETRO_MODIFIED_CHOPPER.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 
@@ -53,7 +53,7 @@ spriteset(set_3K_VVVF_1ST_1_engineT, "./src/metro/seoul_metro_3/3K_VVVF_1ST_1.pn
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_3K_VVVF_1ST_1_purchase, "./src/metro/seoul_metro_3/3K_VVVF_1ST_1.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 3K_VVVF_1ST_2
@@ -70,7 +70,7 @@ spriteset(set_3K_VVVF_1ST_2_engineT, "./src/metro/seoul_metro_3/3K_VVVF_1ST_2.pn
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_3K_VVVF_1ST_2_purchase, "./src/metro/seoul_metro_3/3K_VVVF_1ST_2.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 3K_SMETRO_VVVF_1ST
@@ -87,7 +87,7 @@ spriteset(set_3K_SMETRO_VVVF_1ST_engineT, "./src/metro/seoul_metro_3/3K_SMETRO_V
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_3K_SMETRO_VVVF_1ST_purchase, "./src/metro/seoul_metro_3/3K_SMETRO_VVVF_1ST.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 3K_SMETRO_VVVF_2ND
@@ -104,7 +104,7 @@ spriteset(set_3K_SMETRO_VVVF_2ND_engineT, "./src/metro/seoul_metro_3/3K_SMETRO_V
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_3K_SMETRO_VVVF_2ND_purchase, "./src/metro/seoul_metro_3/3K_SMETRO_VVVF_2ND.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // Alias of purchase image

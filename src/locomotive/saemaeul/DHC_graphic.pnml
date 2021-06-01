@@ -6,33 +6,33 @@
 
 // DHC
 spriteset(set_DHC_1_purchase, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_purchase_for_dualhead(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 spriteset(set_DHC_1_engineH, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 0)
+    tmpl_loco_saemaeul(80, 0)
 }
 spriteset(set_DHC_1_engineT, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 30)
+    tmpl_loco_saemaeul(80, 30)
 }
 
 spriteset(set_DHC_2_purchase, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_purchase_for_dualhead(0, 60)
+    tmpl_purchase_common_dualhead(0, 60)
 }
 spriteset(set_DHC_2_engineH, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 60)
+    tmpl_loco_saemaeul(80, 60)
 }
 spriteset(set_DHC_2_engineT, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 90)
+    tmpl_loco_saemaeul(80, 90)
 }
 
 spriteset(set_DHC_3_purchase, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_purchase_for_dualhead(0, 120)
+    tmpl_purchase_common_dualhead(0, 120)
 }
 spriteset(set_DHC_3_engineH, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 120)
+    tmpl_loco_saemaeul(80, 120)
 }
 spriteset(set_DHC_3_engineT, "./src/locomotive/saemaeul/DHC.png") {
-    tmpl_loco_saemaeul(60, 150)
+    tmpl_loco_saemaeul(80, 150)
 }
 
 // Alias of purchase image

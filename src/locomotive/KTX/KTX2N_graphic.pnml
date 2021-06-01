@@ -7,60 +7,60 @@
 // Template
 template tmpl_KTX2N_engine(x, y) {
     [x+0,      y,     8,    23,    -3,   -11]
-    [x+15,     y,    22,    16,   -15,    -7]
-    [x+45,     y,    32,    14,   -16,   -10]
-    [x+95,     y,    22,    18,    -5,    -9]
-    [x+125,    y,     8,    23,    -3,   -11]
+    [x+20,     y,    22,    16,   -15,    -7]
+    [x+50,     y,    32,    14,   -16,   -10]
+    [x+90,     y,    22,    18,    -5,    -9]
+    [x+120,    y,     8,    23,    -3,   -11]
     [x+140,    y,    22,    18,   -16,    -9]
-    [x+175,    y,    32,    14,   -17,   -10]
-    [x+225,    y,    22,    16,    -6,    -7]
+    [x+170,    y,    32,    14,   -17,   -10]
+    [x+210,    y,    22,    16,    -6,    -7]
 }
 template tmpl_KTX2N_engine_r(x, y) {
-    [x+125,    y,     8,    23,    -3,   -11]
+    [x+120,    y,     8,    23,    -3,   -11]
     [x+140,    y,    22,    16,   -15,    -7]
-    [x+175,    y,    32,    14,   -16,   -10]
-    [x+225,    y,    22,    18,    -5,    -9]
+    [x+170,    y,    32,    14,   -16,   -10]
+    [x+210,    y,    22,    18,    -5,    -9]
     [x+0,      y,     8,    23,    -3,   -11]
-    [x+15,     y,    22,    18,   -16,    -9]
-    [x+45,     y,    32,    14,   -17,   -10]
-    [x+95,     y,    22,    16,    -6,    -7]
+    [x+20,     y,    22,    18,   -16,    -9]
+    [x+50,     y,    32,    14,   -17,   -10]
+    [x+90,     y,    22,    16,    -6,    -7]
 }
 
 // KTX2N (KTX-Sancheon)
 spriteset(set_KTX2N_purchase, "./src/locomotive/KTX/KTX2N.png") {
-    tmpl_purchase_for_dualhead(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 spriteset(set_KTX2N_engineH, "./src/locomotive/KTX/KTX2N.png") {   // PC1
-    tmpl_KTX2N_engine(60, 0)
+    tmpl_KTX2N_engine(80, 0)
 }
 spriteset(set_KTX2N_wagon_1, "./src/locomotive/KTX/KTX2N.png") {   // T1
-    tmpl_KTXloco_power(60, 30)
+    tmpl_KTXloco_power(80, 30)
 }
 spriteset(set_KTX2N_wagon_express, "./src/locomotive/KTX/KTX2N.png") {   // T3, express car
-    tmpl_KTXloco_wagon(60, 60)
+    tmpl_KTXloco_wagon(80, 60)
 }
 spriteset(set_KTX2N_wagon_express_r, "./src/locomotive/KTX/KTX2N.png") {   // T3, express car (reverse)
-    tmpl_KTXloco_wagon_r(60, 60)
+    tmpl_KTXloco_wagon_r(80, 60)
 }
 spriteset(set_KTX2N_wagon_middle, "./src/locomotive/KTX/KTX2N.png") {  // T2, T4 ~ T7
-    tmpl_KTXloco_wagon(60, 90)
+    tmpl_KTXloco_wagon(80, 90)
 }
 spriteset(set_KTX2N_wagon_8, "./src/locomotive/KTX/KTX2N.png") {   // T8
-    tmpl_KTXloco_power(60, 120)
+    tmpl_KTXloco_power(80, 120)
 }
 spriteset(set_KTX2N_engineT, "./src/locomotive/KTX/KTX2N.png") {   // PC2
-    tmpl_KTX2N_engine_r(60, 150)
+    tmpl_KTX2N_engine_r(80, 150)
 }
 
 // KTX-Sancheon for 2018 Pyeongchang Olympic
 spriteset(set_KTX2N_PEYONGCHANG_purchase, "./src/locomotive/KTX/KTX2N_PYEONGCHANG.png") {
-    tmpl_purchase_for_dualhead(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 spriteset(set_KTX2N_PYEONGCHANG_engineH, "./src/locomotive/KTX/KTX2N_PYEONGCHANG.png") {   // PC1
-    tmpl_KTX2N_engine(60, 0)
+    tmpl_KTX2N_engine(80, 0)
 }
 spriteset(set_KTX2N_PYEONGCHANG_engineT, "./src/locomotive/KTX/KTX2N_PYEONGCHANG.png") {   // PC2
-    tmpl_KTX2N_engine_r(60, 30)
+    tmpl_KTX2N_engine_r(80, 30)
 }
 
 // Alias of purchase image

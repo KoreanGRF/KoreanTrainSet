@@ -6,40 +6,40 @@
 
 // Template
 template tmpl_MIKA3(x, y) {
-    [x,     y,    8,     20,    -3,    -9]
-    [x+15,  y,    20,    16,   -13,    -8]
-    [x+45,  y,    28,    12,   -14,    -8]
-    [x+95,  y,    20,    17,    -5,    -9]
-    [x+125, y,    8,     20,    -3,    -9]
-    [x+140, y,    20,    17,   -14,    -9]
-    [x+175, y,    28,    12,   -15,    -8]
-    [x+225, y,    20,    16,    -6,    -8]
+    [x+0,     y,    8,     20,    -3,    -9]
+    [x+20,    y,    20,    16,   -13,    -8]
+    [x+50,    y,    28,    12,   -14,    -8]
+    [x+90,    y,    20,    17,    -5,    -9]
+    [x+120,   y,    8,     20,    -3,    -9]
+    [x+140,   y,    20,    17,   -14,    -9]
+    [x+170,   y,    28,    12,   -15,    -8]
+    [x+210,   y,    20,    16,    -6,    -8]
 }
 template tmpl_MIKA3_tender(x, y) {
-    [x,     y,    8,     13,    -3,    -7]
-    [x+15,  y,    12,    12,    -6,    -7]
-    [x+45,  y,    14,    11,    -1,    -7]
-    [x+95,  y,    12,    11,     2,    -4]
-    [x+125, y,    8,     13,    -3,    -1]
-    [x+140, y,    12,    11,   -13,    -4]
-    [x+175, y,    14,    11,   -14,    -7]
-    [x+225, y,    12,    12,    -5,    -7]
+    [x+0,     y,    8,     13,    -3,    -7]
+    [x+20,    y,    12,    12,    -6,    -7]
+    [x+50,    y,    14,    11,    -1,    -7]
+    [x+90,    y,    12,    11,     2,    -4]
+    [x+120,   y,    8,     13,    -3,    -1]
+    [x+140,   y,    12,    11,   -13,    -4]
+    [x+170,   y,    14,    11,   -14,    -7]
+    [x+210,   y,    12,    12,    -5,    -7]
 }
 spriteset(set_MIKA3_purchase, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_purchase_detail(0, 0, 43, 15, -17, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_MIKA3_engine_1, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3(60, 0)
+    tmpl_MIKA3(80, 0)
 }
 spriteset(set_MIKA3_engine_2, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3(60, 30)
+    tmpl_MIKA3(80, 30)
 }
 spriteset(set_MIKA3_engine_3, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3(60, 60)
+    tmpl_MIKA3(80, 60)
 }
 spriteset(set_MIKA3_engine_4, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3(60, 90)
+    tmpl_MIKA3(80, 90)
 }
 spriteset(set_MIKA3_tender, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3_tender(60, 120)
+    tmpl_MIKA3_tender(80, 120)
 }

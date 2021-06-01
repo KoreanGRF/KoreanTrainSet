@@ -6,34 +6,34 @@
 
 // Graphics
 spriteset(set_FLAT_CAR_BROWN_empty_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 0)
+    tmpl_flat_car_container(80, 0)
 }
 spriteset(set_FLAT_CAR_BROWN_40ft_loaded_01_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 30)
+    tmpl_flat_car_container(80, 30)
 }
 spriteset(set_FLAT_CAR_BROWN_40ft_loaded_02_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 60)
+    tmpl_flat_car_container(80, 60)
 }
 spriteset(set_FLAT_CAR_BROWN_40ft_loaded_03_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 90)
+    tmpl_flat_car_container(80, 90)
 }
 spriteset(set_FLAT_CAR_BROWN_40ft_loaded_04_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 120)
+    tmpl_flat_car_container(80, 120)
 }
 spriteset(set_FLAT_CAR_BROWN_40ft_loaded_05_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 150)
+    tmpl_flat_car_container(80, 150)
 }
 spriteset(set_FLAT_CAR_BROWN_40ft_loaded_06_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 180)
+    tmpl_flat_car_container(80, 180)
 }
 spriteset(set_FLAT_CAR_BROWN_40ft_loaded_07_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 210)
+    tmpl_flat_car_container(80, 210)
 }
 spriteset(set_FLAT_CAR_BROWN_40ft_loaded_08_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 240)
+    tmpl_flat_car_container(80, 240)
 }
 spriteset(set_FLAT_CAR_BROWN_40ft_loaded_09_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 270)
+    tmpl_flat_car_container(80, 270)
 }
 spritegroup sg_FLAT_CAR_BROWN_40ft_01_wagon {
     loading: [
@@ -128,114 +128,114 @@ spritegroup sg_FLAT_CAR_BROWN_40ft_09_wagon {
 
 // Graphics - loading
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_01_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 300)
+    tmpl_flat_car_container(80, 300)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_02_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 330)
+    tmpl_flat_car_container(80, 330)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_03_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 360)
+    tmpl_flat_car_container(80, 360)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_04_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 390)
+    tmpl_flat_car_container(80, 390)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_05_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 420)
+    tmpl_flat_car_container(80, 420)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_06_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 450)
+    tmpl_flat_car_container(80, 450)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_07_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 480)
+    tmpl_flat_car_container(80, 480)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_08_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 510)
+    tmpl_flat_car_container(80, 510)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_09_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 540)
+    tmpl_flat_car_container(80, 540)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_10_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 570)
+    tmpl_flat_car_container(80, 570)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_11_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 600)
+    tmpl_flat_car_container(80, 600)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_12_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 630)
+    tmpl_flat_car_container(80, 630)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_13_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 660)
+    tmpl_flat_car_container(80, 660)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_14_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 690)
+    tmpl_flat_car_container(80, 690)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_15_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 720)
+    tmpl_flat_car_container(80, 720)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_16_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 750)
+    tmpl_flat_car_container(80, 750)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_17_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 780)
+    tmpl_flat_car_container(80, 780)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loading_18_wagon, "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(60, 810)
+    tmpl_flat_car_container(80, 810)
 }
 
 // Graphic - loaded
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_01_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 300)
+    tmpl_flat_car_container(350, 300)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_02_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 330)
+    tmpl_flat_car_container(350, 330)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_03_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 360)
+    tmpl_flat_car_container(350, 360)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_04_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 390)
+    tmpl_flat_car_container(350, 390)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_05_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 420)
+    tmpl_flat_car_container(350, 420)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_06_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 450)
+    tmpl_flat_car_container(350, 450)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_07_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 480)
+    tmpl_flat_car_container(350, 480)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_08_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 510)
+    tmpl_flat_car_container(350, 510)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_09_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 540)
+    tmpl_flat_car_container(350, 540)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_10_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 570)
+    tmpl_flat_car_container(350, 570)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_11_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 600)
+    tmpl_flat_car_container(350, 600)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_12_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 630)
+    tmpl_flat_car_container(350, 630)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_13_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 660)
+    tmpl_flat_car_container(350, 660)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_14_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 690)
+    tmpl_flat_car_container(350, 690)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_15_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 720)
+    tmpl_flat_car_container(350, 720)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_16_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 750)
+    tmpl_flat_car_container(350, 750)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_17_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 780)
+    tmpl_flat_car_container(350, 780)
 }
 spriteset(set_FLAT_CAR_BROWN_20ft_loaded_18_wagon,  "./src/wagon/flat_car/FLAT_CAR_BROWN.png") {
-    tmpl_flat_car_container(300, 810)
+    tmpl_flat_car_container(350, 810)
 }
 
 spritegroup sg_FLAT_CAR_BROWN_20ft_01_wagon {

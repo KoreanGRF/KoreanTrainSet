@@ -6,36 +6,36 @@
 
 // Template
 template tmpl_K4x00(x, y) {
-    [x,        y,     8,    19,    -3,   -9]
-    [x+15,     y,    18,    14,    -9,   -8]
-    [x+45,     y,    23,    12,    -8,   -8]
-    [x+95,     y,    18,    15,    -2,   -6]
-    [x+125,    y,     8,    20,    -3,   -9]
+    [x+0,      y,     8,    19,    -3,   -9]
+    [x+20,     y,    18,    14,    -9,   -8]
+    [x+50,     y,    23,    12,    -8,   -8]
+    [x+90,     y,    18,    15,    -2,   -6]
+    [x+120,    y,     8,    20,    -3,   -9]
     [x+140,    y,    18,    15,   -15,   -5]
-    [x+175,    y,    23,    12,   -16,   -8]
-    [x+225,    y,    18,    14,    -7,   -7]
+    [x+170,    y,    23,    12,   -16,   -8]
+    [x+210,    y,    18,    14,    -7,   -7]
 }
 
 // K4x00
 spriteset(set_K4x00_1_purchase, "./src/locomotive/K4x00/K4x00.png") {
-    tmpl_purchase_for_singlehead(0, 0)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_K4x00_1_loco, "./src/locomotive/K4x00/K4x00.png") {   // Green & Yellow
-    tmpl_K4x00(60, 0)
+    tmpl_K4x00(80, 0)
 }
 
 spriteset(set_K4x00_2_purchase, "./src/locomotive/K4x00/K4x00.png") {
-    tmpl_purchase_for_singlehead(0, 30)
+    tmpl_purchase_common(0, 30)
 }
 spriteset(set_K4x00_2_loco, "./src/locomotive/K4x00/K4x00.png") {   // Red & White & Blue print
-    tmpl_K4x00(60, 30)
+    tmpl_K4x00(80, 30)
 }
 
 spriteset(set_K4x00_V_TRAIN_purchase, "./src/locomotive/K4x00/K4x00.png") {
-    tmpl_purchase_for_singlehead(0, 60)
+    tmpl_purchase_common(0, 60)
 }
 spriteset(set_K4x00_V_TRAIN_loco, "./src/locomotive/K4x00/K4x00.png") {   // V-train
-    tmpl_K4x00(60, 60)
+    tmpl_K4x00(80, 60)
 }
 
 // Alias of purchase image

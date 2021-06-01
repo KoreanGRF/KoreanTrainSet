@@ -18,7 +18,7 @@ spriteset(set_BUSAN_METRO_1K_1ST_engineT, "./src/metro/busan_metro_1/BUSAN_METRO
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_BUSAN_METRO_1K_1ST_purchase, "./src/metro/busan_metro_1/BUSAN_METRO_1K_1ST.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // BUSAN_METRO_1K_2ND
@@ -35,7 +35,7 @@ spriteset(set_BUSAN_METRO_1K_2ND_engineT, "./src/metro/busan_metro_1/BUSAN_METRO
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_BUSAN_METRO_1K_2ND_purchase, "./src/metro/busan_metro_1/BUSAN_METRO_1K_2ND.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // Alias of purchase image

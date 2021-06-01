@@ -6,184 +6,184 @@
 
 // Template
 template tmpl_CDC(x, y) {
-    [x,     y,    8,     22,    -3,   -11]
-    [x+15,  y,    21,    16,    -14,   -8]
-    [x+45,  y,    31,    12,    -16,   -8]
-    [x+95,  y,    21,    17,    -6,    -8]
-    [x+125, y,    8,     22,    -3,   -11]
-    [x+140, y,    21,    17,    -14,   -8]
-    [x+175, y,    32,    12,    -17,   -8]
-    [x+225, y,    21,    16,    -6,    -8]
+    [x+0,     y,    8,     22,    -3,   -11]
+    [x+20,    y,    21,    16,    -14,   -8]
+    [x+50,    y,    31,    12,    -16,   -8]
+    [x+90,    y,    21,    17,    -6,    -8]
+    [x+120,   y,    8,     22,    -3,   -11]
+    [x+140,   y,    21,    17,    -14,   -8]
+    [x+170,   y,    32,    12,    -17,   -8]
+    [x+210,   y,    21,    16,    -6,    -8]
 }
 template tmpl_CDC_r(x, y) {
-    [x+125, y,    8,     22,    -3,   -11]
-    [x+140, y,    21,    17,    -14,   -8]
-    [x+175, y,    32,    12,    -17,   -8]
-    [x+225, y,    21,    16,    -6,    -8]
-    [x,     y,    8,     22,    -3,   -11]
-    [x+15,  y,    21,    16,    -14,   -8]
-    [x+45,  y,    31,    12,    -16,   -8]
-    [x+95,  y,    21,    17,    -6,    -8]
+    [x+120,   y,    8,     22,    -3,   -11]
+    [x+140,   y,    21,    17,    -14,   -8]
+    [x+170,   y,    32,    12,    -17,   -8]
+    [x+210,   y,    21,    16,    -6,    -8]
+    [x+0,     y,    8,     22,    -3,   -11]
+    [x+20,    y,    21,    16,    -14,   -8]
+    [x+50,    y,    31,    12,    -16,   -8]
+    [x+90,    y,    21,    17,    -6,    -8]
 }
 
 // Garden (꽃동네)
 spriteset(set_CDC_GARDEN_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 spriteset(set_CDC_GARDEN_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 0)
+    tmpl_CDC(80, 0)
 }
 spriteset(set_CDC_GARDEN_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 0)
+    tmpl_CDC(80, 0)
 }
 spriteset(set_CDC_GARDEN_wagon, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 0)
+    tmpl_wagon_by_coor(350, 0)
 }
 
 // Dolphin (돌고래)
 spriteset(set_CDC_DOLPHIN_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 30)
+    tmpl_purchase_common_dualhead(0, 30)
 }
 spriteset(set_CDC_DOLPHIN_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 30)
+    tmpl_CDC(80, 30)
 }        
 spriteset(set_CDC_DOLPHIN_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 30)
+    tmpl_CDC(80, 30)
 }
 spriteset(set_CDC_DOLPHIN_wagon, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 30)
+    tmpl_wagon_by_coor(350, 30)
 }
 
 // Seaside (바다열차 청색)
 spriteset(set_CDC_SEASIDE_BLUE_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 60)
+    tmpl_purchase_common_dualhead(0, 60)
 }
 spriteset(set_CDC_SEASIDE_BLUE_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 60)
+    tmpl_CDC(80, 60)
 }
 spriteset(set_CDC_SEASIDE_BLUE_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 60)
+    tmpl_CDC(80, 60)
 }
 spriteset(set_CDC_SEASIDE_BLUE_wagon, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 60)
+    tmpl_wagon_by_coor(350, 60)
 }
 
 // Seaside (바다열차: 적색 & 흰색)
 spriteset(set_CDC_SEASIDE_RED_WHITE_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 90)
+    tmpl_purchase_common_dualhead(0, 90)
 }
 spriteset(set_CDC_SEASIDE_RED_WHITE_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 90)
+    tmpl_CDC(80, 90)
 }
 spriteset(set_CDC_SEASIDE_RED_WHITE_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 90)
+    tmpl_CDC(80, 90)
 }
 spriteset(set_CDC_SEASIDE_RED_WHITE_wagon, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 90)
+    tmpl_wagon_by_coor(350, 90)
 }
 
 // Baekje (백제왕관)
 spriteset(set_CDC_BAEKJE_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 120)
+    tmpl_purchase_common_dualhead(0, 120)
 }
 spriteset(set_CDC_BAEKJE_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 120)
+    tmpl_CDC(80, 120)
 }
 spriteset(set_CDC_BAEKJE_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 120)
+    tmpl_CDC(80, 120)
 }
 spriteset(set_CDC_BAEKJE_wagon, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 120)
+    tmpl_wagon_by_coor(350, 120)
 }
 
 // KNR: Green & Yellow (구 철도청: 녹색 & 황색)
 spriteset(set_CDC_GREEN_YELLOW_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 150)
+    tmpl_purchase_common_dualhead(0, 150)
 }
 spriteset(set_CDC_GREEN_YELLOW_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 150)
+    tmpl_CDC(80, 150)
 }
 spriteset(set_CDC_GREEN_YELLOW_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 150)
+    tmpl_CDC(80, 150)
 }
 spriteset(set_CDC_GREEN_YELLOW_wagon, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 150)
+    tmpl_wagon_by_coor(350, 150)
 }
 
 // RDC Mugunghwa (RDC 무궁화)
 spriteset(set_CDC_MUGUNGHWA_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 180)
+    tmpl_purchase_common_dualhead(0, 180)
 }
 spriteset(set_CDC_MUGUNGHWA_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 180)
+    tmpl_CDC(80, 180)
 }
 spriteset(set_CDC_MUGUNGHWA_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 180)
+    tmpl_CDC(80, 180)
 }
 spriteset(set_CDC_MUGUNGHWA_wagon, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 180)
+    tmpl_wagon_by_coor(350, 180)
 }
 
 // Current (현재 도색)
 spriteset(set_CDC_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 210)
+    tmpl_purchase_common_dualhead(0, 210)
 }
 spriteset(set_CDC_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 210)
+    tmpl_CDC(80, 210)
 }
 spriteset(set_CDC_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 210)
+    tmpl_CDC(80, 210)
 }
 spriteset(set_CDC_wagon, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 210)
+    tmpl_wagon_by_coor(350, 210)
 }
 
 // DMZ-train
 spriteset(set_CDC_DMZTRAIN_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 240)
+    tmpl_purchase_common_dualhead(0, 240)
 }
 spriteset(set_CDC_DMZTRAIN_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 240)
+    tmpl_CDC(80, 240)
 }
 spriteset(set_CDC_DMZTRAIN_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 270)
+    tmpl_CDC(80, 270)
 }
 spriteset(set_CDC_DMZTRAIN_wagon, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 240)
+    tmpl_wagon_by_coor(350, 240)
 }
 
 // Gyeongbuk theme (경북순환테마열차(구))
 spriteset(set_CDC_GYEONGBUK1_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 300)
+    tmpl_purchase_common_dualhead(0, 300)
 }
 spriteset(set_CDC_GYEONGBUK1_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 300)
+    tmpl_CDC(80, 300)
 }
 spriteset(set_CDC_GYEONGBUK1_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 330)
+    tmpl_CDC(80, 330)
 }
 spriteset(set_CDC_GYEONGBUK1_wagon1, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 300)
+    tmpl_wagon_by_coor(350, 300)
 }
 spriteset(set_CDC_GYEONGBUK1_wagon2, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 330)
+    tmpl_wagon_by_coor(350, 330)
 }
 
 // Gyeongbuk theme (경북순환테마열차(신))
 spriteset(set_CDC_GYEONGBUK2_purchase, "./src/locomotive/CDC/CDC.png") {
-    tmpl_purchase_for_dualhead(0, 360)
+    tmpl_purchase_common_dualhead(0, 360)
 }
 spriteset(set_CDC_GYEONGBUK2_engineH, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 360)
+    tmpl_CDC(80, 360)
 }
 spriteset(set_CDC_GYEONGBUK2_engineT, "./src/locomotive/CDC/CDC.png") {
-    tmpl_CDC(60, 390)
+    tmpl_CDC(80, 390)
 }
 spriteset(set_CDC_GYEONGBUK2_wagon1, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 360)
+    tmpl_wagon_by_coor(350, 360)
 }
 spriteset(set_CDC_GYEONGBUK2_wagon2, "./src/locomotive/CDC/CDC.png") {
-    tmpl_wagon_by_coor(340, 390)
+    tmpl_wagon_by_coor(350, 390)
 }
 
 // Alias of purchase image

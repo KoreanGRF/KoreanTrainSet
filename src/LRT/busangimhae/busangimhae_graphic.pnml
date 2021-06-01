@@ -36,7 +36,7 @@ spriteset(set_BUSANGIMHAE_engineT, "./src/LRT/busangimhae/BUSANGIMHAE.png") {
 //     [80+210,    55,    21,    17,    -6,    -10]
 // }
 spriteset(set_BUSANGIMHAE_purchase, "./src/LRT/busangimhae/BUSANGIMHAE.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // Alias of purchase image

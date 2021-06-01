@@ -11,66 +11,66 @@ template tmpl_K7x00(x, y) {
 
 // Red & White & Blue (current)
 spriteset(set_K7x00_RED_WHITE_BLUE_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_purchase_for_singlehead(0, 0)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_K7x00_RED_WHITE_BLUE, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_K7x00(60, 0)
+    tmpl_K7x00(80, 0)
 }
 
 // Blue & White
 spriteset(set_K7x00_BLUE_WHITE_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_purchase_for_singlehead(0, 0)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_K7x00_BLUE_WHITE, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_K7x00(60, 90)
+    tmpl_K7x00(80, 90)
 }
 
 // Green & Yellow
 spriteset(set_K7x00_GREEN_YELLOW_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_purchase_for_singlehead(0, 120)
+    tmpl_purchase_common(0, 120)
 }
 spriteset(set_K7x00_GREEN_YELLOW, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_K7x00(60, 120)
+    tmpl_K7x00(80, 120)
 }
 
 // Black & Orange
 spriteset(set_K7x00_BLACK_ORANGE_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_purchase_for_singlehead(0, 60)
+    tmpl_purchase_common(0, 60)
 }
 spriteset(set_K7x00_BLACK_ORANGE, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_K7x00(60, 60)
+    tmpl_K7x00(80, 60)
 }
 
 // Cargo
 spriteset(set_K7x00_CARGO_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_purchase_for_singlehead(0, 150)
+    tmpl_purchase_common(0, 150)
 }
 spriteset(set_K7x00_CARGO, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_K7x00(60, 150)
+    tmpl_K7x00(80, 150)
 }
 
 // Haerang
 spriteset(set_K7x00_HAERANG_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_purchase_for_singlehead(0, 180)
+    tmpl_purchase_common(0, 180)
 }
 spriteset(set_K7x00_HAERANG, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_K7x00(60, 180)
+    tmpl_K7x00(80, 180)
 }
 
 // G-train
 spriteset(set_K7x00_G_TRAIN_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_purchase_for_singlehead(0, 210)
+    tmpl_purchase_common(0, 210)
 }
 spriteset(set_K7x00_G_TRAIN, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_K7x00(60, 210)
+    tmpl_K7x00(80, 210)
 }
 
 // S-train
 spriteset(set_K7x00_S_TRAIN_purchase, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_purchase_for_singlehead(0, 240)
+    tmpl_purchase_common(0, 240)
 }
 spriteset(set_K7x00_S_TRAIN, "./src/locomotive/K7x00/K7x00.png") {
-    tmpl_K7x00(60, 240)
+    tmpl_K7x00(80, 240)
 }
 
 // Alias of purchase image

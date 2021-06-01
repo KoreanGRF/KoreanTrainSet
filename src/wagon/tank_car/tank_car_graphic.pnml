@@ -8,32 +8,32 @@
  */
 // Template
 template tmpl_tank_car(x, y) {
-    [x+0,     y,     8,    20,     -3,    -10]
-    [x+15,    y,    19,    16,    -13,     -9]
-    [x+45,    y,    28,    11,    -13,     -7]
-    [x+80,    y,    19,    16,     -4,     -8]
+    [x+0,    y,     8,    20,     -3,    -10]
+    [x+20,   y,    19,    16,    -13,     -9]
+    [x+50,   y,    28,    11,    -13,     -7]
+    [x+90,   y,    19,    16,     -4,     -8]
 }
 
 // Graphic
 spriteset(set_TANK_CAR_1_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
-    tmpl_purchase_detail(0, 0, 28, 15, -15, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_TANK_CAR_1_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
-    tmpl_tank_car(60, 0)
+    tmpl_tank_car(80, 0)
 }
 
 spriteset(set_TANK_CAR_2_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
-    tmpl_purchase_detail(0, 30, 28, 15, -15, -9)
+    tmpl_purchase_common(0, 30)
 }
 spriteset(set_TANK_CAR_2_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
-    tmpl_tank_car(60, 30)
+    tmpl_tank_car(80, 30)
 }
 
 spriteset(set_TANK_CAR_3_purchase, "./src/wagon/tank_car/TANK_CAR.png") {
-    tmpl_purchase_detail(0, 60, 28, 15, -15, -9)
+    tmpl_purchase_common(0, 60)
 }
 spriteset(set_TANK_CAR_3_wagon, "./src/wagon/tank_car/TANK_CAR.png") {
-    tmpl_tank_car(60, 60)
+    tmpl_tank_car(80, 60)
 }
 
 // Alias of purchase image

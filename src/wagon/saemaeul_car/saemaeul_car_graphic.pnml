@@ -6,52 +6,52 @@
 
 // Graphic
 spriteset(set_SAEMAEUL_CAR_1_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_purchase_detail(0, 0, 31, 15, -16, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_SAEMAEUL_CAR_1, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_wagon_by_coor_8dir(60, 0)
+    tmpl_wagon_by_coor_8dir(80, 0)
 }
 
 spriteset(set_SAEMAEUL_CAR_executive_1_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_purchase_detail(0, 30, 31, 15, -16, -9)
+    tmpl_purchase_common(0, 30)
 }
 spriteset(set_SAEMAEUL_CAR_executive_1, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_wagon_by_coor_8dir(60, 30)
+    tmpl_wagon_by_coor_8dir(80, 30)
 }
 
 spriteset(set_SAEMAEUL_CAR_2_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_purchase_detail(0, 60, 31, 15, -16, -9)
+    tmpl_purchase_common(0, 60)
 }
 spriteset(set_SAEMAEUL_CAR_2, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_wagon_by_coor_8dir(60, 60)
+    tmpl_wagon_by_coor_8dir(80, 60)
 }
 
 spriteset(set_SAEMAEUL_CAR_executive_2_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_purchase_detail(0, 90, 31, 15, -16, -9)
+    tmpl_purchase_common(0, 90)
 }
 spriteset(set_SAEMAEUL_CAR_executive_2, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_wagon_by_coor_8dir(60, 90)
+    tmpl_wagon_by_coor_8dir(80, 90)
 }
 
 spriteset(set_SAEMAEUL_CAR_3_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_purchase_detail(0, 120, 31, 15, -16, -9)
+    tmpl_purchase_common(0, 120)
 }
 spriteset(set_SAEMAEUL_CAR_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_wagon_by_coor_8dir(60, 120)
+    tmpl_wagon_by_coor_8dir(80, 120)
 }
 
 spriteset(set_SAEMAEUL_CAR_executive_3_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_purchase_detail(0, 150, 31, 15, -16, -9)
+    tmpl_purchase_common(0, 150)
 }
 spriteset(set_SAEMAEUL_CAR_executive_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_wagon_by_coor_8dir(60, 150)
+    tmpl_wagon_by_coor_8dir(80, 150)
 }
 
 spriteset(set_SAEMAEUL_CAR_ITX_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_purchase_detail(0, 180, 31, 15, -16, -9)
+    tmpl_purchase_common(0, 180)
 }
 spriteset(set_SAEMAEUL_CAR_ITX, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
-    tmpl_wagon_by_coor_8dir(60, 180)
+    tmpl_wagon_by_coor_8dir(80, 180)
 }
 
 // Alias of purchase image

@@ -9,36 +9,36 @@
 
 // Template
 template tmpl_hopper_car(x, y) {
-    [x,      y,     8,    19,     -3,    -11]
-    [x+15,   y,    20,    15,    -13,     -7]
-    [x+45,   y,    25,    10,     -9,     -6]
-    [x+80,   y,    20,    15,     -4,     -6]
-    [x,      y,     8,    19,     -3,     -8]
-    [x+15,   y,    20,    15,    -15,     -6]
-    [x+45,   y,    25,    10,    -17,     -6]
-    [x+80,   y,    20,    15,     -6,     -7]
+    [x+0,    y,     8,    19,     -3,    -11]
+    [x+20,   y,    20,    15,    -13,     -7]
+    [x+50,   y,    25,    10,     -9,     -6]
+    [x+90,   y,    20,    15,     -4,     -6]
+    [x+0,    y,     8,    19,     -3,     -8]
+    [x+20,   y,    20,    15,    -15,     -6]
+    [x+50,   y,    25,    10,    -17,     -6]
+    [x+90,   y,    20,    15,     -6,     -7]
 }
 
 // Graphic
 spriteset(set_HOPPER_CAR_A_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
-    tmpl_purchase_detail(0, 0, 25, 15, -13, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_HOPPER_CAR_empty_A_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
-    tmpl_hopper_car(60, 0)
+    tmpl_hopper_car(80, 0)
 }
 
 spriteset(set_HOPPER_CAR_B_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
-    tmpl_purchase_detail(0, 30, 25, 15, -13, -9)
+    tmpl_purchase_common(0, 30)
 }
 spriteset(set_HOPPER_CAR_empty_B_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
-    tmpl_hopper_car(60, 30)
+    tmpl_hopper_car(80, 30)
 }
 
 spriteset(set_HOPPER_CAR_C_purchase, "./src/wagon/hopper_car/HOPPER_CAR.png") {
-    tmpl_purchase_detail(0, 60, 25, 15, -13, -9)
+    tmpl_purchase_common(0, 60)
 }
 spriteset(set_HOPPER_CAR_empty_C_wagon, "./src/wagon/hopper_car/HOPPER_CAR.png") {
-    tmpl_hopper_car(60, 60)
+    tmpl_hopper_car(80, 60)
 }
 
 // Include

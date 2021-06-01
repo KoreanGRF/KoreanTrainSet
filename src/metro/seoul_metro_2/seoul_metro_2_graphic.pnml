@@ -18,7 +18,7 @@ spriteset(set_2K_MELCO_engineT, "./src/metro/seoul_metro_2/2K_MELCO.png") {
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_2K_MELCO_purchase, "./src/metro/seoul_metro_2/2K_MELCO.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 2K_CHOPPER
@@ -35,7 +35,7 @@ spriteset(set_2K_CHOPPER_engineT, "./src/metro/seoul_metro_2/2K_CHOPPER.png") {
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_2K_CHOPPER_purchase, "./src/metro/seoul_metro_2/2K_CHOPPER.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 2K_VVVF_1ST
@@ -52,7 +52,7 @@ spriteset(set_2K_VVVF_1ST_engineT, "./src/metro/seoul_metro_2/2K_VVVF_1ST.png") 
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_2K_VVVF_1ST_purchase, "./src/metro/seoul_metro_2/2K_VVVF_1ST.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 2K_VVVF_2ND
@@ -69,7 +69,7 @@ spriteset(set_2K_VVVF_2ND_engineT, "./src/metro/seoul_metro_2/2K_VVVF_2ND.png") 
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_2K_VVVF_2ND_purchase, "./src/metro/seoul_metro_2/2K_VVVF_2ND.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 2K_VVVF_3RD
@@ -86,7 +86,7 @@ spriteset(set_2K_VVVF_3RD_engineT, "./src/metro/seoul_metro_2/2K_VVVF_3RD.png") 
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_2K_VVVF_3RD_purchase, "./src/metro/seoul_metro_2/2K_VVVF_3RD.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 2K_VVVF_4TH
@@ -103,7 +103,7 @@ spriteset(set_2K_VVVF_4TH_engineT, "./src/metro/seoul_metro_2/2K_VVVF_4TH.png") 
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_2K_VVVF_4TH_purchase, "./src/metro/seoul_metro_2/2K_VVVF_4TH.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // 2K_RHEO_MODIFIED
@@ -120,7 +120,7 @@ spriteset(set_2K_RHEO_MODIFIED_engineT, "./src/metro/seoul_metro_2/2K_RHEO_MODIF
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_2K_RHEO_MODIFIED_purchase, "./src/metro/seoul_metro_2/2K_RHEO_MODIFIED.png") {
-    tmpl_purchase_common(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // Alias of purchase image

@@ -4,10 +4,9 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-
 // ITX-Cheongchun
 spriteset(set_ITX_CHEONGCHUN_purchase, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
-    tmpl_purchase_for_dualhead(0, 0)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 spriteset(set_ITX_CHEONGCHUN_engineH, "./src/metro/gyeongchun/368K_ITX_CHEONGCHUN.png") {
     [80,       0,      8,    22,     -3,   -11]
