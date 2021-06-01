@@ -30,7 +30,7 @@ spriteset(set_BUSAN_METRO_4_engineT, "./src/LRT/busan_metro_4/BUSAN_4K.png") {
     tmpl_BUSAN_METRO_4(80, 90)
 }
 spriteset(set_BUSAN_METRO_4_purchase, "./src/LRT/busan_metro_4/BUSAN_4K.png") {
-    tmpl_purchase_detail(0, 0, 50, 14, -12, -6)
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // Alias of purchase image

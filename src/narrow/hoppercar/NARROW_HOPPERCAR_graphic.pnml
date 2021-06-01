@@ -8,137 +8,137 @@
  */
 
 template tmpl_NARROW_HOPPERCAR(x, y) {
-    [x,      y,    6,     11,     -2,   -8]
-    [x+15,   y,    11,    10,     -9,   -4]
-    [x+45,   y,    16,     7,     -3,   -4]
-    [x+95,   y,    11,    10,      4,   -2]
-    [x,      y,    6,     11,     -2,   -2]   // It is consist of 4 sprites but provides 8 directions because of offsets
-    [x+15,   y,    11,    10,    -13,   -2]
-    [x+45,   y,    16,     7,    -12,   -4]
-    [x+95,   y,    11,    10,     -1,   -4]
+    [x+0,    y,    6,     11,     -2,   -8]
+    [x+20,   y,    11,    10,     -9,   -4]
+    [x+50,   y,    16,     7,     -3,   -4]
+    [x+90,   y,    11,    10,      4,   -2]
+    [x+0,    y,    6,     11,     -2,   -2]   // It is consist of 4 sprites but provides 8 directions because of offsets
+    [x+20,   y,    11,    10,    -13,   -2]
+    [x+50,   y,    16,     7,    -12,   -4]
+    [x+90,   y,    11,    10,     -1,   -4]
 }
 
 spriteset(set_NARROW_HOPPERCAR_purchase, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_purchase_detail(150, 0, 16, 15, 2, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_NARROW_HOPPERCAR_wagon, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 0)
+    tmpl_NARROW_HOPPERCAR(80, 0)
 }
 
 
 spriteset(set_NARROW_HOPPERCAR_AORE_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 30)
+    tmpl_NARROW_HOPPERCAR(80, 30)
 }
 spriteset(set_NARROW_HOPPERCAR_AORE_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 60)
+    tmpl_NARROW_HOPPERCAR(80, 60)
 }
 spriteset(set_NARROW_HOPPERCAR_BEAN_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 90)
+    tmpl_NARROW_HOPPERCAR(80, 90)
 }
 spriteset(set_NARROW_HOPPERCAR_BEAN_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 120)
+    tmpl_NARROW_HOPPERCAR(80, 120)
 }
 spriteset(set_NARROW_HOPPERCAR_CLAY_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 150)
+    tmpl_NARROW_HOPPERCAR(80, 150)
 }
 spriteset(set_NARROW_HOPPERCAR_CLAY_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 180)
+    tmpl_NARROW_HOPPERCAR(80, 180)
 }
 spriteset(set_NARROW_HOPPERCAR_COAL_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 210)
+    tmpl_NARROW_HOPPERCAR(80, 210)
 }
 spriteset(set_NARROW_HOPPERCAR_COAL_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 240)
+    tmpl_NARROW_HOPPERCAR(80, 240)
 }
 spriteset(set_NARROW_HOPPERCAR_CORE_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 270)
+    tmpl_NARROW_HOPPERCAR(80, 270)
 }
 spriteset(set_NARROW_HOPPERCAR_CORE_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 300)
+    tmpl_NARROW_HOPPERCAR(80, 300)
 }
 spriteset(set_NARROW_HOPPERCAR_FRUT_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 330)
+    tmpl_NARROW_HOPPERCAR(80, 330)
 }
 spriteset(set_NARROW_HOPPERCAR_FRUT_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 360)
+    tmpl_NARROW_HOPPERCAR(80, 360)
 }
 spriteset(set_NARROW_HOPPERCAR_GOLD_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 390)
+    tmpl_NARROW_HOPPERCAR(80, 390)
 }
 spriteset(set_NARROW_HOPPERCAR_GOLD_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 420)
+    tmpl_NARROW_HOPPERCAR(80, 420)
 }
 spriteset(set_NARROW_HOPPERCAR_GRAI_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 450)
+    tmpl_NARROW_HOPPERCAR(80, 450)
 }
 spriteset(set_NARROW_HOPPERCAR_GRAI_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 480)
+    tmpl_NARROW_HOPPERCAR(80, 480)
 }
 spriteset(set_NARROW_HOPPERCAR_GRVL_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 510)
+    tmpl_NARROW_HOPPERCAR(80, 510)
 }
 spriteset(set_NARROW_HOPPERCAR_GRVL_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 540)
+    tmpl_NARROW_HOPPERCAR(80, 540)
 }
 spriteset(set_NARROW_HOPPERCAR_IORE_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 570)
+    tmpl_NARROW_HOPPERCAR(80, 570)
 }
 spriteset(set_NARROW_HOPPERCAR_IORE_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(0, 600)
+    tmpl_NARROW_HOPPERCAR(80, 600)
 }
 spriteset(set_NARROW_HOPPERCAR_LIME_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 30)
+    tmpl_NARROW_HOPPERCAR(220, 30)
 }
 spriteset(set_NARROW_HOPPERCAR_LIME_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 60)
+    tmpl_NARROW_HOPPERCAR(220, 60)
 }
 spriteset(set_NARROW_HOPPERCAR_MNO2_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 90)
+    tmpl_NARROW_HOPPERCAR(220, 90)
 }
 spriteset(set_NARROW_HOPPERCAR_MNO2_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 120)
+    tmpl_NARROW_HOPPERCAR(220, 120)
 }
 spriteset(set_NARROW_HOPPERCAR_PHOS_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 150)
+    tmpl_NARROW_HOPPERCAR(220, 150)
 }
 spriteset(set_NARROW_HOPPERCAR_PHOS_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 180)
+    tmpl_NARROW_HOPPERCAR(220, 180)
 }
 spriteset(set_NARROW_HOPPERCAR_PORE_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 210)
+    tmpl_NARROW_HOPPERCAR(220, 210)
 }
 spriteset(set_NARROW_HOPPERCAR_PORE_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 240)
+    tmpl_NARROW_HOPPERCAR(220, 240)
 }
 spriteset(set_NARROW_HOPPERCAR_RCYC_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 270)
+    tmpl_NARROW_HOPPERCAR(220, 270)
 }
 spriteset(set_NARROW_HOPPERCAR_RCYC_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 300)
+    tmpl_NARROW_HOPPERCAR(220, 300)
 }
 spriteset(set_NARROW_HOPPERCAR_SALT_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 330)
+    tmpl_NARROW_HOPPERCAR(220, 330)
 }
 spriteset(set_NARROW_HOPPERCAR_SALT_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 360)
+    tmpl_NARROW_HOPPERCAR(220, 360)
 }
 spriteset(set_NARROW_HOPPERCAR_SAND_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 390)
+    tmpl_NARROW_HOPPERCAR(220, 390)
 }
 spriteset(set_NARROW_HOPPERCAR_SAND_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 420)
+    tmpl_NARROW_HOPPERCAR(220, 420)
 }
 spriteset(set_NARROW_HOPPERCAR_SCMT_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 450)
+    tmpl_NARROW_HOPPERCAR(220, 450)
 }
 spriteset(set_NARROW_HOPPERCAR_SCMT_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 480)
+    tmpl_NARROW_HOPPERCAR(220, 480)
 }
 spriteset(set_NARROW_HOPPERCAR_SLAG_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 510)
+    tmpl_NARROW_HOPPERCAR(220, 510)
 }
 spriteset(set_NARROW_HOPPERCAR_SLAG_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
-    tmpl_NARROW_HOPPERCAR(150, 540)
+    tmpl_NARROW_HOPPERCAR(220, 540)
 }
 
 spritegroup sg_NARROW_HOPPERCAR_AORE {

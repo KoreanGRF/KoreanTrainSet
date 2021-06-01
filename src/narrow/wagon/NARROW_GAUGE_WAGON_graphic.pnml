@@ -13,30 +13,30 @@ template tmpl_NARROW_GAUGE_WAGON(x, y) {
 
 // DC trailer (1965~1974)
 spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_1_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
-    tmpl_purchase_detail(0, 0, 24, 15, 2, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_1_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
-    tmpl_NARROW_GAUGE_WAGON(60, 0)
+    tmpl_NARROW_GAUGE_WAGON(80, 0)
 }
 spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_2_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
-    tmpl_purchase_detail(0, 30, 24, 15, 2, -9)
+    tmpl_purchase_common(0, 30)
 }
 spriteset(set_NARROW_GAUGE_WAGON_DC_TRAILER_2_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
-    tmpl_NARROW_GAUGE_WAGON(60, 30)
+    tmpl_NARROW_GAUGE_WAGON(80, 30)
 }
 
 // Blue (1974~?)
 spriteset(set_NARROW_GAUGE_WAGON_BLUE_1_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
-    tmpl_purchase_detail(0, 60, 24, 15, 2, -9)
+    tmpl_purchase_common(0, 60)
 }
 spriteset(set_NARROW_GAUGE_WAGON_BLUE_1_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
-    tmpl_NARROW_GAUGE_WAGON(60, 60)
+    tmpl_NARROW_GAUGE_WAGON(80, 60)
 }
 spriteset(set_NARROW_GAUGE_WAGON_BLUE_2_purchase, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
-    tmpl_purchase_detail(0, 90, 24, 15, 2, -9)
+    tmpl_purchase_common(0, 90)
 }
 spriteset(set_NARROW_GAUGE_WAGON_BLUE_2_wagon, "./src/narrow/wagon/NARROW_GAUGE_WAGON.png") {
-    tmpl_NARROW_GAUGE_WAGON(60, 90)
+    tmpl_NARROW_GAUGE_WAGON(80, 90)
 }
 
 // Alias of purchase image

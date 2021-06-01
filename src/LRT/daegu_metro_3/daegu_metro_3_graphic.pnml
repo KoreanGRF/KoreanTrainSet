@@ -46,7 +46,7 @@ spriteset(set_DAEGU_METRO_3K_2_wagon, "./src/LRT/daegu_metro_3/DAEGU_3K_2.png") 
 
 // Purchase image
 spriteset(set_DAEGU_METRO_3_purchase, "./src/LRT/daegu_metro_3/DAEGU_3K_1.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common_dualhead(0, 0)
 }
 
 // Alias of purchase image

@@ -6,34 +6,34 @@
 
 // Template
 template tmpl_HOKEY7(x, y) {
-    [x,     y,     6,    17,    -2,   -11]
-    [x+15,  y,    15,    12,   -13,    -5]
-    [x+45,  y,    22,     9,    -9,    -6]
-    [x+95,  y,    14,    12,     1,    -5]
-    [x+125, y,     6,    17,    -2,    -6]
-    [x+140, y,    14,    12,   -14,    -4]
-    [x+170, y,    22,     9,   -13,    -6]
-    [x+220, y,    15,    12,    -1,    -5]
+    [x+0,     y,     6,    17,    -2,   -11]
+    [x+20,    y,    15,    12,   -13,    -5]
+    [x+50,    y,    22,     9,    -9,    -6]
+    [x+90,    y,    14,    12,     1,    -5]
+    [x+120,   y,     6,    17,    -2,    -6]
+    [x+140,   y,    14,    12,   -14,    -4]
+    [x+170,   y,    22,     9,   -13,    -6]
+    [x+210,   y,    15,    12,    -1,    -5]
 }
 template tmpl_HOKEY7_tender(x, y) {
-    [x,     y,     6,    11,    -2,    -9]
-    [x+15,  y,     8,     9,    -5,    -5]
-    [x+45,  y,    10,     8,     4,    -5]
-    [x+95,  y,     8,     9,     8,    -1]
-    [x+125, y,     6,    11,    -2,     2]
-    [x+140, y,     8,     9,   -15,     0]
-    [x+170, y,    10,     8,   -14,    -5]
-    [x+220, y,     8,     9,    -2,    -5]
+    [x+0,     y,     6,    11,    -2,    -9]
+    [x+20,    y,     8,     9,    -5,    -5]
+    [x+50,    y,    10,     8,     4,    -5]
+    [x+90,    y,     8,     9,     8,    -1]
+    [x+120,   y,     6,    11,    -2,     2]
+    [x+140,   y,     8,     9,   -15,     0]
+    [x+170,   y,    10,     8,   -14,    -5]
+    [x+210,   y,     8,     9,    -2,    -5]
 }
 spriteset(set_HOKEY7_purchase, "./src/narrow/hokey7/HOKEY7.png") {
-    tmpl_purchase_detail(0, 0, 43, 15, -17, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_HOKEY7_engine_1, "./src/narrow/hokey7/HOKEY7.png") {
-    tmpl_HOKEY7(60, 0)
+    tmpl_HOKEY7(80, 0)
 }
 spriteset(set_HOKEY7_engine_2, "./src/narrow/hokey7/HOKEY7.png") {
-    tmpl_HOKEY7(60, 30)
+    tmpl_HOKEY7(80, 30)
 }
 spriteset(set_HOKEY7_tender, "./src/narrow/hokey7/HOKEY7.png") {
-    tmpl_HOKEY7_tender(60, 60)
+    tmpl_HOKEY7_tender(80, 60)
 }

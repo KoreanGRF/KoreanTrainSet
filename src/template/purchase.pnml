@@ -15,13 +15,3 @@ template tmpl_purchase_common(x, y) {
 template tmpl_purchase_common_dualhead(x, y) {
     tmpl_purchase_detail(x, y, 70, 15, -25, -9)
 }
-template tmpl_purchase_for_singlehead(x, y) {
-    tmpl_purchase_detail(x, y, 50, 15, -25, -9)
-}
-template tmpl_purchase_for_dualhead(x, y) {
-    tmpl_purchase_detail(x, y, 50, 15, -12, -9)
-}
-template tmpl_metro_purchase() {
-    tmpl_purchase_detail(0, 0, 50, 15, -12, -8)
-}
-

@@ -8,21 +8,21 @@
  */
 
 template tmpl_NARROW_BOXCAR(x, y) {
-    [x,      y,    6,     13,     -2,   -9]
-    [x+15,   y,    11,    11,     -9,   -4]
-    [x+45,   y,    16,     9,     -3,   -6]
-    [x+95,   y,    11,    11,      4,   -2]
-    [x+125,  y,    6,     13,     -2,   -3]
+    [x+0,    y,    6,     13,     -2,   -9]
+    [x+20,   y,    11,    11,     -9,   -4]
+    [x+50,   y,    16,     9,     -3,   -6]
+    [x+90,   y,    11,    11,      4,   -2]
+    [x+120,  y,    6,     13,     -2,   -3]
     [x+140,  y,    11,    11,    -14,   -1]
     [x+170,  y,    16,     9,    -12,   -6]
-    [x+220,  y,    11,    11,     -1,   -5]
+    [x+210,  y,    11,    11,     -1,   -5]
 }
 
 spriteset(set_NARROW_BOXCAR_purchase, "./src/narrow/boxcar/NARROW_BOXCAR.png") {
-    tmpl_purchase_detail(0, 0, 16, 15, 2, -9)
+    tmpl_purchase_common(0, 0)
 }
 spriteset(set_NARROW_BOXCAR_wagon, "./src/narrow/boxcar/NARROW_BOXCAR.png") {
-    tmpl_NARROW_BOXCAR(60, 0)
+    tmpl_NARROW_BOXCAR(80, 0)
 }
 
 // Alias of purchase image
