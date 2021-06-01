@@ -9,6 +9,9 @@ template tmpl_purchase_detail(x, y, w, h, offX, offY) {
     [   x,    y,    w,    h, offX, offY]
     [   0,    0,    1,    1,    0,    0]
 }
+template tmpl_purchase_common(x, y) {
+    tmpl_purchase_detail(x, y, 70, 15, -25, -9)
+}
 template tmpl_purchase_for_singlehead(x, y) {
     tmpl_purchase_detail(x, y, 50, 15, -25, -9)
 }
