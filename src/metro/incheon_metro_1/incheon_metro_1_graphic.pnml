@@ -18,7 +18,7 @@ spriteset(set_INCHEON_METRO_1K_VVVF_1ST_wagon_panto, "./src/metro/incheon_metro_
     tmpl_wagon_dblpanto(0, 30)
 }
 spriteset(set_INCHEON_METRO_1K_VVVF_1ST_purchase, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // INCHEON_METRO_1K_VVVF_2ND
@@ -35,7 +35,7 @@ spriteset(set_INCHEON_METRO_1K_VVVF_2ND_wagon_panto, "./src/metro/incheon_metro_
     tmpl_wagon_dblpanto(0, 30)
 }
 spriteset(set_INCHEON_METRO_1K_VVVF_2ND_purchase, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_2ND.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // Alias of purchase image

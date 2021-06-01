@@ -5,9 +5,6 @@
 ------------------------------------------------------------------------------*/
 
 // 361K_VVVF
-spriteset(set_361K_VVVF_purchase, "./src/metro/gyeongchun/361K_VVVF.png") {
-    tmpl_metro_purchase()
-}
 spriteset(set_361K_VVVF_engineH, "./src/metro/gyeongchun/361K_VVVF.png") {
     tmpl_engine_head(0, 0)
 }
@@ -19,6 +16,9 @@ spriteset(set_361K_VVVF_wagon, "./src/metro/gyeongchun/361K_VVVF.png") {
 }
 spriteset(set_361K_VVVF_engineT, "./src/metro/gyeongchun/361K_VVVF.png") {
     tmpl_engine_tail(0, 90)
+}
+spriteset(set_361K_VVVF_purchase, "./src/metro/gyeongchun/361K_VVVF.png") {
+    tmpl_purchase_common(0, 0)
 }
 
 // Alias of purchase image
