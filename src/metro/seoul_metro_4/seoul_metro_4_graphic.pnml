@@ -18,7 +18,7 @@ spriteset(set_341K_VVVF_2ND_1_engineT, "./src/metro/seoul_metro_4/341K_VVVF_2ND_
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_341K_VVVF_2ND_1_purchase, "./src/metro/seoul_metro_4/341K_VVVF_2ND_1.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // 341K_VVVF_1ST_1
@@ -35,7 +35,7 @@ spriteset(set_341K_VVVF_1ST_1_engineT, "./src/metro/seoul_metro_4/341K_VVVF_1ST_
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_341K_VVVF_1ST_1_purchase, "./src/metro/seoul_metro_4/341K_VVVF_1ST_1.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // 341K_VVVF_1ST_2
@@ -52,7 +52,7 @@ spriteset(set_341K_VVVF_1ST_2_engineT, "./src/metro/seoul_metro_4/341K_VVVF_1ST_
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_341K_VVVF_1ST_2_purchase, "./src/metro/seoul_metro_4/341K_VVVF_1ST_2.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // 341K_VVVF_2ND_2
@@ -69,7 +69,7 @@ spriteset(set_341K_VVVF_2ND_2_engineT, "./src/metro/seoul_metro_4/341K_VVVF_2ND_
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_341K_VVVF_2ND_2_purchase, "./src/metro/seoul_metro_4/341K_VVVF_2ND_2.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // LINE_4_2019
@@ -86,7 +86,7 @@ spriteset(set_LINE_4_2019_engineT, "./src/metro/seoul_metro_4/LINE_4_2019.png") 
     tmpl_snout_engine_tail(0, 90)
 }
 spriteset(set_LINE_4_2019_purchase, "./src/metro/seoul_metro_4/LINE_4_2019.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // SMETRO_4K_VVVF_1ST_2ND
@@ -103,7 +103,7 @@ spriteset(set_SMETRO_4K_VVVF_1ST_2ND_engineT, "./src/metro/seoul_metro_4/SMETRO_
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_SMETRO_4K_VVVF_1ST_2ND_purchase, "./src/metro/seoul_metro_4/SMETRO_4K_VVVF_1ST_2ND.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // SMETRO_4K_VVVF_3RD
@@ -120,7 +120,7 @@ spriteset(set_SMETRO_4K_VVVF_3RD_engineT, "./src/metro/seoul_metro_4/SMETRO_4K_V
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_SMETRO_4K_VVVF_3RD_purchase, "./src/metro/seoul_metro_4/SMETRO_4K_VVVF_3RD.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // Alias of purchase image

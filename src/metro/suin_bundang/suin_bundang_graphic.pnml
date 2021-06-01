@@ -18,7 +18,7 @@ spriteset(set_351K_VVVF_1ST_engineT, "./src/metro/suin_bundang/351K_VVVF_1ST.png
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_351K_VVVF_1ST_purchase, "./src/metro/suin_bundang/351K_VVVF_1ST.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // 351K_VVVF_2ND
@@ -35,7 +35,7 @@ spriteset(set_351K_VVVF_2ND_engineT, "./src/metro/suin_bundang/351K_VVVF_2ND.png
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_351K_VVVF_2ND_purchase, "./src/metro/suin_bundang/351K_VVVF_2ND.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // 351K_VVVF_3RD
@@ -52,7 +52,7 @@ spriteset(set_351K_VVVF_3RD_engineT, "./src/metro/suin_bundang/351K_VVVF_3RD.png
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_351K_VVVF_3RD_purchase, "./src/metro/suin_bundang/351K_VVVF_3RD.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // 351K_VVVF_3RD_SINGLE_ARM
@@ -71,7 +71,7 @@ spriteset(set_351K_VVVF_3RD_SINGLE_ARM_engineT, "./src/metro/suin_bundang/351K_V
 
 // 351K_VVVF_1ST_1 === 341K_VVVF_1ST_1 in Seoul Line 4
 spriteset(set_351K_VVVF_1ST_1_purchase, "./src/metro/seoul_metro_4/341K_VVVF_1ST_1.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // Alias of purchase image

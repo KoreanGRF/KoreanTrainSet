@@ -18,7 +18,7 @@ spriteset(set_DAEGU_METRO_2K_engineT, "./src/metro/daegu_metro_2/DAEGU_METRO_2K.
     tmpl_engine_tail(0, 90)
 }
 spriteset(set_DAEGU_METRO_2K_purchase, "./src/metro/daegu_metro_2/DAEGU_METRO_2K.png") {
-    tmpl_metro_purchase()
+    tmpl_purchase_common(0, 0)
 }
 
 // Alias of purchase image
