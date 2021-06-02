@@ -9,79 +9,79 @@ STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko
 
 
 # Vehicle's name
-STR_HOKEY7_NAME                                  :[KTS] 혀기 7형 증기 기관차
-STR_MATE2_NAME                                   :[KTS] 마터 2형 증기 기관차
-STR_PASHI5_NAME                                  :[KTS] 파시 5형 증기 기관차
-STR_MIKA3_NAME                                   :[KTS] 미카 3형 증기 기관차
-STR_K2x00_NAME                                   :[KTS] 2x00호대 디젤 기관차
-STR_K4x00_NAME                                   :[KTS] 4x00호대 디젤 기관차
-STR_K5000_NAME                                   :[KTS] 5·6000호대 디젤 기관차
-STR_K7000_NAME                                   :[KTS] 7000호대 디젤 기관차
-STR_K7x00_NAME                                   :[KTS] 7x00호대 디젤 기관차
-STR_K7600_NAME                                   :[KTS] 7600호대 디젤 기관차
-STR_K8000_NAME                                   :[KTS] 8000호대 전기 기관차
-STR_K8x00_NAME                                   :[KTS] 8x00호대 전기 기관차
-STR_K8500_NAME                                   :[KTS] 8500호대 전기 기관차
-STR_DHC_NAME                                     :[KTS] 디젤 유압동차 (DHC, PP)
-STR_ITX_SAEMAEUL_NAME                            :[KTS] ITX-새마을
-STR_NURIRO_NAME                                  :[KTS] 누리로
-STR_CDC_NAME                                     :[KTS] 통근형 디젤 열차 (CDC)
-STR_NDC_NAME                                     :[KTS] 우등형 디젤 동차 (NDC)
-STR_DEC_NAME                                     :[KTS] 우등형 디젤 전기 동차 (DEC)
-STR_EEC_NAME                                     :[KTS] 우등형 전기 동차 (EEC)
-STR_BIDULGI_CDC_NAME                             :[KTS] 디젤 액압 동차
-STR_NARROW_DIESEL_CAR_NAME                       :[KTS] 협궤 디젤 액압 동차
-STR_KTX1N_NAME                                   :[KTS] KTX-1
-STR_KTX2N_NAME                                   :[KTS] KTX-산천
-STR_SRT_NAME                                     :[KTS] SRT
-STR_EUM_NAME                                     :[KTS] KTX-이음
-STR_ECOBEE_NAME                                  :[KTS] 인천공항 자기부상철도 (에코비)
+STR_HOKEY7_NAME                                  :혀기 7형 증기 기관차
+STR_MATE2_NAME                                   :마터 2형 증기 기관차
+STR_PASHI5_NAME                                  :파시 5형 증기 기관차
+STR_MIKA3_NAME                                   :미카 3형 증기 기관차
+STR_K2x00_NAME                                   :2x00호대 디젤 기관차
+STR_K4x00_NAME                                   :4x00호대 디젤 기관차
+STR_K5000_NAME                                   :5·6000호대 디젤 기관차
+STR_K7000_NAME                                   :7000호대 디젤 기관차
+STR_K7x00_NAME                                   :7x00호대 디젤 기관차
+STR_K7600_NAME                                   :7600호대 디젤 기관차
+STR_K8000_NAME                                   :8000호대 전기 기관차
+STR_K8x00_NAME                                   :8x00호대 전기 기관차
+STR_K8500_NAME                                   :8500호대 전기 기관차
+STR_DHC_NAME                                     :디젤 유압동차 (DHC, PP)
+STR_ITX_SAEMAEUL_NAME                            :ITX-새마을
+STR_NURIRO_NAME                                  :누리로
+STR_CDC_NAME                                     :통근형 디젤 열차 (CDC)
+STR_NDC_NAME                                     :우등형 디젤 동차 (NDC)
+STR_DEC_NAME                                     :우등형 디젤 전기 동차 (DEC)
+STR_EEC_NAME                                     :우등형 전기 동차 (EEC)
+STR_BIDULGI_CDC_NAME                             :디젤 액압 동차
+STR_NARROW_DIESEL_CAR_NAME                       :협궤 디젤 액압 동차
+STR_KTX1N_NAME                                   :KTX-1
+STR_KTX2N_NAME                                   :KTX-산천
+STR_SRT_NAME                                     :SRT
+STR_EUM_NAME                                     :KTX-이음
+STR_ECOBEE_NAME                                  :인천공항 자기부상철도 (에코비)
 
-STR_PASSENGER_WAGON_NAME                         :[KTS] 승객 수송 차량
-STR_PASSENGER_WAGON_POWER_NAME                   :[KTS] 승객 수송 차량 (동력차)
-STR_SAEMAEUL_CAR_NAME                            :[KTS] 새마을호 객차
-STR_MUGUNGHWA_CAR_NAME                           :[KTS] 무궁화호 객차
-STR_TONGIL_CAR_NAME                              :[KTS] 통일호 객차
-STR_BIDULGI_CAR_NAME                             :[KTS] 비둘기호 객차
-STR_GENERATOR_CAR_NAME                           :[KTS] 발전차
-STR_CAFE_CAR_NAME                                :[KTS] 카페/식당 객차
-STR_SLEEPING_CAR_NAME                            :[KTS] 침대차
+STR_PASSENGER_WAGON_NAME                         :승객 수송 차량
+STR_PASSENGER_WAGON_POWER_NAME                   :승객 수송 차량 (동력차)
+STR_SAEMAEUL_CAR_NAME                            :새마을호 객차
+STR_MUGUNGHWA_CAR_NAME                           :무궁화호 객차
+STR_TONGIL_CAR_NAME                              :통일호 객차
+STR_BIDULGI_CAR_NAME                             :비둘기호 객차
+STR_GENERATOR_CAR_NAME                           :발전차
+STR_CAFE_CAR_NAME                                :카페/식당 객차
+STR_SLEEPING_CAR_NAME                            :침대차
 
-STR_FLAT_CAR_NAME                                :[KTS] 컨테이너 평판화차
-STR_HOPPER_CAR_NAME                              :[KTS] 무개화차
-STR_BOX_CAR_NAME                                 :[KTS] 유개화차
-STR_BAGGAGE_CAR_NAME                             :[KTS] 수화물차
-STR_TANK_CAR_NAME                                :[KTS] 유조차
-STR_STAKE_CAR_NAME                               :[KTS] 평판화차
-STR_MAIL_CAR_NAME                                :[KTS] 우편차
+STR_FLAT_CAR_NAME                                :컨테이너 평판화차
+STR_HOPPER_CAR_NAME                              :무개화차
+STR_BOX_CAR_NAME                                 :유개화차
+STR_BAGGAGE_CAR_NAME                             :수화물차
+STR_TANK_CAR_NAME                                :유조차
+STR_STAKE_CAR_NAME                               :평판화차
+STR_MAIL_CAR_NAME                                :우편차
 
 # Metro
-STR_SEOUL_METRO_1_NAME                           :[KTS] 수도권 1호선, 통근형
-STR_SEOUL_METRO_2_NAME                           :[KTS] 서울 2호선
-STR_SEOUL_METRO_3_NAME                           :[KTS] 수도권 3호선
-STR_SEOUL_METRO_4_NAME                           :[KTS] 수도권 4호선
-STR_SEOUL_METRO_5_9_NAME                         :[KTS] 수도권 5~9호선
-STR_SUIN_BUNDANG_NAME                            :[KTS] 수인분당선
-STR_GYEONGCHUN_NAME                              :[KTS] 경춘선
-STR_ITX_CHEONGCHUN_NAME                          :[KTS] ITX-청춘
-STR_AREX_NAME                                    :[KTS] 인천공항철도 (A'REX)
-STR_SHINBUNDANG_NAME                             :[KTS] 신분당선
-STR_INCHEON_METRO_1_NAME                         :[KTS] 인천 1호선
-STR_INCHEON_METRO_2_NAME                         :[KTS] 인천 2호선
-STR_BUSAN_METRO_1_NAME                           :[KTS] 부산 1호선
-STR_BUSAN_METRO_2_NAME                           :[KTS] 부산 2호선
-STR_BUSAN_METRO_3_NAME                           :[KTS] 부산 3호선
-STR_BUSAN_METRO_4_NAME                           :[KTS] 부산 4호선
-STR_BUSANGIMHAE_NAME                             :[KTS] 부산김해경전철
-STR_YONGIN_EVERLINE_NAME                         :[KTS] 용인 에버라인
-STR_DAEGU_METRO_1_NAME                           :[KTS] 대구 1호선
-STR_DAEGU_METRO_2_NAME                           :[KTS] 대구 2호선
-STR_DAEGU_METRO_3_NAME                           :[KTS] 대구 3호선
-STR_DAEJEON_METRO_1_NAME                         :[KTS] 대전 1호선
-STR_GWANGJU_METRO_1_NAME                         :[KTS] 광주 1호선
-STR_UISINSEOL_NAME                               :[KTS] 우이신설선
-STR_GIMPO_GOLDLINE_NAME                          :[KTS] 김포 골드라인
-STR_UIJEONGBU_NAME                               :[KTS] 의정부경전철
+STR_SEOUL_METRO_1_NAME                           :수도권 1호선, 통근형
+STR_SEOUL_METRO_2_NAME                           :서울 2호선
+STR_SEOUL_METRO_3_NAME                           :수도권 3호선
+STR_SEOUL_METRO_4_NAME                           :수도권 4호선
+STR_SEOUL_METRO_5_9_NAME                         :수도권 5~9호선
+STR_SUIN_BUNDANG_NAME                            :수인분당선
+STR_GYEONGCHUN_NAME                              :경춘선
+STR_ITX_CHEONGCHUN_NAME                          :ITX-청춘
+STR_AREX_NAME                                    :인천공항철도 (A'REX)
+STR_SHINBUNDANG_NAME                             :신분당선
+STR_INCHEON_METRO_1_NAME                         :인천 1호선
+STR_INCHEON_METRO_2_NAME                         :인천 2호선
+STR_BUSAN_METRO_1_NAME                           :부산 1호선
+STR_BUSAN_METRO_2_NAME                           :부산 2호선
+STR_BUSAN_METRO_3_NAME                           :부산 3호선
+STR_BUSAN_METRO_4_NAME                           :부산 4호선
+STR_BUSANGIMHAE_NAME                             :부산김해경전철
+STR_YONGIN_EVERLINE_NAME                         :용인 에버라인
+STR_DAEGU_METRO_1_NAME                           :대구 1호선
+STR_DAEGU_METRO_2_NAME                           :대구 2호선
+STR_DAEGU_METRO_3_NAME                           :대구 3호선
+STR_DAEJEON_METRO_1_NAME                         :대전 1호선
+STR_GWANGJU_METRO_1_NAME                         :광주 1호선
+STR_UISINSEOL_NAME                               :우이신설선
+STR_GIMPO_GOLDLINE_NAME                          :김포 골드라인
+STR_UIJEONGBU_NAME                               :의정부경전철
 
 
 # Liveries

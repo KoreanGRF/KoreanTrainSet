@@ -9,79 +9,79 @@ STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko
 
 
 # Vehicle's name
-STR_HOKEY7_NAME                                  :[KTS] Hokey 7 Steam Locomotive
-STR_MATE2_NAME                                   :[KTS] Mate 2 Steam Locomotive
-STR_PASHI5_NAME                                  :[KTS] Pashi 5 Steam Locomotive
-STR_MIKA3_NAME                                   :[KTS] Mika 3 Steam Locomotive
-STR_K2x00_NAME                                   :[KTS] 2x00 Diesel Locomotive
-STR_K4x00_NAME                                   :[KTS] 4x00 Diesel Locomotive
-STR_K5000_NAME                                   :[KTS] 5·6000 Diesel Locomotive
-STR_K7000_NAME                                   :[KTS] 7000 Diesel Locomotive
-STR_K7x00_NAME                                   :[KTS] 7x00 Diesel Locomotive
-STR_K7600_NAME                                   :[KTS] 7600 Diesel Locomotive
-STR_K8000_NAME                                   :[KTS] 8000 Electronic Locomotive
-STR_K8x00_NAME                                   :[KTS] 8x00 Electronic Locomotive
-STR_K8500_NAME                                   :[KTS] 8500 Electronic Locomotive
-STR_DHC_NAME                                     :[KTS] Diesel Hydraulic Car (DHC, PP)
-STR_ITX_SAEMAEUL_NAME                            :[KTS] ITX-Saemaeul
-STR_NURIRO_NAME                                  :[KTS] Nuriro
-STR_CDC_NAME                                     :[KTS] Commuter Diesel Car (CDC)
-STR_NDC_NAME                                     :[KTS] New Diesel Car (NDC)
-STR_DEC_NAME                                     :[KTS] Diesel Electric Car (DEC)
-STR_EEC_NAME                                     :[KTS] Express Electric Car (EEC)
-STR_BIDULGI_CDC_NAME                             :[KTS] Commuter Diesel Car (RC)
-STR_NARROW_DIESEL_CAR_NAME                       :[KTS] Narrow gauge Diesel Car
-STR_KTX1N_NAME                                   :[KTS] KTX-1
-STR_KTX2N_NAME                                   :[KTS] KTX-Sancheon
-STR_SRT_NAME                                     :[KTS] SRT
-STR_EUM_NAME                                     :[KTS] KTX-EUM
-STR_ECOBEE_NAME                                  :[KTS] Incheon Intl Airport Maglev (Ecobee)
+STR_HOKEY7_NAME                                  :Hokey 7 Steam Locomotive
+STR_MATE2_NAME                                   :Mate 2 Steam Locomotive
+STR_PASHI5_NAME                                  :Pashi 5 Steam Locomotive
+STR_MIKA3_NAME                                   :Mika 3 Steam Locomotive
+STR_K2x00_NAME                                   :2x00 Diesel Locomotive
+STR_K4x00_NAME                                   :4x00 Diesel Locomotive
+STR_K5000_NAME                                   :5·6000 Diesel Locomotive
+STR_K7000_NAME                                   :7000 Diesel Locomotive
+STR_K7x00_NAME                                   :7x00 Diesel Locomotive
+STR_K7600_NAME                                   :7600 Diesel Locomotive
+STR_K8000_NAME                                   :8000 Electronic Locomotive
+STR_K8x00_NAME                                   :8x00 Electronic Locomotive
+STR_K8500_NAME                                   :8500 Electronic Locomotive
+STR_DHC_NAME                                     :Diesel Hydraulic Car (DHC, PP)
+STR_ITX_SAEMAEUL_NAME                            :ITX-Saemaeul
+STR_NURIRO_NAME                                  :Nuriro
+STR_CDC_NAME                                     :Commuter Diesel Car (CDC)
+STR_NDC_NAME                                     :New Diesel Car (NDC)
+STR_DEC_NAME                                     :Diesel Electric Car (DEC)
+STR_EEC_NAME                                     :Express Electric Car (EEC)
+STR_BIDULGI_CDC_NAME                             :Commuter Diesel Car (RC)
+STR_NARROW_DIESEL_CAR_NAME                       :Narrow gauge Diesel Car
+STR_KTX1N_NAME                                   :KTX-1
+STR_KTX2N_NAME                                   :KTX-Sancheon
+STR_SRT_NAME                                     :SRT
+STR_EUM_NAME                                     :KTX-EUM
+STR_ECOBEE_NAME                                  :Incheon Intl Airport Maglev (Ecobee)
 
-STR_PASSENGER_WAGON_NAME                         :[KTS] Passenger car
-STR_PASSENGER_WAGON_POWER_NAME                   :[KTS] Passenger car (powered)
-STR_SAEMAEUL_CAR_NAME                            :[KTS] Saemaeul passenger car
-STR_MUGUNGHWA_CAR_NAME                           :[KTS] Mugunghwa passenger car
-STR_TONGIL_CAR_NAME                              :[KTS] Tongil passenger car
-STR_BIDULGI_CAR_NAME                             :[KTS] Bidulgi passenger car
-STR_GENERATOR_CAR_NAME                           :[KTS] Generator car
-STR_CAFE_CAR_NAME                                :[KTS] Cafe/Restaurant car
-STR_SLEEPING_CAR_NAME                            :[KTS] Sleeping car
+STR_PASSENGER_WAGON_NAME                         :Passenger car
+STR_PASSENGER_WAGON_POWER_NAME                   :Passenger car (powered)
+STR_SAEMAEUL_CAR_NAME                            :Saemaeul passenger car
+STR_MUGUNGHWA_CAR_NAME                           :Mugunghwa passenger car
+STR_TONGIL_CAR_NAME                              :Tongil passenger car
+STR_BIDULGI_CAR_NAME                             :Bidulgi passenger car
+STR_GENERATOR_CAR_NAME                           :Generator car
+STR_CAFE_CAR_NAME                                :Cafe/Restaurant car
+STR_SLEEPING_CAR_NAME                            :Sleeping car
 
-STR_FLAT_CAR_NAME                                :[KTS] Container flat car
-STR_HOPPER_CAR_NAME                              :[KTS] Hopper car
-STR_BOX_CAR_NAME                                 :[KTS] Box car
-STR_BAGGAGE_CAR_NAME                             :[KTS] Baggage car
-STR_TANK_CAR_NAME                                :[KTS] Tank car
-STR_STAKE_CAR_NAME                               :[KTS] Stake car
-STR_MAIL_CAR_NAME                                :[KTS] Mail car
+STR_FLAT_CAR_NAME                                :Container flat car
+STR_HOPPER_CAR_NAME                              :Hopper car
+STR_BOX_CAR_NAME                                 :Box car
+STR_BAGGAGE_CAR_NAME                             :Baggage car
+STR_TANK_CAR_NAME                                :Tank car
+STR_STAKE_CAR_NAME                               :Stake car
+STR_MAIL_CAR_NAME                                :Mail car
 
 # Metro
-STR_SEOUL_METRO_1_NAME                           :[KTS] Seoul Line 1, Commuter trains
-STR_SEOUL_METRO_2_NAME                           :[KTS] Seoul Line 2
-STR_SEOUL_METRO_3_NAME                           :[KTS] Seoul Line 3
-STR_SEOUL_METRO_4_NAME                           :[KTS] Seoul Line 4
-STR_SEOUL_METRO_5_9_NAME                         :[KTS] Seoul Line 5~9
-STR_SUIN_BUNDANG_NAME                            :[KTS] Suin-Bundang Line
-STR_GYEONGCHUN_NAME                              :[KTS] Gyeongchun Line
-STR_ITX_CHEONGCHUN_NAME                          :[KTS] ITX-Cheongchun
-STR_AREX_NAME                                    :[KTS] Incheon Airport Railroad (A'REX)
-STR_SHINBUNDANG_NAME                             :[KTS] Shinbundang Line
-STR_INCHEON_METRO_1_NAME                         :[KTS] Incheon Line 1
-STR_INCHEON_METRO_2_NAME                         :[KTS] Incheon Line 2
-STR_BUSAN_METRO_1_NAME                           :[KTS] Busan Line 1
-STR_BUSAN_METRO_2_NAME                           :[KTS] Busan Line 2
-STR_BUSAN_METRO_3_NAME                           :[KTS] Busan Line 3
-STR_BUSAN_METRO_4_NAME                           :[KTS] Busan Line 4
-STR_BUSANGIMHAE_NAME                             :[KTS] Busan-Gimhae LRT
-STR_YONGIN_EVERLINE_NAME                         :[KTS] Yongin Everline
-STR_DAEGU_METRO_1_NAME                           :[KTS] Daegu Line 1
-STR_DAEGU_METRO_2_NAME                           :[KTS] Daegu Line 2
-STR_DAEGU_METRO_3_NAME                           :[KTS] Daegu Line 3
-STR_DAEJEON_METRO_1_NAME                         :[KTS] Daejeon Line 1
-STR_GWANGJU_METRO_1_NAME                         :[KTS] Gwangju Line 1
-STR_UISINSEOL_NAME                               :[KTS] Ui-Sinseol Line
-STR_GIMPO_GOLDLINE_NAME                          :[KTS] Gimpo Goldline
-STR_UIJEONGBU_NAME                               :[KTS] Uijeongbu LRT
+STR_SEOUL_METRO_1_NAME                           :Seoul Line 1, Commuter trains
+STR_SEOUL_METRO_2_NAME                           :Seoul Line 2
+STR_SEOUL_METRO_3_NAME                           :Seoul Line 3
+STR_SEOUL_METRO_4_NAME                           :Seoul Line 4
+STR_SEOUL_METRO_5_9_NAME                         :Seoul Line 5~9
+STR_SUIN_BUNDANG_NAME                            :Suin-Bundang Line
+STR_GYEONGCHUN_NAME                              :Gyeongchun Line
+STR_ITX_CHEONGCHUN_NAME                          :ITX-Cheongchun
+STR_AREX_NAME                                    :Incheon Airport Railroad (A'REX)
+STR_SHINBUNDANG_NAME                             :Shinbundang Line
+STR_INCHEON_METRO_1_NAME                         :Incheon Line 1
+STR_INCHEON_METRO_2_NAME                         :Incheon Line 2
+STR_BUSAN_METRO_1_NAME                           :Busan Line 1
+STR_BUSAN_METRO_2_NAME                           :Busan Line 2
+STR_BUSAN_METRO_3_NAME                           :Busan Line 3
+STR_BUSAN_METRO_4_NAME                           :Busan Line 4
+STR_BUSANGIMHAE_NAME                             :Busan-Gimhae LRT
+STR_YONGIN_EVERLINE_NAME                         :Yongin Everline
+STR_DAEGU_METRO_1_NAME                           :Daegu Line 1
+STR_DAEGU_METRO_2_NAME                           :Daegu Line 2
+STR_DAEGU_METRO_3_NAME                           :Daegu Line 3
+STR_DAEJEON_METRO_1_NAME                         :Daejeon Line 1
+STR_GWANGJU_METRO_1_NAME                         :Gwangju Line 1
+STR_UISINSEOL_NAME                               :Ui-Sinseol Line
+STR_GIMPO_GOLDLINE_NAME                          :Gimpo Goldline
+STR_UIJEONGBU_NAME                               :Uijeongbu LRT
 
 
 # Liveries
