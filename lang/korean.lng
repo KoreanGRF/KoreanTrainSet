@@ -44,7 +44,7 @@ STR_MUGUNGHWA_CAR_NAME                           :무궁화호 객차
 STR_TONGIL_CAR_NAME                              :통일호 객차
 STR_BIDULGI_CAR_NAME                             :비둘기호 객차
 STR_GENERATOR_CAR_NAME                           :발전차
-STR_CAFE_CAR_NAME                                :카페/식당 객차
+STR_CAFE_CAR_NAME                                :카페/식당차
 STR_SLEEPING_CAR_NAME                            :침대차
 
 STR_FLAT_CAR_NAME                                :컨테이너 평판화차
