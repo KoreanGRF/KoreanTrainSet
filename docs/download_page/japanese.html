@@ -1,7 +1,7 @@
 <table class="ko_train_set">
     <tr data-veh_id="HOKEY7">
-        <td class="refit"><div><img src="./_static/HOKEY7.png" alt="ヒョギ7形蒸気機関車"></div></td>
-        <td class="name">ヒョギ7形蒸気機関車</td>
+        <td class="refit"><div><img src="./_static/HOKEY7.png" alt="ヒョギ７形蒸気機関車"></div></td>
+        <td class="name">ヒョギ７形蒸気機関車</td>
         <td class="speed">50 km/h</td>
         <td class="speed_designed">50 km/h</td>
         <td class="capacity"></td>
