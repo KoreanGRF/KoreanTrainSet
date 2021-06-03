@@ -14,6 +14,6 @@
   * **[@kimgas](https://github.com/kimgas)**
 
 ## Translations
-  * Korean, English (UK, US): [@telk5093](https://github.com/telk5093)
+  * Korean, English (UK, US), Japanese: [@telk5093](https://github.com/telk5093)
 
   Detail graphic contributes can be found at [contributors_graphic.md](./contributors_graphic.md)
