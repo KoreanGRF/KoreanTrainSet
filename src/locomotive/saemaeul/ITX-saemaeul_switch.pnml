@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1:    set_ITX_SAEMAEUL_engineT;
+    set_ITX_SAEMAEUL_engineH;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_wagon_by_free_tail, position_in_consist_from_end) {
+    1: set_ITX_SAEMAEUL_wagonT;
+    set_ITX_SAEMAEUL_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_wagon, position_in_consist) {
+    1: set_ITX_SAEMAEUL_wagonH;
+    sw_ITX_SAEMAEUL_wagon_by_free_tail;
+}
+
+// Attachable vehicles
+switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_attach, vehicle_type_id) {
+    ko_train_ITX_SAEMAEUL:  return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:  return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWGP: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
