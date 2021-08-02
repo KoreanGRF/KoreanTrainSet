@@ -79,7 +79,7 @@ template tmpl_engine_tail(x, y) {
 template tmpl_snout_engine_head(x, y) {
     [x+80,     y,     8,    22,    -3,   -11]
     [x+100,    y,    22,    17,   -13,    -9]
-    [x+130,    y,    30,    12,   -16,    -8]
+    [x+130,    y,    32,    12,   -16,    -8]
     [x+170,    y,    21,    17,    -6,    -8]
     [x+200,    y,     8,    22,    -3,   -11]
     [x+220,    y,    22,    17,   -14,    -9]
@@ -99,6 +99,18 @@ template tmpl_snout_wagon_panto(x, y) {
     [x+290,    y,    21,    17,    -6,    -8]
 }
 
+// Template - Metro two single pantograph wagon (Snout)
+template tmpl_snout_wagon_two_panto(x, y) {
+    [x+80,     y,     8,    22,    -3,   -11]
+    [x+100,    y,    21,    19,   -13,   -11]
+    [x+130,    y,    31,    15,   -16,   -11]
+    [x+170,    y,    21,    19,    -6,   -10]
+    [x+200,    y,     8,    22,    -3,   -11]
+    [x+220,    y,    21,    19,   -13,   -11]
+    [x+250,    y,    31,    15,   -16,   -11]
+    [x+290,    y,    21,    19,    -6,   -10]
+}
+
 // Template - Metro engine (Snout, tail)
 template tmpl_snout_engine_tail(x, y) {
     [x+200,    y,     8,    22,    -3,   -11]
@@ -107,6 +119,6 @@ template tmpl_snout_engine_tail(x, y) {
     [x+290,    y,    21,    17,    -6,    -8]
     [x+80,     y,     8,    22,    -3,   -11]
     [x+100,    y,    22,    17,   -14,    -9]
-    [x+130,    y,    31,    12,   -16,    -8]
+    [x+130,    y,    33,    12,   -18,    -8]
     [x+170,    y,    22,    17,    -7,    -8]
 }

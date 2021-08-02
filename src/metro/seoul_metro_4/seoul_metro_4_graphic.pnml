@@ -77,7 +77,7 @@ spriteset(set_LINE_4_2019_engineH, "./src/metro/seoul_metro_4/LINE_4_2019.png") 
     tmpl_snout_engine_head(0, 0)
 }
 spriteset(set_LINE_4_2019_wagon_panto, "./src/metro/seoul_metro_4/LINE_4_2019.png") {
-    tmpl_snout_wagon_panto(0, 30)
+    tmpl_snout_wagon_two_panto(0, 30)
 }
 spriteset(set_LINE_4_2019_wagon, "./src/metro/seoul_metro_4/LINE_4_2019.png") {
     tmpl_wagon(0, 60)
