@@ -20,6 +20,13 @@ switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_wagon, position_in_consist) {
     sw_ITX_SAEMAEUL_wagon_by_free_tail;
 }
 
+// Capacity
+switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_wagon_capacity_in_custom, (position_in_consist-1) % 4) {
+    1: return 50 / 2 * sw_cargo_capacity_factor;
+    2: return 62 / 2 * sw_cargo_capacity_factor;
+       return 74 / 2 * sw_cargo_capacity_factor;
+}
+
 // Attachable vehicles
 switch(FEAT_TRAINS, SELF, sw_ITX_SAEMAEUL_attach, vehicle_type_id) {
     ko_train_ITX_SAEMAEUL:  return CB_RESULT_ATTACH_ALLOW;

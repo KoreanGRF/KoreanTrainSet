@@ -15,7 +15,7 @@ LOADING(ITX_SAEMAEUL)
 // SPEED_GENERAL(ITX_SAEMAEUL_wagon)
 // COST(ITX_SAEMAEUL_wagon)
 // RUNNING(ITX_SAEMAEUL_wagon)
-CAPACITY(ITX_SAEMAEUL_wagon)
+// CAPACITY(ITX_SAEMAEUL_wagon)
 CAPACITY_PURCHASE(ITX_SAEMAEUL_wagon)
 // LOADING(ITX_SAEMAEUL_wagon)
 
@@ -83,14 +83,14 @@ item(FEAT_TRAINS, ko_train_ITX_SAEMAEUL, 5540) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_ITX_SAEMAEUL_wagon;
         weight:                         var_ITX_SAEMAEUL_WEIGHT;
-        cargo_capacity:                 sw_ITX_SAEMAEUL_wagon_capacity;
+        cargo_capacity:                 sw_ITX_SAEMAEUL_wagon_capacity_in_custom;
         purchase_cargo_capacity:        sw_ITX_SAEMAEUL_wagon_purchase_capacity;
         loading_speed:                  sw_ITX_SAEMAEUL_loadingspeed;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_ITX_SAEMAEUL_wagon;
         weight:                         var_ITX_SAEMAEUL_WEIGHT;
-        cargo_capacity:                 sw_ITX_SAEMAEUL_wagon_capacity;
+        cargo_capacity:                 sw_ITX_SAEMAEUL_wagon_capacity_in_custom;
         purchase_cargo_capacity:        sw_ITX_SAEMAEUL_wagon_purchase_capacity;
         loading_speed:                  sw_ITX_SAEMAEUL_loadingspeed;
         power:                          POWER_IN_KW(var_ITX_SAEMAEUL_wagon_POWER);

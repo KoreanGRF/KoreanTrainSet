@@ -144,7 +144,7 @@
         <td class="name">ITX-Saemaeul</td>
         <td class="speed">150 km/h</td>
         <td class="speed_designed">165 km/h</td>
-        <td class="capacity">44</td>
+        <td class="capacity">58</td>
         <td class="power">6000 kW</td>
         <td class="weight">45 t</td>
         <td class="introduction">2014</td>
