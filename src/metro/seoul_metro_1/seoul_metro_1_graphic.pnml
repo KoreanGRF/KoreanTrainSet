@@ -198,6 +198,9 @@ spriteset(set_3XXK_ST_engineH, "./src/metro/seoul_metro_1/3XXK_ST.png") {
 spriteset(set_3XXK_ST_wagon_panto, "./src/metro/seoul_metro_1/3XXK_ST.png") {
     tmpl_wagon_dblpanto(0, 30)
 }
+spriteset(set_3XXK_ST_SINGLE_ARM_wagon_panto, "./src/metro/seoul_metro_1/3XXK_ST.png") {
+    tmpl_wagon_panto(0, 120)
+}
 spriteset(set_3XXK_ST_wagon, "./src/metro/seoul_metro_1/3XXK_ST.png") {
     tmpl_wagon(0, 60)
 }

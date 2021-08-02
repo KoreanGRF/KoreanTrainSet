@@ -14,6 +14,12 @@ switch(FEAT_TRAINS, SELF, sw_321K_BIKE_engineH, random_bits % 2) {
     set_321K_BIKE_engineH_blue;
 }
 
+// Wagon - Random for single & double pantograph for 3XXK_ST
+switch(FEAT_TRAINS, SELF, sw_3XXK_ST_wagon_panto, random_bits % 2) {
+    1: set_3XXK_ST_wagon_panto;
+    set_3XXK_ST_SINGLE_ARM_wagon_panto;
+}
+
 // Wagon - Bike printing for Gyeongui·Jungang Line
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_321K_BIKE, position_in_consist % 6) {
     1: set_321K_BIKE_wagon_1_panto;
@@ -52,7 +58,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_cargo_subtype_text, cargo_subtype) {
     return string(STR_REFIT_METRO_3XXK_AL_NAME);                        // Korail 3xxk AL
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_panto_cargo_subtype, cargo_subtype) {
-    1:    set_3XXK_ST_wagon_panto;
+    1:    sw_3XXK_ST_wagon_panto;
     2:    set_311K_2_2_wagon_panto;
     3:    set_311K_2_1_wagon_panto;
     4:    set_311K_1_2_wagon_panto;
