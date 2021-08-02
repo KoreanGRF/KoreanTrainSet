@@ -50,7 +50,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_cargo_subtype_text, cargo_subtype) {
     15:   return string(STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME);     // SMetro 1k First rheostatic
     16:   return string(STR_REFIT_METRO_321K_BIKE_NAME);                // Korail 321k Bike livery
     17:   return string(STR_REFIT_METRO_371K_BLANK_NAME);               // Korail 371k / Blank livery
-//  18:   // RESERVED
+    18:   return string(STR_REFIT_METRO_371K_CC_NAME);                  // Korail 371k / Company colour livery
     19:   return string(STR_REFIT_METRO_371K_381K_1ST_NAME);            // Korail 371k, 381k 1st (Donghae Line)
     20:   return string(STR_REFIT_METRO_381K_2ND_NAME);                 // Korail 381k 2nd (Donghae Line, a.k.a. 주둥이, Judungi)
     21:   return string(STR_REFIT_METRO_391K_NAME);                     // Korail 391k / Seohae Line
@@ -75,7 +75,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_panto_cargo_subtype, cargo_subt
     15:   set_SMETRO_1K_RHEO_FIRST_wagon_panto;
     16:   sw_SEOUL_METRO_1_wagon_321K_BIKE;
     17:   set_371K_BLANK_wagon_panto;
-//  18:   // RESERVED
+    18:   set_371K_CC_wagon_panto;
     19:   set_371K_381K_1ST_wagon_panto;
     20:   set_381K_2ND_wagon_panto;
     21:   set_391K_wagon_panto;
@@ -100,7 +100,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_cargo_subtype, cargo_subtype) {
     15:   set_SMETRO_1K_RHEO_FIRST_wagon;
     16:   sw_SEOUL_METRO_1_wagon_321K_BIKE;
     17:   set_371K_BLANK_wagon;
-//  18:   // RESERVED
+    18:   set_371K_CC_wagon;
     19:   set_371K_381K_1ST_wagon;
     20:   set_381K_2ND_wagon;
     21:   set_391K_wagon;
@@ -125,7 +125,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_engineH, cargo_subtype) {
     15:   set_SMETRO_1K_RHEO_FIRST_engineH;
     16:   sw_321K_BIKE_engineH;
     17:   set_371K_BLANK_engineH;
-//  18:   // RESERVED
+    18:   set_371K_CC_engineH;
     19:   set_371K_381K_1ST_engineH;
     20:   set_381K_2ND_engineH;
     21:   set_391K_engineH;
@@ -150,7 +150,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_engineT, cargo_subtype) {
     15:   set_SMETRO_1K_RHEO_FIRST_engineT;
     16:   sw_321K_BIKE_engineT;
     17:   set_371K_BLANK_engineT;
-//  18:   ;
+    18:   set_371K_CC_engineT;
     19:   set_371K_381K_1ST_engineT;
     20:   set_381K_2ND_engineT;
     21:   set_391K_engineT;
