@@ -26,7 +26,7 @@ item(FEAT_TRAINS, ko_train_UIJEONGBU, 5805) {
         name:                           string(STR_UIJEONGBU_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_UIJEONGBU_INTRODUCTION;
-        track_type:                     ELRL;
+        track_type:                     KRLR;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
