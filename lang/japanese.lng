@@ -238,6 +238,7 @@ STR_REFIT_METRO_371K_381K_1ST_NAME               :(Korail 371k、381k 1次)
 STR_REFIT_METRO_381K_2ND_NAME                    :(Korail 381k 2次)
 STR_REFIT_METRO_391K_NAME                        :(Korail 391k・西海線)
 STR_REFIT_METRO_LINE_1_2019_NAME                 :(Korail 1号線2019年導入分)
+STR_REFIT_METRO_LINE_1_2021_NAME                 :(Korail 1号線2021年導入分)
 STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        :(ソウル地下鉄公社 1k 初期抵抗)
 STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME     :(ソウルメトロ 1k 改造抵抗)
 STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              :(ソウル交通公社 1k VVVF)
@@ -265,6 +266,7 @@ STR_REFIT_METRO_341K_VVVF_1ST_2_NAME             :(Korail 341k VVVF 1世代・�
 STR_REFIT_METRO_341K_VVVF_2ND_1_NAME             :(Korail 341k VVVF 2世代・旧塗色)
 STR_REFIT_METRO_341K_VVVF_2ND_2_NAME             :(Korail 341k VVVF 2世代・現在塗色)
 STR_REFIT_METRO_LINE_4_2019_NAME                 :(Korail 4号線 2019年導入分)
+STR_REFIT_METRO_LINE_4_2021_NAME                 :(Korail 4号線 2021年導入分)
 STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME      :(SMetro 4k 1·2世代 VVVF)
 STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME          :(SMetro 4k 3世代 VVVF 2020年導入分)
 
@@ -284,6 +286,7 @@ STR_REFIT_METRO_351K_VVVF_1ST_1_NAME             :(Korail 351k VVVF 1世代・�
 STR_REFIT_METRO_351K_VVVF_1ST_2_NAME             :(Korail 351k VVVF 1世代・現在塗色)
 STR_REFIT_METRO_351K_VVVF_2ND_NAME               :(Korail 351k VVVF 2世代)
 STR_REFIT_METRO_351K_VVVF_3RD_NAME               :(Korail 351k VVVF 3世代)
+STR_REFIT_METRO_351K_2021_NAME                   :(Korail 351k 2021年導入分)
 
 # Refit (Gyeongchun Line)
 STR_REFIT_METRO_361K_VVVF_NAME                   :(Korail 361k VVVF)

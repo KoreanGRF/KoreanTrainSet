@@ -89,6 +89,23 @@ spriteset(set_LINE_4_2019_purchase, "./src/metro/seoul_metro_4/LINE_4_2019.png")
     tmpl_purchase_common_dualhead(0, 0)
 }
 
+// LINE_4_2021
+spriteset(set_LINE_4_2021_engineH, "./src/metro/seoul_metro_4/LINE_4_2021.png") {
+    tmpl_snout_engine_head(0, 0)
+}
+spriteset(set_LINE_4_2021_wagon_panto, "./src/metro/seoul_metro_4/LINE_4_2021.png") {
+    tmpl_snout_wagon_two_panto(0, 30)
+}
+spriteset(set_LINE_4_2021_wagon, "./src/metro/seoul_metro_4/LINE_4_2021.png") {
+    tmpl_wagon(0, 60)
+}
+spriteset(set_LINE_4_2021_engineT, "./src/metro/seoul_metro_4/LINE_4_2021.png") {
+    tmpl_snout_engine_tail(0, 90)
+}
+spriteset(set_LINE_4_2021_purchase, "./src/metro/seoul_metro_4/LINE_4_2021.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+
 // SMETRO_4K_VVVF_1ST_2ND
 spriteset(set_SMETRO_4K_VVVF_1ST_2ND_engineH, "./src/metro/seoul_metro_4/SMETRO_4K_VVVF_1ST_2ND.png") {
     tmpl_engine_head(0, 0)

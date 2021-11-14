@@ -9,6 +9,7 @@ switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_cargo_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_METRO_351K_VVVF_1ST_1_NAME);
     2: return string(STR_REFIT_METRO_351K_VVVF_1ST_2_NAME);
     3: return string(STR_REFIT_METRO_351K_VVVF_2ND_NAME);
+    4: return string(STR_REFIT_METRO_351K_2021_NAME);
     return string(STR_REFIT_METRO_351K_VVVF_3RD_NAME);
 }
 
@@ -17,12 +18,14 @@ switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineH, cargo_subtype) {
     1: set_341K_VVVF_1ST_1_engineH;
     2: set_351K_VVVF_1ST_engineH;
     3: set_351K_VVVF_2ND_engineH;
+    4: set_351K_2021_engineH;
     set_351K_VVVF_3RD_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_engineT, cargo_subtype) {
     1: set_341K_VVVF_1ST_1_engineH;
     2: set_351K_VVVF_1ST_engineT;
     3: set_351K_VVVF_2ND_engineT;
+    4: set_351K_2021_engineT;
     set_351K_VVVF_3RD_engineT;
 }
 
@@ -37,12 +40,14 @@ switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon_panto_cargo_subtype, cargo_subty
     1: set_341K_VVVF_1ST_1_wagon_panto;
     2: set_351K_VVVF_1ST_wagon_panto;
     3: set_351K_VVVF_2ND_wagon_panto;
+    4: set_351K_2021_wagon_panto;
     sw_351K_VVVF_3RD_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SUIN_BUNDANG_wagon_cargo_subtype, cargo_subtype) {
     1: set_341K_VVVF_1ST_1_wagon;
     2: set_351K_VVVF_1ST_wagon;
     3: set_351K_VVVF_2ND_wagon;
+    4: set_351K_2021_wagon;
     set_351K_VVVF_3RD_wagon;
 }
 
