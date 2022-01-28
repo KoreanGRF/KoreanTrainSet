@@ -80,7 +80,7 @@
         <td class="introduction">1986</td>
     </tr>
     <tr data-veh_id="K7X00">
-        <td class="refit"><div><img src="./_static/K7x00_RED_WHITE_BLUE.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_BLUE_WHITE.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_GREEN_YELLOW.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_BLACK_ORANGE.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_CARGO.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_HAERANG.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_G_TRAIN.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_S_TRAIN.png" alt="7x00号帯ディーゼル機関車"></div></td>
+        <td class="refit"><div><img src="./_static/K7x00_RED_WHITE_BLUE.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_BLUE_WHITE.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_BLACK_ORANGE.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_KWANKWANG.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_GREEN_YELLOW.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_CARGO.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_HAERANG.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_G_TRAIN.png" alt="7x00号帯ディーゼル機関車"><br /><img src="./_static/K7x00_S_TRAIN.png" alt="7x00号帯ディーゼル機関車"></div></td>
         <td class="name">7x00号帯ディーゼル機関車</td>
         <td class="speed">150 km/h</td>
         <td class="speed_designed">150 km/h</td>
