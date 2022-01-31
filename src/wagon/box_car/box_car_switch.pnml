@@ -1,0 +1,69 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_BOX_CAR_cargo_subtype_text, cargo_subtype) {
+    0:   return string(STR_REFIT_LIVERY_BOX_2003);
+    1:   return string(STR_REFIT_LIVERY_BOX_1998_DARKBLUE);
+    2:   return string(STR_REFIT_LIVERY_BOX_1998_GREEN);
+    3:   return string(STR_REFIT_LIVERY_BOX_1998_BLUE);
+    4:   return string(STR_REFIT_LIVERY_BOX_1996_DARKBLUE);
+    5:   return string(STR_REFIT_LIVERY_BOX_1996_GREEN);
+    6:   return string(STR_REFIT_LIVERY_BOX_1996_BLUE);
+    7:   return string(STR_REFIT_LIVERY_BOX_1972);
+    8:   return string(STR_REFIT_LIVERY_BOX_1966_DARKBLUE);
+    9:   return string(STR_REFIT_LIVERY_BOX_1966_GREEN);
+    10:  return string(STR_REFIT_LIVERY_BOX_1966_BLUE);
+    11:  return string(STR_REFIT_LIVERY_BOX_1966_BLACK);
+    return string(STR_REFIT_LIVERY_BOX_2003);
+}
+
+// Graphic
+switch(FEAT_TRAINS, SELF, sw_BOX_CAR_wagon, cargo_subtype) {
+    0:   set_BOX_CAR_2003_wagon;
+    1:   sg_BOX_CAR_1998_DARKBLUE_wagon;
+    2:   sg_BOX_CAR_1998_GREEN_wagon;
+    3:   sg_BOX_CAR_1998_BLUE_wagon;
+    4:   sg_BOX_CAR_1996_DARKBLUE_wagon;
+    5:   sg_BOX_CAR_1996_GREEN_wagon;
+    6:   sg_BOX_CAR_1996_BLUE_wagon;
+    7:   sg_BOX_CAR_1972_wagon;
+    8:   sg_BOX_CAR_1966_DARKBLUE_wagon;
+    9:   sg_BOX_CAR_1966_GREEN_wagon;
+    10:  sg_BOX_CAR_1966_BLUE_wagon;
+    11:  sg_BOX_CAR_1966_BLACK_wagon;
+    set_BOX_CAR_2003_wagon;
+}
+
+// Speed
+switch(FEAT_TRAINS, SELF, sw_BOX_CAR_speed_custom, cargo_subtype) {
+    0:     return var_BOX_CAR_2003_SPEED;
+    1..3:  return var_BOX_CAR_1998_SPEED;
+    4..6:  return var_BOX_CAR_1996_SPEED;
+    7:     return var_BOX_CAR_1972_SPEED;
+    8..11: return var_BOX_CAR_1966_SPEED;
+    return var_BOX_CAR_2003_SPEED;
+}
+
+// Capacity
+switch(FEAT_TRAINS, SELF, sw_BOX_CAR_capacity_custom, cargo_subtype) {
+    0:     return var_BOX_CAR_2003_CAPACITY;
+    1..3:  return var_BOX_CAR_1998_CAPACITY;
+    4..6:  return var_BOX_CAR_1996_CAPACITY;
+    7:     return var_BOX_CAR_1972_CAPACITY;
+    8..11: return var_BOX_CAR_1966_CAPACITY;
+    return var_BOX_CAR_2003_CAPACITY;
+}
+
+// Weight
+switch(FEAT_TRAINS, SELF, sw_BOX_CAR_weight, cargo_subtype) {
+    0:     return var_BOX_CAR_2003_WEIGHT;
+    1..3:  return var_BOX_CAR_1998_WEIGHT;
+    4..6:  return var_BOX_CAR_1996_WEIGHT;
+    7:     return var_BOX_CAR_1972_WEIGHT;
+    8..11: return var_BOX_CAR_1966_WEIGHT;
+    return var_BOX_CAR_2003_WEIGHT;
+}

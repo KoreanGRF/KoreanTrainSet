@@ -55,6 +55,7 @@ sort(FEAT_TRAINS, [
     ko_train_MAIL_CAR,               // 5915
     ko_train_FLAT_CAR,               // 5910
     ko_train_HOPPER_CAR,             // 5911
+    ko_train_BOX_CAR,                // 5916
     ko_train_BAGGAGE_CAR,            // 5912
     ko_train_TANK_CAR,               // 5913
     ko_train_STAKE_CAR,              // 5914

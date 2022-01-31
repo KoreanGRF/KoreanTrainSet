@@ -629,6 +629,16 @@
         <td class="weight">17 t</td>
         <td class="introduction">1950</td>
     </tr>
+    <tr data-veh_id="BOX_CAR">
+        <td class="refit"><div><img src="./_static/BOX_CAR_2003.png" alt="유개화차"><br /><img src="./_static/BOX_CAR_1998.png" alt="유개화차"><br /><img src="./_static/BOX_CAR_1996.png" alt="유개화차"><br /><img src="./_static/BOX_CAR_1972.png" alt="유개화차"><br /><img src="./_static/BOX_CAR_1966.png" alt="유개화차"></div></td>
+        <td class="name">유개화차</td>
+        <td class="speed">120 km/h</td>
+        <td class="speed_designed">120 km/h</td>
+        <td class="capacity">51</td>
+        <td class="power"></td>
+        <td class="weight">25 t</td>
+        <td class="introduction">1966</td>
+    </tr>
     <tr data-veh_id="TANK_CAR">
         <td class="refit"><div><img src="./_static/TANK_CAR_1.png" alt="유조차"><br /><img src="./_static/TANK_CAR_2.png" alt="유조차"><br /><img src="./_static/TANK_CAR_3.png" alt="유조차"></div></td>
         <td class="name">유조차</td>

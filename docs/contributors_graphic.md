@@ -108,6 +108,7 @@
 | ``351K_VVVF_3RD`` | skyu | |
 | ``simple_waypoint`` | Modified by [@telk5093](https://github.com/telk5093) | modified from OpenGFX |
 | ``KR_BUFFER`` | [@telk5093](https://github.com/telk5093) | |
+| ``BOX_CAR`` | [@opentrain](https://github.com/opentrain), [@EightonEight](https://github.com/EightonEight) | [#138](https://github.com/KoreanGRF/KoreanTrainSet/issues/138) |
 | ``BAGGAGE_CAR`` | [@opentrain](https://github.com/opentrain) | |
 | ``BIDULGI`` (Baggage_car) |[@Gamunbi](https://github.com/Gamunbi) | [#40](https://github.com/KoreanGRF/KoreanTrainSet/issues/40) |
 | ``MUGUNGHWA_CAR`` | skyu? Modified by @ChuoSpecialRapid201 | |

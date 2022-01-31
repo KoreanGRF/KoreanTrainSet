@@ -1,0 +1,336 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Box car
+ */
+
+// Template
+template tmpl_BOX_CAR_wagon(x, y) {
+    [x+0,    y,     8,    22,     -3,    -11]
+    [x+20,   y,    19,    16,    -12,     -9]
+    [x+50,   y,    27,    12,    -12,     -8]
+    [x+90,   y,    19,    16,     -3,     -8]
+    [x+120,  y,     8,    22,     -3,    -11]
+    [x+140,  y,    19,    16,    -14,     -8]
+    [x+170,  y,    27,    12,    -16,     -8]
+    [x+210,  y,    19,    16,     -6,     -9]
+}
+
+// Graphic
+spriteset(set_BOX_CAR_2003_purchase, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_BOX_CAR_2003_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 0)
+}
+
+spriteset(set_BOX_CAR_1998_purchase, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_purchase_common(0, 30)
+}
+spriteset(set_BOX_CAR_1998_DARKBLUE_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 30)
+}
+spriteset(set_BOX_CAR_1998_GREEN_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 60)
+}
+spriteset(set_BOX_CAR_1998_BLUE_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 90)
+}
+spriteset(set_BOX_CAR_1998_DARKBLUE_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 120)
+}
+spriteset(set_BOX_CAR_1998_GREEN_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 150)
+}
+spriteset(set_BOX_CAR_1998_BLUE_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 180)
+}
+spriteset(set_BOX_CAR_1998_DARKBLUE_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 210)
+}
+spriteset(set_BOX_CAR_1998_GREEN_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 240)
+}
+spriteset(set_BOX_CAR_1998_BLUE_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 270)
+}
+spriteset(set_BOX_CAR_1998_DARKBLUE_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 300)
+}
+spriteset(set_BOX_CAR_1998_GREEN_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 330)
+}
+spriteset(set_BOX_CAR_1998_BLUE_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 360)
+}
+spriteset(set_BOX_CAR_1998_DARKBLUE_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 390)
+}
+spriteset(set_BOX_CAR_1998_GREEN_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 420)
+}
+spriteset(set_BOX_CAR_1998_BLUE_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 450)
+}
+spritegroup sg_BOX_CAR_1998_DARKBLUE_wagon {
+    loading: [
+        set_BOX_CAR_1998_DARKBLUE_1_wagon,
+        set_BOX_CAR_1998_DARKBLUE_2_wagon,
+        set_BOX_CAR_1998_DARKBLUE_3_wagon,
+        set_BOX_CAR_1998_DARKBLUE_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1998_DARKBLUE_wagon
+    ];
+}
+spritegroup sg_BOX_CAR_1998_GREEN_wagon {
+    loading: [
+        set_BOX_CAR_1998_GREEN_1_wagon,
+        set_BOX_CAR_1998_GREEN_2_wagon,
+        set_BOX_CAR_1998_GREEN_3_wagon,
+        set_BOX_CAR_1998_GREEN_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1998_GREEN_wagon
+    ];
+}
+spritegroup sg_BOX_CAR_1998_BLUE_wagon {
+    loading: [
+        set_BOX_CAR_1998_BLUE_1_wagon,
+        set_BOX_CAR_1998_BLUE_2_wagon,
+        set_BOX_CAR_1998_BLUE_3_wagon,
+        set_BOX_CAR_1998_BLUE_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1998_BLUE_wagon
+    ];
+}
+
+spriteset(set_BOX_CAR_1996_purchase, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_purchase_common(0, 480)
+}
+spriteset(set_BOX_CAR_1996_DARKBLUE_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 480)
+}
+spriteset(set_BOX_CAR_1996_GREEN_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 510)
+}
+spriteset(set_BOX_CAR_1996_BLUE_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 540)
+}
+spriteset(set_BOX_CAR_1996_DARKBLUE_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 570)
+}
+spriteset(set_BOX_CAR_1996_GREEN_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 600)
+}
+spriteset(set_BOX_CAR_1996_BLUE_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 630)
+}
+spriteset(set_BOX_CAR_1996_DARKBLUE_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 660)
+}
+spriteset(set_BOX_CAR_1996_GREEN_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 690)
+}
+spriteset(set_BOX_CAR_1996_BLUE_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 720)
+}
+spriteset(set_BOX_CAR_1996_DARKBLUE_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 750)
+}
+spriteset(set_BOX_CAR_1996_GREEN_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 780)
+}
+spriteset(set_BOX_CAR_1996_BLUE_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 810)
+}
+spriteset(set_BOX_CAR_1996_DARKBLUE_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 840)
+}
+spriteset(set_BOX_CAR_1996_GREEN_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 870)
+}
+spriteset(set_BOX_CAR_1996_BLUE_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 900)
+}
+spritegroup sg_BOX_CAR_1996_DARKBLUE_wagon {
+    loading: [
+        set_BOX_CAR_1996_DARKBLUE_1_wagon,
+        set_BOX_CAR_1996_DARKBLUE_2_wagon,
+        set_BOX_CAR_1996_DARKBLUE_3_wagon,
+        set_BOX_CAR_1996_DARKBLUE_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1996_DARKBLUE_wagon
+    ];
+}
+spritegroup sg_BOX_CAR_1996_GREEN_wagon {
+    loading: [
+        set_BOX_CAR_1996_GREEN_1_wagon,
+        set_BOX_CAR_1996_GREEN_2_wagon,
+        set_BOX_CAR_1996_GREEN_3_wagon,
+        set_BOX_CAR_1996_GREEN_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1996_GREEN_wagon
+    ];
+}
+spritegroup sg_BOX_CAR_1996_BLUE_wagon {
+    loading: [
+        set_BOX_CAR_1996_BLUE_1_wagon,
+        set_BOX_CAR_1996_BLUE_2_wagon,
+        set_BOX_CAR_1996_BLUE_3_wagon,
+        set_BOX_CAR_1996_BLUE_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1996_BLUE_wagon
+    ];
+}
+
+spriteset(set_BOX_CAR_1972_purchase, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_purchase_common(0, 930)
+}
+spriteset(set_BOX_CAR_1972_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 930)
+}
+spriteset(set_BOX_CAR_1972_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 960)
+}
+spriteset(set_BOX_CAR_1972_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 990)
+}
+spriteset(set_BOX_CAR_1972_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1020)
+}
+spriteset(set_BOX_CAR_1972_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1050)
+}
+spritegroup sg_BOX_CAR_1972_wagon {
+    loading: [
+        set_BOX_CAR_1972_1_wagon,
+        set_BOX_CAR_1972_2_wagon,
+        set_BOX_CAR_1972_3_wagon,
+        set_BOX_CAR_1972_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1972_wagon
+    ];
+}
+
+
+spriteset(set_BOX_CAR_1966_purchase, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_purchase_common(0, 1080)
+}
+spriteset(set_BOX_CAR_1966_DARKBLUE_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1080)
+}
+spriteset(set_BOX_CAR_1966_GREEN_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1110)
+}
+spriteset(set_BOX_CAR_1966_BLUE_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1140)
+}
+spriteset(set_BOX_CAR_1966_BLACK_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1170)
+}
+spriteset(set_BOX_CAR_1966_DARKBLUE_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1200)
+}
+spriteset(set_BOX_CAR_1966_GREEN_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1230)
+}
+spriteset(set_BOX_CAR_1966_BLUE_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1260)
+}
+spriteset(set_BOX_CAR_1966_BLACK_1_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1290)
+}
+spriteset(set_BOX_CAR_1966_DARKBLUE_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1320)
+}
+spriteset(set_BOX_CAR_1966_GREEN_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1350)
+}
+spriteset(set_BOX_CAR_1966_BLUE_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1380)
+}
+spriteset(set_BOX_CAR_1966_BLACK_2_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1410)
+}
+spriteset(set_BOX_CAR_1966_DARKBLUE_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1440)
+}
+spriteset(set_BOX_CAR_1966_GREEN_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1470)
+}
+spriteset(set_BOX_CAR_1966_BLUE_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1500)
+}
+spriteset(set_BOX_CAR_1966_BLACK_3_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1530)
+}
+spriteset(set_BOX_CAR_1966_DARKBLUE_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1560)
+}
+spriteset(set_BOX_CAR_1966_GREEN_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1590)
+}
+spriteset(set_BOX_CAR_1966_BLUE_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1620)
+}
+spriteset(set_BOX_CAR_1966_BLACK_4_wagon, "./src/wagon/box_car/BOX_CAR.png") {
+    tmpl_BOX_CAR_wagon(80, 1650)
+}
+spritegroup sg_BOX_CAR_1966_DARKBLUE_wagon {
+    loading: [
+        set_BOX_CAR_1966_DARKBLUE_1_wagon,
+        set_BOX_CAR_1966_DARKBLUE_2_wagon,
+        set_BOX_CAR_1966_DARKBLUE_3_wagon,
+        set_BOX_CAR_1966_DARKBLUE_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1966_DARKBLUE_wagon
+    ];
+}
+spritegroup sg_BOX_CAR_1966_GREEN_wagon {
+    loading: [
+        set_BOX_CAR_1966_GREEN_1_wagon,
+        set_BOX_CAR_1966_GREEN_2_wagon,
+        set_BOX_CAR_1966_GREEN_3_wagon,
+        set_BOX_CAR_1966_GREEN_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1966_GREEN_wagon
+    ];
+}
+spritegroup sg_BOX_CAR_1966_BLUE_wagon {
+    loading: [
+        set_BOX_CAR_1966_BLUE_1_wagon,
+        set_BOX_CAR_1966_BLUE_2_wagon,
+        set_BOX_CAR_1966_BLUE_3_wagon,
+        set_BOX_CAR_1966_BLUE_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1966_BLUE_wagon
+    ];
+}
+spritegroup sg_BOX_CAR_1966_BLACK_wagon {
+    loading: [
+        set_BOX_CAR_1966_BLACK_1_wagon,
+        set_BOX_CAR_1966_BLACK_2_wagon,
+        set_BOX_CAR_1966_BLACK_3_wagon,
+        set_BOX_CAR_1966_BLACK_4_wagon
+    ];
+    loaded: [
+        set_BOX_CAR_1966_BLACK_wagon
+    ];
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_BOX_CAR_purchase, cargo_subtype) {
+    set_BOX_CAR_2003_purchase;
+}

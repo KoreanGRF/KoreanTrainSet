@@ -1,0 +1,75 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * BOX_CAR
+ */
+SPEED_GENERAL(BOX_CAR)
+COST(BOX_CAR)
+RUNNING(BOX_CAR)
+CAPACITY(BOX_CAR)
+LOADING(BOX_CAR)
+
+// Graphics
+#include "box_car_graphic.pnml"
+
+// Switch
+#include "box_car_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_BOX_CAR, 5916) {
+    property {
+        // Common properties
+        name:                           string(STR_BOX_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_BOX_CAR_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        length:                         7;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         var_BOX_CAR_WEIGHT;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 36;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [LVST, GRAI, PAPR, WHEA, SUGR, CTCD, CMNT, POWR, BOOM, FECR, FERT, SALT, SAND, SLAG, SASH, GRVL, SULP, WDPR, VENG, VPTS, WOOL];
+        cargo_disallow_refit:           [];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     1;
+        running_cost_factor:            150;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_CARGO;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_BOX_CAR_wagon;
+        purchase:                       sw_BOX_CAR_purchase;
+
+        speed:                          sw_BOX_CAR_speed_custom;
+        cost_factor:                    sw_BOX_CAR_cost;
+        running_cost_factor:            sw_BOX_CAR_runningcost;
+        cargo_capacity:                 sw_BOX_CAR_capacity_custom;
+        loading_speed:                  sw_BOX_CAR_loadingspeed;
+        weight:                         sw_BOX_CAR_weight;
+
+        can_attach_wagon:               sw_Kxxxx_attach;
+        cargo_subtype_text:             sw_BOX_CAR_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}

@@ -31,6 +31,7 @@ switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
     ko_train_CAFE_CAR:        return CB_RESULT_ATTACH_ALLOW;
     ko_train_FLAT_CAR:        return CB_RESULT_ATTACH_ALLOW;
     ko_train_HOPPER_CAR:      return CB_RESULT_ATTACH_ALLOW;
+    ko_train_BOX_CAR:         return CB_RESULT_ATTACH_ALLOW;
     ko_train_BAGGAGE_CAR:     return CB_RESULT_ATTACH_ALLOW;
     ko_train_TANK_CAR:        return CB_RESULT_ATTACH_ALLOW;
     ko_train_STAKE_CAR:       return CB_RESULT_ATTACH_ALLOW;

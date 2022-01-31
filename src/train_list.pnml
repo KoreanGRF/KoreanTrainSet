@@ -99,6 +99,7 @@
 #include "wagon/flat_car/flat_car.pnml"
 #include "wagon/mail_car/mail_car.pnml"
 #include "wagon/hopper_car/hopper_car.pnml"
+#include "wagon/box_car/box_car.pnml"
 #include "wagon/baggage_car/baggage_car.pnml"
 #include "wagon/tank_car/tank_car.pnml"
 #include "wagon/stake_car/stake_car.pnml"
