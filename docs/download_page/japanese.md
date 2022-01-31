@@ -60,12 +60,12 @@
         <td class="introduction">2001</td>
     </tr>
     <tr data-veh_id="K5000">
-        <td class="refit"><div><img src="./_static/K5000_BLACK_ORANGE.png" alt="5·6000号帯ディーゼル機関車"></div></td>
-        <td class="name">5·6000号帯ディーゼル機関車</td>
-        <td class="speed">105 km/h</td>
+        <td class="refit"><div><img src="./_static/K5000_BLACK_ORANGE.png" alt="5000号帯ディーゼル機関車"></div></td>
+        <td class="name">5000号帯ディーゼル機関車</td>
+        <td class="speed">115 km/h</td>
         <td class="speed_designed">105 km/h</td>
         <td class="capacity"></td>
-        <td class="power">1305 kW</td>
+        <td class="power">2347 kW</td>
         <td class="weight">141 t</td>
         <td class="introduction">1957</td>
     </tr>

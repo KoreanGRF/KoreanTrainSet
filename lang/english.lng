@@ -15,7 +15,8 @@ STR_PASHI5_NAME                                  :Pashi 5 Steam Locomotive
 STR_MIKA3_NAME                                   :Mika 3 Steam Locomotive
 STR_K2x00_NAME                                   :2x00 Diesel Locomotive
 STR_K4x00_NAME                                   :4x00 Diesel Locomotive
-STR_K5000_NAME                                   :5·6000 Diesel Locomotive
+STR_K5000_NAME                                   :5000 Diesel Locomotive
+STR_K6x00_NAME                                   :6x00 Diesel Locomotive
 STR_K7000_NAME                                   :7000 Diesel Locomotive
 STR_K7x00_NAME                                   :7x00 Diesel Locomotive
 STR_K7600_NAME                                   :7600 Diesel Locomotive

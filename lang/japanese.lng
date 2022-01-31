@@ -14,7 +14,8 @@ STR_PASHI5_NAME                                  :バシ５形蒸気機関車
 STR_MIKA3_NAME                                   :ミカ３形蒸気機関車
 STR_K2x00_NAME                                   :2x00号帯ディーゼル機関車
 STR_K4x00_NAME                                   :4x00号帯ディーゼル機関車
-STR_K5000_NAME                                   :5·6000号帯ディーゼル機関車
+STR_K5000_NAME                                   :5000号帯ディーゼル機関車
+STR_K6x00_NAME                                   :6x00号帯ディーゼル機関車
 STR_K7000_NAME                                   :7000号帯ディーゼル機関車
 STR_K7x00_NAME                                   :7x00号帯ディーゼル機関車
 STR_K7600_NAME                                   :7600号帯ディーゼル機関車
