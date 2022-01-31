@@ -1,0 +1,104 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_K6x00_loco, cargo_subtype) {
+    0:    set_K6000_ORANGE_BLACK;
+    1:    set_K6100_ORANGE_BLACK;
+    2:    set_K6200_ORANGE_BLACK;
+    3:    set_K6300_ORANGE_BLACK;
+    // 5~14: //RESERVED
+    15:   set_K6300_BLUE_WHITE;
+    16:   set_K6300_KWANKWANG;
+    set_K6000_ORANGE_BLACK;
+}
+switch(FEAT_TRAINS, SELF, sw_K6x00_cargo_subtype_text, cargo_subtype) {
+    0:    return string(STR_REFIT_LIVERY_6000_BLACK_ORANGE);
+    1:    return string(STR_REFIT_LIVERY_6100_BLACK_ORANGE);
+    2:    return string(STR_REFIT_LIVERY_6200_BLACK_ORANGE);
+    3:    return string(STR_REFIT_LIVERY_6300_BLACK_ORANGE);
+    // 5~14: //RESERVED
+    15:   return string(STR_REFIT_LIVERY_6300_BLUE_WHITE);
+    16:   return string(STR_REFIT_LIVERY_KWANKWANG);
+    return string(STR_REFIT_LIVERY_6000_BLACK_ORANGE);
+}
+
+// Speed
+switch(FEAT_TRAINS, SELF, sw_K6x00_speed, cargo_subtype) {
+    0:    return sw_K6000_speed;
+    1:    return sw_K6100_speed;
+    2:    return sw_K6200_speed;
+    3:    return sw_K6300_speed;
+    15:   return sw_K6300_speed;
+    16:   return sw_K6300_speed;
+    return sw_K6300_speed;
+}
+
+// Cost
+switch(FEAT_TRAINS, SELF, sw_K6x00_cost, cargo_subtype) {
+    0:    return sw_K6000_cost;
+    1:    return sw_K6100_cost;
+    2:    return sw_K6200_cost;
+    3:    return sw_K6300_cost;
+    15:   return sw_K6300_cost;
+    16:   return sw_K6300_cost;
+    return sw_K6300_cost;
+}
+
+// Running cost
+switch(FEAT_TRAINS, SELF, sw_K6x00_runningcost, cargo_subtype) {
+    0:    return sw_K6000_runningcost;
+    1:    return sw_K6100_runningcost;
+    2:    return sw_K6200_runningcost;
+    3:    return sw_K6300_runningcost;
+    15:   return sw_K6300_runningcost;
+    16:   return sw_K6300_runningcost;
+    return sw_K6300_runningcost;
+}
+
+// SAEMAEUL_CAR
+switch(FEAT_TRAINS, SELF, sw_K6x00_SAEMAEUL_CAR_wagon, cargo_subtype) {
+    15:   set_SAEMAEUL_CAR_wagon_KWANKWANG;    // Kwankwang-ho
+    16:   set_SAEMAEUL_CAR_wagon_KWANKWANG;    // Kwankwang-ho
+    sw_SAEMAEUL_CAR_wagon;     // etc
+}
+switch(FEAT_TRAINS, SELF, sw_K6x00_SAEMAEUL_CAR_cargo_subtype_text, cargo_subtype) {
+    15:   return string(STR_REFIT_LIVERY_6300_BLUE_WHITE);
+    16:   return string(STR_REFIT_LIVERY_KWANKWANG);
+    sw_SAEMAEUL_CAR_subtype_text;
+}
+
+// CAFE_CAR
+switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_KWANKWANG_wagon_by_position, position_in_consist_from_end) {
+    0:    set_CAFE_CAR_KWANKWANG_END_wagon;
+    set_CAFE_CAR_KWANKWANG_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_KWANKWANG_wagon, cargo_subtype) {
+    15:   sw_CAFE_CAR_KWANKWANG_wagon_by_position;    // Kwankwang-ho
+    16:   sw_CAFE_CAR_KWANKWANG_wagon_by_position;    // Kwankwang-ho
+    sw_CAFE_CAR_wagon;     // etc
+}
+switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_KWANKWANG_cargo_subtype_text, cargo_subtype) {
+    15:   return string(STR_REFIT_LIVERY_6300_BLUE_WHITE);
+    16:   return string(STR_REFIT_LIVERY_KWANKWANG);
+    sw_CAFE_CAR_subtype_text;
+}
+
+// GENERATOR_CAR
+switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_KWANKWANG_wagon_by_position, position_in_consist_from_end) {
+    0:    set_GENERATOR_CAR_KWANKWANG_END_wagon;
+    set_GENERATOR_CAR_KWANKWANG_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_KWANKWANG_wagon, cargo_subtype) {
+    15:   sw_GENERATOR_CAR_KWANKWANG_wagon_by_position;    // Kwankwang-ho
+    16:   sw_GENERATOR_CAR_KWANKWANG_wagon_by_position;    // Kwankwang-ho
+    sw_GENERATOR_CAR_wagon;     // etc
+}
+switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_KWANKWANG_cargo_subtype_text, cargo_subtype) {
+    15:   return string(STR_REFIT_LIVERY_6300_BLUE_WHITE);
+    16:   return string(STR_REFIT_LIVERY_KWANKWANG);
+    sw_GENERATOR_CAR_cargo_subtype_text;
+}
+

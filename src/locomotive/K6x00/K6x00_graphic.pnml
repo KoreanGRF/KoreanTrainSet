@@ -1,0 +1,104 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Template for 6x00
+template tmpl_K6x00(x, y) {
+    tmpl_K5000(x, y)
+}
+// Template for 6300
+template tmpl_K6300(x, y) {
+    [x+0,    y,    8,     20,    -3,   -11]
+    [x+20,   y,   20,     16,   -13,    -8]
+    [x+50,   y,   28,     12,   -12,    -8]
+    [x+90,   y,   20,     16,    -4,    -7]
+    [x+120,  y,    8,     20,    -3,    -9]
+    [x+140,  y,   20,     16,   -15,    -7]
+    [x+170,  y,   28,     12,   -17,    -8]
+    [x+210,  y,   20,     16,    -6,    -8]
+}
+
+// 6000 Orange & Black
+spriteset(set_K6000_ORANGE_BLACK_purchase, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_K6000_ORANGE_BLACK, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_K6x00(80, 0)
+}
+
+// 6100 Orange & Black
+spriteset(set_K6100_ORANGE_BLACK_purchase, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_purchase_common(0, 30)
+}
+spriteset(set_K6100_ORANGE_BLACK, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_K6x00(80, 30)
+}
+
+// 6200 Orange & Black
+spriteset(set_K6200_ORANGE_BLACK_purchase, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_purchase_common(0, 60)
+}
+spriteset(set_K6200_ORANGE_BLACK, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_K6x00(80, 60)
+}
+
+// 6300 Orange & Black
+spriteset(set_K6300_ORANGE_BLACK_purchase, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_purchase_common(0, 90)
+}
+spriteset(set_K6300_ORANGE_BLACK, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_K6300(80, 90)
+}
+
+// 6300 White & Blue
+spriteset(set_K6300_BLUE_WHITE_purchase, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_purchase_common(0, 120)
+}
+spriteset(set_K6300_BLUE_WHITE, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_K6300(80, 120)
+}
+
+// 6300 Kwankwang
+spriteset(set_K6300_KWANKWANG_purchase, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_purchase_common(0, 150)
+}
+spriteset(set_K6300_KWANKWANG, "./src/locomotive/K6x00/K6x00.png") {
+    tmpl_K6300(80, 150)
+}
+
+// Kwankwang-ho passenger coach
+spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG_purchase, "./src/wagon/saemaeul_car/KWANKWANG_CAR.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG, "./src/wagon/saemaeul_car/KWANKWANG_CAR.png") {
+    tmpl_wagon_by_coor(80, 0)
+}
+
+// Kwankwang-ho restaurant car
+spriteset(set_CAFE_CAR_KWANKWANG_wagon_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_common(0, 330)
+}
+spriteset(set_CAFE_CAR_KWANKWANG_wagon, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(80, 330)
+}
+spriteset(set_CAFE_CAR_KWANKWANG_END_wagon, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(80, 360)
+}
+
+// Kwankwang-ho generator car
+spriteset(set_GENERATOR_CAR_KWANKWANG_wagon_purchase, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_purchase_common(0, 480)
+}
+spriteset(set_GENERATOR_CAR_KWANKWANG_wagon, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_generator_car_length_6(80, 480)
+}
+spriteset(set_GENERATOR_CAR_KWANKWANG_END_wagon, "./src/wagon/generator_car/generator_car.png") {
+    tmpl_generator_car_length_6(80, 510)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K6x00_purchase, cargo_subtype) {
+    set_K6000_ORANGE_BLACK_purchase;
+}

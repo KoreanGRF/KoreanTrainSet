@@ -62,7 +62,7 @@
     <tr data-veh_id="K5000">
         <td class="refit"><div><img src="./_static/K5000_BLACK_ORANGE.png" alt="5000 Diesel Locomotive"></div></td>
         <td class="name">5000 Diesel Locomotive</td>
-        <td class="speed">115 km/h</td>
+        <td class="speed">105 km/h</td>
         <td class="speed_designed">105 km/h</td>
         <td class="capacity"></td>
         <td class="power">2347 kW</td>

@@ -26,7 +26,7 @@ switch(FEAT_TRAINS, SELF, sw_K7x00_cargo_subtype_text, cargo_subtype) {
     2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
     3:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
     4:    return string(STR_REFIT_LIVERY_7x00_BLACK_ORANGE);
-    5:    return string(STR_REFIT_LIVERY_7x00_KWANKWANG);
+    5:    return string(STR_REFIT_LIVERY_KWANKWANG);
     // 6:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     // 8:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED
     // 9:    return string(STR_REFIT_IMPOSSIBLE);    // RESERVED

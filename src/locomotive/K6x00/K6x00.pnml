@@ -1,0 +1,99 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * K6x00
+ */
+// Defines
+SPEED_GENERAL(K6000)
+SPEED_GENERAL(K6100)
+SPEED_GENERAL(K6200)
+SPEED_GENERAL(K6300)
+COST(K6000)
+COST(K6100)
+COST(K6200)
+COST(K6300)
+RUNNING(K6000)
+RUNNING(K6100)
+RUNNING(K6200)
+RUNNING(K6300)
+
+// Graphics
+#include "K6x00_graphic.pnml"
+
+// Switch
+#include "K6x00_switch.pnml"
+
+// item
+item(FEAT_TRAINS, ko_train_K6x00, 5460) {
+    property {
+        // Common properties
+        name:                           string(STR_K6x00_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_K6000_INTRODUCTION;
+        track_type:                     RAIL;
+        engine_class:                   ENGINE_CLASS_DIESEL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        length:                         7;
+
+        // Spec
+        speed:                          150 km/h;
+        power:                          POWER_IN_KW(var_K6000_POWER);
+        weight:                         var_K6000_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_DIESEL;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_K6x00_loco;
+        purchase:                       sw_K6x00_purchase;
+
+        speed:                          sw_K6x00_speed;
+        cost_factor:                    sw_K6x00_cost;
+        running_cost_factor:            sw_K6x00_runningcost;
+        cargo_capacity:                 0;
+
+        can_attach_wagon:               sw_Kxxxx_attach;
+        cargo_subtype_text:             sw_K6x00_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+    livery_override(ko_train_SAEMAEUL_CAR) {
+        default:                        sw_K6x00_SAEMAEUL_CAR_wagon;
+        loading_speed:                  sw_SAEMAEUL_CAR_loadingspeed;
+        cargo_capacity:                 sw_SAEMAEUL_CAR_capacity;
+        cargo_subtype_text:             sw_K6x00_SAEMAEUL_CAR_cargo_subtype_text;
+    }
+    livery_override(ko_train_CAFE_CAR) {
+        default:                        sw_CAFE_CAR_KWANKWANG_wagon;
+        cargo_subtype_text:             sw_CAFE_CAR_KWANKWANG_cargo_subtype_text;
+    }
+    livery_override(ko_train_GENERATOR_CAR) {
+        default:                        sw_GENERATOR_CAR_KWANKWANG_wagon;
+        cargo_subtype_text:             sw_GENERATOR_CAR_KWANKWANG_cargo_subtype_text;
+        length:                         6;
+    }
+}
+// End of "K6x00"
