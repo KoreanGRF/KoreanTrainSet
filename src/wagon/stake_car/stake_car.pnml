@@ -80,7 +80,6 @@ item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
         TYRE:                           sw_STAKE_CAR_TYRE_wagon;
         ZINC:                           sw_STAKE_CAR_STEL_wagon;
         VENG:                           sw_STAKE_CAR_STEL_wagon;
-        VPTS:                           sw_STAKE_CAR_VBOD_wagon;
         VBOD:                           sw_STAKE_CAR_VBOD_wagon;
         VEHI:                           sw_STAKE_CAR_VEHI_wagon;
         WDPR:                           sw_STAKE_CAR_WDPR_wagon;
