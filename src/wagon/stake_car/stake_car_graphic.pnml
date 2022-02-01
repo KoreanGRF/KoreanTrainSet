@@ -41,6 +41,9 @@ spriteset(set_STAKE_CAR_empty_wagon, "./src/wagon/stake_car/STAKE_CAR.png") {
 spriteset(set_STAKE_CAR_empty_8dir_wagon, "./src/wagon/stake_car/STAKE_CAR.png") {
     tmpl_stake_car_8dir(80, 0)
 }
+spriteset(set_STAKE_CAR_empty_without_stake_8dir_wagon, "./src/wagon/stake_car/STAKE_CAR_without_stake.png") {
+    tmpl_stake_car_8dir(80, 0)
+}
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_purchase, cargo_subtype) {
