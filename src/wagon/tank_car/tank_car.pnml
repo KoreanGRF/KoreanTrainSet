@@ -6,7 +6,7 @@
 /**
  * TANK_CAR
  */
-// SPEED_GENERAL(TANK_CAR)
+SPEED_GENERAL(TANK_CAR)
 COST(TANK_CAR)
 RUNNING(TANK_CAR)
 CAPACITY(TANK_CAR)
@@ -62,6 +62,7 @@ item(FEAT_TRAINS, ko_train_TANK_CAR, 5913) {
         default:                        sw_TANK_CAR_wagon;
         purchase:                       sw_TANK_CAR_purchase;
 
+        speed:                          sw_TANK_CAR_speed;
         cost_factor:                    sw_TANK_CAR_cost;
         running_cost_factor:            sw_TANK_CAR_runningcost;
         cargo_capacity:                 sw_TANK_CAR_capacity;

@@ -6,7 +6,7 @@
 /**
  * HOPPER_CAR
  */
-// SPEED_GENERAL(HOPPER_CAR)
+SPEED_GENERAL(HOPPER_CAR)
 COST(HOPPER_CAR)
 RUNNING(HOPPER_CAR)
 CAPACITY(HOPPER_CAR)
@@ -102,6 +102,7 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         default:                        sw_HOPPER_CAR_wagon;
         purchase:                       sw_HOPPER_CAR_purchase;
 
+        speed:                          sw_HOPPER_CAR_speed;
         cost_factor:                    sw_HOPPER_CAR_cost;
         running_cost_factor:            sw_HOPPER_CAR_runningcost;
         cargo_capacity:                 sw_HOPPER_CAR_capacity;

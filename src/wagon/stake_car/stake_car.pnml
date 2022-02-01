@@ -6,7 +6,7 @@
 /**
  * STAKE_CAR
  */
-// SPEED_GENERAL(STAKE_CAR)
+SPEED_GENERAL(STAKE_CAR)
 COST(STAKE_CAR)
 RUNNING(STAKE_CAR)
 CAPACITY(STAKE_CAR)
@@ -91,6 +91,7 @@ item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
         default:                        sw_STAKE_CAR_wagon;
         purchase:                       sw_STAKE_CAR_purchase;
 
+        speed:                          sw_STAKE_CAR_speed;
         cost_factor:                    sw_STAKE_CAR_cost;
         running_cost_factor:            sw_STAKE_CAR_runningcost;
         cargo_capacity:                 sw_STAKE_CAR_capacity;

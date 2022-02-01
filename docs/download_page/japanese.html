@@ -602,8 +602,8 @@
     <tr data-veh_id="FLAT_CAR">
         <td class="refit"><div><img src="./_static/FLAT_CAR_BLUE.png" alt="コンテナ評判貨車"><br /><img src="./_static/FLAT_CAR_BROWN.png" alt="コンテナ評判貨車"><br /><img src="./_static/FLAT_CAR_BLACK.png" alt="コンテナ評判貨車"></div></td>
         <td class="name">コンテナ評判貨車</td>
-        <td class="speed"></td>
-        <td class="speed_designed"></td>
+        <td class="speed">120 km/h</td>
+        <td class="speed_designed">120 km/h</td>
         <td class="capacity">35</td>
         <td class="power"></td>
         <td class="weight">17 t</td>
@@ -612,8 +612,8 @@
     <tr data-veh_id="HOPPER_CAR">
         <td class="refit"><div><img src="./_static/HOPPER_CAR_A.png" alt="オープンカー"><br /><img src="./_static/HOPPER_CAR_B.png" alt="オープンカー"><br /><img src="./_static/HOPPER_CAR_C.png" alt="オープンカー"></div></td>
         <td class="name">オープンカー</td>
-        <td class="speed"></td>
-        <td class="speed_designed"></td>
+        <td class="speed">120 km/h</td>
+        <td class="speed_designed">120 km/h</td>
         <td class="capacity">35</td>
         <td class="power"></td>
         <td class="weight">17 t</td>
@@ -642,8 +642,8 @@
     <tr data-veh_id="TANK_CAR">
         <td class="refit"><div><img src="./_static/TANK_CAR_1.png" alt="タンク車"><br /><img src="./_static/TANK_CAR_2.png" alt="タンク車"><br /><img src="./_static/TANK_CAR_3.png" alt="タンク車"></div></td>
         <td class="name">タンク車</td>
-        <td class="speed"></td>
-        <td class="speed_designed"></td>
+        <td class="speed">120 km/h</td>
+        <td class="speed_designed">120 km/h</td>
         <td class="capacity">35</td>
         <td class="power"></td>
         <td class="weight">17 t</td>
@@ -672,8 +672,8 @@
     <tr data-veh_id="STAKE_CAR">
         <td class="refit"><div><img src="./_static/STAKE_CAR.png" alt="評判貨車"></div></td>
         <td class="name">評判貨車</td>
-        <td class="speed"></td>
-        <td class="speed_designed"></td>
+        <td class="speed">120 km/h</td>
+        <td class="speed_designed">120 km/h</td>
         <td class="capacity">35</td>
         <td class="power"></td>
         <td class="weight">17 t</td>

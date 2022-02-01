@@ -6,7 +6,7 @@
 /**
  * FLAT_CAR
  */
-// SPEED_GENERAL(FLAT_CAR)
+SPEED_GENERAL(FLAT_CAR)
 COST(FLAT_CAR)
 RUNNING(FLAT_CAR)
 CAPACITY(FLAT_CAR)
@@ -61,6 +61,7 @@ item(FEAT_TRAINS, ko_train_FLAT_CAR, 5910) {
         default:                        sw_FLAT_CAR_wagon;
         purchase:                       set_FLAT_CAR_purchase;
 
+        speed:                          sw_FLAT_CAR_speed;
         cost_factor:                    sw_FLAT_CAR_cost;
         running_cost_factor:            sw_FLAT_CAR_runningcost;
         cargo_capacity:                 sw_FLAT_CAR_capacity;
