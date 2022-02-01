@@ -83,7 +83,7 @@ switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_KWANKWANG_wagon, cargo_subtype) {
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_KWANKWANG_cargo_subtype_text, cargo_subtype) {
     15:   return string(STR_REFIT_LIVERY_6300_BLUE_WHITE);
     16:   return string(STR_REFIT_LIVERY_KWANKWANG);
-    sw_CAFE_CAR_subtype_text;
+    sw_CAFE_CAR_cargo_subtype_text;
 }
 
 // GENERATOR_CAR

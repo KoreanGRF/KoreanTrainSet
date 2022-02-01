@@ -31,7 +31,7 @@ switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_wagon, cargo_subtype) {
 // Cargo subtype
 //  It is very different with Cafe/restaurant car's livery name
 //  but it is matched with MUGUNGHWA_CAR in order to let user refit easily.
-switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_cargo_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED);
     2: return string(STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW);
     3: return string(STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW);
