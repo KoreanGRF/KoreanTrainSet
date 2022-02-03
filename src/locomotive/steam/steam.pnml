@@ -25,6 +25,12 @@ switch(FEAT_TRAINS, SELF, sw_steam_attach, vehicle_type_id) {
     return string(STR_ERROR_NO_ATTACH);
 }
 
+// Visual effect
+switch(FEAT_TRAINS, SELF, sw_steam_visual_effect, position_in_vehid_chain % 2) {
+    0: visual_effect_and_powered(VISUAL_EFFECT_STEAM, -2, DISABLE_WAGON_POWER);
+    VISUAL_EFFECT_DISABLE;
+}
+
 #include "MATE2.pnml"
 #include "PASHI5.pnml"
 #include "MIKA3.pnml"

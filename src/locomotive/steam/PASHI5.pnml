@@ -76,6 +76,7 @@ item(FEAT_TRAINS, ko_train_PASHI5, 5302) {
         loading_speed:                  sw_PASHI5_loadingspeed;
 
         can_attach_wagon:               sw_steam_attach;
+        visual_effect_and_powered:      sw_steam_visual_effect;
 
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
