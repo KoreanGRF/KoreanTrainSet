@@ -94,7 +94,10 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
     }
     livery_override(ko_train_CAFE_CAR) {
         default:                        sw_DHC_CAFE_CAR;
+        cargo_capacity:                 sw_CAFE_CAR_capacity;
+        loading_speed:                  sw_CAFE_CAR_loadingspeed;
         cargo_subtype_text:             sw_DHC_subtype_text;
+        running_cost_factor:            sw_CAFE_CAR_runningcost;
     }
 }
 // End of "DHC(PP)"
