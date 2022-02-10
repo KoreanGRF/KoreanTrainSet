@@ -92,7 +92,7 @@ item(FEAT_TRAINS, ko_train_K7x00, 5471) {
         default:                        sw_K7x00_GENERATOR_CAR_KWANKWANG_wagon;
         cargo_subtype_text:             sw_K7x00_GENERATOR_CAR_KWANKWANG_cargo_subtype_text;
         cargo_capacity:                 0;
-        length:                         6;
+        length:                         sw_GENERATOR_CAR_length;
     }
 }
 // End of "K7x00"
