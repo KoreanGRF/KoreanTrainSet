@@ -11,7 +11,8 @@
   * **kiwitree** ([@kiwitreekor](https://github.com/kiwitreekor))
   * **가문비(Gamunbi)** ([@Gamunbi](https://github.com/Gamunbi)) - Steam locomotives
   * **즉삭** ([@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201))
-  * **[@kimgas](https://github.com/kimgas)**
+  * **kimgas** ([@kimgas](https://github.com/kimgas))
+  * **EightonEight** ([@EightonEight](https://github.com/EightonEight))
 
 ## Translations
   * Korean, English (UK, US), Japanese: [@telk5093](https://github.com/telk5093)
