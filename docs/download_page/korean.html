@@ -267,7 +267,7 @@
         <td class="capacity">64</td>
         <td class="power"></td>
         <td class="weight">20 t</td>
-        <td class="introduction">1984</td>
+        <td class="introduction">1969</td>
     </tr>
     <tr data-veh_id="MUGUNGHWA_CAR">
         <td class="refit"><div><img src="./_static/MUGUNGHWA_CAR_A.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_B.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_C.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_D.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_E.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_F.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_RED_BLUE_WHITE.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_STREAMLINE.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_EXECUTIVE_HAETAE_1.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_EXECUTIVE_HAETAE_2.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_EXECUTIVE_HANJIN_1.png" alt="무궁화호 객차"><br /><img src="./_static/MUGUNGHWA_CAR_EXECUTIVE_STREAMLINED.png" alt="무궁화호 객차"><br /><img src="./_static/HAERANG.png" alt="무궁화호 객차"><br /><img src="./_static/G_TRAIN.png" alt="무궁화호 객차"><br /><img src="./_static/S_TRAIN_1.png" alt="무궁화호 객차"><br /><img src="./_static/S_TRAIN_2.png" alt="무궁화호 객차"><br /><img src="./_static/A_TRAIN_1.png" alt="무궁화호 객차"></div></td>
@@ -277,7 +277,7 @@
         <td class="capacity">72</td>
         <td class="power"></td>
         <td class="weight">17 t</td>
-        <td class="introduction">1972</td>
+        <td class="introduction">1970</td>
     </tr>
     <tr data-veh_id="TONGIL_CAR">
         <td class="refit"><div><img src="./_static/TONGIL_CAR_1.png" alt="통일호 객차"><br /><img src="./_static/TONGIL_CAR_2.png" alt="통일호 객차"><br /><img src="./_static/TONGIL_CAR_3A.png" alt="통일호 객차"><br /><img src="./_static/TONGIL_CAR_3B.png" alt="통일호 객차"><br /><img src="./_static/TONGIL_CAR_4.png" alt="통일호 객차"><br /><img src="./_static/TONGIL_CAR_5.png" alt="통일호 객차"><br /><img src="./_static/TONGIL_CAR_6.png" alt="통일호 객차"></div></td>
@@ -287,7 +287,7 @@
         <td class="capacity">72</td>
         <td class="power"></td>
         <td class="weight">17 t</td>
-        <td class="introduction">1984</td>
+        <td class="introduction">1963</td>
     </tr>
     <tr data-veh_id="BIDULGI_CAR">
         <td class="refit"><div><img src="./_static/BIDULGI_CAR_3RD_CLASS.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_DC_TRAILER.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_RED_1960.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_RED.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_BLUE.png" alt="비둘기호 객차"><br /><img src="./_static/BIDULGI_CAR_1990.png" alt="비둘기호 객차"></div></td>
