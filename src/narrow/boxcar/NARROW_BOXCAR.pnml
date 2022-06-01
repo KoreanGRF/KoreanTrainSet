@@ -65,7 +65,7 @@ item(FEAT_TRAINS, ko_train_NARROW_BOXCAR, 5905) {
         // Costs
         cost_factor:                    10;
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_base:              150;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
