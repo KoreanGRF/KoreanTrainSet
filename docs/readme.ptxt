@@ -18,7 +18,7 @@ List
   Korean Train Set has train vehicles of the Republic of Korea (South Korea),
 including various locomotives and metro vehicles in major cities of south korea.
 
-Please refer to https://github.com/KoreanGRF/KoreanTrainSet/blob/master/docs/download_page/english.md
+Please refer to https://github.com/KoreanGRF/KoreanTrainSet/blob/main/docs/download_page/english.md
 if you want to see the whole vehicle list that Korean Train Set adds.
 
 Korean Train Set also adds a new railtype such as below:

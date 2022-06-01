@@ -5,7 +5,7 @@
 게임 내 온라인 콘텐츠에서 다운로드하거나, [Github release 페이지](https://github.com/KoreanGRF/KoreanTrainSet/releases)에서 다운로드할 수 있습니다.
 
 ## 차량 목록 및 스펙
-[이 페이지](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/docs/download_page/korean.md)에서 전체 차량 목록과 각각의 스펙(속력, 무게, 출력 등)을 확인하실 수 있습니다.
+[이 페이지](https://github.com/KoreanGRF/KoreanTrainSet/blob/main/docs/download_page/korean.md)에서 전체 차량 목록과 각각의 스펙(속력, 무게, 출력 등)을 확인하실 수 있습니다.
 
 ## 개발
 ### 빌드하는 방법
@@ -20,7 +20,7 @@
 한국 열차 세트를 다른 언어로 번역하시려면, 이 Github 프로젝트에 Pull Request를 열어주세요.  
 Pull Request를 열 줄 모르신다면, Issues에 올리셔도 괜찮습니다.
 이 파일을 번역하시면 됩니다:
-- [/lang/english.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/lang/english.lng)  
+- [/lang/english.lng](https://github.com/KoreanGRF/KoreanTrainSet/blob/main/lang/english.lng)  
 또, [제 사이트의 다운로드 페이지](https://telk.kr/ottd/newgrf/ko_train_set?lang=en)도 번역하길 원하신다면, 별도로 연락해주세요: telk5093@gmail.com
 
 ## 링크
@@ -28,7 +28,7 @@ Pull Request를 열 줄 모르신다면, Issues에 올리셔도 괜찮습니다.
 - 공식 다운로드 페이지 ([Korean](https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr) / [English](https://telk.kr/ottd/newgrf/ko_train_set/?lang=en) / [Japanese](https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp) / [Spanish](https://telk.kr/ottd/newgrf/ko_train_set/?lang=es))
 
 ## 기여하신 분들
-모든 기여하신 분들의 이름은 [contributors.md](https://github.com/KoreanGRF/KoreanTrainSet/blob/master/docs/contributors.md)에서 볼 수 있습니다.
+모든 기여하신 분들의 이름은 [contributors.md](https://github.com/KoreanGRF/KoreanTrainSet/blob/main/docs/contributors.md)에서 볼 수 있습니다.
 
 ## 라이선스
 이 NewGRF는 **[크리에이티브 커먼스 라이선스 v3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)** (CC-BY-NC-SA v3.0)을 따릅니다.  
