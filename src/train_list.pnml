@@ -91,6 +91,7 @@
 #include "LRT/uisinseol/uisinseol.pnml"
 #include "LRT/yongin_everline/yongin_everline.pnml"
 #include "LRT/uijeongbu/uijeongbu.pnml"
+#include "LRT/sillim/sillim.pnml"
 
 #include "locomotive/ecobee/ecobee.pnml"
 

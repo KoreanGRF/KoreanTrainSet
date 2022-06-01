@@ -579,6 +579,16 @@
         <td class="weight">16 t</td>
         <td class="introduction">2012</td>
     </tr>
+    <tr data-veh_id="SILLIM">
+        <td class="refit"><div><img src="./_static/SILLIM.png" alt="Sillim Line"></div></td>
+        <td class="name">Sillim Line</td>
+        <td class="speed">60 km/h</td>
+        <td class="speed_designed">70 km/h</td>
+        <td class="capacity">80</td>
+        <td class="power">500 kW</td>
+        <td class="weight">16 t</td>
+        <td class="introduction">2012</td>
+    </tr>
     <tr data-veh_id="ECOBEE">
         <td class="refit"><div><img src="./_static/ECOBEE.png" alt="Incheon Intl Airport Maglev (Ecobee)"></div></td>
         <td class="name">Incheon Intl Airport Maglev (Ecobee)</td>

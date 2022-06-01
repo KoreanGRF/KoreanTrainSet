@@ -579,6 +579,16 @@
         <td class="weight">16 t</td>
         <td class="introduction">2012</td>
     </tr>
+    <tr data-veh_id="SILLIM">
+        <td class="refit"><div><img src="./_static/SILLIM.png" alt="신림선"></div></td>
+        <td class="name">신림선</td>
+        <td class="speed">60 km/h</td>
+        <td class="speed_designed">70 km/h</td>
+        <td class="capacity">80</td>
+        <td class="power">500 kW</td>
+        <td class="weight">16 t</td>
+        <td class="introduction">2012</td>
+    </tr>
     <tr data-veh_id="ECOBEE">
         <td class="refit"><div><img src="./_static/ECOBEE.png" alt="인천공항 자기부상철도 (에코비)"></div></td>
         <td class="name">인천공항 자기부상철도 (에코비)</td>

@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// SILLIM
+spriteset(set_SILLIM_engineH, "./src/LRT/sillim/SILLIM.png") {
+    [80+0,      0,     6,    17,     -2,    -10]
+    [80+20,     0,    14,    14,    -11,     -6]
+    [80+50,     0,    20,    13,     -6,     -8]
+    [80+90,     0,    14,    14,     -2,     -7]
+    [80+120,    0,     6,    17,     -2,     -7]
+    [80+140,    0,    14,    14,    -13,     -5]
+    [80+170,    0,    20,    13,    -16,     -8]
+    [80+210,    0,    14,    14,     -6,     -9]
+}
+spriteset(set_SILLIM_engineT, "./src/LRT/sillim/SILLIM.png") {
+    [80+120,    30,    6,    17,     -2,     -7]
+    [80+140,    30,   14,    14,    -13,     -5]
+    [80+170,    30,   20,    13,    -16,     -8]
+    [80+210,    30,   14,    14,     -6,     -9]
+    [80+0,      30,    6,    17,     -2,    -10]
+    [80+20,     30,   14,    14,    -11,     -6]
+    [80+50,     30,   20,    13,     -6,     -8]
+    [80+90,     30,   14,    14,     -2,     -7]
+}
+spriteset(set_SILLIM_wagon, "./src/LRT/sillim/SILLIM.png") {
+    [80+0,      60,     6,    17,    -2,    -10]
+    [80+20,     60,    14,    14,   -11,     -6]
+    [80+50,     60,    20,    13,    -6,     -8]
+    [80+90,     60,    14,    14,    -2,     -7]
+    [80+120,    60,     6,    17,    -2,     -7]
+    [80+140,    60,    14,    14,   -13,     -5]
+    [80+170,    60,    20,    13,   -16,     -8]
+    [80+210,    60,    14,    14,    -6,     -9]
+}
+spriteset(set_SILLIM_purchase, "./src/LRT/sillim/SILLIM.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_SILLIM_purchase, cargo_subtype) {
+    set_SILLIM_purchase;
+}
