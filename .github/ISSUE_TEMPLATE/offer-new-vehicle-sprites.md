@@ -2,7 +2,7 @@
 name: 신규 차량 그래픽 제공(Offer new vehicle sprites)
 about: 신규 차량에 대한 그래픽과 정보를 제공하는 이슈 (An issue for offering sprites and info for new
   vehicle)
-title: ''
+title: '[New]'
 labels: new car
 assignees: ''
 
