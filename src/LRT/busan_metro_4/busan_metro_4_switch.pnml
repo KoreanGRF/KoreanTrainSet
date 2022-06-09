@@ -21,6 +21,12 @@ switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_4_wagon, cargo_subtype) {
     set_BUSAN_METRO_4_wagon;
 }
 
+// Capacity
+switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_4_capacity_custom, vehicle_type_id) {
+    ko_train_BUSAN_METRO_4: return sw_BUSAN_METRO_4_capacity;
+    return 44 / 2 * sw_cargo_capacity_factor;
+}
+
 // Attach
 switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_4_attach, vehicle_type_id) {
     ko_train_BUSAN_METRO_4: return CB_RESULT_ATTACH_ALLOW;
