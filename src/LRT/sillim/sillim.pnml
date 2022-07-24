@@ -78,12 +78,14 @@ item(FEAT_TRAINS, ko_train_SILLIM, 5806) {
     livery_override(ko_train_PASSWG) {
         default:                        sw_SILLIM_wagon;
         cargo_capacity:                 sw_SILLIM_capacity_custom;
+        loading_speed:                  sw_SILLIM_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         length:                         5;
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_SILLIM_wagon;
         cargo_capacity:                 sw_SILLIM_capacity_custom;
+        loading_speed:                  sw_SILLIM_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
         length:                         5;
