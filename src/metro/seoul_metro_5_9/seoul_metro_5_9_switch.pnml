@@ -32,8 +32,8 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_cargo_subtype_text, cargo_subtype) 
     3:  return string(STR_REFIT_METRO_SMETRO_5K_4TH_NAME);
     4:  return string(STR_REFIT_METRO_SMETRO_6K_1ST_NAME);
     // 5:  // RESERVED
-    6:  return string(STR_REFIT_METRO_SMETRO_7K_1ST_NAME);
-    7:  return string(STR_REFIT_METRO_SMETRO_7K_2ND_NAME);
+    6:  return string(STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME);
+    7:  return string(STR_REFIT_METRO_SMETRO_7K_4TH_NAME);
     // 8:  // RESERVED
     9:  return string(STR_REFIT_METRO_SMETRO_8K_1ST_NAME);
     // 10: // RESERVED
