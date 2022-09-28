@@ -10,77 +10,11 @@ SPEED_GENERAL(K8000)
 COST(K8000)
 RUNNING(K8000)
 
-// Blue & White
-spriteset(set_K8000_BLUE_WHITE_purchase, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_purchase_common(0, 0)
-}
-spriteset(set_K8000_BLUE_WHITE, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_loco(80, 0)
-}
-
-// Green & Yellow
-spriteset(set_K8000_GREEN_YELLOW_purchase, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_purchase_common(0, 30)
-}
-spriteset(set_K8000_GREEN_YELLOW, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_loco(80, 30)
-}
-
-// Red & White & Blue
-spriteset(set_K8000_RED_WHITE_BLUE_purchase, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_purchase_common(0, 60)
-}
-spriteset(set_K8000_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8000.png") {
-    tmpl_loco(80, 60)
-}
-
-// Alias of purchase image
-switch(FEAT_TRAINS, SELF, sw_K8000_purchase, cargo_subtype) {
-    set_K8000_RED_WHITE_BLUE_purchase;
-}
-
+// Graphics
+#include "K8000_graphic.pnml"
 
 // Switch
-switch(FEAT_TRAINS, SELF, sw_K8000, cargo_subtype) {
-    1:    set_K8000_BLUE_WHITE;
-    2:    set_K8000_GREEN_YELLOW;
-    set_K8000_RED_WHITE_BLUE;
-}
-switch(FEAT_TRAINS, SELF, sw_K8000_cargo_subtype_text, cargo_subtype) {
-    1:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
-    2:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
-    return string(STR_REFIT_LIVERY_THESEDAYS);
-}
-
-// SAEMAEUL_CAR
-switch(FEAT_TRAINS, SELF, sw_K8000_SAEMAEUL_CAR_wagon, cargo_subtype) {
-    1:   set_SAEMAEUL_CAR_wagon_KWANKWANG;    // Kwankwang-ho
-    sw_SAEMAEUL_CAR_wagon;     // etc
-}
-switch(FEAT_TRAINS, SELF, sw_K8000_SAEMAEUL_CAR_cargo_subtype_text, cargo_subtype) {
-    1:   return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
-    sw_SAEMAEUL_CAR_subtype_text;
-}
-
-// CAFE_CAR
-switch(FEAT_TRAINS, SELF, sw_K8000_CAFE_CAR_KWANKWANG_wagon, cargo_subtype) {
-    1:   set_CAFE_CAR_KWANKWANG_wagon;    // Kwankwang-ho
-    sw_CAFE_CAR_wagon;     // etc
-}
-switch(FEAT_TRAINS, SELF, sw_K8000_CAFE_CAR_KWANKWANG_cargo_subtype_text, cargo_subtype) {
-    1:    return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
-    sw_CAFE_CAR_cargo_subtype_text;
-}
-
-// GENERATOR_CAR
-switch(FEAT_TRAINS, SELF, sw_K8000_GENERATOR_CAR_KWANKWANG_wagon, cargo_subtype) {
-    1:   set_GENERATOR_CAR_KWANKWANG_wagon;    // Kwankwang-ho
-    sw_GENERATOR_CAR_wagon;     // etc
-}
-switch(FEAT_TRAINS, SELF, sw_K8000_GENERATOR_CAR_KWANKWANG_cargo_subtype_text, cargo_subtype) {
-    1:   return string(STR_REFIT_LIVERY_7x00_FIRST_KORAIL);
-    sw_GENERATOR_CAR_cargo_subtype_text;
-}
+#include "K8000_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_K8000, 5480) {

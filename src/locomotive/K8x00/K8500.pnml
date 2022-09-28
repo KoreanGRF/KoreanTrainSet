@@ -10,23 +10,11 @@ SPEED_GENERAL(K8500)
 COST(K8500)
 RUNNING(K8500)
 
-// K8500
-spriteset(set_K8500, "./src/locomotive/K8x00/K8500.png") {
-    tmpl_loco(80, 0)
-}
-spriteset(set_K8500_purchase, "./src/locomotive/K8x00/K8500.png") {
-    tmpl_purchase_common(0, 0)
-}
-
-// Alias of purchase image
-switch(FEAT_TRAINS, SELF, sw_K8500_purchase, cargo_subtype) {
-    set_K8500_purchase;
-}
+// Graphics
+#include "K8500_graphic.pnml"
 
 // Switch
-switch(FEAT_TRAINS, SELF, sw_K8500_loco, cargo_subtype) {
-    set_K8500;
-}
+#include "K8500_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_K8500, 5485) {

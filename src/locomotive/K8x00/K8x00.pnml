@@ -10,36 +10,11 @@ SPEED_GENERAL(K8x00)
 COST(K8x00)
 RUNNING(K8x00)
 
-// Red & White & Blue (current)
-spriteset(set_K8x00_RED_WHITE_BLUE_purchase, "./src/locomotive/K8x00/K8x00.png") {
-    tmpl_purchase_common(0, 0)
-}
-spriteset(set_K8x00_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8x00.png") {
-    tmpl_loco(80, 0)
-}
+// Graphics
+#include "K8x00_graphic.pnml"
 
-// Green & Yellow
-spriteset(set_K8x00_GREEN_YELLOW_purchase, "./src/locomotive/K8x00/K8x00.png") {
-    tmpl_purchase_common(0, 30)
-}
-spriteset(set_K8x00_GREEN_YELLOW, "./src/locomotive/K8x00/K8x00.png") {
-    tmpl_loco(80, 30)
-}
-
-// Alias of purchase image
-switch(FEAT_TRAINS, SELF, sw_K8x00_purchase, cargo_subtype) {
-    set_K8x00_RED_WHITE_BLUE_purchase;
-}
-
-// Refit Paintings
-switch(FEAT_TRAINS, SELF, sw_K8x00_loco, cargo_subtype) {
-    1:    set_K8x00_GREEN_YELLOW;
-    set_K8x00_RED_WHITE_BLUE;
-}
-switch(FEAT_TRAINS, SELF, sw_K8x00_cargo_subtype_text, cargo_subtype) {
-    1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
-    return string(STR_REFIT_LIVERY_THESEDAYS);
-}
+// Switch
+#include "K8x00_switch.pnml"
 
 // Item
 item(FEAT_TRAINS, ko_train_K8x00, 5481) {

@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+// Switch
+switch(FEAT_TRAINS, SELF, sw_K8500_loco, cargo_subtype) {
+    set_K8500;
+}
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K8500_purchase, cargo_subtype) {
+    set_K8500_purchase;
+}
