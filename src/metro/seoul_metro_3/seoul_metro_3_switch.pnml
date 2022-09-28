@@ -11,6 +11,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_cargo_subtype_text, cargo_subtype) {
     3: return string(STR_REFIT_METRO_3K_VVVF_1ST_1_NAME);
     4: return string(STR_REFIT_METRO_3K_VVVF_1ST_2_NAME);
     5: return string(STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME);
+    6: return string(STR_REFIT_METRO_LINE_3_2022_NAME);
     return string(STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME);
 }
 
@@ -21,6 +22,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_engineH, cargo_subtype) {
     3: set_3K_VVVF_1ST_1_engineH;
     4: set_3K_VVVF_1ST_2_engineH;
     5: set_3K_SMETRO_VVVF_2ND_engineH;
+    6: set_LINE_3_2022_engineH;
     set_3K_SMETRO_VVVF_1ST_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_engineT, cargo_subtype) {
@@ -29,6 +31,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_engineT, cargo_subtype) {
     3: set_3K_VVVF_1ST_1_engineT;
     4: set_3K_VVVF_1ST_2_engineT;
     5: set_3K_SMETRO_VVVF_2ND_engineT;
+    6: set_LINE_3_2022_engineT;
     set_3K_SMETRO_VVVF_1ST_engineT;
 }
 
@@ -39,6 +42,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_wagon_panto_cargo_subtype, cargo_subt
     3: set_3K_VVVF_1ST_1_wagon_panto;
     4: set_3K_VVVF_1ST_2_wagon_panto;
     5: set_3K_SMETRO_VVVF_2ND_wagon_panto;
+    6: set_LINE_3_2022_wagon_panto;
     set_3K_SMETRO_VVVF_1ST_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_wagon_cargo_subtype, cargo_subtype) {
@@ -47,6 +51,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_3_wagon_cargo_subtype, cargo_subtype) {
     3: set_3K_VVVF_1ST_1_wagon;
     4: set_3K_VVVF_1ST_2_wagon;
     5: set_3K_SMETRO_VVVF_2ND_wagon;
+    6: set_LINE_3_2022_wagon;
     set_3K_SMETRO_VVVF_1ST_wagon;
 }
 

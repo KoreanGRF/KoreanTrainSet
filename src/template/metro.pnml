@@ -111,6 +111,14 @@ template tmpl_snout_wagon_two_panto(x, y) {
     [x+290,    y,    21,    19,    -6,   -10]
 }
 
+// Template - Metro double pantograph wagon (Snout)
+template tmpl_snout_wagon_dblpanto(x, y) {
+    [x+80,     y,     8,    22,    -3,   -11]
+    [x+100,    y,    21,    19,   -13,   -11]
+    [x+130,    y,    31,    15,   -16,   -11]
+    [x+170,    y,    21,    19,    -6,   -10]
+}
+
 // Template - Metro engine (Snout, tail)
 template tmpl_snout_engine_tail(x, y) {
     [x+200,    y,     8,    22,    -3,   -11]

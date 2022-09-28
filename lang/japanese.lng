@@ -282,6 +282,7 @@ STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           :(ソウル交通公社 3k CHOP
 STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  :(ソウル交通公社 3k 改造CHOPPER)
 STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          :(ソウル交通公社 3k VVVF 1世代)
 STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          :(ソウル交通公社 3k VVVF 2世代)
+STR_REFIT_METRO_LINE_3_2022_NAME                 :(Korail 3号線2022年導入分)
 
 # Refit (Seoul metropolitan 4)
 STR_REFIT_METRO_341K_VVVF_1ST_1_NAME             :(Korail 341k VVVF 1世代・旧塗色)
