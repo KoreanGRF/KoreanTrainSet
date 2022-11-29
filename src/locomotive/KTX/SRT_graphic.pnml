@@ -30,6 +30,32 @@ spriteset(set_SRT_engineT, "./src/locomotive/KTX/SRT.png") {   // PC2
     tmpl_KTX2N_engine_r(80, 150)
 }
 
+// Enhanced graphic using 32bpp
+alternative_sprites(set_SRT_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/SRT_32bpp.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+alternative_sprites(set_SRT_engineH, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/SRT_32bpp.png") {   // PC1
+    tmpl_KTX2N_engine(80, 0)
+}
+alternative_sprites(set_SRT_wagon_1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/SRT_32bpp.png") {   // T1
+    tmpl_KTXloco_power(80, 30)
+}
+alternative_sprites(set_SRT_wagon_express, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/SRT_32bpp.png") {   // T3, express car
+    tmpl_KTXloco_wagon(80, 60)
+}
+alternative_sprites(set_SRT_wagon_express_r, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/SRT_32bpp.png") {   // T3, express car (reverse)
+    tmpl_KTXloco_wagon_r(80, 60)
+}
+alternative_sprites(set_SRT_wagon_middle, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/SRT_32bpp.png") {   // T2, T4 ~ T7
+    tmpl_KTXloco_wagon(80, 90)
+}
+alternative_sprites(set_SRT_wagon_8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/SRT_32bpp.png") {   // T8
+    tmpl_KTXloco_power(80, 120)
+}
+alternative_sprites(set_SRT_engineT, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/SRT_32bpp.png") {   // PC2
+    tmpl_KTX2N_engine_r(80, 150)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_SRT_purchase, cargo_subtype) {
     set_SRT_purchase;
