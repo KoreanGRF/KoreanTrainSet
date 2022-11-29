@@ -150,7 +150,7 @@
         <td class="introduction">2014</td>
     </tr>
     <tr data-veh_id="NURIRO">
-        <td class="refit"><div><img src="./_static/NURIRO.png" alt="누리로"><br /><img src="./_static/NURIRO_KOREAN_WAVE.png" alt="누리로"><br /><img src="./_static/NURIRO_O_TRAIN.png" alt="누리로"><br /><img src="./_static/NURIRO_SANTA.png" alt="누리로"></div></td>
+        <td class="refit"><div><img src="./_static/NURIRO.png" alt="누리로"><br /><img src="./_static/NURIRO_KOREAN_WAVE.png" alt="누리로"><br /><img src="./_static/NURIRO_O_TRAIN.png" alt="누리로"><br /><img src="./_static/NURIRO_SANTA.png" alt="누리로"><br /><img src="./_static/NURIRO_2022.png" alt="누리로"></div></td>
         <td class="name">누리로</td>
         <td class="speed">150 km/h</td>
         <td class="speed_designed">165 km/h</td>

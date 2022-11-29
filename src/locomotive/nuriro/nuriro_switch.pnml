@@ -9,6 +9,7 @@ switch(FEAT_TRAINS, SELF, sw_NURIRO_cargo_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE);   // Korean wave livery
     2: return string(STR_REFIT_LIVERY_O_TRAIN);              // O-train
     3: return string(STR_REFIT_LIVERY_NURIRO_SANTA);         // Donghae Santa livery
+    4: return string(STR_REFIT_LIVERY_NURIRO_2022);          // 2022 livery
     return string(STR_REFIT_LIVERY_NURIRO);
 }
 
@@ -33,12 +34,14 @@ switch(FEAT_TRAINS, SELF, sw_NURIRO_engineH, cargo_subtype) {
     1: set_NURIRO_KOREAN_WAVE_engineH;   // Korean wave livery
     2: set_NURIRO_O_TRAIN_engineH;       // O-train
     3: set_NURIRO_SANTA_engineH;         // Donghae Santa livery
+    4: set_NURIRO_2022_engineH;          // 2022 livery
     set_NURIRO_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_NURIRO_engineT, cargo_subtype) {
     1: set_NURIRO_KOREAN_WAVE_engineT;   // Korean wave livery
     2: set_NURIRO_O_TRAIN_engineT;       // O-train
     3: sw_NURIRO_SANTA_engineT;          // Donghae Santa livery
+    4: set_NURIRO_2022_engineT;          // 2022 livery
     set_NURIRO_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_NURIRO_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
@@ -51,12 +54,14 @@ switch(FEAT_TRAINS, PARENT, sw_NURIRO_wagon_panto, cargo_subtype) {
     1: set_NURIRO_KOREAN_WAVE_wagon_panto;   // Korean wave livery
     2: set_NURIRO_O_TRAIN_wagon_panto;       // O-train
     3: sw_NURIRO_SANTA_wagon_panto;          // Donghae Santa livery
+    4: set_NURIRO_2022_wagon_panto;          // 2022 livery
     set_NURIRO_wagon_panto;
 }
 switch(FEAT_TRAINS, PARENT, sw_NURIRO_wagon_normal, cargo_subtype) {
     1: set_NURIRO_KOREAN_WAVE_wagon;   // Korean wave livery
     2: set_NURIRO_O_TRAIN_wagon;       // O-train
-    3: sw_NURIRO_SANTA_wagon;         // Donghae Santa livery
+    3: sw_NURIRO_SANTA_wagon;          // Donghae Santa livery
+    4: set_NURIRO_2022_wagon;          // 2022 livery
     set_NURIRO_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_NURIRO_wagon, position_in_consist + 1 == num_vehs_in_consist - 1) {

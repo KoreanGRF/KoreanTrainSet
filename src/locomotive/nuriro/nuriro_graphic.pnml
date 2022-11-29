@@ -129,6 +129,23 @@ spriteset(set_NURIRO_SANTA_engineT_B, "./src/locomotive/nuriro/NURIRO_SANTA.png"
     tmpl_NURIRO_engine_r(80, 180)
 }
 
+// 2022 livery
+spriteset(set_NURIRO_2022_purchase, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_purchase_common_dualhead(0, 360)
+}
+spriteset(set_NURIRO_2022_engineH, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_engine(80, 360)
+}
+spriteset(set_NURIRO_2022_wagon_panto, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_wagon_panto(80, 390)
+}
+spriteset(set_NURIRO_2022_wagon, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_wagon_8dir(80, 420)
+}
+spriteset(set_NURIRO_2022_engineT, "./src/locomotive/nuriro/NURIRO.png") {
+    tmpl_NURIRO_engine_r(80, 450)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_NURIRO_purchase, cargo_subtype) {
     set_NURIRO_purchase;
