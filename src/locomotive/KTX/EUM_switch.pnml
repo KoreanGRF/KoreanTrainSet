@@ -15,7 +15,7 @@ switch(FEAT_TRAINS, SELF, sw_EUM_coach_by_free_tail, position_in_vehid_chain_fro
     0: set_EUM_wagon_4;
     set_EUM_wagon_3;
 }
-switch(FEAT_TRAINS, SELF, sw_EUM_power_wagon, position_in_consist) {
+switch(FEAT_TRAINS, SELF, sw_EUM_power_wagon, position_in_vehid_chain) {
     0: set_EUM_wagon_2;
     sw_EUM_coach_by_free_tail;
 }
