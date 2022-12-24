@@ -120,8 +120,8 @@ Based in Korean Train Set 2.3.1+
 | ``341K_VVVF_1ST_2`` | skyu | |
 | ``341K_VVVF_2ND_1`` | skyu | |
 | ``341K_VVVF_2ND_2`` | skyu | |
-| ``LINE_4_2019`` | [@kiwitreekor](https://github.com/kiwitreekor)<br />Modified by [@EightonEight](https://github.com/EightonEight) | modified: [#271](https://github.com/KoreanGRF/KoreanTrainSet/issues/271), [#295](https://github.com/KoreanGRF/KoreanTrainSet/issues/295), [#311](https://github.com/KoreanGRF/KoreanTrainSet/pull/311) |
-| ``LINE_4_2021`` | [@EightonEight](https://github.com/EightonEight) | [#295](https://github.com/KoreanGRF/KoreanTrainSet/issues/295)<br />modified: [#311](https://github.com/KoreanGRF/KoreanTrainSet/pull/311) |
+| ``LINE_4_2019`` | [@kiwitreekor](https://github.com/kiwitreekor)<br />Modified by [@EightonEight](https://github.com/EightonEight) | modified: [#271](https://github.com/KoreanGRF/KoreanTrainSet/issues/271), [#295](https://github.com/KoreanGRF/KoreanTrainSet/issues/295), [#311](https://github.com/KoreanGRF/KoreanTrainSet/pull/311), [#380](https://github.com/KoreanGRF/KoreanTrainSet/pull/380) |
+| ``LINE_4_2021`` | [@EightonEight](https://github.com/EightonEight) | [#295](https://github.com/KoreanGRF/KoreanTrainSet/issues/295)<br />modified: [#311](https://github.com/KoreanGRF/KoreanTrainSet/pull/311), [#380](https://github.com/KoreanGRF/KoreanTrainSet/pull/380) |
 | ``SMETRO_4K_VVVF_1ST_2ND`` | [@EightonEight](https://github.com/EightonEight) | [#83](https://github.com/KoreanGRF/KoreanTrainSet/issues/83) |
 | ``SMETRO_4K_VVVF_3RD`` | [@kiwitreekor](https://github.com/kiwitreekor) | [#12](https://github.com/KoreanGRF/KoreanTrainSet/issues/12) |
 | ``SMETRO_5K_1ST_2ND`` | skyu | |
