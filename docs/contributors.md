@@ -9,10 +9,11 @@
   * **초저항(Chojeohang)** (yunggu7410@naver.com) - Busan Line 4 tracks and vehicles
   * **오픈기차(Opentrain)** ([@opentrain](https://github.com/opentrain), gks3900@naver.com)
   * **kiwitree** ([@kiwitreekor](https://github.com/kiwitreekor))
-  * **가문비(Gamunbi)** ([@Gamunbi](https://github.com/Gamunbi)) - Steam locomotives
+  * **Nebula** ([@SerpensNebula](https://github.com/SerpensNebula)) - Steam locomotives
   * **즉삭** ([@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201))
   * **kimgas** ([@kimgas](https://github.com/kimgas))
   * **EightonEight** ([@EightonEight](https://github.com/EightonEight))
+  * **JukjeonWani** ([@JukjeonWani](https://github.com/JukjeonWani))
 
 ## Translations
   * Korean, English (UK, US), Japanese: [@telk5093](https://github.com/telk5093)
