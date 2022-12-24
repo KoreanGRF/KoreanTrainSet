@@ -44,6 +44,18 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_engineT, cargo_subtype) {
     set_341K_VVVF_2ND_2_engineT;
 }
 
+// Wagon - Random for single & double pantograph for LINE_4_2019
+switch(FEAT_TRAINS, SELF, sw_LINE_4_2019_wagon_panto, random_bits % 2) {
+    1: set_LINE_4_2019_wagon_panto;
+    set_LINE_4_2019_DOUBLE_ARM_wagon_panto;
+}
+
+// Wagon - Random for single & double pantograph for LINE_4_2021
+switch(FEAT_TRAINS, SELF, sw_LINE_4_2021_wagon_panto, random_bits % 2) {
+    1: set_LINE_4_2021_wagon_panto;
+    set_LINE_4_2021_DOUBLE_ARM_wagon_panto;
+}
+
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_panto_cargo_subtype, cargo_subtype) {
     0: set_341K_VVVF_2ND_2_wagon_panto;
@@ -52,9 +64,9 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_panto_cargo_subtype, cargo_subt
     3: set_341K_VVVF_1ST_1_wagon_panto;
     4: set_3K_SMETRO_CHOPPER_wagon_panto;
     5: set_SMETRO_4K_VVVF_1ST_2ND_wagon_panto;
-    6: set_LINE_4_2019_wagon_panto;
+    6: sw_LINE_4_2019_wagon_panto;
     7: set_SMETRO_4K_VVVF_3RD_wagon_panto;
-    8: set_LINE_4_2021_wagon_panto;
+    8: sw_LINE_4_2021_wagon_panto;
     set_341K_VVVF_2ND_2_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_4_wagon_cargo_subtype, cargo_subtype) {
