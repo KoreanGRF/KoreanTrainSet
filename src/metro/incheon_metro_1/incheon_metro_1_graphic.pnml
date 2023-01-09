@@ -21,6 +21,23 @@ spriteset(set_INCHEON_METRO_1K_VVVF_1ST_purchase, "./src/metro/incheon_metro_1/I
     tmpl_purchase_common_dualhead(0, 0)
 }
 
+// INCHEON_METRO_1K_VVVF_1ST_2022
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_2022_engineH, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST_2022.png") {
+    tmpl_engine_head(0, 0)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_2022_engineT, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST_2022.png") {
+    tmpl_engine_tail(0, 90)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_2022_wagon, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST_2022.png") {
+    tmpl_wagon(0, 60)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_2022_wagon_panto, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST_2022.png") {
+    tmpl_wagon_dblpanto(0, 30)
+}
+spriteset(set_INCHEON_METRO_1K_VVVF_1ST_2022_purchase, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_1ST_2022.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+
 // INCHEON_METRO_1K_VVVF_2ND
 spriteset(set_INCHEON_METRO_1K_VVVF_2ND_engineH, "./src/metro/incheon_metro_1/INCHEON_METRO_1K_VVVF_2ND.png") {
     tmpl_engine_head(0, 0)

@@ -325,6 +325,7 @@ STR_REFIT_METRO_AREX_2K_NAME                     : (A'REX 2k All-stop)
 
 # Refit (Other Lines)
 STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME   : (Incheon Metro 1k VVVF 1st)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_2022_NAME: (Incheon Metro 1k VVVF 1st, introduced in 2022)
 STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME   : (Incheon Metro 1k VVVF 2nd)
 STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME            : (Former)
 STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME            : (Latter)
