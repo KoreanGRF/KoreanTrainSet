@@ -14,6 +14,7 @@
   * **kimgas** ([@kimgas](https://github.com/kimgas))
   * **EightonEight** ([@EightonEight](https://github.com/EightonEight))
   * **JukjeonWani** ([@JukjeonWani](https://github.com/JukjeonWani))
+  * **Coconut** ([@Coconut](https://github.com/CoconutKR))
 
 ## Translations
   * Korean, English (UK, US), Japanese: [@telk5093](https://github.com/telk5093)
