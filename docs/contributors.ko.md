@@ -19,4 +19,4 @@
 ## 번역에 기여하신 분
   * 한국어, 영어 (영국, 미국), 일본어: [@telk5093](https://github.com/telk5093)
 
-  그래픽 기여와 관련된 자세한 사항에 대해서는  [contributors_graphic.md](./contributors_graphic.md)에서 볼수 있습니다.
+  그래픽 기여와 관련된 자세한 사항에 대해서는  [contributors_graphic.md](./contributors_graphic.md)에서 확인 하실수 있습니다.
