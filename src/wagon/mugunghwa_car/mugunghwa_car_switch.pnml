@@ -52,3 +52,12 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text, cargo_subtype) {
     13: return string(STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE);
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
+
+// A-train
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_A_TRAIN, position_in_vehid_chain % 4) {
+    0: set_MUGUNGHWA_CAR_wagon_A_TRAIN_1;
+    1: set_MUGUNGHWA_CAR_wagon_A_TRAIN_2;
+    2: set_MUGUNGHWA_CAR_wagon_A_TRAIN_3;
+    3: set_MUGUNGHWA_CAR_wagon_A_TRAIN_4;
+    set_MUGUNGHWA_CAR_wagon_A_TRAIN_1;
+}

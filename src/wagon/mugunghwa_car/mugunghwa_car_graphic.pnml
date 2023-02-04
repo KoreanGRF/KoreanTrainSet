@@ -149,8 +149,17 @@ spriteset(set_S_TRAIN_wagon2, "./src/wagon/mugunghwa_car/S-train.png") {
 spriteset(set_A_TRAIN_1_purchase, "./src/wagon/mugunghwa_car/S-train.png") {
     tmpl_purchase_common(0, 0)
 }
-spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN, "./src/wagon/mugunghwa_car/A-train.png") {
+spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN_1, "./src/wagon/mugunghwa_car/A-train.png") {
     tmpl_wagon_by_coor(80, 0)
+}
+spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN_2, "./src/wagon/mugunghwa_car/A-train.png") {
+    tmpl_wagon_by_coor(80, 30)
+}
+spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN_3, "./src/wagon/mugunghwa_car/A-train.png") {
+    tmpl_wagon_by_coor(80, 60)
+}
+spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN_4, "./src/wagon/mugunghwa_car/A-train.png") {
+    tmpl_wagon_by_coor(80, 90)
 }
 
 // Alias of purchase image
