@@ -14,12 +14,12 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN_1, 1) {   // for S-trai
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN_2, 1) {   // for S-train#2
     set_S_TRAIN_wagon2;
 }
-switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_G_TRAIN, position_in_consist % 5) {   // for G-train
-    1:    set_G_TRAIN_wagon1;
-    2:    set_G_TRAIN_wagon2;
-    3:    set_G_TRAIN_wagon3;
-    4:    set_G_TRAIN_wagon4;
-    0:    set_G_TRAIN_wagon5;
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_G_TRAIN, position_in_vehid_chain % 5) {   // for G-train
+    0:    set_G_TRAIN_wagon1;
+    1:    set_G_TRAIN_wagon2;
+    2:    set_G_TRAIN_wagon3;
+    3:    set_G_TRAIN_wagon4;
+    4:    set_G_TRAIN_wagon5;
     set_G_TRAIN_wagon1;
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon, cargo_subtype) {
