@@ -1,4 +1,4 @@
-Based in Korean Train Set 2.3.1+
+Based in Korean Train Set 2.4.0
 
 ## sample
 | Code | Author | Reference |
@@ -37,13 +37,13 @@ Based in Korean Train Set 2.3.1+
 | ``SRT`` | Las<br />Modified by [@EightonEight](https://github.com/EightonEight) | modified: [#377](https://github.com/KoreanGRF/KoreanTrainSet/pull/377) |
 | ``SRT_32bpp`` | [@EightonEight](https://github.com/EightonEight) | [#377](https://github.com/KoreanGRF/KoreanTrainSet/pull/377) |
 | ``NDC`` | Original: unknown<br />Modified by [@telk5093](https://github.com/telk5093) (Business car)<br />Modified by [@kiwitreekor](https://github.com/kiwitreekor) (Width of horizontal sprites) | modified: [#15](https://github.com/KoreanGRF/KoreanTrainSet/issues/15) |
-| ``NURIRO`` | [@telk5093](https://github.com/telk5093)<br />(original: ``ITX_CHEONGCHUN``)<br />Modified by [@kimgas](https://github.com/kimgas), [@EightonEight](https://github.com/EightonEight) (New livery) | modified: [#140](https://github.com/KoreanGRF/KoreanTrainSet/issues/140), [#140](https://github.com/KoreanGRF/KoreanTrainSet/issues/362) |
+| ``NURIRO`` | [@telk5093](https://github.com/telk5093)<br />(original: ``ITX_CHEONGCHUN``)<br />Modified by [@kimgas](https://github.com/kimgas), [@EightonEight](https://github.com/EightonEight) (New livery) | modified: [#140](https://github.com/KoreanGRF/KoreanTrainSet/issues/140), [#362](https://github.com/KoreanGRF/KoreanTrainSet/issues/362) |
 | ``NURIRO_SANTA`` | [@kiwitreekor](https://github.com/kiwitreekor)<br />Modified by [@kimgas](https://github.com/kimgas) | [#106](https://github.com/KoreanGRF/KoreanTrainSet/issues/106)<br />modified: [#140](https://github.com/KoreanGRF/KoreanTrainSet/issues/140) |
 | ``DHC`` | skyu<br />modified by [@telk5093](https://github.com/telk5093) | modified: [#34](https://github.com/KoreanGRF/KoreanTrainSet/issues/34) |
 | ``ITX-saemaeul`` | Las<br />Modified by [@EightonEight](https://github.com/EightonEight) | <https://cafe.naver.com/ottd/7468><br />modified: [#376](https://github.com/KoreanGRF/KoreanTrainSet/pull/376) |
-| ``MIKA3`` | [@SerpensNebula](https://github.com/SerpensNebula) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
-| ``PASHI5`` | [@SerpensNebula](https://github.com/SerpensNebula) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
-| ``MATE2`` | [@SerpensNebula](https://github.com/SerpensNebula) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37) |
+| ``MIKA3`` | [@SerpensNebula](https://github.com/SerpensNebula) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37)<br />modified: [#276](https://github.com/KoreanGRF/KoreanTrainSet/issues/276) |
+| ``PASHI5`` | [@SerpensNebula](https://github.com/SerpensNebula) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37)<br />modified: [#276](https://github.com/KoreanGRF/KoreanTrainSet/issues/276) |
+| ``MATE2`` | [@SerpensNebula](https://github.com/SerpensNebula) | [#37](https://github.com/KoreanGRF/KoreanTrainSet/issues/37)<br />modified: [#276](https://github.com/KoreanGRF/KoreanTrainSet/issues/276) |
 
 ## LRT
 | Code | Author | Reference |
@@ -54,7 +54,7 @@ Based in Korean Train Set 2.3.1+
 | ``DAEGU_3K_2`` | Jakga? | |
 | ``GIMPO_1K`` | skyu?<br />Middle wagon: [@telk5093](https://github.com/telk5093) | |
 | ``INCHEON_METRO_2K`` | Las | <https://cafe.naver.com/ottd/10435> |
-| ``SILLIM`` | [@SerpensNebula](https://github.com/SerpensNebula) | [#16](https://github.com/KoreanGRF/KoreanTrainSet/issues/16) |
+| ``SILLIM`` | [@SerpensNebula](https://github.com/SerpensNebula)<br />Modified by [@Coconut](https://github.com/CoconutKR) | [#16](https://github.com/KoreanGRF/KoreanTrainSet/issues/16)<br />modified: [#343](https://github.com/KoreanGRF/KoreanTrainSet/issues/343) |
 | ``U100`` | [@SerpensNebula](https://github.com/SerpensNebula) | [#33](https://github.com/KoreanGRF/KoreanTrainSet/issues/33) |
 | ``UL000`` | Las | <https://cafe.naver.com/ottd/10435> |
 | ``Y100`` | [@telk5093](https://github.com/telk5093) | |
@@ -76,6 +76,7 @@ Based in Korean Train Set 2.3.1+
 | ``361K_VVVF`` | skyu | |
 | ``368K_ITX_CHEONGCHUN`` | skyu | |
 | ``INCHEON_METRO_1K_VVVF_1ST`` | skyu<br />Modified by [@EightonEight](https://github.com/EightonEight) | modified: [#303](https://github.com/KoreanGRF/KoreanTrainSet/issues/303) |
+| ``INCHEON_METRO_1K_VVVF_1ST_2022`` | [@EightonEight](https://github.com/EightonEight) | [#373](https://github.com/KoreanGRF/KoreanTrainSet/issues/373) |
 | ``INCHEON_METRO_1K_VVVF_2ND`` | Las | <https://cafe.naver.com/ottd/10466> |
 | ``1K_RHEO_FIRST_1`` | skyu<br />Modified by [@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201) | modified: [#240](https://github.com/KoreanGRF/KoreanTrainSet/issues/240) |
 | ``1K_RHEO_FIRST_2`` | 〃 | 〃 |
@@ -98,6 +99,7 @@ Based in Korean Train Set 2.3.1+
 | ``391K`` | [@kiwitreekor](https://github.com/kiwitreekor)<br />Modified by [@EightonEight](https://github.com/EightonEight) | <https://cafe.naver.com/ottd/13880><br />modified: [#311](https://github.com/KoreanGRF/KoreanTrainSet/pull/311) |
 | ``LINE_1_2019`` | [@kiwitreekor](https://github.com/kiwitreekor)<br />Modified by [@EightonEight](https://github.com/EightonEight) | modified: [#271](https://github.com/KoreanGRF/KoreanTrainSet/issues/271), [#295](https://github.com/KoreanGRF/KoreanTrainSet/issues/295), [#311](https://github.com/KoreanGRF/KoreanTrainSet/pull/311) |
 | ``LINE_1_2021`` | [@EightonEight](https://github.com/EightonEight) | [#295](https://github.com/KoreanGRF/KoreanTrainSet/issues/295)<br />modified: [#311](https://github.com/KoreanGRF/KoreanTrainSet/pull/311) |
+| ``LINE_1_2022_W`` | [@EightonEight](https://github.com/EightonEight) | [#345](https://github.com/KoreanGRF/KoreanTrainSet/issues/345) |
 | ``SMETRO_1K_RHEO_FIRST`` | skyu | |
 | ``SMETRO_1K_RHEO_MODIFIED`` | skyu<br />Modified by [@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201) | modified: [#240](https://github.com/KoreanGRF/KoreanTrainSet/issues/240) |
 | ``SMETRO_1K_VVVF`` | skyu | |
@@ -150,7 +152,7 @@ Based in Korean Train Set 2.3.1+
 | Code | Author | Reference |
 |------|--------|-----------|
 | ``NARROW_BOXCAR`` | [@SerpensNebula](https://github.com/SerpensNebula) | [#215](https://github.com/KoreanGRF/KoreanTrainSet/issues/215) |
-| ``HOKEY7`` | 〃 | [#205](https://github.com/KoreanGRF/KoreanTrainSet/issues/205) |
+| ``HOKEY7`` | 〃 | [#205](https://github.com/KoreanGRF/KoreanTrainSet/issues/205)<br />modified: [#276](https://github.com/KoreanGRF/KoreanTrainSet/issues/276) |
 | ``NARROW_HOPPERCAR`` | 〃 | [#217](https://github.com/KoreanGRF/KoreanTrainSet/issues/217) |
 | ``NARROW_DIESEL_CAR`` | 〃 | [#205](https://github.com/KoreanGRF/KoreanTrainSet/issues/205) |
 | ``NARROW_GAUGE_WAGON`` | 〃 | [#205](https://github.com/KoreanGRF/KoreanTrainSet/issues/205) |
