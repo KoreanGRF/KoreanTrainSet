@@ -64,7 +64,7 @@ spriteset(set_K7x00_CARGO, "./src/locomotive/K7x00/K7x00.png") {
     tmpl_K7x00(80, 180)
 }
 
-// Haerang
+// HAERANG
 spriteset(set_K7x00_HAERANG_purchase, "./src/locomotive/K7x00/K7x00.png") {
     tmpl_purchase_common(0, 210)
 }

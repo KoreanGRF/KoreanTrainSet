@@ -5,7 +5,8 @@
 ------------------------------------------------------------------------------*/
 
 // Refit
-switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_HAERANG, 1) {   // for Haerang
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_HAERANG, position_in_consist % 8) {   // for Haerang
+    5:   set_HAERANG_wagon5;
     set_HAERANG_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN_1, position_in_vehid_chain % 5) {   // for S-train#1

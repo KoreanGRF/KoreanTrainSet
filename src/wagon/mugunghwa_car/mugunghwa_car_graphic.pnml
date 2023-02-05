@@ -100,15 +100,18 @@ spriteset(set_MUGUNGHWA_CAR_EXECUTIVE_STREAMLINED, "./src/wagon/mugunghwa_car/MU
     tmpl_wagon_by_coor_8dir(80, 330)
 }
 
-// Haerang
+// HAERANG
 spriteset(set_HAERANG_purchase, "./src/wagon/mugunghwa_car/MUGUNGHWA_CAR.png") {
     tmpl_purchase_common(0, 0)
 }
-spriteset(set_HAERANG_wagon, "./src/wagon/mugunghwa_car/Haerang.png") {
+spriteset(set_HAERANG_wagon, "./src/wagon/mugunghwa_car/HAERANG.png") {
     tmpl_wagon_by_coor(80, 0)
 }
-spriteset(set_HAERANG_CAFE_wagon, "./src/wagon/mugunghwa_car/Haerang.png") {
+spriteset(set_HAERANG_wagon5, "./src/wagon/mugunghwa_car/HAERANG.png") {
     tmpl_wagon_by_coor(80, 30)
+}
+spriteset(set_HAERANG_CAFE_wagon, "./src/wagon/mugunghwa_car/HAERANG.png") {
+    tmpl_wagon_by_coor(80, 60)
 }
 
 // G-train
