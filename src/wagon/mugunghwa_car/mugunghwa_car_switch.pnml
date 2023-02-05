@@ -8,11 +8,11 @@
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_HAERANG, 1) {   // for Haerang
     set_HAERANG_wagon;
 }
-switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN_1, 1) {   // for S-train#1
-    set_S_TRAIN_wagon1;
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN_1, position_in_vehid_chain % 5) {   // for S-train#1
+    set_S_TRAIN_1_wagon1;
 }
-switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN_2, 1) {   // for S-train#2
-    set_S_TRAIN_wagon2;
+switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_S_TRAIN_2, position_in_vehid_chain % 5) {   // for S-train#2
+    set_S_TRAIN_2_wagon1;
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon_G_TRAIN, position_in_vehid_chain % 5) {   // for G-train
     0:    set_G_TRAIN_wagon1;
