@@ -86,7 +86,7 @@ item(FEAT_TRAINS, ko_train_SILLIM, 5806) {
         default:                        sw_SILLIM_wagon;
         cargo_capacity:                 sw_SILLIM_capacity_custom;
         loading_speed:                  sw_SILLIM_loadingspeed;
-        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
+        running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
         length:                         5;
     }

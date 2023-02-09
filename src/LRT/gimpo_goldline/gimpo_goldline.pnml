@@ -84,7 +84,7 @@ item(FEAT_TRAINS, ko_train_GIMPO_GOLDLINE, 5801) {
         default:                        sw_GIMPO_GOLDLINE_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
         loading_speed:                  sw_GIMPO_GOLDLINE_loadingspeed;
-        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
+        running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
 }

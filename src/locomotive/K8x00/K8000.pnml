@@ -72,12 +72,14 @@ item(FEAT_TRAINS, ko_train_K8000, 5480) {
     livery_override(ko_train_SAEMAEUL_CAR) {
         default:                        sw_K8000_SAEMAEUL_CAR_wagon;
         loading_speed:                  sw_SAEMAEUL_CAR_loadingspeed;
+        running_cost_factor:            sw_SAEMAEUL_CAR_runningcost;
         cargo_capacity:                 sw_SAEMAEUL_CAR_capacity;
         cargo_subtype_text:             sw_K8000_SAEMAEUL_CAR_cargo_subtype_text;
     }
     livery_override(ko_train_CAFE_CAR) {
         default:                        sw_K8000_CAFE_CAR_KWANKWANG_wagon;
         loading_speed:                  sw_CAFE_CAR_loadingspeed;
+        running_cost_factor:            sw_CAFE_CAR_runningcost;
         cargo_capacity:                 sw_CAFE_CAR_capacity;
         cargo_subtype_text:             sw_K8000_CAFE_CAR_KWANKWANG_cargo_subtype_text;
     }

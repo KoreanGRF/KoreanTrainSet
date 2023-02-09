@@ -81,6 +81,7 @@ item(FEAT_TRAINS, ko_train_EEC, 5513) {
         cargo_capacity:                 sw_EEC_capacity_in_custom;
         weight:                         sw_EEC_weight_in_custom;
         loading_speed:                  sw_EEC_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         cargo_subtype_text:             sw_EEC_cargo_subtype_text;
     }
     livery_override(ko_train_PASSWGP) {
@@ -88,6 +89,7 @@ item(FEAT_TRAINS, ko_train_EEC, 5513) {
         cargo_capacity:                 sw_EEC_capacity_in_custom;
         weight:                         sw_EEC_weight_in_custom;
         loading_speed:                  sw_EEC_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         cargo_subtype_text:             sw_EEC_cargo_subtype_text;
         power:                          POWER_IN_KW(var_PASSENGER_WAGON_P_POWER);
     }
@@ -96,6 +98,7 @@ item(FEAT_TRAINS, ko_train_EEC, 5513) {
         cargo_capacity:                 sw_EEC_capacity_in_custom;
         weight:                         40;
         loading_speed:                  sw_EEC_loadingspeed;
+        running_cost_factor:            sw_CAFE_CAR_runningcost;
         cargo_subtype_text:             sw_EEC_cargo_subtype_text;
     }
 }

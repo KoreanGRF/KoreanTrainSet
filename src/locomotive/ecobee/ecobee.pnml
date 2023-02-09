@@ -79,5 +79,6 @@ item(FEAT_TRAINS, ko_train_ECOBEE, 5620) {
         default:                        sw_BIDULGI_CAR_wagon;
         cargo_capacity:                 sw_BIDULGI_CAR_capacity_in_custom;
         loading_speed:                  sw_ECOBEE_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     }
 }

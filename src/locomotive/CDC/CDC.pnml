@@ -101,6 +101,7 @@ item(FEAT_TRAINS, ko_train_CDC, 5510) {
     }
     livery_override(ko_train_CAFE_CAR) {
         default:                        sw_CAFE_CAR_wagon;
+        running_cost_factor:            sw_CAFE_CAR_runningcost;
         cargo_subtype_text:             sw_CAFE_CAR_cargo_subtype_text;
     }
 }
