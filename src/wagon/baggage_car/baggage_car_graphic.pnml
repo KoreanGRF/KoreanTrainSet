@@ -14,16 +14,6 @@ template tmpl_BAGGAGE_CAR_wagon(x, y) {
     [x+50,   y,    31,    13,    -16,     -9]
     [x+90,   y,    21,    17,     -6,     -9]
 }
-template tmpl_V_TRAIN_wagon(x, y) {
-    [x+0,    y,     8,    22,     -3,    -11]
-    [x+20,   y,    21,    17,    -13,     -9]
-    [x+50,   y,    31,    13,    -16,     -9]
-    [x+90,   y,    21,    17,     -6,     -9]
-    [x+120,  y,     8,    22,     -3,    -11]
-    [x+140,  y,    21,    17,    -13,     -9]
-    [x+170,  y,    31,    13,    -16,     -9]
-    [x+210,  y,    21,    17,     -6,     -9]
-}
 
 // Graphic
 spriteset(set_BAGGAGE_CAR_A_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
@@ -70,13 +60,13 @@ spriteset(set_BAGGAGE_CAR_F_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
 
 // V-train
 spriteset(set_V_TRAIN_wagon_1, "./src/wagon/baggage_car/V-train_wagon.png") {
-    tmpl_V_TRAIN_wagon(0, 0)
+    tmpl_wagon_by_coor_8dir(0, 0)
 }
 spriteset(set_V_TRAIN_wagon_2, "./src/wagon/baggage_car/V-train_wagon.png") {
-    tmpl_BAGGAGE_CAR_wagon(0, 30)
+    tmpl_wagon_by_coor(0, 30)
 }
 spriteset(set_V_TRAIN_wagon_3, "./src/wagon/baggage_car/V-train_wagon.png") {
-    tmpl_V_TRAIN_wagon(0,60)
+    tmpl_wagon_by_coor_8dir(0,60)
 }
 
 // Bidulgi
