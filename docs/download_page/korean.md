@@ -614,9 +614,9 @@
         <td class="name">컨테이너 평판화차</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
-        <td class="capacity">35</td>
+        <td class="capacity">50</td>
         <td class="power"></td>
-        <td class="weight">17 t</td>
+        <td class="weight">18 t</td>
         <td class="introduction">1950</td>
     </tr>
     <tr data-veh_id="HOPPER_CAR">
@@ -624,9 +624,9 @@
         <td class="name">무개화차</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
-        <td class="capacity">35</td>
+        <td class="capacity">50</td>
         <td class="power"></td>
-        <td class="weight">17 t</td>
+        <td class="weight">24 t</td>
         <td class="introduction">1950</td>
     </tr>
     <tr data-veh_id="BAGGAGE_CAR">
@@ -654,9 +654,9 @@
         <td class="name">유조차</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
-        <td class="capacity">35</td>
+        <td class="capacity">40</td>
         <td class="power"></td>
-        <td class="weight">17 t</td>
+        <td class="weight">21 t</td>
         <td class="introduction">1950</td>
     </tr>
     <tr data-veh_id="MAIL_CAR">
@@ -684,9 +684,9 @@
         <td class="name">평판화차</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
-        <td class="capacity">35</td>
+        <td class="capacity">52</td>
         <td class="power"></td>
-        <td class="weight">17 t</td>
+        <td class="weight">23 t</td>
         <td class="introduction">1950</td>
     </tr>
 </table>

@@ -84,8 +84,8 @@ trainList['PASSENGER_WAGON_P']  = None,   None,   None,   4,            None,   
 trainList['NARROW_GAUGE_WAGON'] = None,   None,   100,    2,            90,      10,           None,   14,     (1952, 1, 1)
 trainList['NARROW_BOXCAR']      = None,   None,   80,     2,            12,      5,            None,   14,     (1952, 1, 1)
 trainList['NARROW_HOPPERCAR']   = None,   None,   80,     2,            12,      5,            None,   14,     (1952, 1, 1)
-trainList['FLAT_CAR']           = 120,    120,    100,    2,            35,      5,            None,   17,     (1950, 1, 1)
-trainList['HOPPER_CAR']         = 120,    120,    100,    2,            35,      5,            None,   17,     (1950, 1, 1)
+trainList['FLAT_CAR']           = 120,    120,    100,    2,            50,      5,            None,   18,     (1950, 1, 1)
+trainList['HOPPER_CAR']         = 120,    120,    100,    2,            50,      5,            None,   24,     (1950, 1, 1)
 trainList['BAGGAGE_CAR']        = 120,    120,    100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['BOX_CAR']            = 120,    120,    100,    2,            51,      5,            None,   25,     (1966, 1, 1)
 trainList['BOX_CAR_2003']       = 120,    120,    None,   None,         51,      None,         None,   25,     (2003, 1, 1)
@@ -93,10 +93,10 @@ trainList['BOX_CAR_1998']       = 100,    100,    None,   None,         51,     
 trainList['BOX_CAR_1996']       = 90,     90,     None,   None,         48,      None,         None,   26,     (1996, 1, 1)
 trainList['BOX_CAR_1972']       = 90,     90,     None,   None,         48,      None,         None,   22,     (1972, 1, 1)
 trainList['BOX_CAR_1966']       = 90,     90,     None,   None,         48,      None,         None,   22,     (1966, 1, 1)
-trainList['TANK_CAR']           = 120,    120,    100,    2,            35,      5,            None,   17,     (1950, 1, 1)
+trainList['TANK_CAR']           = 120,    120,    100,    2,            40,      5,            None,   21,     (1950, 1, 1)
 trainList['MAIL_CAR']           = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['SLEEPING_CAR']       = None,   None,   120,    2,            28,      5,            None,   17,     (1966, 1, 1)
-trainList['STAKE_CAR']          = 120,    120,    100,    2,            35,      5,            None,   17,     (1950, 1, 1)
+trainList['STAKE_CAR']          = 120,    120,    100,    2,            52,      5,            None,   23,     (1950, 1, 1)
 
 
 # Generates spec.pnml (Do not modified this below!)
