@@ -58,6 +58,16 @@ spriteset(set_EUM_engineT, "./src/locomotive/KTX/EUM.png") {
     [80+50,     120,    32,    12,   -19,    -8]
     [80+90,     120,    21,    15,    -6,    -7]
 }
+spriteset(set_EUM_wagon_3_without_panto, "./src/locomotive/KTX/EUM.png") {
+    [80+0,      150,     8,    22,    -3,   -11]
+    [80+20,     150,    21,    17,   -15,    -8]
+    [80+50,     150,    31,    12,   -18,    -8]
+    [80+90,     150,    21,    17,    -6,    -9]
+    [80+120,    150,     8,    22,    -3,   -11]
+    [80+140,    150,    21,    17,   -15,    -8]
+    [80+170,    150,    31,    12,   -17,    -8]
+    [80+210,    150,    21,    17,    -6,    -9]
+}
 
 // Enhanced graphic using 32bpp
 alternative_sprites(set_EUM_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/EUM_32bpp.png") {
@@ -112,6 +122,16 @@ alternative_sprites(set_EUM_engineT, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/
     [80+20,     120,    21,    16,   -15,    -8]
     [80+50,     120,    32,    12,   -19,    -8]
     [80+90,     120,    21,    15,    -6,    -7]
+}
+alternative_sprites(set_EUM_wagon_3_without_panto, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/locomotive/KTX/EUM_32bpp.png") {
+    [80+0,      150,     8,    22,    -3,   -11]
+    [80+20,     150,    21,    17,   -15,    -8]
+    [80+50,     150,    31,    12,   -18,    -8]
+    [80+90,     150,    21,    17,    -6,    -9]
+    [80+120,    150,     8,    22,    -3,   -11]
+    [80+140,    150,    21,    17,   -15,    -8]
+    [80+170,    150,    31,    12,   -17,    -8]
+    [80+210,    150,    21,    17,    -6,    -9]
 }
 
 // Alias of purchase image

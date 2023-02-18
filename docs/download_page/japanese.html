@@ -249,16 +249,6 @@
         <td class="weight">68 t</td>
         <td class="introduction">2015</td>
     </tr>
-    <tr data-veh_id="EUM">
-        <td class="refit"><div><img src="./_static/EUM.png" alt="KTX-イウム"></div></td>
-        <td class="name">KTX-イウム</td>
-        <td class="speed">260 km/h</td>
-        <td class="speed_designed">286 km/h</td>
-        <td class="capacity">76</td>
-        <td class="power">8800 kW</td>
-        <td class="weight">60 t</td>
-        <td class="introduction">2019</td>
-    </tr>
     <tr data-veh_id="SAEMAEUL_CAR">
         <td class="refit"><div><img src="./_static/SAEMAEUL_CAR_1.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_executive_1.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_2.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_executive_2.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_3.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_executive_3.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_ITX.png" alt="セマウル号客車"></div></td>
         <td class="name">セマウル号客車</td>

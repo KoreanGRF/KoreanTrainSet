@@ -140,6 +140,10 @@ STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990       :(トンイル号塗色：1990�
 STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA               :(ムグンファ号塗色)
 STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE             :(青色塗色：1974年~)
 
+# Refit (EUM)
+STR_REFIT_EUM260                                 :(イウム-260)
+STR_REFIT_EUM320                                 :(イウム-320)
+
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE  :(韓国鉄道旧塗色特室、1970~1983年)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW :(韓国鉄道旧塗色特室、緑色＆黄色)

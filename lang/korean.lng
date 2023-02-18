@@ -141,6 +141,10 @@ STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990       : (통일호 도색: 1990년대
 STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA               : (무궁화호 도색)
 STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE             : (청색 도색: 1974년~)
 
+# Refit (EUM)
+STR_REFIT_EUM260                                 : (이음 260)
+STR_REFIT_EUM320                                 : (이음 320)
+
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE  : (철도청 구 도색 특실, 1970~1983년)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW : (철도청 구 도색 특실, 녹색 & 황색)
