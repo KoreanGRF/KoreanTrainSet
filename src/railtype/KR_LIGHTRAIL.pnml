@@ -174,7 +174,9 @@ item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
         sort_order:                     47;
 
         railtype_flags:                 bitmask(RAILTYPE_FLAG_NO_LEVEL_CROSSING);
-        alternative_railtype_list:      ["MONO"];
+        alternative_railtype_list:      ["KL3L", "MONO"];
+        compatible_railtype_list:       ["KL3L"];
+        powered_railtype_list :         ["KL3L"];
     }
     graphics {
         gui:                            set_light_railway_gui;
