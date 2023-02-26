@@ -1,4 +1,4 @@
-Based in Korean Train Set 2.4.0
+Based in Korean Train Set 2.4.0 ([2cd1988](https://github.com/KoreanGRF/KoreanTrainSet/commit/2cd1988f5aab8b0289136c4a2a2366aabcb6465c))
 
 ## sample
 | Code | Author | Reference |
@@ -15,22 +15,23 @@ Based in Korean Train Set 2.4.0
 | ``EEC`` | [@kiwitreekor](https://github.com/kiwitreekor), [@kimgas](https://github.com/kimgas) | [#15](https://github.com/KoreanGRF/KoreanTrainSet/issues/15) |
 | ``K2x00`` | [@opentrain](https://github.com/opentrain) | [#90](https://github.com/KoreanGRF/KoreanTrainSet/issues/90) |
 | ``K4x00`` | Original: unknown<br />Las | <https://cafe.naver.com/ottd/10534> |
-| V-train and its wagons | Las | <https://cafe.naver.com/ottd/10466> |
+| V-train and its wagons | Las<br />Modified by [@EightonEight](https://github.com/EightonEight) | <https://cafe.naver.com/ottd/10466><br />modified: [#390](https://github.com/KoreanGRF/KoreanTrainSet/pull/390) |
 | ``K5000`` | [@kiwitreekor](https://github.com/kiwitreekor)<br />Modified by [@SerpensNebula](https://github.com/SerpensNebula) | [#176](https://github.com/KoreanGRF/KoreanTrainSet/issues/176)<br />modified: [#352](https://github.com/KoreanGRF/KoreanTrainSet/issues/352) |
 | ``K6x00`` | [@kiwitreekor](https://github.com/kiwitreekor), [@SerpensNebula](https://github.com/SerpensNebula) | [#176](https://github.com/KoreanGRF/KoreanTrainSet/issues/176), [#250](https://github.com/KoreanGRF/KoreanTrainSet/issues/250)<br />modified: [#352](https://github.com/KoreanGRF/KoreanTrainSet/issues/352) |
 | Kwankwang-ho and its wagons | [@SerpensNebula](https://github.com/SerpensNebula) | [#241](https://github.com/KoreanGRF/KoreanTrainSet/issues/241) |
 | ``K7000`` | Modified by Las, [@SerpensNebula](https://github.com/SerpensNebula) | <https://cafe.naver.com/ottd/10534>, [#353](https://github.com/KoreanGRF/KoreanTrainSet/issues/353) |
 | ``K7x00`` | [@kiwitreekor](https://github.com/kiwitreekor)<br />Modified by [@SerpensNebula](https://github.com/SerpensNebula), [@JukjeonWani](https://github.com/JukjeonWani) | modified: [#351](https://github.com/KoreanGRF/KoreanTrainSet/issues/351), [#360](https://github.com/KoreanGRF/KoreanTrainSet/issues/360) |
-| G-train and its wagons | [@opentrain](https://github.com/opentrain)<br />Modified by [@telk5093](https://github.com/telk5093) | <https://cafe.naver.com/ottd/10464><br />modified: [#127](https://github.com/KoreanGRF/KoreanTrainSet/issues/127), [#223](https://github.com/KoreanGRF/KoreanTrainSet/issues/223) |
-| Haerang and its wagons | Las? | |
-| S-train and its wagons | Las | <https://cafe.naver.com/ottd/10466> |
+| G-train and its wagons | [@opentrain](https://github.com/opentrain)<br />Modified by [@telk5093](https://github.com/telk5093), [@JukjeonWani](https://github.com/JukjeonWani) | <https://cafe.naver.com/ottd/10464><br />modified: [#127](https://github.com/KoreanGRF/KoreanTrainSet/issues/127), [#223](https://github.com/KoreanGRF/KoreanTrainSet/issues/223), [#361](https://github.com/KoreanGRF/KoreanTrainSet/issues/361), [#387](https://github.com/KoreanGRF/KoreanTrainSet/issues/387) |
+| Haerang and its wagons | Las?<br />Modified by [@JukjeonWani](https://github.com/JukjeonWani) | modified: [#361](https://github.com/KoreanGRF/KoreanTrainSet/issues/361) |
+| S-train and its wagons | Las<br />Modified by [@JukjeonWani](https://github.com/JukjeonWani) | <https://cafe.naver.com/ottd/10466><br />modified: [#361](https://github.com/KoreanGRF/KoreanTrainSet/issues/361) |
 | ``K7600`` | skyu | |
-| A-train and its wagons | [@kiwitreekor](https://github.com/kiwitreekor), [@kimgas](https://github.com/kimgas) | [#15](https://github.com/KoreanGRF/KoreanTrainSet/issues/15) |
+| A-train and its wagons | [@kiwitreekor](https://github.com/kiwitreekor), [@kimgas](https://github.com/kimgas)<br />Modified by [@JukjeonWani](https://github.com/JukjeonWani) | [#15](https://github.com/KoreanGRF/KoreanTrainSet/issues/15)<br />modified: [#361](https://github.com/KoreanGRF/KoreanTrainSet/issues/361) |
 | ``K8000`` | skyu | |
 | ``K8x00`` | skyu<br />Modified by [@SerpensNebula](https://github.com/SerpensNebula) | modified: [#359](https://github.com/KoreanGRF/KoreanTrainSet/issues/359) |
 | ``K8500`` | skyu<br />Modified by [@SerpensNebula](https://github.com/SerpensNebula) | modified: [#359](https://github.com/KoreanGRF/KoreanTrainSet/issues/359) |
 | ``EUM`` | skyu<br />Modified by [@EightonEight](https://github.com/EightonEight) | modified: [#370](https://github.com/KoreanGRF/KoreanTrainSet/pull/370), [#376](https://github.com/KoreanGRF/KoreanTrainSet/pull/376) |
 | ``EUM_32bpp`` | [@kiwitreekor](https://github.com/kiwitreekor)<br />Modified by [@EightonEight](https://github.com/EightonEight) | [#319](https://github.com/KoreanGRF/KoreanTrainSet/issues/319), [#320](https://github.com/KoreanGRF/KoreanTrainSet/issues/320)<br />modified: [#370](https://github.com/KoreanGRF/KoreanTrainSet/pull/370), [#376](https://github.com/KoreanGRF/KoreanTrainSet/pull/376) |
+| KTX-EUM 320 wagon | [@EightonEight](https://github.com/EightonEight) | [#368](https://github.com/KoreanGRF/KoreanTrainSet/issues/368) |
 | ``KTX1N`` | skyu | |
 | ``KTX2N`` | Las<br />Modified by [@EightonEight](https://github.com/EightonEight) | modified: [#376](https://github.com/KoreanGRF/KoreanTrainSet/pull/376), [#377](https://github.com/KoreanGRF/KoreanTrainSet/pull/377) |
 | ``KTX2N_PYEONGCHANG`` | RIPper<br />Modified by [@EightonEight](https://github.com/EightonEight) | [#89](https://github.com/KoreanGRF/KoreanTrainSet/issues/89)<br />modified: [#376](https://github.com/KoreanGRF/KoreanTrainSet/pull/376), [#377](https://github.com/KoreanGRF/KoreanTrainSet/pull/377) |
@@ -198,10 +199,10 @@ Based in Korean Train Set 2.4.0
 | ``cargo_SAND`` | 〃 | |
 | ``cargo_SCMT`` | 〃 | |
 | ``cargo_SLAG`` | 〃 | |
-| ``MAIL_CAR`` | [@kimgas](https://github.com/kimgas) | [#126](https://github.com/KoreanGRF/KoreanTrainSet/issues/126) |
+| ``MAIL_CAR`` | [@kimgas](https://github.com/kimgas)<br />Modified by [@EightonEight](https://github.com/EightonEight) | [#126](https://github.com/KoreanGRF/KoreanTrainSet/issues/126)<br />modified: [#390](https://github.com/KoreanGRF/KoreanTrainSet/pull/390) |
 | ``MUGUNGHWA_CAR`` | skyu?<br />[@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201), [@opentrain](https://github.com/opentrain)<br />Modified by [@JukjeonWani](https://github.com/JukjeonWani) | [#113](https://github.com/KoreanGRF/KoreanTrainSet/issues/113), [#124](https://github.com/KoreanGRF/KoreanTrainSet/issues/124), [#131](https://github.com/KoreanGRF/KoreanTrainSet/issues/131), [#174](https://github.com/KoreanGRF/KoreanTrainSet/issues/174)<br />modified: [#180](https://github.com/KoreanGRF/KoreanTrainSet/issues/180), [#341](https://github.com/KoreanGRF/KoreanTrainSet/issues/341), [#357](https://github.com/KoreanGRF/KoreanTrainSet/issues/357) |
 | ``passenger_wagon`` | [@telk5093](https://github.telk5093) | |
-| ``SAEMAEUL_CAR`` | skyu?<br />[@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201), [@EightonEight](https://github.com/EightonEight) | [#118](https://github.com/KoreanGRF/KoreanTrainSet/issues/118), [#184](https://github.com/KoreanGRF/KoreanTrainSet/issues/184), [#227](https://github.com/KoreanGRF/KoreanTrainSet/issues/227) |
+| ``SAEMAEUL_CAR`` | skyu?<br />[@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201), [@EightonEight](https://github.com/EightonEight)<br />Modified by [@JukjeonWani](https://github.com/JukjeonWani) | [#118](https://github.com/KoreanGRF/KoreanTrainSet/issues/118), [#184](https://github.com/KoreanGRF/KoreanTrainSet/issues/184), [#227](https://github.com/KoreanGRF/KoreanTrainSet/issues/227)<br />modified: [#378](https://github.com/KoreanGRF/KoreanTrainSet/issues/378) |
 | ``SLEEPING_CAR`` | [@ChuoSpecialRapid201](https://github.com/ChuoSpecialRapid201) | [#123](https://github.com/KoreanGRF/KoreanTrainSet/issues/123) |
 | ``STAKE_CAR`` | [@kiwitreekor](https://github.com/kiwitreekor) | <https://cafe.naver.com/ottd/15106> |
 | ``STAKE_CAR_without_stake`` | [@EightonEight](https://github.com/EightonEight) | [#257](https://github.com/KoreanGRF/KoreanTrainSet/issues/257) |
