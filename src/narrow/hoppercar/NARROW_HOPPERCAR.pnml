@@ -99,7 +99,7 @@ item(FEAT_TRAINS, ko_train_NARROW_HOPPERCAR, 5906) {
         BDMT:                           sg_NARROW_HOPPERCAR_SAND;
         SCMT:                           sg_NARROW_HOPPERCAR_SCMT;
         SLAG:                           sg_NARROW_HOPPERCAR_SLAG;
-        default:                        set_NARROW_HOPPERCAR_wagon;
+        default:                        set_NARROW_HOPPERCAR_empty;
         purchase:                       sw_NARROW_HOPPERCAR_purchase;
 
         cost_factor:                    sw_NARROW_HOPPERCAR_cost;

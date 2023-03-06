@@ -21,7 +21,7 @@ template tmpl_NARROW_HOPPERCAR(x, y) {
 spriteset(set_NARROW_HOPPERCAR_purchase, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_purchase_common(0, 0)
 }
-spriteset(set_NARROW_HOPPERCAR_wagon, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_empty, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 0)
 }
 
@@ -142,192 +142,230 @@ spriteset(set_NARROW_HOPPERCAR_SLAG_full, "./src/narrow/hoppercar/NARROW_HOPPERC
 
 spritegroup sg_NARROW_HOPPERCAR_AORE {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_AORE_half,
-        set_NARROW_HOPPERCAR_AORE_full,
+        set_NARROW_HOPPERCAR_AORE_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_AORE_half,
-        set_NARROW_HOPPERCAR_AORE_full,
+        set_NARROW_HOPPERCAR_AORE_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_BEAN {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_BEAN_half,
-        set_NARROW_HOPPERCAR_BEAN_full,
+        set_NARROW_HOPPERCAR_BEAN_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_BEAN_half,
-        set_NARROW_HOPPERCAR_BEAN_full,
+        set_NARROW_HOPPERCAR_BEAN_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_CLAY {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_CLAY_half,
-        set_NARROW_HOPPERCAR_CLAY_full,
+        set_NARROW_HOPPERCAR_CLAY_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_CLAY_half,
-        set_NARROW_HOPPERCAR_CLAY_full,
+        set_NARROW_HOPPERCAR_CLAY_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_COAL {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_COAL_half,
-        set_NARROW_HOPPERCAR_COAL_full,
+        set_NARROW_HOPPERCAR_COAL_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_COAL_half,
-        set_NARROW_HOPPERCAR_COAL_full,
+        set_NARROW_HOPPERCAR_COAL_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_CORE {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_CORE_half,
-        set_NARROW_HOPPERCAR_CORE_full,
+        set_NARROW_HOPPERCAR_CORE_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_CORE_half,
-        set_NARROW_HOPPERCAR_CORE_full,
+        set_NARROW_HOPPERCAR_CORE_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_FRUT {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_FRUT_half,
-        set_NARROW_HOPPERCAR_FRUT_full,
+        set_NARROW_HOPPERCAR_FRUT_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_FRUT_half,
-        set_NARROW_HOPPERCAR_FRUT_full,
+        set_NARROW_HOPPERCAR_FRUT_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_GOLD {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_GOLD_half,
-        set_NARROW_HOPPERCAR_GOLD_full,
+        set_NARROW_HOPPERCAR_GOLD_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_GOLD_half,
-        set_NARROW_HOPPERCAR_GOLD_full,
+        set_NARROW_HOPPERCAR_GOLD_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_GRAI {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_GRAI_half,
-        set_NARROW_HOPPERCAR_GRAI_full,
+        set_NARROW_HOPPERCAR_GRAI_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_GRAI_half,
-        set_NARROW_HOPPERCAR_GRAI_full,
+        set_NARROW_HOPPERCAR_GRAI_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_GRVL {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_GRVL_half,
-        set_NARROW_HOPPERCAR_GRVL_full,
+        set_NARROW_HOPPERCAR_GRVL_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_GRVL_half,
-        set_NARROW_HOPPERCAR_GRVL_full,
+        set_NARROW_HOPPERCAR_GRVL_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_IORE {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_IORE_half,
-        set_NARROW_HOPPERCAR_IORE_full,
+        set_NARROW_HOPPERCAR_IORE_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_IORE_half,
-        set_NARROW_HOPPERCAR_IORE_full,
+        set_NARROW_HOPPERCAR_IORE_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_LIME {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_LIME_half,
-        set_NARROW_HOPPERCAR_LIME_full,
+        set_NARROW_HOPPERCAR_LIME_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_LIME_half,
-        set_NARROW_HOPPERCAR_LIME_full,
+        set_NARROW_HOPPERCAR_LIME_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_MNO2 {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_MNO2_half,
-        set_NARROW_HOPPERCAR_MNO2_full,
+        set_NARROW_HOPPERCAR_MNO2_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_MNO2_half,
-        set_NARROW_HOPPERCAR_MNO2_full,
+        set_NARROW_HOPPERCAR_MNO2_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_PHOS {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_PHOS_half,
-        set_NARROW_HOPPERCAR_PHOS_full,
+        set_NARROW_HOPPERCAR_PHOS_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_PHOS_half,
-        set_NARROW_HOPPERCAR_PHOS_full,
+        set_NARROW_HOPPERCAR_PHOS_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_PORE {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_PORE_half,
-        set_NARROW_HOPPERCAR_PORE_full,
+        set_NARROW_HOPPERCAR_PORE_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_PORE_half,
-        set_NARROW_HOPPERCAR_PORE_full,
+        set_NARROW_HOPPERCAR_PORE_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_RCYC {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_RCYC_half,
-        set_NARROW_HOPPERCAR_RCYC_full,
+        set_NARROW_HOPPERCAR_RCYC_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_RCYC_half,
-        set_NARROW_HOPPERCAR_RCYC_full,
+        set_NARROW_HOPPERCAR_RCYC_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_SALT {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_SALT_half,
-        set_NARROW_HOPPERCAR_SALT_full,
+        set_NARROW_HOPPERCAR_SALT_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_SALT_half,
-        set_NARROW_HOPPERCAR_SALT_full,
+        set_NARROW_HOPPERCAR_SALT_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_SAND {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_SAND_half,
-        set_NARROW_HOPPERCAR_SAND_full,
+        set_NARROW_HOPPERCAR_SAND_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_SAND_half,
-        set_NARROW_HOPPERCAR_SAND_full,
+        set_NARROW_HOPPERCAR_SAND_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_SCMT {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_SCMT_half,
-        set_NARROW_HOPPERCAR_SCMT_full,
+        set_NARROW_HOPPERCAR_SCMT_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_SCMT_half,
-        set_NARROW_HOPPERCAR_SCMT_full,
+        set_NARROW_HOPPERCAR_SCMT_full
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_SLAG {
     loading: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_SLAG_half,
-        set_NARROW_HOPPERCAR_SLAG_full,
+        set_NARROW_HOPPERCAR_SLAG_full
     ];
     loaded: [
+        set_NARROW_HOPPERCAR_empty,
         set_NARROW_HOPPERCAR_SLAG_half,
-        set_NARROW_HOPPERCAR_SLAG_full,
+        set_NARROW_HOPPERCAR_SLAG_full
     ];
 }
 
