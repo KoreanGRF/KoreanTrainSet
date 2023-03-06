@@ -25,116 +25,115 @@ spriteset(set_NARROW_HOPPERCAR_wagon, "./src/narrow/hoppercar/NARROW_HOPPERCAR.p
     tmpl_NARROW_HOPPERCAR(80, 0)
 }
 
-
-spriteset(set_NARROW_HOPPERCAR_AORE_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_AORE_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 30)
 }
 spriteset(set_NARROW_HOPPERCAR_AORE_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 60)
 }
-spriteset(set_NARROW_HOPPERCAR_BEAN_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_BEAN_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 90)
 }
 spriteset(set_NARROW_HOPPERCAR_BEAN_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 120)
 }
-spriteset(set_NARROW_HOPPERCAR_CLAY_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_CLAY_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 150)
 }
 spriteset(set_NARROW_HOPPERCAR_CLAY_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 180)
 }
-spriteset(set_NARROW_HOPPERCAR_COAL_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_COAL_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 210)
 }
 spriteset(set_NARROW_HOPPERCAR_COAL_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 240)
 }
-spriteset(set_NARROW_HOPPERCAR_CORE_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_CORE_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 270)
 }
 spriteset(set_NARROW_HOPPERCAR_CORE_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 300)
 }
-spriteset(set_NARROW_HOPPERCAR_FRUT_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_FRUT_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 330)
 }
 spriteset(set_NARROW_HOPPERCAR_FRUT_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 360)
 }
-spriteset(set_NARROW_HOPPERCAR_GOLD_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_GOLD_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 390)
 }
 spriteset(set_NARROW_HOPPERCAR_GOLD_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 420)
 }
-spriteset(set_NARROW_HOPPERCAR_GRAI_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_GRAI_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 450)
 }
 spriteset(set_NARROW_HOPPERCAR_GRAI_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 480)
 }
-spriteset(set_NARROW_HOPPERCAR_GRVL_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_GRVL_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 510)
 }
 spriteset(set_NARROW_HOPPERCAR_GRVL_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 540)
 }
-spriteset(set_NARROW_HOPPERCAR_IORE_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_IORE_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 570)
 }
 spriteset(set_NARROW_HOPPERCAR_IORE_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(80, 600)
 }
-spriteset(set_NARROW_HOPPERCAR_LIME_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_LIME_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 30)
 }
 spriteset(set_NARROW_HOPPERCAR_LIME_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 60)
 }
-spriteset(set_NARROW_HOPPERCAR_MNO2_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_MNO2_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 90)
 }
 spriteset(set_NARROW_HOPPERCAR_MNO2_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 120)
 }
-spriteset(set_NARROW_HOPPERCAR_PHOS_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_PHOS_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 150)
 }
 spriteset(set_NARROW_HOPPERCAR_PHOS_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 180)
 }
-spriteset(set_NARROW_HOPPERCAR_PORE_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_PORE_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 210)
 }
 spriteset(set_NARROW_HOPPERCAR_PORE_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 240)
 }
-spriteset(set_NARROW_HOPPERCAR_RCYC_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_RCYC_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 270)
 }
 spriteset(set_NARROW_HOPPERCAR_RCYC_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 300)
 }
-spriteset(set_NARROW_HOPPERCAR_SALT_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_SALT_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 330)
 }
 spriteset(set_NARROW_HOPPERCAR_SALT_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 360)
 }
-spriteset(set_NARROW_HOPPERCAR_SAND_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_SAND_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 390)
 }
 spriteset(set_NARROW_HOPPERCAR_SAND_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 420)
 }
-spriteset(set_NARROW_HOPPERCAR_SCMT_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_SCMT_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 450)
 }
 spriteset(set_NARROW_HOPPERCAR_SCMT_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 480)
 }
-spriteset(set_NARROW_HOPPERCAR_SLAG_emtpy, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
+spriteset(set_NARROW_HOPPERCAR_SLAG_half, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
     tmpl_NARROW_HOPPERCAR(220, 510)
 }
 spriteset(set_NARROW_HOPPERCAR_SLAG_full, "./src/narrow/hoppercar/NARROW_HOPPERCAR.png") {
@@ -143,191 +142,191 @@ spriteset(set_NARROW_HOPPERCAR_SLAG_full, "./src/narrow/hoppercar/NARROW_HOPPERC
 
 spritegroup sg_NARROW_HOPPERCAR_AORE {
     loading: [
-        set_NARROW_HOPPERCAR_AORE_emtpy,
+        set_NARROW_HOPPERCAR_AORE_half,
         set_NARROW_HOPPERCAR_AORE_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_AORE_emtpy,
+        set_NARROW_HOPPERCAR_AORE_half,
         set_NARROW_HOPPERCAR_AORE_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_BEAN {
     loading: [
-        set_NARROW_HOPPERCAR_BEAN_emtpy,
+        set_NARROW_HOPPERCAR_BEAN_half,
         set_NARROW_HOPPERCAR_BEAN_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_BEAN_emtpy,
+        set_NARROW_HOPPERCAR_BEAN_half,
         set_NARROW_HOPPERCAR_BEAN_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_CLAY {
     loading: [
-        set_NARROW_HOPPERCAR_CLAY_emtpy,
+        set_NARROW_HOPPERCAR_CLAY_half,
         set_NARROW_HOPPERCAR_CLAY_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_CLAY_emtpy,
+        set_NARROW_HOPPERCAR_CLAY_half,
         set_NARROW_HOPPERCAR_CLAY_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_COAL {
     loading: [
-        set_NARROW_HOPPERCAR_COAL_emtpy,
+        set_NARROW_HOPPERCAR_COAL_half,
         set_NARROW_HOPPERCAR_COAL_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_COAL_emtpy,
+        set_NARROW_HOPPERCAR_COAL_half,
         set_NARROW_HOPPERCAR_COAL_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_CORE {
     loading: [
-        set_NARROW_HOPPERCAR_CORE_emtpy,
+        set_NARROW_HOPPERCAR_CORE_half,
         set_NARROW_HOPPERCAR_CORE_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_CORE_emtpy,
+        set_NARROW_HOPPERCAR_CORE_half,
         set_NARROW_HOPPERCAR_CORE_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_FRUT {
     loading: [
-        set_NARROW_HOPPERCAR_FRUT_emtpy,
+        set_NARROW_HOPPERCAR_FRUT_half,
         set_NARROW_HOPPERCAR_FRUT_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_FRUT_emtpy,
+        set_NARROW_HOPPERCAR_FRUT_half,
         set_NARROW_HOPPERCAR_FRUT_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_GOLD {
     loading: [
-        set_NARROW_HOPPERCAR_GOLD_emtpy,
+        set_NARROW_HOPPERCAR_GOLD_half,
         set_NARROW_HOPPERCAR_GOLD_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_GOLD_emtpy,
+        set_NARROW_HOPPERCAR_GOLD_half,
         set_NARROW_HOPPERCAR_GOLD_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_GRAI {
     loading: [
-        set_NARROW_HOPPERCAR_GRAI_emtpy,
+        set_NARROW_HOPPERCAR_GRAI_half,
         set_NARROW_HOPPERCAR_GRAI_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_GRAI_emtpy,
+        set_NARROW_HOPPERCAR_GRAI_half,
         set_NARROW_HOPPERCAR_GRAI_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_GRVL {
     loading: [
-        set_NARROW_HOPPERCAR_GRVL_emtpy,
+        set_NARROW_HOPPERCAR_GRVL_half,
         set_NARROW_HOPPERCAR_GRVL_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_GRVL_emtpy,
+        set_NARROW_HOPPERCAR_GRVL_half,
         set_NARROW_HOPPERCAR_GRVL_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_IORE {
     loading: [
-        set_NARROW_HOPPERCAR_IORE_emtpy,
+        set_NARROW_HOPPERCAR_IORE_half,
         set_NARROW_HOPPERCAR_IORE_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_IORE_emtpy,
+        set_NARROW_HOPPERCAR_IORE_half,
         set_NARROW_HOPPERCAR_IORE_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_LIME {
     loading: [
-        set_NARROW_HOPPERCAR_LIME_emtpy,
+        set_NARROW_HOPPERCAR_LIME_half,
         set_NARROW_HOPPERCAR_LIME_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_LIME_emtpy,
+        set_NARROW_HOPPERCAR_LIME_half,
         set_NARROW_HOPPERCAR_LIME_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_MNO2 {
     loading: [
-        set_NARROW_HOPPERCAR_MNO2_emtpy,
+        set_NARROW_HOPPERCAR_MNO2_half,
         set_NARROW_HOPPERCAR_MNO2_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_MNO2_emtpy,
+        set_NARROW_HOPPERCAR_MNO2_half,
         set_NARROW_HOPPERCAR_MNO2_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_PHOS {
     loading: [
-        set_NARROW_HOPPERCAR_PHOS_emtpy,
+        set_NARROW_HOPPERCAR_PHOS_half,
         set_NARROW_HOPPERCAR_PHOS_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_PHOS_emtpy,
+        set_NARROW_HOPPERCAR_PHOS_half,
         set_NARROW_HOPPERCAR_PHOS_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_PORE {
     loading: [
-        set_NARROW_HOPPERCAR_PORE_emtpy,
+        set_NARROW_HOPPERCAR_PORE_half,
         set_NARROW_HOPPERCAR_PORE_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_PORE_emtpy,
+        set_NARROW_HOPPERCAR_PORE_half,
         set_NARROW_HOPPERCAR_PORE_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_RCYC {
     loading: [
-        set_NARROW_HOPPERCAR_RCYC_emtpy,
+        set_NARROW_HOPPERCAR_RCYC_half,
         set_NARROW_HOPPERCAR_RCYC_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_RCYC_emtpy,
+        set_NARROW_HOPPERCAR_RCYC_half,
         set_NARROW_HOPPERCAR_RCYC_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_SALT {
     loading: [
-        set_NARROW_HOPPERCAR_SALT_emtpy,
+        set_NARROW_HOPPERCAR_SALT_half,
         set_NARROW_HOPPERCAR_SALT_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_SALT_emtpy,
+        set_NARROW_HOPPERCAR_SALT_half,
         set_NARROW_HOPPERCAR_SALT_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_SAND {
     loading: [
-        set_NARROW_HOPPERCAR_SAND_emtpy,
+        set_NARROW_HOPPERCAR_SAND_half,
         set_NARROW_HOPPERCAR_SAND_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_SAND_emtpy,
+        set_NARROW_HOPPERCAR_SAND_half,
         set_NARROW_HOPPERCAR_SAND_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_SCMT {
     loading: [
-        set_NARROW_HOPPERCAR_SCMT_emtpy,
+        set_NARROW_HOPPERCAR_SCMT_half,
         set_NARROW_HOPPERCAR_SCMT_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_SCMT_emtpy,
+        set_NARROW_HOPPERCAR_SCMT_half,
         set_NARROW_HOPPERCAR_SCMT_full,
     ];
 }
 spritegroup sg_NARROW_HOPPERCAR_SLAG {
     loading: [
-        set_NARROW_HOPPERCAR_SLAG_emtpy,
+        set_NARROW_HOPPERCAR_SLAG_half,
         set_NARROW_HOPPERCAR_SLAG_full,
     ];
     loaded: [
-        set_NARROW_HOPPERCAR_SLAG_emtpy,
+        set_NARROW_HOPPERCAR_SLAG_half,
         set_NARROW_HOPPERCAR_SLAG_full,
     ];
 }
