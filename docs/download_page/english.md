@@ -330,7 +330,7 @@
         <td class="introduction">1983</td>
     </tr>
     <tr data-veh_id="SEOUL_METRO_3">
-        <td class="refit"><div><img src="./_static/3K_SMETRO_CHOPPER.png" alt="Seoul Line 3"><br /><img src="./_static/3K_SMETRO_MODIFIED_CHOPPER.png" alt="Seoul Line 3"><br /><img src="./_static/3K_VVVF_1ST_1.png" alt="Seoul Line 3"><br /><img src="./_static/3K_VVVF_1ST_2.png" alt="Seoul Line 3"><br /><img src="./_static/3K_SMETRO_VVVF_1ST.png" alt="Seoul Line 3"><br /><img src="./_static/3K_SMETRO_VVVF_2ND.png" alt="Seoul Line 3"><br /><img src="./_static/LINE_3_2022.png" alt="Seoul Line 3"></div></td>
+        <td class="refit"><div><img src="./_static/3K_SMETRO_CHOPPER.png" alt="Seoul Line 3"><br /><img src="./_static/3K_SMETRO_MODIFIED_CHOPPER.png" alt="Seoul Line 3"><br /><img src="./_static/3K_VVVF_1ST_1.png" alt="Seoul Line 3"><br /><img src="./_static/3K_VVVF_1ST_2.png" alt="Seoul Line 3"><br /><img src="./_static/3K_SMETRO_VVVF_1ST.png" alt="Seoul Line 3"><br /><img src="./_static/3K_SMETRO_VVVF_2ND.png" alt="Seoul Line 3"><br /><img src="./_static/LINE_3_2022.png" alt="Seoul Line 3"><br /><img src="./_static/LINE_3_2022_W.png" alt="Seoul Line 3"></div></td>
         <td class="name">Seoul Line 3</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">100 km/h</td>

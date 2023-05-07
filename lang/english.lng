@@ -290,6 +290,7 @@ STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  : (SMetro 3k Modified CHOPPER)
 STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          : (SMetro 3k VVVF 1st)
 STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          : (SMetro 3k VVVF 2nd)
 STR_REFIT_METRO_LINE_3_2022_NAME                 : (Korail, introduced in 2022)
+STR_REFIT_METRO_LINE_3_2022_W_NAME               : (Korail, introduced in 2022 by Woojin)
 
 # Refit (Seoul metropolitan 4)
 STR_REFIT_METRO_341K_VVVF_1ST_1_NAME             : (Korail 341k 1st VVVF / Old livery)
