@@ -8,11 +8,11 @@
  */
 
 template tmpl_NARROW_HOPPERCAR(x, y) {
-    [x+0,    y,    6,     11,     -2,   -8]
+    [x+0,    y,    6,     11,     -2,   -7]
     [x+20,   y,    11,    10,     -9,   -4]
-    [x+50,   y,    16,     7,     -3,   -4]
+    [x+50,   y,    16,     7,     -4,   -4]
     [x+90,   y,    11,    10,      4,   -2]
-    [x+0,    y,    6,     11,     -2,   -2]   // It is consist of 4 sprites but provides 8 directions because of offsets
+    [x+0,    y,    6,     11,     -2,   -3]   // It is consist of 4 sprites but provides 8 directions because of offsets
     [x+20,   y,    11,    10,    -13,   -2]
     [x+50,   y,    16,     7,    -12,   -4]
     [x+90,   y,    11,    10,     -1,   -4]
