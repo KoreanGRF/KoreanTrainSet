@@ -69,6 +69,7 @@
 #include "metro/seoul_metro_4/seoul_metro_4.pnml"
 #include "metro/seoul_metro_5_9/seoul_metro_5_9.pnml"
 #include "metro/suin_bundang/suin_bundang.pnml"
+#include "metro/seohae/seohae.pnml"
 #include "metro/gyeongchun/gyeongchun.pnml"
 #include "metro/gyeongchun/ITX-cheongchun.pnml"
 #include "metro/arex/arex.pnml"

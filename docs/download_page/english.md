@@ -409,6 +409,16 @@
         <td class="weight">20 t</td>
         <td class="introduction">2011</td>
     </tr>
+    <tr data-veh_id="SEOHAE">
+        <td class="refit"><div><img src="./_static/391K_1ST.png" alt="Seohae Line"><br /><img src="./_static/391K_2ND.png" alt="Seohae Line"></div></td>
+        <td class="name">Seohae Line</td>
+        <td class="speed">100 km/h</td>
+        <td class="speed_designed">100 km/h</td>
+        <td class="capacity">100</td>
+        <td class="power">2000 kW</td>
+        <td class="weight">20 t</td>
+        <td class="introduction">2018</td>
+    </tr>
     <tr data-veh_id="INCHEON_METRO_1">
         <td class="refit"><div><img src="./_static/INCHEON_METRO_1K_VVVF_1ST.png" alt="Incheon Line 1"><br /><img src="./_static/INCHEON_METRO_1K_VVVF_1ST_2022.png" alt="Incheon Line 1"><br /><img src="./_static/INCHEON_METRO_1K_VVVF_2ND.png" alt="Incheon Line 1"></div></td>
         <td class="name">Incheon Line 1</td>

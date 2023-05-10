@@ -66,6 +66,7 @@ STR_GYEONGCHUN_NAME                              :京春線
 STR_ITX_CHEONGCHUN_NAME                          :ITX-青春
 STR_AREX_NAME                                    :仁川空港鉄道 (A'REX)
 STR_SHINBUNDANG_NAME                             :シンブンダン線
+STR_SEOHAE_NAME                                  :西海線
 STR_INCHEON_METRO_1_NAME                         :仁川1号線
 STR_INCHEON_METRO_2_NAME                         :仁川2号線
 STR_SILLIM_NAME                                  :新林線
@@ -264,7 +265,6 @@ STR_REFIT_METRO_371K_BLANK_NAME                  :(Korail 371k・無塗色)
 STR_REFIT_METRO_371K_CC_NAME                     : (Korail 371k / 会社塗色)
 STR_REFIT_METRO_371K_381K_1ST_NAME               :(Korail 371k、381k 1次)
 STR_REFIT_METRO_381K_2ND_NAME                    :(Korail 381k 2次)
-STR_REFIT_METRO_391K_NAME                        :(Korail 391k・西海線)
 STR_REFIT_METRO_LINE_1_2019_NAME                 :(Korail 1号線2019年導入分)
 STR_REFIT_METRO_LINE_1_2021_NAME                 :(Korail 1号線2021年導入分)
 STR_REFIT_METRO_LINE_1_2022_W_NAME               :(Korail 1号線宇進産電2022年導入分)
@@ -323,10 +323,14 @@ STR_REFIT_METRO_351K_2021_NAME                   :(Korail 351k 2021年導入分)
 # Refit (Gyeongchun Line)
 STR_REFIT_METRO_361K_VVVF_NAME                   :(Korail 361k VVVF)
 
-# Refit (Incheon intertional Airport Line (A'REX))
+# Refit (Incheon intertional Airport Line (A'REX)
 STR_REFIT_METRO_AREX_1K_NONSTOP_NAME             :(A'REX 1k 直通)
 STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME      :(A'REX 1k 直通・橘色)
 STR_REFIT_METRO_AREX_2K_NAME                     :(A'REX 2k 緩行)
+
+# Refit (Seohae Line)
+STR_REFIT_METRO_391K_1ST_NAME                    :(Korail 391k 1次)
+STR_REFIT_METRO_391K_2ND_NAME                    :(Korail 391k 2次)
 
 # Refit (Other Lines)
 STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME   :(仁川交通公社 1k VVVF 1世代)

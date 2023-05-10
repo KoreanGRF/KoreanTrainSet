@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_SEOHAE_cargo_subtype_text, cargo_subtype) {
+    0: return string(STR_REFIT_METRO_391K_1ST_NAME);
+    1: return string(STR_REFIT_METRO_391K_2ND_NAME);
+    return string(STR_REFIT_METRO_391K_1ST_NAME);
+}
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_SEOHAE_engineH, cargo_subtype) {
+    1: set_391K_2ND_engineH;
+    set_391K_1ST_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOHAE_engineT, cargo_subtype) {
+    1: set_391K_2ND_engineT;
+    set_391K_1ST_engineT;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_SEOHAE_wagon_panto_cargo_subtype, cargo_subtype) {
+    1: set_391K_2ND_wagon_panto;
+    set_391K_1ST_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_SEOHAE_wagon_cargo_subtype, cargo_subtype) {
+    1: set_391K_2ND_wagon;
+    set_391K_1ST_wagon;
+}
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_SEOHAE_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_SEOHAE_engineT;
+    sw_SEOHAE_engineH;
+}
+
+// Pantograph - 4 cars (TC - M' - M' - TC)
+switch(FEAT_TRAINS, SELF, sw_SEOHAE_wagon, (position_in_consist + 1) % 4) {
+    2: sw_SEOHAE_wagon_panto_cargo_subtype;
+    3: sw_SEOHAE_wagon_panto_cargo_subtype;
+    sw_SEOHAE_wagon_cargo_subtype;
+}

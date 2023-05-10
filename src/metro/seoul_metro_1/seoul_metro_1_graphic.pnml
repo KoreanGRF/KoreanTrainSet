@@ -331,7 +331,7 @@ spriteset(set_381K_2ND_purchase, "./src/metro/seoul_metro_1/381K_2ND.png") {
     tmpl_purchase_common_dualhead(0, 0)
 }
 
-// 391K
+// 391K (will be deprecated and moved to Seohae)
 spriteset(set_391K_engineH, "./src/metro/seoul_metro_1/391K.png") {
     tmpl_engine_head(0, 0)
 }
