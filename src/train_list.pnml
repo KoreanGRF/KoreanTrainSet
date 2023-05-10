@@ -13,15 +13,15 @@
 #include "wagon/sleeping_car/sleeping_car.pnml"
 
 
+// Steam locomotives
+#include "locomotive/steam/steam.pnml"
+
 // Narrow gauges
 #include "narrow/hokey7/HOKEY7.pnml"
 #include "narrow/narrow_diesel_car/NARROW_DIESEL_CAR.pnml"
 #include "narrow/wagon/NARROW_GAUGE_WAGON.pnml"
 #include "narrow/boxcar/NARROW_BOXCAR.pnml"
 #include "narrow/hoppercar/NARROW_HOPPERCAR.pnml"
-
-// Steam locomotives
-#include "locomotive/steam/steam.pnml"
 
 // K2x00
 #include "locomotive/K2x00/K2x00.pnml"
