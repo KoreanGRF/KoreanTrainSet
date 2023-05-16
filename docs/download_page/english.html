@@ -194,7 +194,7 @@
         <td class="name">New Diesel Car (NDC)</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
-        <td class="capacity">44</td>
+        <td class="capacity">60</td>
         <td class="power">455 kW</td>
         <td class="weight">50 t</td>
         <td class="introduction">1984</td>
