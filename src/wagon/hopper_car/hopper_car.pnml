@@ -53,7 +53,7 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
 
         // Costs
         cost_factor:                    10;
-        refit_cost:                     1;
+        refit_cost:                     0;
         running_cost_base:              RUNNING_COST_NONE;
 
         // Flags
