@@ -49,7 +49,7 @@ item(FEAT_TRAINS, ko_train_BAGGAGE_CAR, 5912) {
         // Costs
         cost_factor:                    10;
         refit_cost:                     1;
-        running_cost_factor:            150;
+        running_cost_base:              RUNNING_COST_NONE;
 
         // Flags
         ai_special_flag:                AI_FLAG_CARGO;

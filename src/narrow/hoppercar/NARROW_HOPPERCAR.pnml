@@ -54,7 +54,7 @@ item(FEAT_TRAINS, ko_train_NARROW_HOPPERCAR, 5906) {
         // Costs
         cost_factor:                    10;
         refit_cost:                     0;
-        running_cost_base:              150;
+        running_cost_base:              RUNNING_COST_NONE;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;

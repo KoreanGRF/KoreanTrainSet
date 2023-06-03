@@ -48,7 +48,7 @@ item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
 
         // Costs
         refit_cost:                     0;
-        running_cost_base:              RUNNING_COST_DIESEL;
+        running_cost_base:              RUNNING_COST_NONE;
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
