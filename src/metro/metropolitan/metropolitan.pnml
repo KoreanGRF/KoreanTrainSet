@@ -1,0 +1,31 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * METROPOLITAN
+ */
+// Graphics
+#include "metropolitan_graphic.pnml"
+
+// Switch
+#include "metropolitan_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_METROPOLITAN, 5731) {
+    property {
+        // Common properties
+        name:                           string(STR_METROPOLITAN_NAME);
+        climates_available:             NO_CLIMATE;
+        introduction_date:              var_METROPOLITAN_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+    }
+    graphics {
+        purchase:                       sw_METROPOLITAN_purchase;
+    }
+}
+// End of "METROPOLITAN"

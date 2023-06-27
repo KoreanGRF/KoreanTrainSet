@@ -68,8 +68,11 @@ sort(FEAT_TRAINS, [
     ko_train_SUIN_BUNDANG,           // 5716
     ko_train_GYEONGCHUN,             // 5720
     ko_train_AREX,                   // 5730
+
+    ko_train_METROPOLITAN,           // 5731
     ko_train_SHINBUNDANG,            // 5735
     ko_train_SEOHAE,                 // 5736
+    ko_train_DONGHAE,                // 5737
     ko_train_INCHEON_METRO_1,        // 5741
     ko_train_INCHEON_METRO_2,        // 5742
     ko_train_BUSAN_METRO_1,          // 5751

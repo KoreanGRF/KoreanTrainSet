@@ -4,28 +4,28 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * GYEONGCHUN
+ * DONGHAE
  */
-SPEED_METRO(GYEONGCHUN)
-COST(GYEONGCHUN)
-RUNNING(GYEONGCHUN)
-CAPACITY(GYEONGCHUN)
-CAPACITY_PURCHASE(GYEONGCHUN)
-LOADING(GYEONGCHUN)
+SPEED_METRO(DONGHAE)
+COST(DONGHAE)
+RUNNING(DONGHAE)
+CAPACITY(DONGHAE)
+CAPACITY_PURCHASE(DONGHAE)
+LOADING(DONGHAE)
 
 // Graphics
-#include "gyeongchun_graphic.pnml"
+#include "donghae_graphic.pnml"
 
 // Switch
-#include "gyeongchun_switch.pnml"
+#include "donghae_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_GYEONGCHUN, 5720) {
+item(FEAT_TRAINS, ko_train_DONGHAE, 5737) {
     property {
         // Common properties
-        name:                           string(STR_GYEONGCHUN_NAME);
+        name:                           string(STR_DONGHAE_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_GYEONGCHUN_INTRODUCTION;
+        introduction_date:              var_DONGHAE_INTRODUCTION;
         track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -33,8 +33,8 @@ item(FEAT_TRAINS, ko_train_GYEONGCHUN, 5720) {
         variant_group:                  ko_train_METROPOLITAN;
 
         // Spec
-        power:                          POWER_IN_KW(var_GYEONGCHUN_POWER);
-        weight:                         var_GYEONGCHUN_WEIGHT;
+        power:                          POWER_IN_KW(var_DONGHAE_POWER);
+        weight:                         var_DONGHAE_WEIGHT;
         tractive_effort_coefficient:    0.25;
         air_drag_coefficient:           0.01;
 
@@ -61,32 +61,35 @@ item(FEAT_TRAINS, ko_train_GYEONGCHUN, 5720) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_GYEONGCHUN_engine;
-        purchase:                       sw_GYEONGCHUN_purchase;
+        default:                        sw_DONGHAE_engine;
+        purchase:                       sw_DONGHAE_purchase;
 
-        speed:                          sw_GYEONGCHUN_speed;
-        cost_factor:                    sw_GYEONGCHUN_cost;
-        running_cost_factor:            sw_GYEONGCHUN_runningcost;
-        cargo_capacity:                 sw_GYEONGCHUN_capacity;
-        purchase_cargo_capacity:        sw_GYEONGCHUN_purchase_capacity;
-        loading_speed:                  sw_GYEONGCHUN_loadingspeed;
+        speed:                          sw_DONGHAE_speed;
+        cost_factor:                    sw_DONGHAE_cost;
+        running_cost_factor:            sw_DONGHAE_runningcost;
+        cargo_capacity:                 sw_DONGHAE_capacity;
+        purchase_cargo_capacity:        sw_DONGHAE_purchase_capacity;
+        loading_speed:                  sw_DONGHAE_loadingspeed;
 
         can_attach_wagon:               sw_METRO_attach;
         start_stop:                     sw_ko_train_start_stop;
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        cargo_subtype_text:             sw_DONGHAE_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
     livery_override(ko_train_PASSWG) {
-        default:                        sw_GYEONGCHUN_wagon;
+        default:                        sw_DONGHAE_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        loading_speed:                  sw_GYEONGCHUN_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
+        loading_speed:                  sw_DONGHAE_loadingspeed;
+        cargo_subtype_text:             sw_DONGHAE_cargo_subtype_text;
     }
     livery_override(ko_train_PASSWGP) {
-        default:                        sw_GYEONGCHUN_wagon;
+        default:                        sw_DONGHAE_wagon;
         cargo_capacity:                 sw_METRO_wagon_capacity;
-        loading_speed:                  sw_GYEONGCHUN_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
+        loading_speed:                  sw_DONGHAE_loadingspeed;
+        cargo_subtype_text:             sw_DONGHAE_cargo_subtype_text;
         power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     }
 }
-// End of "GYEONGCHUN"
+// End of "DONGHAE"

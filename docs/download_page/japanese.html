@@ -399,6 +399,16 @@
         <td class="weight">20 t</td>
         <td class="introduction">2007</td>
     </tr>
+    <tr data-veh_id="METROPOLITAN">
+        <td class="refit"><div></div></td>
+        <td class="name">広域電車</td>
+        <td class="speed">100 km/h</td>
+        <td class="speed_designed">100 km/h</td>
+        <td class="capacity">100</td>
+        <td class="power">2000 kW</td>
+        <td class="weight">20 t</td>
+        <td class="introduction">2001</td>
+    </tr>
     <tr data-veh_id="SHINBUNDANG">
         <td class="refit"><div><img src="./_static/D00.png" alt="シンブンダン線"></div></td>
         <td class="name">シンブンダン線</td>
@@ -408,6 +418,16 @@
         <td class="power">2000 kW</td>
         <td class="weight">20 t</td>
         <td class="introduction">2011</td>
+    </tr>
+    <tr data-veh_id="DONGHAE">
+        <td class="refit"><div></div></td>
+        <td class="name">東海線</td>
+        <td class="speed">100 km/h</td>
+        <td class="speed_designed">100 km/h</td>
+        <td class="capacity">100</td>
+        <td class="power">2000 kW</td>
+        <td class="weight">20 t</td>
+        <td class="introduction">2018</td>
     </tr>
     <tr data-veh_id="SEOHAE">
         <td class="refit"><div><img src="./_static/391K_1ST.png" alt="西海線"><br /><img src="./_static/391K_2ND.png" alt="西海線"></div></td>

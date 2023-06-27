@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_DONGHAE_cargo_subtype_text, cargo_subtype) {
+    0:   return string(STR_REFIT_METRO_371K_381K_1ST_NAME);            // Korail 371k, 381k 1st (Donghae Line)
+    1:   return string(STR_REFIT_METRO_381K_2ND_NAME);                 // Korail 381k 2nd (Donghae Line, a.k.a. 주둥이, Judungi)
+    return string(STR_REFIT_METRO_371K_381K_1ST_NAME);
+}
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_DONGHAE_engineH, cargo_subtype) {
+    1: set_381K_2ND_engineH;
+    set_371K_381K_1ST_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_DONGHAE_engineT, cargo_subtype) {
+    1: set_381K_2ND_engineT;
+    set_371K_381K_1ST_engineT;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_DONGHAE_wagon_panto_cargo_subtype, cargo_subtype) {
+    1: set_381K_2ND_wagon_panto;
+    set_371K_381K_1ST_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_DONGHAE_wagon_cargo_subtype, cargo_subtype) {
+    1: set_381K_2ND_wagon;
+    set_371K_381K_1ST_wagon;
+}
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_DONGHAE_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_DONGHAE_engineT;
+    sw_DONGHAE_engineH;
+}
+
+// Pantograph - 4 cars (TC - M' - M' - TC)
+switch(FEAT_TRAINS, SELF, sw_DONGHAE_wagon, (position_in_consist + 1) % 4) {
+    2: sw_DONGHAE_wagon_panto_cargo_subtype;
+    3: sw_DONGHAE_wagon_panto_cargo_subtype;
+    sw_DONGHAE_wagon_cargo_subtype;
+}

@@ -66,8 +66,10 @@ STR_SUIN_BUNDANG_NAME                            :Suin-Bundang Line
 STR_GYEONGCHUN_NAME                              :Gyeongchun Line
 STR_ITX_CHEONGCHUN_NAME                          :ITX-Cheongchun
 STR_AREX_NAME                                    :Incheon Airport Railroad (A'REX)
+STR_METROPOLITAN_NAME                            :Metropolitan Subways
 STR_SHINBUNDANG_NAME                             :Shinbundang Line
 STR_SEOHAE_NAME                                  :Seohae Line
+STR_DONGHAE_NAME                                 :Donghae Line
 STR_INCHEON_METRO_1_NAME                         :Incheon Line 1
 STR_INCHEON_METRO_2_NAME                         :Incheon Line 2
 STR_SILLIM_NAME                                  :Sillim Line

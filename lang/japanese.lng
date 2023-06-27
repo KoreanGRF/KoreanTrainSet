@@ -66,7 +66,9 @@ STR_GYEONGCHUN_NAME                              :京春線
 STR_ITX_CHEONGCHUN_NAME                          :ITX-青春
 STR_AREX_NAME                                    :仁川空港鉄道 (A'REX)
 STR_SHINBUNDANG_NAME                             :シンブンダン線
+STR_METROPOLITAN_NAME                            :広域電車
 STR_SEOHAE_NAME                                  :西海線
+STR_DONGHAE_NAME                                 :東海線
 STR_INCHEON_METRO_1_NAME                         :仁川1号線
 STR_INCHEON_METRO_2_NAME                         :仁川2号線
 STR_SILLIM_NAME                                  :新林線

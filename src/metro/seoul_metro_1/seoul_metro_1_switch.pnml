@@ -51,8 +51,8 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_cargo_subtype_text, cargo_subtype) {
     16:   return string(STR_REFIT_METRO_321K_BIKE_NAME);                // Korail 321k Bike livery
     17:   return string(STR_REFIT_METRO_371K_BLANK_NAME);               // Korail 371k / Blank livery
     18:   return string(STR_REFIT_METRO_371K_CC_NAME);                  // Korail 371k / Company colour livery
-    19:   return string(STR_REFIT_METRO_371K_381K_1ST_NAME);            // Korail 371k, 381k 1st (Donghae Line)
-    20:   return string(STR_REFIT_METRO_381K_2ND_NAME);                 // Korail 381k 2nd (Donghae Line, a.k.a. 주둥이, Judungi)
+    19:   return string(STR_REFIT_METRO_371K_381K_1ST_NAME);            // Korail 371k, 381k 1st (Donghae Line) (will be deprecated and moved to Donghae)
+    20:   return string(STR_REFIT_METRO_381K_2ND_NAME);                 // Korail 381k 2nd (Donghae Line, a.k.a. 주둥이, Judungi) (will be deprecated and moved to Donghae)
     21:   return string(STR_REFIT_METRO_391K_1ST_NAME);                 // Korail 391k / Seohae Line (will be deprecated and moved to Seohae)
     22:   return string(STR_REFIT_METRO_LINE_1_2019_NAME);              // Korail, introduced in 2019 (a.k.a. 주둥이, Judungi)
     23:   return string(STR_REFIT_METRO_LINE_1_2021_NAME);              // Korail, introduced in 2021 (a.k.a. 주둥이, Judungi)

@@ -66,8 +66,10 @@ STR_SUIN_BUNDANG_NAME                            :수인분당선
 STR_GYEONGCHUN_NAME                              :경춘선
 STR_ITX_CHEONGCHUN_NAME                          :ITX-청춘
 STR_AREX_NAME                                    :인천공항철도 (A'REX)
+STR_METROPOLITAN_NAME                            :광역전철
 STR_SHINBUNDANG_NAME                             :신분당선
 STR_SEOHAE_NAME                                  :서해선
+STR_DONGHAE_NAME                                 :동해선
 STR_INCHEON_METRO_1_NAME                         :인천 1호선
 STR_INCHEON_METRO_2_NAME                         :인천 2호선
 STR_SILLIM_NAME                                  :신림선

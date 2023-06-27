@@ -30,6 +30,7 @@ item(FEAT_TRAINS, ko_train_SEOHAE, 5736) {
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
+        variant_group:                  ko_train_METROPOLITAN;
 
         // Spec
         power:                          POWER_IN_KW(var_SEOHAE_POWER);

@@ -1,0 +1,10 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_DONGHAE_purchase, cargo_subtype) {
+    set_371K_381K_1ST_purchase;
+}
