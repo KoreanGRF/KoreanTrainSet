@@ -9,6 +9,7 @@ STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko
 
 # Vehicle's name
 STR_HOKEY7_NAME                                  :ヒョギ７形蒸気機関車
+STR_STEAM_NAME                                   :蒸気機関車
 STR_MATE2_NAME                                   :マテ２形蒸気機関車
 STR_PASHI5_NAME                                  :バシ５形蒸気機関車
 STR_MIKA3_NAME                                   :ミカ３形蒸気機関車

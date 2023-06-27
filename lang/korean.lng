@@ -10,6 +10,7 @@ STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko
 
 # Vehicle's name
 STR_HOKEY7_NAME                                  :혀기 7형 증기 기관차
+STR_STEAM_NAME                                   :증기 기관차
 STR_MATE2_NAME                                   :마터 2형 증기 기관차
 STR_PASHI5_NAME                                  :파시 5형 증기 기관차
 STR_MIKA3_NAME                                   :미카 3형 증기 기관차

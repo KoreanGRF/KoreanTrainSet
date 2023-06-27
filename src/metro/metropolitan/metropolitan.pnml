@@ -18,7 +18,6 @@ item(FEAT_TRAINS, ko_train_METROPOLITAN, 5731) {
         // Common properties
         name:                           string(STR_METROPOLITAN_NAME);
         climates_available:             NO_CLIMATE;
-        introduction_date:              var_METROPOLITAN_INTRODUCTION;
         track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;

@@ -399,16 +399,6 @@
         <td class="weight">20 t</td>
         <td class="introduction">2007</td>
     </tr>
-    <tr data-veh_id="METROPOLITAN">
-        <td class="refit"><div></div></td>
-        <td class="name">Metropolitan Subways</td>
-        <td class="speed">100 km/h</td>
-        <td class="speed_designed">100 km/h</td>
-        <td class="capacity">100</td>
-        <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
-        <td class="introduction">2001</td>
-    </tr>
     <tr data-veh_id="SHINBUNDANG">
         <td class="refit"><div><img src="./_static/D00.png" alt="Shinbundang Line"></div></td>
         <td class="name">Shinbundang Line</td>

@@ -30,6 +30,7 @@ item(FEAT_TRAINS, ko_train_MIKA3, 5301) {
         engine_class:                   ENGINE_CLASS_STEAM;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    0;
+        variant_group:                  ko_train_STEAM;
 
         // Spec
         speed:                          var_MIKA3_SPEED km/h;

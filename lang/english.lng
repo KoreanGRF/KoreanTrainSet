@@ -10,6 +10,7 @@ STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko
 
 # Vehicle's name
 STR_HOKEY7_NAME                                  :Hokey 7 Steam Locomotive
+STR_STEAM_NAME                                   :Steam Locomotives
 STR_MATE2_NAME                                   :Mate 2 Steam Locomotive
 STR_PASHI5_NAME                                  :Pashi 5 Steam Locomotive
 STR_MIKA3_NAME                                   :Mika 3 Steam Locomotive
