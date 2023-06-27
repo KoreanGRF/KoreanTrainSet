@@ -21,8 +21,8 @@ grf {
 }
 
 // Check OpenTTD Version
-if(ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 7, 0, 21278)) {
-    error(FATAL, REQUIRES_OPENTTD, "1.7.0/r21278");
+if(ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 13, 0)) {
+    error(FATAL, REQUIRES_OPENTTD, "13.0/JGRPPP-0.53.0");
 }
 
 // Tables
