@@ -433,7 +433,6 @@ STR_RAILTYPE_NARROW_GAUGE_AUTOREPLACE            :狭軌線路機関車・車両
 STR_OBJ_BUFFER_KTSR                              :「KTS」車止め
 
 # Errors
-STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION        :このNewGRFを使用するためにはもっと上位のOpenTTD(1.7.0/r21278)バージョンが必要です!
 STR_ERROR_NO_ATTACH                              :ここにこの車両を付けることができません
 STR_ERROR_NOT_ENOUGH_LENGTH2                     :列車の長さが短すぎます。少なくとも２両以上を連結しなければなりません
 STR_ERROR_NOT_ENOUGH_LENGTH4                     :列車の長さが短すぎます。少なくとも４両以上を連結しなければなりません

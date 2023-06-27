@@ -434,7 +434,6 @@ STR_RAILTYPE_NARROW_GAUGE_AUTOREPLACE            :Narrow Gauge Vehicles
 STR_OBJ_BUFFER_KTSR                              :[KTS] Buffers
 
 # Errors
-STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION        :It requires higher OpenTTD version(1.7.0/r21278) to run this NewGRF!
 STR_ERROR_NO_ATTACH                              :You can't attach this car here
 STR_ERROR_NOT_ENOUGH_LENGTH2                     :It's too short. It should be equal or more than 2 cars at least.
 STR_ERROR_NOT_ENOUGH_LENGTH4                     :It's too short. It should be equal or more than 4 cars at least.

@@ -22,7 +22,7 @@ grf {
 
 // Check OpenTTD Version
 if(ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 7, 0, 21278)) {
-    error(FATAL, string(STR_ERROR_REQUIRED_HIGHER_OPENTTD_VERSION), "1.7.0/r21278");
+    error(FATAL, REQUIRES_OPENTTD, "1.7.0/r21278");
 }
 
 // Tables
