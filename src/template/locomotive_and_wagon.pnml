@@ -3,8 +3,23 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
-//xpos    ypos    xsize    ysize    xoff    yoff
+    //xpos    ypos    xsize    ysize    xoff    yoff
 
+// Standard template (since 2023.07)
+template tmpl_standard(x, y) {
+    [x,      y,     8,    25,     -3,  -14]
+    [x+20,   y,    21,    20,    -14,  -11]
+    [x+50,   y,    32,    15,    -16,  -11]
+    [x+90,   y,    21,    20,     -7,  -12]
+    [x+120,  y,     8,    25,     -3,  -14]
+    [x+140,  y,    21,    20,    -14,  -11]
+    [x+170,  y,    32,    15,    -16,  -11]
+    [x+210,  y,    21,    20,     -7,  -12]
+}
+
+/**
+ * WILL BE DEPRECATED BELOW
+ */
 // for General locomotives
 template tmpl_loco(x, y) {
     [x+0,    y,    8,     22,    -3,   -12]
