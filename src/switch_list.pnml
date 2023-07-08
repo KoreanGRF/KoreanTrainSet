@@ -32,9 +32,9 @@ switch(FEAT_TRAINS, SELF, sw_steam_attach, vehicle_type_id) {
     ko_train_MAIL_CAR:              return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
-switch(FEAT_TRAINS, SELF, sw_steam_attach_global, vehicle_type_id) {
-    0: return sw_steam_attach;
-    return CB_RESULT_ATTACH_ALLOW;
+switch(FEAT_TRAINS, SELF, sw_steam_attach_global, bool_no_vehicle_attachment_restrictions) {
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_steam_attach;
 }
 
 // Attachable vehicles for Kxxxx locomotives
@@ -69,8 +69,8 @@ switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
     return string(STR_ERROR_NO_ATTACH);
 }
 switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach_global, bool_no_vehicle_attachment_restrictions) {
-    0: return sw_Kxxxx_attach;
-    return CB_RESULT_ATTACH_ALLOW;
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_Kxxxx_attach;
 }
 
 // Attachable vehicles for Narrow gauge
@@ -83,8 +83,8 @@ switch(FEAT_TRAINS, SELF, sw_NARROW_attach, vehicle_type_id) {
     return string(STR_ERROR_NO_ATTACH);
 }
 switch(FEAT_TRAINS, SELF, sw_NARROW_attach_global, bool_no_vehicle_attachment_restrictions) {
-    0: return sw_NARROW_attach;
-    return CB_RESULT_ATTACH_ALLOW;
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_NARROW_attach;
 }
 
 // Attachable vehicles for Metro
@@ -95,8 +95,8 @@ switch(FEAT_TRAINS, SELF, sw_METRO_attach, vehicle_type_id) {
     return string(STR_ERROR_NO_ATTACH);
 }
 switch(FEAT_TRAINS, SELF, sw_METRO_attach_global, bool_no_vehicle_attachment_restrictions) {
-    0: return sw_METRO_attach;
-    return CB_RESULT_ATTACH_ALLOW;
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_METRO_attach;
 }
 
 // It should be more than 4 cars including engines
