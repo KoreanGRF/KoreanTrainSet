@@ -26,6 +26,7 @@ STR_K8x00_NAME                                             :8x00 Electronic Loco
 STR_K8500_NAME                                             :8500 Electronic Locomotive
 STR_DHC_NAME                                               :Diesel Hydraulic Car (DHC, PP)
 STR_ITX_SAEMAEUL_NAME                                      :ITX-Saemaeul
+STR_EMU150_NAME                                            :220·230k Electronic Locomotive (EMU-150)
 STR_NURIRO_NAME                                            :Nuriro
 STR_CDC_NAME                                               :Commuter Diesel Car (CDC)
 STR_NDC_NAME                                               :New Diesel Car (NDC)

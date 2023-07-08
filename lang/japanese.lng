@@ -25,6 +25,7 @@ STR_K8x00_NAME                                             :8x00号帯ディー�
 STR_K8500_NAME                                             :8500号帯ディーゼル機関車
 STR_DHC_NAME                                               :ディーゼル油圧自動車(DHC、PP)
 STR_ITX_SAEMAEUL_NAME                                      :ITX-セマウル
+STR_EMU150_NAME                                            :220·230k 電動車（EMU-150）
 STR_NURIRO_NAME                                            :ヌリロ
 STR_CDC_NAME                                               :通勤型ディーゼル列車(CDC)
 STR_NDC_NAME                                               :優等型ディーゼル動車(NDC)

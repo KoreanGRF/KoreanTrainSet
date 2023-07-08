@@ -62,6 +62,9 @@
 // KTX
 #include "locomotive/KTX/KTX.pnml"
 
+// EMU-150
+#include "locomotive/EMU/EMU150.pnml"
+
 // Metro
 #include "metro/seoul_metro_1/seoul_metro_1.pnml"
 #include "metro/seoul_metro_2/seoul_metro_2.pnml"

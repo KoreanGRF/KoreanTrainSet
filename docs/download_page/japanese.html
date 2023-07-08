@@ -249,6 +249,16 @@
         <td class="weight">68 t</td>
         <td class="introduction">2015</td>
     </tr>
+    <tr data-veh_id="EMU150">
+        <td class="refit"><div><img src="./_static/EMU150.png" alt="220·230k 電動車（EMU-150）"></div></td>
+        <td class="name">220·230k 電動車（EMU-150）</td>
+        <td class="speed">150 km/h</td>
+        <td class="speed_designed">165 km/h</td>
+        <td class="capacity">62</td>
+        <td class="power">2000 kW</td>
+        <td class="weight">60 t</td>
+        <td class="introduction">2023</td>
+    </tr>
     <tr data-veh_id="SAEMAEUL_CAR">
         <td class="refit"><div><img src="./_static/SAEMAEUL_CAR_1.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_executive_1.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_2.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_executive_2.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_3.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_executive_3.png" alt="セマウル号客車"><br /><img src="./_static/SAEMAEUL_CAR_ITX.png" alt="セマウル号客車"></div></td>
         <td class="name">セマウル号客車</td>
