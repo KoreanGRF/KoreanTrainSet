@@ -34,3 +34,7 @@ switch(FEAT_TRAINS, SELF, sw_GIMPO_GOLDLINE_start_stop, num_vehs_in_consist > 4)
     0: return CB_RESULT_NO_TEXT;
     return string(STR_ERROR_TOO_LONG_LENGTH4);
 }
+switch(FEAT_TRAINS, SELF, sw_GIMPO_GOLDLINE_start_stop_global, bool_no_vehicle_attachment_length) {
+    1: return CB_RESULT_NO_TEXT;
+    sw_GIMPO_GOLDLINE_start_stop;
+}

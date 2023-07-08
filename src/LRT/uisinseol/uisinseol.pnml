@@ -71,7 +71,7 @@ item(FEAT_TRAINS, ko_train_UISINSEOL, 5803) {
         loading_speed:                  sw_UISINSEOL_loadingspeed;
 
         can_attach_wagon:               sw_UISINSEOL_attach;
-        start_stop:                     sw_UISINSEOL_start_stop;
+        start_stop:                     sw_UISINSEOL_start_stop_global;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
     // in future ...

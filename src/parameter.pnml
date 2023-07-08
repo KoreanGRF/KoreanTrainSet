@@ -179,13 +179,22 @@
             def_value: 0;
         }
 
-          // No restictions vehicle attachment
+        // No restictions vehicle attachment
         bool_no_vehicle_attachment_restrictions {
             type: bool;
             name: string(STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME);
             desc: string(STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC);
             bit: 3;
-            def_value: 1;
+            def_value: 0;
+        }
+
+        // No restictions vehicle length
+        bool_no_vehicle_attachment_length {
+            type: bool;
+            name: string(STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_NAME);
+            desc: string(STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_DESC);
+            bit: 4;
+            def_value: 0;
         }
 
 /*

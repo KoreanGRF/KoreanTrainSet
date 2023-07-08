@@ -72,7 +72,7 @@ item(FEAT_TRAINS, ko_train_SHINBUNDANG, 5735) {
         loading_speed:                  sw_SHINBUNDANG_loadingspeed;
 
         can_attach_wagon:               sw_METRO_attach_global;
-        start_stop:                     sw_ko_train_start_stop;
+        start_stop:                     sw_ko_train_start_stop_global;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
     livery_override(ko_train_PASSWG) {

@@ -71,7 +71,7 @@ item(FEAT_TRAINS, ko_train_SEOUL_METRO_3, 5713) {
         loading_speed:                  sw_SEOUL_METRO_3_loadingspeed;
 
         can_attach_wagon:               sw_METRO_attach_global;
-        start_stop:                     sw_ko_train_start_stop;
+        start_stop:                     sw_ko_train_start_stop_global;
         cargo_subtype_text:             sw_SEOUL_METRO_3_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }

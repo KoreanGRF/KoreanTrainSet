@@ -71,7 +71,7 @@ item(FEAT_TRAINS, ko_train_BUSANGIMHAE, 5755) {
         loading_speed:                  sw_BUSANGIMHAE_loadingspeed;
 
         can_attach_wagon:               sw_BUSANGIMHAE_attach;
-        start_stop:                     sw_BUSANGIMHAE_start_stop;
+        start_stop:                     sw_BUSANGIMHAE_start_stop_global;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
     // in future ...
