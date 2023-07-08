@@ -370,6 +370,8 @@ STR_PARAM_SPEED_METRO_NAME                       :地下鉄の速力係数
 STR_PARAM_SPEED_METRO_DESC                       :地下鉄の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：一般/準高速型列車を除いた残りの一般電車
 STR_PARAM_SPEED_LIGHTRAIL1_NAME                  :軽電鉄の速力係数(ゴム)
 STR_PARAM_SPEED_LIGHTRAIL1_DESC                  :ゴム車輪軽電鉄の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：釜山4号線、釜山金海輕電鐵、大邱3号線、金浦ゴールドライン、仁川2号線、牛耳新設線、議政府輕電鐵、容認エバーライン
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME:車両接続制限オフ
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC:車両の接続制限をオフにします。 この設定をオンにすると、機関車に任意の客車が接続できるようになります。
 
 STR_PARAM_FACTOR_COST_NAME                       :列車の購入費用
 STR_PARAM_FACTOR_COST_DESC                       :列車の購入価格を調整することができます。値が大きければ購入価格が高くなります。

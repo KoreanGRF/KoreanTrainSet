@@ -371,6 +371,8 @@ STR_PARAM_SPEED_METRO_NAME                       :지하철 속력 계수
 STR_PARAM_SPEED_METRO_DESC                       :지하철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 일반/준고속형 열차를 제외한 나머지 일반 지하철 차량
 STR_PARAM_SPEED_LIGHTRAIL1_NAME                  :경전철 속력 계수 (고무)
 STR_PARAM_SPEED_LIGHTRAIL1_DESC                  :고무 차륜 경전철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 부산 4호선, 부산김해경전철, 대구 3호선, 김포 골드라인, 인천 2호선, 우이신설선, 의정부경전철, 용인 에버라인
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME:차량 연결 제한 끄기
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC:차량 연결 제한을 끕니다. 이 설정을 켜면, 기관차에 아무 객화차나 연결할 수 있게 됩니다.
 
 STR_PARAM_FACTOR_COST_NAME                       :열차 구입비용
 STR_PARAM_FACTOR_COST_DESC                       :열차의 구입 가격을 조절할 수 있습니다. 값이 크면 구입 가격이 더 비싸집니다.

@@ -75,7 +75,7 @@ item(FEAT_TRAINS, ko_train_HOKEY7, 5201) {
         purchase_cargo_capacity:        sw_HOKEY7_purchase_capacity;
         loading_speed:                  sw_HOKEY7_loadingspeed;
 
-        can_attach_wagon:               sw_NARROW_attach;
+        can_attach_wagon:               sw_NARROW_attach_global;
         visual_effect_and_powered:      sw_steam_visual_effect;
 
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);

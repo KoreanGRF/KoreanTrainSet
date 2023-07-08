@@ -65,7 +65,7 @@ item(FEAT_TRAINS, ko_train_K8x00, 5481) {
         running_cost_factor:            sw_K8x00_runningcost;
         cargo_capacity:                 0;
 
-        can_attach_wagon:               sw_Kxxxx_attach;
+        can_attach_wagon:               sw_Kxxxx_attach_global;
         cargo_subtype_text:             sw_K8x00_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }

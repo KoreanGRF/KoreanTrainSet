@@ -371,6 +371,8 @@ STR_PARAM_SPEED_METRO_NAME                       :Speed coefficient of Subways
 STR_PARAM_SPEED_METRO_DESC                       :Speed coefficient of subway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Except for general and semi-express trains
 STR_PARAM_SPEED_LIGHTRAIL1_NAME                  :Speed coefficient of Light Railways (rubber)
 STR_PARAM_SPEED_LIGHTRAIL1_DESC                  :Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4, Busan·Gimhae LRT, Daegu Line 3, Gimpo Goldline, Incheon Line 2, Uisinseol Line, Uijeongbu LRT, Yongin Everline
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME:No vehicle attachment restrictions
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC:Disable vehicle attachment restrictions for some wagons. If enable, you can attach wagons to any locomotives.
 
 STR_PARAM_FACTOR_COST_NAME                       :Cost
 STR_PARAM_FACTOR_COST_DESC                       :Cost of trains. The higher this value, the more expensive cost to buy trains.

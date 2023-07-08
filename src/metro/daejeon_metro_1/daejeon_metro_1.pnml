@@ -70,7 +70,7 @@ item(FEAT_TRAINS, ko_train_DAEJEON_METRO_1, 5771) {
         purchase_cargo_capacity:        sw_DAEJEON_METRO_1_purchase_capacity;
         loading_speed:                  sw_DAEJEON_METRO_1_loadingspeed;
 
-        can_attach_wagon:               sw_METRO_attach;
+        can_attach_wagon:               sw_METRO_attach_global;
         start_stop:                     sw_ko_train_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }

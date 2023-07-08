@@ -4,29 +4,6 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Attach
-switch(FEAT_TRAINS, SELF, sw_steam_attach, vehicle_type_id) {
-    ko_train_MIKA3:                 return CB_RESULT_ATTACH_ALLOW;
-    ko_train_MATE2:                 return CB_RESULT_ATTACH_ALLOW;
-    ko_train_PASHI5:                return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K2x00..ko_train_K8000: return CB_RESULT_ATTACH_ALLOW;
-    ko_train_SAEMAEUL_CAR:          return CB_RESULT_ATTACH_ALLOW;
-    ko_train_MUGUNGHWA_CAR:         return CB_RESULT_ATTACH_ALLOW;
-    ko_train_TONGIL_CAR:            return CB_RESULT_ATTACH_ALLOW;
-    ko_train_BIDULGI_CAR:           return CB_RESULT_ATTACH_ALLOW;
-    ko_train_SLEEPING_CAR:          return CB_RESULT_ATTACH_ALLOW;
-    ko_train_CAFE_CAR:              return CB_RESULT_ATTACH_ALLOW;
-    ko_train_GENERATOR_CAR:         return CB_RESULT_ATTACH_ALLOW;
-    ko_train_FLAT_CAR:              return CB_RESULT_ATTACH_ALLOW;
-    ko_train_HOPPER_CAR:            return CB_RESULT_ATTACH_ALLOW;
-    ko_train_BOX_CAR:               return CB_RESULT_ATTACH_ALLOW;
-    ko_train_BAGGAGE_CAR:           return CB_RESULT_ATTACH_ALLOW;
-    ko_train_TANK_CAR:              return CB_RESULT_ATTACH_ALLOW;
-    ko_train_STAKE_CAR:             return CB_RESULT_ATTACH_ALLOW;
-    ko_train_MAIL_CAR:              return CB_RESULT_ATTACH_ALLOW;
-    return string(STR_ERROR_NO_ATTACH);
-}
-
 // Visual effect
 switch(FEAT_TRAINS, SELF, sw_steam_visual_effect, position_in_vehid_chain % 2) {
     0: visual_effect_and_powered(VISUAL_EFFECT_STEAM, -2, DISABLE_WAGON_POWER);

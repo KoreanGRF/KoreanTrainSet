@@ -78,7 +78,7 @@ item(FEAT_TRAINS, ko_train_BOX_CAR, 5916) {
         loading_speed:                  sw_BOX_CAR_loadingspeed;
         weight:                         sw_BOX_CAR_weight;
 
-        can_attach_wagon:               sw_Kxxxx_attach;
+        can_attach_wagon:               sw_Kxxxx_attach_global;
         cargo_subtype_text:             sw_BOX_CAR_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }

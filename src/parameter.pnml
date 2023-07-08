@@ -179,6 +179,15 @@
             def_value: 0;
         }
 
+          // No restictions vehicle attachment
+        bool_no_vehicle_attachment_restrictions {
+            type: bool;
+            name: string(STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME);
+            desc: string(STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC);
+            bit: 3;
+            def_value: 1;
+        }
+
 /*
         // RESERVED
         // Add prototype trains
@@ -186,7 +195,7 @@
             type: bool;
             name: string(STR_PARAM_ADD_PROTOTYPE_TRAINS_NAME);
             desc: string(STR_PARAM_ADD_PROTOTYPE_TRAINS_DESC);
-            bit: 3;
+            bit: 4;
             def_value: 1;
         }
 
@@ -196,7 +205,7 @@
             type: bool;
             name: string(STR_PARAM_ADD_PROTOTYPE_TRAINS_NAME);
             desc: string(STR_PARAM_ADD_PROTOTYPE_TRAINS_DESC);
-            bit: 4;
+            bit: 5;
             def_value: 1;
         }
 */

@@ -70,7 +70,7 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_2, 5752) {
         purchase_cargo_capacity:        sw_BUSAN_METRO_2_purchase_capacity;
         loading_speed:                  sw_BUSAN_METRO_2_loadingspeed;
 
-        can_attach_wagon:               sw_METRO_attach;
+        can_attach_wagon:               sw_METRO_attach_global;
         start_stop:                     sw_ko_train_start_stop;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
