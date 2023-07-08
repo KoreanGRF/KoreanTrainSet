@@ -1,448 +1,448 @@
 ##grflangid 0x39
 
 # GRF name and description
-STR_GRF_NAME                                     :韓国列車セット
-STR_GRF_NAME_WITH_VER                            :韓国列車セット {VERSION}
-STR_GRF_DESC                                     :{BLACK}韓国列車セットはOpenTTDにKTX、KTX-山川(サンチョン)、ITX-淸春(チョンチュン)、セマウル号、ムグンファ号、ヌリロ、CDC(通勤列車)、首都圏の電車、Korailの機関車とかいろいろな韓国の列車を追加してくれます。{}(最近アップデート：{RECENT_UPDATED}){}日本語は翻訳機で作成しました。もっと良い翻訳ができる人を探しています。{}{}{SILVER}+ 製作：TELK{}{BLACK} ・{AUTHOR_EMAIL}{} ・{AUTHOR_WEBSITE}
-STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp
+STR_GRF_NAME                                               :韓国列車セット
+STR_GRF_NAME_WITH_VER                                      :韓国列車セット {VERSION}
+STR_GRF_DESC                                               :{BLACK}韓国列車セットはOpenTTDにKTX、KTX-山川(サンチョン)、ITX-淸春(チョンチュン)、セマウル号、ムグンファ号、ヌリロ、CDC(通勤列車)、首都圏の電車、Korailの機関車とかいろいろな韓国の列車を追加してくれます。{}(最近アップデート：{RECENT_UPDATED}){}日本語は翻訳機で作成しました。もっと良い翻訳ができる人を探しています。{}{}{SILVER}+ 製作：TELK{}{BLACK} ・{AUTHOR_EMAIL}{} ・{AUTHOR_WEBSITE}
+STR_GRF_URL                                                :https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp
 
 
 # Vehicle's name
-STR_HOKEY7_NAME                                  :ヒョギ７形蒸気機関車
-STR_STEAM_NAME                                   :蒸気機関車
-STR_MATE2_NAME                                   :マテ２形蒸気機関車
-STR_PASHI5_NAME                                  :バシ５形蒸気機関車
-STR_MIKA3_NAME                                   :ミカ３形蒸気機関車
-STR_K2x00_NAME                                   :2x00号帯ディーゼル機関車
-STR_K4x00_NAME                                   :4x00号帯ディーゼル機関車
-STR_K5000_NAME                                   :5000号帯ディーゼル機関車
-STR_K6x00_NAME                                   :6x00号帯ディーゼル機関車
-STR_K7000_NAME                                   :7000号帯ディーゼル機関車
-STR_K7x00_NAME                                   :7x00号帯ディーゼル機関車
-STR_K7600_NAME                                   :7600号帯ディーゼル機関車
-STR_K8000_NAME                                   :8000号帯ディーゼル機関車
-STR_K8x00_NAME                                   :8x00号帯ディーゼル機関車
-STR_K8500_NAME                                   :8500号帯ディーゼル機関車
-STR_DHC_NAME                                     :ディーゼル油圧自動車(DHC、PP)
-STR_ITX_SAEMAEUL_NAME                            :ITX-セマウル
-STR_NURIRO_NAME                                  :ヌリロ
-STR_CDC_NAME                                     :通勤型ディーゼル列車(CDC)
-STR_NDC_NAME                                     :優等型ディーゼル動車(NDC)
-STR_DEC_NAME                                     :優等型ディーゼル電気動車(DEC)
-STR_EEC_NAME                                     :優等型電気動車(EEC)
-STR_BIDULGI_CDC_NAME                             :ディーゼル液壓動車
-STR_NARROW_DIESEL_CAR_NAME                       :狭軌ディーゼル液壓動車
-STR_KTX1N_NAME                                   :KTX-1
-STR_KTX2N_NAME                                   :KTX-山川
-STR_SRT_NAME                                     :SRT
-STR_EUM_NAME                                     :KTX-イウム
-STR_ECOBEE_NAME                                  :仁川空港マグレブ（エコビ）
+STR_HOKEY7_NAME                                            :ヒョギ７形蒸気機関車
+STR_STEAM_NAME                                             :蒸気機関車
+STR_MATE2_NAME                                             :マテ２形蒸気機関車
+STR_PASHI5_NAME                                            :バシ５形蒸気機関車
+STR_MIKA3_NAME                                             :ミカ３形蒸気機関車
+STR_K2x00_NAME                                             :2x00号帯ディーゼル機関車
+STR_K4x00_NAME                                             :4x00号帯ディーゼル機関車
+STR_K5000_NAME                                             :5000号帯ディーゼル機関車
+STR_K6x00_NAME                                             :6x00号帯ディーゼル機関車
+STR_K7000_NAME                                             :7000号帯ディーゼル機関車
+STR_K7x00_NAME                                             :7x00号帯ディーゼル機関車
+STR_K7600_NAME                                             :7600号帯ディーゼル機関車
+STR_K8000_NAME                                             :8000号帯ディーゼル機関車
+STR_K8x00_NAME                                             :8x00号帯ディーゼル機関車
+STR_K8500_NAME                                             :8500号帯ディーゼル機関車
+STR_DHC_NAME                                               :ディーゼル油圧自動車(DHC、PP)
+STR_ITX_SAEMAEUL_NAME                                      :ITX-セマウル
+STR_NURIRO_NAME                                            :ヌリロ
+STR_CDC_NAME                                               :通勤型ディーゼル列車(CDC)
+STR_NDC_NAME                                               :優等型ディーゼル動車(NDC)
+STR_DEC_NAME                                               :優等型ディーゼル電気動車(DEC)
+STR_EEC_NAME                                               :優等型電気動車(EEC)
+STR_BIDULGI_CDC_NAME                                       :ディーゼル液壓動車
+STR_NARROW_DIESEL_CAR_NAME                                 :狭軌ディーゼル液壓動車
+STR_KTX1N_NAME                                             :KTX-1
+STR_KTX2N_NAME                                             :KTX-山川
+STR_SRT_NAME                                               :SRT
+STR_EUM_NAME                                               :KTX-イウム
+STR_ECOBEE_NAME                                            :仁川空港マグレブ（エコビ）
 
-STR_PASSENGER_WAGON_NAME                         :客車
-STR_PASSENGER_WAGON_POWER_NAME                   :客車(動力車)
-STR_SAEMAEUL_CAR_NAME                            :セマウル号客車
-STR_MUGUNGHWA_CAR_NAME                           :ムグンファ号客車
-STR_TONGIL_CAR_NAME                              :トンイル号客車
-STR_BIDULGI_CAR_NAME                             :ピドゥルギ号客車
-STR_GENERATOR_CAR_NAME                           :発電車
-STR_CAFE_CAR_NAME                                :カフェ・食堂車
-STR_SLEEPING_CAR_NAME                            :寝台車
+STR_PASSENGER_WAGON_NAME                                   :客車
+STR_PASSENGER_WAGON_POWER_NAME                             :客車(動力車)
+STR_SAEMAEUL_CAR_NAME                                      :セマウル号客車
+STR_MUGUNGHWA_CAR_NAME                                     :ムグンファ号客車
+STR_TONGIL_CAR_NAME                                        :トンイル号客車
+STR_BIDULGI_CAR_NAME                                       :ピドゥルギ号客車
+STR_GENERATOR_CAR_NAME                                     :発電車
+STR_CAFE_CAR_NAME                                          :カフェ・食堂車
+STR_SLEEPING_CAR_NAME                                      :寝台車
 
-STR_FLAT_CAR_NAME                                :コンテナ評判貨車
-STR_HOPPER_CAR_NAME                              :オープンカー
-STR_BOX_CAR_NAME                                 :ボックスカー
-STR_BAGGAGE_CAR_NAME                             :小荷物車
-STR_TANK_CAR_NAME                                :タンク車
-STR_STAKE_CAR_NAME                               :評判貨車
-STR_MAIL_CAR_NAME                                :郵便車
+STR_FLAT_CAR_NAME                                          :コンテナ評判貨車
+STR_HOPPER_CAR_NAME                                        :オープンカー
+STR_BOX_CAR_NAME                                           :ボックスカー
+STR_BAGGAGE_CAR_NAME                                       :小荷物車
+STR_TANK_CAR_NAME                                          :タンク車
+STR_STAKE_CAR_NAME                                         :評判貨車
+STR_MAIL_CAR_NAME                                          :郵便車
 
 # Metro
-STR_SEOUL_METRO_1_NAME                           :首都圏1号線、通勤型
-STR_SEOUL_METRO_2_NAME                           :ソウル2号線
-STR_SEOUL_METRO_3_NAME                           :首都圏3号線
-STR_SEOUL_METRO_4_NAME                           :首都圏4号線
-STR_SEOUL_METRO_5_9_NAME                         :首都圏5~9号線
-STR_SUIN_BUNDANG_NAME                            :スイン·ブンダン線
-STR_GYEONGCHUN_NAME                              :京春線
-STR_ITX_CHEONGCHUN_NAME                          :ITX-青春
-STR_AREX_NAME                                    :仁川空港鉄道 (A'REX)
-STR_SHINBUNDANG_NAME                             :シンブンダン線
-STR_METROPOLITAN_NAME                            :広域電車
-STR_SEOHAE_NAME                                  :西海線
-STR_DONGHAE_NAME                                 :東海線
-STR_INCHEON_METRO_1_NAME                         :仁川1号線
-STR_INCHEON_METRO_2_NAME                         :仁川2号線
-STR_SILLIM_NAME                                  :新林線
-STR_BUSAN_METRO_1_NAME                           :釜山1号線
-STR_BUSAN_METRO_2_NAME                           :釜山2号線
-STR_BUSAN_METRO_3_NAME                           :釜山3号線
-STR_BUSAN_METRO_4_NAME                           :釜山4号線
-STR_BUSANGIMHAE_NAME                             :釜山金海軽電鉄
-STR_YONGIN_EVERLINE_NAME                         :龍仁エバーライン
-STR_DAEGU_METRO_1_NAME                           :大邱1号線
-STR_DAEGU_METRO_2_NAME                           :大邱2号線
-STR_DAEGU_METRO_3_NAME                           :大邱3号線
-STR_DAEJEON_METRO_1_NAME                         :大田1号線
-STR_GWANGJU_METRO_1_NAME                         :光州1号線
-STR_UISINSEOL_NAME                               :牛耳新設線
-STR_GIMPO_GOLDLINE_NAME                          :金浦ゴールドライン
-STR_UIJEONGBU_NAME                               :議政府軽電鉄
+STR_SEOUL_METRO_1_NAME                                     :首都圏1号線、通勤型
+STR_SEOUL_METRO_2_NAME                                     :ソウル2号線
+STR_SEOUL_METRO_3_NAME                                     :首都圏3号線
+STR_SEOUL_METRO_4_NAME                                     :首都圏4号線
+STR_SEOUL_METRO_5_9_NAME                                   :首都圏5~9号線
+STR_SUIN_BUNDANG_NAME                                      :スイン·ブンダン線
+STR_GYEONGCHUN_NAME                                        :京春線
+STR_ITX_CHEONGCHUN_NAME                                    :ITX-青春
+STR_AREX_NAME                                              :仁川空港鉄道 (A'REX)
+STR_SHINBUNDANG_NAME                                       :シンブンダン線
+STR_METROPOLITAN_NAME                                      :広域電車
+STR_SEOHAE_NAME                                            :西海線
+STR_DONGHAE_NAME                                           :東海線
+STR_INCHEON_METRO_1_NAME                                   :仁川1号線
+STR_INCHEON_METRO_2_NAME                                   :仁川2号線
+STR_SILLIM_NAME                                            :新林線
+STR_BUSAN_METRO_1_NAME                                     :釜山1号線
+STR_BUSAN_METRO_2_NAME                                     :釜山2号線
+STR_BUSAN_METRO_3_NAME                                     :釜山3号線
+STR_BUSAN_METRO_4_NAME                                     :釜山4号線
+STR_BUSANGIMHAE_NAME                                       :釜山金海軽電鉄
+STR_YONGIN_EVERLINE_NAME                                   :龍仁エバーライン
+STR_DAEGU_METRO_1_NAME                                     :大邱1号線
+STR_DAEGU_METRO_2_NAME                                     :大邱2号線
+STR_DAEGU_METRO_3_NAME                                     :大邱3号線
+STR_DAEJEON_METRO_1_NAME                                   :大田1号線
+STR_GWANGJU_METRO_1_NAME                                   :光州1号線
+STR_UISINSEOL_NAME                                         :牛耳新設線
+STR_GIMPO_GOLDLINE_NAME                                    :金浦ゴールドライン
+STR_UIJEONGBU_NAME                                         :議政府軽電鉄
 
 
 # Liveries
-STR_REFIT_LIVERY_THESEDAYS                       :(現在塗色)
-STR_REFIT_LIVERY_2x00_BLACK                      :(米軍塗色：黒色)
-STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1             :(韓国鉄道初期塗色：黒色＆狭い橙色)
-STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2             :(韓国鉄道初期塗色：黒色＆広い橙色)
-STR_REFIT_LIVERY_6000_BLACK_ORANGE               :(韓国鉄道初期塗色：6000号帯黒色＆狭い橙色)
-STR_REFIT_LIVERY_6100_BLACK_ORANGE               :(韓国鉄道初期塗色：6100号帯黒色＆狭い橙色)
-STR_REFIT_LIVERY_6200_BLACK_ORANGE               :(韓国鉄道初期塗色：6200号帯黒色＆狭い橙色)
-STR_REFIT_LIVERY_6300_BLACK_ORANGE               :(韓国鉄道初期塗色：6300号帯黒色＆狭い橙色)
-STR_REFIT_LIVERY_6300_BLUE_WHITE                 :(韓国鉄道初期塗色：6300号帯青色＆白色)
-STR_REFIT_LIVERY_6300_KWANKWANG                  :(韓国鉄道初期塗色：6300号帯観光号)
-STR_REFIT_LIVERY_7000_SILVER_BLUE                :(韓国鉄道旧塗色：銀色＆青色)
-STR_REFIT_LIVERY_7x00_CARGO                      :(貨物塗色)
-STR_REFIT_LIVERY_7x00_BLACK_ORANGE               :(韓国鉄道初期塗色：黒色＆橙色)
-STR_REFIT_LIVERY_7x00_FIRST_KORAIL               :(韓国鉄道初期塗色：青色＆白色)
-STR_REFIT_LIVERY_GREEN_YELLOW                    :(韓国鉄道旧塗色：緑色＆黄色)
-STR_REFIT_LIVERY_KWANKWANG                       :(観光号)
-STR_REFIT_LIVERY_HAERANG                         :(ヘラン)
-STR_REFIT_LIVERY_S_TRAIN1                        :(S-train·青色)
-STR_REFIT_LIVERY_S_TRAIN2                        :(S-train·ピンク)
-STR_REFIT_LIVERY_G_TRAIN                         :(G-train)
-STR_REFIT_LIVERY_K7600_A_TRAIN                   :(旌善アリラン列車)
-STR_REFIT_LIVERY_V_TRAIN                         :(V-train)
-STR_REFIT_LIVERY_NURIRO                          :(基本)
-STR_REFIT_LIVERY_O_TRAIN                         :(O-train)
-STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE              :(韓流観光列車)
-STR_REFIT_LIVERY_NURIRO_SANTA                    :(東海サンタ列車)
-STR_REFIT_LIVERY_NURIRO_2022                     :(2022年塗色)
-STR_REFIT_LIVERY_KTX2N                           :(一般塗色)
-STR_REFIT_LIVERY_KTX2N_PYEONGCHANG               :(2018平昌冬季オリンピック塗色)
-STR_REFIT_LIVERY_CDC_GARDEN                      :(花園テーマ)
-STR_REFIT_LIVERY_CDC_DOLPHIN                     :(イルカテーマ)
-STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                :(海観光列車：青色)
-STR_REFIT_LIVERY_CDC_SEASIDE_RED_WHITE           :(海観光列車：赤色＆白)
-STR_REFIT_LIVERY_CDC_BAEKJE                      :(百済王冠記念塗色)
-STR_REFIT_LIVERY_CDC_DMZTRAIN                    :(DMZ-train)
-STR_REFIT_LIVERY_CDC_MUGUNGHWA                   :(RDCムグンファ塗色)
-STR_REFIT_LIVERY_CDC_GYEONGBUK1                  :(慶北観光循環テーマ列車、旧塗色)
-STR_REFIT_LIVERY_CDC_GYEONGBUK2                  :(慶北観光循環テーマ列車、新塗色)
-STR_REFIT_PASSWAGON_NORMALCAR                    :(一般客車)
-STR_REFIT_PASSWAGON_FIRSTCAR                     :(特室客車)
+STR_REFIT_LIVERY_THESEDAYS                                 :(現在塗色)
+STR_REFIT_LIVERY_2x00_BLACK                                :(米軍塗色：黒色)
+STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1                       :(韓国鉄道初期塗色：黒色＆狭い橙色)
+STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2                       :(韓国鉄道初期塗色：黒色＆広い橙色)
+STR_REFIT_LIVERY_6000_BLACK_ORANGE                         :(韓国鉄道初期塗色：6000号帯黒色＆狭い橙色)
+STR_REFIT_LIVERY_6100_BLACK_ORANGE                         :(韓国鉄道初期塗色：6100号帯黒色＆狭い橙色)
+STR_REFIT_LIVERY_6200_BLACK_ORANGE                         :(韓国鉄道初期塗色：6200号帯黒色＆狭い橙色)
+STR_REFIT_LIVERY_6300_BLACK_ORANGE                         :(韓国鉄道初期塗色：6300号帯黒色＆狭い橙色)
+STR_REFIT_LIVERY_6300_BLUE_WHITE                           :(韓国鉄道初期塗色：6300号帯青色＆白色)
+STR_REFIT_LIVERY_6300_KWANKWANG                            :(韓国鉄道初期塗色：6300号帯観光号)
+STR_REFIT_LIVERY_7000_SILVER_BLUE                          :(韓国鉄道旧塗色：銀色＆青色)
+STR_REFIT_LIVERY_7x00_CARGO                                :(貨物塗色)
+STR_REFIT_LIVERY_7x00_BLACK_ORANGE                         :(韓国鉄道初期塗色：黒色＆橙色)
+STR_REFIT_LIVERY_7x00_FIRST_KORAIL                         :(韓国鉄道初期塗色：青色＆白色)
+STR_REFIT_LIVERY_GREEN_YELLOW                              :(韓国鉄道旧塗色：緑色＆黄色)
+STR_REFIT_LIVERY_KWANKWANG                                 :(観光号)
+STR_REFIT_LIVERY_HAERANG                                   :(ヘラン)
+STR_REFIT_LIVERY_S_TRAIN1                                  :(S-train·青色)
+STR_REFIT_LIVERY_S_TRAIN2                                  :(S-train·ピンク)
+STR_REFIT_LIVERY_G_TRAIN                                   :(G-train)
+STR_REFIT_LIVERY_K7600_A_TRAIN                             :(旌善アリラン列車)
+STR_REFIT_LIVERY_V_TRAIN                                   :(V-train)
+STR_REFIT_LIVERY_NURIRO                                    :(基本)
+STR_REFIT_LIVERY_O_TRAIN                                   :(O-train)
+STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE                        :(韓流観光列車)
+STR_REFIT_LIVERY_NURIRO_SANTA                              :(東海サンタ列車)
+STR_REFIT_LIVERY_NURIRO_2022                               :(2022年塗色)
+STR_REFIT_LIVERY_KTX2N                                     :(一般塗色)
+STR_REFIT_LIVERY_KTX2N_PYEONGCHANG                         :(2018平昌冬季オリンピック塗色)
+STR_REFIT_LIVERY_CDC_GARDEN                                :(花園テーマ)
+STR_REFIT_LIVERY_CDC_DOLPHIN                               :(イルカテーマ)
+STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                          :(海観光列車：青色)
+STR_REFIT_LIVERY_CDC_SEASIDE_RED_WHITE                     :(海観光列車：赤色＆白)
+STR_REFIT_LIVERY_CDC_BAEKJE                                :(百済王冠記念塗色)
+STR_REFIT_LIVERY_CDC_DMZTRAIN                              :(DMZ-train)
+STR_REFIT_LIVERY_CDC_MUGUNGHWA                             :(RDCムグンファ塗色)
+STR_REFIT_LIVERY_CDC_GYEONGBUK1                            :(慶北観光循環テーマ列車、旧塗色)
+STR_REFIT_LIVERY_CDC_GYEONGBUK2                            :(慶北観光循環テーマ列車、新塗色)
+STR_REFIT_PASSWAGON_NORMALCAR                              :(一般客車)
+STR_REFIT_PASSWAGON_FIRSTCAR                               :(特室客車)
 
 # Refit (Bidulgi)
-STR_REFIT_LIVERY_BIDULGI_3RD_CLASS               :(3等客車・ダ9型)
-STR_REFIT_LIVERY_BIDULGI_DC_TRAILER              :(DC動車 付随車)
-STR_REFIT_LIVERY_BIDULGI_1960                    :(赤色 塗色：1962~1974年)
-STR_REFIT_LIVERY_BIDULGI_1970                    :(赤色 塗色：1974~1983年)
-STR_REFIT_LIVERY_BIDULGI_1980                    :(青色 塗色：1984~1994年)
-STR_REFIT_LIVERY_BIDULGI_1990                    :(緑色 塗色：1994~2000年)
-STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR             :(ピドゥルギ号塗色)
-STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980       :(トンイル号塗色：1980年代)
-STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990       :(トンイル号塗色：1990年代)
-STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA               :(ムグンファ号塗色)
-STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE             :(青色塗色：1974年~)
+STR_REFIT_LIVERY_BIDULGI_3RD_CLASS                         :(3等客車・ダ9型)
+STR_REFIT_LIVERY_BIDULGI_DC_TRAILER                        :(DC動車 付随車)
+STR_REFIT_LIVERY_BIDULGI_1960                              :(赤色 塗色：1962~1974年)
+STR_REFIT_LIVERY_BIDULGI_1970                              :(赤色 塗色：1974~1983年)
+STR_REFIT_LIVERY_BIDULGI_1980                              :(青色 塗色：1984~1994年)
+STR_REFIT_LIVERY_BIDULGI_1990                              :(緑色 塗色：1994~2000年)
+STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR                       :(ピドゥルギ号塗色)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980                 :(トンイル号塗色：1980年代)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990                 :(トンイル号塗色：1990年代)
+STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA                         :(ムグンファ号塗色)
+STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE                       :(青色塗色：1974年~)
 
 # Refit (EUM)
-STR_REFIT_EUM260                                 :(イウム-260)
-STR_REFIT_EUM320                                 :(イウム-320)
+STR_REFIT_EUM260                                           :(イウム-260)
+STR_REFIT_EUM320                                           :(イウム-320)
 
 # Refit (Saemaeul car)
-STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE  :(韓国鉄道旧塗色特室、1970~1983年)
-STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW :(韓国鉄道旧塗色特室、緑色＆黄色)
-STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS    :(Korail 現在塗色特室)
-STR_REFIT_LIVERY_SAEMAEUL_ITX                    :(ITX-セマウル塗色)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            :(韓国鉄道旧塗色特室、1970~1983年)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW           :(韓国鉄道旧塗色特室、緑色＆黄色)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS              :(Korail 現在塗色特室)
+STR_REFIT_LIVERY_SAEMAEUL_ITX                              :(ITX-セマウル塗色)
 
 # Refit (Mugunghwa car)
-STR_REFIT_LIVERY_MUGUNGHWA_1970_1983             :(塗色A：1970~1983年)
-STR_REFIT_LIVERY_MUGUNGHWA_1970_1983_B           :(塗色B：1970~1983年)
-STR_REFIT_LIVERY_MUGUNGHWA_1984_1984             :(塗色C：1984年 塗色)
-STR_REFIT_LIVERY_MUGUNGHWA_1985_1989             :(塗色D：1985~1989年塗色)
-STR_REFIT_LIVERY_MUGUNGHWA_1990_1999             :(塗色E：1990~1999年塗色)
-STR_REFIT_LIVERY_MUGUNGHWA_2000_2002             :(塗色F：2000~2002年塗色)
-STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE            :(流線型区特室専用)
-STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_1    :(特室：ヘテ重工業旧塗色)
-STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_2    :(特室：ヘテ重工業現在塗色)
-STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HANJIN_1    :(特室：韓進重工業)
-STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE  :(特室：流線型区特室専用)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983                       :(塗色A：1970~1983年)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983_B                     :(塗色B：1970~1983年)
+STR_REFIT_LIVERY_MUGUNGHWA_1984_1984                       :(塗色C：1984年 塗色)
+STR_REFIT_LIVERY_MUGUNGHWA_1985_1989                       :(塗色D：1985~1989年塗色)
+STR_REFIT_LIVERY_MUGUNGHWA_1990_1999                       :(塗色E：1990~1999年塗色)
+STR_REFIT_LIVERY_MUGUNGHWA_2000_2002                       :(塗色F：2000~2002年塗色)
+STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE                      :(流線型区特室専用)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_1              :(特室：ヘテ重工業旧塗色)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_2              :(特室：ヘテ重工業現在塗色)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HANJIN_1              :(特室：韓進重工業)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE            :(特室：流線型区特室専用)
 
 # Refit (Tongil car)
-STR_REFIT_LIVERY_TONGIL_1963_1968                :(塗色A：1963~1968年、赤色)
-STR_REFIT_LIVERY_TONGIL_1974_1981                :(塗色B：1974~1981年、初期 緑色)
-STR_REFIT_LIVERY_TONGIL_1984_1984                :(塗色C：1984年、冷房機ない緑色)
-STR_REFIT_LIVERY_TONGIL_1984_1988                :(塗色D：1984~1988、冷房機ある緑色)
-STR_REFIT_LIVERY_TONGIL_1994_1997                :(塗色E：1994~1997、藍色＆黄色)
-STR_REFIT_LIVERY_TONGIL_1997_2004                :(塗色F：1997~2004、緑色＆黄色)
+STR_REFIT_LIVERY_TONGIL_1963_1968                          :(塗色A：1963~1968年、赤色)
+STR_REFIT_LIVERY_TONGIL_1974_1981                          :(塗色B：1974~1981年、初期 緑色)
+STR_REFIT_LIVERY_TONGIL_1984_1984                          :(塗色C：1984年、冷房機ない緑色)
+STR_REFIT_LIVERY_TONGIL_1984_1988                          :(塗色D：1984~1988、冷房機ある緑色)
+STR_REFIT_LIVERY_TONGIL_1994_1997                          :(塗色E：1994~1997、藍色＆黄色)
+STR_REFIT_LIVERY_TONGIL_1997_2004                          :(塗色F：1997~2004、緑色＆黄色)
 
 # Refit (Generator car)
-STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL_OLD        :(旧型・トンイル号旧塗色)
-STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL            :(旧型・トンイル号現在塗色)
-STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED    :(旧型・ムグンファ号黄色＆赤色)
-STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED_K  :(旧型・ムグンファ号黄色＆赤色+Korailロゴ)
-STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_BLUE_RED      :(旧型・ムグンファ号青色＆赤色)
-STR_REFIT_LIVERY_GENERATOR_CAR_SAEMAEUL_BLUE_RED :(旧型・セマウル号青色＆赤色)
-# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED          :(reserved)
-# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED          :(reserved)
-# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED          :(reserved)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_YELLOW_RED   :(長大形・ムグンファ号黄色＆赤色)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_ORANGE_RED   :(長大形・ムグンファ号橙色＆赤色)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_BLUE_RED     :(長大形・ムグンファ号青色＆赤色)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_2   :(長大形・セマウル号旧塗色)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_3   :(長大形・セマウル号現在塗色)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL_OLD                  :(旧型・トンイル号旧塗色)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL                      :(旧型・トンイル号現在塗色)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED        :(旧型・ムグンファ号黄色＆赤色)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED_K      :(旧型・ムグンファ号黄色＆赤色+Korailロゴ)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_BLUE_RED          :(旧型・ムグンファ号青色＆赤色)
+STR_REFIT_LIVERY_GENERATOR_CAR_SAEMAEUL_BLUE_RED           :(旧型・セマウル号青色＆赤色)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  :(reserved)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  :(reserved)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  :(reserved)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_YELLOW_RED             :(長大形・ムグンファ号黄色＆赤色)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_ORANGE_RED             :(長大形・ムグンファ号橙色＆赤色)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_BLUE_RED               :(長大形・ムグンファ号青色＆赤色)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_2             :(長大形・セマウル号旧塗色)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_3             :(長大形・セマウル号現在塗色)
 
 # Refit (Box car)
-STR_REFIT_LIVERY_BOX_2003                        : (2003年)
-STR_REFIT_LIVERY_BOX_1998_DARKBLUE               : (1998年：紺色)
-STR_REFIT_LIVERY_BOX_1998_GREEN                  : (1998年：緑)
-STR_REFIT_LIVERY_BOX_1998_BLUE                   : (1998年：青)
-STR_REFIT_LIVERY_BOX_1996_DARKBLUE               : (1996年：紺色)
-STR_REFIT_LIVERY_BOX_1996_GREEN                  : (1996年：緑)
-STR_REFIT_LIVERY_BOX_1996_BLUE                   : (1996年：青)
-STR_REFIT_LIVERY_BOX_1972                        : (1972年)
-STR_REFIT_LIVERY_BOX_1966_DARKBLUE               : (1966年：紺色)
-STR_REFIT_LIVERY_BOX_1966_GREEN                  : (1966年：緑)
-STR_REFIT_LIVERY_BOX_1966_BLUE                   : (1966年：青)
-STR_REFIT_LIVERY_BOX_1966_BLACK                  : (1966年：黒)
+STR_REFIT_LIVERY_BOX_2003                                  : (2003年)
+STR_REFIT_LIVERY_BOX_1998_DARKBLUE                         : (1998年：紺色)
+STR_REFIT_LIVERY_BOX_1998_GREEN                            : (1998年：緑)
+STR_REFIT_LIVERY_BOX_1998_BLUE                             : (1998年：青)
+STR_REFIT_LIVERY_BOX_1996_DARKBLUE                         : (1996年：紺色)
+STR_REFIT_LIVERY_BOX_1996_GREEN                            : (1996年：緑)
+STR_REFIT_LIVERY_BOX_1996_BLUE                             : (1996年：青)
+STR_REFIT_LIVERY_BOX_1972                                  : (1972年)
+STR_REFIT_LIVERY_BOX_1966_DARKBLUE                         : (1966年：紺色)
+STR_REFIT_LIVERY_BOX_1966_GREEN                            : (1966年：緑)
+STR_REFIT_LIVERY_BOX_1966_BLUE                             : (1966年：青)
+STR_REFIT_LIVERY_BOX_1966_BLACK                            : (1966年：黒)
 
 # Refit (Cafe car)
-STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED          :(セマウル号食堂車・韓国鉄道：青色＆赤色)
-STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW      :(セマウル号食堂車・韓国鉄道：緑色＆黄色)
-STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW :(セマウル号食堂車・Korail現在塗色)
-STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       :(セマウル号カフェ車・Korail現在塗色)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED                    :(セマウル号食堂車・韓国鉄道：青色＆赤色)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW                :(セマウル号食堂車・韓国鉄道：緑色＆黄色)
+STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW           :(セマウル号食堂車・Korail現在塗色)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW                 :(セマウル号カフェ車・Korail現在塗色)
 
 # Refit (Sleeping car)
-STR_REFIT_LIVERY_SLEEPING_CAR_OLD                :(旧塗色)
-STR_REFIT_LIVERY_SLEEPING_CAR_RECENT             :(新塗色)
+STR_REFIT_LIVERY_SLEEPING_CAR_OLD                          :(旧塗色)
+STR_REFIT_LIVERY_SLEEPING_CAR_RECENT                       :(新塗色)
 
 # Refit (NDC)
-STR_REFIT_LIVERY_NDC_1                           :(1984~1994年塗色)
-STR_REFIT_LIVERY_NDC_2                           :(1994~2009年塗色)
-STR_REFIT_LIVERY_NDC_BUSINESS                    :(ビジネス動車)
+STR_REFIT_LIVERY_NDC_1                                     :(1984~1994年塗色)
+STR_REFIT_LIVERY_NDC_2                                     :(1994~2009年塗色)
+STR_REFIT_LIVERY_NDC_BUSINESS                              :(ビジネス動車)
 
 # Refit (DEC)
-STR_REFIT_LIVERY_DEC_1                           :(1980~1986年塗色：セマウル号)
-STR_REFIT_LIVERY_DEC_2                           :(1986~1994年塗色)
-STR_REFIT_LIVERY_DEC_3                           :(1994~1999年塗色)
+STR_REFIT_LIVERY_DEC_1                                     :(1980~1986年塗色：セマウル号)
+STR_REFIT_LIVERY_DEC_2                                     :(1986~1994年塗色)
+STR_REFIT_LIVERY_DEC_3                                     :(1994~1999年塗色)
 
 # Refit (EEC)
-STR_REFIT_LIVERY_EEC_1                           :(1980~1994年塗色)
-STR_REFIT_LIVERY_EEC_2                           :(1994~1998年塗色)
-STR_REFIT_LIVERY_EEC_3                           :(1998~2001年塗色：トンイル号)
+STR_REFIT_LIVERY_EEC_1                                     :(1980~1994年塗色)
+STR_REFIT_LIVERY_EEC_2                                     :(1994~1998年塗色)
+STR_REFIT_LIVERY_EEC_3                                     :(1998~2001年塗色：トンイル号)
 
 # Refit (Mail car)
-STR_REFIT_LIVERY_MAIL_CAR_1                      :(1973~1975年塗色)
-STR_REFIT_LIVERY_MAIL_CAR_2                      :(1975年以来塗色)
-STR_REFIT_LIVERY_MAIL_CAR_3                      :(1996年以来ムグンファ旧塗色)
-STR_REFIT_LIVERY_MAIL_CAR_4                      :(2005年以来ムグンファ新塗色)
-STR_REFIT_LIVERY_MAIL_CAR_5                      :(2018年以来小貨物者改造塗色)
+STR_REFIT_LIVERY_MAIL_CAR_1                                :(1973~1975年塗色)
+STR_REFIT_LIVERY_MAIL_CAR_2                                :(1975年以来塗色)
+STR_REFIT_LIVERY_MAIL_CAR_3                                :(1996年以来ムグンファ旧塗色)
+STR_REFIT_LIVERY_MAIL_CAR_4                                :(2005年以来ムグンファ新塗色)
+STR_REFIT_LIVERY_MAIL_CAR_5                                :(2018年以来小貨物者改造塗色)
 
 # Refit (etc)
-STR_REFIT_COLOUR_BLACK                           :(黒色)
-STR_REFIT_COLOUR_BLUE                            :(青色)
-STR_REFIT_COLOUR_SKYBLUE                         :(水色)
-STR_REFIT_COLOUR_DARKBLUE                        :(紺色)
-STR_REFIT_COLOUR_BROWN                           :(茶)
-STR_REFIT_COLOUR_RED                             :(赤)
-STR_REFIT_COLOUR_ORANGE                          :(橙)
-STR_REFIT_COLOUR_DARKGREEN                       :(濃緑)
-STR_REFIT_COLOUR_OLIVE                           :(オリーブ)
-STR_REFIT_COLOUR_SILVER                          :(銀色)
+STR_REFIT_COLOUR_BLACK                                     :(黒色)
+STR_REFIT_COLOUR_BLUE                                      :(青色)
+STR_REFIT_COLOUR_SKYBLUE                                   :(水色)
+STR_REFIT_COLOUR_DARKBLUE                                  :(紺色)
+STR_REFIT_COLOUR_BROWN                                     :(茶)
+STR_REFIT_COLOUR_RED                                       :(赤)
+STR_REFIT_COLOUR_ORANGE                                    :(橙)
+STR_REFIT_COLOUR_DARKGREEN                                 :(濃緑)
+STR_REFIT_COLOUR_OLIVE                                     :(オリーブ)
+STR_REFIT_COLOUR_SILVER                                    :(銀色)
 
 # Refit (Seoul metropolitan Line 1)
-STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME             :(韓国鉄道1k抵抗初期形・初期 塗色)
-STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME             :(韓国鉄道1k抵抗初期形・旧塗色)
-STR_REFIT_METRO_1K_RHEO_SECOND_1_NAME            :(韓国鉄道1k抵抗中期形・初期 塗色)
-STR_REFIT_METRO_1K_RHEO_SECOND_2_NAME            :(韓国鉄道1k抵抗中期形・旧塗色)
-STR_REFIT_METRO_1K_RHEO_SECOND_3_NAME            :(Korail 1k抵抗中期形・現在塗色)
-STR_REFIT_METRO_1K_RHEO_LAST_1_NAME              :(韓国鉄道1k抵抗後期形・旧塗色)
-STR_REFIT_METRO_1K_RHEO_LAST_2_NAME              :(Korail 1k抵抗後期形・現在塗色)
-STR_REFIT_METRO_311K_1_1_NAME                    :(韓国鉄道311k初期形・旧塗色)
-STR_REFIT_METRO_311K_1_2_NAME                    :(Korail 311k 初期形・現在塗色)
-STR_REFIT_METRO_311K_2_1_NAME                    :(Korail 311k・初期塗色)
-STR_REFIT_METRO_311K_2_2_NAME                    :(Korail 311k・現在塗色)
-STR_REFIT_METRO_3XXK_ST_NAME                     :(Korail 3xxk ST)
-STR_REFIT_METRO_3XXK_AL_NAME                     :(Korail 3xxk AL)
-STR_REFIT_METRO_321K_BIKE_NAME                   :(Korail 321k 自転車列車塗色)
-STR_REFIT_METRO_371K_BLANK_NAME                  :(Korail 371k・無塗色)
-STR_REFIT_METRO_371K_CC_NAME                     :(Korail 371k / 会社塗色)
-STR_REFIT_METRO_371K_381K_1ST_NAME               :(Korail 371k、381k 1次)
-STR_REFIT_METRO_371K_381K_1ST_NAME_D             :({RED}削除予定{BLACK} - Korail 371k、381k 1次)
-STR_REFIT_METRO_381K_2ND_NAME                    :(Korail 381k 2次)
-STR_REFIT_METRO_381K_2ND_NAME_D                  :({RED}削除予定{BLACK} - Korail 381k 2次)
-STR_REFIT_METRO_LINE_1_2019_NAME                 :(Korail 1号線2019年導入分)
-STR_REFIT_METRO_LINE_1_2021_NAME                 :(Korail 1号線2021年導入分)
-STR_REFIT_METRO_LINE_1_2022_W_NAME               :(Korail 1号線宇進産電2022年導入分)
-STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        :(ソウル地下鉄公社 1k 初期抵抗)
-STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME     :(ソウルメトロ 1k 改造抵抗)
-STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              :(ソウル交通公社 1k VVVF)
+STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME                       :(韓国鉄道1k抵抗初期形・初期 塗色)
+STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME                       :(韓国鉄道1k抵抗初期形・旧塗色)
+STR_REFIT_METRO_1K_RHEO_SECOND_1_NAME                      :(韓国鉄道1k抵抗中期形・初期 塗色)
+STR_REFIT_METRO_1K_RHEO_SECOND_2_NAME                      :(韓国鉄道1k抵抗中期形・旧塗色)
+STR_REFIT_METRO_1K_RHEO_SECOND_3_NAME                      :(Korail 1k抵抗中期形・現在塗色)
+STR_REFIT_METRO_1K_RHEO_LAST_1_NAME                        :(韓国鉄道1k抵抗後期形・旧塗色)
+STR_REFIT_METRO_1K_RHEO_LAST_2_NAME                        :(Korail 1k抵抗後期形・現在塗色)
+STR_REFIT_METRO_311K_1_1_NAME                              :(韓国鉄道311k初期形・旧塗色)
+STR_REFIT_METRO_311K_1_2_NAME                              :(Korail 311k 初期形・現在塗色)
+STR_REFIT_METRO_311K_2_1_NAME                              :(Korail 311k・初期塗色)
+STR_REFIT_METRO_311K_2_2_NAME                              :(Korail 311k・現在塗色)
+STR_REFIT_METRO_3XXK_ST_NAME                               :(Korail 3xxk ST)
+STR_REFIT_METRO_3XXK_AL_NAME                               :(Korail 3xxk AL)
+STR_REFIT_METRO_321K_BIKE_NAME                             :(Korail 321k 自転車列車塗色)
+STR_REFIT_METRO_371K_BLANK_NAME                            :(Korail 371k・無塗色)
+STR_REFIT_METRO_371K_CC_NAME                               :(Korail 371k / 会社塗色)
+STR_REFIT_METRO_371K_381K_1ST_NAME                         :(Korail 371k、381k 1次)
+STR_REFIT_METRO_371K_381K_1ST_NAME_D                       :({RED}削除予定{BLACK} - Korail 371k、381k 1次)
+STR_REFIT_METRO_381K_2ND_NAME                              :(Korail 381k 2次)
+STR_REFIT_METRO_381K_2ND_NAME_D                            :({RED}削除予定{BLACK} - Korail 381k 2次)
+STR_REFIT_METRO_LINE_1_2019_NAME                           :(Korail 1号線2019年導入分)
+STR_REFIT_METRO_LINE_1_2021_NAME                           :(Korail 1号線2021年導入分)
+STR_REFIT_METRO_LINE_1_2022_W_NAME                         :(Korail 1号線宇進産電2022年導入分)
+STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME                  :(ソウル地下鉄公社 1k 初期抵抗)
+STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME               :(ソウルメトロ 1k 改造抵抗)
+STR_REFIT_METRO_SMETRO_1K_VVVF_NAME                        :(ソウル交通公社 1k VVVF)
 
 # Refit (Seoul Line 2)
-STR_REFIT_METRO_2K_MELCO_NAME                    :(ソウルメトロ 2k MELCO)
-STR_REFIT_METRO_2K_CHOPPER_NAME                  :(ソウルメトロ 2k CHOPPER)
-STR_REFIT_METRO_2K_VVVF_1ST_NAME                 :(ソウル交通公社 2k VVVF 1世代)
-STR_REFIT_METRO_2K_VVVF_2ND_NAME                 :(ソウル交通公社 2k VVVF 2世代)
-STR_REFIT_METRO_2K_VVVF_3RD_NAME                 :(ソウル交通公社 2k VVVF 3世代)
-STR_REFIT_METRO_2K_VVVF_4TH_NAME                 :(ソウル交通公社 2k VVVF 4世代)
-STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            :(ソウルメトロ 2k 改造抵抗)
+STR_REFIT_METRO_2K_MELCO_NAME                              :(ソウルメトロ 2k MELCO)
+STR_REFIT_METRO_2K_CHOPPER_NAME                            :(ソウルメトロ 2k CHOPPER)
+STR_REFIT_METRO_2K_VVVF_1ST_NAME                           :(ソウル交通公社 2k VVVF 1世代)
+STR_REFIT_METRO_2K_VVVF_2ND_NAME                           :(ソウル交通公社 2k VVVF 2世代)
+STR_REFIT_METRO_2K_VVVF_3RD_NAME                           :(ソウル交通公社 2k VVVF 3世代)
+STR_REFIT_METRO_2K_VVVF_4TH_NAME                           :(ソウル交通公社 2k VVVF 4世代)
+STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME                      :(ソウルメトロ 2k 改造抵抗)
 
 # Refit (Seoul metropolitan 3)
-STR_REFIT_METRO_3K_VVVF_1ST_1_NAME               :(韓国鉄道3k VVVF・旧塗色)
-STR_REFIT_METRO_3K_VVVF_1ST_2_NAME               :(Korail 3k VVVF・現在塗色)
-STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           :(ソウル交通公社 3k CHOPPER)
-STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  :(ソウル交通公社 3k 改造CHOPPER)
-STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          :(ソウル交通公社 3k VVVF 1世代)
-STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          :(ソウル交通公社 3k VVVF 2世代)
-STR_REFIT_METRO_LINE_3_2022_NAME                 :(Korail 3号線2022年導入分)
-STR_REFIT_METRO_LINE_3_2022_W_NAME               :(Korail 3号線宇進産電2022年導入分)
+STR_REFIT_METRO_3K_VVVF_1ST_1_NAME                         :(韓国鉄道3k VVVF・旧塗色)
+STR_REFIT_METRO_3K_VVVF_1ST_2_NAME                         :(Korail 3k VVVF・現在塗色)
+STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME                     :(ソウル交通公社 3k CHOPPER)
+STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME            :(ソウル交通公社 3k 改造CHOPPER)
+STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME                    :(ソウル交通公社 3k VVVF 1世代)
+STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME                    :(ソウル交通公社 3k VVVF 2世代)
+STR_REFIT_METRO_LINE_3_2022_NAME                           :(Korail 3号線2022年導入分)
+STR_REFIT_METRO_LINE_3_2022_W_NAME                         :(Korail 3号線宇進産電2022年導入分)
 
 # Refit (Seoul metropolitan 4)
-STR_REFIT_METRO_341K_VVVF_1ST_1_NAME             :(Korail 341k VVVF 1世代・旧塗色)
-STR_REFIT_METRO_341K_VVVF_1ST_2_NAME             :(Korail 341k VVVF 1世代・現在塗色)
-STR_REFIT_METRO_341K_VVVF_2ND_1_NAME             :(Korail 341k VVVF 2世代・旧塗色)
-STR_REFIT_METRO_341K_VVVF_2ND_2_NAME             :(Korail 341k VVVF 2世代・現在塗色)
-STR_REFIT_METRO_LINE_4_2019_NAME                 :(Korail 4号線 2019年導入分)
-STR_REFIT_METRO_LINE_4_2021_NAME                 :(Korail 4号線 2021年導入分)
-STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME      :(SMetro 4k 1·2世代 VVVF)
-STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME          :(SMetro 4k 3世代 VVVF 2020年導入分)
+STR_REFIT_METRO_341K_VVVF_1ST_1_NAME                       :(Korail 341k VVVF 1世代・旧塗色)
+STR_REFIT_METRO_341K_VVVF_1ST_2_NAME                       :(Korail 341k VVVF 1世代・現在塗色)
+STR_REFIT_METRO_341K_VVVF_2ND_1_NAME                       :(Korail 341k VVVF 2世代・旧塗色)
+STR_REFIT_METRO_341K_VVVF_2ND_2_NAME                       :(Korail 341k VVVF 2世代・現在塗色)
+STR_REFIT_METRO_LINE_4_2019_NAME                           :(Korail 4号線 2019年導入分)
+STR_REFIT_METRO_LINE_4_2021_NAME                           :(Korail 4号線 2021年導入分)
+STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME                :(SMetro 4k 1·2世代 VVVF)
+STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME                    :(SMetro 4k 3世代 VVVF 2020年導入分)
 
 # Refit (Seoul Metro Line 5-8、Seoul Metro Line9)
-STR_REFIT_METRO_SMETRO_SR0X_NAME                 :(ソウル交通公社 SR0x VVVF)
-STR_REFIT_METRO_SMETRO_5K_1ST_2ND_NAME           :(ソウル交通公社 5k VVVF 1·2次)
-STR_REFIT_METRO_SMETRO_5K_3RD_NAME               :(ソウル交通公社 5k VVVF 3次)
-STR_REFIT_METRO_SMETRO_5K_4TH_NAME               :(ソウル交通公社 5k VVVF 4次)
-STR_REFIT_METRO_SMETRO_6K_1ST_NAME               :(ソウル交通公社 6k VVVF)
-STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME           :(ソウル交通公社 7k VVVF 1·2次)
-STR_REFIT_METRO_SMETRO_7K_4TH_NAME               :(ソウル交通公社 7k VVVF 4次)
-STR_REFIT_METRO_SMETRO_7K_5TH_NAME               :(ソウル交通公社 7k VVVF 5次)
-STR_REFIT_METRO_SMETRO_8K_1ST_NAME               :(ソウル交通公社 8k VVVF)
-STR_REFIT_METRO_SMETRO_9K_1ST_NAME               :(ソウル交通公社9 9k VVVF)
+STR_REFIT_METRO_SMETRO_SR0X_NAME                           :(ソウル交通公社 SR0x VVVF)
+STR_REFIT_METRO_SMETRO_5K_1ST_2ND_NAME                     :(ソウル交通公社 5k VVVF 1·2次)
+STR_REFIT_METRO_SMETRO_5K_3RD_NAME                         :(ソウル交通公社 5k VVVF 3次)
+STR_REFIT_METRO_SMETRO_5K_4TH_NAME                         :(ソウル交通公社 5k VVVF 4次)
+STR_REFIT_METRO_SMETRO_6K_1ST_NAME                         :(ソウル交通公社 6k VVVF)
+STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME                     :(ソウル交通公社 7k VVVF 1·2次)
+STR_REFIT_METRO_SMETRO_7K_4TH_NAME                         :(ソウル交通公社 7k VVVF 4次)
+STR_REFIT_METRO_SMETRO_7K_5TH_NAME                         :(ソウル交通公社 7k VVVF 5次)
+STR_REFIT_METRO_SMETRO_8K_1ST_NAME                         :(ソウル交通公社 8k VVVF)
+STR_REFIT_METRO_SMETRO_9K_1ST_NAME                         :(ソウル交通公社9 9k VVVF)
 
 # Refit (Suin-Bungdang Line)
-STR_REFIT_METRO_351K_VVVF_1ST_1_NAME             :(Korail 351k VVVF 1世代・旧塗色)
-STR_REFIT_METRO_351K_VVVF_1ST_2_NAME             :(Korail 351k VVVF 1世代・現在塗色)
-STR_REFIT_METRO_351K_VVVF_2ND_NAME               :(Korail 351k VVVF 2世代)
-STR_REFIT_METRO_351K_VVVF_3RD_NAME               :(Korail 351k VVVF 3世代)
-STR_REFIT_METRO_351K_2021_NAME                   :(Korail 351k 2021年導入分)
+STR_REFIT_METRO_351K_VVVF_1ST_1_NAME                       :(Korail 351k VVVF 1世代・旧塗色)
+STR_REFIT_METRO_351K_VVVF_1ST_2_NAME                       :(Korail 351k VVVF 1世代・現在塗色)
+STR_REFIT_METRO_351K_VVVF_2ND_NAME                         :(Korail 351k VVVF 2世代)
+STR_REFIT_METRO_351K_VVVF_3RD_NAME                         :(Korail 351k VVVF 3世代)
+STR_REFIT_METRO_351K_2021_NAME                             :(Korail 351k 2021年導入分)
 
 # Refit (Gyeongchun Line)
-STR_REFIT_METRO_361K_VVVF_NAME                   :(Korail 361k VVVF)
+STR_REFIT_METRO_361K_VVVF_NAME                             :(Korail 361k VVVF)
 
 # Refit (Incheon intertional Airport Line (A'REX)
-STR_REFIT_METRO_AREX_1K_NONSTOP_NAME             :(A'REX 1k 直通)
-STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME      :(A'REX 1k 直通・橘色)
-STR_REFIT_METRO_AREX_2K_NAME                     :(A'REX 2k 緩行)
+STR_REFIT_METRO_AREX_1K_NONSTOP_NAME                       :(A'REX 1k 直通)
+STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME                :(A'REX 1k 直通・橘色)
+STR_REFIT_METRO_AREX_2K_NAME                               :(A'REX 2k 緩行)
 
 # Refit (Seohae Line)
-STR_REFIT_METRO_391K_1ST_NAME                    :(Korail 391k 1次)
-STR_REFIT_METRO_391K_1ST_NAME_D                  :({RED}削除予定{BLACK} - Korail 391k 1次)
-STR_REFIT_METRO_391K_2ND_NAME                    :(Korail 391k 2次)
+STR_REFIT_METRO_391K_1ST_NAME                              :(Korail 391k 1次)
+STR_REFIT_METRO_391K_1ST_NAME_D                            :({RED}削除予定{BLACK} - Korail 391k 1次)
+STR_REFIT_METRO_391K_2ND_NAME                              :(Korail 391k 2次)
 
 # Refit (Other Lines)
-STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME   :(仁川交通公社 1k VVVF 1世代)
-STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_2022_NAME:(仁川交通公社 1k VVVF 1世代 / 2022年塗色)
-STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME   :(仁川交通公社 1k VVVF 2世代)
-STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME            :(前期形)
-STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME            :(後期形)
-STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME          :(釜山交通公社 1k 1世代)
-STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME          :(釜山交通公社 1k 2世代)
-STR_REFIT_METRO_DAEJEON_METRO_1K_NAME            :(大田都市鉄道公社 1k)
-STR_REFIT_METRO_GWANGJU_METRO_1K_NAME            :(光州都市鉄道公社 1k)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME             :(仁川交通公社 1k VVVF 1世代)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_2022_NAME        :(仁川交通公社 1k VVVF 1世代 / 2022年塗色)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME             :(仁川交通公社 1k VVVF 2世代)
+STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME                      :(前期形)
+STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME                      :(後期形)
+STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME                    :(釜山交通公社 1k 1世代)
+STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME                    :(釜山交通公社 1k 2世代)
+STR_REFIT_METRO_DAEJEON_METRO_1K_NAME                      :(大田都市鉄道公社 1k)
+STR_REFIT_METRO_GWANGJU_METRO_1K_NAME                      :(光州都市鉄道公社 1k)
 
 
 # Refit (Additional text)
-STR_REFIT_ADDITIONAL_ABLE                        :{BLACK}塗色/モデル変更：{GREEN}可能
-STR_REFIT_ADDITIONAL_UNABLE                      :{BLACK}塗色/モデル変更：{RED}不可能
-STR_REFIT_ADDITIONAL_AMBIGUOUS                   :{BLACK}塗色/モデル変更：{ORANGE}場合に応じて
+STR_REFIT_ADDITIONAL_ABLE                                  :{BLACK}塗色/モデル変更：{GREEN}可能
+STR_REFIT_ADDITIONAL_UNABLE                                :{BLACK}塗色/モデル変更：{RED}不可能
+STR_REFIT_ADDITIONAL_AMBIGUOUS                             :{BLACK}塗色/モデル変更：{ORANGE}場合に応じて
 
 
 # Parameters
-STR_PARAM_ADD_TYPE_NAME                          :追加したい列車の種類
-STR_PARAM_ADD_TYPE_DESC                          :追加したい列車の種類を選んでください。(デフォルト値：全て)
-STR_PARAM_ADD_TYPE_ALL                           :全て
-STR_PARAM_ADD_TYPE_ONLY_TRAIN                    :電車を覗いた列車だけ
-STR_PARAM_ADD_TYPE_ONLY_METRO                    :電車だけ
-STR_PARAM_SPEED_GENERAL_NAME                     :一般列車の速力係数
-STR_PARAM_SPEED_GENERAL_DESC                     :一般列車の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：機関車、CDC、セマウル号DHC(PP)、KTX、KTX-山川、KTX-イウムなどのほとんどの車
-STR_PARAM_SPEED_SUBEXPRESS_NAME                  :準高速型列車の速力係数
-STR_PARAM_SPEED_SUBEXPRESS_DESC                  :準高速型列車の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：空港鉄道 1k (直通)、京春線 ITX-淸春
-STR_PARAM_SPEED_METRO_NAME                       :地下鉄の速力係数
-STR_PARAM_SPEED_METRO_DESC                       :地下鉄の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：一般/準高速型列車を除いた残りの一般電車
-STR_PARAM_SPEED_LIGHTRAIL1_NAME                  :軽電鉄の速力係数(ゴム)
-STR_PARAM_SPEED_LIGHTRAIL1_DESC                  :ゴム車輪軽電鉄の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：釜山4号線、釜山金海輕電鐵、大邱3号線、金浦ゴールドライン、仁川2号線、牛耳新設線、議政府輕電鐵、容認エバーライン
-STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME:車両接続制限オフ
-STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC:車両の接続制限をオフにします。 この設定をオンにすると、機関車に任意の客車が接続できるようになります。
-STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_NAME    :車両長さ制限オフ
-STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_DESC    :車両の長さ制限をオフにします。 この設定をオンにすると、車両の長さをこのNewGRFの制限より短くするか長くすることができます。
+STR_PARAM_ADD_TYPE_NAME                                    :追加したい列車の種類
+STR_PARAM_ADD_TYPE_DESC                                    :追加したい列車の種類を選んでください。(デフォルト値：全て)
+STR_PARAM_ADD_TYPE_ALL                                     :全て
+STR_PARAM_ADD_TYPE_ONLY_TRAIN                              :電車を覗いた列車だけ
+STR_PARAM_ADD_TYPE_ONLY_METRO                              :電車だけ
+STR_PARAM_SPEED_GENERAL_NAME                               :一般列車の速力係数
+STR_PARAM_SPEED_GENERAL_DESC                               :一般列車の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：機関車、CDC、セマウル号DHC(PP)、KTX、KTX-山川、KTX-イウムなどのほとんどの車
+STR_PARAM_SPEED_SUBEXPRESS_NAME                            :準高速型列車の速力係数
+STR_PARAM_SPEED_SUBEXPRESS_DESC                            :準高速型列車の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：空港鉄道 1k (直通)、京春線 ITX-淸春
+STR_PARAM_SPEED_METRO_NAME                                 :地下鉄の速力係数
+STR_PARAM_SPEED_METRO_DESC                                 :地下鉄の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：一般/準高速型列車を除いた残りの一般電車
+STR_PARAM_SPEED_LIGHTRAIL1_NAME                            :軽電鉄の速力係数(ゴム)
+STR_PARAM_SPEED_LIGHTRAIL1_DESC                            :ゴム車輪軽電鉄の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：釜山4号線、釜山金海輕電鐵、大邱3号線、金浦ゴールドライン、仁川2号線、牛耳新設線、議政府輕電鐵、容認エバーライン
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME          :車両接続制限オフ
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC          :車両の接続制限をオフにします。 この設定をオンにすると、機関車に任意の客車が接続できるようになります。
+STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_NAME              :車両長さ制限オフ
+STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_DESC              :車両の長さ制限をオフにします。 この設定をオンにすると、車両の長さをこのNewGRFの制限より短くするか長くすることができます。
 
-STR_PARAM_FACTOR_COST_NAME                       :列車の購入費用
-STR_PARAM_FACTOR_COST_DESC                       :列車の購入価格を調整することができます。値が大きければ購入価格が高くなります。
-STR_PARAM_FACTOR_RUNNING_COST_NAME               :列車の維持費
-STR_PARAM_FACTOR_RUNNING_COST_DESC               :列車の維持費を調節することができます。値が大きければ維持費が多く掛かります。
-STR_PARAM_FACTOR_CARGO_CAPACITY_NAME             :貨物輸送量
-STR_PARAM_FACTOR_CARGO_CAPACITY_DESC             :列車の貨物輸送量を調節することができます。値が大きければ、より多くの量の乗客や荷物を収納することができます。{}ただし、地下鉄車は、この設定の影響を受けません。{} x2に設定すると、現実の輸送量とほぼ等しくなります。{}{RED}注意！{WHITE}この設定は、新規に作成車両から適用されます。
-STR_PARAM_FACTOR_LOADING_SPEED_NAME              :貨物積載速度
-STR_PARAM_FACTOR_LOADING_SPEED_DESC              :列車の貨物積載速度を調節することができます。値が大きければ、乗客や貨物を載せる速度が速くなります。
-STR_PARAM_WAGON_SPEED_LIMIT_NAME                 :貨車速度制限解除
-STR_PARAM_WAGON_SPEED_LIMIT_DESC                 :貨車の速度制限を解除します。この設定は、設定で「貨車の上限速度」を有效に適用にすれば適用できます。
+STR_PARAM_FACTOR_COST_NAME                                 :列車の購入費用
+STR_PARAM_FACTOR_COST_DESC                                 :列車の購入価格を調整することができます。値が大きければ購入価格が高くなります。
+STR_PARAM_FACTOR_RUNNING_COST_NAME                         :列車の維持費
+STR_PARAM_FACTOR_RUNNING_COST_DESC                         :列車の維持費を調節することができます。値が大きければ維持費が多く掛かります。
+STR_PARAM_FACTOR_CARGO_CAPACITY_NAME                       :貨物輸送量
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC                       :列車の貨物輸送量を調節することができます。値が大きければ、より多くの量の乗客や荷物を収納することができます。{}ただし、地下鉄車は、この設定の影響を受けません。{} x2に設定すると、現実の輸送量とほぼ等しくなります。{}{RED}注意！{WHITE}この設定は、新規に作成車両から適用されます。
+STR_PARAM_FACTOR_LOADING_SPEED_NAME                        :貨物積載速度
+STR_PARAM_FACTOR_LOADING_SPEED_DESC                        :列車の貨物積載速度を調節することができます。値が大きければ、乗客や貨物を載せる速度が速くなります。
+STR_PARAM_WAGON_SPEED_LIMIT_NAME                           :貨車速度制限解除
+STR_PARAM_WAGON_SPEED_LIMIT_DESC                           :貨車の速度制限を解除します。この設定は、設定で「貨車の上限速度」を有效に適用にすれば適用できます。
 
 
 # Parameters' value
-STR_PARAM_OPT_FACTOR_BY_0                        :x0
-STR_PARAM_OPT_FACTOR_BY_1_32                     :x1/32
-STR_PARAM_OPT_FACTOR_BY_1_16                     :x1/16
-STR_PARAM_OPT_FACTOR_BY_1_8                      :x1/8
-STR_PARAM_OPT_FACTOR_BY_1_4                      :x1/4
-STR_PARAM_OPT_FACTOR_BY_1_2                      :x1/2
-STR_PARAM_OPT_FACTOR_BY_1_2_DEFAULT              :x1/2 (デフォルト)
-STR_PARAM_OPT_FACTOR_BY_1                        :x1
-STR_PARAM_OPT_FACTOR_BY_1_DEFAULT                :x1 (デフォルト)
-STR_PARAM_OPT_FACTOR_BY_2                        :x2
-STR_PARAM_OPT_FACTOR_BY_4                        :x4
-STR_PARAM_OPT_FACTOR_BY_8                        :x8
-STR_PARAM_OPT_FACTOR_BY_16                       :x16
-STR_PARAM_OPT_FACTOR_BY_32                       :x32
-STR_PARAM_OPT_FACTOR_BY_64                       :x64
-STR_PARAM_OPT_FACTOR_BY_128                      :x128
-STR_PARAM_OPT_FACTOR_BY_256                      :x256
-STR_PARAM_OPT_FACTOR_BY_512                      :x512
-# STR_PARAM_OPT_FACTOR_BY_1024                   :x1024
-# STR_PARAM_OPT_FACTOR_BY_2048                   :x2048
-# STR_PARAM_OPT_FACTOR_BY_4096                   :x4096
+STR_PARAM_OPT_FACTOR_BY_0                                  :x0
+STR_PARAM_OPT_FACTOR_BY_1_32                               :x1/32
+STR_PARAM_OPT_FACTOR_BY_1_16                               :x1/16
+STR_PARAM_OPT_FACTOR_BY_1_8                                :x1/8
+STR_PARAM_OPT_FACTOR_BY_1_4                                :x1/4
+STR_PARAM_OPT_FACTOR_BY_1_2                                :x1/2
+STR_PARAM_OPT_FACTOR_BY_1_2_DEFAULT                        :x1/2 (デフォルト)
+STR_PARAM_OPT_FACTOR_BY_1                                  :x1
+STR_PARAM_OPT_FACTOR_BY_1_DEFAULT                          :x1 (デフォルト)
+STR_PARAM_OPT_FACTOR_BY_2                                  :x2
+STR_PARAM_OPT_FACTOR_BY_4                                  :x4
+STR_PARAM_OPT_FACTOR_BY_8                                  :x8
+STR_PARAM_OPT_FACTOR_BY_16                                 :x16
+STR_PARAM_OPT_FACTOR_BY_32                                 :x32
+STR_PARAM_OPT_FACTOR_BY_64                                 :x64
+STR_PARAM_OPT_FACTOR_BY_128                                :x128
+STR_PARAM_OPT_FACTOR_BY_256                                :x256
+STR_PARAM_OPT_FACTOR_BY_512                                :x512
+# STR_PARAM_OPT_FACTOR_BY_1024                             :x1024
+# STR_PARAM_OPT_FACTOR_BY_2048                             :x2048
+# STR_PARAM_OPT_FACTOR_BY_4096                             :x4096
 
-STR_PARAM_SIMPLIZE_WAYPOINT_NAME                 :経由地を簡単に表示
-STR_PARAM_SIMPLIZE_WAYPOINT_DESC                 :ウェイポイントのグラピックで建物を削除して簡単に表紙します。
-STR_PARAM_USE_MAX_DESIGN_SPEED_NAME              :設計最高速度使用
-STR_PARAM_USE_MAX_DESIGN_SPEED_DESC              :営業速度の代わりに設計最高速度を使用します。設計最高速度は普通、営業速度よりも高速です。
-STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME         :基本機関車使用しない
-STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC         :韓国列車セットの客車をすばやく探すために基本機関車を削除します。モノレールや磁気浮上列車の車両は消えず（電気）鉄道車両のみを削除します。
-STR_PARAM_MAX_SPEED_TYPE_NAME                    :最高速度基準
-STR_PARAM_MAX_SPEED_TYPE_DESC                    :列車の最高速度の基準を選択します。設計速度が営業速度よりもやや高速です。（eg。KTX-1：営業速度=300km/ h、設計最高速度=330km/h）
-STR_PARAM_MAX_SPEED_TYPE_OPT_1                   :営業促進
-STR_PARAM_MAX_SPEED_TYPE_OPT_2                   :設計速度
+STR_PARAM_SIMPLIZE_WAYPOINT_NAME                           :経由地を簡単に表示
+STR_PARAM_SIMPLIZE_WAYPOINT_DESC                           :ウェイポイントのグラピックで建物を削除して簡単に表紙します。
+STR_PARAM_USE_MAX_DESIGN_SPEED_NAME                        :設計最高速度使用
+STR_PARAM_USE_MAX_DESIGN_SPEED_DESC                        :営業速度の代わりに設計最高速度を使用します。設計最高速度は普通、営業速度よりも高速です。
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME                   :基本機関車使用しない
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC                   :韓国列車セットの客車をすばやく探すために基本機関車を削除します。モノレールや磁気浮上列車の車両は消えず（電気）鉄道車両のみを削除します。
+STR_PARAM_MAX_SPEED_TYPE_NAME                              :最高速度基準
+STR_PARAM_MAX_SPEED_TYPE_DESC                              :列車の最高速度の基準を選択します。設計速度が営業速度よりもやや高速です。（eg。KTX-1：営業速度=300km/ h、設計最高速度=330km/h）
+STR_PARAM_MAX_SPEED_TYPE_OPT_1                             :営業促進
+STR_PARAM_MAX_SPEED_TYPE_OPT_2                             :設計速度
 
 # Light Railway
-STR_RAILTYPE_LIGHT_RAIL_TRACK_NAME               :輕電鐵線路
-STR_RAILTYPE_LIGHT_RAIL_TRACK_DROPDOWN_MENU      :「KTS」輕電鐵線路の建設
-STR_RAILTYPE_LIGHT_RAIL_TRACK_TOOLBAR_CAPTION    :輕電鐵線路の建設
-STR_RAILTYPE_LIGHT_RAIL_BUILD_VEHICLE_CAPTION    :新規輕電鐵機関車・電車
-STR_RAILTYPE_LIGHT_RAIL_NEW_ENGINE               :輕電鐵機関車・電車
-STR_RAILTYPE_LIGHT_RAIL_AUTOREPLACE              :輕電鐵機関車・電車
+STR_RAILTYPE_LIGHT_RAIL_TRACK_NAME                         :輕電鐵線路
+STR_RAILTYPE_LIGHT_RAIL_TRACK_DROPDOWN_MENU                :「KTS」輕電鐵線路の建設
+STR_RAILTYPE_LIGHT_RAIL_TRACK_TOOLBAR_CAPTION              :輕電鐵線路の建設
+STR_RAILTYPE_LIGHT_RAIL_BUILD_VEHICLE_CAPTION              :新規輕電鐵機関車・電車
+STR_RAILTYPE_LIGHT_RAIL_NEW_ENGINE                         :輕電鐵機関車・電車
+STR_RAILTYPE_LIGHT_RAIL_AUTOREPLACE                        :輕電鐵機関車・電車
 
 # Narrow gauge
-STR_RAILTYPE_NARROW_GAUGE_TRACK_NAME             :762mm狭軌線路
-STR_RAILTYPE_NARROW_GAUGE_TRACK_DROPDOWN_MENU    :「KTS」762mm狭軌線路の建設
-STR_RAILTYPE_NARROW_GAUGE_TRACK_TOOLBAR_CAPTION  :狭軌線路の建設
-STR_RAILTYPE_NARROW_GAUGE_BUILD_VEHICLE_CAPTION  :新規狭軌線路機関車・車両
-STR_RAILTYPE_NARROW_GAUGE_NEW_ENGINE             :狭軌線路機関車・車両
-STR_RAILTYPE_NARROW_GAUGE_AUTOREPLACE            :狭軌線路機関車・車両
+STR_RAILTYPE_NARROW_GAUGE_TRACK_NAME                       :762mm狭軌線路
+STR_RAILTYPE_NARROW_GAUGE_TRACK_DROPDOWN_MENU              :「KTS」762mm狭軌線路の建設
+STR_RAILTYPE_NARROW_GAUGE_TRACK_TOOLBAR_CAPTION            :狭軌線路の建設
+STR_RAILTYPE_NARROW_GAUGE_BUILD_VEHICLE_CAPTION            :新規狭軌線路機関車・車両
+STR_RAILTYPE_NARROW_GAUGE_NEW_ENGINE                       :狭軌線路機関車・車両
+STR_RAILTYPE_NARROW_GAUGE_AUTOREPLACE                      :狭軌線路機関車・車両
 
 # Buffer Object
-STR_OBJ_BUFFER_KTSR                              :「KTS」車止め
+STR_OBJ_BUFFER_KTSR                                        :「KTS」車止め
 
 # Errors
-STR_ERROR_NO_ATTACH                              :ここにこの車両を付けることができません
-STR_ERROR_NOT_ENOUGH_LENGTH2                     :列車の長さが短すぎます。少なくとも２両以上を連結しなければなりません
-STR_ERROR_NOT_ENOUGH_LENGTH4                     :列車の長さが短すぎます。少なくとも４両以上を連結しなければなりません
-STR_ERROR_TOO_LONG_LENGTH2                       :列車の長さが長すぎます。最大２両まで連結できます
-STR_ERROR_TOO_LONG_LENGTH4                       :列車の長さが長すぎます。最大４両まで連結できます
+STR_ERROR_NO_ATTACH                                        :ここにこの車両を付けることができません
+STR_ERROR_NOT_ENOUGH_LENGTH2                               :列車の長さが短すぎます。少なくとも２両以上を連結しなければなりません
+STR_ERROR_NOT_ENOUGH_LENGTH4                               :列車の長さが短すぎます。少なくとも４両以上を連結しなければなりません
+STR_ERROR_TOO_LONG_LENGTH2                                 :列車の長さが長すぎます。最大２両まで連結できます
+STR_ERROR_TOO_LONG_LENGTH4                                 :列車の長さが長すぎます。最大４両まで連結できます

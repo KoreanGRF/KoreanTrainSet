@@ -2,447 +2,447 @@
 
 
 # GRF name and description
-STR_GRF_NAME                                     :Korean Train Set
-STR_GRF_NAME_WITH_VER                            :Korean Train Set {VERSION}
-STR_GRF_DESC                                     :{BLACK}Korean Train Set adds trains and railways of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Daejeon, Busan subways/metros and some electric locomotives of Korail.{}(Updated: {RECENT_UPDATED}){}{SILVER}+ Author: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
-STR_GRF_URL                                      :https://telk.kr/ottd/newgrf/ko_train_set/?lang=en
+STR_GRF_NAME                                               :Korean Train Set
+STR_GRF_NAME_WITH_VER                                      :Korean Train Set {VERSION}
+STR_GRF_DESC                                               :{BLACK}Korean Train Set adds trains and railways of korea such as KTX, KTX-Sancheon, ITX-Cheongchun, Saemaeul, Mugunghwa, Nuriro, CDC, Seoul metropolitan area, Incheon, Daegu, Daejeon, Busan subways/metros and some electric locomotives of Korail.{}(Updated: {RECENT_UPDATED}){}{SILVER}+ Author: TELK{}{BLACK}  - {AUTHOR_EMAIL}{}  - {AUTHOR_WEBSITE}
+STR_GRF_URL                                                :https://telk.kr/ottd/newgrf/ko_train_set/?lang=en
 
 
 # Vehicle's name
-STR_HOKEY7_NAME                                  :Hokey 7 Steam Locomotive
-STR_STEAM_NAME                                   :Steam Locomotives
-STR_MATE2_NAME                                   :Mate 2 Steam Locomotive
-STR_PASHI5_NAME                                  :Pashi 5 Steam Locomotive
-STR_MIKA3_NAME                                   :Mika 3 Steam Locomotive
-STR_K2x00_NAME                                   :2x00 Diesel Locomotive
-STR_K4x00_NAME                                   :4x00 Diesel Locomotive
-STR_K5000_NAME                                   :5000 Diesel Locomotive
-STR_K6x00_NAME                                   :6x00 Diesel Locomotive
-STR_K7000_NAME                                   :7000 Diesel Locomotive
-STR_K7x00_NAME                                   :7x00 Diesel Locomotive
-STR_K7600_NAME                                   :7600 Diesel Locomotive
-STR_K8000_NAME                                   :8000 Electronic Locomotive
-STR_K8x00_NAME                                   :8x00 Electronic Locomotive
-STR_K8500_NAME                                   :8500 Electronic Locomotive
-STR_DHC_NAME                                     :Diesel Hydraulic Car (DHC, PP)
-STR_ITX_SAEMAEUL_NAME                            :ITX-Saemaeul
-STR_NURIRO_NAME                                  :Nuriro
-STR_CDC_NAME                                     :Commuter Diesel Car (CDC)
-STR_NDC_NAME                                     :New Diesel Car (NDC)
-STR_DEC_NAME                                     :Diesel Electric Car (DEC)
-STR_EEC_NAME                                     :Express Electric Car (EEC)
-STR_BIDULGI_CDC_NAME                             :Commuter Diesel Car (RC)
-STR_NARROW_DIESEL_CAR_NAME                       :Narrow gauge Diesel Car
-STR_KTX1N_NAME                                   :KTX-1
-STR_KTX2N_NAME                                   :KTX-Sancheon
-STR_SRT_NAME                                     :SRT
-STR_EUM_NAME                                     :KTX-EUM
-STR_ECOBEE_NAME                                  :Incheon Intl Airport Maglev (Ecobee)
+STR_HOKEY7_NAME                                            :Hokey 7 Steam Locomotive
+STR_STEAM_NAME                                             :Steam Locomotives
+STR_MATE2_NAME                                             :Mate 2 Steam Locomotive
+STR_PASHI5_NAME                                            :Pashi 5 Steam Locomotive
+STR_MIKA3_NAME                                             :Mika 3 Steam Locomotive
+STR_K2x00_NAME                                             :2x00 Diesel Locomotive
+STR_K4x00_NAME                                             :4x00 Diesel Locomotive
+STR_K5000_NAME                                             :5000 Diesel Locomotive
+STR_K6x00_NAME                                             :6x00 Diesel Locomotive
+STR_K7000_NAME                                             :7000 Diesel Locomotive
+STR_K7x00_NAME                                             :7x00 Diesel Locomotive
+STR_K7600_NAME                                             :7600 Diesel Locomotive
+STR_K8000_NAME                                             :8000 Electronic Locomotive
+STR_K8x00_NAME                                             :8x00 Electronic Locomotive
+STR_K8500_NAME                                             :8500 Electronic Locomotive
+STR_DHC_NAME                                               :Diesel Hydraulic Car (DHC, PP)
+STR_ITX_SAEMAEUL_NAME                                      :ITX-Saemaeul
+STR_NURIRO_NAME                                            :Nuriro
+STR_CDC_NAME                                               :Commuter Diesel Car (CDC)
+STR_NDC_NAME                                               :New Diesel Car (NDC)
+STR_DEC_NAME                                               :Diesel Electric Car (DEC)
+STR_EEC_NAME                                               :Express Electric Car (EEC)
+STR_BIDULGI_CDC_NAME                                       :Commuter Diesel Car (RC)
+STR_NARROW_DIESEL_CAR_NAME                                 :Narrow gauge Diesel Car
+STR_KTX1N_NAME                                             :KTX-1
+STR_KTX2N_NAME                                             :KTX-Sancheon
+STR_SRT_NAME                                               :SRT
+STR_EUM_NAME                                               :KTX-EUM
+STR_ECOBEE_NAME                                            :Incheon Intl Airport Maglev (Ecobee)
 
-STR_PASSENGER_WAGON_NAME                         :Passenger car
-STR_PASSENGER_WAGON_POWER_NAME                   :Passenger car (powered)
-STR_SAEMAEUL_CAR_NAME                            :Saemaeul passenger car
-STR_MUGUNGHWA_CAR_NAME                           :Mugunghwa passenger car
-STR_TONGIL_CAR_NAME                              :Tongil passenger car
-STR_BIDULGI_CAR_NAME                             :Bidulgi passenger car
-STR_GENERATOR_CAR_NAME                           :Generator car
-STR_CAFE_CAR_NAME                                :Cafe/Restaurant car
-STR_SLEEPING_CAR_NAME                            :Sleeping car
+STR_PASSENGER_WAGON_NAME                                   :Passenger car
+STR_PASSENGER_WAGON_POWER_NAME                             :Passenger car (powered)
+STR_SAEMAEUL_CAR_NAME                                      :Saemaeul passenger car
+STR_MUGUNGHWA_CAR_NAME                                     :Mugunghwa passenger car
+STR_TONGIL_CAR_NAME                                        :Tongil passenger car
+STR_BIDULGI_CAR_NAME                                       :Bidulgi passenger car
+STR_GENERATOR_CAR_NAME                                     :Generator car
+STR_CAFE_CAR_NAME                                          :Cafe/Restaurant car
+STR_SLEEPING_CAR_NAME                                      :Sleeping car
 
-STR_FLAT_CAR_NAME                                :Container flat car
-STR_HOPPER_CAR_NAME                              :Hopper car
-STR_BOX_CAR_NAME                                 :Box car
-STR_BAGGAGE_CAR_NAME                             :Baggage car
-STR_TANK_CAR_NAME                                :Tank car
-STR_STAKE_CAR_NAME                               :Stake car
-STR_MAIL_CAR_NAME                                :Mail car
+STR_FLAT_CAR_NAME                                          :Container flat car
+STR_HOPPER_CAR_NAME                                        :Hopper car
+STR_BOX_CAR_NAME                                           :Box car
+STR_BAGGAGE_CAR_NAME                                       :Baggage car
+STR_TANK_CAR_NAME                                          :Tank car
+STR_STAKE_CAR_NAME                                         :Stake car
+STR_MAIL_CAR_NAME                                          :Mail car
 
 # Metro
-STR_SEOUL_METRO_1_NAME                           :Seoul Line 1, Commuter trains
-STR_SEOUL_METRO_2_NAME                           :Seoul Line 2
-STR_SEOUL_METRO_3_NAME                           :Seoul Line 3
-STR_SEOUL_METRO_4_NAME                           :Seoul Line 4
-STR_SEOUL_METRO_5_9_NAME                         :Seoul Line 5~9
-STR_SUIN_BUNDANG_NAME                            :Suin-Bundang Line
-STR_GYEONGCHUN_NAME                              :Gyeongchun Line
-STR_ITX_CHEONGCHUN_NAME                          :ITX-Cheongchun
-STR_AREX_NAME                                    :Incheon Airport Railroad (A'REX)
-STR_METROPOLITAN_NAME                            :Metropolitan Subways
-STR_SHINBUNDANG_NAME                             :Shinbundang Line
-STR_SEOHAE_NAME                                  :Seohae Line
-STR_DONGHAE_NAME                                 :Donghae Line
-STR_INCHEON_METRO_1_NAME                         :Incheon Line 1
-STR_INCHEON_METRO_2_NAME                         :Incheon Line 2
-STR_SILLIM_NAME                                  :Sillim Line
-STR_BUSAN_METRO_1_NAME                           :Busan Line 1
-STR_BUSAN_METRO_2_NAME                           :Busan Line 2
-STR_BUSAN_METRO_3_NAME                           :Busan Line 3
-STR_BUSAN_METRO_4_NAME                           :Busan Line 4
-STR_BUSANGIMHAE_NAME                             :Busan-Gimhae LRT
-STR_YONGIN_EVERLINE_NAME                         :Yongin Everline
-STR_DAEGU_METRO_1_NAME                           :Daegu Line 1
-STR_DAEGU_METRO_2_NAME                           :Daegu Line 2
-STR_DAEGU_METRO_3_NAME                           :Daegu Line 3
-STR_DAEJEON_METRO_1_NAME                         :Daejeon Line 1
-STR_GWANGJU_METRO_1_NAME                         :Gwangju Line 1
-STR_UISINSEOL_NAME                               :Ui-Sinseol Line
-STR_GIMPO_GOLDLINE_NAME                          :Gimpo Goldline
-STR_UIJEONGBU_NAME                               :Uijeongbu LRT
+STR_SEOUL_METRO_1_NAME                                     :Seoul Line 1, Commuter trains
+STR_SEOUL_METRO_2_NAME                                     :Seoul Line 2
+STR_SEOUL_METRO_3_NAME                                     :Seoul Line 3
+STR_SEOUL_METRO_4_NAME                                     :Seoul Line 4
+STR_SEOUL_METRO_5_9_NAME                                   :Seoul Line 5~9
+STR_SUIN_BUNDANG_NAME                                      :Suin-Bundang Line
+STR_GYEONGCHUN_NAME                                        :Gyeongchun Line
+STR_ITX_CHEONGCHUN_NAME                                    :ITX-Cheongchun
+STR_AREX_NAME                                              :Incheon Airport Railroad (A'REX)
+STR_METROPOLITAN_NAME                                      :Metropolitan Subways
+STR_SHINBUNDANG_NAME                                       :Shinbundang Line
+STR_SEOHAE_NAME                                            :Seohae Line
+STR_DONGHAE_NAME                                           :Donghae Line
+STR_INCHEON_METRO_1_NAME                                   :Incheon Line 1
+STR_INCHEON_METRO_2_NAME                                   :Incheon Line 2
+STR_SILLIM_NAME                                            :Sillim Line
+STR_BUSAN_METRO_1_NAME                                     :Busan Line 1
+STR_BUSAN_METRO_2_NAME                                     :Busan Line 2
+STR_BUSAN_METRO_3_NAME                                     :Busan Line 3
+STR_BUSAN_METRO_4_NAME                                     :Busan Line 4
+STR_BUSANGIMHAE_NAME                                       :Busan-Gimhae LRT
+STR_YONGIN_EVERLINE_NAME                                   :Yongin Everline
+STR_DAEGU_METRO_1_NAME                                     :Daegu Line 1
+STR_DAEGU_METRO_2_NAME                                     :Daegu Line 2
+STR_DAEGU_METRO_3_NAME                                     :Daegu Line 3
+STR_DAEJEON_METRO_1_NAME                                   :Daejeon Line 1
+STR_GWANGJU_METRO_1_NAME                                   :Gwangju Line 1
+STR_UISINSEOL_NAME                                         :Ui-Sinseol Line
+STR_GIMPO_GOLDLINE_NAME                                    :Gimpo Goldline
+STR_UIJEONGBU_NAME                                         :Uijeongbu LRT
 
 
 # Liveries
-STR_REFIT_LIVERY_THESEDAYS                       : (Current livery)
-STR_REFIT_LIVERY_2x00_BLACK                      : (US Army livery: Black)
-STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1             : (KNR first livery: Black & Narrow Orange)
-STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2             : (KNR first livery: Black & Wide Orange)
-STR_REFIT_LIVERY_6000_BLACK_ORANGE               : (KNR: 6000 Black & Orange)
-STR_REFIT_LIVERY_6100_BLACK_ORANGE               : (KNR: 6100 Black & Orange)
-STR_REFIT_LIVERY_6200_BLACK_ORANGE               : (KNR: 6200 Black & Orange)
-STR_REFIT_LIVERY_6300_BLACK_ORANGE               : (KNR: 6300 Black & Orange)
-STR_REFIT_LIVERY_6300_BLUE_WHITE                 : (KNR: 6300 Blue & White)
-STR_REFIT_LIVERY_6300_KWANKWANG                  : (KNR: 6300 Kwankwang-ho)
-STR_REFIT_LIVERY_7000_SILVER_BLUE                : (KNR old livery: Silver & Blue)
-STR_REFIT_LIVERY_7x00_CARGO                      : (Cargo livery)
-STR_REFIT_LIVERY_7x00_BLACK_ORANGE               : (KNR first livery: Black & Orange)
-STR_REFIT_LIVERY_7x00_FIRST_KORAIL               : (KNR first livery: Blue & White)
-STR_REFIT_LIVERY_KWANKWANG                       : (Kwankwang-ho)
-STR_REFIT_LIVERY_GREEN_YELLOW                    : (KNR old livery: Green & Yellow)
-STR_REFIT_LIVERY_HAERANG                         : (Rail cruise 'Haerang')
-STR_REFIT_LIVERY_S_TRAIN1                        : (S-train - blue)
-STR_REFIT_LIVERY_S_TRAIN2                        : (S-train - pink)
-STR_REFIT_LIVERY_G_TRAIN                         : (G-train)
-STR_REFIT_LIVERY_K7600_A_TRAIN                   : (Jeongseon Arirang train)
-STR_REFIT_LIVERY_V_TRAIN                         : (V-train)
-STR_REFIT_LIVERY_NURIRO                          : (default)
-STR_REFIT_LIVERY_O_TRAIN                         : (O-train)
-STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE              : (Korean wave tour livery)
-STR_REFIT_LIVERY_NURIRO_SANTA                    : (Donghae santa livery)
-STR_REFIT_LIVERY_NURIRO_2022                     : (2022 livery)
-STR_REFIT_LIVERY_KTX2N                           : (General livery)
-STR_REFIT_LIVERY_KTX2N_PYEONGCHANG               : (Olympic Winter Games PyeongChang 2018 livery)
-STR_REFIT_LIVERY_CDC_GARDEN                      : (Flower garden livery)
-STR_REFIT_LIVERY_CDC_DOLPHIN                     : (Dolphin livery)
-STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                : (Seaside train livery: Blue)
-STR_REFIT_LIVERY_CDC_SEASIDE_RED_WHITE           : (Seaside train livery: Red & White)
-STR_REFIT_LIVERY_CDC_BAEKJE                      : (Baekje livery)
-STR_REFIT_LIVERY_CDC_DMZTRAIN                    : (DMZ-train)
-STR_REFIT_LIVERY_CDC_MUGUNGHWA                   : (RDC Mugunghwa livery)
-STR_REFIT_LIVERY_CDC_GYEONGBUK1                  : (Gyeongbuk tour train, old livery)
-STR_REFIT_LIVERY_CDC_GYEONGBUK2                  : (Gyeongbuk tour train, new livery)
-STR_REFIT_PASSWAGON_NORMALCAR                    : (Normal class car)
-STR_REFIT_PASSWAGON_FIRSTCAR                     : (First class car)
+STR_REFIT_LIVERY_THESEDAYS                                 : (Current livery)
+STR_REFIT_LIVERY_2x00_BLACK                                : (US Army livery: Black)
+STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1                       : (KNR first livery: Black & Narrow Orange)
+STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2                       : (KNR first livery: Black & Wide Orange)
+STR_REFIT_LIVERY_6000_BLACK_ORANGE                         : (KNR: 6000 Black & Orange)
+STR_REFIT_LIVERY_6100_BLACK_ORANGE                         : (KNR: 6100 Black & Orange)
+STR_REFIT_LIVERY_6200_BLACK_ORANGE                         : (KNR: 6200 Black & Orange)
+STR_REFIT_LIVERY_6300_BLACK_ORANGE                         : (KNR: 6300 Black & Orange)
+STR_REFIT_LIVERY_6300_BLUE_WHITE                           : (KNR: 6300 Blue & White)
+STR_REFIT_LIVERY_6300_KWANKWANG                            : (KNR: 6300 Kwankwang-ho)
+STR_REFIT_LIVERY_7000_SILVER_BLUE                          : (KNR old livery: Silver & Blue)
+STR_REFIT_LIVERY_7x00_CARGO                                : (Cargo livery)
+STR_REFIT_LIVERY_7x00_BLACK_ORANGE                         : (KNR first livery: Black & Orange)
+STR_REFIT_LIVERY_7x00_FIRST_KORAIL                         : (KNR first livery: Blue & White)
+STR_REFIT_LIVERY_KWANKWANG                                 : (Kwankwang-ho)
+STR_REFIT_LIVERY_GREEN_YELLOW                              : (KNR old livery: Green & Yellow)
+STR_REFIT_LIVERY_HAERANG                                   : (Rail cruise 'Haerang')
+STR_REFIT_LIVERY_S_TRAIN1                                  : (S-train - blue)
+STR_REFIT_LIVERY_S_TRAIN2                                  : (S-train - pink)
+STR_REFIT_LIVERY_G_TRAIN                                   : (G-train)
+STR_REFIT_LIVERY_K7600_A_TRAIN                             : (Jeongseon Arirang train)
+STR_REFIT_LIVERY_V_TRAIN                                   : (V-train)
+STR_REFIT_LIVERY_NURIRO                                    : (default)
+STR_REFIT_LIVERY_O_TRAIN                                   : (O-train)
+STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE                        : (Korean wave tour livery)
+STR_REFIT_LIVERY_NURIRO_SANTA                              : (Donghae santa livery)
+STR_REFIT_LIVERY_NURIRO_2022                               : (2022 livery)
+STR_REFIT_LIVERY_KTX2N                                     : (General livery)
+STR_REFIT_LIVERY_KTX2N_PYEONGCHANG                         : (Olympic Winter Games PyeongChang 2018 livery)
+STR_REFIT_LIVERY_CDC_GARDEN                                : (Flower garden livery)
+STR_REFIT_LIVERY_CDC_DOLPHIN                               : (Dolphin livery)
+STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                          : (Seaside train livery: Blue)
+STR_REFIT_LIVERY_CDC_SEASIDE_RED_WHITE                     : (Seaside train livery: Red & White)
+STR_REFIT_LIVERY_CDC_BAEKJE                                : (Baekje livery)
+STR_REFIT_LIVERY_CDC_DMZTRAIN                              : (DMZ-train)
+STR_REFIT_LIVERY_CDC_MUGUNGHWA                             : (RDC Mugunghwa livery)
+STR_REFIT_LIVERY_CDC_GYEONGBUK1                            : (Gyeongbuk tour train, old livery)
+STR_REFIT_LIVERY_CDC_GYEONGBUK2                            : (Gyeongbuk tour train, new livery)
+STR_REFIT_PASSWAGON_NORMALCAR                              : (Normal class car)
+STR_REFIT_PASSWAGON_FIRSTCAR                               : (First class car)
 
 # Refit (Bidulgi)
-STR_REFIT_LIVERY_BIDULGI_3RD_CLASS               : (3rd class car - Da 9 class)
-STR_REFIT_LIVERY_BIDULGI_DC_TRAILER              : (Diesel car trailer)
-STR_REFIT_LIVERY_BIDULGI_1960                    : (Red livery: 1962~1974)
-STR_REFIT_LIVERY_BIDULGI_1970                    : (Red livery: 1974~1983)
-STR_REFIT_LIVERY_BIDULGI_1980                    : (Blue livery: 1984~1994)
-STR_REFIT_LIVERY_BIDULGI_1990                    : (Green livery: 1994~2000)
-STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR             : (Bidulgi livery)
-STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980       : (Tongil livery in 1980s)
-STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990       : (Tongil livery in 1990s)
-STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA               : (Mugunghwa livery)
-STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE             : (Blue livery: 1974~)
+STR_REFIT_LIVERY_BIDULGI_3RD_CLASS                         : (3rd class car - Da 9 class)
+STR_REFIT_LIVERY_BIDULGI_DC_TRAILER                        : (Diesel car trailer)
+STR_REFIT_LIVERY_BIDULGI_1960                              : (Red livery: 1962~1974)
+STR_REFIT_LIVERY_BIDULGI_1970                              : (Red livery: 1974~1983)
+STR_REFIT_LIVERY_BIDULGI_1980                              : (Blue livery: 1984~1994)
+STR_REFIT_LIVERY_BIDULGI_1990                              : (Green livery: 1994~2000)
+STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR                       : (Bidulgi livery)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980                 : (Tongil livery in 1980s)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990                 : (Tongil livery in 1990s)
+STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA                         : (Mugunghwa livery)
+STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE                       : (Blue livery: 1974~)
 
 # Refit (EUM)
-STR_REFIT_EUM260                                 : (EUM-260)
-STR_REFIT_EUM320                                 : (EUM-320)
+STR_REFIT_EUM260                                           : (EUM-260)
+STR_REFIT_EUM320                                           : (EUM-320)
 
 # Refit (Saemaeul car)
-STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE  : (KNR old executive car livery: 1970~1983)
-STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW : (KNR old executive car livery: Green & Yellow)
-STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS    : (Korail recent executive car livery)
-STR_REFIT_LIVERY_SAEMAEUL_ITX                    : (ITX-Saemaeul livery)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (KNR old executive car livery: 1970~1983)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW           : (KNR old executive car livery: Green & Yellow)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS              : (Korail recent executive car livery)
+STR_REFIT_LIVERY_SAEMAEUL_ITX                              : (ITX-Saemaeul livery)
 
 # Refit (Mugunghwa car)
-STR_REFIT_LIVERY_MUGUNGHWA_1970_1983             : (Livery A: 1970~1983)
-STR_REFIT_LIVERY_MUGUNGHWA_1970_1983_B           : (Livery B: 1970~1983)
-STR_REFIT_LIVERY_MUGUNGHWA_1984_1984             : (Livery C: 1984)
-STR_REFIT_LIVERY_MUGUNGHWA_1985_1989             : (Livery D: 1985~1989)
-STR_REFIT_LIVERY_MUGUNGHWA_1990_1999             : (Livery E: 1990~1999)
-STR_REFIT_LIVERY_MUGUNGHWA_2000_2002             : (Livery F: 2000~2002)
-STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE            : (Streamline)
-STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_1    : (Executive: Old livery of Haetae Heavy Ind.)
-STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_2    : (Executive: Recent livery of Haetae Heavy Ind.)
-STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HANJIN_1    : (Executive: Hanjin Heavy Ind.)
-STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE  : (Executive: Streamline old executive)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983                       : (Livery A: 1970~1983)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983_B                     : (Livery B: 1970~1983)
+STR_REFIT_LIVERY_MUGUNGHWA_1984_1984                       : (Livery C: 1984)
+STR_REFIT_LIVERY_MUGUNGHWA_1985_1989                       : (Livery D: 1985~1989)
+STR_REFIT_LIVERY_MUGUNGHWA_1990_1999                       : (Livery E: 1990~1999)
+STR_REFIT_LIVERY_MUGUNGHWA_2000_2002                       : (Livery F: 2000~2002)
+STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE                      : (Streamline)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_1              : (Executive: Old livery of Haetae Heavy Ind.)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_2              : (Executive: Recent livery of Haetae Heavy Ind.)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HANJIN_1              : (Executive: Hanjin Heavy Ind.)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE            : (Executive: Streamline old executive)
 
 # Refit (Tongil car)
-STR_REFIT_LIVERY_TONGIL_1963_1968                : (Livery A: 1963~1968, Red)
-STR_REFIT_LIVERY_TONGIL_1974_1981                : (Livery B: 1974~1981, Early green)
-STR_REFIT_LIVERY_TONGIL_1984_1984                : (Livery C: 1984, Green without cooler)
-STR_REFIT_LIVERY_TONGIL_1984_1988                : (Livery D: 1984~1988, Green with cooler)
-STR_REFIT_LIVERY_TONGIL_1994_1997                : (Livery E: 1994~1997, Navy & Yellow)
-STR_REFIT_LIVERY_TONGIL_1997_2004                : (Livery F: 1997~2004, Green & Yellow)
+STR_REFIT_LIVERY_TONGIL_1963_1968                          : (Livery A: 1963~1968, Red)
+STR_REFIT_LIVERY_TONGIL_1974_1981                          : (Livery B: 1974~1981, Early green)
+STR_REFIT_LIVERY_TONGIL_1984_1984                          : (Livery C: 1984, Green without cooler)
+STR_REFIT_LIVERY_TONGIL_1984_1988                          : (Livery D: 1984~1988, Green with cooler)
+STR_REFIT_LIVERY_TONGIL_1994_1997                          : (Livery E: 1994~1997, Navy & Yellow)
+STR_REFIT_LIVERY_TONGIL_1997_2004                          : (Livery F: 1997~2004, Green & Yellow)
 
 # Refit (Generator car)
-STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL_OLD        : (Old type / Tongil old livery)
-STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL            : (Old type / Tongil recent livery)
-STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED   : (Old type / Mugunghwa Yellow & Red)
-STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED_K : (Old type / Mugunghwa Yellow & Red + Korail logo)
-STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_BLUE_RED     : (Old type / Mugunghwa Blue & Red)
-STR_REFIT_LIVERY_GENERATOR_CAR_SAEMAEUL_BLUE_RED : (Old type / Saemaeul Blue & Red)
-# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED          : (reserved)
-# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED          : (reserved)
-# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED          : (reserved)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_YELLOW_RED   : (Long type / Mugunghwa Yellow & Red)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_ORANGE_RED   : (Long type / Mugunghwa Orange & Red)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_BLUE_RED     : (Long type / Mugunghwa Blue & Red)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_2   : (Long type / Saemaeul old livery)
-STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_3   : (Long type / Saemaeul new livery)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL_OLD                  : (Old type / Tongil old livery)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL                      : (Old type / Tongil recent livery)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED        : (Old type / Mugunghwa Yellow & Red)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED_K      : (Old type / Mugunghwa Yellow & Red + Korail logo)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_BLUE_RED          : (Old type / Mugunghwa Blue & Red)
+STR_REFIT_LIVERY_GENERATOR_CAR_SAEMAEUL_BLUE_RED           : (Old type / Saemaeul Blue & Red)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_YELLOW_RED             : (Long type / Mugunghwa Yellow & Red)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_ORANGE_RED             : (Long type / Mugunghwa Orange & Red)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_BLUE_RED               : (Long type / Mugunghwa Blue & Red)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_2             : (Long type / Saemaeul old livery)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_3             : (Long type / Saemaeul new livery)
 
 # Refit (Box car)
-STR_REFIT_LIVERY_BOX_2003                        : (2003 livery)
-STR_REFIT_LIVERY_BOX_1998_DARKBLUE               : (1998 livery: Dark blue)
-STR_REFIT_LIVERY_BOX_1998_GREEN                  : (1998 livery: Green)
-STR_REFIT_LIVERY_BOX_1998_BLUE                   : (1998 livery: Blue)
-STR_REFIT_LIVERY_BOX_1996_DARKBLUE               : (1996 livery: Dark blue)
-STR_REFIT_LIVERY_BOX_1996_GREEN                  : (1996 livery: Green)
-STR_REFIT_LIVERY_BOX_1996_BLUE                   : (1996 livery: Blue)
-STR_REFIT_LIVERY_BOX_1972                        : (1972 livery)
-STR_REFIT_LIVERY_BOX_1966_DARKBLUE               : (1966 livery: Dark blue)
-STR_REFIT_LIVERY_BOX_1966_GREEN                  : (1966 livery: Green)
-STR_REFIT_LIVERY_BOX_1966_BLUE                   : (1966 livery: Blue)
-STR_REFIT_LIVERY_BOX_1966_BLACK                  : (1966 livery: Black)
+STR_REFIT_LIVERY_BOX_2003                                  : (2003 livery)
+STR_REFIT_LIVERY_BOX_1998_DARKBLUE                         : (1998 livery: Dark blue)
+STR_REFIT_LIVERY_BOX_1998_GREEN                            : (1998 livery: Green)
+STR_REFIT_LIVERY_BOX_1998_BLUE                             : (1998 livery: Blue)
+STR_REFIT_LIVERY_BOX_1996_DARKBLUE                         : (1996 livery: Dark blue)
+STR_REFIT_LIVERY_BOX_1996_GREEN                            : (1996 livery: Green)
+STR_REFIT_LIVERY_BOX_1996_BLUE                             : (1996 livery: Blue)
+STR_REFIT_LIVERY_BOX_1972                                  : (1972 livery)
+STR_REFIT_LIVERY_BOX_1966_DARKBLUE                         : (1966 livery: Dark blue)
+STR_REFIT_LIVERY_BOX_1966_GREEN                            : (1966 livery: Green)
+STR_REFIT_LIVERY_BOX_1966_BLUE                             : (1966 livery: Blue)
+STR_REFIT_LIVERY_BOX_1966_BLACK                            : (1966 livery: Black)
 
 # Refit (Cafe car)
-STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED          : (Saemaeul cafe / KNR: Blue & Red)
-STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW      : (Saemaeul restaurant / KNR: Green & Yellow)
-STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW : (Saemaeul restaurant / Korail current livery)
-STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW       : (Saemaeul cafe / Korail current livery)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED                    : (Saemaeul cafe / KNR: Blue & Red)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW                : (Saemaeul restaurant / KNR: Green & Yellow)
+STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW           : (Saemaeul restaurant / Korail current livery)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW                 : (Saemaeul cafe / Korail current livery)
 
 # Refit (Sleeping car)
-STR_REFIT_LIVERY_SLEEPING_CAR_OLD                : (Old livery)
-STR_REFIT_LIVERY_SLEEPING_CAR_RECENT             : (Recent livery)
+STR_REFIT_LIVERY_SLEEPING_CAR_OLD                          : (Old livery)
+STR_REFIT_LIVERY_SLEEPING_CAR_RECENT                       : (Recent livery)
 
 # Refit (NDC)
-STR_REFIT_LIVERY_NDC_1                           : (Livery: 1984~1994)
-STR_REFIT_LIVERY_NDC_2                           : (Livery: 1994~2009)
-STR_REFIT_LIVERY_NDC_BUSINESS                    : (Business car)
+STR_REFIT_LIVERY_NDC_1                                     : (Livery: 1984~1994)
+STR_REFIT_LIVERY_NDC_2                                     : (Livery: 1994~2009)
+STR_REFIT_LIVERY_NDC_BUSINESS                              : (Business car)
 
 # Refit (DEC)
-STR_REFIT_LIVERY_DEC_1                           : (Livery: 1980~1986 : Saemaeul)
-STR_REFIT_LIVERY_DEC_2                           : (Livery: 1986~1994)
-STR_REFIT_LIVERY_DEC_3                           : (Livery: 1994~1999)
+STR_REFIT_LIVERY_DEC_1                                     : (Livery: 1980~1986 : Saemaeul)
+STR_REFIT_LIVERY_DEC_2                                     : (Livery: 1986~1994)
+STR_REFIT_LIVERY_DEC_3                                     : (Livery: 1994~1999)
 
 # Refit (EEC)
-STR_REFIT_LIVERY_EEC_1                           : (Livery: 1980~1994)
-STR_REFIT_LIVERY_EEC_2                           : (Livery: 1994~1998)
-STR_REFIT_LIVERY_EEC_3                           : (Livery: 1998~2001 : Tongil)
+STR_REFIT_LIVERY_EEC_1                                     : (Livery: 1980~1994)
+STR_REFIT_LIVERY_EEC_2                                     : (Livery: 1994~1998)
+STR_REFIT_LIVERY_EEC_3                                     : (Livery: 1998~2001 : Tongil)
 
 # Refit (Mail car)
-STR_REFIT_LIVERY_MAIL_CAR_1                      : (Livery: 1973~1975)
-STR_REFIT_LIVERY_MAIL_CAR_2                      : (Livery: 1975~)
-STR_REFIT_LIVERY_MAIL_CAR_3                      : (Livery: 1996~, Mugunghwa old livery)
-STR_REFIT_LIVERY_MAIL_CAR_4                      : (Livery: 2005~, Mugunghwa new livery)
-STR_REFIT_LIVERY_MAIL_CAR_5                      : (Livery: 2018~, baggage car)
+STR_REFIT_LIVERY_MAIL_CAR_1                                : (Livery: 1973~1975)
+STR_REFIT_LIVERY_MAIL_CAR_2                                : (Livery: 1975~)
+STR_REFIT_LIVERY_MAIL_CAR_3                                : (Livery: 1996~, Mugunghwa old livery)
+STR_REFIT_LIVERY_MAIL_CAR_4                                : (Livery: 2005~, Mugunghwa new livery)
+STR_REFIT_LIVERY_MAIL_CAR_5                                : (Livery: 2018~, baggage car)
 
 # Refit (etc)
-STR_REFIT_COLOUR_BLACK                           : (Black)
-STR_REFIT_COLOUR_BLUE                            : (Blue)
-STR_REFIT_COLOUR_SKYBLUE                         : (Skyblue)
-STR_REFIT_COLOUR_DARKBLUE                        : (Darkblue)
-STR_REFIT_COLOUR_BROWN                           : (Brown)
-STR_REFIT_COLOUR_RED                             : (Red)
-STR_REFIT_COLOUR_ORANGE                          : (Orange)
-STR_REFIT_COLOUR_DARKGREEN                       : (Darkgreen)
-STR_REFIT_COLOUR_OLIVE                           : (Olive)
-STR_REFIT_COLOUR_SILVER                          : (Silver)
+STR_REFIT_COLOUR_BLACK                                     : (Black)
+STR_REFIT_COLOUR_BLUE                                      : (Blue)
+STR_REFIT_COLOUR_SKYBLUE                                   : (Skyblue)
+STR_REFIT_COLOUR_DARKBLUE                                  : (Darkblue)
+STR_REFIT_COLOUR_BROWN                                     : (Brown)
+STR_REFIT_COLOUR_RED                                       : (Red)
+STR_REFIT_COLOUR_ORANGE                                    : (Orange)
+STR_REFIT_COLOUR_DARKGREEN                                 : (Darkgreen)
+STR_REFIT_COLOUR_OLIVE                                     : (Olive)
+STR_REFIT_COLOUR_SILVER                                    : (Silver)
 
 # Refit (Seoul metropolitan Line 1)
-STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME             : (KNR 1k Rheostatic first / 1st livery)
-STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME             : (KNR 1k Rheostatic first / 2nd livery)
-STR_REFIT_METRO_1K_RHEO_SECOND_1_NAME            : (KNR 1k Rheostatic second / 1st livery)
-STR_REFIT_METRO_1K_RHEO_SECOND_2_NAME            : (KNR 1k Rheostatic second / 2nd livery)
-STR_REFIT_METRO_1K_RHEO_SECOND_3_NAME            : (Korail 1k Rheostatic second / Current livery)
-STR_REFIT_METRO_1K_RHEO_LAST_1_NAME              : (KNR 1k Rheostatic last / Old livery)
-STR_REFIT_METRO_1K_RHEO_LAST_2_NAME              : (Korail 1k Rheostatic last / Current livery)
-STR_REFIT_METRO_311K_1_1_NAME                    : (KNR 311k beginning / Old livery)
-STR_REFIT_METRO_311K_1_2_NAME                    : (Korail 311k beginning / Current livery)
-STR_REFIT_METRO_311K_2_1_NAME                    : (KNR 311k / Old livery)
-STR_REFIT_METRO_311K_2_2_NAME                    : (Korail 311k / Current livery)
-STR_REFIT_METRO_3XXK_ST_NAME                     : (Korail 3xxk ST)
-STR_REFIT_METRO_3XXK_AL_NAME                     : (Korail 3xxk AL)
-STR_REFIT_METRO_321K_BIKE_NAME                   : (Korail 321k Bike livery)
-STR_REFIT_METRO_371K_BLANK_NAME                  : (Korail 371k / Blank livery)
-STR_REFIT_METRO_371K_CC_NAME                     : (Korail 371k / Company colour)
-STR_REFIT_METRO_371K_381K_1ST_NAME               : (Korail 371k, 381k 1st)
-STR_REFIT_METRO_371K_381K_1ST_NAME_D             : ({RED}will be deprecated{BLACK} - Korail 371k, 381k 1st)
-STR_REFIT_METRO_381K_2ND_NAME                    : (Korail 381k 2nd)
-STR_REFIT_METRO_381K_2ND_NAME_D                  : ({RED}will be deprecated{BLACK} - Korail 381k 2nd)
-STR_REFIT_METRO_LINE_1_2019_NAME                 : (Korail, introduced in 2019)
-STR_REFIT_METRO_LINE_1_2021_NAME                 : (Korail, introduced in 2021)
-STR_REFIT_METRO_LINE_1_2022_W_NAME               : (Korail, introduced in 2022 by Woojin)
-STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME        : (SMetro 1k First rheostatic)
-STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME     : (SMetro 1k Modified rheostatic)
-STR_REFIT_METRO_SMETRO_1K_VVVF_NAME              : (SMetro 1k VVVF)
+STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME                       : (KNR 1k Rheostatic first / 1st livery)
+STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME                       : (KNR 1k Rheostatic first / 2nd livery)
+STR_REFIT_METRO_1K_RHEO_SECOND_1_NAME                      : (KNR 1k Rheostatic second / 1st livery)
+STR_REFIT_METRO_1K_RHEO_SECOND_2_NAME                      : (KNR 1k Rheostatic second / 2nd livery)
+STR_REFIT_METRO_1K_RHEO_SECOND_3_NAME                      : (Korail 1k Rheostatic second / Current livery)
+STR_REFIT_METRO_1K_RHEO_LAST_1_NAME                        : (KNR 1k Rheostatic last / Old livery)
+STR_REFIT_METRO_1K_RHEO_LAST_2_NAME                        : (Korail 1k Rheostatic last / Current livery)
+STR_REFIT_METRO_311K_1_1_NAME                              : (KNR 311k beginning / Old livery)
+STR_REFIT_METRO_311K_1_2_NAME                              : (Korail 311k beginning / Current livery)
+STR_REFIT_METRO_311K_2_1_NAME                              : (KNR 311k / Old livery)
+STR_REFIT_METRO_311K_2_2_NAME                              : (Korail 311k / Current livery)
+STR_REFIT_METRO_3XXK_ST_NAME                               : (Korail 3xxk ST)
+STR_REFIT_METRO_3XXK_AL_NAME                               : (Korail 3xxk AL)
+STR_REFIT_METRO_321K_BIKE_NAME                             : (Korail 321k Bike livery)
+STR_REFIT_METRO_371K_BLANK_NAME                            : (Korail 371k / Blank livery)
+STR_REFIT_METRO_371K_CC_NAME                               : (Korail 371k / Company colour)
+STR_REFIT_METRO_371K_381K_1ST_NAME                         : (Korail 371k, 381k 1st)
+STR_REFIT_METRO_371K_381K_1ST_NAME_D                       : ({RED}will be deprecated{BLACK} - Korail 371k, 381k 1st)
+STR_REFIT_METRO_381K_2ND_NAME                              : (Korail 381k 2nd)
+STR_REFIT_METRO_381K_2ND_NAME_D                            : ({RED}will be deprecated{BLACK} - Korail 381k 2nd)
+STR_REFIT_METRO_LINE_1_2019_NAME                           : (Korail, introduced in 2019)
+STR_REFIT_METRO_LINE_1_2021_NAME                           : (Korail, introduced in 2021)
+STR_REFIT_METRO_LINE_1_2022_W_NAME                         : (Korail, introduced in 2022 by Woojin)
+STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME                  : (SMetro 1k First rheostatic)
+STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME               : (SMetro 1k Modified rheostatic)
+STR_REFIT_METRO_SMETRO_1K_VVVF_NAME                        : (SMetro 1k VVVF)
 
 # Refit (Seoul Line 2)
-STR_REFIT_METRO_2K_MELCO_NAME                    : (SMetro 2k MELCO)
-STR_REFIT_METRO_2K_CHOPPER_NAME                  : (SMetro 2k CHOPPER)
-STR_REFIT_METRO_2K_VVVF_1ST_NAME                 : (SMetro 2k 1st VVVF)
-STR_REFIT_METRO_2K_VVVF_2ND_NAME                 : (SMetro 2k 2nd VVVF)
-STR_REFIT_METRO_2K_VVVF_3RD_NAME                 : (SMetro 2k 3rd VVVF)
-STR_REFIT_METRO_2K_VVVF_4TH_NAME                 : (SMetro 2k 4th VVVF)
-STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME            : (SMetro 2k Modified rheostatic)
+STR_REFIT_METRO_2K_MELCO_NAME                              : (SMetro 2k MELCO)
+STR_REFIT_METRO_2K_CHOPPER_NAME                            : (SMetro 2k CHOPPER)
+STR_REFIT_METRO_2K_VVVF_1ST_NAME                           : (SMetro 2k 1st VVVF)
+STR_REFIT_METRO_2K_VVVF_2ND_NAME                           : (SMetro 2k 2nd VVVF)
+STR_REFIT_METRO_2K_VVVF_3RD_NAME                           : (SMetro 2k 3rd VVVF)
+STR_REFIT_METRO_2K_VVVF_4TH_NAME                           : (SMetro 2k 4th VVVF)
+STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME                      : (SMetro 2k Modified rheostatic)
 
 # Refit (Seoul metropolitan 3)
-STR_REFIT_METRO_3K_VVVF_1ST_1_NAME               : (KNR 3k VVVF / Old livery)
-STR_REFIT_METRO_3K_VVVF_1ST_2_NAME               : (Korail 3k VVVF / Current livery)
-STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME           : (SMetro 3k CHOPPER)
-STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME  : (SMetro 3k Modified CHOPPER)
-STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME          : (SMetro 3k VVVF 1st)
-STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME          : (SMetro 3k VVVF 2nd)
-STR_REFIT_METRO_LINE_3_2022_NAME                 : (Korail, introduced in 2022)
-STR_REFIT_METRO_LINE_3_2022_W_NAME               : (Korail, introduced in 2022 by Woojin)
+STR_REFIT_METRO_3K_VVVF_1ST_1_NAME                         : (KNR 3k VVVF / Old livery)
+STR_REFIT_METRO_3K_VVVF_1ST_2_NAME                         : (Korail 3k VVVF / Current livery)
+STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME                     : (SMetro 3k CHOPPER)
+STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME            : (SMetro 3k Modified CHOPPER)
+STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME                    : (SMetro 3k VVVF 1st)
+STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME                    : (SMetro 3k VVVF 2nd)
+STR_REFIT_METRO_LINE_3_2022_NAME                           : (Korail, introduced in 2022)
+STR_REFIT_METRO_LINE_3_2022_W_NAME                         : (Korail, introduced in 2022 by Woojin)
 
 # Refit (Seoul metropolitan 4)
-STR_REFIT_METRO_341K_VVVF_1ST_1_NAME             : (Korail 341k 1st VVVF / Old livery)
-STR_REFIT_METRO_341K_VVVF_1ST_2_NAME             : (Korail 341k 1st VVVF / Current livery)
-STR_REFIT_METRO_341K_VVVF_2ND_1_NAME             : (Korail 341k 2nd VVVF / Old livery)
-STR_REFIT_METRO_341K_VVVF_2ND_2_NAME             : (Korail 341k 2nd VVVF / Current livery)
-STR_REFIT_METRO_LINE_4_2019_NAME                 : (Korail, introduced in 2019)
-STR_REFIT_METRO_LINE_4_2021_NAME                 : (Korail, introduced in 2021)
-STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME      : (SMetro 4k 1st·2nd VVVF)
-STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME          : (SMetro 4k 3rd VVVF in 2020)
+STR_REFIT_METRO_341K_VVVF_1ST_1_NAME                       : (Korail 341k 1st VVVF / Old livery)
+STR_REFIT_METRO_341K_VVVF_1ST_2_NAME                       : (Korail 341k 1st VVVF / Current livery)
+STR_REFIT_METRO_341K_VVVF_2ND_1_NAME                       : (Korail 341k 2nd VVVF / Old livery)
+STR_REFIT_METRO_341K_VVVF_2ND_2_NAME                       : (Korail 341k 2nd VVVF / Current livery)
+STR_REFIT_METRO_LINE_4_2019_NAME                           : (Korail, introduced in 2019)
+STR_REFIT_METRO_LINE_4_2021_NAME                           : (Korail, introduced in 2021)
+STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME                : (SMetro 4k 1st·2nd VVVF)
+STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME                    : (SMetro 4k 3rd VVVF in 2020)
 
 # Refit (Seoul Metro Line 5-8, Seoul Metro Line9)
-STR_REFIT_METRO_SMETRO_SR0X_NAME                 : (SMetro SR0x VVVF)
-STR_REFIT_METRO_SMETRO_5K_1ST_2ND_NAME           : (SMetro 5k 1st·2nd VVVF)
-STR_REFIT_METRO_SMETRO_5K_3RD_NAME               : (SMetro 5k 3rd VVVF)
-STR_REFIT_METRO_SMETRO_5K_4TH_NAME               : (SMetro 5k 4th VVVF)
-STR_REFIT_METRO_SMETRO_6K_1ST_NAME               : (SMetro 6k VVVF)
-STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME           : (SMetro 7k 1st·2nd VVVF)
-STR_REFIT_METRO_SMETRO_7K_4TH_NAME               : (SMetro 7k 4th VVVF)
-STR_REFIT_METRO_SMETRO_7K_5TH_NAME               : (SMetro 7k 5th VVVF)
-STR_REFIT_METRO_SMETRO_8K_1ST_NAME               : (SMetro 8k VVVF)
-STR_REFIT_METRO_SMETRO_9K_1ST_NAME               : (SMetro9 9k VVVF)
+STR_REFIT_METRO_SMETRO_SR0X_NAME                           : (SMetro SR0x VVVF)
+STR_REFIT_METRO_SMETRO_5K_1ST_2ND_NAME                     : (SMetro 5k 1st·2nd VVVF)
+STR_REFIT_METRO_SMETRO_5K_3RD_NAME                         : (SMetro 5k 3rd VVVF)
+STR_REFIT_METRO_SMETRO_5K_4TH_NAME                         : (SMetro 5k 4th VVVF)
+STR_REFIT_METRO_SMETRO_6K_1ST_NAME                         : (SMetro 6k VVVF)
+STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME                     : (SMetro 7k 1st·2nd VVVF)
+STR_REFIT_METRO_SMETRO_7K_4TH_NAME                         : (SMetro 7k 4th VVVF)
+STR_REFIT_METRO_SMETRO_7K_5TH_NAME                         : (SMetro 7k 5th VVVF)
+STR_REFIT_METRO_SMETRO_8K_1ST_NAME                         : (SMetro 8k VVVF)
+STR_REFIT_METRO_SMETRO_9K_1ST_NAME                         : (SMetro9 9k VVVF)
 
 # Refit (Suin-Bungdang Line)
-STR_REFIT_METRO_351K_VVVF_1ST_1_NAME             : (Korail 315k 1st VVVF / Old livery)
-STR_REFIT_METRO_351K_VVVF_1ST_2_NAME             : (Korail 351k 1st VVVF / Current livery)
-STR_REFIT_METRO_351K_VVVF_2ND_NAME               : (Korail 351k 2nd VVVF)
-STR_REFIT_METRO_351K_VVVF_3RD_NAME               : (Korail 351k 3rd VVVF)
-STR_REFIT_METRO_351K_2021_NAME                   : (Korail, introduced in 2021)
+STR_REFIT_METRO_351K_VVVF_1ST_1_NAME                       : (Korail 315k 1st VVVF / Old livery)
+STR_REFIT_METRO_351K_VVVF_1ST_2_NAME                       : (Korail 351k 1st VVVF / Current livery)
+STR_REFIT_METRO_351K_VVVF_2ND_NAME                         : (Korail 351k 2nd VVVF)
+STR_REFIT_METRO_351K_VVVF_3RD_NAME                         : (Korail 351k 3rd VVVF)
+STR_REFIT_METRO_351K_2021_NAME                             : (Korail, introduced in 2021)
 
 # Refit (Gyeongchun Line)
-STR_REFIT_METRO_361K_VVVF_NAME                   : (Korail 361k VVVF)
+STR_REFIT_METRO_361K_VVVF_NAME                             : (Korail 361k VVVF)
 
 # Refit (Incheon intertional Airport Line (A'REX)
-STR_REFIT_METRO_AREX_1K_NONSTOP_NAME             : (A'REX 1k Express)
-STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME      : (A'REX 1k Express - Orange)
-STR_REFIT_METRO_AREX_2K_NAME                     : (A'REX 2k All-stop)
+STR_REFIT_METRO_AREX_1K_NONSTOP_NAME                       : (A'REX 1k Express)
+STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME                : (A'REX 1k Express - Orange)
+STR_REFIT_METRO_AREX_2K_NAME                               : (A'REX 2k All-stop)
 
 # Refit (Seohae Line)
-STR_REFIT_METRO_391K_1ST_NAME                    : (Korail 391k 1st)
-STR_REFIT_METRO_391K_1ST_NAME_D                  : ({RED}will be deprecated{BLACK} - Korail 391k 1st)
-STR_REFIT_METRO_391K_2ND_NAME                    : (Korail 391k 2nd)
+STR_REFIT_METRO_391K_1ST_NAME                              : (Korail 391k 1st)
+STR_REFIT_METRO_391K_1ST_NAME_D                            : ({RED}will be deprecated{BLACK} - Korail 391k 1st)
+STR_REFIT_METRO_391K_2ND_NAME                              : (Korail 391k 2nd)
 
 # Refit (Other Lines)
-STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME   : (Incheon Metro 1k VVVF 1st)
-STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_2022_NAME: (Incheon Metro 1k VVVF 1st, introduced in 2022)
-STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME   : (Incheon Metro 1k VVVF 2nd)
-STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME            : (Former)
-STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME            : (Latter)
-STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME          : (Busan Metro 1k 1st)
-STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME          : (Busan Metro 1k 2nd)
-STR_REFIT_METRO_DAEJEON_METRO_1K_NAME            : (Daejeon Metro 1k)
-STR_REFIT_METRO_GWANGJU_METRO_1K_NAME            : (Gwangju Metro 1k)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME             : (Incheon Metro 1k VVVF 1st)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_2022_NAME        : (Incheon Metro 1k VVVF 1st, introduced in 2022)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME             : (Incheon Metro 1k VVVF 2nd)
+STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME                      : (Former)
+STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME                      : (Latter)
+STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME                    : (Busan Metro 1k 1st)
+STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME                    : (Busan Metro 1k 2nd)
+STR_REFIT_METRO_DAEJEON_METRO_1K_NAME                      : (Daejeon Metro 1k)
+STR_REFIT_METRO_GWANGJU_METRO_1K_NAME                      : (Gwangju Metro 1k)
 
 
 # Refit (Additional text)
-STR_REFIT_ADDITIONAL_ABLE                        :{BLACK}Changing model/livery: {GREEN}Available
-STR_REFIT_ADDITIONAL_UNABLE                      :{BLACK}Changing model/livery: {RED}Unavailable
-STR_REFIT_ADDITIONAL_AMBIGUOUS                   :{BLACK}Changing model/livery: {ORANGE}Ambigous - differ from engines
+STR_REFIT_ADDITIONAL_ABLE                                  :{BLACK}Changing model/livery: {GREEN}Available
+STR_REFIT_ADDITIONAL_UNABLE                                :{BLACK}Changing model/livery: {RED}Unavailable
+STR_REFIT_ADDITIONAL_AMBIGUOUS                             :{BLACK}Changing model/livery: {ORANGE}Ambigous - differ from engines
 
 
 # Parameters
-STR_PARAM_ADD_TYPE_NAME                          :Train to add:
-STR_PARAM_ADD_TYPE_DESC                          :Select the train to add. (default: all)
-STR_PARAM_ADD_TYPE_ALL                           :All
-STR_PARAM_ADD_TYPE_ONLY_TRAIN                    :Trains except subways
-STR_PARAM_ADD_TYPE_ONLY_METRO                    :Only subways
-STR_PARAM_SPEED_GENERAL_NAME                     :Speed coefficient of General trains
-STR_PARAM_SPEED_GENERAL_DESC                     :Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon, KTX-EUM and most of other trains
-STR_PARAM_SPEED_SUBEXPRESS_NAME                  :Speed coefficient of Semi-express trains
-STR_PARAM_SPEED_SUBEXPRESS_DESC                  :Speed coefficient of semi-express trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: A'REX 1k (Express), Gyeongchun ITX-Cheongchun
-STR_PARAM_SPEED_METRO_NAME                       :Speed coefficient of Subways
-STR_PARAM_SPEED_METRO_DESC                       :Speed coefficient of subway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Except for general and semi-express trains
-STR_PARAM_SPEED_LIGHTRAIL1_NAME                  :Speed coefficient of Light Railways (rubber)
-STR_PARAM_SPEED_LIGHTRAIL1_DESC                  :Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4, Busan·Gimhae LRT, Daegu Line 3, Gimpo Goldline, Incheon Line 2, Uisinseol Line, Uijeongbu LRT, Yongin Everline
-STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME:No vehicle attachment restrictions
-STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC:Disable vehicle attachment restrictions for some vehicles. If enable, you can attach wagons to any locomotives.
-STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_NAME    :No vehicle length restrictions
-STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_DESC    :Disable vehicle length restrictions for some vehicles. If enables, you can make a vehicle shorter or longer than the restrictions of this NewGRF.
+STR_PARAM_ADD_TYPE_NAME                                    :Train to add:
+STR_PARAM_ADD_TYPE_DESC                                    :Select the train to add. (default: all)
+STR_PARAM_ADD_TYPE_ALL                                     :All
+STR_PARAM_ADD_TYPE_ONLY_TRAIN                              :Trains except subways
+STR_PARAM_ADD_TYPE_ONLY_METRO                              :Only subways
+STR_PARAM_SPEED_GENERAL_NAME                               :Speed coefficient of General trains
+STR_PARAM_SPEED_GENERAL_DESC                               :Speed coefficient of general trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Locomotives, CDC, Saemaeul DHC(PP), KTX, KTX-Sancheon, KTX-EUM and most of other trains
+STR_PARAM_SPEED_SUBEXPRESS_NAME                            :Speed coefficient of Semi-express trains
+STR_PARAM_SPEED_SUBEXPRESS_DESC                            :Speed coefficient of semi-express trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: A'REX 1k (Express), Gyeongchun ITX-Cheongchun
+STR_PARAM_SPEED_METRO_NAME                                 :Speed coefficient of Subways
+STR_PARAM_SPEED_METRO_DESC                                 :Speed coefficient of subway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Except for general and semi-express trains
+STR_PARAM_SPEED_LIGHTRAIL1_NAME                            :Speed coefficient of Light Railways (rubber)
+STR_PARAM_SPEED_LIGHTRAIL1_DESC                            :Speed coefficient of light railway trains. Train's speed will be faster when you set this option as larger value.{}Set this value as 10 if you want to apply the real speed.{}Apply: Busan Line 4, Busan·Gimhae LRT, Daegu Line 3, Gimpo Goldline, Incheon Line 2, Uisinseol Line, Uijeongbu LRT, Yongin Everline
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME          :No vehicle attachment restrictions
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC          :Disable vehicle attachment restrictions for some vehicles. If enable, you can attach wagons to any locomotives.
+STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_NAME              :No vehicle length restrictions
+STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_DESC              :Disable vehicle length restrictions for some vehicles. If enables, you can make a vehicle shorter or longer than the restrictions of this NewGRF.
 
-STR_PARAM_FACTOR_COST_NAME                       :Cost
-STR_PARAM_FACTOR_COST_DESC                       :Cost of trains. The higher this value, the more expensive cost to buy trains.
-STR_PARAM_FACTOR_RUNNING_COST_NAME               :Running cost
-STR_PARAM_FACTOR_RUNNING_COST_DESC               :Running cost of trains. The higher this value, the more expensive cost to running trains.
-STR_PARAM_FACTOR_CARGO_CAPACITY_NAME             :Cargo capacity
-STR_PARAM_FACTOR_CARGO_CAPACITY_DESC             :Cargo capacity of trains. The higher this value, the more cargo can be delivered.{}However, subways are not affected by this option.{}It is the same as real if you set this by 'x2'.{}{RED}Warning!{WHITE} This setting will be applied from newly created trains.
-STR_PARAM_FACTOR_LOADING_SPEED_NAME              :Loading speed
-STR_PARAM_FACTOR_LOADING_SPEED_DESC              :Loading speed of trains. The higher this value, the more cargo can load cargos faster.
-STR_PARAM_WAGON_SPEED_LIMIT_NAME                 :Unlock Wagon speed limit
-STR_PARAM_WAGON_SPEED_LIMIT_DESC                 :You may unlock wagon
+STR_PARAM_FACTOR_COST_NAME                                 :Cost
+STR_PARAM_FACTOR_COST_DESC                                 :Cost of trains. The higher this value, the more expensive cost to buy trains.
+STR_PARAM_FACTOR_RUNNING_COST_NAME                         :Running cost
+STR_PARAM_FACTOR_RUNNING_COST_DESC                         :Running cost of trains. The higher this value, the more expensive cost to running trains.
+STR_PARAM_FACTOR_CARGO_CAPACITY_NAME                       :Cargo capacity
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC                       :Cargo capacity of trains. The higher this value, the more cargo can be delivered.{}However, subways are not affected by this option.{}It is the same as real if you set this by 'x2'.{}{RED}Warning!{WHITE} This setting will be applied from newly created trains.
+STR_PARAM_FACTOR_LOADING_SPEED_NAME                        :Loading speed
+STR_PARAM_FACTOR_LOADING_SPEED_DESC                        :Loading speed of trains. The higher this value, the more cargo can load cargos faster.
+STR_PARAM_WAGON_SPEED_LIMIT_NAME                           :Unlock Wagon speed limit
+STR_PARAM_WAGON_SPEED_LIMIT_DESC                           :You may unlock wagon
 
 
 # Parameters' value
-STR_PARAM_OPT_FACTOR_BY_0                        :x0
-STR_PARAM_OPT_FACTOR_BY_1_32                     :x1/32
-STR_PARAM_OPT_FACTOR_BY_1_16                     :x1/16
-STR_PARAM_OPT_FACTOR_BY_1_8                      :x1/8
-STR_PARAM_OPT_FACTOR_BY_1_4                      :x1/4
-STR_PARAM_OPT_FACTOR_BY_1_2                      :x1/2
-STR_PARAM_OPT_FACTOR_BY_1_2_DEFAULT              :x1/2 (default)
-STR_PARAM_OPT_FACTOR_BY_1                        :x1
-STR_PARAM_OPT_FACTOR_BY_1_DEFAULT                :x1 (default)
-STR_PARAM_OPT_FACTOR_BY_2                        :x2
-STR_PARAM_OPT_FACTOR_BY_4                        :x4
-STR_PARAM_OPT_FACTOR_BY_8                        :x8
-STR_PARAM_OPT_FACTOR_BY_16                       :x16
-STR_PARAM_OPT_FACTOR_BY_32                       :x32
-STR_PARAM_OPT_FACTOR_BY_64                       :x64
-STR_PARAM_OPT_FACTOR_BY_128                      :x128
-STR_PARAM_OPT_FACTOR_BY_256                      :x256
-STR_PARAM_OPT_FACTOR_BY_512                      :x512
-# STR_PARAM_OPT_FACTOR_BY_1024                   :x1024
-# STR_PARAM_OPT_FACTOR_BY_2048                   :x2048
-# STR_PARAM_OPT_FACTOR_BY_4096                   :x4096
+STR_PARAM_OPT_FACTOR_BY_0                                  :x0
+STR_PARAM_OPT_FACTOR_BY_1_32                               :x1/32
+STR_PARAM_OPT_FACTOR_BY_1_16                               :x1/16
+STR_PARAM_OPT_FACTOR_BY_1_8                                :x1/8
+STR_PARAM_OPT_FACTOR_BY_1_4                                :x1/4
+STR_PARAM_OPT_FACTOR_BY_1_2                                :x1/2
+STR_PARAM_OPT_FACTOR_BY_1_2_DEFAULT                        :x1/2 (default)
+STR_PARAM_OPT_FACTOR_BY_1                                  :x1
+STR_PARAM_OPT_FACTOR_BY_1_DEFAULT                          :x1 (default)
+STR_PARAM_OPT_FACTOR_BY_2                                  :x2
+STR_PARAM_OPT_FACTOR_BY_4                                  :x4
+STR_PARAM_OPT_FACTOR_BY_8                                  :x8
+STR_PARAM_OPT_FACTOR_BY_16                                 :x16
+STR_PARAM_OPT_FACTOR_BY_32                                 :x32
+STR_PARAM_OPT_FACTOR_BY_64                                 :x64
+STR_PARAM_OPT_FACTOR_BY_128                                :x128
+STR_PARAM_OPT_FACTOR_BY_256                                :x256
+STR_PARAM_OPT_FACTOR_BY_512                                :x512
+# STR_PARAM_OPT_FACTOR_BY_1024                             :x1024
+# STR_PARAM_OPT_FACTOR_BY_2048                             :x2048
+# STR_PARAM_OPT_FACTOR_BY_4096                             :x4096
 
-STR_PARAM_SIMPLIZE_WAYPOINT_NAME                 :Make waypoint's graphics simple
-STR_PARAM_SIMPLIZE_WAYPOINT_DESC                 :Make the graphic of waypoints simple by eliminating waypoint buildings.
-STR_PARAM_USE_MAX_DESIGN_SPEED_NAME              :Use maximum design speed
-STR_PARAM_USE_MAX_DESIGN_SPEED_DESC              :Use maximum design speed instead of operating speed. Max. design speed is usually faster than operating speed.
-STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME         :Disable original engines
-STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC         :Disable original engines to find KTS passenger coaches quickly. Monorail and Maglev engines will not be disabled, only (electric) rail engines will be disabled.
-STR_PARAM_MAX_SPEED_TYPE_NAME                    :Type of Max. speed
-STR_PARAM_MAX_SPEED_TYPE_DESC                    :Select the type of the maximum speed of trains. Designed speed is slightly faster than service speed (eg. KTX-1 : service speed=300km/h, designed=330km/h)
-STR_PARAM_MAX_SPEED_TYPE_OPT_1                   :Service
-STR_PARAM_MAX_SPEED_TYPE_OPT_2                   :Design
+STR_PARAM_SIMPLIZE_WAYPOINT_NAME                           :Make waypoint's graphics simple
+STR_PARAM_SIMPLIZE_WAYPOINT_DESC                           :Make the graphic of waypoints simple by eliminating waypoint buildings.
+STR_PARAM_USE_MAX_DESIGN_SPEED_NAME                        :Use maximum design speed
+STR_PARAM_USE_MAX_DESIGN_SPEED_DESC                        :Use maximum design speed instead of operating speed. Max. design speed is usually faster than operating speed.
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME                   :Disable original engines
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC                   :Disable original engines to find KTS passenger coaches quickly. Monorail and Maglev engines will not be disabled, only (electric) rail engines will be disabled.
+STR_PARAM_MAX_SPEED_TYPE_NAME                              :Type of Max. speed
+STR_PARAM_MAX_SPEED_TYPE_DESC                              :Select the type of the maximum speed of trains. Designed speed is slightly faster than service speed (eg. KTX-1 : service speed=300km/h, designed=330km/h)
+STR_PARAM_MAX_SPEED_TYPE_OPT_1                             :Service
+STR_PARAM_MAX_SPEED_TYPE_OPT_2                             :Design
 
 # Light Railway
-STR_RAILTYPE_LIGHT_RAIL_TRACK_NAME               :Light Rail Tracks
-STR_RAILTYPE_LIGHT_RAIL_TRACK_DROPDOWN_MENU      :[KTS] Light Rail Tracks Construction
-STR_RAILTYPE_LIGHT_RAIL_TRACK_TOOLBAR_CAPTION    :Light Rail Track Construction
-STR_RAILTYPE_LIGHT_RAIL_BUILD_VEHICLE_CAPTION    :New Light Rail Vehicle
-STR_RAILTYPE_LIGHT_RAIL_NEW_ENGINE               :Light Rail vehicle
-STR_RAILTYPE_LIGHT_RAIL_AUTOREPLACE              :Light Rail Vehicles
+STR_RAILTYPE_LIGHT_RAIL_TRACK_NAME                         :Light Rail Tracks
+STR_RAILTYPE_LIGHT_RAIL_TRACK_DROPDOWN_MENU                :[KTS] Light Rail Tracks Construction
+STR_RAILTYPE_LIGHT_RAIL_TRACK_TOOLBAR_CAPTION              :Light Rail Track Construction
+STR_RAILTYPE_LIGHT_RAIL_BUILD_VEHICLE_CAPTION              :New Light Rail Vehicle
+STR_RAILTYPE_LIGHT_RAIL_NEW_ENGINE                         :Light Rail vehicle
+STR_RAILTYPE_LIGHT_RAIL_AUTOREPLACE                        :Light Rail Vehicles
 
 # Narrow gauge
-STR_RAILTYPE_NARROW_GAUGE_TRACK_NAME             :762mm Narrow Gauge Tracks
-STR_RAILTYPE_NARROW_GAUGE_TRACK_DROPDOWN_MENU    :[KTS] 762mm Narrow Gauge Tracks Construction
-STR_RAILTYPE_NARROW_GAUGE_TRACK_TOOLBAR_CAPTION  :Narrow Gauge Track Construction
-STR_RAILTYPE_NARROW_GAUGE_BUILD_VEHICLE_CAPTION  :New Narrow Gauge Vehicle
-STR_RAILTYPE_NARROW_GAUGE_NEW_ENGINE             :Narrow Gauge vehicle
-STR_RAILTYPE_NARROW_GAUGE_AUTOREPLACE            :Narrow Gauge Vehicles
+STR_RAILTYPE_NARROW_GAUGE_TRACK_NAME                       :762mm Narrow Gauge Tracks
+STR_RAILTYPE_NARROW_GAUGE_TRACK_DROPDOWN_MENU              :[KTS] 762mm Narrow Gauge Tracks Construction
+STR_RAILTYPE_NARROW_GAUGE_TRACK_TOOLBAR_CAPTION            :Narrow Gauge Track Construction
+STR_RAILTYPE_NARROW_GAUGE_BUILD_VEHICLE_CAPTION            :New Narrow Gauge Vehicle
+STR_RAILTYPE_NARROW_GAUGE_NEW_ENGINE                       :Narrow Gauge vehicle
+STR_RAILTYPE_NARROW_GAUGE_AUTOREPLACE                      :Narrow Gauge Vehicles
 
 # Buffer Object
-STR_OBJ_BUFFER_KTSR                              :[KTS] Buffers
+STR_OBJ_BUFFER_KTSR                                        :[KTS] Buffers
 
 # Errors
-STR_ERROR_NO_ATTACH                              :You can't attach this car here
-STR_ERROR_NOT_ENOUGH_LENGTH4                     :It's too short. It should be equal or more than 4 cars at least.
-STR_ERROR_TOO_LONG_LENGTH2                       :It's too long. It should be equal or less than 2 cars at most.
-STR_ERROR_TOO_LONG_LENGTH4                       :It's too long. It should be equal or less than 4 cars at most.
+STR_ERROR_NO_ATTACH                                        :You can't attach this car here
+STR_ERROR_NOT_ENOUGH_LENGTH4                               :It's too short. It should be equal or more than 4 cars at least.
+STR_ERROR_TOO_LONG_LENGTH2                                 :It's too long. It should be equal or less than 2 cars at most.
+STR_ERROR_TOO_LONG_LENGTH4                                 :It's too long. It should be equal or less than 4 cars at most.
