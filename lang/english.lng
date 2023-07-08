@@ -90,6 +90,7 @@ STR_GWANGJU_METRO_1_NAME                                   :Gwangju Line 1
 STR_UISINSEOL_NAME                                         :Ui-Sinseol Line
 STR_GIMPO_GOLDLINE_NAME                                    :Gimpo Goldline
 STR_UIJEONGBU_NAME                                         :Uijeongbu LRT
+STR_GTX_A_NAME                                             :GTX-A
 
 
 # Liveries
