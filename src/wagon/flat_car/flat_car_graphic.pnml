@@ -4,18 +4,6 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Template
-template tmpl_flat_car_container(x, y) {
-    [x+0,     y,     8,    19,     -3,    -11]
-    [x+20,    y,    22,    16,    -15,     -8]
-    [x+50,    y,    31,    11,    -14,     -7]
-    [x+90,    y,    22,    16,     -6,     -9]
-    [x+120,   y,     8,    19,     -3,    -10]
-    [x+140,   y,    22,    16,    -15,     -9]
-    [x+170,   y,    31,    11,    -14,     -6]
-    [x+210,   y,    22,    16,     -6,     -9]
-}
-
 // Colours
 #include "flat_car_blue_graphic.pnml"
 #include "flat_car_black_graphic.pnml"
