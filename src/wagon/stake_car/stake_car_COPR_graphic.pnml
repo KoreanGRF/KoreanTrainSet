@@ -8,27 +8,30 @@
  */
 
 // Graphics when loads Coppers
-spriteset(set_STAKE_CAR_COPR_loading_1A_wagon, "./src/wagon/stake_car/cargo_COPR.png") {
+spriteset(set_STAKE_CAR_COPR_loading_0_wagon, "./src/wagon/stake_car/cargo_COPR.png") {
     tmpl_stake_car(0, 0)
 }
-spriteset(set_STAKE_CAR_COPR_loading_1B_wagon, "./src/wagon/stake_car/cargo_COPR.png") {
+spriteset(set_STAKE_CAR_COPR_loading_1A_wagon, "./src/wagon/stake_car/cargo_COPR.png") {
     tmpl_stake_car(0, 30)
 }
-spriteset(set_STAKE_CAR_COPR_loading_2_wagon, "./src/wagon/stake_car/cargo_COPR.png") {
+spriteset(set_STAKE_CAR_COPR_loading_1B_wagon, "./src/wagon/stake_car/cargo_COPR.png") {
     tmpl_stake_car(0, 60)
 }
-spriteset(set_STAKE_CAR_COPR_full_wagon, "./src/wagon/stake_car/cargo_COPR.png") {
+spriteset(set_STAKE_CAR_COPR_loading_2_wagon, "./src/wagon/stake_car/cargo_COPR.png") {
     tmpl_stake_car(0, 90)
+}
+spriteset(set_STAKE_CAR_COPR_full_wagon, "./src/wagon/stake_car/cargo_COPR.png") {
+    tmpl_stake_car(0, 120)
 }
 spritegroup sg_STAKE_CAR_COPR_A_wagon {
     loading: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_COPR_loading_0_wagon,
         set_STAKE_CAR_COPR_loading_1A_wagon,
         set_STAKE_CAR_COPR_loading_2_wagon,
         set_STAKE_CAR_COPR_full_wagon
     ];
     loaded: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_COPR_loading_0_wagon,
         set_STAKE_CAR_COPR_loading_1A_wagon,
         set_STAKE_CAR_COPR_loading_2_wagon,
         set_STAKE_CAR_COPR_full_wagon
@@ -36,13 +39,13 @@ spritegroup sg_STAKE_CAR_COPR_A_wagon {
 }
 spritegroup sg_STAKE_CAR_COPR_B_wagon {
     loading: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_COPR_loading_0_wagon,
         set_STAKE_CAR_COPR_loading_1B_wagon,
         set_STAKE_CAR_COPR_loading_2_wagon,
         set_STAKE_CAR_COPR_full_wagon
     ];
     loaded: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_COPR_loading_0_wagon,
         set_STAKE_CAR_COPR_loading_1B_wagon,
         set_STAKE_CAR_COPR_loading_2_wagon,
         set_STAKE_CAR_COPR_full_wagon

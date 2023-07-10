@@ -10,8 +10,7 @@ switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_wagon, cargo_subtype) {
 }
 
 // Random wagons for each cargos
-switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_BUBL_wagon, random_bits % 2) {
-    1: sg_STAKE_CAR_BUBL_B_wagon;
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_BUBL_wagon, 1) {
     sg_STAKE_CAR_BUBL_A_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_COPR_wagon, random_bits % 2) {
@@ -26,8 +25,7 @@ switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_FMSP_wagon, random_bits % 2) {
     1: sg_STAKE_CAR_FMSP_B_wagon;
     sg_STAKE_CAR_FMSP_A_wagon;
 }
-switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_PAPR_wagon, random_bits % 2) {
-    1: sg_STAKE_CAR_PAPR_B_wagon;
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_PAPR_wagon, 1) {
     sg_STAKE_CAR_PAPR_A_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_PIPE_wagon, random_bits % 2) {
@@ -38,12 +36,12 @@ switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_STEL_wagon, random_bits % 2) {
     1: sg_STAKE_CAR_STEL_B_wagon;
     sg_STAKE_CAR_STEL_A_wagon;
 }
-switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VBOD_wagon, random_bits % 2) {
-    1: sg_STAKE_CAR_VBOD_B_wagon;
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VBOD_wagon, 1) {
     sg_STAKE_CAR_VBOD_A_wagon;
 }
-switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VEHI_wagon, random_bits % 2) {
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_VEHI_wagon, random_bits % 3) {
     1: sg_STAKE_CAR_VEHI_B_wagon;
+    2: sg_STAKE_CAR_VEHI_C_wagon;
     sg_STAKE_CAR_VEHI_A_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_TYRE_wagon, random_bits % 2) {
@@ -58,7 +56,6 @@ switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_WOOD_wagon, random_bits % 2) {
     1: sg_STAKE_CAR_WOOD_B_wagon;
     sg_STAKE_CAR_WOOD_A_wagon;
 }
-switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_WOOL_wagon, random_bits % 2) {
-    1: sg_STAKE_CAR_WOOL_B_wagon;
+switch(FEAT_TRAINS, SELF, sw_STAKE_CAR_WOOL_wagon, 1) {
     sg_STAKE_CAR_WOOL_A_wagon;
 }

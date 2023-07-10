@@ -8,43 +8,60 @@
  */
 
 // Graphics when loads Vehicles
-spriteset(set_STAKE_CAR_VEHI_loading_1A_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
+spriteset(set_STAKE_CAR_VEHI_loading_0_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
     tmpl_stake_car_long(0, 0)
 }
-spriteset(set_STAKE_CAR_VEHI_loading_1B_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
+spriteset(set_STAKE_CAR_VEHI_loading_1A_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
     tmpl_stake_car_long(0, 30)
 }
-spriteset(set_STAKE_CAR_VEHI_loading_2_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
+spriteset(set_STAKE_CAR_VEHI_loading_fullA_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
     tmpl_stake_car_long(0, 60)
 }
-spriteset(set_STAKE_CAR_VEHI_full_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
+spriteset(set_STAKE_CAR_VEHI_loading_1B_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
     tmpl_stake_car_long(0, 90)
+}
+spriteset(set_STAKE_CAR_VEHI_loading_fullB_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
+    tmpl_stake_car_long(0, 120)
+}
+spriteset(set_STAKE_CAR_VEHI_loading_1C_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
+    tmpl_stake_car_long(0, 150)
+}
+spriteset(set_STAKE_CAR_VEHI_loading_fullC_wagon, "./src/wagon/stake_car/cargo_VEHI.png") {
+    tmpl_stake_car_long(0, 180)
 }
 spritegroup sg_STAKE_CAR_VEHI_A_wagon {
     loading: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_VEHI_loading_0_wagon,
         set_STAKE_CAR_VEHI_loading_1A_wagon,
-        set_STAKE_CAR_VEHI_loading_2_wagon,
-        set_STAKE_CAR_VEHI_full_wagon
+        set_STAKE_CAR_VEHI_loading_fullA_wagon
     ];
     loaded: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_VEHI_loading_0_wagon,
         set_STAKE_CAR_VEHI_loading_1A_wagon,
-        set_STAKE_CAR_VEHI_loading_2_wagon,
-        set_STAKE_CAR_VEHI_full_wagon
+        set_STAKE_CAR_VEHI_loading_fullA_wagon
     ];
 }
 spritegroup sg_STAKE_CAR_VEHI_B_wagon {
     loading: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_VEHI_loading_0_wagon,
         set_STAKE_CAR_VEHI_loading_1B_wagon,
-        set_STAKE_CAR_VEHI_loading_2_wagon,
-        set_STAKE_CAR_VEHI_full_wagon
+        set_STAKE_CAR_VEHI_loading_fullB_wagon
     ];
     loaded: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_VEHI_loading_0_wagon,
         set_STAKE_CAR_VEHI_loading_1B_wagon,
-        set_STAKE_CAR_VEHI_loading_2_wagon,
-        set_STAKE_CAR_VEHI_full_wagon
+        set_STAKE_CAR_VEHI_loading_fullB_wagon
+    ];
+}
+spritegroup sg_STAKE_CAR_VEHI_C_wagon {
+    loading: [
+        set_STAKE_CAR_VEHI_loading_0_wagon,
+        set_STAKE_CAR_VEHI_loading_1C_wagon,
+        set_STAKE_CAR_VEHI_loading_fullC_wagon
+    ];
+    loaded: [
+        set_STAKE_CAR_VEHI_loading_0_wagon,
+        set_STAKE_CAR_VEHI_loading_1C_wagon,
+        set_STAKE_CAR_VEHI_loading_fullC_wagon
     ];
 }

@@ -8,13 +8,13 @@
  */
 
 // Graphics when loads Woods
-spriteset(set_STAKE_CAR_WOOD_loading_1A_wagon, "./src/wagon/stake_car/cargo_WOOD.png") {
+spriteset(set_STAKE_CAR_WOOD_loading_0_wagon, "./src/wagon/stake_car/cargo_WOOD.png") {
     tmpl_stake_car(0, 0)
 }
-spriteset(set_STAKE_CAR_WOOD_loading_1B_wagon, "./src/wagon/stake_car/cargo_WOOD.png") {
+spriteset(set_STAKE_CAR_WOOD_loading_1A_wagon, "./src/wagon/stake_car/cargo_WOOD.png") {
     tmpl_stake_car(0, 30)
 }
-spriteset(set_STAKE_CAR_WOOD_loading_2_wagon, "./src/wagon/stake_car/cargo_WOOD.png") {
+spriteset(set_STAKE_CAR_WOOD_loading_1B_wagon, "./src/wagon/stake_car/cargo_WOOD.png") {
     tmpl_stake_car(0, 60)
 }
 spriteset(set_STAKE_CAR_WOOD_full_wagon, "./src/wagon/stake_car/cargo_WOOD.png") {
@@ -22,29 +22,25 @@ spriteset(set_STAKE_CAR_WOOD_full_wagon, "./src/wagon/stake_car/cargo_WOOD.png")
 }
 spritegroup sg_STAKE_CAR_WOOD_A_wagon {
     loading: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_WOOD_loading_0_wagon,
         set_STAKE_CAR_WOOD_loading_1A_wagon,
-        set_STAKE_CAR_WOOD_loading_2_wagon,
         set_STAKE_CAR_WOOD_full_wagon
     ];
     loaded: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_WOOD_loading_0_wagon,
         set_STAKE_CAR_WOOD_loading_1A_wagon,
-        set_STAKE_CAR_WOOD_loading_2_wagon,
         set_STAKE_CAR_WOOD_full_wagon
     ];
 }
 spritegroup sg_STAKE_CAR_WOOD_B_wagon {
     loading: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_WOOD_loading_0_wagon,
         set_STAKE_CAR_WOOD_loading_1B_wagon,
-        set_STAKE_CAR_WOOD_loading_2_wagon,
         set_STAKE_CAR_WOOD_full_wagon
     ];
     loaded: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_WOOD_loading_0_wagon,
         set_STAKE_CAR_WOOD_loading_1B_wagon,
-        set_STAKE_CAR_WOOD_loading_2_wagon,
         set_STAKE_CAR_WOOD_full_wagon
     ];
 }

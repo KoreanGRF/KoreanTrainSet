@@ -28,6 +28,7 @@ item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
         introduction_date:              var_STAKE_CAR_INTRODUCTION;
         track_type:                     RAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        length:                         6;
 
         // Spec
         power:                          0 kW;
