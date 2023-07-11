@@ -238,8 +238,8 @@ STR_REFIT_LIVERY_MAIL_CAR_4                                :(2005年以来ムグ
 STR_REFIT_LIVERY_MAIL_CAR_5                                :(2018年以来小貨物者改造塗色)
 
 # Refit (etc)
-STR_REFIT_COLOUR_BLACK                                     :(黒色)
-STR_REFIT_COLOUR_BLUE                                      :(青色)
+STR_REFIT_COLOUR_BLACK                                     :(黒)
+STR_REFIT_COLOUR_BLUE                                      :(青)
 STR_REFIT_COLOUR_SKYBLUE                                   :(水色)
 STR_REFIT_COLOUR_DARKBLUE                                  :(紺色)
 STR_REFIT_COLOUR_BROWN                                     :(茶)
@@ -248,6 +248,7 @@ STR_REFIT_COLOUR_ORANGE                                    :(橙)
 STR_REFIT_COLOUR_DARKGREEN                                 :(濃緑)
 STR_REFIT_COLOUR_OLIVE                                     :(オリーブ)
 STR_REFIT_COLOUR_SILVER                                    :(銀色)
+STR_REFIT_COLOUR_WHITE                                     :(白)
 
 # Refit (Seoul metropolitan Line 1)
 STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME                       :(韓国鉄道1k抵抗初期形・初期 塗色)

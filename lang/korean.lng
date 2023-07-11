@@ -249,6 +249,7 @@ STR_REFIT_COLOUR_ORANGE                                    : (주황색)
 STR_REFIT_COLOUR_DARKGREEN                                 : (짙은 녹색)
 STR_REFIT_COLOUR_OLIVE                                     : (올리브색)
 STR_REFIT_COLOUR_SILVER                                    : (은색)
+STR_REFIT_COLOUR_WHITE                                     : (흰색)
 
 # Refit (Seoul metropolitan Line 1)
 STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME                       : (철도청 1k 저항 초기형 / 초기 도색)

@@ -249,6 +249,7 @@ STR_REFIT_COLOUR_ORANGE                                    : (Orange)
 STR_REFIT_COLOUR_DARKGREEN                                 : (Darkgreen)
 STR_REFIT_COLOUR_OLIVE                                     : (Olive)
 STR_REFIT_COLOUR_SILVER                                    : (Silver)
+STR_REFIT_COLOUR_WHITE                                     : (White)
 
 # Refit (Seoul metropolitan Line 1)
 STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME                       : (KNR 1k Rheostatic first / 1st livery)
