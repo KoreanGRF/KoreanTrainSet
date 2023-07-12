@@ -450,7 +450,7 @@
         <td class="introduction">2016</td>
     </tr>
     <tr data-veh_id="BUSAN_METRO_1">
-        <td class="refit"><div><img src="./_static/BUSAN_METRO_1K_1ST.png" alt="Busan Line 1"><br /><img src="./_static/BUSAN_METRO_1K_2ND.png" alt="Busan Line 1"></div></td>
+        <td class="refit"><div><img src="./_static/BUSAN_METRO_1K_1ST.png" alt="Busan Line 1"><br /><img src="./_static/BUSAN_METRO_1K_2ND.png" alt="Busan Line 1"><br /><img src="./_static/BUSAN_METRO_1K_3RD.png" alt="Busan Line 1"></div></td>
         <td class="name">Busan Line 1</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">100 km/h</td>

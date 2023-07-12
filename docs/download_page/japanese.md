@@ -450,7 +450,7 @@
         <td class="introduction">2016</td>
     </tr>
     <tr data-veh_id="BUSAN_METRO_1">
-        <td class="refit"><div><img src="./_static/BUSAN_METRO_1K_1ST.png" alt="釜山1号線"><br /><img src="./_static/BUSAN_METRO_1K_2ND.png" alt="釜山1号線"></div></td>
+        <td class="refit"><div><img src="./_static/BUSAN_METRO_1K_1ST.png" alt="釜山1号線"><br /><img src="./_static/BUSAN_METRO_1K_2ND.png" alt="釜山1号線"><br /><img src="./_static/BUSAN_METRO_1K_3RD.png" alt="釜山1号線"></div></td>
         <td class="name">釜山1号線</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">100 km/h</td>
