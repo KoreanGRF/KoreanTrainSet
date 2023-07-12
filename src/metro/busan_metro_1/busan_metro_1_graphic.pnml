@@ -57,5 +57,5 @@ spriteset(set_BUSAN_METRO_1K_3RD_purchase, "./src/metro/busan_metro_1/BUSAN_METR
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_BUSAN_METRO_1_purchase, cargo_subtype) {
-    set_BUSAN_METRO_1K_2ND_purchase;
+    set_BUSAN_METRO_1K_3RD_purchase;
 }
