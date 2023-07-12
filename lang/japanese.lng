@@ -305,6 +305,7 @@ STR_REFIT_METRO_LINE_4_2019_NAME                           :(Korail 4号線 2019
 STR_REFIT_METRO_LINE_4_2021_NAME                           :(Korail 4号線 2021年導入分)
 STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME                :(SMetro 4k 1·2世代 VVVF)
 STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME                    :(SMetro 4k 3世代 VVVF 2020年導入分)
+STR_REFIT_METRO_SMETRO_4K_VVVF_4TH_NAME                    :(SMetro 4k 4世代 VVVF 2023年導入分)
 
 # Refit (Seoul Metro Line 5-8、Seoul Metro Line9)
 STR_REFIT_METRO_SMETRO_SR0X_NAME                           :(ソウル交通公社 SR0x VVVF)
