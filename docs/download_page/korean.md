@@ -450,7 +450,7 @@
         <td class="introduction">2016</td>
     </tr>
     <tr data-veh_id="BUSAN_METRO_1">
-        <td class="refit"><div><img src="./_static/BUSAN_METRO_1K_1ST.png" alt="부산 1호선"><br /><img src="./_static/BUSAN_METRO_1K_2ND.png" alt="부산 1호선"></div></td>
+        <td class="refit"><div><img src="./_static/BUSAN_METRO_1K_1ST.png" alt="부산 1호선"><br /><img src="./_static/BUSAN_METRO_1K_2ND.png" alt="부산 1호선"><br /><img src="./_static/BUSAN_METRO_1K_3RD.png" alt="부산 1호선"></div></td>
         <td class="name">부산 1호선</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">100 km/h</td>
