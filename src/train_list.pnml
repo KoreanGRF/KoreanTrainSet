@@ -106,6 +106,7 @@
 #include "wagon/box_car/box_car.pnml"
 #include "wagon/baggage_car/baggage_car.pnml"
 #include "wagon/tank_car/tank_car.pnml"
+#include "wagon/bulk_cement_car/bulk_cement_car.pnml"
 #include "wagon/stake_car/stake_car.pnml"
 #include "wagon/LRT_wagon/LRT_wagon.pnml"
 

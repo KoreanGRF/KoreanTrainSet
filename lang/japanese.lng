@@ -53,6 +53,7 @@ STR_HOPPER_CAR_NAME                                        :オープンカー
 STR_BOX_CAR_NAME                                           :ボックスカー
 STR_BAGGAGE_CAR_NAME                                       :小荷物車
 STR_TANK_CAR_NAME                                          :タンク車
+STR_BULK_CEMENT_CAR_NAME                                   :バルクセメント貨車
 STR_STAKE_CAR_NAME                                         :評判貨車
 STR_MAIL_CAR_NAME                                          :郵便車
 

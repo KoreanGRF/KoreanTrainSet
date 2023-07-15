@@ -1,0 +1,73 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * BULK_CEMENT_CAR
+ */
+SPEED_GENERAL(BULK_CEMENT_CAR)
+COST(BULK_CEMENT_CAR)
+RUNNING(BULK_CEMENT_CAR)
+CAPACITY(BULK_CEMENT_CAR)
+// CAPACITY_PURCHASE(BULK_CEMENT_CAR)
+LOADING(BULK_CEMENT_CAR)
+
+// Graphics
+#include "bulk_cement_car_graphic.pnml"
+
+// Switch
+#include "bulk_cement_car_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_BULK_CEMENT_CAR, 5915) {
+    property {
+        // Common properties
+        name:                           string(STR_BULK_CEMENT_CAR_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_BULK_CEMENT_CAR_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        length:                         7;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         var_BULK_CEMENT_CAR_WEIGHT;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 32;
+        refittable_cargo_classes:       bitmask(CC_BULK);
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [GRAI, COAL, IORE, CMNT, QLME, SAND, SASH];
+        cargo_disallow_refit:           [OIL_];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_NONE;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_CARGO;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_BULK_CEMENT_CAR_wagon;
+        purchase:                       sw_BULK_CEMENT_CAR_purchase;
+
+        speed:                          sw_BULK_CEMENT_CAR_speed;
+        cost_factor:                    sw_BULK_CEMENT_CAR_cost;
+        running_cost_factor:            sw_BULK_CEMENT_CAR_runningcost;
+        cargo_capacity:                 sw_BULK_CEMENT_CAR_capacity;
+        loading_speed:                  sw_BULK_CEMENT_CAR_loadingspeed;
+
+        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+    }
+}

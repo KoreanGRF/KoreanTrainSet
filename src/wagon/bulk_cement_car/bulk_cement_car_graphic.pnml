@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Bulk Cement car
+ */
+
+// Graphic
+spriteset(set_BULK_CEMENT_CAR_1_purchase, "./src/wagon/bulk_cement_car/BULK_CEMENT_CAR.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_BULK_CEMENT_CAR_1_wagon, "./src/wagon/bulk_cement_car/BULK_CEMENT_CAR.png") {
+    tmpl_standard(80, 0)
+}
+
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_BULK_CEMENT_CAR_purchase, cargo_subtype) {
+    set_BULK_CEMENT_CAR_1_purchase;
+}

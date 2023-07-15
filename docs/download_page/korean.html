@@ -669,6 +669,16 @@
         <td class="weight">21 t</td>
         <td class="introduction">1950</td>
     </tr>
+    <tr data-veh_id="BULK_CEMENT_CAR">
+        <td class="refit"><div><img src="./_static/BULK_CEMENT_CAR_1.png" alt="벌크시멘트 화차"></div></td>
+        <td class="name">벌크시멘트 화차</td>
+        <td class="speed">120 km/h</td>
+        <td class="speed_designed">120 km/h</td>
+        <td class="capacity">32</td>
+        <td class="power"></td>
+        <td class="weight">20 t</td>
+        <td class="introduction">1950</td>
+    </tr>
     <tr data-veh_id="MAIL_CAR">
         <td class="refit"><div><img src="./_static/MAIL_CAR_1.png" alt="우편차"><br /><img src="./_static/MAIL_CAR_2.png" alt="우편차"><br /><img src="./_static/MAIL_CAR_3.png" alt="우편차"><br /><img src="./_static/MAIL_CAR_4.png" alt="우편차"><br /><img src="./_static/MAIL_CAR_5.png" alt="우편차"></div></td>
         <td class="name">우편차</td>

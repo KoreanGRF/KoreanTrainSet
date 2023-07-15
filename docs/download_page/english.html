@@ -669,6 +669,16 @@
         <td class="weight">21 t</td>
         <td class="introduction">1950</td>
     </tr>
+    <tr data-veh_id="BULK_CEMENT_CAR">
+        <td class="refit"><div><img src="./_static/BULK_CEMENT_CAR_1.png" alt="Bulk cement car"></div></td>
+        <td class="name">Bulk cement car</td>
+        <td class="speed">120 km/h</td>
+        <td class="speed_designed">120 km/h</td>
+        <td class="capacity">32</td>
+        <td class="power"></td>
+        <td class="weight">20 t</td>
+        <td class="introduction">1950</td>
+    </tr>
     <tr data-veh_id="MAIL_CAR">
         <td class="refit"><div><img src="./_static/MAIL_CAR_1.png" alt="Mail car"><br /><img src="./_static/MAIL_CAR_2.png" alt="Mail car"><br /><img src="./_static/MAIL_CAR_3.png" alt="Mail car"><br /><img src="./_static/MAIL_CAR_4.png" alt="Mail car"><br /><img src="./_static/MAIL_CAR_5.png" alt="Mail car"></div></td>
         <td class="name">Mail car</td>

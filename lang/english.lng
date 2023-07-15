@@ -54,6 +54,7 @@ STR_HOPPER_CAR_NAME                                        :Hopper car
 STR_BOX_CAR_NAME                                           :Box car
 STR_BAGGAGE_CAR_NAME                                       :Baggage car
 STR_TANK_CAR_NAME                                          :Tank car
+STR_BULK_CEMENT_CAR_NAME                                   :Bulk cement car
 STR_STAKE_CAR_NAME                                         :Stake car
 STR_MAIL_CAR_NAME                                          :Mail car
 

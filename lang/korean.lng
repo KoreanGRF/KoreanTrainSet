@@ -54,6 +54,7 @@ STR_HOPPER_CAR_NAME                                        :무개화차
 STR_BOX_CAR_NAME                                           :유개화차
 STR_BAGGAGE_CAR_NAME                                       :수화물차
 STR_TANK_CAR_NAME                                          :유조차
+STR_BULK_CEMENT_CAR_NAME                                   :벌크시멘트 화차
 STR_STAKE_CAR_NAME                                         :평판화차
 STR_MAIL_CAR_NAME                                          :우편차
 

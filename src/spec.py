@@ -97,6 +97,7 @@ trainList['BOX_CAR_1996']       = 90,     90,     None,   None,         48,     
 trainList['BOX_CAR_1972']       = 90,     90,     None,   None,         48,      None,         None,   22,     (1972, 1, 1)
 trainList['BOX_CAR_1966']       = 90,     90,     None,   None,         48,      None,         None,   22,     (1966, 1, 1)
 trainList['TANK_CAR']           = 120,    120,    100,    2,            40,      5,            None,   21,     (1950, 1, 1)
+trainList['BULK_CEMENT_CAR']    = 120,    120,    100,    2,            32,      5,            None,   20,     (1950, 1, 1)
 trainList['MAIL_CAR']           = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['SLEEPING_CAR']       = None,   None,   120,    2,            28,      5,            None,   17,     (1966, 1, 1)
 trainList['STAKE_CAR']          = 120,    120,    100,    2,            52,      5,            None,   23,     (1950, 1, 1)

@@ -1,0 +1,17 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+// switch(FEAT_TRAINS, SELF, sw_BULK_CEMENT_CAR_cargo_subtype_text, cargo_subtype) {
+//     1: return string(STR_REFIT_COLOUR_SILVER);
+//     2: return string(STR_REFIT_COLOUR_BLACK);
+//     return string(STR_REFIT_COLOUR_BLUE);
+// }
+
+// Graphic
+switch(FEAT_TRAINS, SELF, sw_BULK_CEMENT_CAR_wagon, cargo_subtype) {
+    set_BULK_CEMENT_CAR_1_wagon;
+}
