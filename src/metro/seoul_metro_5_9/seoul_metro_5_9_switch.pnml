@@ -124,7 +124,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_wagon_panto_cargo_subtype, cargo_su
     7: set_SMETRO_7K_4TH_wagon_panto;
     8: sw_SMETRO_7K_5TH_wagon_panto;
     9: set_SMETRO_8K_1ST_2ND_wagon_panto;
-    10: set_SMETRO_8K_3RD_wagon_panto;
+    10: sw_SMETRO_8K_3RD_wagon_panto;
     11: set_SMETRO_9K_1ST_wagon_panto;
     // 12: // RESERVED
     set_SMETRO_SR0X_wagon_panto;
