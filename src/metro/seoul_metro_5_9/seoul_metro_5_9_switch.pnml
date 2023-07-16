@@ -54,7 +54,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_cargo_subtype_text, cargo_subtype) 
     6:  return string(STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME);
     7:  return string(STR_REFIT_METRO_SMETRO_7K_4TH_NAME);
     8:  return string(STR_REFIT_METRO_SMETRO_7K_5TH_NAME);
-    9:  return string(STR_REFIT_METRO_SMETRO_8K_1ST_NAME);
+    9:  return string(STR_REFIT_METRO_SMETRO_8K_1ST_2ND_NAME);
     // 10: // RESERVED
     11: return string(STR_REFIT_METRO_SMETRO_9K_1ST_NAME);
     // 12: // RESERVED
@@ -71,7 +71,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_engineH, cargo_subtype) {
     6: set_SMETRO_7K_1ST_2ND_engineH;
     7: set_SMETRO_7K_4TH_engineH;
     8: set_SMETRO_7K_5TH_engineH;
-    9: set_SMETRO_8K_1ST_engineH;
+    9: set_SMETRO_8K_1ST_2ND_engineH;
     // 10: // RESERVED
     11: set_SMETRO_9K_1ST_engineH;
     // 12: // RESERVED
@@ -86,7 +86,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_engineT, cargo_subtype) {
     6: set_SMETRO_7K_1ST_2ND_engineT;
     7: set_SMETRO_7K_4TH_engineT;
     8: sw_SMETRO_7K_5TH_engineT;
-    9: set_SMETRO_8K_1ST_engineT;
+    9: set_SMETRO_8K_1ST_2ND_engineT;
     // 10:  // RESERVED
     11: set_SMETRO_9K_1ST_engineT;
     set_SMETRO_SR0X_engineT;
@@ -103,7 +103,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_wagon_panto_cargo_subtype, cargo_su
     6: set_SMETRO_7K_1ST_2ND_wagon_panto;
     7: set_SMETRO_7K_4TH_wagon_panto;
     8: sw_SMETRO_7K_5TH_wagon_panto;
-    9: set_SMETRO_8K_1ST_wagon_panto;
+    9: set_SMETRO_8K_1ST_2ND_wagon_panto;
     // 10: // RESERVED
     11: set_SMETRO_9K_1ST_wagon_panto;
     // 12: // RESERVED
@@ -119,7 +119,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_wagon_cargo_subtype, cargo_subtype)
     6: set_SMETRO_7K_1ST_2ND_wagon;
     7: set_SMETRO_7K_4TH_wagon;
     8: sw_SMETRO_7K_5TH_wagon;
-    9: set_SMETRO_8K_1ST_wagon;
+    9: set_SMETRO_8K_1ST_2ND_wagon;
     // 10: // RESERVED
     11: set_SMETRO_9K_1ST_wagon;
     // 12: // RESERVED

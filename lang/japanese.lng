@@ -318,7 +318,7 @@ STR_REFIT_METRO_SMETRO_6K_1ST_NAME                         :(ソウル交通公�
 STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME                     :(ソウル交通公社 7k VVVF 1·2次)
 STR_REFIT_METRO_SMETRO_7K_4TH_NAME                         :(ソウル交通公社 7k VVVF 4次)
 STR_REFIT_METRO_SMETRO_7K_5TH_NAME                         :(ソウル交通公社 7k VVVF 5次)
-STR_REFIT_METRO_SMETRO_8K_1ST_NAME                         :(ソウル交通公社 8k VVVF)
+STR_REFIT_METRO_SMETRO_8K_1ST_2ND_NAME                     :(ソウル交通公社 8k VVVF 1·2次)
 STR_REFIT_METRO_SMETRO_9K_1ST_NAME                         :(ソウル交通公社9 9k VVVF)
 
 # Refit (Suin-Bungdang Line)
