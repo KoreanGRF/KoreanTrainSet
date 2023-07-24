@@ -6,12 +6,26 @@
 
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_SLEEPING_CAR_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_SLEEPING_CAR_OLD);
-    return string(STR_REFIT_LIVERY_SLEEPING_CAR_RECENT);
+    1: return string(STR_REFIT_LIVERY_SLEEPING_1966_GREEN);
+    2: return string(STR_REFIT_LIVERY_SLEEPING_1966_GREEN_COOLER);
+    // 3: // RESERVED
+    // 4: // RESERVED
+    5: return string(STR_REFIT_LIVERY_SLEEPING_1977_GREEN);
+    6: return string(STR_REFIT_LIVERY_SLEEPING_1977_RED);
+    7: return string(STR_REFIT_LIVERY_SLEEPING_1977_YELLOW_RED);
+    8: return string(STR_REFIT_LIVERY_SLEEPING_2001_YELLOW_RED);
+    return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 
 // Graphic
 switch(FEAT_TRAINS, SELF, sw_SLEEPING_CAR_wagon, cargo_subtype) {
-    1: set_SLEEPING_CAR_1_wagon;
-    set_SLEEPING_CAR_2_wagon;
+    1: set_SLEEPING_CAR_1966_GREEN_wagon;
+    2: set_SLEEPING_CAR_1966_GREEN_COOLER_wagon
+    // 3: // RESERVED
+    // 4: // RESERVED
+    5: set_SLEEPING_CAR_1977_GREEN_wagon
+    6: set_SLEEPING_CAR_1977_RED_wagon
+    7: set_SLEEPING_CAR_1977_YELLOW_RED_wagon
+    8: set_SLEEPING_CAR_2001_YELLOW_RED_wagon
+    set_SLEEPING_CAR_2001_BLUE_RED_wagon;
 }

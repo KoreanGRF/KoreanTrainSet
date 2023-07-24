@@ -213,8 +213,14 @@ STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW           :(セマウル号食�
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW                 :(セマウル号カフェ車・Korail現在塗色)
 
 # Refit (Sleeping car)
-STR_REFIT_LIVERY_SLEEPING_CAR_OLD                          :(旧塗色)
-STR_REFIT_LIVERY_SLEEPING_CAR_RECENT                       :(新塗色)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN                       :(1966年：緑色)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN_COOLER                :(1966年：冷房機ある緑色)
+STR_REFIT_LIVERY_SLEEPING_RESERVED                         :(reserved)
+STR_REFIT_LIVERY_SLEEPING_RESERVED                         :(reserved)
+STR_REFIT_LIVERY_SLEEPING_1977_GREEN                       :(1977年：緑色)
+STR_REFIT_LIVERY_SLEEPING_1977_RED                         :(1977年：赤色)
+STR_REFIT_LIVERY_SLEEPING_1977_YELLOW_RED                  :(1977年：黄色＆赤色)
+STR_REFIT_LIVERY_SLEEPING_2001_YELLOW_RED                  :(2001年：黄色＆赤色)
 
 # Refit (NDC)
 STR_REFIT_LIVERY_NDC_1                                     :(1984~1994年塗色)
