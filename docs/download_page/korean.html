@@ -256,7 +256,7 @@
         <td class="speed_designed">165 km/h</td>
         <td class="capacity">62</td>
         <td class="power">2000 kW</td>
-        <td class="weight">60 t</td>
+        <td class="weight">51 t</td>
         <td class="introduction">2023</td>
     </tr>
     <tr data-veh_id="SAEMAEUL_CAR">
