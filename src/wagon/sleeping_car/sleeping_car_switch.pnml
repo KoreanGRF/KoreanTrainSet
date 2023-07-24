@@ -20,12 +20,12 @@ switch(FEAT_TRAINS, SELF, sw_SLEEPING_CAR_cargo_subtype_text, cargo_subtype) {
 // Graphic
 switch(FEAT_TRAINS, SELF, sw_SLEEPING_CAR_wagon, cargo_subtype) {
     1: set_SLEEPING_CAR_1966_GREEN_wagon;
-    2: set_SLEEPING_CAR_1966_GREEN_COOLER_wagon
+    2: set_SLEEPING_CAR_1966_GREEN_COOLER_wagon;
     // 3: // RESERVED
     // 4: // RESERVED
-    5: set_SLEEPING_CAR_1977_GREEN_wagon
-    6: set_SLEEPING_CAR_1977_RED_wagon
-    7: set_SLEEPING_CAR_1977_YELLOW_RED_wagon
-    8: set_SLEEPING_CAR_2001_YELLOW_RED_wagon
+    5: set_SLEEPING_CAR_1977_GREEN_wagon;
+    6: set_SLEEPING_CAR_1977_RED_wagon;
+    7: set_SLEEPING_CAR_1977_YELLOW_RED_wagon;
+    8: set_SLEEPING_CAR_2001_YELLOW_RED_wagon;
     set_SLEEPING_CAR_2001_BLUE_RED_wagon;
 }
