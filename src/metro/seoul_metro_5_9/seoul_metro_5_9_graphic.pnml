@@ -158,20 +158,46 @@ spriteset(set_SMETRO_7K_5TH_purchase, "./src/metro/seoul_metro_5_9/SMETRO_7K_5TH
     tmpl_purchase_common_dualhead(0, 0)
 }
 
-// SMETRO_8K_1
-spriteset(set_SMETRO_8K_1ST_engineH, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST.png") {
+// SMETRO_8K_1ST_2ND
+spriteset(set_SMETRO_8K_1ST_2ND_engineH, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST_2ND.png") {
     tmpl_engine_head(0, 0)
 }
-spriteset(set_SMETRO_8K_1ST_wagon_panto, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST.png") {
+spriteset(set_SMETRO_8K_1ST_2ND_wagon_panto, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST_2ND.png") {
     tmpl_wagon_dblpanto(0, 30)
 }
-spriteset(set_SMETRO_8K_1ST_wagon, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST.png") {
+spriteset(set_SMETRO_8K_1ST_2ND_wagon, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST_2ND.png") {
     tmpl_wagon(0, 60)
 }
-spriteset(set_SMETRO_8K_1ST_engineT, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST.png") {
+spriteset(set_SMETRO_8K_1ST_2ND_engineT, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST_2ND.png") {
     tmpl_engine_tail(0, 90)
 }
-spriteset(set_SMETRO_8K_1ST_purchase, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST.png") {
+spriteset(set_SMETRO_8K_1ST_2ND_purchase, "./src/metro/seoul_metro_5_9/SMETRO_8K_1ST_2ND.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+
+// SMETRO_8K_3RD
+spriteset(set_SMETRO_8K_3RD_engineH, "./src/metro/seoul_metro_5_9/SMETRO_8K_3RD.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_SMETRO_8K_3RD_wagon_panto_A, "./src/metro/seoul_metro_5_9/SMETRO_8K_3RD.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_SMETRO_8K_3RD_wagon_panto_B, "./src/metro/seoul_metro_5_9/SMETRO_8K_3RD.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_SMETRO_8K_3RD_wagon_A, "./src/metro/seoul_metro_5_9/SMETRO_8K_3RD.png") {
+    tmpl_standard(80, 90)
+}
+spriteset(set_SMETRO_8K_3RD_wagon_B, "./src/metro/seoul_metro_5_9/SMETRO_8K_3RD.png") {
+    tmpl_standard(80, 120)
+}
+spriteset(set_SMETRO_8K_3RD_engineT, "./src/metro/seoul_metro_5_9/SMETRO_8K_3RD.png") {
+    tmpl_standard(80, 150)
+}
+spriteset(set_SMETRO_8K_3RD_engineT_without_S, "./src/metro/seoul_metro_5_9/SMETRO_8K_3RD.png") {
+    tmpl_standard(80, 180)
+}
+spriteset(set_SMETRO_8K_3RD_purchase, "./src/metro/seoul_metro_5_9/SMETRO_8K_3RD.png") {
     tmpl_purchase_common_dualhead(0, 0)
 }
 
