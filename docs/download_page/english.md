@@ -690,7 +690,7 @@
         <td class="introduction">1950</td>
     </tr>
     <tr data-veh_id="SLEEPING_CAR">
-        <td class="refit"><div><img src="./_static/SLEEPING_CAR_1.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_2.png" alt="Sleeping car"></div></td>
+        <td class="refit"><div><img src="./_static/SLEEPING_CAR_1.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_2.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_5.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_6.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_7.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_8.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_9.png" alt="Sleeping car"></div></td>
         <td class="name">Sleeping car</td>
         <td class="speed"></td>
         <td class="speed_designed"></td>

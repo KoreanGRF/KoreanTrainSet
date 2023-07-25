@@ -214,8 +214,14 @@ STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW           : (Saemaeul restauran
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW                 : (Saemaeul cafe / Korail current livery)
 
 # Refit (Sleeping car)
-STR_REFIT_LIVERY_SLEEPING_CAR_OLD                          : (Old livery)
-STR_REFIT_LIVERY_SLEEPING_CAR_RECENT                       : (Recent livery)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN                       : (1966 livery: Green)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN_COOLER                : (1966 livery: Green with cooler)
+# STR_REFIT_LIVERY_SLEEPING_RESERVED                       : (reserved)
+# STR_REFIT_LIVERY_SLEEPING_RESERVED                       : (reserved)
+STR_REFIT_LIVERY_SLEEPING_1977_GREEN                       : (1977 livery: Green)
+STR_REFIT_LIVERY_SLEEPING_1977_RED                         : (1977 livery: Red)
+STR_REFIT_LIVERY_SLEEPING_1977_YELLOW_RED                  : (1977 livery: Yellow & Red)
+STR_REFIT_LIVERY_SLEEPING_2001_YELLOW_RED                  : (2001 livery: Yellow & Red)
 
 # Refit (NDC)
 STR_REFIT_LIVERY_NDC_1                                     : (Livery: 1984~1994)
