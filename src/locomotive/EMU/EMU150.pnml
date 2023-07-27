@@ -30,6 +30,7 @@ item(FEAT_TRAINS, ko_train_EMU150, 5556) {
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
+        variant_group:                  ko_train_ITX_SAEMAEUL;
 
         // Spec
         speed:                          var_EMU150_SPEED km/h;

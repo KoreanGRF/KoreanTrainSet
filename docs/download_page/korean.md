@@ -250,8 +250,8 @@
         <td class="introduction">2015</td>
     </tr>
     <tr data-veh_id="EMU150">
-        <td class="refit"><div><img src="./_static/EMU150.png" alt="220·230k호대 전동차 (EMU-150)"></div></td>
-        <td class="name">220·230k호대 전동차 (EMU-150)</td>
+        <td class="refit"><div><img src="./_static/EMU150.png" alt="ITX-새마을 (220·230k호대 / EMU-150)"></div></td>
+        <td class="name">ITX-새마을 (220·230k호대 / EMU-150)</td>
         <td class="speed">150 km/h</td>
         <td class="speed_designed">165 km/h</td>
         <td class="capacity">62</td>
@@ -700,7 +700,7 @@
         <td class="introduction">1950</td>
     </tr>
     <tr data-veh_id="SLEEPING_CAR">
-        <td class="refit"><div><img src="./_static/SLEEPING_CAR_1.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_2.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_5.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_6.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_7.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_8.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_9.png" alt="침대차"></div></td>
+        <td class="refit"><div><img src="./_static/SLEEPING_CAR_1966_GREEN.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_1966_GREEN_COOLER.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_1977_GREEN.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_1977_RED.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_1977_YELLOW_RED.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_2001_YELLOW_RED.png" alt="침대차"><br /><img src="./_static/SLEEPING_CAR_2001_BLUE_RED.png" alt="침대차"></div></td>
         <td class="name">침대차</td>
         <td class="speed"></td>
         <td class="speed_designed"></td>
