@@ -214,8 +214,14 @@ STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW           : (새마을호 식�
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW                 : (새마을호 카페차 / Korail 현 도색)
 
 # Refit (Sleeping car)
-STR_REFIT_LIVERY_SLEEPING_CAR_OLD                          : (구 도색)
-STR_REFIT_LIVERY_SLEEPING_CAR_RECENT                       : (신 도색)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN                       : (1966년: 녹색)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN_COOLER                : (1966년: 냉방기 있는 녹색)
+# STR_REFIT_LIVERY_SLEEPING_RESERVED                       : (reserved)
+# STR_REFIT_LIVERY_SLEEPING_RESERVED                       : (reserved)
+STR_REFIT_LIVERY_SLEEPING_1977_GREEN                       : (1977년: 녹색)
+STR_REFIT_LIVERY_SLEEPING_1977_RED                         : (1977년: 빨강)
+STR_REFIT_LIVERY_SLEEPING_1977_YELLOW_RED                  : (1977년: 노랑 & 빨강)
+STR_REFIT_LIVERY_SLEEPING_2001_YELLOW_RED                  : (2001년: 노랑 & 빨강)
 
 # Refit (NDC)
 STR_REFIT_LIVERY_NDC_1                                     : (1984~1994년 도색)
@@ -317,7 +323,8 @@ STR_REFIT_METRO_SMETRO_6K_1ST_NAME                         : (서울교통공사
 STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME                     : (서울교통공사 7k VVVF 1·2차)
 STR_REFIT_METRO_SMETRO_7K_4TH_NAME                         : (서울교통공사 7k VVVF 4차)
 STR_REFIT_METRO_SMETRO_7K_5TH_NAME                         : (서울교통공사 7k VVVF 5차)
-STR_REFIT_METRO_SMETRO_8K_1ST_NAME                         : (서울교통공사 8k VVVF)
+STR_REFIT_METRO_SMETRO_8K_1ST_2ND_NAME                     : (서울교통공사 8k VVVF 1·2차)
+STR_REFIT_METRO_SMETRO_8K_3RD_NAME                         : (서울교통공사 8k VVVF 3차)
 STR_REFIT_METRO_SMETRO_9K_1ST_NAME                         : (서울교통공사9 9k VVVF)
 
 # Refit (Suin-Bungdang Line)

@@ -350,7 +350,7 @@
         <td class="introduction">1983</td>
     </tr>
     <tr data-veh_id="SEOUL_METRO_5_9">
-        <td class="refit"><div><img src="./_static/SMETRO_SR0X.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_5K_1ST_2ND.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_5K_3RD.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_5K_4TH.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_6K_1ST.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_7K_1ST_2ND.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_7K_4TH.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_7K_5TH.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_8K_1ST.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_9K_1ST.png" alt="Seoul Line 5~9"></div></td>
+        <td class="refit"><div><img src="./_static/SMETRO_SR0X.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_5K_1ST_2ND.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_5K_3RD.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_5K_4TH.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_6K_1ST.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_7K_1ST_2ND.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_7K_4TH.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_7K_5TH.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_8K_1ST_2ND.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_8K_3RD.png" alt="Seoul Line 5~9"><br /><img src="./_static/SMETRO_9K_1ST.png" alt="Seoul Line 5~9"></div></td>
         <td class="name">Seoul Line 5~9</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">100 km/h</td>
@@ -690,7 +690,7 @@
         <td class="introduction">1950</td>
     </tr>
     <tr data-veh_id="SLEEPING_CAR">
-        <td class="refit"><div><img src="./_static/SLEEPING_CAR_1.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_2.png" alt="Sleeping car"></div></td>
+        <td class="refit"><div><img src="./_static/SLEEPING_CAR_1.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_2.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_5.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_6.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_7.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_8.png" alt="Sleeping car"><br /><img src="./_static/SLEEPING_CAR_9.png" alt="Sleeping car"></div></td>
         <td class="name">Sleeping car</td>
         <td class="speed"></td>
         <td class="speed_designed"></td>
