@@ -270,9 +270,7 @@ STR_REFIT_METRO_321K_BIKE_NAME                             : (Korail 321k 자전
 STR_REFIT_METRO_371K_BLANK_NAME                            : (Korail 371k / 무도색)
 STR_REFIT_METRO_371K_CC_NAME                               : (Korail 371k / 회사 색상)
 STR_REFIT_METRO_371K_381K_1ST_NAME                         : (Korail 371k, 381k 1차)
-STR_REFIT_METRO_371K_381K_1ST_NAME_D                       : ({RED}삭제 예정{BLACK} - Korail 371k, 381k 1차)
 STR_REFIT_METRO_381K_2ND_NAME                              : (Korail 381k 2차)
-STR_REFIT_METRO_381K_2ND_NAME_D                            : ({RED}삭제 예정{BLACK} - Korail 381k 2차)
 STR_REFIT_METRO_LINE_1_2019_NAME                           : (Korail 1호선 2019년 도입분)
 STR_REFIT_METRO_LINE_1_2021_NAME                           : (Korail 1호선 2021년 도입분)
 STR_REFIT_METRO_LINE_1_2022_W_NAME                         : (Korail 1호선 우진산전 2022년 도입분)
@@ -339,7 +337,6 @@ STR_REFIT_METRO_AREX_2K_NAME                               : (A'REX 2k 완행)
 
 # Refit (Seohae Line)
 STR_REFIT_METRO_391K_1ST_NAME                              : (Korail 391k 1차)
-STR_REFIT_METRO_391K_1ST_NAME_D                            : ({RED}삭제 예정{BLACK} - Korail 391k 1차)
 STR_REFIT_METRO_391K_2ND_NAME                              : (Korail 391k 2차)
 
 # Refit (Other Lines)
