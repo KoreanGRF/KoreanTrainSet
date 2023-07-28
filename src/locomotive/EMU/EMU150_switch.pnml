@@ -23,19 +23,20 @@ switch(FEAT_TRAINS, SELF, sw_EMU150_power_wagon, position_in_vehid_chain) {
     sw_EMU150_wagon_tail;
 }
 
-//TODO> Capacity
-// switch(FEAT_TRAINS, SELF, var_EMU150_capacity_express, 1) {
-//     return 46 / 2 * sw_cargo_capacity_factor;
-// }
-// switch(FEAT_TRAINS, SELF, var_EMU150_capacity, 1) {
-//     return 76 / 2 * sw_cargo_capacity_factor;
-// }
-switch(FEAT_TRAINS, SELF, sw_EMU150_capacity_in_custom, position_in_consist) {
-    // 0: return var_EMU150_capacity_express;
-    return var_EMU150_CAPACITY;
+// Capacity
+switch(FEAT_TRAINS, SELF, sw_EMU150_capacity_middle, cargo_subtype) {
+    return 60 / 2 * sw_cargo_capacity_factor;
+}
+switch(FEAT_TRAINS, SELF, sw_EMU150_capacity_tail, position_in_vehid_chain_from_end) {
+    0: return 74 / 2 * sw_cargo_capacity_factor;
+    sw_EMU150_capacity_middle;
+}
+switch(FEAT_TRAINS, SELF, sw_EMU150_capacity_in_custom, position_in_vehid_chain) {
+    0: return 74 / 2 * sw_cargo_capacity_factor;
+    sw_EMU150_capacity_tail;
 }
 
-//TODO> Running cost
+// Running cost
 switch(FEAT_TRAINS, SELF, sw_EMU150_runningcost_custom, cargo_subtype) {
     return sw_EMU150_runningcost;
 }

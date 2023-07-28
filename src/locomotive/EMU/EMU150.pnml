@@ -68,7 +68,7 @@ item(FEAT_TRAINS, ko_train_EMU150, 5556) {
         speed:                          sw_EMU150_speed;
         cost_factor:                    sw_EMU150_cost;
         running_cost_factor:            sw_EMU150_runningcost_custom;
-        cargo_capacity:                 sw_EMU150_capacity_in_custom;
+        cargo_capacity:                 sw_EMU150_capacity;
         purchase_cargo_capacity:        sw_EMU150_purchase_capacity;
         loading_speed:                  sw_EMU150_loadingspeed;
 
