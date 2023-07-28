@@ -85,7 +85,7 @@ item(FEAT_TRAINS, ko_train_EMU150, 5556) {
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         // cargo_subtype_text:             sw_EMU150_cargo_subtype_text;
-        power:                          POWER_IN_KW(200);
+        power:                          POWER_IN_KW(500);
     }
     livery_override(ko_train_PASSWGP) {
         default:                        sw_EMU150_power_wagon;
@@ -94,7 +94,7 @@ item(FEAT_TRAINS, ko_train_EMU150, 5556) {
         running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         // cargo_subtype_text:             sw_EMU150_cargo_subtype_text;
-        power:                          POWER_IN_KW(200);
+        power:                          POWER_IN_KW(500);
     }
 }
 // End of "EMU150"
