@@ -4,19 +4,19 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-spriteset(set_BUFFERS, "./src/object/object.png") {
+spriteset(set_BUFFER, "./src/object/object.png") {
     [0, 0, 5, 12, -2,  -11]
     [0, 0, 5, 12,  14, -25]
     [5, 0, 5, 12, -17, -25]
     [5, 0, 5, 12,  14,  -9]
 }
 
-spritelayout sply_end_of_rail_SW {
+spritelayout sply_buffer_SW {
     ground {
-        sprite: GROUNDSPRITE_NORMAL;
+        sprite: LOAD_TEMP(0);
     }
     building {
-        sprite: set_BUFFERS(0);
+        sprite: set_BUFFER(0);
         xextent: 1;
         yextent: 3;
         zextent: 12;
@@ -25,57 +25,75 @@ spritelayout sply_end_of_rail_SW {
         zoffset: 0;
     }
 }
-spritelayout sply_end_of_rail_NW {
+spritelayout sply_buffer_NW {
     ground {
-        sprite: GROUNDSPRITE_NORMAL;
+        sprite: LOAD_TEMP(0);
     }
     building {
-        sprite: set_BUFFERS(1);
+        sprite: set_BUFFER(1);
         xextent: 5;
         yextent: 5;
         zextent: 12;
-        xoffset: 10; // from NE edge
-        yoffset: 10; // from NW edge
+        xoffset: 10;
+        yoffset: 10;
         zoffset: 0;
     }
 }
-spritelayout sply_end_of_rail_NE {
+spritelayout sply_buffer_NE {
     ground {
-        sprite: GROUNDSPRITE_NORMAL;
+        sprite: LOAD_TEMP(0);
     }
     building {
-        sprite: set_BUFFERS(2);
+        sprite: set_BUFFER(2);
         xextent: 5;
         yextent: 5;
         zextent: 12;
-        xoffset: 10; // from NE edge
-        yoffset: 10; // from NW edge
+        xoffset: 10;
+        yoffset: 10;
         zoffset: 0;
     }
 }
-spritelayout sply_end_of_rail_SE {
+spritelayout sply_buffer_SE {
     ground {
-        sprite: GROUNDSPRITE_NORMAL;
+        sprite: LOAD_TEMP(0);
     }
     building {
-        sprite: set_BUFFERS(3);
+        sprite: set_BUFFER(3);
         xextent: 5;
         yextent: 5;
         zextent: 12;
-        xoffset: 10; // from NE edge
-        yoffset: 10; // from NW edge
+        xoffset: 10;
+        yoffset: 10;
         zoffset: 0;
     }
 }
 
-switch(FEAT_OBJECTS, SELF, sw_buffer, view) {
-    1: sply_end_of_rail_SW;
-    2: sply_end_of_rail_NW;
-    3: sply_end_of_rail_NE;
-    sply_end_of_rail_SE;
+// Graphics by views
+switch(FEAT_OBJECTS, SELF, sw_buffer_by_view, view) {
+    1: sply_buffer_SW;
+    2: sply_buffer_NW;
+    3: sply_buffer_NE;
+    sply_buffer_SE;
 }
 
-item(FEAT_OBJECTS, ko_train_objects_end_of_rail) {
+// Graphics by terrains
+switch(FEAT_OBJECTS, SELF, sw_buffer, [
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 0),
+    STORE_TEMP(terrain_type == TILETYPE_DESERT ? GROUNDSPRITE_DESERT : LOAD_TEMP(0), 0),
+    STORE_TEMP(terrain_type == TILETYPE_SNOW   ? GROUNDSPRITE_SNOW : LOAD_TEMP(0), 0),
+]) {
+    sw_buffer_by_view;
+}
+
+// Purchase graphics by terrains
+switch(FEAT_OBJECTS, SELF, sw_buffer_purchase, [
+    STORE_TEMP(GROUNDSPRITE_NORMAL, 0),
+]) {
+    sw_buffer_by_view;
+}
+
+// Item
+item(FEAT_OBJECTS, ko_train_objects_buffer) {
     property {
         class:                  "KTSR";
         classname:              string(STR_OBJ_BUFFER_KTSR);
@@ -92,6 +110,7 @@ item(FEAT_OBJECTS, ko_train_objects_end_of_rail) {
     }
     graphics {
         default: sw_buffer;
+        purchase: sw_buffer_purchase;
         tile_check: CB_RESULT_LOCATION_ALLOW;
     }
 }
