@@ -44,7 +44,7 @@ item(FEAT_TRAINS, ko_train_BULK_CEMENT_CAR, 5915) {
         cargo_capacity:                 32;
         refittable_cargo_classes:       bitmask(CC_BULK);
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [GRAI, COAL, IORE, CMNT, QLME, SAND, SASH];
+        cargo_allow_refit:              [GRAI, COAL, IORE, CMNT, QLME, SAND, SASH, KAOL];
         cargo_disallow_refit:           [OIL_];
         loading_speed:                  5;
 
