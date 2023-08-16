@@ -249,9 +249,9 @@
         <td class="weight">68 t</td>
         <td class="introduction">2015</td>
     </tr>
-    <tr data-veh_id="EMU150">
-        <td class="refit"><div><img src="./_static/EMU150.png" alt="ITX-새마을 (220·230k호대 / EMU-150)"></div></td>
-        <td class="name">ITX-새마을 (220·230k호대 / EMU-150)</td>
+    <tr data-veh_id="MAEUM">
+        <td class="refit"><div><img src="./_static/MAEUM.png" alt="ITX-마음"></div></td>
+        <td class="name">ITX-마음</td>
         <td class="speed">150 km/h</td>
         <td class="speed_designed">165 km/h</td>
         <td class="capacity">62</td>

@@ -26,7 +26,7 @@ STR_K8x00_NAME                                             :8x00호대 전기 �
 STR_K8500_NAME                                             :8500호대 전기 기관차
 STR_DHC_NAME                                               :디젤 유압동차 (DHC, PP)
 STR_ITX_SAEMAEUL_NAME                                      :ITX-새마을
-STR_EMU150_NAME                                            :ITX-새마을 (220·230k호대 / EMU-150)
+STR_MAEUM_NAME                                             :ITX-마음
 STR_NURIRO_NAME                                            :누리로
 STR_CDC_NAME                                               :통근형 디젤 열차 (CDC)
 STR_NDC_NAME                                               :우등형 디젤 동차 (NDC)
