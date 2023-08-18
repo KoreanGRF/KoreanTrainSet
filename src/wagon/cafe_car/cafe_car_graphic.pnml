@@ -104,6 +104,17 @@ spriteset(set_CAFE_CAR_RDC, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_CAFE_CAR(80, 300)
 }
 
+// Kwankwang-ho restaurant car (defined at K6x00)
+// Kwankwang-ho generator car (defined at K6x00)
+
+// Mugunghwa cafe (old)
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_RED_YELLOW_WHITE_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_purchase_common(0, 390)
+}
+spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_RED_YELLOW_WHITE, "./src/wagon/cafe_car/CAFE_CAR.png") {
+    tmpl_CAFE_CAR(80, 390)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_purchase, cargo_subtype) {
     set_CAFE_CAR_MUGUNGHWA_CAFE_RED_BLUE_WHITE_purchase;

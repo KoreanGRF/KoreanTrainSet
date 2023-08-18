@@ -310,7 +310,7 @@
         <td class="introduction">1972</td>
     </tr>
     <tr data-veh_id="CAFE_CAR">
-        <td class="refit"><div><img src="./_static/CAFE_CAR_DHC_1.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_DHC_2.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_SAEMAEUL_RESTAURENT.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_DHC_3.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_RESTAURENT_C.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_RESTAURENT_D.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_CAFE_E.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_RESTAURANT_F.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_CAFE_RED_BLUE_WHITE.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_STREAMLINE.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_RDC.png" alt="カフェ・食堂車"></div></td>
+        <td class="refit"><div><img src="./_static/CAFE_CAR_DHC_1.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_DHC_2.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_SAEMAEUL_RESTAURENT.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_DHC_3.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_RESTAURENT_C.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_RESTAURENT_D.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_CAFE_E.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_RESTAURANT_F.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_CAFE_RED_BLUE_WHITE.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_STREAMLINE.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_RDC.png" alt="カフェ・食堂車"><br /><img src="./_static/CAFE_CAR_MUGUNGHWA_CAFE_RED_YELLOW_WHITE.png" alt="カフェ・食堂車"></div></td>
         <td class="name">カフェ・食堂車</td>
         <td class="speed">120 km/h</td>
         <td class="speed_designed">120 km/h</td>
@@ -326,7 +326,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">37 t</td>
         <td class="introduction">1972</td>
     </tr>
     <tr data-veh_id="SEOUL_METRO_2">
@@ -336,7 +336,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">35 t</td>
         <td class="introduction">1983</td>
     </tr>
     <tr data-veh_id="SEOUL_METRO_3">
@@ -346,7 +346,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">35 t</td>
         <td class="introduction">1983</td>
     </tr>
     <tr data-veh_id="SEOUL_METRO_4">
@@ -356,7 +356,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">34 t</td>
         <td class="introduction">1983</td>
     </tr>
     <tr data-veh_id="SEOUL_METRO_5_9">
@@ -366,7 +366,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">33 t</td>
         <td class="introduction">1995</td>
     </tr>
     <tr data-veh_id="SUIN_BUNDANG">
@@ -446,7 +446,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">30 t</td>
         <td class="introduction">1999</td>
     </tr>
     <tr data-veh_id="INCHEON_METRO_2">
@@ -466,7 +466,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">31 t</td>
         <td class="introduction">1985</td>
     </tr>
     <tr data-veh_id="BUSAN_METRO_2">
@@ -476,7 +476,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">29 t</td>
         <td class="introduction">1999</td>
     </tr>
     <tr data-veh_id="BUSAN_METRO_3">
@@ -486,7 +486,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">32 t</td>
         <td class="introduction">1999</td>
     </tr>
     <tr data-veh_id="BUSAN_METRO_4">
@@ -506,7 +506,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">33 t</td>
         <td class="introduction">1997</td>
     </tr>
     <tr data-veh_id="DAEGU_METRO_2">
@@ -516,7 +516,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">31 t</td>
         <td class="introduction">2005</td>
     </tr>
     <tr data-veh_id="DAEJEON_METRO_1">
@@ -526,7 +526,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">30 t</td>
         <td class="introduction">2006</td>
     </tr>
     <tr data-veh_id="GWANGJU_METRO_1">
@@ -536,7 +536,7 @@
         <td class="speed_designed">100 km/h</td>
         <td class="capacity">100</td>
         <td class="power">2000 kW</td>
-        <td class="weight">20 t</td>
+        <td class="weight">30 t</td>
         <td class="introduction">2004</td>
     </tr>
     <tr data-veh_id="GIMPO_GOLDLINE">

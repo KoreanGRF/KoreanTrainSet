@@ -21,7 +21,8 @@ switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_wagon, cargo_subtype) {
     6: set_CAFE_CAR_MUGUNGHWA_RESTAURENT_D;
     7: set_CAFE_CAR_MUGUNGHWA_CAFE_E;
     8: set_CAFE_CAR_MUGUNGHWA_RESTAURANT_F;
-    9: set_CAFE_CAR_MUGUNGHWA_STREAMLINE;
+    9: set_CAFE_CAR_MUGUNGHWA_CAFE_RED_YELLOW_WHITE;
+    10: set_CAFE_CAR_MUGUNGHWA_STREAMLINE;
     
     18: set_CAFE_CAR_RDC;                   //=> Refer: ./src/locomotive/CDC, do not change this number
     20: set_HAERANG_CAFE_wagon;             //=> Refer: ./src/wagon/Mugunghwa
@@ -40,7 +41,8 @@ switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_cargo_subtype_text, cargo_subtype) {
     6: return string(STR_REFIT_LIVERY_MUGUNGHWA_1985_1989);
     7: return string(STR_REFIT_LIVERY_MUGUNGHWA_1990_1999);
     8: return string(STR_REFIT_LIVERY_MUGUNGHWA_2000_2002);
-    9: return string(STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE);
+    9: return string(STR_REFIT_LIVERY_CAFE_RED_YELLOW_WHITE);
+    10: return string(STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE);
 
     18: return string(STR_REFIT_LIVERY_CDC_MUGUNGHWA);
     20: return string(STR_REFIT_LIVERY_HAERANG);

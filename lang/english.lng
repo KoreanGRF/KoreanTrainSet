@@ -213,6 +213,7 @@ STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED                    : (Saemaeul cafe / KN
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW                : (Saemaeul restaurant / KNR: Green & Yellow)
 STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW           : (Saemaeul restaurant / Korail current livery)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW                 : (Saemaeul cafe / Korail current livery)
+STR_REFIT_LIVERY_CAFE_RED_YELLOW_WHITE                     : (Livery F: 2000~2002 with Cafe car livery)
 
 # Refit (Sleeping car)
 STR_REFIT_LIVERY_SLEEPING_1966_GREEN                       : (1966 livery: Green)

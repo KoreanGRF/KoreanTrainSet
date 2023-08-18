@@ -212,6 +212,7 @@ STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED                    :(セマウル号食�
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW                :(セマウル号食堂車・韓国鉄道：緑色＆黄色)
 STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW           :(セマウル号食堂車・Korail現在塗色)
 STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW                 :(セマウル号カフェ車・Korail現在塗色)
+STR_REFIT_LIVERY_CAFE_RED_YELLOW_WHITE                     :(塗色F：2000~2002年塗色・カフェ車塗色)
 
 # Refit (Sleeping car)
 STR_REFIT_LIVERY_SLEEPING_1966_GREEN                       :(1966年：緑色)
