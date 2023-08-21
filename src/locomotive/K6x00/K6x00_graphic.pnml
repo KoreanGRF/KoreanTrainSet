@@ -66,7 +66,7 @@ spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG_purchase, "./src/wagon/saemaeul_car/K
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_SAEMAEUL_CAR_wagon_KWANKWANG, "./src/wagon/saemaeul_car/KWANKWANG_CAR.png") {
-    tmpl_wagon_by_coor(80, 0)
+    tmpl_standard(80, 0)
 }
 
 // Kwankwang-ho restaurant car
