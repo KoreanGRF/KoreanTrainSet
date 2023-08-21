@@ -6,7 +6,7 @@
 
 
 // Graphic
-spriteset(set_ITX_SAEMAEUL_engineH, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
+spriteset(set_ITX_SAEMAEUL_engineH, "./src/locomotive/saemaeul/ITX_SAEMAEUL.png") {
     [80+0,     0,     8,    21,     -3,     -13]
     [80+20,    0,    21,    15,    -14,      -6]
     [80+50,    0,    31,    12,    -15,      -8]
@@ -16,7 +16,7 @@ spriteset(set_ITX_SAEMAEUL_engineH, "./src/locomotive/saemaeul/ITX-saemaeul.png"
     [80+170,   0,    31,    12,    -15,      -8]
     [80+210,   0,    21,    15,     -7,      -7]
 }
-spriteset(set_ITX_SAEMAEUL_wagonH, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
+spriteset(set_ITX_SAEMAEUL_wagonH, "./src/locomotive/saemaeul/ITX_SAEMAEUL.png") {
     [80+0,     30,     8,    21,     -3,    -13]
     [80+20,    30,    20,    16,    -14,     -7]
     [80+50,    30,    31,    12,    -15,     -8]
@@ -26,7 +26,7 @@ spriteset(set_ITX_SAEMAEUL_wagonH, "./src/locomotive/saemaeul/ITX-saemaeul.png")
     [80+170,   30,    31,    12,    -15,     -8]
     [80+210,   30,    20,    16,     -6,     -8]
 }
-spriteset(set_ITX_SAEMAEUL_wagon, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
+spriteset(set_ITX_SAEMAEUL_wagon, "./src/locomotive/saemaeul/ITX_SAEMAEUL.png") {
     [80+0,     60,     8,    21,     -3,    -13]
     [80+20,    60,    20,    16,    -14,     -7]
     [80+50,    60,    31,    12,    -15,     -8]
@@ -36,7 +36,7 @@ spriteset(set_ITX_SAEMAEUL_wagon, "./src/locomotive/saemaeul/ITX-saemaeul.png") 
     [80+170,   60,    31,    12,    -15,     -8]
     [80+210,   60,    20,    16,     -6,     -8]
 }
-spriteset(set_ITX_SAEMAEUL_wagonT, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
+spriteset(set_ITX_SAEMAEUL_wagonT, "./src/locomotive/saemaeul/ITX_SAEMAEUL.png") {
     [80+0,     90,     8,    21,     -3,    -13]
     [80+20,    90,    20,    16,    -14,     -7]
     [80+50,    90,    31,    14,    -15,     -10]
@@ -46,7 +46,7 @@ spriteset(set_ITX_SAEMAEUL_wagonT, "./src/locomotive/saemaeul/ITX-saemaeul.png")
     [80+170,   90,    31,    14,    -15,     -10]
     [80+210,   90,    20,    16,     -6,     -8]
 }
-spriteset(set_ITX_SAEMAEUL_engineT, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
+spriteset(set_ITX_SAEMAEUL_engineT, "./src/locomotive/saemaeul/ITX_SAEMAEUL.png") {
     [80+120,   120,     8,    21,     -3,   -13]
     [80+140,   120,    21,    15,    -14,    -6]
     [80+170,   120,    31,    12,    -15,    -8]
@@ -56,7 +56,7 @@ spriteset(set_ITX_SAEMAEUL_engineT, "./src/locomotive/saemaeul/ITX-saemaeul.png"
     [80+50,    120,    31,    12,    -15,    -8]
     [80+90,    120,    21,    15,     -7,    -7]
 }
-spriteset(set_ITX_SAEMAEUL_purchase, "./src/locomotive/saemaeul/ITX-saemaeul.png") {
+spriteset(set_ITX_SAEMAEUL_purchase, "./src/locomotive/saemaeul/ITX_SAEMAEUL.png") {
     tmpl_purchase_common_dualhead(0, 0)
 }
 
