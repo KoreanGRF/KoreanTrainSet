@@ -6,7 +6,7 @@
 
 // KTX1N
 spriteset(set_KTX1N_engineH, "./src/locomotive/KTX/KTX1N.png") {   // PC1
-    tmpl_standard(80, 0)
+    tmpl_standard_longnose(80, 0)
 }
 spriteset(set_KTX1N_wagon_1, "./src/locomotive/KTX/KTX1N.png") {   // T01
     tmpl_standard(80, 30)
@@ -27,7 +27,7 @@ spriteset(set_KTX1N_wagon_18, "./src/locomotive/KTX/KTX1N.png") {   // T18
     tmpl_standard(80, 150)
 }
 spriteset(set_KTX1N_engineT, "./src/locomotive/KTX/KTX1N.png") {   // PC2
-    tmpl_standard(80, 180)
+    tmpl_standard_longnose(80, 180)
 }
 spriteset(set_KTX1N_purchase, "./src/locomotive/KTX/KTX1N.png") {
     tmpl_purchase_common_dualhead(0, 0)
