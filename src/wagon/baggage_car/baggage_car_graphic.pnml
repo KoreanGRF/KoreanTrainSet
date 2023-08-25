@@ -7,55 +7,271 @@
  * Baggage car
  */
 
-// Template
-template tmpl_BAGGAGE_CAR_wagon(x, y) {
-    [x+0,    y,     8,    22,     -3,    -11]
-    [x+20,   y,    21,    17,    -13,     -9]
-    [x+50,   y,    31,    13,    -16,     -9]
-    [x+90,   y,    21,    17,     -6,     -9]
-}
-
-// Graphic
-spriteset(set_BAGGAGE_CAR_A_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+// Graphic - 1999
+spriteset(set_BAGGAGE_CAR_99A_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_purchase_common(0, 0)
 }
-spriteset(set_BAGGAGE_CAR_A_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_BAGGAGE_CAR_wagon(80, 0)
+spriteset(set_BAGGAGE_CAR_99A_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 0)
 }
-
-spriteset(set_BAGGAGE_CAR_B_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+spriteset(set_BAGGAGE_CAR_99B_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_purchase_common(0, 30)
 }
-spriteset(set_BAGGAGE_CAR_B_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_BAGGAGE_CAR_wagon(80, 30)
+spriteset(set_BAGGAGE_CAR_99B_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 30)
 }
-
-spriteset(set_BAGGAGE_CAR_C_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+spriteset(set_BAGGAGE_CAR_99C_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_purchase_common(0, 60)
 }
-spriteset(set_BAGGAGE_CAR_C_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_BAGGAGE_CAR_wagon(80, 60)
+spriteset(set_BAGGAGE_CAR_99C_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 60)
 }
 
-spriteset(set_BAGGAGE_CAR_D_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+spriteset(set_BAGGAGE_CAR_99A_loaded_1_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_purchase_common(0, 90)
 }
-spriteset(set_BAGGAGE_CAR_D_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_BAGGAGE_CAR_wagon(80, 90)
+spriteset(set_BAGGAGE_CAR_99A_loaded_1_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 90)
 }
-
-spriteset(set_BAGGAGE_CAR_E_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+spriteset(set_BAGGAGE_CAR_99B_loaded_1_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_purchase_common(0, 120)
 }
-spriteset(set_BAGGAGE_CAR_E_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_BAGGAGE_CAR_wagon(80, 120)
+spriteset(set_BAGGAGE_CAR_99B_loaded_1_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 120)
 }
-
-spriteset(set_BAGGAGE_CAR_F_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+spriteset(set_BAGGAGE_CAR_99C_loaded_1_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
     tmpl_purchase_common(0, 150)
 }
-spriteset(set_BAGGAGE_CAR_F_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
-    tmpl_BAGGAGE_CAR_wagon(80, 150)
+spriteset(set_BAGGAGE_CAR_99C_loaded_1_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 150)
+}
+
+spriteset(set_BAGGAGE_CAR_99A_loaded_2_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 180)
+}
+spriteset(set_BAGGAGE_CAR_99A_loaded_2_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 180)
+}
+spriteset(set_BAGGAGE_CAR_99B_loaded_2_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 210)
+}
+spriteset(set_BAGGAGE_CAR_99B_loaded_2_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 210)
+}
+spriteset(set_BAGGAGE_CAR_99C_loaded_2_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 240)
+}
+spriteset(set_BAGGAGE_CAR_99C_loaded_2_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 240)
+}
+
+spritegroup sg_BAGGAGE_CAR_99A_wagon {
+    loading: [
+        set_BAGGAGE_CAR_99A_loaded_1_wagon,
+        set_BAGGAGE_CAR_99A_loaded_2_wagon,
+        set_BAGGAGE_CAR_99A_loaded_2_wagon
+    ];
+    loaded: [
+        set_BAGGAGE_CAR_99A_wagon
+    ];
+}
+spritegroup sg_BAGGAGE_CAR_99B_wagon {
+    loading: [
+        set_BAGGAGE_CAR_99B_loaded_1_wagon,
+        set_BAGGAGE_CAR_99B_loaded_2_wagon,
+        set_BAGGAGE_CAR_99B_loaded_2_wagon
+    ];
+    loaded: [
+        set_BAGGAGE_CAR_99B_wagon
+    ];
+}
+spritegroup sg_BAGGAGE_CAR_99C_wagon {
+    loading: [
+        set_BAGGAGE_CAR_99C_loaded_1_wagon,
+        set_BAGGAGE_CAR_99C_loaded_2_wagon,
+        set_BAGGAGE_CAR_99C_loaded_2_wagon
+    ];
+    loaded: [
+        set_BAGGAGE_CAR_99C_wagon
+    ];
+}
+
+// Graphic - 1998
+spriteset(set_BAGGAGE_CAR_98A_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 270)
+}
+spriteset(set_BAGGAGE_CAR_98A_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 270)
+}
+spriteset(set_BAGGAGE_CAR_98B_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 300)
+}
+spriteset(set_BAGGAGE_CAR_98B_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 300)
+}
+spriteset(set_BAGGAGE_CAR_98C_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 330)
+}
+spriteset(set_BAGGAGE_CAR_98C_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 330)
+}
+
+spriteset(set_BAGGAGE_CAR_98A_loaded_1_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 360)
+}
+spriteset(set_BAGGAGE_CAR_98A_loaded_1_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 360)
+}
+spriteset(set_BAGGAGE_CAR_98B_loaded_1_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 390)
+}
+spriteset(set_BAGGAGE_CAR_98B_loaded_1_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 390)
+}
+spriteset(set_BAGGAGE_CAR_98C_loaded_1_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 420)
+}
+spriteset(set_BAGGAGE_CAR_98C_loaded_1_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 420)
+}
+
+spriteset(set_BAGGAGE_CAR_98A_loaded_2_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 450)
+}
+spriteset(set_BAGGAGE_CAR_98A_loaded_2_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 450)
+}
+spriteset(set_BAGGAGE_CAR_98B_loaded_2_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 480)
+}
+spriteset(set_BAGGAGE_CAR_98B_loaded_2_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 480)
+}
+spriteset(set_BAGGAGE_CAR_98C_loaded_2_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 510)
+}
+spriteset(set_BAGGAGE_CAR_98C_loaded_2_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 510)
+}
+
+spritegroup sg_BAGGAGE_CAR_98A_wagon {
+    loading: [
+        set_BAGGAGE_CAR_98A_loaded_1_wagon,
+        set_BAGGAGE_CAR_98A_loaded_2_wagon,
+        set_BAGGAGE_CAR_98A_loaded_2_wagon
+    ];
+    loaded: [
+        set_BAGGAGE_CAR_98A_wagon
+    ];
+}
+spritegroup sg_BAGGAGE_CAR_98B_wagon {
+    loading: [
+        set_BAGGAGE_CAR_98B_loaded_1_wagon,
+        set_BAGGAGE_CAR_98B_loaded_2_wagon,
+        set_BAGGAGE_CAR_98B_loaded_2_wagon
+    ];
+    loaded: [
+        set_BAGGAGE_CAR_98B_wagon
+    ];
+}
+spritegroup sg_BAGGAGE_CAR_98C_wagon {
+    loading: [
+        set_BAGGAGE_CAR_98C_loaded_1_wagon,
+        set_BAGGAGE_CAR_98C_loaded_2_wagon,
+        set_BAGGAGE_CAR_98C_loaded_2_wagon
+    ];
+    loaded: [
+        set_BAGGAGE_CAR_98C_wagon
+    ];
+}
+
+// Graphic - box
+spriteset(set_BAGGAGE_CAR_BOX_A_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 270)
+}
+spriteset(set_BAGGAGE_CAR_BOX_A_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 270)
+}
+spriteset(set_BAGGAGE_CAR_BOX_B_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 300)
+}
+spriteset(set_BAGGAGE_CAR_BOX_B_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 300)
+}
+spriteset(set_BAGGAGE_CAR_BOX_C_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 330)
+}
+spriteset(set_BAGGAGE_CAR_BOX_C_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 330)
+}
+
+spriteset(set_BAGGAGE_CAR_BOX_A_loaded_1_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 360)
+}
+spriteset(set_BAGGAGE_CAR_BOX_A_loaded_1_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 360)
+}
+spriteset(set_BAGGAGE_CAR_BOX_B_loaded_1_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 390)
+}
+spriteset(set_BAGGAGE_CAR_BOX_B_loaded_1_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 390)
+}
+spriteset(set_BAGGAGE_CAR_BOX_C_loaded_1_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 420)
+}
+spriteset(set_BAGGAGE_CAR_BOX_C_loaded_1_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 420)
+}
+
+spriteset(set_BAGGAGE_CAR_BOX_A_loaded_2_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 450)
+}
+spriteset(set_BAGGAGE_CAR_BOX_A_loaded_2_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 450)
+}
+spriteset(set_BAGGAGE_CAR_BOX_B_loaded_2_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 480)
+}
+spriteset(set_BAGGAGE_CAR_BOX_B_loaded_2_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 480)
+}
+spriteset(set_BAGGAGE_CAR_BOX_C_loaded_2_purchase, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_purchase_common(0, 510)
+}
+spriteset(set_BAGGAGE_CAR_BOX_C_loaded_2_wagon, "./src/wagon/baggage_car/BAGGAGE_CAR.png") {
+    tmpl_standard(80, 510)
+}
+
+spritegroup sg_BAGGAGE_CAR_BOX_A_wagon {
+    loading: [
+        set_BAGGAGE_CAR_BOX_A_loaded_1_wagon,
+        set_BAGGAGE_CAR_BOX_A_loaded_2_wagon,
+        set_BAGGAGE_CAR_BOX_A_loaded_2_wagon
+    ];
+    loaded: [
+        set_BAGGAGE_CAR_BOX_A_wagon
+    ];
+}
+spritegroup sg_BAGGAGE_CAR_BOX_B_wagon {
+    loading: [
+        set_BAGGAGE_CAR_BOX_B_loaded_1_wagon,
+        set_BAGGAGE_CAR_BOX_B_loaded_2_wagon,
+        set_BAGGAGE_CAR_BOX_B_loaded_2_wagon
+    ];
+    loaded: [
+        set_BAGGAGE_CAR_BOX_B_wagon
+    ];
+}
+spritegroup sg_BAGGAGE_CAR_BOX_C_wagon {
+    loading: [
+        set_BAGGAGE_CAR_BOX_C_loaded_1_wagon,
+        set_BAGGAGE_CAR_BOX_C_loaded_2_wagon,
+        set_BAGGAGE_CAR_BOX_C_loaded_2_wagon
+    ];
+    loaded: [
+        set_BAGGAGE_CAR_BOX_C_wagon
+    ];
 }
 
 // V-train
@@ -79,5 +295,5 @@ spriteset(set_BAGGAGE_CAR_BIDULGI_wagon, "./src/wagon/baggage_car/BIDULGI.png") 
 
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_purchase, cargo_subtype) {
-    set_BAGGAGE_CAR_A_purchase;
+    set_BAGGAGE_CAR_99A_purchase;
 }

@@ -193,6 +193,17 @@ STR_REFIT_LIVERY_GENERATOR_CAR_LONG_BLUE_RED               :(長大形・ムグ�
 STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_2             :(長大形・セマウル号旧塗色)
 STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_3             :(長大形・セマウル号現在塗色)
 
+# Refit (Baggage car)
+STR_REFIT_BAGGAGE_CAR_1999_DARKBLUE                        : (1999年：紺色)
+STR_REFIT_BAGGAGE_CAR_1999_DARKGREEN                       : (1999年：濃緑)
+STR_REFIT_BAGGAGE_CAR_1999_BLUE                            : (1999年：青)
+STR_REFIT_BAGGAGE_CAR_1998_DARKBLUE                        : (1998年：紺色)
+STR_REFIT_BAGGAGE_CAR_1998_DARKGREEN                       : (1998年：濃緑)
+STR_REFIT_BAGGAGE_CAR_1998_BLUE                            : (1998年：青)
+STR_REFIT_BAGGAGE_CAR_BOX_DARKBLUE                         : (ボックスカー改造：紺色e)
+STR_REFIT_BAGGAGE_CAR_BOX_GREEN                            : (ボックスカー改造：緑)
+STR_REFIT_BAGGAGE_CAR_BOX_ORANGE                           : (ボックスカー改造：橙)
+
 # Refit (Box car)
 STR_REFIT_LIVERY_BOX_2003                                  : (2003年)
 STR_REFIT_LIVERY_BOX_1998_DARKBLUE                         : (1998年：紺色)
@@ -244,7 +255,7 @@ STR_REFIT_LIVERY_MAIL_CAR_1                                :(1973~1975年塗色)
 STR_REFIT_LIVERY_MAIL_CAR_2                                :(1975年以来塗色)
 STR_REFIT_LIVERY_MAIL_CAR_3                                :(1996年以来ムグンファ旧塗色)
 STR_REFIT_LIVERY_MAIL_CAR_4                                :(2005年以来ムグンファ新塗色)
-STR_REFIT_LIVERY_MAIL_CAR_5                                :(2018年以来小貨物者改造塗色)
+STR_REFIT_LIVERY_MAIL_CAR_5                                :(2018年以来小貨物車改造塗色)
 
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                                     :(黒)

@@ -6,24 +6,32 @@
 
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_cargo_subtype_text, cargo_subtype) {
-    0:  return string(STR_REFIT_COLOUR_RED);
-    1:  return string(STR_REFIT_COLOUR_ORANGE);
-    2:  return string(STR_REFIT_COLOUR_DARKGREEN);
-    3:  return string(STR_REFIT_COLOUR_OLIVE);
-    4:  return string(STR_REFIT_COLOUR_SKYBLUE);
-    5:  return string(STR_REFIT_COLOUR_DARKBLUE);
-    6:  return string(STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR);   // Bidulgi
-    return string(STR_REFIT_COLOUR_RED);
+    0:   return string(STR_REFIT_BAGGAGE_CAR_1999_DARKBLUE);
+    1:   return string(STR_REFIT_BAGGAGE_CAR_1999_DARKGREEN);
+    2:   return string(STR_REFIT_BAGGAGE_CAR_1999_BLUE);
+    3:   return string(STR_REFIT_BAGGAGE_CAR_1998_DARKBLUE);
+    4:   return string(STR_REFIT_BAGGAGE_CAR_1998_DARKGREEN);
+    5:   return string(STR_REFIT_BAGGAGE_CAR_1998_BLUE);
+    6:   return string(STR_REFIT_BAGGAGE_CAR_BOX_DARKBLUE);
+    7:   return string(STR_REFIT_BAGGAGE_CAR_BOX_GREEN);
+    8:   return string(STR_REFIT_BAGGAGE_CAR_BOX_ORANGE);
+    // 9:   //RESERVED
+    10:  return string(STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR);   // Bidulgi
+    return string(STR_REFIT_BAGGAGE_CAR_1999_DARKBLUE);
 }
 
 // Graphic
 switch(FEAT_TRAINS, SELF, sw_BAGGAGE_CAR_wagon, cargo_subtype) {
-    0:  set_BAGGAGE_CAR_A_wagon;
-    1:  set_BAGGAGE_CAR_B_wagon;
-    2:  set_BAGGAGE_CAR_C_wagon;
-    3:  set_BAGGAGE_CAR_D_wagon;
-    4:  set_BAGGAGE_CAR_E_wagon;
-    5:  set_BAGGAGE_CAR_F_wagon;
-    6:  set_BAGGAGE_CAR_BIDULGI_wagon;   // Bidulgi
-    set_BAGGAGE_CAR_A_wagon;
+    0:  sg_BAGGAGE_CAR_99A_wagon;
+    1:  sg_BAGGAGE_CAR_99B_wagon;
+    2:  sg_BAGGAGE_CAR_99C_wagon;
+    3:  sg_BAGGAGE_CAR_98A_wagon;
+    4:  sg_BAGGAGE_CAR_98B_wagon;
+    5:  sg_BAGGAGE_CAR_98C_wagon;
+    6:  sg_BAGGAGE_CAR_BOX_A_wagon;
+    7:  sg_BAGGAGE_CAR_BOX_B_wagon;
+    8:  sg_BAGGAGE_CAR_BOX_C_wagon;
+    // 9:  //RESERVED;
+    10: set_BAGGAGE_CAR_BIDULGI_wagon;   // Bidulgi
+    sg_BAGGAGE_CAR_99A_wagon;
 }
