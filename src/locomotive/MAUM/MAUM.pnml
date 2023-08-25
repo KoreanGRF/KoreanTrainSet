@@ -4,28 +4,28 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * MAEUM
+ * MAUM
  */
-SPEED_GENERAL(MAEUM)
-COST(MAEUM)
-RUNNING(MAEUM)
-CAPACITY(MAEUM)
-CAPACITY_PURCHASE(MAEUM)
-LOADING(MAEUM)
+SPEED_GENERAL(MAUM)
+COST(MAUM)
+RUNNING(MAUM)
+CAPACITY(MAUM)
+CAPACITY_PURCHASE(MAUM)
+LOADING(MAUM)
 
 // Graphics
-#include "MAEUM_graphic.pnml"
+#include "MAUM_graphic.pnml"
 
 // Switches
-#include "MAEUM_switch.pnml"
+#include "MAUM_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_MAEUM, 5556) {
+item(FEAT_TRAINS, ko_train_MAUM, 5556) {
     property {
         // Common properties
-        name:                           string(STR_MAEUM_NAME);
+        name:                           string(STR_MAUM_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_MAEUM_INTRODUCTION;
+        introduction_date:              var_MAUM_INTRODUCTION;
         track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
@@ -33,9 +33,9 @@ item(FEAT_TRAINS, ko_train_MAEUM, 5556) {
         variant_group:                  ko_train_ITX_SAEMAEUL;
 
         // Spec
-        speed:                          var_MAEUM_SPEED km/h;
-        power:                          POWER_IN_KW(var_MAEUM_POWER);
-        weight:                         var_MAEUM_WEIGHT;
+        speed:                          var_MAUM_SPEED km/h;
+        power:                          POWER_IN_KW(var_MAUM_POWER);
+        weight:                         var_MAUM_WEIGHT;
         tractive_effort_coefficient:    0.4;
         air_drag_coefficient:           0.01;
 
@@ -62,39 +62,39 @@ item(FEAT_TRAINS, ko_train_MAEUM, 5556) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_MAEUM_engine;
-        purchase:                       sw_MAEUM_purchase;
+        default:                        sw_MAUM_engine;
+        purchase:                       sw_MAUM_purchase;
 
-        speed:                          sw_MAEUM_speed;
-        cost_factor:                    sw_MAEUM_cost;
-        running_cost_factor:            sw_MAEUM_runningcost_custom;
-        cargo_capacity:                 sw_MAEUM_capacity;
-        purchase_cargo_capacity:        sw_MAEUM_purchase_capacity;
-        loading_speed:                  sw_MAEUM_loadingspeed;
+        speed:                          sw_MAUM_speed;
+        cost_factor:                    sw_MAUM_cost;
+        running_cost_factor:            sw_MAUM_runningcost_custom;
+        cargo_capacity:                 sw_MAUM_capacity;
+        purchase_cargo_capacity:        sw_MAUM_purchase_capacity;
+        loading_speed:                  sw_MAUM_loadingspeed;
 
-        can_attach_wagon:               sw_MAEUM_attach_global;
-        // cargo_subtype_text:             sw_MAEUM_cargo_subtype_text;
+        can_attach_wagon:               sw_MAUM_attach_global;
+        // cargo_subtype_text:             sw_MAUM_cargo_subtype_text;
         start_stop:                     sw_ko_train_start_stop_global;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
-    // KTX-MAEUM: TC+M'+M+M+M'+TC, so all cars are powered car. Hence, we give a power to nonpower car, too.
+    // KTX-MAUM: TC+M'+M+M+M'+TC, so all cars are powered car. Hence, we give a power to nonpower car, too.
     livery_override(ko_train_PASSWG) {
-        default:                        sw_MAEUM_power_wagon;
-        cargo_capacity:                 sw_MAEUM_capacity_in_custom;
-        loading_speed:                  sw_MAEUM_loadingspeed;
+        default:                        sw_MAUM_power_wagon;
+        cargo_capacity:                 sw_MAUM_capacity_in_custom;
+        loading_speed:                  sw_MAUM_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
-        // cargo_subtype_text:             sw_MAEUM_cargo_subtype_text;
+        // cargo_subtype_text:             sw_MAUM_cargo_subtype_text;
         power:                          POWER_IN_KW(500);
     }
     livery_override(ko_train_PASSWGP) {
-        default:                        sw_MAEUM_power_wagon;
-        cargo_capacity:                 sw_MAEUM_capacity_in_custom;
-        loading_speed:                  sw_MAEUM_loadingspeed;
+        default:                        sw_MAUM_power_wagon;
+        cargo_capacity:                 sw_MAUM_capacity_in_custom;
+        loading_speed:                  sw_MAUM_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
-        // cargo_subtype_text:             sw_MAEUM_cargo_subtype_text;
+        // cargo_subtype_text:             sw_MAUM_cargo_subtype_text;
         power:                          POWER_IN_KW(500);
     }
 }
-// End of "MAEUM"
+// End of "MAUM"
