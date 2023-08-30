@@ -6,16 +6,16 @@
 
 // DAEGU_METRO_2K
 spriteset(set_DAEGU_METRO_2K_engineH, "./src/metro/daegu_metro_2/DAEGU_METRO_2K.png") {
-    tmpl_engine_head(0, 0)
+    tmpl_standard(80, 0)
 }
 spriteset(set_DAEGU_METRO_2K_wagon_panto, "./src/metro/daegu_metro_2/DAEGU_METRO_2K.png") {
-    tmpl_wagon_dblpanto(0, 30)
+    tmpl_standard(80, 30)
 }
 spriteset(set_DAEGU_METRO_2K_wagon, "./src/metro/daegu_metro_2/DAEGU_METRO_2K.png") {
-    tmpl_wagon(0, 60)
+    tmpl_standard(80, 60)
 }
 spriteset(set_DAEGU_METRO_2K_engineT, "./src/metro/daegu_metro_2/DAEGU_METRO_2K.png") {
-    tmpl_engine_tail(0, 90)
+    tmpl_standard(80, 90)
 }
 spriteset(set_DAEGU_METRO_2K_purchase, "./src/metro/daegu_metro_2/DAEGU_METRO_2K.png") {
     tmpl_purchase_common_dualhead(0, 0)
