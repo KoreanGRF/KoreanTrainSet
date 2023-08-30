@@ -6,16 +6,16 @@
 
 // GWANGJU_METRO_1K
 spriteset(set_GWANGJU_METRO_1K_engineH, "./src/metro/gwangju_metro_1/GWANGJU_METRO_1K.png") {
-    tmpl_engine_head(0, 0)
+    tmpl_standard(80, 0)
 }
 spriteset(set_GWANGJU_METRO_1K_wagon_panto, "./src/metro/gwangju_metro_1/GWANGJU_METRO_1K.png") {
-    tmpl_wagon_dblpanto(0, 30)
+    tmpl_standard(80, 30)
 }
 spriteset(set_GWANGJU_METRO_1K_wagon, "./src/metro/gwangju_metro_1/GWANGJU_METRO_1K.png") {
-    tmpl_wagon(0, 60)
+    tmpl_standard(80, 60)
 }
 spriteset(set_GWANGJU_METRO_1K_engineT, "./src/metro/gwangju_metro_1/GWANGJU_METRO_1K.png") {
-    tmpl_engine_tail(0, 90)
+    tmpl_standard(80, 90)
 }
 spriteset(set_GWANGJU_METRO_1K_purchase, "./src/metro/gwangju_metro_1/GWANGJU_METRO_1K.png") {
     tmpl_purchase_common_dualhead(0, 0)
