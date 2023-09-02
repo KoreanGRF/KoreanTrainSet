@@ -4,6 +4,42 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
+// Engine - Random for 3-cooler & 2-cooler for 2K_RECTANGLE & 2K_RECTANGLE_MODIFIED
+switch(FEAT_TRAINS, SELF, sw_2K_RECTANGLE_engineT, random_bits % 2) {
+    1: set_2K_RECTANGLE_engineT;
+    set_2K_RECTANGLE_COOLER_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_2K_RECTANGLE_engineH, random_bits % 2) {
+    1: set_2K_RECTANGLE_engineH;
+    set_2K_RECTANGLE_COOLER_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_2K_RECTANGLE_MODIFIED_engineT, random_bits % 2) {
+    1: set_2K_RECTANGLE_MODIFIED_engineT;
+    set_2K_RECTANGLE_MODIFIED_COOLER_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_2K_RECTANGLE_MODIFIED_engineH, random_bits % 2) {
+    1: set_2K_RECTANGLE_MODIFIED_engineH;
+    set_2K_RECTANGLE_MODIFIED_COOLER_engineH;
+}
+
+// Wagon - Random for 3-cooler & 2-cooler for 2K_RECTANGLE & 2K_RECTANGLE_MODIFIED
+switch(FEAT_TRAINS, SELF, sw_2K_RECTANGLE_wagon_panto, random_bits % 2) {
+    1: set_2K_RECTANGLE_wagon_panto;
+    set_2K_RECTANGLE_COOLER_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_2K_RECTANGLE_wagon, random_bits % 2) {
+    1: set_2K_RECTANGLE_wagon;
+    set_2K_RECTANGLE_COOLER_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_2K_RECTANGLE_MODIFIED_wagon_panto, random_bits % 2) {
+    1: set_2K_RECTANGLE_MODIFIED_wagon_panto;
+    set_2K_RECTANGLE_MODIFIED_COOLER_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_2K_RECTANGLE_MODIFIED_wagon, random_bits % 2) {
+    1: set_2K_RECTANGLE_MODIFIED_wagon;
+    set_2K_RECTANGLE_MODIFIED_COOLER_wagon;
+}
+
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_cargo_subtype_text, cargo_subtype) {
     0: return string(STR_REFIT_METRO_2K_VVVF_4TH_NAME);
@@ -23,8 +59,8 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_engineH, cargo_subtype) {
     2: set_2K_VVVF_2ND_engineH;
     3: set_2K_VVVF_1ST_engineH;
     4: set_2K_WIDE_engineH;
-    5: set_2K_RECTANGLE_engineH;
-    6: set_2K_RECTANGLE_MODIFIED_engineH;
+    5: sw_2K_RECTANGLE_engineH;
+    6: sw_2K_RECTANGLE_MODIFIED_engineH;
     set_2K_VVVF_4TH_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_engineT, cargo_subtype) {
@@ -33,8 +69,8 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_engineT, cargo_subtype) {
     2: set_2K_VVVF_2ND_engineT;
     3: set_2K_VVVF_1ST_engineT;
     4: set_2K_WIDE_engineT;
-    5: set_2K_RECTANGLE_engineT;
-    6: set_2K_RECTANGLE_MODIFIED_engineT;
+    5: sw_2K_RECTANGLE_engineT;
+    6: sw_2K_RECTANGLE_MODIFIED_engineT;
     set_2K_VVVF_4TH_engineT;
 }
 
@@ -45,8 +81,8 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_wagon_panto_cargo_subtype, cargo_subt
     2: set_2K_VVVF_2ND_wagon_panto;
     3: set_2K_VVVF_1ST_wagon_panto;
     4: set_2K_WIDE_wagon_panto;
-    5: set_2K_RECTANGLE_wagon_panto;
-    6: set_2K_RECTANGLE_MODIFIED_wagon_panto;
+    5: sw_2K_RECTANGLE_wagon_panto;
+    6: sw_2K_RECTANGLE_MODIFIED_wagon_panto;
     set_2K_VVVF_4TH_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_wagon_cargo_subtype, cargo_subtype) {
@@ -55,8 +91,8 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_wagon_cargo_subtype, cargo_subtype) {
     2: set_2K_VVVF_2ND_wagon;
     3: set_2K_VVVF_1ST_wagon;
     4: set_2K_WIDE_wagon;
-    5: set_2K_RECTANGLE_wagon;
-    6: set_2K_RECTANGLE_MODIFIED_wagon;
+    5: sw_2K_RECTANGLE_wagon;
+    6: sw_2K_RECTANGLE_MODIFIED_wagon;
     set_2K_VVVF_4TH_wagon;
 }
 
@@ -93,16 +129,16 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_panto_wagon_for_4cars, (position_in_c
     sw_SEOUL_METRO_2_wagon_cargo_subtype;
 }
 
-// Pantograph for Rheostatic cars
-switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_panto_wagon_RHEO_by_length, num_vehs_in_consist) {
+// Pantograph for Rectangular cars
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_panto_wagon_RECTANGLE_by_length, num_vehs_in_consist) {
     4:  sw_SEOUL_METRO_2_panto_wagon_for_4cars;
     6:  sw_SEOUL_METRO_2_panto_wagon_for_10cars_2;
     10: sw_SEOUL_METRO_2_panto_wagon_for_10cars_2;
     sw_SEOUL_METRO_2_panto_wagon_default;
 }
 
-// Pantograph for Seoul Metro 2k CHOPPER cars
-switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_panto_wagon_CHOPPER_by_length, num_vehs_in_consist) {
+// Pantograph for Wide-width cars
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_panto_wagon_WIDE_by_length, num_vehs_in_consist) {
     6:  sw_SEOUL_METRO_2_panto_wagon_for_10cars;
     10: sw_SEOUL_METRO_2_panto_wagon_for_10cars;
     sw_SEOUL_METRO_2_panto_wagon_default;
@@ -119,7 +155,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_panto_wagon_VVVF_by_length, num_vehs_
 // Pantograph
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_wagon, cargo_subtype) {
     0..3: sw_SEOUL_METRO_2_panto_wagon_VVVF_by_length;
-    5..6: sw_SEOUL_METRO_2_panto_wagon_RHEO_by_length;
-    4:    sw_SEOUL_METRO_2_panto_wagon_CHOPPER_by_length;
+    5..6: sw_SEOUL_METRO_2_panto_wagon_RECTANGLE_by_length;
+    4:    sw_SEOUL_METRO_2_panto_wagon_WIDE_by_length;
     sw_SEOUL_METRO_2_panto_wagon_VVVF_by_length;
 }
