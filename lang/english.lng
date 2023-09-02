@@ -237,18 +237,18 @@ STR_REFIT_LIVERY_SLEEPING_1977_YELLOW_RED                  : (1977 livery: Yello
 STR_REFIT_LIVERY_SLEEPING_2001_YELLOW_RED                  : (2001 livery: Yellow & Red)
 
 # Refit (NDC)
-STR_REFIT_LIVERY_NDC_1                                     : (Livery: 1984~1994)
-STR_REFIT_LIVERY_NDC_2                                     : (Livery: 1994~2009)
+STR_REFIT_LIVERY_NDC_1                                     : (Livery: 1984~1994 : Mugunghwa)
+STR_REFIT_LIVERY_NDC_2                                     : (Livery: 1994~2009 : Mugunghwa)
 STR_REFIT_LIVERY_NDC_BUSINESS                              : (Business car)
 
 # Refit (DEC)
 STR_REFIT_LIVERY_DEC_1                                     : (Livery: 1980~1986 : Saemaeul)
-STR_REFIT_LIVERY_DEC_2                                     : (Livery: 1986~1994)
-STR_REFIT_LIVERY_DEC_3                                     : (Livery: 1994~1999)
+STR_REFIT_LIVERY_DEC_2                                     : (Livery: 1986~1994 : Mugunghwa)
+STR_REFIT_LIVERY_DEC_3                                     : (Livery: 1994~1999 : Mugunghwa)
 
 # Refit (EEC)
-STR_REFIT_LIVERY_EEC_1                                     : (Livery: 1980~1994)
-STR_REFIT_LIVERY_EEC_2                                     : (Livery: 1994~1998)
+STR_REFIT_LIVERY_EEC_1                                     : (Livery: 1980~1994 : Mugumghwa)
+STR_REFIT_LIVERY_EEC_2                                     : (Livery: 1994~1998 : Mugunghwa)
 STR_REFIT_LIVERY_EEC_3                                     : (Livery: 1998~2001 : Tongil)
 
 # Refit (Mail car)
