@@ -236,19 +236,19 @@ STR_REFIT_LIVERY_SLEEPING_1977_YELLOW_RED                  :(1977年：黄色＆
 STR_REFIT_LIVERY_SLEEPING_2001_YELLOW_RED                  :(2001年：黄色＆赤色)
 
 # Refit (NDC)
-STR_REFIT_LIVERY_NDC_1                                     :(1984~1994年塗色:ムグンファ号)
-STR_REFIT_LIVERY_NDC_2                                     :(1994~2009年塗色:ムグンファ号)
+STR_REFIT_LIVERY_NDC_1                                     :(1984~1994年塗色・ムグンファ号)
+STR_REFIT_LIVERY_NDC_2                                     :(1994~2009年塗色・ムグンファ号)
 STR_REFIT_LIVERY_NDC_BUSINESS                              :(ビジネス動車)
 
 # Refit (DEC)
-STR_REFIT_LIVERY_DEC_1                                     :(1980~1986年塗色:セマウル号)
-STR_REFIT_LIVERY_DEC_2                                     :(1986~1994年塗色:ムグンファ号)
-STR_REFIT_LIVERY_DEC_3                                     :(1994~1999年塗色:ムグンファ号)
+STR_REFIT_LIVERY_DEC_1                                     :(1980~1986年塗色・セマウル号)
+STR_REFIT_LIVERY_DEC_2                                     :(1986~1994年塗色・ムグンファ号)
+STR_REFIT_LIVERY_DEC_3                                     :(1994~1999年塗色・ムグンファ号)
 
 # Refit (EEC)
-STR_REFIT_LIVERY_EEC_1                                     :(1980~1994年塗色:ムグンファ号)
-STR_REFIT_LIVERY_EEC_2                                     :(1994~1998年塗色:ムグンファ号)
-STR_REFIT_LIVERY_EEC_3                                     :(1998~2001年塗色：トンイル号)
+STR_REFIT_LIVERY_EEC_1                                     :(1980~1994年塗色・優等＆ムグンファ号)
+STR_REFIT_LIVERY_EEC_2                                     :(1994~1998年塗色・ムグンファ号)
+STR_REFIT_LIVERY_EEC_3                                     :(1998~2001年塗色・トンイル号)
 
 # Refit (Mail car)
 STR_REFIT_LIVERY_MAIL_CAR_1                                :(1973~1975年塗色)
