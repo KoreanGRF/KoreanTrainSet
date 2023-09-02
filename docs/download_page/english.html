@@ -250,8 +250,8 @@
         <td class="introduction">2015</td>
     </tr>
     <tr data-veh_id="MAUM">
-        <td class="refit"><div><img src="./_static/MAUM.png" alt="ITX-Maum"></div></td>
-        <td class="name">ITX-Maum</td>
+        <td class="refit"><div><img src="./_static/MAUM.png" alt="ITX-MAUM"></div></td>
+        <td class="name">ITX-MAUM</td>
         <td class="speed">150 km/h</td>
         <td class="speed_designed">165 km/h</td>
         <td class="capacity">62</td>
