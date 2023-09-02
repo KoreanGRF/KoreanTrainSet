@@ -20,7 +20,7 @@ LOADING(BULK_CEMENT_CAR)
 #include "bulk_cement_car_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_BULK_CEMENT_CAR, 5915) {
+item(FEAT_TRAINS, ko_train_BULK_CEMENT_CAR, 5917) {
     property {
         // Common properties
         name:                           string(STR_BULK_CEMENT_CAR_NAME);
