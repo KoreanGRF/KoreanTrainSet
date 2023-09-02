@@ -10,9 +10,9 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_cargo_subtype_text, cargo_subtype) {
     1: return string(STR_REFIT_METRO_2K_VVVF_3RD_NAME);
     2: return string(STR_REFIT_METRO_2K_VVVF_2ND_NAME);
     3: return string(STR_REFIT_METRO_2K_VVVF_1ST_NAME);
-    4: return string(STR_REFIT_METRO_2K_CHOPPER_NAME);
-    5: return string(STR_REFIT_METRO_2K_MELCO_NAME);
-    6: return string(STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME);
+    4: return string(STR_REFIT_METRO_2K_WIDE_NAME);
+    5: return string(STR_REFIT_METRO_2K_RECTANGLE_NAME);
+    6: return string(STR_REFIT_METRO_2K_RECTANGLE_MODIFIED_NAME);
     return string(STR_REFIT_METRO_2K_VVVF_4TH_NAME);
 }
 
@@ -22,9 +22,9 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_engineH, cargo_subtype) {
     1: set_2K_VVVF_3RD_engineH;
     2: set_2K_VVVF_2ND_engineH;
     3: set_2K_VVVF_1ST_engineH;
-    4: set_2K_CHOPPER_engineH;
-    5: set_2K_MELCO_engineH;
-    6: set_2K_RHEO_MODIFIED_engineH;
+    4: set_2K_WIDE_engineH;
+    5: set_2K_RECTANGLE_engineH;
+    6: set_2K_RECTANGLE_MODIFIED_engineH;
     set_2K_VVVF_4TH_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_engineT, cargo_subtype) {
@@ -32,9 +32,9 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_engineT, cargo_subtype) {
     1: set_2K_VVVF_3RD_engineT;
     2: set_2K_VVVF_2ND_engineT;
     3: set_2K_VVVF_1ST_engineT;
-    4: set_2K_CHOPPER_engineT;
-    5: set_2K_MELCO_engineT;
-    6: set_2K_RHEO_MODIFIED_engineT;
+    4: set_2K_WIDE_engineT;
+    5: set_2K_RECTANGLE_engineT;
+    6: set_2K_RECTANGLE_MODIFIED_engineT;
     set_2K_VVVF_4TH_engineT;
 }
 
@@ -44,9 +44,9 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_wagon_panto_cargo_subtype, cargo_subt
     1: set_2K_VVVF_3RD_wagon_panto;
     2: set_2K_VVVF_2ND_wagon_panto;
     3: set_2K_VVVF_1ST_wagon_panto;
-    4: set_2K_CHOPPER_wagon_panto;
-    5: set_2K_MELCO_wagon_panto;
-    6: set_2K_RHEO_MODIFIED_wagon_panto;
+    4: set_2K_WIDE_wagon_panto;
+    5: set_2K_RECTANGLE_wagon_panto;
+    6: set_2K_RECTANGLE_MODIFIED_wagon_panto;
     set_2K_VVVF_4TH_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_wagon_cargo_subtype, cargo_subtype) {
@@ -54,9 +54,9 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_2_wagon_cargo_subtype, cargo_subtype) {
     1: set_2K_VVVF_3RD_wagon;
     2: set_2K_VVVF_2ND_wagon;
     3: set_2K_VVVF_1ST_wagon;
-    4: set_2K_CHOPPER_wagon;
-    5: set_2K_MELCO_wagon;
-    6: set_2K_RHEO_MODIFIED_wagon;
+    4: set_2K_WIDE_wagon;
+    5: set_2K_RECTANGLE_wagon;
+    6: set_2K_RECTANGLE_MODIFIED_wagon;
     set_2K_VVVF_4TH_wagon;
 }
 

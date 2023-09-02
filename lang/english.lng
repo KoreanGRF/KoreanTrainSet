@@ -298,13 +298,13 @@ STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME               : (SMetro 1k Modified
 STR_REFIT_METRO_SMETRO_1K_VVVF_NAME                        : (SMetro 1k VVVF)
 
 # Refit (Seoul Line 2)
-STR_REFIT_METRO_2K_MELCO_NAME                              : (SMetro 2k MELCO)
-STR_REFIT_METRO_2K_CHOPPER_NAME                            : (SMetro 2k CHOPPER)
+STR_REFIT_METRO_2K_RECTANGLE_NAME                          : (SMetro 2k Rectangular rheostatic·CHOPPER)
+STR_REFIT_METRO_2K_RECTANGLE_MODIFIED_NAME                 : (SMetro 2k Rectangular Modified rheostatic·CHOPPER)
+STR_REFIT_METRO_2K_WIDE_NAME                               : (SMetro 2k Wide-width CHOPPER)
 STR_REFIT_METRO_2K_VVVF_1ST_NAME                           : (SMetro 2k 1st VVVF)
 STR_REFIT_METRO_2K_VVVF_2ND_NAME                           : (SMetro 2k 2nd VVVF)
 STR_REFIT_METRO_2K_VVVF_3RD_NAME                           : (SMetro 2k 3rd VVVF)
 STR_REFIT_METRO_2K_VVVF_4TH_NAME                           : (SMetro 2k 4th VVVF)
-STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME                      : (SMetro 2k Modified rheostatic)
 
 # Refit (Seoul metropolitan 3)
 STR_REFIT_METRO_3K_VVVF_1ST_1_NAME                         : (KNR 3k VVVF / Old livery)

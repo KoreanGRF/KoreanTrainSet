@@ -297,13 +297,13 @@ STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME               :(ソウルメトロ 
 STR_REFIT_METRO_SMETRO_1K_VVVF_NAME                        :(ソウル交通公社 1k VVVF)
 
 # Refit (Seoul Line 2)
-STR_REFIT_METRO_2K_MELCO_NAME                              :(ソウルメトロ 2k MELCO)
-STR_REFIT_METRO_2K_CHOPPER_NAME                            :(ソウルメトロ 2k CHOPPER)
+STR_REFIT_METRO_2K_RECTANGLE_NAME                          :(ソウルメトロ 2k 直角型 抵抗・CHOPPER)
+STR_REFIT_METRO_2K_RECTANGLE_MODIFIED_NAME                 :(ソウルメトロ 2k 直角型 改造抵抗・CHOPPER)
+STR_REFIT_METRO_2K_WIDE_NAME                               :(ソウルメトロ 2k 広幅型 CHOPPER)
 STR_REFIT_METRO_2K_VVVF_1ST_NAME                           :(ソウル交通公社 2k VVVF 1世代)
 STR_REFIT_METRO_2K_VVVF_2ND_NAME                           :(ソウル交通公社 2k VVVF 2世代)
 STR_REFIT_METRO_2K_VVVF_3RD_NAME                           :(ソウル交通公社 2k VVVF 3世代)
 STR_REFIT_METRO_2K_VVVF_4TH_NAME                           :(ソウル交通公社 2k VVVF 4世代)
-STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME                      :(ソウルメトロ 2k 改造抵抗)
 
 # Refit (Seoul metropolitan 3)
 STR_REFIT_METRO_3K_VVVF_1ST_1_NAME                         :(韓国鉄道3k VVVF・旧塗色)

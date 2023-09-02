@@ -298,13 +298,13 @@ STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME               : (서울메트로 1k
 STR_REFIT_METRO_SMETRO_1K_VVVF_NAME                        : (서울교통공사 1k VVVF)
 
 # Refit (Seoul Line 2)
-STR_REFIT_METRO_2K_MELCO_NAME                              : (서울메트로 2k MELCO)
-STR_REFIT_METRO_2K_CHOPPER_NAME                            : (서울메트로 2k CHOPPER)
+STR_REFIT_METRO_2K_RECTANGLE_NAME                          : (서울메트로 2k 직각형 저항·CHOPPER)
+STR_REFIT_METRO_2K_RECTANGLE_MODIFIED_NAME                 : (서울메트로 2k 직각형 개조 저항·CHOPPER)
+STR_REFIT_METRO_2K_WIDE_NAME                               : (서울메트로 2k 광폭형 CHOPPER)
 STR_REFIT_METRO_2K_VVVF_1ST_NAME                           : (서울교통공사 2k VVVF 1세대)
 STR_REFIT_METRO_2K_VVVF_2ND_NAME                           : (서울교통공사 2k VVVF 2세대)
 STR_REFIT_METRO_2K_VVVF_3RD_NAME                           : (서울교통공사 2k VVVF 3세대)
 STR_REFIT_METRO_2K_VVVF_4TH_NAME                           : (서울교통공사 2k VVVF 4세대)
-STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME                      : (서울메트로 2k 개조 저항)
 
 # Refit (Seoul metropolitan 3)
 STR_REFIT_METRO_3K_VVVF_1ST_1_NAME                         : (철도청 3k VVVF / 구 도색)
