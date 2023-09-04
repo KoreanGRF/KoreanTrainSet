@@ -4,42 +4,21 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Template
-template tmpl_MATE2(x, y) {
-    [x+0,     y,    8,     21,    -3,   -11]
-    [x+20,    y,    21,    17,   -14,    -8]
-    [x+50,    y,    31,    12,   -16,    -8]
-    [x+90,    y,    21,    17,    -6,    -8]
-    [x+120,   y,    8,     21,    -3,   -11]
-    [x+140,   y,    21,    17,   -14,    -8]
-    [x+170,   y,    31,    12,   -16,    -8]
-    [x+210,   y,    21,    17,    -6,    -8]
-}
-template tmpl_MATE2_tender(x, y) {
-    [x+0,     y,    8,     14,    -3,   -10]
-    [x+20,    y,    13,    13,    -6,    -8]
-    [x+50,    y,    15,    11,     0,    -7]
-    [x+90,    y,    13,    12,     2,    -3]
-    [x+120,   y,    8,     14,    -3,    -1]
-    [x+140,   y,    13,    12,   -14,    -3]
-    [x+170,   y,    15,    11,   -16,    -7]
-    [x+210,   y,    13,    13,    -6,    -8]
-}
 spriteset(set_MATE2_purchase, "./src/locomotive/steam/MATE2.png") {
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_MATE2_engine_1, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2(80, 0)
+    tmpl_standard(80, 0)
 }
 spriteset(set_MATE2_engine_2, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2(80, 30)
+    tmpl_standard(80, 30)
 }
 spriteset(set_MATE2_engine_3, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2(80, 60)
+    tmpl_standard(80, 60)
 }
 spriteset(set_MATE2_engine_4, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2(80, 90)
+    tmpl_standard(80, 90)
 }
 spriteset(set_MATE2_tender, "./src/locomotive/steam/MATE2.png") {
-    tmpl_MATE2_tender(80, 120)
+    tmpl_standard(80, 120)
 }

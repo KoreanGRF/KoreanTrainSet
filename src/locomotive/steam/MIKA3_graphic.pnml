@@ -4,42 +4,21 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Template
-template tmpl_MIKA3(x, y) {
-    [x+0,     y,    8,     20,    -3,   -12]
-    [x+20,    y,    20,    16,   -13,    -8]
-    [x+50,    y,    28,    12,   -14,    -8]
-    [x+90,    y,    20,    17,    -5,    -8]
-    [x+120,   y,    8,     20,    -3,    -9]
-    [x+140,   y,    20,    17,   -14,    -8]
-    [x+170,   y,    28,    12,   -16,    -8]
-    [x+210,   y,    20,    16,    -6,    -8]
-}
-template tmpl_MIKA3_tender(x, y) {
-    [x+0,     y,    8,     13,    -3,   -11]
-    [x+20,    y,    12,    12,    -6,    -7]
-    [x+50,    y,    14,    11,    -1,    -7]
-    [x+90,    y,    12,    11,     2,    -3]
-    [x+120,   y,    8,     13,    -3,    -1]
-    [x+140,   y,    12,    11,   -13,    -3]
-    [x+170,   y,    14,    11,   -15,    -7]
-    [x+210,   y,    12,    12,    -5,    -7]
-}
 spriteset(set_MIKA3_purchase, "./src/locomotive/steam/MIKA3.png") {
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_MIKA3_engine_1, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3(80, 0)
+    tmpl_standard(80, 0)
 }
 spriteset(set_MIKA3_engine_2, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3(80, 30)
+    tmpl_standard(80, 30)
 }
 spriteset(set_MIKA3_engine_3, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3(80, 60)
+    tmpl_standard(80, 60)
 }
 spriteset(set_MIKA3_engine_4, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3(80, 90)
+    tmpl_standard(80, 90)
 }
 spriteset(set_MIKA3_tender, "./src/locomotive/steam/MIKA3.png") {
-    tmpl_MIKA3_tender(80, 120)
+    tmpl_standard(80, 120)
 }

@@ -4,28 +4,21 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Template
-template tmpl_PASHI5(x, y) {
-    tmpl_MATE2(x, y)
-}
-template tmpl_PASHI5_tender(x, y) {
-    tmpl_MATE2_tender(x, y)
-}
 spriteset(set_PASHI5_purchase, "./src/locomotive/steam/PASHI5.png") {
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_PASHI5_engine_1, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5(80, 0)
+    tmpl_standard(80, 0)
 }
 spriteset(set_PASHI5_engine_2, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5(80, 30)
+    tmpl_standard(80, 30)
 }
 spriteset(set_PASHI5_engine_3, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5(80, 60)
+    tmpl_standard(80, 60)
 }
 spriteset(set_PASHI5_engine_4, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5(80, 90)
+    tmpl_standard(80, 90)
 }
 spriteset(set_PASHI5_tender, "./src/locomotive/steam/PASHI5.png") {
-    tmpl_PASHI5_tender(80, 120)
+    tmpl_standard(80, 120)
 }
