@@ -5,9 +5,9 @@
 ------------------------------------------------------------------------------*/
 
 // Colours
-#include "flat_car_blue_graphic.pnml"
-#include "flat_car_black_graphic.pnml"
-#include "flat_car_brown_graphic.pnml"
+#include "flat_car_graphic_blue.pnml"
+#include "flat_car_graphic_black.pnml"
+#include "flat_car_graphic_brown.pnml"
 
 // Purchase
 spriteset(set_FLAT_CAR_BLUE_purchase, "./src/wagon/flat_car/FLAT_CAR_BLUE.png") {
