@@ -19,13 +19,13 @@ spriteset(set_STAKE_CAR_BUBL_full_wagon, "./src/wagon/stake_car/cargo_BUBL.png")
 }
 spritegroup sg_STAKE_CAR_BUBL_A_wagon {
     loading: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_empty_without_stake_8dir_wagon,
         set_STAKE_CAR_BUBL_loading_1_wagon,
         set_STAKE_CAR_BUBL_loading_2_wagon,
         set_STAKE_CAR_BUBL_full_wagon
     ];
     loaded: [
-        set_STAKE_CAR_empty_wagon,
+        set_STAKE_CAR_empty_without_stake_8dir_wagon,
         set_STAKE_CAR_BUBL_loading_1_wagon,
         set_STAKE_CAR_BUBL_loading_2_wagon,
         set_STAKE_CAR_BUBL_full_wagon
