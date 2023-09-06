@@ -163,11 +163,11 @@ STR_REFIT_LIVERY_MUGUNGHWA_1984_1984                       :(ムグンファ号�
 STR_REFIT_LIVERY_MUGUNGHWA_1985_1989                       :(ムグンファ号・1985~1989年塗色)
 STR_REFIT_LIVERY_MUGUNGHWA_1990_1999                       :(ムグンファ号・1990~1999年塗色)
 STR_REFIT_LIVERY_MUGUNGHWA_2000_2002                       :(ムグンファ号・2000~2002年塗色)
-STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE                      :(流線型区特室専用)
+STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE                      :(流線型旧特室専用)
 STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_1              :(特室・ヘテ重工業旧塗色)
 STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_2              :(特室・ヘテ重工業現在塗色)
 STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HANJIN_1              :(特室・韓進重工業)
-STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE            :(特室・流線型区特室専用)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE            :(特室・流線型旧特室専用)
 
 # Refit (Tongil car)
 STR_REFIT_LIVERY_TONGIL_1963_1968                          :(塗色A：1963~1968年、赤色)
