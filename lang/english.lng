@@ -153,6 +153,7 @@ STR_REFIT_EUM320                                           : (EUM-320)
 
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (KNR old executive car livery: 1970~1983)
+STR_REFIT_LIVERY_SAEMAEUL_1970_1983                        : (Livery: 1970~1983, Red & Silver)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW           : (KNR old executive car livery: Green & Yellow)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS              : (Korail recent executive car livery)
 STR_REFIT_LIVERY_SAEMAEUL_ITX                              : (ITX-Saemaeul livery)

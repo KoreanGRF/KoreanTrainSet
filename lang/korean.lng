@@ -153,6 +153,7 @@ STR_REFIT_EUM320                                           : (이음 320)
 
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (철도청 구 도색 특실, 1970~1983년)
+STR_REFIT_LIVERY_SAEMAEUL_1970_1983                        : (1970~1983년 도색, 적색 & 은색)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW           : (철도청 구 도색 특실, 녹색 & 황색)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS              : (Korail 현 도색 특실)
 STR_REFIT_LIVERY_SAEMAEUL_ITX                              : (ITX-새마을 도색)

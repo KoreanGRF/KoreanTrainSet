@@ -152,6 +152,7 @@ STR_REFIT_EUM320                                           :(イウム-320)
 
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            :(韓国鉄道旧塗色特室、1970~1983年)
+STR_REFIT_LIVERY_SAEMAEUL_1970_1983                        :(塗色：1970~1983年 / 赤色＆銀色)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW           :(韓国鉄道旧塗色特室、緑色＆黄色)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS              :(Korail 現在塗色特室)
 STR_REFIT_LIVERY_SAEMAEUL_ITX                              :(ITX-セマウル塗色)
