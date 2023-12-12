@@ -74,10 +74,10 @@ spriteset(set_CAFE_CAR_KWANKWANG_wagon_purchase, "./src/wagon/cafe_car/CAFE_CAR.
     tmpl_purchase_common(0, 330)
 }
 spriteset(set_CAFE_CAR_KWANKWANG_wagon, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 330)
+    tmpl_standard(80, 330)
 }
 spriteset(set_CAFE_CAR_KWANKWANG_END_wagon, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 360)
+    tmpl_standard(80, 360)
 }
 
 // Kwankwang-ho generator car

@@ -4,24 +4,12 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Template
-template tmpl_CAFE_CAR(x, y) {
-    [x+0,    y,      8,    22,     -3,   -11]
-    [x+20,   y,     21,    17,    -14,    -8]
-    [x+50,   y,     31,    12,    -16,    -8]
-    [x+90,   y,     21,    17,     -6,    -8]
-    [x+120,  y,      8,    22,     -3,   -11]
-    [x+140,  y,     21,    17,    -14,    -8]
-    [x+170,  y,     31,    12,    -16,    -8]
-    [x+210,  y,     21,    17,     -6,    -8]
-}
-
 // Saemaeul (Blue+Red)
 spriteset(set_CAFE_CAR_DHC_1_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_CAFE_CAR_DHC_1, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 0)
+    tmpl_standard(80, 0)
 }
 
 // Saemaeul (Green+Yellow)
@@ -29,7 +17,7 @@ spriteset(set_CAFE_CAR_DHC_2_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_common(0, 30)
 }
 spriteset(set_CAFE_CAR_DHC_2, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 30)
+    tmpl_standard(80, 30)
 }
 
 // Saemaeul restaurent (Blue+Yellow)
@@ -37,7 +25,7 @@ spriteset(set_CAFE_CAR_SAEMAEUL_RESTAURENT_purchase, "./src/wagon/cafe_car/CAFE_
     tmpl_purchase_common(0, 60)
 }
 spriteset(set_CAFE_CAR_SAEMAEUL_RESTAURENT, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 60)
+    tmpl_standard(80, 60)
 }
 
 // Saemaeul restaurent (Blue+Yellow with Patch)
@@ -45,7 +33,7 @@ spriteset(set_CAFE_CAR_DHC_3_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_common(0, 90)
 }
 spriteset(set_CAFE_CAR_DHC_3, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 90)
+    tmpl_standard(80, 90)
 }
 
 // Mugunghwa restaurant (old)
@@ -53,7 +41,7 @@ spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_C_purchase, "./src/wagon/cafe_car/CA
     tmpl_purchase_common(0, 120)
 }
 spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_C, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 120)
+    tmpl_standard(80, 120)
 }
 
 // Mugunghwa restaurant (old)
@@ -61,7 +49,7 @@ spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_D_purchase, "./src/wagon/cafe_car/CA
     tmpl_purchase_common(0, 150)
 }
 spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURENT_D, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 150)
+    tmpl_standard(80, 150)
 }
 
 // Mugunghwa cafe (old)
@@ -69,7 +57,7 @@ spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_E_purchase, "./src/wagon/cafe_car/CAFE_CAR
     tmpl_purchase_common(0, 180)
 }
 spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_E, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 180)
+    tmpl_standard(80, 180)
 }
 
 // Mugunghwa restaurant (new)
@@ -77,7 +65,7 @@ spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURANT_F_purchase, "./src/wagon/cafe_car/CA
     tmpl_purchase_common(0, 210)
 }
 spriteset(set_CAFE_CAR_MUGUNGHWA_RESTAURANT_F, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 210)
+    tmpl_standard(80, 210)
 }
 
 // Mugunghwa cafe (new)
@@ -85,7 +73,7 @@ spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_RED_BLUE_WHITE_purchase, "./src/wagon/cafe
     tmpl_purchase_common(0, 240)
 }
 spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_RED_BLUE_WHITE, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 240)
+    tmpl_standard(80, 240)
 }
 
 // Mugunghwa streamlined
@@ -93,7 +81,7 @@ spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINE_purchase, "./src/wagon/cafe_car/CAFE
     tmpl_purchase_common(0, 270)
 }
 spriteset(set_CAFE_CAR_MUGUNGHWA_STREAMLINE, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 270)
+    tmpl_standard(80, 270)
 }
 
 // RDC
@@ -101,7 +89,7 @@ spriteset(set_CAFE_CAR_RDC_purchase, "./src/wagon/cafe_car/CAFE_CAR.png") {
     tmpl_purchase_common(0, 300)
 }
 spriteset(set_CAFE_CAR_RDC, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 300)
+    tmpl_standard(80, 300)
 }
 
 // Kwankwang-ho restaurant car (defined at K6x00)
@@ -112,7 +100,7 @@ spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_RED_YELLOW_WHITE_purchase, "./src/wagon/ca
     tmpl_purchase_common(0, 390)
 }
 spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_RED_YELLOW_WHITE, "./src/wagon/cafe_car/CAFE_CAR.png") {
-    tmpl_CAFE_CAR(80, 390)
+    tmpl_standard(80, 390)
 }
 
 // Alias of purchase image
