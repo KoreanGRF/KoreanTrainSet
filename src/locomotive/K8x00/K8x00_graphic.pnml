@@ -3,24 +3,13 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
-// Template
-template tmpl_8x00(x, y) {
-    [x+0,    y,    8,     25,    -3,   -15]
-    [x+20,   y,    21,    20,    -14,  -11]
-    [x+50,   y,    31,    15,    -16,  -11]
-    [x+90,   y,    21,    20,    -6,   -11]
-    [x+120,  y,    8,     25,    -3,   -15]
-    [x+140,  y,    21,    20,    -14,  -11]
-    [x+170,  y,    31,    15,    -16,  -11]
-    [x+210,  y,    21,    20,    -6,   -11]
-}
 
 // Red & White & Blue (current)
 spriteset(set_K8x00_RED_WHITE_BLUE_purchase, "./src/locomotive/K8x00/K8x00.png") {
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_K8x00_RED_WHITE_BLUE, "./src/locomotive/K8x00/K8x00.png") {
-    tmpl_8x00(80, 0)
+    tmpl_standard(80, 0)
 }
 
 // Green & Yellow
@@ -28,5 +17,5 @@ spriteset(set_K8x00_GREEN_YELLOW_purchase, "./src/locomotive/K8x00/K8x00.png") {
     tmpl_purchase_common(0, 30)
 }
 spriteset(set_K8x00_GREEN_YELLOW, "./src/locomotive/K8x00/K8x00.png") {
-    tmpl_8x00(80, 30)
+    tmpl_standard(80, 30)
 }
