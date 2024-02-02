@@ -389,7 +389,7 @@ STR_PARAM_ADD_TYPE_ONLY_METRO                              :지하철만
 STR_PARAM_SPEED_GENERAL_NAME                               :일반 열차 속력 계수
 STR_PARAM_SPEED_GENERAL_DESC                               :일반 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 기관차, CDC, 새마을호 DHC(PP), KTX, KTX-산천, KTX-이음 등 거의 대부분의 차량
 STR_PARAM_SPEED_SUBEXPRESS_NAME                            :준고속형 열차 속력 계수
-STR_PARAM_SPEED_SUBEXPRESS_DESC                            :준고속형 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 공항철도 1k (직통), 경춘선 ITX-청춘
+STR_PARAM_SPEED_SUBEXPRESS_DESC                            :준고속형 열차의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 공항철도 1k (직통), 경춘선 ITX-청춘, GTX-A
 STR_PARAM_SPEED_METRO_NAME                                 :지하철 속력 계수
 STR_PARAM_SPEED_METRO_DESC                                 :지하철의 속력을 조절할 수 있습니다. 값이 크면 속력이 더 빨라집니다.{}실제 속력을 사용하시려면 값을 10으로 설정하십시오.{}적용 대상: 일반/준고속형 열차를 제외한 나머지 일반 지하철 차량
 STR_PARAM_SPEED_LIGHTRAIL1_NAME                            :경전철 속력 계수 (고무)

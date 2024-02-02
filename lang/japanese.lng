@@ -388,7 +388,7 @@ STR_PARAM_ADD_TYPE_ONLY_METRO                              :電車だけ
 STR_PARAM_SPEED_GENERAL_NAME                               :一般列車の速力係数
 STR_PARAM_SPEED_GENERAL_DESC                               :一般列車の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：機関車、CDC、セマウル号DHC(PP)、KTX、KTX-山川、KTX-イウムなどのほとんどの車
 STR_PARAM_SPEED_SUBEXPRESS_NAME                            :準高速型列車の速力係数
-STR_PARAM_SPEED_SUBEXPRESS_DESC                            :準高速型列車の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：空港鉄道 1k (直通)、京春線 ITX-淸春
+STR_PARAM_SPEED_SUBEXPRESS_DESC                            :準高速型列車の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：空港鉄道 1k (直通)、京春線 ITX-淸春, GTX-A
 STR_PARAM_SPEED_METRO_NAME                                 :地下鉄の速力係数
 STR_PARAM_SPEED_METRO_DESC                                 :地下鉄の速力を調節できます。値が大きいと、速力がもっと速くなります。{}実際の速力をお使いいただくには値を10に設定してください。{}の適用対象：一般/準高速型列車を除いた残りの一般電車
 STR_PARAM_SPEED_LIGHTRAIL1_NAME                            :軽電鉄の速力係数(ゴム)
