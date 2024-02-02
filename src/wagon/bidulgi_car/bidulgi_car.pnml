@@ -54,7 +54,7 @@ item(FEAT_TRAINS, ko_train_BIDULGI_CAR, 5605) {
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
         bitmask_vehicle_info:           0;
     }
     graphics {

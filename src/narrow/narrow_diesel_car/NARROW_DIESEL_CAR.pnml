@@ -58,7 +58,7 @@ item(FEAT_TRAINS, ko_train_NARROW_DIESEL_CAR, 5522) {
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        misc_flags:                     bitmask(TRAIN_FLAG_2CC, TRAIN_FLAG_AUTOREFIT);
         bitmask_vehicle_info:           0;
         visual_effect_and_powered:      visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 0, DISABLE_WAGON_POWER);
     }

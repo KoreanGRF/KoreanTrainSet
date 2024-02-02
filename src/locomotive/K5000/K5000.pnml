@@ -55,7 +55,7 @@ item(FEAT_TRAINS, ko_train_K5000, 5450) {
 
         // Flags
         ai_special_flag:                AI_FLAG_PASSENGER;
-        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT, TRAIN_FLAG_FLIP);
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
         bitmask_vehicle_info:           0;
     }
     graphics {
