@@ -465,7 +465,6 @@ STR_OBJ_BUFFER_KTSR                                        :「KTS」車止め
 
 # Errors
 STR_ERROR_NO_ATTACH                                        :ここにこの車両を付けることができません
-STR_ERROR_NOT_ENOUGH_LENGTH2                               :列車の長さが短すぎます。少なくとも２両以上を連結しなければなりません
 STR_ERROR_NOT_ENOUGH_LENGTH4                               :列車の長さが短すぎます。少なくとも４両以上を連結しなければなりません
 STR_ERROR_TOO_LONG_LENGTH2                                 :列車の長さが長すぎます。最大２両まで連結できます
 STR_ERROR_TOO_LONG_LENGTH4                                 :列車の長さが長すぎます。最大４両まで連結できます

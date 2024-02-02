@@ -466,7 +466,6 @@ STR_OBJ_BUFFER_KTSR                                        :[KTS] 차막이
 
 # Errors
 STR_ERROR_NO_ATTACH                                        :여기에 이 차량을 붙일 수 없습니다
-STR_ERROR_NOT_ENOUGH_LENGTH2                               :열차 길이가 너무 짧습니다. 최소한 2량 이상을 연결해야 합니다.
 STR_ERROR_NOT_ENOUGH_LENGTH4                               :열차 길이가 너무 짧습니다. 최소한 4량 이상을 연결해야 합니다.
 STR_ERROR_TOO_LONG_LENGTH2                                 :열차 길이가 너무 깁니다. 최대 2량까지만 연결할 수 있습니다.
 STR_ERROR_TOO_LONG_LENGTH4                                 :열차 길이가 너무 깁니다. 최대 4량까지만 연결할 수 있습니다.
