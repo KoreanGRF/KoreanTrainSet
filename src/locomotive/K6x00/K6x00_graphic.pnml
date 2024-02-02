@@ -4,21 +4,12 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Template for 6x00
-template tmpl_K6x00(x, y) {
-    tmpl_K5000(x, y)
-}
-// Template for 6300
-template tmpl_K6300(x, y) {
-    tmpl_K5000(x, y)
-}
-
 // 6000 Orange & Black
 spriteset(set_K6000_ORANGE_BLACK_purchase, "./src/locomotive/K6x00/K6x00.png") {
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_K6000_ORANGE_BLACK, "./src/locomotive/K6x00/K6x00.png") {
-    tmpl_K6x00(80, 0)
+    tmpl_standard(80, 0)
 }
 
 // 6100 Orange & Black
@@ -26,7 +17,7 @@ spriteset(set_K6100_ORANGE_BLACK_purchase, "./src/locomotive/K6x00/K6x00.png") {
     tmpl_purchase_common(0, 30)
 }
 spriteset(set_K6100_ORANGE_BLACK, "./src/locomotive/K6x00/K6x00.png") {
-    tmpl_K6x00(80, 30)
+    tmpl_standard(80, 30)
 }
 
 // 6200 Orange & Black
@@ -34,7 +25,7 @@ spriteset(set_K6200_ORANGE_BLACK_purchase, "./src/locomotive/K6x00/K6x00.png") {
     tmpl_purchase_common(0, 60)
 }
 spriteset(set_K6200_ORANGE_BLACK, "./src/locomotive/K6x00/K6x00.png") {
-    tmpl_K6x00(80, 60)
+    tmpl_standard(80, 60)
 }
 
 // 6300 Orange & Black
@@ -42,7 +33,7 @@ spriteset(set_K6300_ORANGE_BLACK_purchase, "./src/locomotive/K6x00/K6x00.png") {
     tmpl_purchase_common(0, 90)
 }
 spriteset(set_K6300_ORANGE_BLACK, "./src/locomotive/K6x00/K6x00.png") {
-    tmpl_K6300(80, 90)
+    tmpl_standard(80, 90)
 }
 
 // 6300 White & Blue
@@ -50,7 +41,7 @@ spriteset(set_K6300_BLUE_WHITE_purchase, "./src/locomotive/K6x00/K6x00.png") {
     tmpl_purchase_common(0, 120)
 }
 spriteset(set_K6300_BLUE_WHITE, "./src/locomotive/K6x00/K6x00.png") {
-    tmpl_K6300(80, 120)
+    tmpl_standard(80, 120)
 }
 
 // 6300 Kwankwang
@@ -58,7 +49,7 @@ spriteset(set_K6300_KWANKWANG_purchase, "./src/locomotive/K6x00/K6x00.png") {
     tmpl_purchase_common(0, 150)
 }
 spriteset(set_K6300_KWANKWANG, "./src/locomotive/K6x00/K6x00.png") {
-    tmpl_K6300(80, 150)
+    tmpl_standard(80, 150)
 }
 
 // Kwankwang-ho passenger coach

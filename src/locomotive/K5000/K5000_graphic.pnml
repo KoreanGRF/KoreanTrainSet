@@ -4,24 +4,12 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Template for 5000
-template tmpl_K5000(x, y) {
-    [x+0,    y,    8,     20,    -3,   -11]
-    [x+20,   y,   19,     16,   -12,    -8]
-    [x+50,   y,   27,     12,   -12,    -8]
-    [x+90,   y,   19,     16,    -4,    -7]
-    [x+120,  y,    8,     20,    -3,    -9]
-    [x+140,  y,   19,     16,   -14,    -7]
-    [x+170,  y,   27,     12,   -16,    -8]
-    [x+210,  y,   19,     16,    -6,    -8]
-}
-
 // K5000
 spriteset(set_K5000_BLACK_ORANGE_purchase, "./src/locomotive/K5000/K5000.png") {
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_K5000_BLACK_ORANGE, "./src/locomotive/K5000/K5000.png") {   // Black & Orange
-    tmpl_K5000(80, 0)
+    tmpl_standard(80, 0)
 }
 
 // Alias of purchase image
