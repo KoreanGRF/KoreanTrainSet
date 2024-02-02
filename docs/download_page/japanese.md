@@ -569,6 +569,16 @@
         <td class="weight">20 t</td>
         <td class="introduction">2015</td>
     </tr>
+    <tr data-veh_id="GTX_A">
+        <td class="refit"><div><img src="./_static/SG_A000_1.png" alt="GTX-A"></div></td>
+        <td class="name">GTX-A</td>
+        <td class="speed">180 km/h</td>
+        <td class="speed_designed">198 km/h</td>
+        <td class="capacity">100</td>
+        <td class="power">2000 kW</td>
+        <td class="weight">45 t</td>
+        <td class="introduction">2024</td>
+    </tr>
     <tr data-veh_id="UISINSEOL">
         <td class="refit"><div><img src="./_static/UISINSEOL.png" alt="牛耳新設線"></div></td>
         <td class="name">牛耳新設線</td>

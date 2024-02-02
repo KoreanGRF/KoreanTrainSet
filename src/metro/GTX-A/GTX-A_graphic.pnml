@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// SG_A000_1
+spriteset(set_SG_A000_1_engineH, "./src/metro/GTX-A/SG_A000_1.png") {
+    tmpl_standard_longnose(80, 0)
+}
+spriteset(set_SG_A000_1_wagon_panto1, "./src/metro/GTX-A/SG_A000_1.png") {   // T'1
+    tmpl_standard(80, 30)
+}
+spriteset(set_SG_A000_1_wagon, "./src/metro/GTX-A/SG_A000_1.png") {   // M
+    tmpl_standard(80, 60)
+}
+spriteset(set_SG_A000_1_wagon_panto2, "./src/metro/GTX-A/SG_A000_1.png") {   // T'2
+    tmpl_standard(80, 90)
+}
+spriteset(set_SG_A000_1_engineT, "./src/metro/GTX-A/SG_A000_1.png") {
+    tmpl_standard_longnose(80, 120)
+}
+spriteset(set_SG_A000_1_purchase, "./src/metro/GTX-A/SG_A000_1.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_GTX_A_purchase, cargo_subtype) {
+    set_SG_A000_1_purchase;
+}
