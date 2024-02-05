@@ -30,6 +30,7 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
+        variant_group:                  ko_train_KTX2N;
 
         // Spec
         speed:                          330 km/h;
