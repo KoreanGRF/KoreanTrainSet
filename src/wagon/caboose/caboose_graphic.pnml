@@ -39,6 +39,6 @@ spriteset(set_CABOOSE_BOX_BLACK_wagon, "./src/wagon/caboose/CABOOSE.png") {
 
 
 // Alias of purchase image
-switch(FEAT_TRAINS, SELF, sw_CABOOSE_BAGGAGE_YELLOW_purchase, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_CABOOSE_purchase, cargo_subtype) {
     set_CABOOSE_BAGGAGE_YELLOW_purchase;
 }
