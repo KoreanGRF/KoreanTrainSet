@@ -58,6 +58,7 @@ STR_TANK_CAR_NAME                                          :유조차
 STR_BULK_CEMENT_CAR_NAME                                   :벌크시멘트 화차
 STR_STAKE_CAR_NAME                                         :평판화차
 STR_MAIL_CAR_NAME                                          :우편차
+STR_CABOOSE_NAME                                           :차장차
 
 # Metro
 STR_SEOUL_METRO_1_NAME                                     :수도권 1호선, 통근형
@@ -259,6 +260,13 @@ STR_REFIT_LIVERY_MAIL_CAR_2                                : (1975년 이후 도
 STR_REFIT_LIVERY_MAIL_CAR_3                                : (1996년 이후 무궁화 구 도색)
 STR_REFIT_LIVERY_MAIL_CAR_4                                : (2005년 이후 무궁화 신 도색)
 STR_REFIT_LIVERY_MAIL_CAR_5                                : (2018년 이후 수화물차 개조 도색)
+
+# Refit (Caboose)
+STR_REFIT_CABOOSE_BAGGAGE_YELLOW                           : (소화물차 개조 / 노랑)
+STR_REFIT_CABOOSE_2AXLE_YELLOW                             : (2축 / 노랑)
+STR_REFIT_CABOOSE_2AXLE_ORANGE                             : (2축 / 주황)
+STR_REFIT_CABOOSE_BOX_ORANGE                               : (유개차 개조 / 주황)
+STR_REFIT_CABOOSE_BOX_BLACK                                : (유개차 개조 / 검은색)
 
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                                     : (검은색)

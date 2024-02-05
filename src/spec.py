@@ -103,6 +103,10 @@ trainList['BULK_CEMENT_CAR']    = 120,    120,    100,    2,            32,     
 trainList['MAIL_CAR']           = None,   None,   100,    2,            35,      5,            None,   17,     (1950, 1, 1)
 trainList['SLEEPING_CAR']       = None,   None,   120,    2,            28,      5,            None,   17,     (1966, 1, 1)
 trainList['STAKE_CAR']          = 120,    120,    100,    2,            52,      5,            None,   23,     (1950, 1, 1)
+trainList['CABOOSE']            = 120,    120,    100,    2,            0,       5,            None,   26,     (1999, 1, 1)
+trainList['CABOOSE_BAGGAGE']    = 120,    120,    None,   None,         0,       None,         None,   26,     (1999, 1, 1)
+trainList['CABOOSE_2AXLE']      = 120,    120,    None,   None,         0,       None,         None,   17,     (2000, 1, 1)
+trainList['CABOOSE_BOX']        = 90,     90,     None,   None,         0,       None,         None,   22,     (1992, 1, 1)
 
 
 # Generates spec.pnml (Do not modified this below!)

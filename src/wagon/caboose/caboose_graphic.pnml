@@ -1,0 +1,44 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * Caboose
+ */
+
+// Baggage car type
+spriteset(set_CABOOSE_BAGGAGE_YELLOW_purchase, "./src/wagon/caboose/CABOOSE.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_CABOOSE_BAGGAGE_YELLOW_wagon, "./src/wagon/caboose/CABOOSE.png") {
+    tmpl_standard(80, 0)
+}
+
+// 2-axle type
+spriteset(set_CABOOSE_2AXLE_YELLOW_purchase, "./src/wagon/caboose/CABOOSE.png") {
+    tmpl_purchase_common(0, 30)
+}
+spriteset(set_CABOOSE_2AXLE_YELLOW_wagon, "./src/wagon/caboose/CABOOSE.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_CABOOSE_2AXLE_ORANGE_wagon, "./src/wagon/caboose/CABOOSE.png") {
+    tmpl_standard(80, 60)
+}
+
+// Box car type
+spriteset(set_CABOOSE_BOX_ORANGE_purchase, "./src/wagon/caboose/CABOOSE.png") {
+    tmpl_purchase_common(0, 90)
+}
+spriteset(set_CABOOSE_BOX_ORANGE_wagon, "./src/wagon/caboose/CABOOSE.png") {
+    tmpl_standard(80, 90)
+}
+spriteset(set_CABOOSE_BOX_BLACK_wagon, "./src/wagon/caboose/CABOOSE.png") {
+    tmpl_standard(80, 120)
+}
+
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_CABOOSE_BAGGAGE_YELLOW_purchase, cargo_subtype) {
+    set_CABOOSE_BAGGAGE_YELLOW_purchase;
+}

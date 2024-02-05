@@ -63,6 +63,7 @@ sort(FEAT_TRAINS, [
     ko_train_TANK_CAR,               // 5913
     ko_train_BULK_CEMENT_CAR,        // 5917
     ko_train_STAKE_CAR,              // 5914
+    ko_train_CABOOSE,                // 5918
 
     ko_train_SEOUL_METRO_1,          // 5711
     ko_train_SEOUL_METRO_2,          // 5712
