@@ -57,6 +57,7 @@ STR_TANK_CAR_NAME                                          :タンク車
 STR_BULK_CEMENT_CAR_NAME                                   :バルクセメント貨車
 STR_STAKE_CAR_NAME                                         :評判貨車
 STR_MAIL_CAR_NAME                                          :郵便車
+STR_CABOOSE_NAME                                           :車掌車
 
 # Metro
 STR_SEOUL_METRO_1_NAME                                     :首都圏1号線、通勤型
@@ -202,7 +203,7 @@ STR_REFIT_BAGGAGE_CAR_1999_BLUE                            : (1999年：青)
 STR_REFIT_BAGGAGE_CAR_1998_DARKBLUE                        : (1998年：紺色)
 STR_REFIT_BAGGAGE_CAR_1998_DARKGREEN                       : (1998年：濃緑)
 STR_REFIT_BAGGAGE_CAR_1998_BLUE                            : (1998年：青)
-STR_REFIT_BAGGAGE_CAR_BOX_DARKBLUE                         : (ボックスカー改造：紺色e)
+STR_REFIT_BAGGAGE_CAR_BOX_DARKBLUE                         : (ボックスカー改造：紺色)
 STR_REFIT_BAGGAGE_CAR_BOX_GREEN                            : (ボックスカー改造：緑)
 STR_REFIT_BAGGAGE_CAR_BOX_ORANGE                           : (ボックスカー改造：橙)
 
@@ -258,6 +259,13 @@ STR_REFIT_LIVERY_MAIL_CAR_2                                :(1975年以来塗色
 STR_REFIT_LIVERY_MAIL_CAR_3                                :(1996年以来ムグンファ旧塗色)
 STR_REFIT_LIVERY_MAIL_CAR_4                                :(2005年以来ムグンファ新塗色)
 STR_REFIT_LIVERY_MAIL_CAR_5                                :(2018年以来小貨物車改造塗色)
+
+# Refit (Caboose)
+STR_REFIT_CABOOSE_BAGGAGE_YELLOW                           :(小貨物車改造 : 黄色)
+STR_REFIT_CABOOSE_2AXLE_YELLOW                             :(二軸車 : 黄色)
+STR_REFIT_CABOOSE_2AXLE_ORANGE                             :(二軸車 : 橙)
+STR_REFIT_CABOOSE_BOX_ORANGE                               :(ボックスカー改造 : 橙)
+STR_REFIT_CABOOSE_BOX_BLACK                                :(ボックスカー改造 : 黒)
 
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                                     :(黒)

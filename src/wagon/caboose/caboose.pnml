@@ -1,0 +1,79 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+/**
+ * CABOOSE
+ */
+// SPEED_GENERAL(CABOOSE)
+COST(CABOOSE)
+RUNNING(CABOOSE)
+CAPACITY(CABOOSE)
+// CAPACITY_PURCHASE(CABOOSE)
+LOADING(CABOOSE)
+SPEED_GENERAL(CABOOSE_BAGGAGE)
+SPEED_GENERAL(CABOOSE_2AXLE)
+SPEED_GENERAL(CABOOSE_BOX)
+
+// Graphics
+#include "caboose_graphic.pnml"
+
+// Switch
+#include "caboose_switch.pnml"
+
+// Item
+item(FEAT_TRAINS, ko_train_CABOOSE, 5918) {
+    property {
+        // Common properties
+        name:                           string(STR_CABOOSE_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_CABOOSE_INTRODUCTION;
+        track_type:                     RAIL;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+
+        // Spec
+        power:                          0 kW;
+        weight:                         var_CABOOSE_WEIGHT;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+        loading_speed:                  5;
+
+        // Costs
+        cost_factor:                    10;
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_NONE;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_CARGO;
+        misc_flags:                     bitmask(TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_CABOOSE_wagon;
+        purchase:                       sw_CABOOSE_purchase;
+        length:                         sw_CABOOSE_length;
+
+        speed:                          sw_CABOOSE_speed;
+        cost_factor:                    sw_CABOOSE_cost;
+        running_cost_factor:            sw_CABOOSE_runningcost;
+        cargo_capacity:                 sw_CABOOSE_capacity;
+        loading_speed:                  sw_CABOOSE_loadingspeed;
+        weight:                         sw_CABOOSE_weight;
+
+        can_attach_wagon:               sw_Kxxxx_attach_global;
+        cargo_subtype_text:             sw_CABOOSE_cargo_subtype_text;
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
+    }
+}

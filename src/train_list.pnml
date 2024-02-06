@@ -113,6 +113,7 @@
 #include "wagon/bulk_cement_car/bulk_cement_car.pnml"
 #include "wagon/stake_car/stake_car.pnml"
 #include "wagon/LRT_wagon/LRT_wagon.pnml"
+#include "wagon/caboose/caboose.pnml"
 
 // Sorting
 #include "sort.pnml"

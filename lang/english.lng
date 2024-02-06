@@ -58,6 +58,7 @@ STR_TANK_CAR_NAME                                          :Tank car
 STR_BULK_CEMENT_CAR_NAME                                   :Bulk cement car
 STR_STAKE_CAR_NAME                                         :Stake car
 STR_MAIL_CAR_NAME                                          :Mail car
+STR_CABOOSE_NAME                                           :Caboose
 
 # Metro
 STR_SEOUL_METRO_1_NAME                                     :Seoul Line 1, Commuter trains
@@ -259,6 +260,13 @@ STR_REFIT_LIVERY_MAIL_CAR_2                                : (Livery: 1975~)
 STR_REFIT_LIVERY_MAIL_CAR_3                                : (Livery: 1996~, Mugunghwa old livery)
 STR_REFIT_LIVERY_MAIL_CAR_4                                : (Livery: 2005~, Mugunghwa new livery)
 STR_REFIT_LIVERY_MAIL_CAR_5                                : (Livery: 2018~, baggage car)
+
+# Refit (Caboose)
+STR_REFIT_CABOOSE_BAGGAGE_YELLOW                           : (Baggage car type / Yellow)
+STR_REFIT_CABOOSE_2AXLE_YELLOW                             : (2-axle type / Yellow)
+STR_REFIT_CABOOSE_2AXLE_ORANGE                             : (2-axle type / Orange)
+STR_REFIT_CABOOSE_BOX_ORANGE                               : (Box car type / Orange)
+STR_REFIT_CABOOSE_BOX_BLACK                                : (Box car type / Black)
 
 # Refit (etc)
 STR_REFIT_COLOUR_BLACK                                     : (Black)

@@ -31,6 +31,7 @@ switch(FEAT_TRAINS, SELF, sw_steam_attach, vehicle_type_id) {
     ko_train_TANK_CAR:              return CB_RESULT_ATTACH_ALLOW;
     ko_train_STAKE_CAR:             return CB_RESULT_ATTACH_ALLOW;
     ko_train_MAIL_CAR:              return CB_RESULT_ATTACH_ALLOW;
+    ko_train_CABOOSE:               return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
 switch(FEAT_TRAINS, SELF, sw_steam_attach_global, bool_no_vehicle_attachment_restrictions) {
@@ -65,6 +66,7 @@ switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
     ko_train_TANK_CAR:                                return CB_RESULT_ATTACH_ALLOW;
     ko_train_STAKE_CAR:                               return CB_RESULT_ATTACH_ALLOW;
     ko_train_MAIL_CAR:                                return CB_RESULT_ATTACH_ALLOW;
+    ko_train_CABOOSE:                                 return CB_RESULT_ATTACH_ALLOW;
     ko_train_SEOUL_METRO_1..ko_train_GWANGJU_METRO_1: return CB_RESULT_ATTACH_ALLOW;
     ko_train_PASSWG:                                  return CB_RESULT_ATTACH_ALLOW;
     ko_train_PASSWGP:                                 return CB_RESULT_ATTACH_ALLOW;
