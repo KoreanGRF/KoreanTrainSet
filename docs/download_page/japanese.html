@@ -729,4 +729,14 @@
         <td class="weight">23 t</td>
         <td class="introduction">1950</td>
     </tr>
+    <tr data-veh_id="CABOOSE">
+        <td class="refit"><div><img src="./_static/CABOOSE_BAGGAGE_YELLOW.png" alt="車掌車"><br /><img src="./_static/CABOOSE_2AXLE_YELLOW.png" alt="車掌車"><br /><img src="./_static/CABOOSE_BOX_ORANGE.png" alt="車掌車"></div></td>
+        <td class="name">車掌車</td>
+        <td class="speed">120 km/h</td>
+        <td class="speed_designed">120 km/h</td>
+        <td class="capacity"></td>
+        <td class="power"></td>
+        <td class="weight">26 t</td>
+        <td class="introduction">1999</td>
+    </tr>
 </table>
