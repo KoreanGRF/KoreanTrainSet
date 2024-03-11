@@ -4,6 +4,42 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
+// Engine - Random for non-cooler & cooler for 1K_RHEO_FIRST_1 & SMETRO_1K_RHEO_FIRST
+switch(FEAT_TRAINS, SELF, sw_1K_RHEO_FIRST_1_engineT, random_bits % 2) {
+    1: set_1K_RHEO_FIRST_1_engineT;
+    set_1K_RHEO_FIRST_1_COOLER_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_1K_RHEO_FIRST_1_engineH, random_bits % 2) {
+    1: set_1K_RHEO_FIRST_1_engineH;
+    set_1K_RHEO_FIRST_1_COOLER_engineH;
+}
+switch(FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_FIRST_engineT, random_bits % 2) {
+    1: set_SMETRO_1K_RHEO_FIRST_engineT;
+    set_SMETRO_1K_RHEO_FIRST_COOLER_engineT;
+}
+switch(FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_FIRST_engineH, random_bits % 2) {
+    1: set_SMETRO_1K_RHEO_FIRST_engineH;
+    set_SMETRO_1K_RHEO_FIRST_COOLER_engineH;
+}
+
+// Wagon - Random for non-cooler & cooler for 1K_RHEO_FIRST_1 & SMETRO_1K_RHEO_FIRST
+switch(FEAT_TRAINS, SELF, sw_1K_RHEO_FIRST_1_wagon_panto, random_bits % 2) {
+    1: set_1K_RHEO_FIRST_1_wagon_panto;
+    set_1K_RHEO_FIRST_1_COOLER_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_1K_RHEO_FIRST_1_wagon, random_bits % 2) {
+    1: set_1K_RHEO_FIRST_1_wagon;
+    set_1K_RHEO_FIRST_1_COOLER_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_FIRST_wagon_panto, random_bits % 2) {
+    1: set_SMETRO_1K_RHEO_FIRST_wagon_panto;
+    set_SMETRO_1K_RHEO_FIRST_COOLER_wagon_panto;
+}
+switch(FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_FIRST_wagon, random_bits % 2) {
+    1: set_SMETRO_1K_RHEO_FIRST_wagon;
+    set_SMETRO_1K_RHEO_FIRST_COOLER_wagon;
+}
+
 // Engine - Bike printing for Gyeongui·Jungang Line 
 switch(FEAT_TRAINS, SELF, sw_321K_BIKE_engineT, random_bits % 2) {
     1: set_321K_BIKE_engineT_orange;
@@ -71,10 +107,10 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_panto_cargo_subtype, cargo_subt
     9:    set_1K_RHEO_SECOND_2_wagon_panto;
     10:   set_1K_RHEO_SECOND_1_wagon_panto;
     11:   set_1K_RHEO_FIRST_2_wagon_panto;
-    12:   set_1K_RHEO_FIRST_1_wagon_panto;
+    12:   sw_1K_RHEO_FIRST_1_wagon_panto;
     13:   set_SMETRO_1K_VVVF_wagon_panto;
     14:   set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
-    15:   set_SMETRO_1K_RHEO_FIRST_wagon_panto;
+    15:   sw_SMETRO_1K_RHEO_FIRST_wagon_panto;
     16:   sw_SEOUL_METRO_1_wagon_321K_BIKE;
     17:   set_371K_BLANK_wagon_panto;
     18:   set_371K_CC_wagon_panto;
@@ -98,10 +134,10 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_cargo_subtype, cargo_subtype) {
     9:    set_1K_RHEO_SECOND_2_wagon;
     10:   set_1K_RHEO_SECOND_1_wagon;
     11:   set_1K_RHEO_FIRST_2_wagon;
-    12:   set_1K_RHEO_FIRST_1_wagon;
+    12:   sw_1K_RHEO_FIRST_1_wagon;
     13:   set_SMETRO_1K_VVVF_wagon;
     14:   set_SMETRO_1K_RHEO_MODIFIED_wagon;
-    15:   set_SMETRO_1K_RHEO_FIRST_wagon;
+    15:   sw_SMETRO_1K_RHEO_FIRST_wagon;
     16:   sw_SEOUL_METRO_1_wagon_321K_BIKE;
     17:   set_371K_BLANK_wagon;
     18:   set_371K_CC_wagon;
@@ -125,10 +161,10 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_engineH, cargo_subtype) {
     9:    set_1K_RHEO_SECOND_2_engineH;
     10:   set_1K_RHEO_SECOND_1_engineH;
     11:   set_1K_RHEO_FIRST_2_engineH;
-    12:   set_1K_RHEO_FIRST_1_engineH;
+    12:   sw_1K_RHEO_FIRST_1_engineH;
     13:   set_SMETRO_1K_VVVF_engineH;
     14:   set_SMETRO_1K_RHEO_MODIFIED_engineH;
-    15:   set_SMETRO_1K_RHEO_FIRST_engineH;
+    15:   sw_SMETRO_1K_RHEO_FIRST_engineH;
     16:   sw_321K_BIKE_engineH;
     17:   set_371K_BLANK_engineH;
     18:   set_371K_CC_engineH;
@@ -152,10 +188,10 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_engineT, cargo_subtype) {
     9:    set_1K_RHEO_SECOND_2_engineT;
     10:   set_1K_RHEO_SECOND_1_engineT;
     11:   set_1K_RHEO_FIRST_2_engineT;
-    12:   set_1K_RHEO_FIRST_1_engineT;
+    12:   sw_1K_RHEO_FIRST_1_engineT;
     13:   set_SMETRO_1K_VVVF_engineT;
     14:   set_SMETRO_1K_RHEO_MODIFIED_engineT;
-    15:   set_SMETRO_1K_RHEO_FIRST_engineT;
+    15:   sw_SMETRO_1K_RHEO_FIRST_engineT;
     16:   sw_321K_BIKE_engineT;
     17:   set_371K_BLANK_engineT;
     18:   set_371K_CC_engineT;
