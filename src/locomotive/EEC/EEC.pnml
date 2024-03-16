@@ -72,7 +72,7 @@ item(FEAT_TRAINS, ko_train_EEC, 5513) {
         purchase_cargo_capacity:        sw_EEC_purchase_capacity;
         loading_speed:                  sw_EEC_loadingspeed;
 
-        can_attach_wagon:               sw_EEC_attach;
+        can_attach_wagon:               sw_EEC_attach_global;
         cargo_subtype_text:             sw_EEC_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }

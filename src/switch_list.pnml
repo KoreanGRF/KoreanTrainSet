@@ -10,7 +10,7 @@
 RUNNING(PASSENGER_WAGON)
 RUNNING(PASSENGER_WAGON_P)
 
-// Attachable vehicles for Steam locomotives
+// Attach for Steam locomotives
 switch(FEAT_TRAINS, SELF, sw_steam_attach, vehicle_type_id) {
     ko_train_MIKA3:                 return CB_RESULT_ATTACH_ALLOW;
     ko_train_MATE2:                 return CB_RESULT_ATTACH_ALLOW;
@@ -39,7 +39,7 @@ switch(FEAT_TRAINS, SELF, sw_steam_attach_global, bool_no_vehicle_attachment_res
     sw_steam_attach;
 }
 
-// Attachable vehicles for Kxxxx locomotives
+// Attach for Kxxxx locomotives
 switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach, vehicle_type_id) {
     ko_train_K2x00:                                   return CB_RESULT_ATTACH_ALLOW;
     ko_train_K4x00:                                   return CB_RESULT_ATTACH_ALLOW;
@@ -77,7 +77,7 @@ switch(FEAT_TRAINS, SELF, sw_Kxxxx_attach_global, bool_no_vehicle_attachment_res
     sw_Kxxxx_attach;
 }
 
-// Attachable vehicles for Narrow gauge
+// Attach for Narrow gauge
 switch(FEAT_TRAINS, SELF, sw_NARROW_attach, vehicle_type_id) {
     ko_train_NARROW_DIESEL_CAR:                       return CB_RESULT_ATTACH_ALLOW;
     ko_train_HOKEY7:                                  return CB_RESULT_ATTACH_ALLOW;
@@ -91,7 +91,7 @@ switch(FEAT_TRAINS, SELF, sw_NARROW_attach_global, bool_no_vehicle_attachment_re
     sw_NARROW_attach;
 }
 
-// Attachable vehicles for Metro
+// Attach for Metro
 switch(FEAT_TRAINS, SELF, sw_METRO_attach, vehicle_type_id) {
     ko_train_PASSWG:                                  return CB_RESULT_ATTACH_ALLOW;
     ko_train_PASSWGP:                                 return CB_RESULT_ATTACH_ALLOW;

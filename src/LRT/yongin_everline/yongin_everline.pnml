@@ -69,7 +69,7 @@ item(FEAT_TRAINS, ko_train_YONGIN_EVERLINE, 5804) {
         cargo_capacity:                 sw_YONGIN_EVERLINE_capacity;
         loading_speed:                  sw_YONGIN_EVERLINE_loadingspeed;
 
-        can_attach_wagon:               sw_YONGIN_EVERLINE_attach;
+        can_attach_wagon:               sw_YONGIN_EVERLINE_attach_global;
         start_stop:                     sw_YONGIN_EVERLINE_start_stop_global;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }

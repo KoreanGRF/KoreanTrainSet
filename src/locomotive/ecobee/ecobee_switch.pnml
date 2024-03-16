@@ -15,3 +15,7 @@ switch(FEAT_TRAINS, SELF, sw_ECOBEE_attach, vehicle_type_id) {
     ko_train_ECOBEE:  return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
+switch(FEAT_TRAINS, SELF, sw_ECOBEE_attach_global, bool_no_vehicle_attachment_restrictions) {
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_ECOBEE_attach;
+}

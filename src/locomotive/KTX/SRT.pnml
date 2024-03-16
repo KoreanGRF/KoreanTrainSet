@@ -72,7 +72,7 @@ item(FEAT_TRAINS, ko_train_SRT, 5553) {
         purchase_cargo_capacity:        0;
         loading_speed:                  sw_SRT_loadingspeed;
 
-        can_attach_wagon:               sw_KTX_attach;
+        can_attach_wagon:               sw_KTX_attach_global;
         start_stop:                     sw_ko_train_start_stop_global;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }

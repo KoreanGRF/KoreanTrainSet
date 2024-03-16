@@ -64,7 +64,7 @@ item(FEAT_TRAINS, ko_train_SAEMAEUL_CAR, 5601) {
         cargo_capacity:                 sw_SAEMAEUL_CAR_capacity;
         loading_speed:                  sw_SAEMAEUL_CAR_loadingspeed;
 
-        can_attach_wagon:               sw_SAEMAEUL_CAR_attach;
+        can_attach_wagon:               sw_SAEMAEUL_CAR_attach_global;
 
         cargo_subtype_text:             sw_SAEMAEUL_CAR_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);

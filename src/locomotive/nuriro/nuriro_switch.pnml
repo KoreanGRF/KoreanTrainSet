@@ -69,10 +69,14 @@ switch(FEAT_TRAINS, SELF, sw_NURIRO_wagon, position_in_consist + 1 == num_vehs_i
     sw_NURIRO_wagon_normal;
 }
 
-// Attachable vehicles
+// Attach
 switch(FEAT_TRAINS, SELF, sw_NURIRO_attach, vehicle_type_id) {
     ko_train_NURIRO:  return CB_RESULT_ATTACH_ALLOW;
     ko_train_PASSWG:  return CB_RESULT_ATTACH_ALLOW;
     ko_train_PASSWGP: return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
+}
+switch(FEAT_TRAINS, SELF, sw_NURIRO_attach_global, bool_no_vehicle_attachment_restrictions) {
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_NURIRO_attach;
 }

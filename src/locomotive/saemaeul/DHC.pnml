@@ -72,7 +72,7 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
         purchase_cargo_capacity:        sw_DHC_purchase_capacity;
         loading_speed:                  sw_DHC_loadingspeed;
 
-        can_attach_wagon:               sw_DHC_attach;
+        can_attach_wagon:               sw_DHC_attach_global;
         cargo_subtype_text:             sw_DHC_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }

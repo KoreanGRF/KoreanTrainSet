@@ -28,6 +28,10 @@ switch(FEAT_TRAINS, SELF, sw_INCHEON_METRO_2_attach, vehicle_type_id) {
     // ko_train_PASSWGP:     return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
 }
+switch(FEAT_TRAINS, SELF, sw_INCHEON_METRO_2_attach_global, bool_no_vehicle_attachment_restrictions) {
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_INCHEON_METRO_2_attach;
+}
 
 // Restrict length
 switch(FEAT_TRAINS, SELF, sw_INCHEON_METRO_2_start_stop, num_vehs_in_consist > 4) {

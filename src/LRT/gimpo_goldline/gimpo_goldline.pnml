@@ -70,7 +70,7 @@ item(FEAT_TRAINS, ko_train_GIMPO_GOLDLINE, 5801) {
         purchase_cargo_capacity:        sw_GIMPO_GOLDLINE_purchase_capacity;
         loading_speed:                  sw_GIMPO_GOLDLINE_loadingspeed;
 
-        can_attach_wagon:               sw_GIMPO_GOLDLINE_attach;
+        can_attach_wagon:               sw_GIMPO_GOLDLINE_attach_global;
         start_stop:                     sw_GIMPO_GOLDLINE_start_stop_global;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }

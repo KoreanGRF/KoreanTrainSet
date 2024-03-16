@@ -70,7 +70,7 @@ item(FEAT_TRAINS, ko_train_DAEGU_METRO_3, 5763) {
         purchase_cargo_capacity:        sw_DAEGU_METRO_3_purchase_capacity;
         loading_speed:                  sw_DAEGU_METRO_3_loadingspeed;
 
-        can_attach_wagon:               sw_DAEGU_METRO_3_attach;
+        can_attach_wagon:               sw_DAEGU_METRO_3_attach_global;
         cargo_subtype_text:             sw_DAEGU_METRO_3_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }

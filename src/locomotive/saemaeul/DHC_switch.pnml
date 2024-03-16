@@ -28,7 +28,7 @@ switch(FEAT_TRAINS, SELF, sw_DHC_subtype_text, cargo_subtype) {
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 
-// Attachable vehicles
+// Attach
 switch(FEAT_TRAINS, SELF, sw_DHC_attach, vehicle_type_id) {
     ko_train_DHC:          return CB_RESULT_ATTACH_ALLOW;
     ko_train_ITX_SAEMAEUL: return CB_RESULT_ATTACH_ALLOW;
@@ -43,4 +43,8 @@ switch(FEAT_TRAINS, SELF, sw_DHC_attach, vehicle_type_id) {
     ko_train_SAEMAEUL_CAR: return CB_RESULT_ATTACH_ALLOW;
     ko_train_CAFE_CAR:     return CB_RESULT_ATTACH_ALLOW;
     return string(STR_ERROR_NO_ATTACH);
+}
+switch(FEAT_TRAINS, SELF, sw_DHC_attach_global, bool_no_vehicle_attachment_restrictions) {
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_DHC_attach;
 }

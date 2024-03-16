@@ -78,7 +78,7 @@ item(FEAT_TRAINS, ko_train_NDC, 5511) {
         purchase_cargo_capacity:        sw_NDC_purchase_capacity;
         loading_speed:                  sw_NDC_loadingspeed;
 
-        can_attach_wagon:               sw_NDC_attach;
+        can_attach_wagon:               sw_NDC_attach_global;
         cargo_subtype_text:             sw_NDC_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
