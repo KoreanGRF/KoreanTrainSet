@@ -37,6 +37,7 @@ STR_KTX1N_NAME                                             :KTX-1
 STR_KTX2N_NAME                                             :KTX-山川
 STR_SRT_NAME                                               :SRT
 STR_EUM_NAME                                               :KTX-イウム
+STR_KTX3N_NAME                                             :KTX-青竜
 STR_ECOBEE_NAME                                            :仁川空港マグレブ（エコビ）
 
 STR_PASSENGER_WAGON_NAME                                   :客車
@@ -147,10 +148,6 @@ STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980                 :(トンイル号塗�
 STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990                 :(トンイル号塗色：1990年代)
 STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA                         :(ムグンファ号塗色)
 STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE                       :(青色塗色：1974年~)
-
-# Refit (EUM)
-STR_REFIT_EUM260                                           :(イウム-260)
-STR_REFIT_EUM320                                           :(イウム-320)
 
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            :(韓国鉄道旧塗色特室、1970~1983年)

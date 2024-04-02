@@ -45,6 +45,7 @@ sort(FEAT_TRAINS, [
     ko_train_KTX2N,                  // 5552
     ko_train_SRT,                    // 5553
     ko_train_EUM,                    // 5554
+    ko_train_KTX3N,                  // 5557
     ko_train_MAUM,                   // 5556
 
     ko_train_SAEMAEUL_CAR,           // 5601

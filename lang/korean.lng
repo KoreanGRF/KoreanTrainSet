@@ -38,6 +38,7 @@ STR_KTX1N_NAME                                             :KTX-1
 STR_KTX2N_NAME                                             :KTX-산천
 STR_SRT_NAME                                               :SRT
 STR_EUM_NAME                                               :KTX-이음
+STR_KTX3N_NAME                                             :KTX-청룡
 STR_ECOBEE_NAME                                            :인천공항 자기부상철도 (에코비)
 
 STR_PASSENGER_WAGON_NAME                                   :승객 수송 차량
@@ -148,10 +149,6 @@ STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980                 : (통일호 도색: 
 STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990                 : (통일호 도색: 1990년대)
 STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA                         : (무궁화호 도색)
 STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE                       : (청색 도색: 1974년~)
-
-# Refit (EUM)
-STR_REFIT_EUM260                                           : (이음 260)
-STR_REFIT_EUM320                                           : (이음 320)
 
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (철도청 구 도색 특실, 1970~1983년)

@@ -38,6 +38,7 @@ STR_KTX1N_NAME                                             :KTX-1
 STR_KTX2N_NAME                                             :KTX-Sancheon
 STR_SRT_NAME                                               :SRT
 STR_EUM_NAME                                               :KTX-EUM
+STR_KTX3N_NAME                                             :KTX-Cheongryong
 STR_ECOBEE_NAME                                            :Incheon Intl Airport Maglev (Ecobee)
 
 STR_PASSENGER_WAGON_NAME                                   :Passenger car
@@ -148,10 +149,6 @@ STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980                 : (Tongil livery in 1
 STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990                 : (Tongil livery in 1990s)
 STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA                         : (Mugunghwa livery)
 STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE                       : (Blue livery: 1974~)
-
-# Refit (EUM)
-STR_REFIT_EUM260                                           : (EUM-260)
-STR_REFIT_EUM320                                           : (EUM-320)
 
 # Refit (Saemaeul car)
 STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (KNR old executive car livery: 1970~1983)

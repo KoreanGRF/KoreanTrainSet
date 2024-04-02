@@ -1,0 +1,51 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_KTX3N_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: set_KTX3N_engineT;
+    set_KTX3N_engineH;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_KTX3N_wagon_3, (position_in_vehid_chain + 1) % 4) {
+    3: set_KTX3N_wagon_3_without_panto;
+    set_KTX3N_wagon_3;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX3N_coach_by_free_tail, position_in_vehid_chain_from_end) {
+    0: set_KTX3N_wagon_4;
+    sw_KTX3N_wagon_3;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX3N_power_wagon, position_in_vehid_chain) {
+    0: set_KTX3N_wagon_2;
+    sw_KTX3N_coach_by_free_tail;
+}
+
+// Capacity
+switch(FEAT_TRAINS, SELF, sw_KTX3N_capacity_wagon_in_custom, position_in_consist) {
+    return 70 / 2 * sw_cargo_capacity_factor;
+}
+switch(FEAT_TRAINS, SELF, sw_KTX3N_capacity_in_custom, position_in_consist) {
+    0: return 46 / 2 * sw_cargo_capacity_factor;   // Should be 45, but round-off error occurs
+    return 50 / 2 * sw_cargo_capacity_factor;
+}
+
+// Power
+switch(FEAT_TRAINS, SELF, sw_KTX3N_power, cargo_subtype) {
+    return POWER_IN_KW(var_KTX3N_POWER);
+}
+
+// Attach
+switch(FEAT_TRAINS, SELF, sw_KTX3N_attach, vehicle_type_id) {
+    ko_train_KTX3N:     return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWG:  return CB_RESULT_ATTACH_ALLOW;
+    ko_train_PASSWGP: return CB_RESULT_ATTACH_ALLOW;
+    return string(STR_ERROR_NO_ATTACH);
+}
+switch(FEAT_TRAINS, SELF, sw_KTX3N_attach_global, bool_no_vehicle_attachment_restrictions) {
+    1: return CB_RESULT_ATTACH_ALLOW;
+    sw_KTX3N_attach;
+}

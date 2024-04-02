@@ -4,37 +4,37 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 /**
- * EUM
+ * KTX3N
  */
-SPEED_GENERAL(EUM)
-COST(EUM)
-RUNNING(EUM)
-// CAPACITY(EUM)
-CAPACITY_PURCHASE(EUM)
-LOADING(EUM)
+SPEED_GENERAL(KTX3N)
+COST(KTX3N)
+RUNNING(KTX3N)
+// CAPACITY(KTX3N)
+CAPACITY_PURCHASE(KTX3N)
+LOADING(KTX3N)
 
 // Graphics
-#include "EUM_graphic.pnml"
+#include "KTX3N_graphic.pnml"
 
 // Switches
-#include "EUM_switch.pnml"
+#include "KTX3N_switch.pnml"
 
 // Item
-item(FEAT_TRAINS, ko_train_EUM, 5554) {
+item(FEAT_TRAINS, ko_train_KTX3N, 5557) {
     property {
         // Common properties
-        name:                           string(STR_EUM_NAME);
+        name:                           string(STR_KTX3N_NAME);
         climates_available:             ALL_CLIMATES;
-        introduction_date:              var_EUM_INTRODUCTION;
+        introduction_date:              var_KTX3N_INTRODUCTION;
         track_type:                     ELRL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;
 
         // Spec
-        speed:                          var_EUM_SPEED km/h;
-        power:                          var_EUM_POWER kW;
-        weight:                         var_EUM_WEIGHT;
+        speed:                          var_KTX3N_SPEED km/h;
+        power:                          var_KTX3N_POWER kW;
+        weight:                         var_KTX3N_WEIGHT;
         tractive_effort_coefficient:    0.4;
         air_drag_coefficient:           0.01;
 
@@ -61,37 +61,37 @@ item(FEAT_TRAINS, ko_train_EUM, 5554) {
         bitmask_vehicle_info:           0;
     }
     graphics {
-        default:                        sw_EUM_engine;
-        purchase:                       sw_EUM_purchase;
+        default:                        sw_KTX3N_engine;
+        purchase:                       sw_KTX3N_purchase;
 
-        speed:                          sw_EUM_speed;
-        power:                          sw_EUM_power;
-        cost_factor:                    sw_EUM_cost;
-        running_cost_factor:            sw_EUM_runningcost;
-        cargo_capacity:                 sw_EUM_capacity_in_custom;
-        purchase_cargo_capacity:        sw_EUM_purchase_capacity;
-        loading_speed:                  sw_EUM_loadingspeed;
+        speed:                          sw_KTX3N_speed;
+        power:                          sw_KTX3N_power;
+        cost_factor:                    sw_KTX3N_cost;
+        running_cost_factor:            sw_KTX3N_runningcost;
+        cargo_capacity:                 sw_KTX3N_capacity_in_custom;
+        purchase_cargo_capacity:        sw_KTX3N_purchase_capacity;
+        loading_speed:                  sw_KTX3N_loadingspeed;
 
-        can_attach_wagon:               sw_EUM_attach_global;
+        can_attach_wagon:               sw_KTX3N_attach_global;
         start_stop:                     sw_ko_train_start_stop_global;
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
-    // KTX-EUM: TC+M'+M+M+M'+TC, so all cars are powered car. Hence, we give a power to nonpower car, too.
+    // KTX-KTX3N: TC+M'+M+M+M'+TC, so all cars are powered car. Hence, we give a power to nonpower car, too.
     livery_override(ko_train_PASSWG) {
-        default:                        sw_EUM_power_wagon;
-        cargo_capacity:                 sw_EUM_capacity_in_custom;
-        loading_speed:                  sw_EUM_loadingspeed;
+        default:                        sw_KTX3N_power_wagon;
+        cargo_capacity:                 sw_KTX3N_capacity_wagon_in_custom;
+        loading_speed:                  sw_KTX3N_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         power:                          POWER_IN_KW(200);
     }
     livery_override(ko_train_PASSWGP) {
-        default:                        sw_EUM_power_wagon;
-        cargo_capacity:                 sw_EUM_capacity_in_custom;
-        loading_speed:                  sw_EUM_loadingspeed;
+        default:                        sw_KTX3N_power_wagon;
+        cargo_capacity:                 sw_KTX3N_capacity_wagon_in_custom;
+        loading_speed:                  sw_KTX3N_loadingspeed;
         running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
         purchase_cargo_capacity:        sw_KTX_wagon_purchase_capacity;
         power:                          POWER_IN_KW(200);
     }
 }
-// End of "EUM"
+// End of "KTX3N"

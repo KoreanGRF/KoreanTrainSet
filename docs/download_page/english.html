@@ -249,6 +249,26 @@
         <td class="weight">68 t</td>
         <td class="introduction">2015</td>
     </tr>
+    <tr data-veh_id="EUM">
+        <td class="refit"><div><img src="./_static/EUM.png" alt="KTX-EUM"></div></td>
+        <td class="name">KTX-EUM</td>
+        <td class="speed">260 km/h</td>
+        <td class="speed_designed">286 km/h</td>
+        <td class="capacity">76</td>
+        <td class="power">8800 kW</td>
+        <td class="weight">60 t</td>
+        <td class="introduction">2019</td>
+    </tr>
+    <tr data-veh_id="KTX3N">
+        <td class="refit"><div><img src="./_static/KTX3N.png" alt="KTX-Cheongryong"></div></td>
+        <td class="name">KTX-Cheongryong</td>
+        <td class="speed">319 km/h</td>
+        <td class="speed_designed">352 km/h</td>
+        <td class="capacity">76</td>
+        <td class="power">9120 kW</td>
+        <td class="weight">55 t</td>
+        <td class="introduction">2022</td>
+    </tr>
     <tr data-veh_id="MAUM">
         <td class="refit"><div><img src="./_static/MAUM.png" alt="ITX-MAUM"></div></td>
         <td class="name">ITX-MAUM</td>
