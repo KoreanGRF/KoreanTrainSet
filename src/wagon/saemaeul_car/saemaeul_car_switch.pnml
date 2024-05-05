@@ -31,7 +31,7 @@ switch(FEAT_TRAINS, SELF, sw_SAEMAEUL_CAR_attach, vehicle_type_id) {
     ko_train_DHC:          return CB_RESULT_ATTACH_ALLOW;
     ko_train_ITX_SAEMAEUL: return CB_RESULT_ATTACH_ALLOW;
     ko_train_K2x00:        return CB_RESULT_ATTACH_ALLOW;
-    ko_train_K4x00:        return CB_RESULT_ATTACH_ALLOW;
+    ko_train_K4400:        return CB_RESULT_ATTACH_ALLOW;
     ko_train_K7x00:        return CB_RESULT_ATTACH_ALLOW;
     ko_train_K7000:        return CB_RESULT_ATTACH_ALLOW;
     ko_train_K8000:        return CB_RESULT_ATTACH_ALLOW;

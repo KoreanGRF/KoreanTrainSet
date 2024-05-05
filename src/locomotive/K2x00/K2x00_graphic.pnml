@@ -10,7 +10,7 @@ template tmpl_K2x00(x, y) {
     [x+20,     y,    18,    14,    -9,   -8]
     [x+50,     y,    23,    12,    -8,   -8]
     [x+90,     y,    18,    15,    -2,   -6]
-    [x+120,    y,     8,    19,    -3,   -9]   // Very similar with tmpl_K4x00 but height is 19, not 20
+    [x+120,    y,     8,    19,    -3,   -9]   // Very similar with tmpl_K4400 but height is 19, not 20
     [x+140,    y,    18,    15,   -15,   -5]
     [x+170,    y,    23,    12,   -16,   -8]
     [x+210,    y,    18,    14,    -7,   -7]

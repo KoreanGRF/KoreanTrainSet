@@ -6,12 +6,12 @@
 
 
 // Refit Paintings
-switch(FEAT_TRAINS, SELF, sw_K4x00_loco, cargo_subtype) {
-    1:    set_K4x00_1_loco;
-    10:   set_K4x00_V_TRAIN_loco;
-    set_K4x00_2_loco;
+switch(FEAT_TRAINS, SELF, sw_K4400_loco, cargo_subtype) {
+    1:    set_K4400_1_loco;
+    10:   set_K4400_V_TRAIN_loco;
+    set_K4400_2_loco;
 }
-switch(FEAT_TRAINS, SELF, sw_K4x00_cargo_subtype_text, cargo_subtype) {
+switch(FEAT_TRAINS, SELF, sw_K4400_cargo_subtype_text, cargo_subtype) {
     1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
     10:   return string(STR_REFIT_LIVERY_V_TRAIN);
     return string(STR_REFIT_LIVERY_THESEDAYS);

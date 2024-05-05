@@ -18,7 +18,7 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``ECOBEE`` 			| @SerpensNebula 										| 							| #38 |
 | ``EEC`` 			| @kiwitreekor, @kimgas 									| 							| #15 |
 | ``K2x00`` 			| @opentrain 											| 							| #90 |
-| ``K4x00`` 			| Original: unknown<br />Las 									| 							| <https://cafe.naver.com/ottd/10534> |
+| ``K4400`` 			| Original: unknown<br />Las 									| 							| <https://cafe.naver.com/ottd/10534> |
 | V-train and its wagons 	| Las<br />Modified by @EightonEight 								| 							| <https://cafe.naver.com/ottd/10466><br />modified: #390 |
 | ``K5000`` 			| @kiwitreekor<br />Modified by @SerpensNebula 							| @SerpensNebula 					| #176<br />template changed: #457<br />modified: #352 |
 | ``K6x00`` 			| @kiwitreekor, @SerpensNebula 									| @SerpensNebula 					| #176, #250<br />template changed: #457<br />modified: #352 |
