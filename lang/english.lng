@@ -16,7 +16,8 @@ STR_PASHI5_NAME                                            :Pashi 5 Steam Locomo
 STR_MIKA3_NAME                                             :Mika 3 Steam Locomotive
 STR_K2x00_NAME                                             :2x00 Diesel Locomotive
 STR_K3x00_NAME                                             :3x00 Diesel Locomotive
-STR_K4400_NAME                                             :4x00 Diesel Locomotive
+STR_K4x00_NAME                                             :4x00 Diesel Locomotive
+STR_K4400_NAME                                             :4400 Diesel Locomotive
 STR_K5000_NAME                                             :5000 Diesel Locomotive
 STR_K6x00_NAME                                             :6x00 Diesel Locomotive
 STR_K7000_NAME                                             :7000 Diesel Locomotive
@@ -101,6 +102,9 @@ STR_REFIT_LIVERY_THESEDAYS                                 : (Current livery)
 STR_REFIT_LIVERY_2x00_BLACK                                : (US Army livery: Black)
 STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1                       : (KNR first livery: Black & Narrow Orange)
 STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2                       : (KNR first livery: Black & Wide Orange)
+STR_REFIT_LIVERY_4x00_BLACK_ORANGE_LOWER_AIR_CHAMBER       : (KNR old livery: Black & Orange, Lower air chamber)
+STR_REFIT_LIVERY_4x00_GREEN_YELLOW_LOWER_AIR_CHAMBER       : (KNR old livery: Green & Yellow, Lower air chamber)
+STR_REFIT_LIVERY_4300_BLUE_WHITE                           : (KNR: 4300 Blue & White)
 STR_REFIT_LIVERY_6000_BLACK_ORANGE                         : (KNR: 6000 Black & Orange)
 STR_REFIT_LIVERY_6100_BLACK_ORANGE                         : (KNR: 6100 Black & Orange)
 STR_REFIT_LIVERY_6200_BLACK_ORANGE                         : (KNR: 6200 Black & Orange)
@@ -112,6 +116,7 @@ STR_REFIT_LIVERY_7x00_CARGO                                : (Cargo livery)
 STR_REFIT_LIVERY_7x00_BLACK_ORANGE                         : (KNR first livery: Black & Orange)
 STR_REFIT_LIVERY_7x00_FIRST_KORAIL                         : (KNR first livery: Blue & White)
 STR_REFIT_LIVERY_KWANKWANG                                 : (Kwankwang-ho)
+STR_REFIT_LIVERY_BLUE_WHITE                                : (KNR old livery: Blue & White)
 STR_REFIT_LIVERY_BLACK_ORANGE                              : (KNR old livery: Black & Orange)
 STR_REFIT_LIVERY_GREEN_YELLOW                              : (KNR old livery: Green & Yellow)
 STR_REFIT_LIVERY_HAERANG                                   : (Rail cruise 'Haerang')

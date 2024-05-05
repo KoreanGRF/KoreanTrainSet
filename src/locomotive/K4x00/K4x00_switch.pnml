@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+
+// Refit Paintings
+switch(FEAT_TRAINS, SELF, sw_K4x00_loco, cargo_subtype) {
+    1:    set_K4x00_1_loco;
+    2:    set_K4x00_2_loco;
+    3:    set_K4x00_3_loco;
+    4:    set_K4x00_4_loco;
+    set_K4x00_5_loco;
+}
+switch(FEAT_TRAINS, SELF, sw_K4x00_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_LIVERY_BLACK_ORANGE);
+    2:    return string(STR_REFIT_LIVERY_4x00_BLACK_ORANGE_LOWER_AIR_CHAMBER);
+    3:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    4:    return string(STR_REFIT_LIVERY_4x00_GREEN_YELLOW_LOWER_AIR_CHAMBER);
+    return string(STR_REFIT_LIVERY_4300_BLUE_WHITE);
+}
+
+// Speed
+switch(FEAT_TRAINS, SELF, sw_K4x00_speed_in_custom_nondesign, cargo_subtype) {
+    1..4: var_K4x00_SPEED;
+    return 150;
+}
+switch(FEAT_TRAINS, SELF, sw_K4x00_speed_in_custom_design, cargo_subtype) {
+    1..4: var_K4x00_DESIGN_SPEED;
+    return 150;
+}
+switch(FEAT_TRAINS, SELF, sw_K4x00_speed_in_custom, bool_use_max_design_speed) {
+    1: return sw_K4x00_speed_in_custom_design() / 10 * coeff_speed_general;
+    return sw_K4x00_speed_in_custom_nondesign() / 10 * coeff_speed_general;
+}

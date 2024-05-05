@@ -15,7 +15,8 @@ STR_PASHI5_NAME                                            :バシ５形蒸気�
 STR_MIKA3_NAME                                             :ミカ３形蒸気機関車
 STR_K2x00_NAME                                             :2x00号帯ディーゼル機関車
 STR_K3x00_NAME                                             :3x00号帯ディーゼル機関車
-STR_K4400_NAME                                             :4x00号帯ディーゼル機関車
+STR_K4x00_NAME                                             :4x00号帯ディーゼル機関車
+STR_K4400_NAME                                             :4400号帯ディーゼル機関車
 STR_K5000_NAME                                             :5000号帯ディーゼル機関車
 STR_K6x00_NAME                                             :6x00号帯ディーゼル機関車
 STR_K7000_NAME                                             :7000号帯ディーゼル機関車
@@ -100,6 +101,9 @@ STR_REFIT_LIVERY_THESEDAYS                                 :(現在塗色)
 STR_REFIT_LIVERY_2x00_BLACK                                :(米軍塗色：黒色)
 STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1                       :(韓国鉄道初期塗色：黒色＆狭い橙色)
 STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2                       :(韓国鉄道初期塗色：黒色＆広い橙色)
+STR_REFIT_LIVERY_4x00_BLACK_ORANGE_LOWER_AIR_CHAMBER       :(韓国鉄道旧塗色：黒色＆橙色、低い空気室)
+STR_REFIT_LIVERY_4x00_GREEN_YELLOW_LOWER_AIR_CHAMBER       :(韓国鉄道旧塗色：緑色＆黄色、低い空気室)
+STR_REFIT_LIVERY_4300_BLUE_WHITE                           :(韓国鉄道：4300号帯青色＆白色)
 STR_REFIT_LIVERY_6000_BLACK_ORANGE                         :(韓国鉄道初期塗色：6000号帯黒色＆狭い橙色)
 STR_REFIT_LIVERY_6100_BLACK_ORANGE                         :(韓国鉄道初期塗色：6100号帯黒色＆狭い橙色)
 STR_REFIT_LIVERY_6200_BLACK_ORANGE                         :(韓国鉄道初期塗色：6200号帯黒色＆狭い橙色)
@@ -113,6 +117,7 @@ STR_REFIT_LIVERY_7x00_FIRST_KORAIL                         :(韓国鉄道初期�
 STR_REFIT_LIVERY_BLACK_ORANGE                              :(韓国鉄道旧塗色：黒色＆橙色)
 STR_REFIT_LIVERY_GREEN_YELLOW                              :(韓国鉄道旧塗色：緑色＆黄色)
 STR_REFIT_LIVERY_KWANKWANG                                 :(観光号)
+STR_REFIT_LIVERY_BLUE_WHITE                                :(韓国鉄道旧塗色：青色＆白色)
 STR_REFIT_LIVERY_HAERANG                                   :(ヘラン)
 STR_REFIT_LIVERY_S_TRAIN1                                  :(S-train·青色)
 STR_REFIT_LIVERY_S_TRAIN2                                  :(S-train·ピンク)

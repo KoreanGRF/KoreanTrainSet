@@ -55,13 +55,23 @@
         <td class="speed">105 km/h</td>
         <td class="speed_designed">105 km/h</td>
         <td class="capacity"></td>
-        <td class="power">1173 kW</td>
+        <td class="power">875 kW</td>
         <td class="weight">75 t</td>
         <td class="introduction">1958</td>
     </tr>
-    <tr data-veh_id="K4400">
-        <td class="refit"><div><img src="./_static/K4400_1.png" alt="4x00号帯ディーゼル機関車"><br /><img src="./_static/K4400_2.png" alt="4x00号帯ディーゼル機関車"><br /><img src="./_static/K4400_V_TRAIN.png" alt="4x00号帯ディーゼル機関車"></div></td>
+    <tr data-veh_id="K4X00">
+        <td class="refit"><div><img src="./_static/K4x00_1.png" alt="4x00号帯ディーゼル機関車"></div></td>
         <td class="name">4x00号帯ディーゼル機関車</td>
+        <td class="speed">105 km/h</td>
+        <td class="speed_designed">105 km/h</td>
+        <td class="capacity"></td>
+        <td class="power">1310 kW</td>
+        <td class="weight">78 t</td>
+        <td class="introduction">1963</td>
+    </tr>
+    <tr data-veh_id="K4400">
+        <td class="refit"><div><img src="./_static/K4400_1.png" alt="4400号帯ディーゼル機関車"><br /><img src="./_static/K4400_2.png" alt="4400号帯ディーゼル機関車"><br /><img src="./_static/K4400_V_TRAIN.png" alt="4400号帯ディーゼル機関車"></div></td>
+        <td class="name">4400号帯ディーゼル機関車</td>
         <td class="speed">105 km/h</td>
         <td class="speed_designed">105 km/h</td>
         <td class="capacity"></td>

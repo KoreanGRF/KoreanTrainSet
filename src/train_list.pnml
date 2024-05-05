@@ -29,6 +29,9 @@
 // K3x00
 #include "locomotive/K3x00/K3x00.pnml"
 
+// K4x00
+#include "locomotive/K4x00/K4x00.pnml"
+
 // K4400
 #include "locomotive/K4400/K4400.pnml"
 
