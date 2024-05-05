@@ -255,7 +255,7 @@
         <td class="speed">260 km/h</td>
         <td class="speed_designed">286 km/h</td>
         <td class="capacity">76</td>
-        <td class="power">8800 kW</td>
+        <td class="power">6080 kW</td>
         <td class="weight">60 t</td>
         <td class="introduction">2019</td>
     </tr>
