@@ -100,6 +100,9 @@ spriteset(set_light_railway_track_tunnel_overlay_desert, "./src/railtype/KR_LIGH
     [1050,  120,   64,   40,  -31,  -39]
     [ 490,  120,   64,   40,  -31,  -39]
 }
+spriteset(set_light_railway_track_null, "./src/railtype/KR_LIGHTRAIL.png") {
+    [0, 0, 1, 1, 0, 0]
+}
 
 // Disable grass overlay
 replace(6142, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
@@ -186,6 +189,7 @@ item(FEAT_RAILTYPES, ko_train_set_KR_LIGHTRAILS, 3) {
         tunnel_overlay:                 sw_light_railway_track_tunnel_overlay;
         depots:                         set_light_railway_track_depot;
         bridge_surfaces:                set_light_railway_track_bridge;
+        fences:                         set_light_railway_track_null;
     }
 }
 
