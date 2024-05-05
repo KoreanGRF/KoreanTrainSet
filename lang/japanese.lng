@@ -14,6 +14,7 @@ STR_MATE2_NAME                                             :マテ２形蒸気�
 STR_PASHI5_NAME                                            :バシ５形蒸気機関車
 STR_MIKA3_NAME                                             :ミカ３形蒸気機関車
 STR_K2x00_NAME                                             :2x00号帯ディーゼル機関車
+STR_K3x00_NAME                                             :3x00号帯ディーゼル機関車
 STR_K4400_NAME                                             :4x00号帯ディーゼル機関車
 STR_K5000_NAME                                             :5000号帯ディーゼル機関車
 STR_K6x00_NAME                                             :6x00号帯ディーゼル機関車
@@ -109,6 +110,7 @@ STR_REFIT_LIVERY_7000_SILVER_BLUE                          :(韓国鉄道旧塗�
 STR_REFIT_LIVERY_7x00_CARGO                                :(貨物塗色)
 STR_REFIT_LIVERY_7x00_BLACK_ORANGE                         :(韓国鉄道初期塗色：黒色＆橙色)
 STR_REFIT_LIVERY_7x00_FIRST_KORAIL                         :(韓国鉄道初期塗色：青色＆白色)
+STR_REFIT_LIVERY_BLACK_ORANGE                              :(韓国鉄道旧塗色：黒色＆橙色)
 STR_REFIT_LIVERY_GREEN_YELLOW                              :(韓国鉄道旧塗色：緑色＆黄色)
 STR_REFIT_LIVERY_KWANKWANG                                 :(観光号)
 STR_REFIT_LIVERY_HAERANG                                   :(ヘラン)

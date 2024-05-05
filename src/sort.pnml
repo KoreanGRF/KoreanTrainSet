@@ -13,6 +13,7 @@ sort(FEAT_TRAINS, [
     ko_train_MATE2,                  // 5303
 
     ko_train_K2x00,                  // 5420
+    ko_train_K3x00,                  // 5430
     ko_train_K4400,                  // 5440
     ko_train_K5000,                  // 5450
     ko_train_K6x00,                  // 5460

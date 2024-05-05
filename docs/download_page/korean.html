@@ -49,6 +49,16 @@
         <td class="weight">95 t</td>
         <td class="introduction">1955</td>
     </tr>
+    <tr data-veh_id="K3X00">
+        <td class="refit"><div><img src="./_static/K3x00_1.png" alt="3x00호대 디젤 기관차"></div></td>
+        <td class="name">3x00호대 디젤 기관차</td>
+        <td class="speed">105 km/h</td>
+        <td class="speed_designed">105 km/h</td>
+        <td class="capacity"></td>
+        <td class="power">1173 kW</td>
+        <td class="weight">75 t</td>
+        <td class="introduction">1958</td>
+    </tr>
     <tr data-veh_id="K4400">
         <td class="refit"><div><img src="./_static/K4400_1.png" alt="4x00호대 디젤 기관차"><br /><img src="./_static/K4400_2.png" alt="4x00호대 디젤 기관차"><br /><img src="./_static/K4400_V_TRAIN.png" alt="4x00호대 디젤 기관차"></div></td>
         <td class="name">4x00호대 디젤 기관차</td>

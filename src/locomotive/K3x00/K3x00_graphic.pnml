@@ -1,0 +1,22 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// K3x00
+spriteset(set_K3x00_1_purchase, "./src/locomotive/K3x00/K3x00.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_K3x00_1_loco, "./src/locomotive/K3x00/K3x00.png") {   // Black & Orange
+    tmpl_standard(80, 0)
+}
+
+spriteset(set_K3x00_2_loco, "./src/locomotive/K3x00/K3x00.png") {   // Green & Yellow
+    tmpl_standard(80, 30)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K3x00_purchase, cargo_subtype) {
+    set_K3x00_1_purchase;
+}

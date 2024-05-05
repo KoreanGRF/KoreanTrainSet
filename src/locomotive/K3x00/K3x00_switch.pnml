@@ -1,0 +1,16 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+
+// Refit Paintings
+switch(FEAT_TRAINS, SELF, sw_K3x00_loco, cargo_subtype) {
+    1:    set_K3x00_2_loco;
+    set_K3x00_1_loco;
+}
+switch(FEAT_TRAINS, SELF, sw_K3x00_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
+    return string(STR_REFIT_LIVERY_BLACK_ORANGE);
+}
