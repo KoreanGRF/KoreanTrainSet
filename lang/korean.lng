@@ -340,6 +340,7 @@ STR_REFIT_METRO_LINE_4_2021_NAME                           : (Korail 4호선 202
 STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME                : (SMetro 4k 1·2세대 VVVF)
 STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME                    : (SMetro 4k 3세대 VVVF 2020년 도입분)
 STR_REFIT_METRO_SMETRO_4K_VVVF_4TH_NAME                    : (SMetro 4k 4세대 VVVF 2023년 도입분)
+STR_REFIT_METRO_SMETRO_4K_VVVF_5TH_NAME                    : (SMetro 4k 5세대 VVVF 2024년 도입분)
 
 # Refit (Seoul Metro Line 5-8, Seoul Metro Line9)
 STR_REFIT_METRO_SMETRO_SR0X_NAME                           : (서울교통공사 SR0x VVVF)
