@@ -390,7 +390,7 @@
         <td class="introduction">1983</td>
     </tr>
     <tr data-veh_id="SEOUL_METRO_4">
-        <td class="refit"><div><img src="./_static/341K_VVVF_2ND_1.png" alt="Seoul Line 4"><br /><img src="./_static/341K_VVVF_1ST_1.png" alt="Seoul Line 4"><br /><img src="./_static/341K_VVVF_1ST_2.png" alt="Seoul Line 4"><br /><img src="./_static/341K_VVVF_2ND_2.png" alt="Seoul Line 4"><br /><img src="./_static/LINE_4_2019.png" alt="Seoul Line 4"><br /><img src="./_static/LINE_4_2021.png" alt="Seoul Line 4"><br /><img src="./_static/SMETRO_4K_VVVF_1ST_2ND.png" alt="Seoul Line 4"><br /><img src="./_static/SMETRO_4K_VVVF_3RD.png" alt="Seoul Line 4"><br /><img src="./_static/SMETRO_4K_VVVF_4TH.png" alt="Seoul Line 4"></div></td>
+        <td class="refit"><div><img src="./_static/341K_VVVF_2ND_1.png" alt="Seoul Line 4"><br /><img src="./_static/341K_VVVF_1ST_1.png" alt="Seoul Line 4"><br /><img src="./_static/341K_VVVF_1ST_2.png" alt="Seoul Line 4"><br /><img src="./_static/341K_VVVF_2ND_2.png" alt="Seoul Line 4"><br /><img src="./_static/LINE_4_2019.png" alt="Seoul Line 4"><br /><img src="./_static/LINE_4_2021.png" alt="Seoul Line 4"><br /><img src="./_static/SMETRO_4K_VVVF_1ST_2ND.png" alt="Seoul Line 4"><br /><img src="./_static/SMETRO_4K_VVVF_3RD.png" alt="Seoul Line 4"><br /><img src="./_static/SMETRO_4K_VVVF_4TH.png" alt="Seoul Line 4"><br /><img src="./_static/SMETRO_4K_VVVF_5TH.png" alt="Seoul Line 4"></div></td>
         <td class="name">Seoul Line 4</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">100 km/h</td>
