@@ -26,7 +26,7 @@ item(FEAT_TRAINS, ko_train_GIMPO_GOLDLINE, 5801) {
         name:                           string(STR_GIMPO_GOLDLINE_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_GIMPO_GOLDLINE_INTRODUCTION;
-        track_type:                     ELRL;
+        track_type:                     KR_3RD_RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;

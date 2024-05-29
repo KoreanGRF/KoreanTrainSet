@@ -26,7 +26,7 @@ item(FEAT_TRAINS, ko_train_BUSAN_METRO_4, 5754) {
         name:                           string(STR_BUSAN_METRO_4_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_BUSAN_METRO_4_INTRODUCTION;
-        track_type:                     KRLR;
+        track_type:                     KTS_RUBBER_RAIL;
         engine_class:                   ENGINE_CLASS_MONORAIL;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;

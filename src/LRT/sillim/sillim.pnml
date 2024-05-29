@@ -26,7 +26,7 @@ item(FEAT_TRAINS, ko_train_SILLIM, 5806) {
         name:                           string(STR_SILLIM_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_SILLIM_INTRODUCTION;
-        track_type:                     ELRL;
+        track_type:                     KTS_RUBBER_RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;

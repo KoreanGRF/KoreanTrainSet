@@ -26,7 +26,7 @@ item(FEAT_TRAINS, ko_train_INCHEON_METRO_2, 5742) {
         name:                           string(STR_INCHEON_METRO_2_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_INCHEON_METRO_2_INTRODUCTION;
-        track_type:                     ELRL;
+        track_type:                     KR_3RD_RAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;

@@ -26,7 +26,7 @@ item(FEAT_TRAINS, ko_train_DAEGU_METRO_3, 5763) {
         name:                           string(STR_DAEGU_METRO_3_NAME);
         climates_available:             ALL_CLIMATES;
         introduction_date:              var_DAEGU_METRO_3_INTRODUCTION;
-        track_type:                     KRLR;
+        track_type:                     KTS_MONORAIL;
         engine_class:                   ENGINE_CLASS_ELECTRIC;
         sprite_id:                      SPRITE_ID_NEW_TRAIN;
         dual_headed:                    1;

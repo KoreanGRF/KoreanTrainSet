@@ -44,17 +44,35 @@ cargotable {
 
 // Railtypetable
 railtypetable {
-    RAIL, ELRL, MGLV,
-    KRLR,
-    KRNR,
-    KR_3RD_RAIL: ["3RDR", KRLR, ELRL, RAIL]
+    // Vanilla
+    "RAIL", "ELRL", "MGLV",
+
+    // Korean Train Set 3rd rail
+    "KRLR",
+
+    // Korean Tracks
+    "KRNR",   // Narrow 762mm
+    "KLSE",   // Low speed
+    "KLSU",   // Low speed (Urban)
+    "KDS_",   // Main line
+    "KDSU",   // Main line (Urban, electrified)
+    "KSSU",   // Semi high speed
+    "KHS_",   // High speed
+    "KMTR",   // Metro
+    "KLAG",   // Rubber wheel
+    "KLMN",   // Monorail
+    "KL3L",   // Third rail
+
+    KR_3RD_RAIL:     ["3RDR", "KL3L", "KMTR", "KDSU", "KLSU", "KRLR", "ELRL"],
+    KTS_RUBBER_RAIL: ["KLAG", "KMTR", "KDSU", "KLSU", "KRLR", "ELRL"],
+    KTS_MONORAIL:    ["KLMN", "KMTR", "KDSU", "KLSU", "KRLR", "ELRL"]
 }
 
 // Cost, running cost, capacity, loading speed coefficients
-sw_cost_factor =            1 << max(0, min(coeff_cost_factor, 10));
-sw_running_cost_factor =    1 << max(0, min(coeff_running_cost_factor, 12));
+sw_cost_factor =            1 << (max(0, min(coeff_cost_factor, 10)));
+sw_running_cost_factor =    1 << (max(0, min(coeff_running_cost_factor, 12)));
 sw_cargo_capacity_factor =  1 << (max(1, min(coeff_cargo_capacity_factor, 8)) - 1);
-sw_loading_speed_factor =   1 << max(0, min(coeff_loading_speed_factor, 3));
+sw_loading_speed_factor =   1 << (max(0, min(coeff_loading_speed_factor, 3)));
 
 
 // Macro
