@@ -76,10 +76,10 @@ spriteset(set_GENERATOR_CAR_KWANKWANG_wagon_purchase, "./src/wagon/generator_car
     tmpl_purchase_common(0, 480)
 }
 spriteset(set_GENERATOR_CAR_KWANKWANG_wagon, "./src/wagon/generator_car/generator_car.png") {
-    tmpl_generator_car_length_6(80, 480)
+    tmpl_standard(80, 480)
 }
 spriteset(set_GENERATOR_CAR_KWANKWANG_END_wagon, "./src/wagon/generator_car/generator_car.png") {
-    tmpl_generator_car_length_6(80, 510)
+    tmpl_standard(80, 510)
 }
 
 // Alias of purchase image

@@ -191,7 +191,7 @@ STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL                      : (Old type / Tongil 
 STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED        : (Old type / Mugunghwa Yellow & Red)
 STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED_K      : (Old type / Mugunghwa Yellow & Red + Korail logo)
 STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_BLUE_RED          : (Old type / Mugunghwa Blue & Red)
-STR_REFIT_LIVERY_GENERATOR_CAR_SAEMAEUL_BLUE_RED           : (Old type / Saemaeul Blue & Red)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_BLUE_RED      : (Long type / Saemaeul Blue & Red)
 # STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
 # STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
 # STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
