@@ -91,6 +91,7 @@
 #include "metro/busan_metro_3/busan_metro_3.pnml"
 #include "metro/daegu_metro_1/daegu_metro_1.pnml"
 #include "metro/daegu_metro_2/daegu_metro_2.pnml"
+#include "metro/daegu_metropolitan/daegu_metropolitan.pnml"
 #include "metro/daejeon_metro_1/daejeon_metro_1.pnml"
 #include "metro/gwangju_metro_1/gwangju_metro_1.pnml"
 #include "metro/GTX-A/GTX-A.pnml"

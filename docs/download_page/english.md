@@ -559,6 +559,26 @@
         <td class="weight">31 t</td>
         <td class="introduction">2005</td>
     </tr>
+    <tr data-veh_id="DAEGU_METRO_3">
+        <td class="refit"><div><img src="./_static/DAEGU_METRO_3.png" alt="Daegu Line 3"></div></td>
+        <td class="name">Daegu Line 3</td>
+        <td class="speed">80 km/h</td>
+        <td class="speed_designed">80 km/h</td>
+        <td class="capacity">100</td>
+        <td class="power">500 kW</td>
+        <td class="weight">20 t</td>
+        <td class="introduction">2015</td>
+    </tr>
+    <tr data-veh_id="DAEGU_METROPOLITAN">
+        <td class="refit"><div><img src="./_static/DAEGU_METROPOLITAN_392K_2023.png" alt="Daegu Metropolitan Railroad"></div></td>
+        <td class="name">Daegu Metropolitan Railroad</td>
+        <td class="speed">100 km/h</td>
+        <td class="speed_designed">110 km/h</td>
+        <td class="capacity">100</td>
+        <td class="power">2000 kW</td>
+        <td class="weight">57 t</td>
+        <td class="introduction">2024</td>
+    </tr>
     <tr data-veh_id="DAEJEON_METRO_1">
         <td class="refit"><div><img src="./_static/DAEJEON_METRO_1K.png" alt="Daejeon Line 1"></div></td>
         <td class="name">Daejeon Line 1</td>
@@ -598,16 +618,6 @@
         <td class="power">500 kW</td>
         <td class="weight">23 t</td>
         <td class="introduction">2011</td>
-    </tr>
-    <tr data-veh_id="DAEGU_METRO_3">
-        <td class="refit"><div><img src="./_static/DAEGU_METRO_3.png" alt="Daegu Line 3"></div></td>
-        <td class="name">Daegu Line 3</td>
-        <td class="speed">80 km/h</td>
-        <td class="speed_designed">80 km/h</td>
-        <td class="capacity">100</td>
-        <td class="power">500 kW</td>
-        <td class="weight">20 t</td>
-        <td class="introduction">2015</td>
     </tr>
     <tr data-veh_id="GTX_A">
         <td class="refit"><div><img src="./_static/SG_A000_1.png" alt="GTX-A"></div></td>

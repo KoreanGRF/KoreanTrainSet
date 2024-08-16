@@ -1,0 +1,28 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// DAEGU_METROPOLITAN
+spriteset(set_DAEGU_METROPOLITAN_392K_2023_engineH, "./src/metro/daegu_metropolitan/DAEGU_METROPOLITAN_392K_2023.png") {
+    tmpl_standard_longnose(80, 0)
+}
+// There is no graphic sprite of wagons with pantograph. Prepares for just in case
+// spriteset(set_DAEGU_METROPOLITAN_392K_2023_wagon_panto, "./src/metro/daegu_metropolitan/DAEGU_METROPOLITAN_392K_2023.png") {
+//     tmpl_standard(80, 30)
+// }
+spriteset(set_DAEGU_METROPOLITAN_392K_2023_wagon, "./src/metro/daegu_metropolitan/DAEGU_METROPOLITAN_392K_2023.png") {   // Fictional
+    tmpl_standard(80, 30)
+}
+spriteset(set_DAEGU_METROPOLITAN_392K_2023_engineT, "./src/metro/daegu_metropolitan/DAEGU_METROPOLITAN_392K_2023.png") {
+    tmpl_standard_longnose(80, 60)
+}
+spriteset(set_DAEGU_METROPOLITAN_392K_2023_purchase, "./src/metro/daegu_metropolitan/DAEGU_METROPOLITAN_392K_2023.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_DAEGU_METROPOLITAN_purchase, cargo_subtype) {
+    set_DAEGU_METROPOLITAN_392K_2023_purchase;
+}
