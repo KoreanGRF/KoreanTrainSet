@@ -5,8 +5,14 @@
 ------------------------------------------------------------------------------*/
 
 // If simplise waypoint
-if(bool_simplize_waypoint > 0) {
+if (bool_simplize_waypoint > 0) {
     replace simplewaypoint(4974, "./src/misc/simple_waypoint.png") {
+        [40,  0,    1,    1,    0,    0]    // 4974
+        [0,   0,   19,   23,  -21,   -4]    // 4975
+        [40,  0,    1,    1,    0,    0]    // 4976
+        [20,  0,   19,   23,    4,   -4]    // 4977
+    }
+    replacenew simplewaypointnew(OTTD_GUI, "./src/misc/simple_waypoint.png", 78) {
         [40,  0,    1,    1,    0,    0]    // 4974
         [0,   0,   19,   23,  -21,   -4]    // 4975
         [40,  0,    1,    1,    0,    0]    // 4976
