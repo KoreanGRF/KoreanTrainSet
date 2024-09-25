@@ -21,7 +21,7 @@ grf {
 }
 
 // Check OpenTTD Version
-if(ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 13, 0)) {
+if (ttd_platform != PLATFORM_OPENTTD || openttd_version < version_openttd(1, 13, 0)) {
     error(FATAL, REQUIRES_OPENTTD, "13.0/JGRPPP-0.53.0");
 }
 
