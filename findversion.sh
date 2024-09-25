@@ -7,6 +7,15 @@ ROOT_DIR=`pwd`
 # Determine if we are using modified version
 MODIFIED="0"
 
+# If there is .rev file
+if [ -f "$ROOT_DIR/.rev" ]; then
+  VERSION_TMP=`cat $ROOT_DIR/.rev`
+  if [ "$VERSION_TMP" != "" ]; then
+    echo "$VERSION_TMP"
+    exit 0
+  fi
+fi
+
 # If there is .git directory
 if [ -d "$ROOT_DIR/.git" ] || [ -f "$ROOT_DIR/.git" ]; then
   # Refresh the index to make sure file stat info is in sync, then look for modifications
@@ -30,10 +39,6 @@ if [ -d "$ROOT_DIR/.git" ] || [ -f "$ROOT_DIR/.git" ]; then
   else
     VERSION="$ISODATE-$BRANCH-$SHORTHASH"
   fi
-
-# If there is .rev file
-elif [ -f "$ROOT_DIR/.rev" ]; then
-  VERSION=`cat $ROOT_DIR/.rev`
 
 # Or, we don't know
 else
