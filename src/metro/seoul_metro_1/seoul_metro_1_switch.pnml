@@ -51,7 +51,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_cargo_subtype_text, cargo_subtype) {
     16:   return string(STR_REFIT_METRO_321K_BIKE_NAME);                // Korail 321k Bike livery
     17:   return string(STR_REFIT_METRO_371K_BLANK_NAME);               // Korail 371k / Blank livery
     18:   return string(STR_REFIT_METRO_371K_CC_NAME);                  // Korail 371k / Company colour livery
-    // 19:   // RESERVED
+    19:   return string(STR_REFIT_METRO_331K_2024_NAME);                // Korail 331k, Gyeonguijungang introduced in 2024
     // 20:   // RESERVED
     // 21:   // RESERVED
     22:   return string(STR_REFIT_METRO_LINE_1_2019_NAME);              // Korail, introduced in 2019 (a.k.a. 주둥이, Judungi)
@@ -78,7 +78,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_panto_cargo_subtype, cargo_subt
     16:   sw_SEOUL_METRO_1_wagon_321K_BIKE;
     17:   set_371K_BLANK_wagon_panto;
     18:   set_371K_CC_wagon_panto;
-    // 19:   // RESERVED
+    19:   set_331K_2024_wagon_panto;
     // 20:   // RESERVED
     // 21:   // RESERVED
     22:   set_LINE_1_2019_wagon_panto;
@@ -105,7 +105,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_cargo_subtype, cargo_subtype) {
     16:   sw_SEOUL_METRO_1_wagon_321K_BIKE;
     17:   set_371K_BLANK_wagon;
     18:   set_371K_CC_wagon;
-    // 19:   // RESERVED
+    19:   set_331K_2024_wagon;
     // 20:   // RESERVED
     // 21:   // RESERVED
     22:   set_LINE_1_2019_wagon;
@@ -132,7 +132,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_engineH, cargo_subtype) {
     16:   sw_321K_BIKE_engineH;
     17:   set_371K_BLANK_engineH;
     18:   set_371K_CC_engineH;
-    // 19:   // RESERVED
+    19:   set_331K_2024_engineH;
     // 20:   // RESERVED
     // 21:   // RESERVED
     22:   set_LINE_1_2019_engineH;
@@ -159,7 +159,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_engineT, cargo_subtype) {
     16:   sw_321K_BIKE_engineT;
     17:   set_371K_BLANK_engineT;
     18:   set_371K_CC_engineT;
-    // 19:   // RESERVED
+    19:   set_331K_2024_engineT;
     // 20:   // RESERVED
     // 21:   // RESERVED
     22:   set_LINE_1_2019_engineT;
