@@ -4,19 +4,37 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Engine - Gyeongchun
-switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
-    1: set_361K_VVVF_engineT;
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_engineH, cargo_subtype) {
+    1: set_361K_2024_engineH;
     set_361K_VVVF_engineH;
 }
-
-// Wagon - Gyeongchun
+switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_engineT, cargo_subtype) {
+    1: set_361K_2024_engineT;
+    set_361K_VVVF_engineT;
+}
 switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_wagon_cargo_subtype, cargo_subtype) {
+    1: set_361K_2024_wagon;
     set_361K_VVVF_wagon;
 }
 switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_wagon_panto_cargo_subtype, cargo_subtype) {
+    1: set_361K_2024_wagon_panto;
     set_361K_VVVF_wagon_panto;
 }
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_cargo_subtype_text, cargo_subtype) {
+    1:    return string(STR_REFIT_METRO_361K_2024_NAME);                // Korail 361k, introduced in 2024
+    return string(STR_REFIT_METRO_361K_VVVF_NAME);                      // Korail 361k VVVF
+}
+
+// Engine
+switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_GYEONGCHUN_engineT;
+    sw_GYEONGCHUN_engineH;
+}
+
+// Wagon - Gyeongchun
 switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_wagon, (position_in_consist + 1) % 4) {
     2: sw_GYEONGCHUN_wagon_panto_cargo_subtype;
     sw_GYEONGCHUN_wagon_cargo_subtype;

@@ -365,6 +365,7 @@ STR_REFIT_METRO_351K_2021_NAME                             : (Korail, introduced
 
 # Refit (Gyeongchun Line)
 STR_REFIT_METRO_361K_VVVF_NAME                             : (Korail 361k VVVF)
+STR_REFIT_METRO_361K_2024_NAME                             : (Korail 361k, 2nd introduced in 2024)
 
 # Refit (Incheon intertional Airport Line (A'REX)
 STR_REFIT_METRO_AREX_1K_NONSTOP_NAME                       : (A'REX 1k Express)

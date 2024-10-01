@@ -21,6 +21,39 @@ spriteset(set_361K_VVVF_purchase, "./src/metro/gyeongchun/361K_VVVF.png") {
     tmpl_purchase_common_dualhead(0, 0)
 }
 
+// 361K_2024
+spriteset(set_361K_2024_engineH, "./src/metro/gyeongchun/361K_2024.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_361K_2024_wagon_panto, "./src/metro/gyeongchun/361K_2024.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_361K_2024_wagon, "./src/metro/gyeongchun/361K_2024.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_361K_2024_engineT, "./src/metro/gyeongchun/361K_2024.png") {
+    tmpl_standard(80, 90)
+}
+spriteset(set_361K_2024_purchase, "./src/metro/gyeongchun/361K_2024.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+// Enhanced graphic using 32bpp
+alternative_sprites(set_361K_2024_purchase, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/metro/gyeongchun/361K_2024_32bpp.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+alternative_sprites(set_361K_2024_engineH, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/metro/gyeongchun/361K_2024_32bpp.png") {
+    tmpl_standard(80, 0)
+}
+alternative_sprites(set_361K_2024_wagon_panto, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/metro/gyeongchun/361K_2024_32bpp.png") {
+    tmpl_standard(80, 30)
+}
+alternative_sprites(set_361K_2024_wagon, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/metro/gyeongchun/361K_2024_32bpp.png") {
+    tmpl_standard(80, 60)
+}
+alternative_sprites(set_361K_2024_engineT, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP, "./src/metro/gyeongchun/361K_2024_32bpp.png") {
+    tmpl_standard(80, 90)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_purchase, cargo_subtype) {
     set_361K_VVVF_purchase;
