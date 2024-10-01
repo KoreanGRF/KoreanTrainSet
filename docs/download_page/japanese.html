@@ -420,7 +420,7 @@
         <td class="introduction">1993</td>
     </tr>
     <tr data-veh_id="GYEONGCHUN">
-        <td class="refit"><div><img src="./_static/361K_VVVF.png" alt="京春線"></div></td>
+        <td class="refit"><div><img src="./_static/361K_VVVF.png" alt="京春線"><br /><img src="./_static/361K_2024.png" alt="京春線"></div></td>
         <td class="name">京春線</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">100 km/h</td>
