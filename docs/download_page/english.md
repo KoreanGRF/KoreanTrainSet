@@ -570,8 +570,8 @@
         <td class="introduction">2015</td>
     </tr>
     <tr data-veh_id="DAEGU_METROPOLITAN">
-        <td class="refit"><div><img src="./_static/DAEGU_METROPOLITAN_392K_2023.png" alt="Daegu Metropolitan Railroad"></div></td>
-        <td class="name">Daegu Metropolitan Railroad</td>
+        <td class="refit"><div><img src="./_static/DAEGU_METROPOLITAN_392K_2023.png" alt="Daegyeong Line"></div></td>
+        <td class="name">Daegyeong Line</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">110 km/h</td>
         <td class="capacity">100</td>

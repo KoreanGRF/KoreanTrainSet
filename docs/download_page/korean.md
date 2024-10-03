@@ -570,8 +570,8 @@
         <td class="introduction">2015</td>
     </tr>
     <tr data-veh_id="DAEGU_METROPOLITAN">
-        <td class="refit"><div><img src="./_static/DAEGU_METROPOLITAN_392K_2023.png" alt="대구권 광역철도"></div></td>
-        <td class="name">대구권 광역철도</td>
+        <td class="refit"><div><img src="./_static/DAEGU_METROPOLITAN_392K_2023.png" alt="대경선"></div></td>
+        <td class="name">대경선</td>
         <td class="speed">100 km/h</td>
         <td class="speed_designed">110 km/h</td>
         <td class="capacity">100</td>
