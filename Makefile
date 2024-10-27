@@ -117,7 +117,8 @@ clean::
 bundle: bundle_tar
 bundle_tar: $(BUNDLE_FILES)
 	@echo "[BUNDLE TAR]"
-	@ tar -cf generated/544b5555-$(DIR_NAME).tar generated/changelog.txt generated/$(GRF_FILE) generated/readme.txt --transform s/generated/$(DIR_NAME)/
+	@ tar -cf generated/544b5555-$(DIR_NAME).tar generated/changelog.txt generated/$(GRF_FILE) generated/readme.txt --transform s/generated/544b5555-$(DIR_NAME)/
+	ls -al ./generated/*.tar
 clean::
 	@echo "[CLEAN BUNDLE]"
 	@-rm -rf $(shell echo "$(REPO_NAME)*" | xargs | sed s/\ /_/g)

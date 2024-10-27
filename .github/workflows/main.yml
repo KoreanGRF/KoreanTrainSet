@@ -34,5 +34,5 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: Korean_Train_Set_${{ steps.vars.outputs.sha_short }}  # Name with sha short hash
-        path: generated/Korean_Train_Set*.tar
+        name: 544b5555-Korean_Train_Set-${{ steps.vars.outputs.sha_short }}  # Name with sha short hash
+        path: ./generated/544b5555-Korean-Train-Set-*.tar
