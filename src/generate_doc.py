@@ -61,7 +61,7 @@ for file_name in pnmlFiles:
     pnml_content = f.read()
 
     # Find purchase image block
-    rst = re.finditer('spriteset\(set_(.+?)_purchase,(?:\s*)"(.+?)"\) {', pnml_content)
+    rst = re.finditer(r'spriteset\(set_(.+?)_purchase,(?:\s*)"(.+?)"\) {', pnml_content)
     for r in rst:
         sprite_name      = r.group(1)
         sprite_file_name = r.group(2)
@@ -83,7 +83,7 @@ for file_name in pnmlFiles:
         # Get coordinates
         template_coords = template_block[_from+1:_to]
         coords = [None, None, None, None, None, None]
-        coords_input = re.split(',\s*', template_coords)
+        coords_input = re.split(r',\s*', template_coords)
         coords[:len(coords_input)] = coords_input
         x = coords[0]
         y = coords[1]
