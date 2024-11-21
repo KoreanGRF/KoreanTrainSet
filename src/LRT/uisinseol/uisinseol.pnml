@@ -75,16 +75,10 @@ item(FEAT_TRAINS, ko_train_UISINSEOL, 5803) {
         additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
     }
     // in future ...
-    // livery_override(ko_train_PASSWG) {
+    // livery_override(ko_train_LRT_wagon) {
     //     default:                        sw_UISINSEOL_wagon;
     //     running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     //     cargo_capacity:                 sw_METRO_wagon_capacity;
-    // }
-    // livery_override(ko_train_PASSWGP) {
-    //     default:                        sw_UISINSEOL_wagon;
-    //     running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
-    //     cargo_capacity:                 sw_METRO_wagon_capacity;
-    //     power:                          POWER_IN_KW(var_METRO_wagon_POWER);
     // }
 }
 // End of "UISINSEOL"
