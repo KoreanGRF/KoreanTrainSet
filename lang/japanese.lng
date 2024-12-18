@@ -264,6 +264,7 @@ STR_REFIT_LIVERY_MAIL_CAR_2                                :(1975年以来塗色
 STR_REFIT_LIVERY_MAIL_CAR_3                                :(1996年以来ムグンファ旧塗色)
 STR_REFIT_LIVERY_MAIL_CAR_4                                :(2005年以来ムグンファ新塗色)
 STR_REFIT_LIVERY_MAIL_CAR_5                                :(2018年以来小貨物車改造塗色)
+STR_REFIT_LIVERY_MAIL_CAR_6                                :(2024年以来小貨物車改造塗色)
 
 # Refit (Caboose)
 STR_REFIT_CABOOSE_BAGGAGE_YELLOW                           :(小貨物車改造 : 黄色)

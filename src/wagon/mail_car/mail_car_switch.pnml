@@ -11,6 +11,7 @@ switch(FEAT_TRAINS, SELF, sw_MAIL_CAR_cargo_subtype_text, cargo_subtype) {
     3: return string(STR_REFIT_LIVERY_MAIL_CAR_3);
     4: return string(STR_REFIT_LIVERY_MAIL_CAR_4);
     5: return string(STR_REFIT_LIVERY_MAIL_CAR_5);
+    6: return string(STR_REFIT_LIVERY_MAIL_CAR_6);
     return string(STR_REFIT_LIVERY_MAIL_CAR_3);
 }
 
@@ -21,5 +22,6 @@ switch(FEAT_TRAINS, SELF, sw_MAIL_CAR_wagon, cargo_subtype) {
     3: set_MAIL_CAR_3_wagon;
     4: set_MAIL_CAR_4_wagon;
     5: set_MAIL_CAR_5_wagon;
+    6: set_MAIL_CAR_6_wagon;
     set_MAIL_CAR_3_wagon;
 }

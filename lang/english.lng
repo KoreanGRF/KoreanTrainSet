@@ -265,6 +265,7 @@ STR_REFIT_LIVERY_MAIL_CAR_2                                : (Livery: 1975~)
 STR_REFIT_LIVERY_MAIL_CAR_3                                : (Livery: 1996~, Mugunghwa old livery)
 STR_REFIT_LIVERY_MAIL_CAR_4                                : (Livery: 2005~, Mugunghwa new livery)
 STR_REFIT_LIVERY_MAIL_CAR_5                                : (Livery: 2018~, baggage car)
+STR_REFIT_LIVERY_MAIL_CAR_6                                : (Livery: 2024~, baggage car)
 
 # Refit (Caboose)
 STR_REFIT_CABOOSE_BAGGAGE_YELLOW                           : (Baggage car type / Yellow)

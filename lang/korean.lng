@@ -265,6 +265,7 @@ STR_REFIT_LIVERY_MAIL_CAR_2                                : (1975년 이후 도
 STR_REFIT_LIVERY_MAIL_CAR_3                                : (1996년 이후 무궁화 구 도색)
 STR_REFIT_LIVERY_MAIL_CAR_4                                : (2005년 이후 무궁화 신 도색)
 STR_REFIT_LIVERY_MAIL_CAR_5                                : (2018년 이후 수화물차 개조 도색)
+STR_REFIT_LIVERY_MAIL_CAR_6                                : (2024년 이후 수화물차 개조 도색)
 
 # Refit (Caboose)
 STR_REFIT_CABOOSE_BAGGAGE_YELLOW                           : (소화물차 개조 / 노랑)

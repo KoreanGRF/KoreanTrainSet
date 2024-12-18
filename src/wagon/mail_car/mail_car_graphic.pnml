@@ -40,6 +40,13 @@ spriteset(set_MAIL_CAR_5_wagon, "./src/wagon/mail_car/MAIL_CAR.png") {
     tmpl_wagon_by_coor_8dir(80, 120)
 }
 
+spriteset(set_MAIL_CAR_6_purchase, "./src/wagon/mail_car/MAIL_CAR.png") {
+    tmpl_purchase_common(0, 150)
+}
+spriteset(set_MAIL_CAR_6_wagon, "./src/wagon/mail_car/MAIL_CAR.png") {
+    tmpl_wagon_by_coor_8dir(80, 150)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_MAIL_CAR_purchase, cargo_subtype) {
     set_MAIL_CAR_3_purchase;

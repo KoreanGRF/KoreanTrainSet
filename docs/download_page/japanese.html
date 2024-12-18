@@ -750,7 +750,7 @@
         <td class="introduction">1950</td>
     </tr>
     <tr data-veh_id="MAIL_CAR">
-        <td class="refit"><div><img src="./_static/MAIL_CAR_1.png" alt="郵便車"><br /><img src="./_static/MAIL_CAR_2.png" alt="郵便車"><br /><img src="./_static/MAIL_CAR_3.png" alt="郵便車"><br /><img src="./_static/MAIL_CAR_4.png" alt="郵便車"><br /><img src="./_static/MAIL_CAR_5.png" alt="郵便車"></div></td>
+        <td class="refit"><div><img src="./_static/MAIL_CAR_1.png" alt="郵便車"><br /><img src="./_static/MAIL_CAR_2.png" alt="郵便車"><br /><img src="./_static/MAIL_CAR_3.png" alt="郵便車"><br /><img src="./_static/MAIL_CAR_4.png" alt="郵便車"><br /><img src="./_static/MAIL_CAR_5.png" alt="郵便車"><br /><img src="./_static/MAIL_CAR_6.png" alt="郵便車"></div></td>
         <td class="name">郵便車</td>
         <td class="speed"></td>
         <td class="speed_designed"></td>
