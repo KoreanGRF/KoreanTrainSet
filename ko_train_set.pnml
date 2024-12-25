@@ -12,7 +12,7 @@ grf {
     name:  string(STR_GRF_NAME_WITH_VER);
     desc:  string(STR_GRF_DESC);
     url:   string(STR_GRF_URL);
-    version: 281;
+    version: 282;
     min_compatible_version: 250;
 
     // Parameters
@@ -38,7 +38,10 @@ cargotable {
     CTAR, JAVA, COKE, COPR, EOIL, POWR, ENSP, BOOM, FMSP, FECR, FERT, FISH, GLAS, KAOL, LIME, MNO2,
     MILK, NITR, NUTS, O2__, COAT, PEAT, PETR, PHOS, IRON, PIPE, PLAS, POTA, PORE, QLME, SALT, SAND,
     SCMT, SLAG, SASH, LYE_, STST, STSE, STSH, STWR, GRVL, SULP, WDPR, TYRE, VBOD, VENG, VPTS, VEHI,
-    WOOL, ZINC
+    WOOL, ZINC,
+
+    // Improved Town Industries (based on 2.13)
+    WSTE, WDCH, SCPR
 }
 
 // Railtypetable
