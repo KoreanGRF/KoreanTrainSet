@@ -1,3 +1,6 @@
+<!--
+Indent: Tab size 8
+-->
 This page shows that who is the author of graphic sprites of each vehicles, especially when we didn't used the version controlling via git.  
 There's no need to add or edit this page since git stores every author's information unless there is no information in the table below.  
   
@@ -19,35 +22,35 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``EEC`` 			| @kiwitreekor, @kimgas 									| 							| #15 |
 | ``K2x00`` 			| @opentrain 											| 							| #90 |
 | ``K4400`` 			| Original: unknown<br />Las 									| 							| <https://cafe.naver.com/ottd/10534> |
-| V-train and its wagons 	| Las<br />Modified by @EightonEight 								| 							| <https://cafe.naver.com/ottd/10466><br />modified: #390 |
-| ``K5000`` 			| @kiwitreekor<br />Modified by @SerpensNebula 							| @SerpensNebula 					| #176<br />template changed: #457<br />modified: #352 |
+| V-train and its wagons 	| Las<br />modified by @EightonEight 								| 							| <https://cafe.naver.com/ottd/10466><br />modified: #390 |
+| ``K5000`` 			| @kiwitreekor<br />modified by @SerpensNebula 							| @SerpensNebula 					| #176<br />template changed: #457<br />modified: #352 |
 | ``K6x00`` 			| @kiwitreekor, @SerpensNebula 									| @SerpensNebula 					| #176, #250<br />template changed: #457<br />modified: #352 |
 | Kwankwang-ho livery	 	| @SerpensNebula 										| 							| #241 |
-| ``K7000`` 			| Modified by Las, @SerpensNebula 								| @SerpensNebula 					| <https://cafe.naver.com/ottd/10534>, #353<br />template changed: #457 |
-| ``K7x00`` 			| @kiwitreekor<br />Modified by @SerpensNebula, @JukjeonWani 					| @SerpensNebula 					| template changed: #457<br />modified: #351, #360 |
-| G-train and its wagons 	| @opentrain<br />Modified by @telk5093, @JukjeonWani 						| 							| <https://cafe.naver.com/ottd/10464><br />modified: #127, #223, #361, #387 |
-| Haerang and its wagons 	| Las?<br />Modified by @JukjeonWani 								| 							| modified: #361 |
-| S-train and its wagons 	| Las<br />Modified by @JukjeonWani 								| 							| <https://cafe.naver.com/ottd/10466><br />modified: #361 |
+| ``K7000`` 			| modified by Las, @SerpensNebula 								| @SerpensNebula 					| <https://cafe.naver.com/ottd/10534>, #353<br />template changed: #457 |
+| ``K7x00`` 			| @kiwitreekor<br />modified by @SerpensNebula, @JukjeonWani 					| @SerpensNebula 					| template changed: #457<br />modified: #351, #360 |
+| G-train and its wagons 	| @opentrain<br />modified by @telk5093, @JukjeonWani 						| 							| <https://cafe.naver.com/ottd/10464><br />modified: #127, #223, #361, #387 |
+| Haerang and its wagons 	| Las?<br />modified by @JukjeonWani 								| 							| modified: #361 |
+| S-train and its wagons 	| Las<br />modified by @JukjeonWani 								| 							| <https://cafe.naver.com/ottd/10466><br />modified: #361 |
 | ``K7600`` 			| skyu 												| @SerpensNebula 					| template changed: #457 |
-| A-train and its wagons 	| @kiwitreekor, @kimgas<br />Modified by @JukjeonWani 						| 							| #15<br />modified: #361 |
+| A-train and its wagons 	| @kiwitreekor, @kimgas<br />modified by @JukjeonWani 						| 							| #15<br />modified: #361 |
 | ``K8000`` 			| skyu 												| @SerpensNebula 					| template changed: #456 |
-| ``K8x00`` 			| skyu<br />Modified by @SerpensNebula 								| @SerpensNebula 					| template changed: #456<br />modified: #359 |
-| ``K8500`` 			| skyu<br />Modified by @SerpensNebula 								| @SerpensNebula 					| template changed: #456<br />modified: #359 |
-| ``EUM`` 			| skyu<br />Modified by @EightonEight 								| 							| modified: #370, #376 |
-| ``EUM_32bpp`` 		| @kiwitreekor<br />Modified by @EightonEight 							| 							| #319, #320<br />modified: #370, #376 |
+| ``K8x00`` 			| skyu<br />modified by @SerpensNebula 								| @SerpensNebula 					| template changed: #456<br />modified: #359 |
+| ``K8500`` 			| skyu<br />modified by @SerpensNebula 								| @SerpensNebula 					| template changed: #456<br />modified: #359 |
+| ``EUM`` 			| skyu<br />modified by @EightonEight 								| 							| modified: #370, #376 |
+| ``EUM_32bpp`` 		| @kiwitreekor<br />modified by @EightonEight 							| 							| #319, #320<br />modified: #370, #376 |
 | KTX-EUM 320 wagon 		| @EightonEight 										| 							| #368 |
-| ``KTX1N`` 			| skyu 												| @SerpensNebula<br />Modified by @EightonEight 	| template changed: #427<br />modified: #437, #442, #454 |
-| ``KTX2N`` 			| Las<br />Modified by @EightonEight 								| 							| modified: #376, #377 |
-| ``KTX2N_PYEONGCHANG`` 	| RIPper<br />Modified by @EightonEight 							| 							| #89<br />modified: #376, #377 |
-| ``SRT`` 			| Las<br />Modified by @EightonEight 								| 							| modified: #377 |
+| ``KTX1N`` 			| skyu 												| @SerpensNebula<br />modified by @EightonEight 	| template changed: #427<br />modified: #437, #442, #454 |
+| ``KTX2N`` 			| Las<br />modified by @EightonEight 								| 							| modified: #376, #377 |
+| ``KTX2N_PYEONGCHANG`` 	| RIPper<br />modified by @EightonEight 							| 							| #89<br />modified: #376, #377 |
+| ``SRT`` 			| Las<br />modified by @EightonEight 								| 							| modified: #377 |
 | ``SRT_32bpp`` 		| @EightonEight 										| 							| #377 |
 | ``MAUM`` 			| 												| @SerpensNebula 					| #307<br />modified: #428, #444 |
 | ``MAUM_32bpp`` 		| 												| @SerpensNebula 					| #307<br />modified: #428, #444 |
-| ``NDC`` 			| Original: unknown<br />Modified by @telk5093, @kiwitreekor 					| 							| modified: #15 |
-| ``NURIRO`` 			| @telk5093<br />(original: ``ITX_CHEONGCHUN``)<br />Modified by @kimgas, @EightonEight 	| 							| modified: #140, #362 |
-| ``NURIRO_SANTA`` 		| @kiwitreekor<br />Modified by @kimgas 							| 							| #106<br />modified: #140 |
+| ``NDC`` 			| Original: unknown<br />modified by @telk5093, @kiwitreekor 					| 							| modified: #15 |
+| ``NURIRO`` 			| @telk5093<br />(original: ``ITX_CHEONGCHUN``)<br />modified by @kimgas, @EightonEight 	| 							| modified: #140, #362 |
+| ``NURIRO_SANTA`` 		| @kiwitreekor<br />modified by @kimgas 							| 							| #106<br />modified: #140 |
 | ``DHC`` 			| skyu<br />modified by @telk5093 								| @SerpensNebula					| template changed: #455<br />modified: #34 |
-| ``ITX-saemaeul`` 		| Las<br />Modified by @EightonEight 								| 							| <https://cafe.naver.com/ottd/7468><br />modified: #376 |
+| ``ITX-saemaeul`` 		| Las<br />modified by @EightonEight 								| 							| <https://cafe.naver.com/ottd/7468><br />modified: #376 |
 | ``MIKA3`` 			| @SerpensNebula 										| @SerpensNebula 					| #37<br />modified: #276<br />template changed: #445 |
 | ``PASHI5`` 			| @SerpensNebula 										| @SerpensNebula 					| #37<br />modified: #276<br />template changed: #445 |
 | ``MATE2`` 			| @SerpensNebula 										| @SerpensNebula 					| #37<br />modified: #276<br />template changed: #445 |
@@ -55,13 +58,13 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 ### LRT
 | Code 			| Author (legacy) 				| Author (standard) 	| Reference |
 |-----------------------|-----------------------------------------------|-----------------------|-----------|
-| ``BUSAN_4K`` 		| 초저항 					| 			| |
+| ``BUSAN_4K`` 		| Chojeohang 					| 			| |
 | ``BUSANGIMHAE`` 	| Las? 						| 			| |
 | ``DAEGU_3K_1`` 	| Jakga? 					| 			| |
 | ``DAEGU_3K_2`` 	| Jakga? 					| 			| |
 | ``GIMPO_1K`` 		| skyu?<br />Middle wagon: @telk5093 		| 			| |
 | ``INCHEON_METRO_2K`` 	| Las 						| 			| <https://cafe.naver.com/ottd/10435> |
-| ``SILLIM`` 		| @SerpensNebula<br />Modified by @Coconut 	| 			| #16<br />modified: #343 |
+| ``SILLIM`` 		| @SerpensNebula<br />modified by @Coconut 	| 			| #16<br />modified: #343 |
 | ``U100`` 		| @SerpensNebula 				| 			| #33 |
 | ``UL000`` 		| Las 						| 			| <https://cafe.naver.com/ottd/10435> |
 | ``Y100`` 		| @telk5093 					| 			| |
@@ -72,24 +75,24 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``AREX_1K_NONSTOP`` 			| skyu 								| @EightonEight 			| template changed: #441, hereinafter the same |
 | ``AREX_1K_NONSTOP_ORANGE`` 		| @kiwitreekor 							| 〃 					| #6 |
 | ``AREX_2K`` 				| skyu 								| 〃 					| |
-| ``BUSAN_METRO_1K_1ST`` 		| @opentrain<br />Modified by @EightonEight 			| 〃 					| modified: #270 |
-| ``BUSAN_METRO_1K_2ND`` 		| @opentrain<br />Modified by @EightonEight 			| 〃 					| modified: #303, #364 |
+| ``BUSAN_METRO_1K_1ST`` 		| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #270 |
+| ``BUSAN_METRO_1K_2ND`` 		| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #303, #364 |
 | ``BUSAN_METRO_1K_3RD`` 		| 								| 〃 					| #363 |
-| ``BUSAN_METRO_2K`` 			| @opentrain<br />Modified by @EightonEight 			| 〃 					| modified: #270, #364 |
-| ``BUSAN_METRO_3K`` 			| @opentrain<br />Modified by @EightonEight 			| 〃 					| modified: #303 |
-| ``DAEGU_METRO_1K`` 			| @opentrain<br />Modified by @EightonEight 			| 〃 					| modified: #364 |
-| ``DAEGU_METRO_2K`` 			| @opentrain<br />Modified by @EightonEight 			| 〃 					| modified: #303 |
-| ``DAEJEON_METRO_1K`` 			| @opentrain<br />Modified by @EightonEight 			| 〃 					| modified: #303 |
+| ``BUSAN_METRO_2K`` 			| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #270, #364 |
+| ``BUSAN_METRO_3K`` 			| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #303 |
+| ``DAEGU_METRO_1K`` 			| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #364 |
+| ``DAEGU_METRO_2K`` 			| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #303 |
+| ``DAEJEON_METRO_1K`` 			| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #303 |
 | ``SG_A000_1`` 			| @opentrain, @Coconut, @SerpensNebula, @EightonEight 		| @SerpensNebula, @EightonEight 	| #197, #340 |
-| ``GWANGJU_METRO_1K`` 			| @opentrain<br />Modified by @EightonEight 			| @EightonEight 			| modified: #303 |
+| ``GWANGJU_METRO_1K`` 			| @opentrain<br />modified by @EightonEight 			| @EightonEight 			| modified: #303 |
 | ``361K_VVVF`` 			| skyu 								| 〃 					| |
 | ``368K_ITX_CHEONGCHUN`` 		| skyu 								| 〃 					| |
-| ``INCHEON_METRO_1K_VVVF_1ST`` 	| skyu<br />Modified by @EightonEight 				| 〃 					| modified: #303 |
+| ``INCHEON_METRO_1K_VVVF_1ST`` 	| skyu<br />modified by @EightonEight 				| 〃 					| modified: #303 |
 | ``INCHEON_METRO_1K_VVVF_1ST_2022`` 	| @EightonEight 						| 〃 					| #373 |
 | ``INCHEON_METRO_1K_VVVF_2ND`` 	| Las 								| 〃 					| <https://cafe.naver.com/ottd/10466> |
-| ``391K_1ST`` 				| @kiwitreekor<br />Modified by @EightonEight 			| 〃 					| <https://cafe.naver.com/ottd/13880><br />modified: #311 |
+| ``391K_1ST`` 				| @kiwitreekor<br />modified by @EightonEight 			| 〃 					| <https://cafe.naver.com/ottd/13880><br />modified: #311 |
 | ``391K_2ND`` 				| @EightonEight 						| 〃 					| #260 |
-| ``1K_RHEO_FIRST_1`` 			| skyu<br />Modified by @ChuoSpecialRapid201 			| 〃 					| modified: #240 |
+| ``1K_RHEO_FIRST_1`` 			| skyu<br />modified by @ChuoSpecialRapid201 			| 〃 					| modified: #240 |
 | ``1K_RHEO_FIRST_2`` 			| 〃 								| 〃 					| 〃 |
 | ``1K_RHEO_SECOND_1`` 			| 〃 								| 〃 					| 〃 |
 | ``1K_RHEO_SECOND_2`` 			| 〃 								| 〃 					| 〃 |
@@ -97,21 +100,21 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``1K_RHEO_LAST_1`` 			| 〃 								| 〃 					| 〃 |
 | ``1K_RHEO_LAST_2`` 			| 〃 								| 〃 					| 〃 |
 | ``3XXK_AL`` 				| skyu 								| 〃 					| |
-| ``3XXK_ST`` 				| skyu<br />Modified by @EightonEight 				| 〃 					| modified: #271 |
+| ``3XXK_ST`` 				| skyu<br />modified by @EightonEight 				| 〃 					| modified: #271 |
 | ``311K_1_1`` 				| skyu 								| 〃 					| |
 | ``311K_1_2`` 				| skyu 								| 〃 					| |
 | ``311K_2_1`` 				| skyu 								| 〃 					| |
 | ``311K_2_2`` 				| skyu 								| 〃 					| |
 | ``321K_BIKE`` 			| @opentrain 							| 〃 					| |
-| ``371K_381K_1ST`` 			| skyu<br />Modified by @EightonEight 				| 〃 					| modified: #311 |
-| ``371K_BLANK`` 			| skyu<br />Modified by @EightonEight 				| 〃 					| modified: #271 |
+| ``371K_381K_1ST`` 			| skyu<br />modified by @EightonEight 				| 〃 					| modified: #311 |
+| ``371K_BLANK`` 			| skyu<br />modified by @EightonEight 				| 〃 					| modified: #271 |
 | ``371K_CC`` 				| @EightonEight 						| 〃 					| #271 |
-| ``381K_2ND`` 				| @kiwitreekor<br />Modified by @telk5093, @EightonEight 	| 〃 					| <https://cafe.naver.com/ottd/13880><br />modified: #271, #295, #311 |
-| ``LINE_1_2019`` 			| @kiwitreekor<br />Modified by @EightonEight 			| 〃 					| modified: #271, #295, #311 |
+| ``381K_2ND`` 				| @kiwitreekor<br />modified by @telk5093, @EightonEight 	| 〃 					| <https://cafe.naver.com/ottd/13880><br />modified: #271, #295, #311 |
+| ``LINE_1_2019`` 			| @kiwitreekor<br />modified by @EightonEight 			| 〃 					| modified: #271, #295, #311 |
 | ``LINE_1_2021`` 			| @EightonEight 						| 〃 					| #295<br />modified: #311 |
 | ``LINE_1_2022_W`` 			| @EightonEight 						| 〃 					| #345 |
 | ``SMETRO_1K_RHEO_FIRST`` 		| skyu 								| 〃 					| |
-| ``SMETRO_1K_RHEO_MODIFIED`` 		| skyu<br />Modified by @ChuoSpecialRapid201 			| 〃 					| modified: #240 |
+| ``SMETRO_1K_RHEO_MODIFIED`` 		| skyu<br />modified by @ChuoSpecialRapid201 			| 〃 					| modified: #240 |
 | ``SMETRO_1K_VVVF`` 			| skyu 								| 〃 					| |
 | ``2K_CHOPPER`` 			| skyu 								| 〃 					| |
 | ``2K_MELCO`` 				| skyu 								| 〃 					| |
@@ -119,21 +122,21 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``2K_VVVF_1ST`` 			| skyu 								| 〃 					| |
 | ``2K_VVVF_2ND`` 			| skyu 								| 〃 					| |
 | ``2K_VVVF_2ND`` 			| skyu 								| 〃 					| |
-| ``2K_VVVF_3RD`` 			| skyu<br />Modified by @kiwitreekor, @EightonEight 		| 〃 					| #47, #303 |
+| ``2K_VVVF_3RD`` 			| skyu<br />modified by @kiwitreekor, @EightonEight 		| 〃 					| #47, #303 |
 | ``2K_VVVF_4TH`` 			| @kiwitreekor 							| 〃 					| #9 |
 | ``3K_SMETRO_CHOPPER`` 		| skyu 								| 〃 					| |
 | ``3K_SMETRO_MODIFIED_CHOPPER`` 	| skyu 								| 〃 					| |
 | ``3K_SMETRO_VVVF_1ST`` 		| skyu 								| 〃 					| |
 | ``3K_SMETRO_VVVF_2ND`` 		| @kimgas 							| 〃 					| #51 |
 | ``3K_VVVF_1ST_1`` 			| skyu 								| 〃 					| |
-| ``3K_VVVF_1ST_2`` 			| skyu<br />Modified by @EightonEight 				| 〃 					| modified: #308 |
+| ``3K_VVVF_1ST_2`` 			| skyu<br />modified by @EightonEight 				| 〃 					| modified: #308 |
 | ``LINE_3_2022`` 			| @EightonEight 						| 〃 					| #331 |
 | ``LINE_3_2022_W`` 			| @EightonEight 						| 〃 					| #375 |
 | ``341K_VVVF_1ST_1`` 			| skyu 								| 〃 					| |
 | ``341K_VVVF_1ST_2`` 			| skyu 								| 〃 					| |
 | ``341K_VVVF_2ND_1`` 			| skyu 								| 〃 					| |
 | ``341K_VVVF_2ND_2`` 			| skyu 								| 〃 					| |
-| ``LINE_4_2019`` 			| @kiwitreekor<br />Modified by @EightonEight 			| 〃 					| modified: #271, #295, #311, #380 |
+| ``LINE_4_2019`` 			| @kiwitreekor<br />modified by @EightonEight 			| 〃 					| modified: #271, #295, #311, #380 |
 | ``LINE_4_2021`` 			| @EightonEight 						| 〃 					| #295<br />modified: #311, #380 |
 | ``SMETRO_4K_VVVF_1ST_2ND`` 		| @EightonEight 						| 〃 					| #83 |
 | ``SMETRO_4K_VVVF_3RD`` 		| @kiwitreekor 							| 〃 					| #12 |
@@ -146,14 +149,14 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``SMETRO_7K_4TH`` 			| @kiwitreekor 							| 〃 					| #13 |
 | ``SMETRO_7K_5TH`` 			| @opentrain 							| 〃 					| #216 |
 | ``SMETRO_8K_1ST_2ND`` 		| skyu 								| 〃 					| |
-| ``SMETRO_8K_3RD`` 			| @opentrain<br />Modified by @EightonEight 			| 〃 					| #256 |
+| ``SMETRO_8K_3RD`` 			| @opentrain<br />modified by @EightonEight 			| 〃 					| #256 |
 | ``SMETRO_9K_1ST`` 			| skyu 								| 〃 					| |
 | ``SMETRO_SR0X`` 			| skyu 								| 〃 					| |
 | ``D00`` 				| skyu 								| 〃 					| |
 | ``351K_2021`` 			| @EightonEight 						| 〃 					| #295<br />modified: #311 |
 | ``351K_VVVF_1ST`` 			| skyu 								| 〃 					| |
 | ``351K_VVVF_2ND`` 			| skyu 								| 〃 					| |
-| ``351K_VVVF_3RD`` 			| skyu<br />Modified by @telk5093 				| 〃 					| |
+| ``351K_VVVF_3RD`` 			| skyu<br />modified by @telk5093 				| 〃 					| |
 
 ### narrow
 | Code 				| Author (legacy) 	| Author (standard) 	| Reference |
@@ -173,8 +176,8 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``BOX_CAR`` 			| @opentrain, @EightonEight 							| 			| #138 |
 | ``BULK_CEMENT_CAR`` 		| 		 								| @EightonEight 	| #372 |
 | ``CABOOSE`` 			| @EightonEight, @opentrain 							| @EightonEight 	| #224 |
-| ``CAFE_CAR`` 			| Modified by @ChuoSpecialRapid201, @JukjeonWani 				| @SerpensNebula 	| #86, #87, #118, #136, #139, #141, #145, #184, #185, #358, #367<br />template changed: #435 |
-| ``FLAT_CAR`` 			| skyu<br />Modified by @kiwitreekor, @kimgas, @EightonEight 			| @SerpensNebula 	| modified: #157, #403 |
+| ``CAFE_CAR`` 			| modified by @ChuoSpecialRapid201, @JukjeonWani 				| @SerpensNebula 	| #86, #87, #118, #136, #139, #141, #145, #184, #185, #358, #367<br />template changed: #435 |
+| ``FLAT_CAR`` 			| skyu<br />modified by @kiwitreekor, @kimgas, @EightonEight 			| @SerpensNebula 	| modified: #157, #403 |
 | ``generator_car`` 		| Original: unknown<br />@kimgas, @ChuoSpecialRapid201, @opentrain 		| 			| #117, #232, #233 |
 | ``HOPPER_CAR`` 		| @kiwitreekor 									| 			| <https://cafe.naver.com/ottd/15106> |
 | ``cargo_AORE`` 		| 〃 										| 			| |
@@ -196,23 +199,23 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``cargo_SAND`` 		| 〃 										| 			| |
 | ``cargo_SCMT`` 		| 〃 										| 			| |
 | ``cargo_SLAG`` 		| 〃 										| 			| |
-| ``MAIL_CAR`` 			| @kimgas<br />Modified by @EightonEight 					| 			| #126<br />modified: #390 |
-| ``MUGUNGHWA_CAR`` 		| skyu?<br />@ChuoSpecialRapid201, @opentrain<br />Modified by @JukjeonWani 	| @SerpensNebula 	| #113, #124, #131, #174<br />modified: #180, #341, #357<br />template changed: #430 |
+| ``MAIL_CAR`` 			| @kimgas<br />modified by @EightonEight 					| 			| #126<br />modified: #390 |
+| ``MUGUNGHWA_CAR`` 		| skyu?<br />@ChuoSpecialRapid201, @opentrain<br />modified by @JukjeonWani 	| @SerpensNebula 	| #113, #124, #131, #174<br />modified: #180, #341, #357<br />template changed: #430 |
 | ``passenger_wagon`` 		| @telk5093 									| 			| |
 | ``KWANKWANG_CAR`` 		| @SerpensNebula 							 	| @SerpensNebula 	| #241<br />template changed: #433 |
-| ``SAEMAEUL_CAR`` 		| skyu?<br />@ChuoSpecialRapid201, @EightonEight<br />Modified by @JukjeonWani 	| @SerpensNebula 	| #118, #184, #227<br />modified: #378, #450<br />template changed: #429 |
+| ``SAEMAEUL_CAR`` 		| skyu?<br />@ChuoSpecialRapid201, @EightonEight<br />modified by @JukjeonWani 	| @SerpensNebula 	| #118, #184, #227<br />modified: #378, #450<br />template changed: #429 |
 | ``SLEEPING_CAR`` 		| @ChuoSpecialRapid201, @opentrain		 				| @EightonEight 	| #123, #220<br />template changed: #421 |
-| ``STAKE_CAR`` 		| @kiwitreekor<br />Modified by @kimgas, @EightonEight		 		| @SerpensNebula 	| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
+| ``STAKE_CAR`` 		| @kiwitreekor<br />modified by @kimgas, @EightonEight		 		| @SerpensNebula 	| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
 | ``STAKE_CAR_without_stake`` 	| @EightonEight 				 				| 〃 			| #257<br />modified: #157, #403 |
-| ``cargo_BUBL`` 		| @SerpensNebula<br />Modified by @kiwitreekor, @EightonEight 			| 〃 			| #55<br />modified: #157, #403 |
-| ``cargo_COPR`` 		| @kiwitreekor<br />Modified by @EightonEight		 			| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
+| ``cargo_BUBL`` 		| @SerpensNebula<br />modified by @kiwitreekor, @EightonEight 			| 〃 			| #55<br />modified: #157, #403 |
+| ``cargo_COPR`` 		| @kiwitreekor<br />modified by @EightonEight		 			| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
 | ``cargo_ENSP`` 		| @EightonEight		 							| 〃 			| #257<br />modified: #157, #403 |
 | ``cargo_FMSP`` 		| @EightonEight		 							| 〃 			| #257<br />modified: #157, #403 |
-| ``cargo_PAPR`` 		| @kiwitreekor<br />Modified by @EightonEight		 			| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
-| ``cargo_PIPE`` 		| @kiwitreekor<br />Modified by @EightonEight		 			| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
-| ``cargo_STEL`` 		| @kiwitreekor<br />Modified by @kimgas, @EightonEight		 		| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
-| ``cargo_TYRE`` 		| @kiwitreekor<br />Modified by @telk5093, @EightonEight		 	| 〃 			| modified: #157, #403 |
-| ``cargo_VBOD`` 		| @kiwitreekor<br />Modified by @EightonEight		 			| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
+| ``cargo_PAPR`` 		| @kiwitreekor<br />modified by @EightonEight		 			| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
+| ``cargo_PIPE`` 		| @kiwitreekor<br />modified by @EightonEight		 			| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
+| ``cargo_STEL`` 		| @kiwitreekor<br />modified by @kimgas, @EightonEight		 		| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
+| ``cargo_TYRE`` 		| @kiwitreekor<br />modified by @telk5093, @EightonEight		 	| 〃 			| modified: #157, #403 |
+| ``cargo_VBOD`` 		| @kiwitreekor<br />modified by @EightonEight		 			| 〃 			| <https://cafe.naver.com/ottd/15106><br />modified: #157, #403 |
 | ``cargo_VEHI`` 		| 〃 										| 〃 			| modified: #157, #403 |
 | ``cargo_WDPR`` 		| 〃 										| 〃 			| modified: #157, #403 |
 | ``cargo_WOOD`` 		| 〃 										| 〃 			| modified: #157, #403 |
@@ -224,7 +227,7 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 ### misc
 | Code 			| Author 			| Reference |
 |-----------------------|-------------------------------|-----------|
-| ``simple_waypoint`` 	| Modified by @telk5093 	| modified from OpenGFX |
+| ``simple_waypoint`` 	| modified by @telk5093 	| modified from OpenGFX |
 
 ### object
 | Code 			| Author 	| Reference |
