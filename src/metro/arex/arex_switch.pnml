@@ -9,6 +9,7 @@ switch(FEAT_TRAINS, SELF, sw_AREX_cargo_subtype_text, cargo_subtype) {
     0: return string(STR_REFIT_METRO_AREX_2K_NAME);
     1: return string(STR_REFIT_METRO_AREX_1K_NONSTOP_NAME);
     2: return string(STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME);
+    3: return string(STR_REFIT_METRO_AREX_2K_4TH_NAME);
     return string(STR_REFIT_METRO_AREX_2K_NAME);
 }
 
@@ -17,12 +18,14 @@ switch(FEAT_TRAINS, SELF, sw_AREX_engineH, cargo_subtype) {
     0: set_AREX_2K_engineH;
     1: set_AREX_1K_NONSTOP_engineH;
     2: set_AREX_1K_NONSTOP_ORANGE_engineH;
+    3: set_AREX_2K_4TH_engineH;
     set_AREX_2K_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_AREX_engineT, cargo_subtype) {
     0: set_AREX_2K_engineT;
     1: set_AREX_1K_NONSTOP_engineT;
     2: set_AREX_1K_NONSTOP_ORANGE_engineT;
+    3: set_AREX_2K_4TH_engineT;
     set_AREX_2K_engineT;
 }
 
@@ -31,12 +34,14 @@ switch(FEAT_TRAINS, SELF, sw_AREX_wagon_panto_cargo_subtype, cargo_subtype) {
     0: set_AREX_2K_wagon_panto;
     1: set_AREX_1K_NONSTOP_wagon_panto;
     2: set_AREX_1K_NONSTOP_ORANGE_wagon_panto;
+    // 3: // (no panto wagon for AREX_2K_4TH);
     set_AREX_2K_wagon_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_AREX_wagon_cargo_subtype, cargo_subtype) {
     0: set_AREX_2K_wagon;
     1: set_AREX_1K_NONSTOP_wagon;
     2: set_AREX_1K_NONSTOP_ORANGE_wagon;
+    3: set_AREX_2K_4TH_wagon;
     set_AREX_2K_wagon;
 }
 
@@ -46,11 +51,17 @@ switch(FEAT_TRAINS, SELF, sw_AREX_engine, position_in_consist_from_end == 0 && n
     sw_AREX_engineH;
 }
 
-// Wagon
-switch(FEAT_TRAINS, SELF, sw_AREX_wagon, (position_in_consist + 1) % 6) {
+// Pantograph - 6 cars (TC - M' - M - M' - M - TC)
+switch(FEAT_TRAINS, SELF, sw_AREX_panto_wagon_for_6cars, (position_in_consist + 1) % 6) {
     2: sw_AREX_wagon_panto_cargo_subtype;
     4: sw_AREX_wagon_panto_cargo_subtype;
     sw_AREX_wagon_cargo_subtype;
+}
+
+// Wagon
+switch(FEAT_TRAINS, SELF, sw_AREX_wagon, cargo_subtype) {
+    3: set_AREX_2K_4TH_wagon;        // AREX_2K_4TH (TC' - M - M - M - M - TC')
+    sw_AREX_panto_wagon_for_6cars;   // 6 cars (TC - M' - M - M' - M - TC)
 }
 
 // Speed
@@ -58,7 +69,8 @@ switch(FEAT_TRAINS, SELF, sw_AREX_speed_in_custom, cargo_subtype) {
     0: return sw_AREX_speed;
     1: return sw_AREX_NONSTOP_speed;
     2: return sw_AREX_NONSTOP_speed;
-    return sw_AREX_speed;
+    3: return sw_AREX_speed;
+    return sw_AREX_2K_4TH_speed;
 }
 
 

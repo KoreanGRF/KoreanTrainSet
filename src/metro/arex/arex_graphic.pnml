@@ -55,6 +55,20 @@ spriteset(set_AREX_2K_purchase, "./src/metro/arex/AREX_2K.png") {
     tmpl_purchase_common_dualhead(0, 0)
 }
 
+// AREX_2K_4TH
+spriteset(set_AREX_2K_4TH_engineH, "./src/metro/arex/AREX_2K_4TH.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_AREX_2K_4TH_wagon, "./src/metro/arex/AREX_2K_4TH.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_AREX_2K_4TH_engineT, "./src/metro/arex/AREX_2K_4TH.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_AREX_2K_4TH_purchase, "./src/metro/arex/AREX_2K_4TH.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_AREX_purchase, cargo_subtype) {
     set_AREX_2K_purchase;

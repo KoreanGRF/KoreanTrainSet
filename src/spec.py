@@ -64,6 +64,7 @@ trainList['GYEONGCHUN']         = 100,    100,    10,     6,            100,    
 trainList['ITX_CHEONGCHUN']     = 180,    180,    10,     6,            50,      30,           2000,   45,     (2012, 1, 1)
 trainList['AREX']               = 110,    120,    10,     6,            100,     30,           2000,   20,     (2007, 1, 1)
 trainList['AREX_NONSTOP']       = 110,    120,    None,   None,         45,      10,           None,   20,     (2007, 1, 1)
+trainList['AREX_2K_4TH']        = 150,    165,    10,     6,            100,     30,           4000,   40,     (2024, 1, 1)
 trainList['SHINBUNDANG']        = 100,    100,    10,     6,            100,     30,           2000,   20,     (2011, 3, 30)
 trainList['DONGHAE']            = 100,    100,    10,     6,            100,     30,           2000,   20,     (2018, 6, 16)
 trainList['SEOHAE']             = 100,    100,    10,     6,            100,     30,           2000,   20,     (2018, 6, 16)

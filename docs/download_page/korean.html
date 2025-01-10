@@ -440,7 +440,7 @@
         <td class="introduction">2012</td>
     </tr>
     <tr data-veh_id="AREX">
-        <td class="refit"><div><img src="./_static/AREX_1K_NONSTOP_ORANGE.png" alt="인천공항철도 (A'REX)"><br /><img src="./_static/AREX_1K_NONSTOP.png" alt="인천공항철도 (A'REX)"><br /><img src="./_static/AREX_2K.png" alt="인천공항철도 (A'REX)"></div></td>
+        <td class="refit"><div><img src="./_static/AREX_1K_NONSTOP_ORANGE.png" alt="인천공항철도 (A'REX)"><br /><img src="./_static/AREX_1K_NONSTOP.png" alt="인천공항철도 (A'REX)"><br /><img src="./_static/AREX_2K.png" alt="인천공항철도 (A'REX)"><br /><img src="./_static/AREX_2K_4TH.png" alt="인천공항철도 (A'REX)"></div></td>
         <td class="name">인천공항철도 (A'REX)</td>
         <td class="speed">110 km/h</td>
         <td class="speed_designed">120 km/h</td>

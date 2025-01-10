@@ -373,6 +373,7 @@ STR_REFIT_METRO_361K_2024_NAME                             : (Korail 361k, 2nd i
 STR_REFIT_METRO_AREX_1K_NONSTOP_NAME                       : (A'REX 1k Express)
 STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME                : (A'REX 1k Express - Orange)
 STR_REFIT_METRO_AREX_2K_NAME                               : (A'REX 2k All-stop)
+STR_REFIT_METRO_AREX_2K_4TH_NAME                           : (A'REX 2k All-stop 4th)
 
 # Refit (Seohae Line)
 STR_REFIT_METRO_391K_1ST_NAME                              : (Korail 391k 1st)
