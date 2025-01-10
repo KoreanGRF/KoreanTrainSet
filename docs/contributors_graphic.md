@@ -75,7 +75,8 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``AREX_1K_NONSTOP`` 			| skyu 								| @EightonEight 			| template changed: #441, hereinafter the same |
 | ``AREX_1K_NONSTOP_ORANGE`` 		| @kiwitreekor 							| 〃 					| #6 |
 | ``AREX_2K`` 				| skyu 								| 〃 					| |
-| ``BUSAN_METRO_1K_1ST`` 		| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #270 |
+| ``AREX_2K_4TH``			|  								| @SerpensNebula, @EightonEight		| #374 |
+| ``BUSAN_METRO_1K_1ST`` 		| @opentrain<br />modified by @EightonEight 			| @EightonEight 			| modified: #270 |
 | ``BUSAN_METRO_1K_2ND`` 		| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #303, #364 |
 | ``BUSAN_METRO_1K_3RD`` 		| 								| 〃 					| #363 |
 | ``BUSAN_METRO_2K`` 			| @opentrain<br />modified by @EightonEight 			| 〃 					| modified: #270, #364 |
