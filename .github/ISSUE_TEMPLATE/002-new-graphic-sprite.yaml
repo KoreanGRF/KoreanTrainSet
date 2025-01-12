@@ -1,0 +1,95 @@
+name: 추가 제안 - 신규 차량 (Feature Request - Suggest new vehicle)
+description: Suggest a new vehicle. You may offer graphic sprites and informations.
+title: '[Feature Request - New] '
+labels: ["new car"]
+assignees:
+  - telk5093
+body:
+  - type: textarea
+    id: graphic-sprite
+    attributes:
+      label: 그래픽 스프라이트(Graphic sprite)
+      placeholder: |
+        파일을 여기에 놓아 여기에 그래픽 스프라이트를 첨부하세요
+        (Please attach the graphic sprite here by drag & drop the file here)
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        
+        제안할 차량 제원에 대한 아래 입력폼을 입력해주세요 (Please fill the input forms below about the specification to suggest):
+  - type: input
+    id: name-in-ko
+    attributes:
+      label: 이름 (Name in Korean)
+      placeholder: eg) KTX-산천
+      description: If you are unable to write Hangeul(Korean letters), just fill whatever this.
+    validations:
+      required: true
+  - type: input
+    id: name-in-en
+    attributes:
+      label: 이름 (Name in English)
+      placeholder: eg) KTX-Sancheon
+    validations:
+      required: true
+  - type: input
+    id: name-in-code
+    attributes:
+      label: 제안할 코드 고유명 (Name in the codes to suggest)
+      placeholder: eg) KTX2N
+      description: |
+        코드에서 사용할 코드 고유명을 제안해주세요 (Please suggest the name which will be used in the codes)
+    validations:
+      required: false
+  - type: input
+    id: speed
+    attributes:
+      label: 운영 속력 (Speed)
+      placeholder: eg) 300 km/h
+      description: |
+        km/h 단위로 숫자만 입력하세요 (Please fill only numbers in km/h unit)
+    validations:
+      required: true
+  - type: input
+    id: speed-max
+    attributes:
+      label: 설계 최고 속력 (Designed max. speed)
+      placeholder: eg) 330 km/h
+    validations:
+      required: false
+  - type: input
+    id: power
+    attributes:
+      label: 출력 (Power)
+      description: |
+        kW 단위로 숫자만 입력하세요 (Please fill only numbers in kW unit)
+      placeholder: eg) 4400 kW
+    validations:
+      required: true
+  - type: input
+    id: weight
+    attributes:
+      label: 중량 (Weight)
+      description: |
+        톤(t) 단위로 숫자만 입력하세요 (Please fill only numbers in ton unit)
+      placeholder: eg) 136 t
+    validations:
+      required: true
+  - type: input
+    id: introduction-year
+    attributes:
+      label: 도입연도 (Introduction year)
+      placeholder: eg) 2004
+    validations:
+      required: true
+  - type: textarea
+    id: misc
+    attributes:
+      label: 기타 전달할 내용 (Other things to tell us)
+      placeholder: |
+        기타 전달하고 싶은 내용이 있으면 여기에 작성해주세요.
+        Please fill this if you have any other things to tell us.
+    validations:
+      required: false

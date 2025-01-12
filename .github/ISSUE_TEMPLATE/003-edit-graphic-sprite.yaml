@@ -1,0 +1,11 @@
+name: 추가 제안 (Feature Request - Others)
+description: Feature request except for suggesting a new vehicle.
+title: '[Feature Request] '
+labels: ["suggestion"]
+body:
+  - type: textarea
+    id: contents
+    attributes:
+      label: 제안할 내용 (Feature request what you want to)
+    validations:
+      required: true

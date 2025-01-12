@@ -1,0 +1,44 @@
+name: 버그 신고 (Bug report)
+description: Report bugs or problems.
+title: '[Bug] '
+labels: ["investigate"]
+assignees:
+  - telk5093
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 한국 열차 세트 버전 (Version of Korean Train Set)
+      description: |
+        어떤 버전에서 문제가 발생하였나요?
+        Which version has a problem?
+      placeholder: eg) 2.0.0 or latest version
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 버그 내용 설명 (Describe the bug)
+      description: |
+        버그 내용을 재현 방법을 포함하여 자세히 설명해주세요. 스크린 샷이 있으면 첨부해주세요.
+        Describe the detail of the bug including the step to reproduce it. Please attach some screenshots if exists
+    validations:
+      required: true
+  - type: textarea
+    id: expected-situation
+    attributes:
+      label: 올바른 상황 설명 (Describe the expected situation)
+      description: |
+        버그가 이렇게 수정되어야 한다는 점을 설명해주세요.
+        Describe how this bug should be fixed and what is expected
+    validations:
+      required: true
+  - type: textarea
+    id: misc
+    attributes:
+      label: 기타 전달할 내용 (Other things to tell us)
+      placeholder: |
+        기타 전달하고 싶은 내용이 있으면 여기에 작성해주세요.
+        Please fill this if you have any other things to tell us.
+    validations:
+      required: false
