@@ -47,7 +47,7 @@ body:
     id: speed
     attributes:
       label: 운영 속력 (Speed)
-      placeholder: eg) 300 km/h
+      placeholder: eg) 300
       description: |
         km/h 단위로 숫자만 입력하세요 (Please fill only numbers in km/h unit)
     validations:
@@ -56,7 +56,7 @@ body:
     id: speed-max
     attributes:
       label: 설계 최고 속력 (Designed max. speed)
-      placeholder: eg) 330 km/h
+      placeholder: eg) 330
     validations:
       required: false
   - type: input
@@ -65,7 +65,7 @@ body:
       label: 출력 (Power)
       description: |
         kW 단위로 숫자만 입력하세요 (Please fill only numbers in kW unit)
-      placeholder: eg) 4400 kW
+      placeholder: eg) 4400
     validations:
       required: true
   - type: input
@@ -74,7 +74,7 @@ body:
       label: 중량 (Weight)
       description: |
         톤(t) 단위로 숫자만 입력하세요 (Please fill only numbers in ton unit)
-      placeholder: eg) 136 t
+      placeholder: eg) 136
     validations:
       required: true
   - type: input
