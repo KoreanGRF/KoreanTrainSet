@@ -70,5 +70,12 @@ item(FEAT_TRAINS, ko_train_K7000, 5470) {
         cargo_subtype_text:             sw_K7000_cargo_subtype_text;
         additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
+    livery_override(ko_train_SAEMAEUL_CAR) {
+        default:                        sw_K7000_SAEMAEUL_CAR_wagon;
+        loading_speed:                  sw_SAEMAEUL_CAR_loadingspeed;
+        running_cost_factor:            sw_SAEMAEUL_CAR_runningcost;
+        cargo_capacity:                 sw_SAEMAEUL_CAR_capacity;
+        cargo_subtype_text:             sw_K7000_SAEMAEUL_CAR_cargo_subtype_text;
+    }
 }
 // End of "K7000"
