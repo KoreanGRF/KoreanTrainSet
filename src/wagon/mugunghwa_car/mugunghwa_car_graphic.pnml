@@ -165,6 +165,14 @@ spriteset(set_MUGUNGHWA_CAR_wagon_A_TRAIN_4, "./src/wagon/mugunghwa_car/A-train.
     tmpl_wagon_by_coor(80, 90)
 }
 
+// GYOOE
+spriteset(set_MUGUNGHWA_CAR_GYOOE_purchase, "./src/wagon/mugunghwa_car/GYOOE.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_MUGUNGHWA_CAR_GYOOE_wagon, "./src/wagon/mugunghwa_car/GYOOE.png") {
+    tmpl_standard(80, 0)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_purchase, cargo_subtype) {
     set_MUGUNGHWA_CAR_RED_BLUE_WHITE_purchase;

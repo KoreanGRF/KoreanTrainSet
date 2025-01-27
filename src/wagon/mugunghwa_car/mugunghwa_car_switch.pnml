@@ -36,6 +36,7 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_wagon, cargo_subtype) {
     11: set_MUGUNGHWA_CAR_EXECUTIVE_HAETAE_2;
     12: set_MUGUNGHWA_CAR_EXECUTIVE_HANJIN_1;
     13: set_MUGUNGHWA_CAR_EXECUTIVE_STREAMLINED;
+    // 14: // RESERVED - Gyooe
     set_MUGUNGHWA_CAR_RED_BLUE_WHITE;
 }
 switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text, cargo_subtype) {
@@ -51,6 +52,7 @@ switch(FEAT_TRAINS, SELF, sw_MUGUNGHWA_CAR_subtype_text, cargo_subtype) {
     11: return string(STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_2);
     12: return string(STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HANJIN_1);
     13: return string(STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE);
+    // 14: // RESERVED - Gyooe
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 

@@ -4,17 +4,38 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-
-// Refit Paintings
+// Refit Paintings - K4400
 switch(FEAT_TRAINS, SELF, sw_K4400_loco, cargo_subtype) {
     1:    set_K4400_1_loco;
     10:   set_K4400_V_TRAIN_loco;
+    14:   set_K4400_GYOOE_loco;
     set_K4400_2_loco;
 }
 switch(FEAT_TRAINS, SELF, sw_K4400_cargo_subtype_text, cargo_subtype) {
     1:    return string(STR_REFIT_LIVERY_GREEN_YELLOW);
     10:   return string(STR_REFIT_LIVERY_V_TRAIN);
+    14:   return string(STR_REFIT_LIVERY_GYOOE);
     return string(STR_REFIT_LIVERY_THESEDAYS);
+}
+
+// Refit Paintings - MUNGUNGHWA_CAR
+switch(FEAT_TRAINS, SELF, sw_K4400_MUGUNGHWA_CAR_wagon, cargo_subtype) {
+    14: set_MUGUNGHWA_CAR_GYOOE_wagon;    // Gyooe
+    sw_MUGUNGHWA_CAR_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_K4400_MUGUNGHWA_CAR_cargo_subtype_text, cargo_subtype) {
+    14:   return string(STR_REFIT_LIVERY_GYOOE);
+    sw_MUGUNGHWA_CAR_subtype_text;
+}
+
+// Refit Paintings - GENERATOR_CAR
+switch(FEAT_TRAINS, SELF, sw_K4400_GENERATOR_CAR_wagon, cargo_subtype) {
+    14:   set_GENERATOR_CAR_GYOOE;    // Gyooe
+    sw_GENERATOR_CAR_wagon;
+}
+switch(FEAT_TRAINS, SELF, sw_K4400_GENERATOR_CAR_cargo_subtype_text, cargo_subtype) {
+    14:   return string(STR_REFIT_LIVERY_GYOOE);
+    sw_GENERATOR_CAR_cargo_subtype_text;
 }
 
 // Graphic - V-train

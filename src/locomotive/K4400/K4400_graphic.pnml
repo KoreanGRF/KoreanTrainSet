@@ -16,26 +16,36 @@ template tmpl_K4400(x, y) {
     [x+210,    y,    18,    14,    -7,   -7]
 }
 
-// K4400
+// K4400 - Green & Yellow
 spriteset(set_K4400_1_purchase, "./src/locomotive/K4400/K4400.png") {
     tmpl_purchase_common(0, 0)
 }
-spriteset(set_K4400_1_loco, "./src/locomotive/K4400/K4400.png") {   // Green & Yellow
+spriteset(set_K4400_1_loco, "./src/locomotive/K4400/K4400.png") {
     tmpl_K4400(80, 0)
 }
 
+// K4400 - Red & White & Blue print
 spriteset(set_K4400_2_purchase, "./src/locomotive/K4400/K4400.png") {
     tmpl_purchase_common(0, 30)
 }
-spriteset(set_K4400_2_loco, "./src/locomotive/K4400/K4400.png") {   // Red & White & Blue print
+spriteset(set_K4400_2_loco, "./src/locomotive/K4400/K4400.png") {
     tmpl_K4400(80, 30)
 }
 
+// K4400 - V-train
 spriteset(set_K4400_V_TRAIN_purchase, "./src/locomotive/K4400/K4400.png") {
     tmpl_purchase_common(0, 60)
 }
-spriteset(set_K4400_V_TRAIN_loco, "./src/locomotive/K4400/K4400.png") {   // V-train
+spriteset(set_K4400_V_TRAIN_loco, "./src/locomotive/K4400/K4400.png") {
     tmpl_K4400(80, 60)
+}
+
+// K4400 - GYOOE
+spriteset(set_K4400_GYOOE_purchase, "./src/locomotive/K4400/K4400_GYOOE.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_K4400_GYOOE_loco, "./src/locomotive/K4400/K4400_GYOOE.png") {
+    tmpl_K4400(80, 0)
 }
 
 // Alias of purchase image

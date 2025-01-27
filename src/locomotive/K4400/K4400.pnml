@@ -77,5 +77,18 @@ item(FEAT_TRAINS, ko_train_K4400, 5440) {
         cargo_capacity:                 sw_V_TRAIN_capacity;
         running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
     }
+    livery_override(ko_train_MUGUNGHWA_CAR) {
+        default:                        sw_K4400_MUGUNGHWA_CAR_wagon;
+        cargo_capacity:                 sw_MUGUNGHWA_CAR_capacity;
+        loading_speed:                  sw_MUGUNGHWA_CAR_loadingspeed;
+        running_cost_factor:            sw_MUGUNGHWA_CAR_runningcost;
+        cargo_subtype_text:             sw_K4400_MUGUNGHWA_CAR_cargo_subtype_text;
+    }
+    livery_override(ko_train_GENERATOR_CAR) {
+        default:                        sw_K4400_GENERATOR_CAR_wagon;
+        cargo_subtype_text:             sw_K4400_GENERATOR_CAR_cargo_subtype_text;
+        cargo_capacity:                 0;
+        length:                         sw_GENERATOR_CAR_length;
+    }
 }
 // End of "K4400"

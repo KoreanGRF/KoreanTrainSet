@@ -81,6 +81,7 @@ spriteset(set_GENERATOR_CAR_LONG_SAEMAEUL_3, "./src/wagon/generator_car/generato
     tmpl_standard(80, 300)
 }
 
+// Haerang
 spriteset(set_GENERATOR_CAR_HAERANG_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_common(0, 330)
 }
@@ -88,6 +89,7 @@ spriteset(set_GENERATOR_CAR_HAERANG, "./src/wagon/generator_car/generator_car.pn
     tmpl_standard(80, 330)
 }
 
+// S-train
 spriteset(set_GENERATOR_CAR_S_TRAIN_1_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_common(0, 360)
 }
@@ -101,6 +103,7 @@ spriteset(set_GENERATOR_CAR_S_TRAIN_2, "./src/wagon/generator_car/generator_car.
     tmpl_standard(80, 390)
 }
 
+// G-train
 spriteset(set_GENERATOR_CAR_G_TRAIN_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_common(0, 420)
 }
@@ -108,12 +111,20 @@ spriteset(set_GENERATOR_CAR_G_TRAIN, "./src/wagon/generator_car/generator_car.pn
     tmpl_standard(80, 420)
 }
 
-// A-train's power car
+// A-train
 spriteset(set_GENERATOR_CAR_A_TRAIN_purchase, "./src/wagon/generator_car/generator_car.png") {
     tmpl_purchase_common(0, 450)
 }
 spriteset(set_GENERATOR_CAR_A_TRAIN, "./src/wagon/generator_car/generator_car.png") {
     tmpl_standard(80, 450)
+}
+
+// A-train
+spriteset(set_GENERATOR_CAR_GYOOE_purchase, "./src/wagon/generator_car/GYOOE.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_GENERATOR_CAR_GYOOE, "./src/wagon/generator_car/GYOOE.png") {
+    tmpl_standard(80, 0)
 }
 
 // Alias of purchase image
