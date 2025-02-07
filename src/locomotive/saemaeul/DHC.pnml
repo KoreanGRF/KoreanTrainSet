@@ -32,7 +32,7 @@ item(FEAT_TRAINS, ko_train_DHC, 5520) {
         dual_headed:                    1;
 
         // Spec
-        speed:                          150 km/h;
+        speed:                          var_DHC_SPEED km/h;
         power:                          POWER_IN_KW(var_DHC_POWER);
         weight:                         var_DHC_WEIGHT;
         tractive_effort_coefficient:    0.25;

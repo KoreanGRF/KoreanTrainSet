@@ -20,7 +20,7 @@
         <td class="introduction">1927</td>
     </tr>
     <tr data-veh_id="PASHI5">
-        <td class="refit"><div><img src="./_static/PASHI5.png" alt="バシ５形蒸気機関車"></div></td>
+        <td class="refit"><div><img src="./_static/PASHI5_ORIGINAL.png" alt="バシ５形蒸気機関車"><br /><img src="./_static/PASHI5_ARCHIVED.png" alt="バシ５形蒸気機関車"></div></td>
         <td class="name">バシ５形蒸気機関車</td>
         <td class="speed">110 km/h</td>
         <td class="speed_designed">110 km/h</td>

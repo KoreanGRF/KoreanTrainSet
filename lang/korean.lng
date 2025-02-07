@@ -99,6 +99,7 @@ STR_GTX_A_NAME                                             :GTX-A
 
 
 # Liveries
+STR_REFIT_LIVERY_ORIGINAL                                  : (원본 도색)
 STR_REFIT_LIVERY_THESEDAYS                                 : (현재 도색)
 STR_REFIT_LIVERY_2x00_BLACK                                : (미군 도색: 검정)
 STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1                       : (철도청 초기 도색: 검정 & 좁은 주황)
@@ -145,6 +146,9 @@ STR_REFIT_LIVERY_CDC_GYEONGBUK1                            : (경북관광순환
 STR_REFIT_LIVERY_CDC_GYEONGBUK2                            : (경북관광순환테마열차, 신 도색)
 STR_REFIT_PASSWAGON_NORMALCAR                              : (일반 객차)
 STR_REFIT_PASSWAGON_FIRSTCAR                               : (특실 객차)
+
+# Refit (Pashi5)
+STR_REFIT_LIVERY_PASHI5_ARCHIVED                           : (2024년 보존 처리 도색)
 
 # Refit (Bidulgi)
 STR_REFIT_LIVERY_BIDULGI_3RD_CLASS                         : (3등 객차 다9형)

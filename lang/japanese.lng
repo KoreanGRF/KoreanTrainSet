@@ -146,6 +146,9 @@ STR_REFIT_LIVERY_CDC_GYEONGBUK2                            :(慶北観光循環�
 STR_REFIT_PASSWAGON_NORMALCAR                              :(一般客車)
 STR_REFIT_PASSWAGON_FIRSTCAR                               :(特室客車)
 
+# Refit (Pashi5)
+STR_REFIT_LIVERY_PASHI5_ARCHIVED                           :(2024年保存処理塗装)
+
 # Refit (Bidulgi)
 STR_REFIT_LIVERY_BIDULGI_3RD_CLASS                         :(3等客車・ダ9型)
 STR_REFIT_LIVERY_BIDULGI_DC_TRAILER                        :(DC動車 付随車)

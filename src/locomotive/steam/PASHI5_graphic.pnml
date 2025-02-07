@@ -4,21 +4,42 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-spriteset(set_PASHI5_purchase, "./src/locomotive/steam/PASHI5.png") {
+// PASHI5
+spriteset(set_PASHI5_ORIGINAL_purchase, "./src/locomotive/steam/PASHI5_ORIGINAL.png") {
     tmpl_purchase_common(0, 0)
 }
-spriteset(set_PASHI5_engine_1, "./src/locomotive/steam/PASHI5.png") {
+spriteset(set_PASHI5_ORIGINAL_engine_1, "./src/locomotive/steam/PASHI5_ORIGINAL.png") {
     tmpl_standard(80, 0)
 }
-spriteset(set_PASHI5_engine_2, "./src/locomotive/steam/PASHI5.png") {
+spriteset(set_PASHI5_ORIGINAL_engine_2, "./src/locomotive/steam/PASHI5_ORIGINAL.png") {
     tmpl_standard(80, 30)
 }
-spriteset(set_PASHI5_engine_3, "./src/locomotive/steam/PASHI5.png") {
+spriteset(set_PASHI5_ORIGINAL_engine_3, "./src/locomotive/steam/PASHI5_ORIGINAL.png") {
     tmpl_standard(80, 60)
 }
-spriteset(set_PASHI5_engine_4, "./src/locomotive/steam/PASHI5.png") {
+spriteset(set_PASHI5_ORIGINAL_engine_4, "./src/locomotive/steam/PASHI5_ORIGINAL.png") {
     tmpl_standard(80, 90)
 }
-spriteset(set_PASHI5_tender, "./src/locomotive/steam/PASHI5.png") {
+spriteset(set_PASHI5_ORIGINAL_tender, "./src/locomotive/steam/PASHI5_ORIGINAL.png") {
+    tmpl_standard(80, 120)
+}
+
+// PASHI5_ARCHIVED
+spriteset(set_PASHI5_ARCHIVED_purchase, "./src/locomotive/steam/PASHI5_ARCHIVED.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_PASHI5_ARCHIVED_engine_1, "./src/locomotive/steam/PASHI5_ARCHIVED.png") {
+    tmpl_standard(80, 0)
+}
+spriteset(set_PASHI5_ARCHIVED_engine_2, "./src/locomotive/steam/PASHI5_ARCHIVED.png") {
+    tmpl_standard(80, 30)
+}
+spriteset(set_PASHI5_ARCHIVED_engine_3, "./src/locomotive/steam/PASHI5_ARCHIVED.png") {
+    tmpl_standard(80, 60)
+}
+spriteset(set_PASHI5_ARCHIVED_engine_4, "./src/locomotive/steam/PASHI5_ARCHIVED.png") {
+    tmpl_standard(80, 90)
+}
+spriteset(set_PASHI5_ARCHIVED_tender, "./src/locomotive/steam/PASHI5_ARCHIVED.png") {
     tmpl_standard(80, 120)
 }

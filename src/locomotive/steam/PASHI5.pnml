@@ -46,10 +46,10 @@ item(FEAT_TRAINS, ko_train_PASHI5, 5302) {
         reliability_decay:              0;
 
         // Cargo
-        cargo_capacity:                 0;
+        cargo_capacity:                 1;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [];
+        cargo_allow_refit:              [PASS];
         cargo_disallow_refit:           [];
 
         // Costs
@@ -65,7 +65,7 @@ item(FEAT_TRAINS, ko_train_PASHI5, 5302) {
     graphics {
         default:                        sw_PASHI5_engine;
         articulated_part:               sw_PASHI5_articulated_part;
-        purchase:                       set_PASHI5_purchase;
+        purchase:                       set_PASHI5_ORIGINAL_purchase;
 
         length:                         sw_PASHI5_length;
 
@@ -77,9 +77,10 @@ item(FEAT_TRAINS, ko_train_PASHI5, 5302) {
         loading_speed:                  sw_PASHI5_loadingspeed;
 
         can_attach_wagon:               sw_steam_attach_global;
+        cargo_subtype_text:             sw_PASHI5_cargo_subtype_text;
         visual_effect_and_powered:      sw_steam_visual_effect;
 
-        additional_text:                string(STR_REFIT_ADDITIONAL_UNABLE);
+        additional_text:                string(STR_REFIT_ADDITIONAL_ABLE);
     }
 }
 // End of "PASHI5"

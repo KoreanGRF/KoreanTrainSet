@@ -99,6 +99,7 @@ STR_GTX_A_NAME                                             :GTX-A
 
 
 # Liveries
+STR_REFIT_LIVERY_ORIGINAL                                  : (Original livery)
 STR_REFIT_LIVERY_THESEDAYS                                 : (Current livery)
 STR_REFIT_LIVERY_2x00_BLACK                                : (US Army livery: Black)
 STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1                       : (KNR first livery: Black & Narrow Orange)
@@ -145,6 +146,9 @@ STR_REFIT_LIVERY_CDC_GYEONGBUK1                            : (Gyeongbuk tour tra
 STR_REFIT_LIVERY_CDC_GYEONGBUK2                            : (Gyeongbuk tour train, new livery)
 STR_REFIT_PASSWAGON_NORMALCAR                              : (Normal class car)
 STR_REFIT_PASSWAGON_FIRSTCAR                               : (First class car)
+
+# Refit (Pashi5)
+STR_REFIT_LIVERY_PASHI5_ARCHIVED                           : (Archived livery at 2024)
 
 # Refit (Bidulgi)
 STR_REFIT_LIVERY_BIDULGI_3RD_CLASS                         : (3rd class car - Da 9 class)

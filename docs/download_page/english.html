@@ -20,7 +20,7 @@
         <td class="introduction">1927</td>
     </tr>
     <tr data-veh_id="PASHI5">
-        <td class="refit"><div><img src="./_static/PASHI5.png" alt="Pashi 5 Steam Locomotive"></div></td>
+        <td class="refit"><div><img src="./_static/PASHI5_ORIGINAL.png" alt="Pashi 5 Steam Locomotive"><br /><img src="./_static/PASHI5_ARCHIVED.png" alt="Pashi 5 Steam Locomotive"></div></td>
         <td class="name">Pashi 5 Steam Locomotive</td>
         <td class="speed">110 km/h</td>
         <td class="speed_designed">110 km/h</td>
