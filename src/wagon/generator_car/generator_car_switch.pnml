@@ -17,11 +17,15 @@ switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_wagon, cargo_subtype) {
     9:  set_GENERATOR_CAR_LONG_ORANGE_RED;
     10: set_GENERATOR_CAR_LONG_SAEMAEUL_2;
     11: set_GENERATOR_CAR_LONG_SAEMAEUL_3;
-    // 14: // RESERVED - Gyooe
+    // 14: //RESERVED - Gyooe
     20: set_GENERATOR_CAR_HAERANG;
     21: set_GENERATOR_CAR_S_TRAIN_1;
     22: set_GENERATOR_CAR_S_TRAIN_2;
     23: set_GENERATOR_CAR_G_TRAIN;
+    25: set_GENERATOR_CAR_SAEMAEUL_1986_1993;
+    // 26: //RESERVED
+    27: set_GENERATOR_CAR_SAEMAEUL_1990_1994;
+    // 28: //RESERVED
     set_GENERATOR_CAR_LONG_MUGUNGHWA_BLUE_RED;
 }
 switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_cargo_subtype_text, cargo_subtype) {
@@ -43,6 +47,10 @@ switch(FEAT_TRAINS, SELF, sw_GENERATOR_CAR_cargo_subtype_text, cargo_subtype) {
     22: return string(STR_REFIT_LIVERY_S_TRAIN2);
     23: return string(STR_REFIT_LIVERY_G_TRAIN);
     // return string(STR_REFIT_LIVERY_GENERATOR_CAR_LONG_BLUE_RED);
+    25: return string(STR_REFIT_LIVERY_SAEMAEUL_1986_1993);
+    // 26: //RESERVED//
+    27: return string(STR_REFIT_LIVERY_SAEMAEUL_1990_1994);
+    // 28: //RESERVED//
     return string(STR_REFIT_LIVERY_THESEDAYS);
 }
 

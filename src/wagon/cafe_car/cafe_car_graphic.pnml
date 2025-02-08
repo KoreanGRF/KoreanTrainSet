@@ -103,6 +103,22 @@ spriteset(set_CAFE_CAR_MUGUNGHWA_CAFE_RED_YELLOW_WHITE, "./src/wagon/cafe_car/CA
     tmpl_standard(80, 390)
 }
 
+// Saemaeul car - set_SAEMAEUL_CAR_1986_1993
+spriteset(set_CAFE_CAR_SAEMAEUL_1986_1993_purchase, "./src/wagon/cafe_car/CAFE_CAR_SAEMAEUL_1986_1993.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_CAFE_CAR_SAEMAEUL_1986_1993, "./src/wagon/cafe_car/CAFE_CAR_SAEMAEUL_1986_1993.png") {
+    tmpl_standard(80, 0)
+}
+
+// Saemaeul car - set_SAEMAEUL_CAR_1990_1994
+spriteset(set_CAFE_CAR_SAEMAEUL_1990_1994_purchase, "./src/wagon/cafe_car/CAFE_CAR_SAEMAEUL_1990_1994.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_CAFE_CAR_SAEMAEUL_1990_1994, "./src/wagon/cafe_car/CAFE_CAR_SAEMAEUL_1990_1994.png") {
+    tmpl_standard(80, 0)
+}
+
 // Alias of purchase image
 switch(FEAT_TRAINS, SELF, sw_CAFE_CAR_purchase, cargo_subtype) {
     set_CAFE_CAR_MUGUNGHWA_CAFE_RED_BLUE_WHITE_purchase;

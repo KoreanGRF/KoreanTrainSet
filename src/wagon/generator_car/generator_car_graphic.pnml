@@ -119,11 +119,27 @@ spriteset(set_GENERATOR_CAR_A_TRAIN, "./src/wagon/generator_car/generator_car.pn
     tmpl_standard(80, 450)
 }
 
-// A-train
+// Gyooe
 spriteset(set_GENERATOR_CAR_GYOOE_purchase, "./src/wagon/generator_car/GYOOE.png") {
     tmpl_purchase_common(0, 0)
 }
 spriteset(set_GENERATOR_CAR_GYOOE, "./src/wagon/generator_car/GYOOE.png") {
+    tmpl_standard(80, 0)
+}
+
+// Saemaeul car - set_SAEMAEUL_CAR_1986_1993
+spriteset(set_GENERATOR_CAR_SAEMAEUL_1986_1993_purchase, "./src/wagon/generator_car/GENERATOR_CAR_SAEMAEUL_1986_1993.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_GENERATOR_CAR_SAEMAEUL_1986_1993, "./src/wagon/generator_car/GENERATOR_CAR_SAEMAEUL_1986_1993.png") {
+    tmpl_standard(80, 0)
+}
+
+// Saemaeul car - set_SAEMAEUL_CAR_1990_1994
+spriteset(set_GENERATOR_CAR_SAEMAEUL_1990_1994_purchase, "./src/wagon/generator_car/GENERATOR_CAR_SAEMAEUL_1990_1994.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_GENERATOR_CAR_SAEMAEUL_1990_1994, "./src/wagon/generator_car/GENERATOR_CAR_SAEMAEUL_1990_1994.png") {
     tmpl_standard(80, 0)
 }
 

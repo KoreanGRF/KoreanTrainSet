@@ -19,39 +19,67 @@ spriteset(set_SAEMAEUL_CAR_executive_1, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.p
     tmpl_standard(80, 30)
 }
 
-spriteset(set_SAEMAEUL_CAR_2_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_1986_1993_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_purchase_common(0, 60)
 }
-spriteset(set_SAEMAEUL_CAR_2, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_1986_1993, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_standard(80, 60)
 }
 
-spriteset(set_SAEMAEUL_CAR_executive_2_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_1986_1993_executive_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_purchase_common(0, 90)
 }
-spriteset(set_SAEMAEUL_CAR_executive_2, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_1986_1993_executive, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_standard(80, 90)
 }
 
-spriteset(set_SAEMAEUL_CAR_3_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_1990_1994_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_purchase_common(0, 120)
 }
-spriteset(set_SAEMAEUL_CAR_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_1990_1994, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_standard(80, 120)
 }
 
-spriteset(set_SAEMAEUL_CAR_executive_3_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_1990_1994_executive_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_purchase_common(0, 150)
 }
-spriteset(set_SAEMAEUL_CAR_executive_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_1990_1994_executive, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_standard(80, 150)
 }
 
-spriteset(set_SAEMAEUL_CAR_ITX_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_2_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_purchase_common(0, 180)
 }
-spriteset(set_SAEMAEUL_CAR_ITX, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+spriteset(set_SAEMAEUL_CAR_2, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
     tmpl_standard(80, 180)
+}
+
+spriteset(set_SAEMAEUL_CAR_executive_2_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 210)
+}
+spriteset(set_SAEMAEUL_CAR_executive_2, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 210)
+}
+
+spriteset(set_SAEMAEUL_CAR_3_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 240)
+}
+spriteset(set_SAEMAEUL_CAR_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 240)
+}
+
+spriteset(set_SAEMAEUL_CAR_executive_3_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 270)
+}
+spriteset(set_SAEMAEUL_CAR_executive_3, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 270)
+}
+
+spriteset(set_SAEMAEUL_CAR_ITX_purchase, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_purchase_common(0, 300)
+}
+spriteset(set_SAEMAEUL_CAR_ITX, "./src/wagon/saemaeul_car/SAEMAEUL_CAR.png") {
+    tmpl_standard(80, 300)
 }
 
 // Alias of purchase image
