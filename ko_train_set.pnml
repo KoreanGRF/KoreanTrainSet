@@ -8,7 +8,7 @@
  * NewGRF basic information
  *----------------------------------------------------------------------------*/
 grf {
-    grfid "TK\55\55";
+    grfid: "TK\55\55";
     name: string(STR_GRF_NAME_WITH_VER);
     desc: string(STR_GRF_DESC);
     url: string(STR_GRF_URL);
