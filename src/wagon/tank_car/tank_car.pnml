@@ -44,7 +44,10 @@ item(FEAT_TRAINS, ko_train_TANK_CAR, 5913) {
         cargo_capacity:                 36;
         refittable_cargo_classes:       bitmask(CC_LIQUID);
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [OIL_, WATR, COLA, FZDR, ACID, CHLO, MILK, RUBR, PLST, BEER, EOIL, PETR, RFPR];
+        cargo_allow_refit:              [
+                                            OIL_, WATR, COLA, FZDR, ACID, CHLO, MILK, RUBR, PLST, BEER,
+                                            EOIL, PETR, RFPR, N7__
+                                        ];
         cargo_disallow_refit:           [KAOL];
         loading_speed:                  5;
 

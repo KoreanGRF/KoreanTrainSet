@@ -44,11 +44,13 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         cargo_capacity:                 25;
         refittable_cargo_classes:       NO_CARGO_CLASS;
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
-        cargo_allow_refit:              [COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE, BEAN,
-                                         CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, POTA, LIME, MNO2,
-                                         PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG, FERT, NITR, CMNT, SASH,
-                                         SGBT, QLME, PLAS, FECR, CBLK, CASS, BDMT, PEAT, COKE, KAOL, WSTE,
-                                         WDCH];
+        cargo_allow_refit:              [
+                                            COAL, IORE, WHEA, FRUT, MAIZ, CORE, CTCD, SUGR, TOFF, AORE,
+                                            BEAN, CLAY, COAL, CORE, FRUT, GOLD, GRAI, GRVL, IORE, POTA,
+                                            LIME, MNO2, PHOS, PORE, RCYC, SALT, SAND, SCMT, SLAG, FERT,
+                                            NITR, CMNT, SASH, SGBT, QLME, PLAS, FECR, CBLK, CASS, BDMT,
+                                            PEAT, COKE, KAOL, WSTE, WDCH, FEAL
+                                        ];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
 
@@ -87,6 +89,7 @@ item(FEAT_TRAINS, ko_train_HOPPER_CAR, 5911) {
         QLME:                           sw_HOPPER_CAR_LIME_wagon;
         PLAS:                           sw_HOPPER_CAR_LIME_wagon;
         MNO2:                           sw_HOPPER_CAR_MNO2_wagon;
+        FEAL:                           sw_HOPPER_CAR_MNO2_wagon;   //TODO> offer Ferroalloys graphic
         FECR:                           sw_HOPPER_CAR_MNO2_wagon;
         PHOS:                           sw_HOPPER_CAR_PHOS_wagon;
         PORE:                           sw_HOPPER_CAR_PORE_wagon;

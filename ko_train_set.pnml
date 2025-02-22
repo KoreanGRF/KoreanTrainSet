@@ -40,6 +40,10 @@ cargotable {
     SCMT, SLAG, SASH, LYE_, STST, STSE, STSH, STWR, GRVL, SULP, WDPR, TYRE, VBOD, VENG, VPTS, VEHI,
     WOOL, ZINC,
 
+    // FIRS (from 5.0.0)
+    CCPR, FEAL, FOCA, HWAR, N7__, PPWK, PUMP, RBAR, SEAL, STBL, STBR, STIG, STPP, STSL, STTB, TYCO,
+    WELD,
+
     // Improved Town Industries (based on 2.13)
     WSTE, WDCH, SCPR
 }
