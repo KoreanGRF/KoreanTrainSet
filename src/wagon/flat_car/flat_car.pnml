@@ -46,7 +46,8 @@ item(FEAT_TRAINS, ko_train_FLAT_CAR, 5910) {
         non_refittable_cargo_classes:   NO_CARGO_CLASS;
         cargo_allow_refit:              [
                                             GOOD, VALU, FOOD, BATT, SWET, TOYS, FISH, BOOM, JAVA, GLAS,
-                                            POWR, NUTS, MNSP, VPTS, PPWK, PUMP, STBL, STPP, STSL, STTB
+                                            POWR, NUTS, MNSP, VPTS, PPWK, PUMP, STBL, STPP, STSL, STTB,
+                                            PPAR
                                         ];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
