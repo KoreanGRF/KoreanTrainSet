@@ -57,7 +57,7 @@ item(FEAT_TRAINS, ko_train_BOX_CAR, 5916) {
                                             LVST, GRAI, PAPR, WHEA, SUGR, CTCD, CMNT, POWR, BOOM, FECR,
                                             FERT, SALT, SAND, SLAG, SASH, GRVL, SULP, WDPR, VENG, VPTS,
                                             WOOL, SCPR, CCPR, FOCA, HWAR, RBAR, SEAL, STBL, STBR, STIG,
-                                            STTB, TYCO, WELD
+                                            STTB, TYCO, WELD, PPAR
                                         ];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
