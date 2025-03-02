@@ -47,7 +47,8 @@ item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
         cargo_allow_refit:              [
                                             BUBL, COPR, ENSP, FMSP, PAPR, PIPE, STSE, STEL, VPTS, VENG,
                                             VBOD, VEHI, WDPR, WOOD, WOOL, FICR, STAL, ALUM, STCB, CSTI,
-                                            IRON, STST, STSH, STWR, ZINC, TYRE, METL, SCPR
+                                            IRON, STST, STSH, STWR, ZINC, TYRE, METL, SCPR, CRAN, LFEQ,
+                                            TINP
                                         ];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
@@ -66,6 +67,8 @@ item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
         BUBL:                           sw_STAKE_CAR_BUBL_wagon;
         COPR:                           sw_STAKE_CAR_COPR_wagon;
         ENSP:                           sw_STAKE_CAR_ENSP_wagon;
+        CRAN:                           sw_STAKE_CAR_ENSP_wagon;
+        LFEQ:                           sw_STAKE_CAR_ENSP_wagon;
         FMSP:                           sw_STAKE_CAR_FMSP_wagon;
         PAPR:                           sw_STAKE_CAR_PAPR_wagon;
         PIPE:                           sw_STAKE_CAR_PIPE_wagon;
@@ -80,6 +83,7 @@ item(FEAT_TRAINS, ko_train_STAKE_CAR, 5914) {
         STSH:                           sw_STAKE_CAR_STEL_wagon;
         STWR:                           sw_STAKE_CAR_STEL_wagon;
         METL:                           sw_STAKE_CAR_STEL_wagon;
+        TINP:                           sw_STAKE_CAR_STEL_wagon;
         TYRE:                           sw_STAKE_CAR_TYRE_wagon;
         ZINC:                           sw_STAKE_CAR_STEL_wagon;
         VENG:                           sw_STAKE_CAR_STEL_wagon;
