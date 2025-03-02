@@ -47,7 +47,7 @@ item(FEAT_TRAINS, ko_train_FLAT_CAR, 5910) {
         cargo_allow_refit:              [
                                             GOOD, VALU, FOOD, BATT, SWET, TOYS, FISH, BOOM, JAVA, GLAS,
                                             POWR, NUTS, MNSP, VPTS, PPWK, PUMP, STBL, STPP, STSL, STTB,
-                                            PPAR
+                                            PPAR, FURN, BAKE, MEAT, SWRP, TEXT, YARN
                                         ];
         cargo_disallow_refit:           [];
         loading_speed:                  5;
