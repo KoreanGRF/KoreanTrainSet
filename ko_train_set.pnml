@@ -44,6 +44,10 @@ cargotable {
     CCPR, FEAL, FOCA, HWAR, N7__, PPWK, PUMP, RBAR, SEAL, STBL, STBR, STIG, STPP, STSL, STTB, TYCO,
     WELD,
 
+    // AXIS (2.x)
+    ACET, ALO_, NHNO, BIOM, CHRO, COCO, CRAN, C2H4, BAKE, ENUM, FORM, FURN, HYAC, H2__, LFEQ, MEAT,
+    MEOH, NAPH, NICK, OLSD, PHAC, C3H6, RAMT, LATX, SWRP, SGCN, SUAC, TEXT, TIN_, TINP, UREA, YARN
+
     // Improved Town Industries (based on 2.13)
     WSTE, WDCH, SCPR
 }
