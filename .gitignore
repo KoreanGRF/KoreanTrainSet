@@ -1,5 +1,6 @@
 .nmlcache
 .ignore
+.vscode
 generated/*
 !generated/download_page
 *.tar
