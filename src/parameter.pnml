@@ -161,8 +161,8 @@
 
     // Boolean
     param 10 {
-        // Simple waypoint feature
-        bool_simplize_waypoint {
+        // Simplise waypoint feature
+        bool_simplise_waypoint {
             type: bool;
             name: string(STR_PARAM_SIMPLIZE_WAYPOINT_NAME);
             desc: string(STR_PARAM_SIMPLIZE_WAYPOINT_DESC);

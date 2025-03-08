@@ -105,21 +105,24 @@ spriteset(set_light_railway_track_null, "./src/railtype/KR_LIGHTRAIL.png") {
 }
 
 // Disable grass overlay
-replace(6142, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6143, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6144, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6145, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6146, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6147, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6148, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6149, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6150, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6151, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6152, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6153, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6154, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6155, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
-replace(6156, "./src/railtype/KR_LIGHTRAIL.png") { [0, 0, 1, 1, 0, 0] }
+replacenew(RAILTYPE_TUNNELS, "./src/misc/simple_waypoint.png", 0) {
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+    [0, 0, 1, 1, 0, 0]
+}
 
 // Depot
 spriteset(set_light_railway_track_depot, "./src/railtype/KR_LIGHTRAIL.png") {
