@@ -579,6 +579,16 @@
         <td class="weight">57 t</td>
         <td class="introduction">2024</td>
     </tr>
+    <tr data-veh_id="CHUNGCHEONG_METROPOLITAN">
+        <td class="refit"><div><img src="./_static/CHUNGCHEONG_METROPOLITAN_392K_2023.png" alt="忠清圏広域鉄道"></div></td>
+        <td class="name">忠清圏広域鉄道</td>
+        <td class="speed">100 km/h</td>
+        <td class="speed_designed">110 km/h</td>
+        <td class="capacity">100</td>
+        <td class="power">2000 kW</td>
+        <td class="weight">57 t</td>
+        <td class="introduction">2025</td>
+    </tr>
     <tr data-veh_id="DAEJEON_METRO_1">
         <td class="refit"><div><img src="./_static/DAEJEON_METRO_1K.png" alt="大田1号線"></div></td>
         <td class="name">大田1号線</td>

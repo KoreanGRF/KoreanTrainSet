@@ -90,6 +90,7 @@ STR_DAEGU_METRO_1_NAME                                     :대구 1호선
 STR_DAEGU_METRO_2_NAME                                     :대구 2호선
 STR_DAEGU_METRO_3_NAME                                     :대구 3호선
 STR_DAEGU_METROPOLITAN_NAME                                :대경선
+STR_CHUNGCHEONG_METROPOLITAN_NAME                          :충청권 광역철도
 STR_DAEJEON_METRO_1_NAME                                   :대전 1호선
 STR_GWANGJU_METRO_1_NAME                                   :광주 1호선
 STR_UISINSEOL_NAME                                         :우이신설선
