@@ -158,7 +158,7 @@ STR_REFIT_LIVERY_BIDULGI_1960                              : (보통 / 1962~1974
 STR_REFIT_LIVERY_BIDULGI_1970                              : (보통 / 1969~1983년 도색)
 STR_REFIT_LIVERY_BIDULGI_1980                              : (비둘기호 / 1984~1994년 도색)
 STR_REFIT_LIVERY_BIDULGI_1990                              : (비둘기호 / 1994~2000년 도색)
-STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR                       : (비둘기호 수화물차)
+STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR                       : (비둘기호 도색)
 STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980                 : (통일호 / 1980년대 도색)
 STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990                 : (통일호 / 1990년대 도색)
 STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA                         : (무궁화호 / 1986~1988년 도색)
