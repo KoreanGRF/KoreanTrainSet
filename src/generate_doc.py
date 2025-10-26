@@ -21,7 +21,7 @@ for code_name in trainList:
 # Parse language file
 def parse_lang(lang):
     langData = {}
-    f = open(_ROOT + 'lang/' + lang + '.lng', 'r')
+    f = open(_ROOT + 'lang/' + lang + '.lng', 'r', encoding='utf-8')
     lines = f.readlines()
     for _line in lines:
         _line = _line.strip()
@@ -57,7 +57,7 @@ def get_string(string_id, lang):
 print('  Cropping purchase image ... ', end='')
 pnmlFiles = glob.iglob(_ROOT + '**/*.pnml', recursive=True)
 for file_name in pnmlFiles:
-    f = open(file_name, 'r')
+    f = open(file_name, 'r', encoding='utf-8')
     pnml_content = f.read()
 
     # Find purchase image block
@@ -219,9 +219,9 @@ for _lang in list(langData.keys()):
     output = output + "\n</table>"
 
     # Write a doc file
-    f = open(_ROOT + "docs/download_page/" + _lang + ".md", "w")
+    f = open(_ROOT + "docs/download_page/" + _lang + ".md", "w", encoding='utf-8')
     f.write(output)
     f.close()
-    f = open(_ROOT + "docs/download_page/" + _lang + ".html", "w")
+    f = open(_ROOT + "docs/download_page/" + _lang + ".html", "w", encoding='utf-8')
     f.write(output)
     f.close()
