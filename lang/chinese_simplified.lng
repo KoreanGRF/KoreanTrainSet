@@ -1,0 +1,499 @@
+##grflangid 0x56
+##gender m f
+
+# GRF名称和描述
+STR_GRF_NAME                                               :韩国列车包
+STR_GRF_NAME_WITH_VER                                      :韩国列车包 {VERSION}
+STR_GRF_DESC                                               :{BLACK} 韩国列车包新增了韩国的各类列车及铁路设施，包括 KTX、KTX - 山川、ITX - 青春、新村号、无穷花号、Nuriro、CDC、首尔都市圈、仁川、大邱、大田、釜山的地铁系统，以及韩国铁道公社的部分电力机车。{}(更新时间:{RECENT_UPDATED}){}{SILVER}+ 作者:TELK {}{BLACK} - {AUTHOR_EMAIL}{} - {AUTHOR_WEBSITE}
+STR_GRF_URL                                                :https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr
+
+
+# 车辆名称
+STR_HOKEY7_NAME                                            :혀기7型蒸汽机车
+STR_STEAM_NAME                                             :蒸汽机车
+STR_MATE2_NAME                                             :마터2型蒸汽机车
+STR_PASHI5_NAME                                            :파시5型蒸汽机车
+STR_MIKA3_NAME                                             :미카3型蒸汽机车
+STR_K2x00_NAME                                             :2x00系柴油机车
+STR_K3x00_NAME                                             :3x00系柴油机车
+STR_K4x00_NAME                                             :4x00系柴油机车
+STR_K4400_NAME                                             :4400系柴油机车
+STR_K5000_NAME                                             :5000系柴油机车
+STR_K6x00_NAME                                             :6x00系柴油机车
+STR_K7000_NAME                                             :7000系柴油机车
+STR_K7x00_NAME                                             :7x00系柴油机车
+STR_K7600_NAME                                             :7600系柴油机车
+STR_K8000_NAME                                             :8000系电力机车
+STR_K8x00_NAME                                             :8x00系电力机车
+STR_K8500_NAME                                             :8500系电力机车
+STR_DHC_NAME                                               :柴油液传动车组 (DHC, PP)
+STR_ITX_SAEMAEUL_NAME                                      :ITX-新村
+STR_MAUM_NAME                                              :ITX-MAUM
+STR_NURIRO_NAME                                            :Nuriro
+STR_CDC_NAME                                               :通勤型柴油动车组（CDC）
+STR_NDC_NAME                                               :新型柴油动车组（NDC）
+STR_DEC_NAME                                               :柴油电力动车组（DEC）
+STR_EEC_NAME                                               :特快电力动车组（EEC）
+STR_BIDULGI_CDC_NAME                                       :“鸽子号”通勤柴油动车组（RC）
+STR_NARROW_DIESEL_CAR_NAME                                 :窄轨柴油动车组
+STR_KTX1N_NAME                                             :KTX-1
+STR_KTX2N_NAME                                             :KTX-山川
+STR_SRT_NAME                                               :SRT
+STR_EUM_NAME                                               :KTX-EUM
+STR_KTX3N_NAME                                             :KTX-青龙
+STR_ECOBEE_NAME                                            :仁川机场磁悬浮铁路 (EcoBee)
+
+STR_PASSENGER_WAGON_NAME                                   :旅客列车
+STR_PASSENGER_WAGON_POWER_NAME                             :旅客列车 (动力车)
+STR_SAEMAEUL_CAR_NAME                                      :新村号客车
+STR_MUGUNGHWA_CAR_NAME                                     :无穷花号客车
+STR_TONGIL_CAR_NAME                                        :统一号客车
+STR_BIDULGI_CAR_NAME                                       :鸽子号客车
+STR_GENERATOR_CAR_NAME                                     :发电车
+STR_CAFE_CAR_NAME                                          :咖啡车/餐车
+STR_SLEEPING_CAR_NAME                                      :卧铺车
+
+STR_FLAT_CAR_NAME                                          :集装箱平车
+STR_HOPPER_CAR_NAME                                        :漏斗车
+STR_BOX_CAR_NAME                                           :棚车
+STR_BAGGAGE_CAR_NAME                                       :行李车
+STR_TANK_CAR_NAME                                          :罐车
+STR_BULK_CEMENT_CAR_NAME                                   :散装水泥车
+STR_STAKE_CAR_NAME                                         :平板货车
+STR_MAIL_CAR_NAME                                          :邮政车
+STR_CABOOSE_NAME                                           :守车
+
+# 地铁
+STR_SEOUL_METRO_1_NAME                                     :首尔1号线，通勤型
+STR_SEOUL_METRO_2_NAME                                     :首尔2号线
+STR_SEOUL_METRO_3_NAME                                     :首尔3号线
+STR_SEOUL_METRO_4_NAME                                     :首尔4号线
+STR_SEOUL_METRO_5_9_NAME                                   :首尔5~9号线
+STR_SUIN_BUNDANG_NAME                                      :水仁盆唐线
+STR_GYEONGCHUN_NAME                                        :京春线
+STR_ITX_CHEONGCHUN_NAME                                    :ITX-青春
+STR_AREX_NAME                                              :仁川机场铁路 (A'REX)
+STR_METROPOLITAN_NAME                                      :首都圈电铁
+STR_SHINBUNDANG_NAME                                       :新盆唐线
+STR_SEOHAE_NAME                                            :西海线
+STR_DONGHAE_NAME                                           :东海线
+STR_INCHEON_METRO_1_NAME                                   :仁川1号线
+STR_INCHEON_METRO_2_NAME                                   :仁川2号线
+STR_SILLIM_NAME                                            :新林线
+STR_BUSAN_METRO_1_NAME                                     :釜山1号线
+STR_BUSAN_METRO_2_NAME                                     :釜山2号线
+STR_BUSAN_METRO_3_NAME                                     :釜山3号线
+STR_BUSAN_METRO_4_NAME                                     :釜山4号线
+STR_BUSANGIMHAE_NAME                                       :釜山金海轻轨
+STR_YONGIN_EVERLINE_NAME                                   :龙仁轻轨
+STR_DAEGU_METRO_1_NAME                                     :大邱1号线
+STR_DAEGU_METRO_2_NAME                                     :大邱2号线
+STR_DAEGU_METRO_3_NAME                                     :大邱3号线
+STR_DAEGU_METROPOLITAN_NAME                                :大庆线
+STR_CHUNGCHEONG_METROPOLITAN_NAME                          :忠清圈广域铁路
+STR_DAEJEON_METRO_1_NAME                                   :大田1号线
+STR_GWANGJU_METRO_1_NAME                                   :光州1号线
+STR_UISINSEOL_NAME                                         :牛耳新设线
+STR_GIMPO_GOLDLINE_NAME                                    :金浦都市铁道
+STR_UIJEONGBU_NAME                                         :议政府轻轨
+STR_GTX_A_NAME                                             :GTX-A
+
+
+# 涂装
+STR_REFIT_LIVERY_ORIGINAL                                  : (原始涂装)
+STR_REFIT_LIVERY_THESEDAYS                                 : (当前涂装)
+STR_REFIT_LIVERY_2x00_BLACK                                : (美军涂装: 黑色)
+STR_REFIT_LIVERY_2x00_BLACK_ORANGE_1                       : (铁道厅初代涂装:黑色配窄橙色条纹)
+STR_REFIT_LIVERY_2x00_BLACK_ORANGE_2                       : (铁道厅初代涂装:黑色配宽橙色条纹)
+STR_REFIT_LIVERY_4x00_BLACK_ORANGE_LOWER_AIR_CHAMBER       : (铁道厅旧涂装:黑橙配色，下部空气控制箱)
+STR_REFIT_LIVERY_4x00_GREEN_YELLOW_LOWER_AIR_CHAMBER       : (铁道厅旧涂装:黄绿配色，下部空气控制箱)
+STR_REFIT_LIVERY_4300_BLUE_WHITE                           : (铁道厅: 4300系蓝白配色)
+STR_REFIT_LIVERY_6000_BLACK_ORANGE                         : (铁道厅: 6000系黑橙配色)
+STR_REFIT_LIVERY_6100_BLACK_ORANGE                         : (铁道厅: 6100系黑橙配色)
+STR_REFIT_LIVERY_6200_BLACK_ORANGE                         : (铁道厅: 6200系黑橙配色)
+STR_REFIT_LIVERY_6300_BLACK_ORANGE                         : (铁道厅: 6300系黑橙配色)
+STR_REFIT_LIVERY_6300_BLUE_WHITE                           : (铁道厅: 6300系蓝白配色)
+STR_REFIT_LIVERY_6300_KWANKWANG                            : (铁道厅: 6300系观光号)
+STR_REFIT_LIVERY_7000_SILVER_BLUE                          : (铁道厅旧涂装: 银蓝配色)
+STR_REFIT_LIVERY_7x00_CARGO                                : (货物涂装)
+STR_REFIT_LIVERY_7x00_BLACK_ORANGE                         : (铁道厅初代涂装: 黑橙配色)
+STR_REFIT_LIVERY_7x00_FIRST_KORAIL                         : (铁道厅初代涂装: 蓝白配色)
+STR_REFIT_LIVERY_BLACK_ORANGE                              : (铁道厅旧涂装: 黑橙配色)
+STR_REFIT_LIVERY_GREEN_YELLOW                              : (铁道厅旧涂装: 黄绿配色)
+STR_REFIT_LIVERY_BLUE_WHITE                                : (铁道厅旧涂装: 蓝白配色)
+STR_REFIT_LIVERY_KWANKWANG                                 : (观光号)
+STR_REFIT_LIVERY_HAERANG                                   : (海浪)
+STR_REFIT_LIVERY_S_TRAIN1                                  : (S 列车 - 蓝色)
+STR_REFIT_LIVERY_S_TRAIN2                                  : (S 列车 - 粉色)
+STR_REFIT_LIVERY_G_TRAIN                                   : (G 列车)
+STR_REFIT_LIVERY_K7600_A_TRAIN                             : (旌善阿里郎列车)
+STR_REFIT_LIVERY_V_TRAIN                                   : (V 列车)
+STR_REFIT_LIVERY_GYOOE                                     : (郊外线)
+STR_REFIT_LIVERY_NURIRO                                    : (默认)
+STR_REFIT_LIVERY_O_TRAIN                                   : (O 列车)
+STR_REFIT_LIVERY_NURIRO_KOREAN_WAVE                        : (韩流观光列车)
+STR_REFIT_LIVERY_NURIRO_SANTA                              : (东海圣诞列车)
+STR_REFIT_LIVERY_NURIRO_2022                               : (2022年涂装)
+STR_REFIT_LIVERY_KTX2N                                     : (一般涂装)
+STR_REFIT_LIVERY_KTX2N_PYEONGCHANG                         : (2018平昌冬奥会涂装)
+STR_REFIT_LIVERY_CDC_GARDEN                                : (花园主题)
+STR_REFIT_LIVERY_CDC_DOLPHIN                               : (海豚主题)
+STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                          : (海洋观光列车: 蓝色)
+STR_REFIT_LIVERY_CDC_SEASIDE_RED_WHITE                     : (海洋观光列车: 红白配色)
+STR_REFIT_LIVERY_CDC_BAEKJE                                : (百济王冠纪念涂装)
+STR_REFIT_LIVERY_CDC_DMZTRAIN                              : (DMZ 列车)
+STR_REFIT_LIVERY_CDC_MUGUNGHWA                             : (RDC 无穷花涂装)
+STR_REFIT_LIVERY_CDC_GYEONGBUK1                            : (庆北观光主题列车, 旧涂装)
+STR_REFIT_LIVERY_CDC_GYEONGBUK2                            : (庆北观光主题列车, 新涂装)
+STR_REFIT_PASSWAGON_NORMALCAR                              : (一般客车)
+STR_REFIT_PASSWAGON_FIRSTCAR                               : (特等客车)
+
+# 改装 (Pashi5)
+STR_REFIT_LIVERY_PASHI5_ARCHIVED                           : (2024年留档涂装)
+
+# 改装 (Bidulgi)
+STR_REFIT_LIVERY_BIDULGI_3RD_CLASS                         : (三等车厢-Da9 型)
+STR_REFIT_LIVERY_BIDULGI_DC_TRAILER                        : (柴油机车拖车)
+STR_REFIT_LIVERY_BIDULGI_1960                              : (红色涂装: 1962~1974年)
+STR_REFIT_LIVERY_BIDULGI_1970                              : (红色涂装: 1974~1983年)
+STR_REFIT_LIVERY_BIDULGI_1980                              : (蓝色涂装: 1984~1994年)
+STR_REFIT_LIVERY_BIDULGI_1990                              : (绿色涂装: 1994~2000年)
+STR_REFIT_LIVERY_BIDULGI_BAGGAGE_CAR                       : (鸽子号涂装)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1980                 : (统一号涂装: 80年代)
+STR_REFIT_LIVERY_BIDULGI_TONGIL_GREEN_1990                 : (统一号涂装: 90年代)
+STR_REFIT_LIVERY_BIDULGI_MUGUNGHWA                         : (无穷花号涂装)
+STR_REFIT_LIVERY_BIDULGI_NARROW_BLUE                       : (窄幅蓝色涂装: 1974年至今)
+
+# 改装 (新村号客车)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_SILVER_BLUE            : (1970~1983年铁道厅公务车厢旧涂装)
+STR_REFIT_LIVERY_SAEMAEUL_1970_1983                        : (1970~1983年涂装, 银红配色)
+STR_REFIT_LIVERY_SAEMAEUL_1986_1993                        : (1986~1993年涂装-流线型, 银蓝配色)
+STR_REFIT_LIVERY_SAEMAEUL_1986_1993_EXECUTIVE              : (1986~1993年公务车厢涂装-流线型, 银蓝配色)
+STR_REFIT_LIVERY_SAEMAEUL_1990_1994                        : (1990~1994年涂装-长车型, 银红配色)
+STR_REFIT_LIVERY_SAEMAEUL_1990_1994_EXECUTIVE              : (1990~1994年公务车厢涂装-长车型, 银红配色)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_GREEN_YELLOW           : (铁道厅公务车厢旧涂装, 黄绿配色)
+STR_REFIT_LIVERY_SAEMAEUL_EXECUTIVE_THESEDAYS              : (Korail现公务车厢涂装)
+STR_REFIT_LIVERY_SAEMAEUL_ITX                              : (ITX-新村涂装)
+
+# 改装 (无穷花号客车)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983                       : (优等绿色 / 1970~1983年涂装)
+STR_REFIT_LIVERY_MUGUNGHWA_1970_1983_B                     : (优等棕色 / 1970~1983年涂装)
+STR_REFIT_LIVERY_MUGUNGHWA_1984_1984                       : (无穷花号 / 1984年涂装)
+STR_REFIT_LIVERY_MUGUNGHWA_1985_1989                       : (无穷花号 / 1985~1989年涂装)
+STR_REFIT_LIVERY_MUGUNGHWA_1990_1999                       : (无穷花号 / 1990~1999年涂装)
+STR_REFIT_LIVERY_MUGUNGHWA_2000_2002                       : (无穷花号 / 2000~2002年涂装)
+STR_REFIT_LIVERY_MUGUNGHWA_STREAMLINE                      : (流线型)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_1              : (公务车厢 / 海泰重工旧涂装)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HAETAE_2              : (公务车厢 / 海泰重工现涂装)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_HANJIN_1              : (公务车厢 / 韩进重工)
+STR_REFIT_LIVERY_MUGUNGHWA_EXECUTIVE_STREAMLINE            : (公务车厢 / 旧版流线型)
+
+# 改装 (统一号客车)
+STR_REFIT_LIVERY_TONGIL_1963_1968                          : (涂装A: 1963~1968年, 红色)
+STR_REFIT_LIVERY_TONGIL_1974_1981                          : (涂装B: 1974~1981年, 早期绿色)
+STR_REFIT_LIVERY_TONGIL_1984_1984                          : (涂装C: 1984年, 无空调绿色)
+STR_REFIT_LIVERY_TONGIL_1984_1988                          : (涂装D: 1984~1988, 有空调绿色)
+STR_REFIT_LIVERY_TONGIL_1994_1997                          : (涂装E: 1994~1997, 靛黄配色)
+STR_REFIT_LIVERY_TONGIL_1997_2004                          : (涂装F: 1997~2004, 黄绿配色)
+
+# 改装 (发电车)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL_OLD                  : (旧型 / 统一号旧涂装)
+STR_REFIT_LIVERY_GENERATOR_CAR_TONGIL                      : (旧型 / 统一号现涂装)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED        : (旧型 / 无穷花号红黄配色)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_YELLOW_RED_K      : (旧型 / 无穷花号红黄配色 + Korail标志)
+STR_REFIT_LIVERY_GENERATOR_CAR_MUGUNGHWA_BLUE_RED          : (旧型 / 无穷花号红蓝配色)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_BLUE_RED      : (长车型 / 新村号红蓝配色)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
+# STR_REFIT_LIVERY_GENERATOR_CAR_RESERVED                  : (reserved)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_YELLOW_RED             : (长车型 / 无穷花号红黄配色)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_ORANGE_RED             : (长车型 / 无穷花号橙红配色)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_BLUE_RED               : (长车型 / 无穷花号红蓝配色)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_2             : (长车型 / 新村号旧涂装)
+STR_REFIT_LIVERY_GENERATOR_CAR_LONG_SAEMAEUL_3             : (长车型 / 新村号现涂装)
+
+# 改装 (行李车)
+STR_REFIT_BAGGAGE_CAR_1999_DARKBLUE                        : (1999年: 深蓝色)
+STR_REFIT_BAGGAGE_CAR_1999_DARKGREEN                       : (1999年: 深绿色)
+STR_REFIT_BAGGAGE_CAR_1999_BLUE                            : (1999年: 蓝色)
+STR_REFIT_BAGGAGE_CAR_1998_DARKBLUE                        : (1998年: 深蓝色)
+STR_REFIT_BAGGAGE_CAR_1998_DARKGREEN                       : (1998年: 深绿色)
+STR_REFIT_BAGGAGE_CAR_1998_BLUE                            : (1998年: 蓝色)
+STR_REFIT_BAGGAGE_CAR_BOX_DARKBLUE                         : (棚车改造型: 深蓝色)
+STR_REFIT_BAGGAGE_CAR_BOX_GREEN                            : (棚车改造型: 绿色)
+STR_REFIT_BAGGAGE_CAR_BOX_ORANGE                           : (棚车改造型: 橙色)
+
+# 改装 (有盖车)
+STR_REFIT_LIVERY_BOX_2003                                  : (2003年)
+STR_REFIT_LIVERY_BOX_1998_DARKBLUE                         : (1998年: 深蓝色)
+STR_REFIT_LIVERY_BOX_1998_GREEN                            : (1998年: 绿色)
+STR_REFIT_LIVERY_BOX_1998_BLUE                             : (1998年: 蓝色)
+STR_REFIT_LIVERY_BOX_1996_DARKBLUE                         : (1996年: 深蓝色)
+STR_REFIT_LIVERY_BOX_1996_GREEN                            : (1996年: 绿色)
+STR_REFIT_LIVERY_BOX_1996_BLUE                             : (1996年: 蓝色)
+STR_REFIT_LIVERY_BOX_1972                                  : (1972年)
+STR_REFIT_LIVERY_BOX_1966_DARKBLUE                         : (1966年: 深蓝色)
+STR_REFIT_LIVERY_BOX_1966_GREEN                            : (1966年: 绿色)
+STR_REFIT_LIVERY_BOX_1966_BLUE                             : (1966年: 蓝色)
+STR_REFIT_LIVERY_BOX_1966_BLACK                            : (1966年: 黑色)
+
+# 改装 (咖啡车)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_RED                    : (新村号咖啡吧车 / 铁道厅: 红蓝配色)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_GREEN_YELLOW                : (新村号餐厅车 / 铁道厅: 黄绿配色)
+STR_REFIT_LIVERY_RESTAURENT_SAEMAEUL_BLUE_YELLOW           : (新村号餐厅车 / Korail现涂装)
+STR_REFIT_LIVERY_CAFE_SAEMAEUL_BLUE_YELLOW                 : (新村号咖啡车 / Korail现涂装)
+STR_REFIT_LIVERY_CAFE_RED_YELLOW_WHITE                     : (涂装F: 2000~2002年涂装 / 咖啡车涂装)
+
+# 改装 (卧铺车)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN                       : (1966~1984年涂装 / 统一号)
+STR_REFIT_LIVERY_SLEEPING_1966_GREEN_COOLER                : (1984~1997年涂装 / 统一号空调版)
+# STR_REFIT_LIVERY_SLEEPING_RESERVED                       : (reserved)
+# STR_REFIT_LIVERY_SLEEPING_RESERVED                       : (reserved)
+STR_REFIT_LIVERY_SLEEPING_1977_GREEN                       : (1977~1983年涂装 / 无穷花号)
+STR_REFIT_LIVERY_SLEEPING_1977_RED                         : (1983~1994年涂装 / 无穷花号)
+STR_REFIT_LIVERY_SLEEPING_1977_YELLOW_RED                  : (1994~2001年涂装 / 无穷花号)
+STR_REFIT_LIVERY_SLEEPING_2001_YELLOW_RED                  : (2001~2005年涂装 / 无穷花号)
+
+# 改装 (NDC)
+STR_REFIT_LIVERY_NDC_1                                     : (1984~1994年涂装 / 无穷花号)
+STR_REFIT_LIVERY_NDC_2                                     : (1994~2009年涂装 / 无穷花号)
+STR_REFIT_LIVERY_NDC_BUSINESS                              : (商务动车)
+
+# 改装 (DEC)
+STR_REFIT_LIVERY_DEC_1                                     : (1980~1986年涂装 / 新村号)
+STR_REFIT_LIVERY_DEC_2                                     : (1986~1994年涂装 / 无穷花号)
+STR_REFIT_LIVERY_DEC_3                                     : (1994~1999年涂装 / 无穷花号)
+
+# 改装 (EEC)
+STR_REFIT_LIVERY_EEC_1                                     : (1980~1994年涂装 / 特快列车 & 无穷花号)
+STR_REFIT_LIVERY_EEC_2                                     : (1994~1998年涂装 / 无穷花号)
+STR_REFIT_LIVERY_EEC_3                                     : (1998~2001年涂装 / 统一号)
+
+# 改装 (邮政车)
+STR_REFIT_LIVERY_MAIL_CAR_1                                : (1973~1975年涂装)
+STR_REFIT_LIVERY_MAIL_CAR_2                                : (1975年至今涂装)
+STR_REFIT_LIVERY_MAIL_CAR_3                                : (1996年以后无穷花旧涂装)
+STR_REFIT_LIVERY_MAIL_CAR_4                                : (2005年以后无穷花新涂装)
+STR_REFIT_LIVERY_MAIL_CAR_5                                : (2018年以后行李车涂装)
+STR_REFIT_LIVERY_MAIL_CAR_6                                : (2024年以后行李车涂装)
+
+# 改装 (守车)
+STR_REFIT_CABOOSE_BAGGAGE_YELLOW                           : (行李车 / 黄色)
+STR_REFIT_CABOOSE_2AXLE_YELLOW                             : (2轴 / 黄色)
+STR_REFIT_CABOOSE_2AXLE_ORANGE                             : (2轴 / 橙色)
+STR_REFIT_CABOOSE_BOX_ORANGE                               : (棚车 / 橙色)
+STR_REFIT_CABOOSE_BOX_BLACK                                : (棚车 / 黑色)
+
+# 改装 (其他)
+STR_REFIT_COLOUR_BLACK                                     : (黑色)
+STR_REFIT_COLOUR_BLUE                                      : (蓝色)
+STR_REFIT_COLOUR_SKYBLUE                                   : (天蓝色)
+STR_REFIT_COLOUR_DARKBLUE                                  : (深蓝色)
+STR_REFIT_COLOUR_BROWN                                     : (棕色)
+STR_REFIT_COLOUR_RED                                       : (红色)
+STR_REFIT_COLOUR_ORANGE                                    : (橙色)
+STR_REFIT_COLOUR_DARKGREEN                                 : (深绿色)
+STR_REFIT_COLOUR_OLIVE                                     : (橄榄色)
+STR_REFIT_COLOUR_SILVER                                    : (银色)
+STR_REFIT_COLOUR_WHITE                                     : (白色)
+
+# 改装 (首尔都市1号线)
+STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME                       : (铁道厅1k电阻制动初期型 / 初期涂装)
+STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME                       : (铁道厅1k电阻制动初期型 / 旧涂装)
+STR_REFIT_METRO_1K_RHEO_SECOND_1_NAME                      : (铁道厅1k电阻制动中期型 / 初期涂装)
+STR_REFIT_METRO_1K_RHEO_SECOND_2_NAME                      : (铁道厅1k电阻制动中期型 / 旧涂装)
+STR_REFIT_METRO_1K_RHEO_SECOND_3_NAME                      : (Korail 1k电阻制动中期型 / 现涂装)
+STR_REFIT_METRO_1K_RHEO_LAST_1_NAME                        : (铁道厅1k电阻制动后期型 / 旧涂装)
+STR_REFIT_METRO_1K_RHEO_LAST_2_NAME                        : (Korail 1k电阻制动后期型 / 现涂装)
+STR_REFIT_METRO_311K_1_1_NAME                              : (铁道厅311k初期型 / 旧涂装)
+STR_REFIT_METRO_311K_1_2_NAME                              : (Korail 311k初期型 / 现涂装)
+STR_REFIT_METRO_311K_2_1_NAME                              : (Korail 311k / 初期涂装)
+STR_REFIT_METRO_311K_2_2_NAME                              : (Korail 311k / 现涂装)
+STR_REFIT_METRO_3XXK_ST_NAME                               : (Korail 3xxk ST型)
+STR_REFIT_METRO_3XXK_AL_NAME                               : (Korail 3xxk AL型)
+STR_REFIT_METRO_321K_BIKE_NAME                             : (Korail 321k 自行车涂装)
+STR_REFIT_METRO_371K_BLANK_NAME                            : (Korail 371k / 无标识)
+STR_REFIT_METRO_371K_CC_NAME                               : (Korail 371k / 公司颜色)
+STR_REFIT_METRO_331K_2024_NAME                             : (Korail 331k, 2024年京义中央线投入)
+STR_REFIT_METRO_371K_381K_1ST_NAME                         : (Korail 371k, 381k 第一代)
+STR_REFIT_METRO_381K_2ND_NAME                              : (Korail 381k 第二代)
+STR_REFIT_METRO_LINE_1_2019_NAME                           : (Korail 1号线, 2019年投入)
+STR_REFIT_METRO_LINE_1_2021_NAME                           : (Korail 1号线, 2021年投入)
+STR_REFIT_METRO_LINE_1_2022_W_NAME                         : (Korail 1号线, 牛耳线2022年投入)
+STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME                  : (首尔地铁 1k初期电阻制动)
+STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME               : (首尔地铁 1k改造电阻制动)
+STR_REFIT_METRO_SMETRO_1K_VVVF_NAME                        : (首尔地铁 1k VVVF)
+
+# 改装 (首尔2号线)
+STR_REFIT_METRO_2K_MELCO_NAME                              : (首尔地铁 2k MELCO)
+STR_REFIT_METRO_2K_CHOPPER_NAME                            : (首尔地铁 2k CHOPPER)
+STR_REFIT_METRO_2K_VVVF_1ST_NAME                           : (首尔地铁 2k VVVF 第一代)
+STR_REFIT_METRO_2K_VVVF_2ND_NAME                           : (首尔地铁 2k VVVF 第二代)
+STR_REFIT_METRO_2K_VVVF_3RD_NAME                           : (首尔地铁 2k VVVF 第三代)
+STR_REFIT_METRO_2K_VVVF_4TH_NAME                           : (首尔地铁 2k VVVF 第四代)
+STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME                      : (首尔地铁 2k 电阻制动改造型)
+
+# 改装 (首尔都市3)
+STR_REFIT_METRO_3K_VVVF_1ST_1_NAME                         : (铁道厅 3k VVVF / 旧涂装)
+STR_REFIT_METRO_3K_VVVF_1ST_2_NAME                         : (Korail 3k VVVF / 当前涂装)
+STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME                     : (首尔地铁 3k CHOPPER)
+STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME            : (首尔地铁 3k CHOPPER 改造型)
+STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME                    : (首尔地铁 3k VVVF 第一代)
+STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME                    : (首尔交通公社 3k VVVF 第二代)
+STR_REFIT_METRO_LINE_3_2022_NAME                           : (Korail 3号线 2022年投入)
+STR_REFIT_METRO_LINE_3_2022_W_NAME                         : (Korail 3号线 Woojin산전 2022年投入)
+
+# 改装 (首尔都市4)
+STR_REFIT_METRO_341K_VVVF_1ST_1_NAME                       : (Korail 341k VVVF 第一代 / 旧涂装)
+STR_REFIT_METRO_341K_VVVF_1ST_2_NAME                       : (Korail 341k VVVF 第一代 / 当前涂装)
+STR_REFIT_METRO_341K_VVVF_2ND_1_NAME                       : (Korail 341k VVVF 第二代 / 旧涂装)
+STR_REFIT_METRO_341K_VVVF_2ND_2_NAME                       : (Korail 341k VVVF 第二代 / 当前涂装)
+STR_REFIT_METRO_LINE_4_2019_NAME                           : (Korail 4号线2019年投入)
+STR_REFIT_METRO_LINE_4_2021_NAME                           : (Korail 4号线2021年投入)
+STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME                : (首尔地铁 4k 第一二代VVVF)
+STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME                    : (首尔地铁 4k 第三代VVVF 2020年投入)
+STR_REFIT_METRO_SMETRO_4K_VVVF_4TH_NAME                    : (首尔地铁 4k 第四代VVVF 2023年投入)
+STR_REFIT_METRO_SMETRO_4K_VVVF_5TH_NAME                    : (首尔地铁 4k 第五代VVVF 2024年投入)
+
+# 改装 (首尔地铁5-8号线, 首尔地铁9号线)
+STR_REFIT_METRO_SMETRO_SR0X_NAME                           : (首尔地铁 SR0x VVVF)
+STR_REFIT_METRO_SMETRO_5K_1ST_2ND_NAME                     : (首尔地铁 5k VVVF 第一二代)
+STR_REFIT_METRO_SMETRO_5K_3RD_NAME                         : (首尔地铁 5k VVVF 第三代)
+STR_REFIT_METRO_SMETRO_5K_4TH_NAME                         : (首尔地铁 5k VVVF 第四代)
+STR_REFIT_METRO_SMETRO_6K_1ST_NAME                         : (首尔地铁 6k VVVF)
+STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME                     : (首尔地铁 7k VVVF 第一二代)
+STR_REFIT_METRO_SMETRO_7K_4TH_NAME                         : (首尔地铁 7k VVVF 第四代)
+STR_REFIT_METRO_SMETRO_7K_5TH_NAME                         : (首尔地铁 7k VVVF 第五代)
+STR_REFIT_METRO_SMETRO_8K_1ST_2ND_NAME                     : (首尔地铁 8k VVVF 第一二代)
+STR_REFIT_METRO_SMETRO_8K_3RD_NAME                         : (首尔地铁 8k VVVF 第三代)
+STR_REFIT_METRO_SMETRO_9K_1ST_NAME                         : (首尔地铁 9k VVVF)
+
+# 改装 (水仁盆唐线)
+STR_REFIT_METRO_351K_VVVF_1ST_1_NAME                       : (Korail 351k VVVF 第一代 / 旧涂装)
+STR_REFIT_METRO_351K_VVVF_1ST_2_NAME                       : (Korail 351k VVVF 第一代 / 现涂装)
+STR_REFIT_METRO_351K_VVVF_2ND_NAME                         : (Korail 351k VVVF 第二代)
+STR_REFIT_METRO_351K_VVVF_3RD_NAME                         : (Korail 351k VVVF 第三代)
+STR_REFIT_METRO_351K_2021_NAME                             : (Korail 351k 2021年投入)
+
+# 改装 (京春线)
+STR_REFIT_METRO_361K_VVVF_NAME                             : (Korail 361k VVVF)
+STR_REFIT_METRO_361K_2024_NAME                             : (Korail 361k 2024年第二代投入)
+
+# 改装 仁川国际机场线 (A'REX)
+STR_REFIT_METRO_AREX_1K_NONSTOP_NAME                       : (A'REX 1k 直通列车)
+STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME                : (A'REX 1k 直通列车 - 橙色)
+STR_REFIT_METRO_AREX_2K_NAME                               : (A'REX 2k 一般列车)
+STR_REFIT_METRO_AREX_2K_4TH_NAME                           : (A'REX 2k 一般列车第四代)
+
+# 改装 (西海线)
+STR_REFIT_METRO_391K_1ST_NAME                              : (Korail 391k 第一代)
+STR_REFIT_METRO_391K_2ND_NAME                              : (Korail 391k 第二代)
+
+# 改装 (其他线路)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME             : (仁川地铁 1k VVVF 第一代)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_2022_NAME        : (仁川地铁 1k VVVF 第一代 / 2022年涂装)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME             : (仁川地铁 1k VVVF 第二代)
+STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME                      : (大邱地铁 3k 前期型)
+STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME                      : (大邱地铁 3k 后期型)
+STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME                    : (釜山地铁 1k 第一代)
+STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME                    : (釜山地铁 1k 第二代)
+STR_REFIT_METRO_BUSAN_METRO_1K_3RD_NAME                    : (釜山地铁 1k 第三代)
+STR_REFIT_METRO_DAEJEON_METRO_1K_NAME                      : (大田地铁 1k)
+STR_REFIT_METRO_GWANGJU_METRO_1K_NAME                      : (光州地铁 1k)
+
+
+# 改装 (附加文本)
+STR_REFIT_ADDITIONAL_ABLE                                  :{BLACK}涂装/模型变更: {GREEN}允许
+STR_REFIT_ADDITIONAL_UNABLE                                :{BLACK}涂装/模型变更: {RED}不允许
+STR_REFIT_ADDITIONAL_AMBIGUOUS                             :{BLACK}涂装/模型变更: {ORANGE}视购买时间而定
+
+
+# 参数
+STR_PARAM_ADD_TYPE_NAME                                    :添加的列车种类:
+STR_PARAM_ADD_TYPE_DESC                                    :请选择要添加的列车种类。(默认值: 全部)
+STR_PARAM_ADD_TYPE_ALL                                     :全部
+STR_PARAM_ADD_TYPE_ONLY_TRAIN                              :除地铁外的列车
+STR_PARAM_ADD_TYPE_ONLY_METRO                              :仅地铁
+STR_PARAM_SPEED_GENERAL_NAME                               :普通列车速度系数
+STR_PARAM_SPEED_GENERAL_DESC                               :可以调节普通列车的速度。值越大速度越快。{}要使用实际速度请将值设为10。{}适用对象:机车列车、CDC、新村号（PP）、KTX、KTX-山川、KTX-EUM及大多数其他列车。
+STR_PARAM_SPEED_SUBEXPRESS_NAME                            :准高速型列车速度系数
+STR_PARAM_SPEED_SUBEXPRESS_DESC                            :可以调节准高速型列车的速度。值越大速度越快。{}要使用实际速度请将值设为10。{}适用于:A'REX 1k（机场快线）、京春线 ITX-青春号、GTX-A 等列车。
+STR_PARAM_SPEED_METRO_NAME                                 :地铁速度系数
+STR_PARAM_SPEED_METRO_DESC                                 :可以调节地铁的速度。值越大速度越快。{}要使用实际速度请将值设为10。{}适用对象: 除普通/准高速型列车外的其余普通地铁车辆
+STR_PARAM_SPEED_LIGHTRAIL1_NAME                            :轻轨速度系数 (胶轮)
+STR_PARAM_SPEED_LIGHTRAIL1_DESC                            :可以调节胶轮轻轨的速度。值越大速度越快。{}要使用实际速度请将值设为10。{}适用对象: 釜山4号线、釜山金海轻轨、大邱3号线、金浦金线、仁川2号线、牛耳新设线、议政府轻轨、龙仁轻轨
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_NAME          :关闭车辆连接限制
+STR_PARAM_NO_VEHICLE_ATTACHMENT_RESTRICTIONS_DESC          :关闭车辆连接限制。开启此设置后，可以在机车上连接任何客货车。
+STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_NAME              :关闭车辆长度限制
+STR_PARAM_NO_VEHICLE_LENGTH_RESTRICTIONS_DESC              :关闭车辆长度限制。开启此设置后，可以使车辆长度比本NewGRF的限制更短或更长。
+
+STR_PARAM_FACTOR_COST_NAME                                 :列车购买费用
+STR_PARAM_FACTOR_COST_DESC                                 :可以调节列车的购买价格。值越大购买价格越贵。
+STR_PARAM_FACTOR_RUNNING_COST_NAME                         :列车维护费
+STR_PARAM_FACTOR_RUNNING_COST_DESC                         :可以调节列车的维护费。值越大维护费越高。
+STR_PARAM_FACTOR_CARGO_CAPACITY_NAME                       :货物运输量
+STR_PARAM_FACTOR_CARGO_CAPACITY_DESC                       :可以调节列车的货物运输量。值越大可以装载更多乘客或货物。{}但地铁车辆不受此设置影响。{}设为x2则与现实运输量大致相同。{}{RED}注意!{WHITE}此设置仅适用于新创建的车辆。
+STR_PARAM_FACTOR_LOADING_SPEED_NAME                        :货物装载速度
+STR_PARAM_FACTOR_LOADING_SPEED_DESC                        :可以调节列车的货物装载速度。值越大乘客或货物装载速度越快。
+STR_PARAM_WAGON_SPEED_LIMIT_NAME                           :解除货车速度限制
+STR_PARAM_WAGON_SPEED_LIMIT_DESC                           :解除货车的速度限制。此参数需要在设置中开启"应用货车速度限制"才能生效。
+
+
+# 参数值
+STR_PARAM_OPT_FACTOR_BY_0                                  :x0
+STR_PARAM_OPT_FACTOR_BY_1_32                               :x1/32
+STR_PARAM_OPT_FACTOR_BY_1_16                               :x1/16
+STR_PARAM_OPT_FACTOR_BY_1_8                                :x1/8
+STR_PARAM_OPT_FACTOR_BY_1_4                                :x1/4
+STR_PARAM_OPT_FACTOR_BY_1_2                                :x1/2
+STR_PARAM_OPT_FACTOR_BY_1_2_DEFAULT                        :x1/2 (默认值)
+STR_PARAM_OPT_FACTOR_BY_1                                  :x1
+STR_PARAM_OPT_FACTOR_BY_1_DEFAULT                          :x1 (默认值)
+STR_PARAM_OPT_FACTOR_BY_2                                  :x2
+STR_PARAM_OPT_FACTOR_BY_4                                  :x4
+STR_PARAM_OPT_FACTOR_BY_8                                  :x8
+STR_PARAM_OPT_FACTOR_BY_16                                 :x16
+STR_PARAM_OPT_FACTOR_BY_32                                 :x32
+STR_PARAM_OPT_FACTOR_BY_64                                 :x64
+STR_PARAM_OPT_FACTOR_BY_128                                :x128
+STR_PARAM_OPT_FACTOR_BY_256                                :x256
+STR_PARAM_OPT_FACTOR_BY_512                                :x512
+# STR_PARAM_OPT_FACTOR_BY_1024                             :x1024
+# STR_PARAM_OPT_FACTOR_BY_2048                             :x2048
+# STR_PARAM_OPT_FACTOR_BY_4096                             :x4096
+
+STR_PARAM_SIMPLIZE_WAYPOINT_NAME                           :简化显示途经点
+STR_PARAM_SIMPLIZE_WAYPOINT_DESC                           :从途经点图形中移除建筑物以简化显示。
+STR_PARAM_USE_MAX_DESIGN_SPEED_NAME                        :使用设计最高速度
+STR_PARAM_USE_MAX_DESIGN_SPEED_DESC                        :使用设计最高速度代替运营速度。设计最高速度通常比运营速度快。
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_NAME                   :不使用 OpenTTD 机车
+STR_PARAM_DISABLE_ORIGINAL_VEHICLES_DESC                   :为了能快速找到韩国列车包的客车，禁用 OpenTTD 机车。单轨/磁悬浮列车不会消失，只不使用(电气)铁路车辆。
+STR_PARAM_MAX_SPEED_TYPE_NAME                              :最高速度标准
+STR_PARAM_MAX_SPEED_TYPE_DESC                              :选择列车最高速度的标准。设计速度比运营速度稍快。(例如 KTX-1 : 运营速度=300km/h, 设计最高速度=330km/h)
+STR_PARAM_MAX_SPEED_TYPE_OPT_1                             :运营速度
+STR_PARAM_MAX_SPEED_TYPE_OPT_2                             :设计速度
+
+# 轻轨
+STR_RAILTYPE_LIGHT_RAIL_TRACK_NAME                         :轻轨线路
+STR_RAILTYPE_LIGHT_RAIL_TRACK_DROPDOWN_MENU                :[KTS] 建设轻轨线路
+STR_RAILTYPE_LIGHT_RAIL_TRACK_TOOLBAR_CAPTION              :建设轻轨线路
+STR_RAILTYPE_LIGHT_RAIL_BUILD_VEHICLE_CAPTION              :新轻轨车辆
+STR_RAILTYPE_LIGHT_RAIL_NEW_ENGINE                         :{G=m}轻轨车辆
+STR_RAILTYPE_LIGHT_RAIL_AUTOREPLACE                        :轻轨车辆
+
+# 窄轨
+STR_RAILTYPE_NARROW_GAUGE_TRACK_NAME                       :762mm窄轨线路
+STR_RAILTYPE_NARROW_GAUGE_TRACK_DROPDOWN_MENU              :[KTS] 建设762mm窄轨线路
+STR_RAILTYPE_NARROW_GAUGE_TRACK_TOOLBAR_CAPTION            :建设窄轨线路
+STR_RAILTYPE_NARROW_GAUGE_BUILD_VEHICLE_CAPTION            :新窄轨线路车辆
+STR_RAILTYPE_NARROW_GAUGE_NEW_ENGINE                       :{G=m}窄轨线路车辆
+STR_RAILTYPE_NARROW_GAUGE_AUTOREPLACE                      :窄轨线路车辆
+
+# 缓冲物
+STR_OBJ_BUFFER_KTSR                                        :[KTS] 缓冲器
+
+# 错误
+STR_ERROR_NO_ATTACH                                        :无法在此处连接车辆
+STR_ERROR_NOT_ENOUGH_LENGTH4                               :列车长度太短。至少需要连接4辆。
+STR_ERROR_TOO_LONG_LENGTH2                                 :列车长度太长。最多只能连接2辆。
+STR_ERROR_TOO_LONG_LENGTH4                                 :列车长度太长。最多只能连接4辆。
