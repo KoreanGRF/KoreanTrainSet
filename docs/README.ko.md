@@ -21,7 +21,32 @@
 Pull Request를 열 줄 모르신다면, Issues에 올리셔도 괜찮습니다.
 이 파일을 번역하시면 됩니다:
 - [./lang/english.lng](../lang/english.lng)  
-또, [제 사이트의 다운로드 페이지](https://telk.kr/ottd/newgrf/ko_train_set?lang=en)도 번역하길 원하신다면, 별도로 연락해주세요: telk5093@gmail.com
+
+아래의 파일은 (자동으로 생성되는 파일이므로) 번역할 필요가 없습니다:  
+- `./docs/download_page/*.html` and `./docs/download_page/*.md`  
+
+또, [제 사이트의 다운로드 페이지](https://telk.kr/ottd/newgrf/ko_train_set?lang=en)도 번역하길 원하신다면, 아래 내용을 번역해주세요 (참고: `LANGUAGE_NAME`은 `./lang/(LANGUAGE_NAME).lng`의 파일 이름이어야 합니다):   
+```
+LANGUAGE_NAME             :korean
+GRF_NAME                  :한국 열차 세트
+MORE                      :더 보기
+MAIN_IMAGE_ALT            :한국 열차 세트 모음 이미지
+INTRODUCTION              :소개
+GRF_DESC                  :<b>한국 열차 세트</b>는 OpenTTD에 KTX, ITX-청춘, 새마을호, 무궁화호, 누리로, CDC(통근열차), 수도권 지하철, Korail의 디젤/전기 기관차, 일부 관광열차(O-train, V-train, DMZ-train, S-train) 등의 각종 한국 열차와 경전철 선로 등을 추가해주는 NewGRF입니다. OpenTTD의 NewGRF 설정창의 매개 변수 설정을 통해 각 등급별 열차의 속력, 구입 가격, 유지비, 수송량, 수송 속도 등을 조절할 수 있으며 경유지 간소화 기능을 포함하고 있어서 지저분한 경유지의 그래픽을 간소화시킬 수도 있습니다. 한국 관련 컨텐츠를 제작하실 때 반드시 필요한 NewGRF입니다.
+DOWNLOAD                  :다운로드
+DOWNLOAD_DESC             :온라인 콘텐츠에서 다운로드할 수 있습니다!<br />게임 안의 <b>온라인 콘텐츠 다운로드</b> 메뉴에서 <strong>Korean Train Set</strong>으로 검색하세요.
+GITHUB_REPO               :Github 저장소
+GITHUB_REPO_DESC          :<b>한국 열차 세트</b>는 오픈 소스입니다. Github 저장소에 모든 소스가 공개되어 있습니다.<br />버그 신고, 건의 사항/기능 추가 요청, 번역, 그래픽/코드 기여 등은 <a href="https://github.com/KoreanGRF/KoreanTrainSet" target="_blank" class="external">한국 열차 세트 Github 저장소</a>에서 해주시기 바랍니다.
+VEHICLE_LIST_TITLE        :추가되는 차량 & 차량 스펙
+VEHICLE_LIST_IMAGE        :이미지
+VEHICLE_LIST_NAME         :이름
+VEHICLE_LIST_SPEED        :영업속력
+VEHICLE_LIST_MAX_SPEED    :최고속력
+VEHICLE_LIST_CAPACITY     :수송량
+VEHICLE_LIST_POWER        :출력
+VEHICLE_LIST_WEIGHT       :무게
+VEHICLE_LIST_INTRODUCTION :도입
+```
 
 ## 링크
 - [TELKLAND](http://telk.kr)

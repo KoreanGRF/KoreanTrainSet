@@ -21,7 +21,32 @@ To translate the Korean Train Set into your native language, please pull the req
 If you don't know how to make a Pull Request, uploading them at Issues is fine, too.
 You shall translate:
 - [./lang/english.lng](../lang/english.lng)  
-And if you want to translate [the download page of my own site](https://telk.kr/ottd/newgrf/ko_train_set?lang=en), please contact me: telk5093@gmail.com
+
+You don't need to translate these below files (since they are generated automatically):  
+- `./docs/download_page/*.html` and `./docs/download_page/*.md`  
+
+And if you want to translate [the download page of my own site](https://telk.kr/ottd/newgrf/ko_train_set?lang=en), translate below (note: `LANGUAGE_NAME` should the file name of `./lang/(LANGUAGE_NAME).lng`):  
+```
+LANGUAGE_NAME             :english
+GRF_NAME                  :Korean Train Set
+MORE                      :more
+MAIN_IMAGE_ALT            :Image of Korean Train Set
+INTRODUCTION              :Introduction
+GRF_DESC                  :<b>Korean Train Set</b> is an OpenTTD NewGRF that adds South Korea's trains, such as KTX(Korea Train eXpress)'s, ITX(Intercity Train eXpress)'s, Saemaeul, Mugunghwa, Tongil, Nuriro, CDC, subways of Seoul Metropolitan area, some diesel/electric locomotives of Korail, some tourist train such as O-train, V-train, DMZ-train, S-train and so on. It has parameters so that you can change the train's speeds for each class, purchase costs, running costs, capacities or loading speeds. And it also contains 'TK simple waypoint' function so that you can easily make a graphic of waypoint simple by parameter settings. It is the essential NewGRF to make South korean contents.
+DOWNLOAD                  :Download
+DOWNLOAD_DESC             :Available on the online-contents in the game!<br />Search <strong>Korean Train Set</strong> in the <b>Check Online Content</b> menu ingame.
+GITHUB_REPO               :Github repository
+GITHUB_REPO_DESC          :<b>Korean Train Set</b> is an open-source project. All sprites and codes are opened at Github repository.<br />Please visit <a href="https://github.com/KoreanGRF/KoreanTrainSet" target="_blank" class="external">Korean Train Set Github repo</a> if you have any issues, suggestions, featrue requests, translations or contributes.
+VEHICLE_LIST_TITLE        :Vehicles added & Vehicle specifications
+VEHICLE_LIST_IMAGE        :Image
+VEHICLE_LIST_NAME         :Name
+VEHICLE_LIST_SPEED        :Speed
+VEHICLE_LIST_MAX_SPEED    :Max speed
+VEHICLE_LIST_CAPACITY     :Capacity
+VEHICLE_LIST_POWER        :Power
+VEHICLE_LIST_WEIGHT       :Weight
+VEHICLE_LIST_INTRODUCTION :Introduced
+```
 
 ## Links
 - [TELKLAND](http://telk.kr)
