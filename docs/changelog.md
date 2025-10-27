@@ -1,5 +1,6 @@
 2.9.0+
 -----
+ * 추가: 중국어(간체) 번역 (by [@Maicarons](https://github.com/Maicarons))[#503]
  * 추가: 충청권 광역철도 [#495]
  * 변경: FIRS 5.x 화물 지원
  * 변경: AXIS 화물 지원
