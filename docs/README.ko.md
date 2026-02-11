@@ -1,5 +1,5 @@
 # Korean Train Set
-[English](./README.md) | [한국어](./README.ko.md)
+[English](./README.md) | [한국어](./README.ko.md) | [변경 이력](./changelog.ko.md)
 
 **한국 열차 세트**는 대한민국의 열차 차량과 철도 시설을 추가해주는 OpenTTD NewGRF입니다.  
 게임 내 온라인 콘텐츠에서 다운로드하거나, [Github release 페이지](https://github.com/KoreanGRF/KoreanTrainSet/releases)에서 다운로드할 수 있습니다.

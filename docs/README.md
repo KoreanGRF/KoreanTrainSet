@@ -1,5 +1,5 @@
 # Korean Train Set
-[English](./README.md) | [한국어](./README.ko.md)
+[English](./README.md) | [한국어](./README.ko.md) | [Changelog](./changelog.md)
 
 **Korean Train Set** is an OpenTTD NewGRF that offers various trains and railway of the Republic of Korea, a.k.a South Korea.   
 You can download this via Online content in-game, or [Github release page](https://github.com/KoreanGRF/KoreanTrainSet/releases).

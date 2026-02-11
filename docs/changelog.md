@@ -1,1238 +1,1190 @@
+3.0.0+
+-----
+ * Add: English changelog
+ * Change: Changed the minimum version of NML to 0.8.1
+
 2.10.1
 -----
- * 추가: 중국어(간체) 번역 (by [@Maicarons](https://github.com/Maicarons))[#503]
- * 추가: 충청권 광역철도 [#495]
- * 추가: 서울교통공사 5호선 5차, 8호선 4차 (다원시스 제작분) 도색 추가
- * 변경: FIRS 5.x 화물 지원
- * 변경: AXIS 화물 지원
- * 수정: 구매 목록에서 파시5형의 수송량이 잘못 표기되는 현상 [#499]
- * 수정: 최소 버전 실수 수정
+ * Add: Chinese (Simplified) translation (by [@Maicarons](https://github.com/Maicarons)) [#503]
+ * Add: Chungcheongnam-do Provincial Government Railway [#495]
+ * Add: Seoul Metro Line 5 5th batch, Line 8 4th batch (manufactured by Dawonsys) liveries
+ * Change: Support for FIRS 5.x cargo
+ * Change: Support for AXIS cargo
+ * Fix: Incorrect display of Pasi 5 capacity in the purchase list [#499]
+ * Fix: Corrected minimum version error
 
 2.9.0
 -----
- * 추가: 우편차 생활물류 트레인 도색 [#480]
- * 추가: 공항철도 일반열차 4차 도입분 도색 [#438]
- * 추가: 교외선 도색 추가 [#483, #488]
-   - "4400호대 + 무궁화호 객차 + 무궁화호 객차 + 발전차 + 4400호대(Ctrl+클릭으로 뒤집기)" 구성으로 구현 가능
- * 추가: 파시5형 증기기관차 2024년 보존 처리 도색 [#489]
- * 추가: 새마을호 객차 유선형 1986-1993년 도색, 장대형 1990-1994년 도색 [#486, #487]
- * 변경: 새마을호 기존 도색 변경 [#490]
- * 변경: Improved Town Industries 화물 지원 [#482]
- * 수정: 경춘선 2024년 2차 도입분, 경의중앙선 2024년 도입분 도색 오류 [#481]
- * 수정: 경전철 승객 공통 차량이 경전철 차량에 적용되지 않던 현상
- * 수정: 7000호대 + 새마을호 객차 조합시 새마을호 흰청 도색 선택 불가 [#485]
+ * Add: Postal car "Living Logistics Train" livery [#480]
+ * Add: AREX All-stop train 4th batch livery [#438]
+ * Add: Gyoeui Line liveries [#483, #488]
+   - Can be implemented with the composition: "Class 4400 + Mugunghwa car + Mugunghwa car + Generator car + Class 4400 (flip with Ctrl+Click)"
+ * Add: Pasi 5 Steam Locomotive 2024 Preservation Treatment livery [#489]
+ * Add: Saemaeul-ho streamlined passenger car 1986-1993 livery, long-type 1990-1994 livery [#486, #487]
+ * Change: Updated existing Saemaeul-ho liveries [#490]
+ * Change: Support for Improved Town Industries cargo [#482]
+ * Fix: Livery errors for Gyeongchun Line 2024 2nd batch and Gyeongui-Jungang Line 2024 batch [#481]
+ * Fix: Issue where light rail common passenger cars were not applied to light rail vehicles
+ * Fix: Inability to select Saemaeul White/Blue livery when combining Class 7000 + Saemaeul passenger cars [#485]
 
 2.8.1
 -----
- * 추가: 경춘선 2024년 2차 도입분 도색 [#476]
- * 추가: 경의중앙선 2024년 도입분 도색 [#477]
- * 수정: 경유지 간소화 기능이 작동하지 않던 현상
- * 변경: "대구권 광역철도"의 명칭을 "대경선"으로 변경
- * 수정: 비둘기호 객차 녹/황 도색 그래픽 오류 [#479]
+ * Add: Gyeongchun Line 2024 2nd batch livery [#476]
+ * Add: Gyeongui-Jungang Line 2024 batch livery [#477]
+ * Fix: Issue where waypoint simplification function did not work
+ * Change: Renamed "Daegu Metropolitan Railway" to "Daegyeong Line"
+ * Fix: Graphic error in Bidulgi-ho Green/Yellow livery [#479]
 
 2.8.0
 -----
- * 추가: 3x00호대 디젤 기관차 [#198]
- * 추가: 4x00호대 디젤 기관차 [#198]
- * 추가: 수도권 4호선 5차 도입분 도색 [#382]
- * 추가: 대구권 광역철도 [#415]
- * 변경: KTX-이음 그래픽 및 템플릿 변경
- * 변경: KTX-이음의 기관차 출력을 8800kW에서 6080kW로 변경
- * 변경: 4x00호대 디젤 기관차의 이름을 4400호대로 변경
- * 변경: 용인 에버라인을 전기선로에서 경전철 선로로 이동
- * 변경: [한국 선로 세트](https://github.com/SerpensNebula/Korean-Tracks) 사용시 경전철 차량의 사용 가능 선로 변경
-   - 부산 4호선, 신림선, 의정부경전철
-     → (한국 선로 세트 v1.6.0 이상 사용시) "고무차륜 선로"를 포함한 한국 선로 세트 전체 + "[KTS] 경전철 선로"에서 사용 가능
-     → (한국 선로 세트 v1.5.0 미만 사용시) "도시철도 (지상) 선로"를 포함한 한국 선로 세트 전체 + "[KTS] 경전철 선로"에서 사용 가능
-     → (한국 선로 세트 미사용시) "[KTS] 경전철 선로"에서 사용 가능
-   - 부산김해경전철, 김포골드라인, 인천 2호선, 우이신설선, 용인 에버라인
-     → (한국 선로 세트 사용시) "경전철 제3궤조 선로"를 포함한 한국 선로 세트 전체 + "[KTS] 경전철 선로"에서 사용 가능
-     → (한국 선로 세트 미사용시) "[KTS] 경전철 선로"에서 사용 가능
-   - 대구 3호선
-     → (한국 선로 세트 v1.6.0 이상 사용시) "모노레일 선로"를 포함한 한국 선로 세트 전체 + "[KTS] 경전철 선로"에서 사용 가능
-     → (한국 선로 세트 미사용시) "[KTS] 경전철 선로"에서 사용 가능
- * 변경: 발전차 그래픽 변경 [#462]
- * 수정: 새마을호 DHC 차량의 ↖방향 명암이 잘못된 점 [#466]
- * 수정: 발전차 도색 이름 및 그래픽 오류 [#462]
- * 수정: DEC 디젤 기관차의 도색명 오류 [#475]
+ * Add: Class 3x00 Diesel Locomotive [#198]
+ * Add: Class 4x00 Diesel Locomotive [#198]
+ * Add: Seoul Metropolitan Line 4 5th batch livery [#382]
+ * Add: Daegu Metropolitan Railway [#415]
+ * Change: Updated KTX-Eum graphics and templates
+ * Change: Changed KTX-Eum locomotive power from 8800kW to 6080kW
+ * Change: Renamed Class 4x00 Diesel Locomotive to Class 4400
+ * Change: Moved Yongin Everline from Electric track to Light Rail track
+ * Change: Changed available tracks for Light Rail vehicles when using [Korean Track Set](https://github.com/SerpensNebula/Korean-Tracks)
+   - Busan Line 4, Sillim Line, Uijeongbu LRT
+     → (When using Korean Track Set v1.6.0+) Available on all Korean Track Sets including "Rubber-tired Track" + "[KTS] Light Rail Track"
+     → (When using Korean Track Set version below v1.5.0) Available on all Korean Track Sets including "Urban Railway (Above ground) Track" + "[KTS] Light Rail Track"
+     → (When not using Korean Track Set) Available on "[KTS] Light Rail Track"
+   - Busan-Gimhae LRT, Gimpo Goldline, Incheon Line 2, Ui-Sinseol Line, Yongin Everline
+     → (When using Korean Track Set) Available on all Korean Track Sets including "Light Rail 3rd Rail Track" + "[KTS] Light Rail Track"
+     → (When not using Korean Track Set) Available on "[KTS] Light Rail Track"
+   - Daegu Line 3
+     → (When using Korean Track Set v1.6.0+) Available on all Korean Track Sets including "Monorail Track" + "[KTS] Light Rail Track"
+     → (When not using Korean Track Set) Available on "[KTS] Light Rail Track"
+ * Change: Updated generator car graphics [#462]
+ * Fix: Incorrect shading in the ↖ direction for Saemaeul DHC vehicles [#466]
+ * Fix: Errors in generator car livery names and graphics [#462]
+ * Fix: Livery name error for DEC Diesel Locomotive [#475]
 
 2.7.1
 -----
- * 추가: KTX-청룡 추가 [#469]
- * 변경: KTX-청룡 차량 추가에 따라 KTX-이음의 도색 개조를 제거 [#469]
- * 수정: 차량 연결 제한 매개변수가 일부 차량에 적용되지 않는 현상[#467]
+ * Add: Added KTX-Cheongryong [#469]
+ * Change: Removed KTX-Eum livery refit following the addition of KTX-Cheongryong [#469]
+ * Fix: Issue where vehicle connection limit parameter was not applied to some vehicles [#467]
 
 2.7.0
 -----
- * 추가: 차장차 추가 [#224]
- * 변경: SRT를 KTX-산천 아래로 그룹화 [#460]
+ * Add: Added Caboose [#224]
+ * Change: Grouped SRT under KTX-Sancheon [#460]
 
 2.7.0-RC1
 -----
- * 추가: GTX-A 차량 추가 [#340]
- * 변경: CDC 그래픽 변경 [#434]
- * 변경: 식당/카페차 그래픽 변경 [#435]
- * 변경: 8000, 8x00, 8500호대 전기 기관차 그래픽 변경 [#456]
- * 변경: 5000, 6x00, 7x00, 7600호대 디젤 기관차 그래픽 변경 [#457]
- * 변경: 디젤 유압동차 (DHC, PP) 그래픽 변경 [#455]
- * 변경: KTX-1 그래픽 변경 [#454]
- * 변경: 차량 뒤집기 가능 플래그(TRAIN_FLIP) 제거 (단, 이 플래그와 관계없이 OpenTTD 13.0 이상에서는 차량 뒤집기는 항상 가능함)
- * 수정: 디젤 유압동차 (DHC, PP)의 1970~1983년 도색 이름이 '우등 녹색'으로 표기되는 현상
+ * Add: Added GTX-A vehicle [#340]
+ * Change: Updated CDC graphics [#434]
+ * Change: Updated Dining/Cafe car graphics [#435]
+ * Change: Updated 8000, 8x00, 8500 series Electric Locomotive graphics [#456]
+ * Change: Updated 5000, 6x00, 7x00, 7600 series Diesel Locomotive graphics [#457]
+ * Change: Updated Diesel Hydraulic Car (DHC, PP) graphics [#455]
+ * Change: Updated KTX-1 graphics [#454]
+ * Change: Removed vehicle flip flag (TRAIN_FLIP) (However, vehicle flipping is always possible in OpenTTD 13.0+ regardless of this flag)
+ * Fix: Issue where 1970~1983 livery of Diesel Hydraulic Car (DHC, PP) was displayed as 'Superior Green'
 
 2.6.2
 -----
- * 수정: 벌크 시멘트 화차를 어떤 기관차에도 붙일 수 없던 현상
- * 수정: 통일호 객차에 유지비가 있는 현상
+ * Fix: Issue where Bulk Cement wagons could not be attached to any locomotive
+ * Fix: Issue where Tongil-ho passenger cars had maintenance costs
 
 2.6.1
 -----
- * 수정: 평판화차 중 특정 화물을 싣게 했을 때 빈 차량 그래픽에 기둥이 있는 현상 [#447]
- * 수정: 새마을호 객차 중 일부 그래픽 변경 [#430]
- * 변경: 증기 기관차 그래픽 및 템플릿 변경 [#445]
- * 변경: 무궁화호 차량 도색명 변경 [#446]
- * 변경: 버전 실수
+ * Fix: Issue where pillars appeared on empty graphics for certain cargo on flatcars [#447]
+ * Fix: Updated graphics for some Saemaeul-ho passenger cars [#430]
+ * Change: Updated steam locomotive graphics and templates [#445]
+ * Change: Renamed Mugunghwa-ho car liveries [#446]
+ * Change: Corrected versioning error
 
 2.6.0-RC2
 -----
- * 수정: ITX-마음 가격 및 유지비 수정
- * 수정: ITX-마음 팬터그래프, 미등 관련 그래픽 오류 [#444]
- * 변경: NDC, DEC, EEC 도색 이름 변경 [#443]
-
+ * Fix: Adjusted ITX-Maum price and maintenance cost
+ * Fix: ITX-Maum pantograph and tail light graphic errors [#444]
+ * Change: Renamed NDC, DEC, EEC liveries [#443]
 
 2.5.1
 -----
- * 추가: "차량 연결 제한 끄기" 매개 변수 추가
- * 추가: "차량 길이 제한 끄기" 매개 변수 추가
- * 추가: ITX-마음(EMU-150) 추가 [#307]
- * 추가: 수도권 4호선 4차 도입분 도색 [#304]
- * 추가: 수도권 8호선 3차 도입분 도색 [#256]
- * 추가: 부산 1호선 3세대 도색 [#363]
- * 추가: 무궁화호 구형 침대차 도색 [#220]
- * 추가: 통일호 침대차 도색 [#421]
- * 추가: 벌크시멘트 화차 [#372]
- * 추가: 카페 객차 무궁화호 구 도색 (도색 F) [#367]
- * 변경: ITX-새마을 그래픽, 템플릿 변경 및 32bpp 지원 [#428]
- * 변경: KTX-1 그래픽 및 템플릿 변경 [#427, #437, #442]
- * 변경: 새마을호 객차 그래픽 및 템플릿 변경 [#429]
- * 변경: 무궁화호 객차 그래픽 및 템플릿 변경 [#430]
- * 변경: 통일호 객차 그래픽 및 템플릿 변경 [#431]
- * 변경: 비둘기호 객차, DC 동차 그래픽 및 템플릿 변경 [#432]
- * 변경: 관광호 객차 그래픽 및 템플릿 변경 [#433]
- * 변경: 도시철도 차량 그래픽 및 템플릿 변경 [#441]
- * 변경: 도시철도 차량의 무게를 실제 스펙의 평균값으로 변경 [#80]
- * 변경: 컨테이너 평판화차, 평판화차의 그래픽과 길이 변경 [#403, #157]
- * 변경: 유조차 그래픽 변경 [#372]
- * 변경: 차막이 오브젝트가 사막, 눈 지형 그래픽을 추가 제공 [#425]
- * 변경: 소화물차 도색 변경 [#389]
-   - 기존 도색 모두 제거
-   - 소화물 전용 1999년 도색, 소화물 전용 1998년 도색, 유개차 개조 도색 각 3종씩 총 9종 도색 추가
-   - 적재율에 따른 그래픽 추가
- * 수정: 수도권 1호선, 통근형 - 371k 무도색 차량의 ↖방향 정렬이 어긋난 현상 [#416]
- * 수정: FIRS 아한대 기후 기본 모드에서 유조차가 고령토를 싣는 현상 [#426]
- * 삭제: 2.5.0에서 예고된 수도권 1호선의 일부 도색 삭제
-   - Korail 371k, 381k 1차 → 동해선 차량으로 이동
-   - Korail 381k 2차 → 동해선 차량으로 이동
-   - Korail 391k 1차 → 서해선 차량으로 이동
-
+ * Add: Added "Disable vehicle connection limits" parameter
+ * Add: Added "Disable vehicle length limits" parameter
+ * Add: Added ITX-Maum (EMU-150) [#307]
+ * Add: Metropolitan Line 4 4th batch livery [#304]
+ * Add: Metropolitan Line 8 3rd batch livery [#256]
+ * Add: Busan Line 1 3rd generation livery [#363]
+ * Add: Mugunghwa-ho old sleeper car livery [#220]
+ * Add: Tongil-ho sleeper car livery [#421]
+ * Add: Bulk Cement wagon [#372]
+ * Add: Mugunghwa-ho old Cafe car livery (Livery F) [#367]
+ * Change: Updated ITX-Saemaeul graphics, templates, and added 32bpp support [#428]
+ * Change: Updated KTX-1 graphics and templates [#427, #437, #442]
+ * Change: Updated Saemaeul-ho car graphics and templates [#429]
+ * Change: Updated Mugunghwa-ho car graphics and templates [#430]
+ * Change: Updated Tongil-ho car graphics and templates [#431]
+ * Change: Updated Bidulgi-ho car and DC DMU graphics and templates [#432]
+ * Change: Updated Gwangwang-ho car graphics and templates [#433]
+ * Change: Updated Urban Railway vehicle graphics and templates [#441]
+ * Change: Adjusted Urban Railway vehicle weights to the average of actual specifications [#80]
+ * Change: Updated graphics and lengths of container flatcars and flatcars [#403, #157]
+ * Change: Updated oil tanker graphics [#372]
+ * Change: Buffer object now provides additional graphics for desert and snow terrain [#425]
+ * Change: Updated small parcel car liveries [#389]
+   - Removed all existing liveries
+   - Added 9 new liveries: 3 types each for Parcel-only 1999, Parcel-only 1998, and Boxcar-converted liveries
+   - Added graphics based on load ratio
+ * Fix: Alignment error in the ↖ direction for Seoul Metropolitan Line 1, Commuter - 371k unpainted vehicle [#416]
+ * Fix: Issue where oil tankers carried kaolin in FIRS Sub-arctic basic mode [#426]
+ * Delete: Deleted some Seoul Metropolitan Line 1 liveries as announced in 2.5.0
+   - Korail 371k, 381k 1st batch → Moved to Donghae Line vehicles
+   - Korail 381k 2nd batch → Moved to Donghae Line vehicles
+   - Korail 391k 1st batch → Moved to Seohae Line vehicles
 
 2.5.0
 -----
- * 추가: 수도권 3호선 2022년 우진산전 도입분 도색 [#375]
- * 추가: 서해선 2차 도입분 도색 [#260]
- * 변경: "광역전철" 차량 분류를 추가하고 일부 노선 차량을 분리·묶음화 [#301, #398, #406]
-   - 수인분당선, 경춘선, 신분당선: "광역전철" 묶음 아래로 이동
-   - 서해선, 동해선: 수도권 1호선 차량에서 독립 분리 신설 (기존 1호선 도색은 호환을 위해 유지)
-   - "광역전철" 분류는 등장 연도가 제일 빠른 수인분당선(1993년)이 등장함과 동시에 등장
- * 변경: 일부 기관차를 묶음화
-   - 7000호대, 7x00호대, 7600호대 디젤 기관차 → 7x00호대로 묶음
-   - 8000호대, 8x00호대, 8500호대 전기 기관차 → 8x00호대로 묶음
-   - 일반궤의 증기 기관차를 "증기 기관차" 분류로 묶음
- * 변경: NDC 수송량 변경 [#407]
- * 변경: 객화차의 유지비용 제거 [#414]
- * 변경: 최소 지원 OpenTTD 버전을 13.0 / JGRPP-0.53.0으로 변경
- * 변경: 수도권 1호선의 일부 도색을 삭제 예정 처리
-   - Korail 371k, 381k 1차 → 동해선 차량으로 이동 예정
-   - Korail 381k 2차 → 동해선 차량으로 이동 예정
-   - Korail 391k 1차 → 서해선 차량으로 이동 예정
- * 수정: 협궤 무개화차의 빈 화차 그래픽이 없던 현상 [#397]
- * 수정: 8x00, 8500호대 기관차 전조등 표시가 잘못되어 있던 점 [#399]
- * 수정: 협궤 차량의 오프셋 조정 [#401]
- * 수정: 협궤 혀기7 기관차의 탄수차에서 증기가 나오는 현상 [#402]
- * 수정: 증기 기관차의 오프셋 조정 [#347]
- * 수정: DEC '새마을호' 도색 이름이 잘못된 연도에 들어가있던 현상 [#411]
- * 수정: 일부 차량의 개조 비용 변경
+ * Add: Seoul Metropolitan Line 3 2022 Woojin Industrial Systems batch livery [#375]
+ * Add: Seohae Line 2nd batch livery [#260]
+ * Change: Added "Metropolitan Railway" vehicle category and separated/grouped some line vehicles [#301, #398, #406]
+   - Suin-Bundang, Gyeongchun, Shinbundang: Moved under "Metropolitan Railway" grouping
+   - Seohae Line, Donghae Line: Newly established independently from Seoul Metropolitan Line 1 vehicles (Existing Line 1 liveries maintained for compatibility)
+   - "Metropolitan Railway" category appears at the same time as the Suin-Bundang Line (1993), which has the earliest introduction year
+ * Change: Grouped some locomotives
+   - 7000, 7x00, 7600 series Diesel Locomotives → Grouped as 7x00 series
+   - 8000, 8x00, 8500 series Electric Locomotives → Grouped as 8x00 series
+   - Grouped standard gauge steam locomotives into "Steam Locomotive" category
+ * Change: Adjusted NDC capacity [#407]
+ * Change: Removed maintenance costs for passenger/freight cars [#414]
+ * Change: Updated minimum supported OpenTTD version to 13.0 / JGRPP-0.53.0
+ * Change: Marked some Seoul Metropolitan Line 1 liveries for future deletion
+   - Korail 371k, 381k 1st batch → Scheduled to move to Donghae Line vehicles
+   - Korail 381k 2nd batch → Scheduled to move to Donghae Line vehicles
+   - Korail 391k 1st batch → Scheduled to move to Seohae Line vehicles
+ * Fix: Issue where narrow gauge open wagons lacked empty graphics [#397]
+ * Fix: Incorrect headlight display on 8x00, 8500 series locomotives [#399]
+ * Fix: Adjusted narrow gauge vehicle offsets [#401]
+ * Fix: Issue where steam emitted from the tender of narrow gauge Hyeogi 7 locomotive [#402]
+ * Fix: Adjusted steam locomotive offsets [#347]
+ * Fix: Issue where DEC 'Saemaeul-ho' livery name was placed in the wrong year [#411]
+ * Fix: Adjusted refit costs for some vehicles
 
 2.4.0
 -----
- * 수정: 증기 기관차에 유개화차와 침대차를 붙일 수 없던 현상 [#394]
+ * Fix: Issue where boxcars and sleeper cars could not be attached to steam locomotives [#394]
 
 2.4.0-RC2
 -----
- * 추가: KTX-이음 320 추가 [#368]
- * 변경: 한국 선로 세트 1.3.0의 제3궤조 지원 [#391]
- * 변경: A-train 객차 및 발전차 그래픽 변경 [#361]
- * 변경: G-train 객차 그래픽 변경 [#361, #387]
- * 변경: S-train 객차 8방향화 [#361]
- * 변경: 해랑 객차 8방향화 및 그래픽 변경 [#361]
- * 변경: 우편차 그래픽 변경 [#390]
- * 변경: V-train 객차 그래픽 변경 [#390]
- * 변경: 일부 화차의 수송량 및 무게 변경 [#291]
- * 수정: 개조 새마을호 객차의 출입문 위치 수정 [#378]
- * 수정: 일부 기관차에 승객 수송 차량 및 승객 수송 차량(동력차)를 붙일 때 승객 차량의 유지비가 잘못 계산되는 현상 수정 [#388]
+ * Add: Added KTX-Eum 320 [#368]
+ * Change: Support for 3rd rail in Korean Track Set 1.3.0 [#391]
+ * Change: Updated A-train passenger and generator car graphics [#361]
+ * Change: Updated G-train passenger car graphics [#361, #387]
+ * Change: 8-direction support for S-train passenger cars [#361]
+ * Change: 8-direction support and graphic updates for Haerang passenger cars [#361]
+ * Change: Updated mail car graphics [#390]
+ * Change: Updated V-train passenger car graphics [#390]
+ * Change: Adjusted capacity and weight of some freight cars [#291]
+ * Fix: Corrected door positions on modified Saemaeul-ho passenger cars [#378]
+ * Fix: Issue where maintenance costs were incorrectly calculated for passenger cars when attaching passenger cars (including motor cars) to some locomotives [#388]
 
 2.4.0-RC1
 -----
- * 추가: 수도권 7호선 5차 도입분 도색 [#216]
- * 추가: 수도권 3호선 2022년 도입분 도색 [#331]
- * 추가: 누리로 2022년 도입분 도색 [#362]
- * 추가: 인천 1호선 2022년 도색 [#373]
- * 추가: 수도권 1호선 2022년 우진산전 도입분 도색 [#345]
- * 변경: 증기기관차 그래픽 수정 [#276]
- * 변경: 신림선 차량 전면부 수정 [#343]
- * 변경: (그래픽 스프라이트 정렬 위치가 이상해지는 이유로) 신림선 차량을 중련 편성할 수 없도록 [#344]
- * 변경: ITX-새마을의 기관차 출력을 6000kW에서 3000kW로 변경 [#342]
- * 변경: 7x00호대 기관차의 길이 조정 [#350, #351]
- * 변경: 7000호대 기관차의 길이 조정 및 그래픽 변경 [#353]
- * 변경: 5000, 6x00호대 기관차의 길이 조정 및 그래픽 변경 [#352]
-   - 알려진 이슈: 중련 편성 후 뒤쪽 기관차를 Ctrl+클릭하여 뒤집는 경우 기관차 사이가 벌어지는 현상
- * 변경: 8x00, 8500호대 기관차 길이 조정 및 그래픽 변경 [#359]
- * 변경: ITX-새마을, KTX-1, SRT, KTX-이음의 그래픽 개선/수정, 객차 8방향화 [#376, #377]
- * 변경: 수도권 4호선 2019, 2022년 도입분 열차에 싱글암/더블암 무작위 표출 [#380]
- * 수정: 신림선 차량의 수송량 조정 [#336]
- * 수정: 특정 무궁화호 객차 도색에 코레일 로고 위치가 잘못되어 있던 점 [#341]
- * 수정: 신림선 승하차 속도 버그 [#354]
- * 수정: S-train의 ↑쪽 색상 오류 [#360]
- * 수정: 무궁화호 및 카페 객차 도색 및 출입문 위치 수정 [#357, #358]
- * 수정: KTX-이음의 2호차 그래픽이 중간 객차로 표시되는 현상 수정 [#371]
- * 수정: 신림선 등장 연도 오류 [#381]
+ * Add: Seoul Metropolitan Line 7 5th batch livery [#216]
+ * Add: Seoul Metropolitan Line 3 2022 batch livery [#331]
+ * Add: Nuriro 2022 batch livery [#362]
+ * Add: Incheon Line 1 2022 livery [#373]
+ * Add: Seoul Metropolitan Line 1 2022 Woojin Industrial Systems batch livery [#345]
+ * Change: Updated steam locomotive graphics [#276]
+ * Change: Updated Sillim Line front design [#343]
+ * Change: Disabled double-heading for Sillim Line vehicles due to graphic sprite alignment issues [#344]
+ * Change: Changed ITX-Saemaeul locomotive power from 6000kW to 3000kW [#342]
+ * Change: Adjusted length of 7x00 series locomotives [#350, #351]
+ * Change: Adjusted length and updated graphics for 7000 series locomotives [#353]
+ * Change: Adjusted length and updated graphics for 5000, 6x00 series locomotives [#352]
+   - Known Issue: Gaps appearing between locomotives when flipping the rear locomotive with Ctrl+Click after double-heading
+ * Change: Adjusted length and updated graphics for 8x00, 8500 series locomotives [#359]
+ * Change: Improved/fixed graphics and added 8-direction support for ITX-Saemaeul, KTX-1, SRT, and KTX-Eum passenger cars [#376, #377]
+ * Change: Randomized Single-arm/Double-arm pantographs for Metropolitan Line 4 2019, 2022 batch trains [#380]
+ * Fix: Adjusted Sillim Line vehicle capacity [#336]
+ * Fix: Incorrect Korail logo position on specific Mugunghwa-ho passenger car liveries [#341]
+ * Fix: Sillim Line boarding speed bug [#354]
+ * Fix: Color error in the ↑ direction for S-train [#360]
+ * Fix: Corrected Mugunghwa-ho and Cafe car liveries and door positions [#357, #358]
+ * Fix: Issue where KTX-Eum car 2 was displayed as a middle car [#371]
+ * Fix: Incorrect introduction year for Sillim Line [#381]
 
 2.3.0
 -----
- * 추가: 신림선 [#16]
- * 변경: 일부 여객 객차의 등장 연도를 조정 [#299]
-   - 통일호 객차: 1984 → 1963년
-   - 무궁화호 객차: 1972 → 1970년
-   - 새마을호 객차: 1984 → 1969년
- * 수정: 협궤 화차의 유지비가 표준궤 화차보다 과도하게 책정되어 있는 현상 [#334]
+ * Add: Sillim Line [#16]
+ * Change: Adjusted introduction years for some passenger cars [#299]
+   - Tongil-ho cars: 1984 → 1963
+   - Mugunghwa-ho cars: 1972 → 1970
+   - Saemaeul-ho cars: 1984 → 1969
+ * Fix: Issue where narrow gauge freight car maintenance costs were excessively higher than standard gauge [#334]
 
 2.2.1
 -----
- * 수정: 유개화차가 매개변수를 적용받지 못하던 현상 [#321]
- * 수정: 수도권 1호선, 통근형 무도색 차량, '371k, 381k 1차' 차량의 그래픽 위치 수정 [#322, #327]
- * 수정: 7x00호대에 발전차를 붙일 경우 길이가 무조건 짧게 나오는 현상 [#324]
- * 수정: 새마을호 DHC 동차에 식당차를 붙이면 수송량이 1명으로 표시되는 현상 [#325]
+ * Fix: Issue where boxcars were not affected by parameters [#321]
+ * Fix: Adjusted graphic positions for Seoul Metropolitan Line 1, Commuter unpainted vehicles, and '371k, 381k 1st batch' vehicles [#322, #327]
+ * Fix: Issue where length was always short when attaching a generator car to 7x00 series [#324]
+ * Fix: Issue where capacity displayed as 1 when attaching a dining car to Saemaeul DHC motor cars [#325]
 
 2.2.0
 -----
- * 변경: KTX-이음의 그래픽을 32bpp를 이용해서 더 현실감있게 변경 [#319]
- * 변경: [FIRS] 평판화차를 농장 비품, 생산 장비로 개조시 빈 차량에 기둥 그래픽 제거 [#257]
- * 변경: [FIRS] 자동차 부품(VPTS)을 평판화차에서 컨테이너 화차가 싣도록 [#296]
- * 변경: 새마을호 객차의 가로 방향 그래픽 길이를 조정하고 ITX-새마을의 그래픽 개선 [#313]
- * 수정: 증기기관차의 탄수차에서 연기가 나오던 현상 [#266]
- * 수정: 일부 화차에 속력 제한이 걸려있지 않았던 현상 [#314]
- * 수정: 관광호 일부 일괄 개조가 적용되지 않는 현상 [#317]
- * 수정: 관광호 식당차 승객 수송량 문제 [#318]
+ * Change: Updated KTX-Eum graphics using 32bpp for more realism [#319]
+ * Change: [FIRS] Removed pillar graphics from empty flatcars when refitted to Farm Supplies or Engineering Supplies [#257]
+ * Change: [FIRS] Changed Vehicle Parts (VPTS) to be carried by container cars instead of flatcars [#296]
+ * Change: Adjusted horizontal graphic length of Saemaeul-ho cars and improved ITX-Saemaeul graphics [#313]
+ * Fix: Issue where smoke emitted from the tender of steam locomotives [#266]
+ * Fix: Issue where some freight cars lacked speed limits [#314]
+ * Fix: Issue where some batch refits for Gwangwang-ho were not applied [#317]
+ * Fix: Passenger capacity issue in Gwangwang-ho dining cars [#318]
 
 2.2.0-rc1
 -----
- * 추가: 수도권 1호선 371K 회사 색상 도색 추가 [#271]
- * 추가: 7x00호대 기관차에 관광호 도색 추가 [#241, #250]
- * 추가: 6x00호대 기관차 (+관광호 도색) [#250]
- * 추가: 유개화차 [#138]
- * 변경: 5000호대 기관차 길이 및 그래픽 변경 [#250]
- * 변경: [FIRS] 평판화차(장물차)가 생산 장비(ENSP), 농장 비품(FMSP)을 실을 경우 기둥 그래픽을 제거 [#257]
- * 변경: 부산 도시철도 전동차 그래픽 개선 [#270]
- * 변경: 코레일 전동차 그래픽 개선 [#271]
- * 변경: 코레일 전동차(2019, 2021년 도입분) 스프라이트 개선 및 추가 [#295]
- * 변경: 의정부경전철 그래픽 변경 [#283]
- * 변경: 7x00호대, 8000호대 기관차 청백 도색 그래픽 변경 [#241]
- * 변경: 도시철도 전동차 그래픽 스프라이트 개선 [#240, #303, #311]
-   * 부산 1호선 2차분, 부산 3호선, 대구 2호선, 대전 1호선, 광주 1호선, 인천 1호선 VVVF 1세대, 서울 2호선 VVVF 3세대
-     수도권 1호선 2019·2021년 도입분, 수도권 4호선 2019·2021년 도입분, 351K 2021년 도입분, 37·381K 1세대
-     수도권 1호선 저항제어 차량 초기형/중기형/후기형
- * 수정: 2호선 개조 저항(초퍼) 차량의 팬터그래프 오류 수정 [#245]
- * 수정: CDC 열차의 천장 에어컨 개수 수정 [#255]
- * 수정: 평판 화차 갈색 도색의 일부 방향의 일부 그래픽이 파란색으로 남아있던 버그 [#262]
- * 수정: 수도권 4호선 2세대 VVVF 전동차 천장 에어컨 개수를 1개에서 2개로 교정 [#267]
- * 수정: 수도권 3호선 3k VVVF 구 도색의 천장 에어컨 개수를 2개에서 1개로 교정 [#268]
- * 수정: 수인분당선 1세대 신 도색 후두부 차량 ↖방향의 천장 에어컨 개수를 1개에서 2개로 교정 [#281]
- * 수정: 서울교통공사 1k, 4k 차량의 후두부 특정 방향의 에어컨 개수가 잘못 되어 있던 점 [#269]
- * 수정: ITX-새마을 열차의 수송량이 실제와 다르던 점 [#263]
- * 수정: NDC 동차의 매연 위치가 이상하던 점 [#264]
- * 수정: ITX-청춘 열차의 2층 객차의 순서가 바뀌어 있던 점 [#273]
- * 수정: 의정부경전철이 경전철 선로가 아닌 일반 전기선로를 이용하던 현상 [#282]
- * 수정: 일부 전동차 그래픽 스프라이트 개선
+ * Add: Seoul Metropolitan Line 1 371K company color livery [#271]
+ * Add: Gwangwang-ho livery for 7x00 series locomotives [#241, #250]
+ * Add: 6x00 series locomotives (+ Gwangwang-ho livery) [#250]
+ * Add: Boxcars [#138]
+ * Change: Updated length and graphics for 5000 series locomotives [#250]
+ * Change: [FIRS] Removed pillar graphics when flatcars (stake cars) carry Engineering Supplies (ENSP) or Farm Supplies (FMSP) [#257]
+ * Change: Improved Busan Metro train graphics [#270]
+ * Change: Improved Korail EMU graphics [#271]
+ * Change: Improved and added sprites for Korail EMUs (2019, 2021 batches) [#295]
+ * Change: Updated Uijeongbu LRT graphics [#283]
+ * Change: Updated 7x00 series and 8000 series locomotive Blue/White livery graphics [#241]
+ * Change: Improved Urban Railway EMU graphic sprites [#240, #303, #311]
+   * Busan Line 1 2nd batch, Busan Line 3, Daegu Line 2, Daejeon Line 1, Gwangju Line 1, Incheon Line 1 VVVF 1st generation, Seoul Line 2 VVVF 3rd generation
+     Metropolitan Line 1 2019·2021 batch, Metropolitan Line 4 2019·2021 batch, 351K 2021 batch, 37·381K 1st generation
+     Metropolitan Line 1 Rheostat control vehicles Initial/Middle/Late types
+ * Fix: Fixed pantograph error on Line 2 modified rheostat (chopper) vehicles [#245]
+ * Fix: Corrected rooftop AC unit count for CDC trains [#255]
+ * Fix: Bug where some graphics in certain directions for brown flatcars remained blue [#262]
+ * Fix: Corrected rooftop AC unit count for Metropolitan Line 4 2nd generation VVVF trains from 1 to 2 [#267]
+ * Fix: Corrected rooftop AC unit count for Metropolitan Line 3 3k VVVF old livery from 2 to 1 [#268]
+ * Fix: Corrected rooftop AC unit count for Suin-Bundang Line 1st generation new livery rear car ↖ direction from 1 to 2 [#281]
+ * Fix: Incorrect rooftop AC unit count for Seoul Metro 1k, 4k vehicles in specific rear directions [#269]
+ * Fix: Issue where ITX-Saemaeul train capacity differed from reality [#263]
+ * Fix: Incorrect smoke position for NDC DMUs [#264]
+ * Fix: Issue where the order of double-decker cars in ITX-Cheongryun was swapped [#273]
+ * Fix: Issue where Uijeongbu LRT used standard electric track instead of light rail track [#282]
+ * Fix: Improved some EMU graphic sprites
    * SMETRO_1K_RHEO_FIRST, 2K_CHOPPER, 3K_SMETRO_CHOPPER, 3K_SMETRO_MODIFIED_CHOPPER [#305]
-   * 부산김해경전철, 김포 골드라인, 우이신설선 [#306]
+   * Busan-Gimhae LRT, Gimpo Goldline, Ui-Sinseol Line [#306]
    * 3K_VVVF_1ST_2 [#308]
- * 제거: 비둘기호 객차의 속력 제한 제거
+ * Remove: Removed speed limit for Bidulgi-ho passenger cars
 
 2.1.0
 -----
- * 추가: 762mm 협궤 선로 및 건널목 [#204, #229]
-   * 추가: 혀기 7형 증기 기관차 [#205]
-   * 추가: 협궤 객차 [#205]
-   * 추가: 협궤 동차 [#205]
-   * 추가: 협궤 유개화차 [#215]
-   * 추가: 협궤 무개화차 [#217]
- * 추가: 아한대·아열대 지형의 경전철/협궤 선로의 터널 그래픽 [#66]
- * 추가: 새마을호 구형 발전차(빨강 + 파랑) 도색 추가 [#232]
- * 추가: 통일호 구형 발전차 도색 추가 [#233]
- * 추가: 일본어 번역
- * 변경: 구매 목록 이미지를 왼쪽으로 정렬하고 기관차 종류(eg. 증기, 디젤, 전기, 전철)에 따른 아이콘 추가 [#209]
- * 변경: 모든 그래픽 스프라이트의 위치 규격 통일 [#252]
- * 변경: 2x00호대 미군 도색 및 검정+넓은 주황 도색 추가 [#90]
- * 변경: 발전차의 길이를 6/8 또는 7/8 수준으로 축소 [#117]
- * 변경: 새마을호 디젤 유압 동차(DHC, PP동차) 그래픽 개선 [#187]
- * 변경: 마터 2형 무게 [#208]
- * 변경: 증기 기관차 그래픽 및 길이 변경 [#210]
- * 변경: 의정부경전철 그래픽 [#211]
- * 변경: 인천공항자기부상열차 그래픽 [#211]
- * 변경: 비둘기 통근형 디젤 동차의 이름을 'DC 동차'로 변경 + 여러 도색 추가 + 비둘기호 객차와 함께 개조할 수 있는 것을 연동 [#221, #219]
- * 변경: G-train 객차를 4개 방향에서 9개 방향으로 [#223]
- * 변경: 수도권 4호선에 GEC CHOPPER 도색을 추가 [#230]
- * 변경: 수인분당선에 무작위로 싱글 암이나 더블 암 팬터그래프를 적용
- * 변경: 차량 이름 앞에 붙던 "[KTS]" 문구 제거
- * 수정 & 변경: 수도권 4호선 1·2차 도입분 도색이 3호선 도색을 대신 이용하고 있던 점 [#83]
- * 수정 & 변경: 누리로의 팬터그래프 방향이 잘못됨 + 누리로 그래픽 개선 [#140]
- * 수정: CDC 경북순환테마열차 그래픽 명암 및 구 도색의 객차 순서가 잘못되어 있던 점 [#212]
- * 수정: NDC 열차의 구매 이미지가 오래된 도색으로 표시되던 점
- * 수정: KTX-이음의 수송량이 2배로 적용되던 현상 [#206]
- * 수정: 팬터그래프 위치를 고증에 맞게 수정 [#231]
- * 수정: 'Korail 311k / 초기 도색' 스프라이트가 'Korail 311k 초기형 / 현 도색'으로 표시되던 점 [#234]
- * 수정: 비둘기호 객차의 수송량이 2배로 적용되던 점
+ * Add: 762mm narrow gauge track and level crossings [#204, #229]
+   * Add: Hyeogi 7 Steam Locomotive [#205]
+   * Add: Narrow gauge passenger car [#205]
+   * Add: Narrow gauge motor car [#205]
+   * Add: Narrow gauge boxcar [#215]
+   * Add: Narrow gauge open wagon [#217]
+ * Add: Tunnel graphics for light rail/narrow gauge tracks in sub-arctic and sub-tropical climates [#66]
+ * Add: Saemaeul-ho old generator car (Red + Blue) livery [#232]
+ * Add: Tongil-ho old generator car livery [#233]
+ * Add: Japanese translation
+ * Change: Aligned purchase list images to the left and added icons for locomotive types (e.g., Steam, Diesel, Electric, EMU) [#209]
+ * Change: Unified position standards for all graphic sprites [#252]
+ * Change: Added Class 2x00 US Army livery and Black+Wide Orange livery [#90]
+ * Change: Reduced generator car length to 6/8 or 7/8 scale [#117]
+ * Change: Improved Saemaeul-ho Diesel Hydraulic Car (DHC, PP) graphics [#187]
+ * Change: Mater 2 weight [#208]
+ * Change: Updated steam locomotive graphics and length [#210]
+ * Change: Uijeongbu LRT graphics [#211]
+ * Change: Incheon Airport Maglev graphics [#211]
+ * Change: Renamed Bidulgi-ho commuter diesel car to 'DC DMU' + Added various liveries + Linked refit capability with Bidulgi-ho passenger cars [#221, #219]
+ * Change: Increased G-train car directions from 4 to 9 [#223]
+ * Change: Added GEC CHOPPER livery to Metropolitan Line 4 [#230]
+ * Change: Randomized Single-arm or Double-arm pantographs on Suin-Bundang Line
+ * Change: Removed "[KTS]" prefix from vehicle names
+ * Fix & Change: Issue where Metropolitan Line 4 1st/2nd batch liveries used Line 3 liveries instead [#83]
+ * Fix & Change: Corrected Nuriro pantograph direction + Improved Nuriro graphics [#140]
+ * Fix: Corrected CDC Gyeongbuk Tour Theme Train graphic shading and passenger car order for old livery [#212]
+ * Fix: Issue where NDC purchase image showed old livery
+ * Fix: Issue where KTX-Eum capacity was doubled [#206]
+ * Fix: Adjusted pantograph positions for historical accuracy [#231]
+ * Fix: Issue where 'Korail 311k / Initial Livery' sprite was displayed as 'Korail 311k Initial / Current Livery' [#234]
+ * Fix: Issue where Bidulgi-ho passenger car capacity was doubled
 
 2.0.4
 -----
-  * 수정: 부산 1호선 2세대 차량의 동서 방향 그래픽에 있던 어두운 부분 교정 [#200]
-  * 수정: 대구 3호선의 잘못된 그래픽 위치 교정 [#202]
-  * 수정: 일부 경전철 차량의 객차 적재 속도가 느린 점 [#203]
-  * 수정: 서울메트로 개조 저항 차량으로 개조시 경의중앙선 자전거 도색 열차가 나오던 점 [#192]
-  * 변경: 수도권 지하철 5호선 VVVF 4세대 그래픽 개선 [#193]
-  * 변경: 4x00호대 디젤 기관차 그래픽 개선 [#137]
-  * 수정: 2x00호대 디젤 기관차에 일부 열차/객차를 붙일 수 없던 현상
+  * Fix: Corrected dark areas in East-West graphics for Busan Line 1 2nd generation vehicles [#200]
+  * Fix: Corrected graphic positioning for Daegu Line 3 [#202]
+  * Fix: Issue with slow cargo loading speed for some light rail vehicles [#203]
+  * Fix: Issue where Gyeongui-Jungang Line bicycle livery train appeared when refitting to Seoul Metro modified rheostat vehicles [#192]
+  * Change: Improved Seoul Metropolitan Subway Line 5 VVVF 4th generation graphics [#193]
+  * Change: Improved Class 4x00 Diesel Locomotive graphics [#137]
+  * Fix: Issue where some trains/cars could not be attached to Class 2x00 Diesel Locomotives
 
 2.0.3
 -----
-  * 추가: 2x00호대 디젤 기관차 [#90]
-  * 추가: 5·6000호대 디젤 기관차 [#176]
-  * 추가: 무궁화호 식당차 (1980년대 도색) [#185]
-  * 추가: 새마을호 식당차 (Korail 현 도색) [#184]
-  * 추가: 7000호대 디젤 기관차 도색 2종 [#188]
-  * 추가: 새마을호 특실 (철도청 초기 도색) [#184]
-  * 변경: 새마을호 객차 그래픽을 4방향에서 8방향으로 [#184]
-  * 변경: 부산 1호선 구 도색 그래픽 개선 [#183]
-  * 변경: 무궁화호 객차 그래픽 개선 [#180]
-  * 변경: 무궁화호 객차와 카페 객차, CDC와 카페객차를 섞어서 편성했을 때 한꺼번에 도색을 바꿀 수 있도록 개선
-  * 수정: 수도권 1·4호선 2019년 도입분(aka. 주둥이)의 팬터그래프 차량 오프셋이 잘못되어 있던 점
-  * 수정: 일부 문서 교정
+  * Add: Class 2x00 Diesel Locomotive [#90]
+  * Add: Class 5·6000 Diesel Locomotive [#176]
+  * Add: Mugunghwa-ho dining car (1980s livery) [#185]
+  * Add: Saemaeul-ho dining car (Current Korail livery) [#184]
+  * Add: Two 7000 series Diesel Locomotive liveries [#188]
+  * Add: Saemaeul-ho First Class (Initial Railroad Administration livery) [#184]
+  * Change: Increased Saemaeul-ho car graphics from 4 directions to 8 directions [#184]
+  * Change: Improved Busan Line 1 old livery graphics [#183]
+  * Change: Improved Mugunghwa-ho car graphics [#180]
+  * Change: Improved batch livery refit for mixed formations of Mugunghwa-ho cars, Cafe cars, and CDC
+  * Fix: Corrected pantograph vehicle offset for Seoul Metropolitan Line 1/4 2019 batch (aka. Judungi)
+  * Fix: Corrected some documentation
 
 2.0.2
 -----
-  * 추가: 새마을호 특실 (구 도색, 최근 도색) [#118]
-  * 추가: 평판화차 검은색, 갈색 도색 [#173]
-  * 추가: 무궁화호 특실 [#113]
-  * 추가: 침대차 [#123]
-  * 변경: 분당선에 4호선 VVVF 1세대 도색 추가 [#156]
-  * 수정: [FIRS] FMSP, ENSP 화물을 실을 때 빈 차여도 실은 그래픽이 나오는 오류 [#160]
-  * 수정: 수도권 7호선 4차분 그래픽의 동서 방향 그래픽에 줄 위치 교정 [#165]
-  * 수정: KTX-이음의 뒤쪽 팬터그래프 차량의 남쪽 오프셋 오류 [#166]
-  * 수정: 무개화차 구매 이미지가 기본 그래픽과 다름 [#158]
-  * 수정: 무개화차의 그래픽 오프셋 위치 교정 [#159]
-  * 수정: 대구 1, 2호선 그래픽 오류 수정 [#151]
-  * 수정: [FIRS 3.x] 무개화차가 사탕무(SGBT)를 싣지 못하던 현상 [#171]
-  * 수정: [FIRS] 평판화차의 FMSP, ENSP 화물의 그래픽 순서 교정 [#167]
-  * 수정: KTX-산천, SRT의 그래픽 오류 및 오프셋 오류 [#169]
-  * 수정: CDC, NDC의 디젤 연기 위치가 조금 앞쪽에 치우침 [#170]
-  * 수정: 7x00호대, 7600호대에 무궁화 객차를 붙이면 적재 속도가 적용되지 않던 현상 [#162]
-  * 수정: ITX-청춘의 적재 속도가 느림 [#175]
+  * Add: Saemaeul-ho First Class (Old livery, Recent livery) [#118]
+  * Add: Flatcar Black and Brown liveries [#173]
+  * Add: Mugunghwa-ho First Class [#113]
+  * Add: Sleeper car [#123]
+  * Change: Added Line 4 VVVF 1st generation livery to Bundang Line [#156]
+  * Fix: [FIRS] Issue where empty cars showed loaded graphics when carrying FMSP or ENSP cargo [#160]
+  * Fix: Corrected line position in East-West graphics for Seoul Metropolitan Line 7 4th batch [#165]
+  * Fix: Corrected South offset error for KTX-Eum rear pantograph vehicle [#166]
+  * Fix: Issue where open wagon purchase image differed from the basic graphic [#158]
+  * Fix: Corrected graphic offset position for open wagons [#159]
+  * Fix: Corrected Daegu Line 1 and 2 graphic errors [#151]
+  * Fix: [FIRS 3.x] Issue where open wagons could not carry Sugar Beet (SGBT) [#171]
+  * Fix: Corrected graphic order for FMSP and ENSP cargo on [FIRS] flatcars [#167]
+  * Fix: Graphic and offset errors for KTX-Sancheon and SRT [#169]
+  * Fix: Diesel smoke position for CDC and NDC was too far forward [#170]
+  * Fix: Issue where loading speed was not applied when attaching Mugunghwa cars to 7x00 or 7600 series [#162]
+  * Fix: Slow loading speed for ITX-Cheongchun [#175]
 
 2.0.1
 -----
-  * 수정: 7x00호대, 7600호대 기관차에 무궁화호 객차를 붙이면 무궁화호 객차의 수송량이 0으로 나옴 [#153]
-  * 수정: 7600호대의 중량 오류 [#154]
-  * 수정: NDC 도색 순서 오류 교정 및 도색 순서 재정렬 [#155]
-  * 수정: FIRS 화물의 FMSP, ENSP 화물을 실은 그래픽이 8방향이 아닌 4방향이던 문제 [#152]
-  * 문서: 소개 이미지에 Github 링크가 짤린 것과 changelog의 오타 수정 [#150]
+  * Fix: Issue where Mugunghwa-ho car capacity showed as 0 when attached to 7x00 or 7600 series locomotives [#153]
+  * Fix: Weight error for Class 7600 [#154]
+  * Fix: Corrected NDC livery order and re-sorted livery sequence [#155]
+  * Fix: Issue where graphics for FMSP and ENSP cargo in FIRS were 4-directional instead of 8-directional [#152]
+  * Doc: Fixed cut-off Github link in the introduction image and typos in the changelog [#150]
 
 2.0.0
 -----
-  * 전체 코드를 처음부터 다시 제작
-      - 폴더 및 파일 구조 변경
-      - 빌드 방식을 make로 변경
-      - 이제 빌드에 gcc와 python3을 사용
-  * **추가**
-    * 증기 기관차
-      - 미카 3형
-      - 파시 5형
-      - 마터 2형
-    * 7600호대 디젤 화물 기관차 및 정선 아리랑 열차 [#7]
-    * NDC 도색
-      - 비즈니스 동차
-      - 1984~1994년 초기 도색
-    * 우등형 디젤 전기 동차 (DEC) [#14]
-    * 우등형 전기 동차 (EEC) [#15]
-    * 경의중앙선 자전거 열차 재추가
-    * 수도권 1호선 신조 저항 차량 [#115]
-    * 수도권 3호선 개조 초퍼 차량 [#10]
-    * 서울교통공사 3000호대 VVVF 2세대 차량 [#51]
-    * 서울교통공사 5000호대 3차 도입분 차량 [#11]
-    * 서울교통공사 5000호대 4차 도입분 차량 [#41]
-    * 수도권 4호선 VVVF 3차 도입분(aka. 밥통) 차량
-    * 수도권 2호선 VVVF 4차 도입분(aka. 밥통) 차량
-    * 공항철도 직통 오렌지색 도색 [#6]
-    * 누리로 동해산타열차 [#106]
-    * 각종 식당차 및 카페차 도색
-    * 의정부경전철 [#33]
-    * 인천공항 자기부상철도 [#38]
-    * KTX-산천: 2018 평창동계올림픽 도색 추가 [#81]
-    * 비둘기호 객차 및 동차
-    * 유조차 은색, 검은색 도색
-    * 평판화차(Stake car) 추가
-      - 실을 수 있는 화물: 목재, 철, 종이
-    * 대구 3호선 후기형 도색 추가
-    * 이제 무개화차, 평판화차가 화물에 따라 다른 그래픽으로 표시됨 (FIRS도 지원)
-  * **변경**
-    * **각 열차에 각각 할당되어 있던 객차(eg. KTX, 누리로, CDC, 지하철 등)를 승객용 공통 객차, 승객용 공통 객차 (동력차)로 통합**
-    * 화차 속력 제한 매개변수 제거 [#59]
-    * 서울 2호선 VVVF 3차분 그래픽 변경 [#47]
-    * 부산 3호선의 천장 색상
-    * 8100호대와 8200호대를 8x00호대 기관차로 통합
-    * 7x00호대의 ↔ 방향 그래픽의 세로 길이를 11px에서 12px로 변경 [#116]
-    * NDC(+DEC+EEC)의 엔진부 가로 길이를 33px에서 31px로 변경
-    * 단일 기관차의 구입 이미지를 2량에서 1량으로 변경
-    * 분당선 이름을 '수인분당선'으로 변경
-    * 대전 1호선과 광주 1호선을 분리
-    * 경전철 선로에 아직 구현되지 않았던 터널 그래픽을 구현
-    * 기존의 '평판화차'를 '컨테이너 평판화차'로 변경
-      - 실을 수 있는 화물: 과일, 귀금속, 상품, 식품, 배터리, 장난감
-  * **버그 수정**
-    * 화물 적재 속도 매개변수를 32배로 설정하면 오류 메시지가 뜨던 문제 [#20]
-    * 1호선 초기 차량 이름에 '철도청' 대신 'Korail'이 적혀있던 문제 [#21]
-    * 4호선 2019년 도입분(aka. 주둥이)이 수도권 1호선, 통근용에 들어있던 문제 [#22]
-    * 4400호대와 7000호대 디젤 기관차의 도입 연도 고증 오류 [#25]
-    * 7x00호대, 4400호대의 출력을 실 수치로 변경 [#26]
-    * 무개화차(호퍼차)가 가축을, 수화물차가 승객을 싣던 점 [#27, #70]
-    * 부산 1호선의 문이 3개가 아니라 4개로 되어있던 점 [#42]
-    * 수도권 1호선의 '중기 저항' 도색이 '개조 저항'으로 표기되어있던 점 [#60]
-    * 수도권 3호선의 3k VVVF 1세대가 2세대로 잘못 표기되어 있던 점 [#75]
-    * 7x00호대의 도입 연도 고증 오류 [#74]
-    * 1호선 311k 초기 도색이 신조 저항으로 표기되어 있던 점 [#72]
-    * 3호선 도색 이름이 잘못 표기되어 있던 점 [#82]
-    * G-train의 명암
-    * 4x00호대의 명암
-    * CDC의 도입 연도가 1996년이 아니라 2010년으로 되어있던 점
-    * RDC 동차와 객차의 명암이 서로 통일되어 있지 않던 점
-    * 부산 4호선에 문 열림 그래픽이 빠져있던 점
+  * Rebuilt the entire code from scratch
+      - Changed folder and file structure
+      - Changed build method to make
+      - Now uses gcc and python3 for building
+  * **Addition**
+    * Steam Locomotives
+      - Mika 3
+      - Pasi 5
+      - Mater 2
+    * Class 7600 Diesel Freight Locomotive and Jeongseon Arirang Train [#7]
+    * NDC Liveries
+      - Business DMU
+      - 1984~1994 Initial Livery
+    * Diesel Electric Car (DEC) [#14]
+    * Electric Car (EEC) [#15]
+    * Re-added Gyeongui-Jungang Line Bicycle Train
+    * Seoul Metropolitan Line 1 New Rheostat vehicle [#115]
+    * Seoul Metropolitan Line 3 Modified Chopper vehicle [#10]
+    * Seoul Metro 3000 series VVVF 2nd generation vehicle [#51]
+    * Seoul Metro 5000 series 3rd batch vehicle [#11]
+    * Seoul Metro 5000 series 4th batch vehicle [#41]
+    * Seoul Metropolitan Line 4 VVVF 3rd batch (aka. Babtong) vehicle
+    * Seoul Metropolitan Line 2 VVVF 4th batch (aka. Babtong) vehicle
+    * AREX Express Orange livery [#6]
+    * Nuriro Donghae Santa Train [#106]
+    * Various Dining and Cafe car liveries
+    * Uijeongbu LRT [#33]
+    * Incheon Airport Maglev [#38]
+    * KTX-Sancheon: Added 2018 Pyeongchang Winter Olympics livery [#81]
+    * Bidulgi-ho passenger cars and DMUs
+    * Oil tanker Silver and Black liveries
+    * Added Flatcar (Stake car)
+      - Cargo: Wood, Steel, Paper
+    * Added Daegu Line 3 Late-type livery
+    * Open wagons and flatcars now display different graphics based on cargo (FIRS supported)
+  * **Change**
+    * **Unified specific cars (e.g., KTX, Nuriro, CDC, Subway, etc.) into Passenger Common Car and Passenger Common Car (Motor Car)**
+    * Removed freight car speed limit parameter [#59]
+    * Updated Seoul Line 2 VVVF 3rd batch graphics [#47]
+    * Busan Line 3 rooftop color
+    * Unified Class 8100 and 8200 into 8x00 series locomotives
+    * Changed ↔ direction graphic height for 7x00 series from 11px to 12px [#116]
+    * Changed engine section horizontal length for NDC(+DEC+EEC) from 33px to 31px
+    * Changed single locomotive purchase image from 2 cars to 1 car
+    * Renamed Bundang Line to 'Suin-Bundang Line'
+    * Separated Daejeon Line 1 and Gwangju Line 1
+    * Implemented tunnel graphics for light rail tracks that were previously missing
+    * Renamed existing 'Flatcar' to 'Container Flatcar'
+      - Cargo: Fruit, Valuables, Goods, Food, Batteries, Toys
+  * **Bug Fixes**
+    * Issue where error messages appeared when cargo loading speed parameter was set to 32x [#20]
+    * Issue where initial Line 1 vehicles were named 'Korail' instead of 'Railroad Administration' [#21]
+    * Issue where Line 4 2019 batch (aka. Judungi) was placed under Seoul Metropolitan Line 1, Commuter [#22]
+    * Historical introduction year error for Class 4400 and 7000 Diesel Locomotives [#25]
+    * Changed power output of Class 7x00 and 4400 to actual values [#26]
+    * Issue where open wagons carried livestock and parcel cars carried passengers [#27, #70]
+    * Issue where Busan Line 1 had 4 doors instead of 3 [#42]
+    * Issue where Metropolitan Line 1 'Middle Rheostat' livery was labeled as 'Modified Rheostat' [#60]
+    * Issue where Metropolitan Line 3 3k VVVF 1st generation was mislabeled as 2nd generation [#75]
+    * Historical introduction year error for Class 7x00 [#74]
+    * Issue where Line 1 311k initial livery was labeled as New Rheostat [#72]
+    * Issue where Line 3 livery names were incorrectly labeled [#82]
+    * Shading on G-train
+    * Shading on Class 4x00
+    * Issue where CDC introduction year was 2010 instead of 1996
+    * Issue where shading was inconsistent between RDC DMUs and passenger cars
+    * Issue where door opening graphics were missing for Busan Line 4
 
 1.6.13
 -----
-  * EMU-250 차량의 이름을 "KTX-이음"으로 변경 (20210105)
+  * Renamed EMU-250 to "KTX-Eum" (20210105)
 
 1.6.12
 -----
-  * KTX 객차 속력이 EMU250의 속력으로 설정되어 있던 현상 수정 (20200209)
+  * Fixed issue where KTX passenger car speed was set to EMU-250 speed (20200209)
 
 1.6.11
 -----
-  * EMU-250 동차의 적재 속력 문제 해결 (20200205)
+  * Resolved loading speed issue for EMU-250 DMUs (20200205)
 
 1.6.10
 -----
-  * 개발 버전 명명 방식을 r###에서 날짜(########) 방식으로 변경 (20191115)
-  * EMU-250 동차 및 객차 추가 (20191115)
-  * 김포골드라인 색상을 살짝 변경 (20191115)
+  * Changed development versioning from r### to date (########) format (20191115)
+  * Added EMU-250 motor and passenger cars (20191115)
+  * Slightly changed Gimpo Goldline colors (20191115)
 
 1.6.01
 -----
-  * 인천 2호선의 그래픽 오류 수정 (r181)
+  * Fixed graphic error for Incheon Line 2 (r181)
 
 1.6.00
 -----
-  * KTX-1의 출력을 5650kW에서 6600kW로 변경 (r176)
-  * KTX-산천의 출력을 5650kW에서 4400kW로 변경 (r176)
-  * KTX-산천의 도입 연도를 2004년에서 2010년으로 변경 (r176)
-  * 경전철 선로 전용 차량을 전기 선로에서도 사용 가능하도록 변경 (r177)
-  * 우이신설경전철 그래픽 수정 (r178)
-  * 인천 2호선에 들어있던 팬터그래프 삭제 (r178)
-  * 부산김해경전철, 우이신설경전철, 인천2호선의 대각선 방향 명암 조정 (r178)
-  * 용인 경전철 추가 (r179)
-  * 김포골드라인 추가 (r180)
-  * 부산김해경전철, 인천2호선의 후두부 그래픽 추가 (r180)
+  * Changed KTX-1 power from 5650kW to 6600kW (r176)
+  * Changed KTX-Sancheon power from 5650kW to 4400kW (r176)
+  * Changed KTX-Sancheon introduction year from 2004 to 2010 (r176)
+  * Changed Light Rail exclusive vehicles to be usable on electric tracks (r177)
+  * Fixed Ui-Sinseol LRT graphics (r178)
+  * Deleted pantographs from Incheon Line 2 (r178)
+  * Adjusted diagonal shading for Busan-Gimhae LRT, Ui-Sinseol LRT, and Incheon Line 2 (r178)
+  * Added Yongin LRT (r179)
+  * Added Gimpo Goldline (r180)
+  * Added rear graphics for Busan-Gimhae LRT and Incheon Line 2 (r180)
 
 1.5.70 (2019.09.15)
 -----
-  * 1호선 도색 中 소사원시선의 이름을 서해선으로 변경(r175)
-  * CDC, NDC의 판매 가격이 지나치게 낮던 점 수정(CDC 2→6 / NDC 3→6) (r175)
-    * FIRS 금속을 실을 경우 평판화차의 그래픽이 철 화차로 변경되도록 수정 (r175)
-  * 일명 "주둥이" 도색(1호선, 4호선, 동해선) 추가 (r176)
+  * Renamed Sosa-Wonsi Line livery in Line 1 to Seohae Line (r175)
+  * Fixed issue where CDC and NDC sale prices were too low (CDC 2→6 / NDC 3→6) (r175)
+    * Fixed flatcar graphics to change to steel wagons when carrying FIRS metal (r175)
+  * Added "Judungi" livery (Line 1, Line 4, Donghae Line) (r176)
 
 1.5.61 (2019.05.18)
 -----
-  * 대구 3호선이 경전철 매개변수 적용을 받지 못하던 현상 수정 (r171)
-  * 평판화차가 철을 실을 경우 그래픽이 바뀌어져 나오도록 수정 (r172)
-  * 유조화차 추가 (r173)
-  * 장난감나라 기후에서도 사용 가능하게 변경 (r173)
-  * 도색 개조시 도색 A,B,C, ... 등으로 표시되던 것을 검은색, 파란색 등으로 변경 (r174)
+  * Fixed issue where Daegu Line 3 was not affected by light rail parameters (r171)
+  * Fixed flatcar graphics to change when carrying steel (r172)
+  * Added oil tankers (r173)
+  * Enabled use in Toyland climate (r173)
+  * Changed livery refit labels from A, B, C... to Black, Blue, etc. (r174)
 
 1.5.50 (2019.01.31)
 -----
-  * 평판화차 변경 (r170, Thanks to skyu)
-    - 평판화차의 기본 그래픽 변경
-    - 무작위로 나오는 컨테이너의 종류가 5종에서 27종으로 크게 늘어남
-    (40ft 컨테이너 9종 + 20ft 컨테이너 18종)
-    - 평판화차가 이제 승객을 실을 수 없음
-  * 화차 속도 제한 매개변수 추가 (r171)
-    - 한국 열차 세트 한정으로 화물 차량의 속도 제한을 해제할 수 있음
+  * Updated flatcars (r170, Thanks to skyu)
+    - Changed basic flatcar graphics
+    - Significantly increased random container types from 5 to 27
+    (9 types of 40ft containers + 18 types of 20ft containers)
+    - Flatcars can no longer carry passengers
+  * Added freight car speed limit parameter (r171)
+    - Allows disabling speed limits for freight vehicles exclusively for Korean Train Set
 
 1.5.11 (2018.08.14)
 -----
-  * 1호선 차량 이름 변경: "수도권 1호선, 통근형"
+  * Renamed Line 1 vehicle: "Seoul Metropolitan Line 1, Commuter"
 
 1.5.10 (2018.06.04)
 -----
-  * 소사·원시선 도색 변경
-  * Animation 색상 제거
+  * Updated Sosa-Wonsi Line livery
+  * Removed animation colors
 
 1.5.00 (2018.04.14)
 -----
-  * GRFv7에서 GRFv8로 업데이트
-    - Chillcore's Patch Pack 호환 중단
-  * 새마을호 객차를 객차형 ITX-새마을로 개조 가능하도록 변경 (r161)
-  * 부산 4호선 차량 및 객차의 구입 목록 오프셋 위치 조정 (r161)
+  * Updated from GRFv7 to GRFv8
+    - Discontinued compatibility with Chillcore's Patch Pack
+  * Allowed Saemaeul-ho passenger cars to be refitted to passenger car-type ITX-Saemaeul (r161)
+  * Adjusted purchase list offset position for Busan Line 4 vehicles and cars (r161)
 
 1.4.10 (2017.09.25)
 -----
-  * r146에서 조정했던 KTX-산천 (120k호대) 그래픽 오프셋 오류를 다시 수정 (r158)
-    - 후두부 7번(←) 1px 상승
-  * 내부 코드 수정 (r159)
-  * 소사원시선 차량 도색(391k) 추가 (r160)
-  * 1호선 차량 중 4량 편성이 기본인 도색(371k, 381k)을 사용할 경우 팬터그래프가 나타나는 위치 변경 (r160)
+  * Fixed graphic offset error for KTX-Sancheon (Class 120k) adjusted in r146 (r158)
+    - Rear section 7(←) raised by 1px
+  * Internal code cleanup (r159)
+  * Added Sosa-Wonsi Line livery (391k) (r160)
+  * Changed pantograph positions for Line 1 liveries with default 4-car formation (371k, 381k) (r160)
 
 1.4.00 (2017.05.06)
 -----
-  * 부산 도시철도 1호선 다대포 연장분 도색의 그래픽 오류 수정 (r149)
-  * 통근형 디젤 동차(CDC) 바다열차 신도색 추가 (r150)
-  * 통근형 디젤 동차(CDC)의 돌고래 도색의 영문 오타 수정: Dolphine → Dolphin (r151)
-  * 기타 영문 번역 교정 (Thanks to Gimel) (r151)
-  * 통근형 디젤 동차(CDC)의 일반 도색 및 RDC 도색의 그래픽 오류 수정(r152)
-  * 차량명 변경:  "KTX-산천" → "KTX-산천, SRT" (r153)
-  * 대구 도시철도 3호선 추가 (r154)
-    - 모노레일 선로 및 경전철 선로에서 구동 가능
-    - 수송량: 전/후두부(84명), 중간객차(97명)
-    - 최고속력: 70km/h
-  * 경전철의 유지비를 소폭 줄임 (r155)
-    - 대상: 부산김해경전철, 우이신설선, 부산4호선
-  * 사이트 주소 변경 (r156)
-    - (기존) ``http://korct.com`` → (변경) ``https://telk.kr``
-  * 서울 지하철 2호선 신 도색 추가 (r157)
+  * Fixed graphic error in Busan Line 1 Dadaepo extension livery (r149)
+  * Added new Sea Train livery for CDC (r150)
+  * Fixed English typo in CDC Dolphin livery: Dolphine → Dolphin (r151)
+  * Corrected other English translations (Thanks to Gimel) (r151)
+  * Fixed graphic errors in CDC standard and RDC liveries (r152)
+  * Renamed vehicle: "KTX-Sancheon" → "KTX-Sancheon, SRT" (r153)
+  * Added Daegu Line 3 (r154)
+    - Operable on monorail and light rail tracks
+    - Capacity: Front/Rear (84 passengers), Middle car (97 passengers)
+    - Max speed: 70km/h
+  * Slightly reduced maintenance costs for light rail (r155)
+    - Target: Busan-Gimhae LRT, Ui-Sinseol Line, Busan Line 4
+  * Changed website address (r156)
+    - (Old) ``http://korct.com`` → (New) ``https://telk.kr``
+  * Added Seoul Subway Line 2 new livery (r157)
 
 1.3.60 (2017.01.20)
 -----
-  * 서울 지하철 2호선 개조저항 도색 추가 (r147)
-  * 부산 도시철도 다대포 연장분 도색 추가 (r148)
+  * Added Seoul Subway Line 2 modified rheostat livery (r147)
+  * Added Busan Subway Dadaepo extension livery (r148)
 
 1.3.51 (2016.10.30)
 -----
-  * 차량 명칭 변경: 수도권 2호선 → 서울 2호선 (r145)
-  * KTX-산천의 스프라이트의 위치가 1px 올라가있던 버그 수정 (r146)
-  * 평판화차, 인천 지하철 2호선의 임시 문구 제거
+  * Renamed vehicle: Metropolitan Line 2 → Seoul Line 2 (r145)
+  * Fixed bug where KTX-Sancheon sprite was 1px higher than intended (r146)
+  * Removed temporary text for flatcars and Incheon Line 2
 
 1.3.50 (2016.07.23)
 -----
-  * 8200호대 기관차 등장 연도를 1990년에서 2002년으로 수정 (r143)
-  * 공항철도 일반/직통이 속도 매개변수를 반대로 적용받던 버그 수정 (r142)
-  * 대전·광주 지하철 1호선 차량 추가 (r140, r141)
-    - 기본 외관은 대전 지하철 1호선이며 광주 지하철 1호선은 도색 개조를 통해 이용
+  * Corrected Class 8200 introduction year from 1990 to 2002 (r143)
+  * Fixed bug where AREX All-stop/Express trains applied speed parameters inversely (r142)
+  * Added Daejeon/Gwangju Subway Line 1 vehicles (r140, r141)
+    - Basic exterior is Daejeon Line 1; Gwangju Line 1 is available via livery refit
 
 1.3.20 (2016.05.05)
 -----
-  * 수도권 전철 1호선 3xxk AL 도색 스프라이트 버그 수정 (r139)
-  * 수도권 전철 1호선 371k호대 도색(무도색 버전) 추가 (r137)
-  * 수도권 전철 1호선 381k호대 도색 추가 (r138)
+  * Fixed sprite bug for Metropolitan Line 1 3xxk AL livery (r139)
+  * Added Metropolitan Line 1 371k livery (unpainted version) (r137)
+  * Added Metropolitan Line 1 381k livery (r138)
 
 1.3.01 (2016.04.14)
 -----
-  * readme.txt, readme_en.txt 파일 최신화
-  * KTX-1과 KTX-산천을 같이 붙여서 연결할 수 없도록 수정 (r136)
-  * CDC 동차와 객차의 등장 연도를 1996년으로 통일·변경 (r135)
+  * Updated readme.txt and readme_en.txt
+  * Fixed KTX-1 and KTX-Sancheon to prevent coupling together (r136)
+  * Unified/Changed CDC motor and passenger car introduction years to 1996 (r135)
 
 1.3.00 (2016.02.14)
 -----
-  * "KTS 서울 우이신설경전철" 임시 추가 (r134)
-    - 조성방법: 우이신설경전철 동차 + 우이신설경전철 동차
-    - 최고속력: 80km/h
-    - 수 송 량: 80명
-  * "KTS 인천 2호선" 임시 추가 (r133)
-    - 조성방법: 인천2호선 동차 + 인천2호선 동차
-    - 최고속력: 90km/h
-    - 수 송 량: 100명
-  * 인천 1호선에서 사용하던 내부 ID를 변경·통일 (r131)
-  * "KTS 부산김해경전철" 추가 (r130)
-    - 조성방법: 부산김해경전철 동차 + 부산김해경전철 동차
-    - 최고속력: 80km/h
-    - 수 송 량: 96명
-      (부산김해경전철, 인천 2호선, 서울 우이신설경전철은 제3궤조 선로를 추가하는 NewGRF(eg. Metro Track Set)를
-      사용 중일 경우에는 그 선로에서만 사용 가능합니다. 그렇지 않으면 전기 선로에서 사용 가능합니다.)
+  * Temporarily added "KTS Seoul Ui-Sinseol LRT" (r134)
+    - Composition: Ui-Sinseol LRT Motor car + Ui-Sinseol LRT Motor car
+    - Max speed: 80km/h
+    - Capacity: 80 passengers
+  * Temporarily added "KTS Incheon Line 2" (r133)
+    - Composition: Incheon Line 2 Motor car + Incheon Line 2 Motor car
+    - Max speed: 90km/h
+    - Capacity: 100 passengers
+  * Unified internal IDs used for Incheon Line 1 (r131)
+  * Added "KTS Busan-Gimhae LRT" (r130)
+    - Composition: Busan-Gimhae LRT Motor car + Busan-Gimhae LRT Motor car
+    - Max speed: 80km/h
+    - Capacity: 96 passengers
+      (Busan-Gimhae LRT, Incheon Line 2, and Ui-Sinseol LRT are only usable on 3rd rail tracks if a NewGRF (e.g., Metro Track Set) is used. Otherwise, usable on electric tracks.)
   * Thanks to 라스 for Graphics
 
-  * KTX 동차에 KTX 객차 이외의 객차를 연결할 수 있었던 버그 수정 (r132)
-  * CDC 동차와 객차의 등장 연도를 2004년으로 통일·변경 (r129)
-  * 그래픽에서 잘못 사용된 색상을 일부 수정
-  * 그래픽 스프라이트 아이디 변경
-
+  * Fixed bug where non-KTX cars could be attached to KTX motor cars (r132)
+  * Unified/Changed CDC motor and passenger car introduction years to 2004 (r129)
+  * Fixed some incorrect colors in graphics
+  * Changed graphic sprite IDs
 
 1.2.52 (2016.01.23)
 -----
   * 1.2.52
-    * 일본어 번역 임시 복구 (r128)
-    * 무궁화호 RDC 카페 객차의 다음 그래픽을 수정 (r127)
-      - 전두부 ↖쪽 그래픽의 명암 방향이 반대로 되어있던 점
-      - 카페 객차가 일반 객차에 비해 조금 밝아보이던 점
+    * Temporarily restored Japanese translation (r128)
+    * Fixed the following for Mugunghwa-ho RDC Cafe car (r127)
+      - Corrected reversed shading direction in the ↖ front graphic
+      - Fixed Cafe car appearing slightly brighter than regular cars
   * 1.2.51
-    * KTX-산천 후두부의 ↖쪽 그래픽의 오프셋 수정 (r126)
-    * 다음을 임시 삭제 (r126)
-      - 일본어 번역 일부분
-      - "경의·중앙선 자전거 열차" 도색 2종 (정방향, 역방향)
-    * NewGRF 표시명을 "한국 열차 세트 v#.#.##"에서 "한국 열차 세트 #.#.##"로 변경 (r126)
-    * KTX 공통 객차의 등장 연도를 1970년에서 2004년으로 통일 (r125)
-
+    * Fixed ↖ offset for KTX-Sancheon rear graphic (r126)
+    * Temporarily removed (r126):
+      - Parts of Japanese translation
+      - 2 types of "Gyeongui-Jungang Line Bicycle Train" livery (forward, reverse)
+    * Changed NewGRF display name from "Korean Train Set v#.#.##" to "Korean Train Set #.#.##" (r126)
+    * Unified KTX common car introduction years from 1970 to 2004 (r125)
 
 1.2.50 (2015.12.16)
 -----
-  * "대구 도시철도 2호선" 차량 추가
-  * 1호선 차량에 잘 보이지 않는 선 하나가 나타나던 점 수정
-  * 서울메트로 1000호대 VVVF 차량 그래픽에서, 빨간 줄과 초록색 줄의 상하 위치가 바뀌어 있던 점 수정
-  * 대구 1호선 차량 하단부에 하얗게 튀는 색상 수정
-  * NewGRF 내부에 저장된 웹사이트 주소를 언어별 페이지로 다르게 링크
-
+  * Added "Daegu Subway Line 2" vehicle
+  * Fixed a subtle line appearing on Line 1 vehicles
+  * Fixed swapped positions of red and green lines in Seoul Metro 1000 series VVVF graphics
+  * Fixed bright color artifact on the bottom of Daegu Line 1 vehicles
+  * Linked website addresses in NewGRF to language-specific pages
 
 1.2.41 (2015.11.20)
 -----
   * 1.2.41
-    * 차량 명칭 변경
-      - "1호선, 경의·중앙선" → "1호선, 경의·중앙선, 수인선"
-    * 일본어 번역 수정
-    * readme.txt, readme_en.txt 파일 업데이트
+    * Renamed vehicles:
+      - "Line 1, Gyeongui-Jungang Line" → "Line 1, Gyeongui-Jungang Line, Suin Line"
+    * Fixed Japanese translation
+    * Updated readme.txt and readme_en.txt
   * 1.2.40
-    * "대구 도시철도 1호선" 차량 추가
-    * "경의·중앙선 자전거 열차" 도색 2종 추가 (정방향, 역방향)
-      - 1호선, 경의·중앙선, 수인선 차량을 개조하면 됩니다.
-
+    * Added "Daegu Subway Line 1" vehicle
+    * Added 2 types of "Gyeongui-Jungang Line Bicycle Train" livery (forward, reverse)
+      - Available by refitting Line 1, Gyeongui-Jungang, Suin Line vehicles.
 
 1.2.30 (2015.10.07)
 -----
   * 1.2.30
-    * 경전철 속도 향상 매개변수 추가 (현재 부산 4호선에만 적용됨)
-    * 매개변수 순서 변경 (재설정 필요함)
-    * 매개변수 설명 중 오래된 설명 변경/제거
+    * Added light rail speed increase parameter (Currently applied to Busan Line 4)
+    * Changed parameter order (Requires reset)
+    * Updated/removed outdated parameter descriptions
   * 1.2.21
-    * 각종 열차에 회사 색상이 포함된 버그 수정
-
+    * Fixed bug where company colors were included in various trains
 
 1.2.20 (2015.10.04)
 -----
   * 1.2.20
-    * 통근형 디젤 동차 "경북순환테마열차 도색" 2종 추가
-    * "부산 지하철 3호선" 차량 추가
-    * 1호선 ~ 9호선 차량명에 '수도권'이라는 단어를 앞에 붙임
+    * Added 2 types of CDC "Gyeongbuk Tour Theme Train Livery"
+    * Added "Busan Subway Line 3" vehicle
+    * Added 'Seoul Metropolitan' prefix to Line 1 ~ Line 9 names
   * 1.2.03
-    * 수도권 4호선 서울메트로 도색이 사라졌던 버그 수정
-    * 무궁화호 1970년대 도색이 사라졌던 버그 수정
-    * DMZ-train 천장 색상 수정
-    * 통근형 디젤 동차 전두부 현재 도색의 ↖쪽 방향 명암 수정
-
+    * Fixed bug where Metropolitan Line 4 Seoul Metro livery disappeared
+    * Fixed bug where Mugunghwa-ho 1970s livery disappeared
+    * Fixed DMZ-train rooftop color
+    * Corrected ↖ shading for current CDC front livery
 
 1.2.01 (2015.09.03)
 -----
   * 1.2.01
-    * 부산 도시철도 2호선의 그래픽이 부산 1호선으로 뜨는 버그 수정
+    * Fixed bug where Busan Subway Line 2 graphics appeared as Busan Line 1
   * 1.2.00
-    * "KTS 수화물차" 추가 (도색 7종)
-      - 적재 가능한 화물: 우편, 곡물, 종이
-      - 수송량: 화물 30단위
-    * 새마을호 객차 "무궁화호 격하 구특전 도색" 추가
-      - 제작 방법: 새마을호 객차를 이용하여 도색 개조
-    * 누리로 "한류관광테마 도색" 추가
-      - 제작 방법:   * 누리로 동차 +   * 누리로 객차 +   * 누리로 동차 로 편성 후 개조하여 제작
-    * "남도해양관광열차(S-train) 도색" 추가
-      - 제작 방법:   * K7x00호대 디젤 기관차 +   * 무궁화호 객차 + ... 로 편성 후 개조하여 제작
-    * "서해금빛열차(G-train) 도색" 추가
-      - 제작 방법:   * K7x00호대 디젤 기관차 +   * 무궁화호 객차 + ... 로 편성 후 개조하여 제작
-    * "평화열차(DMZ-train) 도색" 추가
-      - 제작 방법: 통근형 디젤 동차(CDC)를 개조하여 제작
-    * 지하철에 일부 미묘하게 사용되던 회사 색상 수정
+    * Added "KTS Parcel Car" (7 liveries)
+      - Cargo: Mail, Grain, Paper
+      - Capacity: 30 units
+    * Added Saemaeul-ho "Mugunghwa-ho Downgraded Old Special Livery"
+      - Creation: Refit from Saemaeul-ho passenger car
+    * Added Nuriro "Hallyu Tour Theme Livery"
+      - Creation: Compose * Nuriro Motor + * Nuriro Car + * Nuriro Motor, then refit
+    * Added "Namdo Sea Tour Train (S-train) Livery"
+      - Creation: Compose * K7x00 Diesel Loco + * Mugunghwa Car + ..., then refit
+    * Added "West Sea Golden Train (G-train) Livery"
+      - Creation: Compose * K7x00 Diesel Loco + * Mugunghwa Car + ..., then refit
+    * Added "Peace Train (DMZ-train) Livery"
+      - Creation: Refit from CDC
+    * Fixed subtle company colors appearing in subways
   * 1.1.00
-    * 인천 1호선 "2차 도색 (송도 연장분)" 추가
-    * "KTS 4400호대 디젤 기관차" (도색 3종) 추가
-      - 도색 개조: 코레일 구 도색 / 코레일 신 도색 / V-train
-      - 최고 속력: 100km/h
-    * "백두대간협곡열차(V-train) 도색" 추가
-      - 기관차 최고 속력: 100km/h
-      - 객차 최고 속력: 60km/h
-      - 객차 수송량: (3n-2)호차 56명, (3n-1)호차 46명, (3n)호차 46명
-      - 편성 방법:   * 4400호대 디젤 기관차(개조) +   * 수화물차(개조) + ...
-    * "KTS 7000호대 디젤 기관차" 추가
-      - 최고 속력: 150km/h
-    * 무궁화호 객차 구입 이미지가 다소 옛날 도색으로 뜨던 버그 수정
-    * 매개 변수에 예비 슬롯 마련
+    * Added Incheon Line 1 "2nd Livery (Songdo Extension)"
+    * Added "KTS 4400 series Diesel Locomotive" (3 liveries)
+      - Refits: Old Korail / New Korail / V-train
+      - Max speed: 100km/h
+    * Added "Baekdudaegan Canyon Train (V-train) Livery"
+      - Loco max speed: 100km/h
+      - Passenger car max speed: 60km/h
+      - Capacity: Car (3n-2) 56, Car (3n-1) 46, Car (3n) 46
+      - Composition: * 4400 Diesel (Refit) + * Parcel Car (Refit) + ...
+    * Added "KTS 7000 series Diesel Locomotive"
+      - Max speed: 150km/h
+    * Fixed bug where Mugunghwa car purchase image showed old livery
+    * Reserved slots in parameters
   * 1.0.12
-    * 그래픽 스프라이트 위치 조정
-    * 사용하지 않는 스프라이트 선언 부분 주석 처리
-
+    * Adjusted graphic sprite positions
+    * Commented out unused sprite declarations
 
 1.0.11 (2015.07.15)
 -----
   * 1.0.11
-    * 다음 열차의 출력을 조정
-      - ITX-새마을: 800kW → 3000kW
-
+    * Adjusted output for following train:
+      - ITX-Saemaeul: 800kW → 3000kW
 
 1.0.10 (2015.07.14)
 -----
   * 1.0.10
-    * "  * KTS 호퍼차" 추가
-      - 화물차 제한 속력: 130km/h
-      - 수송 가능한 화물: 석탄, 철 광석, 구리 광석
-      - 3가지 도색(파란색, 갈색, 검은색)으로 개조 가능
-    * 평판화차가 승객, 우편을 더이상 수송할 수 없도록 변경
-    * 화물 차량과 관련된 내부 코드 수정
-    * 다음 열차의 속력을 조정
-      - 8000호대 전기 기관차: 150km/h → 90km/h
-      - ITX-청춘: 180km/h → 190km/h
-    * readme.txt, readme_en.txt 파일 내용 업데이트 및 수정
+    * Added " * KTS Hopper Car"
+      - Speed limit: 130km/h
+      - Cargo: Coal, Iron Ore, Copper Ore
+      - Refit to 3 liveries (Blue, Brown, Black)
+    * Changed flatcars to no longer carry passengers or mail
+    * Updated internal code for freight vehicles
+    * Adjusted speeds for following trains:
+      - Class 8000 Electric Locomotive: 150km/h → 90km/h
+      - ITX-Cheongchun: 180km/h → 190km/h
+    * Updated and corrected readme.txt and readme_en.txt
   * 1.0.02
-    * 공항철도가 화물 수송량 매개 변수가 아니라 화물 적재 속도에 영향을 받던 버그 수정
-
+    * Fixed bug where AREX was affected by loading speed instead of cargo capacity parameter
 
 1.0.01 (2015.05.05)
 -----
   * 1.0.01
-    * 지하철 객차 차량을 대부분의 지하철 동차에 연결하는 경우 화물 수송량 매개변수를 제대로 적용받지
-    못해서 수송량이 '없음'으로 나오던 버그 수정
+    * Fixed bug where subway cars attached to most motor cars didn't apply cargo capacity parameter, showing 'None'
   * 1.0.00
-    * KTX-산천 120k호대(KTX-달리안) 도색 추가 (Thanks to 라스)
-      - KTX-2 산천 전두부 개조를 통해 도색 변경 가능, 기타 스펙은 산천과 동일
-    * KTX-산천 110k호대 도색 수정 (Thanks to 라스)
-    * 부산 도시철도 1호선 추가
-    * 부산 도시철도 2호선 추가
-    * 부산 도시철도 4호선 추가
-      - 경전철 선로 추가, 추후 의정부·용인 경전철, 대구 3호선 등과도 호환될 예정
-    * 구입 비용 매개변수의 기본값을 1/4 수준으로 변경
-    * 일부 차량 명칭 변경
-      - "경춘선 368k ITX-청춘" → "ITX-청춘 (경춘선 368k)"
-      - 차량 명칭에서 VVVF 용어 제거
-      - 기타 명칭 간소화
-    * 선로 종단점 오브젝트를 경사면에 설치할 수 있도록 수정
+    * Added KTX-Sancheon 120k (KTX-Dalian) livery (Thanks to 라스)
+      - Available via KTX-2 Sancheon front refit, specs same as Sancheon
+    * Updated KTX-Sancheon 110k livery (Thanks to 라스)
+    * Added Busan Subway Line 1
+    * Added Busan Subway Line 2
+    * Added Busan Subway Line 4
+      - Added light rail tracks; future compatibility with Uijeongbu, Yongin LRT, Daegu Line 3, etc.
+    * Changed default purchase cost parameter to 1/4 level
+    * Renamed some vehicles
+      - "Gyeongchun Line 368k ITX-Cheongchun" → "ITX-Cheongchun (Gyeongchun Line 368k)"
+      - Removed VVVF term from names
+      - Simplified other names
+    * Enabled installation of track buffer objects on slopes
 
   * 0.9.38
-    * 경유지 간소화 부분의 코드 변경
-
+    * Changed code for waypoint simplification
 
 0.9.37 (2015.02.21)
 -----
   * 0.9.37
-    * 다음 열차의 출력을 조정:
-      - ITX-청춘:     800kW → 2000kW
+    * Adjusted output for following train:
+      - ITX-Cheongchun: 800kW → 2000kW
   * 0.9.36
-    * 모든 열차의 화물 수송량 기본값을 절반 수준으로 하향
-    (예외로 평판화차는 100 → 25)
-    * 열차 대부분의 구입 비용 및 유지비를 상향 조정
-    * 지하철에 구매 비용 및 유지비 매개변숫값이 적용되도록 수정
-
+    * Lowered default cargo capacity for all trains to roughly half
+    (Exception: Flatcars 100 → 25)
+    * Increased purchase and maintenance costs for most trains
+    * Fixed subway to apply purchase and maintenance cost parameters
 
 0.9.35 (2015.02.09)
 -----
   * 0.9.35
-    * 선로 종단점(Buffer) 오브젝트 추가
-    : 지형 편집 창의 '오브젝트 건설' 창에서 선로 종단점 건설 가능
-    * 다음 열차의 출력을 재조정:
-      - NDC:          231kW → 1000kW
-      - CDC:          261kW → 800kW
-      - 7x00:        2800kW → 3000kW
-      - 누리로 동차:  500kW → 2000kW
-
+    * Added Track Buffer object
+    : Constructible via 'Object Construction' in Landscaping window
+    * Re-adjusted outputs for:
+      - NDC: 231kW → 1000kW
+      - CDC: 261kW → 800kW
+      - 7x00: 2800kW → 3000kW
+      - Nuriro Motor: 500kW → 2000kW
 
 0.9.34 (2014.12.15)
 -----
   * 0.9.34
-    * 다음 차량에 화물 수송량 매개변수 설정이 적용되지 않던 버그 수정
-      - 모든 종류의 지하철
-      - ITX-새마을 동차
-    * 일부 쓸데없는 소스 코드 정리
-    * Readme 수정/업데이트
+    * Fixed bug where cargo capacity parameter was not applied to:
+      - All Subways
+      - ITX-Saemaeul DMUs
+    * Cleaned up redundant source code
+    * Updated Readme
 
   * 0.9.33
-    * NDC 열차가 전기철도 차량으로 인식되던 버그 수정
-
+    * Fixed bug where NDC was recognized as an electrified vehicle
 
 0.9.34 (2014.11.28)
 -----
   * 0.9.34
-    * 다음 차량에 화물 수송량 매개변수 설정이 적용되지 않던 버그 수정
-      - 모든 종류의 지하철
-      - ITX-새마을 동차
-    * 일부 쓸데없는 소스 코드 정리
+    * Fixed bug where cargo capacity parameter was not applied to:
+      - All Subways
+      - ITX-Saemaeul DMUs
+    * Cleaned up redundant source code
   * 0.9.32
-    * 지하철 차량의 그래픽 스프라이트 위치 추가 조정
-    * 1호선 (Korail 311k / 현 도색) 모델의 그래픽 스프라이트 오류 수정
-      - 후두부 적색등이 구현되어 있지 않던 점 수정
-      - 점 하나만 색깔이 다르던 점 수정
-    * 다음 열차의 출력을 재조정:
-      - KTX-1:       1130kW → 5650kW
-      - KTX-산천:    1100kW → 5650kW
-      - ITX-청춘:    500kW → 800kW
-      - ITX-새마을:  500kW → 800kW
-    * NDC 열차를 4량 미만으로 편성하지 못하던 것을 2량 이상 편성 가능하도록 변경
-    * 업데이트 내역을 Readme에 반영
-
+    * Further adjusted subway graphic sprite positions
+    * Fixed graphic sprite error for Line 1 (Korail 311k / Current livery)
+      - Fixed missing rear red lights
+      - Fixed single pixel color error
+    * Re-adjusted outputs for:
+      - KTX-1: 1130kW → 5650kW
+      - KTX-Sancheon: 1100kW → 5650kW
+      - ITX-Cheongchun: 500kW → 800kW
+      - ITX-Saemaeul: 500kW → 800kW
+    * Changed NDC minimum formation from 4 to 2 cars
+    * Reflected update history in Readme
 
 0.9.31 (2014.11.28)
 -----
   * 0.9.31
-    * 지하철 차량의 그래픽 스프라이트 위치 조정
-    * 누리로 객차 구입 목록 그래픽 스프라이트 위치 조정
+    * Adjusted subway graphic sprite positions
+    * Adjusted Nuriro passenger car purchase list sprite position
   * 0.9.30
-    * NDC 동차 추가
-      (객차는 무궁화호 객차를 이용)
-    * 다음 열차의 출력을 조정:
-      - KTX-1:       13560kW → 1130kW
-      - KTX-산천:    13560kW → 1100kW
-      - CDC:         2000kW → 545kW
-      - 누리로 동차: 3500hp → 500kW(≒670hp)
-      - ITX-청춘:    3000hp → 500kW
-      - ITX-새마을:  4021hp → 500kW
-
+    * Added NDC DMU (Uses Mugunghwa cars)
+    * Adjusted outputs for:
+      - KTX-1: 13560kW → 1130kW
+      - KTX-Sancheon: 13560kW → 1100kW
+      - CDC: 2000kW → 545kW
+      - Nuriro Motor: 3500hp → 500kW(≒670hp)
+      - ITX-Cheongchun: 3000hp → 500kW
+      - ITX-Saemaeul: 4021hp → 500kW
 
 0.9.20 (2014.09.13)
 -----
   * 0.9.20 (2014.09.13)
-    * 스페인어 번역 추가(SilverSurferZzZ 님)
-      Spanish Translation (Thanks to SilverSurferZzZ)
-      Traducción Español (Gracias a SilverSurferZzZ)
-    * 누리로 그래픽 스프라이트 변경
-    * O-train 추가 (누리로를 도색 개조해서 변경 가능)
-    * 일부 그래픽 스프라이트에서 2차 회사 색상을 사용하던 점 수정
+    * Added Spanish Translation (Thanks to SilverSurferZzZ)
+    * Changed Nuriro graphic sprites
+    * Added O-train (Available via Nuriro refit)
+    * Fixed 2nd company color used in some sprites
   * 0.9.11 (2014.08.23)
-    * 새마을호 디젤 동차에서 ITX-새마을 개조 옵션이 나타나던 버그 수정
-    * 변경 기록(changelog.txt) 파일 내용 표시 방법 수정
-
+    * Fixed bug where ITX-Saemaeul refit option appeared on Saemaeul-ho DMUs
+    * Fixed changelog.txt display format
 
 0.9.10 (2014.08.22)
 -----
   * 0.9.10 (2014.08.22)
-    * KTX-1의 모든 객차를 특실로 개조했을 때 뒷쪽 절반이 일반 객차로 보이는 버그 수정
-    * 매개 변수 계수가 잘못 적용되던 버그 수정
-    * 화물 적재 속도을 조절할 수 있는 매개 변수 추가
-    * 각 열차의 기본 적재 속도를 절반 수준으로 변경
-      - 새마을호 디젤 동차: 10 → 5
-      - ITX-새마을 동차:    20 → 5
-      - 누리로 동차/객차:   20 → 10
-      - CDC 동차/객차:      50 → 20
-      - KTX 객차:           20 → 5
-      - 새마을호 객차:      60 → 10
-      - 무궁화호 객차:      20 → 5
-      - 카페 객차:          20 → 5
-      - 통일호 객차:        10 → 5
-      - 발전차:             10 → 5
-      - 평판화차:           20 → 5
-      - 모든 지하철:        50 → 20
-      - ITX-청춘:           20 → 10
-      - 공항철도:           20 → 10
-
+    * Fixed bug where back half of KTX-1 appeared as regular cars when all cars were refitted to First Class
+    * Fixed incorrect parameter coefficient application
+    * Added parameter to adjust cargo loading speed
+    * Lowered default loading speed for all trains to roughly half
+      - Saemaeul DMU: 10 → 5
+      - ITX-Saemaeul DMU: 20 → 5
+      - Nuriro Motor/Car: 20 → 10
+      - CDC Motor/Car: 50 → 20
+      - KTX Car: 20 → 5
+      - Saemaeul Car: 60 → 10
+      - Mugunghwa Car: 20 → 5
+      - Cafe Car: 20 → 5
+      - Tongil Car: 10 → 5
+      - Generator Car: 10 → 5
+      - Flatcar: 20 → 5
+      - All Subways: 50 → 20
+      - ITX-Cheongchun: 20 → 10
+      - AREX: 20 → 10
 
 0.9.02 (2014.07.31)
 -----
   * 0.9.02 (2014.07.31)
-    * KTX-산천 그래픽 스프라이트 위치 및 색상 조정
+    * Adjusted KTX-Sancheon sprite positions and colors
   * 0.9.01 (2014.07.29)
-    * 통근형 디젤 동차
-      - 일부 도색의 그래픽 스프라이트 색상을 조화롭게 일부 수정
-      - 일부 도색에 폭발 순환 색상이 사용되던 것 수정
-      - 돌고래 테마 도색의 색상 오류 수정
-    * KTX-산천 그래픽 스프라이트 수정
+    * CDC
+      - Harmonized colors for some livery sprites
+      - Fixed explosion cycling colors in some liveries
+      - Fixed color error in Dolphin theme livery
+    * Fixed KTX-Sancheon sprites
   * 0.9.00 (2014.06.13)
-    * 일본어 번역(Japanese Translation) 추가
-    * 무궁화호 카페 객차를 일반 카페 객차로 변경하고 다음 사항 적용
-      - 카페 객차 (일반 무궁화호 도색) 그래픽 스프라이트 수정
-      - 카페 객차에 새마을호 카페 객차 도색 추가
-    * 다음 열차의 도색명 수정
-      - 통근형 디젤 동차 : 꽃동산 도색 → 꽃동산 테마 도색
-      - 통근형 디젤 동차 : 바다 관광 열차 도색 → 돌고래 테마 도색
-    * 통근형 디젤 동차에 바다 관광 열차 도색 추가
-    * 향후 평판화차(컨테이너) 추가를 위한 기본 작업 진행
-    * 다음의 오류 수정
-      - 누리로 동차의 화물적재속도 수정 (10 → 20)
-      - 통근형 디젤 동차 (바다 관광열차 도색)의 그래픽 스프라이트 오류 수정
-      - 통근형 디젤 동차 (무궁화호 도색)의 그래픽 스프라이트 색상 일부 수정
-    * 다음 객차에 제한 속도 추가 (기본 속도 기준)
-      - 새마을호 객차: 150km/h
-      - 무궁화호 객차: 130km/h
-      - 통일호 객차:   120km/h
-      - CDC 객차:      110km/h
-    * NewGRF 영문명 수정 (Korea Train Set → Korean Train Set)
-    * NewGRF 파일명 수정 (ko_train.grf → ko_train_set.grf)
-    * 공식 배포 URL 변경: http://telk.kr/ottd/newgrf/ko_train_set/
+    * Added Japanese Translation
+    * Changed Mugunghwa Cafe car to Common Cafe car and applied:
+      - Fixed Common Mugunghwa Cafe car sprites
+      - Added Saemaeul-ho Cafe car livery to Cafe car
+    * Corrected livery names:
+      - CDC: Kkotdongsan Livery → Kkotdongsan Theme Livery
+      - CDC: Sea Tour Train Livery → Dolphin Theme Livery
+    * Added Sea Tour Train livery to CDC
+    * Preliminary work for future Flatcar (Container) addition
+    * Fixed following errors:
+      - Nuriro Motor loading speed (10 → 20)
+      - CDC (Sea Tour Train) sprite error
+      - CDC (Mugunghwa) sprite color adjustment
+    * Added speed limits to following cars (based on default):
+      - Saemaeul Car: 150km/h
+      - Mugunghwa Car: 130km/h
+      - Tongil Car: 120km/h
+      - CDC Car: 110km/h
+    * Renamed NewGRF (Korea Train Set → Korean Train Set)
+    * Renamed NewGRF file (ko_train.grf → ko_train_set.grf)
+    * Changed distribution URL: http://telk.kr/ottd/newgrf/ko_train_set/
   * 0.8.50
-    * 통근형 디젤 동차(CDC) 차량의 다음 도색을 추가
-      - 꽃동산 도색
-      - 바다 관광열차 도색
-      - 한국철도 100주년, 백제 왕관 기념 도색
-      - 구 철도청 도색 (녹색+노랑)
-      - 무궁화호 RDC 도색
-    * 다음 열차의 차량 이름 및 도색명 수정
-      - CDC → 통근형 디젤 동차(CDC)
-      - 새마을호 DHC → 새마을호 디젤 동차(DHC)
-      - 7x00호대 초기 철도청 도색 (호랑이) → 7x00호대 초기 철도청 도색 (검정+주황)
-    * CDC 차량의 순서 변경
-    * CDC 객차 추가
+    * Added following CDC liveries:
+      - Kkotdongsan Livery
+      - Sea Tour Train Livery
+      - Korail 100th Anniversary, Baekje Crown Commemorative Livery
+      - Old Railroad Admin Livery (Green+Yellow)
+      - Mugunghwa RDC Livery
+    * Renamed vehicles and liveries:
+      - CDC → Commuter Diesel Car (CDC)
+      - Saemaeul DHC → Saemaeul Diesel Hydraulic Car (DHC)
+      - 7x00 Early RR Admin Livery (Tiger) → 7x00 Early RR Admin Livery (Black+Orange)
+    * Changed CDC vehicle order
+    * Added CDC passenger car
   * 0.8.41
-    * 7x00호대 디젤 기관차의 영문명이 잘못되어 있던 점 수정
-      : 7x00 Electric → 7x00 Diesel
-    * CDC 그래픽 스프라이트 정리
-      - CDC의 불필요한 그래픽 스프라이트(팬터그래프 차량) 제거
-      - CDC 전용 그래픽 스프라이트 템플릿 생성
-      - 그래픽 스프라이트 판에서 CDC 그래픽 스프라이트의 위치 재조정
-
+    * Corrected 7x00 series Diesel Loco English name (Electric → Diesel)
+    * Cleaned up CDC sprites
+      - Removed unnecessary CDC sprites (pantograph cars)
+      - Created CDC exclusive sprite template
+      - Repositioned CDC sprites in the sprite sheet
 
 0.8.40 (2014.04.30)
 -----
   * 0.8.40 (2014.04.30)
-    * 7x00호대 디젤 기관차의 다음 도색을 추가
-      - 초기 철도청 도색 (청색+백색)
-      - 초기 철도청 도색 (호랑이)
-      - 구 철도청 도색 (녹색+노랑)
-      - 화물 기관차 도색
-    * ITX-청춘을 중련할 경우 2층 객차가 사라지는 현상 수정
-    * 누리로 동차의 후두부가 자동으로 뒤집어지지 않던 현상 수정
-    * 7x00호대 열차의 내부 ID 변경 (K7000 → K7x00)
-    * 0.7.xx 버전과의 호환 중단
+    * Added following 7x00 series Diesel Loco liveries:
+      - Early RR Admin (Blue+White)
+      - Early RR Admin (Tiger)
+      - Old RR Admin (Green+Yellow)
+      - Freight Livery
+    * Fixed issue where double-deck cars disappeared when double-heading ITX-Cheongchun
+    * Fixed issue where Nuriro rear car didn't flip automatically
+    * Changed 7x00 internal ID (K7000 → K7x00)
+    * Discontinued compatibility with 0.7.xx
   * 0.8.39
-    * 해랑 발전차 그래픽 스프라이트가 식당칸으로 나오는 현상 수정
-    * 0.7.xx 버전의 다운로드 지원 중단
+    * Fixed Haerang generator car appearing as dining car
+    * Discontinued downloads for 0.7.xx
   * 0.8.38
-    * 지하철 객차를 제외한 모든 객차의 구매 목록상의 유지비가 0으로 나오는 현상 수정
-    * 지하철의 구입 가격과 유지비가 일반 열차에 비해 10배 높던 현상 수정
-    * 지하철 구입 가격을 일괄적으로 통일
-    * 코드 정리
-    * 변경기록 파일 형식 수정
-    * 공항철도의 이름 수정 (공항철도 → 인천공항철도 (A'REX))
+    * Fixed maintenance cost appearing as 0 for all cars except subways in purchase list
+    * Fixed subways having 10x higher purchase/maintenance costs than regular trains
+    * Unified subway purchase prices
+    * Code cleanup
+    * Fixed changelog format
+    * Corrected AREX name (Airport Railroad → Incheon Airport Railroad (A'REX))
   * 0.8.35
-    * 다음 기관차의 승객 수송량을 없애고, 수송량이 없어도 (도색) 개조가 가능하도록 수정
-      - 7x00호대 디젤 기관차
-      - 8000호대 전기 기관차
-
+    * Removed passenger capacity from following locos and allowed refit without capacity:
+      - 7x00 series Diesel
+      - 8000 series Electric
 
 0.8.34 (2014.04.13)
 -----
   * 0.8.33
-    * ITX-새마을 기관차의 승객 수송량 조정(승객 20명→승객 45명)
+    * Adjusted ITX-Saemaeul loco capacity (20 → 45 passengers)
   * 0.8.34
-    * ITX-새마을 기관차의 구매 목록상 승객 수송량 수정(승객 20명→승객 45명)
-
+    * Fixed ITX-Saemaeul loco capacity in purchase list (20 → 45 passengers)
 
 0.8.32 (2014.04.12)
 -----
   * 0.8.23
-    * 내부 코드 정리
+    * Internal code cleanup
   * 0.8.30
-    * ITX-새마을 추가
-      - 최고속도: 150km/h
-      - 적재량: 기관차 승객 20명, 객차 승객 64명 (객차는 기존과 동일)
-      - 편성방법: ITX-새마을 기관차에 기존의 새마을호 객차를 연결하면 자동으로 객차가 ITX-새마을 용으로 변경됨
+    * Added ITX-Saemaeul
+      - Max speed: 150km/h
+      - Capacity: Loco 20, Car 64
+      - Composition: Attaching Saemaeul cars to ITX-Saemaeul loco automatically converts them
   * 0.8.31
-    * 후두부 기관차의 헤드라이트 색상 변경
+    * Changed headlight color for rear locos
   * 0.8.32
-    * 버그 수정
+    * Bug fixes
 
 0.8.23 (2014.01.18)
 -----
   * 0.8.23
-    * 새마을호 구 도색에서 북동방향 그래픽 스프라이트가 부자연스럽던 버그 수정
+    * Fixed unnatural Northeast sprite in Saemaeul-ho old livery
   * 0.8.22
-    * 디젤/전기 기관차의 속도가 차량 구매 목록에서 1/10 수준으로 나오던 버그 수정
-
+    * Fixed Diesel/Electric loco speeds showing as 1/10 level in purchase list
 
 0.8.21 (2013.12.28)
 -----
   * 0.8.21
-    * 해랑 발전차, 카페 객차 도색 추가
-    * 7000호대와 무궁화호 객차를 한꺼번에 해랑 도색으로 변경할 수 있도록 수정
+    * Added Haerang generator and cafe car liveries
+    * Allowed batch refit for 7000 series and Mugunghwa cars to Haerang livery
   * 0.8.20
-    * 구입 가격, 유지비 계수를 정숫값 입력 방식에서 x1/32 ~ x128 중에 하나를 선택하는 방식으로 변경
-    * 화물 수송량 옵션 추가 (x1 ~ x256 중에 선택 가능)
-    * KTX 객차에서 특실 객차가 자동으로 나오지 않도록 변경
-    * KTX 특실 객차를 개조를 통해 나오도록 변경
-    * 통일호 객차 화물 수송량 변경 (승객 72명→승객 76명)
+    * Changed cost/maintenance parameters from integer input to selection (x1/32 ~ x128)
+    * Added cargo capacity option (x1 ~ x256)
+    * Stopped KTX First Class from appearing automatically
+    * Enabled KTX First Class via refit
+    * Changed Tongil car capacity (72 → 76 passengers)
   * 0.8.12
-    * 차량 구입 창 목록에서 'Korail' 단어를 일괄적으로 제거하여 차종명을 통일
-
+    * Unified model names by removing 'Korail' from purchase window
 
 0.8.11 (2013.12.23)
 -----
   * 0.8.11
-    * 도색 개조 설명을 A, B, C… 등과 같은 설명에서 조금 더 보완된 설명으로 변경
-    * 8000호대 파란 도색에서 회사 색상이 사용되던 것 수정
-    * 0.7.08 이하 버전 지원 중단
+    * Improved refit descriptions beyond A, B, C...
+    * Fixed company colors in 8000 series blue livery
+    * Discontinued support for 0.7.08 and below
   * 0.8.10
-    * 7000호대에 해랑 도색 개조 추가
+    * Added Haerang refit to 7000 series
   * 0.8.08
-    * 8000호대 전기 기관차가 승객을 싣지 못하던 버그 수정 (적재 속도:0 → 10)
-
+    * Fixed 8000 series Electric unable to carry passengers (Loading speed: 0 → 10)
 
 0.8.07 (2013.11.19)
 -----
   * 0.8.07
-    * 새마을호 객차를 PP동차가 아닌 일반 기관차에 연결했을 경우 다른 도색으로 변경할 수 없던 버그 수정
-    * 무궁화호 카페 객차를 뒤집을 수 있도록 변경
+    * Fixed bug where Saemaeul cars attached to regular locos (non-PP) couldn't change liveries
+    * Allowed flipping Mugunghwa Cafe cars
   * 0.8.06
-    * 발전차 추가(4종 도색, 승객 10명)
-
+    * Added Generator Cars (4 liveries, 10 passengers)
 
 0.8.05 (2013.10.27)
 -----
   * 0.8.05
-    * KTX-산천의 기본 최고속도를 KTX-1과 마찬가지인 330km/h로 조정
-    * 구입가격 매개 변수의 기본값을 10에서 3으로 조정
+    * Adjusted KTX-Sancheon default max speed to 330km/h (same as KTX-1)
+    * Adjusted default purchase price parameter from 10 to 3
   * 0.8.04
-    * 2호선 (SMetro 2k VVVF 1차)의 후두부 기관차가 자동편성되지 않고 뒤집혀 나오던 버그 수정
-    * KTX-산천 특실 위치가 한 칸 뒤로 밀려있던 것 수정
-    * 영문 Readme(readme_en.txt) 추가
-
+    * Fixed bug where Line 2 (SMetro 2k VVVF 1st) rear loco flipped incorrectly
+    * Fixed KTX-Sancheon First Class position (moved back one car)
+    * Added English Readme (readme_en.txt)
 
 0.8.03 (2013.08.12)
 -----
   * 0.8.03
-    * 3호선 모델명 변경
-      - SMetro 3k VVVF 1세대 → SMetro 3k VVVF 2세대
-      - SMetro 3k VVVF 1세대를 위한 여분의 자리를 마련함. 아직 미완성이므로 해당 도색으로 개조시 현재는 최신 도색으로 개조되도록 설정되어 있음
-    * ITX-청춘 열차를 회차시킬 경우 전두부가 뒤집혀서 나오던 버그 수정
-
+    * Renamed Line 3 models:
+      - SMetro 3k VVVF 1st gen → SMetro 3k VVVF 2nd gen
+      - Reserved space for 1st gen; currently refits to newest livery
+    * Fixed bug where ITX-Cheongchun front flipped on reversal
 
 0.8.02 (2013.08.07)
 -----
   * 0.8.02
-    * 2호선 차량의 개발 연도가 1893년으로 되어있던 것 수정
-    * 1호선 초기 도색에 회사 색상이 사용되던 것 수정
+    * Fixed Line 2 development year set to 1893
+    * Fixed company colors in Line 1 initial livery
   * 0.8.01
-    * 도색 개조가 가능한 지하철을 복제하면 객차가 1호선 기본으로 나타나던 버그 수정
-
+    * Fixed bug where cloned refittable subways reverted to Line 1 default
 
 0.8.00 (2013.08.04)
 -----
   * 0.8.00
-    * 지하철 차량을 하나 하나 모두 목록에 표시하던 방식에서 열차 개조를 통해 도색이나 차종을 변경할 수 있도록 변경
-      - 1\~4호선은 각 호선별로 차량을 분리하였으며, 5\~9호선은 하나의 차량으로 통일
-      - 중앙선, 경의선은 1호선과 차량을 공유하므로 1호선과 통합
-      - 경춘선, 분당선, 신분당선, 인천1호선 등은 별도의 차량으로 그대로 놔둠
-    * 중련 편성을 가능하게 하기 위해 자동 편성 옵션 삭제
-      - 새마을호, 누리로, KTX 등 전/후두부가 있는 열차의 경우에는 후두부 열차는 CTRL+클릭으로 뒤집도록 변경
-      - 기관차를 객차 중간에 넣을 때도 CTRL+클릭을 이용하여 중련 편성을 만들 수 있도록 수정
-    * 열차 길이가 짧을 때 나오는 STOP 이미지 제거
-    * 누리로 차량의 그래픽 스프라이트 일부 색상 변경
-    * 지하철 객차에 지하철과 관련 없는 열차를 붙일 수 없도록 수정
+    * Changed subway system from individual listing to refit-based livery/model selection
+      - Lines 1-4 separated; Lines 5-9 unified
+      - Jungang and Gyeongui unified with Line 1
+      - Gyeongchun, Bundang, Shinbundang, Incheon 1 remained separate
+    * Removed auto-formation to allow double-heading
+      - Rear cars for Saemaeul, Nuriro, KTX must be flipped with CTRL+Click
+      - Locos in middle of formation can be flipped with CTRL+Click for double-heading
+    * Removed STOP image for short trains
+    * Changed some colors in Nuriro sprites
+    * Restricted subway cars from being attached to non-subway trains
   * 0.7.61
-    * 차량 추가
-      - 1호선 Korail 311k 초기 도색
-      - 2호선 SMetro 2k Chopper
+    * Added vehicles:
+      - Line 1 Korail 311k initial livery
+      - Line 2 SMetro 2k Chopper
   * 0.7.60
-    * 2호선 MELCO 차량이 Chopper로 잘못 기재되어 있던 점 수정
+    * Fixed Line 2 MELCO mislabeled as Chopper
   * 0.7.50
-    * 지하철 그래픽 스프라이트 파일 정리
+    * Cleaned up subway sprite files
   * 0.7.44
-    * 누리로 영문 표기명 수정: Nooriro → Nuriro
+    * Corrected Nuriro English name: Nooriro → Nuriro
   * 0.7.43
-    * 새마을호 동차가 우편을 수송할 수 있도록 수정
-
+    * Allowed Saemaeul DMUs to carry mail
 
 0.7.42 (2013.07.30)
 -----
   * 0.7.42
-    * 코레일 7x00호대 기관차 출력 상향 (2237kW → 2800kW)
-    * 새마을호 DHC(PP) 기관차의 구 도색 차량 2종 추가
+    * Increased Korail 7x00 series power (2237kW → 2800kW)
+    * Added 2 old liveries for Saemaeul DHC(PP) locos
   * 0.7.41
-    * CDC 차량의 유지비 소폭 상향 (18 → 21)
-
+    * Slightly increased CDC maintenance cost (18 → 21)
 
 0.7.40 (2013.06.08)
 -----
   * 0.7.40
-    * 내부 코드, 그래픽 스프라이트, 파일 이름 정리
-    * NewGRF 파일 이름을 ko_trainset.grf에서 ko_train.grf 으로 변경
-    * 일반열차나 지하철만 추가할 수 있도록 매개변수 추가
-    * readme.txt 파일 수정
+    * Cleaned up internal code, sprites, and filenames
+    * Renamed ko_trainset.grf to ko_train.grf
+    * Added parameter to selectively add regular trains or subways
+    * Updated readme.txt
   * 0.7.36
-    * 코레일 KTX-산천 차량 추가
-   (그래픽: 라스, 최고속도: 350km/h, 수송량은 KTX-1과 동일)
-
+    * Added Korail KTX-Sancheon
+   (Graphics: 라스, Max speed: 350km/h, Capacity same as KTX-1)
 
 0.7.35 (2013.05.10)
 -----
   * 0.7.35
-    * 코레일 8x00호대 기관차 그래픽 스프라이트 위치 조정
-    * 코레일 새마을호 DHC(PP) 기관차 그래픽 스프라이트 위치 조정
-
+    * Adjusted Korail 8x00 series sprite positions
+    * Adjusted Korail Saemaeul DHC(PP) sprite positions
 
 0.7.34 (2013.03.10)
 -----
   * 0.7.34
-    * 차량의 연령에 따른 유지비 증가를 켜고 끌 수 있도록 매개 변수 추가
-    * readme.txt 파일 내용 수정
-
+    * Added parameter to toggle maintenance cost increase with vehicle age
+    * Updated readme.txt
 
 0.7.33 (2013.03.02)
 -----
   * 0.7.33
-    * 전 열차 기본 구입 가격 2배로 증가
-    * 열차의 연령에 따라 유지비용이 조금씩 증가하도록 수정
+    * Doubled default purchase price for all trains
+    * Fixed maintenance costs to increase slightly with age
   * 0.7.32
-    * 통일호 객차 추가
-
+    * Added Tongil-ho passenger car
 
 0.7.31 (2013.02.02)
 -----
   * 0.7.31
-  * CDC 차량이 누리로 동차로 대체되는 현상 수정
+  * Fixed issue where CDC was replaced by Nuriro
   * 0.7.30
-  * 코레일 7x00호대 열차(특대형) 추가
-  * 코레일 누리로 열차 추가
-  * Korail 8000호대 열차 최고 속도 조정 (90km/h → 100km/h)
+  * Added Korail 7x00 series (GT26CW)
+  * Added Korail Nuriro
+  * Adjusted Korail 8000 series max speed (90km/h → 100km/h)
   * 0.7.26
-  * TK 경유지 간소화 NewGRF의 기능 흡수 (매개변수로 설정 가능)
-
+  * Absorbed TK Waypoint Simplification features (toggleable via parameter)
 
 0.7.25 (2013.01.16)
 -----
   * 0.7.25
-  * 모든 차량의 견인력 감소 (견인력 계수: 0.5 → 0.3)
-  * 모든 차량의 공기 저항 계수가 기본값에서 증가 (공기저항 계수: 0.08 → 0.1)
-  * ITX-청춘의 그래픽 스프라이트 x좌표 위치가 어긋나던 버그 수정
+  * Reduced tractive effort for all vehicles (Coefficient: 0.5 → 0.3)
+  * Increased air resistance for all vehicles (Coefficient: 0.08 → 0.1)
+  * Fixed x-coordinate alignment for ITX-Cheongchun sprites
   * 0.7.24
-  * 모든 지하철 차량의 힘 감소 (2880kW → 2000kW. 약 1000 마력 감소)
-  * changelog.txt 내용 양식 수정
+  * Reduced power for all subways (2880kW → 2000kW)
+  * Updated changelog.txt format
   * 0.7.23
-  * 지하철 공통 객차에 무게 지정 (0t → 15t)
-  * 파라미터 설정에 '열차 구입비용 계수'와 '열차 유지비 계수' 추가
-
+  * Assigned weight to subway common cars (0t → 15t)
+  * Added 'Purchase cost coefficient' and 'Maintenance cost coefficient' parameters
 
 0.7.22 (2013.01.06)
 -----
   * 0.7.22
-  * GRF의 이름을 '한국 철도 세트'에서 '한국 열차 세트'로 일괄 변경
-  * 공항철도 승객 수가 통일성 없이 나오던 버그 수정
-    (직통: 48명/량, 일반: 100명/량으로 통일)
-  * 새마을호 및 무궁화호 객차가 우편을 수송할 수 있도록 개조 기능 추가
-
+  * Renamed GRF from 'Korean Railroad Set' to 'Korean Train Set'
+  * Fixed inconsistent AREX passenger counts
+    (Unified Express: 48/car, All-stop: 100/car)
+  * Added refit to allow Saemaeul and Mugunghwa cars to carry mail
 
 0.7.21 (2012.12.24)
 -----
   * 0.7.21
-    * CDC 통근열차 운영비용 조정 (ELECTRIC → DIESEL)
-    * 새마을호 전/후두부 기관차 ↖방향 및 ↘방향 그래픽 스프라이트 위치 재조정
+    * Adjusted CDC operating cost (ELECTRIC → DIESEL)
+    * Re-adjusted ↖ and ↘ sprite positions for Saemaeul front/rear locos
   * 0.7.20
-    * CDC 통근열차 추가
+    * Added CDC Commuter Train
   * 0.7.19
-    * readme.txt 파일 내용 추가
+    * Updated readme.txt
   * 0.7.15
-    * 차량 길이가 모자라면 STOP 이미지가 뜨는 열차에 대해, 열차 길이가 모자라면 열차를 운행시키지 못하고 오류를 출력하도록 수정
+    * Restricted operation of short trains (displaying STOP image) and added error output
   * 0.7.13
-    * 새마을호 전/후두부 기관차 ↖방향 및 ↘방향 그래픽 스프라이트 위치 조정 (0.7.13)
-
+    * Adjusted ↖ and ↘ sprite positions for Saemaeul front/rear locos (0.7.13)
 
 0.7.12 (2012.12.09)
 -----
-  * K8x00대 전기기관차 ↖방향 그래픽 스프라이트 위치 조정
-  * 무궁화호 객차/카페 객차 ↖방향 그래픽 스프라이트 위치 조정
-
+  * Adjusted ↖ sprite position for K8x00 Electric
+  * Adjusted ↖ sprite position for Mugunghwa car/Cafe car
 
 0.7.11 (2012.11.25)
 -----
-  * 새마을호 DHC(PP) 후두부 그래픽 스프라이트 위치 조정
-  * 공항철도 일반열차 수용량이 변경되지 않았던 점 수정
-
+  * Adjusted Saemaeul DHC(PP) rear sprite position
+  * Fixed issue where AREX All-stop capacity didn't change
 
 0.7.10 (2012.11.24)
 -----
   * 0.7.10
-    * 새마을호 PP 동차 추가
-    * 공항철도 일반 열차 수용량 변경 (48명 → 100명)
-    * 8x00호대 전기 기관차 및 KTX-1 견인력 계수 수정 (0.5 → 0.3)
-    * KTX 객차 수송 화물 변경 (승객 → 승객, 우편)
-    * 새마을호 객차 그래픽 변경
+    * Added Saemaeul PP DMU
+    * Changed AREX All-stop capacity (48 → 100)
+    * Adjusted tractive effort for 8x00 series and KTX-1 (0.5 → 0.3)
+    * Changed KTX car cargo (Passengers → Passengers, Mail)
+    * Updated Saemaeul car graphics
   * 0.7.09
-    * GRF의 이름을 '한국 철도 세트'나 '한국 열차 세트'에서 '한국 철도 세트'로 통일
-
+    * Unified GRF name to 'Korean Railroad Set'
 
 0.7.08 (2012.11.17)
 -----
   * 0.7.08
-    * 새마을호 객차(신도색) 추가
-    * 무궁화호 카페 객차 추가
+    * Added Saemaeul car (New livery)
+    * Added Mugunghwa Cafe car
   * 0.7.06
-    * 무궁화호 객차의 수송량 수정 (58명 → 74명)
+    * Corrected Mugunghwa car capacity (58 → 74)
   * 0.7.05
-    * 공통 일반열차 객차를 KTX 객차, 새마을호 객차, 무궁화호 객차로 분리
-    * 고정편성에서 KTX-1 특실 수 수정 (3량 → 4량)
+    * Separated common passenger cars into KTX, Saemaeul, and Mugunghwa cars
+    * Corrected KTX-1 First Class count in fixed formation (3 → 4 cars)
   * 0.7.04
-    * 경춘선 361k VVVF 열차의 도입 일자 수정 (2012년 → 2010년 12월 21일)
-    * 공항철도 (직통)의 운행 비용 감소
+    * Corrected Gyeongchun Line 361k VVVF introduction date (2012 → Dec 21, 2010)
+    * Reduced AREX (Express) operating costs
   * 0.7.03
-    * 인천 지하철 1호선 추가
+    * Added Incheon Subway Line 1
   * 0.7.02
-    * 버전 표시 방식 변경 (x.x.x → x.x.xx)
-    * 기존 버전과의 호환 중단
-    * 한국 열차 세트에 새로운 차량이 추가되어 버전이 업그레이드될 때마다 기존에 구입해둔 차량의 객차 부분이 다른 기관차로 바뀌는 버그 수정
-      (차후 버전부터 확인 가능. 0.7.1에서 쓰던 열차는 일일이 재구입할 것.)
-    * 위 버그를 수정하기 위하여 각 차량에 (GRF 내부에서만 사용하는) 고유 번호 부여
-
+    * Changed versioning format (x.x.x → x.x.xx)
+    * Discontinued compatibility with previous versions
+    * Fixed bug where cars reverted to different locomotives upon version upgrade
+      (Will be effective from next version; existing trains must be repurchased)
+    * Assigned unique internal IDs to all vehicles to fix the above bug
 
 0.7.1 (2012.10.07)
 -----
-  * 다음 차량 명칭 수정:
+  * Corrected vehicle names:
     - Korail 4k VVVF → SMetro 4k VVVF
-    - Korail 공항철도 1k 일반 → Korail 공항철도 2k 일반
-    - Korail 공항철도 2k 직통 → Korail 공항철도 1k 직통
-  * 공항철도 최고 속도 변경 (130km/h → 120km/h)
-  * 비전화 철도에서 차량을 사용할 수 있었던 문제 수정
-  * 고정편성 상태에서 9호선 열차의 제1량 그래픽 스프라이트가 일반 객실 그래픽 스프라이트로 나오고, 제4량 그래픽 스프라이트가 기본 열차로 나오는 버그 수정
-  * KTX-1 그래픽 스프라이트 위치 조정
-
+    - Korail AREX 1k All-stop → Korail AREX 2k All-stop
+    - Korail AREX 2k Express → Korail AREX 1k Express
+  * Changed AREX max speed (130km/h → 120km/h)
+  * Fixed issue where vehicles could be used on non-electrified tracks
+  * Fixed bug where Line 9 Car 1 showed Car 4 graphics in fixed formation
+  * Adjusted KTX-1 sprite positions
 
 0.7 (2012.09.27)
 -----
-  * NewGRF 베타 버전 제작 및 외부 테스팅 공개
-  * 고정/자유편성 모드 설정 옵션 추가, 관련 코드 수정
-  * KTX 차량 추가
-  * 무궁화호 객차의 도색을 연도별로 다르게 뜨도록 수정
-
+  * Released Beta version for external testing
+  * Added fixed/free formation options and updated code
+  * Added KTX vehicles
+  * Fixed Mugunghwa car liveries to change by year
 
 0.5
 -----
-  * 다음의 차량을 추가:
-    - 수도권 지하철 1호선 (코레일 1k 저항, 3xxk VVVF, 서울메트로 1k 저항)
-    - 수도권 지하철 2호선 (서울메트로 2k Chopper, VVVF 1/2차)
-    - 수도권 지하철 3호선 (코레일 3k VVVF, 서울메트로 3k Chopper, VVVF)
-    - 수도권 지하철 4호선 (코레일 4k VVVF, 341k VVVF 1/2세대)
-    - 수도권 지하철 5호선 (서울메트로 5k VVVF)
-    - 수도권 지하철 6호선 (서울메트로 6k VVVF)
-    - 수도권 지하철 7호선 (서울메트로 7k VVVF, SR0x VVVF)
-    - 수도권 지하철 8호선 (서울메트로 8k VVVF)
-    - 수도권 지하철 9호선 (서울메트로9호선 9k VVVF)
-    - 수도권 지하철 경춘선 (361k VVVF, 368k ITX-청춘)
-    - 수도권 지하철 공항철도 (1k, 2k)
-    - 수도권 지하철 분당선 (351k VVVF 1/2/3세대)
-    - 수도권 지하철 신분당선 (D000 VVVF)
-    - 코레일 8000호대 전기 기관차
-    - 코레일 8100호대 전기 기관차
-    - 코레일 8200호대 전기 기관차
-    - 코레일 8300호대 전기 기관차
-
+  * Added following vehicles:
+    - Metropolitan Subway Line 1 (Korail 1k Rheo, 3xxk VVVF, SMetro 1k Rheo)
+    - Metropolitan Subway Line 2 (SMetro 2k Chopper, VVVF 1st/2nd)
+    - Metropolitan Subway Line 3 (Korail 3k VVVF, SMetro 3k Chopper, VVVF)
+    - Metropolitan Subway Line 4 (Korail 4k VVVF, 341k VVVF 1st/2nd gen)
+    - Metropolitan Subway Line 5 (SMetro 5k VVVF)
+    - Metropolitan Subway Line 6 (SMetro 6k VVVF)
+    - Metropolitan Subway Line 7 (SMetro 7k VVVF, SR0x VVVF)
+    - Metropolitan Subway Line 8 (SMetro 8k VVVF)
+    - Metropolitan Subway Line 9 (SMetro9 9k VVVF)
+    - Gyeongchun Line (361k VVVF, 368k ITX-Cheongchun)
+    - AREX (1k, 2k)
+    - Bundang Line (351k VVVF 1st/2nd/3rd gen)
+    - Shinbundang Line (D000 VVVF)
+    - Korail Class 8000 Electric Locomotive
+    - Korail Class 8100 Electric Locomotive
+    - Korail Class 8200 Electric Locomotive
+    - Korail Class 8300 Electric Locomotive
 
 0.2
 -----
-  * NewGRF 알파 버전 제작 및 내부 점검
-
+  * Alpha version production and internal review
 
 0.1
 -----
-  * 최초 NewGRF 제작
+  * Initial NewGRF production
