@@ -9,7 +9,7 @@
 
 ## 개발
 ### 빌드하는 방법
-이 NewGRF를 빌드하려면 [NML](https://github.com/OpenTTD/nml), `make` 그리고 **Python 3**이 필요합니다.  
+이 NewGRF를 빌드하려면 [NML](https://github.com/OpenTTD/nml)(>= 0.8.1), `make` 그리고 **Python 3**이 필요합니다.  
 터미널 쉘에서 `make`를 실행하세요. Windows 환경이라면, 그 전에 명령 프롬포트를 열고 `bash`를 입력하세요.  
 `make clean`을 입력하면 모든 생성된 파일이 초기화됩니다.
 
@@ -25,7 +25,7 @@ Pull Request를 열 줄 모르신다면, Issues에 올리셔도 괜찮습니다.
 아래의 파일은 (자동으로 생성되는 파일이므로) 번역할 필요가 없습니다:  
 - `./docs/download_page/*.html` and `./docs/download_page/*.md`  
 
-또, [제 사이트의 다운로드 페이지](https://telk.kr/ottd/newgrf/ko_train_set?lang=en)도 번역하길 원하신다면, 아래 내용을 번역해주세요 (참고: `LANGUAGE_NAME`은 `./lang/(LANGUAGE_NAME).lng`의 파일 이름이어야 합니다):   
+또, [제 사이트의 다운로드 페이지](https://telk.kr/ottd/newgrf/ko_train_set?lang=en)도 번역하길 원하신다면, 아래 내용을 번역해주세요 (참고: `LANGUAGE_NAME`은, `english` 처럼 `./lang/(LANGUAGE_NAME).lng`의 파일 이름이어야 합니다):   
 ```
 LANGUAGE_NAME             :korean
 GRF_NAME                  :한국 열차 세트

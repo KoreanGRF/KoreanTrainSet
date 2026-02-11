@@ -9,7 +9,7 @@ You can see the whole vehicle list and their specifications(speed, weight, power
 
 ## Development
 ### How to build
-You need [NML](https://github.com/OpenTTD/nml), `make` and **Python 3** to build this NewGRF.  
+You need [NML](https://github.com/OpenTTD/nml)(>=0.8.1), `make` and **Python 3** to build this NewGRF.  
 Run `make` in terminal shell. If you are on Windows, open a command prompt and type `bash` before it.  
 `make clean` will clean all generated & compiled files.
 
@@ -25,7 +25,7 @@ You shall translate:
 You don't need to translate these below files (since they are generated automatically):  
 - `./docs/download_page/*.html` and `./docs/download_page/*.md`  
 
-And if you want to translate [the download page of my own site](https://telk.kr/ottd/newgrf/ko_train_set?lang=en), translate below (note: `LANGUAGE_NAME` should the file name of `./lang/(LANGUAGE_NAME).lng`):  
+And if you want to translate [the download page of my own site](https://telk.kr/ottd/newgrf/ko_train_set?lang=en), translate below (note: `LANGUAGE_NAME` should the file name of `./lang/(LANGUAGE_NAME).lng`, such as `english`):  
 ```
 LANGUAGE_NAME             :english
 GRF_NAME                  :Korean Train Set
