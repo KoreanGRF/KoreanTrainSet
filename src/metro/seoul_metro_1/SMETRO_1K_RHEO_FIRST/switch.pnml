@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch (FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_FIRST_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: set_SMETRO_1K_RHEO_FIRST_engineH;
+    set_SMETRO_1K_RHEO_FIRST_engineH;
+}
+
+// Pantograph - 6 cars, for Rheostatic (TC - M - M' - M - M' - TC)
+switch (FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_FIRST_wagon, (position_in_consist + 1) % 6) {
+    2: set_SMETRO_1K_RHEO_FIRST_wagon_panto;
+    4: set_SMETRO_1K_RHEO_FIRST_wagon_panto;
+    set_SMETRO_1K_RHEO_FIRST_wagon;
+}

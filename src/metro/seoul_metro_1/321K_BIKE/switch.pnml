@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine - Bike printing for Gyeongui·Jungang Line 
+switch (FEAT_TRAINS, SELF, sw_321K_BIKE_engineT, random_bits % 2) {
+    1: set_321K_BIKE_engineT_orange;
+    set_321K_BIKE_engineT_blue;
+}
+switch (FEAT_TRAINS, SELF, sw_321K_BIKE_engineH, random_bits % 2) {
+    1: set_321K_BIKE_engineH_orange;
+    set_321K_BIKE_engineH_blue;
+}
+switch (FEAT_TRAINS, SELF, sw_321K_BIKE_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: sw_321K_BIKE_engineH;
+    sw_321K_BIKE_engineH;
+}
+
+// Wagon - Bike printing for Gyeongui·Jungang Line
+switch (FEAT_TRAINS, SELF, sw_321K_BIKE_wagon, position_in_consist % 6) {
+    1: set_321K_BIKE_wagon_1_panto;
+    2: set_321K_BIKE_wagon_2;
+    3: set_321K_BIKE_wagon_3;
+    4: set_321K_BIKE_wagon_4;
+    5: set_321K_BIKE_wagon_5_panto;
+    0: set_321K_BIKE_wagon_6;
+    set_321K_BIKE_wagon_4;
+}

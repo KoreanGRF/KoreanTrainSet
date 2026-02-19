@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+spriteset (set_331K_2024_engineH, "./src/metro/metropolitan/331K_2024/sprite.png") {
+    tmpl_standard_longnose(80, 0)
+}
+spriteset (set_331K_2024_wagon_panto, "./src/metro/metropolitan/331K_2024/sprite.png") {
+    tmpl_standard(80, 30)
+}
+spriteset (set_331K_2024_wagon, "./src/metro/metropolitan/331K_2024/sprite.png") {
+    tmpl_standard(80, 60)
+}
+spriteset (set_331K_2024_engineT, "./src/metro/metropolitan/331K_2024/sprite.png") {
+    tmpl_standard_longnose(80, 90)
+}
+spriteset (set_331K_2024_purchase, "./src/metro/metropolitan/331K_2024/sprite.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}

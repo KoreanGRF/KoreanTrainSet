@@ -1,0 +1,46 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch (FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_MODIFIED_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: set_SMETRO_1K_RHEO_MODIFIED_engineT;
+    set_SMETRO_1K_RHEO_MODIFIED_engineH;
+}
+
+// Pantograph - for Donghae & Seohae line, which are consist of 4 wagons. (TC - M' - M' - TC)
+switch (FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_MODIFIED_panto_wagon_for_4cars, position_in_consist % 4) {
+    1: set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    2: set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    set_SMETRO_1K_RHEO_MODIFIED_wagon;
+}
+// Pantograph - 6 cars, for Rheostatic (TC - M - M' - M - M' - TC)
+switch (FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_MODIFIED_panto_wagon_for_6cars, (position_in_consist + 1) % 6) {
+    2: set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    4: set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    set_SMETRO_1K_RHEO_MODIFIED_wagon;
+}
+// Pantograph - 8 cars (TC - M - M' - T - T - M - M' - TC)
+switch (FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_MODIFIED_panto_wagon_for_8cars, (position_in_consist + 1) % 8) {
+    3: set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    7: set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    set_SMETRO_1K_RHEO_MODIFIED_wagon;
+}
+// Pantograph - 10 cars (TC - M - M' - T - M - M' - T - M - M' - TC)
+switch (FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_MODIFIED_panto_wagon_for_10cars_2, (position_in_consist + 1) % 10) {
+    3: set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    6: set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    9: set_SMETRO_1K_RHEO_MODIFIED_wagon_panto;
+    set_SMETRO_1K_RHEO_MODIFIED_wagon;
+}
+
+// Pantograph - SMETRO_1K_RHEO_MODIFIED by length
+switch (FEAT_TRAINS, SELF, sw_SMETRO_1K_RHEO_MODIFIED_wagon, num_vehs_in_consist) {
+    4:  sw_SMETRO_1K_RHEO_MODIFIED_panto_wagon_for_4cars;
+    6:  sw_SMETRO_1K_RHEO_MODIFIED_panto_wagon_for_6cars;
+    8:  sw_SMETRO_1K_RHEO_MODIFIED_panto_wagon_for_8cars;
+    10: sw_SMETRO_1K_RHEO_MODIFIED_panto_wagon_for_10cars_2;
+    sw_SMETRO_1K_RHEO_MODIFIED_panto_wagon_for_8cars;
+}

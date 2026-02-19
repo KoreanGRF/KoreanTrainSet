@@ -298,110 +298,110 @@ STR_REFIT_COLOUR_SILVER                                    : (Silver)
 STR_REFIT_COLOUR_WHITE                                     : (White)
 
 # Refit (Seoul metropolitan Line 1)
-STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME                       : (KNR 1k Rheostatic first / 1st livery)
-STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME                       : (KNR 1k Rheostatic first / 2nd livery)
-STR_REFIT_METRO_1K_RHEO_SECOND_1_NAME                      : (KNR 1k Rheostatic second / 1st livery)
-STR_REFIT_METRO_1K_RHEO_SECOND_2_NAME                      : (KNR 1k Rheostatic second / 2nd livery)
-STR_REFIT_METRO_1K_RHEO_SECOND_3_NAME                      : (Korail 1k Rheostatic second / Current livery)
-STR_REFIT_METRO_1K_RHEO_LAST_1_NAME                        : (KNR 1k Rheostatic last / Old livery)
-STR_REFIT_METRO_1K_RHEO_LAST_2_NAME                        : (Korail 1k Rheostatic last / Current livery)
-STR_REFIT_METRO_311K_1_1_NAME                              : (KNR 311k beginning / Old livery)
-STR_REFIT_METRO_311K_1_2_NAME                              : (Korail 311k beginning / Current livery)
-STR_REFIT_METRO_311K_2_1_NAME                              : (KNR 311k / Old livery)
-STR_REFIT_METRO_311K_2_2_NAME                              : (Korail 311k / Current livery)
-STR_REFIT_METRO_3XXK_ST_NAME                               : (Korail 3xxk ST)
-STR_REFIT_METRO_3XXK_AL_NAME                               : (Korail 3xxk AL)
-STR_REFIT_METRO_321K_BIKE_NAME                             : (Korail 321k Bike livery)
-STR_REFIT_METRO_371K_BLANK_NAME                            : (Korail 371k / Blank livery)
-STR_REFIT_METRO_371K_CC_NAME                               : (Korail 371k / Company colour)
-STR_REFIT_METRO_331K_2024_NAME                             : (Korail 331k, Gyeonguijungang introduced in 2024)
-STR_REFIT_METRO_371K_381K_1ST_NAME                         : (Korail 371k, 381k 1st)
-STR_REFIT_METRO_381K_2ND_NAME                              : (Korail 381k 2nd)
-STR_REFIT_METRO_LINE_1_2019_NAME                           : (Korail, introduced in 2019)
-STR_REFIT_METRO_LINE_1_2021_NAME                           : (Korail, introduced in 2021)
-STR_REFIT_METRO_LINE_1_2022_W_NAME                         : (Korail, introduced in 2022 by Woojin)
-STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME                  : (SMetro 1k First rheostatic)
-STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME               : (SMetro 1k Modified rheostatic)
-STR_REFIT_METRO_SMETRO_1K_VVVF_NAME                        : (SMetro 1k VVVF)
+STR_REFIT_METRO_1K_RHEO_FIRST_1_NAME                       :KNR 1k Rheostatic first / 1st livery
+STR_REFIT_METRO_1K_RHEO_FIRST_2_NAME                       :KNR 1k Rheostatic first / 2nd livery
+STR_REFIT_METRO_1K_RHEO_SECOND_1_NAME                      :KNR 1k Rheostatic second / 1st livery
+STR_REFIT_METRO_1K_RHEO_SECOND_2_NAME                      :KNR 1k Rheostatic second / 2nd livery
+STR_REFIT_METRO_1K_RHEO_SECOND_3_NAME                      :Korail 1k Rheostatic second / Current livery
+STR_REFIT_METRO_1K_RHEO_LAST_1_NAME                        :KNR 1k Rheostatic last / Old livery
+STR_REFIT_METRO_1K_RHEO_LAST_2_NAME                        :Korail 1k Rheostatic last / Current livery
+STR_REFIT_METRO_311K_1_1_NAME                              :KNR 311k beginning / Old livery
+STR_REFIT_METRO_311K_1_2_NAME                              :Korail 311k beginning / Current livery
+STR_REFIT_METRO_311K_2_1_NAME                              :KNR 311k / Old livery
+STR_REFIT_METRO_311K_2_2_NAME                              :Korail 311k / Current livery
+STR_REFIT_METRO_3XXK_ST_NAME                               :Korail 3xxk ST
+STR_REFIT_METRO_3XXK_AL_NAME                               :Korail 3xxk AL
+STR_REFIT_METRO_321K_BIKE_NAME                             :Korail 321k Bike livery
+STR_REFIT_METRO_371K_BLANK_NAME                            :Korail 371k / Blank livery
+STR_REFIT_METRO_371K_CC_NAME                               :Korail 371k / Company colour
+STR_REFIT_METRO_331K_2024_NAME                             :Korail 331k, Gyeonguijungang introduced in 2024
+STR_REFIT_METRO_371K_381K_1ST_NAME                         :Korail 371k, 381k 1st
+STR_REFIT_METRO_381K_2ND_NAME                              :Korail 381k 2nd
+STR_REFIT_METRO_LINE_1_2019_NAME                           :Korail, introduced in 2019
+STR_REFIT_METRO_LINE_1_2021_NAME                           :Korail, introduced in 2021
+STR_REFIT_METRO_LINE_1_2022_W_NAME                         :Korail, introduced in 2022 by Woojin
+STR_REFIT_METRO_SMETRO_1K_RHEO_FIRST_NAME                  :SMetro 1k First rheostatic
+STR_REFIT_METRO_SMETRO_1K_RHEO_MODIFIED_NAME               :SMetro 1k Modified rheostatic
+STR_REFIT_METRO_SMETRO_1K_VVVF_NAME                        :SMetro 1k VVVF
 
 # Refit (Seoul Line 2)
-STR_REFIT_METRO_2K_MELCO_NAME                              : (SMetro 2k MELCO)
-STR_REFIT_METRO_2K_CHOPPER_NAME                            : (SMetro 2k CHOPPER)
-STR_REFIT_METRO_2K_VVVF_1ST_NAME                           : (SMetro 2k 1st VVVF)
-STR_REFIT_METRO_2K_VVVF_2ND_NAME                           : (SMetro 2k 2nd VVVF)
-STR_REFIT_METRO_2K_VVVF_3RD_NAME                           : (SMetro 2k 3rd VVVF)
-STR_REFIT_METRO_2K_VVVF_4TH_NAME                           : (SMetro 2k 4th VVVF)
-STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME                      : (SMetro 2k Modified rheostatic)
+STR_REFIT_METRO_2K_MELCO_NAME                              :SMetro 2k MELCO
+STR_REFIT_METRO_2K_CHOPPER_NAME                            :SMetro 2k CHOPPER
+STR_REFIT_METRO_2K_VVVF_1ST_NAME                           :SMetro 2k 1st VVVF
+STR_REFIT_METRO_2K_VVVF_2ND_NAME                           :SMetro 2k 2nd VVVF
+STR_REFIT_METRO_2K_VVVF_3RD_NAME                           :SMetro 2k 3rd VVVF
+STR_REFIT_METRO_2K_VVVF_4TH_NAME                           :SMetro 2k 4th VVVF
+STR_REFIT_METRO_2K_RHEO_MODIFIED_NAME                      :SMetro 2k Modified rheostatic
 
 # Refit (Seoul metropolitan 3)
-STR_REFIT_METRO_3K_VVVF_1ST_1_NAME                         : (KNR 3k VVVF / Old livery)
-STR_REFIT_METRO_3K_VVVF_1ST_2_NAME                         : (Korail 3k VVVF / Current livery)
-STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME                     : (SMetro 3k CHOPPER)
-STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME            : (SMetro 3k Modified CHOPPER)
-STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME                    : (SMetro 3k VVVF 1st)
-STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME                    : (SMetro 3k VVVF 2nd)
-STR_REFIT_METRO_LINE_3_2022_NAME                           : (Korail, introduced in 2022)
-STR_REFIT_METRO_LINE_3_2022_W_NAME                         : (Korail, introduced in 2022 by Woojin)
+STR_REFIT_METRO_3K_VVVF_1ST_1_NAME                         :KNR 3k VVVF / Old livery
+STR_REFIT_METRO_3K_VVVF_1ST_2_NAME                         :Korail 3k VVVF / Current livery
+STR_REFIT_METRO_3K_SMETRO_CHOPPER_NAME                     :SMetro 3k CHOPPER
+STR_REFIT_METRO_3K_SMETRO_MODIFIED_CHOPPER_NAME            :SMetro 3k Modified CHOPPER
+STR_REFIT_METRO_3K_SMETRO_VVVF_1ST_NAME                    :SMetro 3k VVVF 1st
+STR_REFIT_METRO_3K_SMETRO_VVVF_2ND_NAME                    :SMetro 3k VVVF 2nd
+STR_REFIT_METRO_LINE_3_2022_NAME                           :Korail, introduced in 2022
+STR_REFIT_METRO_LINE_3_2022_W_NAME                         :Korail, introduced in 2022 by Woojin
 
 # Refit (Seoul metropolitan 4)
-STR_REFIT_METRO_341K_VVVF_1ST_1_NAME                       : (Korail 341k 1st VVVF / Old livery)
-STR_REFIT_METRO_341K_VVVF_1ST_2_NAME                       : (Korail 341k 1st VVVF / Current livery)
-STR_REFIT_METRO_341K_VVVF_2ND_1_NAME                       : (Korail 341k 2nd VVVF / Old livery)
-STR_REFIT_METRO_341K_VVVF_2ND_2_NAME                       : (Korail 341k 2nd VVVF / Current livery)
-STR_REFIT_METRO_LINE_4_2019_NAME                           : (Korail, introduced in 2019)
-STR_REFIT_METRO_LINE_4_2021_NAME                           : (Korail, introduced in 2021)
-STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME                : (SMetro 4k 1st·2nd VVVF)
-STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME                    : (SMetro 4k 3rd VVVF in 2020)
-STR_REFIT_METRO_SMETRO_4K_VVVF_4TH_NAME                    : (SMetro 4k 4th VVVF in 2023)
-STR_REFIT_METRO_SMETRO_4K_VVVF_5TH_NAME                    : (SMetro 4k 5th VVVF in 2024)
+STR_REFIT_METRO_341K_VVVF_1ST_1_NAME                       :Korail 341k 1st VVVF / Old livery
+STR_REFIT_METRO_341K_VVVF_1ST_2_NAME                       :Korail 341k 1st VVVF / Current livery
+STR_REFIT_METRO_341K_VVVF_2ND_1_NAME                       :Korail 341k 2nd VVVF / Old livery
+STR_REFIT_METRO_341K_VVVF_2ND_2_NAME                       :Korail 341k 2nd VVVF / Current livery
+STR_REFIT_METRO_LINE_4_2019_NAME                           :Korail, introduced in 2019
+STR_REFIT_METRO_LINE_4_2021_NAME                           :Korail, introduced in 2021
+STR_REFIT_METRO_SMETRO_4K_VVVF_1ST_2ND_NAME                :SMetro 4k 1st·2nd VVVF
+STR_REFIT_METRO_SMETRO_4K_VVVF_3RD_NAME                    :SMetro 4k 3rd VVVF in 2020
+STR_REFIT_METRO_SMETRO_4K_VVVF_4TH_NAME                    :SMetro 4k 4th VVVF in 2023
+STR_REFIT_METRO_SMETRO_4K_VVVF_5TH_NAME                    :SMetro 4k 5th VVVF in 2024
 
 # Refit (Seoul Metro Line 5-8, Seoul Metro Line9)
-STR_REFIT_METRO_SMETRO_SR0X_NAME                           : (SMetro SR0x VVVF)
-STR_REFIT_METRO_SMETRO_5K_1ST_2ND_NAME                     : (SMetro 5k 1st·2nd VVVF)
-STR_REFIT_METRO_SMETRO_5K_3RD_NAME                         : (SMetro 5k 3rd VVVF)
-STR_REFIT_METRO_SMETRO_5K_4TH_NAME                         : (SMetro 5k 4th VVVF)
-STR_REFIT_METRO_SMETRO_5K_5TH_NAME                         : (SMetro 5k 5th VVVF)
-STR_REFIT_METRO_SMETRO_6K_1ST_NAME                         : (SMetro 6k VVVF)
-STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME                     : (SMetro 7k 1st·2nd VVVF)
-STR_REFIT_METRO_SMETRO_7K_4TH_NAME                         : (SMetro 7k 4th VVVF)
-STR_REFIT_METRO_SMETRO_7K_5TH_NAME                         : (SMetro 7k 5th VVVF)
-STR_REFIT_METRO_SMETRO_8K_1ST_2ND_NAME                     : (SMetro 8k 1st·2nd VVVF)
-STR_REFIT_METRO_SMETRO_8K_3RD_NAME                         : (SMetro 8k 3rd VVVF)
-STR_REFIT_METRO_SMETRO_8K_4TH_NAME                         : (SMetro 8k 4th VVVF)
-STR_REFIT_METRO_SMETRO_9K_1ST_NAME                         : (SMetro9 9k VVVF)
+STR_REFIT_METRO_SMETRO_SR0X_NAME                           :SMetro SR0x VVVF
+STR_REFIT_METRO_SMETRO_5K_1ST_2ND_NAME                     :SMetro 5k 1st·2nd VVVF
+STR_REFIT_METRO_SMETRO_5K_3RD_NAME                         :SMetro 5k 3rd VVVF
+STR_REFIT_METRO_SMETRO_5K_4TH_NAME                         :SMetro 5k 4th VVVF
+STR_REFIT_METRO_SMETRO_5K_5TH_NAME                         :SMetro 5k 5th VVVF
+STR_REFIT_METRO_SMETRO_6K_1ST_NAME                         :SMetro 6k VVVF
+STR_REFIT_METRO_SMETRO_7K_1ST_2ND_NAME                     :SMetro 7k 1st·2nd VVVF
+STR_REFIT_METRO_SMETRO_7K_4TH_NAME                         :SMetro 7k 4th VVVF
+STR_REFIT_METRO_SMETRO_7K_5TH_NAME                         :SMetro 7k 5th VVVF
+STR_REFIT_METRO_SMETRO_8K_1ST_2ND_NAME                     :SMetro 8k 1st·2nd VVVF
+STR_REFIT_METRO_SMETRO_8K_3RD_NAME                         :SMetro 8k 3rd VVVF
+STR_REFIT_METRO_SMETRO_8K_4TH_NAME                         :SMetro 8k 4th VVVF
+STR_REFIT_METRO_SMETRO_9K_1ST_NAME                         :SMetro9 9k VVVF
 
 # Refit (Suin-Bungdang Line)
-STR_REFIT_METRO_351K_VVVF_1ST_1_NAME                       : (Korail 315k 1st VVVF / Old livery)
-STR_REFIT_METRO_351K_VVVF_1ST_2_NAME                       : (Korail 351k 1st VVVF / Current livery)
-STR_REFIT_METRO_351K_VVVF_2ND_NAME                         : (Korail 351k 2nd VVVF)
-STR_REFIT_METRO_351K_VVVF_3RD_NAME                         : (Korail 351k 3rd VVVF)
-STR_REFIT_METRO_351K_2021_NAME                             : (Korail, introduced in 2021)
+STR_REFIT_METRO_351K_VVVF_1ST_1_NAME                       :Korail 315k 1st VVVF / Old livery
+STR_REFIT_METRO_351K_VVVF_1ST_2_NAME                       :Korail 351k 1st VVVF / Current livery
+STR_REFIT_METRO_351K_VVVF_2ND_NAME                         :Korail 351k 2nd VVVF
+STR_REFIT_METRO_351K_VVVF_3RD_NAME                         :Korail 351k 3rd VVVF
+STR_REFIT_METRO_351K_2021_NAME                             :Korail, introduced in 2021
 
 # Refit (Gyeongchun Line)
-STR_REFIT_METRO_361K_VVVF_NAME                             : (Korail 361k VVVF)
-STR_REFIT_METRO_361K_2024_NAME                             : (Korail 361k, 2nd introduced in 2024)
+STR_REFIT_METRO_361K_VVVF_NAME                             :Korail 361k VVVF
+STR_REFIT_METRO_361K_2024_NAME                             :Korail 361k, 2nd introduced in 2024
 
 # Refit (Incheon intertional Airport Line (A'REX)
-STR_REFIT_METRO_AREX_1K_NONSTOP_NAME                       : (A'REX 1k Express)
-STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME                : (A'REX 1k Express - Orange)
-STR_REFIT_METRO_AREX_2K_NAME                               : (A'REX 2k All-stop)
-STR_REFIT_METRO_AREX_2K_4TH_NAME                           : (A'REX 2k All-stop 4th)
+STR_REFIT_METRO_AREX_1K_NONSTOP_NAME                       :A'REX 1k Express
+STR_REFIT_METRO_AREX_1K_NONSTOP_ORANGE_NAME                :A'REX 1k Express - Orange
+STR_REFIT_METRO_AREX_2K_NAME                               :A'REX 2k All-stop
+STR_REFIT_METRO_AREX_2K_4TH_NAME                           :A'REX 2k All-stop 4th
 
 # Refit (Seohae Line)
-STR_REFIT_METRO_391K_1ST_NAME                              : (Korail 391k 1st)
-STR_REFIT_METRO_391K_2ND_NAME                              : (Korail 391k 2nd)
+STR_REFIT_METRO_391K_1ST_NAME                              :Korail 391k 1st
+STR_REFIT_METRO_391K_2ND_NAME                              :Korail 391k 2nd
 
 # Refit (Other Lines)
-STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME             : (Incheon Metro 1k VVVF 1st)
-STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_2022_NAME        : (Incheon Metro 1k VVVF 1st, introduced in 2022)
-STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME             : (Incheon Metro 1k VVVF 2nd)
-STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME                      : (Former)
-STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME                      : (Latter)
-STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME                    : (Busan Metro 1k 1st)
-STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME                    : (Busan Metro 1k 2nd)
-STR_REFIT_METRO_BUSAN_METRO_1K_3RD_NAME                    : (Busan Metro 1k 3rd)
-STR_REFIT_METRO_DAEJEON_METRO_1K_NAME                      : (Daejeon Metro 1k)
-STR_REFIT_METRO_GWANGJU_METRO_1K_NAME                      : (Gwangju Metro 1k)
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_NAME             :Incheon Metro 1k VVVF 1st
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_1ST_2022_NAME        :Incheon Metro 1k VVVF 1st, introduced in 2022
+STR_REFIT_METRO_INCHEON_METRO_1K_VVVF_2ND_NAME             :Incheon Metro 1k VVVF 2nd
+STR_REFIT_METRO_DAEGU_METRO_3K_1_NAME                      :Former
+STR_REFIT_METRO_DAEGU_METRO_3K_2_NAME                      :Latter
+STR_REFIT_METRO_BUSAN_METRO_1K_1ST_NAME                    :Busan Metro 1k 1st
+STR_REFIT_METRO_BUSAN_METRO_1K_2ND_NAME                    :Busan Metro 1k 2nd
+STR_REFIT_METRO_BUSAN_METRO_1K_3RD_NAME                    :Busan Metro 1k 3rd
+STR_REFIT_METRO_DAEJEON_METRO_1K_NAME                      :Daejeon Metro 1k
+STR_REFIT_METRO_GWANGJU_METRO_1K_NAME                      :Gwangju Metro 1k
 
 
 # Refit (Additional text)

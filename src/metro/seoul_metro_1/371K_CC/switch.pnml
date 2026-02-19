@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch (FEAT_TRAINS, SELF, sw_371K_CC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: set_371K_CC_engineH;
+    set_371K_CC_engineH;
+}
+
+// Pantograph - for Donghae & Seohae line, which are consist of 4 wagons. (TC - M' - M' - TC)
+switch (FEAT_TRAINS, SELF, sw_371K_CC_wagon, position_in_consist % 4) {
+    1: set_371K_CC_wagon_panto;
+    2: set_371K_CC_wagon_panto;
+    set_371K_CC_wagon;
+}

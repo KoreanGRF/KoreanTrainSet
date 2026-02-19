@@ -1,0 +1,83 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Graphics
+#include "graphic.pnml"
+
+// Switch
+#include "switch.pnml"
+
+// Item
+item (FEAT_TRAINS, ko_train_311K_1_1, 53111) {
+    property {
+        // Common properties
+        name:                           string(STR_REFIT_METRO_311K_1_1_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              var_SEOUL_METRO_1_INTRODUCTION;
+        track_type:                     ELRL;
+        engine_class:                   ENGINE_CLASS_ELECTRIC;
+        sprite_id:                      SPRITE_ID_NEW_TRAIN;
+        dual_headed:                    1;
+        variant_group:                  ko_train_SEOUL_METRO_1;
+
+        // Spec
+        power:                          POWER_IN_KW(var_SEOUL_METRO_1_POWER);
+        weight:                         var_SEOUL_METRO_1_WEIGHT;
+        tractive_effort_coefficient:    0.25;
+        air_drag_coefficient:           0.01;
+
+        // Model
+        model_life:                     VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                   30;
+        retire_early:                   0;
+        reliability_decay:              0;
+
+        // Cargo
+        cargo_capacity:                 1;
+        refittable_cargo_classes:       NO_CARGO_CLASS;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        cargo_allow_refit:              [PASS];
+        cargo_disallow_refit:           [];
+
+        // Costs
+        refit_cost:                     0;
+        running_cost_base:              RUNNING_COST_ELECTRIC;
+
+        // Flags
+        ai_special_flag:                AI_FLAG_PASSENGER;
+        misc_flags:                     bitmask(TRAIN_FLAG_MU, TRAIN_FLAG_AUTOREFIT);
+        bitmask_vehicle_info:           0;
+    }
+    graphics {
+        default:                        sw_311K_1_1_engine;
+        purchase:                       set_311K_1_1_purchase;
+
+        speed:                          sw_SEOUL_METRO_1_speed;
+        cost_factor:                    sw_SEOUL_METRO_1_cost;
+        running_cost_factor:            sw_SEOUL_METRO_1_runningcost;
+        cargo_capacity:                 sw_SEOUL_METRO_1_capacity;
+        purchase_cargo_capacity:        sw_SEOUL_METRO_1_purchase_capacity;
+        loading_speed:                  sw_SEOUL_METRO_1_loadingspeed;
+
+        can_attach_wagon:               sw_METRO_attach_global;
+        start_stop:                     sw_ko_train_start_stop_global;
+    }
+    livery_override(ko_train_PASSWG) {
+        default:                        sw_311K_1_1_wagon;
+        cargo_capacity:                 sw_METRO_wagon_capacity;
+        purchase_cargo_capacity:        sw_METRO_wagon_purchase_capacity;
+        loading_speed:                  sw_SEOUL_METRO_1_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_runningcost;
+    }
+    livery_override(ko_train_PASSWGP) {
+        default:                        sw_311K_1_1_wagon;
+        cargo_capacity:                 sw_METRO_wagon_capacity;
+        purchase_cargo_capacity:        sw_METRO_wagon_purchase_capacity;
+        loading_speed:                  sw_SEOUL_METRO_1_loadingspeed;
+        running_cost_factor:            sw_PASSENGER_WAGON_P_runningcost;
+        power:                          POWER_IN_KW(var_METRO_wagon_POWER);
+    }
+}

@@ -1,0 +1,24 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Wagon - Random for single & double pantograph for 3XXK_ST
+switch (FEAT_TRAINS, SELF, sw_3XXK_ST_wagon_panto, random_bits % 2) {
+    1: set_3XXK_ST_wagon_panto;
+    set_3XXK_ST_SINGLE_ARM_wagon_panto;
+}
+
+// Engine
+switch (FEAT_TRAINS, SELF, sw_3XXK_ST_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: set_3XXK_ST_engineH;
+    set_3XXK_ST_engineH;
+}
+
+// Pantograph - 8 cars (TC - M - M' - T - T - M - M' - TC)
+switch (FEAT_TRAINS, SELF, sw_3XXK_ST_wagon, (position_in_consist + 1) % 8) {
+    3: sw_3XXK_ST_wagon_panto;
+    7: sw_3XXK_ST_wagon_panto;
+    set_3XXK_ST_wagon;
+}

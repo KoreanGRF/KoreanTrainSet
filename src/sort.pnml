@@ -68,7 +68,32 @@ sort(FEAT_TRAINS, [
     ko_train_STAKE_CAR,                  // 5914
     ko_train_CABOOSE,                    // 5918
 
-    ko_train_SEOUL_METRO_1,              // 5711
+    // Seoul Line 1
+    ko_train_SEOUL_METRO_1,              // 53100
+    ko_train_1K_RHEO_FIRST_1,            // 53101
+    ko_train_1K_RHEO_FIRST_2,            // 53102
+    ko_train_1K_RHEO_SECOND_1,           // 53103
+    ko_train_1K_RHEO_SECOND_2,           // 53104
+    ko_train_1K_RHEO_SECOND_3,           // 53105
+    ko_train_1K_RHEO_LAST_1,             // 53106
+    ko_train_1K_RHEO_LAST_2,             // 53107
+    ko_train_SMETRO_1K_RHEO_FIRST,       // 53108
+    ko_train_SMETRO_1K_RHEO_MODIFIED,    // 53109
+    ko_train_SMETRO_1K_VVVF,             // 53110
+    ko_train_311K_1_1,                   // 53111
+    ko_train_311K_1_2,                   // 53112
+    ko_train_311K_2_1,                   // 53113
+    ko_train_311K_2_2,                   // 53114
+    ko_train_3XXK_ST,                    // 53115
+    ko_train_3XXK_AL,                    // 53116
+    ko_train_321K_BIKE,                  // 53117
+    ko_train_371K_BLANK,                 // 53118
+    ko_train_371K_CC,                    // 53119
+    ko_train_LINE_1_2019,                // 53120
+    ko_train_LINE_1_2021,                // 53121
+    ko_train_LINE_1_2022_W,              // 53122
+    ko_train_331K_2024,                  // 53123
+
     ko_train_SEOUL_METRO_2,              // 5712
     ko_train_SEOUL_METRO_3,              // 5713
     ko_train_SEOUL_METRO_4,              // 5714

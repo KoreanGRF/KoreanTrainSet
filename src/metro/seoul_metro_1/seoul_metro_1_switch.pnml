@@ -4,31 +4,11 @@
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
 
-// Engine - Bike printing for Gyeongui·Jungang Line 
-switch(FEAT_TRAINS, SELF, sw_321K_BIKE_engineT, random_bits % 2) {
-    1: set_321K_BIKE_engineT_orange;
-    set_321K_BIKE_engineT_blue;
-}
-switch(FEAT_TRAINS, SELF, sw_321K_BIKE_engineH, random_bits % 2) {
-    1: set_321K_BIKE_engineH_orange;
-    set_321K_BIKE_engineH_blue;
-}
 
 // Wagon - Random for single & double pantograph for 3XXK_ST
 switch(FEAT_TRAINS, SELF, sw_3XXK_ST_wagon_panto, random_bits % 2) {
     1: set_3XXK_ST_wagon_panto;
     set_3XXK_ST_SINGLE_ARM_wagon_panto;
-}
-
-// Wagon - Bike printing for Gyeongui·Jungang Line
-switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon_321K_BIKE, position_in_consist % 6) {
-    1: set_321K_BIKE_wagon_1_panto;
-    2: set_321K_BIKE_wagon_2;
-    3: set_321K_BIKE_wagon_3;
-    4: set_321K_BIKE_wagon_4;
-    5: set_321K_BIKE_wagon_5_panto;
-    0: set_321K_BIKE_wagon_6;
-    set_321K_BIKE_wagon_4;
 }
 
 // Cargo subtype
@@ -237,8 +217,6 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_1_wagon, cargo_subtype) {
     15:     sw_SEOUL_METRO_1_panto_wagon_for_6cars;
     16:     sw_SEOUL_METRO_1_wagon_321K_BIKE;
     17..21: sw_SEOUL_METRO_1_panto_wagon_for_4cars;
-    22:     sw_SEOUL_METRO_1_panto_wagon_for_10cars;
-    23:     sw_SEOUL_METRO_1_panto_wagon_for_10cars;
-    24:     sw_SEOUL_METRO_1_panto_wagon_for_10cars;
+    22..24: sw_SEOUL_METRO_1_panto_wagon_for_10cars;
     sw_SEOUL_METRO_1_panto_wagon_for_8cars;
 }

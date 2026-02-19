@@ -1,0 +1,39 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+spriteset (set_321K_BIKE_engineH_blue, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 0)
+}
+spriteset (set_321K_BIKE_engineT_blue, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 30)
+}
+spriteset (set_321K_BIKE_wagon_1_panto, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 60)
+}
+spriteset (set_321K_BIKE_wagon_2, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 90)
+}
+spriteset (set_321K_BIKE_wagon_3, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 120)
+}
+spriteset (set_321K_BIKE_wagon_4, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 150)
+}
+spriteset (set_321K_BIKE_wagon_5_panto, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 180)
+}
+spriteset (set_321K_BIKE_wagon_6, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 210)
+}
+spriteset (set_321K_BIKE_engineH_orange, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 240)
+}
+spriteset (set_321K_BIKE_engineT_orange, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_standard(80, 270)
+}
+spriteset (set_321K_BIKE_purchase, "./src/metro/seoul_metro_1/321K_BIKE/sprite.png") {
+    tmpl_purchase_common_dualhead(0, 0)
+}

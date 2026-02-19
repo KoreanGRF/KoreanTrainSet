@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Engine
+switch (FEAT_TRAINS, SELF, sw_LINE_1_2021_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+    1: set_LINE_1_2021_engineH;
+    set_LINE_1_2021_engineH;
+}
+
+// Pantograph - 10 cars (TC - M - M' - T - M' - T - T - M - M' - TC)
+switch (FEAT_TRAINS, SELF, sw_LINE_1_2021_wagon, (position_in_consist + 1) % 10) {
+    3: set_LINE_1_2021_wagon_panto;
+    5: set_LINE_1_2021_wagon_panto;
+    9: set_LINE_1_2021_wagon_panto;
+    set_LINE_1_2021_wagon;
+}
