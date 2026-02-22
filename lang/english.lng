@@ -136,6 +136,8 @@ STR_REFIT_LIVERY_NURIRO_SANTA                              : (Donghae santa live
 STR_REFIT_LIVERY_NURIRO_2022                               : (2022 livery)
 STR_REFIT_LIVERY_KTX2N                                     : (General livery)
 STR_REFIT_LIVERY_KTX2N_PYEONGCHANG                         : (Olympic Winter Games PyeongChang 2018 livery)
+STR_REFIT_LIVERY_KTX3N                                     : (First livery)
+STR_REFIT_LIVERY_KTX3N_CHEONGRYONG_2025                    : (2025 livery)
 STR_REFIT_LIVERY_CDC_GARDEN                                : (Flower garden livery)
 STR_REFIT_LIVERY_CDC_DOLPHIN                               : (Dolphin livery)
 STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                          : (Seaside train livery: Blue)

@@ -1,7 +1,8 @@
-3.0.0+
+2.11.0+
 -----
  * Add: English changelog
- * Change: Changed the minimum version of NML to 0.8.1
+ * Add: KTX-Cheongryonmg 2025 livery
+ * Change: Changed the minimum required version of NML to 0.8.1
 
 2.10.1
 -----

@@ -136,6 +136,8 @@ STR_REFIT_LIVERY_NURIRO_SANTA                              : (东海圣诞列车
 STR_REFIT_LIVERY_NURIRO_2022                               : (2022年涂装)
 STR_REFIT_LIVERY_KTX2N                                     : (一般涂装)
 STR_REFIT_LIVERY_KTX2N_PYEONGCHANG                         : (2018平昌冬奥会涂装)
+STR_REFIT_LIVERY_KTX3N                                     : (初度涂装)
+STR_REFIT_LIVERY_KTX3N_CHEONGRYONG_2025                    : (2025年涂装)
 STR_REFIT_LIVERY_CDC_GARDEN                                : (花园主题)
 STR_REFIT_LIVERY_CDC_DOLPHIN                               : (海豚主题)
 STR_REFIT_LIVERY_CDC_SEASIDE_BLUE                          : (海洋观光列车: 蓝色)
