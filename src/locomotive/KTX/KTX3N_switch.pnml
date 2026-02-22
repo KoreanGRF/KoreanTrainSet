@@ -6,17 +6,17 @@
 
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_KTX3N_cargo_subtype_text, cargo_subtype) {
-    1: return string(STR_REFIT_LIVERY_KTX3N_CHEONGRYONG_2025);
+    1: return string(STR_REFIT_LIVERY_KTX3N_2025);
     return string(STR_REFIT_LIVERY_KTX3N);
 }
 
 // Engine
 switch(FEAT_TRAINS, SELF, sw_KTX3N_engineT, cargo_subtype) {
-    1: set_KTX3N_CHEONGRYONG_2025_engineT;
+    1: set_KTX3N_2025_engineT;
     set_KTX3N_engineT;
 }
 switch(FEAT_TRAINS, SELF, sw_KTX3N_engineH, cargo_subtype) {
-    1: set_KTX3N_CHEONGRYONG_2025_engineH;
+    1: set_KTX3N_2025_engineH;
     set_KTX3N_engineH;
 }
 switch(FEAT_TRAINS, SELF, sw_KTX3N_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
@@ -26,19 +26,19 @@ switch(FEAT_TRAINS, SELF, sw_KTX3N_engine, position_in_consist_from_end == 0 && 
 
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_KTX3N_wagon_3_without_panto_cargo_subtype, cargo_subtype) {
-    1: set_KTX3N_CHEONGRYONG_2025_wagon_3_without_panto;
+    1: set_KTX3N_2025_wagon_3_without_panto;
     set_KTX3N_wagon_3_without_panto;
 }
 switch(FEAT_TRAINS, SELF, sw_KTX3N_wagon_3_cargo_subtype, cargo_subtype) {
-    1: set_KTX3N_CHEONGRYONG_2025_wagon_3;
+    1: set_KTX3N_2025_wagon_3;
     set_KTX3N_wagon_3;
 }
 switch(FEAT_TRAINS, SELF, sw_KTX3N_wagon_2_cargo_subtype, cargo_subtype) {
-    1: set_KTX3N_CHEONGRYONG_2025_wagon_2;
+    1: set_KTX3N_2025_wagon_2;
     set_KTX3N_wagon_2;
 }
 switch(FEAT_TRAINS, SELF, sw_KTX3N_wagon_4_cargo_subtype, cargo_subtype) {
-    1: set_KTX3N_CHEONGRYONG_2025_wagon_4;
+    1: set_KTX3N_2025_wagon_4;
     set_KTX3N_wagon_4;
 }
 switch(FEAT_TRAINS, SELF, sw_KTX3N_wagon_3, (position_in_vehid_chain + 1) % 4) {

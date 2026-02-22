@@ -280,7 +280,7 @@
         <td class="introduction">2019</td>
     </tr>
     <tr data-veh_id="KTX3N">
-        <td class="refit"><div><img src="./_static/KTX3N.png" alt="KTX-青龙"><br /><img src="./_static/KTX3N_CHEONGRYONG_2025.png" alt="KTX-青龙"></div></td>
+        <td class="refit"><div><img src="./_static/KTX3N.png" alt="KTX-青龙"><br /><img src="./_static/KTX3N_2025.png" alt="KTX-青龙"></div></td>
         <td class="name">KTX-青龙</td>
         <td class="speed">319 km/h</td>
         <td class="speed_designed">352 km/h</td>
