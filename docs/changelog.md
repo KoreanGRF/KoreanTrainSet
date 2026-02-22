@@ -1,7 +1,8 @@
 2.11.0+
 -----
  * Add: English changelog
- * Add: KTX-Cheongryonmg 2025 livery
+ * Add: KTX-Cheongryong(EMU-320) 2025 livery
+ * Add: SRT(EMU-320) 2025 livery
  * Change: Changed the minimum required version of NML to 0.8.1
 
 2.10.1
