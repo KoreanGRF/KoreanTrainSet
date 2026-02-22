@@ -42,8 +42,11 @@ Page version: based on 2.7.0 ([5add077](https://github.com/KoreanGRF/KoreanTrain
 | ``KTX1N`` 			| skyu 												| @SerpensNebula<br />modified by @EightonEight 	| template changed: #427<br />modified: #437, #442, #454 |
 | ``KTX2N`` 			| Las<br />modified by @EightonEight 								| 							| modified: #376, #377 |
 | ``KTX2N_PYEONGCHANG`` 	| RIPper<br />modified by @EightonEight 							| 							| #89<br />modified: #376, #377 |
+| ``KTX3N`` 			| 												| @EightonEight 							| #469 |
+| ``KTX3N_2025`` 		| 												| @EightonEight 							| #505 |
 | ``SRT`` 			| Las<br />modified by @EightonEight 								| 							| modified: #377 |
-| ``SRT_32bpp`` 		| @EightonEight 										| 							| #377 |
+| ``SRT_32bpp`` 	|													| @EightonEight								| #377 |
+| ``SRT_2025`` 		| 													| @EightonEight								| #504 |
 | ``MAUM`` 			| 												| @SerpensNebula 					| #307<br />modified: #428, #444 |
 | ``MAUM_32bpp`` 		| 												| @SerpensNebula 					| #307<br />modified: #428, #444 |
 | ``NDC`` 			| Original: unknown<br />modified by @telk5093, @kiwitreekor 					| 							| modified: #15 |
