@@ -1,5 +1,5 @@
 # Korean Train Set
-[English](./README.md) | [한국어](./README.ko.md) | [Changelog](./changelog.md)
+[English](./README.md) | [한국어](./README.ko.md) | [Changelog](./changelog.md) | [변경 이력](./changelog.ko.md)
 
 **Korean Train Set** is an OpenTTD NewGRF that offers various trains and railway of the Republic of Korea, a.k.a South Korea.   
 You can download this via Online content in-game, or [Github release page](https://github.com/KoreanGRF/KoreanTrainSet/releases).
@@ -50,7 +50,7 @@ VEHICLE_LIST_INTRODUCTION :Introduced
 
 ## Links
 - [TELKLAND](http://telk.kr)
-- Official Download Page ([Korean](https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr) / [English](https://telk.kr/ottd/newgrf/ko_train_set/?lang=en) / [Japanese](https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp) / [Spanish](https://telk.kr/ottd/newgrf/ko_train_set/?lang=es))
+- Official Download Page ([Korean](https://telk.kr/ottd/newgrf/ko_train_set/?lang=kr) / [English](https://telk.kr/ottd/newgrf/ko_train_set/?lang=en) / [Japanese](https://telk.kr/ottd/newgrf/ko_train_set/?lang=jp) / [Chinese](https://telk.kr/ottd/newgrf/ko_train_set/?lang=cn) / [Spanish](https://telk.kr/ottd/newgrf/ko_train_set/?lang=es))
 
 ## Contributors
 All names of contributors can be found at [Contributors](https://github.com/KoreanGRF/KoreanTrainSet/graphs/contributors) in this Repository and [contributors.md](../docs/contributors.md).
