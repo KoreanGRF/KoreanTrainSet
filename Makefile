@@ -59,7 +59,6 @@ clean::
 
 # Documents
 doc: generated $(GRF_GENERATE) download_page
-	@cp $(CP_FLAGS) ./docs/changelog.md ./generated/changelog.txt
 clean::
 	@echo "[CLEAN DOC]"
 	@-rm -rf ./generated/*.txt
@@ -117,7 +116,7 @@ clean::
 bundle: bundle_tar
 bundle_tar: $(BUNDLE_FILES)
 	@echo "[BUNDLE TAR]"
-	@ tar -cf generated/544b5555-$(DIR_NAME).tar generated/changelog.txt generated/$(GRF_FILE) generated/readme.txt --transform s/generated/544b5555-$(DIR_NAME)/
+	@ tar -cf generated/544b5555-$(DIR_NAME).tar docs/changelog.md docs/changelog.ko.md docs/README.md docs/README.ko.md generated/$(GRF_FILE) --transform s/generated/544b5555-$(DIR_NAME)/
 clean::
 	@echo "[CLEAN BUNDLE]"
 	@-rm -rf $(shell echo "$(REPO_NAME)*" | xargs | sed s/\ /_/g)
