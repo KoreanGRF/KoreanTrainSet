@@ -24,7 +24,6 @@ NML_FILE            ?= $(BASE_FILENAME).nml
 NFO_FILE            ?= $(BASE_FILENAME).nfo
 PNML_FILE           ?= $(BASE_FILENAME).pnml
 TAG_FILE            ?= custom_tags.txt
-DOC_FILE            ?= docs/readme.txt
 
 GRF_GENERATE        ?= $(BASE_FILENAME).grf
 NML_GENERATE        ?= $(BASE_FILENAME).nml
@@ -32,8 +31,7 @@ NFO_GENERATE        ?= $(BASE_FILENAME).nfo
 PNML_GENERATE       ?= $(BASE_FILENAME).pnml
 TAR_GENERATE        ?= $(BASE_FILENAME).tar
 TAG_GENERATE        ?= custom_tags.txt
-DOC_GENERATE        ?= $(DOC_FILE)
-BUNDLE_FILES        ?= $(GRF_FILE) $(DOC_FILE)
+BUNDLE_FILES        ?= $(GRF_FILE) doc
 
 # target 'all' must be first target
 all: build
@@ -59,6 +57,10 @@ clean::
 
 # Documents
 doc: generated $(GRF_GENERATE) download_page
+	@cp $(CP_FLAGS) ./docs/changelog.md ./generated/changelog.txt
+	@cp $(CP_FLAGS) ./docs/changelog.ko.md ./generated/changelog.ko.txt
+	@cp $(CP_FLAGS) ./docs/README.ko.md ./generated/readme.ko.txt
+	@cp $(CP_FLAGS) ./docs/README.md ./generated/readme.txt
 clean::
 	@echo "[CLEAN DOC]"
 	@-rm -rf ./generated/*.txt
@@ -116,7 +118,7 @@ clean::
 bundle: bundle_tar
 bundle_tar: $(BUNDLE_FILES)
 	@echo "[BUNDLE TAR]"
-	@ tar -cf generated/544b5555-$(DIR_NAME).tar docs/changelog.md docs/changelog.ko.md docs/README.md docs/README.ko.md generated/$(GRF_FILE) --transform s/generated/544b5555-$(DIR_NAME)/
+	@ tar -cf generated/544b5555-$(DIR_NAME).tar generated/changelog.txt generated/readme.txt generated/$(GRF_FILE) --transform s/generated/544b5555-$(DIR_NAME)/
 clean::
 	@echo "[CLEAN BUNDLE]"
 	@-rm -rf $(shell echo "$(REPO_NAME)*" | xargs | sed s/\ /_/g)
