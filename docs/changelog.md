@@ -1,3 +1,7 @@
+2.11.1
+-----
+ * Fix: Update internal version
+
 2.11.0
 -----
  * Add: English changelog
