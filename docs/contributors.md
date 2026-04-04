@@ -22,4 +22,5 @@
   Detail graphic contributes can be found at [contributors_graphic.md](./contributors_graphic.md)
 
 ## **Translation**
-  * **TELK** - Korean, English (UK, US), Japanese
+  * **[@TELK](https://github.com/telk5093)** - Korean, English (UK, US), Japanese
+  * **[@Maicarons](https://github.com/Maicarons)** - Chinese (simplified)

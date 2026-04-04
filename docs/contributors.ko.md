@@ -22,4 +22,5 @@
   자세한 그래픽 기여는 [contributors_graphic.md](./contributors_graphic.md)에서 확인하실 수 있습니다.
 
 ## **번역**
-  * **TELK** - 한국어, 영어 (영국, 미국), 일본어
+  * **[@TELK](https://github.com/telk5093)** - 한국어, 영어 (영국, 미국), 일본어
+  * **[@Maicarons](https://github.com/Maicarons)** - 중국어(간체)
