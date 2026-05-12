@@ -29,7 +29,7 @@ switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_cargo_subtype_text, cargo_subtype) {
 }
 
 // Engine
-switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+switch(FEAT_TRAINS, SELF, sw_GYEONGCHUN_engine, (position_in_consist_from_end == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1)) {
     1: sw_GYEONGCHUN_engineT;
     sw_GYEONGCHUN_engineH;
 }

@@ -3,6 +3,10 @@
   * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
   * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
 ------------------------------------------------------------------------------*/
+// // Engine (backward compatibility)
+// BACKWARD(KTX3N_2025)
+// BACKWARD(SRT_2025)
+// BACKWARD(KTX3N)
 
 // Cargo subtype
 switch(FEAT_TRAINS, SELF, sw_KTX3N_cargo_subtype_text, cargo_subtype) {
@@ -22,10 +26,14 @@ switch(FEAT_TRAINS, SELF, sw_KTX3N_engineH, cargo_subtype) {
     2: set_SRT_2025_engineH;
     set_KTX3N_engineH;
 }
-switch(FEAT_TRAINS, SELF, sw_KTX3N_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+switch(FEAT_TRAINS, SELF, sw_KTX3N_engine, (position_in_consist_from_end == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1)) {
     1: sw_KTX3N_engineT;
     sw_KTX3N_engineH;
 }
+// switch(FEAT_TRAINS, SELF, sw_KTX3N_engine, 1) {
+//     1: sw_KTX3N_engineH;
+//     sw_KTX3N_engineH;
+// }
 
 // Wagon
 switch(FEAT_TRAINS, SELF, sw_KTX3N_wagon_3_without_panto_cargo_subtype, cargo_subtype) {

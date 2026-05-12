@@ -44,7 +44,7 @@ switch(FEAT_TRAINS, SELF, sw_NURIRO_engineT, cargo_subtype) {
     4: set_NURIRO_2022_engineT;          // 2022 livery
     set_NURIRO_engineT;
 }
-switch(FEAT_TRAINS, SELF, sw_NURIRO_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+switch(FEAT_TRAINS, SELF, sw_NURIRO_engine, (position_in_consist_from_end == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1)) {
     1: sw_NURIRO_engineT;
     sw_NURIRO_engineH;
 }

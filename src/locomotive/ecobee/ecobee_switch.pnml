@@ -5,7 +5,7 @@
 ------------------------------------------------------------------------------*/
 
 // Engine
-switch(FEAT_TRAINS, SELF, sw_ECOBEE_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+switch(FEAT_TRAINS, SELF, sw_ECOBEE_engine, (position_in_consist_from_end == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1)) {
     1: set_ECOBEE_engineT;
     set_ECOBEE_engineH;
 }

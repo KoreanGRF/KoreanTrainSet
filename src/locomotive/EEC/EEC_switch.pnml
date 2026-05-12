@@ -25,7 +25,7 @@ switch(FEAT_TRAINS, SELF, sw_EEC_engineT, cargo_subtype) {
     2:  set_EEC_2_engineT;
         set_EEC_3_engineT;
 }
-switch(FEAT_TRAINS, SELF, sw_EEC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+switch(FEAT_TRAINS, SELF, sw_EEC_engine, (position_in_consist_from_end == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1)) {
     1: sw_EEC_engineT;
        sw_EEC_engineH;
 }

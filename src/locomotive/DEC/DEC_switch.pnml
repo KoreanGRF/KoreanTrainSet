@@ -18,7 +18,7 @@ switch(FEAT_TRAINS, SELF, sw_DEC_engineT, cargo_subtype) {
     3:  set_DEC_2_engineT;
     set_DEC_3_engineT;
 }
-switch(FEAT_TRAINS, SELF, sw_DEC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+switch(FEAT_TRAINS, SELF, sw_DEC_engine, (position_in_consist_from_end == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1)) {
     1: sw_DEC_engineT;
     sw_DEC_engineH;
 }

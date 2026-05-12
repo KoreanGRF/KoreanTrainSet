@@ -173,7 +173,7 @@ switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_wagon_cargo_subtype, cargo_subtype)
 }
 
 // Engine
-switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+switch(FEAT_TRAINS, SELF, sw_SEOUL_METRO_5_9_engine, (position_in_consist_from_end == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1)) {
     1: sw_SEOUL_METRO_5_9_engineT;
     sw_SEOUL_METRO_5_9_engineH;
 }

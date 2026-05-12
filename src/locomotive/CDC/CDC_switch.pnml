@@ -42,7 +42,7 @@ switch(FEAT_TRAINS, SELF, sw_CDC_engineT, cargo_subtype) {
     18: set_CDC_MUGUNGHWA_engineT;
     set_CDC_engineT;
 }
-switch(FEAT_TRAINS, SELF, sw_CDC_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+switch(FEAT_TRAINS, SELF, sw_CDC_engine, ((position_in_consist_from_end == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1) && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1)) {
     1: sw_CDC_engineT;
     sw_CDC_engineH;
 }

@@ -22,7 +22,7 @@ switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_engineT, cargo_subtype) {
     1: set_DAEGU_METRO_3K_1_engineT;
     set_DAEGU_METRO_3K_2_engineT;
 }
-switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_engine, position_in_consist_from_end == 0 && num_vehs_in_consist > 1) {
+switch(FEAT_TRAINS, SELF, sw_DAEGU_METRO_3_engine, (position_in_consist_from_end == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 0) || (position_in_consist == 0 && num_vehs_in_consist > 1 && train_is_driving_backwards == 1)) {
     1: sw_DAEGU_METRO_3_engineT;
     sw_DAEGU_METRO_3_engineH;
 }
