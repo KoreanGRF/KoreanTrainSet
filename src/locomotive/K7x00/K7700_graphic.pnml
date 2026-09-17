@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo livery
+spriteset(set_K7700_CARGO_purchase, "./src/locomotive/K7x00/K7700.png") {
+    tmpl_purchase_common(0, 0)
+}
+spriteset(set_K7700_CARGO, "./src/locomotive/K7x00/K7700.png") {
+    tmpl_standard(80, 0)
+}
+
+// Alias of purchase image
+switch(FEAT_TRAINS, SELF, sw_K7700_purchase, cargo_subtype) {
+    set_K7700_CARGO_purchase;
+}

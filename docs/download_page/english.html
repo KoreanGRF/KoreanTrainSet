@@ -119,6 +119,16 @@
         <td class="weight">132 t</td>
         <td class="introduction">2014</td>
     </tr>
+    <tr data-veh_id="K7700">
+        <td class="refit"><div><img src="./_static/K7700_CARGO.png" alt="7700 Diesel Locomotive"></div></td>
+        <td class="name">7700 Diesel Locomotive</td>
+        <td class="speed">150 km/h</td>
+        <td class="speed_designed">165 km/h</td>
+        <td class="capacity"></td>
+        <td class="power">4425 kW</td>
+        <td class="weight">132 t</td>
+        <td class="introduction">2026</td>
+    </tr>
     <tr data-veh_id="K8000">
         <td class="refit"><div><img src="./_static/K8000_BLUE_WHITE.png" alt="8000 Electronic Locomotive"><br /><img src="./_static/K8000_GREEN_YELLOW.png" alt="8000 Electronic Locomotive"><br /><img src="./_static/K8000_RED_WHITE_BLUE.png" alt="8000 Electronic Locomotive"></div></td>
         <td class="name">8000 Electronic Locomotive</td>

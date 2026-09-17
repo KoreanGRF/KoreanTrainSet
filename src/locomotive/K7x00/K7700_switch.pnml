@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------------------
+  한국 열차 세트(Korean Train Set)
+  * Official download site : https://telk.kr/ottd/newgrf/ko_train_set
+  * Github repository      : https://github.com/KoreanGRF/KoreanTrainSet
+------------------------------------------------------------------------------*/
+
+// Cargo subtype
+switch(FEAT_TRAINS, SELF, sw_K7700_loco, cargo_subtype) {
+    set_K7700_CARGO;
+}
+switch(FEAT_TRAINS, SELF, sw_K7700_cargo_subtype_text, cargo_subtype) {
+    return string(STR_REFIT_LIVERY_7x00_CARGO);
+}

@@ -45,6 +45,7 @@
 #include "locomotive/K7x00/K7000.pnml"
 #include "locomotive/K7x00/K7x00.pnml"
 #include "locomotive/K7x00/K7600.pnml"
+#include "locomotive/K7x00/K7700.pnml"
 
 // K8x00
 #include "locomotive/K8x00/K8000.pnml"

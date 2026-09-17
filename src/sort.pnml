@@ -21,6 +21,7 @@ sort(FEAT_TRAINS, [
     ko_train_K7000,                      // 5470
     ko_train_K7x00,                      // 5471
     ko_train_K7600,                      // 5476
+    ko_train_K7700,                      // 5477
     ko_train_K8000,                      // 5480
     ko_train_K8x00,                      // 5481
     ko_train_K8500,                      // 5485
